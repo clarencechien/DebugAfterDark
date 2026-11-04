@@ -1,6 +1,6 @@
 {
  "show": "深夜 Debug",
- "episode": "EP02 跑從來不是問題，看才是",
+ "episode": "EP02 第五招的實驗：跑從來不是問題，看才是",
  "source": "https://imitator.ai-apps.work/r/harness-probe-report",
  "audience": "工程師、想搞懂 AI 的人",
  "segments": [
@@ -12,7 +12,8 @@
   {
    "id": "s01_felix",
    "mood": "像深夜跟朋友聊天，有點感性但不畏縮。英文詞（Ping、pong、Claude Code、Three.js、prompt 這些）用台灣工程師平常講英文的念法自然帶過，就像台灣人講 double check 那樣",
-   "text": "上一集聊過 Felix Rieseberg 那篇〈How to be more ambitious〉。他的例子是：以前請 Claude 修某一次 crash，後來直接請 Claude 讓 app 保持不會 crash。但他順口帶過一句最有用的話：他先讓 Claude 能抓 crash report、對得出版本跟 commit，還給它 Windows、macOS、Linux 三台機器去重現和驗證。報告的結論是：野心沒有變大，變大的是 Claude 能看到的東西。作者就拿這一句做實驗。"
+   "text": "（接上一集：這集就是上一集提到的那個 Three.js 實驗的完整紀錄。）Felix Rieseberg 那篇〈How to be more ambitious〉。他的例子是：以前請 Claude 修某一次 crash，後來直接請 Claude 讓 app 保持不會 crash。但他順口帶過一句最有用的話：他先讓 Claude 能抓 crash report、對得出版本跟 commit，還給它 Windows、macOS、Linux 三台機器去重現和驗證。報告的結論是：野心沒有變大，變大的是 Claude 能看到的東西。作者就拿這一句做實驗。",
+   "recap": true
   },
   {
    "id": "s02_protocol",
@@ -49,5 +50,11 @@
    "mood": "像深夜跟朋友聊天，有點感性但不畏縮。英文詞（Ping、pong、Claude Code、Three.js、prompt 這些）用台灣工程師平常講英文的念法自然帶過，就像台灣人講 double check 那樣",
    "text": "今晚的 breakpoint 三個重點：一、跑起來從來不是問題，看得到才是；二、裁判的解析度決定一切，沒報錯不等於對；三、失敗清單比成品值錢，先接好眼睛，再談野心。然後片尾：原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。"
   }
- ]
+ ],
+ "series": "第五招 2/2（上：EP01）",
+ "previously": {
+  "episode": "EP01",
+  "title": "記住了第一招，漏掉了第五招",
+  "summary": "Felix 那篇文章被轉傳時漏掉了第五招：往深處推，要配一個模型以外的裁判。作者拿 Three.js 跑過一輪，發現裁判看得到什麼，野心就只能到哪裡。"
+ }
 }

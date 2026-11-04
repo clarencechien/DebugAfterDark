@@ -7,8 +7,8 @@
  },
  {
   "id": "s01_felix",
-  "lufs_before": -20.8,
-  "gain_db": 0.8,
+  "lufs_before": -22.0,
+  "gain_db": 2.0,
   "lufs_after": -20.0
  },
  {

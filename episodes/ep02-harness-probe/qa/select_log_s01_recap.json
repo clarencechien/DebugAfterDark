@@ -1,0 +1,54 @@
+{
+ "asr": "breeze",
+ "beam": 5,
+ "tolerance": 0.012,
+ "terms": [],
+ "jitter_margin": 0.02,
+ "pace_margin": 0.1,
+ "episode_median_cps": 4.93,
+ "consistency": false,
+ "sim_margin": 0.015,
+ "bright_margin": 300,
+ "segments": [
+  {
+   "id": "s01_felix",
+   "chosen": "s01_felix.take1.wav",
+   "takes": [
+    {
+     "file": "s01_felix.take0.wav",
+     "cer": 0.04,
+     "unclear": 4,
+     "long_pauses_per_min": 2.5,
+     "text": "上一集我們聊到那篇文章被轉傳的時候大家漏掉了第五招要有一個模型以外的裁判這集就來完整拆解那個 ThreeJS 實驗Felix 在文章裡提過一個例子他以前只讓 cloud show 某一次 crash後來超狂直接叫他讓 app 保持不 crash欸他是怎麼做到的難道只是信念突然變強嗎當然不是嘛重點是他順口帶過的一句話那個應該說是他背後做的事他先讓 cloud 能抓 crash report 對得出版本跟 commit還給了三台不同系統的機器去重現這邊我真的很認同哪是野心變大講白了就是他能看的東西變多啦這份報告就是拿這句話來做實驗",
+     "jitter": 0.253,
+     "cps": 5.24,
+     "terms_ok": true
+    },
+    {
+     "file": "s01_felix.take1.wav",
+     "cer": 0.048,
+     "unclear": 5,
+     "long_pauses_per_min": 1.2,
+     "text": "上一集我們聊到那篇文章被轉傳的時候大家漏掉了第五招要有一個模型以外的裁判這集就來完整拆解那個 three 大家的實驗Felix 在文章裡提過一個例子他以前只讓 cloud show 某一次 crash後來超狂直接叫他讓 app 保持不 crash欸他是怎麼做到的難道只是信念突然變強嗎當然不是嘛重點是他順口帶過的一句話那個應該說是他背後做的事啦他先讓 cloud 能抓 crash report對得出版本跟 commit還給了三台不同系統的機器去重現這邊我真的很認同哪是野心變大講白了就是他能看的東西變多啦這份報告就是拿這句話來做實驗",
+     "jitter": 0.216,
+     "cps": 4.93,
+     "terms_ok": true
+    },
+    {
+     "file": "s01_felix.take2.wav",
+     "cer": 0.064,
+     "unclear": 6,
+     "long_pauses_per_min": 13.5,
+     "text": "上一集我們聊到那篇文章被轉傳的時候大家漏掉了第五招要有一個模型以外的裁判這集就來完整拆解那個 3JS 實驗Fix 在文章裡提過一個例子他以前只讓 cloud show 某一次 crash後來超狂直接叫他讓 app 保持不 crash欸他是怎麼做到的難道只是信念突然變強嗎當然不是嘛重點是他順口帶過的一句話那個應該說是他背後做的事啦他先讓 cloud 能抓 crash report對得出版本跟 commit還給了三台不同系統的機器去重現這邊我真的很認同哪是野心變大講白了就是他能看的東西變多啦這份報告就是拿這句話來做實驗",
+     "jitter": 0.237,
+     "cps": 4.38,
+     "terms_ok": true
+    }
+   ],
+   "clear_enough": [
+    "s01_felix.take0.wav",
+    "s01_felix.take1.wav"
+   ]
+  }
+ ]
+}

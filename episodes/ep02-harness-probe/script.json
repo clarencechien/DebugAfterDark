@@ -1,8 +1,14 @@
 {
  "show": "深夜 Debug",
- "episode": "EP02 跑從來不是問題，看才是",
+ "episode": "EP02 第五招的實驗：跑從來不是問題，看才是",
  "source": "https://imitator.ai-apps.work/r/harness-probe-report",
  "audience": "工程師、想搞懂 AI 的人",
+ "series": "第五招 2/2（上：EP01）",
+ "previously": {
+  "episode": "EP01",
+  "title": "記住了第一招，漏掉了第五招",
+  "summary": "Felix 那篇文章被轉傳時漏掉了第五招：往深處推，要配一個模型以外的裁判。作者拿 Three.js 跑過一輪，發現裁判看得到什麼，野心就只能到哪裡。"
+ },
  "note": "由 tools/rewrite_episode.py 依 prompts/spoken_script_zh-TW.md 改寫；人工修正記在 rewrites/<id>.json 的 manual_edits",
  "segments": [
   {
@@ -13,7 +19,7 @@
   {
    "id": "s01_felix",
    "mood": "像深夜跟朋友聊天，有點感性但不畏縮。英文詞（Ping、pong、Claude Code、Three.js、prompt 這些）用台灣工程師平常講英文的念法自然帶過，就像台灣人講 double check 那樣",
-   "text": "這就讓我想到 Felix 的一篇文章。他是 Anthropic 的工程主管。他之前講過一個例子很有意思喔。一開始他只是請 Claude 修某個 crash。後來呢？他要 Claude 顧好整個 app。讓它完全不會 crash。<short pause>聽起來超神對不對？但重點根本不是野心變大。更扯的是他順口帶過的那句話。就是他先給了 Claude 很多權限。呃不對，應該說是給了超多工具。讓它可以抓 crash report、對 commit，還給了它三台機器去重現問題。你看，野心根本沒有變大嘛。變大的是什麼？是 Claude 到底能看到多少東西。<short pause>這份報告的作者，就是拿這句話來做實驗。"
+   "text": "上一集我們聊到，那篇文章被轉傳的時候，大家漏掉了第五招：要有一個模型以外的裁判。這集就來完整拆解那個 Three.js 實驗。Felix 在文章裡提過一個例子。他以前只讓 Claude 修某一次 crash。後來超狂，直接叫它讓 app 保持不 crash。<laugh>欸，他是怎麼做到的？難道只是信念突然變強嗎？當然不是嘛。重點是他順口帶過的一句話。那個……應該說是他背後做的事啦。他先讓 Claude 能抓 crash report，對得出版本跟 commit，還給了三台不同系統的機器去重現。<short pause>這邊我真的很認同。哪是野心變大。講白了，就是它能看的東西變多啦。這份報告，就是拿這句話來做實驗。"
   },
   {
    "id": "s02_protocol",
@@ -52,20 +58,20 @@
   }
  ],
  "phrase_usage": {
-  "你猜": 3,
+  "你猜": 4,
   "重點來了": 1,
   "醬": 1,
   "應該說": 1,
-  "有感": 2,
-  "更扯的是": 1,
-  "我看到這": 2,
+  "有感": 3,
+  "更扯的是": 0,
+  "我看到這": 3,
   "超扯": 0,
   "很扯": 0,
   "真的假的": 0,
   "欸你知道嗎": 0,
   "我是說": 2,
   "我的意思是": 0,
-  "呃不對": 1,
+  "呃不對": 0,
   "傻眼": 1
  }
 }

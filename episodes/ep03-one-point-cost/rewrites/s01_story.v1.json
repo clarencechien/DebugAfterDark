@@ -1,0 +1,90 @@
+{
+ "segment": "s01_story",
+ "position": "第 2 段，共 9 段",
+ "avoid": [
+  "超扯"
+ ],
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d27c1da3188511a15bdfc8e0b4caf53dfa55e54f1795be23d20363960527d915",
+ "previous_context": "錢到底花去哪了？我看到分析真的覺得超扯。",
+ "original": {
+  "text": "做這個工具的是一位國小老師，工具叫 FunClass 翻課星球。一開始只是做給自己用的加分工具。後來加了學生遊戲艙：學生用自己的裝置掃 QR code 進去，老師加的分會變成代幣，可以養寵物、轉蛋、打 Boss。使用者從一位老師變成整個班，每班大約三十台裝置。工具完全免費、不鎖功能，伺服器費老師自己付；他說贊助收入連一週的伺服器費都不夠。報告整理了一張計分板：左邊是做對的事，右邊是同時期選錯的技術決定。結論是功能一直在加分，架構一直在扣分。",
+  "lint": {
+   "chars": 216,
+   "precise_numbers": [
+    "三十"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 29.9,
+   "max_sentence_len": 53,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "做這個工具的是一位國小老師。\n他做了一個叫 FunClass 的工具。\n一開始，就是自己上課加分在用的。\n結果後來加了學生遊戲艙。<short pause>\n你猜裡面有什麼？\n居然能養寵物、轉蛋，還可以打 Boss 耶。\n學生只要掃 QR code 就能進去玩。\n使用者一下子從一個人，\n變成全班大約三十台裝置。\n然後那個工具完全免費，不鎖功能喔。\n等於伺服器費用全都要老師自己扛。<sigh>\n他說贊助收入，連一週的費用都不夠。\n報告裡整理了一張計分板。\n左邊是做對的事，右邊是選錯的技術決定。\n我看到那個對比真的傻眼。\n這就像……呃，應該說，\n功能一直在加分，架構卻一直在扣分啦。",
+   "lint": {
+    "chars": 250,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 15.7,
+    "max_sentence_len": 28,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "做這工具的是一位國小老師。\n那個東西叫做 FunClass 翻課星球啦。\n一開始，他就只是想自己上課加分用。\n後來呢？他加了一個學生遊戲艙。\n小朋友只要掃 QR code 進去，\n分數就能換代幣，還能養寵物、打 Boss。\n結果就是，使用者從一個人變成全班。\n不對，應該說一間教室就多了三十台裝置。\n這工具完全免費喔，\n伺服器費都是老師自己扛。\n<sigh> 你猜贊助拿了多少？\n少到連一個禮拜的伺服器費都不夠。\n報告裡整理了一張計分板。\n左邊是他做對的事，右邊是選錯的架構。\n我看到那邊真的替他捏把冷汗。\n表面上功能一直在加分，\n底層架構卻一直在扣分啦。",
+   "lint": {
+    "chars": 249,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 34,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "做這個工具的人，是一位國小老師。\n那個工具叫 FunClass 翻課星球啦。\n一開始他只是——本來只想做給自己用。\n結果後來呢？\n他加了一個叫學生遊戲艙的功能。\n學生掃 QR code 進去，加分會變代幣耶。\n還可以養寵物、轉蛋，然後一起打 Boss。\n這聽起來真的很吸引人。\n使用者直接從一個人，\n變成全班大約三十台裝置。\n重點是，完全免費、不鎖功能。\n伺服器費全部老師自己扛。\n可是你知道嗎？\n贊助收入，連一週的伺服器費都不夠。<sigh>\n我看到這邊真的替他捏一把冷汗。\n報告裡整理了一張計分板。\n左邊是做對的事，\n右邊是同時間選錯的決定。\n簡單說，就是功能一直在加分，\n架構卻一直在扣分啦。",
+   "lint": {
+    "chars": 268,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 23,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 2
+}

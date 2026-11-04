@@ -9,6 +9,12 @@ into that file's "manual_edits" list ({"from", "to", "reason"}) and into script.
 
 Segments are rewritten in order; each prompt gets the previous segment's last two sentences so the episode flows, and its
 position, so only the first segment is the cold open and only the last one carries the breakpoint and the sign-off.
+
+Series: if draft.json has "previously" ({"episode": "EP01", "title": "...", "summary": "one or two sentences"}), the
+recap segment (the one with "recap": true, else the first segment after the cold open) is told to open by linking back
+to that episode, and candidates that never say 上一集 rank last. Without this the rewrite dropped "上一集聊過…" from EP02's
+draft: the link is not in the sources, so the model treated it as filler (2026-11-04).
+--resume reapplies each finished segment's manual_edits, so reviewed fixes survive a partial rerun.
 """
 import argparse, hashlib, json, os, re, sys
 from pathlib import Path
@@ -55,6 +61,12 @@ def main(a):
     c = genai.Client(api_key=os.environ.get("GEMINI_API_KEY") or os.environ["gemini_key"])
     outdir = ep / "rewrites"; outdir.mkdir(parents=True, exist_ok=True)
     segs = sc["segments"]; new_segments = []; previous = "（這是第一段，沒有上一段）"
+    prev_ep = sc.get("previously")
+    recap_i = next((k for k, x in enumerate(segs) if x.get("recap")), 1 if prev_ep and len(segs) > 2 else None)
+    def recap_text(i):
+        if not prev_ep or i != recap_i:
+            return "（這段不用提上一集）"
+        return f"{prev_ep['episode']}〈{prev_ep['title']}〉：{prev_ep['summary']}"
     used = {k: 0 for k in PHRASE_CAPS}
     for i, seg in enumerate(segs):
         done = outdir / f"{seg['id']}.json"
@@ -62,6 +74,11 @@ def main(a):
             # container restarts kill long runs: reuse finished segments and rebuild budget + context from them
             rec = json.loads(done.read_text(encoding="utf-8"))
             text = rec["candidates"][rec["chosen"]]["text"].replace("\n", "")
+            for e in rec.get("manual_edits", []):        # reviewed fixes live here, not in the candidate text
+                if e["from"] in text:
+                    text = text.replace(e["from"], e["to"])
+                else:
+                    print(f"  warning: {seg['id']} manual edit no longer applies: {e['from'][:30]}…")
             for k, v in phrase_counts(text).items():
                 used[k] += v
             new_segments.append({"id": seg["id"], "mood": mood_of(seg), "text": text})
@@ -73,7 +90,8 @@ def main(a):
         prompt = (body.replace("{{show}}", sc["show"]).replace("{{audience}}", sc["audience"])
                   .replace("{{source}}", (src_dir / f"{seg['id']}.txt").read_text(encoding="utf-8").strip())
                   .replace("{{current}}", seg["text"]).replace("{{position}}", pos).replace("{{previous}}", previous)
-                  .replace("{{min_chars}}", str(int(n * 0.8))).replace("{{max_chars}}", str(int(n * 1.2))))
+                  .replace("{{min_chars}}", str(int(n * 0.8))).replace("{{max_chars}}", str(int(n * 1.2)))
+                  .replace("{{previously}}", recap_text(i)))
         avoid = [k for k, cap in PHRASE_CAPS.items() if used[k] >= cap]
         prompt = prompt.replace("{{avoid}}", "、".join(f"「{k}」" for k in avoid) if avoid else "（無）")
         cands = []
@@ -84,13 +102,16 @@ def main(a):
         def over_budget(t):
             pc = phrase_counts(t)
             return sum(max(0, used[k] + pc[k] - PHRASE_CAPS[k]) for k in PHRASE_CAPS) + sum(max(0, v - 1) for v in pc.values())
-        key = lambda j: (len(cands[j]["lint"]["mainland_words"]), over_budget(cands[j]["text"]),
+        needs_recap = i == recap_i and prev_ep is not None
+        key = lambda j: (needs_recap and "上一集" not in cands[j]["text"], len(cands[j]["lint"]["mainland_words"]), over_budget(cands[j]["text"]),
                          len(cands[j]["lint"]["precise_numbers"]), cands[j]["lint"]["sentences_over_20"],
                          cands[j]["lint"]["avg_sentence_len"])
         best = min(range(len(cands)), key=key)
         for k, v in phrase_counts(cands[best]["text"]).items():
             used[k] += v
-        rec = {"segment": seg["id"], "position": pos, "avoid": avoid, "model": a.model, "temperature": a.temperature,
+        if needs_recap and "上一集" not in cands[best]["text"]:
+            print(f"  warning: {seg['id']} should link back to {prev_ep['episode']} but no candidate says 上一集; fix by hand")
+        rec = {"segment": seg["id"], "position": pos, "avoid": avoid, "recap": recap_text(i) if needs_recap else None, "model": a.model, "temperature": a.temperature,
                "prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest(), "previous_context": previous,
                "original": {"text": seg["text"], "lint": lint(seg["text"])}, "candidates": cands, "chosen": best}
         (outdir / f"{seg['id']}.json").write_text(json.dumps(rec, ensure_ascii=False, indent=1), encoding="utf-8")
