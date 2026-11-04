@@ -1,10 +1,10 @@
 {
- "_note": "節目設定，tools/feed.py 讀這份產生 feed.xml。site_url 是送審後就不能改的 feed 網址（2026-11-04 定為 podcast.ai-apps.work：Cloudflare DNS 的 CNAME 指向 clarencechien.github.io，DNS only；GitHub Pages 設定填了 custom domain 並 Enforce HTTPS）。owner_email 與 author 待決定。",
+ "_note": "節目設定，tools/feed.py 讀這份產生 feed.xml。site_url 是送審後就不能改的 feed 網址（2026-11-04 定為 podcast.ai-apps.work：Cloudflare DNS 的 CNAME 指向 clarencechien.github.io，DNS only；GitHub Pages 設定填了 custom domain 並 Enforce HTTPS）。owner_email 是 Cloudflare Email Routing 轉寄到主持人信箱的地址（2026-11-04 實測收得到），公開在 feed 裡；author 待決定。",
  "title": "深夜 Debug｜Debug After Dark",
  "host": "Ping（AI 合成聲音）",
  "author": "深夜 Debug",
  "owner_name": "深夜 Debug",
- "owner_email": "",
+ "owner_email": "podcast@ai-apps.work",
  "site_url": "https://podcast.ai-apps.work",
  "custom_domain": "podcast.ai-apps.work",
  "language": "zh-tw",
