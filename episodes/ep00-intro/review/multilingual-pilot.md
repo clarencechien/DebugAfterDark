@@ -26,6 +26,9 @@
   「確かめ合う」「バグひとつ」「出どころ」（被聽成「手どころ」）。
 - 檢查紀錄：`en/qa/lang_check.json`、`ja/qa/lang_check.json`。
 
-## 還沒決定
+## 狀態（2026-11-04）
+節目擁有者聽過兩版、看過逐句對照（`multilingual-scripts.md`），稿子沒問題。**先保留文件與成品，等要做多語版時再進行**（`PIPELINE.md` §8 第 8 項）。
+
+## 到時候要先決定的
 - 英文版要不要保留輕微台灣口音（style 寫「light Taiwanese accent is fine」）。
 - 日文版要不要找一位母語者聽這一集，校正之後再決定是否只靠揭露上架。

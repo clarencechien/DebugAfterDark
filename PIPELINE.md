@@ -402,6 +402,8 @@ CLI 路徑就是在本機跑同一支 `python3 scripts/publish.py episodes/ep02-
 6. **哪些 report 適合**：public、不會很快過時、有故事可講。`HOST.md` 的節目定位把範圍從 code、Agent 擴大到「人生與 Mindset」，
    所以財經、移居這類 report 也在範圍內；數字密集的財經表格類要先試一集，看門檻降不降得下來，並加上不構成投資建議的聲明。
 7. **單集頁的 slug 前綴** `dad-ep{NN}` 會出現在 portal 列表裡，要不要之後讓 portal 把它們分成一區。
+8. **多語版**：做得到，先不做（2026-11-04）。英文版與日文版 EP00 已試作，稿子與成品留在 `episodes/ep00-intro/en/`、`ja/`，結果在 `episodes/ep00-intro/review/multilingual-pilot.md`，逐句對照在 `multilingual-scripts.md`，節目擁有者聽過，稿子沒問題。
+   要做的時候：每種語言一個獨立節目與 feed（`/en/feed.xml`、`/ja/feed.xml`）；英文由節目擁有者審；日文在音檔開頭與說明揭露「沒有經過母語者確認」，第一集最好仍找一位母語者聽過再決定；音檔量變大前先把 mp3 搬到 Cloudflare R2。工具：`make_podcast.py` 讀 script.json 的 `chars_per_sec`、`mood_joiner`、`base_style_v5`，挑選與檢查用 `tools/lang_check.py`。
 
 ---
 
