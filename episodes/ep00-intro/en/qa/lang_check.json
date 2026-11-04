@@ -1,0 +1,116 @@
+{
+ "language": "en",
+ "ref": "out/segments/D1_ep05-reef-chart",
+ "zh_baseline": [
+  0.987,
+  0.979,
+  0.99,
+  0.988,
+  0.984,
+  0.987,
+  0.977,
+  0.988,
+  0.981
+ ],
+ "segments": [
+  {
+   "id": "s00_open",
+   "chosen": "s00_open.take1.wav",
+   "takes": [
+    {
+     "file": "s00_open.take0.wav",
+     "error": 0.021,
+     "jitter": 0.184,
+     "units_per_s": 2.47,
+     "seconds": 57.9,
+     "sim_zh": 0.953,
+     "text": "Hey, still awake? Let me ping you real quick. Welcome to Debug After Dark. I'm Ping. Yep, ping. Like the thing one computer sends another to ask, hey, are you still there? Before we start, let me ask you something. Do you remember what it felt like to write code yourself? Late at night, the only sound in the room is your laptop fan. The screen is full of red. One weird bug has eaten your whole evening The whole world is asleep and you're still tracing it, line by line And then, at some point, it just clicks You change that one line, hit run, and the tests go green All the way down The room is dead quiet, but you kinda want to run to the window and yell That rush of catching a bug yourself You remember that, right?"
+    },
+    {
+     "file": "s00_open.take1.wav",
+     "error": 0.0,
+     "jitter": 0.179,
+     "units_per_s": 2.36,
+     "seconds": 60.5,
+     "sim_zh": 0.949,
+     "text": "Hey, still awake? Let me ping you real quick. Welcome to Debug After Dark. I'm Ping. Yep, Ping, like the thing one computer sends another to ask. Hey, are you still there? Before we start, let me ask you something. Do you remember what it felt like to write code yourself? Late at night, the only sound in the room is your laptop fan. the screen is full of red. One weird bug has eaten your whole evening. The whole world is asleep and you're still tracing it, line by line. And then, at some point, it just clicks. You change that one line, hit run, and the tests go green, all the way down. The room is dead quiet, but You kind of want to run to the window and yell That rush of catching the bug yourself You remember that, right?"
+    },
+    {
+     "file": "s00_open.take2.wav",
+     "error": 0.014,
+     "jitter": 0.205,
+     "units_per_s": 2.6,
+     "seconds": 55.0,
+     "sim_zh": 0.953,
+     "text": "Hey, still awake? Let me ping you real quick. Welcome to Debug After Dark. I'm ping. Yep, ping. Like the thing one computer sends another to ask, hey, are you still there? Before we start, let me ask you something. Do you remember what it felt like to write code yourself? Late at night, the only sound in the room is your laptop fan. The screen is full of red. one weird bug has eaten your whole evening the whole world is asleep and you are still tracing it line by line and then at some point it just clicks you change that one line hit run and the tests go green all the way down the room is dead quiet but you kind of want to run to the window and yell that rush of catching the bug yourself. You remember that, right?"
+    }
+   ]
+  },
+  {
+   "id": "s01_now",
+   "chosen": "s01_now.take0.wav",
+   "takes": [
+    {
+     "file": "s01_now.take0.wav",
+     "error": 0.015,
+     "jitter": 0.18,
+     "units_per_s": 2.12,
+     "seconds": 64.8,
+     "sim_zh": 0.956,
+     "text": "Then, AI showed up. Honestly, how often do you still write code yourself these days? Thousands of lines show up in seconds. It feels like we went from writing programs to reviewing results and reviewing invoices. So, in theory, no more late nights, right? Funny thing is, we still can't sleep. Because the bugs didn't go away. they just change shape now the thing you debug is an agent that goes off the rails halfway through a model that sounds completely sure of itself while making things up a screen with zero errors and an answer that's just wrong and sometimes the thing that needs debugging is us tech moves so fast our brains crash once in a while too. Oh, and full disclosure, my voice is AI generated, so one more thing that needs debugging."
+    },
+    {
+     "file": "s01_now.take1.wav",
+     "error": 0.0,
+     "jitter": 0.184,
+     "units_per_s": 2.15,
+     "seconds": 63.6,
+     "sim_zh": 0.951,
+     "text": "Then, AI showed up. Honestly, how often do you still write code yourself these days? Thousands of lines show up in seconds. It feels like we went from writing programs to reviewing results and reviewing invoices. So, in theory, no more late nights, right? Funny thing is, we still can't sleep. Because the bugs didn't go away. They just changed shape. Now, the thing you debug is an agent that goes off the rails halfway through. A model that sounds completely sure of itself while making things up. A screen with zero errors and an answer that's just wrong. And sometimes, the thing that needs debugging is us. Tech moves so fast, our brains crash once in a while too. Oh, and full disclosure. My voice is AI generated, so I'm one more thing that needs debugging"
+    },
+    {
+     "file": "s01_now.take2.wav",
+     "error": 0.0,
+     "jitter": 0.182,
+     "units_per_s": 2.08,
+     "seconds": 65.7,
+     "sim_zh": 0.942,
+     "text": "Then, AI showed up. Honestly, how often do you still write code yourself these days? Thousands of lines show up in seconds. It feels like we went from writing programs to reviewing results and reviewing invoices. So, in theory, no more late nights, right? Funny thing is, we still can't sleep because the bugs didn't go away. they just changed shape. Now, the thing you debug is an agent that goes off the rails halfway through. A model that sounds completely sure of itself while making things up. A screen with zero errors and an answer that's just wrong. And sometimes the thing that needs debugging is us. Tech moves so fast, our brains crash once in a while too. Oh, and full disclosure, my voice is AI generated, so I'm one more thing that needs debugging."
+    }
+   ]
+  },
+  {
+   "id": "s02_outro",
+   "chosen": "s02_outro.take2.wav",
+   "takes": [
+    {
+     "file": "s02_outro.take0.wav",
+     "error": 0.013,
+     "jitter": 0.167,
+     "units_per_s": 2.77,
+     "seconds": 55.2,
+     "sim_zh": 0.928,
+     "text": "So, what is this show? Each episode, I pick one report from the imitator site and turn it into something you can follow on your commute or while doing the dishes. The scripts are checked against the original report. And if I can't find a source for something, I don't say it. And every episode is heard by a real person, start to finish before it goes out. No unchecked hacks here. We'll talk code, we'll talk agents, and we'll talk about keeping your own head in shape while AI rewrites everything around us. At the end of every episode, I'll set a break point, and we'll stop and pick up three things to take with you. Links to the original reports, which are in Chinese, are in the show notes. Okay, leave one small light on, grab a glass of water. If you're getting this, send me a pong. See you next time."
+    },
+    {
+     "file": "s02_outro.take1.wav",
+     "error": 0.013,
+     "jitter": 0.173,
+     "units_per_s": 2.73,
+     "seconds": 56.0,
+     "sim_zh": 0.951,
+     "text": "So, what is this show? Each episode, I pick one report from the imitator site and turn it into something you can follow on your commute or while doing the dishes. The scripts are checked against the original report and if I can't find a source for something, I don't say it. And every episode is heard by a real person, start to finish, before it goes out. No unchecked hacks here. We'll talk code, we'll talk agents, and we'll talk about keeping your own head in shape while AI rewrites everything around us. At the end of every episode, I'll set a break point, and we'll stop and pick up three things to take with you. Links to the original reports, which are in Chinese, are in the show notes. Okay, leave one small light on, grab a glass of water. If you're getting this, send me a pong. See you next time."
+    },
+    {
+     "file": "s02_outro.take2.wav",
+     "error": 0.026,
+     "jitter": 0.153,
+     "units_per_s": 2.64,
+     "seconds": 58.0,
+     "sim_zh": 0.952,
+     "text": "so what is this show each episode i pick one report from the imitator site and turn it into something you can follow on your commute or while doing the dishes the scripts are checked against the original report and if i can't find a source for something i don't say it and every episode is heard by a real person start to finish before it goes out no unchecked hacks here we'll talk code we'll talk agents and we'll talk about keeping your own head in shape while ai rewrites everything around us at the end of every episode i'll set the break point and we'll stop and pick up three things to take with you links to the original reports which are in chinese are in the show notes okay leave one small light on grab a glass of water if you're getting this send me a pong see See you next time."
+    }
+   ]
+  }
+ ]
+}
