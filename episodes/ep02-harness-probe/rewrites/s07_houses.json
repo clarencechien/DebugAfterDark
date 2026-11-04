@@ -1,0 +1,137 @@
+{
+ "segment": "s07_houses",
+ "position": "第 8 段，共 9 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "有感",
+  "更扯的是",
+  "我看到這",
+  "我是說",
+  "呃不對",
+  "傻眼"
+ ],
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0dac7bef56d4f8f20348d54c3c0ca23ab68c4e23f3305b9d600e67a5cd68109d",
+ "previous_context": "我讀到這邊真的狂點頭。如果沒有夠水準的回饋，對模型設再高的目標，最後也只是看起來做到而已啦。",
+ "original": {
+  "text": "harness 的產出不只是成品，是失敗清單，而失敗清單比成品值錢：那十五萬 token 買到的，一大半是「知道哪裡會壞」，寫成筆記之後幾百個 token 就能交給下一個模型。報告用三隻小豬比喻：稻草屋是聊天介面、人當眼睛；木屋是 Claude Code、機器當眼睛；磚屋是實驗室的 harness，外面的人看不到。Felix 的「要更有野心」是對住磚屋的人講的；對住稻草屋的人，誠實的建議是先接好眼睛。報告也提醒：它由 Claude 協助撰寫，Claude 是被比較的產品之一，數字請自己核對。想自己驗：同一段 prompt 貼進你平常用的介面，用真的瀏覽器看滿 60 秒，只記症狀不記解法。",
+  "lint": {
+   "chars": 281,
+   "precise_numbers": [
+    "十五萬",
+    "百",
+    "60"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 55.2,
+   "max_sentence_len": 82,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "然後這份報告點出一個超棒的概念。<short pause>\n測試架構產出的其實不是成品。\n它產出的是失敗清單。\n而且失敗清單比成品還值錢喔。\n你覺得工具跑那麼多次，到底買到了什麼？\n就是它知道哪裡會壞掉嘛。\n整整十五萬個 token 買到的經驗，\n寫成筆記只要一點點字數，\n就能直接交給下一個模型。\n報告還用三隻小豬來打比方。\n用聊天介面配人眼，那是稻草屋；\n用 Claude Code 讓機器當眼睛，算木屋；\n實驗室那種完整架構，才是真正的磚屋。\n所以人家說「目標要想大一點」，\n那是講給住磚屋的人聽的啦。<laugh>\n如果我們還住在稻草屋，\n最中肯的建議不是野心，\n對，其實是先想辦法把眼睛接好。\n喔對了，作者有特別提醒，\n這份報告是 Claude 幫忙寫的，\n大家還是要自己去核對。\n想自己驗證的話也很簡單，\n把同一個 prompt 拿去跑，\n用瀏覽器盯滿一分鐘，\n只記症狀，不要急著給解法。",
+   "lint": {
+    "chars": 347,
+    "precise_numbers": [
+     "十五萬"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 25.7,
+    "max_sentence_len": 54,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "對啊，所以 harness 跑完留下來的，不是成品，而是一份失敗清單。最厲害的是，這份清單比成品更值錢。你知道為什麼嗎？因為模型燒了十五萬個 token，其實一大半都在買「哪裡會壞掉」。寫成筆記後，幾行字就能傳給下一代。<short pause>報告把這件事比成三隻小豬的屋子。稻草屋就是網頁介面，用人肉當眼睛；木屋是 Claude Code，讓機器幫你檢查；磚屋則是實驗室的高級架構，外人看不到。所以聽到有人喊「野心要大一點」，先等等，那是講給住磚屋的人聽的啦。住稻草屋的人，誠實建議是先接好眼睛。<laugh>對了，這份報告是 Claude 幫忙寫的喔，數字大家要自己去對一下。你想驗證也很簡單，把 prompt 貼進平常的介面，瀏覽器打開看滿一分鐘，只寫解法，等一下，是只記症狀不記解法。這份清單，保證比你做出來的成品還值錢。",
+   "lint": {
+    "chars": 337,
+    "precise_numbers": [
+     "十五萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 27.1,
+    "max_sentence_len": 57,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "所以 harness 跑完留下的，其實不是成品。<short pause>\n最值錢的反而是失敗清單喔。\n你知道為什麼嗎？\n因為踩過的雷比成品更珍貴嘛。\n像 Claude Code 跑了十五萬 token，\n一大半是在買「知道哪裡會壞」。\n就是……怎麼講，\n那些筆記只要幾百個 token，\n就能直接交給下個模型了。\n報告還用三隻小豬來比喻：<short pause>\n稻草屋是聊天介面，人當眼睛；\n木屋是 Claude Code，機器當眼睛；\n磚屋是實驗室 harness，外面看不到。\n那個「要有野心」的說法，\n其實是對住磚屋的人講的啦。\n如果你還住在稻草屋，\n老實說，先接好眼睛比較實在。\n這份報告很老實，\n它自己也是 Claude 幫忙寫的，\n數據記得自己核對一下。\n想驗的話，prompt 貼進你的介面，\n開瀏覽器看滿一分鐘，\n只記症狀、不記解法。\n這段比喻真的戳到痛處欸，\n差的那一欄，就是你的屋子了。",
+   "lint": {
+    "chars": 343,
+    "precise_numbers": [
+     "十五萬",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 27.6,
+    "max_sentence_len": 65,
+    "sentences_over_20": 9,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "測試架構產出的其實不是成品。它產出的是失敗清單。",
+   "to": "harness 產出的不只是成品，還有失敗清單。",
+   "reason": "改了原意：素材是「harness 的產出不只是成品，是失敗清單」；也統一用 s02 解釋過的 harness"
+  },
+  {
+   "from": "整整十五萬個 token 買到的經驗",
+   "to": "大約十五萬個 token 買到的經驗",
+   "reason": "素材是估計值（±30%）"
+  },
+  {
+   "from": "所以人家說「目標要想大一點」，那是講給住磚屋的人聽的啦。",
+   "to": "所以 Felix 說要更有野心，那是講給住磚屋的人聽的啦。",
+   "reason": "歸屬：素材是「Felix 的『要更有野心』是對住磚屋的人講的」"
+  },
+  {
+   "from": "這份報告是 Claude 幫忙寫的，大家還是要自己去核對。",
+   "to": "這份報告是 Claude 幫忙寫的，而 Claude 本身就是被比的對象之一，所以數字大家要自己去核對。",
+   "reason": "漏掉提醒的重點：Claude 是被比較的產品之一"
+  },
+  {
+   "from": "用聊天介面配人眼，那是稻草屋；用 Claude Code 讓機器當眼睛，算木屋；實驗室那種完整架構，才是真正的磚屋。",
+   "to": "用聊天介面配人眼，那是稻草屋。用 Claude Code 讓機器當眼睛，算木屋。實驗室那種完整架構，才是真正的磚屋。",
+   "reason": "59 字的長句拆開"
+  },
+  {
+   "from": "想自己驗證的話也很簡單，把同一個 prompt 拿去跑，用瀏覽器盯滿一分鐘，只記症狀，不要急著給解法。",
+   "to": "想自己驗，就拿同一個 prompt 去跑，用瀏覽器看滿一分鐘，只記症狀就好。",
+   "reason": "整段 366 字超過 350 字上限，縮短"
+  },
+  {
+   "from": "喔對了，作者有特別提醒，這份報告是 Claude 幫忙寫的，而 Claude 本身就是被比的對象之一，所以數字大家要自己去核對。",
+   "to": "喔對了，作者有特別提醒。這份報告是 Claude 幫忙寫的，而 Claude 本身就是被比的對象之一。所以數字大家要自己去核對。",
+   "reason": "64 字的長句拆開（上一處修正加長的）"
+  }
+ ]
+}

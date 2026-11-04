@@ -1,0 +1,117 @@
+{
+ "segment": "s04_numbers",
+ "position": "第 5 段，共 9 段",
+ "avoid": [
+  "應該說",
+  "更扯的是",
+  "呃不對"
+ ],
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "01d3223c7882f5052fdce8d6a7d89131dea6adf9f92856137ad6c50681a22044",
+ "previous_context": "或是現成的天空套件一直發白，模型試了幾次抓狂，那個，是試了幾次搞不定，乾脆自己寫一小段漸層天空換掉它。整題水上飛機，全都是這種畫面問題啦。",
+ "original": {
+  "text": "第二類是跑得動但數字錯：摩擦力套錯時間單位，鋼珠用每秒零點一公尺在爬；出口斜坡往托盤方向是上坡一公分，珠子滾回去。這些畫面看起來全對，只有把位置隨時間印出來才找得到。第三類是裁判比被裁判的東西還慢：沒有顯示卡的瀏覽器每秒只跑 2 到 14 格，8 秒只跑了三、四秒的模擬，截圖裡飛機還在滑行。每個有意義的檢查都要另外寫探針，合計大約 250 行，這才是 harness 真正的成本，而且是看不見的那種。",
+  "lint": {
+   "chars": 192,
+   "precise_numbers": [
+    "零點一",
+    "2",
+    "14",
+    "8",
+    "250"
+   ],
+   "enumerations": [
+    "第二",
+    "第三"
+   ],
+   "sentences": 4,
+   "avg_sentence_len": 47.0,
+   "max_sentence_len": 57,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "畫面修好就沒事了嗎？<short pause>\n哪有那麼簡單啦。\n接下來是跑得動、但數字全錯的狀況。\n像是摩擦力套錯單位，鋼珠慢到像在散步；\n或是出口斜坡，那個，斜坡高了一點點，\n珠子就直接滾回去了。<laugh>\n最陰險的是，畫面看起來全都是對的喔。\n你猜要怎麼抓？\n只有把數據印出來才看得到。\n然後，還有更鬧的。\n就是負責打分數的裁判，跑得比選手還慢。\n沒有顯卡輔助，速度慢到像在看投影片。\n時間到了截圖，飛機根本還在滑行嘛。\n結果為了解決這個，你得額外寫腳本去監控。\n光是探針就寫了整整兩百五十行，\n這才是 harness 看不見的真正成本啦。",
+   "lint": {
+    "chars": 238,
+    "precise_numbers": [
+     "兩百五十"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 17.3,
+    "max_sentence_len": 46,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "除了畫面問題，第二種更陰險。\n程式有在跑，但數字全錯。\n像摩擦力算錯，鋼珠在畫面上慢慢爬。\n或是斜坡做反了，珠子滾回去。\n畫面看起來都對喔。\n你得把座標隨時間印出來才抓得到。\n<sigh> 那第三種狀況呢？\n裁判居然比被測的東西還慢。\n測試環境太卡，時間根本對不上。\n截圖抓到的東西，實際上都還沒跑完。\n你猜要怎麼解決？\n只能額外寫 script 去當探針。\n就是...我是說，要多寫兩百五十行的腳本。\n我看到這邊整個傻眼。\n這才是 harness 看不見的真正成本啦。",
+   "lint": {
+    "chars": 210,
+    "precise_numbers": [
+     "兩百五十"
+    ],
+    "enumerations": [
+     "第二",
+     "第三"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 13.0,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "畫面搞定之後，還有第二類問題。<short pause>\n就是程式跑得動，但物理數字全錯。\n像是摩擦力算錯，鋼珠在地上慢慢爬；\n或是出口歪了一點，我是說往上翹了一公分，\n珠子就直接滾回去啦。<sigh>\n最扯的是什麼？畫面看起來完全沒問題喔！\n你一定要把位置印出來看，才抓得到蟲。\n然後第三類更妙，裁判比選手還要慢。\n測試環境跑太慢，八秒只跑了三、四秒模擬。\n裁判截圖的時候，飛機其實還在滑行。\n你猜他怎麼做？只能另外寫腳本去監控。\n這些探針加起來，大概有兩百五十行。\n這才是 harness 看不見的真正成本耶。",
+   "lint": {
+    "chars": 224,
+    "precise_numbers": [
+     "兩百五十"
+    ],
+    "enumerations": [
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 46,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "或是斜坡做反了，珠子滾回去。",
+   "to": "或是出口的斜坡其實有一點點上坡，珠子就滾回去。",
+   "reason": "不準確：素材是「出口斜坡往托盤方向上坡 1 公分」，不是做反"
+  },
+  {
+   "from": "要多寫兩百五十行的腳本。",
+   "to": "要多寫大約兩百五十行的腳本。",
+   "reason": "素材是「合計約 250 行」"
+  }
+ ]
+}

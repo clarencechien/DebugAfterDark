@@ -1,0 +1,114 @@
+{
+ "segment": "s03_picture",
+ "position": "第 4 段，共 9 段",
+ "avoid": [
+  "應該說",
+  "更扯的是",
+  "呃不對"
+ ],
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4b04f10efd8837fea5db652270ad07f9aee5fa72699da88ed8d708304600555f",
+ "previous_context": "讓模型能自己跑、看畫面、再修改。聊天介面，就是沒有這種迴圈的 harness。",
+ "original": {
+  "text": "Claude Code 那一欄：三題合計十五次修改、人介入零次、五十分鐘。每一版第一次就零錯誤，五六百行沒截斷。十五次全花在裁判看不見的地方，分三類。第一類是跑得動但畫面錯：白色泡沫畫在白色水面上看不見；太陽很低時飛機的影子被拉到四十公尺外，也看不見；天空的現成零件在某些太陽角度一律發白，最後模型自己寫了一個漸層天空取代它。水上飛機那題五次修改全是這種。",
+  "lint": {
+   "chars": 176,
+   "precise_numbers": [
+    "十五",
+    "五十",
+    "五六百",
+    "十五",
+    "四十"
+   ],
+   "enumerations": [
+    "第一",
+    "第一"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 34.2,
+   "max_sentence_len": 87,
+   "sentences_over_20": 2,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "像 Claude Code 跑的那幾題，\n前後大概花了不到一小時。<short pause>\n你知道最神的是什麼嗎？\n人類完全沒插手，放給它自己跑。\n而且每一次產出來都零錯誤，直接能動。\n那總共十五次修改，到底在忙什麼？\n其實都在修畫面哪裡怪怪的啦。\n好比說，白色的浪花畫在白水面上，根本看不見。\n或是太陽太低，飛機影子被拉到超遠。\n那個、就是現成的天空套件一直泛白，<laugh>\n它最後自己重寫了一小段漸層天空換掉它。\n光水上飛機那一題，\n改動全都在抓這種視覺 bug 耶。",
+   "lint": {
+    "chars": 202,
+    "precise_numbers": [
+     "十五"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.2,
+    "max_sentence_len": 35,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "三題加起來，總共修改了十五次。<short pause>\n重點是完全沒人幫忙，全部自己跑。\n每一版都是一次過，\n連一個 error 都沒有喔。\n那它到底都在改什麼？\n都在改裁判看不到的視覺細節。\n第一種，就是程式跑得動，但畫面很瞎。<laugh>\n像水上飛機那題，\n白色浪花畫在白色水面上，根本看不出來嘛！\n或是現成的天空套件一直發白，\n模型試了幾次抓狂，\n那個，是試了幾次搞不定，\n乾脆自己寫一小段漸層天空換掉它。\n整題水上飛機，全都是這種畫面問題啦。",
+   "lint": {
+    "chars": 192,
+    "precise_numbers": [
+     "十五"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 20.3,
+    "max_sentence_len": 50,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "有了 harness 之後，<short pause>\n來看 Claude Code 的實測數據。\n整個測試跑完，完全沒有人插手，\n大概只花了一頓飯的時間。\n重點來了，整整十五次修改，\n竟然沒有一次是在修 bug 喔。\n每一版 code 一跑就動，幾百行一次搞定。\n那它到底在忙什麼？\n就是，其實不是修程式，它改的全是畫面問題啦。\n像是水上飛機那題，\n白色泡沫畫在白色水面上，根本看不見嘛。<laugh>\n還有太陽太低，飛機影子被拉到老遠去。\n天空套件怎麼調都發白，\n模型最後自己寫了一段 code 把零件換掉。\n我看到這邊真的起雞皮疙瘩耶。",
+   "lint": {
+    "chars": 226,
+    "precise_numbers": [
+     "十五",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 21.6,
+    "max_sentence_len": 30,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "三題加起來，總共修改了十五次。",
+   "to": "先看 Claude Code 這一組。三題加起來，總共修改了十五次。",
+   "reason": "補上這是哪一組；後面 s05 才講聊天介面，不講清楚會以為是全部"
+  },
+  {
+   "from": "或是現成的天空套件一直發白，模型試了幾次抓狂",
+   "to": "或是現成的天空套件一直發白。模型試了幾次抓狂",
+   "reason": "50 字的長句拆開"
+  }
+ ]
+}

@@ -92,5 +92,12 @@
    }
   }
  ],
- "chosen": 2
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "作者前後改了……就是那個，迭代了十五次。",
+   "to": "實驗裡的 AI 自己前後改了……就是那個，迭代了十五次。",
+   "reason": "歸屬：十五次迭代是 Claude Code 自己跑的，人介入零次（sources/s00_open.txt、s03_picture.txt），不是作者改的"
+  }
+ ]
 }

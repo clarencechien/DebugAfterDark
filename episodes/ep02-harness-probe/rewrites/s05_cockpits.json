@@ -1,0 +1,117 @@
+{
+ "segment": "s05_cockpits",
+ "position": "第 6 段，共 9 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "更扯的是",
+  "我看到這",
+  "呃不對",
+  "傻眼"
+ ],
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "74f4ad5cd5c49e2d2c25f0dd028555c07db8887c361beee2ae2f3d287e05816f",
+ "previous_context": "我看到這邊整個傻眼。這才是 harness 看不見的真正成本啦。",
+ "original": {
+  "text": "同一題水上飛機，再丟到三個聊天介面各飛一次。最乾淨的是 Gemini 那欄，因為它沒看過任何紀錄。它的第一版最有野心：自己加了小島、松樹、碼頭、螺旋槳、航行燈，一千三百多行一次吐完。也是唯一跑起來有問題的：畫面一直閃。第二回合把想到的原因全修了，剩機翼尖端在閃；第三回合找到翼尖的圓蓋跟主翼同厚度同高度、表面疊在一起，修好。三個毛病全部出在 prompt 沒要求的地方。報告的話：沒有感知的野心，長出來的全是裝飾；壞掉的，也全是裝飾。（另外兩個 Claude 聊天欄看過前面的失敗清單，算污染，失敗才有參考價值。）",
+  "lint": {
+   "chars": 251,
+   "precise_numbers": [
+    "一千三百"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 27.0,
+   "max_sentence_len": 52,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那個，接下來他們把同一題丟去聊天介面。\n裡面最乾淨的對照組，就是 Gemini。\n因為它完全沒看過前面的 log 嘛。\n你知道它第一版有多拼嗎？<short pause>\n它一次吐出一千三百四十八行！\n而且它超有野心喔，\n自己偷加了小島、松樹跟碼頭。\n明明 prompt 根本沒叫它加這些欸。\n結果跑起來怎樣？\n然後，它是唯一一個畫面狂閃、還會卡的。\n這中間來回搞了幾輪——\n對，就是修了三次才搞定。\n最妙的是，所有出問題的地方，\n全部都在它自己偷加的裝飾上。<laugh>\n我讀到那句結論真的起雞皮疙瘩。\n沒有感知的野心，長出來的全是裝飾；\n壞掉的，也全是裝飾啦。",
+   "lint": {
+    "chars": 242,
+    "precise_numbers": [
+     "一千三百四十八"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 27,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那如果換成平常聊天的介面呢？\n作者把同一段水上飛機 prompt 拿去試飛。\n那個，最乾淨的測試其實是 Gemini。\n因為它完全沒看過前面的除錯紀錄嘛。\n結果你知道怎樣嗎？\n它的第一版超有野心。\n自己加了一堆 prompt 沒寫的東西。\n像小島、松樹，等等，它連碼頭都做出來了。\n程式碼一千三百多行一次吐完。\n<laugh> 但它也是唯一跑起來出問題的。\n整個畫面一直在閃。\n修了三回合，才發現是機翼零件疊在一起。\n重點是，搞砸的地方全部是原本沒要求的。\n報告寫了一句超神的話。<short pause>\n沒有感知的野心，長出來的全是裝飾。\n壞掉的，也全是裝飾。\n這句真的講進心坎裡耶。\n對，另外兩個 Claude 算被污染了。\n因為它們早就偷看過之前的失敗紀錄啦。",
+   "lint": {
+    "chars": 288,
+    "precise_numbers": [
+     "一千三百"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 19,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "除了跑 script，作者也測了聊天介面。\n兩個 Claude 讀過前面紀錄，算污染了。\n所以整個測試裡，最乾淨的就是 Gemini。\n你知道它第一版有多拼嗎？\n它一口氣吐出一千三百四十八行。\n小島跟碼頭它全自己加。\n對，就是連航行燈都做進去了。\n結果呢？它是唯一跑起來出事的。<laugh>\n整個畫面一直狂閃，還會小卡。\n後來來回改了三回合，才終於修好。\n最妙的是，出問題的地方，\n原本 prompt 根本沒叫它做嘛。\n讀到作者最後那句結論，我整個起雞皮疙瘩。\n他說：沒有感知的野心，長出來的全是裝飾。\n然後壞掉的，也剛好全是裝飾啦。",
+   "lint": {
+    "chars": 241,
+    "precise_numbers": [
+     "一千三百四十八"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 27,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "報告寫了一句超神的話。",
+   "to": "報告寫了一句很到位的話。",
+   "reason": "「超神」在 s01 用過一次"
+  },
+  {
+   "from": "因為它們早就偷看過之前的失敗紀錄啦。",
+   "to": "因為它們跑的那個對話，早就讀過前面的失敗紀錄啦。",
+   "reason": "「偷看」暗示故意；素材是「那個對話已經讀過 Claude Code 欄的失敗清單」"
+  }
+ ]
+}

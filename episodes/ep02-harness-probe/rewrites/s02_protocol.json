@@ -1,0 +1,102 @@
+{
+ "segment": "s02_protocol",
+ "position": "第 3 段，共 9 段",
+ "avoid": [
+  "應該說",
+  "更扯的是",
+  "呃不對"
+ ],
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f2af3f8ad50312006d29e51adaa4f3768296ec55aafb85492207b4f113b48981",
+ "previous_context": "是 Claude 到底能看到多少東西。這份報告的作者，就是拿這句話來做實驗。",
+ "original": {
+  "text": "實驗怎麼做：三個用 Three.js 寫的單檔網頁小題目（Three.js 是在網頁上畫 3D 的工具），一題水上飛機起降、一題從一張圖做哥德式馬車、一題鋼珠軌道。prompt 固定、一字不改。人只能做三件事：貼 prompt、回報錯誤訊息或截圖加一句話、說停。裁判是一支先寫好的程式：打開網頁收 8 秒的錯誤訊息、拍三張截圖。harness 就是包在模型外面、讓它能跑、能看、能改、再跑的那一層；聊天介面是沒有迴圈的 harness。",
+  "lint": {
+   "chars": 207,
+   "precise_numbers": [
+    "3",
+    "8"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 40.4,
+   "max_sentence_len": 76,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那這個實驗到底怎麼做？\n作者出了三題單檔網頁。\n題目用 Three.js，就是在網頁畫 3D 的工具。\n有水上飛機、看圖做馬車，還有鋼珠軌道。\n重點來了，人幾乎不能插手幫忙。\n你猜人能做什麼？<short pause>\n只能貼 prompt、回報錯誤訊息，還有喊停。\n就醬，完全不能改 code、不能打 pass。<laugh>\n那誰來當裁判？\n作者寫了一支程式來自動檢查。\n打開網頁收八秒的錯誤，順便截圖。\n看到這裡我真的覺得超嚴密。\n然後報告常講到 harness 這個詞。\n它就是...也就是包在模型外面的工具啦。\n讓模型能自己跑、看畫面、再修改。\n聊天介面，就是沒有這種迴圈的 harness。",
+   "lint": {
+    "chars": 257,
+    "precise_numbers": [
+     "3"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 23,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那實驗到底怎麼玩？\n作者出了三題，用 Three.js 寫單檔網頁。\nThree.js 就是在瀏覽器畫 3D 的工具啦。\n題目有水上飛機、看圖做馬車，還有鋼珠軌道。\n而且那個 prompt，規定一個字都不能改。\n重點來了，人類完全不能幫忙修 code。\n你猜人能幹嘛？\n只能貼 prompt、回報錯誤截圖，然後喊停。\n裁判是一支寫好的程式，負責開網頁截圖抓錯。\n我看到這個規格整個起雞皮疙瘩。<short pause>\n然後，報告裡提到一個詞，叫做 harness。\n它算包在模型外面的工具箱，\n沒啦，是整套自動工作環境。\n它可以讓模型自己跑、看結果、改了再重跑。\n對，平常我們用的聊天介面，\n就是少了自動迴圈的 harness 喔。",
+   "lint": {
+    "chars": 278,
+    "precise_numbers": [
+     "3"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 18.9,
+    "max_sentence_len": 30,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "那作者到底怎麼測的？\n他出了幾道題目，要寫成單檔網頁。\n用的工具是 Three.js，\n就是那個在網頁上畫 3D 的套件啦。\n有水上飛機起降、看圖做馬車，還有鋼珠軌道。\nprompt 固定一字不改。\n那人在旁邊能幹嘛？你猜猜看。<short pause>\n人只能貼 prompt、回報報錯——\n我是說回報 console 截圖，還有喊停。\n完全不准幫忙改 code 喔。\n我看到這邊覺得這規定超硬的。\n然後裁判是一支寫好的 script，\n打開網頁收八秒的 console 錯誤，再拍截圖。\n對，這邊還要講一個詞叫 harness。\n這到底是啥？\n簡單講，就是包在模型外面的工具層啦。\n讓 AI 能跑、能看、還能改 code。\n平常的聊天介面，就是沒有迴圈的 harness。",
+   "lint": {
+    "chars": 291,
+    "precise_numbers": [
+     "3"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 39,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "mainland_words": [
+     "啥"
+    ],
+    "questions": 3,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "就醬，完全不能改 code、不能打 pass。",
+   "to": "就醬，完全不能改 code、也不能教它怎麼做。",
+   "reason": "「打 pass」素材沒有；協定是「不能改碼、不能提示做法」"
+  }
+ ]
+}

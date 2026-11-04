@@ -1,0 +1,96 @@
+{
+ "segment": "s08_outro",
+ "position": "第 9 段，共 9 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "有感",
+  "更扯的是",
+  "我看到這",
+  "我是說",
+  "呃不對",
+  "傻眼"
+ ],
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f4cc104813aa6a4dce64b6796b374212b08ccdbdf2e3c46b8a921b2c0911d32f",
+ "previous_context": "喔對了，作者有特別提醒，這份報告是 Claude 幫忙寫的，大家還是要自己去核對。想自己驗證的話也很簡單，把同一個 prompt 拿去跑，用瀏覽器盯滿一分鐘，只記症狀，不要急著給解法。",
+ "original": {
+  "text": "今晚的 breakpoint 三個重點：一、跑起來從來不是問題，看得到才是；二、裁判的解析度決定一切，沒報錯不等於對；三、失敗清單比成品值錢，先接好眼睛，再談野心。然後片尾：原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 122,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 29.5,
+   "max_sentence_len": 79,
+   "sentences_over_20": 2,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n這集到底要帶走什麼？\n第一，跑從來不是問題，看得到結果才是。\n第二，裁判的時間跟空間解析度決定一切。\n最後，比起做出的成品，那個、失敗清單其實更值錢啦。\n記得先接好眼睛，再談野心喔。<short pause>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 140,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 24,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n聊了這麼多，最關鍵的是什麼？\n就是這三件事。\n跑 code 從來不是問題，看得到才是。\n然後，裁判的解析度，對，看得夠細才算數。\n還有，失敗清單比成品值錢。\n先接好眼睛，再來談野心啦。\n\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 138,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 12.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "好，然後今晚的 breakpoint。<short pause>所以到底要帶走什麼？就是這三件事啦。第一，跑起來從來不是問題，看得到結果才是。第二，裁判解析度決定一切，沒報錯不等於對。第三，失敗清單比成品值錢，對，先接好眼睛。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 136,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 14.1,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1
+}

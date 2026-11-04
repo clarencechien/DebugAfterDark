@@ -1,0 +1,96 @@
+{
+ "segment": "s06_judge",
+ "position": "第 7 段，共 9 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "有感",
+  "更扯的是",
+  "我看到這",
+  "呃不對",
+  "傻眼"
+ ],
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2ec7e188862375f4db5dc5df81173e2cde53808772d65a5f2c35ca4e459ab492",
+ "previous_context": "對，另外兩個 Claude 算被污染了。因為它們早就偷看過之前的失敗紀錄啦。",
+ "original": {
+  "text": "實驗也打了自己一巴掌：那支裁判對幾何和顏色有效，對閃爍和卡頓是盲的。閃爍是每秒六十格的現象，每秒五格的截圖看不見。Gemini 的三個毛病都是人眼看出來的。所以不能說機器裁判比人眼強，重點是眼睛的解析度。Felix 說別讓模型自己當裁判，這對；但外部裁判不是免費的，裁判至少要跟被裁判的東西一樣有能力，不然它只會告訴你「沒報錯」。對模型設高目標，承諾不是問題，回饋才是；沒有回饋的高目標，效果就是看起來做到。",
+  "lint": {
+   "chars": 202,
+   "precise_numbers": [
+    "六十"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 32.7,
+   "max_sentence_len": 61,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "污染這件事先放一邊，<short pause>這個實驗其實回頭打了自己一巴掌。就是那個拿來當裁判的腳本。它只檢查有沒有報錯，外加三張截圖。問題來了，畫面閃爍是每秒六十格的事欸。三張靜態截圖哪看得出來？根本看不到嘛。那個、我是說，裁判本身的解析度根本不夠。你覺得機器裁判一定比人眼強嗎？其實沒有。裁判要是能力不夠，就只會跟你說沒報錯。我讀到這邊真的狂點頭。<sigh>如果沒有夠水準的回饋，對模型設再高的目標，最後也只是看起來做到而已啦。",
+   "lint": {
+    "chars": 199,
+    "precise_numbers": [
+     "六十"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 34,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "不過這個實驗，最諷刺的其實是裁判。<short pause>\n那個測試 script，根本抓不到卡頓跟閃爍。\n為什麼？因為那是動態的現象嘛。\n只看幾張靜態截圖，是要怎麼看出來啦？\nGemini 的毛病，最後全靠人眼抓出來。\nClaude Code 能收斂，不是靠原本的檢查，\n就是，主要是靠那兩百五十行臨時寫的探針。\n對，別讓模型自己當裁判很對。\n但裁判能力如果不夠，它只會告訴你沒報錯。<sigh>\n高目標沒有好回饋，最後就只是看起來做到了。",
+   "lint": {
+    "chars": 190,
+    "precise_numbers": [
+     "兩百五十"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 18.0,
+    "max_sentence_len": 42,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "然後這個實驗，其實還打了自己一巴掌。\n你知道那個當裁判的 script 怎麼驗證嗎？\n它只看 console error 加三張靜態截圖。\n但畫面會不會閃爍？\n閃爍是每秒六十格的動態，截圖根本看不到。\n就是那個，截圖完全抓不到動態的問題。\nGemini 的毛病，全是人眼看出來的。<short pause>\n我真的覺得這超尷尬。\n那 Claude Code 到底有沒有閃？\n截圖裁判根本沒能力回答。\n所以重點是眼睛的解析度啦。\n裁判能力如果跟不上，\n它最後就只會告訴你「沒報錯」。\n對模型設高目標，回饋才是核心。\n沒有好回饋，\n充其量只是「看起來做到」而已。",
+   "lint": {
+    "chars": 242,
+    "precise_numbers": [
+     "六十"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 24,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0
+}
