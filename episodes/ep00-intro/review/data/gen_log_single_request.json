@@ -1,0 +1,33 @@
+[
+ {
+  "id": "full",
+  "attempts": 1,
+  "audio_s": 146.48,
+  "expected_s": 142.7,
+  "ratio": 1.03,
+  "ok": true,
+  "wall_s": 33.3,
+  "tokens": 3662,
+  "takes": [
+   {
+    "file": "full.take0.wav",
+    "audio_s": 149.3,
+    "pauses_ge_0_6s": 32,
+    "ok": true
+   },
+   {
+    "file": "full.take1.wav",
+    "audio_s": 159.0,
+    "pauses_ge_0_6s": 33,
+    "ok": true
+   },
+   {
+    "file": "full.take2.wav",
+    "audio_s": 146.5,
+    "pauses_ge_0_6s": 24,
+    "ok": true
+   }
+  ],
+  "chosen": "full.take2.wav"
+ }
+]

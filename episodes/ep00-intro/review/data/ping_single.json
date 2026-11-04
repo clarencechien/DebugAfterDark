@@ -1,0 +1,56 @@
+{
+ "full.take0": {
+  "ping_verb": {
+   "class": "A",
+   "heard_as": "ping"
+  },
+  "ping_name": {
+   "class": "A",
+   "heard_as": "Ping"
+  },
+  "ping_explain": {
+   "class": "A",
+   "heard_as": "ping"
+  },
+  "pong": {
+   "class": "A",
+   "heard_as": "pong"
+  }
+ },
+ "full.take1": {
+  "ping_verb": {
+   "class": "A",
+   "heard_as": "ping"
+  },
+  "ping_name": {
+   "class": "A",
+   "heard_as": "Ping"
+  },
+  "ping_explain": {
+   "class": "A",
+   "heard_as": "ping"
+  },
+  "pong": {
+   "class": "A",
+   "heard_as": "pong"
+  }
+ },
+ "full.take2": {
+  "ping_verb": {
+   "class": "A",
+   "heard_as": "ping"
+  },
+  "ping_name": {
+   "class": "A",
+   "heard_as": "Ping"
+  },
+  "ping_explain": {
+   "class": "A",
+   "heard_as": "P-I-N-G"
+  },
+  "pong": {
+   "class": "A",
+   "heard_as": "pong"
+  }
+ }
+}

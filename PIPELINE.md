@@ -84,6 +84,10 @@
 19. **容器重啟會砍掉執行中的工作**。改寫要加 `--resume`、生成檔已存在就不重做；長的步驟都要能中斷續跑。
 20. **Breeze 很重**：每個新容器要下載約 3 GB 權重並轉成 CTranslate2（約 1.5 GB），CPU 上轉寫 30 次生成約 20 分鐘。
     所以 Breeze 不放進發佈 Action，在製作端跑（見 §7）。
+21. **音色匹配管不到語速和語調**（2026-11-04 EP00 試作）：三段通過一致性檢查、音色重心只差 127 Hz，
+    聽起來仍然「接起來不太一樣」，因為最後一段每秒快了一個字、停頓少了一截，而且三段的 mood 各不相同。
+    同一份稿整集一次生成，音高範圍從 12 Hz 降到 6 Hz、沒有整塊換檔。所以：**10 分鐘以內優先一次生成**；
+    分段時各段用同一個 mood；挑選加一條「各段字／秒離整集中位數不超過一成」。見 `episodes/ep00-intro/review/README.md` §3。
 
 ### 還沒決定的事（產線的前置條件，見 §7 M0）
 - **D1 是預設，但還沒有經過台灣母語者盲聽確認。** RESULTS.md 的下一步第 1、2 項仍然是「人耳挑聲線」「人耳盲聽三集」，
@@ -129,8 +133,8 @@ imitator                          DebugAfterDark                                
 | 2 | 大綱 | `source.md` → 8–10 段，每段一個重點、≤ 350 字預算 | 總字數對應 6–10 分鐘（每秒約 4.2 字） | `ep01.json` 的段落表 |
 | 3 | 改寫 | 大綱 + 素材 + 上段結尾 → 每段 3 個候選 | 口頭禪額度、禁用詞 | `rewrite_episode.py` |
 | 4 | lint + 事實 | 候選 → `script.json` | `mainland_words` 為空、`precise_numbers` ≤ 1；句長、條列、語助詞密度；**稿中每個數字與專有名詞都要能在素材裡找到**；讀音表與易混詞表比對。之後 agent 逐段對照素材讀一遍，專抓**歸屬（誰說的）與程度（誇大）**，見 §2 第 18 點 | `script_lint.py`、配方第 3 步的核對表、`manual_edits` |
-| 5 | TTS | 每段 × 3 次 | 音長 ÷ 預期音長在 0.6–1.6 之內，否則重試 ≤ 2 次 | `make_podcast.py episode --takes` |
-| 6 | 挑選 | 3 個 take → 1 個 | Breeze 盲聽 CER → 一致性 → 長停頓 | `select_takes.py --consistency` |
+| 5 | TTS | 10 分鐘以內整集一次 × 3；更長的每段 × 3 次（同一個 mood） | 音長 ÷ 預期音長在 0.6–1.6 之內，否則重試 ≤ 2 次 | `make_podcast.py episode --takes` |
+| 6 | 挑選 | 3 個 take → 1 個 | Breeze 盲聽 CER → 專有名詞念法（Ping）→ 一致性（含語速：各段字／秒離中位數 ≤ 10%）→ 長停頓 | `select_takes.py --consistency` |
 | 7 | 後製 | 選中的段 → `master.mp3` | 逐段 -20 LUFS、match-EQ、eqA、段間 0.6 s、整集 -16 LUFS / true peak ≤ -1 dBTP。順序是片頭音效 → cold open（當集的鉤子）→ 固定開場（`show/ident/`，每集同一個音檔）→ 正文 → 片尾 | `make_podcast.py master --match-eq` |
 | 8 | 盲聽 QA | `master.mp3` → `qa.json`（標記點 + 時間） | 整集 Breeze CER ≤ 3%，兩套 ASR 都錯的點要處理 | `stt_check.py` |
 | 9 | 逐字稿 | 稿子（文字真值）+ STT 時間戳 → `transcript.vtt` | 每個 cue 都對得回稿子 | 新增 |

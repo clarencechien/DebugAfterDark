@@ -1,0 +1,94 @@
+## review/ep00-intro_gemini-3.8-flash_d1_style-v5_draft1.mp3
+0:03  pitch   88.9  centroid  2581  sim_mean 0.971
+0:18  pitch   88.4  centroid  2229  sim_mean 0.978  sim_prev 0.966
+0:33  pitch   93.0  centroid  1996  sim_mean 0.970  sim_prev 0.962
+0:48  pitch   97.0  centroid  1861  sim_mean 0.973  sim_prev 0.967
+1:03  pitch  100.6  centroid  2091  sim_mean 0.974  sim_prev 0.958
+1:18  pitch   91.4  centroid  2357  sim_mean 0.976  sim_prev 0.964
+1:33  pitch   88.9  centroid  2199  sim_mean 0.981  sim_prev 0.972
+1:48  pitch   92.5  centroid  2110  sim_mean 0.982  sim_prev 0.955
+2:03  pitch   88.9  centroid  1992  sim_mean 0.981  sim_prev 0.974
+2:18  pitch   88.9  centroid  2414  sim_mean 0.968  sim_prev 0.965
+SUMMARY pitch_range 12.2 Hz  centroid_range 720 Hz  sim_prev mean 0.965 min 0.955  sim_mean min 0.968
+0:03  syl/s 4.27  articulation 6.87  pause_share 0.38
+0:18  syl/s 5.40  articulation 7.06  pause_share 0.23
+0:33  syl/s 3.87  articulation 5.66  pause_share 0.32
+0:48  syl/s 4.07  articulation 5.88  pause_share 0.31
+1:03  syl/s 4.33  articulation 6.31  pause_share 0.31
+1:18  syl/s 4.40  articulation 6.88  pause_share 0.36
+1:33  syl/s 3.73  articulation 5.98  pause_share 0.38
+1:48  syl/s 4.47  articulation 6.93  pause_share 0.36
+2:03  syl/s 5.07  articulation 6.46  pause_share 0.22
+2:18  syl/s 5.27  articulation 7.44  pause_share 0.29
+SUMMARY syl/s range 3.73-5.40  sd 0.55
+## single2_take0.mp3
+0:03  pitch   92.5  centroid  1716  sim_mean 0.971
+0:18  pitch   86.5  centroid  2279  sim_mean 0.977  sim_prev 0.950
+0:33  pitch   89.9  centroid  2189  sim_mean 0.983  sim_prev 0.968
+0:48  pitch   88.9  centroid  2078  sim_mean 0.981  sim_prev 0.972
+1:03  pitch   92.5  centroid  2146  sim_mean 0.980  sim_prev 0.960
+1:18  pitch   92.0  centroid  1738  sim_mean 0.980  sim_prev 0.956
+1:33  pitch   88.9  centroid  1921  sim_mean 0.984  sim_prev 0.970
+1:48  pitch   89.9  centroid  1807  sim_mean 0.981  sim_prev 0.967
+2:03  pitch   87.0  centroid  1698  sim_mean 0.980  sim_prev 0.975
+2:18  pitch   90.9  centroid  1868  sim_mean 0.950  sim_prev 0.914
+SUMMARY pitch_range 6.0 Hz  centroid_range 581 Hz  sim_prev mean 0.959 min 0.914  sim_mean min 0.950
+0:03  syl/s 4.40  articulation 6.34  pause_share 0.31
+0:18  syl/s 5.20  articulation 7.14  pause_share 0.27
+0:33  syl/s 5.07  articulation 7.02  pause_share 0.28
+0:48  syl/s 4.47  articulation 6.87  pause_share 0.35
+1:03  syl/s 4.60  articulation 6.71  pause_share 0.31
+1:18  syl/s 5.33  articulation 7.16  pause_share 0.26
+1:33  syl/s 4.40  articulation 6.55  pause_share 0.33
+1:48  syl/s 5.60  articulation 7.31  pause_share 0.23
+2:03  syl/s 4.67  articulation 6.69  pause_share 0.30
+2:18  syl/s 4.34  articulation 6.28  pause_share 0.31
+SUMMARY syl/s range 4.34-5.60  sd 0.43
+## single2_take1.mp3
+0:03  pitch   89.9  centroid  2080  sim_mean 0.966
+0:18  pitch   88.4  centroid  2328  sim_mean 0.968  sim_prev 0.955
+0:33  pitch   87.9  centroid  2126  sim_mean 0.978  sim_prev 0.954
+0:48  pitch   95.2  centroid  2369  sim_mean 0.985  sim_prev 0.966
+1:03  pitch   92.5  centroid  2409  sim_mean 0.980  sim_prev 0.968
+1:18  pitch   87.9  centroid  2532  sim_mean 0.984  sim_prev 0.970
+1:33  pitch   90.4  centroid  2320  sim_mean 0.986  sim_prev 0.971
+1:48  pitch   90.4  centroid  2189  sim_mean 0.978  sim_prev 0.972
+2:03  pitch   91.4  centroid  2154  sim_mean 0.977  sim_prev 0.973
+2:18  pitch   92.5  centroid  2078  sim_mean 0.982  sim_prev 0.966
+2:33  pitch   84.2  centroid  1949  sim_mean 0.956  sim_prev 0.928
+SUMMARY pitch_range 11.0 Hz  centroid_range 583 Hz  sim_prev mean 0.962 min 0.928  sim_mean min 0.956
+0:03  syl/s 3.87  articulation 6.05  pause_share 0.36
+0:18  syl/s 4.73  articulation 6.84  pause_share 0.31
+0:33  syl/s 4.07  articulation 6.35  pause_share 0.36
+0:48  syl/s 4.33  articulation 6.65  pause_share 0.35
+1:03  syl/s 5.07  articulation 7.22  pause_share 0.30
+1:18  syl/s 4.60  articulation 6.70  pause_share 0.31
+1:33  syl/s 4.67  articulation 7.06  pause_share 0.34
+1:48  syl/s 5.60  articulation 7.52  pause_share 0.26
+2:03  syl/s 4.73  articulation 6.64  pause_share 0.29
+2:18  syl/s 5.07  articulation 6.98  pause_share 0.27
+2:33  syl/s 4.13  articulation 7.17  pause_share 0.42
+SUMMARY syl/s range 3.87-5.60  sd 0.48
+## single2_take2.mp3
+0:03  pitch   90.9  centroid  1813  sim_mean 0.975
+0:18  pitch   90.4  centroid  2217  sim_mean 0.982  sim_prev 0.977
+0:33  pitch   92.5  centroid  1896  sim_mean 0.987  sim_prev 0.975
+0:48  pitch   95.2  centroid  2080  sim_mean 0.984  sim_prev 0.977
+1:03  pitch   94.7  centroid  1984  sim_mean 0.987  sim_prev 0.979
+1:18  pitch   93.0  centroid  1896  sim_mean 0.981  sim_prev 0.963
+1:33  pitch   95.2  centroid  2171  sim_mean 0.985  sim_prev 0.976
+1:48  pitch   90.4  centroid  1797  sim_mean 0.972  sim_prev 0.958
+2:03  pitch   87.9  centroid  2180  sim_mean 0.985  sim_prev 0.954
+2:18  pitch   84.7  centroid  1929  sim_mean 0.965  sim_prev 0.938
+SUMMARY pitch_range 10.6 Hz  centroid_range 420 Hz  sim_prev mean 0.966 min 0.938  sim_mean min 0.965
+0:03  syl/s 4.07  articulation 6.23  pause_share 0.35
+0:18  syl/s 4.47  articulation 6.37  pause_share 0.30
+0:33  syl/s 4.00  articulation 6.09  pause_share 0.34
+0:48  syl/s 4.40  articulation 6.30  pause_share 0.30
+1:03  syl/s 4.40  articulation 6.04  pause_share 0.27
+1:18  syl/s 4.47  articulation 6.28  pause_share 0.29
+1:33  syl/s 4.33  articulation 6.26  pause_share 0.31
+1:48  syl/s 5.47  articulation 6.90  pause_share 0.21
+2:03  syl/s 5.07  articulation 6.99  pause_share 0.27
+2:18  syl/s 3.92  articulation 6.55  pause_share 0.40
+SUMMARY syl/s range 3.92-5.47  sd 0.45
