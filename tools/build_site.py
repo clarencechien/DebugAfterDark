@@ -51,9 +51,12 @@ def page(show, eps):
 * {{ box-sizing:border-box; }}
 body {{ margin:0; background:var(--bg); color:var(--ink); font:17px/1.75 -apple-system, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif; }}
 a {{ color:var(--accent); word-break:break-all; }}
-.hero {{ color:#ecebe4; background:linear-gradient(90deg, rgba(13,16,32,.95) 0, rgba(13,16,32,.8) 45%, rgba(13,16,32,.15) 100%), #0d1020 url(banner-1920.jpg) right center / cover no-repeat; }}
-.hero .in {{ max-width:760px; margin:0 auto; padding:88px 16px 80px; }}
-@media (max-width: 600px) {{ .hero {{ background:linear-gradient(rgba(13,16,32,.55), rgba(13,16,32,.85)), #0d1020 url(banner-1920.jpg) 80% center / cover no-repeat; }} .hero .in {{ padding:64px 16px 56px; }} }}
+/* The banner is 16:9 with the laptop in its lower half. A short header with background-size: cover cropped the
+   laptop in half on some widths, so the header grows with the viewport and the image is anchored low. */
+.hero {{ color:#ecebe4; display:flex; align-items:center; min-height:clamp(300px, 30vw, 480px);
+        background:linear-gradient(90deg, rgba(13,16,32,.95) 0, rgba(13,16,32,.8) 40%, rgba(13,16,32,.1) 100%), #0d1020 url(banner-1920.jpg) right 72% / cover no-repeat; }}
+.hero .in {{ width:100%; max-width:760px; margin:0 auto; padding:56px 16px; }}
+@media (max-width: 600px) {{ .hero {{ min-height:260px; background:linear-gradient(rgba(13,16,32,.55), rgba(13,16,32,.85)), #0d1020 url(banner-1920.jpg) 78% 85% / cover no-repeat; }} .hero .in {{ padding:48px 16px; }} }}
 .hero h1 {{ font-size:clamp(34px, 6vw, 56px); line-height:1.15; margin:0 0 8px; }}
 .hero p {{ margin:0; color:#c9cde0; max-width:34em; }}
 .dot {{ display:inline-block; width:.5em; height:.5em; border-radius:50%; background:var(--red); margin-right:.35em; vertical-align:.15em; }}
