@@ -1,0 +1,105 @@
+{
+ "segment": "s05_vercel",
+ "position": "第 6 段，共 9 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "我看到這",
+  "很扯",
+  "我是說"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "40c8ca932f52d3fe0653a680f21efa2685d7a7aba57800ab9316a62136451566",
+ "previous_context": "系統只要超過就直接硬擋。最後幫他校正地圖的不是 AI，是帳單啊。",
+ "original": {
+  "text": "第四張：一位獨立開發者把 AI 搜尋引擎放在 Vercel 上，每個月幾十萬人次造訪，後台一看，一個月五千多美元。他覺得不合理，從帳單反推出自己是被哪一種計費方式收了錢，然後搬到計費方式不一樣的地方。地圖是事後才畫的，但畫對了。報告還提醒一件事：計費方式也決定警報有多大聲。免費額度有硬上限，會停、會響，所以那位工程師爸爸兩天就學到；隨用隨付沒有上限，警報又慢又安靜，要等到月底帳單才知道。",
+  "lint": {
+   "chars": 191,
+   "precise_numbers": [
+    "十萬",
+    "五千"
+   ],
+   "enumerations": [
+    "第四"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 37.2,
+   "max_sentence_len": 57,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "講到帳單，另一位開發者也遇到了。\n他把 AI 搜尋引擎架在 Vercel 上。\n每個月幾十萬人造訪。\n後台一開，一個月竟然要五千多美元。<sigh>\n他覺得不合理，就從金額反推問題。\n那個，就是去抓到底被哪個單位收錢，\n不對，是搞清楚計費地圖啦。\n然後他就搬到 Cloudflare 加自建伺服器。\n你可能會問，幹嘛不一開始算好？\n很多時候事前就是沒算嘛。\n這很正常，但重點來了：\n計費單位決定你的警報有多響。\n免費額度有硬上限，超標直接停，\n你兩天就會發現問題。<short pause>\n但隨用隨付沒有天花板，\n警報又慢又無聲，只能等到月底痛一次囉。",
+   "lint": {
+    "chars": 237,
+    "precise_numbers": [
+     "十萬",
+     "五千"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 29,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "講到帳單，另一個案例就更痛了。\n有位開發者把 AI 搜尋放在 Vercel。\n每個月幾十萬人造訪。\n後台一開，一個月要五千多美元。<sigh>\n這費用合理嗎？當然不合理啊。\n他就從帳單反推到底被收了什麼錢。\n那個、換個方式講，他是被扣款教做人啦。\n然後搬去別的平台把地圖畫對。\n但重點是什麼？\n就是計費單位決定你的警報有多大聲。\n免費額度有硬上限，爆了會直接停。\n可是隨用隨付沒有上限喔。\n它安靜到不行。<short pause>\n等月底帳單來，你才發現慘了。",
+   "lint": {
+    "chars": 195,
+    "precise_numbers": [
+     "十萬",
+     "五千"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 12.0,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "講到帳單，另一個工程師更誇張。他把 AI 搜尋引擎放在 Vercel 上，每個月幾十萬人造訪。結果你知不知道帳單多少？一個月要五千多美元。<short pause>他嚇一跳，趕快從帳單反推，到底是被哪一個計費單位扣錢。就是……<short pause>把計費規則抓出來算啦。後來他搬去別的平台，省了一大筆。這真的很能體會耶。選對計費方式，不只是保護錢包喔。重點是它決定警報有多快、多響。隨用隨付沒有上限，警報超安靜，都要等到月底帳單來才心痛啊。<sigh>",
+   "lint": {
+    "chars": 192,
+    "precise_numbers": [
+     "十萬",
+     "五千"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 3
+   }
+  }
+ ],
+ "chosen": 1
+}

@@ -1,0 +1,106 @@
+{
+ "segment": "s03_teacher",
+ "position": "第 4 段，共 9 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "我看到這",
+  "很扯",
+  "我是說"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b97c29fdaf22bf164fa2479654fb9e1a709c6abccf3742d9e6b2d5174aca4961",
+ "previous_context": "我看到這邊整個被點醒。他每一刀，都精準切在人數乘次數的乘法上。",
+ "original": {
+  "text": "第二張就是上一集那位老師。一個月帳單兩千八百多塊台幣。他不是沒修：夏天發現一天燒三百多塊，就加了緩衝、加了冷卻、內容沒變就不重發。但這些修的全是「多久發一次」，沒有一項碰到「每次發多大」。修了好幾個月，修的是錯的那一層。為什麼？因為他寫給 AI 的規則說，新手沒提到成本就不要教定價。那張地圖 AI 本來有，被一條好意的規則關掉了。",
+  "lint": {
+   "chars": 162,
+   "precise_numbers": [
+    "兩千八百",
+    "三百"
+   ],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 19.2,
+   "max_sentence_len": 37,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "但另一種狀況，是地圖被自己關掉。\n就是上一集那位老師。\n他九月帳單是兩千八百五十四元。\n其實他不是沒修喔。<short pause>\n夏天發現一天燒幾百塊，就趕快加冷卻。\n可是你有發現問題在哪嗎？\n他修的全是頻率，那個……就是多久發一次。\n完全沒碰過「每次發送有多大包」。\n這真的讓人替他覺得好可惜耶。\n為什麼會醬？\n因為他規定 AI：遇到新手就別提定價。\n結果 AI 為了不嚇跑人，完全不看成本。\n那張地圖明明一直都在。\n卻被一條好意的規則給關掉了。<sigh>",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [
+     "兩千八百五十四",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 13.1,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "第二張地圖，就是上一集那位老師。\n他一個月帳單兩千八百多塊台幣。\n其實他夏天發現一天燒錢，就開始拼命修了。\n加緩衝、加冷卻，沒變就不重發。\n但他改的全是頻率——就是，修多久發一次。\n重點是每次送多大包，完全沒碰到嘛。<sigh>\n為什麼會修錯層？\n因為他交代 AI，新手沒提成本就別講定價。\n結果挑架構時，根本沒算每多一人要多付多少。\n一張本來有的地圖，就被好意給關掉了啦。",
+   "lint": {
+    "chars": 171,
+    "precise_numbers": [
+     "兩千八百"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "但另一位就沒這麼順利了。\n就是上一集做加分工具的那位老師。\n他一個月帳單兩千八百多塊台幣。\n他發現一天燒幾百塊，很緊張去修。\n加緩衝、加冷卻，內容沒變就不重發。\n結果這樣有用嗎？<short pause>\n根本沒用。<sigh>\n他改的全是發送頻率，\n對，那個、也就是改了多久傳一次，\n完全沒碰每次傳多大包。\n為什麼會修錯層？\n因為他要 AI 別跟新手聊定價。\n這真的讓人覺得好可惜喔。\nAI 原本知道怎麼省，\n卻被自己一條貼心的規則給關掉了啦。",
+   "lint": {
+    "chars": 187,
+    "precise_numbers": [
+     "兩千八百",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 36,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1
+}

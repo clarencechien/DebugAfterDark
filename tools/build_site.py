@@ -73,6 +73,16 @@ def page(show, eps):
 <meta name="theme-color" content="#0b0e1a">
 <link rel="alternate" type="application/rss+xml" title="{html.escape(show['title'])}" href="{site}/feed.xml">
 <link rel="icon" href="cover-512.jpg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{html.escape(show['title'])}">
+<meta property="og:title" content="{html.escape(show['title'])}">
+<meta property="og:description" content="{html.escape(show['description'].split(chr(10))[0])}">
+<meta property="og:url" content="{site}/">
+<meta property="og:image" content="{site}/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="深夜 Debug：凌晨的書桌，螢幕停在一個紅色中斷點">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{site}/og.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap">
 <style>
@@ -204,6 +214,7 @@ def main(out):
         shutil.copyfile(e["_dir"] / e["audio"]["file"], out / "audio" / feed.audio_name(e))
     shutil.copyfile(ROOT / show["cover"], out / "cover.jpg")
     shutil.copyfile(ROOT / show["banner"], out / "banner.jpg")
+    shutil.copyfile(ROOT / "show" / "og" / "og-1200x630.jpg", out / "og.jpg")   # link previews, tools/make_og.py
     shutil.copyfile(ROOT / "show" / "art" / "cover-512.jpg", out / "cover-512.jpg")
     (out / "feed.xml").write_text(feed.build(show, eps), encoding="utf-8")
     (out / "index.html").write_text(page(show, eps), encoding="utf-8")

@@ -1,0 +1,85 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 9 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "55017586b75c8a73852f0bea8bd4ec152ef02001c4c426fabb765b95ccc35874",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "四個人、四張雲端帳單、同一個錯。差別不在專不專業，也不在有沒有用 AI，而是在帳單響了之後，手上有沒有一張從帳單回到程式碼的地圖。這集就來看這四張帳單，還有那張地圖到底從哪裡來。",
+  "lint": {
+   "chars": 88,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 3,
+   "avg_sentence_len": 28.3,
+   "max_sentence_len": 47,
+   "sentences_over_20": 2,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "嘿，還醒著嗎？<short pause>\n收到爆表的雲端帳單，你會怎麼做？\n四個人、四張帳單，犯了同一個錯。\n你猜差別在哪？<short pause>\n不是專不專業，也不是有沒有用 AI 喔。\n那個，我是說，手上有沒有一張地圖。\n能從帳單連回程式碼的那張地圖啦。\n我看到這真的覺得很扯。",
+   "lint": {
+    "chars": 108,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 12.5,
+    "max_sentence_len": 17,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "雲端帳單響了之後，<short pause>\n你手上有地圖嗎？\n就是，急著改 code……不對，\n差別根本不在專不專業，\n然後也不是有沒有用 AI 喔。\n有四個人、四張帳單，犯了同一個錯。\n我看到真的很有共鳴。<sigh>\n關鍵在於從帳單回到程式碼，\n那個，地圖到底要從哪裡來？\n這集就來看這四張帳單。",
+   "lint": {
+    "chars": 120,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 6,
+    "avg_sentence_len": 19.0,
+    "max_sentence_len": 38,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "四個人、四張雲端帳單，\n結果犯了同一個錯。<sigh>\n你猜差別在哪？\n不是專不專業，\n也不是有沒有用 AI 喔。\n我看到這邊都愣了一下。\n重點就是帳單來了之後，\n呃我是說帳單響了之後，\n手上有沒有一張地圖能找回程式碼？\n這集就來看這四張帳單，\n還有地圖到底從哪裡來。",
+   "lint": {
+    "chars": 116,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 6,
+    "avg_sentence_len": 18.3,
+    "max_sentence_len": 37,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0
+}

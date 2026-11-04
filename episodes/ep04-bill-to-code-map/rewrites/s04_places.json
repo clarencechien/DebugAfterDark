@@ -1,0 +1,117 @@
+{
+ "segment": "s04_places",
+ "position": "第 5 段，共 9 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "我看到這",
+  "很扯",
+  "我是說"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8e2e7be59b9e855f774dd0aefc92dcc54747a9b2c149d2368ba8d37fec0bbd32",
+ "previous_context": "結果挑架構時，根本沒算每多一人要多付多少。一張本來有的地圖，就被好意給關掉了啦。",
+ "original": {
+  "text": "第三張：一位開發者大量用 Google 地圖的 Places API，第一個月帳單快五萬台幣。他問 Gemini，Gemini 說有一個每月一百美元的入門方案，還列出方案涵蓋哪些 API。他訂了，結果一個晚上燒掉八千多塊，因為那個方案根本不含 Places API。後來來回申訴了兩週，錢才拿回來。他自己寫的教訓最值錢：預算「提醒」跟「上限」是兩回事。提醒只是通知你，費用一個晚上就能衝上去；要設配額上限，超過就直接擋掉。這張地圖是 AI 給的，而且給錯了，最後校正它的是帳單。",
+  "lint": {
+   "chars": 228,
+   "precise_numbers": [
+    "五萬",
+    "一百",
+    "八千"
+   ],
+   "enumerations": [
+    "第三",
+    "第一"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 31.6,
+   "max_sentence_len": 43,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "再來這張地圖更絕，是 AI 給的，但給錯了。\n有位開發者，專案用了 Places API。\n第一個月帳單就快五萬台幣。<sigh>\n他就跑去問 Gemini 怎麼省錢。\nGemini 說，有個每個月一百美元的方案。\n還列了方案包含的 API。\n他就直接訂了。\n結果一個晚上燒掉八千多塊！<laugh>\n欸你知道為什麼嗎？\n那個方案根本沒有包 Places API 啦。\n他跟客服來回盧了兩週，才把錢拿回來。\n我光看那個過程就替他捏一把冷汗。\n不過他留下的教訓真的很值錢。\n預算「提醒」跟「上限」完全是兩回事。\n提醒只是通知超標，根本來不及反應。\n你一定要設配額上限，那個，quota cap 啦。\n系統只要超過就直接硬擋。\n最後幫他校正地圖的不是 AI，是帳單啊。",
+   "lint": {
+    "chars": 288,
+    "precise_numbers": [
+     "五萬",
+     "一百",
+     "八千"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 18,
+    "avg_sentence_len": 15.0,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那如果地圖直接交給 AI 來畫呢？\n有個專案大量用了 Places API。\n上線才第一個月，帳單就飆到好幾萬。\n他跑去問 Gemini 該怎麼辦。\nAI 說，有個每個月一百美元的入門方案喔。\n他很高興就訂下去了。<short pause>\n結果會怎樣？\n一個晚上，又噴掉好幾千塊台幣啦。\n原來那個方案，根本沒包 Places API。\n天啊，AI 給的地圖完全是錯的嘛。<sigh>\n他跟客服踢皮球踢了兩週，錢才拿回來。\n這件事最值錢的教訓是什麼？\n就是預算的提醒跟上限，完全是兩回事。\n提醒只是寄信跟你說超標，也就是——\n換個說法，等信寄到，錢早就燒光了啦。\n你必須去設 quota cap，也就是配額上限。\n只要超標就直接硬擋。\n你看，AI 畫錯的地圖，\n最後居然是靠帳單幫他校正的。",
+   "lint": {
+    "chars": 295,
+    "precise_numbers": [
+     "萬",
+     "一百",
+     "千"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 34,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "講到地圖，第三張地圖是 AI 給的。\n而且，還給錯了。\n有位開發者用了 Places API。\n第一個月帳單逼近五萬塊。<sigh>\n他就跑去問 Gemini 怎麼省錢。\nGemini 還真的列出一個方案，說月費一百美元喔。\n結果呢？<short pause>\n他照訂之後，一個晚上又噴掉八千多。\n因為那個方案根本沒包 Places API 啦。\n就是……那個項目完全是 AI 瞎掰的。\n然後他跟客服周旋了兩週，才把錢要回來。\n你知道這件事最貴的教訓是什麼嗎？\n預算「提醒」跟「上限」完全是兩回事。\n提醒只是發通知，等你看到早就爆掉了。\n你一定要設 quota cap，超標就硬擋。\nAI 給了一張錯的地圖，\n最後跑來校正它的，竟然是帳單。",
+   "lint": {
+    "chars": 270,
+    "precise_numbers": [
+     "五萬",
+     "一百",
+     "八千"
+    ],
+    "enumerations": [
+     "第三",
+     "第一"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 25,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0
+}
