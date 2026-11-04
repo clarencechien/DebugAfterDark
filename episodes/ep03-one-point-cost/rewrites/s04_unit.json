@@ -1,0 +1,84 @@
+{
+ "segment": "s04_unit",
+ "position": "第 5 段，共 9 段",
+ "avoid": [
+  "我看到這",
+  "超扯",
+  "傻眼"
+ ],
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "11d54dc2eac7a390f75adac9fee63b75a381b09b409e7dfad555b929899adce6",
+ "previous_context": "我看到這邊整個傻眼。前面的緩衝明明都做對了，但只要有改，送出去的就是整塊啦。",
+ "original": {
+  "text": "為什麼同一招會出事？因為兩個資料庫的計費單位不同。Firestore 按「次」收錢，讀一份文件算一次，不管多大，所以把整班壓成一份文件，讀一次拿全部，越壓越省，早期版本這樣做完全正確。Realtime Database 按「位元組」收錢，下載多少付多少，大約每 GB 一美元；而且壓縮後的字串改一個字，整段都算新的。同一個技巧，換了計費單位，就從省錢變成燒錢。",
+  "lint": {
+   "chars": 175,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 34.0,
+   "max_sentence_len": 65,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那為什麼同一招突然就爆炸了？\n因為兩個資料庫，算錢的方式根本不一樣。<short pause>\n之前的 Firestore 是算次數的。\n不管檔案多大，讀一次就算一次錢。\n所以整班壓成一包，真的是越壓越省。\n但換到 Realtime Database 呢？\n它是算流量的耶。\n下載多少付多少，大約每 GB 一美元。\n而且就是，應該說它只會比對節點差異。\n你壓縮過的字串改一個字，整段都算新的。\n本來很聰明的省錢招式，\n換了計費單位，直接變成在燒錢了啦。<laugh>",
+   "lint": {
+    "chars": 195,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.7,
+    "max_sentence_len": 27,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那為什麼以前沒事，現在會出事？\n重點就是，兩個資料庫的計費邏輯差太多了。<short pause>\n原來的 Firestore 是按「次」算錢。\n讀一份文件就算一次，不管有多大包。\n所以壓成一整塊讀一次，越壓越省。\n對，那時候這樣做完全正確。\n但換到 Realtime Database 呢？\n它不是算次數，那個，它是看下載流量收費。\n大約每 GB 一美元。\n而且只要改了一個字，整段都算新的。\n<laugh> 同一招換了地方，直接從省錢變燒錢啦。",
+   "lint": {
+    "chars": 186,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "為什麼原本省錢的招式，換了就出事？\n你猜為什麼？<short pause>\n就是計費方式完全不同啦。\n像原本的 Firestore，它是算次數的。\n一份文件不管多大，讀一次就算一次錢。\n所以整班壓成一份，越壓越省。\n在舊版本這樣做完全正確嘛。\n然後 Realtime Database 它是算流量的。\n下載多少算多少，大約每 GB 一美元。\n而且它只能比對結構差異。\n應該說，你整班壓成一串文字，\n只要改一個字，整段就全算新的。\n<sigh> 同一個技巧換了計費方式，\n直接從省錢變成燒錢怪獸。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1
+}

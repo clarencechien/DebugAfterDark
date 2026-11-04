@@ -1,0 +1,111 @@
+{
+ "segment": "s08_outro",
+ "position": "第 9 段，共 9 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯",
+  "呃不對",
+  "傻眼"
+ ],
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "1d3b5d5614111e9e73948a90f77d4147eec5805cc190381119aac18fc887f2d2",
+ "previous_context": "備份是一件事，即時同步是另一件事。可以用同一家服務，但不該用同一種格式硬幹到底啦。",
+ "original": {
+  "text": "今晚的 breakpoint 三個重點：一、同一招換了計費單位，結果可能相反，先問是按次、按位元組、還是按人頭收錢。二、一個動作有幾台裝置要下載、各下載多少，乘起來就是帳單長大的速度。三、讓 AI 加即時同步或多人連線之前，先要它回答：計費單位是什麼、使用者變成一百倍帳單變幾倍，答不出來就先別動手。然後片尾：原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 188,
+   "precise_numbers": [
+    "一百"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 30.3,
+   "max_sentence_len": 55,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n我們最後來整理三個重點。\n第一，換了計費單位，結果可能完全相反喔。\n第二，裝置數乘下載量，就是帳單暴增的速度。\n對，那要怎麼防呆？\n其實就是——那個啦，把扣分機制裝進流程嘛。\n然後第三，AI 動手前，先要它算一百倍時的月費。\n答不出來就扣分，絕對不能讓它硬幹啦。<laugh>\n光是把這道關卡守好，月底就不用收驚了。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [
+     "一百"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 22,
+    "sentences_over_20": 2,
+    "particles_per_100": 2.0,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。\n\n下次叫 AI 加即時連線，要怎麼防守？\n就是設個關卡，我是說，把扣分機制裝進流程啦。\n想想帳單如果爆掉，真的會嚇死人。<short pause>\n今天三個帶走的重點。\n第一，換了計費單位，結果可能完全相反。\n然後，裝置數乘下載量，就是帳單長大的速度。\n最後，先問 AI 使用者變一百倍帳單變幾倍。\n答不出來，就先不要動手喔。\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 191,
+    "precise_numbers": [
+     "一百"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n三個重點讓你帶走。\n第一，先看計費單位是按次、按量還是算人頭。\n第二，一個動作幾台在收，乘起來就是帳單速度。\n第三，叫 AI 加連線，先問一百倍時帳單變幾倍。\n算不出來怎麼辦？就……就是先不准動手啦。<laugh>\n把扣分關卡先設好，才不會月底看帳單心痛嘛。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 168,
+    "precise_numbers": [
+     "一百"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 21,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "今天三個帶走的重點。",
+   "to": "三個帶走的重點。",
+   "reason": "其他集用「今晚」，這裡不再重複時間詞"
+  }
+ ]
+}

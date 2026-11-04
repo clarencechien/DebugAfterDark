@@ -1,0 +1,104 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 9 段（第一段）",
+ "avoid": [],
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "50a7465becdbc4c428b919432749d4e56368ce11028dc4c7609a4ac40143e6f6",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "一位國小老師用 AI 做了一個班級加分工具，完全免費、每月五萬四千人在用。九月的雲端帳單一個月新台幣兩千八百多元，而他的收入連一週的伺服器費都付不起。報告的標題是：每加一分，就扣一分。功能每加一個，技術選型就錯一項，帳單上就扣一分。錢到底花到哪裡去了？",
+  "lint": {
+   "chars": 124,
+   "precise_numbers": [
+    "五萬四千",
+    "兩千八百"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 23.8,
+   "max_sentence_len": 37,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "嘿，還醒著嗎？\n有位國小老師用 AI 做了一個加分工具，\n每個月竟然有五萬四千人在用喔。\n你猜帳單多少？\n結果一個月要快三千塊。\n<laugh> 重點來了，\n他每多加一個功能，\n技術架構，就是那個選型就錯一項。\n根本是每加一分、帳單就扣一分嘛。\n錢到底花去哪了？\n我看到分析真的覺得超扯。<short pause>",
+   "lint": {
+    "chars": 124,
+    "precise_numbers": [
+     "五萬四千",
+     "三千"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 14.5,
+    "max_sentence_len": 32,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？<short pause>\n一個國小老師用 AI 做了加分工具，\n每個月居然有五萬多人在用喔。\n結果你猜怎麼著？\n雲端帳單一個月要兩千八百多塊。<sigh>\n我看到這個金額真的頭很痛。\n原本是讓學生加分的工具，\n呃應該說，功能每加一個，\n技術選型就錯一項，\n帳單就跟著扣一分。\n那這些錢到底花去哪裡了啦？",
+   "lint": {
+    "chars": 128,
+    "precise_numbers": [
+     "五萬",
+     "兩千八百"
+    ],
+    "enumerations": [],
+    "sentences": 7,
+    "avg_sentence_len": 17.3,
+    "max_sentence_len": 41,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？<short pause>\n一個國小老師用 AI 做了加分工具，\n每個月居然有五萬四千人在用耶。\n聽起來超厲害對不對？\n結果他一個月雲端帳單要兩千八百多塊。\n我看到那個數字真的替他捏把冷汗。<sigh>\n就是那個，他功能每多做一個，\n架構…不對，技術選型就錯一項，\n帳單就直接被扣分。\n錢到底都噴去哪裡了？",
+   "lint": {
+    "chars": 130,
+    "precise_numbers": [
+     "五萬四千",
+     "兩千八百"
+    ],
+    "enumerations": [],
+    "sentences": 7,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 37,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "嘿，還醒著嗎？有位國小老師",
+   "to": "欸，有位國小老師",
+   "reason": "固定開場緊接著說「還醒著的話」，cold open 不再問一次"
+  },
+  {
+   "from": "我看到分析真的覺得超扯。",
+   "to": "我看到分析真的嚇一跳。",
+   "reason": "語氣：對真實的當事人，避免像在嘲笑"
+  }
+ ]
+}

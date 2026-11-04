@@ -1,0 +1,105 @@
+{
+ "segment": "s05_summer",
+ "position": "第 6 段，共 9 段",
+ "avoid": [
+  "我看到這",
+  "超扯",
+  "傻眼"
+ ],
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "99287b118b797e5192822e8270621b7b7c9d80f2201917c87abbd07b7d70ccba",
+ "previous_context": "而且只要改了一個字，整段都算新的。 同一招換了地方，直接從省錢變燒錢啦。",
+ "original": {
+  "text": "這位老師其實做對了很多事。2026 年夏天他發現一天燒三百多元，就做了底層改造：分數加緩衝、連續點擊合併，寫入加冷卻，內容沒變就不重新發布。但這些修的是「發布的頻率」，沒有修「每次發布的大小」：只要分數有變，送出去的還是整塊。九月他自己找到「拆開存」的方向開始試行，但只對一個帳號開放，正式環境仍是整塊廣播。",
+  "lint": {
+   "chars": 153,
+   "precise_numbers": [
+    "2026",
+    "三百"
+   ],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 37.2,
+   "max_sentence_len": 55,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實這位老師不是沒努力喔。像他夏天發現一天燒三百多元，就跑去改了一輪底層架構。加了緩衝、寫入加冷卻時間，內容沒變就不會重新發布。欸，聽起來很合理對不對？但問題是，他修的是發布頻率。應該說，<short pause> 他只管了多久發一次，只要改動了，送出去的依然是整大包。你猜他後來怎麼做？他九月自己抓到方向，想拆開來存，但那時候只開給單一帳號測試，正式環境呢？還是整塊廣播出去。",
+   "lint": {
+    "chars": 175,
+    "precise_numbers": [
+     "三百"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 18.4,
+    "max_sentence_len": 35,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "其實那位老師也不是沒努力過喔。\n二零二六年夏天，他發現一天燒三百多元。\n他就動手改了底層。\n分數加緩衝、內容沒變就不重發。\n這聽起來很合理對吧？<short pause>\n但問題是，他修的是頻率，不是大小。\n只要分數一變，送出去的又是整塊。\n這招……也不能說沒用啦，\n但每次送出門的，依然是整整一大包。<sigh>\n後來九月，他想到把資料拆開存。\n你猜他怎麼做？\n結果只開給一個帳號測試，\n正式環境，還是整塊在那邊廣播啦。",
+   "lint": {
+    "chars": 180,
+    "precise_numbers": [
+     "三百"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 28,
+    "sentences_over_20": 2,
+    "particles_per_100": 2.2,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "但說真的，這位老師其實做對蠻多事的喔。夏天時他發現一天要燒三百多塊，就趕緊去改造底層。像是分數加緩衝、寫入加冷卻，內容沒變就不重發。這聽起來很合理吧？但問題在哪？<short pause>他改的是發布頻率，不是每次發布的大小啦。那個...換個說法，只要分數一變，送出去的依然是整整一大塊。九月他自己抓到拆開存的方向，可是當時只開給一個帳號試行，正式環境上，依然是整塊直接廣播出去。<sigh>",
+   "lint": {
+    "chars": 177,
+    "precise_numbers": [
+     "三百"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 21.1,
+    "max_sentence_len": 45,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "其實那位老師也不是沒努力過喔。",
+   "to": "其實這位老師做對了很多事喔。",
+   "reason": "語氣：素材的框架是「做對了很多事」，「也不是沒努力過」帶貶意"
+  },
+  {
+   "from": "後來九月，他想到把資料拆開存。你猜他怎麼做？結果只開給一個帳號測試，正式環境，還是整塊在那邊廣播啦。",
+   "to": "後來九月，他自己找到把資料拆開存的方向，開始試行。不過目前只開給一個帳號，正式環境還是整塊在廣播。",
+   "reason": "語氣：「你猜他怎麼做？結果只開給一個帳號」像在嘲笑；素材是「自己找到方向、開始試行」"
+  }
+ ]
+}

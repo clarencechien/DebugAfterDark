@@ -1,0 +1,114 @@
+{
+ "segment": "s07_fix",
+ "position": "第 8 段，共 9 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯",
+  "傻眼"
+ ],
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4c312f899462d9a4f2b04e389164a327a1b431261387b158d2aefee08dc0c286",
+ "previous_context": "對啊，AI 預設只想把功能先弄出來嘛。單位成本這種事，它才不會主動檢查咧。",
+ "original": {
+  "text": "最短的修法不用搬家，報告叫它冷熱分離：多開一個小節點，只放每個人的分數和代幣，學生端改成監聽這個小節點；整塊資料改成開艙時讀一次，有版本號，變了才下載。報告估計下載量會從每天 1.2 GB 降到 0.1 到 0.3 GB，回到免費額度內，資料格式、備份都不用動。報告也特別說：結論不是「Firebase 不好，搬去 Cloudflare 就對了」，換到哪一家都會有另一種會燒錢的地方，像是 Cloudflare 的 Durable Object 忘了休眠也能燒錢。重點是選型的單位是功能，不是專案：備份和即時廣播是兩個功能，可以用同一家，但不該用同一個格式。",
+  "lint": {
+   "chars": 264,
+   "precise_numbers": [
+    "1.2",
+    "0.1",
+    "0.3"
+   ],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 65.0,
+   "max_sentence_len": 92,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那到底要怎麼解？其實根本不用大搬家。\n報告裡提了一個做法，叫冷熱分離。\n就是把資料拆開處理。<short pause>\n整包壓縮的資料，\n學生開艙進來讀一次就好。\n然後另外開一個小節點，\n裡面只放即時跳動的分數跟代幣。\n學生端改去監聽那個小節點，\n就是只盯著會變動的數字就好啦。\n光是醬子改，\n每天的下載量，\n就從原本的一點二 GB，\n直接縮水到零點幾，\n輕鬆回到免費額度內。\n欸，那換去 Cloudflare 真的比較好嗎？\n根本不是。\n你手裡只有一把鎚子，看什麼都會像釘子。\n要是換過去，\n結果 Durable Object 忘了休眠，\n掛著一整天，照樣能燒掉上百美元好不好。<sigh>\n所以啊，選技術的單位是功能，不是整個專案。\n備份跟即時廣播是兩種功能，\n可以用同一家服務，\n但真的不要偷懶用同一個格式啦。",
+   "lint": {
+    "chars": 310,
+    "precise_numbers": [
+     "一點二",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 21.1,
+    "max_sentence_len": 44,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那要怎麼解？\n最快的方法根本不用搬家。\n報告裡叫它「冷熱分離」。\n就是把隨時會跳動的數字，\n像是分數跟代幣，\n抽出來放在一個小節點。\n學生端只要監聽這個小節點就好。\n至於原本那一大包資料呢？\n進教室讀一次就好，\n呃不對，是開艙時先比對版本，\n有變才下載嘛。\n這樣改完，\n每天的下載量直接降到零點幾 GB，\n輕鬆回到免費額度內。\n<short pause>\n不過作者也特別提醒喔，\n千萬不要以為搬去 Cloudflare 就沒事了。\n換到別家，\n一樣有別的燒錢地雷啦。\n像 Cloudflare 的 Durable Object，\n要是忘了設休眠，\n掛著一整天照樣能燒掉上百美元耶。\n說穿了，問題不是你選哪一家，\n而是你的鎚子太單一了。\n你應該也遇過這種狀況吧？\n手上拿著鎚子，看什麼都像釘子。\n記住，選型的單位是功能，不是專案。\n備份是一件事，\n即時同步是另一件事。\n可以用同一家服務，\n但不該用同一種格式硬幹到底啦。",
+   "lint": {
+    "chars": 359,
+    "precise_numbers": [
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 20.1,
+    "max_sentence_len": 49,
+    "sentences_over_20": 7,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "所以作者後來怎麼救火？\n最快的修法，其實根本不用搬家啦。\n他就是做冷熱分離。\n開一個新的小節點，只放即時跳動的分數。\n學生端改去監聽那個小節點就好。\n那原本很大包的資料呢？\n開艙進去讀一次，版本有變才下載。\n每天下載量從一點二 GB 砍到剩零頭，\n直接退回免費額度內。<short pause>\n這招真的很漂亮對吧？\n但作者特別提醒，這不代表要換平台喔。\n就算換去 Cloudflare，\n照樣會...我是說，照樣有別的燒錢招式。\n那個 Durable Object 要是忘了休眠，\n放著不管也能燒掉上百美元。\n所以問題根本不是工具好不好。\n選型的單位應該是功能，不是專案。\n備份跟即時廣播是兩種不同功能嘛。\n計費方式不同，就不該硬塞同一個格式啊。",
+   "lint": {
+    "chars": 287,
+    "precise_numbers": [
+     "一點二",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 16.9,
+    "max_sentence_len": 34,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "這樣改完，每天的下載量直接降到零點幾 GB",
+   "to": "報告估計，這樣改完，每天的下載量會降到零點幾 GB",
+   "reason": "素材是估計值（0.1–0.3 GB）"
+  },
+  {
+   "from": "不過作者也特別提醒喔",
+   "to": "不過報告也特別提醒喔",
+   "reason": "這集「作者」容易被聽成那位老師；這段是報告自己的提醒"
+  },
+  {
+   "from": "你應該也遇過這種狀況吧？手上拿著鎚子",
+   "to": "手上拿著鎚子",
+   "reason": "整段 359 字超過上限，刪一句"
+  }
+ ]
+}

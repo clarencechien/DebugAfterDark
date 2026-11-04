@@ -1,0 +1,97 @@
+{
+ "segment": "s06_why_ai",
+ "position": "第 7 段，共 9 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯",
+  "傻眼"
+ ],
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "02cb3c3a952131d06b0305a8e5414860317d16b5d39ace6a4b2fc0f4eed4365e",
+ "previous_context": "你猜他怎麼做？結果只開給一個帳號測試，正式環境，還是整塊在那邊廣播啦。",
+ "original": {
+  "text": "AI 為什麼沒提醒他？這位老師寫給 Codex 的技能裡有一條規則：使用者是新手、沒提到成本時，選不用付費的路線，而且不要教定價。本意是不嚇跑新手，結果 agent 選資料庫、設計同步格式的時候，沒有人回頭問「每多一位學生要多付多少」。agent 預設先讓功能動起來；單位成本不在它會檢查的項目裡。",
+  "lint": {
+   "chars": 143,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 34.8,
+   "max_sentence_len": 51,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "欸，那 AI 怎麼完全沒提醒他？<short pause>重點來了。老師在給 Codex 的技能裡，其實有加一條規則。就是如果使用者是新手、沒提成本，就選免費方案，而且不要講定價。本來是怕把新手嚇跑啦，<sigh>結果那個 agent，不對，應該說 AI 預設，就只想讓功能先跑起來。選資料庫的時候，根本沒人去算每多一個學生要多付多少。對，單位成本完全不在它的檢查清單裡。",
+   "lint": {
+    "chars": 160,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 7,
+    "avg_sentence_len": 21.9,
+    "max_sentence_len": 42,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那，AI 怎麼完全沒提醒他？\n因為老師在 Codex 技能裡，加了一條規則。\n只要新手沒問成本，就選免費路線，\n而且不要教定價。\n原本是不想嚇跑新手啦。<short pause>\n結果那個 agent 在挑資料庫的時候，\n呃換個說法，根本沒人去問，\n每多一個學生要多付多少錢。\n對啊，agent 預設只管把功能做出來。\n單位成本喔，根本不在它的檢查清單裡。<sigh>",
+   "lint": {
+    "chars": 150,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 7,
+    "avg_sentence_len": 20.4,
+    "max_sentence_len": 43,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "欸，你可能會想說，AI 怎麼都沒提醒他？\n重點就在於，老師在設定裡寫了一條規定。\n只要使用者沒問成本，就選免費路線，\n而且，千萬不要主動教定價。\n這原本是好意啦，怕把新手嚇跑。<sigh>\n結果那個 agent、我是說 AI，選架構完全沒在看。\n每多一個學生要多付多少錢？根本沒人問。\n對啊，AI 預設只想把功能先弄出來嘛。\n單位成本這種事，它才不會主動檢查咧。",
+   "lint": {
+    "chars": 163,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 17.1,
+    "max_sentence_len": 29,
+    "sentences_over_20": 2,
+    "particles_per_100": 2.5,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "老師在設定裡寫了一條規定。只要使用者沒問成本，就選免費路線，而且，千萬不要主動教定價。",
+   "to": "老師寫給 AI 的技能說明裡有一條規定。使用者是新手、又沒提到成本，就選免費路線，而且不要教定價。",
+   "reason": "素材：寫給 Codex 的技能；條件是「新手、沒提到成本」；「千萬」「主動」是誇大"
+  },
+  {
+   "from": "選架構完全沒在看。",
+   "to": "選資料庫、設計同步格式的時候，",
+   "reason": "句意不清；素材是「選資料庫、設計同步格式時，沒有人回頭問」"
+  }
+ ]
+}

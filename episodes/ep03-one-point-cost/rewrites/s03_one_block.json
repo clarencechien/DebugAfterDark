@@ -1,0 +1,107 @@
+{
+ "segment": "s03_one_block",
+ "position": "第 4 段，共 9 段",
+ "avoid": [
+  "超扯"
+ ],
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "05dd05ce039ade48dfb6577fbe8dd217daec62d9f7b3b713a5001803d31fe117",
+ "previous_context": "然後另一個資料庫 Firestore 呢？一天讀沒幾次，基本上可以直接忽略啦。",
+ "original": {
+  "text": "扣分的那一步只有一個：把「整班壓成一塊」的備份格式，直接拿來當即時廣播的格式。老師幫七號加一分，全班三十台裝置各自重新下載整塊資料。報告用 40 KB 示意整塊大小：一次加分就是 40 KB 乘 30 台，大約 1.2 MB；如果拆成每人一格，一次只要大約 3 KB。按位元組計費的資料庫，這樣做大約貴四百倍。比喻：只改一個人的分數，卻把整本點名簿影印給全班每人一份。",
+  "lint": {
+   "chars": 172,
+   "precise_numbers": [
+    "三十",
+    "40",
+    "40",
+    "30",
+    "1.2",
+    "3",
+    "四百"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 33.4,
+   "max_sentence_len": 55,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那到底問題出在哪？\n其實致命的就只有一步。<short pause>\n就是把整班壓成一大包的備份，\n直接拿來做即時廣播。\n欸你想想看喔，\n老師只是幫七號加一分，\n全班三十台平板——\n不對，是三十台裝置啦，\n每台都把整大包重新下載一次。\n這感覺就像，\n只改了一個人的分數，\n你卻印了整本點名簿發給全班。\n我看到這邊真的快笑出來，<laugh>\n因為這個資料庫是按流量算錢的耶。\n醬子搞，\n費用直接貴了大約四百倍！",
+   "lint": {
+    "chars": 170,
+    "precise_numbers": [
+     "三十",
+     "三十",
+     "四百"
+    ],
+    "enumerations": [],
+    "sentences": 7,
+    "avg_sentence_len": 23.3,
+    "max_sentence_len": 51,
+    "sentences_over_20": 4,
+    "particles_per_100": 2.4,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那到底哪裡出問題？<short pause>\n其實就錯在一步而已。\n他們把整班包成一塊的備份，\n直接拿來做即時廣播。\n就是……欸，換個說法好了，\n老師只幫七號加一分，\n結果全班三十台裝置，\n每台都把整班資料重新下載一次！\n這就像改一個人的成績，\n卻把整本點名簿印給全班每個人。\n你猜這樣差多少？\n按流量計費的資料庫，\n費用大概直接貴四百倍。<sigh>\n我看到這邊整個傻眼。\n前面的緩衝明明都做對了，\n但只要有改，送出去的就是整塊啦。",
+   "lint": {
+    "chars": 183,
+    "precise_numbers": [
+     "三十",
+     "四百"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 19.3,
+    "max_sentence_len": 47,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那問題到底出在哪？\n其實致命的失誤就只有一個。\n就是他們把整班壓成一塊的備份，\n直接拿來當即時廣播在用。\n你想想看喔，\n老師只幫七號同學加一分，\n結果咧？\n全班三十台平板，\n每台都把整包資料重新下載一次。\n這就像只改一個人的成績，\n那個、應該說，\n居然把整本點名簿影印給全班每個人。\n資料庫可是照流量算錢的耶，<short pause>\n這樣搞下來，\n費用直接貴了大約四百倍。<sigh>",
+   "lint": {
+    "chars": 161,
+    "precise_numbers": [
+     "三十",
+     "四百"
+    ],
+    "enumerations": [],
+    "sentences": 7,
+    "avg_sentence_len": 22.0,
+    "max_sentence_len": 35,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "他們把整班包成一塊的備份",
+   "to": "他把整班包成一塊的備份",
+   "reason": "做工具的是一位老師，不是一群人"
+  }
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "segment": "s02_bill",
+ "position": "第 3 段，共 9 段",
+ "avoid": [
+  "超扯"
+ ],
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "29cfcfb62a856707f199eb23227b90d4a2bfbd66d22ce74db08b6439bef39812",
+ "previous_context": "左邊是做對的事，右邊是同時間選錯的決定。簡單說，就是功能一直在加分，架構卻一直在扣分啦。",
+ "original": {
+  "text": "先講錢不是誰收的：網站掛在 Cloudflare 的 workers.dev 上，但 Cloudflare 只負責把網頁送出去。兩千八百多元幾乎全是 Firebase 的 Realtime Database 下載流量。Firebase 是 Google 的雲端後端服務，Realtime Database 是裡面一種即時同步的資料庫。帳單上它一天下載 1.2 GB，免費額度大約一天 360 MB，超出三倍多；另一個資料庫 Firestore 一天只被讀 34 次，可以忽略。",
+  "lint": {
+   "chars": 214,
+   "precise_numbers": [
+    "兩千八百",
+    "1.2",
+    "360",
+    "34"
+   ],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 52.5,
+   "max_sentence_len": 62,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那這張帳單到底是誰寄來的？\n你可能會猜是 Cloudflare。<short pause>\n畢竟網址就掛在它的服務上面嘛。\n但其實不是喔。\n它就只是負責把網頁送出去。\n錢到底花在哪？<short pause>\n答案是那個 Firebase。\n兩千八百五十四塊，幾乎全栽在這裡。\n就是那個...不對，\n是裡面的 Realtime Database 啦。\n這是專門即時同步資料的資料庫。\n它一天的下載量，衝破免費額度三倍多。\n我看到明細都替他捏一把冷汗。<sigh>\n然後另一個資料庫 Firestore 呢？\n一天讀沒幾次，基本上可以直接忽略啦。",
+   "lint": {
+    "chars": 219,
+    "precise_numbers": [
+     "兩千八百五十四"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 31,
+    "sentences_over_20": 1,
+    "particles_per_100": 2.3,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 3,
+    "tags": 3
+   }
+  },
+  {
+   "text": "那扣分到底扣在哪？\n就是那張帳單嘛。\n你猜這筆錢是誰收的？\n不是 Cloudflare 喔。\n網址掛在 workers.dev，\n但它只是把網頁送出去而已。\n那個，兇手根本不是它，\n我是說，收錢的其實是 Firebase 啦。<short pause>\n整張兩千八百五十四塊的帳單，\n幾乎全是 Realtime Database 害的。\n它就是一種即時同步的資料庫。\n我看到那個流量真的替他捏把冷汗。<sigh>\n它單日下載直接爆掉免費額度三倍多。\n更扯的是，\n另一個資料庫 Firestore 呢？\n一天才被讀三十幾次，根本不用錢。\n所以就是，\n所有的錢，\n全被那個下載流量吃光了。",
+   "lint": {
+    "chars": 245,
+    "precise_numbers": [
+     "兩千八百五十四",
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 36,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那這張兩千八百五十四塊的帳單，<short pause>\n到底算誰的？\n你可能會猜是 Cloudflare 吧？\n其實完全不是喔。\n網址雖然掛在 workers.dev，\n不對，應該說它就只是負責把網頁送出去，\n根本沒收什麼錢。\n真正的大魔王，\n其實是 Google 的後端服務 Firebase。\n然後，兇手就是那個 Realtime Database，\n也就是幫你即時同步資料的資料庫。\n帳單幾乎全算在它的下載流量上。\n你知道它一天下載多少嗎？\n直接飆到免費額度的三倍多！\n<sigh> 我看到這邊都替他捏一把冷汗。\n對，至於另一個資料庫 Firestore，\n一天讀取才幾十次，\n基本上可以忽略啦。",
+   "lint": {
+    "chars": 256,
+    "precise_numbers": [
+     "兩千八百五十四"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 22.3,
+    "max_sentence_len": 44,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "那這張帳單到底是誰寄來的？",
+   "to": "那這筆錢到底是誰收的？",
+   "reason": "素材講的是「錢不是 Cloudflare 收的」"
+  },
+  {
+   "from": "我看到明細都替他捏一把冷汗。",
+   "to": "我看到明細真的很心疼。",
+   "reason": "「捏一把冷汗」s01 用過"
+  }
+ ]
+}
