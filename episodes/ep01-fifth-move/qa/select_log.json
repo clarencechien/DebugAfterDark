@@ -1,0 +1,509 @@
+{
+ "asr": "breeze",
+ "beam": 5,
+ "tolerance": 0.012,
+ "terms": [],
+ "jitter_margin": 0.02,
+ "pace_margin": 0.1,
+ "episode_median_cps": 4.31,
+ "consistency": true,
+ "sim_margin": 0.015,
+ "bright_margin": 300,
+ "segments": [
+  {
+   "id": "s00_open",
+   "chosen": "s00_open.take1.wav",
+   "takes": [
+    {
+     "file": "s00_open.take0.wav",
+     "cer": 0.024,
+     "unclear": 1,
+     "long_pauses_per_min": 14.3,
+     "text": "最近有沒有滑到一則貼文就是叫大家別再寫角色扮演 prompt 了像是你是一個資深工程師那種說這招至少失效兩年了我看到的時候整個愣住耶不對應該說是超傻眼想說真的假的那大家以前都在忙什麼然後貼文底下一堆人轉傳收藏但收藏完真的有搞懂嗎今晚就來聊這件事啦",
+     "jitter": 0.239,
+     "cps": 3.67,
+     "terms_ok": true,
+     "sim_to_episode": 0.972,
+     "centroid": 2507,
+     "bright_gap": 63
+    },
+    {
+     "file": "s00_open.take1.wav",
+     "cer": 0.016,
+     "unclear": 0,
+     "long_pauses_per_min": 3.9,
+     "text": "你最近有沒有滑到一則貼文就是叫大家別再寫角色扮演 prompt 了像是你是一個資深工程師那種說這招至少失效兩年了我看到的時候整個愣住不對應該說是超傻眼想說真的假的那大家以前都在忙什麼然後貼文底下一堆人轉傳收藏但收藏完真的有搞懂嗎今晚就來聊這件事啦",
+     "jitter": 0.213,
+     "cps": 3.95,
+     "terms_ok": true,
+     "sim_to_episode": 0.981,
+     "centroid": 2612,
+     "bright_gap": 167
+    },
+    {
+     "file": "s00_open.take2.wav",
+     "cer": 0.024,
+     "unclear": 0,
+     "long_pauses_per_min": 3.9,
+     "text": "你最近有沒有滑到一則貼文就是叫大家別再寫角色扮演 prompt 了像是你是一個資深工程師那種說這招至少失效兩年了我看到的時候整個愣住了不對應該說是超傻眼想說真的假的那大家以前都在忙什麼然後貼文底下一堆人轉傳收藏但收藏完真的有搞懂嗎今晚就來聊這件事啊",
+     "jitter": 0.204,
+     "cps": 3.95,
+     "terms_ok": true,
+     "sim_to_episode": 0.953,
+     "centroid": 2513,
+     "bright_gap": 69
+    }
+   ],
+   "clear_enough": [
+    "s00_open.take0.wav",
+    "s00_open.take1.wav",
+    "s00_open.take2.wav"
+   ]
+  },
+  {
+   "id": "s01_copy",
+   "chosen": "s01_copy.take0.wav",
+   "takes": [
+    {
+     "file": "s01_copy.take0.wav",
+     "cer": 0.04,
+     "unclear": 1,
+     "long_pauses_per_min": 10.8,
+     "text": "那篇貼文其實沒有胡說但它就像以前那種三連覆寫單用力壓下去的那一行最清楚其他字全都淡掉了你懂我意思嗎原文裡面明明包山包海有四種野性一堆招數甚至還有警告跟心理學然後轉傳的副本留下了什麼你猜剩多少大概就剩一招半吧換句話說他留下了最好記的那一招卻把最重要的一招給丟掉了這不是貼文作者的錯啦網路轉傳本來就這樣子但如果你真的打算照著做對我們還是得回頭看正本",
+     "jitter": 0.212,
+     "cps": 3.85,
+     "terms_ok": true,
+     "sim_to_episode": 0.978,
+     "centroid": 2337,
+     "bright_gap": 107
+    },
+    {
+     "file": "s01_copy.take1.wav",
+     "cer": 0.035,
+     "unclear": 0,
+     "long_pauses_per_min": 3.1,
+     "text": "那篇貼文其實沒有胡說但它就像以前那種三連覆寫單用力壓下去的那一行最清楚其他字全都淡掉了你懂我意思嗎原文裡面明明包山包海有四種野心一堆招數甚至還有警告跟心理學然後轉傳的副本留下了什麼你猜剩多少大概就剩一招半吧換句話說他留下了最好記的那一招卻把最重要的一招給丟掉了這不是貼文作者的錯啦網路轉傳本來就這樣子但如果你真的打算照著做對我們還是得回頭看正本",
+     "jitter": 0.244,
+     "cps": 4.43,
+     "terms_ok": true,
+     "sim_to_episode": 0.975,
+     "centroid": 2085,
+     "bright_gap": 360
+    },
+    {
+     "file": "s01_copy.take2.wav",
+     "cer": 0.029,
+     "unclear": 0,
+     "long_pauses_per_min": 5.6,
+     "text": "那篇貼文其實沒有胡說但它就像以前那種三連複寫單用力壓下去的那一行最清楚其他字全都淡掉了你懂我意思嗎原文裡面明明包山包海有四種野心一堆招數甚至還有警告跟心理學然後轉傳的副本留下了什麼你猜剩多少大概就剩一招半吧換句話說他留下了最好記的那一招卻把最重要的一招給丟掉了這不是貼文作者的錯啦網路轉傳本來就這樣子但如果你真的打算照著做對我們還是得回頭看正本",
+     "jitter": 0.214,
+     "cps": 4.05,
+     "terms_ok": true,
+     "sim_to_episode": 0.964,
+     "centroid": 2199,
+     "bright_gap": 246
+    }
+   ],
+   "clear_enough": [
+    "s01_copy.take0.wav",
+    "s01_copy.take1.wav",
+    "s01_copy.take2.wav"
+   ]
+  },
+  {
+   "id": "s02_speed",
+   "chosen": "s02_speed.take2.wav",
+   "takes": [
+    {
+     "file": "s02_speed.take0.wav",
+     "cer": 0.006,
+     "unclear": 0,
+     "long_pauses_per_min": 4.7,
+     "text": "好那我們先把原文的骨架抓出來作者把野心拆成四個面向就是速度高度深度還有廣度你猜他先跳過哪一個他直接跳過速度耶理由是這個大家都會嘛不需要什麼創意但我看到這邊覺得還是得幫他補一下速度其實是地基你要反覆重現 bug成本夠低回圈才轉得動可是速度同時也是天花板喔做得越快產出就越多對吧重點是每一份產出最後都要有人看啊這個我們等一下再回來講",
+     "jitter": 0.288,
+     "cps": 4.32,
+     "terms_ok": true,
+     "sim_to_episode": 0.972,
+     "centroid": 2045,
+     "bright_gap": 400
+    },
+    {
+     "file": "s02_speed.take1.wav",
+     "cer": 0.03,
+     "unclear": 3,
+     "long_pauses_per_min": 4.5,
+     "text": "好那我們先把原文的骨架抓出來作者把野心拆成四個面向就是速度高度深度還有廣度你猜他先挑過哪一個他直接挑過速度耶理由是這個大家都會嘛不需要什麼創意但我看到這邊覺得還是得幫他補一下速度其實是第幾你要反覆重現 bug成本夠低迴圈才轉得動可是速度同時也是天花板喔做得越快產出就越多對吧重點是每一份產出最後都要有人看啊這個我們等一下再回來講",
+     "jitter": 0.221,
+     "cps": 4.14,
+     "terms_ok": true,
+     "sim_to_episode": 0.979,
+     "centroid": 2507,
+     "bright_gap": 63
+    },
+    {
+     "file": "s02_speed.take2.wav",
+     "cer": 0.006,
+     "unclear": 0,
+     "long_pauses_per_min": 12.0,
+     "text": "好那我們先把原文的骨架抓出來作者把野心拆成四個面向就是速度高度深度還有廣度你猜他先跳過哪一個他直接跳過速度耶理由是這個大家都會嘛不需要什麼創意但我看到這邊覺得還是得幫他補一下速度其實是地基你要反覆重現 bug成本夠低迴圈才轉得動可是速度同時也是天花板喔做得越快產出就越多對吧重點是每一份產出最後都要有人看啊這個我們等一下再回來講",
+     "jitter": 0.258,
+     "cps": 3.63,
+     "terms_ok": true,
+     "sim_to_episode": 0.982,
+     "centroid": 2136,
+     "bright_gap": 308
+    }
+   ],
+   "clear_enough": [
+    "s02_speed.take0.wav",
+    "s02_speed.take2.wav"
+   ]
+  },
+  {
+   "id": "s03_altitude",
+   "chosen": "s03_altitude.take2.wav",
+   "takes": [
+    {
+     "file": "s03_altitude.take0.wav",
+     "cer": 0.033,
+     "unclear": 3,
+     "long_pauses_per_min": 4.6,
+     "text": "好接著來看第二個維度叫做高度這其實就是問自己做完之後真正要什麼也就是目標背後的目標啦作者舉了一個例子我覺得超有共鳴他以前叫 cloud 一個一個去修 crash後來改成叫他讓 app 保持 0 crash聽起來很帥對不對你猜實際上要花多少功夫大家轉傳的時候最常把後面那段剪掉為了讓這句話成立作者要先搞定一堆事那根本不能算小事是基礎建設他得讓模型自己抓 crash report還要讓它把版本跟 git commit 對起來甚至給它三種系統的環境去重現問題重點來了這哪裡是一句 prompt 啊這根本就是一張賬單喔問法永遠是最便宜的讓模型有辦法回答那個問法才是貴的地方",
+     "jitter": 0.298,
+     "cps": 5.24,
+     "terms_ok": true,
+     "sim_to_episode": 0.98,
+     "centroid": 2619,
+     "bright_gap": 175
+    },
+    {
+     "file": "s03_altitude.take1.wav",
+     "cer": 0.037,
+     "unclear": 4,
+     "long_pauses_per_min": 6.9,
+     "text": "接著來看第二個維度叫做高度這其實就是問自己做完之後真正要什麼也就是目標背後的目標啦作者舉了一個例子我覺得超有共鳴他以前叫 cloud 一個一個去修 crash後來改成叫他讓 app 保持 0 crash聽起來很帥對不對你猜實際上要花多少功夫大家轉傳的時候最常把後面那段剪掉為了讓這句話成立作者要先搞定一堆事而不是那根本不能算小事是基礎建設他得讓模型自己做到 crash report還要讓它把版本跟 git commit 對起來甚至給它三種系統的環境去重現問題重點來了這哪裡是一句 prompt這根本就是一張帳單喔問法永遠是最便宜的讓模型有辦法回答那個問法才是貴的地方",
+     "jitter": 0.253,
+     "cps": 5.28,
+     "terms_ok": true,
+     "sim_to_episode": 0.977,
+     "centroid": 2318,
+     "bright_gap": 127
+    },
+    {
+     "file": "s03_altitude.take2.wav",
+     "cer": 0.033,
+     "unclear": 3,
+     "long_pauses_per_min": 10.1,
+     "text": "好接著來看第二個維度叫做高度這其實就是問自己做完之後真正要什麼也就是目標背後的目標啦作者舉的一個例子我覺得超有共鳴他以前叫 cloud 一個一個去修 crash後來改成叫他讓 app 保持 0 crash聽起來很帥對不對你猜實際上要花多少工夫大家轉傳的時候最常把後面那段剪掉為了讓這句話成立作者要先搞定一堆事不是那根本不能算小事是基礎建設他得讓模型自己抓 crash report還要讓他把版本跟 git commit 對起來甚至給他三種系統的環境去重現問題重點來了這哪裡是一句 prompt這根本就是一張帳單喔問法永遠是最便宜的讓模型有辦法回答那個問法才是貴的地方",
+     "jitter": 0.271,
+     "cps": 5.13,
+     "terms_ok": true,
+     "sim_to_episode": 0.985,
+     "centroid": 2777,
+     "bright_gap": 332
+    }
+   ],
+   "clear_enough": [
+    "s03_altitude.take0.wav",
+    "s03_altitude.take1.wav",
+    "s03_altitude.take2.wav"
+   ]
+  },
+  {
+   "id": "s04_depth",
+   "chosen": "s04_depth.take0.wav",
+   "takes": [
+    {
+     "file": "s04_depth.take0.wav",
+     "cer": 0.047,
+     "unclear": 1,
+     "long_pauses_per_min": 8.6,
+     "text": "講到深度作者列了幾招第一招就是核心叫模型扮演專家他往往只換用詞根本沒換方法嘛這不是說角色 prompt 沒用啦原文不是要你拿掉角色而是要你塞工具給他模型想丟 markdown 表格打發你不行逼他開資料庫跑統計模型這跟你 prompt 有沒有寫資深更沒差我看到這一段真的很有感後面幾招也超有意思目標直接開到最極限網站載入直接叫他壓到 200 毫秒你問模型會不會抗議會啊但你就跟他說這完全可以解然後逼他挑戰你以為的常識最後讓他從資料裡挖出新知識",
+     "jitter": 0.239,
+     "cps": 4.33,
+     "terms_ok": true,
+     "sim_to_episode": 0.982,
+     "centroid": 2730,
+     "bright_gap": 286
+    },
+    {
+     "file": "s04_depth.take1.wav",
+     "cer": 0.043,
+     "unclear": 1,
+     "long_pauses_per_min": 9.9,
+     "text": "講到深度作者列了幾招第一招就是核心叫模型扮演專家他往往只換用詞根本沒換方法這不是說角色 prompt 沒用啦原本不是要你拿掉角色而是要你塞工具給他模型想丟 markdown 表格打發你不行逼他開資料庫跑統計模型這跟你 prompt 有沒有寫資深根本沒差我看到這段真的很有感後面幾招也超有意思目標直接開到最極限網站載入直接叫他壓到 200 毫秒你問模型會不會抗議會啊但你就跟他說這完全可以解然後逼他挑戰你以為的常識最後讓他從資料裡挖出新知識",
+     "jitter": 0.263,
+     "cps": 4.34,
+     "terms_ok": true,
+     "sim_to_episode": 0.988,
+     "centroid": 2454,
+     "bright_gap": 10
+    },
+    {
+     "file": "s04_depth.take2.wav",
+     "cer": 0.066,
+     "unclear": 3,
+     "long_pauses_per_min": 11.5,
+     "text": "講到深度作者列了幾招第一招就是核心叫模型扮演專家他往往只換用詞根本沒換方法嘛這不是說角色 prompt 沒用了原文不是要你拿掉角色而是要你塞工具給他模型想丟 markdown 表格打發你不行逼他開資料庫跑統計模型這跟你 prompt 有沒有寫之爭根本沒差我看到這一段真的很有感畫面幾招也超有意思目標直接開到最極限網站載入直接叫他壓到 200 毫秒你問模型會不會抗議會啊但你就跟他說這完全可以解然後逼他挑戰你以為的嘗試最後讓他從資料裡挖出新知識",
+     "jitter": 0.232,
+     "cps": 4.49,
+     "terms_ok": true,
+     "sim_to_episode": 0.986,
+     "centroid": 2507,
+     "bright_gap": 62
+    }
+   ],
+   "clear_enough": [
+    "s04_depth.take0.wav",
+    "s04_depth.take1.wav"
+   ]
+  },
+  {
+   "id": "s05_judge",
+   "chosen": "s05_judge.take0.wav",
+   "takes": [
+    {
+     "file": "s05_judge.take0.wav",
+     "cer": 0.029,
+     "unclear": 4,
+     "long_pauses_per_min": 6.1,
+     "text": "但挖出來之後呢這就要講第五招了前面四招一直把模型往深處推推越深你越看不懂它在幹嘛第五招是唯一把它往回拉的繩子作者在原文甚至是用拜託的語氣他說千萬不要叫模型自己打分數一定要用模型以外的工具來驗證這招我讀到的時候很有感觸原文開頭不是有提過一個候選行星嗎那是個業餘天文迷做的他用 cloud code 抓 NASA 資料來跑兩週跑了幾十次分析上千個 script結果真的抓到一個微弱的訊號那顆恆星每 3.18 天會變暗一點點大小大概比地球大一點不過目前還只是候選天體還沒確認那你知道他是怎麼驗證的嗎他不是去問模型這是不是行星他反而叫模型證明它不是然後他把一部分資料先蓋住叫模型預測藏起來的地方何時變暗真的預測對了才算數這就是所謂的外部裁判吧",
+     "jitter": 0.249,
+     "cps": 4.53,
+     "terms_ok": true,
+     "sim_to_episode": 0.981,
+     "centroid": 2500,
+     "bright_gap": 55
+    },
+    {
+     "file": "s05_judge.take1.wav",
+     "cer": 0.029,
+     "unclear": 6,
+     "long_pauses_per_min": 14.7,
+     "text": "但挖出來之後呢這就要講第五招了前面四招一直把模型往深處推推越深你越看不懂它在幹嘛第五招是唯一把它往回拉的繩子作者在原文甚至用擺脫的語氣耶他說千萬不要叫模型自己打分數一定要用模型以外的工具來驗證這招我讀到的時候很有感觸原文開頭不是有提過一顆候選星星嗎那是個業餘天文迷做的他用 cloud code 抓 NASA 資料來跑兩週跑了幾十次分析上千個 script結果真的抓到一個微弱的訊號喔那顆恆星每 3.18 天會變暗一點點大小大概比地球大一點不過目前還只是候選天體還沒確認啦那你知道他是怎麼驗證的嗎他不是去問模型這是不是行星他反而叫模型證明它不是然後他把一部分資料先蓋住叫模型預測藏起來的地方何時變暗真的預測對了才算數這就是所謂的外部裁判嘛",
+     "jitter": 0.244,
+     "cps": 4.5,
+     "terms_ok": true,
+     "sim_to_episode": 0.986,
+     "centroid": 2545,
+     "bright_gap": 100
+    },
+    {
+     "file": "s05_judge.take2.wav",
+     "cer": 0.022,
+     "unclear": 4,
+     "long_pauses_per_min": 7.5,
+     "text": "但挖出來之後呢這就要講第五招了前面四招一直把模型往深處推推越深你越看不懂它的幹嘛第五招是唯一把它往回拉的繩子作者在原文甚至是用拜託的語氣他說千萬不要叫模型自己打分數一定要用模型以外的工具來驗證這招我讀到的時候很有感觸原文開頭不是有提過一顆候選行星嗎那是個業餘天文迷做的他用 cloud code 抓 NASA 資料來跑兩週跑了幾十次分析上千個 script結果真的抓到一個微弱的訊號喔那顆恆星每 3.18 天會變暗一點點大小大概比地球大一點不過目前還只是要候選天體還沒確認啦那你知道他是怎麼驗證的嗎他不是去問模型這是不是行星他反而叫模型證明它不是然後他把一部分資料先蓋住叫模型預測藏起來的地方何時變暗真的預測對了才算數這就是所謂的外部裁判嘛",
+     "jitter": 0.264,
+     "cps": 4.34,
+     "terms_ok": true,
+     "sim_to_episode": 0.982,
+     "centroid": 2711,
+     "bright_gap": 266
+    }
+   ],
+   "clear_enough": [
+    "s05_judge.take0.wav",
+    "s05_judge.take1.wav",
+    "s05_judge.take2.wav"
+   ]
+  },
+  {
+   "id": "s06_range",
+   "chosen": "s06_range.take1.wav",
+   "takes": [
+    {
+     "file": "s06_range.take0.wav",
+     "cer": 0.023,
+     "unclear": 2,
+     "long_pauses_per_min": 11.3,
+     "text": "講完裁判那廣度這塊要怎麼玩作者提了兩招第一個是把名詞換成動詞像公司每一季的檢討會它不是一份簡報喔它是在 30 分鐘內說服一群很忙的人做決定動詞一出來視角整個就打開了嘛然後第二招是組隊就像搶劫電影在湊隊伍一樣你可以找分析師找記者甚至找專門唱反調的放空者但重點來了喔這招超容易不小心變成角色扮演對話會變很乖成果卻沒變好你知道為什麼嗎因為你只有叫他模仿語氣重點不是寫得像誰啦而是要叫他去做放空者會做的事這句我真的超想抄下來記住角色後面一定要接動作",
+     "jitter": 0.282,
+     "cps": 4.1,
+     "terms_ok": true,
+     "sim_to_episode": 0.983,
+     "centroid": 2852,
+     "bright_gap": 408
+    },
+    {
+     "file": "s06_range.take1.wav",
+     "cer": 0.018,
+     "unclear": 2,
+     "long_pauses_per_min": 8.9,
+     "text": "講完裁判那廣度這塊要怎麼玩作者提了兩招第一個是把名詞換成動詞像公司每一季的檢討會它不是一份簡報喔它是在 30 分鐘內說服一群很忙的人做決定動詞一出來視角整個就打開了嘛然後第二招是組隊就像搶劫電影在抽隊伍一樣你可以找分析師找記者甚至找專門唱反調的放空者但重點來了這招超容易不小心變成角色扮演對話會變很怪成果卻沒變好你知道為什麼嗎因為你只有叫他模仿語氣重點不是寫得像誰啦而是要叫他去做放空者會做的事這句我真的超想抄下來記住角色後面一定要接動作",
+     "jitter": 0.256,
+     "cps": 4.06,
+     "terms_ok": true,
+     "sim_to_episode": 0.98,
+     "centroid": 2271,
+     "bright_gap": 173
+    },
+    {
+     "file": "s06_range.take2.wav",
+     "cer": 0.014,
+     "unclear": 1,
+     "long_pauses_per_min": 11.6,
+     "text": "講完裁判那廣度這塊要怎麼玩作者提了兩招第一個是把名詞換成動詞像公司每一季的檢討會它不是一份簡報喔它是在 30 分鐘內說服一群很忙的人做決定動詞一出來視角整個就打開了嘛然後第二招是組隊就像搶劫電影在湊隊伍一樣你可以找分析師找記者甚至找專門唱反調的放空者但重點來了這招超容易不小心變成角色扮演對話會變很怪成果卻沒變好你知道為什麼嗎因為你只有叫他模仿語氣重點不是寫得像誰啦而是要叫他去做放空者會做的事這句我真的超想抄下來記住角色後面一定要接動作",
+     "jitter": 0.253,
+     "cps": 3.82,
+     "terms_ok": true,
+     "sim_to_episode": 0.985,
+     "centroid": 2647,
+     "bright_gap": 202
+    }
+   ],
+   "clear_enough": [
+    "s06_range.take0.wav",
+    "s06_range.take1.wav",
+    "s06_range.take2.wav"
+   ]
+  },
+  {
+   "id": "s07_resolution",
+   "chosen": "s07_resolution.take0.wav",
+   "takes": [
+    {
+     "file": "s07_resolution.take0.wav",
+     "cer": 0.067,
+     "unclear": 6,
+     "long_pauses_per_min": 8.9,
+     "text": "好那順著這個回到第五招原作者只講了一句要自己跑給即時回饋但到底什麼才叫好的裁判啊他完全沒展開講這份報告的作者自己拿 3JS 跑了一輪發現有三件事一定要注意第一個是解析度在 cloak code 裡面跑每一輪都是 0 console error 程式完全沒炸喔可是沒炸就代表飛機長得像飛機嗎根本不是這樣換到別的平台記憶尖端明明一直在閃裁判看得到什麼眼睛就只能到哪裡然後就是獨立性裁判不能是當事人而且他連當事人的筆記都不能偷看對話記錄被污染結果就不乾淨了最後還有驗證成本每輪要驗多久決定你能跑幾輪跑越慢你就越退不深裁判不只要有你還得付得起才行啊",
+     "jitter": 0.266,
+     "cps": 4.4,
+     "terms_ok": true,
+     "sim_to_episode": 0.985,
+     "centroid": 2435,
+     "bright_gap": 10
+    },
+    {
+     "file": "s07_resolution.take1.wav",
+     "cer": 0.09,
+     "unclear": 8,
+     "long_pauses_per_min": 11.0,
+     "text": "好那順著這個回到第五招原作者只講了一句要自己跑給即時回饋但到底什麼才叫好的裁判他完全沒展開講這份報告作者自己拿 3JS 跑了一輪發現有三件事一定要注意第一個是解析度在 cloud code 裡面跑每一輪都是 0 console error程式完全沒炸喔但是沒炸就代表飛機長得像飛機嘛根本不是這樣換到別的平台記憶間段秘密一直在閃裁判看得到什麼野心就只能到哪裡然後就是獨立性裁判不能是當事人而且他連當事人的筆記都不能偷看對話記錄被污染結果就不乾淨了最後還有驗證成本每一輪要驗多久決定你能跑幾輪跑越慢你就越退不生裁判不只要有你還得付得起才行啊",
+     "jitter": 0.226,
+     "cps": 4.9,
+     "terms_ok": true,
+     "sim_to_episode": 0.982,
+     "centroid": 2559,
+     "bright_gap": 115
+    },
+    {
+     "file": "s07_resolution.take2.wav",
+     "cer": 0.075,
+     "unclear": 6,
+     "long_pauses_per_min": 15.1,
+     "text": "那順著這個回到第五招原作者只講了一句要自己跑給即時回饋但到底什麼才叫好的裁判啊他完全沒展開講這份報告的作者自己拿 3JS 跑了一輪發現有三件事一定要注意第一個是解析度在 cloak code 裡面跑每一輪都是 0 console error稱是完全沒炸喔可是沒炸就代表飛機長得像飛機嗎根本不是這樣換到別的平台記憶尖端明明一直在閃耶裁判看得到什麼野心就只能到哪裡然後就是獨立性裁判不能是當事人而且他連當事人的筆記都不能偷看對話記錄被污染結果就不乾淨了最後還有驗證成本每輪要驗多久決定你能跑幾輪跑越慢你就越推不省裁判不只要有你還得付得起才行啊",
+     "jitter": 0.263,
+     "cps": 4.46,
+     "terms_ok": true,
+     "sim_to_episode": 0.98,
+     "centroid": 2133,
+     "bright_gap": 312
+    }
+   ],
+   "clear_enough": [
+    "s07_resolution.take0.wav",
+    "s07_resolution.take2.wav"
+   ]
+  },
+  {
+   "id": "s08_efficacy",
+   "chosen": "s08_efficacy.take2.wav",
+   "takes": [
+    {
+     "file": "s08_efficacy.take0.wav",
+     "cer": 0.015,
+     "unclear": 2,
+     "long_pauses_per_min": 9.3,
+     "text": "說到帳單作者最後聊到一個心理學名詞叫做自我效能就是你信不信自己做得到啦學者說這個東西有四個來源看別人做到別人說你可以還有放鬆心情原文舉的例子剛好就是這三個可是你有發現缺了什麼嗎缺了最強的那個親身成功的經驗用 AI 其實也是這個道理你看再多網路上的 showcase 都不算數不是不能說完全不算數但那真的比不上你自己動手一次從開題一路跑到裁判然後親手付一次帳單看別人的經驗可以被量產親身經驗不行啦",
+     "jitter": 0.246,
+     "cps": 4.32,
+     "terms_ok": true,
+     "sim_to_episode": 0.985,
+     "centroid": 2290,
+     "bright_gap": 155
+    },
+    {
+     "file": "s08_efficacy.take1.wav",
+     "cer": 0.015,
+     "unclear": 0,
+     "long_pauses_per_min": 8.0,
+     "text": "說到帳單作者最後聊到一個心理學名詞叫做自我效能就是你信不信自己做得到學者說這個東西有四個來源看別人做到別人說你可以還有放鬆心情原文舉的例子剛好就是這三個可是你有發現缺了什麼嗎缺了最強的那一個親身成功的經驗用 AI 其實也是這個道理你看再多網路上的 showcase 都不算數對不對不能說完全不算數但那真的比不上你自己動手一次從開題一路跑到裁判然後親手付一次帳單看別人的經驗可以被量產親身經驗不行啦",
+     "jitter": 0.209,
+     "cps": 4.31,
+     "terms_ok": true,
+     "sim_to_episode": 0.967,
+     "centroid": 2228,
+     "bright_gap": 216
+    },
+    {
+     "file": "s08_efficacy.take2.wav",
+     "cer": 0.01,
+     "unclear": 0,
+     "long_pauses_per_min": 15.0,
+     "text": "說到帳單作者最後聊到一個心理學名詞叫做自我效能就是你信不信自己做得到學者說這個東西有四個來源看別人做到別人說你可以還有放鬆心情原文舉的例子剛好就是這三個可是你有發現缺了什麼嗎缺了最強的那一個親身成功的經驗用 AI 其實也是這個道理你看再多網路上的 showcase 都不算數不對不能說完全不算數但那真的比不上你自己動手一次從開題一路跑到裁判然後親手付一次帳單看別人的經驗可以被量產親身經驗不行啦",
+     "jitter": 0.248,
+     "cps": 4.07,
+     "terms_ok": true,
+     "sim_to_episode": 0.977,
+     "centroid": 2121,
+     "bright_gap": 324
+    }
+   ],
+   "clear_enough": [
+    "s08_efficacy.take0.wav",
+    "s08_efficacy.take1.wav",
+    "s08_efficacy.take2.wav"
+   ]
+  },
+  {
+   "id": "s09_outro",
+   "chosen": "s09_outro.take1.wav",
+   "takes": [
+    {
+     "file": "s09_outro.take0.wav",
+     "cer": 0.059,
+     "unclear": 6,
+     "long_pauses_per_min": 1.3,
+     "text": "今晚的 break point 第一給模型一台電腦跟資料這是前提不是選項喔第二往深處推就要配一個模型以外的裁判第三野心的帳單先付問法最後再翻喔那個原文其實幾分鐘就看完了轉傳來轉傳去漏掉的剛好最貴對了作者自己有留時間錯記啦他說不要讓模型憑自己是 2026 年 10 月的判斷模型變強之後會改所以聽這集的時候記得看一下日期喔原文連結在節目資訊欄我是 Pink有收到的話揮我一個澎下次見",
+     "jitter": 0.197,
+     "cps": 4.13,
+     "terms_ok": true,
+     "sim_to_episode": 0.974,
+     "centroid": 2073,
+     "bright_gap": 372
+    },
+    {
+     "file": "s09_outro.take1.wav",
+     "cer": 0.032,
+     "unclear": 3,
+     "long_pauses_per_min": 9.7,
+     "text": "好 今晚的 break point第一給模型一台電腦跟資料這是前提不是選項喔第二往深處推就要配一個模型以外的裁判第三野心的帳單先付問法最後再煩惱那個原文其實幾分鐘就看完了轉傳來轉傳去漏掉的剛好最貴欸對了作者自己有留時間戳記啦他說不要讓模型憑自己是 2026 年 10 月的判斷模型變強者會改所以聽這集的時候記得看一下日期喔原文連結在節目資訊欄我是 PIN有收到的話回我一個 PON下次見",
+     "jitter": 0.264,
+     "cps": 3.75,
+     "terms_ok": true,
+     "sim_to_episode": 0.982,
+     "centroid": 2042,
+     "bright_gap": 402
+    },
+    {
+     "file": "s09_outro.take2.wav",
+     "cer": 0.114,
+     "unclear": 8,
+     "long_pauses_per_min": 13.5,
+     "text": "今晚的 break point第一給模型一台電腦跟資料這是前提不是選項第二往深處推就要配一個模型以外的裁判第三野心的賬單先付問法最後再煩惱那個原文其實幾分鐘就看完了轉串來轉串去漏掉了剛好最貴對了作者自己有留時間錯集他說不要讓模型評自己是 2026 年 10 月的判斷模型變強之後會改所以聽這集的時候記得看一下日期喔語言文連結在節目資訊欄或視頻有收到的話回我一個 prompt下次見",
+     "jitter": 0.216,
+     "cps": 3.8,
+     "terms_ok": true,
+     "sim_to_episode": 0.977,
+     "centroid": 2110,
+     "bright_gap": 334
+    }
+   ],
+   "clear_enough": [
+    "s09_outro.take1.wav"
+   ]
+  }
+ ]
+}

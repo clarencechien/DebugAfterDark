@@ -7,7 +7,7 @@
  "description": "那則轉傳很兇的貼文說「別再寫『你是一個資深……』」，其實只抄到了一半。這集用 Felix Rieseberg 的〈How to be more ambitious〉，聊四種野心、深度的五招，以及為什麼最重要的是第五招：外部裁判。\n\n原文：〈記住了第一招，漏掉了第五招〉 https://imitator.ai-apps.work/r/fifth-move\n原作者：Felix Rieseberg〈How to be more ambitious〉\n\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
  "report_slug": "fifth-move",
  "source_url": "https://imitator.ai-apps.work/r/fifth-move",
- "status": "production",
+ "status": "review",
  "voice": {
   "provider": "gemini",
   "model": "gemini-3.8-flash-tts",
@@ -23,6 +23,16 @@
   "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
  },
  "audio": {
-  "file": "ep01-fifth-move.mp3"
+  "file": "ep01-fifth-move.mp3",
+  "bytes": 8422987,
+  "sha256": "aab387d11fce796b1d97d2d776854d42094c29695e98a45f56b68867f7cf074d",
+  "duration_s": 526.4,
+  "duration": "8:46",
+  "lufs": -16.8
+ },
+ "qa": {
+  "breeze_cer_mean": 0.03,
+  "jitter_semitones": 0.255,
+  "consistency": "qa/consistency.json：10 段裡 7 段被標記（接縫亮度最大 -999 Hz、s03 語速 +26%、s01 音高 +8 Hz）"
  }
 }
