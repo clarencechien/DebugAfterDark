@@ -6,6 +6,7 @@ Only episodes with "status": "final" and a "published" timestamp go in, newest f
 the same inputs give a byte-identical feed (lastBuildDate is the newest pubDate, not the build time).
 Audio URLs carry the first 8 hex digits of the file's sha256 (<id>-<sha8>.mp3), so a re-cut episode gets a new URL and
 podcast apps never keep a stale cached copy; the episode guid never changes (PIPELINE.md section 5.2).
+show.json "enclosure_prefix" (optional) is prepended to every enclosure URL for download analytics (SoundOn Prefix).
 Covers Apple's required tags (RSS 2.0, itunes namespace, title, description, itunes:image, language, itunes:category,
 itunes:explicit; per item title, enclosure with length and type, guid, pubDate) plus podcast:guid, and podcast:locked
 once an owner email is set. Requirements change; check https://podcasters.apple.com/support/823-podcast-requirements.
@@ -71,6 +72,10 @@ def build(show, eps):
         L.append(f"<lastBuildDate>{format_datetime(newest)}</lastBuildDate>")
     for e in eps:
         a = e["audio"]; url = f"{site}/audio/{audio_name(e)}"
+        if show.get("enclosure_prefix"):
+            # Analytics prefix (SoundOn): the app requests prefix + host/path, the service logs it and 302s to our file.
+            # Only the feed carries it; the site's own players use the direct URL so page plays are not counted.
+            url = show["enclosure_prefix"].rstrip("/") + "/" + url.split("://", 1)[1]
         L += ["<item>",
               f"<title>{text(e['title'])}</title>",
               f"<description>{text(e['description'])}</description>",

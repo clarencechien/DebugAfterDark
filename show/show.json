@@ -1,5 +1,5 @@
 {
- "_note": "節目設定，tools/feed.py 讀這份產生 feed.xml。site_url 是送審後就不能改的 feed 網址（2026-11-04 定為 podcast.ai-apps.work：Cloudflare DNS 的 CNAME 指向 clarencechien.github.io，DNS only；GitHub Pages 設定填了 custom domain 並 Enforce HTTPS）。owner_email 是 Cloudflare Email Routing 轉寄到主持人信箱的地址（2026-11-04 實測收得到），公開在 feed 裡；author 待決定。",
+ "_note": "節目設定，tools/feed.py 讀這份產生 feed.xml。site_url 是送審後就不能改的 feed 網址（2026-11-04 定為 podcast.ai-apps.work：Cloudflare DNS 的 CNAME 指向 clarencechien.github.io，DNS only；GitHub Pages 設定填了 custom domain 並 Enforce HTTPS）。owner_email 是 Cloudflare Email Routing 轉寄到主持人信箱的地址（2026-11-04 實測收得到），公開在 feed 裡；author 待決定。 enclosure_prefix 是 SoundOn Prefix 數據追蹤碼（2026-11-04 建立）：feed 裡每集音檔網址前面加這段，下載先經過 SoundOn 記錄再 302 回我們的音檔；網站的播放器不加，網頁試聽不算下載。拿掉這個欄位就停用。",
  "title": "深夜 Debug｜Debug After Dark",
  "host": "Ping（AI 合成聲音）",
  "author": "深夜 Debug",
@@ -14,5 +14,6 @@
  "copyright": "© 2026 深夜 Debug",
  "cover": "show/cover-3000.jpg",
  "description": "每集十分鐘左右，把一篇 AI 與工程的深度文章，講成你通勤、洗碗時也聽得懂的版本。\n\n你還記得以前親手寫 code，半夜一個人 debug，最後把問題揪出來那一刻，超想對著窗外大叫的感覺嗎？\n\nAI 時代，你還常動手寫 code 嗎？開發從「親手敲鍵盤」變成「指揮模型與系統」，bug 沒有消失，只是換了戰場：失控的 Agent Flow、看似零錯誤卻不對的結果、工程架構真正的代價，還有在技術巨浪裡，我們自己的人生與 Mindset。\n\n《深夜 Debug｜Debug After Dark》是獻給開發者、架構師與思考者的深夜聲音筆記。主持人 Ping 會在深夜 ping 你一下，陪你拆解底層、檢查迴圈，每集最後下一個 breakpoint，停下來整理三件帶走的事。沒有浮誇的 AI 焦慮行銷，只想找回「親手把問題搞懂」的那份痛快。\n\n每一集都改寫自 imitator.ai-apps.work 上的一篇文章，內容對過原文，原文連結附在每集說明裡。Ping 的聲音由 AI 語音合成，不模仿任何真人；每一集都經過真人審稿與試聽才上架。",
- "banner": "show/art/banner-v2-0-2400.jpg"
+ "banner": "show/art/banner-v2-0-2400.jpg",
+ "enclosure_prefix": "https://sw.soundon.fm/p/7M5VUL/"
 }

@@ -20,7 +20,8 @@
 ## 上架狀態
 - 網站與 feed：<https://podcast.ai-apps.work>，feed `https://podcast.ai-apps.work/feed.xml`（GitHub Pages，見 `PIPELINE.md` §5 的過渡方案）
 - 擁有者信箱：`podcast@ai-apps.work`（Cloudflare Email Routing 轉寄）
-- 還沒送審 Apple Podcasts、Spotify 等平台；SoundOn Prefix 數據追蹤碼在申請中
+- 還沒送審 Apple Podcasts、Spotify 等平台
+- 下載數據：SoundOn Prefix（`show.json` 的 `enclosure_prefix`），feed 裡的音檔網址先經過 SoundOn 再 302 回我們的檔案；網站播放器不經過
 
 ## 收入方式（2026-11-04 調查，還沒做任何一項）
 
