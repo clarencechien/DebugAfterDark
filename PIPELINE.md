@@ -394,8 +394,7 @@ CLI 路徑就是在本機跑同一支 `python3 scripts/publish.py episodes/ep02-
 
 ## 8. 待決定的問題
 
-1. **節目名稱與 slug**：「深夜 Debug｜Debug After Dark」，show slug `debug-after-dark`？feed 網址會跟著它一輩子。
-   2026-11-04 搜尋過，沒找到同名的節目；相近的有英文的 Secure After Dark（資安）和一個台灣的深夜寫 code ASMR 節目。
+1. **節目名稱與 feed 網址**：已決定（2026-11-04）。節目「深夜 Debug｜Debug After Dark」，feed `https://podcast.ai-apps.work/feed.xml`：Cloudflare DNS 一筆 DNS only 的 CNAME 指向 `clarencechien.github.io`，GitHub Pages 設 custom domain 並 Enforce HTTPS，舊的 github.io 網址 301 過來。以後搬到 imitator 的 Worker 只改 DNS，Worker 要在這個子網域的根目錄提供 `/feed.xml` 與 `/audio/...`。
 2. **主持聲線**：預設 D1 + v5，待台灣母語者確認。**已決定不走聲音複製**（2026-11-04）：主持人是 AI 角色，不代表任何真人。
 3. **主持人名字**：建議 Ping，收尾單元叫「今晚的 breakpoint」（已決定保留）。理由與試念測試在 `HOST.md`。
 4. **feed 的公開信箱**：Spotify 驗證碼寄到這裡，而且它公開在 feed 裡、會被爬。建議開一個專用 alias，不用個人信箱。

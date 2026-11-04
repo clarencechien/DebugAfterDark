@@ -1,0 +1,108 @@
+{
+ "segment": "s07_borrow",
+ "position": "第 8 段，共 9 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "我看到這",
+  "很扯",
+  "我是說"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0a65429243715f9eb4edc2877d80d1572e6a47fa7f469d925ba9c04d910e8cfc",
+ "previous_context": "所以架構決策，不能問 AI 行不行。那個地圖，必須是定價頁算得出的確定數字。",
+ "original": {
+  "text": "那沒地圖的人，能跟 AI 借一張嗎？可以，但有三個條件。第一，問題要放進流程裡，不能靠人想到：每次叫 AI 加即時同步、多人連線之前，先要它回答計費單位、扇出、十倍帳單，答不出來就不准動手。第二，AI 給的地圖可能是錯的，Places API 那位就是證據，所以要讓帳單來校正。第三，事後比事前準：帳單來的那一刻，把帳單跟那段程式碼一起原封不動交給 AI，問它為什麼是這個數字，再自己讀懂它回的圖。也要逼它在每個答案後面標出處：定價頁查到的、從你給的數字算的、還是它猜的，只信前兩種。",
+  "lint": {
+   "chars": 234,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 38.0,
+   "max_sentence_len": 64,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "如果自己手上沒地圖，能跟 AI 借一張嗎？\n答案是可以啦，但有三個前提。\n第一，問題要直接卡進流程裡。\n每次叫它加即時同步，先逼它回答計費方式。\n答不出來，就不准動手改 code 喔。\n再來，AI 畫的地圖常常會出錯。<short pause>\n就像 Places API 那個例子，一晚燒掉八千。\n所以一定要用真實帳單去校正它。\n然後，事後檢討其實比事前問它還準。\n你事前問會不會爆，它哪知道流量啊？\n等帳單來了，把截圖丟給它。\n不對，連 code 也要一起丟過去。\n問它為什麼會醬算。\n欸對，還有一個小撇步我很認同。\n就是你要逼它把每個出處標出來嘛。\n是查到的、算出來的，還是用猜的？\n前面兩種才算數，猜的聽聽就好啦。",
+   "lint": {
+    "chars": 272,
+    "precise_numbers": [
+     "八千"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 15.0,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "那自己手上沒地圖，能不能跟 AI 借一張？\n可以啊，但有三個條件。\n第一個條件，是把問題變成一道門。\n像要加即時連線前，先逼它回答計費方式。\n答不出來就先不要動手。<short pause>\n然後第二個，AI 給的地圖可能是錯的喔。\n像之前那個 Places API，一晚燒掉八千。\n你可以讓它畫圖，但它沒辦法替你付錢嘛。\n就是……不對，是不能讓它替你被打啦。\n所以一定要用真實帳單去校正它。\n最後一個很有趣，事後問其實比事前問還準。\n你問我為什麼？因為事前它根本不知道流量。\n等帳單來了，把截圖跟 code 丟回去問。\n它反而能幫你把地圖補得超完整。<short pause>\n重點來了，你要逼它標出處。\n是查到的、算的、還是它用猜的？\n只要是猜的，就先不要全信喔。",
+   "lint": {
+    "chars": 285,
+    "precise_numbers": [
+     "八千"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 18,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "既然這樣，沒地圖的人能跟 AI 借嗎？\n答案是可以，但有條件喔。\n而且坦白講，條件比答案還重要。\n第一個，問題要卡在流程裡。\n每次叫它加多人連線，先要它算計費單位。\n答不出來，就不准它動手寫 code。\n然後，AI 給的地圖很可能會畫錯。\n你記得 Places API 燒掉八千塊那件事吧？\n<sigh> 它畫錯沒差，被帳單打到的是你耶。\n所以要用真實帳單，把地圖修正回來。\n重點來了，事後其實比事前準很多。\n警報響的那一刻，把帳單跟程式碼丟給它。\n問它為什麼會這樣？它抓得超準。\n不過，那個……換個方式講，\n記得要逼它標出處啦。\n是定價頁查到的、算出來的、還是它猜的。\n只有前兩種能信，猜的就當成假設就好。",
+   "lint": {
+    "chars": 274,
+    "precise_numbers": [
+     "八千"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 22,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1
+}
