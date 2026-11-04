@@ -1,0 +1,110 @@
+{
+ "segment": "s08_outro",
+ "position": "第 9 段，共 9 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "應該說",
+  "我看到這",
+  "很扯",
+  "我是說"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b654eabb1bbb853fd8ec62095c855b224747c44ac177688b9d9a64918009afc8",
+ "previous_context": "是查到的、算的、還是它用猜的？只要是猜的，就先不要全信喔。",
+ "original": {
+  "text": "今晚的 breakpoint：一、帳單大約等於人數乘次數乘資料量乘單價，事前沒人會提醒你，第一個回饋永遠是帳單。二、把計費單位、扇出、十倍帳單這三個問題做成一道門，逼出數字，不是意見。三、帳單來的時候，原封不動交給 AI 問為什麼，然後自己讀懂、跟帳單對一遍。然後片尾：原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 169,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 27.2,
+   "max_sentence_len": 54,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n第一，帳單是唯一警報，事前沒人會提醒你。\n第二，動工前逼 AI 算數字，不要問它意見。\n第三，帳單來了丟給 AI，記得自己對一遍。\n\n你覺得誰最容易中招？\n就是衝最快的人啦。<laugh>\n然後，那個地圖不只是省錢。\n呃不對，它其實是保護你的開發節奏。\n\n原文連結在節目資訊欄。\n我是 Ping。\n有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 162,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 12.5,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n下一個收到天價帳單的人會是誰？\n答案很可能就是你啦。\n那個，不對，我不是在咒你喔。<laugh>\n記住這三件事就好。\n第一，算清楚人數乘資料量，帳單是唯一警報。\n第二，動手前逼 AI 算數字，不要只問行不行。\n最後，收到帳單整張丟給它，親自對一遍。\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 162,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 13.7,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n第一個，大家都犯過沒算資料量的錯。\n帳單是唯一的警報，但它不會說為什麼。\n那要怎麼防？\n對，把三個問題做成一道門檻。\n計費單位、扇出，還有十倍的成本。\n逼 AI 算確定性的數字，不要只給意見。\n然後，帳單來了直接丟給它問原因。\n記得自己對一遍，帳單永遠是對的喔。\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 175,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 13.6,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "你覺得誰最容易中招？就是衝最快的人啦。<laugh>然後，那個地圖不只是省錢。呃不對，它其實是保護你的開發節奏。",
+   "to": "",
+   "reason": "breakpoint 只能整理前面講過的；這兩句素材沒有"
+  }
+ ]
+}
