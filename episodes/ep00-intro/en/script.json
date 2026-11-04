@@ -1,0 +1,28 @@
+{
+ "show": "Debug After Dark",
+ "episode": "EP00 Hey, still awake?",
+ "language": "en",
+ "source": "",
+ "audience": "engineers and people who want to understand AI",
+ "note": "Pilot (2026-11-04): English edition of EP00, written directly by the agent from the zh-TW EP00 (episodes/ep00-intro/script.md); every claim is something the pipeline really does (HOST.md section 6). Not rewritten by rewrite_episode.py.",
+ "chars_per_sec": 12.0,
+ "mood_joiner": ". This segment: ",
+ "base_style_v5": "A Taiwanese software engineer recording a podcast at home late at night, not a professional voice actor, with a slightly amateur, real-person feel. Natural, relaxed conversational English, like talking with a friend after midnight. Low, warm voice with some resonance. A light Taiwanese accent is fine, but every word must be clear and easy to follow for an international listener. Not a radio-announcer voice, not over-acted. Speak with rhythm: speed up a little when excited, pause briefly only before a key point. Ping and pong are the plain English words.",
+ "segments": [
+  {
+   "id": "s00_open",
+   "mood": "Opening. Like chatting with a friend late at night, a little sentimental but not timid.",
+   "text": "Hey, still awake? Let me ping you real quick. <short pause>Welcome to Debug After Dark. I'm Ping. Yep, ping, like the thing one computer sends another to ask, hey, are you still there? Before we start, let me ask you something. Do you remember what it felt like to write code yourself? Late at night, the only sound in the room is your laptop fan. The screen is full of red. One weird bug has eaten your whole evening. The whole world is asleep, and you're still tracing it, line by line. And then, at some point, it just clicks. You change that one line, hit run, and the tests go green, all the way down. The room is dead quiet, but you kind of want to run to the window and yell. That rush of catching the bug yourself. You remember that, right?"
+  },
+  {
+   "id": "s01_now",
+   "mood": "Relaxed, a bit self-deprecating.",
+   "text": "Then AI showed up. Honestly, how often do you still write code yourself these days? Thousands of lines show up in seconds. It feels like we went from writing programs to reviewing results, and reviewing invoices. So in theory, no more late nights, right? Funny thing is, we still can't sleep. Because the bugs didn't go away. They just changed shape. <short pause>Now the thing you debug is an agent that goes off the rails halfway through. A model that sounds completely sure of itself while making things up. A screen with zero errors and an answer that's just wrong. And sometimes, the thing that needs debugging is us. Tech moves so fast, our brains crash once in a while too. <short pause>Oh, and full disclosure. My voice is AI-generated. So I'm one more thing that needs debugging. <laugh>"
+  },
+  {
+   "id": "s02_outro",
+   "mood": "Closing. Warm, like the start of a long conversation.",
+   "text": "So what is this show? Each episode, I pick one report from the imitator site and turn it into something you can follow on your commute, or while doing the dishes. The scripts are checked against the original report, and if I can't find a source for something, I don't say it. And every episode is heard by a real person, start to finish, before it goes out. No unchecked hacks here. We'll talk code, we'll talk agents, and we'll talk about keeping your own head in shape while AI rewrites everything around us. <short pause>At the end of every episode, I'll set a breakpoint, and we'll stop and pick up three things to take with you. Links to the original reports, which are in Chinese, are in the show notes. Okay. Leave one small light on, grab a glass of water. If you're getting this, send me a pong. See you next time."
+  }
+ ]
+}

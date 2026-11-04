@@ -176,8 +176,9 @@ def cmd_episode(a):
             continue
         if only and not a.add_takes: a.force = True
         p = d / f"{s['id']}.wav"
-        expected = spoken_chars(s["text"]) / CHARS_PER_SEC
-        style = f"{style_text(sc, a.style)}。這一段：{s['mood']}"
+        # other languages set their own speaking rate and joiner in script.json (en/ja editions)
+        expected = spoken_chars(s["text"]) / sc.get("chars_per_sec", CHARS_PER_SEC)
+        style = f"{style_text(sc, a.style)}{sc.get('mood_joiner', '。這一段：')}{s['mood']}"
         takes = []
         first = len(list(d.glob(f"{s['id']}.take*.wav"))) if a.add_takes else 0   # keep existing takes, add new ones after them
         for k in range(first, first + (a.add_takes or a.takes)):
