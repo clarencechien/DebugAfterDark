@@ -27,6 +27,19 @@
   "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
  },
  "audio": {
-  "file": "ep05-reef-chart.mp3"
+  "file": "ep05-reef-chart.mp3",
+  "bytes": 8988492,
+  "sha256": "2b76cb25a3f11d110ace86b0f7ce6f00888e84936cf3ef1fc777301e2826b8c9",
+  "duration_s": 561.7,
+  "duration": "9:21",
+  "lufs": -16.9
+ },
+ "qa": {
+  "breeze_cer_mean": 0.028,
+  "jitter_semitones": 0.234,
+  "consistency": "qa/consistency.json：9 段裡 8 段被標記，主要是接縫亮度（s02→s03 -1346 Hz、s05→s06 +1160 Hz、s07→s08 +1019 Hz）；語速 s00 -18%、s03 +10%、s05 -11%；s07 音高 +6.4 Hz",
+  "gates": "錯誤率 2.8% 通過；音高跳動 0.234 略超過 0.23；s02、s03、s05、s06、s08 各補念 3 次後重選",
+  "both_wrong": "「撞沉他」兩套都聽成「撞成它」（s05；Breeze 在 s01、s08 也把沉聽成成，台灣口音 -n/-ng 合流）；「中階」聽成中介／中級（s03）",
+  "terms": "Ping、pong 6 次都判為英文念法"
  }
 }
