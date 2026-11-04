@@ -7,7 +7,7 @@
 |---|---|---|
 | [EP00](episodes/ep00-intro/) | 嘿，還醒著嗎？（預告集，節目自介） | 定稿 |
 | [EP01](episodes/ep01-fifth-move/) | 記住了第一招，漏掉了第五招 | 從 ttspoc POC 搬來（做在主持人命名之前） |
-| [EP02](episodes/ep02-harness-probe/) | 跑從來不是問題，看才是 | 第一集照新產線做的 |
+| [EP02](episodes/ep02-harness-probe/) | 跑從來不是問題，看才是 | 定稿；第一集照新產線做的 |
 
 - 一集怎麼做：[`docs/recipe.md`](docs/recipe.md)
 - 節目怎麼營運（選題、審稿、跟 imitator 整合、上架平台）：[`PIPELINE.md`](PIPELINE.md)
