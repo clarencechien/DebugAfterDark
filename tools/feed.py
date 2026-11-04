@@ -43,6 +43,11 @@ def text(s):
     return escape(s, {'"': "&quot;", "'": "&apos;"})
 
 
+def with_support(show, text):
+    """Append the support link (show.json support_url) so every app that reads the feed shows it (Apple, Spotify, SoundOn)."""
+    return f"{text}\n\n{show['support_text']}：{show['support_url']}" if show.get("support_url") else text
+
+
 def build(show, eps):
     site = show["site_url"].rstrip("/"); feed_url = f"{site}/feed.xml"
     guid = uuid.uuid5(PODCAST_NS_UUID, feed_url.split("://", 1)[1].rstrip("/"))
@@ -55,7 +60,7 @@ def build(show, eps):
          f"<title>{text(show['title'])}</title>",
          f"<link>{text(site)}/</link>",
          f'<atom:link href="{text(feed_url)}" rel="self" type="application/rss+xml"/>',
-         f"<description>{text(show['description'])}</description>",
+         f"<description>{text(with_support(show, show['description']))}</description>",
          f"<language>{text(show['language'])}</language>",
          f"<copyright>{text(show['copyright'])}</copyright>",
          f"<itunes:author>{text(show['author'])}</itunes:author>",
@@ -78,7 +83,7 @@ def build(show, eps):
             url = show["enclosure_prefix"].rstrip("/") + "/" + url.split("://", 1)[1]
         L += ["<item>",
               f"<title>{text(e['title'])}</title>",
-              f"<description>{text(e['description'])}</description>",
+              f"<description>{text(with_support(show, e['description']))}</description>",
               f'<enclosure url="{text(url)}" length="{a["bytes"]}" type="audio/mpeg"/>',
               f'<guid isPermaLink="false">{text(e["guid"])}</guid>',
               f"<pubDate>{format_datetime(datetime.fromisoformat(e['published']))}</pubDate>",

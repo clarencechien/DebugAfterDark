@@ -128,6 +128,8 @@ main.wrap {{ padding-block:28px 72px; }}
 button {{ font:500 13px/1 var(--f-mono); color:var(--ink); background:transparent; border:1px solid var(--line); border-radius:6px; padding:9px 12px; cursor:pointer; }}
 button:hover {{ border-color:var(--lamp); color:var(--lamp); }}
 
+.support {{ display:flex; align-items:center; gap:10px; margin:14px 0 0; color:var(--muted); font-size:15px; }}
+.support a {{ font-weight:700; }}
 .list-head {{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin:44px 0 8px; }}
 h2 {{ font:700 26px/1.3 var(--f-display); margin:0; }}
 .ep {{ border-top:1px solid var(--line); }}
@@ -176,10 +178,11 @@ footer {{ margin-top:40px; padding-top:16px; border-top:1px solid var(--line); c
 <main class="wrap">
 <p class="intro">{html.escape(show['description'].split(chr(10))[0])}</p>
 <div class="sub-box"><span class="label">訂閱</span><code id="feed-url">{site}/feed.xml</code><button type="button" id="copy-feed">複製網址</button></div>
+{f'<p class="support"><span class="dot" aria-hidden="true"></span><span><a href="{html.escape(show["support_url"])}">{html.escape(show["support_text"])}</a>：覺得節目有幫助，可以單次或每月支持製作成本。</span></p>' if show.get("support_url") else ""}
 <div class="list-head"><h2>每一集</h2><button type="button" id="toggle-all" aria-pressed="false">全部展開</button></div>
 {''.join(items)}
 <section class="about"><h2>關於節目</h2>{para(about)}</section>
-<footer><p>本節目的聲音由 AI 語音合成，不模仿任何真人；內容改寫自 <a href="https://imitator.ai-apps.work/">imitator</a> 上的文章，每一集都經過真人審稿與試聽。Apple Podcasts、Spotify 上架中，先用上面的網址訂閱。</p></footer>
+<footer>{f'<p><a href="{html.escape(show["support_url"])}">{html.escape(show["support_text"])}</a></p>' if show.get("support_url") else ""}<p>本節目的聲音由 AI 語音合成，不模仿任何真人；內容改寫自 <a href="https://imitator.ai-apps.work/">imitator</a> 上的文章，每一集都經過真人審稿與試聽。Apple Podcasts、Spotify 上架中，先用上面的網址訂閱。</p></footer>
 </main>
 <script>
 (function () {{
