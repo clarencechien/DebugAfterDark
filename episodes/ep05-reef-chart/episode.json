@@ -1,0 +1,32 @@
+{
+ "id": "ep05-reef-chart",
+ "number": 5,
+ "type": "full",
+ "guid": "debug-after-dark:ep05",
+ "title": "EP05 撞礁是遲早的，會不會沉才是問題",
+ "description": "撞礁是遲早的，問題是撞了會不會沉。上一集的四張帳單，兩個人撞了修一修就沒事，兩個人收到帳單，差別不在誰比較資深，而是爆了之後是「停」還是「寄帳單」。這集也回頭看那位老師寫給 AI 的技能：它其實有成本關卡，卻沒攔到讓帳單變大的那一顆礁，因為護欄擋的是動作，暗礁是做了之後會長成什麼。帳單三部曲的最後一集。\n\n今晚的 breakpoint：\n1. 會不會沉看水深：爆了是停還是寄帳單、計費單位是什麼；預算提醒不是上限。\n2. 護欄擋得住動作，擋不住做了之後會長成什麼；借來的海圖，空白不代表安全。\n3. 修完船，回去改圖：把撞過的礁寫進你給 AI 的規則。\n\n原文：〈海圖不畫航線，畫暗礁〉 https://imitator.ai-apps.work/r/reef-chart\n案例的當事人不具名；依據為公開文章、公開程式碼與網站實測。\n\n上一集：EP04〈帳單響了之後，你手上有沒有地圖〉\n延伸收聽：EP03〈每加一分，就扣一分〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "reef-chart",
+ "source_url": "https://imitator.ai-apps.work/r/reef-chart",
+ "status": "draft",
+ "series": "帳單三部曲 3/3（上：EP04）",
+ "related": [
+  "ep04-bill-to-code-map",
+  "ep03-one-point-cost"
+ ],
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "audio": {
+  "file": "ep05-reef-chart.mp3"
+ }
+}

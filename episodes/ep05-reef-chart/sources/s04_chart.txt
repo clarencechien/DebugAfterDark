@@ -1,0 +1,14 @@
+（注意：依節目原則，個人與小型產品不具名：玩具地圖的工程師說「一位矽谷工程師爸爸」；寫瀏覽器遊戲的開發者說「一位資歷二十五年的開發者」；加分工具的老師說「那位老師」；Places API 的案例說「一位開發者」；技能的名稱、作者與網址都不講。廠商與大型服務照講：Firebase、Firestore、Realtime Database、Cloud Functions、Google Places API、Gemini、Codex、Claude Code。只講報告寫的事實，不加數量、不誇大，不讓聽眾看當事人笑話。）
+
+## 老師的海圖，逐行查
+上一篇（EP03、EP04 的報告）說「沒人在選型時問過單位成本」、規則讓 AI 不提成本。這次把他寫給 Codex 的技能整個 repo 拉下來看，這句話要修正：他問了，但問的是「有沒有礁」，不是「水深」。
+技能裡有的：
+- 一節叫「Cost and irreversible-choice gate」（成本與不可逆選擇的關卡）：Cloud Storage 需要 Blaze（Firebase 的隨用隨付方案）、部署 Cloud Functions 需要 Blaze、開 Blaze 前要說明哪個功能需要並給出純靜態或模擬器的替代方案。
+- 「不可默默建立付費資源、啟用計費、改 DNS、刪部署、覆寫正式環境密鑰。」
+- 交付清單要列出可能產生費用的服務，以及預算警示是否還在。
+- 審計腳本會掃程式碼，偵測到 Storage 就警告「需要 Blaze 核准才能上正式環境」。
+技能裡沒有的：
+- 「計費單位」「位元組」「流量」「扇出」「下載」——整份技能零出現。成本在這張圖上是二元的：付費或不付費。
+- Realtime Database 只出現兩次，它不在成本關卡裡。審計腳本偵測 Firestore、Storage、Auth，不偵測 Realtime Database。
+- 新手模式再加一層靜音：「除非使用者問，否則不提定價、方案、配額、計費」。
+所以這張海圖標了兩顆礁——Storage 和 Functions——而且標得不錯。撞沉他的那顆不在圖上，圖上也沒有水深這個維度。更要緊的是順序：Cloud Functions 需要 Blaze，他為了防作弊開了 Functions，技能照規矩問了「哪個功能需要 Blaze」然後放行——這一步把他推進了沒有上限的水域，接著 Realtime Database 的位元組計費在那片水裡等他，而那片水在圖上是空白。
