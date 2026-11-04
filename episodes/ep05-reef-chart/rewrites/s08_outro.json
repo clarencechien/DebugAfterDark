@@ -1,0 +1,98 @@
+{
+ "segment": "s08_outro",
+ "position": "第 9 段，共 9 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "更扯的是",
+  "我看到這",
+  "我是說",
+  "呃不對"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f36cc2d7b08ca69ae5f3cb74ae939226be3b1ddb4be3e1f10859a325535fd9cd",
+ "previous_context": "把這次撞到的礁石，寫進你的 CLAUDE.md，或是給 agent 的規則裡面。不然吼，換下一條船出港，你還是會在同一個地方沉下去啦。",
+ "original": {
+  "text": "今晚的 breakpoint：一、撞了會不會沉，看水深：爆了是停還是寄帳單，計費單位是什麼；預算提醒不是上限。二、護欄擋得住動作，擋不住做了之後會長成什麼；借來的海圖，空白不代表安全。三、修完船，回去改圖：把撞過的礁寫進你給 AI 的規則。然後片尾：原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 159,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 25.5,
+   "max_sentence_len": 53,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。\n\n額度爆掉會怎樣？<short pause>\n就是看它會停掉，還是繼續寄帳單。\n大家真的要小心，預算提醒不是上限喔。\n\n再來，護欄擋得住動作，擋不住後續的結果。\n借來的海圖，空白不代表安全啦。\n\n最後，修完船記得回去改圖。\n對，把撞過的礁石，寫進給 agent 的規則。\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 164,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 13.9,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n第一個，出事會不會沉，要看水深。\n預算提醒能保命嗎？它根本不是上限喔。\n重點是搞清楚，爆了是停掉、還是寄帳單。\n\n然後，護欄擋得住動作，擋不住結果。\n拿別人給的海圖，空白不代表安全欸。\n\n最後就是修完船，記得回去改海圖。\n把撞過的礁石寫進技能檔。\n對，就是寫進你的 CLAUDE.md 裡面啦。\n\n原文連結在節目資訊欄。\n我是 Ping。有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 12.5,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n你聽完這些，是不是也覺得背後涼涼的？\n對，我們只要記住三件事就好。\n第一，會不會死看水深，預算提醒不是上限喔。\n第二，護欄擋得住動詞，擋不住長出來的暗礁。\n就是那個，借來的海圖，空白不代表安全啦。\n第三，修完船回去改圖，把暗礁寫進規則裡。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 167,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 15.7,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1
+}
