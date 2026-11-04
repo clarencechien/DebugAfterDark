@@ -7,7 +7,7 @@
 |---|---|---|
 | [EP00](episodes/ep00-intro/) | 嘿，還醒著嗎？（預告集，節目自介） | 定稿 |
 | [EP01](episodes/ep01-fifth-move/) | 記住了第一招，漏掉了第五招 | 定稿；用新產線重做（ttspoc 的 POC 版在 `poc/`） |
-| [EP02](episodes/ep02-harness-probe/) | 第五招的實驗：跑從來不是問題，看才是 | 定稿後補上回顧上一集（s01），待試聽 |
+| [EP02](episodes/ep02-harness-probe/) | 第五招的實驗：跑從來不是問題，看才是 | 定稿（s01 補上回顧上一集） |
 | [EP03](episodes/ep03-one-point-cost/) | 每加一分，就扣一分（帳單三部曲 1/3） | 製作中 |
 
 - 一集怎麼做：[`docs/recipe.md`](docs/recipe.md)
