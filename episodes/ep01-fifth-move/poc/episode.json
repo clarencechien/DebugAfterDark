@@ -1,0 +1,37 @@
+{
+ "id": "ep01-fifth-move",
+ "number": 1,
+ "type": "full",
+ "guid": "debug-after-dark:ep01",
+ "title": "EP01 記住了第一招，漏掉了第五招",
+ "description": "那則轉傳很兇的貼文說「別再寫『你是一個資深……』」，其實只抄到了一半。這集用 Felix Rieseberg 的〈How to be more ambitious〉，聊四種野心、深度的五招，以及為什麼最重要的是第五招：外部裁判。\n\n原文：〈記住了第一招，漏掉了第五招〉 https://imitator.ai-apps.work/r/fifth-move\n原作者：Felix Rieseberg〈How to be more ambitious〉\n\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "fifth-move",
+ "source_url": "https://imitator.ai-apps.work/r/fifth-move",
+ "status": "final-from-poc",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "origin": "clarencechien/ttspoc main 799872e，samples/episodes/ep01-tw_gemini-3.8-flash_d1_style-v5_clarity.mp3",
+  "script": "rewrite_episode.py（Gemini 3.8 Flash）+ 人工修正，見 rewrites/*.json 的 manual_edits",
+  "takes_per_segment": "3（s05 共 6）",
+  "selection": "select_takes.py --asr breeze --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq",
+  "known_issues": [
+   "ttspoc 的 master 沒有插段間 0.6 秒停頓（tools/make_podcast.py 已修），這集段落之間沒有停頓",
+   "做在主持人命名之前：開場是「歡迎收聽深夜 Debug」，沒有 Ping、沒有固定開場與 breakpoint 單元"
+  ]
+ },
+ "audio": {
+  "file": "ep01-fifth-move.mp3",
+  "bytes": 8125530,
+  "sha256": "f15870ed1bced931c14024b6a0c064fbccb1d9fb9e4980fca2f47bfe8e733557",
+  "duration_s": 507.8,
+  "duration": "8:27",
+  "lufs": -16.8
+ }
+}

@@ -17,7 +17,8 @@ PARTICLES = re.compile(r"[欸齁啦喔吧嘛耶捏咧哦蛤]")
 WRITTEN = ["推估", "因此", "此外", "然而", "其中", "對應", "處方", "藉由", "透過", "進行", "以及", "並且"]
 TAG = re.compile(r"<[^>]+>")
 # Mainland-flavoured words a Taiwanese listener flags (keep in sync with rule 13 of the prompt)
-MAINLAND = ["更狠的是", "盲猜", "咱們", "挺", "這事兒", "視頻", "質量", "信息", "軟件", "靠譜", "牛逼", "絕了", "立馬",
+MAINLAND = ["更狠的是", "盲猜", "坑",  # 坑: flagged by a Taiwanese listener on EP01 (ttspoc RESULTS)
+             "咱們", "挺", "這事兒", "視頻", "質量", "信息", "軟件", "靠譜", "牛逼", "絕了", "立馬",
             "整活", "老鐵", "點贊", "回頭再說", "兒", "啥"]
 
 def lint(text):

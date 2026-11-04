@@ -1,0 +1,28 @@
+{
+ "id": "ep03-one-point-cost",
+ "number": 3,
+ "type": "full",
+ "guid": "debug-after-dark:ep03",
+ "title": "EP03 每加一分，就扣一分",
+ "description": "一位國小老師用 AI 做了一個免費的班級加分工具，每月五萬多人在用，九月的雲端帳單卻快三千塊台幣。錢不是花在你以為的地方：同一個壓縮技巧，換了計費單位，就從省錢變燒錢。這集聊為什麼 AI 沒有提醒他，以及讓 AI 加即時同步之前，該先問的三個問題。\n\n今晚的 breakpoint：\n1. 同一招換了計費單位，結果可能相反。\n2. 一個動作有幾台裝置要下載、各下載多少，乘起來就是帳單長大的速度。\n3. 讓 AI 加即時或多人功能之前，先要它說出計費單位和一百倍時的帳單。\n\n原文：〈一次加分的代價〉 https://imitator.ai-apps.work/r/funclass-cost-case-study\n案例：一位國小老師做的「FunClass 翻課星球」，報告依據公開網頁、公開程式與作者貼文，未登入、未碰任何雲端資料。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "funclass-cost-case-study",
+ "source_url": "https://imitator.ai-apps.work/r/funclass-cost-case-study",
+ "status": "production",
+ "series": "帳單三部曲 1/3（之後：bill-to-code-map、reef-chart）",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "audio": {
+  "file": "ep03-one-point-cost.mp3"
+ }
+}
