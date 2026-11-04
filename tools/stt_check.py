@@ -81,6 +81,8 @@ ASR_MODELS = {
 }
 ASR = "whisper"
 
+BEAM = 5   # beam search width; 1 = greedy, several times faster on CPU (see docs/recipe.md step 5)
+
 def whisper_transcribe(paths):
     from faster_whisper import WhisperModel
     m = WhisperModel(ASR_MODELS[ASR], device="cpu", compute_type="int8")
@@ -89,7 +91,7 @@ def whisper_transcribe(paths):
         import wave
         with wave.open(str(p)) as w:
             dur = w.getnframes() / w.getframerate()
-        kw = dict(language="zh", beam_size=5, vad_filter=True)
+        kw = dict(language="zh", beam_size=BEAM, vad_filter=True)
         if ASR == "whisper":   # Breeze is used as published, without a prompt
             kw["initial_prompt"] = "以下是台灣華語的科技 podcast，繁體中文。"
         segs = list(m.transcribe(str(p), **kw)[0])
@@ -171,6 +173,7 @@ def main(a):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); ap.add_argument("--script", required=True); ap.add_argument("--segments", required=True)
     ap.add_argument("--out"); ap.add_argument("--reuse", help="report JSON from an earlier run; skips transcription")
+    ap.add_argument("--beam", type=int, default=5, help="beam size for the local recogniser (1 = greedy)")
     ap.add_argument("--asr", choices=list(ASR_MODELS), default="whisper", help="local recogniser: whisper large-v3-turbo or Breeze-ASR-25")
-    a = ap.parse_args(); ASR = a.asr
+    a = ap.parse_args(); ASR = a.asr; BEAM = a.beam
     main(a)

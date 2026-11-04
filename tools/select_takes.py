@@ -35,7 +35,7 @@ import measures
 
 def main(a):
     import opencc
-    conv = opencc.OpenCC("s2twp"); S.ASR = a.asr
+    conv = opencc.OpenCC("s2twp"); S.ASR = a.asr; S.BEAM = a.beam
     sc = json.loads(Path(a.script).read_text(encoding="utf-8")); d = Path(a.segments)
     takes = {s["id"]: sorted(d.glob(f"{s['id']}.take*.wav")) for s in sc["segments"]}
     allc = [p for v in takes.values() for p in v]
@@ -111,7 +111,7 @@ def main(a):
                     seg["chosen"] = alt
     for seg in log:
         shutil.copyfile(d / seg["chosen"], d / f"{seg['id']}.wav")
-    (d / "select_log.json").write_text(json.dumps({"asr": a.asr, "tolerance": a.tolerance, "terms": terms, "jitter_margin": a.jitter_margin,
+    (d / "select_log.json").write_text(json.dumps({"asr": a.asr, "beam": a.beam, "tolerance": a.tolerance, "terms": terms, "jitter_margin": a.jitter_margin,
                                                    "pace_margin": a.pace_margin, "episode_median_cps": round(med_cps, 2), "consistency": a.consistency,
                                                    "sim_margin": a.sim_margin, "bright_margin": a.bright_margin, "segments": log}, ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -124,6 +124,7 @@ if __name__ == "__main__":
     ap.add_argument("--sim-margin", type=float, default=0.015); ap.add_argument("--bright-margin", type=float, default=300)
     ap.add_argument("--neighbour", action="store_true", help="with --consistency: also prefer takes that match adjacent segments")
     ap.add_argument("--neighbour-margin", type=float, default=0.01)
+    ap.add_argument("--beam", type=int, default=5, help="recogniser beam size; 1 = greedy (faster)")
     ap.add_argument("--terms", default="", help="comma-separated English terms that must appear in the blind transcript, e.g. Ping,pong")
     ap.add_argument("--jitter-margin", type=float, default=0.02, help="semitones above the steadiest take still accepted")
     ap.add_argument("--pace-margin", type=float, default=0.10, help="allowed deviation from the episode median characters per second")
