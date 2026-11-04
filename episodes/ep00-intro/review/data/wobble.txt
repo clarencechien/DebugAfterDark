@@ -1,0 +1,57 @@
+## review/ep00-intro_gemini-3.8-flash_d1_style-v5_draft1.mp3
+0:03  jitter 0.201 st  big_jumps 0.029  short_breaks/min  30.0  voiced_run   80 ms
+0:23  jitter 0.206 st  big_jumps 0.037  short_breaks/min  51.0  voiced_run  100 ms
+0:43  jitter 0.214 st  big_jumps 0.047  short_breaks/min  30.0  voiced_run  115 ms
+1:03  jitter 0.200 st  big_jumps 0.029  short_breaks/min  36.0  voiced_run  120 ms
+1:23  jitter 0.214 st  big_jumps 0.021  short_breaks/min  15.0  voiced_run   80 ms
+1:43  jitter 0.188 st  big_jumps 0.019  short_breaks/min  27.0  voiced_run  100 ms
+2:03  jitter 0.191 st  big_jumps 0.021  short_breaks/min  42.0  voiced_run   90 ms
+2:23  jitter 0.207 st  big_jumps 0.007  short_breaks/min  25.3  voiced_run   80 ms
+SUMMARY jitter 0.201 st  big_jumps 0.027  short_breaks/min 33.0  voiced_run 90 ms
+## /home/user/DebugAfterDark/episodes/ep00-intro/review/ep00-intro_gemini-3.8-flash_d1_style-v5_draft2_single-request.mp3
+0:03  jitter 0.243 st  big_jumps 0.054  short_breaks/min  39.0  voiced_run   90 ms
+0:23  jitter 0.281 st  big_jumps 0.051  short_breaks/min  42.0  voiced_run  100 ms
+0:43  jitter 0.268 st  big_jumps 0.049  short_breaks/min  36.0  voiced_run  100 ms
+1:03  jitter 0.274 st  big_jumps 0.062  short_breaks/min  45.0  voiced_run  110 ms
+1:23  jitter 0.268 st  big_jumps 0.064  short_breaks/min  39.0  voiced_run   95 ms
+1:43  jitter 0.267 st  big_jumps 0.072  short_breaks/min  42.0  voiced_run  100 ms
+2:03  jitter 0.218 st  big_jumps 0.062  short_breaks/min  51.0  voiced_run  110 ms
+SUMMARY jitter 0.259 st  big_jumps 0.060  short_breaks/min 43.0  voiced_run 100 ms
+## d3b.mp3
+0:03  jitter 0.206 st  big_jumps 0.044  short_breaks/min  33.0  voiced_run   80 ms
+0:23  jitter 0.219 st  big_jumps 0.046  short_breaks/min  60.0  voiced_run  100 ms
+0:43  jitter 0.226 st  big_jumps 0.049  short_breaks/min  33.0  voiced_run  120 ms
+1:03  jitter 0.247 st  big_jumps 0.034  short_breaks/min  45.0  voiced_run  140 ms
+1:23  jitter 0.264 st  big_jumps 0.042  short_breaks/min  24.0  voiced_run  120 ms
+1:43  jitter 0.189 st  big_jumps 0.031  short_breaks/min  39.0  voiced_run  145 ms
+2:03  jitter 0.204 st  big_jumps 0.040  short_breaks/min  51.0  voiced_run   80 ms
+2:23  jitter 0.184 st  big_jumps 0.047  short_breaks/min  36.0  voiced_run   80 ms
+SUMMARY jitter 0.215 st  big_jumps 0.041  short_breaks/min 40.5  voiced_run 110 ms
+D1_ep00          s00_open.take0       SUMMARY jitter 0.212 st  big_jumps 0.044  short_breaks/min 43.8  voiced_run 100 ms
+D1_ep00          s00_open.take1       SUMMARY jitter 0.205 st  big_jumps 0.039  short_breaks/min 36.4  voiced_run 90 ms
+D1_ep00          s00_open.take2       SUMMARY jitter 0.267 st  big_jumps 0.057  short_breaks/min 50.6  voiced_run 90 ms
+D1_ep00          s01_now.take0        SUMMARY jitter 0.219 st  big_jumps 0.030  short_breaks/min 20.4  voiced_run 110 ms
+D1_ep00          s01_now.take1        SUMMARY jitter 0.226 st  big_jumps 0.038  short_breaks/min 35.0  voiced_run 120 ms
+D1_ep00          s01_now.take2        SUMMARY jitter 0.249 st  big_jumps 0.052  short_breaks/min 32.7  voiced_run 80 ms
+D1_ep00          s02_outro.take0      SUMMARY jitter 0.209 st  big_jumps 0.026  short_breaks/min 42.1  voiced_run 110 ms
+D1_ep00          s02_outro.take1      SUMMARY jitter 0.201 st  big_jumps 0.034  short_breaks/min 36.8  voiced_run 110 ms
+D1_ep00          s02_outro.take2      SUMMARY jitter 0.215 st  big_jumps 0.041  short_breaks/min 32.5  voiced_run 110 ms
+D1_ep00b         s00_open.take0       SUMMARY jitter 0.223 st  big_jumps 0.045  short_breaks/min 37.2  voiced_run 80 ms
+D1_ep00b         s00_open.take1       SUMMARY jitter 0.214 st  big_jumps 0.036  short_breaks/min 39.1  voiced_run 100 ms
+D1_ep00b         s00_open.take2       SUMMARY jitter 0.200 st  big_jumps 0.053  short_breaks/min 38.9  voiced_run 105 ms
+D1_ep00b         s01_now.take0        SUMMARY jitter 0.223 st  big_jumps 0.039  short_breaks/min 44.5  voiced_run 100 ms
+D1_ep00b         s01_now.take1        SUMMARY jitter 0.232 st  big_jumps 0.045  short_breaks/min 37.5  voiced_run 110 ms
+D1_ep00b         s01_now.take2        SUMMARY jitter 0.210 st  big_jumps 0.031  short_breaks/min 39.6  voiced_run 80 ms
+D1_ep00b         s02_outro.take0      SUMMARY jitter 0.192 st  big_jumps 0.045  short_breaks/min 12.8  voiced_run 110 ms
+D1_ep00b         s02_outro.take1      SUMMARY jitter 0.192 st  big_jumps 0.029  short_breaks/min 30.7  voiced_run 110 ms
+D1_ep00b         s02_outro.take2      SUMMARY jitter 0.187 st  big_jumps 0.020  short_breaks/min 31.1  voiced_run 100 ms
+D1_ep00single    full.take0           SUMMARY jitter 0.211 st  big_jumps 0.035  short_breaks/min 32.7  voiced_run 110 ms
+D1_ep00single    full.take1           SUMMARY jitter 0.262 st  big_jumps 0.048  short_breaks/min 43.1  voiced_run 80 ms
+D1_ep00single    full.take2           SUMMARY jitter 0.251 st  big_jumps 0.047  short_breaks/min 38.5  voiced_run 100 ms
+D1_ep00single2   full.take0           SUMMARY jitter 0.263 st  big_jumps 0.051  short_breaks/min 39.8  voiced_run 100 ms
+D1_ep00single2   full.take1           SUMMARY jitter 0.239 st  big_jumps 0.049  short_breaks/min 38.5  voiced_run 90 ms
+D1_ep00single2   full.take2           SUMMARY jitter 0.212 st  big_jumps 0.043  short_breaks/min 35.2  voiced_run 100 ms
+D1_ep00s02       s02_outro.take0      SUMMARY jitter 0.189 st  big_jumps 0.048  short_breaks/min 37.3  voiced_run 110 ms
+D1_ep00s02       s02_outro.take1      SUMMARY jitter 0.221 st  big_jumps 0.027  short_breaks/min 53.4  voiced_run 95 ms
+D1_ep00s02       s02_outro.take2      SUMMARY jitter 0.189 st  big_jumps 0.039  short_breaks/min 44.2  voiced_run 100 ms
+D1_ep00s02       s02_outro.take3      SUMMARY jitter 0.225 st  big_jumps 0.039  short_breaks/min 35.3  voiced_run 120 ms

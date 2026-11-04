@@ -1,0 +1,43 @@
+{
+ "limits": {
+  "neighbour_sim": 0.93,
+  "pitch_hz": 6.0,
+  "centroid_hz": 350.0,
+  "lufs_db": 1.0
+ },
+ "segments": [
+  {
+   "id": "s00_open",
+   "start": "0:03",
+   "pitch_hz": 90.9,
+   "centroid_hz": 2258,
+   "lufs": -20.0,
+   "sim_prev": null,
+   "sim_next": 0.958,
+   "sim_episode": 0.991,
+   "issues": []
+  },
+  {
+   "id": "s01_now",
+   "start": "0:56",
+   "pitch_hz": 95.2,
+   "centroid_hz": 2390,
+   "lufs": -20.0,
+   "sim_prev": 0.958,
+   "sim_next": 0.95,
+   "sim_episode": 0.982,
+   "issues": []
+  },
+  {
+   "id": "s02_outro",
+   "start": "1:55",
+   "pitch_hz": 88.9,
+   "centroid_hz": 2516,
+   "lufs": -20.0,
+   "sim_prev": 0.95,
+   "sim_next": null,
+   "sim_episode": 0.988,
+   "issues": []
+  }
+ ]
+}

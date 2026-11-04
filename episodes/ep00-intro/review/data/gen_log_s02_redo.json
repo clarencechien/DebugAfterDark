@@ -1,0 +1,39 @@
+[
+ {
+  "id": "s02_outro",
+  "attempts": 1,
+  "audio_s": 43.88,
+  "expected_s": 45.8,
+  "ratio": 0.96,
+  "ok": true,
+  "wall_s": 12.9,
+  "tokens": 1097,
+  "takes": [
+   {
+    "file": "s02_outro.take0.wav",
+    "audio_s": 48.3,
+    "pauses_ge_0_6s": 11,
+    "ok": true
+   },
+   {
+    "file": "s02_outro.take1.wav",
+    "audio_s": 43.9,
+    "pauses_ge_0_6s": 5,
+    "ok": true
+   },
+   {
+    "file": "s02_outro.take2.wav",
+    "audio_s": 51.6,
+    "pauses_ge_0_6s": 10,
+    "ok": true
+   },
+   {
+    "file": "s02_outro.take3.wav",
+    "audio_s": 46.0,
+    "pauses_ge_0_6s": 9,
+    "ok": true
+   }
+  ],
+  "chosen": "s02_outro.take1.wav"
+ }
+]
