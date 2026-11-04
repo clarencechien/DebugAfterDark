@@ -43,5 +43,5 @@
   "consistency": "qa/consistency.json",
   "gemini_blind_cer": "review/data/clarity_ep00*.json"
  },
- "published": "2026-11-04T20:00:00+08:00"
+ "published": "2026-11-04T15:00:00+08:00"
 }
