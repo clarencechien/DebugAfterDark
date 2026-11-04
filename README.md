@@ -4,6 +4,7 @@
 目的是讓還沒讀過報告的人也聽得懂、聽完想去看全文。
 
 - 計劃與產線設計：[`PIPELINE.md`](PIPELINE.md)
+- 主持人、EP00 自介與節目文案：[`HOST.md`](HOST.md)
 - 前身 POC（聲線、寫稿、品質檢查的實驗與數據）：[`clarencechien/ttspoc`](https://github.com/clarencechien/ttspoc) 的 `podcast/`
 - 報告本身與網站的 Worker：[`clarencechien/imitator`](https://github.com/clarencechien/imitator)
 

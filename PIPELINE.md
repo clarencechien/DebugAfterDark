@@ -2,7 +2,10 @@
 
 **狀態**：計劃（2026-11-04），還沒有實作。
 **前身**：[`clarencechien/ttspoc`](https://github.com/clarencechien/ttspoc) 的 `podcast/`（POC，2026-09-25 到 2026-11-03，
-最後一個 commit `68c83b8`）。這份計劃把 POC 學到的東西整理成一條可以每週跑的產線。
+對照到 `main` 的 `799872e`）。ttspoc 最後兩個 commit 已經寫好一份逐步的製作流程 `podcast/PIPELINE.md`，
+工具也改成不綁 EP01、可以做任何一集。**那份是「一集怎麼做」的配方，這份是「整個節目怎麼營運」**：
+選題、審稿、發佈、跟 imitator 的整合、上架平台。配方搬過來之後放在 `docs/recipe.md`，兩份不重複寫。
+主持人命名、EP00 自介與節目文案在 [`HOST.md`](HOST.md)。
 **分工**：
 
 | repo | 放什麼 |
@@ -67,15 +70,31 @@
 14. **Gemini 評審分不出台灣腔與大陸腔**，跟台灣母語者的判斷相反；磁性也排不出穩定名次。
     **口音與磁性只能人耳判斷**，自動分數只拿來挑「清楚、一致、停頓少」。
 15. 挑選順序：清晰度（差 0.012 以內視為同級）→ 一致性（聲紋差 ≤ 0.015、音色重心差 ≤ 300 Hz）→ 長停頓最少。
+    最後再做一輪**相鄰段比對**（`select_takes.py --neighbour`）：某次生成跟前後段的相似度高出 0.01 以上就換掉。
+    EP01 的結尾段靠這一步從 0.917 拉到 0.955。
+
+### 最後兩個 commit 定下來的事（`87d6a2e`、`29ace11`）
+16. **正式製作的預設是 D1 + v5**：設計聲線 `voice_b3c8x0jsntqc`、`styles.json` 的 v5、每段 3 次、Breeze 挑選、
+    逐段 -20 LUFS、音色匹配。ElevenLabs Hardy 降為替代方案：最清楚，但長停頓是 D1 的兩倍。
+17. **驗收門檻有數字了**：Breeze 盲聽 CER 各段平均 ≤ 3.5%（EP01 是 3.0%）、兩套辨識都聽錯的內容詞 0 處、
+    `consistency_check.py` 全部段落在範圍內。不合格的段用 `--only <段> --add-takes 3` 補生成，只新增不覆蓋。
+18. **自動檢查抓不到歸屬錯誤。** `ep00_smoke` 這個兩段的測試集在人工核對時抓到兩個事實錯誤：
+    「其他評論者說的」被寫成「Felix 說的」、「三處不符」被誇大成「根本對不上」。這兩種錯的數字和人名都對，
+    比對數字與專有名詞的關卡會放行，**只有逐段對照素材讀過一遍才抓得到**。所以人工關卡 A 不能省。
+19. **容器重啟會砍掉執行中的工作**。改寫要加 `--resume`、生成檔已存在就不重做；長的步驟都要能中斷續跑。
+20. **Breeze 很重**：每個新容器要下載約 3 GB 權重並轉成 CTranslate2（約 1.5 GB），CPU 上轉寫 30 次生成約 20 分鐘。
+    所以 Breeze 不放進發佈 Action，在製作端跑（見 §7）。
 
 ### 還沒決定的事（產線的前置條件，見 §7 M0）
-- **主持聲線**：Gemini D1 + v5（最低沉、台灣味、清晰度稍差）、ElevenLabs 聲音庫 Hardy（最清楚、音高高約 47 Hz、停頓多一倍）、
-  Gemini Enceladus（比較式排名第一）。三集完整版都在 `ttspoc/podcast/samples/episodes/`，要台灣母語者盲聽決定。
-- 口音的最終判斷一直標著「待台灣母語者確認」。
+- **D1 是預設，但還沒有經過台灣母語者盲聽確認。** RESULTS.md 的下一步第 1、2 項仍然是「人耳挑聲線」「人耳盲聽三集」，
+  口音一直標著「待台灣母語者確認」。M0 要做的是確認 D1，不是從頭三選一；不通過才回頭比 Hardy 與 Enceladus。
+- **主持人的名字**（見 `HOST.md`）。
 
 ### 成本
-一集約 8.5 分鐘：目前流程（3 候選稿、每段 3 次、逐段校對）約 US$0.67，**2027-01-01 起 Gemini 漲一倍**變 US$1.34。
-精簡流程約一半。都不是決策因素。
+照配方正式做一集（約 9 分鐘、2,400 字）：改寫 0.36 + 語音 0.40（三次生成，含一成補生成）+ 盲聽 0.06 =
+**約 US$0.82，2027-01-01 起 Gemini 漲一倍約 US$1.63**。精簡做法（1 個候選稿、每段念 2 次）約 0.45，2027 起約 0.89。
+Breeze 與一致性檢查在本機跑，不花錢。時間約 50 分鐘，加上 agent 寫稿和核對。都不是決策因素。
+（2026-11-03 整天的實驗花了約 3.7 美元，大多是試錯。）
 
 ---
 
@@ -109,10 +128,10 @@ imitator                          DebugAfterDark                                
 | 1 | 素材 | `/r/{slug}.md` → `source.md`（凍結一份，記 sha256） | 抓不到 `.md` 時退回 HTML 萃取 | `script/sources/` |
 | 2 | 大綱 | `source.md` → 8–10 段，每段一個重點、≤ 350 字預算 | 總字數對應 6–10 分鐘（每秒約 4.2 字） | `ep01.json` 的段落表 |
 | 3 | 改寫 | 大綱 + 素材 + 上段結尾 → 每段 3 個候選 | 口頭禪額度、禁用詞 | `rewrite_episode.py` |
-| 4 | lint + 事實 | 候選 → `script.json` | 句長、數字數、條列、語助詞密度；**稿中每個數字與專有名詞都要能在素材裡找到**；讀音表與易混詞表比對 | `script_lint.py`、`manual_edits` |
+| 4 | lint + 事實 | 候選 → `script.json` | `mainland_words` 為空、`precise_numbers` ≤ 1；句長、條列、語助詞密度；**稿中每個數字與專有名詞都要能在素材裡找到**；讀音表與易混詞表比對。之後 agent 逐段對照素材讀一遍，專抓**歸屬（誰說的）與程度（誇大）**，見 §2 第 18 點 | `script_lint.py`、配方第 3 步的核對表、`manual_edits` |
 | 5 | TTS | 每段 × 3 次 | 音長 ÷ 預期音長在 0.6–1.6 之內，否則重試 ≤ 2 次 | `make_podcast.py episode --takes` |
 | 6 | 挑選 | 3 個 take → 1 個 | Breeze 盲聽 CER → 一致性 → 長停頓 | `select_takes.py --consistency` |
-| 7 | 後製 | 選中的段 → `master.mp3` | 逐段 -20 LUFS、match-EQ、eqA、段間 0.6 s、片頭片尾、整集 -16 LUFS / true peak ≤ -1 dBTP | `make_podcast.py master --match-eq` |
+| 7 | 後製 | 選中的段 → `master.mp3` | 逐段 -20 LUFS、match-EQ、eqA、段間 0.6 s、整集 -16 LUFS / true peak ≤ -1 dBTP。順序是片頭音效 → cold open（當集的鉤子）→ 固定開場（`show/ident/`，每集同一個音檔）→ 正文 → 片尾 | `make_podcast.py master --match-eq` |
 | 8 | 盲聽 QA | `master.mp3` → `qa.json`（標記點 + 時間） | 整集 Breeze CER ≤ 3%，兩套 ASR 都錯的點要處理 | `stt_check.py` |
 | 9 | 逐字稿 | 稿子（文字真值）+ STT 時間戳 → `transcript.vtt` | 每個 cue 都對得回稿子 | 新增 |
 | 10 | 打包 | 上面全部 → `episode.json` 補齊長度、bytes、sha256、模型與聲線紀錄、成本 | schema 驗證 | `cost_estimate.py` |
@@ -137,10 +156,13 @@ report 是寫給已經有興趣的人看的；podcast 的工作是讓還沒興�
 
 ```
 README.md
-PIPELINE.md                     ← 這份
+PIPELINE.md                     ← 這份：節目怎麼營運
+HOST.md                         主持人命名、EP00 自介、固定開場、節目文案
+docs/recipe.md                  一集怎麼做（ttspoc podcast/PIPELINE.md 搬過來）
 show/
-  show.json                     節目設定：名稱、描述、作者、owner email、分類、語言、explicit、feed 網址、guid 前綴
+  show.json                     節目設定：名稱、主持人名、描述、作者、owner email、分類、語言、explicit、feed 網址、guid 前綴
   cover-3000.jpg                封面（3000×3000，RGB，無 alpha）
+  ident/                        固定開場（約 8 秒）的定稿音檔，做一次、每集共用，見 HOST.md
 voices/
   registry.json                 聲線 ID、模型、到期日、語氣版本（由 ttspoc results/voices.json 搬來）
   references/                   每個聲線的參考錄音 FLAC + references.json（聲紋向量、音高、sha256）
@@ -148,7 +170,7 @@ prompts/
   spoken_script_zh-TW.md        POC 的寫稿 prompt
   beginner_rules.md             §3 的入門規則（新）
   taiwan_mandarin_features.md   POC 的台灣華語發音特色
-  styles.json                   base_style v1–v5（從 ep01_tw.json 抽出來，各集共用）
+  styles.json                   語氣 v1–v5（ttspoc 已經抽成獨立檔，v5 是預設）
 lexicon/
   pronunciation.json            人名、產品名的讀法與第一次出現的說法（Rieseberg 那種）
   homophones.json               易混詞 → 改寫（季度檢討、忙人、正本…）
@@ -161,7 +183,10 @@ pipeline/                       Python 套件，一個子命令一個階段（§
   episode_page.py               產生單集頁 HTML（用 imitator 的 style/report.css 底盤）
 scripts/
   publish.py                    發佈（**只用 Python 標準函式庫**，Action 不需要 pip install）
+tests/
+  smoke/                        兩段的回歸測試集（ttspoc 的 ep00_smoke 改名），不上架
 episodes/
+  ep00-intro/                   節目自介，沒有對應的 report（見 HOST.md）
   ep01-fifth-move/
     episode.json                guid、標題、描述、report slug、狀態、長度、bytes、sha256、模型與聲線、成本
     source.md                   凍結的素材
@@ -174,13 +199,23 @@ episodes/
 ```
 
 ### 從 ttspoc 搬什麼
-- **搬**：`prompts/`、`make_podcast.py` 的 tts/master 邏輯、`rewrite_*`、`script_lint.py`、`select_takes.py`、
-  `stt_check.py`（含 Breeze 轉換指令）、`match_voice.py`、`cost_estimate.py`、`results/voices.json`、
-  `samples/references/`、`script/ep01_tw.json` 與 `script/sources/`、`script/rewrites/ep01_tw/`。
+ttspoc 的工具已經不綁 EP01（`--draft`/`--out`/`--script`/`--tag`、素材放 `sources/<ep>/`），所以 M2 的第一步可以是
+**原樣搬過來先跑通**，之後再整理成 `pipeline/` 套件與 `dad` CLI。兩步分開，比較好查是搬壞的還是整理壞的。
+
+- **搬**：
+  - 配方：`podcast/PIPELINE.md` → `docs/recipe.md`，路徑改成這個 repo 的。
+  - 工具：`make_podcast.py`、`rewrite_episode.py`、`rewrite_segment.py`、`script_lint.py`、`select_takes.py`、
+    `stt_check.py`（含 Breeze 轉換指令）、`consistency_check.py`、`match_voice.py`、`cost_estimate.py`、`cost_today.py`、
+    `elevenlabs_tts.py`（替代方案）。
+  - 設定：`styles.json`、`prompts/`、`results/voices.json`、`samples/references/`、`requirements.txt`、`requirements-qa.txt`。
+  - 節目資料：`script/ep01_tw.json`、`script/sources/`、`script/rewrites/ep01_tw/` 與 EP01 的 QA 紀錄
+    （`results/ep01_tw/` 裡 `select_log`、`match_eq`、`consistency_check` 的 D1_tw2 版本）。
+  - 成品：`samples/episodes/ep01-tw_gemini-3.8-flash_d1_style-v5_clarity.mp3`（`87d6a2e` 重新後製過的版本）。
+  - 測試集：`script/ep00_smoke*.json` 與它的 sources、rewrites，**改名成 `smoke`**。EP00 這個集數要留給節目自介
+    （`HOST.md`）；smoke 不上架，當作改了產線之後的快速回歸測試（兩段、幾分鐘跑完）。
 - **不搬**：聲線比較、ElevenLabs 對照、語氣 A/B、fricative probe 這些實驗與它們的 samples —— 它們是 ttspoc 的研究紀錄。
 - 搬的方式是複製並在 commit 訊息記下 ttspoc 的來源 commit；歷史留在 ttspoc，不做 `git filter-repo`。
-- 搬完後把 EP01 用新產線從頭跑一次，對照 POC 的 `ep01-tw_gemini-3.8-flash_d1_style-v5_clarity.mp3`
-  （CER、長度、響度、一致性），數字落在同一區間才算搬成功。
+- 搬完後先跑 `smoke`，再把 EP01 從頭跑一次，對照 POC 成品的 CER、長度、響度、一致性，數字落在同一區間才算搬成功。
 
 ### 成品 mp3 放 git
 一集 128 kbps 單聲道約 8–10 MB。放 git 的理由：發佈 Action 需要拿得到檔案；這個 repo 是 podcast 的 source of truth，
@@ -326,9 +361,9 @@ R2 的 `get(key, { range: request.headers })` 直接吃 Range header。ACAO `*` 
 
 | 階段 | 內容 | 完成的定義 |
 |---|---|---|
-| **M0 決策**（人） | 盲聽三集決定主持聲線；定節目名稱與 show slug；封面；feed 用的公開信箱；podcast 用的 group | `show/show.json` 與 `voices/registry.json` 定案 |
+| **M0 決策**（人） | 台灣母語者盲聽確認 D1 + v5（不通過才比 Hardy、Enceladus）；**主持人名字**（`HOST.md` 的試念測試）；節目名稱與 show slug；封面；feed 用的公開信箱；podcast 用的 group | `show/show.json` 與 `voices/registry.json` 定案 |
 | **M1 llm.txt**（imitator） | `.md` 寫入/讀取、`/llms.txt`、`Link` header、`extract-md.mjs` 回填、STYLE.md/CLAUDE.md/inbox 更新 | 所有 public report 都有 `/r/{slug}.md`；`/llms.txt` 列得出全部；**跟 podcast 無關，可以先上** |
-| **M2 產線搬家**（這裡） | 從 ttspoc 搬程式與資料，整理成 `pipeline/` 與 `dad` CLI；加 `beginner_rules.md`、讀音表、易混詞表、事實關卡 | `dad` 一路跑完 EP01，數字跟 POC 同一區間 |
+| **M2 產線搬家**（這裡） | 先原樣搬 ttspoc 的工具與配方跑通 `smoke` 和 EP01；再整理成 `pipeline/` 與 `dad` CLI；加 `beginner_rules.md`、讀音表、易混詞表；做 EP00 與固定開場 | EP01 重跑的 CER ≤ 3.5%、一致性全過；EP00 定稿 |
 | **M3 podcast host**（imitator） | §5.5 的 1–5、9；WAF 規則先改 | 測試全過；手動推一份測試 feed 到一個測試 show，用 curl 驗 Range/HEAD，用 Apple validator 驗 feed |
 | **M4 發佈自動化**（這裡） | `feed.py`、`episode_page.py`、`scripts/publish.py`、`.github/workflows/publish.yml` | merge 一個 EP 的 PR 後，音檔、逐字稿、feed、單集頁都上線，portal 出現 🎧 |
 | **M5 開台** | 做 EP02、EP03；送 Apple、Spotify、其他平台 | 三個平台都搜得到 |
@@ -351,12 +386,16 @@ CLI 路徑就是在本機跑同一支 `python3 scripts/publish.py episodes/ep02-
 
 ## 8. 待決定的問題
 
-1. **節目名稱與 slug**：「深夜 Debug」/「Debug After Dark」，show slug `debug-after-dark`？feed 網址會跟著它一輩子。
-2. **主持聲線**：D1 + v5、Hardy、Enceladus，或先錄自己做聲音複製（最耐久，見 §9）。
-3. **feed 的公開信箱**：Spotify 驗證碼寄到這裡，而且它公開在 feed 裡、會被爬。建議開一個專用 alias，不用個人信箱。
-4. **頻率**：每週一集？依 report 產出量決定。
-5. **哪些 report 適合**：public、不會很快過時、有故事可講；數字密集的財經表格類要先試一集看看門檻能不能降得下來。
-6. **單集頁的 slug 前綴** `dad-ep{NN}` 會出現在 portal 列表裡，要不要之後讓 portal 把它們分成一區。
+1. **節目名稱與 slug**：「深夜 Debug｜Debug After Dark」，show slug `debug-after-dark`？feed 網址會跟著它一輩子。
+   2026-11-04 搜尋過，沒找到同名的節目；相近的有英文的 Secure After Dark（資安）和一個台灣的深夜寫 code ASMR 節目。
+2. **主持聲線**：預設 D1 + v5，待台灣母語者確認；長期可以考慮錄自己的聲音做複製（最耐久，見 §9）。
+   如果走聲音複製，主持人名字的考量會不一樣，見 `HOST.md` §1.3。
+3. **主持人名字**：建議 Trace，理由與試念測試在 `HOST.md`。
+4. **feed 的公開信箱**：Spotify 驗證碼寄到這裡，而且它公開在 feed 裡、會被爬。建議開一個專用 alias，不用個人信箱。
+5. **頻率**：每週一集？依 report 產出量決定。
+6. **哪些 report 適合**：public、不會很快過時、有故事可講。`HOST.md` 的節目定位把範圍從 code、Agent 擴大到「人生與 Mindset」，
+   所以財經、移居這類 report 也在範圍內；數字密集的財經表格類要先試一集，看門檻降不降得下來，並加上不構成投資建議的聲明。
+7. **單集頁的 slug 前綴** `dad-ep{NN}` 會出現在 portal 列表裡，要不要之後讓 portal 把它們分成一區。
 
 ---
 
@@ -364,7 +403,7 @@ CLI 路徑就是在本機跑同一支 `python3 scripts/publish.py episodes/ep02-
 
 | 風險 | 影響 | 對策 |
 |---|---|---|
-| **聲線消失**：Gemini 設計聲線閒置一年過期；換模型後同名聲線會漂移；ElevenLabs 聲音庫的聲音由配音員控制，可能下架或改條款 | 節目換了一個人 | 釘死模型版本；每週使用保持效期（使用是否會延長效期 POC 還在確認，M2 要驗）；保留參考錄音並用 `match_voice.py` 找最接近的替代；用聲音庫的聲音前讀清楚商業授權；最耐久的是**主持人自己錄同意句做聲音複製** |
+| **聲線消失**：Gemini 設計聲線閒置一年過期；換模型後同名聲線會漂移；ElevenLabs 聲音庫的聲音由配音員控制，可能下架或改條款 | 節目換了一個人 | 釘死模型版本；定期使用保持效期（ttspoc 的配方寫「使用會延長效期」，但 11-03 當天實測效期沒有立即更新，M2 要驗）；保留參考錄音並用 `match_voice.py` 找最接近的替代；用聲音庫的聲音前讀清楚商業授權；最耐久的是**主持人自己錄同意句做聲音複製** |
 | Gemini 2027-01-01 漲一倍 | 一集約 US$1.34 | 可接受；必要時語音改 Flash-Lite 或 ElevenLabs |
 | 自動評審對口音無效 | 大陸腔混進去沒人發現 | 關卡 B 必須是台灣母語者 |
 | 模型加事實 | 節目講了 report 沒講的事 | §3 第 4 階段的數字與專有名詞比對 + 人工關卡 A |
