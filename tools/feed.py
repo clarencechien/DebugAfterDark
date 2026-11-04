@@ -102,7 +102,10 @@ def warnings(show, eps):
         w.append("show.owner_email is empty: no itunes:owner (Spotify sends its claim code there) and no podcast:locked")
     if not eps:
         w.append("no final episodes with a published timestamp")
+    now = datetime.now().astimezone()
     for e in eps:
+        if datetime.fromisoformat(e["published"]) > now:   # apps treat future pubDates as scheduled and may hide the episode
+            w.append(f"{e['id']}: published {e['published']} is in the future")
         desc = e.get("description", "")
         need = ["回 Ping 一個 pong", "AI 語音合成"] + ([] if e.get("type") == "trailer" else ["今晚的 breakpoint", "原文："])
         for n in need:   # show-notes template: episodes/ep00-intro/script.md (EP01's POC-era notes lacked these, 2026-11-04)
