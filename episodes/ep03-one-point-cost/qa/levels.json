@@ -1,0 +1,56 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -21.9,
+  "gain_db": 1.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_story",
+  "lufs_before": -20.9,
+  "gain_db": 0.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_bill",
+  "lufs_before": -22.0,
+  "gain_db": 2.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_one_block",
+  "lufs_before": -21.0,
+  "gain_db": 1.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_unit",
+  "lufs_before": -22.1,
+  "gain_db": 2.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_summer",
+  "lufs_before": -22.2,
+  "gain_db": 2.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_why_ai",
+  "lufs_before": -22.3,
+  "gain_db": 2.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_fix",
+  "lufs_before": -20.3,
+  "gain_db": 0.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_outro",
+  "lufs_before": -22.2,
+  "gain_db": 2.2,
+  "lufs_after": -20.0
+ }
+]

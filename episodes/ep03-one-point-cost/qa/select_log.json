@@ -1,0 +1,453 @@
+{
+ "asr": "breeze",
+ "beam": 5,
+ "tolerance": 0.012,
+ "terms": [],
+ "jitter_margin": 0.02,
+ "pace_margin": 0.1,
+ "episode_median_cps": 4.02,
+ "consistency": true,
+ "sim_margin": 0.015,
+ "bright_margin": 300,
+ "segments": [
+  {
+   "id": "s00_open",
+   "chosen": "s00_open.take0.wav",
+   "takes": [
+    {
+     "file": "s00_open.take0.wav",
+     "cer": 0.067,
+     "unclear": 4,
+     "long_pauses_per_min": 7.3,
+     "text": "有位國小老師用 AI 做了一個加分工具每個月竟然有 54,000 人在用你猜帳單多少結果一個月要快 3,000 塊重點來囉他每多加一個功能技術架構就是那個選型就錯一下根本是每加一分帳單就扣一分嘛錢到底花去哪了我看到分析真的嚇一跳",
+     "jitter": 0.192,
+     "cps": 4.25,
+     "terms_ok": true,
+     "sim_to_episode": 0.98,
+     "centroid": 2445,
+     "bright_gap": 58
+    },
+    {
+     "file": "s00_open.take1.wav",
+     "cer": 0.095,
+     "unclear": 4,
+     "long_pauses_per_min": 8.2,
+     "text": "有位國小老師用 AI 做了一個加分工具每個月竟然有 54,000 人在用你猜帳單多少結果一個月要快 3,000 塊重點來了他每多加一個功能技術架構就是那個懸型就錯一項根本是每加一分帳單就扣一分嘛錢到底花去哪啦我看到分析真的嚇一跳耶咻啾",
+     "jitter": 0.247,
+     "cps": 3.59,
+     "terms_ok": true,
+     "sim_to_episode": 0.966,
+     "centroid": 2337,
+     "bright_gap": 50
+    },
+    {
+     "file": "s00_open.take2.wav",
+     "cer": 0.086,
+     "unclear": 4,
+     "long_pauses_per_min": 4.8,
+     "text": "有位國小老師用 AI 做了一個加分工具每個月竟然有 54,000 人在用喔你猜帳單多少結果一個月要快 3,000 塊重點來了它每多加一個功能技術架構就那個選型就錯一項了根本是每加一分帳單就扣一分嗎錢到底花去哪了我看到分析真的嚇一跳耶",
+     "jitter": 0.223,
+     "cps": 4.21,
+     "terms_ok": true,
+     "sim_to_episode": 0.975,
+     "centroid": 2076,
+     "bright_gap": 311
+    }
+   ],
+   "clear_enough": [
+    "s00_open.take0.wav"
+   ]
+  },
+  {
+   "id": "s01_story",
+   "chosen": "s01_story.take1.wav",
+   "takes": [
+    {
+     "file": "s01_story.take0.wav",
+     "cer": 0.04,
+     "unclear": 5,
+     "long_pauses_per_min": 6.6,
+     "text": "上一集我們聊到先接好眼睛再談野心其實帳單也是眼睛看得到才知道錢花在哪這一集的主角是一位國小老師做的工具叫 fun class 翻課星球一開始他只是做給自己用的加分工具後來越做越好玩他就加了學生遊戲場學生掃 qr code 進去加分會變代幣耶然後可以養寵物轉蛋甚至一起打 boss使用者直接從一個老師變成全班都在練重點是工具完全免費伺服器費老師自己扛那贊助收入呢老實說贊助連一週的伺服器費都付不起耶唉報告裡整理了一張很有意思的積分版左邊是做對的事右邊是選錯的基礎決定我看到那邊整個超有感就是功能一直在加分架構卻一直在扣分啦",
+     "jitter": 0.216,
+     "cps": 3.91,
+     "terms_ok": true,
+     "sim_to_episode": 0.981,
+     "centroid": 2557,
+     "bright_gap": 170
+    },
+    {
+     "file": "s01_story.take1.wav",
+     "cer": 0.02,
+     "unclear": 3,
+     "long_pauses_per_min": 9.3,
+     "text": "上一集我們聊到先接好眼睛再談野心其實帳單也是眼睛看得到才知道錢花在哪這集的主角是一位國小老師做的工具叫 Fun Class 翻課星球一開始他只是做給自己用的加分工具後來越做越好玩他就加了學生遊戲艙學生掃 QR code 進去加分會變代幣耶然後可以養寵物轉蛋甚至一起打 boss使用者直接從一個老師變成全班都在練重點是工具完全免費伺服器費老師自己扛那贊助收入呢老實說贊助連一週的伺服器費都付不起報告裡整理了一張很有意思的積分版左邊是做對的事右邊是選錯的技術決定我看到那邊整個超有感就是功能一直在加分架構卻一直在扣分啊",
+     "jitter": 0.201,
+     "cps": 3.89,
+     "terms_ok": true,
+     "sim_to_episode": 0.975,
+     "centroid": 2363,
+     "bright_gap": 24
+    },
+    {
+     "file": "s01_story.take2.wav",
+     "cer": 0.032,
+     "unclear": 4,
+     "long_pauses_per_min": 5.9,
+     "text": "上一集我們聊到先接好眼睛再談野性其實賬單也是眼睛欸看得到才知道錢花在哪這集的主角是一位國小老師做的工具叫 Fun Class 翻客星球一開始他只是做給自己用的加分工具後來越做越好玩他就加了學生遊戲艙學生掃 QR code 進去加分會變代幣耶然後可以養寵物轉蛋甚至一起打 boss使用者直接從一個老師變成全班都在練重點是工具完全免費伺服器費老師自己扛那贊助收入呢老實說贊助連一週的伺服器費都付不起報告裡整理了一張很有意思的積分板左邊是做對的事右邊是選錯的技術決定我看到那邊整個超有感就是功能一直在加分架構卻一直在扣分的",
+     "jitter": 0.229,
+     "cps": 4.08,
+     "terms_ok": true,
+     "sim_to_episode": 0.99,
+     "centroid": 2290,
+     "bright_gap": 97
+    }
+   ],
+   "clear_enough": [
+    "s01_story.take1.wav",
+    "s01_story.take2.wav"
+   ]
+  },
+  {
+   "id": "s02_bill",
+   "chosen": "s02_bill.take0.wav",
+   "takes": [
+    {
+     "file": "s02_bill.take0.wav",
+     "cer": 0.047,
+     "unclear": 5,
+     "long_pauses_per_min": 14.7,
+     "text": "那這筆錢到底是誰收的你可能會猜是 Cloudflare畢竟王子就掛在他的服務上面嘛但其實不是喔他就只是負責把網頁送出去錢到底花在哪答案是那個 Firebase2854 塊幾乎全栽在這裡就是那個不對是裡面的 real time database 啦這是專門即時通過資料的資料庫它一天的下載量衝破免費額度三倍多我看到明細真的很心疼然後另一個資料庫 Firestore 呢一天讀沒幾次基本上可以直接忽略啦",
+     "jitter": 0.266,
+     "cps": 4.29,
+     "terms_ok": true,
+     "sim_to_episode": 0.979,
+     "centroid": 2912,
+     "bright_gap": 525
+    },
+    {
+     "file": "s02_bill.take1.wav",
+     "cer": 0.083,
+     "unclear": 7,
+     "long_pauses_per_min": 5.7,
+     "text": "那這筆錢到底是誰收的你可能會猜是 Crawler畢竟網址就掛在他的服務上面但其實不是他就只是負責把網頁送出去錢到底花在哪答案是那個 Firebase2854 塊幾乎全栽在這裡就是那個不對是裡面的 real time database 啦這是專門即時同步資料的資料庫它一天的下載量衝破免費額度 3 倍多我看到明晰真的很心疼然後另外一個資料庫 Firestore 呢一天讀沒幾次基本上可以直接忽略啦",
+     "jitter": 0.249,
+     "cps": 4.62,
+     "terms_ok": true,
+     "sim_to_episode": 0.983,
+     "centroid": 2441,
+     "bright_gap": 54
+    },
+    {
+     "file": "s02_bill.take2.wav",
+     "cer": 0.062,
+     "unclear": 7,
+     "long_pauses_per_min": 4.4,
+     "text": "那這筆錢到底是誰收的你可能會猜是 Cloudflare畢竟王子就掛在他的服務上面吧但其實不是喔他就只是負責把網頁送出去錢到底花在哪答案是那個 Firebase2854 塊幾乎全載在這裡就是那個不對是裡面的 real time database 啦這是專門即時同步資料的資料庫它一天的下載量衝破免費額度 3 倍多我看到明細真的很心痛唉然後另一個資料庫 Firestore 呢一天塗沒幾次基本上可以直接忽略啦",
+     "jitter": 0.191,
+     "cps": 4.73,
+     "terms_ok": true,
+     "sim_to_episode": 0.971,
+     "centroid": 2813,
+     "bright_gap": 426
+    }
+   ],
+   "clear_enough": [
+    "s02_bill.take0.wav"
+   ]
+  },
+  {
+   "id": "s03_one_block",
+   "chosen": "s03_one_block.take2.wav",
+   "takes": [
+    {
+     "file": "s03_one_block.take0.wav",
+     "cer": 0.012,
+     "unclear": 0,
+     "long_pauses_per_min": 11.3,
+     "text": "那到底哪裡出問題其實就錯在一步而已他把整班包成一塊的備份直接拿來做即時廣播就是換個說法好了老師只幫 7 號加 1 分結果全班 30 台裝置每一台都把整班資料重新下載一次這就像改一個人的成績卻把整本點名簿印給全班每個人你猜這樣差多少按流量計費的資料庫費用大概直接貴 400 倍我看到這邊整個傻眼前面的緩衝明明都做對了但只要有改送出去的就是整塊啦",
+     "jitter": 0.215,
+     "cps": 3.87,
+     "terms_ok": true,
+     "sim_to_episode": 0.979,
+     "centroid": 2271,
+     "bright_gap": 116
+    },
+    {
+     "file": "s03_one_block.take1.wav",
+     "cer": 0.012,
+     "unclear": 1,
+     "long_pauses_per_min": 7.1,
+     "text": "那到底哪來出問題其實就錯在一步而已他把整班包成一塊的備份直接拿來做即時廣播就是欸換個說法好了老師只幫 7 號加 1 分結果全班 30 台裝置每台都把整班資料重新下載 1 次這就像改一個人的成績卻把整本點名簿印給全班每個人你猜這樣差多少按流量計費的資料庫費用大概直接貴 400 倍我看到這邊整個傻眼前面的緩衝明明都做對了但只要有改送出去的就是整塊啊",
+     "jitter": 0.27,
+     "cps": 3.88,
+     "terms_ok": true,
+     "sim_to_episode": 0.979,
+     "centroid": 2988,
+     "bright_gap": 601
+    },
+    {
+     "file": "s03_one_block.take2.wav",
+     "cer": 0.012,
+     "unclear": 1,
+     "long_pauses_per_min": 11.0,
+     "text": "那到底哪裡出問題其實就錯在一步而已他把整班包成一塊的備份直接拿來做即時廣播就是換個說法好了老師只幫 7 號加一份結果全班 30 台裝置每台都把整班資料重新下載一次這就像改一個人的成績卻把整本點名簿印給全班每個人你猜這樣差多少按流量計費的資料庫費用大概直接貴 400 倍我看到這邊整個傻眼前面的緩衝明明都做對了但只要有改送出去的就是整塊啦",
+     "jitter": 0.249,
+     "cps": 3.76,
+     "terms_ok": true,
+     "sim_to_episode": 0.989,
+     "centroid": 2591,
+     "bright_gap": 204
+    }
+   ],
+   "clear_enough": [
+    "s03_one_block.take0.wav",
+    "s03_one_block.take1.wav",
+    "s03_one_block.take2.wav"
+   ]
+  },
+  {
+   "id": "s04_unit",
+   "chosen": "s04_unit.take1.wav",
+   "takes": [
+    {
+     "file": "s04_unit.take0.wav",
+     "cer": 0.03,
+     "unclear": 2,
+     "long_pauses_per_min": 14.8,
+     "text": "那為什麼以前沒事現在會出事重點就是兩個資料庫的計費邏輯差太多了原來的 files 都是按次算錢讀一份文件就算一次不管有多大包所以壓成一整塊讀一次越壓越省對那時候這樣做完全正確但換到 realtime database 呢它不是算次數那個它是看下載流量收費大約每 GB 一美元而且只要改了一個字整段都算新的同一招換了地方直接從省錢變燒錢啦",
+     "jitter": 0.247,
+     "cps": 3.67,
+     "terms_ok": true,
+     "sim_to_episode": 0.979,
+     "centroid": 2585,
+     "bright_gap": 198
+    },
+    {
+     "file": "s04_unit.take1.wav",
+     "cer": 0.024,
+     "unclear": 3,
+     "long_pauses_per_min": 10.8,
+     "text": "那為什麼以前沒事現在會出事重點就是兩個資料庫的計費邏輯差太多了原來的 Firestore 是按次算錢讀一份文件就算一次不管有多大包所以壓成一整塊讀一次越壓越省那時候這樣做完全正確但換到 realtime database 呢它不是算次數它是看下載流量收費大約每 G1 美元而且只要改了一個字整段都算新的同一招換了地方直接從省錢變燒錢啦",
+     "jitter": 0.237,
+     "cps": 4.23,
+     "terms_ok": true,
+     "sim_to_episode": 0.972,
+     "centroid": 2387,
+     "bright_gap": 0
+    },
+    {
+     "file": "s04_unit.take2.wav",
+     "cer": 0.018,
+     "unclear": 2,
+     "long_pauses_per_min": 12.1,
+     "text": "那為什麼以前沒事現在會出事重點就是兩個資料庫的計費邏輯差太多了原來的 firestore 是按次賺錢讀一份文件就算一次不管有多大包所以壓成一整塊讀一次越壓越深對那時候這樣做完全正確但換到 real time database 呢它不是算次數耶那個它是看下載流量收費大約每 GB 一美元而且只要改了一個字整段都算新的同一招換了地方直接從省錢變燒錢啦",
+     "jitter": 0.263,
+     "cps": 3.66,
+     "terms_ok": true,
+     "sim_to_episode": 0.97,
+     "centroid": 2899,
+     "bright_gap": 513
+    }
+   ],
+   "clear_enough": [
+    "s04_unit.take0.wav",
+    "s04_unit.take1.wav",
+    "s04_unit.take2.wav"
+   ]
+  },
+  {
+   "id": "s05_summer",
+   "chosen": "s05_summer.take0.wav",
+   "takes": [
+    {
+     "file": "s05_summer.take0.wav",
+     "cer": 0.013,
+     "unclear": 1,
+     "long_pauses_per_min": 11.6,
+     "text": "其實這位老師做對了很多事喔2026 年夏天他發現一天燒 300 多元那他就動手改了底層分數加緩衝內容沒變就不重發這聽起來很合理對吧但問題是他修的是頻率不是大小只要分數一變送出去的又是整塊這招也不能說沒用啦但每次送出門的依然是整整一大包後來 9 月他自己找到把資料拆開存的方向開始試行不過目前只開給一個帳號正式環境還是整塊在廣播",
+     "jitter": 0.229,
+     "cps": 3.4,
+     "terms_ok": true,
+     "sim_to_episode": 0.986,
+     "centroid": 2384,
+     "bright_gap": 3
+    },
+    {
+     "file": "s05_summer.take1.wav",
+     "cer": 0.071,
+     "unclear": 3,
+     "long_pauses_per_min": 6.1,
+     "text": "其實這位老師做對了很多事2026 年夏天他發現一天燒 300 多元他就動手改了底層分數加緩衝內容每一遍就不重發這聽起來很合理對吧但問題是他 show 的是頻率不是大小只要分數一變送出去的又是整塊這招也不能說沒用但每次送出門的依然是整整一大包唉後來 9 月他自己找到把資料拆開存的方向開始試行不過目前只開給一個帳號正式環境還是整塊在廣播",
+     "jitter": 0.212,
+     "cps": 4.05,
+     "terms_ok": true,
+     "sim_to_episode": 0.987,
+     "centroid": 1776,
+     "bright_gap": 611
+    },
+    {
+     "file": "s05_summer.take2.wav",
+     "cer": 0.051,
+     "unclear": 3,
+     "long_pauses_per_min": 5.6,
+     "text": "其實這位老師做對了很多事喔2026 年夏天他發現一天燒 300 多元他就動手改了底層分數加緩衝內容沒變就不重發這聽起來很合理對吧但問題是它 show 的是頻率不是大小只要分數一變送出去的又是整塊這招也不能說沒用啦但每次送出門的依然是整整一大包唉後來 9 月他自己找到把資料拆開存的方向開始施行不過目前只開給一個帳號正式環境還是整塊在廣播",
+     "jitter": 0.215,
+     "cps": 3.66,
+     "terms_ok": true,
+     "sim_to_episode": 0.978,
+     "centroid": 2487,
+     "bright_gap": 100
+    }
+   ],
+   "clear_enough": [
+    "s05_summer.take0.wav"
+   ]
+  },
+  {
+   "id": "s06_why_ai",
+   "chosen": "s06_why_ai.take0.wav",
+   "takes": [
+    {
+     "file": "s06_why_ai.take0.wav",
+     "cer": 0.039,
+     "unclear": 3,
+     "long_pauses_per_min": 7.8,
+     "text": "你可能會想說 AI 怎麼都沒提醒他重點就在於老師寫給 AI 的技能說明裡有一條規定使用者是新手又沒提到成本就選免費路線而且不要交定價這原本是好意啦怕把新手嚇跑結果那個 agent或是說 AI 選資料庫設計同步格式的時候每多一個學生要多付多少錢根本沒人問對啊 AI 預設是想把功能先弄出來嗎單位成本這種事他才不會主動檢查咧",
+     "jitter": 0.227,
+     "cps": 3.96,
+     "terms_ok": true,
+     "sim_to_episode": 0.974,
+     "centroid": 1860,
+     "bright_gap": 527
+    },
+    {
+     "file": "s06_why_ai.take1.wav",
+     "cer": 0.046,
+     "unclear": 3,
+     "long_pauses_per_min": 9.9,
+     "text": "你可能會想說 AI 怎麼都沒提醒他重點就在於老師寫給 AI 的技能說明裡有一條規定使用者是新手又沒提到成本就選免費路線而且不要交定價這原本是好意怕把新手嚇跑結果那個 agent我就說 AI 啊選資料庫設計同步格式的時候每多一個學生要多付多少錢根本沒人問對啊 AI 預設是想把功能先弄出來嘛單位成本這種事他才不會主動檢查咧",
+     "jitter": 0.255,
+     "cps": 4.18,
+     "terms_ok": true,
+     "sim_to_episode": 0.964,
+     "centroid": 2252,
+     "bright_gap": 135
+    },
+    {
+     "file": "s06_why_ai.take2.wav",
+     "cer": 0.053,
+     "unclear": 4,
+     "long_pauses_per_min": 15.0,
+     "text": "你可能會想說 AI 怎麼都沒提醒他重點就在於老師寫給 AI 的技能說明裡有一條規定使用者是新手又沒提到成本就選免費路線而且不要交定價這原本是好意啦怕把新手嚇跑結果那個 agent我是說 AI選資料庫設計同步格式的時候每多一個學生要多付多少錢根本沒人問對啊AI 預測只想把功能先弄出來嘛但為成本重視它才不會主動檢查咧",
+     "jitter": 0.257,
+     "cps": 3.8,
+     "terms_ok": true,
+     "sim_to_episode": 0.981,
+     "centroid": 2416,
+     "bright_gap": 29
+    }
+   ],
+   "clear_enough": [
+    "s06_why_ai.take0.wav",
+    "s06_why_ai.take1.wav"
+   ]
+  },
+  {
+   "id": "s07_fix",
+   "chosen": "s07_fix.take1.wav",
+   "takes": [
+    {
+     "file": "s07_fix.take0.wav",
+     "cer": 0.051,
+     "unclear": 4,
+     "long_pauses_per_min": 5.6,
+     "text": "那要怎麼解最快的方法根本不用搬家報告裡叫它冷熱分離就是把隨時會跳動的數字像是分數跟代幣抽出來放在一個小節點學生端只要監聽這個小節點就好至於原本那一大包資料呢進教室讀一次就好不對是開場時先比對版本有變才下載嘛報告估計這樣改完每天的下載量會降到 0.幾 gigabyte輕鬆回到免費額度內不過報告也特別提醒千萬不要以為搬去 Cloudflare 就沒事了換到別家一樣有別的燒錢地雷像 Cloudflare 的 durable object 要是忘了設休眠掛著一整天照樣能燒掉上百美元說穿了問題不是你選哪一家而是你的錘子太單一了手上拿的錘子看什麼都像釘子記住選型的單位是功能不是專案備份是一件事即使同步是另一件事可以用同一家服務但不該用同一種格式硬幹到底啦",
+     "jitter": 0.225,
+     "cps": 4.91,
+     "terms_ok": true,
+     "sim_to_episode": 0.977,
+     "centroid": 2102,
+     "bright_gap": 285
+    },
+    {
+     "file": "s07_fix.take1.wav",
+     "cer": 0.029,
+     "unclear": 2,
+     "long_pauses_per_min": 7.1,
+     "text": "那要怎麼解最快的方法根本不用搬家報告裡叫它冷熱分離就是把隨時會跳動的數字像是分數跟代幣抽出來放在一個小節點學生端只要監聽這個小節點就好至於原本那一大包資料呢進教室讀一次就好啊不對是開倉時先比對版本有變才下載嘛報告估計這樣改完每天的下載量會降到 0.幾 GB輕鬆回到免費額度內不過報告也特別提醒千萬不要以為搬去 Cloudflare 就沒事了換到別家一樣有別的燒錢地雷像 Cloudflare 的 durable object要是忘了設休眠掛著一整天照樣能燒掉上百美元耶說穿了問題不是你選哪一家而是你的槌子太單一了手上拿著槌子看什麼都像釘子記住選型的單位是功能不是專案備份是一件事即時通布是另一件事可以用同一家服務但不該用同一種格式硬幹到底啦",
+     "jitter": 0.256,
+     "cps": 4.66,
+     "terms_ok": true,
+     "sim_to_episode": 0.985,
+     "centroid": 2402,
+     "bright_gap": 15
+    },
+    {
+     "file": "s07_fix.take2.wav",
+     "cer": 0.022,
+     "unclear": 2,
+     "long_pauses_per_min": 12.7,
+     "text": "那要怎麼解最快的方法根本不用搬家報告裡叫它冷熱分離就是把隨時會跳動的數字像是分數跟代幣抽出來放在一個小節點學生端只要監聽這個小節點就好至於原本那一大包資料呢進教室讀一次就好不對是開倉時先比對版本有變才下載嘛報告估計這樣改完每天的下載量會降到 0.幾 GB輕鬆回到免費額度內不過報告也特別提醒喔千萬不要以為搬去 Cloudflare 就沒事了換到別家一樣有別的燒錢地雷啦像 Cloudflare 的 durable object要是忘了設休眠掛了一整天照樣能燒掉上百美元耶說穿了問題不是你選哪一家而是你的錘子太單一了手上拿著錘子看什麼都像釘子記住選行的單位是功能不是專案備份是一件事即時同步是另一件事可以用同一家服務但不該用同一種格式硬幹到底啦",
+     "jitter": 0.238,
+     "cps": 4.15,
+     "terms_ok": true,
+     "sim_to_episode": 0.969,
+     "centroid": 1927,
+     "bright_gap": 460
+    }
+   ],
+   "clear_enough": [
+    "s07_fix.take1.wav",
+    "s07_fix.take2.wav"
+   ]
+  },
+  {
+   "id": "s08_outro",
+   "chosen": "s08_outro.take2.wav",
+   "takes": [
+    {
+     "file": "s08_outro.take0.wav",
+     "cer": 0.055,
+     "unclear": 3,
+     "long_pauses_per_min": 4.5,
+     "text": "好 今晚的 break point下次叫 AI 家即時連線要怎麼防守就是設個關卡我是說把扣分機制裝進流程想想帳單如果爆掉真的會嚇死人耶三個帶走的重點第一換了機費單位結果可能完全相反然後裝置數乘下載量就是帳單漲大的速度最後先問 AI 使用者變 100 倍帳單變幾倍答不出來就先不要動手喔原文連結在節目資訊欄我是 pin有收到的話回我一個 pom我們下次見",
+     "jitter": 0.204,
+     "cps": 4.12,
+     "terms_ok": true,
+     "sim_to_episode": 0.985,
+     "centroid": 2219,
+     "bright_gap": 168
+    },
+    {
+     "file": "s08_outro.take1.wav",
+     "cer": 0.091,
+     "unclear": 5,
+     "long_pauses_per_min": 7.4,
+     "text": "好今晚的 break point下次叫 AI 家機師連線要怎麼防守就是設個關卡我是說把扣分加在裝進流程啦想想帳單如果爆掉真的會嚇死人三個帶走的重點第一換了記費單位結果可能完全相反然後裝置數乘下載量就是帳單漲大的速度最後先問 AI使用者變 100 倍帳單變幾倍答不出來就先不要動手喔原文連結在節目資訊欄我是 Pink有收到的話會為個碰下次見",
+     "jitter": 0.244,
+     "cps": 4.02,
+     "terms_ok": true,
+     "sim_to_episode": 0.971,
+     "centroid": 2298,
+     "bright_gap": 89
+    },
+    {
+     "file": "s08_outro.take2.wav",
+     "cer": 0.043,
+     "unclear": 4,
+     "long_pauses_per_min": 14.4,
+     "text": "好 今晚的 break point下次叫 AI 加即時連線要怎麼防守就是設個關卡我是說把扣分機制裝進流程啦想想帳單如果爆掉真的會嚇死人3 個帶走的重點第一換的寄費單位結果可能完全相反然後裝置數乘下載量就是帳單漲大的速度最後先問 AI使用者變 100 倍帳單變幾倍答不出來就先不要動手喔原文連結在節目資訊欄我是 Pink有說到的話會有一個 Pong下次見",
+     "jitter": 0.197,
+     "cps": 3.93,
+     "terms_ok": true,
+     "sim_to_episode": 0.979,
+     "centroid": 2638,
+     "bright_gap": 251
+    }
+   ],
+   "clear_enough": [
+    "s08_outro.take2.wav"
+   ]
+  }
+ ]
+}
