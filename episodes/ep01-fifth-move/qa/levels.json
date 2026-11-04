@@ -37,8 +37,8 @@
  },
  {
   "id": "s06_range",
-  "lufs_before": -21.5,
-  "gain_db": 1.5,
+  "lufs_before": -21.3,
+  "gain_db": 1.3,
   "lufs_after": -20.0
  },
  {

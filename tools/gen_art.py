@@ -50,9 +50,37 @@ def generate(prompt, aspect, name, size="4K"):
     return img, raw
 
 
+# v2 (2026-11-04): the first set read as a cozy flat illustration; asked for a stronger late-night and debugging feel.
+NIGHT = ("Cinematic digital painting, not flat vector. 2 a.m. in a small apartment workroom in Taipei. Low-key lighting: the only "
+         "light sources are a monitor and a small warm desk lamp turned down low; everything else falls into deep indigo shadow. "
+         "Rain streaks on the window, blurred city lights and a few neon reflections outside. On the monitor, a code editor paused in a "
+         "debugger: one bright red breakpoint dot in the gutter, the current line highlighted in amber, a variables panel and a call "
+         "stack on the side, a blinking terminal cursor; the code is abstract unreadable glyphs. Details: a glass of water, a crumpled "
+         "sticky note, a mechanical keyboard, headphones. Mood: quiet, focused, a little lonely but warm, the moment just before "
+         "finding the bug. Palette: deep navy and indigo, amber lamp light, a single red accent, subtle film grain. "
+         "No people, no faces, no hands, no readable text, no real brand logos, no watermark.")
+BANNER_V2 = NIGHT + (" Ultra-wide panoramic composition: the desk, monitor and lamp sit in the right third; the left half is "
+                     "dark, calm, mostly empty shadow with soft rain-lit window light, leaving room for a large title.")
+COVER_V2 = NIGHT + (" Square podcast cover. Strong simple composition that still reads at 200 px: the glowing monitor with the red "
+                    "breakpoint as the focal point. Typography: the title 深夜 Debug in large clean traditional Chinese and Latin letters "
+                    "in the lower third, and a small subtitle Debug After Dark. Text must be spelled exactly as given and be highly legible.")
+
+
 if __name__ == "__main__":
-    ap = argparse.ArgumentParser(); ap.add_argument("what", choices=["cover", "banner"]); ap.add_argument("--n", type=int, default=3)
+    ap = argparse.ArgumentParser(); ap.add_argument("what", choices=["cover", "banner", "cover-v2", "banner-v2"]); ap.add_argument("--n", type=int, default=3)
     a = ap.parse_args()
+    if a.what == "banner-v2":
+        for k in range(a.n):
+            img, raw = generate(BANNER_V2, "21:9", f"banner-v2-{k}")
+            img.resize((2400, int(2400 * img.size[1] / img.size[0])), Image.LANCZOS).save(ART / f"banner-v2-{k}-2400.jpg", "JPEG", quality=84, optimize=True)
+            print(raw, img.size)
+        raise SystemExit
+    if a.what == "cover-v2":
+        for k in range(a.n):
+            img, raw = generate(COVER_V2, "1:1", f"cover-v2-{k}")
+            img.resize((3000, 3000), Image.LANCZOS).save(ART / f"cover-v2-{k}-3000.jpg", "JPEG", quality=90, optimize=True)
+            print(raw, img.size)
+        raise SystemExit
     if a.what == "cover":
         for k in range(a.n):
             img, raw = generate(COVER_PROMPTS[k % len(COVER_PROMPTS)], "1:1", f"cover-{k}")

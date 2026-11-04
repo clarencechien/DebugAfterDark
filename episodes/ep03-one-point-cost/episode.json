@@ -21,15 +21,18 @@
   "takes_per_segment": 3,
   "selection": "select_takes.py --asr breeze --consistency --neighbour",
   "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac",
-  "recap": "s01 開頭回顧 EP02；s01 在整集挑選前就重新生成，跟其他段一起挑"
+  "recap": "s01 開頭回顧 EP02；s01 在整集挑選前就重新生成，跟其他段一起挑",
+  "revisions": [
+   "2026-11-04 s01「代幣」改成「像湯姆熊那種代幣」、s07「那些代幣」，兩段各重新生成 3 次、各自挑選，重新後製"
+  ]
  },
  "audio": {
   "file": "ep03-one-point-cost.mp3",
-  "bytes": 6813010,
-  "sha256": "cdfdb057cfc94b89db9cb140725c4559b5ea7665b9924262b291aeaac9b19d62",
-  "duration_s": 425.8,
-  "duration": "7:05",
-  "lufs": -16.9
+  "bytes": 6960968,
+  "sha256": "71cce91df4cb4770f57f6f4dcb4e2be7032de38adf0fb2cf0b2c66faa1e5d8d4",
+  "duration_s": 435.0,
+  "duration": "7:15",
+  "lufs": -16.8
  },
  "related": [
   "ep02-harness-probe"

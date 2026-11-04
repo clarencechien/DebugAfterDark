@@ -20,14 +20,17 @@
   "poc": "poc/：ttspoc 799872e 的成品、稿子與 QA（沒有 Ping、沒有段間停頓）",
   "takes_per_segment": 3,
   "selection": "select_takes.py --asr breeze --consistency --neighbour",
-  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac",
+  "revisions": [
+   "2026-11-04 s06「搶劫電影」改成「電影裡要搶銀行，先找一群各有專長的隊友」，重新生成 3 次、在 s06 的 3 次裡挑（qa/select_log_s06_range_fix.json），重新後製；待試聽後重新部署"
+  ]
  },
  "audio": {
   "file": "ep01-fifth-move.mp3",
-  "bytes": 8422987,
-  "sha256": "aab387d11fce796b1d97d2d776854d42094c29695e98a45f56b68867f7cf074d",
-  "duration_s": 526.4,
-  "duration": "8:46",
+  "bytes": 8462275,
+  "sha256": "2eadd9250cb4fc7f0d3778fb09145fcce28ec26b501abdc911616344585b40df",
+  "duration_s": 528.8,
+  "duration": "8:48",
   "lufs": -16.8
  },
  "qa": {

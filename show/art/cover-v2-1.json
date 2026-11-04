@@ -1,0 +1,11 @@
+{
+ "model": "gemini-3-pro-image",
+ "aspect_ratio": "1:1",
+ "image_size": "4K",
+ "prompt": "Cinematic digital painting, not flat vector. 2 a.m. in a small apartment workroom in Taipei. Low-key lighting: the only light sources are a monitor and a small warm desk lamp turned down low; everything else falls into deep indigo shadow. Rain streaks on the window, blurred city lights and a few neon reflections outside. On the monitor, a code editor paused in a debugger: one bright red breakpoint dot in the gutter, the current line highlighted in amber, a variables panel and a call stack on the side, a blinking terminal cursor; the code is abstract unreadable glyphs. Details: a glass of water, a crumpled sticky note, a mechanical keyboard, headphones. Mood: quiet, focused, a little lonely but warm, the moment just before finding the bug. Palette: deep navy and indigo, amber lamp light, a single red accent, subtle film grain. No people, no faces, no hands, no readable text, no real brand logos, no watermark. Square podcast cover. Strong simple composition that still reads at 200 px: the glowing monitor with the red breakpoint as the focal point. Typography: the title 深夜 Debug in large clean traditional Chinese and Latin letters in the lower third, and a small subtitle Debug After Dark. Text must be spelled exactly as given and be highly legible.",
+ "prompt_sha256": "f292eeb7353a92c95efb933e81d31b604b2fe2aa20df2158946701cdfc46a9b3",
+ "pixels": [
+  4096,
+  4096
+ ]
+}
