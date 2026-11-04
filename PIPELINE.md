@@ -5,7 +5,7 @@
 對照到 `main` 的 `799872e`）。ttspoc 最後兩個 commit 已經寫好一份逐步的製作流程 `podcast/PIPELINE.md`，
 工具也改成不綁 EP01、可以做任何一集。**那份是「一集怎麼做」的配方，這份是「整個節目怎麼營運」**：
 選題、審稿、發佈、跟 imitator 的整合、上架平台。配方搬過來之後放在 `docs/recipe.md`，兩份不重複寫。
-主持人命名、EP00 自介與節目文案在 [`HOST.md`](HOST.md)。
+主持人的命名與人設在 [`HOST.md`](HOST.md)，EP00 自介與節目文案在 [`episodes/ep00-intro/script.md`](episodes/ep00-intro/script.md)。
 **分工**：
 
 | repo | 放什麼 |
@@ -157,12 +157,12 @@ report 是寫給已經有興趣的人看的；podcast 的工作是讓還沒興�
 ```
 README.md
 PIPELINE.md                     ← 這份：節目怎麼營運
-HOST.md                         主持人命名、EP00 自介、固定開場、節目文案
+HOST.md                         主持人命名與人設（Ping）
 docs/recipe.md                  一集怎麼做（ttspoc podcast/PIPELINE.md 搬過來）
 show/
   show.json                     節目設定：名稱、主持人名、描述、作者、owner email、分類、語言、explicit、feed 網址、guid 前綴
   cover-3000.jpg                封面（3000×3000，RGB，無 alpha）
-  ident/                        固定開場（約 8 秒）的定稿音檔，做一次、每集共用，見 HOST.md
+  ident/                        固定開場（約 8 秒）的定稿音檔，做一次、每集共用，見 episodes/ep00-intro/script.md
 voices/
   registry.json                 聲線 ID、模型、到期日、語氣版本（由 ttspoc results/voices.json 搬來）
   references/                   每個聲線的參考錄音 FLAC + references.json（聲紋向量、音高、sha256）
@@ -186,7 +186,7 @@ scripts/
 tests/
   smoke/                        兩段的回歸測試集（ttspoc 的 ep00_smoke 改名），不上架
 episodes/
-  ep00-intro/                   節目自介，沒有對應的 report（見 HOST.md）
+  ep00-intro/                   節目自介（預告集），沒有對應的 report；script.md 是稿子與節目文案
   ep01-fifth-move/
     episode.json                guid、標題、描述、report slug、狀態、長度、bytes、sha256、模型與聲線、成本
     source.md                   凍結的素材
@@ -388,9 +388,8 @@ CLI 路徑就是在本機跑同一支 `python3 scripts/publish.py episodes/ep02-
 
 1. **節目名稱與 slug**：「深夜 Debug｜Debug After Dark」，show slug `debug-after-dark`？feed 網址會跟著它一輩子。
    2026-11-04 搜尋過，沒找到同名的節目；相近的有英文的 Secure After Dark（資安）和一個台灣的深夜寫 code ASMR 節目。
-2. **主持聲線**：預設 D1 + v5，待台灣母語者確認；長期可以考慮錄自己的聲音做複製（最耐久，見 §9）。
-   如果走聲音複製，主持人名字的考量會不一樣，見 `HOST.md` §1.3。
-3. **主持人名字**：建議 Trace，理由與試念測試在 `HOST.md`。
+2. **主持聲線**：預設 D1 + v5，待台灣母語者確認。**已決定不走聲音複製**（2026-11-04）：主持人是 AI 角色，不代表任何真人。
+3. **主持人名字**：建議 Ping，收尾單元叫「今晚的 breakpoint」（已決定保留）。理由與試念測試在 `HOST.md`。
 4. **feed 的公開信箱**：Spotify 驗證碼寄到這裡，而且它公開在 feed 裡、會被爬。建議開一個專用 alias，不用個人信箱。
 5. **頻率**：每週一集？依 report 產出量決定。
 6. **哪些 report 適合**：public、不會很快過時、有故事可講。`HOST.md` 的節目定位把範圍從 code、Agent 擴大到「人生與 Mindset」，
@@ -403,7 +402,7 @@ CLI 路徑就是在本機跑同一支 `python3 scripts/publish.py episodes/ep02-
 
 | 風險 | 影響 | 對策 |
 |---|---|---|
-| **聲線消失**：Gemini 設計聲線閒置一年過期；換模型後同名聲線會漂移；ElevenLabs 聲音庫的聲音由配音員控制，可能下架或改條款 | 節目換了一個人 | 釘死模型版本；定期使用保持效期（ttspoc 的配方寫「使用會延長效期」，但 11-03 當天實測效期沒有立即更新，M2 要驗）；保留參考錄音並用 `match_voice.py` 找最接近的替代；用聲音庫的聲音前讀清楚商業授權；最耐久的是**主持人自己錄同意句做聲音複製** |
+| **聲線消失**：Gemini 設計聲線閒置一年過期；換模型後同名聲線會漂移；ElevenLabs 聲音庫的聲音由配音員控制，可能下架或改條款 | 節目換了一個人 | 釘死模型版本；定期使用保持效期（ttspoc 的配方寫「使用會延長效期」，但 11-03 當天實測效期沒有立即更新，M2 要驗）；保留參考錄音並用 `match_voice.py` 找最接近的替代；用聲音庫的聲音前讀清楚商業授權。已決定不走聲音複製，所以**參考錄音加 `match_voice.py` 是唯一的備援**，`voices/references/` 不能遺失 |
 | Gemini 2027-01-01 漲一倍 | 一集約 US$1.34 | 可接受；必要時語音改 Flash-Lite 或 ElevenLabs |
 | 自動評審對口音無效 | 大陸腔混進去沒人發現 | 關卡 B 必須是台灣母語者 |
 | 模型加事實 | 節目講了 report 沒講的事 | §3 第 4 階段的數字與專有名詞比對 + 人工關卡 A |
