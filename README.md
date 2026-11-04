@@ -23,8 +23,9 @@
 - 擁有者信箱：`podcast@ai-apps.work`（Cloudflare Email Routing 轉寄）
 - 還沒送審 Apple Podcasts、Spotify 等平台
 - 下載數據：SoundOn Prefix（`show.json` 的 `enclosure_prefix`），feed 裡的音檔網址先經過 SoundOn 再 302 回我們的檔案；網站播放器不經過
+- 贊助連結：<https://portaly.cc/clarencech/support>（`show.json` 的 `support_url`），見下面的「Portaly 現況」
 
-## 收入方式（2026-11-04 調查，還沒做任何一項）
+## 收入方式（2026-11-04 調查；目前只做了贊助連結）
 
 先講結論：**現在先不賺錢，先累積聽眾；但從第一天就把會影響以後選擇的事情做對。**
 多數「平台幫你賺」的方式都要求把節目託管在那個平台，跟我們現在自架 feed 的做法衝突，而且都有聽眾數門檻。
@@ -39,7 +40,7 @@
 | **Apple Podcasts 訂閱** | 聽眾在 Apple Podcasts 付費訂閱，拿到無廣告或加碼內容 | 加入 Apple Podcasters Program（每年約 US$19.99）；Apple 抽成；台灣應該可用（第三方資料，未確認） | 不用搬家，付費內容另外上傳到 Apple；要有值得付費的加碼內容 |
 | **Firstory 贊助／會員** | 聽眾單次贊助或按月訂閱，會員可聽專屬單集（也能上 Spotify） | 託管在 Firstory；台灣目前做訂閱最成熟的平台，抽成比例沒查到 | 衝突：要搬離自架 |
 | **Patreon** | 聽眾按月支持，會員拿到 Patreon 產生的私人 RSS 收聽加碼內容 | Patreon 抽成；私人 feed 由 Patreon 託管 | **公開節目維持自架，加碼內容放 Patreon**，兩者可以並存 |
-| **贊助按鈕**（Buy Me a Coffee、Ko-fi 等） | 網站與 show notes 放一個連結，聽眾自由小額贊助 | 幾乎沒有 | **現在就能做**，收入很小，主要是看有沒有人願意付 |
+| **贊助按鈕**（Buy Me a Coffee、Ko-fi 等） | 網站與 show notes 放一個連結，聽眾自由小額贊助 | 幾乎沒有 | **已上線**，用 Portaly 的 /support（見下面）。收入很小，主要是看有沒有人願意付 |
 | **Podcasting 2.0 value-for-value** | feed 加 `podcast:value`，支援的 app 讓聽眾用比特幣閃電網路按分鐘付費 | 要有閃電網路錢包；支援的 app 少 | 技術上加幾行 feed 就好，但台灣聽眾幾乎用不到 |
 | **導流到自己的產品** | 節目帶人去看 imitator 報告，再接顧問、課程、企業內訓 | 要先有可賣的東西 | **對工程師向的小眾節目，通常是最實際的收入**；完全不受平台規則限制 |
 | **YouTube** | 影音 podcast（封面加音波），YouTube 合作夥伴計畫分潤 | 1,000 訂閱、4,000 小時觀看等門檻；2026 年起大量檢查「量產內容」，AI 配音本身不禁止，但要有真實的製作價值 | 可以多一個曝光管道；分潤門檻高且 AI 內容風險高 |
@@ -50,8 +51,46 @@
 3. **內容權利。** 部分集數是別人文章的導讀（例如 EP01 的 Felix Rieseberg），不賺錢時是評論；開始賺錢之後，大量引用別人的內容風險會變高，要更偏向評論與自己的觀點。案例裡的真實人物維持不具名。
 4. **TTS 的商業使用條款。** Gemini API 用付費層級、確認生成的音檔可以商用；免費層級的資料可能被拿去訓練，正式營利前要換成付費 key。這點沒查官方條款原文，要再確認。
 
+### Portaly 現況（2026-11-04）
+
+**對外只用 /support。** <https://portaly.cc/clarencech/support> 是 Portaly 個人頁內建的贊助功能，單次和每月都能付，不用寫程式。
+
+- **出現在哪裡**：
+  - feed：`tools/feed.py` 的 `with_support()` 把「請 Ping 喝杯咖啡：<網址>」接在節目簡介和每一集說明的最後，SoundOn、Apple、Spotify 讀 feed 時都會顯示。
+  - 網站：訂閱區塊下面和頁尾。
+- **文案只能在 Portaly 後台手改。** Portaly MCP 和開放 API 都沒有個人頁或 /support 的端點。
+
+**Payment 方案先不用。** 用 MCP 建了一個「請 Ping 喝杯咖啡」，id `jsVGziLeKoNCoamvEKzW`，一次性、自由金額、TWD，目前是**下架**狀態。不用的原因：
+
+- **沒有固定的購買頁。** 要由伺服器拿 API key 呼叫 `POST /api/creator-subscription/checkout-sessions`，拿到 `checkoutUrl` 再把人轉過去。
+  - 這個網址 30 分鐘就過期，所以不能直接貼進 feed 或說明。
+  - key 只能放在伺服器端，GitHub Pages 是靜態站，放不了。
+- **live key 有三個條件**：
+  - 通過金流審核（KYC）
+  - 有 Portaly 付費會員或 Vibe 訂閱
+  - 第二個商品起，每個商品要另外審核
+
+  在那之前只能用 test key 測試。
+- **要用的時候**：架一支 Cloudflare Worker，提供一個固定網址。它負責建 session、轉址，並接付款完成的 callback（驗 `x-portaly-signature`）。key 和 callback secret 放在 Worker 的 secret。
+  - 適合的時機是做付費加碼內容（例如「Ping 的延伸筆記」），因為那時要知道誰付了錢。
+  - 單純贊助用 /support 就夠了。
+- **重新上架前要先在後台調整方案**：
+  - 「收集手機」目前是開的：API 改得到，MCP 改不到。
+  - 「使用條款」開著但內容是空的：只能在後台改。
+
+**開放 API 涵蓋的範圍**（`portaly.ai/openapi.json`）：
+- 方案（含上下架與 `collectPhone`）
+- 結帳頁顯示的商家名稱和 logo（目前是空的）
+- 折扣碼
+- 結帳 session、訂單與退款、訂閱的取消與恢復、訂閱者自助頁
+- 推廣分潤
+- 數位商品
+- Email
+
+**key 的規矩**：只放在環境變數或 Worker secret，不進 repo，也不貼進對話；用完或外流就到 <https://portaly.cc/admin/creator-subscription> 撤銷重建。test key 也讀得到、改得到正式的方案，不能因為是 test 就放鬆。
+
 ### 建議的順序
-1. **現在**：不賺錢。用 SoundOn Prefix 看下載數；網站和 show notes 放一個贊助連結（可選）。
+1. **現在**：不賺錢。用 SoundOn Prefix 看下載數；網站和 show notes 放一個贊助連結（已做，Portaly /support）。
 2. **每月有固定聽眾（約 1,000 人）之後**：試一則口播贊助，固定放在 breakpoint 之前；同時評估要不要開 Apple Podcasts 訂閱或 Patreon 的加碼內容（例如「Ping 的延伸筆記」）。
 3. **要做平台分潤（動態廣告、Spotify）時**：才決定要不要把 host 搬到那個平台。不要太早被單一平台綁住：一搬過去，feed、數據和加碼內容都在別人手上。
 
@@ -62,4 +101,5 @@
 - Firstory：[訂閱贊助一年破 600 萬](https://www.inside.com.tw/article/27427-podcast-subscription)、[2025 趨勢預測](https://www.inside.com.tw/article/37526-fistory-2025-podcast)
 - Patreon：[Enable audio RSS feeds for my members](https://support.patreon.com/hc/articles/213557023)、[Pocket Casts 加入私人 feed](https://support.pocketcasts.com/knowledge-base/private-or-members-only-feeds/)
 - AI 內容與分潤：[The Audio Industry Is Grappling With the Rise of 'Podslop'](https://www.pulse.bot/entertainment/news/the-audio-industry-is-grappling-with-the-rise-of-podslop-be7d9d8d-8133-4614-a223-58d27a740607/)、[Can You Monetize AI-Generated Videos on YouTube in 2026?](https://fluxnote.io/guides/monetize-ai-generated-videos-youtube-2026)
+- Portaly：[Portaly Payment 教學](https://portaly.cc/blog/portaly-payment-tutorial)、[官方 agent skills（portaly-ai/portaly-skills）](https://github.com/portaly-ai/portaly-skills)、[API 文件](https://portaly.ai/docs)、[OpenAPI 規格](https://portaly.ai/openapi.json)
 - GitHub Pages：[GitHub Pages limits（禁止的用途）](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
