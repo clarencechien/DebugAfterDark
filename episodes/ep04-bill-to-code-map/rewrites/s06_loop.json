@@ -1,0 +1,99 @@
+{
+ "segment": "s06_loop",
+ "position": "第 7 段，共 9 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "我看到這",
+  "很扯",
+  "我是說"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a4f41b61f09188a2d50627481351f1cfdfa7d17a43794edc7ecaa9fa5fa9cec5",
+ "previous_context": "它安靜到不行。等月底帳單來，你才發現慘了。",
+ "original": {
+  "text": "這四張帳單要說的，是一句常被說反的話：AI 讓人變強。報告說不是，AI 是讓「改了再試」這個循環變便宜，而便宜的循環會放大你原本的方向。有地圖的人，用它更快修好；沒地圖的人，用它更快加功能。那位老師加功能的速度是真的快，工程師爸爸十天部署一百多次也是真的快，同一個放大器，一個花在加，一個花在修。還有一個新的暗礁：AI 的答案是抽樣，不是查表。同一個問題換一天問，答案可能不一樣。所以地圖不能是「問 AI 這樣行不行」，得是查得到、算得出、跟定價頁對得上的數字。",
+  "lint": {
+   "chars": 226,
+   "precise_numbers": [
+    "一百"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 31.3,
+   "max_sentence_len": 52,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這其實點出一個很有意思的事。大家常說 AI 讓人變強，但真的是醬嗎？其實不是欸。<short pause>AI 只是讓「改了再試」這個循環變便宜。便宜的循環，只會放大你原本的方向。你看那位老師，加功能快到不行。那位工程師爸爸，十天部署了一百多次。對，同樣是放大器。一個拿去狂加功能，一個拿去收斂修復。就是…這不能算變強。它只是讓你更快衝向原本的方向。<sigh>最麻煩的是什麼？AI 給的答案是機率抽樣，不是查表喔。你今天問它行不行，它給了流暢的錯答案。換一天問，答案可能又完全不一樣啦。寫 code 有編譯器幫你抓，架構出事可沒有。所以地圖不能只是問 AI「這樣行不行」。得是定價頁上，算得出來的確定數字。",
+   "lint": {
+    "chars": 278,
+    "precise_numbers": [
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 14.4,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "對，大家常講 AI 會讓人變強。\n但這句話其實被說反了啦。\nAI 真正做的事，是讓嘗試循環變便宜。\n便宜的循環，會放大你原本的方向。<short pause>\n那你原本在幹嘛？\n那位老師用 agent 一直狂加功能。\n不對，是狂塞各種新玩法。\n工程師爸爸呢，十天部署了一百多次。\n他全部把時間拿來修問題。\n我對這個對比真的很有共鳴。<short pause>\nAI 就像放大器，根本不管你在幹嘛喔。\n你手上有地圖，它幫你更快修好。\n手上沒地圖，你只是更快堆出新功能。\n重點來了，AI 的回答是抽樣不是查表。\n你換一天問它，答案可能就不一樣耶。\n所以架構決策，不能問 AI 行不行。\n那個地圖，必須是定價頁算得出的確定數字。",
+   "lint": {
+    "chars": 260,
+    "precise_numbers": [
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "所以大家常說「AI 讓人變強」，<short pause>\n其實這句話講反了。\nAI 只是讓「改了再試」的循環變便宜。\n它其實就是一個放大器。\n你本來往哪走，它就幫你衝更快。\n上一集那位老師，拿它瘋狂加新功能。\n工程師爸爸十天部署一百多次，\n呃不對，他是把速度全部拿來修東西。\n你看，工具是一樣的，對吧？\n有地圖的人拿來修，沒地圖的人拿來狂加。\n那更危險的是什麼？\nAI 給架構建議是用機率抽樣，不是查表。\n同一個問題換一天問，答案可能完全不同。\n這點真的會讓人冒冷汗。<sigh>\n所以地圖不能只是問 AI「醬子行不行」。\n得是官網定價查得到、算得出的數字啦。",
+   "lint": {
+    "chars": 243,
+    "precise_numbers": [
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 30,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1
+}
