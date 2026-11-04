@@ -1,0 +1,138 @@
+{
+ "limits": {
+  "neighbour_sim": 0.93,
+  "pitch_hz": 6.0,
+  "centroid_hz": 350.0,
+  "lufs_db": 1.0,
+  "seam_hz": 400.0,
+  "pace": 0.1
+ },
+ "segments": [
+  {
+   "id": "s00_open",
+   "start": "0:03",
+   "pitch_hz": 85.4,
+   "centroid_hz": 2248,
+   "lufs": -20.0,
+   "sim_prev": null,
+   "sim_next": 0.965,
+   "sim_episode": 0.979,
+   "seam_hz": null,
+   "chars_per_s": 3.68,
+   "issues": []
+  },
+  {
+   "id": "s01_formula",
+   "start": "0:28",
+   "pitch_hz": 89.2,
+   "centroid_hz": 2433,
+   "lufs": -20.0,
+   "sim_prev": 0.965,
+   "sim_next": 0.982,
+   "sim_episode": 0.991,
+   "seam_hz": -628,
+   "chars_per_s": 3.95,
+   "issues": [
+    "接縫亮度跳 -628 Hz"
+   ]
+  },
+  {
+   "id": "s02_toy",
+   "start": "1:23",
+   "pitch_hz": 88.6,
+   "centroid_hz": 2447,
+   "lufs": -20.0,
+   "sim_prev": 0.982,
+   "sim_next": 0.977,
+   "sim_episode": 0.99,
+   "seam_hz": -137,
+   "chars_per_s": 3.97,
+   "issues": []
+  },
+  {
+   "id": "s03_teacher",
+   "start": "2:27",
+   "pitch_hz": 88.9,
+   "centroid_hz": 2614,
+   "lufs": -20.0,
+   "sim_prev": 0.977,
+   "sim_next": 0.977,
+   "sim_episode": 0.987,
+   "seam_hz": -133,
+   "chars_per_s": 3.75,
+   "issues": []
+  },
+  {
+   "id": "s04_places",
+   "start": "3:09",
+   "pitch_hz": 90.9,
+   "centroid_hz": 2231,
+   "lufs": -20.0,
+   "sim_prev": 0.977,
+   "sim_next": 0.975,
+   "sim_episode": 0.991,
+   "seam_hz": 335,
+   "chars_per_s": 4.36,
+   "issues": [
+    "語速偏 +10%"
+   ]
+  },
+  {
+   "id": "s05_vercel",
+   "start": "4:09",
+   "pitch_hz": 99.2,
+   "centroid_hz": 2462,
+   "lufs": -20.0,
+   "sim_prev": 0.975,
+   "sim_next": 0.982,
+   "sim_episode": 0.985,
+   "seam_hz": -150,
+   "chars_per_s": 3.54,
+   "issues": [
+    "音高偏 +8.3 Hz",
+    "語速偏 -10%"
+   ]
+  },
+  {
+   "id": "s06_loop",
+   "start": "4:59",
+   "pitch_hz": 97.6,
+   "centroid_hz": 2461,
+   "lufs": -20.0,
+   "sim_prev": 0.982,
+   "sim_next": 0.975,
+   "sim_episode": 0.986,
+   "seam_hz": 47,
+   "chars_per_s": 4.01,
+   "issues": [
+    "音高偏 +6.7 Hz"
+   ]
+  },
+  {
+   "id": "s07_borrow",
+   "start": "5:58",
+   "pitch_hz": 93.0,
+   "centroid_hz": 2497,
+   "lufs": -20.0,
+   "sim_prev": 0.975,
+   "sim_next": 0.949,
+   "sim_episode": 0.991,
+   "seam_hz": 204,
+   "chars_per_s": 4.11,
+   "issues": []
+  },
+  {
+   "id": "s08_outro",
+   "start": "7:01",
+   "pitch_hz": 96.0,
+   "centroid_hz": 2318,
+   "lufs": -20.0,
+   "sim_prev": 0.949,
+   "sim_next": null,
+   "sim_episode": 0.97,
+   "seam_hz": -192,
+   "chars_per_s": 3.79,
+   "issues": []
+  }
+ ]
+}

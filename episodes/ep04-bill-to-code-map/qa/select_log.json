@@ -1,0 +1,456 @@
+{
+ "asr": "breeze",
+ "beam": 5,
+ "tolerance": 0.012,
+ "terms": [],
+ "jitter_margin": 0.02,
+ "pace_margin": 0.1,
+ "episode_median_cps": 3.94,
+ "consistency": true,
+ "sim_margin": 0.015,
+ "bright_margin": 300,
+ "segments": [
+  {
+   "id": "s00_open",
+   "chosen": "s00_open.take2.wav",
+   "takes": [
+    {
+     "file": "s00_open.take0.wav",
+     "cer": 0.045,
+     "unclear": 0,
+     "long_pauses_per_min": 17.0,
+     "text": "收到爆表的雲端賬單你會怎麼做四個人四張賬單犯了同一個錯你猜差別在哪不是專不專業也不是有沒有用 AI 喔那個我是說手上有沒有一張地圖能從賬單連回程式碼的那張地圖啦這集就來看這張地圖",
+     "jitter": 0.223,
+     "cps": 3.55,
+     "terms_ok": true,
+     "sim_to_episode": 0.972,
+     "centroid": 2057,
+     "bright_gap": 368
+    },
+    {
+     "file": "s00_open.take1.wav",
+     "cer": 0.023,
+     "unclear": 0,
+     "long_pauses_per_min": 14.4,
+     "text": "收到報表的雲端帳單你會怎麼做四個人四張帳單犯了同一個錯你猜差別在哪不是專不專業也不是有沒有用 AI 喔那個我是說手上有沒有一張地圖能從帳單連回程式碼的那張地圖啦這集就來看這張地圖",
+     "jitter": 0.212,
+     "cps": 3.53,
+     "terms_ok": true,
+     "sim_to_episode": 0.975,
+     "centroid": 2592,
+     "bright_gap": 167
+    },
+    {
+     "file": "s00_open.take2.wav",
+     "cer": 0.023,
+     "unclear": 0,
+     "long_pauses_per_min": 12.5,
+     "text": "收到爆表的雲端帳單你會怎麼做四個人四張帳單犯了同一個錯你猜差別在哪不是專不專業也不是有沒有用 AI 喔那個我是說手上有沒有一張地圖能從帳單連回程式碼的那張地圖啦這一集就來看這張地圖",
+     "jitter": 0.192,
+     "cps": 3.68,
+     "terms_ok": true,
+     "sim_to_episode": 0.97,
+     "centroid": 2325,
+     "bright_gap": 100
+    }
+   ],
+   "clear_enough": [
+    "s00_open.take1.wav",
+    "s00_open.take2.wav"
+   ]
+  },
+  {
+   "id": "s01_formula",
+   "chosen": "s01_formula.take1.wav",
+   "takes": [
+    {
+     "file": "s01_formula.take0.wav",
+     "cer": 0.056,
+     "unclear": 4,
+     "long_pauses_per_min": 10.5,
+     "text": "上一集那位老師的加分工具壓縮技巧反而更燒錢這一集我們把它放進四個案例來看雲端賬單會爆掉九成都是同一道算式沒算好就是使用者人數乘上每個人用的次數再乘上每次送的資料量前面這三個乘起來叫散出英文是 fan out最後再乘上單價就是你的賬單你在做 MVP 的那個晚上根本不知道有沒有人用吧誰會沒事去算十萬人進來讀幾次所以這真的不是初心對 應該說這是結構性的問題因為事情根本沒有回饋告訴你算錯啊你猜第一個回饋是什麼就是賬單啦等賬單寄來懲罰早就跑一陣子了",
+     "jitter": 0.248,
+     "cps": 4.21,
+     "terms_ok": true,
+     "sim_to_episode": 0.977,
+     "centroid": 2702,
+     "bright_gap": 277
+    },
+    {
+     "file": "s01_formula.take1.wav",
+     "cer": 0.033,
+     "unclear": 5,
+     "long_pauses_per_min": 7.7,
+     "text": "上一集那位老師的加分工具壓縮技巧反而更燒錢這集我們把它放進四個案例來看雲端帳單會爆掉九成都是同一道算式沒算好就是使用者人數乘上每個人用的次數再乘上每次送的資料量前面這三個乘起來叫散出英文是 fan out最後再乘上單價就是你的帳單你在做 MVP 的那個晚上根本不知道有沒有人用吧誰會沒事去算十萬人進來賭幾次所以這真的不是初心對應該說這是結構性的問題因為事前根本沒有回饋告訴你算出你猜第一個回饋是什麼就是帳單啦等帳單寄來懲罰早就跑一陣子了",
+     "jitter": 0.268,
+     "cps": 3.95,
+     "terms_ok": true,
+     "sim_to_episode": 0.986,
+     "centroid": 2523,
+     "bright_gap": 98
+    },
+    {
+     "file": "s01_formula.take2.wav",
+     "cer": 0.037,
+     "unclear": 4,
+     "long_pauses_per_min": 10.7,
+     "text": "上一集那位老師的加分工具壓縮技巧反而更燒錢這集我們把它放進四個案例來看雲端帳單會爆掉九成都是同一道算式沒算好就是使用者人數乘上每個人用的次數再乘上每次送的資料量前面這三個乘起來叫散出英文是 fan out最後再乘上單價就是你的帳單你在做 MVP 的那個晚上根本不知道有沒有人用嘛誰會沒事去算十萬人進來讀幾次所以這真的不是初心對應該說這是結構性的問題因為事前根本沒有回饋告訴你算出你猜第一個回饋是什麼就是帳單啊等帳單寄來懲罰早就跑一陣子了",
+     "jitter": 0.274,
+     "cps": 4.29,
+     "terms_ok": true,
+     "sim_to_episode": 0.964,
+     "centroid": 2450,
+     "bright_gap": 25
+    }
+   ],
+   "clear_enough": [
+    "s01_formula.take1.wav",
+    "s01_formula.take2.wav"
+   ]
+  },
+  {
+   "id": "s02_toy",
+   "chosen": "s02_toy.take0.wav",
+   "takes": [
+    {
+     "file": "s02_toy.take0.wav",
+     "cer": 0.028,
+     "unclear": 4,
+     "long_pauses_per_min": 11.3,
+     "text": "先來看第一張賬單苦主是一位矽谷工程師爸爸那時麥當勞出聯名玩具每家款式都不一樣他週五深夜開工週六早上就做好了全美一萬三千多家門市全部放上地圖太太丟到家長群後直接被轉發爆料上線不到兩天免費額度就徹底打滿唉他本來想說架構都有照全美規模設計那個全美規模我是說是資料塞得下但根本不是成本撐得住好嗎一堆人狂抓資料這就是沒算到散出嘛你猜他後來怎麼自救他在十天內瘋狂改版邊開飛機邊換引擎門市資料先做 cache 快取起來地圖滑到哪才動態載入到哪裡然後大幅砍掉不必要的讀取唉我看到這邊整個被點醒他每一刀都精準切在人數層次數的層法上",
+     "jitter": 0.221,
+     "cps": 3.97,
+     "terms_ok": true,
+     "sim_to_episode": 0.987,
+     "centroid": 2632,
+     "bright_gap": 207
+    },
+    {
+     "file": "s02_toy.take1.wav",
+     "cer": 0.036,
+     "unclear": 4,
+     "long_pauses_per_min": 13.9,
+     "text": "先來看第一張帳單苦主是一位矽谷工程師爸爸那時麥當勞出聯名玩具每家款式都不一樣他周五深夜開工周六早上就做好了全美一萬三千多家門市全部放上地圖太太丟到家長群後直接被轉發爆掉上線不到兩天免費額度就徹底打滿唉他本來想說架構都有照全美規模設計那個全美規模我是說是資料塞得下但根本不是成本撐得住好嗎一堆人狂抓資料這就是沒算到三出嗎唉你猜他後來怎麼自救他才十天內瘋狂改版邊開飛機邊換引擎門市資料先做 cache 快取起來地圖滑到哪動態載入到哪裡然後大幅刊掉不必要的讀取唉我看到這邊整個被點醒了他每一刀都精準切在人數乘次數的乘法上",
+     "jitter": 0.211,
+     "cps": 3.68,
+     "terms_ok": true,
+     "sim_to_episode": 0.982,
+     "centroid": 2660,
+     "bright_gap": 235
+    },
+    {
+     "file": "s02_toy.take2.wav",
+     "cer": 0.036,
+     "unclear": 5,
+     "long_pauses_per_min": 10.0,
+     "text": "先來看第一張帳單苦主是一位矽谷工程師爸爸那時賣到要出聯名玩具每家款式都不一樣他週五深夜開工週六早上就做好了全美一萬三千多家門市全部放張地圖太太丟到家長群後直接被轉發爆掉上線不到兩天免費額度就徹底達滿他本來想說架構都有照全美規模設計那個全美規模我是說是資料塞得下但根本不是成本撐得住好嗎一堆人狂抓資料這就是沒算到善處嘛你猜他後來怎麼知究他在十天內瘋狂改版邊開飛機邊換引擎門市資料先做 cache 快取起來地圖滑到哪才動態載入到哪裡然後大幅砍掉不必要的讀取我看到這邊整個被點醒他每一刀都精準切在人數乘次數的乘法上",
+     "jitter": 0.246,
+     "cps": 3.84,
+     "terms_ok": true,
+     "sim_to_episode": 0.983,
+     "centroid": 3082,
+     "bright_gap": 657
+    }
+   ],
+   "clear_enough": [
+    "s02_toy.take0.wav",
+    "s02_toy.take1.wav",
+    "s02_toy.take2.wav"
+   ]
+  },
+  {
+   "id": "s03_teacher",
+   "chosen": "s03_teacher.take0.wav",
+   "takes": [
+    {
+     "file": "s03_teacher.take0.wav",
+     "cer": 0.053,
+     "unclear": 4,
+     "long_pauses_per_min": 13.3,
+     "text": "第二張地圖就是上一集那位老師他一個月賬單 2800 多塊台幣其實他夏天發現一天燒錢就開始拼命修了加緩衝 加冷卻沒變就不重發但他改的全是頻率就是修多久發一次重點是每次送多大包完全沒碰到嘛為什麼會修錯層因為他交代 AI新手媒體成本就別講定價結果挑價構式根本沒算每多一人要多付多少一張本來有的地圖就被好意給關掉了啦",
+     "jitter": 0.232,
+     "cps": 3.75,
+     "terms_ok": true,
+     "sim_to_episode": 0.984,
+     "centroid": 2659,
+     "bright_gap": 234
+    },
+    {
+     "file": "s03_teacher.take1.wav",
+     "cer": 0.087,
+     "unclear": 5,
+     "long_pauses_per_min": 15.1,
+     "text": "第二張地圖就是上一集那位老師他一個月賬單 2800 多塊台幣其實他夏天發現一天燒錢就開始拼命修了加緩衝加冷卻每一遍就不重發但他改的全是頻率就是多久發一次重點是每次送多大包完全沒碰到為什麼會修錯層因為他交代 AI 新手媒體成本就別講定價結果挑價夠時根本沒算每多一人要多付多少一張本來有的地圖就被好意給關掉了啦",
+     "jitter": 0.232,
+     "cps": 3.49,
+     "terms_ok": true,
+     "sim_to_episode": 0.979,
+     "centroid": 1927,
+     "bright_gap": 498
+    },
+    {
+     "file": "s03_teacher.take2.wav",
+     "cer": 0.073,
+     "unclear": 5,
+     "long_pauses_per_min": 10.5,
+     "text": "第二張地圖就是上一集那位老師他一個月帳單 2800 多塊台幣其實他夏天發現一天燒錢就開始拼命修了加緩衝加冷卻每一遍就不重發但他改的全是頻率就是修多久發一次重點是每次送多大包完全沒碰到嘛為什麼會修錯層因為他交代 AI新手沒提成本就別講定價就挑價夠死根本沒算每多一人要多付多少一張本來有的地圖就被好意給關掉了啦",
+     "jitter": 0.211,
+     "cps": 3.8,
+     "terms_ok": true,
+     "sim_to_episode": 0.976,
+     "centroid": 2433,
+     "bright_gap": 8
+    }
+   ],
+   "clear_enough": [
+    "s03_teacher.take0.wav"
+   ]
+  },
+  {
+   "id": "s04_places",
+   "chosen": "s04_places.take0.wav",
+   "takes": [
+    {
+     "file": "s04_places.take0.wav",
+     "cer": 0.027,
+     "unclear": 3,
+     "long_pauses_per_min": 14.0,
+     "text": "再來這張地圖更絕是 AI 給的但給錯了有位開發者專案用了 places API第一個月的帳單就很嚇人他就跑去問 Gemini 怎麼省錢Gemini 說有個每個月 100 美元的方案還列了方案包含的 API他就直接訂了結果一個晚上燒掉 8,000 多塊欸你知道為什麼嗎那個方案根本沒有包 places API 啦後來他在兩個部門之間被提皮球兩周才把錢拿回來我光看那個過程就替他捏一把冷汗了不過他留下來的教訓真的很值錢預算提醒跟上限完全是兩回事提醒只是通知超標根本來不及反應你一定要設配額上限那個 quota cap 啦系統只要超過就直接應當最後幫他校正地圖的不是 AI 是帳單啊",
+     "jitter": 0.205,
+     "cps": 4.36,
+     "terms_ok": true,
+     "sim_to_episode": 0.988,
+     "centroid": 2086,
+     "bright_gap": 338
+    },
+    {
+     "file": "s04_places.take1.wav",
+     "cer": 0.019,
+     "unclear": 3,
+     "long_pauses_per_min": 6.2,
+     "text": "再來這張地圖更絕是 AI 給的但給錯了有位開發者專案用了 places API第一個月的帳單就很嚇人他就跑去問 Gemini 怎麼省錢Gemini 說有個每個月 100 美元的方案還列了方案包含的 API他就直接訂了結果一個晚上燒掉 8,000 多塊欸你知道為什麼嗎那個方案根本沒有包 places API 啦後來他在兩個部門之間被踢皮球兩週才把錢拿回來我光看那個過程就替他捏一把冷汗不過他留下的教訓真的很值錢預算提醒跟上限完全是兩回事提醒只是同時超標根本來不及反應你一定要設配額上限那個 quota cap 啦系統只要超過就直接硬檔最後幫他校正地圖的不是 AI是賬單啊",
+     "jitter": 0.242,
+     "cps": 4.51,
+     "terms_ok": true,
+     "sim_to_episode": 0.984,
+     "centroid": 2561,
+     "bright_gap": 136
+    },
+    {
+     "file": "s04_places.take2.wav",
+     "cer": 0.042,
+     "unclear": 5,
+     "long_pauses_per_min": 2.2,
+     "text": "再來這張地圖更絕是 AI 給的但給錯了有位開發者專案用了 places API第一個月的帳單就很嚇人他就跑去問 Gemini 怎麼省錢Gemini 說有個每個月 100 美元的方案還列了方案包含的 API他就直接訂了結果一個晚上少掉 8,000 多塊你知道為什麼嗎那個方案根本沒有包 places API 啦後來他在兩個部門之間被提皮球兩周才把錢拿回來我光看那個過程就替他捏一把冷汗不過他留下來的教訓真的很值錢預算提醒跟上限完全是兩回事提醒只是同時超標根本來不及反應你一定要設配額上限那個 quota cap 啦系統只要超過就直接應當最後幫他校正地圖的不是 AI 是帳單啦",
+     "jitter": 0.246,
+     "cps": 4.74,
+     "terms_ok": true,
+     "sim_to_episode": 0.986,
+     "centroid": 2328,
+     "bright_gap": 97
+    }
+   ],
+   "clear_enough": [
+    "s04_places.take0.wav",
+    "s04_places.take1.wav"
+   ]
+  },
+  {
+   "id": "s05_vercel",
+   "chosen": "s05_vercel.take2.wav",
+   "takes": [
+    {
+     "file": "s05_vercel.take0.wav",
+     "cer": 0.052,
+     "unclear": 2,
+     "long_pauses_per_min": 4.3,
+     "text": "講到帳單另一個案例就更痛了有一位開發者把 AI 搜尋放在 Vercel每個月幾十萬人造訪後台一開一個月要五千多美元這費用合理嗎當然不合理啊他就從帳單反推到底被收了什麼錢那個換個方式講他是被扣款叫做人啦然後搬去別的平台把地圖劃對但重點是什麼就是計費單位決定你的警報有多大聲免費額度有印上線報了會直接聽可是隨用隨附沒有上線喔它安靜到不行等月底帳單來你才發現慘了",
+     "jitter": 0.226,
+     "cps": 4.2,
+     "terms_ok": true,
+     "sim_to_episode": 0.977,
+     "centroid": 1890,
+     "bright_gap": 535
+    },
+    {
+     "file": "s05_vercel.take1.wav",
+     "cer": 0.04,
+     "unclear": 4,
+     "long_pauses_per_min": 13.0,
+     "text": "講到帳單另一個案例就更痛了有位開發者把 AI 搜尋放在 Vercell每個月幾十萬人找訪後來一開一個月要五千多美元這費用合理嗎當然不合理啊他就從帳單反推到底被收了什麼錢那個換個方式講他是被扣款教做人然後搬去別的平台把地圖劃對但重點是什麼就是計費單位決定你的警報有多大聲免費額度有硬上限爆了會直接停可是水用水付沒有上限喔它安靜到不行等月底帳單來你才發現慘了",
+     "jitter": 0.276,
+     "cps": 4.17,
+     "terms_ok": true,
+     "sim_to_episode": 0.978,
+     "centroid": 2028,
+     "bright_gap": 397
+    },
+    {
+     "file": "s05_vercel.take2.wav",
+     "cer": 0.046,
+     "unclear": 0,
+     "long_pauses_per_min": 9.8,
+     "text": "講到帳單另一個案例就更痛了有位開發者把 AI 搜尋放在 Vercell每個月幾十萬人造訪後台一開一個月要五千多美元這費用合理嗎當然不合理啊他就從帳單反推到底被收了什麼錢那個換個方式講他是被扣款叫做人然後搬去別的平台把地圖劃對但重點是什麼就是計費單位決定你的警報有多大聲免費額度有硬上線爆了會直接停可是隨用隨付沒有上線喔他安靜到不行耶等月底帳單來你才發現慘了",
+     "jitter": 0.278,
+     "cps": 3.54,
+     "terms_ok": true,
+     "sim_to_episode": 0.99,
+     "centroid": 2157,
+     "bright_gap": 268
+    }
+   ],
+   "clear_enough": [
+    "s05_vercel.take0.wav",
+    "s05_vercel.take1.wav",
+    "s05_vercel.take2.wav"
+   ]
+  },
+  {
+   "id": "s06_loop",
+   "chosen": "s06_loop.take2.wav",
+   "takes": [
+    {
+     "file": "s06_loop.take0.wav",
+     "cer": 0.025,
+     "unclear": 2,
+     "long_pauses_per_min": 12.4,
+     "text": "對 大家常講 AI 會讓人變強但這句話其實被說反了啦AI 真正做的事是讓常識循環變便宜便宜的循環會放大你原本的方向那你原本在幹嘛那位老師用 agent 加功能速度是真的快遊戲倉寵物轉蛋幾週就上線工程師爸爸十天部署了一百多次他全部把時間拿來修問題我對這個對比真的很有共鳴AI 就像放大器根本不管你在幹嘛你手上有地圖它幫你更快修好手上沒地圖你只是更快堆出新功能重點來了AI 的回答是抽樣不是查表你換一天問它答案可能就不一樣耶所以架構決策不能問 AI 行不行那個地圖必須是定價也算得出的確定數字",
+     "jitter": 0.215,
+     "cps": 4.05,
+     "terms_ok": true,
+     "sim_to_episode": 0.983,
+     "centroid": 2272,
+     "bright_gap": 153
+    },
+    {
+     "file": "s06_loop.take1.wav",
+     "cer": 0.034,
+     "unclear": 3,
+     "long_pauses_per_min": 13.2,
+     "text": "對啊 大家常講 AI 會讓人變強但這句話其實被說反了啦AI 真正做的事是讓常識循環變便宜便宜的循環會放大你原本的方向那你原本在幹嘛那位老師用 agent 架功能速度是真的快遊戲倉寵物轉蛋幾週就上線工程師爸爸呢10 天部署了 100 多次他全部把時間拿來修問題我對這個對比真的很有共鳴AI 就像放大器根本不管你在幹嘛你手上有地圖它幫你更快修好手上沒地圖你只是更快堆出新功能重點來了AI 的回答是抽樣不是插表你換一天問它答案可能就不一樣耶所以架構決策不能問 AI 行不行那個地圖必須是定價業算得出的確定數字",
+     "jitter": 0.271,
+     "cps": 3.7,
+     "terms_ok": true,
+     "sim_to_episode": 0.984,
+     "centroid": 2243,
+     "bright_gap": 182
+    },
+    {
+     "file": "s06_loop.take2.wav",
+     "cer": 0.021,
+     "unclear": 2,
+     "long_pauses_per_min": 10.2,
+     "text": "對 大家常講 AI 會讓人變強但這句話其實被說反了啦AI 真正做的事是讓常識循環變便宜便宜的循環會放大你原本的方向那你原本在幹嘛那位老師用 agent 加功能速度是真的快遊戲艙寵物轉蛋幾週就上線工程師爸爸呢十天部署了一百多次它全部把時間拿來修問題我對這個對比真的很有共鳴AI 就像放大器根本不管你在幹嘛喔你手上有地圖它幫你更快修好手上沒地圖你只是更快堆出新功能重點來了AI 的回答是抽樣不是差表你換一天問它答案可能就不一樣耶所以架構決策不能問 AI 行不行那個地圖必須是定價業算得出的確定數字",
+     "jitter": 0.245,
+     "cps": 4.01,
+     "terms_ok": true,
+     "sim_to_episode": 0.989,
+     "centroid": 2330,
+     "bright_gap": 95
+    }
+   ],
+   "clear_enough": [
+    "s06_loop.take0.wav",
+    "s06_loop.take2.wav"
+   ]
+  },
+  {
+   "id": "s07_borrow",
+   "chosen": "s07_borrow.take1.wav",
+   "takes": [
+    {
+     "file": "s07_borrow.take0.wav",
+     "cer": 0.072,
+     "unclear": 4,
+     "long_pauses_per_min": 9.3,
+     "text": "那自己手上沒地圖能不能跟 AI 借一張可以啊但有三個條件第一個條件是把問題變成一道門像要加即時連線前先逼他回答既非方式答不出來就先不要動手然後第二個AI 給的地圖可能是錯的喔像之前那個 places API 一晚燒掉 8000你可以讓他畫圖但他沒辦法替你付錢吧就是欸不對是不能讓他替你被打啦所以一定要用真實帳單去校正他最後一個很有趣事後問其實比事前問還準你問為什麼因為事前他根本不知道流量等帳單來了把截圖跟 code 丟回去問他反而能幫你把地圖補得超完整重點來了你要逼他標出處是查到的算的還是他用猜的只要是猜的就先不要確信喔",
+     "jitter": 0.253,
+     "cps": 4.35,
+     "terms_ok": true,
+     "sim_to_episode": 0.983,
+     "centroid": 2417,
+     "bright_gap": 8
+    },
+    {
+     "file": "s07_borrow.take1.wav",
+     "cer": 0.064,
+     "unclear": 3,
+     "long_pauses_per_min": 4.9,
+     "text": "那自己手上沒地圖能不能跟 AI 借一張可以啊但有三個條件第一個條件是把問題變成一道門像要加即時連線前先逼他回答機費方式答不出來就先不要動手然後第二個AI 給的地圖可能是錯的喔像之前那個 places API 一晚燒掉 8000 耶你可以讓他畫圖但他沒辦法替你付錢嘛就是不對是不能讓他替你背大啦所以一定要用真實帳單去校正他最後一個很有趣事後問其實比事前問還準你問我為什麼因為事前他根本不知道流量等帳單來了把截圖跟 code 丟回去問他反而能幫你把地圖補得超完整重點來了你要逼他標出處是查到的算的還是他用猜的只要是猜的就先不要全信喔",
+     "jitter": 0.229,
+     "cps": 4.11,
+     "terms_ok": true,
+     "sim_to_episode": 0.99,
+     "centroid": 2621,
+     "bright_gap": 196
+    },
+    {
+     "file": "s07_borrow.take2.wav",
+     "cer": 0.076,
+     "unclear": 5,
+     "long_pauses_per_min": 15.9,
+     "text": "那自己手上沒地圖能不能跟 AI 借一張可以啊但有三個條件第一個條件是把問題變成一道門像要加即時連線錢先逼他回答機費方式答不出來就先不要動手然後第二個AI 給的地圖可能是錯的喔像之前那個 places API 一晚少掉八千你可以讓它畫圖但他沒辦法替你付錢嘛就是啊不對是不能讓他替你被打啦所以一定要用真實帳單去校正他最後一個很有趣事後問其實比事前問還準為什麼因為事前他根本不知道流量等帳單來了把截圖跟 code 丟回去問他反而能幫你把地圖補得超完整那重點來了你要逼他不要出錯是查到的算的還是他用猜的只要是猜的就先不要全信喔",
+     "jitter": 0.267,
+     "cps": 3.94,
+     "terms_ok": true,
+     "sim_to_episode": 0.965,
+     "centroid": 2497,
+     "bright_gap": 72
+    }
+   ],
+   "clear_enough": [
+    "s07_borrow.take0.wav",
+    "s07_borrow.take1.wav",
+    "s07_borrow.take2.wav"
+   ]
+  },
+  {
+   "id": "s08_outro",
+   "chosen": "s08_outro.take0.wav",
+   "takes": [
+    {
+     "file": "s08_outro.take0.wav",
+     "cer": 0.052,
+     "unclear": 3,
+     "long_pauses_per_min": 18.8,
+     "text": "好 今晚的 break point第一帳單是唯一警報事前沒人會提醒你第二動工前 bai 算數字不要問他意見第三帳單來了丟給 ai記得自己對一遍原文連結在節目資訊欄我是 pin有收到的話回我一個 poll下次見",
+     "jitter": 0.21,
+     "cps": 3.79,
+     "terms_ok": true,
+     "sim_to_episode": 0.965,
+     "centroid": 1848,
+     "bright_gap": 577
+    },
+    {
+     "file": "s08_outro.take1.wav",
+     "cer": 0.072,
+     "unclear": 6,
+     "long_pauses_per_min": 19.5,
+     "text": "今晚的 break point第一帳單是唯一警報事前沒人會提醒你第二動工前比 AI 算數字不要問他意見第三帳單來了丟給 AI記得自己對一邊原文連結在節目資訊欄我是 Pink有收到的話回我一個 punk下次見",
+     "jitter": 0.201,
+     "cps": 3.5,
+     "terms_ok": true,
+     "sim_to_episode": 0.977,
+     "centroid": 2572,
+     "bright_gap": 147
+    },
+    {
+     "file": "s08_outro.take2.wav",
+     "cer": 0.113,
+     "unclear": 5,
+     "long_pauses_per_min": 25.2,
+     "text": "經文的 break point第一帳單是唯一警報事前沒人會提醒你第二動工前 bai 算數字不要問他意見第三帳單來了丟給 ai記得自己對一遍原文連結在節目資訊欄我是 pin有收到的話會為個 pom下次見",
+     "jitter": 0.222,
+     "cps": 3.71,
+     "terms_ok": true,
+     "sim_to_episode": 0.97,
+     "centroid": 2425,
+     "bright_gap": 0
+    }
+   ],
+   "clear_enough": [
+    "s08_outro.take0.wav"
+   ]
+  }
+ ]
+}

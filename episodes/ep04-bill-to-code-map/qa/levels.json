@@ -1,0 +1,56 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -22.7,
+  "gain_db": 2.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_formula",
+  "lufs_before": -22.3,
+  "gain_db": 2.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_toy",
+  "lufs_before": -22.8,
+  "gain_db": 2.8,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_teacher",
+  "lufs_before": -22.5,
+  "gain_db": 2.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_places",
+  "lufs_before": -22.3,
+  "gain_db": 2.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_vercel",
+  "lufs_before": -20.5,
+  "gain_db": 0.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_loop",
+  "lufs_before": -21.5,
+  "gain_db": 1.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_borrow",
+  "lufs_before": -22.9,
+  "gain_db": 2.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_outro",
+  "lufs_before": -21.9,
+  "gain_db": 1.9,
+  "lufs_after": -20.0
+ }
+]

@@ -7,7 +7,7 @@
  "description": "上一集那位老師的帳單，其實不是特例。四個人、四張雲端帳單、同一個錯：沒算「使用者 × 次數 × 資料量」。差別不在專不專業，也不在有沒有用 AI，而是帳單響了之後，手上有沒有一張從帳單回到程式碼的地圖。這集看這張地圖從哪裡來，還有沒地圖的人怎麼跟 AI 借一張。\n\n今晚的 breakpoint：\n1. 帳單大約等於人數 × 次數 × 資料量 × 單價，第一個回饋永遠是帳單。\n2. 把計費單位、扇出、十倍帳單做成一道門，逼出數字，不是意見。\n3. 帳單來的時候，原封不動交給 AI 問為什麼，再自己讀懂、跟帳單對一遍。\n\n原文：〈帳單到程式碼的地圖〉 https://imitator.ai-apps.work/r/bill-to-code-map\n案例的當事人不具名；依據為公開文章、媒體報導與網站實測。\n\n上一集：EP03〈每加一分，就扣一分〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
  "report_slug": "bill-to-code-map",
  "source_url": "https://imitator.ai-apps.work/r/bill-to-code-map",
- "status": "production",
+ "status": "review",
  "series": "帳單三部曲 2/3（上：EP03）",
  "related": [
   "ep03-one-point-cost"
@@ -26,6 +26,17 @@
   "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
  },
  "audio": {
-  "file": "ep04-bill-to-code-map.mp3"
+  "file": "ep04-bill-to-code-map.mp3",
+  "bytes": 7362219,
+  "sha256": "1a66cec83bb9cd932a3a076103b9da1a2b685052b28b1e6fbe5a35581a3b458f",
+  "duration_s": 460.1,
+  "duration": "7:40",
+  "lufs": -16.9
+ },
+ "qa": {
+  "breeze_cer_mean": 0.039,
+  "jitter_semitones": 0.241,
+  "consistency": "qa/consistency.json：9 段裡 4 段被標記（s00→s01 接縫亮度 -628 Hz、s05 音高 +8.3 Hz 語速 -10%、s04 語速 +10%、s06 音高 +6.7 Hz）",
+  "gates": "錯誤率 3.9% 超過 3.5%、音高跳動 0.241 超過 0.23；最差的段是 s07 6.4%、s03 5.3%、s08 5.2%"
  }
 }
