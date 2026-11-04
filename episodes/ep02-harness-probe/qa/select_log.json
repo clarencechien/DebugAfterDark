@@ -1,0 +1,448 @@
+{
+ "asr": "breeze",
+ "tolerance": 0.012,
+ "terms": [],
+ "jitter_margin": 0.02,
+ "pace_margin": 0.1,
+ "episode_median_cps": 4.1,
+ "consistency": true,
+ "sim_margin": 0.015,
+ "bright_margin": 300,
+ "segments": [
+  {
+   "id": "s00_open",
+   "chosen": "s00_open.take1.wav",
+   "takes": [
+    {
+     "file": "s00_open.take0.wav",
+     "cer": 0.026,
+     "unclear": 1,
+     "long_pauses_per_min": 11.1,
+     "text": "AI 幫你寫的 code 第一次就跑起來而且完全零錯誤你是不是就覺得做完了我看到這個測試真的超有感的實驗裡的 AI 自己前後改了就是那個迭代的 15 次你猜時間花在哪居然沒有一次是在修跑步跑得起來喔每一次 import 全對單檔也沒有被截斷所有的功夫全都花在裁判看不見的地方跑從來不是問題看才是嘛差距不是模型會不會寫是在誰看得夠深",
+     "jitter": 0.212,
+     "cps": 4.19,
+     "terms_ok": true,
+     "sim_to_episode": 0.986,
+     "centroid": 2168,
+     "bright_gap": 262
+    },
+    {
+     "file": "s00_open.take1.wav",
+     "cer": 0.019,
+     "unclear": 1,
+     "long_pauses_per_min": 13.5,
+     "text": "AI 幫你寫的 code 第一次就跑起來而且完全零錯誤你是不是就覺得做完了我看到這個測試真的超有感實驗裡的 AI 自己前後改了就是那個迭代了 15 次你猜時間花在哪居然沒有一次是在修跑不跑得起來喔每一次 import 全對單檔也沒有被截斷所有的功夫全都花在彩盤看不見的地方跑從來不是問題看才是嘛差距不是模型會不會寫是在誰看得夠深",
+     "jitter": 0.256,
+     "cps": 3.94,
+     "terms_ok": true,
+     "sim_to_episode": 0.989,
+     "centroid": 2844,
+     "bright_gap": 414
+    },
+    {
+     "file": "s00_open.take2.wav",
+     "cer": 0.038,
+     "unclear": 4,
+     "long_pauses_per_min": 10.1,
+     "text": "AI 幫你寫的 code第一次就跑起來而且完全領錯誤你是不是就覺得做完了我看到這個測試真的超有感實驗裡的 AI 自己前後改了就是那個迭代了 15 次你猜時間花在哪居然沒有一次是在修跑不跑得起來喔每一次 input 全對單檔也沒有被截斷所有的功夫全都花在裁判看不見的地方跑重來不是問題看才是嘛差距不是模型會不會寫是在誰看得夠深",
+     "jitter": 0.252,
+     "cps": 4.43,
+     "terms_ok": true,
+     "sim_to_episode": 0.981,
+     "centroid": 2430,
+     "bright_gap": 0
+    }
+   ],
+   "clear_enough": [
+    "s00_open.take0.wav",
+    "s00_open.take1.wav"
+   ]
+  },
+  {
+   "id": "s01_felix",
+   "chosen": "s01_felix.take2.wav",
+   "takes": [
+    {
+     "file": "s01_felix.take0.wav",
+     "cer": 0.07,
+     "unclear": 10,
+     "long_pauses_per_min": 4.8,
+     "text": "這就讓我想到 Felix 的一篇文章他是 Andropic 的工程主管他之前講過一個例子很有意思一開始他只是請 Cloud 修某個 crash後來他要 Cloud 顧好整個 app讓它完全不會 crash聽起來超神對不對但重點根本不是野心變大更扯的是他順口帶過的那句話就是他先給了 Cloud 很多權限不對應該說是給了超多工具讓他可以抓 crash report對 commit 還給了他三台機器去重現問題你看野心根本沒有變大變大這是什麼是 Cloud 到底能看到多少東西這份報告的作者就是拿這句話來做實驗",
+     "jitter": 0.273,
+     "cps": 4.87,
+     "terms_ok": true,
+     "sim_to_episode": 0.981,
+     "centroid": 2283,
+     "bright_gap": 147
+    },
+    {
+     "file": "s01_felix.take1.wav",
+     "cer": 0.078,
+     "unclear": 10,
+     "long_pauses_per_min": 12.9,
+     "text": "這就讓我想到 Felix 的一篇文章他是 Anthropic 的工程主管他之前講過一個例子很有意思一開始他只是請 cloud 修某個 crash後來他要 cloud 顧好整個 app讓它完全不會 crash嘿聽起來超神對不對但重點根本不是野心變大更扯的是他順口帶過的那句話就是他先給了 cloud 很多權限不對 應該說是給了超多工具讓他可以抓 crash report 對考 mid還給了他三台機器去重現問題你看野心根本沒有變大變大的是什麼是 cloud 到底能看到多少東西這份報告的作者就是拿這句話來做實驗",
+     "jitter": 0.256,
+     "cps": 4.74,
+     "terms_ok": true,
+     "sim_to_episode": 0.975,
+     "centroid": 2637,
+     "bright_gap": 208
+    },
+    {
+     "file": "s01_felix.take2.wav",
+     "cer": 0.053,
+     "unclear": 8,
+     "long_pauses_per_min": 7.0,
+     "text": "這就讓我想到 Felix 的一篇文章他是 Anthropic 的工程主管他之前講過一個例子很有意思一開始他只是請 cloud 修某個 crash後來他要 cloud 顧好整個 app讓它完全不會 crash聽起來超神對不對但重點根本不是野心變大更扯的是他順口帶過的那句話就是他先給了 cloud 很多權限欸不對應該說是給了超多工具讓他可以抓 crash report 對 commit還給了他三台機器去重現問題你看野心根本沒有變大嘛變大的是什麼是 cloud 到底能看到多少東西這份報告的作者就是拿這句話來做實驗",
+     "jitter": 0.215,
+     "cps": 4.73,
+     "terms_ok": true,
+     "sim_to_episode": 0.982,
+     "centroid": 2933,
+     "bright_gap": 504
+    }
+   ],
+   "clear_enough": [
+    "s01_felix.take2.wav"
+   ]
+  },
+  {
+   "id": "s02_protocol",
+   "chosen": "s02_protocol.take0.wav",
+   "takes": [
+    {
+     "file": "s02_protocol.take0.wav",
+     "cer": 0.026,
+     "unclear": 1,
+     "long_pauses_per_min": 12.1,
+     "text": "那這個實驗到底怎麼做作者出了三題單檔網頁題目用 three.js就是在網頁畫 3D 的工具有水上飛機看圖坐馬車還有鋼珠軌道重點來了人幾乎不能插手幫忙你猜人能做什麼只能貼 prompt回報錯誤訊息還有喊停就這樣完全不能改 code也不能教他怎麼做那誰來當裁判作者寫了一支程式來自動檢查打開網頁搜 8 秒的錯誤順便截圖看到這裡我真的覺得超嚴密然後報告常講到 hardness 這個詞它就是也就是包在模型外面的工具讓模型能自己跑看畫面再修改聊天介面就是沒有這種迴圈的 hardness",
+     "jitter": 0.229,
+     "cps": 3.8,
+     "terms_ok": true,
+     "sim_to_episode": 0.987,
+     "centroid": 2285,
+     "bright_gap": 145
+    },
+    {
+     "file": "s02_protocol.take1.wav",
+     "cer": 0.053,
+     "unclear": 4,
+     "long_pauses_per_min": 14.5,
+     "text": "那這個實驗到底怎麼做作者出了 3 題單單網頁題目用 3JS就是在網頁畫 3D 的工具有水上飛機看圖坐馬車還有鋼珠軌道重點來了人幾乎不能插手幫忙你才認真做什麼只能貼 prompt 回報錯誤訊息還有喊停就這樣完全不能改 code也不能教他怎麼做那誰來當裁判作者寫了一支程式來自動檢查打開網頁搜 8 秒的錯誤順便截圖看到這裡我真的覺得超嚴密然後報告常講到 harness 這個詞它就是也就是包在模型外面的工具啦讓模型能自己跑看畫面再修改聊天介面就是沒有這種迴圈的 harness",
+     "jitter": 0.198,
+     "cps": 3.91,
+     "terms_ok": true,
+     "sim_to_episode": 0.976,
+     "centroid": 2494,
+     "bright_gap": 65
+    },
+    {
+     "file": "s02_protocol.take2.wav",
+     "cer": 0.062,
+     "unclear": 6,
+     "long_pauses_per_min": 10.8,
+     "text": "那這個實驗到底怎麼做作者出了 3D 單檔網頁題目用 3.js就是在網頁畫 3D 的工具有水上飛機看圖坐馬車還有鋼珠軌道重點來了人幾乎不能插手幫忙你猜人能做什麼只能貼 prompt 回報錯誤訊息還有喊停就這樣完全不能改 code也不能教他怎麼做那誰來當裁判作者寫了一支程式來自動檢查打開網頁搜 8 秒的錯誤隨便截圖看到這裡我真的覺得超嚴密然後報告常講到 harness 這個詞它就是包在模型外面的工具啦讓模型人自己跑看畫面再修改聊天介面就是沒有這種迴圈的 harness",
+     "jitter": 0.204,
+     "cps": 4.06,
+     "terms_ok": true,
+     "sim_to_episode": 0.981,
+     "centroid": 2159,
+     "bright_gap": 271
+    }
+   ],
+   "clear_enough": [
+    "s02_protocol.take0.wav"
+   ]
+  },
+  {
+   "id": "s03_picture",
+   "chosen": "s03_picture.take0.wav",
+   "takes": [
+    {
+     "file": "s03_picture.take0.wav",
+     "cer": 0.048,
+     "unclear": 2,
+     "long_pauses_per_min": 10.1,
+     "text": "先看 Coco 這一組三題加起來總共修改了 15 次重點是完全沒人幫忙全部自己跑每一版都是一次過連一個 error 都沒有喔那他到底都在改什麼都在改裁判看不到的視覺細節第一種就是程式跑得動但畫面很瞎像水上飛機那題白色浪花畫在白色水面上根本看不出來嗎或是現成的天空套件一直發白模型試了幾次抓狂那個是試了幾次搞不定乾脆自己寫一小段漸層天空換掉它整題水上飛機全都是這種畫面問題啦",
+     "jitter": 0.26,
+     "cps": 3.92,
+     "terms_ok": true,
+     "sim_to_episode": 0.983,
+     "centroid": 2283,
+     "bright_gap": 147
+    },
+    {
+     "file": "s03_picture.take1.wav",
+     "cer": 0.038,
+     "unclear": 6,
+     "long_pauses_per_min": 11.0,
+     "text": "先看 cloud code 這一組三題加起來總共修改了 15 次重點是完全沒人幫忙全部自己跑每一版都是一次過連一個 error 都沒有喔那它到底都在改什麼都在改裁判看不到的視覺細節第一種就是程式跑得動但畫面很瞎像水上飛行那題白色浪花畫在白色水面上根本看不出來嗎或是現成的天空條件一直發白模型試了幾次抓狂那個是試了幾次搞不定乾脆自己寫一小段漸層填空換掉它整體水上飛機全都是這種畫面問題啦",
+     "jitter": 0.268,
+     "cps": 4.26,
+     "terms_ok": true,
+     "sim_to_episode": 0.963,
+     "centroid": 2532,
+     "bright_gap": 103
+    },
+    {
+     "file": "s03_picture.take2.wav",
+     "cer": 0.081,
+     "unclear": 6,
+     "long_pauses_per_min": 8.4,
+     "text": "先看看 Kuroko 這一組三題加起來總共修改了 15 次重點是完全沒人幫忙全部自己跑每一版都是一次過連一個 error 都沒有喔那他到底都在改什麼都在改裁判看不到的視覺細節第一種就是程式跑得動但畫面很瞎像水上飛行那題白色浪花花在白色水面上根本看不出來吧或是現成的天空套件一直發白模型試了幾次抓狂欸那個是試了幾次搞不定乾脆自己寫一小段建成天空換掉它整題水上飛機全都是這種畫面問題啦",
+     "jitter": 0.205,
+     "cps": 4.36,
+     "terms_ok": true,
+     "sim_to_episode": 0.981,
+     "centroid": 2121,
+     "bright_gap": 308
+    }
+   ],
+   "clear_enough": [
+    "s03_picture.take0.wav",
+    "s03_picture.take1.wav"
+   ]
+  },
+  {
+   "id": "s04_numbers",
+   "chosen": "s04_numbers.take0.wav",
+   "takes": [
+    {
+     "file": "s04_numbers.take0.wav",
+     "cer": 0.015,
+     "unclear": 2,
+     "long_pauses_per_min": 9.3,
+     "text": "除了畫面問題 第二種更陰險程式有在跑但數字全錯像摩擦力算錯鋼珠在畫面上慢慢爬或是出口的斜坡其實有一點點上坡珠子就滾回去畫面看起來都對喔你得把坐標水時間印出來才抓得到那第三種狀況呢裁判居然比被測的東西還慢測試環境太卡時間根本對不上截圖抓到的東西實際上都還沒跑完你猜要怎麼解決只能額外寫 script 去當探證就是我是說要多寫大約 250 行的腳本我看到這邊整個傻眼這才是 harness 看不見的真正成本啦",
+     "jitter": 0.242,
+     "cps": 4.35,
+     "terms_ok": true,
+     "sim_to_episode": 0.969,
+     "centroid": 1934,
+     "bright_gap": 496
+    },
+    {
+     "file": "s04_numbers.take1.wav",
+     "cer": 0.066,
+     "unclear": 3,
+     "long_pauses_per_min": 14.1,
+     "text": "除了畫面問題第二種更陰險程式有在跑但數字全錯像摩擦力算錯鋼珠在畫面上慢慢爬或是出口的斜坡其實有一點點上坡珠子就滾回去畫面看起來都對喔你得把坐標隨時間印出來才抓得到那第三種狀況呢裁判居然比備車的東西還慢測試環境太卡時間根本對不上截圖抓到的東西實際上都還沒跑完你才有什麼解決只能額外寫 script 去當探針就是我是說要多寫大約 250 行的腳本我看到這邊整個傻眼這才是哈尼斯看不見的真正成本啦",
+     "jitter": 0.237,
+     "cps": 4.18,
+     "terms_ok": true,
+     "sim_to_episode": 0.983,
+     "centroid": 2904,
+     "bright_gap": 475
+    },
+    {
+     "file": "s04_numbers.take2.wav",
+     "cer": 0.096,
+     "unclear": 7,
+     "long_pauses_per_min": 11.3,
+     "text": "除了畫面問題第二種更陰險城市有在跑但數字全錯像摩擦力算錯港主在畫面上慢慢爬或是出口的斜坡其實有一點點上坡竹子就滾回去畫面看起來都對喔你得把坐標隨時間印出來才抓得到第三種狀況裁判居然比被撤的東西還慢測試環境太卡時間根本對不上截圖抓到的東西實際上都還沒跑完你才要怎麼解決只能額外寫 script 去當探證就是我是說要多寫大約 250 行的腳本我看到這邊整個傻眼這才是它那是看不見的真正成本啊",
+     "jitter": 0.254,
+     "cps": 4.1,
+     "terms_ok": true,
+     "sim_to_episode": 0.985,
+     "centroid": 2259,
+     "bright_gap": 170
+    }
+   ],
+   "clear_enough": [
+    "s04_numbers.take0.wav"
+   ]
+  },
+  {
+   "id": "s05_cockpits",
+   "chosen": "s05_cockpits.take2.wav",
+   "takes": [
+    {
+     "file": "s05_cockpits.take0.wav",
+     "cer": 0.086,
+     "unclear": 11,
+     "long_pauses_per_min": 10.0,
+     "text": "那如果換成平常聊天的介面坐著把同一段水上飛機 prompt 拿去試飛那個最乾淨的測試器是 Gemini因為它完全沒看過前面的出錯紀錄吧結果你知道怎樣嗎它的底板超有野性自己加了一堆 prompt 沒寫的東西像小島松樹等等它連碼頭都做出來了耶程式碼 1300 多行一次吐完但它也是唯一泡起來出問題的整個畫面一直在閃修了三回合才發現是機翼零件疊在一起重點是搞砸的地方全部是原本沒要求的唉報告寫了一句很到位的話沒有感知的野性長出來的全是裝飾壞掉的也全是裝飾這句真的講進心坎裡耶對另外兩個 cloud 算被污染了因為他們跑的那個對話早就讀過前面的失敗紀錄了好",
+     "jitter": 0.242,
+     "cps": 4.45,
+     "terms_ok": true,
+     "sim_to_episode": 0.989,
+     "centroid": 2182,
+     "bright_gap": 248
+    },
+    {
+     "file": "s05_cockpits.take1.wav",
+     "cer": 0.071,
+     "unclear": 11,
+     "long_pauses_per_min": 11.9,
+     "text": "那如果換成平常聊天的介面呢坐著把同一段水上飛機 prom 拿去試飛那個最乾淨的測試器是 Gemini因為它完全沒看過前面的出錯紀錄嘛結果你知道怎樣嗎它的第一版超有野心自己加了一堆 prom 沒寫的東西像小島松樹等等它連碼頭都做出來了程式碼 1300 多行一次吐完但它也是唯一跑下來出問題的整個畫面一直在閃修了三回合才發現是記憶零件疊在一起重點是搞砸的地方全部是原本沒要求的報告寫了一句很到位的話沒有感知的野心長出來的全是裝飾壞掉的也全是裝飾這句真的講進心坎裡耶對另外兩個 cloud 算被污染了因為他們跑的那個對話早就讀過前面的失敗紀錄了",
+     "jitter": 0.247,
+     "cps": 4.07,
+     "terms_ok": true,
+     "sim_to_episode": 0.984,
+     "centroid": 2841,
+     "bright_gap": 411
+    },
+    {
+     "file": "s05_cockpits.take2.wav",
+     "cer": 0.045,
+     "unclear": 7,
+     "long_pauses_per_min": 10.1,
+     "text": "那如果換成平常聊天的介面呢坐著把同一段水上飛機 prompt 拿去試飛那個最乾淨的測試其實是 Gemini因為它完全沒看過前面的出錯紀錄嘛結果你知道怎樣嗎它的第一版超有野心自己加了一堆 prompt 沒寫的東西像小島松樹等等它連碼頭都做出來了程式碼 1300 多行一次吐完但它也是唯一跑起來出問題的整個畫面一直在閃修了三回合才發現是記憶零件疊在一起重點是搞砸的地方全部是原本沒要求的報告寫了一句很到位的話沒有感知的野心長出來的全是裝飾壞掉的也全是裝飾這句真的講進心坎裡耶對 另外兩個 cloud 算被污染了因為他們跑的那個對話早就讀過前面的失敗記錄啦",
+     "jitter": 0.232,
+     "cps": 4.06,
+     "terms_ok": true,
+     "sim_to_episode": 0.987,
+     "centroid": 3110,
+     "bright_gap": 680
+    }
+   ],
+   "clear_enough": [
+    "s05_cockpits.take2.wav"
+   ]
+  },
+  {
+   "id": "s06_judge",
+   "chosen": "s06_judge.take2.wav",
+   "takes": [
+    {
+     "file": "s06_judge.take0.wav",
+     "cer": 0.039,
+     "unclear": 2,
+     "long_pauses_per_min": 17.7,
+     "text": "污染這件事先放一邊了這個實驗其實回頭打了自己一巴掌就是那個拿來當裁判的教本它只檢查有沒有報錯外加三張截圖問題來了畫面閃爍是每秒 60 格的事耶三張靜態截圖哪看得出來根本看不到嘛那個我是說裁判本身的解析度根本不夠啊你覺得機器裁判一定比人眼強嗎其實沒有裁判要是腦力不夠就只會跟你說沒報錯我讀到這邊真的狂點頭如果沒有夠水準的回饋對模型設再高的目標最後也只是看起來做到而已啦",
+     "jitter": 0.262,
+     "cps": 3.53,
+     "terms_ok": true,
+     "sim_to_episode": 0.99,
+     "centroid": 2086,
+     "bright_gap": 344
+    },
+    {
+     "file": "s06_judge.take1.wav",
+     "cer": 0.05,
+     "unclear": 2,
+     "long_pauses_per_min": 10.2,
+     "text": "污染這件事先放一邊這個實驗其實回頭打了自己一巴掌就是那個拿來當裁判的腳本他只檢查有沒有報錯外加三張截圖問題來了畫面閃爍的是每秒 60 格的視野三張靜態截圖哪看得出來根本看不到嗎那個我是說裁判本身的解析度根本不夠你覺得機器裁判贏你比人眼強嗎其實沒有裁判要是能力不夠就只會跟你說我沒報錯我讀到這邊真的狂點頭如果沒有夠水準的回饋對模型社再高的目標最後也只是看起來做到而已啦",
+     "jitter": 0.193,
+     "cps": 3.79,
+     "terms_ok": true,
+     "sim_to_episode": 0.978,
+     "centroid": 2507,
+     "bright_gap": 77
+    },
+    {
+     "file": "s06_judge.take2.wav",
+     "cer": 0.028,
+     "unclear": 1,
+     "long_pauses_per_min": 12.2,
+     "text": "污染這件事先放一邊這個實驗其實回頭打了自己一巴掌就是那個拿來當裁判的腳本他只檢查有沒有報錯外加三張截圖問題來了畫面閃縮是每秒 60 格的事耶三張靜態截圖哪看得出來根本看不到嘛那個我是說裁判本身的解析度根本不夠你覺得機器裁判一定比人眼強嗎其實沒有裁判要是能力不夠就只會跟你說沒報錯我讀到這邊真的狂點頭唉如果沒有夠水準的回饋對模型社再高的目標最後也只是看起來做到而已啦",
+     "jitter": 0.259,
+     "cps": 4.06,
+     "terms_ok": true,
+     "sim_to_episode": 0.98,
+     "centroid": 2371,
+     "bright_gap": 59
+    }
+   ],
+   "clear_enough": [
+    "s06_judge.take0.wav",
+    "s06_judge.take2.wav"
+   ]
+  },
+  {
+   "id": "s07_houses",
+   "chosen": "s07_houses.take1.wav",
+   "takes": [
+    {
+     "file": "s07_houses.take0.wav",
+     "cer": 0.056,
+     "unclear": 7,
+     "long_pauses_per_min": 9.1,
+     "text": "然後這份報告點出一個超棒的概念Harness 產出的不只是成品還有失敗清單而且失敗清單比成品還值錢喔你覺得工具跑那麼多次到底買到了什麼就是它知道哪裡會壞掉嘛大約 15 萬個 token 買到的經驗寫成筆記只要一點點字數就能直接交給下一個模型報告還用三隻小豬來打比方用聊天介面配人言那是稻草屋用 cloak code 讓機器當眼睛酸木屋實驗室那種完整架構才是真正的專屋所以 Felix 說要更有野心那是講給住專屋的人聽的啦如果我們還住在稻草屋最中肯的建議不是野心對其實是先想辦法把眼睛解好喔對了作者有特別提醒這本報告是 Clo 幫忙寫的而 Clo 本身就是被比的對象之一所以數字大家要自己去核對想自己驗就拿同一個 prompt 去跑用瀏覽器看滿一分鐘只記症狀就好",
+     "jitter": 0.268,
+     "cps": 4.85,
+     "terms_ok": true,
+     "sim_to_episode": 0.985,
+     "centroid": 2384,
+     "bright_gap": 46
+    },
+    {
+     "file": "s07_houses.take1.wav",
+     "cer": 0.031,
+     "unclear": 6,
+     "long_pauses_per_min": 4.5,
+     "text": "然後這份報告點出一個超棒的概念Harness 產出的不只是成品還有失敗清單而且失敗清單比成品還值錢喔你覺得工具跑那麼多次到底買到了什麼就是它知道哪裡會壞掉嘛大約 15 萬個 token 買到的經驗寫成筆記只要一點點自說就能直接交給下一個模型報告還用三隻小豬來打比方用聊天介面配人言那是稻草屋用 cloud code 讓機器當眼睛算墨屋實驗室那種完整架構才是真正的專屋所以 Felix 說要更有野心那是講給住專屋的人聽的啦如果我們還住在稻草屋最中肯的建議不是野心其實是先想辦法把眼睛接好對了作者有特別提醒這份報告是 Claude 幫忙寫的而 Claude 本身就是被比的對象之一所以數字大家要自己去核對想自己驗就拿同一個 prompt 去跑用瀏覽器看滿一分鐘只記症狀就好",
+     "jitter": 0.239,
+     "cps": 4.76,
+     "terms_ok": true,
+     "sim_to_episode": 0.968,
+     "centroid": 2034,
+     "bright_gap": 396
+    },
+    {
+     "file": "s07_houses.take2.wav",
+     "cer": 0.062,
+     "unclear": 10,
+     "long_pauses_per_min": 12.3,
+     "text": "然後這份報告點出一個超棒的概念Harness 產出的不只是成品還有失敗清單而且失敗清單比成品還值錢喔你覺得工具跑那麼多次到底買到了什麼就是它知道哪裡會壞掉嘛大約 15 萬個 token 買到的經驗寫成筆記只要一點點字數就能直接交給下一個模型報告還用三隻小豬來打比方用聊天介面配人演那是稻草屋用 cloud code 讓機器當眼睛酸木屋實驗室的完整架構才是真正的專屋所以 Felix 說要更有野心那是講給住專屋的人聽的啦如果我們還住在稻草屋最中肯的建議不是野心對其實是先想辦法把眼睛接好喔對了作者有特別提醒這份報告是 cloud 幫忙寫的而 cloud 本身就是 baby 的對象之一所以數字大家要自己去核對想自己驗就拿同一個 prompt 去跑用瀏覽器看滿一分鐘仔細整裝就好",
+     "jitter": 0.225,
+     "cps": 5.04,
+     "terms_ok": true,
+     "sim_to_episode": 0.983,
+     "centroid": 2524,
+     "bright_gap": 95
+    }
+   ],
+   "clear_enough": [
+    "s07_houses.take1.wav"
+   ]
+  },
+  {
+   "id": "s08_outro",
+   "chosen": "s08_outro.take2.wav",
+   "takes": [
+    {
+     "file": "s08_outro.take0.wav",
+     "cer": 0.093,
+     "unclear": 5,
+     "long_pauses_per_min": 10.6,
+     "text": "今晚的 break point聊了這麼多最關鍵的是什麼就是這三件事跑扣從來不是問題看得到才是然後裁判的解析度對看得夠細才算數還有失敗清單比成品值錢先揭好眼睛再來談野心啦原文連結在節目資訊欄我是 Pin有收到的話會有一個 pom 下次見",
+     "jitter": 0.198,
+     "cps": 3.47,
+     "terms_ok": true,
+     "sim_to_episode": 0.976,
+     "centroid": 2460,
+     "bright_gap": 31
+    },
+    {
+     "file": "s08_outro.take1.wav",
+     "cer": 0.059,
+     "unclear": 3,
+     "long_pauses_per_min": 9.5,
+     "text": "好今晚的 break point聊了這麼多最關鍵的是什麼就是這三件事跑 code 從來不是問題看得到才是然後裁判的解析度對看得夠細才算數還有失敗清單比成品值錢先戒好眼睛再來談野心啊原文連結在節目資訊欄我是 pin有收到的話回我一個胖下次見",
+     "jitter": 0.197,
+     "cps": 3.74,
+     "terms_ok": true,
+     "sim_to_episode": 0.97,
+     "centroid": 2511,
+     "bright_gap": 81
+    },
+    {
+     "file": "s08_outro.take2.wav",
+     "cer": 0.042,
+     "unclear": 3,
+     "long_pauses_per_min": 16.3,
+     "text": "好今晚的 break point聊了這麼多最關鍵的是什麼就是這三件事跑 code 從來不是問題看得到才是然後裁判的解析度對看得夠細才算數還有失敗清單比成品值淺先揭好眼睛再來談野心啦原文連結在節目資訊欄我是 pin你有收到的話回我一個 point 下次見",
+     "jitter": 0.214,
+     "cps": 3.55,
+     "terms_ok": true,
+     "sim_to_episode": 0.964,
+     "centroid": 2794,
+     "bright_gap": 364
+    }
+   ],
+   "clear_enough": [
+    "s08_outro.take2.wav"
+   ]
+  }
+ ]
+}

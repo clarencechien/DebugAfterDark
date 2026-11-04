@@ -23,6 +23,11 @@
   "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
  },
  "audio": {
-  "file": "ep02-harness-probe.mp3"
+  "file": "ep02-harness-probe.mp3",
+  "bytes": 7611314,
+  "sha256": "320e3a0f99a0f11218306b453bd049dd605829a2adc252cfa86c2766d0e538a3",
+  "duration_s": 475.7,
+  "duration": "7:55",
+  "lufs": -16.9
  }
 }
