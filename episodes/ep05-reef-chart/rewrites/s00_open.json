@@ -1,0 +1,85 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 9 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "21e490d64c66e719f6d64e166edee7f4e1e0b8e1b8a7151b762e48122b8e4c6c",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "撞礁是遲早的。報告把 AI 比成一條誰都能開的大船：沒開過船的人，碰到暗礁是遲早的事。上一集的四張帳單，有兩個人撞了之後修一修就沒事，另外兩個人收到帳單。差別不在誰比較資深、誰比較會修，而是撞的那片水有多深。所以這集要講的海圖，不畫航線，只畫暗礁，而且只回答一件事：在這裡撞了，會不會沉。",
+  "lint": {
+   "chars": 142,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 27.4,
+   "max_sentence_len": 39,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "AI 就像一艘誰都能開的大船。\n開這艘船，撞到暗礁根本是遲早的事。\n重點其實不是你會不會撞，\n而是撞下去會不會沉、代價有多大。\n你看四張帳單，就是……\n呃不對，應該說四個案例。\n撞同一顆礁，差在哪裡？\n對，差在水有多深啦。\n有人修一修就沒事，\n有人卻直接收帳單。<sigh>\n我看到這個比喻真的很認同。\n海圖不是要教你怎麼閃喔，\n它只回答一件事：\n在這裡撞到，到底會不會死？",
+   "lint": {
+    "chars": 167,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 32,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？\n開船碰上暗礁，本來就是遲早的事。\n現在 AI 就像誰都能開的大船。<short pause>\n但重點不是會不會撞。\n那差別在哪？\n差在撞了之後，你會不會沉下去。\n我看到這個比喻，真的很有共鳴。\n裡面的四張帳單，\n有兩個人撞了，就是遇到再修嘛。\n另外兩個人，那個帳單就直接來了。\n這不是誰比較會修，<short pause>\n應該說，是看你撞的那片水有多深啦。\n海圖不畫航線，只畫暗礁。\n它只回答一件事：在這裡撞了，會不會死。",
+   "lint": {
+    "chars": 179,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 13.9,
+    "max_sentence_len": 25,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？\n現在用 AI 寫扣，就像人人都能開大船。\n可是沒開過船的人，撞到暗礁是遲早的事。\n更扯的是，撞到同一顆礁，\n有人遇到再修就好，\n有人卻直接收到天價帳單。<sigh>\n你猜差在哪？\n差在誰比較會修嗎？\n不是耶。\n就是看你撞的那片水到底有多深。\n那個，應該說這份海圖不幫你畫航線，\n它只回答一件事：<short pause>\n在這邊撞了，你會不會直接沉船。",
+   "lint": {
+    "chars": 151,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 39,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1
+}

@@ -1,0 +1,97 @@
+{
+ "segment": "s05_verbs",
+ "position": "第 6 段，共 9 段",
+ "avoid": [
+  "應該說",
+  "我看到這",
+  "我是說"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4bd80b1573c95c0b946ad074aa199269a3dc47e0e6b0f57621108d1d3341fe06",
+ "previous_context": "而那片危險的水，在海圖上完全是空白的。光用想的就替他捏一把冷汗耶。",
+ "original": {
+  "text": "報告在這裡講了一句我很想讓你帶走的話：護欄擋的是動詞，暗礁是名詞。回頭看那張「不准默默做」的清單：建立、啟用、修改、刪除、覆寫，全是動詞。AI 的護欄很會擋動作，因為動作是一個一個的，執行之前攔得住。技能的成本關卡和檢查程式也是這樣寫的，找的是「有沒有用到雲端儲存」「有沒有部署 Cloud Functions」。可是讓帳單變大的那顆礁，不是一個動作。整班壓成一塊、廣播給三十台裝置、按位元組計費，三件事各自都合法，沒有任何一步會觸發警報。護欄擋的是「你做了什麼」，暗礁是「做了之後會長成什麼」。所以關卡有、檢查也在跑，卻一條都沒攔到，因為它們都在找動詞。",
+  "lint": {
+   "chars": 275,
+   "precise_numbers": [
+    "三十"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 33.4,
+   "max_sentence_len": 54,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "報告在這裡講了一句超有共鳴的話。\n護欄擋的是動詞，暗礁是名詞。\n就是啊，回頭看那張不可默默做的清單。\n建立、啟用、修改、刪除，全部都是動詞。\nAI 的護欄很擅長擋動作。\n因為動作是一個一個的，做之前攔得住嘛。\n那個檢查的 script 也是這樣寫。\n找的是有沒有用到 Storage，或者部署 Functions。\n可是，最後撞沉他的那顆礁，根本不是動作。<short pause>\n你猜是什麼？\n整班壓成一塊、三十台裝置、按位元組計費。\n這三件事分開看，全部都完全合法。\n沒有任何一步會觸發警報，對吧？\n護欄擋的是你做了什麼，暗礁是做了之後長成什麼。\n更扯的是，關卡跟檢查明明都有在跑耶。\n結果一條都沒攔到，因為它們全都在找動詞。<sigh>",
+   "lint": {
+    "chars": 283,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 16.7,
+    "max_sentence_len": 29,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "報告在這裡講了一句超精準的話。\n護欄擋的是動詞，暗礁是名詞。\n就是，你看那張不准默默做的清單。\n建立、啟用、修改、刪除，全部都是動詞。\n護欄本來就很會擋動作嘛。<short pause>\n因為動作是一個一個分開的，執行前攔得住。\n檢查的 script 也是這樣寫，\n都在找有沒有用到 Storage，或者部署 Functions。\n可是，最後撞沉他的根本不是動作啊。\n把整班壓縮成一塊，廣播給三十台裝置，\n然後照傳輸量計費。\n你發現了嗎？\n這三件事拆開來看，完全都合法。\n沒有任何一步會觸發警告。\n護欄擋的是「做了什麼」，\n暗礁卻是「做完之後長成什麼樣子」。<sigh>\n檢查明明都在跑，卻完全沒攔到，\n因為大家都在盯著動詞看啦。",
+   "lint": {
+    "chars": 275,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 18.6,
+    "max_sentence_len": 44,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "報告在這裡講了一句超精準的話。<short pause>\n護欄擋的是動詞，暗礁是名詞。\n對，你回頭看那張清單。\n建立、啟用、修改、刪除。\n全部都是動詞喔。\n因為動作是一個一個的，執行前攔得住。\n檢查的 script 也是這樣寫嘛。\n看看有沒有部署 Cloud Functions 之類的。\n但撞沉他的那顆礁，根本不是動作。\n把資料壓縮、傳給三十台裝置、按流量計費。\n分開看每一件事，哪裡違規了？\n完全合法啊！<sigh>\n所以沒有任何一步會觸發警報。\n護欄擋的是你做了什麼。\n可是暗礁，是做了之後會長成什麼樣子。\n更扯的是，檢查機制明明都在跑。\n最後卻一條都沒攔到。\n為什麼？因為大家都在盯著動詞看嘛。",
+   "lint": {
+    "chars": 260,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 19,
+    "avg_sentence_len": 12.7,
+    "max_sentence_len": 24,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2
+}

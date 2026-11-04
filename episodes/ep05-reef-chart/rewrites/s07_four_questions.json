@@ -1,0 +1,104 @@
+{
+ "segment": "s07_four_questions",
+ "position": "第 8 段，共 9 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "更扯的是",
+  "我看到這",
+  "我是說"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "da3e6ee0e47ed1d08b5b605a66d9a6eedc2b85bb7d49f2fa0276293e6de006f8",
+ "previous_context": "不對，是讓它自己幫自己背書。那只是回音，根本不是海圖啦。",
+ "original": {
+  "text": "所以報告最後給了四個出港前的問題，在叫 AI 動手之前先回答，答不出來就停下來問你。第零題：這個功能用到的每個雲端服務，爆了是停還是寄帳單？有沒有硬上限？預算提醒不算。第一題：每個服務的計費單位是什麼？第二題：使用者做一個動作，會有幾台裝置、各下載多少資料？第三題：使用者變成十倍、一百倍的時候，月費各是多少？順序是故意的：第零題答「會停」，後面三題可以等撞了再補；答「寄帳單」，後面三題就一定要答得出數字。最後一件事，是老師沒做的那件：修完船，回去改圖。把這次撞到的礁，寫進你的技能檔、你的 CLAUDE.md、你給 AI 的規則裡。不然下一條船，可能還是你自己的，會撞在同一個地方，而且這次水可能更深。",
+  "lint": {
+   "chars": 298,
+   "precise_numbers": [
+    "一百"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 11,
+   "avg_sentence_len": 26.1,
+   "max_sentence_len": 48,
+   "sentences_over_20": 8,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 5,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "既然沒有海圖，那出港前要問什麼？\n報告最後列了四個問題。\n叫 AI 動手前，一定要它先回答。\n最關鍵的第一題，\n是問服務爆掉的時候，\n會直接停下來，還是繼續寄帳單來？\n注意喔，預算提醒不算，要真的有硬上限。\n只要答案是寄帳單，\n後面幾題就全部得算出來。\n像是計費單位是什麼？\n使用者動一下，會抓多少資料？\n人潮變十倍、一百倍的時候，月費是多少？\n這個問話的順序是故意的啦。\n如果爆了會停，還能等撞了再補救。\n但只要會扣錢，\n算不出來就千萬不要做。<short pause>\n我光是看到這個設計，就覺得太聰明了。\n最後，修完船記得回去改圖。\n把這次撞到的礁……\n呃不是，是把經驗寫進你的 CLAUDE.md，\n加進你給 agent 的規則裡面。\n不然下次出海，你還是會撞在同一個地方，\n而且水可能比這次還要深喔。",
+   "lint": {
+    "chars": 315,
+    "precise_numbers": [
+     "一百"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 18.7,
+    "max_sentence_len": 45,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 1
+   }
+  },
+  {
+   "text": "所以，到底要怎麼畫出真的海圖？\n報告給了四個出港前的問題。\n叫 AI 動手之前，要先……不對，\n是逼它先回答四個問題。\n答不出來，就得停下來問你。\n最關鍵的第零題是這個：\n服務如果爆了，是會停掉，還是寄帳單？\n有沒有設定硬上限？預算提醒可不算喔。\n萬一答案是「寄帳單」呢？\n那後面就不能混了，每題都得算出數字。\n像計費單位是什麼？\n一個動作會讓裝置下載多少資料？\n人數變十倍、一百倍時，月費又是多少？\n這個順序是故意的。\n答「會停」，後面可以等撞了再補。\n答「寄帳單」，出港前就得先算清楚。\n對，老實說，讀到這一段真的會背脊發涼。<sigh>\n撞礁遲早會發生嘛，海圖只看撞了會不會死。\n然後，最後還有一件事，是那位老師沒做的。\n修完船，記得回去改海圖。<short pause>\n把這次撞到的礁，寫進你的 CLAUDE.md。\n寫進你給 agent 的規則裡。\n不然下一條船，搞不好又撞在同一個地方啦。",
+   "lint": {
+    "chars": 355,
+    "precise_numbers": [
+     "萬一",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 22,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 7,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那既然海圖不能省，出港前要問什麼？<short pause>\n報告裡給了一套檢查問題。\n請 AI 動手前先回答，答不出來就先停。\n這個順序排得超心機喔。\n最關鍵的第零題是：\n這個服務爆掉的時候，\n到底會停，還是直接寄帳單？\n有沒有設硬上限？\n先講好，預算提醒可不算喔。\n要是答案是會停，後面還可以等撞了再補；\n但要是會寄帳單，對，\n後面你就得逼它把數字算出來。\n像是計費單位是什麼？\n點一下會讓幾台裝置下載多少資料？\n使用者暴增的時候，月費會是多少？\n你可能會想，問這麼細幹嘛？\n就是為了知道撞下去會不會死啊。<short pause>\n然後還有最後一件事，那位老師沒做到的。\n修完船，記得回去改海圖。\n呃不對，是改規則啦。\n把這次撞到的礁石，\n寫進你的 CLAUDE.md，\n或是給 agent 的規則裡面。\n不然吼，換下一條船出港，\n你還是會在同一個地方沉下去啦。<sigh>",
+   "lint": {
+    "chars": 329,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 17.3,
+    "max_sentence_len": 42,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 7,
+    "tags": 3
+   }
+  }
+ ],
+ "chosen": 2
+}

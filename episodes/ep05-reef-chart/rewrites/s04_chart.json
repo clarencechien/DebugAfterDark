@@ -1,0 +1,89 @@
+{
+ "segment": "s04_chart",
+ "position": "第 5 段，共 9 段",
+ "avoid": [
+  "應該說",
+  "我看到這",
+  "我是說"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "22dc40ada5e5f486a9c1bfb9fd7334bfe7106b711c6b1414bf1f4ebf7ead3d71",
+ "previous_context": "這種 agent 就像衝很快的中階工程師，功能做得出來，但背後查詢會亂寫。功能那一層它可以自己搞定，但要花錢的查詢層，還是得由你來 review 啦。",
+ "original": {
+  "text": "接著回到老師。前兩集我們說，他寫給 AI 的規則讓 AI 不提成本。這份報告把他寫給 Codex 的那份技能整個拿來看，要修正這句話：他其實有問，而且有一整節成本關卡。開付費方案之前要說明哪個功能需要、要給免費的替代做法；不准默默建立付費資源、啟用計費；還有一支檢查程式，看到用了雲端儲存就警告。問題是，整份技能裡，計費單位、位元組、流量、扇出這些詞，一次都沒出現。成本在這張圖上只有兩種：要付費、不用付費。讓他帳單變大的 Realtime Database，也不在關卡裡。更要緊的是順序：為了防作弊，他需要 Cloud Functions，而 Cloud Functions 要開隨用隨付的方案。技能照規矩問了一句「哪個功能需要付費」，然後放行。這一步把他帶進沒有上限的水域，而按位元組計費的資料庫就在那裡等他，那片水在圖上是空白的。",
+  "lint": {
+   "chars": 355,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 10,
+   "avg_sentence_len": 34.5,
+   "max_sentence_len": 63,
+   "sentences_over_20": 8,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說到要花錢的查詢，我們接著看那位老師。\n前幾集說他完全沒管定價，這點要修正一下。\n報告把他寫給 Codex 的規則拉出來看。\n他其實有設防線，而且還寫得很認真耶。\n你猜他怎麼管的？\n他設了一道成本關卡。\n要開付費方案前，AI 必須給免費替代方案。\n還寫了 script 去抓有沒有偷用 Storage。\n這聽起來超保險的對不對？\n<short pause>\n問題就出在，這張地圖少畫了水深。\n他只問有沒有礁石，沒看水有多深——\n等一下，換個講法，\n就是他只管要不要付費，不管怎麼計費。\n整份規則裡，完全沒出現位元組或流量這些詞。\n更扯的是，那個資料庫根本不在檢查清單裡。\n<sigh>\n重點來了，真正的致命傷是開門的順序。\n他為了防作弊，必須用 Cloud Functions。\n但 Functions 一定要開 Blaze 隨用隨付。\nAI 照規矩問了一句，他就按同意放行了。\n這一步直接把他推進沒有上限的水域。\n按流量扣錢的陷阱，就在那片空白裡等他啦。",
+   "lint": {
+    "chars": 374,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 19,
+    "avg_sentence_len": 18.7,
+    "max_sentence_len": 43,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "講到審查，我們回頭看那位老師。<short pause>\n前兩集有提到，他的規則讓 AI 不提成本。\n不過看過他寫給 Codex 的技能，這得修正。\n他其實有設防線，甚至有一整節成本關卡喔。\n要開 Blaze 隨用隨付方案，AI 得先說明。\n而且不准偷偷開付費資源，腳本還會掃描。\n你猜問題出在哪？\n整份技能裡，完全沒出現流量跟位元組。\n然後，他只防要不要付錢。\n就是，他有看暗礁，但他完全沒量水有多深。<sigh>\n連造成大失血的 Realtime Database，\n根本都沒放進檢查名單裡啦。\n重點是那個順序。\n他為了防作弊，要開 Cloud Functions。\n這個功能強制要啟用 Blaze 方案。\nAI 照規矩問了一聲，他就按了同意。\n結果呢？\n這步直接把他推進沒有上限的水域。\n在那裡等他的，是按位元組計費的資料庫。\n而那片危險的水，在海圖上完全是空白的。\n光用想的就替他捏一把冷汗耶。",
+   "lint": {
+    "chars": 348,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 20,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 36,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說到要自己看，回頭來看一下那位老師。之前說他完全不管成本，其實要修正一下。報告翻了他寫給 Codex 的技能，他其實有設防線耶，甚至有一套成本關卡。想開付費方案，AI 必須先說明原因，還要給出免費的替代方案喔。檢查腳本也會去抓 Cloud Storage。那為什麼最後還是出事？<short pause>你可以想像，他只看有沒有暗礁，沒看水深。整份技能裡，計費單位跟流量完全沒出現。在他眼裡，成本只有兩種：要付費，跟免費。就是，換個說法，他以為避開付費開關就安全了。更扯的是，那個資料庫只被提過兩次，根本沒放進檢查腳本裡面啦。重點來了，致命的是開通的順序。他為了防作弊要開 Cloud Functions，就必須啟用隨用隨付的 Blaze。技能照規定問了他一句，他就按了放行。光是這一步，真的替他捏一把冷汗。這直接把他推進沒有上限的水域，然後按位元組計費的資料庫就在那裡等他。那片海有多深，在海圖上完全是空白的。<sigh>",
+   "lint": {
+    "chars": 385,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 21.6,
+    "max_sentence_len": 38,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1
+}

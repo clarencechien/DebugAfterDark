@@ -1,0 +1,110 @@
+{
+ "segment": "s03_senior",
+ "position": "第 4 段，共 9 段",
+ "avoid": [
+  "應該說",
+  "我看到這",
+  "我是說"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "180260dbb2ed6a42a4e34bd3d6ed6b62831aba7a5a6a0053d301be6ca6136515",
+ "previous_context": "不過報告也有說啦，這只是個主張，不是正式統計。要是你手上有相反的特例，隨時歡迎推翻喔。",
+ "original": {
+  "text": "報告還要我們先把「資深」這兩個字拿掉，因為它在這裡不解釋任何事。用 Claude Code 這類工具，一個晚上上百次部署是日常，速度是船給的，不是人給的。那位資歷二十五年的開發者，讓 AI 寫的程式直接上線，裡面有一段清理工作，先載入全部的使用者資料，再對每一筆各查一次，五百多次讀取做三十次就夠的事。尖峰的時候，一天的讀取是免費額度的二十倍。他是看到費用慢慢往上、網站越來越慢才發現的，用三個儀表板找出是哪裡在花錢，再拿具體的問題去問寫出這段程式的同一個 AI，一起修到每天成本歸零。報告說他的錯不是不會，而是把 AI 當成資深工程師放行。AI 比較像一個寫得很快、功能做得出來，但會寫出這種重複查詢的中階工程師。功能那一層它自己會過，查詢那一層和計費那一層，要你自己看。",
+  "lint": {
+   "chars": 328,
+   "precise_numbers": [
+    "百",
+    "二十五",
+    "五百",
+    "三十",
+    "二十"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 40.0,
+   "max_sentence_len": 71,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "講到特例，報告裡提醒大家一件事。\n先把「資深」這兩個字拿掉。\n因為用 Claude Code 這種工具，\n一個晚上部署上百次根本是日常。\n那個速度是船給的，不是人給的。\n就像那位資歷二十多年的開發者，\n他讓 AI 寫的遊戲直接上線。\n<sigh> 你猜後面發生什麼事？\nAI 寫出很經典的 N+1 查詢，\n抓了一整包資料，\n又對每一筆回頭重複查。<short pause>\n尖峰讀取量直接衝到免費額度的二十倍。\n網站變卡了，帳單也一直往上飄。\n他後來開儀表板找出原因，\n呃不對，他是把問題丟回給 AI，\n一起修到每天的成本歸零。\n重點來了，他到底做錯了什麼？\n不是他不會寫，\n是他把 AI 當成資深工程師放行。\nAI 其實比較像手腳超快的中階啦，\n功能層它自己會過，\n但查詢跟計費那一層，你得自己看著啊。",
+   "lint": {
+    "chars": 299,
+    "precise_numbers": [
+     "百",
+     "二十",
+     "1",
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 22.0,
+    "max_sentence_len": 42,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.3,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說到這個，報告提醒我們先把「資深」拿掉。\n用 Claude Code 這種工具，\n一個晚上部署上百次根本是日常，\n那個速度是船給的，不是人多強。\n重點來了，你指揮的到底算什麼角色？\n一位二十幾年資歷的開發者，\n讓 AI 寫遊戲入口直接上線。<short pause>\n結果 AI 寫出 N+1 查詢，\n就是明明查幾十次就夠的事，\n它硬生生重複讀了幾百次。\n更扯的是，\n尖峰讀取量衝到免費額度的二十倍。\n那你猜他怎麼發現的？\n不是被帳單嚇到，<laugh>\n是發現網站變慢、費用一直慢慢往上爬。\n他看儀表板抓出問題，\n再抓著同一個 AI 一起修，\n直接把每天的成本降到零。\n我覺得這案例超有警示效果的。\n他的錯不是技術不好，\n就是，那個 review 放錯層了啦。\nagent 就像個手腳很快的中階工程師嘛。\n功能動得起來，它自己會搞定；\n但會不會花冤枉錢，\n查詢層的 review 還是得要你親自看。",
+   "lint": {
+    "chars": 340,
+    "precise_numbers": [
+     "百",
+     "二十",
+     "1",
+     "百",
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 25.2,
+    "max_sentence_len": 45,
+    "sentences_over_20": 7,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "對了，報告要我們把「資深」拿掉。\n因為用 Claude Code 這類工具，\n一晚部署上百次根本是日常嘛。\n速度是船給的，不是人多強。<short pause>\n那位寫了二十幾年程式的老手，\n他讓 AI 寫的遊戲直接上線。\n結果裡面的清理功能一直在重複查詢。\n尖峰時的讀取量超級誇張，\n直接衝到免費額度的二十倍。<sigh>\n你猜他是怎麼抓到的？\n就是帳單慢慢變貴，網站越來越卡啊。\n他看儀表板抓出問題，\n叫同一個 AI 一起修，把成本歸零。\n你看，他的錯真的不是技術不行，\n那個...講白一點，\n是他把 AI 當成資深工程師放行了。\n這種 agent 就像衝很快的中階工程師，\n功能做得出來，但背後查詢會亂寫。\n功能那一層它可以自己搞定，\n但要花錢的查詢層，還是得由你來 review 啦。",
+   "lint": {
+    "chars": 295,
+    "precise_numbers": [
+     "百",
+     "二十",
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 23.6,
+    "max_sentence_len": 40,
+    "sentences_over_20": 7,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2
+}

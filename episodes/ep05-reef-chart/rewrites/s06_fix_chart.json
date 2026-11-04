@@ -1,0 +1,90 @@
+{
+ "segment": "s06_fix_chart",
+ "position": "第 7 段，共 9 段",
+ "avoid": [
+  "應該說",
+  "更扯的是",
+  "我看到這",
+  "我是說"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "07addab12602850adf1eda9dd3bae7f47bc5a14d2dcc3cff0fc1be47ba904600",
+ "previous_context": "為什麼？因為大家都在盯著動詞看嘛。",
+ "original": {
+  "text": "那帳單來了之後呢？老師一直在修：分數加緩衝、寫入加冷卻、內容沒變就不重發，後來也開始試把資料拆開存。報告說，這些都是在修船。可是公開的那份技能，從發佈那天到九月的帳單之後，一個字都沒改。報告也講明，他私下可能有新版本，它只能看公開的那張圖。這份技能是公開分享出去的，其他老師也能拿來用，這是好意；但這也代表，圖上沒畫的礁，會跟著一起分享出去。這也是我們每個人裝別人的技能時要知道的事：借到的是別人撞過的礁。他沒撞過的地方，圖上是空白，而空白看起來跟安全的水域一模一樣。就算是那種動手前先盤問你的技能也一樣，如果你照單接受它附的建議答案，等於讓它自己盤問自己，那是回音，不是海圖。",
+  "lint": {
+   "chars": 289,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 9,
+   "avg_sentence_len": 31.1,
+   "max_sentence_len": 54,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "對，那帳單來了之後呢？那位老師其實一直在修喔。他幫分數加緩衝，寫入加冷卻，內容沒變就不重發。後來也試著把資料拆開存。\n\n但這些都只是在修船。那張海圖呢？<short pause>他公開分享的技能，一個字都沒改。雖然他私下可能有新版本啦，但公開的圖就是沒動過。你想想看，這會怎樣？沒改過的圖，會把下一條船帶到同一顆礁。我光是用想的，就替後面的人捏一把冷汗。<sigh>\n\n裝別人的技能，借到的只是別人撞過的礁。他沒撞過的地方，圖上整片都是空白。重點來了，空白看起來跟安全水域一模一樣。就算動手前會盤問你的技能，也是這樣。你如果照單全收它給的建議，就是……那等於是讓它自己盤問自己嘛！那根本不是海圖，那只是回音而已。",
+   "lint": {
+    "chars": 283,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那收到帳單之後呢？\n那位老師確實有回頭去修 code。\n像加緩衝、限制寫入頻率，<short pause>\n就是在修船啦。\n可是公開的那份技能呢？\n到十月為止零 commit，一個字都沒動。\n報告說他私下可能有改，\n但公開版一個字都沒變。\n這代表什麼？\n帳單打到了他，\n卻沒打到公開的海圖。\n你猜下一條船開過去會怎樣？\n當然是跟著撞同一顆礁嘛。<sigh>\n其實你裝別人的技能，\n借來的就是別人的海圖。\n上面標的，都是作者自己撞過的地方。\n那他沒撞過的咧？\n圖上就是一片空白。\n最可怕的是，那片空白看起來超安全。\n就算那種動手前會盤問你的技能，\n如果你直接接受它的建議答案，\n等於讓它自己盤問自己。\n不對，是讓它自己幫自己背書。\n那只是回音，根本不是海圖啦。",
+   "lint": {
+    "chars": 285,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 39,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 2
+   }
+  },
+  {
+   "text": "盯著動詞看，那帳單來了之後呢？\n老師確實一直在改 code。\n加緩衝、加冷卻，修得很勤快。\n但這其實只是在修船。\n那張海圖呢？\n答案是，公開的版本一個字都沒改。<sigh>\n雖然他私下可能有新版啦，\n可是公開的那個，就是沒動。\n你猜後果會怎樣？\n下一個人拿去用，照樣撞上同一顆暗礁。\n其實我們借別人的技能，\n借到的都只是別人撞過的地方。\n他沒撞過的，在圖上是一片空白。\n最可怕的是，空白看起來跟安全水域一模一樣。\n這個空白真的會讓人起雞皮疙瘩。<short pause>\n就算有些技能在動手前會一直盤問你，\n如果你照單全收，那個、也就是說，\n你直接接受它的建議答案，\n那等於是讓它自己盤問自己。\n那只是回音，不是海圖好嗎。",
+   "lint": {
+    "chars": 272,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 17.1,
+    "max_sentence_len": 57,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1
+}

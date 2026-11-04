@@ -1,0 +1,102 @@
+{
+ "segment": "s02_two_by_two",
+ "position": "第 3 段，共 9 段",
+ "avoid": [
+  "應該說",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d01c6f5143d046ebbc51e19e1489332a82b25c8d76a7acd6167908b474b947d3",
+ "previous_context": "同一個做法換了單位，結果完全相反。像那位老師把整班資料包成一塊，在按次計費的 Firestore 確實超省，但換到按流量計費的資料庫，帳單就直接炸開了啦。",
+ "original": {
+  "text": "把上一集的四個人照這兩件事排一排。工程師爸爸的玩具地圖放在免費額度上，額度打滿就停，他花十個晚上修好，沒付錢。資歷二十五年的那位開發者用 Firestore，按讀取次數計費，每天有一段免費額度，超過才收錢，他的帳單一個月大約十美元，看到趨勢往上就修了。另外兩個人沒有硬上限：老師的資料庫按位元組計費，開的是隨用隨付，帳單到現在每個月還在付；Places API 那位一個晚上燒掉八千多，申訴兩週才拿回來。二對二，結果跟「有沒有硬上限」完全對齊，跟誰是資深工程師無關。報告也說，這是一個可以被推翻的主張：找到一個有上限卻收到天文帳單的人，或一個沒上限卻從沒爆過的人，這個說法就錯了，歡迎找。",
+  "lint": {
+   "chars": 291,
+   "precise_numbers": [
+    "二十五",
+    "八千"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 47.5,
+   "max_sentence_len": 73,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "對，那把這四個人排開來看，差別在哪？\n關鍵就在有沒有「硬上限」。\n也就是額度到了，系統會強制停掉的機制。\n前面兩位有硬上限保護。\n工程師爸爸的玩具地圖，額度滿了就停，\n他花了十個晚上搞定，一毛錢都沒付。\n資歷二十五年的那位開發者用 Firestore，\n看趨勢不對就改，一個月大概只花十塊美金。<short pause>\n那沒設硬上限的另外兩位呢？\n老師開了隨用隨付，帳單到現在每個月還在扣。\nPlaces API 那位開發者，一個晚上燒掉八千多塊，\n申訴了兩個禮拜才把錢拿回來。<sigh>\n二對二，這個對照真的超殘酷的。\n結果根本跟誰比較資深無關，\n那個、我是說，重點完全是有沒有煞車嘛。\n不過報告也有說啦，這只是個主張，不是正式統計。\n要是你手上有相反的特例，隨時歡迎推翻喔。",
+   "lint": {
+    "chars": 303,
+    "precise_numbers": [
+     "二十五",
+     "八千"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 22.3,
+    "max_sentence_len": 42,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "對，那如果把這四個人排在一起看呢？\n你會發現一個超好玩的事情。<short pause>\n真正關鍵的根本不是資歷，\n而是你有沒有設硬上限。\n你猜結果有多懸殊？\n像那位工程師爸爸用免費額度，\n額度打滿系統就停掉，\n他花十個晚上改好，一毛錢都沒花到。\n還有資歷二十五年的那位開發者，\n用 Firestore 每天有免費額度，\n一個月帳單大概十塊美金。\n他看到數字往上跑——就是那個趨勢不對，\n他就立刻修掉了。\n那另外兩個人呢？<sigh>\n他們就是開了隨用隨付。\n那位老師每個月被扣兩千八百五十四塊，\n到現在每個月都還在付耶。\nPlaces API 那位更扯，\n一個晚上直接噴掉八千多塊，\n申訴了兩週才拿回來。\n你看，剛好二對二。\n這不是什麼嚴肅的統計啦。\n只要找到有設上限、帳單卻炸掉的人，\n這個說法就被推翻了，歡迎找找看喔。<laugh>",
+   "lint": {
+    "chars": 316,
+    "precise_numbers": [
+     "二十五",
+     "兩千八百五十四",
+     "八千"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 21.6,
+    "max_sentence_len": 44,
+    "sentences_over_20": 7,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 3
+   }
+  },
+  {
+   "text": "所以到底差在哪裡？\n其實就是看你有沒有設硬上限。\n前面兩個人有上限保護，\n工程師爸爸花了十個晚上，\n呃就是十個晚上的下班時間在修，\n最後一毛錢都沒付。\n資歷二十五年的那位開發者，\n帳單一個月大概十塊美金，\n看到用量趨勢往上就修了。\n那另外兩個人呢？<short pause>\n帳單直接炸給你看。\n老師開了隨用隨付，\n每個月要繳兩千八百五十四元，\n到現在都還在付喔。<sigh>\nPlaces API 那位更慘，\n一個晚上就燒掉八千多塊，\n申訴了兩週才把錢拿回來。\n你看，剛好二對二。\n我覺得這對比超赤裸的，\n誰會爆帳單，\n跟誰是資深工程師完全沒關係，\n就只看你有沒有那道硬上限。\n當然啦，這只是四個案例在說書，\n不是什麼嚴謹的統計。\n你要是找到反例，隨時歡迎來推翻喔。",
+   "lint": {
+    "chars": 289,
+    "precise_numbers": [
+     "二十五",
+     "兩千八百五十四",
+     "八千"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 23.1,
+    "max_sentence_len": 46,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0
+}
