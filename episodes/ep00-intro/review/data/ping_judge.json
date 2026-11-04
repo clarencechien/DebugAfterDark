@@ -1,0 +1,122 @@
+{
+ "n0_plain.take0": {
+  "blind": "欸，還醒著嗎？我先 ping 你一下。歡迎收聽深夜 Debug。Debug After Dark。我是 Ping。有收到的話，回我一個 pong。",
+  "phonetic": {
+   "ping_verb": {
+    "class": "B",
+    "heard_as": "pīng",
+    "note": "母音發成長音 [i]，並帶有明顯的華語第一聲（高平調），聽起來像中文字「拼」或「乒」。"
+   },
+   "ping_name": {
+    "class": "B",
+    "heard_as": "pīng",
+    "note": "同樣使用華語第一聲高平調處理，母音非英語短母音 /ɪ/，聽起來像中文字「拼」。"
+   },
+   "pong": {
+    "class": "B",
+    "heard_as": "pòng",
+    "note": "帶有鮮明的華語第四聲（全降調），母音接近 [oŋ]，聽感非常接近中文字「碰」。"
+   }
+  }
+ },
+ "n0_plain.take1": {
+  "blind": "嘿，還醒著嗎？我先 ping 你一下。歡迎收聽深夜 Debug，Debug After Dark，我是 Ping。有收到的話回我一個 pong。",
+  "phonetic": {
+   "ping_verb": {
+    "class": "A",
+    "heard_as": "ping",
+    "note": "母音偏短且帶短母音 [ɪ] 色彩，韻尾帶鼻音，語調為自然英文輕讀而非國語第一聲。"
+   },
+   "ping_name": {
+    "class": "A",
+    "heard_as": "Ping",
+    "note": "發音為標準英文短母音 [pʰɪŋ]，句末帶有英語陳述句的自然降調，非中文固定聲調。"
+   },
+   "pong": {
+    "class": "A",
+    "heard_as": "pong",
+    "note": "母音發後低母音 [ɒ]/[ɑ]，明確為英文單字發音，而非中文的「碰」或「乓」。"
+   }
+  }
+ },
+ "n0_plain.take2": {
+  "blind": "嘿，還醒著嗎？我先 ping 你一下。歡迎收聽深夜 Debug，Debug After Dark，我是 Ping。有收到的話，回我一個 pong。",
+  "phonetic": {
+   "ping_verb": {
+    "class": "A",
+    "heard_as": "ping",
+    "note": "母音偏向英文短母音 [ɪ]，音長短促且無明顯中文一聲的高平調，偏向英文單字發音。"
+   },
+   "ping_name": {
+    "class": "A",
+    "heard_as": "Ping",
+    "note": "發音為英文的 [pɪŋ]，母音短且具英文重音特徵，聽起來非中文「拼」或「平」。"
+   },
+   "pong": {
+    "class": "A",
+    "heard_as": "pong",
+    "note": "母音為英文的 [ɒ]/[ɔ]，非中文「碰」的 [ɤŋ] 韻母，為英文單字在句尾的自然落調。"
+   }
+  }
+ },
+ "n1_twenglish.take0": {
+  "blind": "嘿，還醒著嗎？我先 ping 你一下。歡迎收聽深夜 Debug，Debug After Dark。我是 Ping。有收到的話，回我一個 pong。",
+  "phonetic": {
+   "ping_verb": {
+    "class": "B",
+    "heard_as": "pīng（拼）",
+    "note": "帶有明顯的國語第一聲高平調，母音偏向緊母音 [i] 而非英文短母音 [ɪ]。"
+   },
+   "ping_name": {
+    "class": "B",
+    "heard_as": "pīng（拼）",
+    "note": "延續中文語調的高平第一聲，聽感如中文字「拼」。"
+   },
+   "pong": {
+    "class": "B",
+    "heard_as": "pòng（碰）",
+    "note": "帶有非常明顯且俐落的國語第四聲降調，聽起來就像「碰」。"
+   }
+  }
+ },
+ "n1_twenglish.take1": {
+  "blind": "嘿，還醒著嗎？我先 ping 你一下。歡迎收聽深夜 Debug，Debug after dark。我是 Ping。有收到的話回我一個 pong。",
+  "phonetic": {
+   "ping_verb": {
+    "class": "A",
+    "heard_as": "ping",
+    "note": "發音為道地的英文短母音 [ɪ] 並帶 -ng 鼻音韻尾，短促輕快，非中文「拼」的長韻母。"
+   },
+   "ping_name": {
+    "class": "A",
+    "heard_as": "Ping",
+    "note": "母音短促俐落，維持英文 [pʰɪŋ] 的短母音與鼻音特徵，聽起來為英文名字發音。"
+   },
+   "pong": {
+    "class": "A",
+    "heard_as": "pong",
+    "note": "發音為英文 [pʰɒŋ]，韻母並非中文的「碰」(eng) 或「胖」(ang)，為自然的英文單字念法。"
+   }
+  }
+ },
+ "n1_twenglish.take2": {
+  "blind": "嘿，還醒著嗎？我先 ping 你一下。歡迎收聽深夜 Debug，Debug After Dark，我是 Ping。有收到的話回我一個 pong。",
+  "phonetic": {
+   "ping_verb": {
+    "class": "B",
+    "heard_as": "pìng",
+    "note": "帶有明顯的中文第四聲（去聲）降調，聽起來像中文的「聘」"
+   },
+   "ping_name": {
+    "class": "B",
+    "heard_as": "pīng",
+    "note": "音高維持在高平調，帶有明顯的中文第一聲（陰平），聽起來像中文的「拼」"
+   },
+   "pong": {
+    "class": "B",
+    "heard_as": "pòng",
+    "note": "韻母發為中文的 ong 並帶有第四聲強烈降調，聽起來完全就是中文的「碰」"
+   }
+  }
+ }
+}

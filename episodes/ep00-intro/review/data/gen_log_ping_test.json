@@ -1,0 +1,64 @@
+[
+ {
+  "id": "n0_plain",
+  "attempts": 1,
+  "audio_s": 11.64,
+  "expected_s": 12.9,
+  "ratio": 0.9,
+  "ok": true,
+  "wall_s": 5.3,
+  "tokens": 291,
+  "takes": [
+   {
+    "file": "n0_plain.take0.wav",
+    "audio_s": 12.4,
+    "pauses_ge_0_6s": 5,
+    "ok": true
+   },
+   {
+    "file": "n0_plain.take1.wav",
+    "audio_s": 11.6,
+    "pauses_ge_0_6s": 2,
+    "ok": true
+   },
+   {
+    "file": "n0_plain.take2.wav",
+    "audio_s": 11.3,
+    "pauses_ge_0_6s": 3,
+    "ok": true
+   }
+  ],
+  "chosen": "n0_plain.take1.wav"
+ },
+ {
+  "id": "n1_twenglish",
+  "attempts": 1,
+  "audio_s": 11.24,
+  "expected_s": 12.9,
+  "ratio": 0.87,
+  "ok": true,
+  "wall_s": 4.8,
+  "tokens": 281,
+  "takes": [
+   {
+    "file": "n1_twenglish.take0.wav",
+    "audio_s": 11.2,
+    "pauses_ge_0_6s": 3,
+    "ok": true
+   },
+   {
+    "file": "n1_twenglish.take1.wav",
+    "audio_s": 12.7,
+    "pauses_ge_0_6s": 5,
+    "ok": true
+   },
+   {
+    "file": "n1_twenglish.take2.wav",
+    "audio_s": 11.4,
+    "pauses_ge_0_6s": 5,
+    "ok": true
+   }
+  ],
+  "chosen": "n1_twenglish.take0.wav"
+ }
+]

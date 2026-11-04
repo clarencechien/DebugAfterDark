@@ -1,0 +1,62 @@
+{
+ "s00_open.take0": {
+  "ping_verb": {
+   "class": "A",
+   "heard_as": "ping"
+  },
+  "ping_name": {
+   "class": "A",
+   "heard_as": "Ping"
+  },
+  "ping_explain": {
+   "class": "A",
+   "heard_as": "ping"
+  }
+ },
+ "s00_open.take1": {
+  "ping_verb": {
+   "class": "A",
+   "heard_as": "ping"
+  },
+  "ping_name": {
+   "class": "A",
+   "heard_as": "ping"
+  },
+  "ping_explain": {
+   "class": "A",
+   "heard_as": "ping"
+  }
+ },
+ "s00_open.take2": {
+  "ping_verb": {
+   "class": "A",
+   "heard_as": "ping"
+  },
+  "ping_name": {
+   "class": "A",
+   "heard_as": "ping"
+  },
+  "ping_explain": {
+   "class": "A",
+   "heard_as": "ping"
+  }
+ },
+ "s02_outro.take0": {
+  "pong": {
+   "class": "A",
+   "heard_as": "pong"
+  }
+ },
+ "s02_outro.take1": {
+  "pong": {
+   "class": "B",
+   "heard_as": "碰"
+  }
+ },
+ "s02_outro.take2": {
+  "pong": {
+   "class": "A",
+   "heard_as": "pong"
+  }
+ }
+}

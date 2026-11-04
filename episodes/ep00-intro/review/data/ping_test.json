@@ -1,0 +1,16 @@
+{
+ "show": "深夜 Debug",
+ "episode": "Ping 名字試念",
+ "segments": [
+  {
+   "id": "n0_plain",
+   "mood": "開場，像深夜跟朋友聊天，有點感性但不畏縮",
+   "text": "嘿，還醒著嗎？我先 ping 你一下。歡迎收聽深夜 Debug，Debug After Dark。我是 Ping。有收到的話，回我一個 pong。"
+  },
+  {
+   "id": "n1_twenglish",
+   "mood": "開場，像深夜跟朋友聊天，有點感性但不畏縮。Ping、ping、pong 都是英文單字，用台灣工程師平常講英文的念法自然帶過，就像台灣人講 double check、ping 一下那樣，不要念成中文的「平」或「碰」",
+   "text": "嘿，還醒著嗎？我先 ping 你一下。歡迎收聽深夜 Debug，Debug After Dark。我是 Ping。有收到的話，回我一個 pong。"
+  }
+ ]
+}

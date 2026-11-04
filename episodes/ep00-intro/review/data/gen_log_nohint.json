@@ -1,0 +1,95 @@
+[
+ {
+  "id": "s00_open",
+  "attempts": 1,
+  "audio_s": 52.48,
+  "expected_s": 48.2,
+  "ratio": 1.09,
+  "ok": true,
+  "wall_s": 15.1,
+  "tokens": 1312,
+  "takes": [
+   {
+    "file": "s00_open.take0.wav",
+    "audio_s": 53.2,
+    "pauses_ge_0_6s": 17,
+    "ok": true
+   },
+   {
+    "file": "s00_open.take1.wav",
+    "audio_s": 52.3,
+    "pauses_ge_0_6s": 10,
+    "ok": true
+   },
+   {
+    "file": "s00_open.take2.wav",
+    "audio_s": 52.5,
+    "pauses_ge_0_6s": 10,
+    "ok": true
+   }
+  ],
+  "chosen": "s00_open.take2.wav"
+ },
+ {
+  "id": "s01_now",
+  "attempts": 1,
+  "audio_s": 57.64,
+  "expected_s": 48.7,
+  "ratio": 1.18,
+  "ok": true,
+  "wall_s": 15.7,
+  "tokens": 1441,
+  "takes": [
+   {
+    "file": "s01_now.take0.wav",
+    "audio_s": 56.7,
+    "pauses_ge_0_6s": 14,
+    "ok": true
+   },
+   {
+    "file": "s01_now.take1.wav",
+    "audio_s": 64.0,
+    "pauses_ge_0_6s": 16,
+    "ok": true
+   },
+   {
+    "file": "s01_now.take2.wav",
+    "audio_s": 57.6,
+    "pauses_ge_0_6s": 14,
+    "ok": true
+   }
+  ],
+  "chosen": "s01_now.take2.wav"
+ },
+ {
+  "id": "s02_outro",
+  "attempts": 1,
+  "audio_s": 44.4,
+  "expected_s": 46.7,
+  "ratio": 0.95,
+  "ok": true,
+  "wall_s": 13.7,
+  "tokens": 1110,
+  "takes": [
+   {
+    "file": "s02_outro.take0.wav",
+    "audio_s": 47.0,
+    "pauses_ge_0_6s": 11,
+    "ok": true
+   },
+   {
+    "file": "s02_outro.take1.wav",
+    "audio_s": 45.0,
+    "pauses_ge_0_6s": 12,
+    "ok": true
+   },
+   {
+    "file": "s02_outro.take2.wav",
+    "audio_s": 44.4,
+    "pauses_ge_0_6s": 5,
+    "ok": true
+   }
+  ],
+  "chosen": "s02_outro.take2.wav"
+ }
+]

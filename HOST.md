@@ -1,6 +1,7 @@
 # 主持人：命名與人設
 
-**狀態**：2026-11-04。**建議名字是 Ping**，等 §3 的試念測試確認。
+**狀態**：2026-11-04。**建議名字是 Ping**。D1 已經試念過（[`episodes/ep00-intro/review/`](episodes/ep00-intro/review/README.md)）：
+盲聽轉寫每次都寫成英文 Ping，多數被判為英文念法；加「台灣英文念法」提示沒有明顯幫助。等人耳確認哪種念法是要的。
 自介稿、固定開場、片尾與節目文案在 [`episodes/ep00-intro/script.md`](episodes/ep00-intro/script.md)。
 產線本身見 [`PIPELINE.md`](PIPELINE.md)。這裡的規則都來自 ttspoc POC 的實測，出處標在各段。
 

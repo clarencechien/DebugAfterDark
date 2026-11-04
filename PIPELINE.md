@@ -145,7 +145,7 @@ report 是寫給已經有興趣的人看的；podcast 的工作是讓還沒興�
 2. **術語第一次出現就用一句話解釋**，之後不再解釋；整集術語上限 5 個，其餘換白話。
 3. **每個概念配一個生活比喻**（POC 的「帳單先付」「複寫單的第二聯」就是這種）。
 4. **只講 report 的 2–3 個重點**，其餘明說「細節在文章裡」。不追求完整，追求聽得懂。
-5. **結尾給一個下一步**：一件今天就能做的事，加上「全文在 imitator 網站上，標題是〈…〉」。
+5. **結尾給一個下一步**：一件今天就能做的事，加上「全文在我們的報告網站上，標題是〈…〉」（口播不念 imitator，見 §4）。
    網址不用念，放在 show notes。
 6. 財經類 report 要加「不構成投資建議」的口頭與 show notes 聲明；摘譯類 report 要明說原作者與原文，
    podcast 是導讀與評論，**不逐句念譯文**。
@@ -214,6 +214,9 @@ ttspoc 的工具已經不綁 EP01（`--draft`/`--out`/`--script`/`--tag`、素�
   - 測試集：`script/ep00_smoke*.json` 與它的 sources、rewrites，**改名成 `smoke`**。EP00 這個集數要留給節目自介
     （`HOST.md`）；smoke 不上架，當作改了產線之後的快速回歸測試（兩段、幾分鐘跑完）。
 - **不搬**：聲線比較、ElevenLabs 對照、語氣 A/B、fricative probe 這些實驗與它們的 samples —— 它們是 ttspoc 的研究紀錄。
+- **搬的時候要修一個 bug**：ttspoc `make_podcast.py master` 插段間 0.6 秒停頓的兩行被縮排到 `--match-eq` 的區塊裡，
+  而且迴圈變數已經是最後一段，所以段落之間從來沒有插進停頓。2026-11-04 的 EP00 試作發現的，見 `episodes/ep00-intro/review/README.md`。
+- **口播不念網站名稱 imitator**：EP00 試作 6 次有 5 次被聽成 Medium、GitHub 等別的網站。說「我們的報告網站」，網址放 show notes。
 - 搬的方式是複製並在 commit 訊息記下 ttspoc 的來源 commit；歷史留在 ttspoc，不做 `git filter-repo`。
 - 搬完後先跑 `smoke`，再把 EP01 從頭跑一次，對照 POC 成品的 CER、長度、響度、一致性，數字落在同一區間才算搬成功。
 
