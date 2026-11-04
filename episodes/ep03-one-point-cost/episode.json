@@ -4,7 +4,7 @@
  "type": "full",
  "guid": "debug-after-dark:ep03",
  "title": "EP03 每加一分，就扣一分",
- "description": "上一集說先接好眼睛，再談野心；帳單也是一種眼睛。一位國小老師用 AI 做了一個免費的班級加分工具，每月五萬多人在用，九月的雲端帳單卻快三千塊台幣。錢不是花在你以為的地方：同一個壓縮技巧，換了計費單位，就從省錢變燒錢。這集聊為什麼 AI 沒有提醒他，以及讓 AI 加即時同步之前，該先問的三個問題。\n\n今晚的 breakpoint：\n1. 同一招換了計費單位，結果可能相反。\n2. 一個動作有幾台裝置要下載、各下載多少，乘起來就是帳單長大的速度。\n3. 讓 AI 加即時或多人功能之前，先要它說出計費單位和一百倍時的帳單。\n\n原文：〈一次加分的代價〉 https://imitator.ai-apps.work/r/funclass-cost-case-study\n案例：一位國小老師做的「FunClass 翻課星球」，報告依據公開網頁、公開程式與作者貼文，未登入、未碰任何雲端資料。\n\n上一集：EP02〈第五招的實驗：跑從來不是問題，看才是〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "description": "上一集說先接好眼睛，再談野心；帳單也是一種眼睛。一位國小老師用 AI 做了一個免費的班級加分工具，每月五萬多人在用，九月的雲端帳單卻快三千塊台幣。錢不是花在你以為的地方：同一個壓縮技巧，換了計費單位，就從省錢變燒錢。這集聊為什麼 AI 沒有提醒他，以及讓 AI 加即時同步之前，該先問的三個問題。\n\n今晚的 breakpoint：\n1. 同一招換了計費單位，結果可能相反。\n2. 一個動作有幾台裝置要下載、各下載多少，乘起來就是帳單長大的速度。\n3. 讓 AI 加即時或多人功能之前，先要它說出計費單位和一百倍時的帳單。\n\n原文：〈一次加分的代價〉 https://imitator.ai-apps.work/r/funclass-cost-case-study\n案例：一位國小老師做的班級加分工具（依要求不具名），報告依據公開網頁、公開程式與作者貼文，未登入、未碰任何雲端資料。\n\n上一集：EP02〈第五招的實驗：跑從來不是問題，看才是〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
  "report_slug": "funclass-cost-case-study",
  "source_url": "https://imitator.ai-apps.work/r/funclass-cost-case-study",
  "status": "review",
@@ -25,10 +25,10 @@
  },
  "audio": {
   "file": "ep03-one-point-cost.mp3",
-  "bytes": 6916246,
-  "sha256": "bde38e2356d0c44c9f5043c0cab3ffdd6702601e6689d85c86bab6475ae0ff37",
-  "duration_s": 432.2,
-  "duration": "7:12",
+  "bytes": 6813010,
+  "sha256": "cdfdb057cfc94b89db9cb140725c4559b5ea7665b9924262b291aeaac9b19d62",
+  "duration_s": 425.8,
+  "duration": "7:05",
   "lufs": -16.9
  },
  "related": [

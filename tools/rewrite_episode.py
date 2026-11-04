@@ -41,7 +41,7 @@ LEGACY_EP01_MOODS = {   # ep01's draft moods said 慵懶/壓低聲音, which mad
 
 # Signature phrases and how many times the whole episode may use each.
 # Once a phrase reaches its cap, later segments are told not to use it, and candidates that do are ranked lower.
-PHRASE_CAPS = {"你猜": 3, "重點來了": 2, "醬": 2, "應該說": 1, "有感": 2, "更扯的是": 1, "我看到這": 2, "超扯": 1, "很扯": 1,
+PHRASE_CAPS = {"你猜": 3, "重點來了": 2, "醬": 2, "應該說": 1, "更扯的是": 1, "我看到這": 2, "超扯": 1, "很扯": 1,
                "真的假的": 1, "欸你知道嗎": 1,
                # self-corrections: rule 12 allows one per segment, which made nine of ten segments self-correct
                "我是說": 2, "我的意思是": 1, "呃不對": 1, "傻眼": 1}
@@ -103,7 +103,7 @@ def main(a):
             pc = phrase_counts(t)
             return sum(max(0, used[k] + pc[k] - PHRASE_CAPS[k]) for k in PHRASE_CAPS) + sum(max(0, v - 1) for v in pc.values())
         needs_recap = i == recap_i and prev_ep is not None
-        key = lambda j: (needs_recap and "上一集" not in cands[j]["text"], len(cands[j]["lint"]["mainland_words"]), over_budget(cands[j]["text"]),
+        key = lambda j: (needs_recap and "上一集" not in cands[j]["text"], len(cands[j]["lint"]["mainland_words"]) + len(cands[j]["lint"]["avoid_words"]), over_budget(cands[j]["text"]),
                          len(cands[j]["lint"]["precise_numbers"]), cands[j]["lint"]["sentences_over_20"],
                          cands[j]["lint"]["avg_sentence_len"])
         best = min(range(len(cands)), key=key)
