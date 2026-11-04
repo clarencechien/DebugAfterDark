@@ -25,6 +25,12 @@ def para(s):
     return "\n".join(out)
 
 
+def length(sec):
+    """Episode length as 7 分 15 秒: next to a date, 7:15 read like a clock time (2026-11-04 feedback)."""
+    m, s = divmod(int(round(sec)), 60)
+    return f"{m} 分 {s:02d} 秒"
+
+
 def split_notes(desc):
     """Show notes -> (lead paragraph, breakpoint lines, other blocks). Template: episodes/ep00-intro/script.md."""
     blocks = [b.strip() for b in desc.strip().split("\n\n") if b.strip()]
@@ -52,7 +58,7 @@ def page(show, eps):
                            for i, t in enumerate(bps, 1))
             bp_html = f'<section class="bp" aria-label="今晚的 breakpoint"><h4>今晚的 breakpoint</h4><ol>{rows}</ol></section>'
         items.append(f"""<details class="ep" id="{e['id']}">
-<summary><span class="num">{num}</span><span class="t">{html.escape(title)}</span><span class="when">{d:%Y-%m-%d} · {e['audio']['duration']}</span></summary>
+<summary><span class="num">{num}</span><span class="t">{html.escape(title)}</span><span class="when"><time datetime="{e['published']}">{d:%Y-%m-%d}</time> · <span title="長度">{length(e['audio']['duration_s'])}</span></span></summary>
 <div class="body">
 <audio controls preload="none" src="audio/{feed.audio_name(e)}"></audio>
 <p class="lead">{html.escape(lead)}</p>
