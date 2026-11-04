@@ -98,6 +98,11 @@ def warnings(show, eps):
     if not eps:
         w.append("no final episodes with a published timestamp")
     for e in eps:
+        desc = e.get("description", "")
+        need = ["回 Ping 一個 pong", "AI 語音合成"] + ([] if e.get("type") == "trailer" else ["今晚的 breakpoint", "原文："])
+        for n in need:   # show-notes template: episodes/ep00-intro/script.md (EP01's POC-era notes lacked these, 2026-11-04)
+            if n not in desc:
+                w.append(f"{e['id']}: description is missing 「{n}」 (show-notes template)")
         for k in ("bytes", "sha256", "duration_s"):
             if k not in e["audio"]:
                 w.append(f"{e['id']}: audio.{k} missing, run tools/package_episode.py")
