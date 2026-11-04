@@ -1,0 +1,11 @@
+{
+ "model": "gemini-3-pro-image",
+ "aspect_ratio": "1:1",
+ "image_size": "4K",
+ "prompt": "A podcast cover artwork for a late-night technology podcast for software engineers in Taiwan. Scene: a quiet desk at about 1:30 a.m., seen from slightly above. A small warm desk lamp is the only warm light. A laptop screen glows cool blue with a few lines of terminal text, and one bright red breakpoint dot in the code gutter is the focal point. A mug of water, a window with a soft, out-of-focus city at night and a thin crescent moon. Mood: calm, intimate, a little nostalgic, cozy rather than gloomy. Style: clean modern flat illustration with subtle grain, deep navy and indigo palette with warm amber lamp light and a single red accent. Strong, simple composition with large shapes so it still reads at thumbnail size. No people, no faces, no hands, no real brand logos, no watermark. Typography: the title 深夜 Debug in large, bold, clean traditional Chinese and Latin letters across the lower third, and a smaller subtitle Debug After Dark underneath. Text must be spelled exactly as given and be highly legible.",
+ "prompt_sha256": "b649a17f26278506e4045b76bbef8e1cb066f20c84a2998ff98cf06e08908641",
+ "pixels": [
+  4096,
+  4096
+ ]
+}

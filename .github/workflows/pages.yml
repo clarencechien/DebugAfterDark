@@ -1,0 +1,59 @@
+# 把 podcast 網站（feed.xml、封面、音檔、收聽頁）發佈到 GitHub Pages。
+#
+# 什麼會上架：episodes/*/episode.json 裡 "status": "final" 而且有 "published" 的集數。
+# 網站由 tools/build_site.py 組出來（只用 Python 標準函式庫，runner 內建 Python，不 pip install），
+# 它會先核對每個 mp3 跟 episode.json 的 bytes／sha256 一致，不一致就失敗、不部署。
+#
+# 觸發：push 到 main（episodes/、show/、組站工具有變動時），或在 Actions 頁手動 Run workflow。
+# 目前 repo 只有 claude/... 一個分支（也是預設分支），所以現在先用手動觸發；有了 main 之後，
+# merge 一集的 PR 就是上架。
+#
+# 安全：
+# - 不用 pull_request_target，fork 來的 PR 碰不到部署權限。
+# - 只用 GitHub 官方的 actions，全部釘在 commit SHA（tag 是可變的）。升版時自己查：
+#     git ls-remote https://github.com/actions/checkout refs/tags/v4.4.0
+name: Publish podcast site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'episodes/**'
+      - 'show/**'
+      - 'tools/feed.py'
+      - 'tools/build_site.py'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 一次只部署一個，不要中途取消正在進行的部署。
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - name: Build site
+        run: python3 tools/build_site.py --out site
+      - name: Check the feed parses
+        run: python3 -c "import xml.etree.ElementTree as ET; ET.parse('site/feed.xml'); print('feed.xml ok')"
+      - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5

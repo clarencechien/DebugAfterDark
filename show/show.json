@@ -1,0 +1,17 @@
+{
+ "_note": "節目設定，tools/feed.py 讀這份產生 feed.xml。owner_email 與 author 待決定（PIPELINE.md §8）；custom_domain 填了就會產生 CNAME，site_url 要一起改。",
+ "title": "深夜 Debug｜Debug After Dark",
+ "host": "Ping（AI 合成聲音）",
+ "author": "深夜 Debug",
+ "owner_name": "深夜 Debug",
+ "owner_email": "",
+ "site_url": "https://clarencechien.github.io/DebugAfterDark",
+ "custom_domain": null,
+ "language": "zh-tw",
+ "category": "Technology",
+ "explicit": false,
+ "type": "episodic",
+ "copyright": "© 2026 深夜 Debug",
+ "cover": "show/cover-3000.jpg",
+ "description": "每集十分鐘左右，把一篇 AI 與工程的深度文章，講成你通勤、洗碗時也聽得懂的版本。\n\n你還記得以前親手寫 code，半夜一個人 debug，最後把問題揪出來那一刻，超想對著窗外大叫的感覺嗎？\n\nAI 時代，你還常動手寫 code 嗎？開發從「親手敲鍵盤」變成「指揮模型與系統」，bug 沒有消失，只是換了戰場：失控的 Agent Flow、看似零錯誤卻不對的結果、工程架構真正的代價，還有在技術巨浪裡，我們自己的人生與 Mindset。\n\n《深夜 Debug｜Debug After Dark》是獻給開發者、架構師與思考者的深夜聲音筆記。主持人 Ping 會在深夜 ping 你一下，陪你拆解底層、檢查迴圈，每集最後下一個 breakpoint，停下來整理三件帶走的事。沒有浮誇的 AI 焦慮行銷，只想找回「親手把問題搞懂」的那份痛快。\n\n每一集都改寫自 imitator.ai-apps.work 上的一篇文章，內容對過原文，原文連結附在每集說明裡。Ping 的聲音由 AI 語音合成，不模仿任何真人；每一集都經過真人審稿與試聽才上架。"
+}

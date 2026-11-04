@@ -42,5 +42,6 @@
   "jitter_semitones": 0.201,
   "consistency": "qa/consistency.json",
   "gemini_blind_cer": "review/data/clarity_ep00*.json"
- }
+ },
+ "published": "2026-11-04T20:00:00+08:00"
 }

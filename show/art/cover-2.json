@@ -1,0 +1,11 @@
+{
+ "model": "gemini-3-pro-image",
+ "aspect_ratio": "1:1",
+ "image_size": "4K",
+ "prompt": "A podcast cover artwork for a late-night technology podcast for software engineers in Taiwan. Scene: a quiet desk at about 1:30 a.m., seen from slightly above. A small warm desk lamp is the only warm light. A laptop screen glows cool blue with a few lines of terminal text, and one bright red breakpoint dot in the code gutter is the focal point. A mug of water, a window with a soft, out-of-focus city at night and a thin crescent moon. Mood: calm, intimate, a little nostalgic, cozy rather than gloomy. Style: clean modern flat illustration with subtle grain, deep navy and indigo palette with warm amber lamp light and a single red accent. Strong, simple composition with large shapes so it still reads at thumbnail size. No people, no faces, no hands, no real brand logos, no watermark. Leave the lower third as calm dark empty space for a title to be added later. Do not draw any text or letters.",
+ "prompt_sha256": "fd06a04dd513eb26804955deac9f29930f728adc7a8f3a8d4e00902f452425c0",
+ "pixels": [
+  4096,
+  4096
+ ]
+}

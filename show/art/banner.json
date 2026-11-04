@@ -1,0 +1,11 @@
+{
+ "model": "gemini-3-pro-image",
+ "aspect_ratio": "16:9",
+ "image_size": "4K",
+ "prompt": "A wide website header illustration for a late-night technology podcast for software engineers in Taiwan. Scene: a quiet desk at about 1:30 a.m., seen from slightly above. A small warm desk lamp is the only warm light. A laptop screen glows cool blue with a few lines of terminal text, and one bright red breakpoint dot in the code gutter is the focal point. A mug of water, a window with a soft, out-of-focus city at night and a thin crescent moon. Mood: calm, intimate, a little nostalgic, cozy rather than gloomy. Style: clean modern flat illustration with subtle grain, deep navy and indigo palette with warm amber lamp light and a single red accent. Strong, simple composition with large shapes so it still reads at thumbnail size. No people, no faces, no hands, no real brand logos, no watermark. Wide panoramic composition, the desk on the right, empty dark space on the left for text. Do not draw any text.",
+ "prompt_sha256": "084cd1e83fc27a3984bad685470edfd8c9509b18f47d2c56bbcf7949f1e9b4e6",
+ "pixels": [
+  5504,
+  3072
+ ]
+}

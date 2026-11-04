@@ -227,6 +227,13 @@ imitator「不做 artifact 備份」的決定不受影響。repo 超過 1 GB（�
 
 ## 5. 跟 imitator 的整合
 
+> **過渡方案（2026-11-04 起）：先用這個 repo 的 GitHub Pages 當 podcast host。** `tools/build_site.py` 把 final 的集數組成
+> `feed.xml`、封面、音檔（檔名帶 sha256 前 8 碼）和收聽頁，`.github/workflows/pages.yml` 部署。Release 不適合放音檔：
+> 實測會 302 到一小時就過期的簽名網址、Content-Type 是 `application/octet-stream` 加 `attachment`；Pages 回 `audio/mpeg`、支援 Range。
+> 限制：站台 1 GB（約 100 集）、每月流量軟上限 100 GB。**feed 網址送審後就改不掉**，Pages 不能做伺服器端 301，
+> 所以建議在送審前就設自己的子網域（`show.json` 的 `custom_domain`），之後要搬到 imitator 的 Worker 只改 DNS。
+> 下面是原本規劃的 imitator 整合，搬過去時照這份做。
+
 原則沿用 imitator 的 spec：**source 留 git，artifact 去 R2；Worker 盡量維持 dumb host。**
 所以 RSS 由這個 repo 產生（feed 的歷史就是 git 歷史），Worker 只負責收、驗、吐，再多維護一個「哪份 report 有 podcast」的衍生索引。
 
