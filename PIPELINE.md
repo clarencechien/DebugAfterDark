@@ -160,71 +160,56 @@ report 是寫給已經有興趣的人看的；podcast 的工作是讓還沒興�
 
 ## 4. 這個 repo 的結構
 
+**現況（2026-11-04）**：M2 的第一步做完了 —— ttspoc 的工具原樣搬進 `tools/`，路徑改成下面的結構，修了段間停頓的 bug，
+挑選加了穩定度與語速；EP00 定稿、EP01 從 ttspoc 搬來、EP02 是第一集照新產線做的。整理成 Python 套件與 `dad` CLI 是之後的事。
+
 ```
 README.md
 PIPELINE.md                     ← 這份：節目怎麼營運
-HOST.md                         主持人命名與人設（Ping）
-docs/recipe.md                  一集怎麼做（ttspoc podcast/PIPELINE.md 搬過來）
+HOST.md                         主持人 Ping 的命名與人設
+docs/recipe.md                  一集怎麼做（ttspoc podcast/PIPELINE.md 搬來改寫），照著做就能出一集
 show/
-  show.json                     節目設定：名稱、主持人名、描述、作者、owner email、分類、語言、explicit、feed 網址、guid 前綴
-  cover-3000.jpg                封面（3000×3000，RGB，無 alpha）
-  ident/                        固定開場（約 8 秒）的定稿音檔，做一次、每集共用，見 episodes/ep00-intro/script.md
+  ident/                        固定開場（ident.flac，每集共用），見 show/ident/README.md
+  show.json, cover-3000.jpg     節目設定與封面（M0，未做）
 voices/
-  registry.json                 聲線 ID、模型、到期日、語氣版本（由 ttspoc results/voices.json 搬來）
-  references/                   每個聲線的參考錄音 FLAC + references.json（聲紋向量、音高、sha256）
+  registry.json                 Gemini 設計聲線 ID（D1、D2、remix）與描述、到期日
+  elevenlabs.json               ElevenLabs 聲線（替代方案）
+  references/                   每個聲線的參考錄音 + references.json（聲紋、音高、sha256），聲線消失時用 match_voice.py 找替代
 prompts/
-  spoken_script_zh-TW.md        POC 的寫稿 prompt
-  beginner_rules.md             §3 的入門規則（新）
-  taiwan_mandarin_features.md   POC 的台灣華語發音特色
-  styles.json                   語氣 v1–v5（ttspoc 已經抽成獨立檔，v5 是預設）
-lexicon/
-  pronunciation.json            人名、產品名的讀法與第一次出現的說法（Rieseberg 那種）
-  homophones.json               易混詞 → 改寫（季度檢討、忙人、正本…）
-  banned_mainland.txt           禁用的大陸用語
-pipeline/                       Python 套件，一個子命令一個階段（§3 的 0–10）
-  cli.py                        dad ingest | outline | rewrite | lint | tts | select | master | qa | transcript | package
-  tts/gemini.py, tts/elevenlabs.py   聲音供應商可抽換，episode.json 記用了哪個
-  stt/breeze.py, stt/whisper.py
-  feed.py                       由 show.json + episodes/*/episode.json 產生 feed.xml（純函式、可重現）
-  episode_page.py               產生單集頁 HTML（用 imitator 的 style/report.css 底盤）
-scripts/
-  publish.py                    發佈（**只用 Python 標準函式庫**，Action 不需要 pip install）
+  spoken_script_zh-TW.md        寫稿 prompt（Ping、cold open、breakpoint、降低門檻）
+  styles.json                   TTS 語氣 v1–v5，v5 是預設
+  taiwan_mandarin_features.md   台灣華語發音特色
+tools/
+  rewrite_episode.py            第 2 步：口語改寫
+  script_lint.py                第 3 步：口語程度與大陸用語
+  make_podcast.py               第 4、6 步：生成與後製（episode / master）
+  select_takes.py               第 5 步：挑選（清晰度 → 專有名詞 → 穩定度 → 語速 → 一致性 → 停頓）
+  stt_check.py                  第 7 步：Breeze 盲聽校對
+  consistency_check.py          第 7 步：段與段一致性（含接縫亮度、語速）
+  measures.py                   音高跳動、語速、漂移、接縫的量測
+  gemini_check.py               Gemini 盲聽錯誤率與 Ping 念法（粗篩）
+  package_episode.py            第 8 步：episode.json 的長度、bytes、sha256
+  match_voice.py, compare_voices.py, elevenlabs_tts.py   聲線比對與替代方案
 tests/
-  smoke/                        兩段的回歸測試集（ttspoc 的 ep00_smoke 改名），不上架
-episodes/
-  ep00-intro/                   節目自介（預告集），沒有對應的 report；script.md 是稿子與節目文案
-  ep01-fifth-move/
-    episode.json                guid、標題、描述、report slug、狀態、長度、bytes、sha256、模型與聲線、成本
-    source.md                   凍結的素材
-    script.json                 定稿（含每段 mood、manual_edits）
-    rewrites/                   候選稿、prompt 雜湊、lint 數據（可重現）
-    qa/                         盲聽報告、一致性與響度紀錄
-    transcript.vtt
-    master.mp3                  成品（只有成品進 git，take 與中間檔在 out/，不進 git）
-.github/workflows/publish.yml
+  smoke/                        兩段的回歸測試集（ttspoc 的 ep00_smoke），不上架
+episodes/<ep>/
+  episode.json                  guid、標題、說明、report slug、聲線、製作方式、長度、bytes、sha256
+  draft.json, sources/          第 1 步：草稿與原文摘錄
+  script.json, rewrites/        第 2、3 步：定稿與每段的候選、manual_edits
+  qa/                           挑選、盲聽、一致性、響度、音色匹配的紀錄
+  <ep>.mp3                      成品
+out/                            中間檔（take、正規化後的段落），不進 git
 ```
 
-### 從 ttspoc 搬什麼
-ttspoc 的工具已經不綁 EP01（`--draft`/`--out`/`--script`/`--tag`、素材放 `sources/<ep>/`），所以 M2 的第一步可以是
-**原樣搬過來先跑通**，之後再整理成 `pipeline/` 套件與 `dad` CLI。兩步分開，比較好查是搬壞的還是整理壞的。
-
-- **搬**：
-  - 配方：`podcast/PIPELINE.md` → `docs/recipe.md`，路徑改成這個 repo 的。
-  - 工具：`make_podcast.py`、`rewrite_episode.py`、`rewrite_segment.py`、`script_lint.py`、`select_takes.py`、
-    `stt_check.py`（含 Breeze 轉換指令）、`consistency_check.py`、`match_voice.py`、`cost_estimate.py`、`cost_today.py`、
-    `elevenlabs_tts.py`（替代方案）。
-  - 設定：`styles.json`、`prompts/`、`results/voices.json`、`samples/references/`、`requirements.txt`、`requirements-qa.txt`。
-  - 節目資料：`script/ep01_tw.json`、`script/sources/`、`script/rewrites/ep01_tw/` 與 EP01 的 QA 紀錄
-    （`results/ep01_tw/` 裡 `select_log`、`match_eq`、`consistency_check` 的 D1_tw2 版本）。
-  - 成品：`samples/episodes/ep01-tw_gemini-3.8-flash_d1_style-v5_clarity.mp3`（`87d6a2e` 重新後製過的版本）。
-  - 測試集：`script/ep00_smoke*.json` 與它的 sources、rewrites，**改名成 `smoke`**。EP00 這個集數要留給節目自介
-    （`HOST.md`）；smoke 不上架，當作改了產線之後的快速回歸測試（兩段、幾分鐘跑完）。
-- **不搬**：聲線比較、ElevenLabs 對照、語氣 A/B、fricative probe 這些實驗與它們的 samples —— 它們是 ttspoc 的研究紀錄。
-- **搬的時候要修一個 bug**：ttspoc `make_podcast.py master` 插段間 0.6 秒停頓的兩行被縮排到 `--match-eq` 的區塊裡，
-  而且迴圈變數已經是最後一段，所以段落之間從來沒有插進停頓。2026-11-04 的 EP00 試作發現的，見 `episodes/ep00-intro/review/README.md`。
-- **口播不念網站名稱 imitator**：EP00 試作 6 次有 5 次被聽成 Medium、GitHub 等別的網站。說「我們的報告網站」，網址放 show notes。
-- 搬的方式是複製並在 commit 訊息記下 ttspoc 的來源 commit；歷史留在 ttspoc，不做 `git filter-repo`。
-- 搬完後先跑 `smoke`，再把 EP01 從頭跑一次，對照 POC 成品的 CER、長度、響度、一致性，數字落在同一區間才算搬成功。
+### 從 ttspoc 搬了什麼（2026-11-04，來源 `799872e`）
+- **工具**：`make_podcast`、`rewrite_episode`、`script_lint`、`select_takes`、`stt_check`、`consistency_check`、`compare_voices`、
+  `match_voice`、`elevenlabs_tts`。第一個 commit 是原樣複製，之後的 commit 才改，diff 看得出改了什麼。
+- **改了什麼**：路徑；`make_podcast.py master` 的段間停頓 bug（插停頓的兩行縮排在 `--match-eq` 的區塊裡，從來沒插進去，EP01 的成品因此沒有段間停頓）；
+  `--ident`、`--out`、預設 v5、ID3 揭露；`select_takes.py` 加專有名詞、穩定度、語速三關；`consistency_check.py` 加接縫亮度與語速；
+  `rewrite_episode.py` 改讀 `episodes/<ep>/`；寫稿 prompt 改成 Ping 與新的每集結構。
+- **資料**：prompts、styles、聲線登記與參考錄音、EP01 的稿子與 QA、`ep00_smoke` → `tests/smoke`。
+- **沒搬**：聲線比較、ElevenLabs 對照、語氣 A/B 等實驗，它們是 ttspoc 的研究紀錄。
+- 還沒做：`smoke` 與 EP01 用新工具從頭重跑一次。EP02 從頭跑完，當作新工具可用的證明。
 
 ### 成品 mp3 放 git
 一集 128 kbps 單聲道約 8–10 MB。放 git 的理由：發佈 Action 需要拿得到檔案；這個 repo 是 podcast 的 source of truth，
@@ -372,7 +357,7 @@ R2 的 `get(key, { range: request.headers })` 直接吃 Range header。ACAO `*` 
 |---|---|---|
 | **M0 決策**（人） | 台灣母語者盲聽確認 D1 + v5（不通過才比 Hardy、Enceladus）；**主持人名字**（`HOST.md` 的試念測試）；節目名稱與 show slug；封面；feed 用的公開信箱；podcast 用的 group | `show/show.json` 與 `voices/registry.json` 定案 |
 | **M1 llm.txt**（imitator） | `.md` 寫入/讀取、`/llms.txt`、`Link` header、`extract-md.mjs` 回填、STYLE.md/CLAUDE.md/inbox 更新 | 所有 public report 都有 `/r/{slug}.md`；`/llms.txt` 列得出全部；**跟 podcast 無關，可以先上** |
-| **M2 產線搬家**（這裡） | 先原樣搬 ttspoc 的工具與配方跑通 `smoke` 和 EP01；再整理成 `pipeline/` 與 `dad` CLI；加 `beginner_rules.md`、讀音表、易混詞表；做 EP00 與固定開場 | EP01 重跑的 CER ≤ 3.5%、一致性全過；EP00 定稿 |
+| **M2 產線搬家**（這裡） | 先原樣搬 ttspoc 的工具與配方（**2026-11-04 完成**）；EP00 定稿、固定開場（完成）；EP02 照新配方做一集（見 `episodes/ep02-harness-probe/`）；之後再整理成套件與 `dad` CLI、讀音表 | EP02 的 CER ≤ 3.5%、一致性全過 |
 | **M3 podcast host**（imitator） | §5.5 的 1–5、9；WAF 規則先改 | 測試全過；手動推一份測試 feed 到一個測試 show，用 curl 驗 Range/HEAD，用 Apple validator 驗 feed |
 | **M4 發佈自動化**（這裡） | `feed.py`、`episode_page.py`、`scripts/publish.py`、`.github/workflows/publish.yml` | merge 一個 EP 的 PR 後，音檔、逐字稿、feed、單集頁都上線，portal 出現 🎧 |
 | **M5 開台** | 做 EP02、EP03；送 Apple、Spotify、其他平台 | 三個平台都搜得到 |

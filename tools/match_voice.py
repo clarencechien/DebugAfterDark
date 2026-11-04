@@ -1,10 +1,10 @@
-"""Match a new clip against the saved reference recordings (podcast/samples/references).
+"""Match a new clip against the saved reference recordings (voices/references).
 
 Use this when a model is retired or upgraded: generate the reference text with each candidate
 voice on the new model, then pick the candidate whose speaker embedding is closest to the old reference.
 
-  python podcast/match_voice.py build                     # (re)compute embeddings in references.json
-  python podcast/match_voice.py match new_clip.wav [...]  # cosine similarity of each clip to every reference
+  python3 tools/match_voice.py build                     # (re)compute embeddings in references.json
+  python3 tools/match_voice.py match new_clip.wav [...]  # cosine similarity of each clip to every reference
 
 Speaker embeddings come from Resemblyzer (English-trained d-vector, 256 dims). It needs torch, which is
 heavy, so it is not in requirements.txt:
@@ -18,7 +18,7 @@ from pathlib import Path
 import numpy as np
 
 ROOT = Path(__file__).resolve().parent
-REF_DIR = ROOT / "samples" / "references"
+REF_DIR = ROOT.parent / "voices" / "references"
 REF_JSON = REF_DIR / "references.json"
 
 

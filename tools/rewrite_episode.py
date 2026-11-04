@@ -1,22 +1,22 @@
-"""Rewrite every segment of a draft script into Taiwanese spoken style.
+"""Rewrite every segment of an episode draft into Taiwanese spoken style (ported from ttspoc podcast/rewrite_episode.py, 799872e).
 
-  python podcast/rewrite_episode.py --draft podcast/script/<ep>.json [--out podcast/script/<ep>_tw.json] [--n 3] [--resume]
+  python3 tools/rewrite_episode.py --episode episodes/<ep> [--n 3] [--resume]
 
-Source excerpts are read from podcast/script/sources/<ep>/<segment_id>.txt (ep01 used podcast/script/sources/ directly).
-Moods come from each draft segment's "mood" (ep01's original moods are overridden by LEGACY_EP01_MOODS).
+Reads episodes/<ep>/draft.json (what each segment covers, its mood) and episodes/<ep>/sources/<segment_id>.txt (the
+article excerpt; facts may only come from here). Writes episodes/<ep>/script.json and, per segment, every candidate,
+lint result, prompt hash and the chosen index to episodes/<ep>/rewrites/<segment_id>.json. Manual fixes after review go
+into that file's "manual_edits" list ({"from", "to", "reason"}) and into script.json.
 
-Segments are rewritten in order; each prompt gets the previous segment's last two sentences so the
-episode flows, and its position so only the first segment opens the show and only the last one closes it.
-Per-segment candidates, lint results and the chosen index go to podcast/script/rewrites/ep01_tw/<id>.json.
-Per-segment candidates, lint results and the chosen index go to podcast/script/rewrites/<out stem>/<id>.json.
+Segments are rewritten in order; each prompt gets the previous segment's last two sentences so the episode flows, and its
+position, so only the first segment is the cold open and only the last one carries the breakpoint and the sign-off.
 """
 import argparse, hashlib, json, os, re, sys
 from pathlib import Path
 from google import genai
 from google.genai import types
 
-ROOT = Path(__file__).resolve().parent
-sys.path.insert(0, str(ROOT))
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "tools"))
 from script_lint import lint
 
 LEGACY_EP01_MOODS = {   # ep01's draft moods said 慵懶/壓低聲音, which made delivery timid; these replace them
@@ -48,15 +48,12 @@ def last_sentences(text, k=2):
     return "".join(parts[-k:])
 
 def main(a):
-    draft = Path(a.draft); sc = json.loads(draft.read_text(encoding="utf-8"))
-    out_path = Path(a.out) if a.out else draft.with_name(draft.stem + "_tw.json")
-    src_dir = ROOT / "script/sources" / draft.stem
-    if not src_dir.is_dir():
-        src_dir = ROOT / "script/sources"          # ep01 layout
-    mood_of = lambda seg: (LEGACY_EP01_MOODS.get(seg["id"]) if draft.stem == "ep01" else None) or seg["mood"]
+    ep = Path(a.episode); draft = ep / "draft.json"; sc = json.loads(draft.read_text(encoding="utf-8"))
+    out_path = ep / "script.json"; src_dir = ep / "sources"
+    mood_of = lambda seg: (LEGACY_EP01_MOODS.get(seg["id"]) if ep.name.startswith("ep01") else None) or seg["mood"]
     body = (ROOT / "prompts/spoken_script_zh-TW.md").read_text(encoding="utf-8").split("\n---\n", 1)[1]
     c = genai.Client(api_key=os.environ.get("GEMINI_API_KEY") or os.environ["gemini_key"])
-    outdir = ROOT / "script/rewrites" / out_path.stem; outdir.mkdir(parents=True, exist_ok=True)
+    outdir = ep / "rewrites"; outdir.mkdir(parents=True, exist_ok=True)
     segs = sc["segments"]; new_segments = []; previous = "（這是第一段，沒有上一段）"
     used = {k: 0 for k in PHRASE_CAPS}
     for i, seg in enumerate(segs):
@@ -103,8 +100,7 @@ def main(a):
         L = cands[best]["lint"]
         print(f"{seg['id']:16s} chose {best}  chars {n}->{L['chars']}  avg_sent {L['avg_sentence_len']}  nums {L['precise_numbers']}  mainland {L['mainland_words']}  avoid {avoid}")
     out = {k: v for k, v in sc.items() if k != "segments"}
-    out["episode"] = sc["episode"] + "（台灣口語版）"
-    out["note"] = f"由 rewrite_episode.py 依 prompts/spoken_script_zh-TW.md 改寫；人工修正記在 script/rewrites/{out_path.stem}/<id>.json 的 manual_edits"
+    out["note"] = "由 tools/rewrite_episode.py 依 prompts/spoken_script_zh-TW.md 改寫；人工修正記在 rewrites/<id>.json 的 manual_edits"
     out["segments"] = new_segments
     out["phrase_usage"] = used
     out_path.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -113,7 +109,7 @@ def main(a):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); ap.add_argument("--n", type=int, default=3)
-    ap.add_argument("--draft", default=str(ROOT / "script/ep01.json")); ap.add_argument("--out")
+    ap.add_argument("--episode", required=True, help="episodes/<ep>")
     ap.add_argument("--model", default="gemini-3.8-flash"); ap.add_argument("--temperature", type=float, default=0.8)
-    ap.add_argument("--resume", action="store_true", help="reuse segments already written to script/rewrites/ep01_tw/")
+    ap.add_argument("--resume", action="store_true", help="reuse segments already written to episodes/<ep>/rewrites/")
     main(ap.parse_args())

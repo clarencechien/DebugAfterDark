@@ -1,0 +1,80 @@
+{
+ "segment": "s01_felix",
+ "position": "第 2 段，共 9 段",
+ "avoid": [],
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "993f7b1cc1c2cc22b48718f148265ef9bac87c50e9d4719f68800de11c136901",
+ "previous_context": "跑從來不是問題，看才是嘛。差距不是模型會不會寫，是在誰看得夠深。",
+ "original": {
+  "text": "上一集聊過 Felix Rieseberg 那篇〈How to be more ambitious〉。他的例子是：以前請 Claude 修某一次 crash，後來直接請 Claude 讓 app 保持不會 crash。但他順口帶過一句最有用的話：他先讓 Claude 能抓 crash report、對得出版本跟 commit，還給它 Windows、macOS、Linux 三台機器去重現和驗證。報告的結論是：野心沒有變大，變大的是 Claude 能看到的東西。作者就拿這一句做實驗。",
+  "lint": {
+   "chars": 219,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 42.8,
+   "max_sentence_len": 82,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "講到看得夠深，<short pause>\nAnthropic 有位主管寫過一篇文章。\n他說以前都叫 Claude 修某個 crash。\n後來他改口，呃不對，\n是直接叫它讓 app 保持不會當掉。\n聽起來超狂對吧？\n但你猜他是怎麼辦到的？\n其實他只在文章裡順口帶過一句。\n他先讓 Claude 能抓 crash report、\n對得出版本跟 commit，\n還給了三台機器，\n包含 Windows、macOS 跟 Linux，\n讓它自己去重現跟驗證。\n我看到這邊真的起雞皮疙瘩。\n野心根本沒有變大，\n變大的，是 Claude 能看到的東西嘛。\n這份報告，就是要拿這句話來做實驗。",
+   "lint": {
+    "chars": 243,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 23.3,
+    "max_sentence_len": 76,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "這就讓我想到 Felix 的一篇文章。\n他是 Anthropic 的工程主管。\n他之前講過一個例子很有意思喔。\n一開始他只是請 Claude 修某個 crash。\n後來呢？\n他要 Claude 顧好整個 app。\n讓它完全不會 crash。<short pause>\n聽起來超神對不對？\n但重點根本不是野心變大。\n更扯的是他順口帶過的那句話。\n就是他先給了 Claude 很多權限。\n呃不對，應該說是給了超多工具。\n讓它可以抓 crash report、對 commit，\n還給了它三台機器去重現問題。\n你看，野心根本沒有變大嘛。\n變大的是什麼？\n是 Claude 到底能看到多少東西。<short pause>\n這份報告的作者，就是拿這句話來做實驗。",
+   "lint": {
+    "chars": 265,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 38,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說到看這件事，<short pause>\n記得 Felix 之前寫過的那篇文章嗎？\n就是 Anthropic 那位工程主管啦。\n他以前是請 Claude 修某一次 crash，\n後來更扯，直接要它讓 app 永遠不會掛。\n你猜他是改了什麼超厲害的 prompt 嗎？\n完全不是。<short pause>\n重點在於他順口帶過的那句話。\n他先讓 Claude 能抓 crash report，\n能對得出版本跟 commit，\n還給了三台不同系統的機器去驗證。\n我看到這邊整個被點醒。\n這哪是野心變大？\n不對，是 Claude 能看見的東西變多了嘛。\n欸，今天這份報告，\n就是直接把那句話拿來做實驗。",
+   "lint": {
+    "chars": 239,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.7,
+    "max_sentence_len": 52,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1
+}

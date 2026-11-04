@@ -1,0 +1,12 @@
+{
+ "show": "深夜 Debug",
+ "episode": "固定開場",
+ "source": "",
+ "segments": [
+  {
+   "id": "ident",
+   "mood": "像深夜跟朋友聊天，有點感性但不畏縮。Ping、ping、pong 都是英文單字，用台灣工程師平常講英文的念法自然帶過，就像台灣人講 double check、ping 一下那樣，不要念成中文的「平」或「碰」",
+   "text": "這裡是深夜 Debug，Debug After Dark。我是 Ping。還醒著的話，我們開始吧。"
+  }
+ ]
+}

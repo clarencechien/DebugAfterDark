@@ -1,0 +1,77 @@
+{
+ "asr": "breeze",
+ "tolerance": 0.012,
+ "terms": [
+  "Ping"
+ ],
+ "jitter_margin": 0.02,
+ "pace_margin": 0.1,
+ "episode_median_cps": 5.13,
+ "consistency": false,
+ "sim_margin": 0.015,
+ "bright_margin": 300,
+ "segments": [
+  {
+   "id": "ident",
+   "chosen": "ident.take2.wav",
+   "takes": [
+    {
+     "file": "ident.take0.wav",
+     "cer": 0.025,
+     "unclear": 1,
+     "long_pauses_per_min": 29.7,
+     "text": "這裡是深夜 DebugDebug after dark我是 PIN還醒著的話我們開始吧",
+     "jitter": 0.182,
+     "cps": 4.95,
+     "terms_ok": false
+    },
+    {
+     "file": "ident.take1.wav",
+     "cer": 0.025,
+     "unclear": 1,
+     "long_pauses_per_min": 7.8,
+     "text": "這裡是深夜 debugdebug after dark我是 pin還醒著的話我們開始吧",
+     "jitter": 0.18,
+     "cps": 5.21,
+     "terms_ok": false
+    },
+    {
+     "file": "ident.take2.wav",
+     "cer": 0.025,
+     "unclear": 1,
+     "long_pauses_per_min": 13.2,
+     "text": "這裡是深夜 debugdebug after dark我是 pin還醒著的話我們開始吧",
+     "jitter": 0.103,
+     "cps": 4.39,
+     "terms_ok": false
+    },
+    {
+     "file": "ident.take3.wav",
+     "cer": 0.05,
+     "unclear": 2,
+     "long_pauses_per_min": 15.9,
+     "text": "這裡是深夜 debugdebug after dark或是 pin還醒著的話我們開始吧",
+     "jitter": 0.189,
+     "cps": 5.29,
+     "terms_ok": false
+    },
+    {
+     "file": "ident.take4.wav",
+     "cer": 0.025,
+     "unclear": 1,
+     "long_pauses_per_min": 7.7,
+     "text": "這裡是深夜 debugdebug after dark我是 pin還醒著的話我們開始吧",
+     "jitter": 0.174,
+     "cps": 5.13,
+     "terms_ok": false
+    }
+   ],
+   "clear_enough": [
+    "ident.take0.wav",
+    "ident.take1.wav",
+    "ident.take2.wav",
+    "ident.take4.wav"
+   ]
+  }
+ ]
+}

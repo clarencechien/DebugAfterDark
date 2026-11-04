@@ -1,0 +1,24 @@
+04 · 試飛協定
+
+二手數據到這裡為止。要說「社交媒體上的 demo 當假設不當證據」，報告自己不能只靠二手。所以做了一個實驗，協定如下。
+
+ | 
+ | 項目 | 規則
+
+ | 題目 | 三題單檔 Three.js，各六項功能清單：A 水上飛機起降循環（踩 Water／Sky scaffold）、B 從一張 CC0 參考圖做哥德式馬車（圖片輸入）、C 鋼珠軌道（控制組：無 scaffold、碰撞手寫）
+
+ | 產出限制 | three@0.170.0 從 CDN 載入；不准其他函式庫、不准物理引擎、不准外部 3D 模型；所有幾何程序式生成
+
+ | Prompt | 英文，各 surface 一字不改；不准加「先規劃」之類的字
+
+ | 人的介入 | 只能做三件事：貼初始 prompt；回報 console 錯誤全文或截圖加一句話；說 stop。不能改碼、不能提示做法
+
+ | 裁判 | tools/check.mjs：headless Chromium 開檔，收 8 秒 console error，0／3／8 秒各截一張。先於任何題目存在，所有 surface 的產出過同一支
+
+ | 預算 | 聊天介面 8 回合／45 分鐘；Claude Code 不限輪數、60 分鐘 wall-clock、每輪 commit
+
+ | 禁令 | 跑的時候不准看那五位 builder 的任何東西
+
+Claude Code 欄一次跑完三題，之後把 Task A 另外在三個聊天介面各跑一次：Claude web（Fable 5.1）、Claude web（Opus 5.5）、Gemini app（Gemini 4 Argon）。B、C 兩題只有 Claude Code 欄。
+
+| harness | 包在模型外面、讓它能跑、看、改、再跑的那層：工具、檔案系統、瀏覽器、裁判、回圈。這份報告裡的 Claude Code、Antigravity、Codex 都是 harness；聊天介面是沒有回圈的 harness。

@@ -2,13 +2,13 @@
 
 Reads the key from `elevenlabs_key` (or ELEVENLABS_API_KEY). Pure urllib, no extra dependency.
 
-  python podcast/elevenlabs_tts.py design                      # Voice Design (eleven_ttv_v3): 3 previews, all 3 saved as EL0..EL2
-  python podcast/elevenlabs_tts.py audition                    # audition line: each saved voice x {eleven_v3, eleven_v4}
-                                                               #   -> out/podcast/audition/EL{n}_{model}.wav (same folder as Gemini clips)
-  python podcast/compare_voices.py out/podcast/audition/*.wav  # rank Gemini and ElevenLabs together
-  python podcast/elevenlabs_tts.py episode --voice EL1 --model eleven_v4   # -> out/podcast/segments/EL/
-  python podcast/make_podcast.py master --voice EL
-  python podcast/qa_episode.py EL
+  python3 tools/elevenlabs_tts.py design                      # Voice Design (eleven_ttv_v3): 3 previews, all 3 saved as EL0..EL2
+  python3 tools/elevenlabs_tts.py audition                    # audition line: each saved voice x {eleven_v3, eleven_v4}
+                                                               #   -> out/audition/EL{n}_{model}.wav (same folder as Gemini clips)
+  python3 tools/compare_voices.py out/audition/*.wav  # rank Gemini and ElevenLabs together
+  python3 tools/elevenlabs_tts.py episode --voice EL1 --model eleven_v4   # -> out/segments/EL/
+  python3 tools/make_podcast.py master --voice EL
+  python3 tools/qa_episode.py EL
 
 API notes checked against the docs on 2026-11-03:
 - Voice Design: POST /v1/text-to-voice/design, body {voice_description, model_id, text (100-1000 chars), guidance_scale, seed},
@@ -22,8 +22,8 @@ import argparse, base64, json, os, re, sys, time, urllib.error, urllib.request, 
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "out" / "podcast"
-SCRIPT = ROOT / "podcast" / "script" / "ep01.json"
+OUT = ROOT / "out"
+SCRIPT = ROOT / "episodes" / "ep01-fifth-move" / "script.json"
 API = "https://api.elevenlabs.io"
 SR = 24000
 CHARS_PER_SEC = 4.5
@@ -86,7 +86,7 @@ def write_pcm(pcm, path):
     return len(pcm) / 2 / SR
 
 
-REG = ROOT / "podcast" / "results" / "elevenlabs" / "voices.json"
+REG = ROOT / "voices" / "elevenlabs.json"
 
 def registry():
     return json.loads(REG.read_text(encoding="utf-8")) if REG.exists() else {}

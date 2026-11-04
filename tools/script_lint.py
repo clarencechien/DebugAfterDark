@@ -1,7 +1,7 @@
 """Measure how 'spoken' a script segment is, against the rules in prompts/spoken_script_zh-TW.md.
 
-  python podcast/script_lint.py podcast/script/ep01.json [segment_id ...]
-  python podcast/script_lint.py some_file.txt
+  python3 tools/script_lint.py episodes/<ep>/script.json [segment_id ...]
+  python3 tools/script_lint.py some_file.txt
 
 Reports: precise numbers (decimals, percentages, multi-digit counts), enumeration markers,
 sentence length, particles per 100 chars, written-style words, tags.

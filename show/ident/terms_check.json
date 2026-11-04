@@ -1,0 +1,37 @@
+{
+ "ident.take0": [
+  {
+   "term": "Ping",
+   "class": "A",
+   "heard_as": "Ping"
+  }
+ ],
+ "ident.take1": [
+  {
+   "term": "Ping",
+   "class": "A",
+   "heard_as": "Ping"
+  }
+ ],
+ "ident.take2": [
+  {
+   "term": "Ping",
+   "class": "A",
+   "heard_as": "Ping"
+  }
+ ],
+ "ident.take3": [
+  {
+   "term": "Ping",
+   "class": "A",
+   "heard_as": "Ping"
+  }
+ ],
+ "ident.take4": [
+  {
+   "term": "Ping",
+   "class": "A",
+   "heard_as": "Ping"
+  }
+ ]
+}

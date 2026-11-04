@@ -4,7 +4,7 @@ The per-clip judge in make_podcast.py gives almost every voice 25/25, so it cann
 Here all clips go into ONE judge request under shuffled letter labels and must be ranked against
 each other; plus median F0 (autocorrelation) and spectral centroid as objective 'low / dark' proxies.
 
-  python podcast/compare_voices.py out/podcast/audition/*.wav
+  python3 tools/compare_voices.py out/audition/*.wav
 """
 import json, os, random, sys, wave
 from pathlib import Path

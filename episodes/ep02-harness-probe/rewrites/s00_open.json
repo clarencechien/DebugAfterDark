@@ -1,0 +1,96 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 9 段（第一段）",
+ "avoid": [],
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4ca92123034f8114f129051a302d296c7d5fe5c3787b4b129340ca58533e4a7c",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "AI 幫你寫的網頁，第一次就跑起來、零錯誤，你就以為做完了。這份報告的作者做了一個實驗，十五次修改裡，沒有一次是在修「跑不跑得起來」，全部都花在裁判看不見的地方。所以標題是：跑從來不是問題，看才是。差距不在模型會不會寫，在誰看得到結果、看得多深、看了幾圈。",
+  "lint": {
+   "chars": 127,
+   "precise_numbers": [
+    "十五"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 4,
+   "avg_sentence_len": 30.8,
+   "max_sentence_len": 50,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "AI 寫出的程式碼第一次就跑得動，\n你是不是就覺得寫完了？\n欸，這份報告有一句話超震撼：\n「跑從來不是問題，看才是。」\n作者用同一段 prompt 跑不同環境，\n更扯的是，你猜整整十五次修改在幹嘛？\n沒有一次是在修能不能跑。<short pause>\n那個……就是說，它每一版其實都零錯誤。\n所以差距根本不在模型會不會寫，\n是在誰看得到結果、看得多深啦。",
+   "lint": {
+    "chars": 152,
+    "precise_numbers": [
+     "十五"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 6,
+    "avg_sentence_len": 24.3,
+    "max_sentence_len": 36,
+    "sentences_over_20": 4,
+    "particles_per_100": 2.0,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "AI 幫你寫的 code 第一次就跑起來，\n你是不是就以為寫完了？<short pause>\n我看到這篇報告整個被戳中。\n作者改了十五次，\n欸，沒有一次是在修能不能跑喔！\n每一版都是零錯誤直接動起來。\n那到底在改什麼？\n就是改那些，呃我是說，裁判看不到的細節啦。\n所以真正的差距，\n從來不是模型會不會寫，\n而是誰看得到結果、看了多深。",
+   "lint": {
+    "chars": 141,
+    "precise_numbers": [
+     "十五"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 7,
+    "avg_sentence_len": 19.1,
+    "max_sentence_len": 32,
+    "sentences_over_20": 3,
+    "particles_per_100": 2.1,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "欸，AI 幫你寫的 code 第一次就跑起來，\n而且完全零錯誤，你是不是就覺得做完了？\n我看到這個測試真的超有感。<short pause>\n作者前後改了……就是那個，迭代了十五次。\n你猜時間花在哪？\n居然沒有一次是在修跑不跑得起來喔。\n每一次 import 全對，單檔也沒有被截斷。\n所有的功夫，全都花在裁判看不見的地方。\n跑從來不是問題，看才是嘛。\n差距不是模型會不會寫，是在誰看得夠深。",
+   "lint": {
+    "chars": 169,
+    "precise_numbers": [
+     "十五"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 38,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "mainland_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 2
+}

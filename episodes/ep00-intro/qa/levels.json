@@ -1,0 +1,20 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -22.3,
+  "gain_db": 2.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_now",
+  "lufs_before": -20.9,
+  "gain_db": 0.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_outro",
+  "lufs_before": -22.9,
+  "gain_db": 2.9,
+  "lufs_after": -20.0
+ }
+]

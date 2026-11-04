@@ -8,7 +8,7 @@ A script span that BOTH recognisers miss is flagged as likely unintelligible.
 The local recogniser can be Whisper large-v3-turbo or Breeze-ASR-25 (--asr breeze); report keys keep the
 "whisper_" prefix for compatibility, and the report's "asr" field says which one was used.
 
-  python podcast/stt_check.py --script podcast/script/ep01_tw.json --segments out/podcast/segments/D1_tw [--out report.json]
+  python3 tools/stt_check.py --script episodes/<ep>/script.json --segments out/segments/D1_tw [--out report.json]
 """
 import argparse, difflib, json, os, re, sys
 from pathlib import Path

@@ -1,0 +1,46 @@
+{
+ "id": "ep00-intro",
+ "number": 0,
+ "type": "trailer",
+ "guid": "debug-after-dark:ep00",
+ "title": "EP00 嘿，還醒著嗎？",
+ "description": "嘿，還醒著嗎？這是深夜 Debug 的第零集：主持人 Ping 是誰、這個節目在做什麼，還有為什麼 AI 時代的 bug 一點都沒少。\n\n本節目的聲音由 AI 語音合成，經真人審稿與試聽。",
+ "report_slug": null,
+ "source_url": null,
+ "status": "final",
+ "approved": "2026-11-04",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "script": "agent 直接寫成口語稿（沒有 rewrite_episode.py）",
+  "takes_per_segment": 3,
+  "selection": "Gemini 盲聽錯誤率 → Ping 念法 → 停頓（當時沒有 Breeze）",
+  "master": "make_podcast.py master --match-eq（含段間停頓修正）",
+  "known_issues": [
+   "consistency_check：s01→s02 接縫亮度跳 -693 Hz、s01 語速 -11%、s02 +13%（聽得出接縫）；因為這版口音比較台，2026-11-04 決定接受",
+   "s02 念 imitator，盲聽 6 次只有 1 次聽成 imitator；成品剛好是念對的那次"
+  ]
+ },
+ "audio": {
+  "file": "ep00-intro.mp3",
+  "bytes": 2622511,
+  "sha256": "9a67f9a768d6f7af484b40464ddc65e7721e76f8a2ff0948e64f06ca07ed07d8",
+  "duration_s": 163.9,
+  "duration": "2:43",
+  "lufs": -17.2
+ },
+ "cost_usd": {
+  "note": "試作共四輪約 1 美元，含沒用到的第二、三版；只算成品約 0.15",
+  "total_trial": 1.0
+ },
+ "qa": {
+  "jitter_semitones": 0.201,
+  "consistency": "qa/consistency.json",
+  "gemini_blind_cer": "review/data/clarity_ep00*.json"
+ }
+}

@@ -1,0 +1,9 @@
+00 · 出發點
+
+Anthropic 工程主管 Felix Rieseberg 在十月寫了一篇〈How to be more ambitious〉，把用 AI 的野心拆成四種：速度、高度、深度、廣度。他自己的例子是：去年初還在請 Claude 修某一次 crash，後來直接請 Claude 讓 app 保持不會 crash。
+
+那篇文章真正有用的一句話，他順口帶過：為了讓 Claude 做到這件事，他先讓它能抓 crash report、對得出版本跟 commit、還給了它 Windows、macOS、Linux 三台機器去重現和驗證。
+
+野心沒有變大。變大的是 Claude 能看到的東西。
+
+這份報告是把那一句話拿來做實驗。三題單檔 Three.js，固定 prompt，在四個 surface 上各跑一次，記錄每一輪誰在看、看到了什麼、花了多少。Felix 說人被自己相信的可能性限制住，所以要更有野心；這份報告想問的是：如果差距根本不在信念呢？

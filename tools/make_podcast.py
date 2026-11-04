@@ -1,10 +1,9 @@
-"""Podcast POC pipeline on Gemini 3.8 TTS.
+"""深夜 Debug: speech generation and mastering on Gemini 3.8 TTS (ported from ttspoc podcast/make_podcast.py, 799872e).
 
-  python podcast/make_podcast.py design                 # create designed voices D1/D2 -> out/podcast/voices.json
-  python podcast/make_podcast.py audition               # same audition line in every candidate voice
-  python podcast/make_podcast.py judge out/podcast/audition/*.wav
-  python podcast/make_podcast.py episode --voice D1     # all segments, verified, retried
-  python podcast/make_podcast.py master --voice D1      # stings + silence + loudnorm -> mp3
+  python3 tools/make_podcast.py episode --voice D1 --script episodes/<ep>/script.json --tag <ep> --takes 3
+  python3 tools/make_podcast.py master  --voice D1 --script episodes/<ep>/script.json --tag <ep> --match-eq \
+          [--ident show/ident/ident.flac] [--out episodes/<ep>/<ep>.mp3]
+  python3 tools/make_podcast.py design | audition | judge ...   # voice design and auditions (POC; voices are in voices/registry.json)
 
 Text is spoken verbatim by 3.8 TTS; delivery goes in speech_metadata.style.
 Every segment is checked against the duration the text implies, because 3.8 TTS can
@@ -17,8 +16,9 @@ from google import genai
 from google.genai import types
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "out" / "podcast"
-SCRIPT = ROOT / "podcast" / "script" / "ep01.json"
+OUT = ROOT / "out"
+SCRIPT = ROOT / "episodes" / "ep01-fifth-move" / "draft.json"   # only audition/judge fall back to this (audition_text)
+STYLES = ROOT / "prompts" / "styles.json"
 TTS_MODEL = "gemini-3.8-flash-tts"
 JUDGE_MODEL = "gemini-3.8-flash"
 SR = 24000
@@ -65,18 +65,18 @@ def spoken_chars(text):
 
 
 def registry():
-    """Designed-voice IDs. out/ is not in git, so fall back to the committed copy in podcast/results/."""
-    for p in (OUT / "voices.json", ROOT / "podcast" / "results" / "voices.json"):
+    """Designed-voice IDs: a freshly designed out/voices.json first, else the committed voices/registry.json."""
+    for p in (OUT / "voices.json", ROOT / "voices" / "registry.json"):
         if p.exists():
             return json.loads(p.read_text())
     return {}
 
 
 def style_text(sc, version):
-    """Base delivery style: the script's own base_style_<v> if present, else podcast/styles.json."""
+    """Base delivery style: the script's own base_style_<v> if present, else prompts/styles.json."""
     if version == "v1":
-        return sc.get("base_style") or json.loads((ROOT / "podcast" / "styles.json").read_text(encoding="utf-8"))["v1"]
-    return sc.get(f"base_style_{version}") or json.loads((ROOT / "podcast" / "styles.json").read_text(encoding="utf-8"))[version]
+        return sc.get("base_style") or json.loads(STYLES.read_text(encoding="utf-8"))["v1"]
+    return sc.get(f"base_style_{version}") or json.loads(STYLES.read_text(encoding="utf-8"))[version]
 
 
 def voice_id(key):
@@ -304,22 +304,34 @@ def cmd_master(a):
                            "deviation_after_db": round(float(np.sqrt(np.mean((band_spectrum(x) - target) ** 2))), 2)})
         (norm_dir / "match_eq.json").write_text(json.dumps(eq_log, ensure_ascii=False, indent=1))
         print("tonal match, spectral deviation dB:", " ".join(f"{e['deviation_before_db']}->{e['deviation_after_db']}" for e in eq_log))
-        if i < len(sc["segments"]) - 1:
-            seq.append(m / "gap.wav")
+    # 0.6 s gap between segments. In ttspoc these two lines sat inside the match-eq block, after the loop, so no gap
+    # was ever inserted (found 2026-11-04, episodes/ep00-intro/review/README.md).
+    body = seq[2:]; seq = seq[:2]
+    for k, x in enumerate(body):
+        seq.append(x)
+        if k == 0 and a.ident:
+            # Fixed ident after the cold open: the same take every episode, levelled but never tonal-matched (it is the anchor).
+            ident = norm_dir / "ident.wav"; lv = measure_lufs(Path(a.ident))
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(a.ident), "-af", f"volume={a.seg_lufs - lv:.2f}dB",
+                            "-ar", str(SR), "-ac", "1", "-c:a", "pcm_s16le", str(ident)], check=True)
+            seq += [m / "gap.wav", ident]
+        if k < len(body) - 1: seq.append(m / "gap.wav")
     seq += [m / "lead.wav", m / "outro.wav"]
     if levels:
         (norm_dir / "levels.json").write_text(json.dumps(levels, ensure_ascii=False, indent=1))
         print("segment loudness before:", " ".join(f"{x['lufs_before']}" for x in levels), f"-> all {a.seg_lufs} LUFS")
     lst = m / f"concat_{name}.txt"
     lst.write_text("".join(f"file '{p.resolve()}'\n" for p in seq))
-    stem = Path(a.script).stem if a.script else "ep01"
+    stem = Path(a.script).parent.name if a.script else "ep01"
     raw = m / f"{stem}_{name}_raw.wav"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(raw)], check=True)
-    mp3 = OUT / f"{stem}_{name}.mp3"
+    mp3 = Path(a.out) if a.out else OUT / f"{stem}_{name}.mp3"; mp3.parent.mkdir(parents=True, exist_ok=True)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(raw),
                     "-af", "highpass=f=70,acompressor=threshold=-20dB:ratio=2.5:attack=10:release=200,loudnorm=I=-16:TP=-1.5:LRA=11",
                     "-ar", "44100", "-ac", "1", "-c:a", "libmp3lame", "-b:a", "128k",
-                    "-metadata", f"title={sc['episode']}", "-metadata", f"artist={sc['show']}", str(mp3)], check=True)
+                    "-metadata", f"title={sc['episode']}", "-metadata", f"artist={sc['show']}", "-metadata", f"album={sc['show']}",
+                    "-metadata", "comment=Synthetic voice generated by TTS (Gemini 3.8 Flash TTS)" + (f"; source {sc['source']}" if sc.get("source") else ""),
+                    str(mp3)], check=True)
     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(mp3)],
                                capture_output=True, text=True).stdout)
     print(f"{mp3}  {dur/60:.1f} min  {mp3.stat().st_size/1e6:.1f} MB")
@@ -330,8 +342,10 @@ if __name__ == "__main__":
     sub.add_parser("design")
     p = sub.add_parser("audition"); p.add_argument("--voices", default="")
     p = sub.add_parser("judge"); p.add_argument("files", nargs="+"); p.add_argument("--text"); p.add_argument("--out")
-    p = sub.add_parser("episode"); p.add_argument("--voice", required=True); p.add_argument("--retries", type=int, default=2); p.add_argument("--force", action="store_true"); p.add_argument("--only", default="", help="comma-separated segment ids to regenerate"); p.add_argument("--script", default=None, help="script JSON, default podcast/script/ep01.json"); p.add_argument("--tag", default="", help="suffix for the segments folder and output, e.g. tw"); p.add_argument("--takes", type=int, default=1, help="takes per segment; keeps the one with fewest long pauses"); p.add_argument("--add-takes", type=int, default=0, help="with --only: render N more takes after the existing ones, leaving them untouched"); p.add_argument("--style", choices=["v1", "v2", "v3", "v4", "v5"], default="v1", help="v2 = confident and rhythmic but drifts toward a broadcast accent; v3 = rhythmic and Taiwanese-leaning; v4 = v3 plus explicit Taiwan Mandarin phonetic traits and an amateur feel; v5 = v4 plus clear tones (in ep01_tw.json)")
-    p = sub.add_parser("master"); p.add_argument("--voice", required=True); p.add_argument("--script", default=None); p.add_argument("--tag", default="")
+    p = sub.add_parser("episode"); p.add_argument("--voice", required=True); p.add_argument("--retries", type=int, default=2); p.add_argument("--force", action="store_true"); p.add_argument("--only", default="", help="comma-separated segment ids to regenerate"); p.add_argument("--script", required=True, help="episodes/<ep>/script.json"); p.add_argument("--tag", default="", help="suffix for the segments folder and output, e.g. tw"); p.add_argument("--takes", type=int, default=1, help="takes per segment; keeps the one with fewest long pauses"); p.add_argument("--add-takes", type=int, default=0, help="with --only: render N more takes after the existing ones, leaving them untouched"); p.add_argument("--style", choices=["v1", "v2", "v3", "v4", "v5"], default="v5", help="v5 (default) = Taiwan Mandarin traits, amateur feel, clear tones; v2 = confident and rhythmic but drifts toward a broadcast accent; v3 = rhythmic and Taiwanese-leaning; v4 = v3 plus explicit Taiwan Mandarin phonetic traits and an amateur feel; v5 = v4 plus clear tones (in ep01_tw.json)")
+    p = sub.add_parser("master"); p.add_argument("--voice", required=True); p.add_argument("--script", required=True); p.add_argument("--tag", default="")
+    p.add_argument("--ident", help="fixed ident audio inserted after the first segment (show/ident/ident.flac)")
+    p.add_argument("--out", help="output mp3, default out/<episode>_<voice>_<tag>.mp3")
     p.add_argument("--seg-lufs", type=float, default=-20.0, help="bring every segment to this loudness before joining; pass nan to skip")
     p.add_argument("--match-eq", action="store_true", help="tonal matching: EQ each segment toward the episode's median spectrum")
     p.add_argument("--match-strength", type=float, default=0.8); p.add_argument("--match-max-db", type=float, default=6.0)
