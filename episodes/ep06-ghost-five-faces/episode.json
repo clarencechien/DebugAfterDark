@@ -7,7 +7,7 @@
  "description": "今晚講一個股市怪談。有人讓 agent 一個晚上爬回兩百支商用策略、逆向還原，十五支裡八支過門檻；信的最後一行卻是「然後我最近被虐得很慘」。從自己看線、聽老師、聽小道消息、買別人的策略，到讓 AI 寫程式選股，五十年來散戶撞的是同一隻鬼。這集講它的真名、它為什麼在 AI 時代長得更壯，還有 AI 真正幫得上忙的用法。\n\n今晚的 breakpoint：\n1. 五張臉底下是同一副骨架：把判斷外包給沒辦法驗證的來源，再用對來源的信任取代驗證。\n2. 股市裡的專家是相對位置：AI 讓人人當研究員，不會讓人人當贏家；回測是會說好話的鏡子，樣本外的紀錄才是真的。\n3. 讓 AI 當否決者，守紀律、做規劃；最大的報酬在你的工作。\n\n原文：〈同一隻鬼，換了五張臉 — 股市怪談〉 https://imitator.ai-apps.work/r/ghost-story-five-faces\n文中的信已拿掉寫信人的名字；研究出處列在原文。\n本集內容僅供參考，不構成投資建議。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
  "report_slug": "ghost-story-five-faces",
  "source_url": "https://imitator.ai-apps.work/r/ghost-story-five-faces",
- "status": "draft",
+ "status": "final",
  "category_note": "財經類：說明與口播都有不構成投資建議",
  "voice": {
   "provider": "gemini",
@@ -39,5 +39,6 @@
   "previous": "第一版（未上架）：錯誤率 2.8%、音高跳動 0.242",
   "both_wrong": "「報告說」兩套都聽成「包括說」（3:48，s04）；其餘是虛詞（得／的、足／除）與 Vanguard 的拼法",
   "terms": "Ping、pong 3 次都判為英文念法"
- }
+ },
+ "published": "2026-11-05T11:20:00+08:00"
 }

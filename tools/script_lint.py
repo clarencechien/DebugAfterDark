@@ -16,6 +16,10 @@ ENUM = re.compile(r"第[一二三四五六七八九十]+")
 PARTICLES = re.compile(r"[欸齁啦喔吧嘛耶捏咧哦蛤]")
 WRITTEN = ["推估", "因此", "此外", "然而", "其中", "對應", "處方", "藉由", "透過", "進行", "以及", "並且"]
 TAG = re.compile(r"<[^>]+>")
+# Written finance/academic terms and English jargon that made EP06's first cut unsteady and mainland-leaning (prompt rule 18).
+JARGON = ["超額報酬", "過擬合", "樣本外", "樣本內", "套利", "投顧", "部位", "平倉", "多重測試", "真名"]
+JARGON_EN = re.compile(r"\b(?:edge|alpha|beta|Sharpe|PF)\b", re.I)
+SELF_FIX = re.compile(r"呃我是說|我是說|呃不對|換個說法|應該說|——|……")
 # Mainland-flavoured words a Taiwanese listener flags (keep in sync with rule 13 of the prompt)
 # Not mainland usage, but Taiwanese listeners say people around them rarely talk like this (2026-11-04: 超有感).
 AVOID = {"有感": r"有感(?!觸|情|應|而)"}
@@ -41,6 +45,8 @@ def lint(text):
         "sentences_over_20": sum(1 for l in lens if l > 20),
         "particles_per_100": round(len(PARTICLES.findall(clean)) / chars * 100, 1) if chars else 0,
         "written_words": [w for w in WRITTEN if w in clean],
+        "jargon": [w for w in JARGON if w in clean] + JARGON_EN.findall(clean),
+        "self_corrections": len(SELF_FIX.findall(clean)),
         "mainland_words": [w for w in MAINLAND if w in clean and not (w == "兒" and ("兒子" in clean or "女兒" in clean))],
         "avoid_words": [w for w, rx in AVOID.items() if re.search(rx, clean)],
         "questions": clean.count("？") + clean.count("?"),

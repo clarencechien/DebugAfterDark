@@ -11,6 +11,7 @@
 | [EP03](episodes/ep03-one-point-cost/) | 每加一分，就扣一分（帳單三部曲 1/3） | 定稿 |
 | [EP04](episodes/ep04-bill-to-code-map/) | 帳單響了之後，你手上有沒有地圖（帳單三部曲 2/3） | 定稿 |
 | [EP05](episodes/ep05-reef-chart/) | 撞礁是遲早的，會不會沉才是問題（帳單三部曲 3/3） | 定稿 |
+| [EP06](episodes/ep06-ghost-five-faces/) | 同一隻鬼，換了五張臉（股市怪談） | 定稿；白話稿重做一次 |
 
 - 一集怎麼做：[`docs/recipe.md`](docs/recipe.md)
 - 節目怎麼營運（選題、審稿、跟 imitator 整合、上架平台）：[`PIPELINE.md`](PIPELINE.md)
