@@ -1,0 +1,137 @@
+{
+ "segment": "s05_ai",
+ "position": "第 6 段，共 10 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "57e751b9d6ca54df156f9103d1b228591f91f887bc880b35fe1c58470e3ee010",
+ "previous_context": "看他們隔空交火，我覺得雙方都很有道理耶。但重點是，這座水庫確實接住了錢，成功擋住了當年那種大潰堤啦。",
+ "original": {
+  "text": "然後，AI 來了。二〇二五年，台灣賺的錢創了新高，占整個經濟的比例，又快追上一九八六年。順差又回來了，這點沒有疑問。可是這一次，錢沒有進水庫。今年第二季賺的錢，有九成以上放在外面。出去的路有三條。第一條，企業去美國蓋廠，在美國賺的錢直接在美國花，沒有理由回來。第二條，銀行跟著去美國放款。第三條，出口商把美元留在手上。央行統計，今年前五個月，出口商賺到、卻沒換成台幣的美元，將近兩千億，真的換回來的只有四十幾億。白話說，貨賣出去了，錢還掛在帳上。",
+  "lint": {
+   "chars": 222,
+   "precise_numbers": [
+    "兩千",
+    "四十"
+   ],
+   "enumerations": [
+    "第二",
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 11,
+   "avg_sentence_len": 19.2,
+   "max_sentence_len": 46,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "然後，AI 的時代就來了。\n這幾年台灣賺的錢，又衝上歷史新高。\n但你猜這次怎麼著？<short pause>\n錢竟然沒有流進水庫耶。\n光是今年第二季，\n賺到的錢有百分之九十二都放在外面。\n這些錢到底跑去哪了？\n其實就是三個管道啦。\n第一，科技大廠跑去美國蓋廠。\n在美國賺的錢直接花掉，不用匯回來。\n然後，銀行也跟著跑去借錢給人家。\n重點來了，很多出口商把美金抱在手上。\n光是今年前幾個月，\n沒換成台幣的美金就有將近兩千億。\n真正換回來的只有四十幾億。\n白話說，就是貨賣出去了，錢還掛在帳上。\n看到這麼多錢留在外面，老實說滿震撼的齁。",
+   "lint": {
+    "chars": 236,
+    "precise_numbers": [
+     "百分之九十二",
+     "兩千",
+     "四十"
+    ],
+    "enumerations": [
+     "第二",
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 24,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "可是到了現在，AI 時代來了。二〇二五年台灣賺的錢又創歷史新高，快要追上一九八六年了。\n\n你猜這一次錢跑去哪了？<short pause>錢居然完全沒有進水庫耶。今年第二季賺的錢，有九成二都放在外面。我覺得這件事真的超奇妙的。\n\n錢到底是怎麼跑出去的？其實主要就是三條路。第一條，大廠跑去美國蓋廠，賺的錢直接在當地花掉。第二條，銀行也跟著跑去放款。然後出口商根本不想把美元換回台幣。前五個月留在手上的美元將近兩千億，真的換回來的只有四十幾億啦。貨賣出去了，錢都還掛在海外的帳上。",
+   "lint": {
+    "chars": 221,
+    "precise_numbers": [
+     "兩千",
+     "四十"
+    ],
+    "enumerations": [
+     "第二",
+     "第一",
+     "第二"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 16.0,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "結果 AI 一來，情況完全變了。<short pause>\n二〇二五年台灣賺的錢又破紀錄，\n快要追上一九八六年那時候。\n但你猜這次怎麼了？\n賺進來的錢，根本沒進水庫。\n光是今年第二季，\n賺來的錢有百分之九十二都放在外面。\n那錢都跑去哪裡了？\n其實主要就三個地方嘛。\n第一是企業跑去美國蓋廠，\n賺了錢直接在那邊花，不匯回來。\n然後銀行也跟著跑去放款。\n最誇張的是出口商，\n直接把賺到的美元留在手上。\n今年前五個月，\n沒換成台幣的美元將近兩千億，\n真正換回來的只有四十幾億耶。<laugh>\n簡單說，貨都賣出去了，\n錢卻全都掛在外面沒回來啦。",
+   "lint": {
+    "chars": 229,
+    "precise_numbers": [
+     "百分之九十二",
+     "兩千",
+     "四十"
+    ],
+    "enumerations": [
+     "第二",
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 18.1,
+    "max_sentence_len": 34,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "錢居然完全沒有進水庫耶。",
+   "to": "這一次，錢沒有進水庫耶。",
+   "reason": "「完全」誇大；素材是九成二放在外面"
+  },
+  {
+   "from": "前五個月留在手上的美元將近兩千億",
+   "to": "今年前五個月，留在手上的美元將近兩千億",
+   "reason": "補上時間"
+  }
+ ]
+}

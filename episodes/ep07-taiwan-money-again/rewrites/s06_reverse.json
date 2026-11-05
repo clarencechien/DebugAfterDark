@@ -1,0 +1,108 @@
+{
+ "segment": "s06_reverse",
+ "position": "第 7 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "99988fd4f9c4382e631e560a868c259419dbabc65592e195bc5d883896a69e1b",
+ "previous_context": "前五個月留在手上的美元將近兩千億，真的換回來的只有四十幾億啦。貨賣出去了，錢都還掛在海外的帳上。",
+ "original": {
+  "text": "於是央行的角色反過來了。過去二十年，央行是買美元、放台幣的水庫。從二〇二二年開始，央行連續三年賣美元，今年上半年又賣，等於在幫市場補美元。報告的說法很簡單：一九八六年的央行在擋水，二〇二六年的央行在放水。同一個機構，同一本帳，方向相反。報告也補了一句公道話：九成以上放在外面，跟央行在賣美元，其實是同一件事的兩面，不是兩個獨立的證據。賺的錢扣掉民間放在外面的，剩下的就是央行；央行一賣，比例自然就接近全部。",
+  "lint": {
+   "chars": 203,
+   "precise_numbers": [
+    "二十"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 28.0,
+   "max_sentence_len": 48,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以啊，央行的角色整個反過來了。過去二十年，央行就像個大水庫。它一直在買美元、放台幣出來。那現在呢？它反而在賣美元，替市場補水。報告裡有一句話我覺得超傳神。四十年前的央行在擋水，現在的央行在放水。同一個機構同一本帳，方向完全相反。<short pause>不過報告也幫央行講了句公道話啦。民間放在外面的錢高達九成八，跟央行賣美元，其實是同一件事的兩面喔。賺來的錢扣掉民間留著的，剩下的就是央行。央行只要跟著賣，那個比例自然就接近全部了。",
+   "lint": {
+    "chars": 205,
+    "precise_numbers": [
+     "二十",
+     "四十"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 32,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "錢都留在外面，那央行呢？<short pause>\n央行的角色整個反過來了。\n過去二十年，央行就像個大水庫，\n一直在買美元、放台幣。\n但這幾年完全倒過來，\n央行變成一直在賣美元。\n為什麼要賣？\n就是幫市場補美元啦。\n四十年前的央行在擋水，\n現在的央行反而在放水。\n同一個機構、同一本帳，方向徹底顛倒。\n這對比真的滿震撼的。<short pause>\n不過報告也提醒了一件事。\n大家把錢放外面，跟央行賣美元，\n其實根本是同一件事的兩面。\n賺的錢扣掉民間留著的，剩下的就是央行。\n央行一賣，比例自然就接近全部了嘛。",
+   "lint": {
+    "chars": 213,
+    "precise_numbers": [
+     "二十",
+     "四十"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 27,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "大家都不換，那央行在做什麼？\n結果央行的角色整個反過來了。\n過去二十年，央行是買美元放台幣的水庫。\n現在完全倒過來，在賣美元替市場補貨。\n像前年賣了一百六十四億，是公布以來最多。\n以前央行在擋水，現在呢？\n它居然在放水。<short pause>\n同一個機構，同一本帳，方向完全相反。\n這對比我真的覺得很有意思。\n不過報告也補了一句公道話啦。\n錢放在外面跟央行賣美元，其實是一體兩面。\n賺的錢扣掉大家放在外面的，剩下就是央行。\n央行一賣，外面的比例自然就接近全部了嘛。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [
+     "二十",
+     "一百六十四"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 2
+}

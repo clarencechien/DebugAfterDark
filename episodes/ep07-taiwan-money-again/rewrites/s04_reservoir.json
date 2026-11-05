@@ -1,0 +1,112 @@
+{
+ "segment": "s04_reservoir",
+ "position": "第 5 段，共 10 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ce7e91b0df525a5940f0beda5b02246170585828a5d93a4b81c36723e61b978e",
+ "previous_context": "錢出不去，就只能淹在島內。會淹到腳目，就是因為沒有排水口啦。",
+ "original": {
+  "text": "泡沫之後，管制解除了，錢可以出去了。到了二〇一〇年代，台灣賺的錢又多起來。這次央行選了一種固定的接法：台幣要升的時候，央行買美元擋住；要貶的時候，就放手。學界叫它「阻升不阻貶」。央行手上的美元，就這樣一路累積到大約六千億。這套做法有很大的爭論。幾位台大經濟系的學者出書，說長期壓低匯率，讓產業不升級、薪水落後，也推高了房價。央行逐條回應，說不能只看賺的錢多，就說台幣被低估。報告不做裁決，因為三方都有數據，差在用哪一把尺。報告確定的只有一件事：這座水庫，擋住了一九九〇年那種潰堤。",
+  "lint": {
+   "chars": 240,
+   "precise_numbers": [
+    "六千"
+   ],
+   "enumerations": [],
+   "sentences": 10,
+   "avg_sentence_len": 23.0,
+   "max_sentence_len": 39,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "後來排水口打開，錢終於能出去了。\n到了二〇一〇年代，台灣賺的錢又變超多。\n那央行這次怎麼接？\n就是直接跳下來當超級大水庫啦。\n台幣要升值，央行就買進美元擋住。\n然後要貶值的時候，他就放手不管喔。\n學者把這種操作叫做阻升不阻貶。\n央行收走的錢，累積到大約六千億美元。\n你覺得大家都很滿意嗎？<short pause>完全沒有。\n幾位台大經濟系的學者甚至出書批評。\n他們認為壓低匯率讓薪水落後、推高房價。\n央行也跳出來逐條反駁。\n連中經院院長都提出不同看法，\n他覺得央行真正在意的其實是就業。\n三方都有數據，差在用哪一把尺。\n看他們隔空交火，我覺得雙方都很有道理耶。\n但重點是，這座水庫確實接住了錢，\n成功擋住了當年那種大潰堤啦。",
+   "lint": {
+    "chars": 283,
+    "precise_numbers": [
+     "六千"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 29,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "後來管制解除了，錢終於可以出去了。\n到了兩千一零年代，台灣賺的錢又變多。\n那央行這次怎麼做？<short pause>\n答案是，它把自己變成超級大水庫。\n台幣要升的時候，央行就買美元擋住。\n要貶的時候呢，就直接放手。\n學者把這招叫做「阻升不阻貶」。\n央行存下來的美元，一路累積到大約六千億。\n但這套做法爭議超大。\n台大幾位經濟系學者出書批評，\n說長期壓低匯率，讓薪水落後、房價變高。\n央行也發文逐條反駁，說不能這樣算。\n中經院院長則覺得，央行是在顧就業啦。\n其實大家都拿得出數據，差在用哪一把尺。\n我不得不說，這座水庫確實有發揮效果。\n至少沒有發生一九九〇年那種大潰堤喔。",
+   "lint": {
+    "chars": 258,
+    "precise_numbers": [
+     "兩千一零",
+     "六千"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 32,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "後來管制解開，錢終於可以出去了。\n然後到了二〇一〇年代，\n就是台灣賺的錢又變超多。\n那這次錢跑去哪了？\n央行自己跳下來當大水庫啦。\n台幣想升值，央行就買美元擋著；\n對，想貶值的時候，就放手不管。\n學者把這套做法，叫做「阻升不阻貶」。\n央行收走的美元，一路累積到六千億。\n這套做法好不好？<short pause>\n說真的，看雙方論戰還蠻精彩的。\n幾位台大經濟系的學者出書批評，\n說這樣壓低匯率推高房價，還壓低薪水。\n央行也跳出來逐條反駁。\n兩邊都有依據，報告在這裡沒有選邊。\n但那個水庫確實發揮了效果，\n至少擋住了當年的大潰堤。<short pause>",
+   "lint": {
+    "chars": 235,
+    "precise_numbers": [
+     "六千"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 17.1,
+    "max_sentence_len": 32,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "他們認為壓低匯率讓薪水落後、推高房價。",
+   "to": "他們認為長期壓低匯率，讓產業不升級、薪水落後；長期低利率，又推高了房價。",
+   "reason": "合併錯誤：推高房價的是低利率，不是匯率"
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "segment": "s07_foreign",
+ "position": "第 8 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "750deb106ad616c644153260868289cbffd998a719e5d58541762705f88e9679",
+ "previous_context": "賺的錢扣掉大家放在外面的，剩下就是央行。央行一賣，外面的比例自然就接近全部了嘛。",
+ "original": {
+  "text": "這些是長期的結構。可是十月那一週台幣急貶，報告說不是結構，是外資的進出。差別在量。台灣賺的錢，一季大約六百億美元，分散在幾千家出口商手上。外資在台灣的股票、債券、存款加起來，是央行手上美元的三倍多。外資只要調整一小部分，金額就超過一整季賺的錢。十月中，美國的半導體股連跌八天，外資五天匯出一百八十億美元。報告說，台幣越來越像 AI 股的放大版，而不是台灣經濟的溫度計。反過來也一樣快。二〇二五年五月，市場傳說美國要台幣升值，出口商一起賣美元，台幣兩天就升了百分之六，這個傳說後來被央行否認。",
+  "lint": {
+   "chars": 243,
+   "precise_numbers": [
+    "六百",
+    "千",
+    "一百八十",
+    "百分之六"
+   ],
+   "enumerations": [],
+   "sentences": 10,
+   "avg_sentence_len": 23.3,
+   "max_sentence_len": 52,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "不過，剛剛講的都是長期結構。\n那十月台幣為什麼會急貶？\n答案很簡單，就是外資在跑。\n台灣一季賺的錢，大約六百億美元。\n可是外資手上的資產，是央行存底的三倍多。\n這差距大到我覺得有點誇張。<sigh>\n外資只要調整百分之五，\n金額就超過我們一整季賺的錢。\n十月中美國半導體股連跌八天，\n外資五天就匯出一百八十億美元。\n對啊，台幣比起台灣經濟的溫度計，\n現在更像 AI 股的放大版。\n那反過來會怎樣？也一樣快喔。\n之前市場傳聞美國要台幣升值，\n出口商一起賣美元，\n兩天內台幣就升了大約百分之六。<short pause>\n雖然央行否認傳聞，\n但你就知道那個錢轉向有多猛了啦。",
+   "lint": {
+    "chars": 247,
+    "precise_numbers": [
+     "六百",
+     "百分之五",
+     "一百八十",
+     "百分之六"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 18.0,
+    "max_sentence_len": 37,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "這些是長期的結構。但十月那一週台幣急貶，關鍵其實是外資嘛。台灣一季賺的錢，大概六百億美元。聽起來很多對不對？可是外資手上的資產，是央行美元的三倍多。外資只要稍微調整百分之五，金額就比台灣整季賺的還多。<short pause>這量級差距真的太懸殊了。十月中美國半導體股連跌八天，外資五天就匯出快兩百億美元。所以台幣現在超像 AI 股的放大版，根本不是台灣經濟的溫度計啦。那反過來呢？也一樣快喔。之前市場傳說美國要台幣升值，出口商嚇到集體賣美元。兩天之內台幣就升了整整百分之六。雖然央行正式否認，但你看，風向一變就是這麼劇烈。",
+   "lint": {
+    "chars": 247,
+    "precise_numbers": [
+     "六百",
+     "百分之五",
+     "兩百",
+     "百分之六"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 29,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "這就是長期的結構啦。但十月台幣急貶，又是另一回事。<short pause>那個差別到底在哪？就是外資進出的量實在太大了。我們出口一季賺的錢，大約六百億美元。可是外資手上的錢，是央行存底的三倍多耶。外資只要動一小部分，金額就超過我們一整季賺的錢。聽到這裡真的會讓人倒抽一口氣。<sigh>難怪報告會說，台幣現在不是經濟溫度計。它反而更像 AI 股的放大版。而且反過來也一樣劇烈喔。之前市場傳言美國要台幣升值，出口商就集體跑去賣美元，對。結果台幣兩天就升了百分之六點二一。<short pause>雖然傳聞後來被央行正式否認。但這證明大家一轉向，幾天內就會大洗牌。",
+   "lint": {
+    "chars": 247,
+    "precise_numbers": [
+     "六百",
+     "百分之六點二一"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 27,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 3
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "結果台幣兩天就升了百分之六點二一。",
+   "to": "結果台幣兩天就升了百分之六。",
+   "reason": "小數點數字換成整數"
+  },
+  {
+   "from": "之前市場傳言美國要台幣升值",
+   "to": "二〇二五年五月，市場傳言美國要台幣升值",
+   "reason": "補上時間"
+  }
+ ]
+}

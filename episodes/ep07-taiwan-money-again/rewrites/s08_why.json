@@ -1,0 +1,122 @@
+{
+ "segment": "s08_why",
+ "position": "第 9 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "356323e4882d1037e0ff456f9eb12277264aef018326d1c0aff8937e165dafb6",
+ "previous_context": "雖然傳聞後來被央行正式否認。但這證明大家一轉向，幾天內就會大洗牌。",
+ "original": {
+  "text": "看到這裡，你可能已經有好幾個「原來是因為這樣」。報告要把它們一個一個拆掉。賺的錢多，台幣就會升？一九八六年是對的，因為錢出不去；今年賺最多，台幣卻在貶。經濟好，台幣就強？今年成長百分之十二，台幣偏弱。錢多，股市房市就漲？一九八六年錢只有兩個出口；現在錢有一百個出口，美股、美債、海外都去得了。韓國也是一樣，今年賺的錢比台灣還多，韓元卻跌得更兇。報告說，匯率不是一個原因的結果，是好幾條管道同時進出的淨額。所以它不給台幣接下來會怎樣的答案，只給一張清單：哪幾條管道最粗、裡面有多少錢、誰握著開關。",
+  "lint": {
+   "chars": 247,
+   "precise_numbers": [
+    "百分之十二",
+    "一百"
+   ],
+   "enumerations": [],
+   "sentences": 11,
+   "avg_sentence_len": 21.5,
+   "max_sentence_len": 44,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 3,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以大家常覺得，台幣走勢就是看某個原因。但真的有這麼單純嗎？<short pause>其實沒有。比方說賺的錢變多，台幣就一定會升？以前錢出不去是對的，現在賺最多卻在貶。那經濟好貨幣就強嗎？今年成長百分之十二，台幣還是偏弱啊。還有存款多資產就漲，現在也不靈了。現在錢有一百個出口，美股海外都能去嘛。你看韓國賺得比我們多，韓元跌得更慘。我覺得這份報告最棒的，就是講清楚這點。匯率從來不是一個原因造成的。它是好幾條水管同時進出的結果。重點來了，根本不用去猜台幣未來會怎樣。看清楚哪條水管最粗、誰握著開關就好啦。",
+   "lint": {
+    "chars": 239,
+    "precise_numbers": [
+     "百分之十二",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "所以啊，市場真的不是單純看一個指標。\n聽到這裡，你是不是覺得很多公式被打破了？\n像是大家常說，賺的錢多，台幣就會升。\n四十年前是對的，因為錢出不去嘛。\n可是今年賺最多，台幣反而在貶。\n那經濟好，貨幣總該變強了吧？<short pause>\n也沒有喔。\n今年成長百分之十二，台幣一樣偏貶。\n更不用說韓國了。\n他們賺的錢比台灣還多，韓元跌得更兇。\n這整份報告最讓我佩服的是，它不鐵口直斷。\n它說匯率是好幾條水管同時進出的結果。\n現在錢有一百個出口，美股、美債都能去。\n所以報告不給預測，只留下一張清單。\n看哪條水管最粗、誰握著開關。",
+   "lint": {
+    "chars": 237,
+    "precise_numbers": [
+     "四十",
+     "百分之十二",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "聽到這裡，你可能會覺得原因找到了對吧？\n其實事情沒那麼簡單啦。<short pause>\n報告把這些直覺一個一個拆掉。\n像是賺的錢變多，台幣就會升嗎？\n以前錢出不去是對的。\n現在台灣賺最多，台幣卻在貶值。\n今年經濟成長百分之十二，台幣還是偏弱啊。\n重點是，現在錢有一百個出口可以跑。\n美股、美債都能買，不一定會留在國內。\n你看韓國賺得比台灣多，韓元跌得更慘。\n這對照組超有說服力。<short pause>\n匯率本來就不是單一原因造成的。\n它比較像好幾條水管同時在進出。\n所以這份報告完全不猜台幣會怎樣。\n它只列出哪條水管最粗、誰握著開關。",
+   "lint": {
+    "chars": 230,
+    "precise_numbers": [
+     "百分之十二",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "以前錢出不去是對的。",
+   "to": "一九八六年錢出不去的時候，這句是對的。",
+   "reason": "補上時間與條件，照素材"
+  },
+  {
+   "from": "你看韓國賺得比台灣多，韓元跌得更慘。",
+   "to": "你看韓國，今年上半年賺得比台灣還多，韓元卻跌得更慘。",
+   "reason": "補上時間，照素材"
+  }
+ ]
+}

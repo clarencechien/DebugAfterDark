@@ -1,0 +1,127 @@
+{
+ "segment": "s09_outro",
+ "position": "第 10 段，共 10 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a0a6b71b4f22f3b34ae380706055e887010eb6a33fa35b54528abb3f010cda67",
+ "previous_context": "所以這份報告完全不猜台幣會怎樣。它只列出哪條水管最粗、誰握著開關。",
+ "original": {
+  "text": "所以，台灣錢淹腳目 again？報告的答案是：賺的錢 again，但淹的地方不一樣。一九八六年的錢被關在島內，淹的是台灣的股市和房市，最後是泡沫。今年的錢可以自由流動，淹的是美國的工廠、美債和美股。風險也換了：留在海外的那些美元，哪天一起決定回家。好，今晚的 breakpoint。第一，錢淹腳目，要看的是錢可以去哪裡、多出來的美元誰接走。第二，一九八六年央行在擋水，現在央行在放水，台幣越來越像 AI 股的放大版。第三，匯率沒有單一原因，要看哪條管道最粗。再提醒一次，這集不是投資建議。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 276,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 13,
+   "avg_sentence_len": 20.2,
+   "max_sentence_len": 35,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以台灣真的又錢淹腳目了嗎？\n這結論真的很有意思。<short pause>\n賺的錢確實很多，\n但這次淹的地方完全換了。\n以前錢出不去，\n全淹在台灣的股市跟房市。\n現在錢可以自由流動，\n跑去淹美國的廠房跟美股。\n錢其實沒有不見，\n只是這次淹在別人的腳下啦。\n那現在最大的風險是什麼？\n就是留在外面的那些美元，\n哪天突然同時決定要回家。\n好，今晚的 breakpoint。<short pause>\n第一，看錢能去哪裡，多出來的美元誰接走。\n第二，央行擋水變放水，台幣像 AI 放大版。\n第三，匯率要看哪條水管最粗，沒有單一原因。\n再提醒大家一次，這集不是投資建議喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 274,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 23,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "所以，台灣錢真的又淹腳目了嗎？\n答案是賺的錢很多，但淹的地方換了。\n一九八六年的錢出不去，淹的是台灣股市房市。\n現在的錢自由流動，淹的是美國廠房跟美股。\n錢沒有不見，只是這次淹在別人的腳下。<short pause>\n我覺得最耐人尋味的，其實是風險。\n要是放在外面的錢某天一起回家，那就精采了。\n\n好，今晚的 breakpoint。<short pause>\n第一，要看錢能去哪裡、多出來的美元誰接走。\n第二，央行改放水，台幣就像 AI 股的放大版。\n第三，匯率沒有單一原因，要看哪條水管最粗。\n\n照慣例提醒一下，這集不是投資建議喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 262,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "所以啊，台灣真的又回到錢淹腳目了嗎？\n答案是，賺的錢回來了，但淹的地方不一樣。\n四十年前錢鎖在島內，最後淹出泡沫。<short pause>\n現在錢可以自由流動啦。\n跑去淹美國的廠房跟美股，台幣反而變弱。\n那現在的風險到底是什麼？\n就是放在外面的美元，哪天突然一起要回家。<short pause>\n錢其實沒有不見，只是這次淹在別人的腳下。\n這個結論真的讓我很有共鳴。\n好，今晚的 breakpoint。\n第一，要看錢能去哪裡、多出來的美元誰接走。\n第二，央行改放水，台幣像 AI 股的放大版。\n第三，匯率沒有單一原因，要看哪條水管最粗。\n對了，這集內容完全不是投資建議喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 282,
+    "precise_numbers": [
+     "四十"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "要是放在外面的錢某天一起回家，那就精采了。",
+   "to": "要是放在外面的美元，某天一起決定回家，那才是真正要注意的地方。",
+   "reason": "「那就精采了」對風險語氣輕佻"
+  },
+  {
+   "from": "第二，央行改放水，台幣就像 AI 股的放大版。",
+   "to": "第二，一九八六年央行在擋水，現在央行在放水；台幣也越來越像 AI 股的放大版。",
+   "reason": "原句暗示因果；素材是兩件事"
+  }
+ ]
+}

@@ -1,0 +1,140 @@
+{
+ "segment": "s03_bubble",
+ "position": "第 4 段，共 10 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "03fee989cafeda82b1211ec2636fe78f51512a349e9e6fd4bf48b5e77f2f2222",
+ "previous_context": "八零年代的數字多是二手資料。精確度沒現在那麼高喔。",
+ "original": {
+  "text": "央行買進美元、放出台幣，又沒把多出來的台幣收乾淨。結果錢的數量一年多了四成，物價卻幾乎沒動。那錢去了哪裡？去了股票和房子。開證券戶的人，五年從四十萬戶變成五百萬戶，可是上市公司還不到兩百家。五百萬個戶頭，追兩百支股票。台股從六百多點，漲到一萬兩千多點，房地產漲了十倍。然後一九九〇年，八個月內，台股從一萬兩千多點跌到兩千多點。之後，台股花了三十年，才回到那個點位。報告說，錢出不去，就淹在島內。淹到腳目，是因為沒有排水口。",
+  "lint": {
+   "chars": 211,
+   "precise_numbers": [
+    "四十萬",
+    "五百萬",
+    "兩百",
+    "五百萬",
+    "兩百",
+    "六百",
+    "一萬兩千",
+    "一萬兩千",
+    "兩千",
+    "三十"
+   ],
+   "enumerations": [],
+   "sentences": 11,
+   "avg_sentence_len": 18.2,
+   "max_sentence_len": 33,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "但當時的現象真的很誇張。\n那時候央行買進美元、放出台幣，\n多出來的錢卻沒收乾淨啦。\n市面上的錢一年多了四成，\n物價卻幾乎完全沒漲。\n那你猜，那些錢後來跑去哪了？\n答案全去了股票跟房子。\n開戶的人五年暴增到五百萬，\n但上市公司只有兩百家左右。\n等於五百萬個戶頭在搶兩百檔股票耶。<laugh>\n台股從六百多點飆到一萬兩千多點，\n同時間房價也漲了整整十倍。\n主要是錢出不去，就全淹在島內嘛。\n重點來了，泡沫破掉的時候，\n台股不到一年就跌到兩千四百八十五點。<sigh>\n整整花了三十年，才爬回原本的高度。",
+   "lint": {
+    "chars": 222,
+    "precise_numbers": [
+     "五百萬",
+     "兩百",
+     "五百萬",
+     "兩百",
+     "六百",
+     "一萬兩千",
+     "兩千四百八十五",
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 19.2,
+    "max_sentence_len": 30,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那時候，央行買進美元、放出台幣。<short pause>\n可是多出來的台幣，央行沒收乾淨。對。\n市面上的錢每年暴增四成多，物價卻沒動。\n你猜那些錢跑去哪了？\n全衝進股票跟房子裡啦。\n開戶的人五年內暴增到五百萬，\n但上市公司，竟然只有不到兩百家欸。\n等於五百萬個戶頭，在搶兩百檔股票。\n台股從六百多點，衝到一萬兩千多點。\n同一個五年，房價也漲了十倍。\n光想那個畫面就覺得壓力超大。\n報告說，錢出不去，是因為沒有排水口。\n水一直灌進來，就只能淹在島內。<short pause>\n結果一九九零年，短短八個月，\n台股就摔回兩千多點。<sigh>\n然後整整花了三十年，才爬回那個高點。",
+   "lint": {
+    "chars": 242,
+    "precise_numbers": [
+     "五百萬",
+     "兩百",
+     "五百萬",
+     "兩百",
+     "六百",
+     "一萬兩千",
+     "兩千",
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 30,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 3
+   }
+  },
+  {
+   "text": "但那個趨勢真的非常誇張。當時央行放出台幣，又沒收乾淨。錢的數量多出四成，物價卻幾乎沒動。\n\n你猜那些錢跑去哪了？<short pause>全都灌進股票跟房子裡。\n\n證券戶五年內衝到五百萬。上市公司卻只有兩百家左右。等於五百萬個戶頭在搶兩百檔股票耶。同一個五年，房價漲了十倍，股市更是衝到一萬兩千六百八十二點。光用想的都覺得很瘋狂。\n\n重點是，後來只花八個月，指數就直接摔回兩千多點。<sigh>台股花了整整三十年，才爬回那個高點。錢出不去，就只能淹在島內。會淹到腳目，就是因為沒有排水口啦。",
+   "lint": {
+    "chars": 220,
+    "precise_numbers": [
+     "五百萬",
+     "兩百",
+     "五百萬",
+     "兩百",
+     "一萬兩千六百八十二",
+     "兩千",
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 29,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "股市更是衝到一萬兩千六百八十二點。",
+   "to": "股市更是衝到一萬兩千多點。",
+   "reason": "精確點數換成約數"
+  }
+ ]
+}
