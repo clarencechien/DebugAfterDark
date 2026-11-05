@@ -1,0 +1,113 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 10 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "16347f00954168b2aadc7fded368c19c5e5a0869b60a1eb590e7a30ecdfe76f3",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "十月中，中經院把今年的經濟成長率上修到百分之十二，是快四十年來最高。新聞說，簡直像台灣錢淹腳目的年代，但又補了一句：體感上還是有差。同一週，台幣卻在貶，外資五天匯出了一百八十億美元。經濟這麼好，錢卻往外跑？一九八六年也是錢淹腳目，那時台幣是一路升，股市一路漲。同一句話，隔了四十年，結局完全相反。報告說，答案不在錢有多少，而在錢可以去哪裡。",
+  "lint": {
+   "chars": 170,
+   "precise_numbers": [
+    "百分之十二",
+    "四十",
+    "一百八十",
+    "四十"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 23.3,
+   "max_sentence_len": 33,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "嘿，還醒著嗎？\n中經院把今年的經濟成長率，\n一口氣上修到百分之十二點一六。<short pause>\n這是快四十年來最高耶。\n新聞都在喊，台灣錢淹腳目又來了。\n但你猜怎麼著？\n那幾天台幣居然一直在貶值。\n光是一週，外資就匯出一百八十億美元。\n我看到這個反差整個愣住。<short pause>\n經濟明明超好，錢怎麼反而往外跑？\n對啊，四十年前也是錢淹腳目，\n那時候是台幣大升、股市暴漲耶。\n其實答案不在錢有多少，\n就是看那些錢，最後能去哪裡啦。",
+   "lint": {
+    "chars": 183,
+    "precise_numbers": [
+     "百分之十二點一六",
+     "四十",
+     "一百八十",
+     "四十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？十月中，經濟成長率上修到百分之十二點一六。對，這可是快四十年來最高的一次喔。新聞都在說，台灣錢淹腳目的年代回來了。但更扯的是，同一週台幣居然一直貶。然後外資幾天就匯出了快兩百億美元。你可能會想，經濟這麼好，錢怎麼往外跑？看到央行盤中發聲明，我整個滿頭問號。<short pause>四十年前那次，台幣可是天天在狂升耶。為什麼同一句話，結局完全相反？其實答案不在錢有多少，就是看那些錢，到底可以去哪裡啦。",
+   "lint": {
+    "chars": 195,
+    "precise_numbers": [
+     "百分之十二點一六",
+     "四十",
+     "兩百",
+     "四十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.7,
+    "max_sentence_len": 26,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？\n十月中官方預估今年的經濟成長率，\n居然衝到了百分之十二點一六，\n是快四十年來最高耶。<short pause>\n新聞都說這是「台灣錢淹腳目」再現，\n可是你是不是也覺得，體感好像不太一樣？\n重點來了，經濟這麼好，台幣那幾天卻在狂貶。\n外資一週內匯出了快兩百億美元。<short pause>\n這不是很奇怪嗎？\n四十年前也是錢淹腳目，\n那時候台幣跟股市是一路往上衝耶。\n我看到這份報告點出一個關鍵：<short pause>\n問題其實不在錢有多少，\n而是錢到底可以去哪裡啦。",
+   "lint": {
+    "chars": 191,
+    "precise_numbers": [
+     "百分之十二點一六",
+     "四十",
+     "兩百",
+     "四十"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 22.9,
+    "max_sentence_len": 39,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 3
+   }
+  }
+ ],
+ "chosen": 1
+}

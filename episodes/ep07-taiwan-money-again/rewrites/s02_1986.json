@@ -1,0 +1,106 @@
+{
+ "segment": "s02_1986",
+ "position": "第 3 段，共 10 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2def9c4bf4815a9ac426fd6d70f8efef6bb53f681020d813bcdd8b05f883157f",
+ "previous_context": "我看到這裡才想通。原來這四十年來，接走錢的人早就換了。",
+ "original": {
+  "text": "先回到一九八六年。那一年台灣賺的錢，大約是整個經濟的五分之一，有紀錄以來最高。同一時期的日本和西德，才百分之一多。錢存得很多，國內卻沒什麼東西可以投資，很大一塊就閒在那裡。然後，錢出不去。那時候有外匯管制，出口商賺的美元一定要賣給銀行，一般人不能自由拿外幣，到國外投資要申請，一直到一九八七年才解除。所以多出來的美元，只有一個去處：央行。美國那邊也在施壓，要台幣升值。央行只好讓台幣慢慢升。報告說，慢慢升是全世界最好賭的事，大家都知道明天會更貴，熱錢就跟著湧進來。報告也提醒，八〇年代的數字多是二手資料，精確度沒那麼高。",
+  "lint": {
+   "chars": 260,
+   "precise_numbers": [
+    "百分之一"
+   ],
+   "enumerations": [],
+   "sentences": 11,
+   "avg_sentence_len": 22.6,
+   "max_sentence_len": 55,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先看一九八六年的狀況。\n那時候台灣賺的錢，真的非常多。\n占了整個經濟的百分之二十點八。<short pause>\n這是有紀錄以來最高。\n同一時期的日本跟西德，才百分之一多耶。\n而且存下來的錢，國內根本沒地方投資。\n差不多五分之一的產出，就這樣閒在那裡。\n你猜這些錢後來跑去哪了？\n答案是，全被關在台灣。\n因為那個年代有外匯管制嘛。\n出口商賺了美元，一定要賣給銀行。\n一般人不能自由拿外幣，出國投資還要申請。\n所以那些錢只有一個去處，就是央行。\n然後美國又一直施壓，要台幣升值。\n央行沒辦法，只好讓台幣慢慢升。\n大家都知道明天會更貴，熱錢就跟著湧進來。\n我看到這裡真的覺得超誇張。\n不過報告也有提醒啦。\n八零年代的數字多是二手資料。\n精確度沒現在那麼高喔。",
+   "lint": {
+    "chars": 295,
+    "precise_numbers": [
+     "百分之二十點八",
+     "百分之一"
+    ],
+    "enumerations": [],
+    "sentences": 20,
+    "avg_sentence_len": 13.8,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "我們先把時間拉回一九八六年。\n那時候台灣賺的錢有多誇張？\n占了整個經濟產出的百分之二十點八。\n同一時期的日本跟西德，才百分之一左右耶。\n大家存了一堆錢，國內卻沒什麼好投資的。\n等於有五分之一的錢，就這樣閒在那裡。\n<short pause>\n那把錢匯去國外總可以了吧？\n答案是不行，因為當時有外匯管制。\n你賺到的美元一定要賣給銀行。\n一般人不能隨便拿外幣。\n這個管制一直到一九八七年才解除。\n所以多出來的錢，全部只能灌進央行。\n然後，美國那時候也在施壓，要台幣升值。\n結果央行只好讓台幣慢慢升。\n我看到這裡才發現，這根本是最好賭的局。\n大家都知道明天會更貴，熱錢就跟著湧進來。\n對，不過當年的數字多半是二手資料。\n精確度沒那麼高就是了。",
+   "lint": {
+    "chars": 287,
+    "precise_numbers": [
+     "百分之二十點八",
+     "百分之一"
+    ],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "先從一九八零年代看起。\n那時候台灣賺的錢到底有多少？\n一九八六年賺的錢，\n占了整個經濟的百分之二十點八。\n同時期的日本和西德，才大約百分之一耶。\n而且存的錢變多，國內卻沒地方投資，\n等於有五分之一的產出都閒在那裡。\n那把錢放到國外總可以吧？\n答案是不行。<short pause>\n當時有外匯管制，賺的美元都要賣給銀行，\n一般人不能自由持有外幣，錢根本出不去。\n所以多出來的錢，全被央行收走了。\n重點來了，美國那時一直施壓要台幣升值。\n央行只好讓台幣慢慢升。\n你知道慢慢升會怎樣嗎？\n大家都知道明天會更貴，熱錢就跟著湧進來。\n我看到這邊真的覺得太瘋狂了。\n對了，這份報告有特別說明，\n八零年代很多是二手資料，\n精確度沒有現在那麼高喔。",
+   "lint": {
+    "chars": 285,
+    "precise_numbers": [
+     "百分之二十點八",
+     "百分之一"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 18.0,
+    "max_sentence_len": 37,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0
+}

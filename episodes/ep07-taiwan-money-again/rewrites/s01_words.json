@@ -1,0 +1,109 @@
+{
+ "segment": "s01_words",
+ "position": "第 2 段，共 10 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "1dda6447f98cae7b435e7f7ec407e9f0bf012aa618ae713892dc02c16aac3084",
+ "previous_context": "為什麼同一句話，結局完全相反？其實答案不在錢有多少，就是看那些錢，到底可以去哪裡啦。",
+ "original": {
+  "text": "先說清楚，這集不是投資建議，也不預測台幣會怎樣。報告只用了幾個很白話的詞。賺的錢，是台灣賣給世界的，減掉跟世界買的。賺到的美元有兩個去處：一個是留在國外，叫放在外面的錢；另一個是被央行買走、換成台幣放進國內，叫央行收走的錢。這三個數字有固定關係：賺的錢，等於放在外面的錢，加上央行收走的錢。這是會計，不是巧合。所以真正的問題只有一個：多出來的美元，誰接走了？如果是央行接走，台幣就被放進國內，推著股市和房市。如果是民間接走，台幣根本沒被換出來。報告說，四十年來，接走的人換了。",
+  "lint": {
+   "chars": 238,
+   "precise_numbers": [
+    "四十"
+   ],
+   "enumerations": [],
+   "sentences": 10,
+   "avg_sentence_len": 22.8,
+   "max_sentence_len": 53,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先打個預防針，這集不是投資建議喔。<short pause>報告也沒有要預測台幣走勢啦。我們先看錢的流向就好。台灣賣東西賺到的美元，其實只有兩個去處。一個留在海外，叫做放在外面的錢。另一個被央行買走，換成台幣放進國內，這叫央行收走的錢。這兩邊加起來，剛好等於台灣賺到的錢。這不是巧合，就是簡單的會計等式。那真正的關鍵是什麼？就是多出來的美元，到底誰接走了。央行接走的話，台幣流進國內推高股市。但要是民間自己接走呢？那些美元根本沒換成台幣嘛。<short pause>我看到這裡才想通。原來這四十年來，接走錢的人早就換了。",
+   "lint": {
+    "chars": 234,
+    "precise_numbers": [
+     "四十"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 26,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "先提醒一下，這集不是投資建議喔，<short pause> 也完全不預測匯率。\n\n我們來看報告怎麼拆解這件事。台灣賣東西給全世界，二零二五年淨賺了一千八百一十一億美元。那賺來的美元跑去哪了？其實就兩個去處嘛。第一個是留在海外，就是「放在外面的錢」，對，拿去買美債。另一個是被央行買走換成台幣，叫「央行收走的錢」，現在大概六千億美元。\n\n重點來了，多出來的美元，到底是誰接走的？如果央行買走，台幣就會流進市場，推著股市和房市跑。要是換成民間接走，台幣根本就沒被換出來耶。我看到這段分析真的覺得超有道理。原來這四十年來，只是接走的人換了啦。",
+   "lint": {
+    "chars": 250,
+    "precise_numbers": [
+     "一千八百一十一",
+     "六千",
+     "四十"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 19.8,
+    "max_sentence_len": 33,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "先打個預防針，這集不構成投資建議喔。報告也沒有要預測台幣會怎樣。\n\n那賺來的美元到底去哪了？其實關鍵就只有一個。多出來的美元，到底是誰接走了？台灣賺到的錢，基本上只有兩個去處。第一個是留在海外，叫「放在外面的錢」，像是拿去國外蓋廠或買美債。然後另一個是央行買走、換成台幣，這就是「央行收走的錢」。\n\n你猜這兩筆加起來會怎樣？<short pause>剛好就等於賺的錢，這是會計原理啦。如果是央行接走，台幣放進國內，就會推動股市跟房市。但如果是民間接走，台幣根本沒被換出來嘛。\n\n我看到這裡真的恍然大悟。<short pause>四十年過去，其實只是接手的人換了。",
+   "lint": {
+    "chars": 249,
+    "precise_numbers": [
+     "四十"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 31,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0
+}
