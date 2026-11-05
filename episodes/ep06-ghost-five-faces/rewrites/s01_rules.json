@@ -1,0 +1,100 @@
+{
+ "segment": "s01_rules",
+ "position": "第 2 段，共 10 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4c921569681cb23705542269e104b72bc12aaa076671cbd8b64c3c4232031ae3",
+ "previous_context": "也就是策略做完之後，才發生的真實市場資料。五十年來，大家撞的其實都是同一隻鬼啦。",
+ "original": {
+  "text": "先講清楚，這集不是投資建議，也不報明牌。我們講的是一個在股市裡反覆出現的錯，還有 AI 讓它變成什麼樣子。報告說，怪談有個規矩：鬼不會第一頁就出來。它先讓你看見一個很合理的人，做一件很合理的事。信裡的人很勤奮，有流程、有門檻、有排隊的清單。問題不在他哪一步做錯，而在他走的那條路，前面已經有很多人走過了。把過去幾十年關於散戶的研究排成一列，會看見散戶一直在做同一件事，只是換了供應商。",
+  "lint": {
+   "chars": 190,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 26.1,
+   "max_sentence_len": 39,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先講好喔，這集不是投資建議。<short pause> 我也不會報明牌啦。\n\n報告說，怪談其實有個規矩。鬼不會第一頁就跳出來。你猜它先給你看什麼？就是一個很正常的人，在做很合理的事。信裡的人超勤奮，有流程、有門檻，還有排隊清單。<short pause> 呃不對，應該說是策略的佇列啦。\n\n我看到這裡真的覺得很毛。問題根本不是他哪一步做錯，而是他走的那條路，前面早就擠滿人了。研究排開來看，幾十年來散戶都在做同一件事。差別只是換了供應商而已嘛。",
+   "lint": {
+    "chars": 190,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 30,
+    "sentences_over_20": 2,
+    "particles_per_100": 2.1,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "先說好喔，這集不是投資建議。\n我們也不報明牌啦。\n純粹聊技術，還有股市裡反覆出現的 bug。\n欸你知道怪談的規矩嗎？\n鬼通常不會在第一頁就跳出來。<short pause>\n它會先讓你看一個很正常的人，做很合理的事。\n信裡的人超勤奮，有流程、有門檻。\n就是……講白了，他每一步根本都沒做錯。\n那問題到底出在哪？\n問題是他走的那條路，前面早就有超多人走過。\n我看到這裡真的很有共鳴。<short pause>\n把幾十年的散戶研究排成一列，\n你會發現大家一直在做同一件事，\n差別只是換了供應商而已嘛。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 41,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "先講好喔，這集不是投資建議，也不報明牌。\n說到撞鬼，那個，怪談不是都有個規矩嗎？\n鬼通常不會在第一頁就跳出來。\n它會先讓你看見一個很正常的人，\n呃不對，是很合理的人在做合理的事。\n像信裡這位朋友，他其實超勤奮。\n他有固定的流程、有門檻，還有佇列。\n我看到這邊很能體會。<short pause>\n因為他哪一步都沒有做錯啊。\n那問題到底出在哪？\n就是他走的那條路，前面早就擠滿了人。\n把過去幾十年的研究排開來看，\n散戶其實一直在做同一件事。\n只是換了供應商而已啦。",
+   "lint": {
+    "chars": 205,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "我看到這裡真的很有共鳴。",
+   "to": "",
+   "reason": "多餘的口頭反應，EP05 用過同一句"
+  }
+ ]
+}

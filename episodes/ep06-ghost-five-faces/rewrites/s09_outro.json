@@ -1,0 +1,112 @@
+{
+ "segment": "s09_outro",
+ "position": "第 10 段，共 10 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "應該說",
+  "我看到這",
+  "我是說"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "23c8d46ec650c3968dc25576725205b27f773ccea966ff202b09a41a39c7ecc1",
+ "previous_context": "報告最後也對寫信的朋友說：你的流程其實沒有錯，你只是走在大家都走過的走廊上。先把「被虐得很慘」當資料存起來，那是你手上唯一真的東西。",
+ "original": {
+  "text": "今晚的 breakpoint：一、五張臉底下是同一副骨架，把判斷外包給沒辦法驗證的來源，再用對來源的信任取代驗證。二、股市裡的專家是相對位置，AI 讓人人當研究員，不會讓人人當贏家；回測是會說好話的鏡子，樣本外的紀錄才是真的。三、讓 AI 當否決者，守紀律、做規劃，最大的報酬在你的工作。再提醒一次，這集不是投資建議。然後片尾：原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 197,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 27.1,
+   "max_sentence_len": 55,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，別把判斷外包，用信任代替驗證 edge。\n第二，回測是說好話的鏡子，樣本外才是真的。\n第三，讓 AI 當否決者，最大報酬其實是本業。\n聽完有被敲醒嗎？還是覺得被說中了？\n我自己看到最後，真的很能體會那種心情啦。\n那個被市場修理的感覺，就是……超真實的。<sigh>\n對了，照慣例提醒一下，這集不是投資建議喔。\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 195,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n第一，五張臉底下的骨架都一樣。\n就是別把判斷外包出去，\n拿信任代替驗證自己的 edge。\n然後，股市裡的專家是相對位置。\nAI 讓人人都變研究員，\n但這樣大家就是贏家嗎？不可能嘛。<laugh>\n回測是會說好話的鏡子，\n呃不對，更像美顏濾鏡，\n只有樣本外的紀錄才是真的。\n最後，AI 其實更適合幫你守紀律，\n最大的報酬率還是在你的人力資本啦。\n對，再提醒一次，這集不是投資建議喔。\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 222,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 34,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n第一，那五張臉底下都是同一個骨架。\n不要把判斷外包出去，\n拿對來源的信任代替驗證 edge。\n\n第二，股市的專家是相對位置。\nAI 讓人人當研究員，但大家都會變贏家嗎？\n不會嘛。<laugh>\n回測是說好話的鏡子，樣本外紀錄才是真的。\n這點我真的很有共鳴。\n\n最後，讓 AI 幫忙守紀律、做規劃，\n那個最大的報酬率，其實是在你的工作啦。\n\n照慣例提醒一下，這集不是投資建議喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 217,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 15.7,
+    "max_sentence_len": 34,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "第一，別把判斷外包，用信任代替驗證 edge。",
+   "to": "第一，五張臉底下是同一個骨架：把判斷外包給沒辦法驗證的來源，再用信任代替驗證。",
+   "reason": "原句讀起來像在建議「用信任代替驗證」"
+  },
+  {
+   "from": "我自己看到最後，真的很能體會那種心情啦。那個被市場修理的感覺，就是……超真實的。<sigh>",
+   "to": "",
+   "reason": "Ping 沒有個人經歷，不能說自己被市場修理過"
+  }
+ ]
+}

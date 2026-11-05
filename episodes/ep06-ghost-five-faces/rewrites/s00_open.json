@@ -1,0 +1,115 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 10 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0564ba6d730f18b1854e4ef6f7fe80202ffd189e6e6b50542f46000985c4eb8d",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "今晚講一個股市怪談。先讀一封信，二〇二六年秋天有人這樣寫，名字已經拿掉了：他花了半年，建了一套每天晚上自動跑的 AI 研發流程，讓 agent 去抓全世界的量化文獻和公開策略。半年做出三支上線的策略。最近他換了個思路，叫 agent 把市面上附回測數據的商用策略全部爬回來，照文字描述反推出來。先測了十五支，八支通過他的門檻，佇列裡還有兩百多支在排隊。信的最後一行是：然後我最近被虐得很慘。報告說，整封信裡，只有最後這一行是真正的樣本外資料。這隻鬼，五十年來換了五張臉。",
+  "lint": {
+   "chars": 229,
+   "precise_numbers": [
+    "十五",
+    "兩百",
+    "五十"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 27.6,
+   "max_sentence_len": 73,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "今晚先講一個股市鬼故事。<short pause> 先說喔，這集不是投資建議。二〇二六年有人寫了一封信，他用 AI 弄了一套自動研發流程，叫 Agent 把市面上的策略爬回來逆向。測了十幾支，過半都達標耶，後面排隊的還有兩百多支。你看是不是覺得超厲害？結果信的最後一行寫著：<short pause>「然後我最近被虐得很慘。」我看到這句整個背脊發涼。<sigh> 就是，或者說，整封信裡面，只有最後這句是樣本外資料。樣本外就是，策略做出來之後，完全沒被拿去調參數的真實市場啦。五十年來，大家撞的原來都是同一隻鬼。",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [
+     "兩百",
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.8,
+    "max_sentence_len": 46,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 3
+   }
+  },
+  {
+   "text": "先說好，這集內容不是投資建議喔。\n最近看到一封信，名字已經拿掉了。\n那個人用 AI 建了一套夜間流程，\n叫 agent……就是抓商用策略回來逆向。\n聽起來很厲害對不對？\n他測了十幾支，竟然有八支通過門檻，\n佇列裡還有兩百多支在排隊耶。\n結果你猜信的最後一行寫什麼？\n他寫：「然後我最近被虐得很慘。」<laugh>\n我看到這句真的忍不住苦笑。<short pause>\n整封信講了一堆漂亮數據，\n只有這行被虐，才是真正的樣本外資料。\n樣本外就是做完策略後，沒看過的真實市場啦。\n五十年來，散戶撞的其實都是同一隻鬼。",
+   "lint": {
+    "chars": 220,
+    "precise_numbers": [
+     "兩百",
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 19.0,
+    "max_sentence_len": 34,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？\n先說好，這集不是投資建議喔。\n今晚先來講一個股市怪談。\n二〇二六年有人寫了一封信。\n他建了一套全自動 AI 研發流程。\n就是讓 Agent 去爬別人的商用策略，<short pause>\n把策略直接逆向反推——\n呃我是說，把人家的邏輯還原出來。\n你猜成果怎麼樣？超順的啊。\n隨便測了十幾支，就通過了一大半，\n排隊等著測的還有兩百多支。\n聽起來很神對吧？\n結果信的最後一句寫著：\n「然後我最近被虐得很慘。」<laugh>\n我看到這句整個哭笑不得。\n整封信裡，只有最後那行是「樣本外」。<short pause>\n也就是策略做完之後，才發生的真實市場資料。\n五十年來，大家撞的其實都是同一隻鬼啦。",
+   "lint": {
+    "chars": 250,
+    "precise_numbers": [
+     "兩百",
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 15.7,
+    "max_sentence_len": 44,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 3
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "嘿，還醒著嗎？先說好，這集不是投資建議喔。今晚先來講",
+   "to": "今晚先來講",
+   "reason": "cold open 不打招呼；投資聲明放在 s01，不重複"
+  },
+  {
+   "from": "你猜成果怎麼樣？超順的啊。隨便測了十幾支，就通過了一大半，",
+   "to": "你猜成果怎麼樣？超順的啊。先測了十五支，就有八支過了他自己設的門檻，",
+   "reason": "他有設門檻，「隨便測」不符素材，也帶嘲諷"
+  },
+  {
+   "from": "<laugh>我看到這句整個哭笑不得。",
+   "to": "",
+   "reason": "笑寫信的人；報告的態度是「你的流程沒有錯」"
+  }
+ ]
+}
