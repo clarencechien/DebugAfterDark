@@ -4,7 +4,7 @@
  "type": "full",
  "guid": "debug-after-dark:ep02",
  "title": "EP02 第五招的實驗：跑從來不是問題，看才是",
- "description": "上一集講到被轉傳漏掉的第五招：要有模型以外的裁判。這集就是那個裁判的實驗紀錄。AI 寫的網頁第一次就跑起來、零錯誤，你就以為做完了？同一段 prompt、同一架水上飛機，換四種駕駛艙各飛一次，十五次修改沒有一次在修「跑不跑得起來」。這集聊為什麼看得到才是問題、裁判的解析度，還有為什麼失敗清單比成品值錢。\n\n今晚的 breakpoint：\n1. 跑起來從來不是問題，看得到才是。\n2. 裁判的解析度決定一切，沒報錯不等於對。\n3. 失敗清單比成品值錢：先接好眼睛，再談野心。\n\n原文：〈跑從來不是問題，看才是 — harness-probe 試飛報告〉 https://imitator.ai-apps.work/r/harness-probe-report\n實驗：github.com/clarencechien/harness-probe\n\n上一集：EP01〈記住了第一招，漏掉了第五招〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "description": "上一集講到被轉傳漏掉的第五招：要有模型以外的裁判。這集就是那個裁判的實驗紀錄。AI 寫的網頁第一次就跑起來、零錯誤，你就以為做完了？同一段 prompt、同一架水上飛機，換四種駕駛艙各飛一次，十五次修改沒有一次在修「跑不跑得起來」。這集聊為什麼看得到才是問題、裁判的解析度，還有為什麼失敗清單比成品值錢。\n\n今晚的 breakpoint：\n1. 跑起來從來不是問題，看得到才是。\n2. 裁判的解析度決定一切，沒報錯不等於對。\n3. 失敗清單比成品值錢：先接好眼睛，再談野心。\n\n原文：〈跑從來不是問題，看才是 — harness-probe 試飛報告〉 https://imitator.ai-apps.work/r/harness-probe-report\n\n上一集：EP01〈記住了第一招，漏掉了第五招〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
  "report_slug": "harness-probe-report",
  "source_url": "https://imitator.ai-apps.work/r/harness-probe-report",
  "status": "final",
