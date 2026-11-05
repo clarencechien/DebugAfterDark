@@ -20,22 +20,22 @@
   "recipe": "docs/recipe.md",
   "takes_per_segment": 3,
   "selection": "select_takes.py --asr breeze --consistency --neighbour",
-  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac",
+  "segments_tag": "ep06v2"
  },
  "audio": {
   "file": "ep06-ghost-five-faces.mp3",
-  "bytes": 10634412,
-  "sha256": "b078d05a4ee513d17d1f2cad353980513a8bc5f5f3379f403d589898bd52714c",
-  "duration_s": 664.6,
-  "duration": "11:04",
-  "lufs": -16.8
+  "bytes": 9574886,
+  "sha256": "ec5a5ebe52a39fe4f035c753ea3b757bd83b976f32d3b4ed58138f078df2b081",
+  "duration_s": 598.4,
+  "duration": "9:58",
+  "lufs": -16.9
  },
  "qa": {
-  "breeze_cer_mean": 0.028,
-  "jitter_semitones": 0.242,
-  "consistency": "qa/consistency.json：10 段裡 5 段被標記，都是接縫亮度（s04→s05 +1234 Hz、s08→s09 -1384 Hz）與 s02 偏暗、語速 +10%",
-  "gates": "錯誤率 2.8% 通過；音高跳動 0.242 略超過 0.23；s03–s07 各補念 3 次後重選，s07 改回第一輪的 take2（新選的快 19%）",
-  "both_wrong": "只有虛詞：的／地、當→的、足→除、信→心",
-  "terms": "Ping、pong 3 次都判為英文念法"
+  "breeze_cer_mean": 0.021,
+  "jitter_semitones": 0.238,
+  "consistency": "qa/consistency.json：10 段裡 7 段被標記，多為接縫亮度（s08→s09 -1034 Hz）與語速 ±10–12%",
+  "gates": "錯誤率 2.1% 通過；音高跳動 0.238 略超過 0.23。第一版試聽「前五分鐘不穩、偏大陸腔、咬字不清」，稿子改白話後整集重新生成；s08 改用 take0（原選的快 15%）",
+  "previous": "第一版（未上架）：錯誤率 2.8%、音高跳動 0.242"
  }
 }
