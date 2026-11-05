@@ -100,6 +100,8 @@ footer { margin-top:40px; padding-top:16px; border-top:1px solid var(--line); co
 .ep-title { font:700 clamp(30px, 5.2vw, 50px)/1.25 var(--f-display); margin:6px 0 10px; text-wrap:balance; }
 .single audio { width:100%; margin:0 0 8px; }
 .single .sub-box { margin-top:36px; }
+.inapp-hint { margin:10px 0 6px; padding:10px 12px; border:1px dashed var(--lamp); border-radius:8px; background:rgba(240,180,92,.08); font-size:14.5px; line-height:1.7; }
+.inapp-hint a { font-weight:700; margin-left:6px; white-space:nowrap; }
 """
 
 
@@ -154,7 +156,12 @@ def share_button(show, e, num, title):
             f'data-title="{html.escape(num + " " + title + "｜" + show["title"])}">分享這一集</button>')
 
 
-SCRIPT = """<script>
+INAPP_HINT = ('<p class="inapp-hint" id="inapp-hint" hidden>你現在是在 <span class="app">app</span> 裡打開這個網頁。'
+              'app 內建的瀏覽器在鎖螢幕或切換 app 時常常會停止播放；點右上角的選單，改用 Safari 或 Chrome 開啟，就能邊做別的事邊聽。'
+              '<a href="#" hidden>直接用瀏覽器開啟</a></p>')
+
+
+SCRIPT = r"""<script>
 (function () {
   var copy = document.getElementById("copy-feed"), url = document.getElementById("feed-url");
   if (copy) copy.addEventListener("click", function () {
@@ -169,6 +176,34 @@ SCRIPT = """<script>
       var fallback = function () { window.prompt("複製這一集的連結：", u); };
       if (navigator.share) { navigator.share({ title: t, url: u }).catch(function () {}); return; }
       if (navigator.clipboard) navigator.clipboard.writeText(u).then(function () { done("已複製連結"); }, fallback); else fallback();
+    });
+  });
+  // In-app browsers (LINE, Facebook, Instagram...) often stop audio when the screen locks: say so, and for LINE offer
+  // its documented openExternalBrowser=1 switch (2026-11-05).
+  var hint = document.getElementById("inapp-hint");
+  if (hint) {
+    var ua = navigator.userAgent;
+    var app = /\bLine\//i.test(ua) ? "LINE" : /FBAN|FBAV|FB_IAB/.test(ua) ? "Facebook" : /Instagram/.test(ua) ? "Instagram" : /MicroMessenger/.test(ua) ? "微信" : "";
+    if (app) {
+      hint.querySelector(".app").textContent = app;
+      if (app === "LINE") { var u = new URL(location.href); u.searchParams.set("openExternalBrowser", "1"); var l = hint.querySelector("a"); l.href = u.toString(); l.hidden = false; }
+      hint.hidden = false;
+    }
+  }
+  // Media Session: lock screen, notification and Bluetooth show the episode title and cover, with 15 s back / 30 s forward.
+  var audios = document.querySelectorAll("audio[data-title]"), icon = document.querySelector('link[rel="icon"]');
+  audios.forEach(function (a) {
+    a.addEventListener("play", function () {
+      audios.forEach(function (o) { if (o !== a) o.pause(); });
+      if (!("mediaSession" in navigator) || typeof MediaMetadata === "undefined") return;
+      navigator.mediaSession.metadata = new MediaMetadata({ title: a.getAttribute("data-title"), artist: "深夜 Debug", album: "Debug After Dark",
+        artwork: icon ? [{ src: icon.href, sizes: "512x512", type: "image/jpeg" }] : [] });
+      var seek = function (d) { a.currentTime = Math.max(0, Math.min(a.duration || 0, a.currentTime + d)); };
+      var set = function (k, f) { try { navigator.mediaSession.setActionHandler(k, f); } catch (e) {} };
+      set("seekbackward", function (e) { seek(-((e && e.seekOffset) || 15)); });
+      set("seekforward", function (e) { seek((e && e.seekOffset) || 30); });
+      set("play", function () { a.play(); });
+      set("pause", function () { a.pause(); });
     });
   });
   var toggle = document.getElementById("toggle-all"), eps = document.querySelectorAll("details.ep");
@@ -191,7 +226,7 @@ def page(show, eps):
         items.append(f"""<details class="ep" id="{e['id']}">
 <summary><span class="num">{num}</span><span class="t">{html.escape(title)}</span><span class="when"><time datetime="{e['published']}">{d:%Y-%m-%d}</time> · <span title="長度">{length(e['audio']['duration_s'])}</span></span></summary>
 <div class="body">
-<audio controls preload="none" src="audio/{feed.audio_name(e)}"></audio>
+<audio controls preload="none" src="audio/{feed.audio_name(e)}" data-title="{html.escape(num + " " + title)}"></audio>
 <div class="share-row">{share_button(show, e, num, title)}<a href="{slug(e)}/">單集頁面</a></div>
 <p class="lead">{html.escape(lead)}</p>
 {bp_html}
@@ -236,6 +271,7 @@ def page(show, eps):
 <p class="intro">{html.escape(show['description'].split(chr(10))[0])}</p>
 <div class="sub-box"><span class="label">訂閱</span><code id="feed-url">{site}/feed.xml</code><button type="button" id="copy-feed">複製網址</button></div>
 {f'<p class="support"><span class="dot" aria-hidden="true"></span><span><a href="{html.escape(show["support_url"])}">{html.escape(show["support_text"])}</a>：覺得節目有幫助，可以單次或每月支持製作成本。</span></p>' if show.get("support_url") else ""}
+{INAPP_HINT}
 <div class="list-head"><h2>每一集</h2><button type="button" id="toggle-all" aria-pressed="false">全部展開</button></div>
 {''.join(items)}
 <section class="about"><h2>關於節目</h2>{para(about)}</section>
@@ -288,8 +324,9 @@ def episode_page(show, e):
 <p class="when"><time datetime="{e['published']}">{d:%Y-%m-%d}</time> · {length(e['audio']['duration_s'])}</p>
 </div></header>
 <main class="wrap single">
-<audio controls preload="none" src="../audio/{feed.audio_name(e)}"></audio>
+<audio controls preload="none" src="../audio/{feed.audio_name(e)}" data-title="{html.escape(num + " " + title)}"></audio>
 <div class="share-row">{share_button(show, e, num, title)}<a href="../#{e['id']}">← 所有集數</a></div>
+{INAPP_HINT}
 <p class="lead">{html.escape(lead)}</p>
 {bp_html}
 <div class="notes">{para((chr(10) * 2).join(rest))}</div>
