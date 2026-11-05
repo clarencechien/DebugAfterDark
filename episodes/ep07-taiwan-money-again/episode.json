@@ -26,6 +26,20 @@
   "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
  },
  "audio": {
-  "file": "ep07-taiwan-money-again.mp3"
+  "file": "ep07-taiwan-money-again.mp3",
+  "bytes": 8810867,
+  "sha256": "a1205e5748dd59a9311b2b824ca3fda1008acd4c784c650120f74872df8cb2bb",
+  "duration_s": 550.6,
+  "duration": "9:10",
+  "lufs": -16.9
+ },
+ "qa": {
+  "breeze_cer_mean": 0.028,
+  "jitter_semitones": 0.231,
+  "consistency": "qa/consistency.json：10 段裡 5 段被標記，都是接縫亮度（s01→s02 -1184 Hz 最大）；音高、聲紋都在範圍內",
+  "gates": "錯誤率 2.8% 通過；音高跳動 0.231，剛好在 0.23 邊上。一開始就照寫稿規則第 18 條寫白話稿，沒有整集重做",
+  "pitch_fix": "s02 自動選的 take0 音高 111 Hz，比整集高 18 Hz，聽起來像換人；補念 3 次後手動改用 take4（97.6 Hz）。挑選規則目前不看音高",
+  "both_wrong": "只有虛詞：了→的、多→都",
+  "terms": "Ping、pong 3 次都判為英文念法"
  }
 }
