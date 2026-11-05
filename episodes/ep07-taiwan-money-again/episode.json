@@ -7,7 +7,7 @@
  "description": "十月，經濟成長率衝到四十年來最高，台幣卻在貶，外資一週匯出一百八十億美元。一九八六年也是「台灣錢淹腳目」，那時台幣一路升、股市房市一起漲，最後是泡沫。同一句話，隔了四十年，結局完全相反。這集用同一本帳對照兩個年代：差別不在錢有多少，在錢可以去哪裡、多出來的美元誰接走。\n\n今晚的 breakpoint：\n1. 錢淹腳目要看的是錢可以去哪裡、多出來的美元誰接走。\n2. 一九八六年央行在擋水，現在央行在放水；台幣越來越像 AI 股的放大版。\n3. 匯率沒有單一原因，是好幾條管道進出的淨額，要看哪條最粗。\n\n原文：〈台灣錢淹腳目 again？— 同一本帳，兩個年代〉 https://imitator.ai-apps.work/r/taiwan-money-again\n報告資料截至 2026-10-19；一九八〇年代的數字多為二手資料。\n本集內容僅供參考，不構成投資建議。\n\n延伸收聽：EP06〈同一隻鬼，換了五張臉〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
  "report_slug": "taiwan-money-again",
  "source_url": "https://imitator.ai-apps.work/r/taiwan-money-again",
- "status": "draft",
+ "status": "final",
  "category_note": "財經類：說明與口播都有不構成投資建議",
  "related": [
   "ep06-ghost-five-faces"
@@ -41,5 +41,6 @@
   "pitch_fix": "s02 自動選的 take0 音高 111 Hz，比整集高 18 Hz，聽起來像換人；補念 3 次後手動改用 take4（97.6 Hz）。挑選規則目前不看音高",
   "both_wrong": "只有虛詞：了→的、多→都",
   "terms": "Ping、pong 3 次都判為英文念法"
- }
+ },
+ "published": "2026-11-05T13:28:00+08:00"
 }
