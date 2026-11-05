@@ -23,6 +23,19 @@
   "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
  },
  "audio": {
-  "file": "ep06-ghost-five-faces.mp3"
+  "file": "ep06-ghost-five-faces.mp3",
+  "bytes": 10634412,
+  "sha256": "b078d05a4ee513d17d1f2cad353980513a8bc5f5f3379f403d589898bd52714c",
+  "duration_s": 664.6,
+  "duration": "11:04",
+  "lufs": -16.8
+ },
+ "qa": {
+  "breeze_cer_mean": 0.028,
+  "jitter_semitones": 0.242,
+  "consistency": "qa/consistency.json：10 段裡 5 段被標記，都是接縫亮度（s04→s05 +1234 Hz、s08→s09 -1384 Hz）與 s02 偏暗、語速 +10%",
+  "gates": "錯誤率 2.8% 通過；音高跳動 0.242 略超過 0.23；s03–s07 各補念 3 次後重選，s07 改回第一輪的 take2（新選的快 19%）",
+  "both_wrong": "只有虛詞：的／地、當→的、足→除、信→心",
+  "terms": "Ping、pong 3 次都判為英文念法"
  }
 }
