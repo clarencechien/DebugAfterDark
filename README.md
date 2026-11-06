@@ -24,14 +24,16 @@
 ## 上架狀態
 - 網站與 feed：<https://podcast.ai-apps.work>，feed `https://podcast.ai-apps.work/feed.xml`（GitHub Pages，見 `PIPELINE.md` §5 的過渡方案）
 - 擁有者信箱：`podcast@ai-apps.work`（Cloudflare Email Routing 轉寄）
-- 還沒送審 Apple Podcasts、Spotify 等平台（順序與做法見下面「上架平台」）；YouTube 已建好品牌帳號頻道，還沒匯入 RSS
+- **Spotify**：已上架（2026-11-06），<https://open.spotify.com/show/56y20c8Jscmnjajo8vUIzw>
+- **Apple Podcasts**：Podcasts Connect 顯示 Available（2026-11-06），節目 ID `6831404475`；公開頁 <https://podcasts.apple.com/tw/podcast/id6831404475> 等 Apple 目錄同步後才打得開，打得開再加進網站（`show.json` 的 `listen_on`）
+- 其他平台（KKBOX、Podcast Index、YouTube RSS）還沒送；YouTube 已建好品牌帳號頻道
 - 網站功能：每集一頁（`/ep05/` 這種短網址，有各自的分享預覽）、每集「分享這一集」按鈕；在 LINE、Facebook、Instagram 等 app 內建瀏覽器打開時提示改用瀏覽器（LINE 另有一鍵 `openExternalBrowser=1`）；Media Session 讓鎖定畫面顯示集名與封面，可倒退 15 秒、快轉 30 秒（`tools/build_site.py`）
 - 下載數據：SoundOn Prefix（`show.json` 的 `enclosure_prefix`），feed 裡的音檔網址先經過 SoundOn 再 302 回我們的檔案；網站播放器不經過
 - 贊助連結：<https://portaly.cc/clarencech/support>（`show.json` 的 `support_url`），見下面的「Portaly 現況」
 
-## 上架平台（2026-11-05 整理；還沒送審）
+## 上架平台（2026-11-05 整理）
 
-### 建議的順序
+### 建議的順序（Apple、Spotify 已送，2026-11-06）
 | 順序 | 平台 | 怎麼上 | 費用 | 審核 | 備註 |
 |---|---|---|---|---|---|
 | 1 | Apple Podcasts | 用 Apple 帳號登入 Podcasts Connect，貼 feed 網址 | 免費（付費訂閱方案另計，非必要） | 通常幾天 | 很多第三方 app（Overcast、Pocket Casts 等）也從 Apple 目錄找節目。內容規範要求 AI 合成聲音在**內容與資料裡都要明顯揭露** |

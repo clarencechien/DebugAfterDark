@@ -51,6 +51,8 @@ main.wrap { padding-block:28px 72px; }
 button { font:500 13px/1 var(--f-mono); color:var(--ink); background:transparent; border:1px solid var(--line); border-radius:6px; padding:9px 12px; cursor:pointer; }
 button:hover { border-color:var(--lamp); color:var(--lamp); }
 
+.listen { margin:12px 0 0; color:var(--muted); font-size:15px; }
+.listen a { font-weight:700; }
 .support { display:flex; align-items:center; gap:10px; margin:14px 0 0; color:var(--muted); font-size:15px; }
 .support a { font-weight:700; }
 .list-head { display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin:44px 0 8px; }
@@ -148,6 +150,12 @@ def ep_parts(e):
                        for i, t in enumerate(bps, 1))
         bp_html = f'<section class="bp" aria-label="今晚的 breakpoint"><h4>今晚的 breakpoint</h4><ol>{rows}</ol></section>'
     return d, lead, rest, num, title, bp_html
+
+
+def listen_html(show):
+    """Platform links from show.json listen_on (Spotify, Apple Podcasts ...), shown under the subscribe box."""
+    links = [f'<a href="{html.escape(x["url"])}">{html.escape(x["name"])}</a>' for x in show.get("listen_on", [])]
+    return f'<p class="listen">也可以在 {"、".join(links)} 收聽，或把上面的網址貼進任何 podcast app 訂閱。</p>' if links else ""
 
 
 def share_button(show, e, num, title):
@@ -270,12 +278,13 @@ def page(show, eps):
 <main class="wrap">
 <p class="intro">{html.escape(show['description'].split(chr(10))[0])}</p>
 <div class="sub-box"><span class="label">訂閱</span><code id="feed-url">{site}/feed.xml</code><button type="button" id="copy-feed">複製網址</button></div>
+{listen_html(show)}
 {f'<p class="support"><span class="dot" aria-hidden="true"></span><span><a href="{html.escape(show["support_url"])}">{html.escape(show["support_text"])}</a>：覺得節目有幫助，可以單次或每月支持製作成本。</span></p>' if show.get("support_url") else ""}
 {INAPP_HINT}
 <div class="list-head"><h2>每一集</h2><button type="button" id="toggle-all" aria-pressed="false">全部展開</button></div>
 {''.join(items)}
 <section class="about"><h2>關於節目</h2>{para(about)}</section>
-<footer>{f'<p><a href="{html.escape(show["support_url"])}">{html.escape(show["support_text"])}</a></p>' if show.get("support_url") else ""}<p>本節目的聲音由 AI 語音合成，不模仿任何真人；內容改寫自 <a href="https://imitator.ai-apps.work/">imitator</a> 上的文章，每一集都經過真人審稿與試聽。Apple Podcasts、Spotify 上架中，先用上面的網址訂閱。</p></footer>
+<footer>{f'<p><a href="{html.escape(show["support_url"])}">{html.escape(show["support_text"])}</a></p>' if show.get("support_url") else ""}<p>本節目的聲音由 AI 語音合成，不模仿任何真人；內容改寫自 <a href="https://imitator.ai-apps.work/">imitator</a> 上的文章，每一集都經過真人審稿與試聽。</p></footer>
 </main>
 {SCRIPT}
 </body>
@@ -331,6 +340,7 @@ def episode_page(show, e):
 {bp_html}
 <div class="notes">{para((chr(10) * 2).join(rest))}</div>
 <div class="sub-box"><span class="label">訂閱</span><code id="feed-url">{site}/feed.xml</code><button type="button" id="copy-feed">複製網址</button></div>
+{listen_html(show)}
 {support}
 <footer><p>本節目的聲音由 AI 語音合成，不模仿任何真人；內容改寫自 <a href="https://imitator.ai-apps.work/">imitator</a> 上的文章，每一集都經過真人審稿與試聽。</p></footer>
 </main>
