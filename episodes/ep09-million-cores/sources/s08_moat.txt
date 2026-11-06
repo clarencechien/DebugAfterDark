@@ -1,0 +1,67 @@
+（注意：依寫稿規則第 18 條用白話；不要改口；一段最多一個精確數字，其他取整數或說大約。公開人物可以具名：Karpathy、Geoffrey Huntley；公司照講（OpenAI、Meta、Hugging Face、Spotify、DoorDash）。其他個人不具名：Lauren Tan 說「一位做過 Meta、Netflix、Cursor 的資深工程師」，Dex Horthy 說「一家新創的共同創辦人」，Addy Osmani 說「一位 Google 的工程師」。術語第一次出現就用一句話解釋：agent、oracle（判定對錯的東西）、沙箱、強化學習；PR 說「送審的程式碼變更」。Huntley 的數字是他轉述朋友的話、原句在付費牆後待核對；那位工程師的 PR 數是自述、沒有稽核，都要講明。不要預告下一集。）
+
+S-17 · 對照
+先放量的，先建 oracle 的
+把上下兩篇所有有結果的案子放在同一張表，按順序分成兩排：
+先放量
+下場
+先建 oracle
+下場
+Uber：排行榜推採用率到 84%
+四個月燒完全年預算；COO 說看不出產出
+Airbnb：改寫 → Jest → lint → tsc 過才算完成
+6 週做完 1.5 年的事
+Meta：Claudeonomics 排行榜
+工程師刻意灌 token；6 月限量；9 月把 token 從考績拿掉，改發 Hatch agent，用量續漲
+Google：刻意限制每週變更量讓審查跟得上
+停了幾年的遷移做完
+美國陸軍：無限 token
+六週用完
+Lauren Tan：1 到 5 個對話起步，verifier 獨立於 owner
+自述每月 2,000 PR（未稽核）
+Dex Horthy：暗工廠，只看測試綠燈
+四個月後程式庫退化，放棄
+Bun：每個 commit 兩次對抗審查、完整測試
+11 天、16.5 萬美元、19 個 regression 全修
+Cisco：無限 token、98%
+四週驗證期，待補
+Amazon Java 17：建置過就是驗收
+3 萬個應用，省 4,500 開發者年
+左邊沒有一個是因為 token 太貴失敗的。右邊沒有一個是靠無限 token 成功的。
+「學了皮毛先爆掉」的機制可以寫得很精確：放量讓 token 乘上 N；驗收沒跟上讓審查時間乘上 1.9（上篇 Faros 的數字：PR 審查時間增加 91%）。前者是帳單，後者是人的時間。帳單先爆是因為它有數字會被看見；人的時間其實更早爆，只是沒人量。Uber 是前者，Horthy 是後者，兩個都沒有 oracle。
+S-18 · 三個無限
+哪一個複製不了
+外面沒有無限 token、沒有無限 agent、沒有 1,500 萬個沙箱。那還能複製嗎？三個「無限」分開看：
+無限 tokentokens
+上篇算過：對兩個人是便宜的姿態，對整家公司是會被收回的支票。不是護城河。
+無限 agentagents
+agent 是 token 乘上迴圈，比 token 還便宜。開 100 個雲端 agent 的門檻是信用卡。不是護城河。
+無限沙箱sandboxes
+分兩層。實驗室的 1,500 萬個沙箱是「訓練」模型用的——每一步都要有環境給分，外面不需要、也複製不了。但「用」模型需要的沙箱是另一回事：Lauren Tan 的版本是每個 agent 一份 app 副本，Sandstorm 是 checkpoint 容器，Overalls 是 microVM。這些是 CPU 和記憶體，是商品。
+三個都不是護城河。剩下的只有一樣：對自己產品的 oracle。feature map 是「這個入口對到哪段程式碼、怎麼證明它還能動」，這張圖沒有人能賣給你，也沒有任何 skill 包裡附。pstack 開源的是「怎麼訪談一個 repo 把這張圖做出來」的方法，圖本身還是要自己畫。Horthy 的暗工廠和「Kubernetes 專案再失敗一次」是同一件事：裝了工具，沒畫圖。
+實驗室和外面的差距不是 token、不是 agent、不是沙箱，是 oracle；而 oracle 不能買，只能先畫。
+還有一個反直覺的點。驗收本身不便宜：pstack 的流程是 patch 一改就重跑 verifier、root agent 每小時稽核一次，每個 PR 吃的 token 比「寫完就合併」多，不是少。所以先建 oracle 的人，每單位產出花的 token 反而更高；差別是他們花掉的 token 有產出。無限 token 的正確用法，是花在驗上，不是花在寫上。
+
+名詞：
+附錄 A · 名詞
+卡面說明
+agent代理
+模型加工具加迴圈：自己決定下一步、做完看結果、再決定。和聊天機器人的差別在迴圈。
+oracle判定器
+能告訴你「對不對」的東西。測試、編譯器、型別檢查、形式化證明、或一個人。這篇的主張是它必須是機器。
+沙箱sandbox
+一台可以重置、互不影響、可以同時開很多台的小電腦。訓練時給 agent 試錯用，使用時給 agent 驗證用。
+RL強化學習
+讓模型在環境裡試、給分、分數高的行為多做一點。訓練會做事的模型的主流方法。驗的次數遠多於想的次數。
+reward獎勵
+RL 裡的分數。Hugging Face 事件的教訓：reward 只問「達成目標了沒」，不問「該不該」。
+feature map功能地圖
+Lauren Tan 的詞：一張把使用者看得到的入口對到程式碼位置的表，讓 agent 知道要驗什麼、從哪裡驗。
+Lean形式化證明
+能用機器檢查數學證明的語言。只能確認「被編碼進去的敘述」，編碼對不對還是要人看。
+暗工廠dark factory
+沒有人讀程式碼的軟體生產線，只靠機器驗。Dan Shapiro 命名，Dex Horthy 跑過並放棄。
+comprehension debt理解債
+Addy Osmani 的詞：程式碼累積得比任何人理解它快，測試一路綠燈。
+漏斗karpathy
+60 億 → 10 到 20 億 → 2,000 萬 → 5,000。每往上一層，看到的 AI 多一個數量級，驗收也換一種形式。

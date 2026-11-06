@@ -1,0 +1,70 @@
+（注意：依寫稿規則第 18 條用白話；不要改口；一段最多一個精確數字，其他取整數或說大約。公開人物可以具名：Karpathy、Geoffrey Huntley；公司照講（OpenAI、Meta、Hugging Face、Spotify、DoorDash）。其他個人不具名：Lauren Tan 說「一位做過 Meta、Netflix、Cursor 的資深工程師」，Dex Horthy 說「一家新創的共同創辦人」，Addy Osmani 說「一位 Google 的工程師」。術語第一次出現就用一句話解釋：agent、oracle（判定對錯的東西）、沙箱、強化學習；PR 說「送審的程式碼變更」。Huntley 的數字是他轉述朋友的話、原句在付費牆後待核對；那位工程師的 PR 數是自述、沒有稽核，都要講明。不要預告下一集。）
+
+Dex Horthy 的暗工廠 — 沒有東西補
+HumanLayer 的共同創辦人跑了三到四個月「沒有人讀程式碼」的工廠：agent 寫、測試綠燈、合併。最後因為程式庫退化而放棄。Addy Osmani 把這叫 comprehension debt：程式碼累積的速度超過任何人理解它的速度，而且測試一路是綠的。他的警告是清算不會是戲劇性的「全部出事」，會是「安靜而且晚到」。
+這件事的 oracle 只有測試，而測試只覆蓋有人想到要寫的情況。
+Q14三個縫隙，三種 oracle：Lean、reward、測試——都不是人
+S-15 · 外面的工廠
+生成那一半很多，驗收那一半很少
+10 月底有人整理了一份「軟體工廠」清單：讓 agent 自動、平行、迴圈跑的系統。把裡面有說明的挑出來，按「它的 oracle 是什麼」排：
+系統
+誰做的
+規模（自述）
+oracle
+Gas Town
+Steve Yegge
+一個「市長」派工給每群 20 到 30 個 agent
+未說明
+Paradev
+前 Superset
+100 個以上 agent 在平行 worktree
+未說明
+Sandstorm
+deeplethe
+幾千個 agent 沙箱，閒置就 checkpoint
+這是沙箱，不是 oracle
+loki-mode
+asklokesh
+41 個 agent、8 個 swarm
+九道品質關卡
+Agentic Orchestrator
+DoorDash
+並行工作流
+分階段關卡，產出是「經審查的 PR」
+Overalls
+Geoffrey Huntley
+常駐 Firecracker microVM，關筆電還在跑
+11 月才出，未知
+Spotify 背景 agent
+Spotify
+合併了 1,500 個以上 AI 產生的 PR
+人審
+pstack
+Lauren Tan
+一個人；PR 數見下節
+獨立的 verifier、在真的產品上重現——見下節
+這張表的左三欄都很熱鬧，右邊那欄一半是空的。生成那一半人人在做，因為它只需要信用卡；驗收那一半很少人做，因為它需要你對自己的產品很熟。這就是 Kubernetes 的形狀。
+
+名詞：
+附錄 A · 名詞
+卡面說明
+agent代理
+模型加工具加迴圈：自己決定下一步、做完看結果、再決定。和聊天機器人的差別在迴圈。
+oracle判定器
+能告訴你「對不對」的東西。測試、編譯器、型別檢查、形式化證明、或一個人。這篇的主張是它必須是機器。
+沙箱sandbox
+一台可以重置、互不影響、可以同時開很多台的小電腦。訓練時給 agent 試錯用，使用時給 agent 驗證用。
+RL強化學習
+讓模型在環境裡試、給分、分數高的行為多做一點。訓練會做事的模型的主流方法。驗的次數遠多於想的次數。
+reward獎勵
+RL 裡的分數。Hugging Face 事件的教訓：reward 只問「達成目標了沒」，不問「該不該」。
+feature map功能地圖
+Lauren Tan 的詞：一張把使用者看得到的入口對到程式碼位置的表，讓 agent 知道要驗什麼、從哪裡驗。
+Lean形式化證明
+能用機器檢查數學證明的語言。只能確認「被編碼進去的敘述」，編碼對不對還是要人看。
+暗工廠dark factory
+沒有人讀程式碼的軟體生產線，只靠機器驗。Dan Shapiro 命名，Dex Horthy 跑過並放棄。
+comprehension debt理解債
+Addy Osmani 的詞：程式碼累積得比任何人理解它快，測試一路綠燈。
+漏斗karpathy
+60 億 → 10 到 20 億 → 2,000 萬 → 5,000。每往上一層，看到的 AI 多一個數量級，驗收也換一種形式。

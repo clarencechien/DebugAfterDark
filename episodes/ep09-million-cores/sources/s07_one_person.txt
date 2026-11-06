@@ -1,0 +1,44 @@
+（注意：依寫稿規則第 18 條用白話；不要改口；一段最多一個精確數字，其他取整數或說大約。公開人物可以具名：Karpathy、Geoffrey Huntley；公司照講（OpenAI、Meta、Hugging Face、Spotify、DoorDash）。其他個人不具名：Lauren Tan 說「一位做過 Meta、Netflix、Cursor 的資深工程師」，Dex Horthy 說「一家新創的共同創辦人」，Addy Osmani 說「一位 Google 的工程師」。術語第一次出現就用一句話解釋：agent、oracle（判定對錯的東西）、沙箱、強化學習；PR 說「送審的程式碼變更」。Huntley 的數字是他轉述朋友的話、原句在付費牆後待核對；那位工程師的 PR 數是自述、沒有稽核，都要講明。不要預告下一集。）
+
+S-16 · 一個人的答案卡
+Lauren Tan 說的，和標題說的
+外面流傳最廣的「一個人控成千上萬個 agent」故事，主角是 Lauren Tan。她不是新人：Principal Engineer，做過 Meta、Netflix、Cursor，隨 Cursor 併入 xAI，React Compiler 核心成員。她的數字是這樣一路長大的：
+ 8 月下旬一小時工作坊：上個月約 1,000 個 PR；某天早上醒來約 20 個 PR 已經自動合併
+ 8 月LinkedIn 貼文：每月 2,000
+ 9 月 19 日The New Stack（Signadot 執行長寫的贊助文）：2,000，作者自己說是離群值、未驗證
+ 10 月 3 日直播標題：2,500；她在直播裡說約 2,000，而且「數字從來不是目標」
+ 之後二手標題：「30+ agents」「Grok Bot 的 architect」。前者沒有出處，後者她自己沒說過
+這條時間線和上篇 Cisco 的 REV.00、REV.01 是同一種東西：每轉一手，驗收就掉一點，agent 數就長一點。
+她自己講的順序剛好反過來。一開始她只同時看 1 到 5 個對話；信任沒建立前開 100 個雲端 agent，得到的是「一堆垃圾 PR」。她把修問題的方法分五層，由強到弱：程式庫和架構、靜態分析、規則和 lint、人工審查、驗證 skill——前三層到位才加自動化。她說她現在幾乎不看程式碼了，但原因不是不用看，是架構限制、CI 和驗證流程接手了她以前逐行做的事。
+她的 oracle 長這樣：一個內部工具用 Chrome DevTools Protocol 驅動真的 app，配一張把使用者入口對到程式碼位置的 feature map；每個 agent 拿一份完整的 app 副本，流程是重現、留證據（截圖、log、trace）、修、沿同一路徑回歸。驗證 skill 本身被當成需要測試的軟體，用多個模型在隔離的 worktree 跑同一任務，由裁判模型評分。她的原話：驗證是 critical infrastructure，必要的話「甚至換一個技術棧」。
+5 月她把工作方式開源成 Cursor 的 pstack 外掛。裡面有幾十個 skill，但跟這篇有關的只有兩條規則：
+ 寫的 agent 不能自己判定自己過關。一個 owner agent 把 PR 帶到合併前，合併由獨立的 verifier 把關；verifier 要重跑關卡、在真的產品上重現行為、審 diff，而且「不信任 PR 描述」。patch 一改就重跑，合併要 verdict 對得上那個 patch，加上 rebase 之後的 CI 綠燈。
+ 證據要來自真的使用者路徑。每個專案要有自己的驗證 skill，固定六段：啟動、健檢、操作、證據、清理、輔助。「一個沒有被執行過的生成 skill 只是草稿，不是交付物。」
+還有一條關於學習的：同一個錯第二次出現，修法的順序是架構、型別或 lint、行為測試，文件和 agent 規則放最後。越能被機器強制的越優先，寫成 prompt 的放最後。
+她做的事，是把實驗室那套「無限批改」縮小到一個人的規模：實驗室用 1,500 萬個沙箱，她用一份能被 agent 操作的 app 副本加一張 feature map。原理一樣：先有 oracle，再放量。
+哪些是查得到的
+PR 數全部是她的自述，沒有第三方稽核；一篇整理也提醒，8 月的 2,462 個 PR 裡大半是維護性變更。Control Glass 和 Dune 沒有公開文件。pstack 在 Cursor 官方 plugins repo，是唯一能查核的部分；10 月 5 日的版本是 0.15.9，26 個工作流 skill、24 個原則 skill、23 個 playbook、2 個 subagent。
+
+名詞：
+附錄 A · 名詞
+卡面說明
+agent代理
+模型加工具加迴圈：自己決定下一步、做完看結果、再決定。和聊天機器人的差別在迴圈。
+oracle判定器
+能告訴你「對不對」的東西。測試、編譯器、型別檢查、形式化證明、或一個人。這篇的主張是它必須是機器。
+沙箱sandbox
+一台可以重置、互不影響、可以同時開很多台的小電腦。訓練時給 agent 試錯用，使用時給 agent 驗證用。
+RL強化學習
+讓模型在環境裡試、給分、分數高的行為多做一點。訓練會做事的模型的主流方法。驗的次數遠多於想的次數。
+reward獎勵
+RL 裡的分數。Hugging Face 事件的教訓：reward 只問「達成目標了沒」，不問「該不該」。
+feature map功能地圖
+Lauren Tan 的詞：一張把使用者看得到的入口對到程式碼位置的表，讓 agent 知道要驗什麼、從哪裡驗。
+Lean形式化證明
+能用機器檢查數學證明的語言。只能確認「被編碼進去的敘述」，編碼對不對還是要人看。
+暗工廠dark factory
+沒有人讀程式碼的軟體生產線，只靠機器驗。Dan Shapiro 命名，Dex Horthy 跑過並放棄。
+comprehension debt理解債
+Addy Osmani 的詞：程式碼累積得比任何人理解它快，測試一路綠燈。
+漏斗karpathy
+60 億 → 10 到 20 億 → 2,000 萬 → 5,000。每往上一層，看到的 AI 多一個數量級，驗收也換一種形式。
