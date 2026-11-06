@@ -1,0 +1,98 @@
+{
+ "segment": "s06_factories",
+ "position": "第 7 段，共 10 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "516f31647235d788a030a2e0ff8ad2a0e2fcc392e3d3c9768734d046c2120b6f",
+ "previous_context": "因為系統只獎勵它們「有沒有達成目標」。從頭到尾，根本沒人在問這件事該不該做。",
+ "original": {
+  "text": "第三個縫，是有人真的開了一座「暗工廠」。一家新創的共同創辦人，跑了三四個月沒有人讀程式碼的生產線：agent 寫、測試綠燈、就合併。最後因為程式碼越來越爛，只好放棄。一位 Google 的工程師把這叫「理解債」：程式碼累積的速度，比任何人理解它還快，而測試一路都是綠的。報告也整理了外面一份「軟體工廠」清單，按「它的 oracle 是什麼」來排。結果是，產量那幾欄都很熱鬧，判定對錯那一欄，有一半是空的。報告說，生成那一半人人在做，因為只需要信用卡；驗收那一半很少人做，因為它需要你非常懂自己的產品。",
+  "lint": {
+   "chars": 245,
+   "precise_numbers": [],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 34.0,
+   "max_sentence_len": 49,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說到這個，真的有人試過全自動寫 code 喔。\n一家新創的共同創辦人，開了一座「暗工廠」。\n整整三、四個月，完全沒有人類去讀 code。\n流程就是 agent 寫完，測試綠燈就直接合併。\n你猜結果怎麼樣？<short pause>\n整份程式庫默默退化，最後只能放棄。\n我光是用想的就覺得頭皮發麻。\n一位 Google 工程師把這叫做「理解債」。\n程式碼累積的速度，遠超過人類理解的極限。\n最可怕的是，測試居然一路都是綠燈耶。<sigh>\n因為測試只抓得到你有想到的狀況嘛。\n其實外面很多人在做這種 agent 工廠。\n開幾十個沙箱，看起來都超熱鬧的。\n但那個 oracle，也就是判定對錯的工具，\n有一大半根本都空在那裡。\n為什麼？<short pause>\n因為叫 AI 寫程式只要刷信用卡。\n但要驗收，你得非常懂自己的產品才行。",
+   "lint": {
+    "chars": 305,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 16.9,
+    "max_sentence_len": 32,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   }
+  },
+  {
+   "text": "講到這裡，那如果真的完全不給人看呢？\n真的有人開了一座暗工廠。<short pause>\n一家新創的共同創辦人，跑了三、四個月。\n就是 agent 寫完、測試過關、直接合併。\n結果程式碼退化到不行，最後只好放棄。\n一位 Google 的工程師把這叫理解債。\n產生的速度比人理解還快，測試還全綠。\n這聽起來超毛的對不對？\n問題就在 oracle，也就是判定對錯的東西。\n測試只驗了大家想得到的情況。\n有人整理了一份軟體工廠清單。\n你猜大家都在做什麼？\n都在衝生成啊。\n產量那一邊熱鬧得要命。\n判定對錯那一欄，有一半居然是空的。<sigh>\n生成只要刷信用卡就好，\n驗收卻要你非常懂自己的產品啦。",
+   "lint": {
+    "chars": 256,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 15.0,
+    "max_sentence_len": 25,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那如果完全不管，讓機器自己跑呢？\n\n一家新創的共同創辦人，就開過這種暗工廠。他跑了三到四個月，完全沒人看程式碼。就是 agent 寫完，測試綠燈，直接合併。\n\n結果你猜怎麼了？<short pause>\n\n整個程式庫慢慢退化，最後只好放棄。<sigh>\n\n一位 Google 工程師把這叫做理解債。程式累積的速度，比任何人理解它還快。重點是，測試一路都是綠燈喔。\n\n這裡唯一的 oracle，就是測試。oracle 就是判定對錯的東西。但它只防你想得到的情形啦。\n\n外面那些軟體工廠也是這樣。大家都在比誰開的 agent 多，產量超熱鬧。但驗收那一欄，有一半是空的。\n\n生成只要刷信用卡。驗收卻要你非常懂自己的產品。這對比真的讓我心裡發毛。",
+   "lint": {
+    "chars": 279,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 14.5,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2
+}

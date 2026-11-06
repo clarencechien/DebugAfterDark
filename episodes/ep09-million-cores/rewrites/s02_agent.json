@@ -1,0 +1,109 @@
+{
+ "segment": "s02_agent",
+ "position": "第 3 段，共 10 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e7d7b9478a20c398ecb307c5080eb794701eda5d6ba2b115a85397d7d917d4c0",
+ "previous_context": "agent 就是 token 乘上迴圈。算到底，它依然只是投入啦。",
+ "original": {
+  "text": "先講 agent 是什麼。聊天機器人是你問、它答，就結束了。agent 是你給它一個目標，它自己決定下一步：讀一個檔案、跑一個指令、改一段程式，做完看結果，再決定下一步，直到它覺得做完了。所以 agent 等於模型，加上工具，加上一個一直跑下去的迴圈。這個迴圈裡最關鍵的一步，是每做完一步，它得知道做對了沒。工程上把這個「誰來判對錯」的角色，叫做 oracle，例如測試、編譯器，或是一個人盯著看。如果判定是模型自己說「我覺得做對了」，那就是自己批改自己的考卷。上一集提過，失敗的題目裡，幾乎全部 AI 都以為自己做對了。報告說，沒有 oracle 的地方，agent 的自信和它對不對，沒有關係。",
+  "lint": {
+   "chars": 288,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 9,
+   "avg_sentence_len": 31.0,
+   "max_sentence_len": 62,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "既然講到迴圈，那 agent 到底是什麼？\n一般聊天機器人，是你問一句它答一句就結束。\nagent 就不一樣了喔。\n你給它一個目標，它會自己決定下一步。\n像是讀個檔案、跑個指令，或是改一段程式。\n做完看結果，再決定下一步，直到目標達成。\n所以它就是模型加上工具，再套上一個迴圈。\n問題是，每做完一步，它怎麼知道做對了沒？\n工程上判定對錯的東西，就叫做 oracle。<short pause>\n像是自動測試、編譯器，或是有人盯著看。\n那要是讓模型自己判斷呢？\n那不就是自己改自己的考卷嘛。<laugh>\n這真的超諷刺的。\n有份測試拿真實的舊程式來考，\n在那些失敗的任務裡面，\n有百分之九十七，覺得自己早就解決了。\n換句話說，沒有 oracle 在旁邊盯著，\n它的自信，跟有沒有做對根本無關啦。",
+   "lint": {
+    "chars": 303,
+    "precise_numbers": [
+     "百分之九十七"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 19.2,
+    "max_sentence_len": 42,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那 agent 到底跟一般聊天差在哪？\n一般機器人是你問一句它答一句，就沒了。\n但 agent 是你給它目標，它自己決定下一步。\n它會自己跑指令、改程式，一直試到目標達成。\n所以 agent 就是模型加工具，再加上迴圈。\n但這個迴圈裡，最關鍵的是什麼？\n是它每一步做完，得知道做對了沒。<short pause>\n工程上把判定對錯的東西，叫做 oracle。\n像是自動測試或編譯器，都是 oracle 喔。\n要是沒有這個機制，你猜會怎樣？\n那就是考生自己改自己的考卷嘛。<laugh>\n之前有份評測，讓 agent 去解舊程式。\n結果在所有失敗的任務裡面，\n有高達百分之九十七，它以為自己成功了！\n這真的超恐怖，根本是自我感覺良好。\n沒有 oracle 把關，它的自信跟對錯完全無關。",
+   "lint": {
+    "chars": 294,
+    "precise_numbers": [
+     "百分之九十七"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 18.6,
+    "max_sentence_len": 31,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那這個迴圈到底在跑什麼？\n一般的聊天機器人，是你問它答，結束。\n但 agent 不一樣喔。\n你給它一個目標，它自己決定下一步。\n像是讀個檔案、跑個指令、改幾行程式。\n做完看一下結果，再決定下一步要幹嘛。\n所以它就是模型加工具，再用迴圈一直跑。\n那這裡面最關鍵的是什麼？\n就是每做完一步，它得知道做對了沒。\n工程上把判定對錯的東西，叫做 oracle。\n像是跑測試、編譯器，或是有人盯著看。\n如果沒有 oracle 呢？\n讓模型自己判斷，就像自己改自己的考卷嘛。<laugh>\n有研究拿真實的舊程式去測，結果超諷刺。\n在所有失敗的任務裡面，\n有百分之九十七的 agent，堅信自己做對了。\n這數字光是用看的就起雞皮疙瘩。<short pause>\n也就是說，沒有 oracle 在旁邊把關，\nagent 的自信跟它有沒有做對，完全無關啦。",
+   "lint": {
+    "chars": 321,
+    "precise_numbers": [
+     "百分之九十七"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 40,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "在所有失敗的任務裡面，有百分之九十七的 agent，堅信自己做對了。",
+   "to": "在所有失敗的任務裡面，有百分之九十七，agent 都堅信自己做對了。",
+   "reason": "事實錯誤：是失敗任務的九成七，不是九成七的 agent（EP08 同樣的錯）"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 10 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "9802c5c4df62d7a9c0c26d39c00b5ce4e46f85e89fe58b6962ae9407128cff20",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "今年上半年，大家在問：我有多少 token？到了下半年，問題變成：我能同時控幾個 agent？報告說，這兩次數的都是投入。實驗室和外面真正的差距，只有一樣東西，而且它買不到。這集只用一個比喻：答案卡。卡上的格線印成讀卡機看不見的顏色，機器只讀你用鉛筆塗的格子。驗收要能這樣，判的時候只看證據，不看你怎麼說明。",
+  "lint": {
+   "chars": 152,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 20.7,
+   "max_sentence_len": 29,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上半年大家都在問：自己有多少 token？\n下半年大家改問：能控幾個 agent？\n你有沒有發現，這兩次數的其實都是投入。\n實驗室跟外面真正的差距，只有一樣東西。\n而且那個東西，拿錢根本買不到。<short pause>\n你猜是什麼？\n其實就是驗收。\n這就像以前考試畫答案卡，對吧？\n讀卡機根本不管印了什麼格線，\n它只讀鉛筆塗黑的格子。\n驗收也是醬，判對錯只看證據，不看你說明啦。",
+   "lint": {
+    "chars": 165,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 24,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   }
+  },
+  {
+   "text": "今年上半年，大家都在比 token 數量啦。\n到了下半年，大家改比能控幾個 agent。\n也就是能自己決定下一步的 AI。\n你有沒有發現？\n這兩次比的其實都只是投入耶。\n實驗室跟外面真正的差距，只有一樣東西。\n更扯的是，那樣東西根本買不到。<short pause>\n這集只用一個比喻，就是答案卡。\n卡上的格線，讀卡機其實看不見。\n機器只讀鉛筆塗黑的格子。\n我看到這段真的很有共鳴。<short pause>\n驗收就是要做到醬，只看證據，不看說明喔。",
+   "lint": {
+    "chars": 184,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？<short pause>\n上半年大家都在問：自己有多少 token？\n下半年大家改問：能同時控幾個 agent？\nagent 就是模型配工具，會自己決定下一步。\n但你有沒有想過，這兩次數的都只是投入？\n實驗室跟我們真正的差距，其實根本買不到。\n我看到這段分析整個被敲醒。<short pause>\n這就像以前考試劃的答案卡，\n讀卡機根本不管旁邊印的格線，\n它只讀你鉛筆塗了哪個格子。\n對，驗收就是要這樣，\n判對錯的時候只看證據，完全不聽說明啦。",
+   "lint": {
+    "chars": 190,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 20.1,
+    "max_sentence_len": 39,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "我看到這段真的很有共鳴。<short pause>驗收就是要做到醬",
+   "to": "<short pause>驗收就是要做到醬",
+   "reason": "s01 也有同一句，留一處"
+  }
+ ]
+}

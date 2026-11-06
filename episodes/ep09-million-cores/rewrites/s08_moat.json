@@ -1,0 +1,103 @@
+{
+ "segment": "s08_moat",
+ "position": "第 9 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "abb906ca82a601fd5939e4e79554e733234d3b1b9ff90798778ebc2f47f9dcf9",
+ "previous_context": "這種嚴密的驗收機制真的超佩服。先做出能判定對錯的工具，後面才能放心放量，對吧？",
+ "original": {
+  "text": "所以外面能複製什麼？報告把三個「無限」分開看。無限 token，上一集算過，對大公司很便宜，不是護城河。無限 agent，門檻只是一張信用卡，也不是。無限沙箱，實驗室訓練用的那種複製不了，外面也不需要；做事用的沙箱，就是電腦和記憶體，是商品。剩下的只有一樣：對自己產品的答案卡，也就是那張「這個入口對到哪段程式、怎麼證明它還能動」的地圖。這張圖沒有人能賣給你，只能自己畫。報告還提了一個反直覺的點：認真驗收，每個變更花的 token 反而更多。差別是，那些 token 有產出。無限 token 的正確用法，是花在驗，不是花在寫。",
+  "lint": {
+   "chars": 257,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 10,
+   "avg_sentence_len": 24.7,
+   "max_sentence_len": 47,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那一般團隊到底能複製什麼？\n報告把三個無限拆開來看。<short pause>\n對，第一個是無限 token。\n整家公司狂用遲早會被收回，不是護城河。\n那無限 agent 呢？\n門檻其實只是一張信用卡，也不是。\n至於做事用的沙箱，就只是運算資源嘛。\n根本到處都買得到。\n真正複製不了的，就是判定對錯的工具。\n也就是你自家產品的功能地圖。\n這張圖沒人能賣給你，只能自己畫。\n我每次想到這點，都覺得特別震撼。<short pause>\n重點來了，認真驗收其實非常吃 token 喔。\n然後每改一次就重測，花費比直接寫還要多。\n但差別是什麼？\n差別在於，這樣花掉的 token 才有產出啦。\n無限 token 的價值，是花在驗，不是花在寫。",
+   "lint": {
+    "chars": 266,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "所以大家都在問，外面到底能複製什麼？\n很多人以為是那三個「無限」齁。\n像是無限 token，這根本不是護城河。\n還有無限 agent，開一百個只要一張信用卡。\n沙箱就是小電腦嘛，到處都是商品。\n那真正的差距到底在哪裡？\n答案是判定對錯的工具，也就是 oracle。\n你的功能怎麼證明能動，沒人能賣給你。\n那張驗收地圖只能自己畫。\n我真的超認同這個結論耶。<short pause>\n而且重點來了，認真驗收其實超花 token。\n每次改動都要重測，花的算力反而更多。\n但差別在哪裡？\n差別是，這些 token 真的能換成產出。\n無限 token 該花在驗收，不是花在寫啦。",
+   "lint": {
+    "chars": 250,
+    "precise_numbers": [
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 15.7,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "那外面的人到底能複製什麼？\n報告把三個無限拆開來看。<short pause>\n你覺得無限 token 是護城河嗎？其實不是。\n整家公司放開來燒，預算很快就爆了。\n然後是無限 agent。\n也就是會自己跑迴圈做事的程式。\n這門檻只有一張信用卡，比 token 還便宜嘛。\n第三個是無限沙箱，也就是能重置的小電腦。\n一般用的沙箱只是運算資源，花錢就買得到。\n重點來了，真正買不到的到底是什麼？\n就是你自己產品的 oracle。<short pause>\n也就是判定對錯的工具。\n怎麼證明程式還能動，這張地圖只能自己畫。\n最妙的是，認真驗收花的 token 其實更多耶。\n可是那些 token 是真的有產出。\n所以無限 token 的正確用法，是花在驗收。\n而不是花在盲目寫程式啦。",
+   "lint": {
+    "chars": 285,
+    "precise_numbers": [],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 18,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0
+}

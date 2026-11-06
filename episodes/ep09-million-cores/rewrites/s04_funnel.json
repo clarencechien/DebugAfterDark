@@ -1,0 +1,117 @@
+{
+ "segment": "s04_funnel",
+ "position": "第 5 段，共 10 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "369f680c6aaa204ff7f0de3b5a919d62d011feea434454a14b7ee145e3bbc6af",
+ "previous_context": "這就像上千萬張答案卡同時在批改耶。光是想像那個畫面，就覺得有夠瘋狂。",
+ "original": {
+  "text": "Karpathy 寫過一個漏斗，把世界分成四層。報告借來，每一層多問一句：這一層的人，怎麼驗收？最下面幾十億人，幾乎沒碰過 AI，不需要驗收。再上一層是用免費版的人，十幾億，驗收就是自己讀一遍，覺得對就對。再上一層，大約兩千萬個寫程式、做數學的人，靠測試和人審，就是上一集的世界。最上面是前沿實驗室裡大約五千人，靠沙箱和給分，人已經不在迴圈裡。Huntley 說，看過真的 agent 群在跑的人，全世界不到五千個。他預言，很多公司會再失敗一次，就像當年聽說 Kubernetes 就跟著做：買了工具，卻沒買工具底下的運作方式。",
+  "lint": {
+   "chars": 257,
+   "precise_numbers": [
+    "兩千萬",
+    "五千",
+    "五千"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 31.1,
+   "max_sentence_len": 53,
+   "sentences_over_20": 8,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "對，而且大家看到的 AI 其實差超多。\nKarpathy 把全世界的人分成四層漏斗。\n重點是，每一層人到底怎麼驗收？\n最底層有幾十億人，沒碰過就不用驗。\n上一層是用免費版的人。\n驗收方式就是自己讀一遍，覺得對就對。\n那寫程式的工程師呢？\n是靠測試，還有審送審的程式碼變更嘛。\n最頂層大概五千人，都在前沿實驗室。\n他們用獨立沙箱讓機器打分。\n人根本不用在迴圈裡面。<short pause>\nGeoffrey Huntley 轉述朋友的話說，\n看過 agent 群跑起來的人，不到五千個。\n不過這句話在付費牆後，先當作參考喔。\n他就預言很多公司會重蹈覆轍。\n就像當年跟風做 Kubernetes 一樣。<sigh>\n只買了工具，卻沒學到底下的運作方式。\n這真的會讓人捏一把冷汗耶。",
+   "lint": {
+    "chars": 294,
+    "precise_numbers": [
+     "五千",
+     "五千"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 42,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "這種瘋狂的落差，Karpathy 也提過。\n他把全世界分成四層漏斗。\n每一層驗收 AI 的方式差超多。\n最底下的幾十億人，\n幾乎沒碰過 AI，不需要驗收。\n再來是十幾億用免費版的人。\n他們怎麼驗收？<short pause>\n自己讀一遍，覺得看起來對就對了嘛。\n然後就是寫程式和做數學的人，\n大家會寫測試、手動審查程式碼。\n那最頂端的前沿實驗室呢？\n那邊大概五千人，\n驗收全交給沙箱自動給分，\n人早就已經不在迴圈裡了。\n光想就覺得這個斷層超巨大的。<sigh>\n像 Huntley 轉述朋友的話，\n雖然原話在付費牆後待核對啦，\n但他提到，看過整群 agent 跑起來的人，\n全世界搞不好不到五千個。\n他預言很多公司會重蹈覆轍，\n就像當年大家跟風搞 Kubernetes，\n買了工具，卻根本不懂底下的運作方式。",
+   "lint": {
+    "chars": 305,
+    "precise_numbers": [
+     "五千",
+     "五千"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 22.5,
+    "max_sentence_len": 60,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "但你知道嗎？全世界看到的世界根本不同。\nKarpathy 之前把大家分成四個層次。\n重點來了，每一層驗收的方式完全不同。<short pause>\n最底層的幾十億人，根本沒碰過 AI。\n所以他們完全不需要驗收。\n往上一層是用免費版，也是十幾億人。\n驗收就是自己讀一遍，覺得對就對了。\n然後是寫程式的人，大概兩千萬左右。\n這群人會寫測試、讓人去審查送審的程式碼。\n那最頂層呢？你猜有多少人？\nKarpathy 估計，大約只有五千人。\n他們把 agent 放進沙箱小電腦裡跑。\n連驗收都不用人插手了。\nHuntley 就轉述朋友的話說，\n看過這種系統跑起來的，不到五千人。\n不過他的原文在付費牆後，還待核對啦。\n他預言很多公司又要重蹈覆轍了。\n就像當年大家跟風做 Kubernetes 一樣。\n買了整套工具，卻沒買底下的運作方式。<sigh>\n光想像那個畫面，就覺得既好笑又無奈。",
+   "lint": {
+    "chars": 342,
+    "precise_numbers": [
+     "兩千萬",
+     "五千",
+     "五千"
+    ],
+    "enumerations": [],
+    "sentences": 21,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 32,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "Geoffrey Huntley 轉述朋友的話說，看過 agent 群跑起來的人，不到五千個。不過這句話在付費牆後，先當作參考喔。",
+   "to": "Geoffrey Huntley 說得更直接：看過 agent 群真的跑起來的人，全世界大概不到五千個。",
+   "reason": "歸屬錯誤：這句是 Huntley 自己的說法；付費牆與轉述的但書屬於 s03 的沙箱與 CPU 數字"
+  }
+ ]
+}

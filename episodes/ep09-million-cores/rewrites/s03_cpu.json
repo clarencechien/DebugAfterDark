@@ -1,0 +1,115 @@
+{
+ "segment": "s03_cpu",
+ "position": "第 4 段，共 10 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "c326693d823804b4f2ce0c7395d955dab4f4001bdd42073f3d0f0070e13c3811",
+ "previous_context": "這數字光是用看的就起雞皮疙瘩。也就是說，沒有 oracle 在旁邊把關，agent 的自信跟它有沒有做對，完全無關啦。",
+ "original": {
+  "text": "那實驗室為什麼需要一百萬顆 CPU？要讓模型學會做事，現在主流的方法叫強化學習：讓模型在一個環境裡試，試完給分，分數高的做法下次多做一點，重複幾百萬次。這個環境，是一台可以真的跑程式、用完可以重置的小電腦，叫沙箱。報告的說法很清楚：想，是 GPU 的事；驗，是 CPU 的事。要知道模型的動作對不對，得真的編譯、執行、跑測試，那是 CPU 在做。Geoffrey Huntley 轉述實驗室朋友的話：一次訓練用了上千萬個沙箱、大約一百萬顆 CPU。報告也講明，這是一個人轉述朋友的話，原句在付費牆後面，還待核對。用答案卡來說，那是上千萬張答案卡同時在批改。",
+  "lint": {
+   "chars": 268,
+   "precise_numbers": [
+    "一百萬",
+    "百萬",
+    "千萬",
+    "一百萬",
+    "千萬"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 32.5,
+   "max_sentence_len": 57,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那實驗室到底都怎麼訓練的？\n你可能會好奇，\n為什麼會需要大約一百萬顆 CPU？\n對，是 CPU 不是 GPU 喔。\n現在要訓練會做事的模型，\n主流方法叫做強化學習。<short pause>\n簡單講，就是讓模型在環境裡試，\n做對了給分數，重複試幾百萬次。\n這個環境叫做沙箱，\n就是一台可以隨便重置的小電腦啦。\n重點來了，\n想是 GPU 的事，驗是 CPU 的事。\n模型做了一個動作，\n還得真的去編譯、跑測試嘛。\n所以驗的次數，遠遠超過想的次數。\nHuntley 就轉述過實驗室朋友的話，\n說他們一次訓練用了上千萬個沙箱。<short pause>\n不過這只是一個人轉述朋友的話，\n原文在付費牆後面，還待核對。\n但你想想看，這到底有多誇張？\n就像上千萬張答案卡，同時在旁邊批改。\n一百萬顆 CPU 不是拿來寫程式，\n它們全都是用來判對錯的耶。",
+   "lint": {
+    "chars": 310,
+    "precise_numbers": [
+     "一百萬",
+     "百萬",
+     "千萬",
+     "千萬",
+     "一百萬"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 21.1,
+    "max_sentence_len": 34,
+    "sentences_over_20": 8,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "既然要有東西把關，你猜實驗室怎麼做？\n他們用了大約一百萬顆 CPU 核心。<short pause>\n對，不是 GPU 喔，是 CPU。\n這不是公開數據啦。\n是工程師 Geoffrey Huntley 轉述朋友講的。\n原話在付費牆後面，目前還沒核對過。\n但這個背後的邏輯非常合理。\n要讓模型學會做事，現在主流是強化學習。\n就是讓他在環境裡試，做對了就給獎勵。\n這個環境叫沙箱，也就是能隨時重置的小電腦。\n重點來了。\n想是 GPU 的事，驗是 CPU 的事。\n模型自己產生動作只要一瞬間。\n但要編譯、跑測試確認對不對，得靠 CPU 嘛。\n這就像上千萬張答案卡同時在批改耶。\n光是想像那個畫面，就覺得有夠瘋狂。<laugh>",
+   "lint": {
+    "chars": 261,
+    "precise_numbers": [
+     "一百萬",
+     "千萬"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 25,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "既然要機器把關，那得花多少力氣去驗？你猜頂尖實驗室怎麼做？就是靠強化學習。簡單講，就是讓模型在環境裡試，做對了給分。這個環境叫做沙箱。<short pause>其實就是一台可以隨時重置的小電腦啦。重點來了，動腦想是 GPU 的事，但跑去驗證，全都是 CPU 在做喔。寫完程式，總得真的編譯、跑測試吧？工程師 Geoffrey Huntley 就轉述朋友的話。他說一次訓練用了上千萬個沙箱，動用了大約一百萬顆 CPU 核心。不過先說清楚，這只是他轉述朋友的說法，原話在付費牆後面，細節還待核對。但這規模光聽就覺得很誇張耶。等於有上千萬張答案卡，同時在批改嘛。那些 CPU 不是拿來寫程式，都是拿來批改的。",
+   "lint": {
+    "chars": 277,
+    "precise_numbers": [
+     "千萬",
+     "一百萬",
+     "千萬"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 34,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1
+}

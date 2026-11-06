@@ -1,0 +1,102 @@
+{
+ "segment": "s01_recap",
+ "position": "第 2 段，共 10 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": "EP08〈無限的是 token，有限的是驗收〉：Cisco 給工程師無限 token，可是 token 是投入，驗收才是產出；做得完的案子都有機器判得了的驗收和管得住的審查人力。上一集停在：如果答案是用 AI 審 AI，那審查的 AI 用什麼驗收。",
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f4cac57ec4c446a730096c4058411a34b7e1e82d5372b896d79e3975e53dd091",
+ "previous_context": "我看到這段真的很有共鳴。驗收就是要做到醬，只看證據，不看說明喔。",
+ "original": {
+  "text": "（回顧上一集：Cisco 給工程師無限 token，可是 token 是投入，驗收才是產出；做得完的案子，都有機器判得了的驗收和管得住的審查人力。上一集停在一個問題：如果答案是「用 AI 審 AI」，那審查的 AI 用什麼驗收？這集就從這裡開始。）報告先講一個轉變。今年九月，Meta 把 token 用量從考績拿掉，同一週卻發給員工一個會自己規劃、自己執行的 agent。結果員工的 token 用量沒有降，還繼續漲。從數 token 改成發 agent，燒的東西沒變。報告說，agent 就是 token 乘上一個迴圈，還是投入。",
+  "lint": {
+   "chars": 246,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 29.8,
+   "max_sentence_len": 68,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上一集我們聊到 Cisco 給了無限 token。但 token 只是投入，驗收才是產出嘛。那要是用 AI 審 AI，審查的 AI 又要拿什麼驗收？這集我們就接著看下去。\n\n先看九月 Meta 發生的一件事。他們把 token 用量從考績拿掉了喔。你猜大家就少用了嗎？完全沒有。<laugh> 同一週他們發了一個 agent 給員工。agent 就是模型加工具，自己跑迴圈。結果大家的 token 用量不但沒降，反而還繼續往上漲。\n\n我看到這段真的覺得太諷刺了。從數 token 改成發 agent，說穿了，燒的東西根本沒變。agent 就是 token 乘上迴圈，算來算去，全都是投入啊。",
+   "lint": {
+    "chars": 258,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 17.4,
+    "max_sentence_len": 28,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "上一集我們聊到 Cisco。\n他們給工程師無限的 token，\n但 token 只是投入，驗收才是產出。\n上一集停在一個問題：\n如果用 AI 審 AI，\n那審查的 AI 到底拿什麼驗收？\n這集我們就接著看下去。\n九月的時候，Meta 不看 token 考績了。\n你猜後來怎麼了？\n他們同一週發給員工一個 agent。\n也就是會自己規劃、做完看結果再決定的模型。\n結果 token 用量根本沒降，還繼續往上衝。\n<laugh> 這根本換湯不換藥嘛。\n大家從數 token 改成發 agent，\n說穿了，agent 只是 token 乘上迴圈。\n算來算去，骨子裡都還是投入啊。",
+   "lint": {
+    "chars": 242,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 19.2,
+    "max_sentence_len": 38,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "上一集聊到 Cisco 給無限 token。\n但 token 只是投入，驗收才是產出。\n做得完的案子，都有管得住的審查人力。\n那時停在一個問題。\n如果用 AI 審 AI，審查的 AI 拿什麼驗收？\n這集我們就接著看這件事。<short pause>\n先來看 Meta 九月的一個轉變喔。\n他們正式把 token 用量從考績拿掉。\n你猜大家就少用了嗎？完全沒有。<laugh>\n因為同一週，他們發了一款 agent 給員工。\nagent 就是模型加迴圈，會自己做決定。\n結果員工的用量反而漲得更兇。\n我看到這段真的很有共鳴。\n從數 token 改成發 agent，燒的東西根本沒變。\nagent 就是 token 乘上迴圈。\n算到底，它依然只是投入啦。",
+   "lint": {
+    "chars": 267,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 24,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "結果員工的用量反而漲得更兇。我看到這段真的很有共鳴。",
+   "to": "結果員工的用量反而漲得更兇。",
+   "reason": "跟 s00 重複的口頭反應"
+  }
+ ]
+}

@@ -1,0 +1,128 @@
+{
+ "segment": "s09_outro",
+ "position": "第 10 段，共 10 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b56922fb3900b059f53903b4b1f2033483e65f65256744d3dc20e730a3e2d7e8",
+ "previous_context": "差別在於，這樣花掉的 token 才有產出啦。無限 token 的價值，是花在驗，不是花在寫。",
+ "original": {
+  "text": "最後，連一般人用的個人 AI 助理，也有一條值得記的設計：送出、付款、刪除之前，要先問你。機器判不了的動作，就退回給人判。好，今晚的 breakpoint。第一，token 和 agent 都是投入，實驗室那一百萬顆 CPU，是用來驗的。第二，沒有判定對錯的機制，agent 的自信就不代表它對；寫的不能自己判自己過關。第三，先畫好自己的答案卡，再放量。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 206,
+   "precise_numbers": [
+    "一百萬"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 21.9,
+   "max_sentence_len": 42,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "連一般人用的個人 agent，\n其實也有個很聰明的設計喔。\n遇到送出、付款還是刪除怎麼辦？\n對，它一定會先停下來問你啦。<short pause>\n就是機器判不了的動作，\n然後直接退回來給人判定。\n好，今晚的 breakpoint。\n第一，token 只是投入，驗收才是產出。\n第二，沒有機器判對錯，agent 不能自己過關。\n第三，先畫好自己的答案卡，再放量。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 192,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 26,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "連一般人用的個人 agent，也是這個邏輯。\n像 Anthropic 的 Duet，設計就很聰明。\n它在送出、付款跟刪除前，一定會先問你。\n為什麼要醬做？<short pause>\n因為機器自己判不出來嘛。\n判不了的動作，退給人決定就對了。\n好，今晚的 breakpoint。\n第一，token 只是投入，驗收才是產出。\n第二，沒有判定對錯的機制，寫再快都沒用。\n第三，先畫好自己的答案卡，才能放心放量。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 211,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 22,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "就連一般人用的個人 agent，也是這樣搞喔。像 Anthropic 的 Duet 也是。要送出、付款或刪除之前，它一定會先問。你知道為什麼嗎？機器判不了的事，就只能退回給人判嘛。這個設計真的滿聰明的。<short pause>好，今晚的 breakpoint。第一，token 是投入，驗收才是產出。第二，少了機器判對錯，agent 再自信都沒用。第三，先畫好你的答案卡，再放量。原文連結在節目資訊欄。我是 Ping。有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 13.8,
+    "max_sentence_len": 22,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "第一，token 是投入，驗收才是產出。",
+   "to": "第一，token 和 agent 都是投入，實驗室那一百萬顆 CPU，是用來驗的。",
+   "reason": "第一點寫成了上一集的結論；照這集的重點"
+  },
+  {
+   "from": "第二，少了機器判對錯，agent 再自信都沒用。",
+   "to": "第二，少了機器判對錯，agent 再自信都沒用；寫的不能自己判自己過關。",
+   "reason": "補回素材的獨立把關規則"
+  }
+ ]
+}
