@@ -26,7 +26,8 @@
 - 擁有者信箱：`podcast@ai-apps.work`（Cloudflare Email Routing 轉寄）
 - **Spotify**：已上架（2026-11-06），<https://open.spotify.com/show/56y20c8Jscmnjajo8vUIzw>
 - **Apple Podcasts**：已上架（2026-11-06），<https://podcasts.apple.com/tw/podcast/id6831404475>（節目 ID `6831404475`；網址中間的名稱 Apple 不看，只認 ID）
-- 其他平台：KKBOX、Podcast Index 還沒送；YouTube 品牌頻道已建好，新頻道要滿 24 小時才能送 RSS（2026-11-06 試過，選項有出現，代表台灣可以用 RSS 匯入）
+- 其他平台：KKBOX、Podcast Index 還沒送；YouTube 品牌頻道已建好，新頻道要滿 24 小時才能送 RSS（2026-11-06 試過，顯示「Your account is too new」；選項有出現，代表台灣可以用 RSS 匯入）
+- Apple Podcasts Connect 帳號：Account Name 用品牌名「Debug After Dark」、類型 Individual（以後若開付費訂閱，個人帳號可能會顯示真實姓名，要再確認）。Podcasts Connect 的 API key 是給託管平台發佈付費內容（Delegated Delivery）用的，不能拿來送審免費節目
 - 網站功能：每集一頁（`/ep05/` 這種短網址，有各自的分享預覽）、每集「分享這一集」按鈕；在 LINE、Facebook、Instagram 等 app 內建瀏覽器打開時提示改用瀏覽器（LINE 另有一鍵 `openExternalBrowser=1`）；Media Session 讓鎖定畫面顯示集名與封面，可倒退 15 秒、快轉 30 秒（`tools/build_site.py`）
 - 下載數據：SoundOn Prefix（`show.json` 的 `enclosure_prefix`），feed 裡的音檔網址先經過 SoundOn 再 302 回我們的檔案；網站播放器不經過
 - 贊助連結：<https://portaly.cc/clarencech/support>（`show.json` 的 `support_url`），見下面的「Portaly 現況」
@@ -44,6 +45,18 @@
 | 可選 | Amazon Music | Amazon Music for Podcasters 提交 feed | 免費 | 幾天 | 台灣用的人少 |
 
 SoundOn 已經有我們的播放頁，不用另外申請。送審都要登入節目擁有者自己的帳號，由人操作。
+
+### feed 裡的節目說明格式（2026-11-06）
+- **問題**：說明原本是純文字加換行。Apple、Spotify 會把說明當 HTML 顯示，換行被吃掉，整段黏在一起；只有 SoundOn 照原樣保留換行。
+- **第一次改（只用 HTML）**：段落用 `<p>`，breakpoint 用 `<ol>` 編號清單，網址變成連結。Apple 顯示正確。但 Spotify 網頁版會把標籤全部拿掉、拿掉處不留空格，結果編號不見、字黏在一起。
+- **現在的做法**（`tools/feed.py` 的 `notes_html`）：
+  - `<content:encoded>`：Apple 優先讀這個，保留完整 HTML 和編號清單。
+  - `<description>`：Spotify 讀這個。編號直接寫成文字「1. …」，每個 `<br>`、`</p>` 後面都加真正的換行。會顯示 HTML 的平台照段落顯示，會拿掉標籤的平台也還留著編號和換行。
+- **檢查結果**：
+  - feed 結構逐集都正常：8 集都有兩種說明，HTML 標籤都有關好，guid 不重複，音檔大小跟伺服器上的檔案完全一致。
+  - W3C 驗證器判定有效、0 錯誤。2 個警告不影響：一個是自訂的 `imitator:` 命名空間，另一個是 description 含 HTML，Apple 的規格允許。
+- **平台更新是一集一集來的**：Apple、Spotify 不會一次把所有集數換成新格式，同一時間有的集新、有的集舊是正常的。2026-11-06 檢查時，Apple 的 EP05、EP06 已經換成新格式，EP04、EP07 還是舊的。想快一點，可以在 Podcasts Connect 按 RSS Feed 旁的 **Refresh**。Apple 平常也會自己定期重抓，頻率不固定。
+- **SoundOn**：重抓後也會換成新格式，要確認沒有把 `<p>` 這種標籤直接顯示出來。
 
 ### 送審前要決定的
 - **`itunes:author`**：目前是「深夜 Debug」，會在 Apple、Spotify 公開顯示成創作者。feed 的 owner 名稱與 copyright 也都是「深夜 Debug」，沒有本人名字。
