@@ -57,6 +57,8 @@ SoundOn 已經有我們的播放頁，不用另外申請。送審都要登入節
   - W3C 驗證器判定有效、0 錯誤。2 個警告不影響：一個是自訂的 `imitator:` 命名空間，另一個是 description 含 HTML，Apple 的規格允許。
 - **平台更新是一集一集來的**：Apple、Spotify 不會一次把所有集數換成新格式，同一時間有的集新、有的集舊是正常的。2026-11-06 檢查時，Apple 的 EP05、EP06 已經換成新格式，EP04、EP07 還是舊的。想快一點，可以在 Podcasts Connect 按 RSS Feed 旁的 **Refresh**。Apple 平常也會自己定期重抓，頻率不固定。
 - **SoundOn**：重抓後也會換成新格式，要確認沒有把 `<p>` 這種標籤直接顯示出來。
+- **Apple 網頁版不顯示說明裡的連結**：說明裡的網址只顯示成文字，不能點。能點的只有說明下方的「單集網頁」按鈕，它來自每集的 `<link>`。目前 `<link>` 連到 imitator 的原始報告，2026-11-06 決定維持這樣，不改成我們的單集頁。iPhone 的 Podcasts app 通常會把說明裡的網址變成可以點的連結，待用手機確認。
+- **Apple 各集的更新進度**（2026-11-06，跳過快取直接查，回應是 `x-cache: MISS`，所以不是快取）：EP01、EP03、EP05、EP06 已是新格式，EP02、EP04、EP07 還是舊的，EP00 看不出差別。feed 裡這幾集的內容跟已更新的集數一樣，只是 Apple 還沒處理到。超過兩天還沒更新，就去 Episodes 頁看狀態，或聯絡 Apple 客服。
 
 ### 送審前要決定的
 - **`itunes:author`**：目前是「深夜 Debug」，會在 Apple、Spotify 公開顯示成創作者。feed 的 owner 名稱與 copyright 也都是「深夜 Debug」，沒有本人名字。
