@@ -1,0 +1,116 @@
+{
+ "segment": "s08_checklist",
+ "position": "第 9 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "9c67bf86de6de64d778e1d6b6c38a5590396ff22773cd014d818a67b08e3d61f",
+ "previous_context": "作者有講明喔，這只是他自己算的。重點不是 Cisco 到底會花多少，而是 token 根本不是算式裡最貴的那一項啦。",
+ "original": {
+  "text": "所以報告列了一張單子。那個四週的驗證期，大約在十一月底結束，到時候拿這三樣東西去對。第一，分母：哪些程式、多少行、九成八是怎麼算的。沒有分母，九成八就不是進度，是口號。第二，判定方式：用什麼證明改完以後行為沒變，誰跑、通過多少。少了這個，做出來的東西都只是 AI 自認完成。第三，審查的人力：誰來審、每週審得了多少、產出有沒有放慢到審得完。報告還留了一個問題：如果四週後的答案是「我們用 AI 審 AI」，那審查的那個 AI，又要用什麼來驗收？這是報告下篇的題目。",
+  "lint": {
+   "chars": 226,
+   "precise_numbers": [
+    "十一"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 24.1,
+   "max_sentence_len": 47,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以作者最後列了一張驗收單。<short pause>那個四週的驗證期，大概十一月底結束。到時候拿這三樣東西去對就知道了。第一是分母，到底算行數還是算模組？沒有分母，百分之九十八就只是口號啦。那要怎麼證明系統沒壞？對，重構是改結構不改行為嘛。如果拿不出測試證明，產出的東西就只是 agent 自認完成而已。<sigh>然後最關鍵的，就是審查的人力。到底誰來審、每週能審多少？更妙的是，如果最後是用 AI 審 AI 呢？那審查的那個 AI，又要怎麼驗收？這個大難題，就是報告下篇的題目了。",
+   "lint": {
+    "chars": 217,
+    "precise_numbers": [
+     "十一",
+     "百分之九十八"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 15.7,
+    "max_sentence_len": 29,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 2
+   }
+  },
+  {
+   "text": "所以報告最後列了一張驗收單。<short pause>\n那個四週驗證期，\n大概在十一月底結束。\n到時候要看三樣東西。\n第一是分母，\n到底算了哪些 repo、多少行？\n缺了這項，\n九成八就只是一句口號嘛。\n然後是判定方式。\n你要怎麼證明改完後行為沒變？\n如果沒有測試證明，\n做出來的都只是 agent 自認完成。\n再來就是審查人力，\n到底誰來審？\n每週能審多少？\n<short pause>\n報告最後還留了一個問號。\n要是四週後的答案，\n是「我們靠 AI 來審 AI」呢？\n那審查的那個 AI，\n你又要拿什麼來驗收啦？\n想到這點真的會讓人愣一下。\n這個就是報告下篇的題目了。",
+   "lint": {
+    "chars": 231,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 14.4,
+    "max_sentence_len": 25,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 6,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那到底什麼時候才能知道真相？\n報告裡列了一張驗收清單喔。\n大概十一月底，驗證期就結束了。\n到時候只要看三樣東西。\n第一個是分母。\n那個九成八到底是怎麼算出來的？\n沒算清楚，九成八就只是口號啦。\n然後是判定方式。\n重構程式碼，改結構不改行為嘛。\n你要用什麼證明功能真的沒壞？\n少了這項，都只是 AI 自認做完而已。<short pause>\n重點來了，還有審查人力。\n到底誰來審、每週能審多少？\n要是四週後的答案是「用 AI 審 AI」呢？\n那審查的那個 AI，又要用什麼驗收？\n光想就覺得很頭痛齁。<laugh>\n這就是報告下篇的題目了。",
+   "lint": {
+    "chars": 227,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 12.4,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 6,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2
+}

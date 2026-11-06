@@ -1,0 +1,107 @@
+{
+ "segment": "s03_bill",
+ "position": "第 4 段，共 10 段",
+ "avoid": [
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "43b5f23e62f4b441e29183c3be0a7a51aff41986166c0e3fa5e33cc988332720",
+ "previous_context": "廠商只是賭大家用不完啦。你一旦真的認真用，上限馬上就跑回來了。",
+ "original": {
+  "text": "再看帳單。Uber 鼓勵工程師盡量用 AI 寫程式，結果四個月就把全年的 AI 工具預算花完。Uber 的營運長說，數據顯示更多程式碼是 AI 寫的，但看不出乘客和司機那一端，多了什麼東西。後來 Uber 設了每人每月的上限。Amazon 走另一條路：關掉用量排行榜，改看工程師有沒有用 AI 穩定寫出真的上線的程式碼。內部備忘錄還說，發現 AI 對某件事沒幫助、所以不用，是好的判斷。Linear 的營運長說得最好：用 token 花費排名工程師，就像用誰花最多錢來排名行銷團隊。",
+  "lint": {
+   "chars": 223,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 30.9,
+   "max_sentence_len": 44,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說到這個，Uber 就是最經典的例子。\n他們之前設了內部排行榜，\n鼓勵工程師盡量用 Claude Code。\n結果你猜發生什麼事？\n才四個月，就把整年的 AI 預算燒光了。<sigh>\nUber 的營運長後來說了一句老實話。\n他說程式碼確實變多啦，\n但乘客跟司機那邊，根本沒拿到任何新東西。\n後來 Uber 只能設上限，\n每人每月最多一千五百美元。\n對，那 Amazon 怎麼做？\n他們直接把用量排行榜關掉，\n改看寫出來的 code，有沒有真的部署上線。\n內部備忘錄甚至說，\n發現 AI 沒用選擇不用，才是好的判斷。\n最精準的吐槽，是 Linear 的營運長講的。\n她說，用 token 花費排名工程師，\n就像看誰花最多錢，\n來選最厲害的行銷團隊一樣荒謬。<laugh>",
+   "lint": {
+    "chars": 287,
+    "precise_numbers": [
+     "一千五百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 22.9,
+    "max_sentence_len": 40,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說到上限，Uber 就是最好的例子。\n他們本來用內部排行榜，\n鼓勵大家盡量用 Claude Code。\n結果你猜怎樣？<short pause>\n四個月就把全年的預算給燒光了。\nUber 的營運長說，AI 寫的程式碼確實變多，\n但乘客跟司機那端，完全沒看出差別啊。\n後來他們設了每人每月一千五百美元的上限。\n然後 Amazon 走完全相反的路喔。\n他們把用量排行榜關了，\n改看你有沒有穩定寫出真的上線的程式碼。\n備忘錄還說，\n發現 AI 沒幫助所以不用，是好的判斷。\n這句我真的猛點頭。<laugh>\nLinear 的營運長講得最中肯：\n拿 token 排名工程師，\n就像用誰花最多錢，來排名行銷團隊嘛。",
+   "lint": {
+    "chars": 254,
+    "precise_numbers": [
+     "一千五百"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 22.1,
+    "max_sentence_len": 45,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說到上限，那個帳單真的很有意思。\nUber 之前用內部排行榜鼓勵大家多用。<short pause>\n結果你猜怎麼了？\n才四個月，就把全年的 AI 預算花光了耶。\nUber 營運長這句話我真的笑出來。<laugh>\n他說 code 雖然變多，\n但乘客跟司機那一端根本看不出差別嘛。\n最後他們只好乖乖加上用量上限。\n然後 Amazon 走完全相反的路。\n他們直接把用量排行榜關掉，\n改看程式碼有沒有真的部署上線。\n對啊，Linear 的營運長講得很酸，\n拿 token 花費給工程師排名，\n就像看誰花最多錢來給行銷團隊排名一樣。",
+   "lint": {
+    "chars": 219,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.9,
+    "max_sentence_len": 51,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "Uber 營運長這句話我真的笑出來。<laugh>他說",
+   "to": "Uber 的營運長講了一句很老實的話。他說",
+   "reason": "不笑當事人的發言"
+  }
+ ]
+}

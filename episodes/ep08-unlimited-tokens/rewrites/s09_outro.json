@@ -1,0 +1,116 @@
+{
+ "segment": "s09_outro",
+ "position": "第 10 段，共 10 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e4dc620a69cc50f3f340c1c51247314a681a9ad1bce5e784b6b10ce1959a788d",
+ "previous_context": "光想就覺得很頭痛齁。這就是報告下篇的題目了。",
+ "original": {
+  "text": "今晚的 breakpoint：一、token 是投入，驗收才是產出；「無限」是定價的話術，用完了上限就回來。二、真的做完的案子都有三樣東西：起點終點講得清楚、機器判得了的驗收、管得住的審查人力。三、下次看到一個 AI 大計畫，先問分母、判定方式、還有誰來審。然後片尾：原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 167,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 26.8,
+   "max_sentence_len": 51,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，token 只是投入，驗收才是真正的產出。\n那個無限其實是話術，用完上限就回來啦。\n第二，真正能結案的案子，\n機器要判得了驗收，審查人力也得管得住。\n然後，下次看到吹很大的 AI 新聞，\n你要先看什麼？\n就是問清楚分母、判定方式，還有誰來審嘛。\n這樣才不會白忙一場喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 180,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 17.0,
+    "max_sentence_len": 30,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n第一，token 是投入，驗收才是產出啦。\n無限只是定價話術，用完上限還是會回來。\n然後，能做完的案子，驗收跟審查都要到位。\n你下次看到 AI 大計畫要先問什麼？\n就是先問分母、判定方式，還有誰來審嘛。\n缺了一項，就只是在喊口號喔。\n\n原文連結在節目資訊欄。\n我是 Ping。<short pause>\n有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 161,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 13.6,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，token 是投入，驗收才是產出。\n那個無限只是話術，光聽就讓人直搖頭啦。\n然後，真的做完的案子，規格要講清楚。\n而且要靠機器驗收，審查人力也要管得住。\n最後，下次看到 AI 大計畫，要怎麼看？\n先問分母和判定方式，還有到底誰來審嘛。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 165,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "然後，能做完的案子，驗收跟審查都要到位。",
+   "to": "第二，真的做完的案子都有三樣東西：起點終點講得清楚、機器判得了的驗收，還有管得住的審查人力。",
+   "reason": "照素材的三個共同點"
+  },
+  {
+   "from": "你下次看到 AI 大計畫要先問什麼？",
+   "to": "第三，下次看到 AI 大計畫，要先問什麼？",
+   "reason": "補上第三點的標示"
+  }
+ ]
+}

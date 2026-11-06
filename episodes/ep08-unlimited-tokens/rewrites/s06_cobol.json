@@ -1,0 +1,122 @@
+{
+ "segment": "s06_cobol",
+ "position": "第 7 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "c2ec8278900e8982f7fb92a232a0436fe8fb777a9ca4c43d2d193f0a11a2d7d9",
+ "previous_context": "就是寫的那一端變快了，看的那一端根本沒有。跑從來不是問題，看才是啊。",
+ "original": {
+  "text": "最難的一塊，是 COBOL 這種很老的程式。今年二月，有一篇文章說用 AI 改寫 COBOL，可以幾季完成，而不是幾年，同一天 IBM 的股價大跌。IBM 的回應是：翻譯不等於現代化。後來有人真的出題去測，用真實的舊程式考 AI 修錯誤、加功能、換語言，各家的通過率大約兩成到四成。更要緊的是，失敗的題目裡，幾乎全部 AI 都以為自己做對了。報告說，COBOL 的錯誤是無聲的，錯的結果看起來很合理，不會報錯。所以把無限 token 丟進去，得到的是無限多個自認完成的版本。而 Cisco 那九成八裡最難的部分，長得就像 COBOL：年代久、原作者早就離開、測試不完整。",
+  "lint": {
+   "chars": 267,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 32.4,
+   "max_sentence_len": 46,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說到最難啃的骨頭，就是那個 COBOL 了。\n它就是那種六十幾年前的老古董程式。\n年初有文章說用 AI 改寫，幾季就能搞定。\n結果那天，IBM 股價跌了超過百分之十三。<short pause>\nIBM 的主管就回說，翻譯不等於現代化。\n到底誰說得對？後來有人真的去實測。\n拿真實舊程式去考 AI，通過率只有兩到四成。\n然後最可怕的是，在所有失敗的題目裡，\n有九成七的 agent，都以為自己做對了。\n這有多恐怖你知道嗎？\n因為 COBOL 的錯誤，通常是無聲的。\n錯的輸出看起來超合理，完全不會跳警訊。\n這真的讓人捏把冷汗。\n就算你丟無限 token 進去，\n也只是換來一大堆自認寫對的版本啦。\nCisco 最硬的那塊，就長得像 COBOL。\n原作者早就不在了，測試也根本不齊全。\n萬一錯了還不會叫，這才是最要命的啊。<sigh>",
+   "lint": {
+    "chars": 316,
+    "precise_numbers": [
+     "六十",
+     "百分之十三",
+     "萬一"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 37,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說到看程式碼，最硬的一塊絕對是 COBOL。\n這是一種幾十年前的老語言。\n之前有文章說，用 AI 改寫只要幾季。\n結果同一天，IBM 股價跌了一成多。\nIBM 的主管跳出來說，翻譯不等於現代化。\n後來有人拿真實的舊程式去測 AI。\n你覺得 AI 表現好嗎？\n其實不太行，通過率只有兩成到四成。\n更可怕的是，在那些失敗的題目裡，\n有百分之九十七的 AI，\n都以為自己做對了！<short pause>\n這代表什麼？\n因為這種老程式的錯誤是無聲的。\n就算輸出錯了，\n看起來還是很正常，完全不會報錯。\n你想想看，無限的 token 丟進去，\n只會換來無數個自認做對的版本。\n光想就覺得是驗收的惡夢嘛。<laugh>\nCisco 舊程式裡最硬的那塊，\n也是長這樣。\n原作者早就離開，也沒有完整的測試。\n這種程式碼，\n真的不是丟給 AI 就能解決的啦。",
+   "lint": {
+    "chars": 315,
+    "precise_numbers": [
+     "百分之九十七"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 35,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說到看才是問題。<short pause> 最難看的，就是 COBOL 這種老古董。之前有文章說，用 Claude Code 翻新，幾季就能做完。結果同一天，IBM 股價跌了百分之十三。但 IBM 的主管回了一句：翻譯不等於現代化。這句話真的講到骨子裡。後來有人真的拿真實舊程式，去測 AI agent。結果通過率只有大約兩成到四成。你知道最毛的是什麼嗎？失敗的任務裡面，幾乎全部 agent 都以為自己做對了。<sigh> 報告說，COBOL 的 bug 是無聲的。錯的輸出看起來很合理，完全不會報錯。丟再多 token，只會得到無限多個自認完成的版本。Cisco 最難搞的那部分，其實就長醬子。原作者早就走了，而且測試覆蓋根本不完整。這種錯了不會叫的程式碼，驗收起來才是惡夢啊。",
+   "lint": {
+    "chars": 303,
+    "precise_numbers": [
+     "百分之十三"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 27,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "在那些失敗的題目裡，有百分之九十七的 AI，都以為自己做對了！",
+   "to": "在那些失敗的題目裡，有百分之九十七，AI 都以為自己做對了！",
+   "reason": "事實錯誤：是失敗題目裡的九成七，不是九成七的 AI"
+  },
+  {
+   "from": "光想就覺得是驗收的惡夢嘛。<laugh>",
+   "to": "光想就覺得是驗收的惡夢嘛。",
+   "reason": "笑聲語氣不對"
+  },
+  {
+   "from": "這種程式碼，真的不是丟給 AI 就能解決的啦。",
+   "to": "這種程式碼，光丟 token 進去是不夠的。",
+   "reason": "原句誇大；素材是驗收最貴，不是 AI 解決不了"
+  }
+ ]
+}

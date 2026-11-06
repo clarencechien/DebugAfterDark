@@ -1,0 +1,114 @@
+{
+ "segment": "s02_unlimited",
+ "position": "第 3 段，共 10 段",
+ "avoid": [
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2e86927b0f2699727e421f35a5ecf474a61e6fd095d4f0dece9f79264bb313ee",
+ "previous_context": "我看到這邊真的覺得很妙。頭條活在第一天，修正活在第二天，但被大家轉傳的，永遠都只有第一天嘛。",
+ "original": {
+  "text": "「無限 token」這個詞，今年在別的地方已經被用壞了。Meta 有工程師做了一個排行榜，比誰用的 token 多。結果有人承認，為了不被看成用太少，會故意拿文件裡早有答案的問題去問 AI。排行榜一週內就下架，後來 Meta 正式把 token 數從考績拿掉。美國陸軍宣布三百多萬人都有無限 token，一個多月後額度用完，上限又回來了。報告說，「無限」從來不是技術描述，是定價的話術：供應方賭你用不完。你一旦真的用完，上限就回來了。",
+  "lint": {
+   "chars": 207,
+   "precise_numbers": [
+    "三百",
+    "萬"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 28.6,
+   "max_sentence_len": 37,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說到這個，其實「無限 token」這個詞，今年早就被大家玩壞了啦。\n\n像 Meta 內部之前搞了個排行榜，比誰用的量比較多，前兩百五十名還能拿到封號喔。<short pause> 結果有人為了考績好看，故意拿早就知道答案的問題去狂洗 AI。很扯吧？那個榜單一個禮拜就被下架了。\n\n後來連美國陸軍也宣布，三百多萬人通通無限。你猜結果怎樣？一個多月後額度被抽乾，上限馬上又加回來了。<laugh>\n\n我覺得這真的很諷刺。報告說得很好，「無限」從來不是技術描述，純粹是定價的話術而已。供應方賭你用不完，你一旦真的用完，上限就回來啦。",
+   "lint": {
+    "chars": 232,
+    "precise_numbers": [
+     "兩百五十",
+     "三百",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.1,
+    "max_sentence_len": 38,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說到這個，無限 token 今年早就被玩壞了啦。\nMeta 之前甚至有員工做過用量排行榜耶。\n結果超扯的。<laugh>\n有人承認為了考績，故意問 AI 文件早有的答案。\n那個榜單曝光一週就被下架了。\n然後美國陸軍更誇張。\n他們宣布三百五十萬名員工額度無限。\n結果你猜怎樣？\n才一個多月額度就用完，上限又回來了。<short pause>\n欸，這到底算哪門子的無限啊？\n其實報告講得很白，這根本不是技術突破。\n那純粹就是定價話術嘛。\n廠商只是賭大家用不完啦。\n你一旦真的認真用，上限馬上就跑回來了。",
+   "lint": {
+    "chars": 211,
+    "precise_numbers": [
+     "三百五十萬"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 14.1,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 2.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "講到這個，「無限 token」這四個字，最近在別的地方根本被玩壞了啦。像 Meta 那邊，有員工自己做用量排行榜。你猜大家怎麼做？有人承認，為了不被看成用太少，故意拿文件早就有答案的問題去問 AI 耶。<laugh> 結果那個排行榜一個禮拜就下架了。然後美國陸軍也是，才剛宣布三百多萬人有無限 token，一個多月額度就用光，上限又回來了。這真的超諷刺的。<short pause> 其實「無限」從來不是技術描述，它根本只是定價話術。對，廠商賭你用不完，你一旦真的用完，上限就回來了嘛。",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [
+     "三百",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 22.9,
+    "max_sentence_len": 43,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "有人承認為了考績，故意問 AI 文件早有的答案。",
+   "to": "有人承認，為了不被看成用太少，故意問 AI 文件裡早有答案的問題。",
+   "reason": "素材是怕被看成用太少，不是為了考績"
+  }
+ ]
+}

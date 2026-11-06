@@ -1,0 +1,121 @@
+{
+ "segment": "s01_story",
+ "position": "第 2 段，共 10 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "1596491735b9937c0edac68d8819c6fb91e32a33c3ae95a9d689ffad1d33fba7",
+ "previous_context": "大家都在看無限生成有多爽，可是 token 只是投入耶，驗收才是產出嘛。今天就來看那些喊無限的下場，還有真的做完的案子，到底差在哪裡。",
+ "original": {
+  "text": "先看原文。那是一篇談為什麼要雇年輕人的職涯文章，話是總裁在一場晚餐上說的。原文用的詞是重構，意思是改結構、不改行為，每一步都可以驗證；轉傳版變成了整個重寫，難度差很多。兩個人就能做，是那位工程師自己說的；他也先給自己四週證明可行，兩年九成八是最終目標。原文沒有的東西，轉傳版也沒有：沒有程式碼的盤點、沒有九成八的分母、沒有驗收標準、沒有 token 預算。而且報導出來當天，總裁就在網路上補充：這個小組是催化劑，最後的產品要由核心團隊負責。報告說，頭條活在第一天，修正活在第二天，被轉傳的永遠是頭條。",
+  "lint": {
+   "chars": 248,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 34.4,
+   "max_sentence_len": 49,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "我們先回頭看那篇報導。\n其實那根本不是技術報導喔。\n那只是一篇聊 Gen Z 的職涯文章啦。\nCisco 的總裁在晚餐聊天講的話，\n被大家傳成神話。\n<short pause>\n原文用的字其實是重構，\n也就是改結構、不改行為；\n結果傳開來變成整個重寫。\n難度差超多的好不好！\n重點來了，\n兩個人就能做這件事，你猜是誰講的？\n根本是那個工程師自己提的。\n他先給自己四週看能不能做，\n兩年搞定百分之九十八只是最終目標。\n最扯的是什麼？\n原文從頭到尾都沒有驗收標準，\n也沒有算過 token 預算。\n然後報導才剛登出來，\n總裁當天就在網路上改口了。<laugh>\n他說這兩人只是催化劑，\n最後還是要核心團隊負責啦。\n我看到這裡真的快笑出來，\n頭條活在第一天，\n修正活在第二天，\n可是被轉傳的永遠只有頭條。",
+   "lint": {
+    "chars": 298,
+    "precise_numbers": [
+     "百分之九十八"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 20.3,
+    "max_sentence_len": 40,
+    "sentences_over_20": 8,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "先來看傳得最兇的 Cisco 故事。<short pause>\n你猜原文到底是哪種報導？\n它本質上是在聊為什麼要雇年輕人，\n話還是 Cisco 總裁在晚餐上聊出來的。\n原文用的是重構，就是改結構不改行為；\n結果傳到網路上，直接變成整個重寫啦。<laugh>\n然後兩個人就能做，也是那位工程師自己提的，\n他先給自己幾週試水溫，\n最終目標才是在兩年改完百分之九十八。\n那你看原文有驗收標準嗎？完全沒有喔。\n沒有盤點程式碼，也沒有算過預算。\n報導出來當天，總裁就在網路上補充，\n說那個小組只是催化劑，最後還是核心團隊負責。\n我看到這邊真的覺得很妙。<short pause>\n頭條活在第一天，修正活在第二天，\n但被大家轉傳的，永遠都只有第一天嘛。",
+   "lint": {
+    "chars": 268,
+    "precise_numbers": [
+     "百分之九十八"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 23.4,
+    "max_sentence_len": 49,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   }
+  },
+  {
+   "text": "我們先把時鐘撥回那篇原始報導。那根本不是什麼硬派的技術專訪喔，其實只是一篇談為什麼要雇年輕人的文章。那些話，是 Cisco 總裁在晚餐上聊出來的。\n\n你猜原文到底寫了什麼？他用的字是重構，就是改結構不改行為嘛。結果傳到網路上，直接變成整個重寫。<laugh> 對啊，這兩個難度差了十萬八千里耶。\n\n重點來了，這案子還是工程師自己提的。他先給自己四週試試看，最終目標才是搞定百分之九十八。然後呢？原文裡完全沒有驗收標準，也沒有程式碼盤點和預算上限。\n\n更扯的是，報導才剛出來，總裁就自己上網補充說，這幾個人只是催化劑啦，最後還是要核心團隊負責。<sigh> 我看到這段真的替核心團隊捏把冷汗。頭條永遠活在第一天，修訂欄只活在第二天，但大家轉傳的，永遠都只有第一天。",
+   "lint": {
+    "chars": 308,
+    "precise_numbers": [
+     "十萬八千",
+     "百分之九十八"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 21.0,
+    "max_sentence_len": 45,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "沒有盤點程式碼，也沒有算過預算。",
+   "to": "沒有盤點程式碼、沒有九成八的分母，也沒有 token 預算。",
+   "reason": "照素材補上分母與 token 預算"
+  }
+ ]
+}

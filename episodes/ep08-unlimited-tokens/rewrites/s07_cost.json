@@ -1,0 +1,123 @@
+{
+ "segment": "s07_cost",
+ "position": "第 8 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b20e9ba7989f7fc85dd95e221e6db20e4f45dacb50a830f80206312831d551b3",
+ "previous_context": "原作者早就離開，也沒有完整的測試。這種程式碼，真的不是丟給 AI 就能解決的啦。",
+ "original": {
+  "text": "那無限 token 到底貴不貴？Bun 那個案子有公開帳單，平均一行大約三毛美元，而這是 token 的價錢，不是驗收的價錢。報告作者自己算了一下：就算 Cisco 這件事的量是 Bun 的一百倍，token 的錢也不到 Cisco 一天的研發費用。對一家這麼大的公司，「無限 token」是很便宜的承諾。但反過來，同樣的無限放到 Uber 幾千名工程師身上，就算設了上限，一年也要好幾千萬美元。報告說，無限，對兩個人是便宜的姿態，對整家公司，是一張會被收回的支票。它也講明，這段是估算，重點不是 Cisco 會花多少，而是 token 在這個算式裡不是大的那一項。",
+  "lint": {
+   "chars": 264,
+   "precise_numbers": [
+    "一百",
+    "千",
+    "千萬"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 36.7,
+   "max_sentence_len": 54,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那大家說的無限 token，到底有多貴？\n目前只有 Bun 公開過帳單，\n算下來一行大約是零點三一美元。\n但注意喔，這只是 token 的費用，\n不是把東西做好的驗收價格。<short pause>\n報告作者自己算了一下。\n就算 Cisco 的工程量是 Bun 的一百倍，\n費用也還不到 Cisco 一天的研發支出。\n對大公司來說，無限是很便宜的承諾嘛！\n可是換到 Uber 幾千名工程師的規模呢？\n就算有設上限，一年也要好幾千萬美元。\n這段結論真的很有共鳴：\n無限，對兩個人是便宜的姿態；\n對整家公司，就是一張會被收回的支票。<sigh>\n作者也講明，重點不是 Cisco 會花多少，\n而是 token 在算式裡，根本不算大項目啦。",
+   "lint": {
+    "chars": 266,
+    "precise_numbers": [
+     "零點三一",
+     "一百",
+     "千",
+     "千萬"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 25.6,
+    "max_sentence_len": 42,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那高層說的無限 token，到底貴不貴啊？\nBun 那個案子有把帳單公開。\n平均一行程式碼，大概要零點三一美元。<short pause>\n報告作者就拿這個數字算給你看。\n就算 Cisco 整個重寫的量是它的一百倍，\n算下來，還不到 Cisco 一天的研發費用喔。\n對這種大公司來說，無限其實超便宜的嘛。\n可是換個角度，如果放到整家公司呢？\n像 Uber 幾千個工程師都在用，\n就算每個月設上限，一年也要好幾千萬耶。<sigh>\n我覺得報告作者這句話講得很貼切。\n無限，對兩個人是便宜的姿態；\n對整家公司，就是一張會被收回的支票。<short pause>\n作者有講明喔，這只是他自己算的。\n重點不是 Cisco 到底會花多少，\n而是 token 根本不是算式裡最貴的那一項啦。",
+   "lint": {
+    "chars": 280,
+    "precise_numbers": [
+     "零點三一",
+     "一百",
+     "千",
+     "千萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 22.3,
+    "max_sentence_len": 40,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   }
+  },
+  {
+   "text": "那喊出無限 token，到底貴不貴？\n你可能會好奇這要花多少錢。\nBun 的案子有公開數字喔，\n一行程式碼算下來，大約是零點三一美元。\n重點是，這只是 token 的牌價，\n可不是驗收的價格喔。\n然後，報告作者自己做了一個估算。\n就算 Cisco 的量是 Bun 的一百倍，\ntoken 錢還不到 Cisco 一天的研發費用。\n對這種大公司來說，\n無限 token 只是個很便宜的承諾。<short pause>\n可是換個角度呢？\n如果放到 Uber 五千名工程師身上，\n就算設了上限，一年也要好幾千萬美元耶。\n我覺得報告作者這句話說得好傳神，\n對整家公司來說，無限是一張會被收回的支票。\n就是說，在這個算式裡面，\ntoken 根本不是最大的那一項啦。",
+   "lint": {
+    "chars": 280,
+    "precise_numbers": [
+     "零點三一",
+     "一百",
+     "五千",
+     "千萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 24.5,
+    "max_sentence_len": 39,
+    "sentences_over_20": 7,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "平均一行程式碼，大概要零點三一美元。",
+   "to": "平均一行程式碼，大概三毛美元。",
+   "reason": "小數點數字換成好記的說法"
+  }
+ ]
+}

@@ -1,0 +1,134 @@
+{
+ "segment": "s04_built",
+ "position": "第 5 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "5f9e46eaebc6bb2adce15a43518cd68151331f74f5f74a4e4e6164a6d53fecdb",
+ "previous_context": "他們直接把用量排行榜關掉，改看程式碼有沒有真的部署上線。對啊，Linear 的營運長講得很酸，拿 token 花費給工程師排名，就像看誰花最多錢來給行銷團隊排名一樣。",
+ "original": {
+  "text": "反過來，看真的做完的案子。Amazon 把三萬個應用升級到新版的 Java，Airbnb 六週改完原本估一年半的測試檔，Google 用 AI 做內部的大型遷移，Bun 這個專案十一天把五十多萬行換了一種程式語言。報告說，這些案子有三個共同點。第一，起點和終點都講得清楚，例如一個版本換到另一個版本，沒有一個案子的目標是「舊程式碼」。第二，驗收是機器判得了的，建置過、測試過，人只補剩下的一小部分。第三，審查的人力有被管理：Google 刻意限制每週產生的變更量，免得壓垮審查的人。把 Cisco 放進同一張表，這三欄都是空白。報告說，這不代表一定做不到，是目前沒有任何東西可以拿來對。",
+  "lint": {
+   "chars": 283,
+   "precise_numbers": [
+    "三萬",
+    "十一",
+    "五十",
+    "萬"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 34.4,
+   "max_sentence_len": 86,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那如果反過來看，真的做完的案子長怎樣？\n報告整理了幾家大公司。\n像 Amazon 把三萬個應用升級新版本。\n還有 Bun 花十一天把五十多萬行換了語言。\n你覺得這些成功的案子差在哪？\n重點就在三個地方。\n第一個，起點跟終點都清清楚楚。\n都是一個版本號換到另一個版本號。\n沒有人目標會寫「舊程式碼」這種模糊的字。\n然後，驗收全部交給機器判定。\n建置測試有過就好，人只補剩下的一點點。\n最厲害的是審查人力有被管制喔。\n像 Google 就刻意限制每週變更量。\n產出再快，審查的人看不完也是白搭嘛。\n<short pause>\n結果把 Cisco 擺進同一張表，三欄全部空白。\n這不是說他們一定做不到啦。\n而是目前根本沒有東西可以拿來對啊。",
+   "lint": {
+    "chars": 279,
+    "precise_numbers": [
+     "三萬",
+     "十一",
+     "五十",
+     "萬"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "那如果反過來看呢？\n那些真的改完上線的案子，到底長什麼樣？<short pause>\n報告列出了好幾個例子。\n像 Amazon 把三萬個應用升級到新版本。\nAirbnb 只花幾週，就改完原本估一年多的測試。\n還有 Bun，花十幾天把五十多萬行換了一種語言。\n你覺得這些成功的案子，秘密到底在哪？\n其實重點根本不是省多少錢，而是驗收怎麼過。\n他們有三個共同點。\n第一，起點跟終點都定義得超清楚。\n不是版本升級，就是換測試工具。\n沒有人的目標是含糊的「舊程式碼」。\n第二，驗收都是機器在跑，測試過了才算。\n人只負責補最後剩下的一小部分。\n最厲害的是，審查的人力有被好好管理。\n像 Google 就刻意限制每週產出的變更量。\n免得工程師直接被程式碼淹沒。<short pause>\n這句話我看了真的很有共鳴。\nAI 產出再快，人審不完也是白搭嘛。\n那 Cisco 呢？\n把他們放進同一張表，三欄全部都是空白。\n這不是說他們一定做不到啦。\n而是到目前為止，根本沒有任何資料可以拿來驗證。",
+   "lint": {
+    "chars": 382,
+    "precise_numbers": [
+     "三萬",
+     "五十",
+     "萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 23,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 23,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   }
+  },
+  {
+   "text": "所以，我們反過來看那些真的做完的案子。<short pause>\n像是 Amazon 把三萬個應用換到新版 Java。\nAirbnb 只花六週，改完原本估一年半的測試。\n還有 Bun，十幾天就把五十幾萬行換了語言。\n那這些真正做完的案子，到底差在哪？\n其實就三個共同點。\n第一，起點跟終點都很明確。\n像是版本對版本，絕對不是含糊的舊程式碼。\n第二，驗收完全交給機器。\n建置有過、測試有過，人只看最後一小塊。\n然後最關鍵的是，審查人力是有被管制的。\n像 Google 就刻意限制每週的變更量。\n免得審查的工程師直接被淹沒。<laugh>\n這真的很合理耶。\n畢竟產出可以無限，但審查不行啊。\n你看，如果把 Cisco 放進這張表。\n他們的那三欄，現在全部都是空白。\n這不是說他們一定做不到喔。\n是目前根本沒有東西可以拿來對嘛。",
+   "lint": {
+    "chars": 314,
+    "precise_numbers": [
+     "三萬",
+     "五十",
+     "萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 19,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 22,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "免得審查的工程師直接被淹沒。<laugh>這真的很合理耶。",
+   "to": "免得審查的工程師直接被淹沒。這真的很合理耶。",
+   "reason": "笑聲放在這裡不自然"
+  }
+ ]
+}

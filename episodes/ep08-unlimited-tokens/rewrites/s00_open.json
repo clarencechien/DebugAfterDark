@@ -1,0 +1,106 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 10 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "eee6d4e86853b6cb5f68cbaa092e842d40a05c487078c5a2045087c8b7f0ca74",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "Cisco 的總裁，給了一位二十七歲的工程師「無限 token」，目標是兩年內，把公司九成八的舊程式碼重構一遍。這則新聞三天內，從英文媒體傳到中文的轉傳貼文。報告說，每轉一手，就掉一樣東西，而掉的那些，剛好都是驗收。所以這份報告只想證明一句話：token 是投入，驗收才是產出。它先看今年每一個「無限」的下場，再看真的做完的案子，最後列一張可以拿去對的單子。",
+  "lint": {
+   "chars": 176,
+   "precise_numbers": [
+    "二十七"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 34.2,
+   "max_sentence_len": 53,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "Cisco 的總裁給了一位不到三十歲的工程師無限 token。目標是在兩年內，重構公司九成八的舊程式碼。重構就是只改結構、不改行為。欸，這新聞你最近應該有看到吧？<short pause>大家都在討論 AI 有多厲害，但報告說，這消息每轉傳一手，就掉了一樣東西。掉了什麼？剛好就是驗收啊。<sigh>我看到這句真的很認同。因為 token 只是投入，驗收才是產出嘛。這份報告就是要來看，今年那些號稱無限的案子，最後有誰真的做完了。",
+   "lint": {
+    "chars": 190,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 18.0,
+    "max_sentence_len": 34,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？<short pause>\n如果主管給你無限的 token，\n叫你在兩年內重構公司九成八的舊程式碼，\n也就是改結構不改行為，你敢接嗎？<short pause>\nCisco 的總裁最近就真的這樣幹。\n這新聞幾天內傳到到處都是。\n但我看到這裡整個起雞皮疙瘩。\n因為消息每轉一手，就漏掉最關鍵的東西。\n漏了什麼？剛好就是驗收啊。\n大家都在看無限生成有多爽，\n可是 token 只是投入耶，\n驗收才是產出嘛。\n今天就來看那些喊無限的下場，\n還有真的做完的案子，到底差在哪裡。",
+   "lint": {
+    "chars": 198,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 49,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "Cisco 的總裁，給了一位年輕工程師無限 token。\n目標是兩年內，重構公司百分之九十八的舊程式碼。\n重構就是改結構、不改行為喔。\n這則新聞幾天內就傳遍網路，\n可是每轉一手，就掉了一樣東西。\n你猜掉了什麼？<short pause>\n掉了驗收啦。\n我看到這邊真的很有共鳴，\n因為 token 只是投入，驗收才是產出嘛。\n這份報告就是要看，\n那些標榜無限的案子，最後下場是什麼，\n然後列出一張四週後可以拿去對的單子。",
+   "lint": {
+    "chars": 181,
+    "precise_numbers": [
+     "百分之九十八"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 21.6,
+    "max_sentence_len": 44,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "嘿，還醒著嗎？<short pause>如果主管",
+   "to": "如果主管",
+   "reason": "cold open 不打招呼"
+  }
+ ]
+}
