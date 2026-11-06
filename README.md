@@ -24,9 +24,57 @@
 ## 上架狀態
 - 網站與 feed：<https://podcast.ai-apps.work>，feed `https://podcast.ai-apps.work/feed.xml`（GitHub Pages，見 `PIPELINE.md` §5 的過渡方案）
 - 擁有者信箱：`podcast@ai-apps.work`（Cloudflare Email Routing 轉寄）
-- 還沒送審 Apple Podcasts、Spotify 等平台
+- 還沒送審 Apple Podcasts、Spotify 等平台（順序與做法見下面「上架平台」）；YouTube 已建好品牌帳號頻道，還沒匯入 RSS
+- 網站功能：每集一頁（`/ep05/` 這種短網址，有各自的分享預覽）、每集「分享這一集」按鈕；在 LINE、Facebook、Instagram 等 app 內建瀏覽器打開時提示改用瀏覽器（LINE 另有一鍵 `openExternalBrowser=1`）；Media Session 讓鎖定畫面顯示集名與封面，可倒退 15 秒、快轉 30 秒（`tools/build_site.py`）
 - 下載數據：SoundOn Prefix（`show.json` 的 `enclosure_prefix`），feed 裡的音檔網址先經過 SoundOn 再 302 回我們的檔案；網站播放器不經過
 - 贊助連結：<https://portaly.cc/clarencech/support>（`show.json` 的 `support_url`），見下面的「Portaly 現況」
+
+## 上架平台（2026-11-05 整理；還沒送審）
+
+### 建議的順序
+| 順序 | 平台 | 怎麼上 | 費用 | 審核 | 備註 |
+|---|---|---|---|---|---|
+| 1 | Apple Podcasts | 用 Apple 帳號登入 Podcasts Connect，貼 feed 網址 | 免費（付費訂閱方案另計，非必要） | 通常幾天 | 很多第三方 app（Overcast、Pocket Casts 等）也從 Apple 目錄找節目。內容規範要求 AI 合成聲音在**內容與資料裡都要明顯揭露** |
+| 2 | Spotify | creators.spotify.com →「Find an existing show → Somewhere else」，貼 feed；8 位數驗證碼寄到 feed 的信箱 | 免費 | 通常幾小時 | 驗證碼寄到 `podcast@ai-apps.work` |
+| 3 | KKBOX | 用 KKBOX 帳號綁 feed（一個帳號只能綁一個節目） | 免費 | 約 1–3 個工作天 | 台灣本地平台；找到的資料多是 2020–2023 年，以 KKBOX 官方頁為準 |
+| 4 | Podcast Index | podcastindex.org 貼 feed | 免費 | 幾分鐘 | 開放目錄，Podcast Addict、Fountain 等從這裡抓 |
+| 5 | YouTube | YouTube Studio：建立 → 新增 Podcast → 提交 RSS feed，驗證碼寄到 feed 的信箱 | 免費 | 不一定 | RSS 匯入只開放部分國家，**台灣在不在名單上還沒確認**；YouTube 對量產 AI 內容最嚴，放最後 |
+| 可選 | Amazon Music | Amazon Music for Podcasters 提交 feed | 免費 | 幾天 | 台灣用的人少 |
+
+SoundOn 已經有我們的播放頁，不用另外申請。送審都要登入節目擁有者自己的帳號，由人操作。
+
+### 送審前要決定的
+- **`itunes:author`**：目前是「深夜 Debug」，會在 Apple、Spotify 公開顯示成創作者。feed 的 owner 名稱與 copyright 也都是「深夜 Debug」，沒有本人名字。
+- **每集口播 AI 揭露**：節目層與每集說明都有，EP00 有口播；其他集要不要在片尾加一句，待決定。
+- **下載數會分散**：Spotify、YouTube 會自己存一份音檔，從那裡播的不經過 SoundOn Prefix，要到各平台後台看；只有 Apple 與直接讀 feed 的 app 會被 SoundOn 統計。
+- **流量**：GitHub Pages 建議每月 100 GB，一集約 8–10 MB，約一萬次下載內都夠；超過就把 mp3 搬到 Cloudflare R2。
+
+### 不想被連到本人
+三個平台的公開頁都只顯示 feed 或頻道設定裡的名稱，帳號本人不公開（營利時要給平台真實資料，但不公開）。YouTube 用**品牌帳號頻道**，和個人頻道分開：觀看紀錄、訂閱、留言各自獨立，切換用右上角頭像的「切換帳戶」；用節目身分留言前先確認頭像。
+目前還會連到本人的地方：
+- 贊助網址 `portaly.cc/clarencech/support`（feed 和網站都有）
+- 這個 repo 是公開的
+- 部分 imitator 報告有署名
+
+EP02 說明裡的個人 GitHub 連結已在 2026-11-05 拿掉。
+
+### YouTube 不能當其他平台的來源
+YouTube 用 RSS 匯入時，是把我們 feed 裡的音檔**複製一份**放在 YouTube／YouTube Music，只給它自己的聽眾用。它不提供 RSS，也沒有可以直接下載的音檔網址，所以 Apple、Spotify、KKBOX 這些讀 RSS 的平台**不能反過來引用 YouTube**；而且 YouTube 是持續從我們的 feed 抓新集數，我們的 feed 不在，它也收不到新的一集。
+要離開 GitHub Pages 時，可以選：
+- **Cloudflare R2 放音檔，加上 Pages 或 Workers 放網站和 feed**：產線不用改，用量小時接近免費。這是建議的做法。
+- **SoundOn 託管**
+- **Spotify for Creators 託管**
+
+feed 網址在自己的網域上，搬家只改指向，聽眾與各平台不受影響。
+
+### 多語版在各平台怎麼放
+各平台都是「一份 feed＝一個節目」，同一個節目不能匯入多份 feed。所以每種語言一份 feed：
+- feed 路徑：`/feed.xml`（中文）、`/en/feed.xml`、`/ja/feed.xml`。
+- Apple、Spotify：同一個帳號送三份 feed，就是三個獨立節目。Apple 的「頻道」可以把幾個節目放在一起，但它跟付費訂閱方案一起設定，要做時再確認條件。
+- YouTube：同一個品牌頻道裡分別匯入三份 feed，成為三個 Podcast 播放清單。另一條路是 YouTube 的「多語言音軌」，一支影片放三種語言的音軌，但只能用上傳影片的方式，RSS 匯入做不到。
+- KKBOX：一個帳號只能綁一份 feed。
+- 每份 feed 的身分要分開：`podcast:guid`、標題、語言（`zh-tw`、`en`、`ja`）、封面文字各自設定；擁有者信箱可以共用。
+- 各版在說明與網站上互相連結。試作與決定見 `PIPELINE.md` §8 第 8 項。
 
 ## 收入方式（2026-11-04 調查；目前只做了贊助連結）
 
@@ -127,4 +175,5 @@
 - Patreon：[Enable audio RSS feeds for my members](https://support.patreon.com/hc/articles/213557023)、[Pocket Casts 加入私人 feed](https://support.pocketcasts.com/knowledge-base/private-or-members-only-feeds/)
 - AI 內容與分潤：[The Audio Industry Is Grappling With the Rise of 'Podslop'](https://www.pulse.bot/entertainment/news/the-audio-industry-is-grappling-with-the-rise-of-podslop-be7d9d8d-8133-4614-a223-58d27a740607/)、[Can You Monetize AI-Generated Videos on YouTube in 2026?](https://fluxnote.io/guides/monetize-ai-generated-videos-youtube-2026)
 - Portaly：[Portaly Payment 教學](https://portaly.cc/blog/portaly-payment-tutorial)、[官方 agent skills（portaly-ai/portaly-skills）](https://github.com/portaly-ai/portaly-skills)、[API 文件](https://portaly.ai/docs)、[OpenAPI 規格](https://portaly.ai/openapi.json)
+- 上架平台：[YouTube：Deliver podcasts using an RSS feed](https://support.google.com/youtube/answer/13525207)、[YouTube RSS 可用地區](https://support.google.com/youtube/answer/14106258)、[Spotify：Adding a new show](https://support.spotify.com/us/creators/article/adding-a-new-show)、[Apple Podcasts Content Requirements](https://podcasters.apple.com/support/891-content-and-subscription-guidelines)、[KKBOX for Podcasters（INSIDE）](https://www.inside.com.tw/article/20511-kkbox-for-podcasters)、[Firstory：上架到各個收聽平台](https://intercom.help/firstory/zh-TW/articles/12000138-%E4%B8%8A%E6%9E%B6%E5%88%B0%E5%90%84%E5%80%8B%E6%94%B6%E8%81%BD%E5%B9%B3%E5%8F%B0)
 - GitHub Pages：[GitHub Pages limits（禁止的用途）](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
