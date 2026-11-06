@@ -1,0 +1,62 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -22.1,
+  "gain_db": 2.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_recap",
+  "lufs_before": -20.4,
+  "gain_db": 0.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_agent",
+  "lufs_before": -21.4,
+  "gain_db": 1.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_cpu",
+  "lufs_before": -21.1,
+  "gain_db": 1.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_funnel",
+  "lufs_before": -21.0,
+  "gain_db": 1.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_gaps",
+  "lufs_before": -22.1,
+  "gain_db": 2.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_factories",
+  "lufs_before": -22.4,
+  "gain_db": 2.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_one_person",
+  "lufs_before": -25.0,
+  "gain_db": 5.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_moat",
+  "lufs_before": -20.9,
+  "gain_db": 0.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_outro",
+  "lufs_before": -20.4,
+  "gain_db": 0.4,
+  "lufs_after": -20.0
+ }
+]

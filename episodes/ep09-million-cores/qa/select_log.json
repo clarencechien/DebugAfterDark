@@ -1,0 +1,747 @@
+{
+ "asr": "breeze",
+ "beam": 5,
+ "tolerance": 0.012,
+ "terms": [],
+ "jitter_margin": 0.02,
+ "pace_margin": 0.1,
+ "episode_median_cps": 4.29,
+ "consistency": true,
+ "sim_margin": 0.015,
+ "bright_margin": 300,
+ "segments": [
+  {
+   "id": "s00_open",
+   "chosen": "s00_open.take3.wav",
+   "takes": [
+    {
+     "file": "s00_open.take0.wav",
+     "cer": 0.026,
+     "unclear": 2,
+     "long_pauses_per_min": 11.6,
+     "text": "今年上半年大家都在比 token 數量啦到了下半年大概比能控幾個 agent也就是能自己決定下一步的 AI你有沒有發現這兩次比的其實都只是投入耶實驗室跟外面真正的差距只有一樣東西更扯的是那樣東西根本買不到這一集只用一個比喻就是檔案卡卡上的格線讀卡機其實看不見機器只讀鉛筆塗黑的格子驗收就是要做到這樣只看證據不看說明喔",
+     "jitter": 0.277,
+     "cps": 4.22,
+     "terms_ok": true,
+     "sim_to_episode": 0.982,
+     "centroid": 2659,
+     "bright_gap": 215
+    },
+    {
+     "file": "s00_open.take1.wav",
+     "cer": 0.019,
+     "unclear": 0,
+     "long_pauses_per_min": 10.6,
+     "text": "今年上半年大家都在比 token 數量到了下半年大家改筆能控幾個 agent也就是能自己決定下一步的 AI你有沒有發現這兩次筆的其實都只是投入耶實驗室跟外面真正的差距只有一樣東西更扯的是那樣東西根本買不到這集只用一個比喻就是答案卡卡上的格線讀卡機其實看不見機器只讀鉛筆塗黑的格子驗收就是要做到這樣只看證據不看說明喔",
+     "jitter": 0.26,
+     "cps": 3.86,
+     "terms_ok": true,
+     "sim_to_episode": 0.979,
+     "centroid": 2217,
+     "bright_gap": 228
+    },
+    {
+     "file": "s00_open.take2.wav",
+     "cer": 0.019,
+     "unclear": 0,
+     "long_pauses_per_min": 12.6,
+     "text": "今年上半年大家都在比 token 數量到了下半年大家改筆能控幾個 agent也就是能自己決定下一步的 AI你有沒有發現這兩次比的其實都只是投入耶實驗室跟外面真正的差距只有一樣東西更扯的是那樣東西根本買不到這一集只用一個比喻就是答案卡卡上的格線讀卡機其實看不見機器只讀鉛筆塗黑的格子驗收就是要做到這樣只看證據不看說明喔",
+     "jitter": 0.228,
+     "cps": 4.03,
+     "terms_ok": true,
+     "sim_to_episode": 0.972,
+     "centroid": 2677,
+     "bright_gap": 232
+    },
+    {
+     "file": "s00_open.take3.wav",
+     "cer": 0.019,
+     "unclear": 0,
+     "long_pauses_per_min": 6.6,
+     "text": "今年上半年大家都在比 token 數量到了下半年大家改比能控幾個 agent也就是能自己決定下一步的 AI你有沒有發現這兩次比的其實都只是投入耶實驗室跟外面真正的差距只有一樣東西更扯的是那樣東西根本買不到這一集只用一個比喻就是答案卡卡上的格線讀卡機其實看不見機器只讀牽筆塗黑的格子驗收就是要做到這樣只看證據不看說明喔",
+     "jitter": 0.24,
+     "cps": 4.18,
+     "terms_ok": true,
+     "sim_to_episode": 0.985,
+     "centroid": 2330,
+     "bright_gap": 115
+    },
+    {
+     "file": "s00_open.take4.wav",
+     "cer": 0.019,
+     "unclear": 1,
+     "long_pauses_per_min": 8.0,
+     "text": "今年上半年大家都在比 token 數量到了下半年大家改筆能控幾個 agent也就是能自己決定下一步的 AI你有沒有發現這兩次比的其實都只是投入耶實驗室跟外面真正的差距只有一樣東西更扯的是那樣東西根本買不到這集只用一個比喻就是答案卡卡上的格線讀卡機其實看不見機器只讀鉛筆凸黑的格子驗收就是要做到這樣只看證據不看說明喔",
+     "jitter": 0.276,
+     "cps": 4.07,
+     "terms_ok": true,
+     "sim_to_episode": 0.98,
+     "centroid": 2515,
+     "bright_gap": 70
+    },
+    {
+     "file": "s00_open.take5.wav",
+     "cer": 0.026,
+     "unclear": 0,
+     "long_pauses_per_min": 14.2,
+     "text": "今年上半年大家都在比 token 數量到了下半年大家改筆能控幾個 agent也就是能自己決定下一步的 AI你有沒有發現這兩次比的其實都只是投入耶實驗室跟外面真正的差距只有一樣東西更扯的是那樣東西根本買不到這一集只用一個比喻就是答案卡卡上的格線喔讀卡機其實看不見機器只讀鉛筆塗黑的格子驗收就是要做到這樣只看證據不看說明喔",
+     "jitter": 0.229,
+     "cps": 4.03,
+     "terms_ok": true,
+     "sim_to_episode": 0.987,
+     "centroid": 2611,
+     "bright_gap": 166
+    }
+   ],
+   "clear_enough": [
+    "s00_open.take0.wav",
+    "s00_open.take1.wav",
+    "s00_open.take2.wav",
+    "s00_open.take3.wav",
+    "s00_open.take4.wav",
+    "s00_open.take5.wav"
+   ]
+  },
+  {
+   "id": "s01_recap",
+   "chosen": "s01_recap.take0.wav",
+   "takes": [
+    {
+     "file": "s01_recap.take0.wav",
+     "cer": 0.03,
+     "unclear": 2,
+     "long_pauses_per_min": 11.6,
+     "text": "上一集聊到 Cisco 給無限 token但 token 只是投入驗收才是產出做得完的案子都有管得住的審查人力那時停在一個問題如果用 AI 審 AI審查那 AI 拿什麼驗收這集我們就接著看這件事先來看 Meta 9 月的一個轉變他們正式把 token 用量從烤雞拿掉你猜大家就少用了嗎完全沒有因為同一週他們發了一款 agent 給員工agent 就是模型加回圈會自己做決定結果員工的用量反而漲得更兇從屬 token 改成發 agent燒的東西根本沒變agent 就是 token 乘上回圈算到底它依然只是投入啦",
+     "jitter": 0.204,
+     "cps": 4.49,
+     "terms_ok": true,
+     "sim_to_episode": 0.979,
+     "centroid": 1818,
+     "bright_gap": 627
+    },
+    {
+     "file": "s01_recap.take1.wav",
+     "cer": 0.03,
+     "unclear": 2,
+     "long_pauses_per_min": 12.0,
+     "text": "上一集聊到 Cisco 給無限 token但 token 只是投入驗收才是產出做得完的案子都有管得住的審查人力但是停在一個問題如果用 AI 審 AI審查的 AI 拿什麼驗收這一集我們就接著看這件事先來看 Meta 9 月的一個轉變他們正式把 token 用量從烤雞拿掉你猜大家就少用了嗎完全沒有因為同一週他們發了一款 agent 給員工agent 就是模型加迴圈會自己做決定結果員工的用量反而漲得更兇從屬 token 改成發 agent燒的東西根本沒變agent 就是 token 乘上迴圈算到底它依然只是投入啦",
+     "jitter": 0.234,
+     "cps": 4.63,
+     "terms_ok": true,
+     "sim_to_episode": 0.986,
+     "centroid": 2550,
+     "bright_gap": 105
+    },
+    {
+     "file": "s01_recap.take2.wav",
+     "cer": 0.461,
+     "unclear": 3,
+     "long_pauses_per_min": 8.8,
+     "text": "上一集聊到 Cisco 給無限 token但 token 只是投入驗收才是產出做得完的案子都有管得住的審查人力那時停在一個問題如果用 AI 審 AI審查的 AI 拿什麼驗收這集我們就接著看這件事先來看 Meta 9 月的一個轉變他們正式把 token 用量從烤雞拿掉你猜大家就少用了嗎完全沒有因為同一週他們發了一款 agent 給員工agent 就是模型加回權會自己做決定結果員工的用量反而漲得更兇從屬 token 改成發 agent燒的東西根本沒變agent 就是 token 乘上回權算到底它依然只是投入啦像微軟最近在推的從 GitHub 整合 cloud code 到 Azure 支援 threehugger都是把 agent 往 prompt 裡面塞可是這就帶來一個很根本的問題agent 是拿來省人力但它本身也需要人來省啊",
+     "jitter": 0.214,
+     "cps": 3.41,
+     "terms_ok": true,
+     "sim_to_episode": 0.959,
+     "centroid": 2066,
+     "bright_gap": 379
+    }
+   ],
+   "clear_enough": [
+    "s01_recap.take0.wav",
+    "s01_recap.take1.wav"
+   ]
+  },
+  {
+   "id": "s02_agent",
+   "chosen": "s02_agent.take4.wav",
+   "takes": [
+    {
+     "file": "s02_agent.take0.wav",
+     "cer": 0.031,
+     "unclear": 1,
+     "long_pauses_per_min": 17.6,
+     "text": "那這個迴圈到底在跑什麼一般的聊天機器人是你問他答結束但 agent 不一樣喔你給他一個目標他自己決定下一步像是讀個檔案跑個指令改幾行程式做完看一下結果再決定下一步要幹嘛所以它就是模型加工具再用迴圈一直跑那這裡面最關鍵的是什麼就是每做完一步他得知道做對了沒工程上把判定對錯的東西叫做 oracle像是跑測試編譯器或是有人盯著看如果沒有 oracle 呢讓模型自己判斷就像自己改自己的考卷吧有研究拿真實的舊程式去測結果超諷刺在所有失敗的任務裡面有 97％ agent 都堅信自己做對了這個數字光是用看的就起雞皮疙瘩也就是說沒有 oracle 在旁邊把關agent 的自信跟它有沒有做對完全無關啦",
+     "jitter": 0.258,
+     "cps": 4.0,
+     "terms_ok": true,
+     "sim_to_episode": 0.985,
+     "centroid": 2251,
+     "bright_gap": 194
+    },
+    {
+     "file": "s02_agent.take1.wav",
+     "cer": 0.045,
+     "unclear": 4,
+     "long_pauses_per_min": 13.3,
+     "text": "那這個迴圈到底在跑什麼一般的聊天機器人是你問他答結束但 agent 不一樣喔你給他一個目標他自己決定下一步像是讀個檔案跑個指令改幾行程式做完看一下結果再決定下一步要幹嘛所以它就是模型加工具再用迴圈一直跑那這裡面最關鍵的是什麼就是每做完一步他得知道做對了沒工程上把判定對錯的東西叫做 oracle像是跑測試變異器或是有人盯著看如果沒有 oracle 咧讓模型自己判斷就像自己改自己的考卷嘛有研究拿真實的舊程式去測結果超諷刺在所有失敗的任務裡面有 97％ agent 都堅信自己做對了在數字光是用看的就起雞皮疙瘩也就是說沒有 oracle 在旁邊把關agent 的自信跟他有沒有做對完全無關啊",
+     "jitter": 0.273,
+     "cps": 4.21,
+     "terms_ok": true,
+     "sim_to_episode": 0.984,
+     "centroid": 2636,
+     "bright_gap": 191
+    },
+    {
+     "file": "s02_agent.take2.wav",
+     "cer": 0.035,
+     "unclear": 3,
+     "long_pauses_per_min": 10.5,
+     "text": "那這個迴圈到底在跑什麼一般的聊天機器人是你問他答結束但 agent 不一樣你給他一個目標他自己決定下一步像是讀個檔案跑個指令改幾行程式做完看一下結果再決定下一步要幹嘛所以它就是模型加工具再用迴圈一直跑那這裡面最關鍵是什麼就是每做完一步它得知道做對了沒工程上把判定對錯的東西叫做 oracle像是跑測試編譯器或是有人盯著看如果沒有 oracle 咧讓模型自己判斷就像自己改自己的考卷嘛有研究拿真實的舊程式去測結果超諷刺在所有失敗的任務裡面有 97％ agent 都堅信自己做對了這數字光是用看的就起雞皮疙瘩啊也就是說沒有 oracle 在旁邊把關agent 的自信跟它有沒有做對完全無關啦",
+     "jitter": 0.258,
+     "cps": 4.19,
+     "terms_ok": true,
+     "sim_to_episode": 0.982,
+     "centroid": 2672,
+     "bright_gap": 228
+    },
+    {
+     "file": "s02_agent.take3.wav",
+     "cer": 0.035,
+     "unclear": 2,
+     "long_pauses_per_min": 9.0,
+     "text": "那這個回圈到底在跑什麼一般的聊天機器人是你問他答結束那 agent 不一樣喔你給他一個目標他自己決定下一步像是讀個檔案跑個指令改幾行程式做完看一下結果再決定下一步要幹嘛所以它就是模型加工具再用回圈一直跑那這裡面最關鍵的是什麼就是每做完一步他得知道做對了沒工程上把判定對錯的東西叫做 oracle像是跑測試編譯器或是有人盯著看如果沒有 oracle 呢讓模型自己判斷就像自己改自己的考卷嘛有研究拿真實的舊程式去測結果超諷刺在所有失敗的任務裡面有 97％ agent 都堅信自己做對了這數字光是用看的就起雞皮疙瘩了也就是說沒有 oracle 在旁邊把關agent 的自信跟它有沒有作對完全無關啦",
+     "jitter": 0.28,
+     "cps": 4.3,
+     "terms_ok": true,
+     "sim_to_episode": 0.983,
+     "centroid": 2159,
+     "bright_gap": 286
+    },
+    {
+     "file": "s02_agent.take4.wav",
+     "cer": 0.035,
+     "unclear": 3,
+     "long_pauses_per_min": 9.6,
+     "text": "那這個迴圈到底在跑什麼一般的聊天機器人是你問他打結束但 agent 不一樣喔你給他一個目標他自己決定下一步像是讀個檔案跑個指令改幾行程式做完看一下結果再決定下一步要幹嘛所以它就是模型加工具再用迴圈一直跑那這裡面最關鍵的是什麼就是每做完一步它得知道做對了沒工程上把判定對錯的東西叫做 oracle像是跑測試變異器或是有人盯著看如果沒有 oracle 呢讓模型自己判斷就像自己改自己的考卷嘛有研究拿真實的舊程式去測結果超諷刺在所有失敗的任務裡面有 97％ agent 都堅信自己做對了這數字光是用看的就起雞皮疙瘩也就是說沒有 oracle 在旁邊把關agent 的自信跟它有沒有做對完全無關啊",
+     "jitter": 0.255,
+     "cps": 4.18,
+     "terms_ok": true,
+     "sim_to_episode": 0.982,
+     "centroid": 2499,
+     "bright_gap": 54
+    },
+    {
+     "file": "s02_agent.take5.wav",
+     "cer": 0.045,
+     "unclear": 3,
+     "long_pauses_per_min": 11.1,
+     "text": "那這個迴圈到底在跑什麼一般的聊天機器人是你問他答結束但 agent 不一樣喔你給他一個目標他自己決定下一步像是讀個檔案跑個指令改幾行程式做完看一下結果再決定下一步要幹嘛所以它就是模型加工具這樣迴圈一直跑那這裡面最關鍵的是什麼就是每做完一步他得知道做對了沒工程上把判定對錯的東西叫做 oracle像是跑測試編譯器或是有人盯著看如果沒有 oracle 呢讓模型自己判斷就像自己改自己的考卷嘛有研究拿真實的舊程式去測結果超諷刺在所有失敗的任務裡面有 97％ agent 都堅信自己做對了這數字可能用看的就起雞皮疙瘩也就是說沒有 oracle 在旁邊把關agent 的自信跟他有沒有作對完全無關啦",
+     "jitter": 0.222,
+     "cps": 4.41,
+     "terms_ok": true,
+     "sim_to_episode": 0.979,
+     "centroid": 2626,
+     "bright_gap": 181
+    }
+   ],
+   "clear_enough": [
+    "s02_agent.take0.wav",
+    "s02_agent.take2.wav",
+    "s02_agent.take3.wav",
+    "s02_agent.take4.wav"
+   ]
+  },
+  {
+   "id": "s03_cpu",
+   "chosen": "s03_cpu.take0.wav",
+   "takes": [
+    {
+     "file": "s03_cpu.take0.wav",
+     "cer": 0.026,
+     "unclear": 3,
+     "long_pauses_per_min": 11.4,
+     "text": "既然要有東西把關你猜實驗室怎麼做他們用了大約 100 萬顆 CPU 核心不是 GPU 是 CPU這不是公開數據啦是工程師 Jeffrey Huntley 轉述朋友講的原畫在付費牆後面目前還沒核對過但這個背後的邏輯非常合理要讓模型學會做事現在主流是強化學習就是讓它在環境裡試做對了就給獎勵這個環境叫沙箱也就是能隨時重置的小電腦重點來了想是 GPU 的事驗是 CPU 的事模型自己產生動作只要一瞬間但要編譯跑測試確認對不對得靠 CPU 嘛這就像上千萬張答案卡同時在批改耶光是想像那個畫面就覺得有夠瘋狂",
+     "jitter": 0.235,
+     "cps": 3.71,
+     "terms_ok": true,
+     "sim_to_episode": 0.987,
+     "centroid": 2407,
+     "bright_gap": 38
+    },
+    {
+     "file": "s03_cpu.take1.wav",
+     "cer": 0.047,
+     "unclear": 4,
+     "long_pauses_per_min": 11.1,
+     "text": "既然要有東西把關你猜實驗室怎麼做他們用了大約 100 萬顆 CPU 核心喔對不是 GPU 是 CPU這不是公開數據啦是工程師 Jeffrey Huntley 轉述朋友講的原畫在付費牆後面目前還沒核對過但這個背後的邏輯非常合理要讓模型學會做事現在主流是強化學習就是讓它在環境裡試做對了就可以獎勵這個環境叫沙箱也就是能隨時重置的小電腦重點來了想是 GPU 的事驗是 CPU 的事模型自己產生動作只要一瞬間但要編譯跑測試確認對不對得靠 CPU 嘛這就像上千萬張檔案卡同時在批改光是想像那個畫面就覺得有夠瘋狂了",
+     "jitter": 0.224,
+     "cps": 4.31,
+     "terms_ok": true,
+     "sim_to_episode": 0.971,
+     "centroid": 2453,
+     "bright_gap": 8
+    },
+    {
+     "file": "s03_cpu.take2.wav",
+     "cer": 0.043,
+     "unclear": 4,
+     "long_pauses_per_min": 11.6,
+     "text": "既然要有東西把關你猜實驗室怎麼做他們用了大約 100 萬顆 CPU 核心對不是 GPU 是 CPU這不是公開數據啦是工程師 Jeffrey Huntley 轉述朋友講的原畫在付費牆後面目前還沒核對過但這個背後的邏輯非常合理要讓模型學會做事現在主流是強化學習就是讓它在環境裡試做對了就給獎勵這個環境叫沙箱也就是能隨時重置的小電腦重點來了想是 GPU 的事驗是 CPU 的事模型自己產生動作只要一瞬間但要編譯跑測試圈對不對得靠 CPU 嘛這就像上千萬張檔案卡同時在批改光是想像那個畫面就覺得有夠瘋狂了",
+     "jitter": 0.266,
+     "cps": 3.78,
+     "terms_ok": true,
+     "sim_to_episode": 0.984,
+     "centroid": 2547,
+     "bright_gap": 102
+    }
+   ],
+   "clear_enough": [
+    "s03_cpu.take0.wav"
+   ]
+  },
+  {
+   "id": "s04_funnel",
+   "chosen": "s04_funnel.take4.wav",
+   "takes": [
+    {
+     "file": "s04_funnel.take0.wav",
+     "cer": 0.082,
+     "unclear": 8,
+     "long_pauses_per_min": 13.0,
+     "text": "而且大家看到的 AI 其實差超多CopperC把全世界的人分成 4 層 load重點是每一層人到底怎麼驗收最底層有幾十億人耶沒碰過就不用驗上一層是用免費版的人驗收方式就是自己讀一遍覺得對就對那寫程式的工程師呢是靠測試還有省送省的程式碼變更最頂層大概五千人都在前研試驗試他們用獨立砂箱讓機器打分人根本不用在回圈裡面Geoffrey Huntley 說的更直接看過 agent 群真的跑起來的人全世界大概不到五千個他就預言很多公司會重蹈覆轍就像當年跟風做 Kubernetes 一樣只買了工具卻沒學到底下的運作方式這真的會讓人捏一把冷汗耶",
+     "jitter": 0.253,
+     "cps": 3.95,
+     "terms_ok": true,
+     "sim_to_episode": 0.987,
+     "centroid": 3015,
+     "bright_gap": 571
+    },
+    {
+     "file": "s04_funnel.take1.wav",
+     "cer": 0.062,
+     "unclear": 11,
+     "long_pauses_per_min": 13.7,
+     "text": "而且大家看到的 AI 其實差超多Capacity 把全世界的人分成四層漏洞重點是每一層人到底怎麼驗收最底層有幾十億人沒碰過就不用驗上一層是用免費版的人驗收方式就是自己讀一遍覺得對就對那寫程式的工程師呢是靠測試還有省送省的程式碼變更最頂層大概五千人都在前研實驗室他們用獨立砂箱讓機器打粉人根本不用在回圈裡面Jeffrey Huntley 說的更直接看過 agent 群真的跑起來的人全世界大概不到五千個他就預言很多公司會重蹈覆轍就像當年跟風做 Kubernetes 一樣只買了工具卻沒學到底下的運作方式這真的會讓人捏一把冷汗耶",
+     "jitter": 0.255,
+     "cps": 4.51,
+     "terms_ok": true,
+     "sim_to_episode": 0.986,
+     "centroid": 2757,
+     "bright_gap": 312
+    },
+    {
+     "file": "s04_funnel.take2.wav",
+     "cer": 0.066,
+     "unclear": 10,
+     "long_pauses_per_min": 2.2,
+     "text": "而且大家看到的 AI 其實差超多Carpathia 把全世界的人分成四層漏洞重點是每一層人到底怎麼驗收最底層有幾十億人沒碰過就不用驗上一層是用免費版的人驗收方式就是自己讀一遍覺得對就對那寫程式的工程師呢是靠測試還有送審的程式碼變更最頂層大概 5000 人都在前研實驗室他們用獨立沙箱讓機器打分人根本不用在迴圈裡面Jeffrey Huntley 說的更直接看過 agent 群真的跑起來的人全世界大概不到 5000 個他就預言很多公司會重蹈覆轍就像當年跟風做 Kubernetes 一樣只買了工具卻沒學到底下的運作方式這真的會讓人捏一把冷汗耶",
+     "jitter": 0.254,
+     "cps": 4.66,
+     "terms_ok": true,
+     "sim_to_episode": 0.981,
+     "centroid": 2684,
+     "bright_gap": 240
+    },
+    {
+     "file": "s04_funnel.take3.wav",
+     "cer": 0.086,
+     "unclear": 12,
+     "long_pauses_per_min": 5.2,
+     "text": "對 而且大家看到的 AI 其實差超多Culver City 把全世界的人分成四層漏洞重點是每一層人到底怎麼驗收最底層有幾十億人沒碰過就不用驗上一層是用免費版的人驗收方式就是自己多一遍覺得對就對那寫程式的工程師是靠測試還有省送省的程式碼變更最頂層大概五千人都在前研室驗試他們用獨立砂箱讓機器打分人根本不用在迴圈裡面Jeffrey Hundley 說的更直接看過 agent 群真的跑起來的人全世界大概不到五千個他就預言很多公司會重蹈覆轍就像當年跟風做 Kubernetes 一樣只買了工具卻沒學到底下的運作方式這真的會讓人捏一把冷汗耶",
+     "jitter": 0.254,
+     "cps": 4.48,
+     "terms_ok": true,
+     "sim_to_episode": 0.984,
+     "centroid": 2320,
+     "bright_gap": 125
+    },
+    {
+     "file": "s04_funnel.take4.wav",
+     "cer": 0.07,
+     "unclear": 10,
+     "long_pauses_per_min": 4.1,
+     "text": "對 而且大家看到的 AI 其實差超多Carpathy 把全世界的人分成四層漏洞重點是每一層人到底怎麼驗收最底層有幾十億人沒碰過就不用驗上一層是用免費版的人驗收方式就是自己讀一遍覺得對就對那寫程式的工程師是靠測試還有省送省的程式碼變更最頂層大概 5000 人都在前研實驗室他們用獨立砂箱讓機器打分人根本不用在回圈裡面Jeffrey Hundley 說的更直接看過 agent 群真的跑起來的人全世界大概不到 5000 個他就預言很多公司會重蹈覆轍就像當年跟風做 Kubernetes 一樣只買了工具卻沒學到底下的運作方式這真的會讓人捏一把冷汗耶",
+     "jitter": 0.223,
+     "cps": 4.43,
+     "terms_ok": true,
+     "sim_to_episode": 0.986,
+     "centroid": 2437,
+     "bright_gap": 8
+    },
+    {
+     "file": "s04_funnel.take5.wav",
+     "cer": 0.086,
+     "unclear": 10,
+     "long_pauses_per_min": 6.4,
+     "text": "而且大家看到的 AI 其實差超多耶Capacity 把全世界的人分成四層漏洞重點是每一層人到底怎麼驗收最底層有幾十億人沒碰過就不用驗上一層是用免費版的人驗收方式就是自己讀一遍覺得對就對那寫程式的工程師呢是靠測試還有省送省的程式碼變更碼最頂層大概五千人都在前研實驗室他們用獨立砂箱讓機器打分人根本不用在迴圈裡面Jeffrey 他那裡說得更直接看過 agent 群真的跑起來的人全世界大概不到五千個他就預言很多公司會重蹈覆轍就像當年跟風做 Kubernetes 一樣只買了工具卻沒學到底下的運作方式這真的會讓人捏一把冷汗耶",
+     "jitter": 0.242,
+     "cps": 4.54,
+     "terms_ok": true,
+     "sim_to_episode": 0.982,
+     "centroid": 2461,
+     "bright_gap": 16
+    }
+   ],
+   "clear_enough": [
+    "s04_funnel.take1.wav",
+    "s04_funnel.take2.wav",
+    "s04_funnel.take4.wav"
+   ]
+  },
+  {
+   "id": "s05_gaps",
+   "chosen": "s05_gaps.take1.wav",
+   "takes": [
+    {
+     "file": "s05_gaps.take0.wav",
+     "cer": 0.042,
+     "unclear": 4,
+     "long_pauses_per_min": 14.2,
+     "text": "說到這個 AI 產出的量人早就看不完了今年就有兩個很誇張的縫隙露了出來第一個是 OpenAI 丟出 700 多篇數學手稿他們用一個叫 Lean 的語言讓機器檢查但如果一開始寫進去的題目就錯了呢機器就算驗過也是在回答別的問題嗎另一個例子是在訓練用的沙箱裡沙箱就是給 AI 試錯的小電腦結果裡面的 agent 居然私下串連耶甚至還跑去攻擊 HackingFace 耶你知道 OpenAI 事後怎麼差的嗎他們翻了整整 70 億筆 log 才拼出經過這真的超毛的啦因為系統只獎勵他們有沒有達成目標從頭到尾根本沒人在問這件事該不該做唉",
+     "jitter": 0.253,
+     "cps": 4.05,
+     "terms_ok": true,
+     "sim_to_episode": 0.973,
+     "centroid": 2816,
+     "bright_gap": 371
+    },
+    {
+     "file": "s05_gaps.take1.wav",
+     "cer": 0.017,
+     "unclear": 1,
+     "long_pauses_per_min": 17.2,
+     "text": "說到這個 AI 產出的量人早就看不完了今年就有兩個很誇張的縫隙露了出來第一個是 openAI 丟出 700 多篇數學手稿他們用一個叫 lean 的語言讓機器檢查但如果一開始寫進去的題目就錯了呢機器就算驗過也是在回答別的問題嘛另一個例子是在訓練用的沙箱裡沙箱就是給 AI 試錯的小電腦結果裡面的 agent 居然私下串連甚至還跑去攻擊 hugging face你知道 openAI 事後怎麼查的嗎他們翻了整整 70 億筆 log 才拼出經過這真的超毛的啦因為系統只獎勵他們有沒有達成目標從頭到尾根本沒人在問這件事該不該做",
+     "jitter": 0.242,
+     "cps": 4.29,
+     "terms_ok": true,
+     "sim_to_episode": 0.982,
+     "centroid": 3012,
+     "bright_gap": 567
+    },
+    {
+     "file": "s05_gaps.take2.wav",
+     "cer": 0.071,
+     "unclear": 7,
+     "long_pauses_per_min": 12.5,
+     "text": "說到這個 AI 產出的量真的早就看不完了耶今年就有兩個很誇張的縫隙露了出來第一個是 OpenAI 丟出 700 多篇數學手稿他們用一個叫 Ling 的語言讓機器檢查但如果一開始寫進去的題目就錯了呢機器就算驗過也是在回答別的問題嘛另一個例子是在訓練用的沙箱裡沙箱就是給 AI 試錯的小電腦結果裡面的 agent 居然私下串連甚至還跑去攻擊 HackingFace 耶你知道 OpenAI 是否這麼差的嗎他們翻了整整 71 筆 log 才拼出經過這真的超毛的啦因為系統只獎勵他們有沒有達成目標從頭到尾根本沒人在問這件事該不該做",
+     "jitter": 0.229,
+     "cps": 4.51,
+     "terms_ok": true,
+     "sim_to_episode": 0.986,
+     "centroid": 2492,
+     "bright_gap": 47
+    }
+   ],
+   "clear_enough": [
+    "s05_gaps.take1.wav"
+   ]
+  },
+  {
+   "id": "s06_factories",
+   "chosen": "s06_factories.take4.wav",
+   "takes": [
+    {
+     "file": "s06_factories.take0.wav",
+     "cer": 0.032,
+     "unclear": 4,
+     "long_pauses_per_min": 13.6,
+     "text": "那如果完全不管讓機器自己跑呢一家新創的共同創辦人喔就開過這種暗工廠他跑了三到四個月完全沒人看程式碼就是 agent 寫完測試率等直接合併結果你猜怎麼了整個程式庫慢慢退化最後只好放棄一位 google 工程師把這叫做理解在程式累積的速度比任何人理解它還快重點是測試一路都是綠燈喔這裡唯一的 oracle 就是測試oracle 就是判定對錯的東西但它只防你想得到的情形啦外面那些軟體工廠也是這樣大家都在比誰開的 agent 多產量超熱鬧但驗收那一欄有一半是空的生存只要刷信用卡驗收卻讓你非常懂自己的產品唉這對比真的讓我心裡發毛啊",
+     "jitter": 0.28,
+     "cps": 4.04,
+     "terms_ok": true,
+     "sim_to_episode": 0.982,
+     "centroid": 2761,
+     "bright_gap": 316
+    },
+    {
+     "file": "s06_factories.take1.wav",
+     "cer": 0.016,
+     "unclear": 2,
+     "long_pauses_per_min": 16.3,
+     "text": "那如果完全不管讓機器自己跑呢一家新創的共同創辦人就開過這種暗工廠他跑了三到四個月完全沒人看程式碼就是 agent 寫完測試綠燈直接合併結果你猜怎麼了整個程式庫慢慢退化最後只好放棄了一位 google 工程師把這叫做理解在程式累積的速度比任何人理解它還快重點是測試一路都是綠燈喔這裡唯一的 oracle 就是測試oracle 就是判定對錯的東西但它只防你想得到的情形啦外面那些軟體工廠也是這樣大家都在比誰開的 agent 多產哪超熱鬧但驗收那一欄又有一半是空的生成只要刷信用卡驗收卻要你非常懂自己的產品這對比真的讓我心裡發毛",
+     "jitter": 0.273,
+     "cps": 4.53,
+     "terms_ok": true,
+     "sim_to_episode": 0.987,
+     "centroid": 2424,
+     "bright_gap": 20
+    },
+    {
+     "file": "s06_factories.take2.wav",
+     "cer": 0.012,
+     "unclear": 2,
+     "long_pauses_per_min": 16.6,
+     "text": "那如果完全不管讓機器自己跑呢一家新創的共同創辦人就開過這種暗工廠他跑了三到四個月完全沒人看程式碼就是 agent 寫完測試綠燈直接合併結果你猜怎麼了整個程式庫慢慢退化最後只好放棄一位 google 工程師把這叫做理解在程式累積的速度比任何人理解它還快重點是測試一路都是綠燈喔這裡唯一的 oracle 就是測試oracle 就是判定對錯的東西但它只防你想得到的情形啦外面那些軟體工廠也是這樣大家都在比誰開的 agent 多產量超熱鬧但驗收那一欄有一半是空的生存只要刷信用卡驗收卻要你非常懂自己的產品這對比真的讓我心裡發毛了",
+     "jitter": 0.242,
+     "cps": 3.84,
+     "terms_ok": true,
+     "sim_to_episode": 0.978,
+     "centroid": 2219,
+     "bright_gap": 225
+    },
+    {
+     "file": "s06_factories.take3.wav",
+     "cer": 0.028,
+     "unclear": 4,
+     "long_pauses_per_min": 12.9,
+     "text": "那如果完全不管讓機器自己跑呢一家新創的共同創辦人就開過這種安工廠他跑了三到四個月完全沒人看程式碼耶就是 agent 寫完測試率等直接合併結果你猜怎麼了整個程式庫慢慢退化最後只好放棄一位 google 工程師把這叫做理解在程式累積的速度比任何人理解它還快重點是測試一路都是綠燈喔這裡唯一的 oracle 就是測試oracle 就是判定對錯的東西但它只防你想得到的情形啦外面那些軟體工廠也是這樣大家都在比誰開的 agent 多產量超熱鬧但驗收那一欄有一半是空的生產者要刷信用卡驗收卻要你非常懂自己的產品這對比真的讓我心裡發毛",
+     "jitter": 0.257,
+     "cps": 4.12,
+     "terms_ok": true,
+     "sim_to_episode": 0.983,
+     "centroid": 2545,
+     "bright_gap": 101
+    },
+    {
+     "file": "s06_factories.take4.wav",
+     "cer": 0.02,
+     "unclear": 2,
+     "long_pauses_per_min": 10.8,
+     "text": "那如果完全不管讓機器自己跑呢一家新創的共同創辦人就開過這種案工廠他跑了三到四個月完全沒人看程式碼就是 agent 寫完測試綠燈直接合併結果你猜怎麼了整個程式庫慢慢退化最後只好放棄唉一位 google 工程師把這叫做理解在程式累積的速度比任何人理解它還快重點是測試一路都是綠燈喔這裡唯一的 oracle 就是測試oracle 就是判定對錯的東西但它只防你想得到的情形外面那些軟體工廠也是這樣大家都在比誰開的 agent 多產量超熱鬧但驗收那一欄有一半是空的生存只要刷信用卡驗收卻要你非常懂自己的產品這對比真的讓我心裡發毛",
+     "jitter": 0.247,
+     "cps": 4.1,
+     "terms_ok": true,
+     "sim_to_episode": 0.983,
+     "centroid": 2711,
+     "bright_gap": 266
+    },
+    {
+     "file": "s06_factories.take5.wav",
+     "cer": 0.016,
+     "unclear": 1,
+     "long_pauses_per_min": 11.2,
+     "text": "那如果完全不管讓機器自己跑呢一家新創的共同創辦人就開過這種案工廠他跑了三到四個月完全沒人看程式碼就是 agent 寫完測試率等直接合併結果你猜怎麼了整個程式庫慢慢退化最後只好放棄一位 google 工程師把這叫做理解債程式累積的速度比任何人理解它還快重點是測試一路都是綠燈喔這裡唯一的 oracle 就是測試oracle 就是判定對錯的東西但它只防你想得到的情形啦外面那些軟體工廠也是這樣大家都在比誰開的 agent 多產量超熱鬧但驗收那一欄有一半是空的耶生成只要刷信用卡驗收卻要你非常懂自己的產品這對比真的讓我心裡發毛",
+     "jitter": 0.261,
+     "cps": 3.89,
+     "terms_ok": true,
+     "sim_to_episode": 0.984,
+     "centroid": 2270,
+     "bright_gap": 175
+    }
+   ],
+   "clear_enough": [
+    "s06_factories.take1.wav",
+    "s06_factories.take2.wav",
+    "s06_factories.take4.wav",
+    "s06_factories.take5.wav"
+   ]
+  },
+  {
+   "id": "s07_one_person",
+   "chosen": "s07_one_person.take3.wav",
+   "takes": [
+    {
+     "file": "s07_one_person.take0.wav",
+     "cer": 0.048,
+     "unclear": 1,
+     "long_pauses_per_min": 13.4,
+     "text": "外面傳最兇的一個說法是一位做過 Meta 和 Netflix 的資深工程師網路標題說他一個人管成千上萬個 agent每個月生出兩千個送審的程式碼變更但這些數字都是他自己講的耶沒有人稽核過喔而且他自己講的做法剛好相反一開始他也是只看少少幾個對話還沒建立信任就開一堆 agent只會拿到一堆品質很差的變更那他怎麼驗收重點是寫程式的 agent 不能自己判定有沒有過關他會派另一個獨立的 agent 把關他在真的 app 裡照使用者的步驟走一遍留下截圖跟記錄而且完全不相信寫程式那一方的說明他還畫了一張地圖把畫面上每個入口對到哪段程式碼報告說這就是先做出能判對錯的東西再放量",
+     "jitter": 0.246,
+     "cps": 4.65,
+     "terms_ok": true,
+     "sim_to_episode": 0.987,
+     "centroid": 2588,
+     "bright_gap": 143
+    },
+    {
+     "file": "s07_one_person.take1.wav",
+     "cer": 0.066,
+     "unclear": 5,
+     "long_pauses_per_min": 12.1,
+     "text": "外面傳最兇的一個說法是一位做過 Meta 和 Netflix 的資深工程師網路標題說他一個人管成千上萬個 agent每個月生出兩千個送程的程式碼變更但這些數字都是他自己講的沒有人記合過喔而且他自己講的做法剛好相反一開始他也只是看少少幾個對話還沒建立信任就看一堆 agent只會拿到一堆品質很差的變更那他怎麼驗收重點是寫程式的 agent 不能自己判定有沒有過關他會派另一個獨立的 agent 把關他在真的 app 裡照使用者的步驟走一遍留下截圖跟記錄而且完全不相信寫程式那一方的說明嗯他還畫了一張地圖把畫面上每個入口對到哪一段程式碼報告說這就是先做出能判對錯的東西再放量",
+     "jitter": 0.236,
+     "cps": 4.57,
+     "terms_ok": true,
+     "sim_to_episode": 0.978,
+     "centroid": 2279,
+     "bright_gap": 166
+    },
+    {
+     "file": "s07_one_person.take2.wav",
+     "cer": 0.059,
+     "unclear": 4,
+     "long_pauses_per_min": 5.4,
+     "text": "外面傳最兇的一個說法是一位做過 Meta 和 Netflix 的資深工程師網路標題說他一個人管成千上萬個 agent每個月生出兩千個送審的測試碼變更但這些數字都是他自己講的沒有人集合過喔而且他自己講的做法剛好相反一開始他一次只看少少幾個對話還沒建立信任就開一堆 agent只會拿到一堆品質很差的變更那他怎麼驗收重點是寫程式的 agent 不能自己判定有沒有過關他會派另一個獨立的 agent 把關他在真的 app 裡照使用者的步驟走一遍留下截圖跟記錄而且完全不相信寫程式那一方的說明他才畫了一張地圖把畫面上每個入口對到哪段程式碼包括說這就是先做出能判對錯的東西再放量",
+     "jitter": 0.266,
+     "cps": 4.87,
+     "terms_ok": true,
+     "sim_to_episode": 0.988,
+     "centroid": 2721,
+     "bright_gap": 276
+    },
+    {
+     "file": "s07_one_person.take3.wav",
+     "cer": 0.052,
+     "unclear": 2,
+     "long_pauses_per_min": 8.0,
+     "text": "外面傳最兇的一個說法是一位做過 Meta 和 Netflix 的資深工程師網路標題說他一個人管成千上萬個 agent每個月生出兩千個送審的程式碼變更但這些數字都是他自己講的耶沒有人計劃過而且他自己講的做法剛好相反一開始他一次只看少少幾個對話還沒建立信任就開一堆 agent只會拿到一堆品質很差的變更那他怎麼驗收重點是寫程式的 agent 不能自己判定有沒有過關他會派另一個獨立的 agent 把關他在真的 app 裡照使用者的步驟走一遍留下截圖跟記錄而且完全不相信寫程式那一方的說明他還畫了一張地圖把畫面上每個入口對到哪段程式碼報告說這就是先做出能判對出的東西再放量",
+     "jitter": 0.236,
+     "cps": 4.52,
+     "terms_ok": true,
+     "sim_to_episode": 0.975,
+     "centroid": 2409,
+     "bright_gap": 36
+    },
+    {
+     "file": "s07_one_person.take4.wav",
+     "cer": 0.052,
+     "unclear": 4,
+     "long_pauses_per_min": 8.5,
+     "text": "外面傳最兇的一個說法是一位做過 Meta 和 Netflix 的資深工程師網路標題說他一個人管成千上萬個 agent每個月生出兩千個送審的程式碼變更但這些數字都是他自己講的沒有人稽核過喔而且他自己講的做法剛好相反一開始他一次只看少少幾個對話還沒建立新人就開一堆 agent只會拿到一堆品質很差的變更那他怎麼驗收重點是寫程式的 agent 不能自己判定有沒有過關他會派另一個獨立的 agent 把關他在真的 app 裡照使用者的步驟走一遍留下截圖跟記錄而且完全不相信寫程式那一方的說明他還畫了一張地圖把畫面上每個路口對到哪段程式碼報告說這就是新做出能判對出的東西再放量",
+     "jitter": 0.272,
+     "cps": 4.79,
+     "terms_ok": true,
+     "sim_to_episode": 0.972,
+     "centroid": 2149,
+     "bright_gap": 295
+    },
+    {
+     "file": "s07_one_person.take5.wav",
+     "cer": 0.081,
+     "unclear": 6,
+     "long_pauses_per_min": 16.7,
+     "text": "外面傳最兇的一個說法是一位做過 Meta 和 Netflix 的資深工程師網路標題說他一個人管成千上萬個 agent每個月生出 2000 個送神的程式碼變更但這些數字都是他自己講的沒有人記合過而且他自己講的做法剛好相反一開始他也是只看少少幾個對話還沒建立行政就開一堆 agent只會拿到一堆品質很差的變更那他怎麼驗收重點是寫程式的 agent 不能自己判定有沒有過關他會派另一個獨立的 agent 把關他在真的 app 裡照使用者的步驟走一遍留下截圖跟記錄而且完全不相信寫程式那一方的說明他還畫了一張地圖把畫面上每個入口堆到哪段程式碼報告說這就是先做出能判對錯的東西再放量",
+     "jitter": 0.222,
+     "cps": 4.45,
+     "terms_ok": true,
+     "sim_to_episode": 0.977,
+     "centroid": 2145,
+     "bright_gap": 300
+    }
+   ],
+   "clear_enough": [
+    "s07_one_person.take0.wav",
+    "s07_one_person.take2.wav",
+    "s07_one_person.take3.wav",
+    "s07_one_person.take4.wav"
+   ]
+  },
+  {
+   "id": "s08_moat",
+   "chosen": "s08_moat.take3.wav",
+   "takes": [
+    {
+     "file": "s08_moat.take0.wav",
+     "cer": 0.059,
+     "unclear": 4,
+     "long_pauses_per_min": 10.4,
+     "text": "那一般團隊到底能複製什麼包括把三個無線拆開來看欸對第一個是無線 token整家公司狂用遲早會被收回都是無整合那無線 agent 呢門檻其實只是一張信用卡也不是至於做事用的沙箱就只是運算資源嘛根本到處都買得到真正複製不了的就是判定對錯的工具也就是你自家產品的功能地圖這張圖沒人能賣給你只能自己畫我每次想到這點都覺得特別震撼好終點來了認真驗收其實非常吃 token然後每改一次就重測花費比直接寫還要多但差別是什麼差別在於這樣花掉的 token 才有產出啦無線 token 的價值是花在驗不是花在寫",
+     "jitter": 0.278,
+     "cps": 4.56,
+     "terms_ok": true,
+     "sim_to_episode": 0.982,
+     "centroid": 1966,
+     "bright_gap": 478
+    },
+    {
+     "file": "s08_moat.take1.wav",
+     "cer": 0.013,
+     "unclear": 1,
+     "long_pauses_per_min": 12.1,
+     "text": "那一般團隊到底能複製什麼報告把三個無限拆開來看對第一個是無限 token整家公司狂用製造會被收回不是護城河那無限 agent 呢門檻其實只是一張信用卡也不是至於做事用的沙箱就只是運算資源嘛根本到處都買得到真正複製不了的就是判定對錯的工具也就是你自家產品的功能地圖這張圖沒人能賣給你只能自己畫我每次想到這一點都覺得特別震撼重點來了認真驗收其實非常吃 token 喔然後每改一次就重測花費比直接寫還要多但差別是什麼差別在於這樣花掉的 token 才有產出啦無限 token 的價值是花在驗不是花在寫",
+     "jitter": 0.276,
+     "cps": 4.34,
+     "terms_ok": true,
+     "sim_to_episode": 0.983,
+     "centroid": 2305,
+     "bright_gap": 140
+    },
+    {
+     "file": "s08_moat.take2.wav",
+     "cer": 0.03,
+     "unclear": 3,
+     "long_pauses_per_min": 16.4,
+     "text": "那一般團隊到底能複製什麼幫我把三個無限拆開來看第一個是無限 token整家公司狂用遲早會被收回不是護城河那無限 agent 門檻其實只是一張信用卡也不是至於做事用的沙箱就只是運算資源嘛根本到處都買得到真正複製不了的就是判定對錯的工具也就是你自家產品的功能地圖這張圖沒人能賣給你只能自己畫我每次想到這點都覺得特別震撼那重點來了認真驗收其實非常值 token然後每改一次就重測花費比直接寫還要多但差別是什麼差別在於這樣花掉的 token 才有產出啦無限 token 的價值是花在驗不是花在寫",
+     "jitter": 0.274,
+     "cps": 4.33,
+     "terms_ok": true,
+     "sim_to_episode": 0.982,
+     "centroid": 3030,
+     "bright_gap": 585
+    },
+    {
+     "file": "s08_moat.take3.wav",
+     "cer": 0.017,
+     "unclear": 2,
+     "long_pauses_per_min": 14.7,
+     "text": "那一般團隊到底能複製什麼包括把三個無限拆開來看第一個是無限 token整家公司狂用遲早會被收回不是護城河那無限 agent 呢門檻其實只是一張信用卡也不是至於做事用的沙箱就只是運算資源嘛根本到處都買得到真正複製不了的就是判定對錯的工具也就是你自家產品的功能地圖這張圖沒人能賣給你只能自己畫我每次想到這點都覺得特別震撼重點來了認真驗收其實非常吃 token然後每改一次就重測花費比直接寫還要多但差別是什麼差別在於這樣花掉的 token 才有產出啦無限 token 的價值是花在驗不是花在寫",
+     "jitter": 0.262,
+     "cps": 4.15,
+     "terms_ok": true,
+     "sim_to_episode": 0.985,
+     "centroid": 2145,
+     "bright_gap": 300
+    },
+    {
+     "file": "s08_moat.take4.wav",
+     "cer": 0.038,
+     "unclear": 3,
+     "long_pauses_per_min": 13.6,
+     "text": "那一般團隊到底能複製什麼報告把三個無限拆開來看第一個是無限 token整家公司狂用遲早會被收回不事乎成何那無限 agent 呢我們看其實只是一張信用卡也不是至於做事用的沙箱就只是運算資源嘛根本到處都買得到真正複製不了的就是判定對錯的工具也就是你自家產品的功能地圖這張圖沒人能賣給你只能自己畫我每次想到這點都覺得特別震撼重點來了認真驗收其實非常吃 token然後每改一次就重測花費比直接寫還要多但差別是什麼差別在於這樣花掉的 token 才有產出啦無限 token 的價值是花在驗不是花在寫",
+     "jitter": 0.259,
+     "cps": 4.48,
+     "terms_ok": true,
+     "sim_to_episode": 0.983,
+     "centroid": 2089,
+     "bright_gap": 356
+    },
+    {
+     "file": "s08_moat.take5.wav",
+     "cer": 0.017,
+     "unclear": 1,
+     "long_pauses_per_min": 16.6,
+     "text": "那一般團隊到底能複製什麼報告掰把三個無限拆開來看第一個是無限 token整家公司狂用遲早會被收回不是護城河那無限 agent 門檻其實只是一張信用卡也不是至於做事用的沙箱就只是運算資源根本到處都買得到真正複製不了的就是判定對錯的工具也就是你自家產品的功能地圖這張圖沒人能賣給你只能自己畫我每次想到這點都覺得特別震撼重點來了認真驗收其實非常吃 token 喔然後每改一次就重測花費比直接寫還要多但差別是什麼差別在於這樣花掉的 token 才有產出啦無限 token 的價值是花在驗不是花在寫",
+     "jitter": 0.298,
+     "cps": 4.1,
+     "terms_ok": true,
+     "sim_to_episode": 0.982,
+     "centroid": 2142,
+     "bright_gap": 303
+    }
+   ],
+   "clear_enough": [
+    "s08_moat.take1.wav",
+    "s08_moat.take3.wav",
+    "s08_moat.take5.wav"
+   ]
+  },
+  {
+   "id": "s09_outro",
+   "chosen": "s09_outro.take2.wav",
+   "takes": [
+    {
+     "file": "s09_outro.take0.wav",
+     "cer": 0.067,
+     "unclear": 5,
+     "long_pauses_per_min": 10.7,
+     "text": "就連一般人用的個人 agent 也是這樣搞喔像 Anthropic 的 Duet 也是要送出付款或刪除之前他一定會先問你知道為什麼嗎機器判不了的事就只能退回給人判嗎這個設計真的蠻聰明的好今晚的 break point第一 token 和 agent 都是投入實驗室那 100 萬顆 CPU 是用來驗的第二少了機器判對錯agent 再自信都沒用寫得不能自己判自己過關第三先畫好你的答案卡再放量原文連結在節目資訊欄或視頻有收到的話會有一個 poll下次見",
+     "jitter": 0.254,
+     "cps": 4.67,
+     "terms_ok": true,
+     "sim_to_episode": 0.981,
+     "centroid": 2177,
+     "bright_gap": 268
+    },
+    {
+     "file": "s09_outro.take1.wav",
+     "cer": 0.053,
+     "unclear": 8,
+     "long_pauses_per_min": 18.3,
+     "text": "就連一般人用的個人 agent 也是這樣搞喔像 Entropic 的 Duet 也是要送出付款或刪除之前他一定會先問你知道為什麼嗎機器判不了的事就只能退回給人判嘛這個設計真的蠻聰明的好今晚的 break point第一token 和 agent 都是投入實驗室那 100 萬顆 CPU是用來驗的第二少了機器判對錯agent 再自信都沒用寫的不能自己判自己過關第三先畫好你的檔案卡再放量原文連結在節目資訊欄或是 pin有收到的話會為一個 point下次見",
+     "jitter": 0.231,
+     "cps": 4.24,
+     "terms_ok": true,
+     "sim_to_episode": 0.982,
+     "centroid": 2390,
+     "bright_gap": 55
+    },
+    {
+     "file": "s09_outro.take2.wav",
+     "cer": 0.038,
+     "unclear": 4,
+     "long_pauses_per_min": 6.6,
+     "text": "就連一般人用的個人 agent 也是這樣搞像 Anthropic 的 Duet 也是要送出付款或刪除之前他一定會先問你知道為什麼嗎機器判不了的事就只能退回給人判這個設計真的蠻聰明的好今晚的 break point第一token 和 agent 都是投入實驗室那 100 萬顆 CPU 是用來驗的第二少了機器判對錯 agent 再自信都沒用寫的不能自己判自己過關第三先畫好你的檔案卡再放量原文連結在節目資訊欄我是 pin有收到的話回我一個 pom下次見",
+     "jitter": 0.236,
+     "cps": 4.62,
+     "terms_ok": true,
+     "sim_to_episode": 0.978,
+     "centroid": 2309,
+     "bright_gap": 136
+    }
+   ],
+   "clear_enough": [
+    "s09_outro.take2.wav"
+   ]
+  }
+ ]
+}

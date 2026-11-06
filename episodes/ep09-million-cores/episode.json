@@ -27,6 +27,19 @@
   "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
  },
  "audio": {
-  "file": "ep09-million-cores.mp3"
+  "file": "ep09-million-cores.mp3",
+  "bytes": 9267270,
+  "sha256": "ab8335f9528d9bfddbedc60716c106f639a98fa44c80932ab7c4fa51c57a6529",
+  "duration_s": 579.2,
+  "duration": "9:39",
+  "lufs": -16.8
+ },
+ "qa": {
+  "breeze_cer_mean": 0.032,
+  "jitter_semitones": 0.247,
+  "consistency": "qa/consistency.json：10 段裡 5 段被標記，都是接縫亮度（±490–640 Hz）與 s03 語速 -12%；各段音高都在中位數 ±2.4 Hz 內",
+  "gates": "錯誤率 3.2% 通過；音高跳動 0.247 超過 0.23（第一輪 0.256，s00、s02、s04、s06、s07、s08 各補念 3 次後重選）",
+  "both_wrong": "「報告」兩套都聽成「包括」（7:45，s08；EP06 也出現過）；Geoffrey 的 G 聽成 J；「滿」聽成「蠻」",
+  "terms": "Ping、pong 3 次都判為英文念法"
  }
 }
