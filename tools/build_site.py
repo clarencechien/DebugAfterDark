@@ -158,6 +158,14 @@ def listen_html(show):
     return f'<p class="listen">也可以在 {"、".join(links)} 收聽，或把上面的網址貼進任何 podcast app 訂閱。</p>' if links else ""
 
 
+def beacon(show):
+    """Cloudflare Web Analytics (2026-11-06): page views and referrers for the site, no cookies. The DNS record is
+    DNS-only (grey cloud), so Cloudflare cannot inject it; the token is public by design. Plays are not counted here."""
+    tok = show.get("cf_web_analytics_token")
+    return (f'<script defer src="https://static.cloudflareinsights.com/beacon.min.js" '
+            f"data-cf-beacon='{{\"token\": \"{html.escape(tok)}\"}}'></script>") if tok else ""
+
+
 def share_button(show, e, num, title):
     url = f"{show['site_url'].rstrip('/')}/{slug(e)}/"
     return (f'<button type="button" class="share" data-url="{html.escape(url)}" '
@@ -287,6 +295,7 @@ def page(show, eps):
 <footer>{f'<p><a href="{html.escape(show["support_url"])}">{html.escape(show["support_text"])}</a></p>' if show.get("support_url") else ""}<p>本節目的聲音由 AI 語音合成，不模仿任何真人；內容改寫自 <a href="https://imitator.ai-apps.work/">imitator</a> 上的文章，每一集都經過真人審稿與試聽。</p></footer>
 </main>
 {SCRIPT}
+{beacon(show)}
 </body>
 </html>
 """
@@ -345,6 +354,7 @@ def episode_page(show, e):
 <footer><p>本節目的聲音由 AI 語音合成，不模仿任何真人；內容改寫自 <a href="https://imitator.ai-apps.work/">imitator</a> 上的文章，每一集都經過真人審稿與試聽。</p></footer>
 </main>
 {SCRIPT}
+{beacon(show)}
 </body>
 </html>
 """

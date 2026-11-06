@@ -31,7 +31,18 @@
 - 其他平台：KKBOX、Podcast Index 還沒送；YouTube 品牌頻道已建好，新頻道要滿 24 小時才能送 RSS（2026-11-06 試過，顯示「Your account is too new」；選項有出現，代表台灣可以用 RSS 匯入）
 - Apple Podcasts Connect 帳號：Account Name 用品牌名「Debug After Dark」、類型 Individual（以後若開付費訂閱，個人帳號可能會顯示真實姓名，要再確認）。Podcasts Connect 的 API key 是給託管平台發佈付費內容（Delegated Delivery）用的，不能拿來送審免費節目
 - 網站功能：每集一頁（`/ep05/` 這種短網址，有各自的分享預覽）、每集「分享這一集」按鈕；在 LINE、Facebook、Instagram 等 app 內建瀏覽器打開時提示改用瀏覽器（LINE 另有一鍵 `openExternalBrowser=1`）；Media Session 讓鎖定畫面顯示集名與封面，可倒退 15 秒、快轉 30 秒（`tools/build_site.py`）
-- 下載數據：SoundOn Prefix（`show.json` 的 `enclosure_prefix`），feed 裡的音檔網址先經過 SoundOn 再 302 回我們的檔案；網站播放器不經過
+- 數據：各平台**各算各的**，數的東西也不一樣（下載、播放、瀏覽），不能直接相加（2026-11-06 整理）
+
+  | 收聽或造訪管道 | 誰統計 | 數的是什麼 |
+  |---|---|---|
+  | Apple Podcasts | SoundOn Prefix（app 照 feed 網址下載，經過 Prefix）＋ Podcasts Connect 的 Analytics | 下載；播放、聽眾、追蹤、聽到哪裡 |
+  | 其他 podcast app、手動貼 feed 的人、SoundOn 播放頁 | SoundOn Prefix（`show.json` 的 `enclosure_prefix`，先經過 SoundOn 再 302 回我們的檔案） | 下載 |
+  | Spotify | Spotify for Creators 後台（Spotify 從自己的伺服器播，SoundOn 大多看不到） | 播放、聽眾 |
+  | 我們的網站（首頁、單集頁） | **Cloudflare Web Analytics**（2026-11-06 加上，`show.json` 的 `cf_web_analytics_token`） | 網頁瀏覽、來源（例如 LINE、Facebook）、國家、裝置；不用 cookie。**不數播放**，網站播放器不經過 Prefix |
+  | YouTube（之後） | YouTube Studio | 觀看 |
+
+  - Apple 的收聽會同時出現在 SoundOn（下載）和 Podcasts Connect（播放），兩邊不能相加。
+  - Cloudflare Web Analytics 在 Cloudflare 後台的「Analytics & Logs → Web Analytics」，站點 `podcast.ai-apps.work`。因為這個子網域的 DNS 是 DNS only（灰雲），Cloudflare 沒辦法自動插入，改由 `tools/build_site.py` 的 `beacon()` 在每一頁放統計程式；token 本來就放在公開網頁裡，不是密鑰。
 - 贊助連結：<https://portaly.cc/clarencech/support>（`show.json` 的 `support_url`），見下面的「Portaly 現況」
 
 ## 上架平台（2026-11-05 整理）
