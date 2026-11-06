@@ -11,7 +11,7 @@ Covers Apple's required tags (RSS 2.0, itunes namespace, title, description, itu
 itunes:explicit; per item title, enclosure with length and type, guid, pubDate) plus podcast:guid, and podcast:locked
 once an owner email is set. Requirements change; check https://podcasters.apple.com/support/823-podcast-requirements.
 """
-import argparse, json, sys, uuid
+import argparse, json, re, sys, uuid
 from datetime import datetime
 from email.utils import format_datetime
 from pathlib import Path
@@ -43,6 +43,26 @@ def text(s):
     return escape(s, {'"': "&quot;", "'": "&apos;"})
 
 
+def notes_html(s):
+    """Show notes (plain text, blank-line paragraphs) -> the small HTML subset Apple and Spotify render: <p>, <br>,
+    <ol>/<li>, <a>. Plain newlines collapse to spaces in their players, so every note ran together (2026-11-06);
+    SoundOn showed them right only because it keeps raw newlines. The breakpoint block becomes a numbered list."""
+    link = lambda t: re.sub(r"(https?://[^\s<]+)", r'<a href="\1">\1</a>', escape(t))
+    out = []
+    for block in [b.strip() for b in s.strip().split("\n\n") if b.strip()]:
+        lines = block.split("\n")
+        items = [re.sub(r"^\d+\.\s*", "", l).strip() for l in lines[1:]]
+        if len(lines) > 1 and all(re.match(r"^\d+\.\s", l) for l in lines[1:]):
+            out.append(f"<p>{link(lines[0])}</p><ol>" + "".join(f"<li>{link(i)}</li>" for i in items) + "</ol>")
+        else:
+            out.append("<p>" + "<br>".join(link(l) for l in lines) + "</p>")
+    return "".join(out)
+
+
+def cdata(html_text):
+    return "<![CDATA[" + html_text.replace("]]>", "]]]]><![CDATA[>") + "]]>"
+
+
 def with_support(show, text):
     """Append the support link (show.json support_url) so every app that reads the feed shows it (Apple, Spotify, SoundOn)."""
     return f"{text}\n\n{show['support_text']}：{show['support_url']}" if show.get("support_url") else text
@@ -55,12 +75,12 @@ def build(show, eps):
     yes_no = lambda b: "true" if b else "false"
     L = ['<?xml version="1.0" encoding="UTF-8"?>',
          '<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom"'
-         ' xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:imitator="https://imitator.ai-apps.work/ns/podcast">',
+         ' xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:imitator="https://imitator.ai-apps.work/ns/podcast">',
          "<channel>",
          f"<title>{text(show['title'])}</title>",
          f"<link>{text(site)}/</link>",
          f'<atom:link href="{text(feed_url)}" rel="self" type="application/rss+xml"/>',
-         f"<description>{text(with_support(show, show['description']))}</description>",
+         f"<description>{cdata(notes_html(with_support(show, show['description'])))}</description>",
          f"<language>{text(show['language'])}</language>",
          f"<copyright>{text(show['copyright'])}</copyright>",
          f"<itunes:author>{text(show['author'])}</itunes:author>",
@@ -83,7 +103,8 @@ def build(show, eps):
             url = show["enclosure_prefix"].rstrip("/") + "/" + url.split("://", 1)[1]
         L += ["<item>",
               f"<title>{text(e['title'])}</title>",
-              f"<description>{text(with_support(show, e['description']))}</description>",
+              f"<description>{cdata(notes_html(with_support(show, e['description'])))}</description>",
+              f"<content:encoded>{cdata(notes_html(with_support(show, e['description'])))}</content:encoded>",
               f'<enclosure url="{text(url)}" length="{a["bytes"]}" type="audio/mpeg"/>',
               f'<guid isPermaLink="false">{text(e["guid"])}</guid>',
               f"<pubDate>{format_datetime(datetime.fromisoformat(e['published']))}</pubDate>",
