@@ -20,6 +20,10 @@
  "support_text": "請 Ping 喝杯咖啡",
  "listen_on": [
   {
+   "name": "Apple Podcasts",
+   "url": "https://podcasts.apple.com/tw/podcast/id6831404475"
+  },
+  {
    "name": "Spotify",
    "url": "https://open.spotify.com/show/56y20c8Jscmnjajo8vUIzw"
   }
