@@ -43,6 +43,7 @@
 
   - Apple 的收聽會同時出現在 SoundOn（下載）和 Podcasts Connect（播放），兩邊不能相加。
   - Cloudflare Web Analytics 在 Cloudflare 後台的「Analytics & Logs → Web Analytics」，站點 `podcast.ai-apps.work`。因為這個子網域的 DNS 是 DNS only（灰雲），Cloudflare 沒辦法自動插入，改由 `tools/build_site.py` 的 `beacon()` 在每一頁放統計程式；token 本來就放在公開網頁裡，不是密鑰。
+  - **費用**：Web Analytics 免費，不跟用量計價。限制是「沒有經過 Cloudflare proxy 的網站」每個帳號最多 10 個，目前只用了 1 個（這個子網域）；`ai-apps.work` 本身有經過 proxy，不受這個限制。2026-12-01 起改成新計價的是 **Cloudflare Observability**（Workers Logs、Traces、Containers 的 log 等，Paid 方案每月含 50 GB 寫入，超過每 GB 0.25 美元），跟 Web Analytics 無關；會影響到的是 imitator 那支 Worker 如果開了 Workers Logs。
 - 贊助連結：<https://portaly.cc/clarencech/support>（`show.json` 的 `support_url`），見下面的「Portaly 現況」
 
 ## 上架平台（2026-11-05 整理）
