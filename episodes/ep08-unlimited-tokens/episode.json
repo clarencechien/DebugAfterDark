@@ -1,0 +1,31 @@
+{
+ "id": "ep08-unlimited-tokens",
+ "number": 8,
+ "type": "full",
+ "guid": "debug-after-dark:ep08",
+ "title": "EP08 無限的是 token，有限的是驗收",
+ "description": "Cisco 的總裁給一位二十七歲的工程師「無限 token」，要兩年重構公司九成八的舊程式碼。新聞每轉一手就掉一樣東西，掉的剛好都是驗收。這集看今年每個「無限」的下場、真的做完的大型 AI 遷移有什麼共同點，還有為什麼寫的一端變快、看的一端沒有。驗收筆記上篇。\n\n今晚的 breakpoint：\n1. token 是投入，驗收才是產出；「無限」是定價的話術，用完了上限就回來。\n2. 真的做完的案子都有三樣東西：起點終點講得清楚、機器判得了的驗收、管得住的審查人力。\n3. 看到一個 AI 大計畫，先問分母、判定方式、還有誰來審。\n\n原文：〈無限的是 token，有限的是驗收 — 無限 token 的故事與真實〉 https://imitator.ai-apps.work/r/unlimited-token-report\n報告 v0.2（2026-11-05）；成本估算是報告作者自己算的；那位工程師不具名。\n\n延伸收聽：EP02〈第五招的實驗：跑從來不是問題，看才是〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "unlimited-token-report",
+ "source_url": "https://imitator.ai-apps.work/r/unlimited-token-report",
+ "status": "draft",
+ "series": "驗收筆記 1/2",
+ "related": [
+  "ep02-harness-probe"
+ ],
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "audio": {
+  "file": "ep08-unlimited-tokens.mp3"
+ }
+}
