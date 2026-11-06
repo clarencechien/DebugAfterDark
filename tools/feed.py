@@ -43,21 +43,23 @@ def text(s):
     return escape(s, {'"': "&quot;", "'": "&apos;"})
 
 
-def notes_html(s):
-    """Show notes (plain text, blank-line paragraphs) -> the small HTML subset Apple and Spotify render: <p>, <br>,
-    <ol>/<li>, <a>. Plain newlines collapse to spaces in their players, so every note ran together (2026-11-06);
-    SoundOn showed them right only because it keeps raw newlines. The breakpoint block becomes a numbered list."""
+def notes_html(s, lists=True):
+    """Show notes (plain text, blank-line paragraphs) -> the small HTML subset players render: <p>, <br>, <ol>/<li>, <a>.
+    Plain newlines collapse in Apple's and Spotify's players, so every note ran together (2026-11-06).
+    lists=True (content:encoded, which Apple reads): the breakpoint block becomes an <ol>.
+    lists=False (description, which Spotify reads): Spotify's web player strips every tag and joins what is left with
+    nothing, which dropped the 1/2/3 and glued words together, so keep the numbers as text and put a real newline after
+    each <br> and </p>: renderers get paragraphs, tag-strippers still get numbers and spaces."""
     link = lambda t: re.sub(r"(https?://[^\s<]+)", r'<a href="\1">\1</a>', escape(t))
     out = []
     for block in [b.strip() for b in s.strip().split("\n\n") if b.strip()]:
         lines = block.split("\n")
-        items = [re.sub(r"^\d+\.\s*", "", l).strip() for l in lines[1:]]
-        if len(lines) > 1 and all(re.match(r"^\d+\.\s", l) for l in lines[1:]):
-            out.append(f"<p>{link(lines[0])}</p><ol>" + "".join(f"<li>{link(i)}</li>" for i in items) + "</ol>")
+        if lists and len(lines) > 1 and all(re.match(r"^\d+\.\s", l) for l in lines[1:]):
+            items = [re.sub(r"^\d+\.\s*", "", l).strip() for l in lines[1:]]
+            out.append(f"<p>{link(lines[0])}</p>\n<ol>" + "".join(f"<li>{link(i)}</li>\n" for i in items) + "</ol>")
         else:
-            out.append("<p>" + "<br>".join(link(l) for l in lines) + "</p>")
-    return "".join(out)
-
+            out.append("<p>" + "<br>\n".join(link(l) for l in lines) + "</p>")
+    return "\n".join(out)
 
 def cdata(html_text):
     return "<![CDATA[" + html_text.replace("]]>", "]]]]><![CDATA[>") + "]]>"
@@ -80,7 +82,7 @@ def build(show, eps):
          f"<title>{text(show['title'])}</title>",
          f"<link>{text(site)}/</link>",
          f'<atom:link href="{text(feed_url)}" rel="self" type="application/rss+xml"/>',
-         f"<description>{cdata(notes_html(with_support(show, show['description'])))}</description>",
+         f"<description>{cdata(notes_html(with_support(show, show['description']), lists=False))}</description>",
          f"<language>{text(show['language'])}</language>",
          f"<copyright>{text(show['copyright'])}</copyright>",
          f"<itunes:author>{text(show['author'])}</itunes:author>",
@@ -103,7 +105,7 @@ def build(show, eps):
             url = show["enclosure_prefix"].rstrip("/") + "/" + url.split("://", 1)[1]
         L += ["<item>",
               f"<title>{text(e['title'])}</title>",
-              f"<description>{cdata(notes_html(with_support(show, e['description'])))}</description>",
+              f"<description>{cdata(notes_html(with_support(show, e['description']), lists=False))}</description>",
               f"<content:encoded>{cdata(notes_html(with_support(show, e['description'])))}</content:encoded>",
               f'<enclosure url="{text(url)}" length="{a["bytes"]}" type="audio/mpeg"/>',
               f'<guid isPermaLink="false">{text(e["guid"])}</guid>',
