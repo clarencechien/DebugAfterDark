@@ -7,7 +7,7 @@
  "description": "Cisco 的總裁給一位二十七歲的工程師「無限 token」，要兩年重構公司九成八的舊程式碼。新聞每轉一手就掉一樣東西，掉的剛好都是驗收。這集看今年每個「無限」的下場、真的做完的大型 AI 遷移有什麼共同點，還有為什麼寫的一端變快、看的一端沒有。驗收筆記上篇。\n\n今晚的 breakpoint：\n1. token 是投入，驗收才是產出；「無限」是定價的話術，用完了上限就回來。\n2. 真的做完的案子都有三樣東西：起點終點講得清楚、機器判得了的驗收、管得住的審查人力。\n3. 看到一個 AI 大計畫，先問分母、判定方式、還有誰來審。\n\n原文：〈無限的是 token，有限的是驗收 — 無限 token 的故事與真實〉 https://imitator.ai-apps.work/r/unlimited-token-report\n報告 v0.2（2026-11-05）；成本估算是報告作者自己算的；那位工程師不具名。\n\n延伸收聽：EP02〈第五招的實驗：跑從來不是問題，看才是〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
  "report_slug": "unlimited-token-report",
  "source_url": "https://imitator.ai-apps.work/r/unlimited-token-report",
- "status": "draft",
+ "status": "final",
  "series": "驗收筆記 1/2",
  "related": [
   "ep02-harness-probe"
@@ -40,5 +40,6 @@
   "gates": "錯誤率 2.9%、音高跳動 0.228，兩項都通過（第一次音高跳動在 0.23 以下）。s00、s07 依節目擁有者要求加了富豪刑事比喻後各重念 3 次",
   "both_wrong": "「財閥X刑警」兩套都沒聽對（0:07，s00）；「Bun」聽成房屋／po（6:54，s07）；「只」聽成「制」（s09）",
   "terms": "Ping、pong 3 次都判為英文念法"
- }
+ },
+ "published": "2026-11-06T13:14:00+08:00"
 }
