@@ -1,0 +1,62 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -21.7,
+  "gain_db": 1.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_story",
+  "lufs_before": -21.0,
+  "gain_db": 1.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_unlimited",
+  "lufs_before": -21.2,
+  "gain_db": 1.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_bill",
+  "lufs_before": -21.7,
+  "gain_db": 1.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_built",
+  "lufs_before": -21.4,
+  "gain_db": 1.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_feel",
+  "lufs_before": -21.1,
+  "gain_db": 1.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_cobol",
+  "lufs_before": -23.1,
+  "gain_db": 3.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_cost",
+  "lufs_before": -22.4,
+  "gain_db": 2.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_checklist",
+  "lufs_before": -21.4,
+  "gain_db": 1.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_outro",
+  "lufs_before": -22.7,
+  "gain_db": 2.7,
+  "lufs_after": -20.0
+ }
+]

@@ -26,6 +26,19 @@
   "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
  },
  "audio": {
-  "file": "ep08-unlimited-tokens.mp3"
+  "file": "ep08-unlimited-tokens.mp3",
+  "bytes": 9276054,
+  "sha256": "df5a7ef4753a1fcb81e5516283de1b5ad6a34d4a165e6a3224143cde1f52c310",
+  "duration_s": 579.7,
+  "duration": "9:39",
+  "lufs": -16.9
+ },
+ "qa": {
+  "breeze_cer_mean": 0.029,
+  "jitter_semitones": 0.228,
+  "consistency": "qa/consistency.json：10 段裡 7 段被標記，多為接縫亮度（s03→s04 -984 Hz 最大）；s02 音高 +6.1 Hz、s01 語速 +11%",
+  "gates": "錯誤率 2.9%、音高跳動 0.228，兩項都通過（第一次音高跳動在 0.23 以下）。s00、s07 依節目擁有者要求加了富豪刑事比喻後各重念 3 次",
+  "both_wrong": "「財閥X刑警」兩套都沒聽對（0:07，s00）；「Bun」聽成房屋／po（6:54，s07）；「只」聽成「制」（s09）",
+  "terms": "Ping、pong 3 次都判為英文念法"
  }
 }
