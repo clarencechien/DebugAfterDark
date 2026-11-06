@@ -7,7 +7,7 @@
  "description": "今年上半年大家問「我有多少 token」，下半年問「我能控幾個 agent」，數的都是投入。實驗室和外面真正的差距只有一樣東西，而且買不到：判定對錯的機制。這集用一張答案卡來講：實驗室一百萬顆 CPU 是用來驗的、沒有人看的時候出過什麼事、外面的軟體工廠缺了哪一欄，還有一個人怎麼先畫好自己的答案卡再放量。驗收筆記下篇。\n\n今晚的 breakpoint：\n1. token 和 agent 都是投入，實驗室那一百萬顆 CPU 是用來驗的。\n2. 沒有判定對錯的機制，agent 的自信就不代表它對；寫的不能自己判自己過關。\n3. 先畫好自己的答案卡，再放量。\n\n原文：〈一百萬顆 CPU，是用來驗的 — 驗收筆記 下篇〉 https://imitator.ai-apps.work/r/million-cores-report\n報告 v0.1（2026-11-05）；沙箱與 CPU 的數字是轉述、原句待核對，個人的 PR 數是自述、沒有稽核。\n\n上一集：EP08〈無限的是 token，有限的是驗收〉\n延伸收聽：EP02〈第五招的實驗：跑從來不是問題，看才是〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
  "report_slug": "million-cores-report",
  "source_url": "https://imitator.ai-apps.work/r/million-cores-report",
- "status": "draft",
+ "status": "final",
  "series": "驗收筆記 2/2（上：EP08）",
  "related": [
   "ep08-unlimited-tokens",
@@ -41,5 +41,6 @@
   "gates": "錯誤率 3.2% 通過；音高跳動 0.247 超過 0.23（第一輪 0.256，s00、s02、s04、s06、s07、s08 各補念 3 次後重選）",
   "both_wrong": "「報告」兩套都聽成「包括」（7:45，s08；EP06 也出現過）；Geoffrey 的 G 聽成 J；「滿」聽成「蠻」",
   "terms": "Ping、pong 3 次都判為英文念法"
- }
+ },
+ "published": "2026-11-06T15:12:00+08:00"
 }
