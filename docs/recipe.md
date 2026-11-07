@@ -16,7 +16,7 @@
 | 2. 台灣口語改寫 | Gemini 3.8 Flash | `tools/rewrite_episode.py` | `script.json`、`rewrites/<段>.json` |
 | 3. 檢查稿子 | 工具加 agent 逐段核對 | `tools/script_lint.py`、`tools/twtone_check.py` | 修正後的 `script.json`，修正紀錄在 `manual_edits` |
 | 4. 生成語音 | Gemini 3.8 Flash TTS | `tools/make_podcast.py episode` | `out/segments/D1_<ep>/` 每段三次 |
-| 5. 挑選 | Breeze-ASR-25、Resemblyzer | `tools/select_takes.py` | 每段一個 `<段>.wav`、`select_log.json` |
+| 5. 挑選 | Breeze-ASR-25（Modal GPU，或本機 CPU）、Resemblyzer | `tools/select_takes.py` | 每段一個 `<段>.wav`、`select_log.json` |
 | 6. 後製 | ffmpeg | `tools/make_podcast.py master` | `<ep>.mp3` |
 | 7. 驗收 | Breeze、Resemblyzer、Gemini | `stt_check.py`、`consistency_check.py`、`measures.py`、`gemini_check.py` | `qa/`，不合格回第 4 或第 3 步 |
 | 8. 交付 | — | `tools/package_episode.py` | `episode.json` 補上長度、bytes、sha256 |
@@ -41,6 +41,17 @@ ct2-transformers-converter --model MediaTek-Research/Breeze-ASR-25 \
 ```
 
 - 一定用 `python3 -m pip`。模型放在別的路徑時設 `BREEZE_CT2=<路徑>`。
+- **Modal（第 5、7 步的 Breeze 改在雲端 GPU 跑）**：環境變數 `modal`、`modal_secret` 是 Modal 的 token（不要印出來）。
+  雲端容器要經過 HTTPS proxy 才連得到 Modal，所以要裝 proxy 支援；app 只要部署一次，改了 `tools/modal_breeze.py` 才重新部署：
+
+  ```bash
+  python3 -m pip install 'modal[api-proxy-support]'      # 少了 python-socks 會連不上
+  MODAL_TOKEN_ID="$modal" MODAL_TOKEN_SECRET="$modal_secret" SSL_CERT_FILE=/root/.ccr/ca-bundle.crt \
+    modal deploy tools/modal_breeze.py                    # 第一次會建 image、在 image 裡轉好 Breeze int8
+  ```
+
+  之後的指令都要帶 `SSL_CERT_FILE=/root/.ccr/ca-bundle.crt`；`transcribe_remote()` 會自己把 `modal`／`modal_secret` 對應成 Modal 要的變數。
+  本機的 Breeze 轉換（上面的 `ct2-transformers-converter`）仍然要做：Modal 失敗時會退回本機跑。
 - D1 的聲線 ID 在 `voices/registry.json`，語氣在 `prompts/styles.json`，`make_podcast.py` 會自動讀。
 - 雲端容器抓不到 imitator 網站（Cloudflare 挑戰頁擋資料中心 IP），報告原文從 imitator repo 的 `archive/report/<slug>.html` 拿。
 
@@ -111,7 +122,8 @@ python3 tools/rewrite_episode.py --episode episodes/<ep> --n 3 --resume
 - 寫稿 prompt 在 `prompts/spoken_script_zh-TW.md`：每句 ≤ 20 字、每段 ≤ 1 個精確數字、不條列、素人感、台灣用字、避開大陸用語、
   Ping 不講自己的經歷、cold open 不打招呼、最後一段是 breakpoint、術語第一次出現就解釋。
 - 每段三個候選，自動挑沒有大陸用語、口頭禪沒超額、數字少、句子短的那個。整集口頭禪額度在 `rewrite_episode.py` 的 `PHRASE_CAPS`。
-- `--resume`：容器重啟會砍掉執行中的工作，加這個會沿用已完成的段落。一段約 1 分鐘。
+- `--resume`：容器重啟會砍掉執行中的工作，加這個會沿用已完成的段落。
+- 每段的三個候選同時送出，各自最多重試 3 次（proxy 偶爾斷線）。一段約 25 秒，EP11 十段 261 秒（以前一段約 70 秒）。
 
 ## 3. 檢查稿子（不能省）
 
@@ -157,15 +169,22 @@ python3 tools/make_podcast.py episode --voice D1 --script episodes/<ep>/script.j
 
 - **D1** 是設計聲線 `voice_b3c8x0jsntqc`，閒置一年才會刪除。**語氣預設 v5**（`prompts/styles.json`）。
 - **每段念三次**：沒有種子，每次差很多。每次都自動檢查時長，太短或太長就重念，最多重試 2 次。
+- **全部的生成同時送**（`--parallel`，預設 6 個同時進行），每次各自做時長檢查和最多 3 次網路重試。EP11 的 30 次生成 70 秒（EP10 逐一生成約 8 分鐘）。
 - 中斷後重下同一指令即可，已存在的生成檔不會重做。
+- **一定要帶 `--tag <ep>`**：漏了會寫進 `out/segments/D1/`，兩集先後漏帶就會互相蓋掉同名的 take（2026-11-07 EP10、EP11 一起重錄時發生過）。
 - **不要整集一次生成**當正式版：EP00 試作的一次生成比較連貫，但音高跳動多 29%、聽起來咬字抖、口音偏大陸。
 
 ## 5. 挑選
 
 ```bash
 python3 tools/select_takes.py --script episodes/<ep>/script.json --segments out/segments/D1_<ep> \
-  --asr breeze --consistency --neighbour
+  --asr breeze-modal --consistency --neighbour
 ```
+
+`--asr breeze-modal` 把轉寫送到 Modal 的 L4 GPU（`tools/modal_breeze.py`）：同一個 Breeze int8 模型、同樣的解碼設定（zh、beam 5、VAD、
+時間戳超出音檔時的重試），只有裝置不同。EP10 的 30 次生成在 GPU 上重挑，10 段選中的版本跟 CPU 完全相同；挑選 79 秒，本機 22 分鐘。
+每批 12 個檔同時送出，每批最多等 600 秒、失敗重試一次，還是失敗就在本機 CPU 轉寫那一批，所以網路斷了也不會丟掉整次執行。
+沒有 Modal 時改用 `--asr breeze`（本機）。
 
 依序篩選：
 1. **清楚**：Breeze 盲聽錯誤率跟最好的那次差 0.012 以內。
@@ -177,11 +196,19 @@ python3 tools/select_takes.py --script episodes/<ep>/script.json --segments out/
 6. **停頓**：長停頓最少。
 
 最後一輪相鄰段比對（`--neighbour`）：有一次生成跟前後段更像（相似度高出 0.01 以上）就換。
-選擇紀錄在 `out/segments/D1_<ep>/select_log.json`。Breeze 在 CPU 上轉寫 30 次生成約 20 到 25 分鐘；只改規則時加 `--reuse`。
+選擇紀錄在 `out/segments/D1_<ep>/select_log.json`，每次生成的轉寫文字和時間戳也存在裡面（第 7 步會沿用）。
+Breeze 在 CPU 上轉寫 30 次生成約 20 到 25 分鐘；用 Modal 時整個挑選 1.5 到 4 分鐘（含 GPU 開機，聲紋仍在本機算）。只改規則或只補了幾次生成時加 `--reuse`，只轉寫新的檔。
+
+- **`--reuse` 是用檔名對轉寫**：改了稿子重新生成的段落，檔名還是 `take0`～`take2`，會拿到舊稿的轉寫。
+  改稿的段落要先刪掉它的 `*.take*.wav`，並把那段從 `select_log.json` 拿掉，再生成、挑選。
+- **音高不在篩選條件裡**：挑完看一下各段選中那次的中位音高，離整集中位數超過 ±6 Hz 就補生成再挑（第 7 步的 `consistency_check.py` 也會標）。
+- **手動指定**：自動挑的那次有問題（例如語速慢兩成），把想要的 take 複製成 `<段>.wav`，在 `select_log.json` 那段改 `chosen`
+  並寫 `manual_override` 說明原因。之後再跑 `select_takes.py` 會蓋掉，要重做一次。
 
 **不要用 `--beam 1` 省時間**（2026-11-04 用 EP02 的 27 次生成實測）：只快 30%（832 秒對 1,182 秒；CPU 上時間主要花在編碼器，
 beam 只影響解碼），但 9 段裡有 3 段選中的不同，單次錯誤率最多差 0.04，比「一樣清楚」的容忍值 0.012 大三倍。
-**只重做一段時**，把那段的新生成放在另一個 `--tag`，用只含那一段的 script 挑選，再複製回原資料夾重新後製，其他段完全不動。
+**只重做幾段時**，用第 7 步最後的 `--only <段> --add-takes 3` 加 `--reuse`：新生成接在舊的後面，其他段的選擇和轉寫不變
+（`--neighbour` 可能讓鄰段換一次，看一下輸出）。
 
 ## 6. 後製
 
@@ -199,13 +226,17 @@ python3 tools/make_podcast.py master --voice D1 --tag <ep> --script episodes/<ep
 ## 7. 驗收
 
 ```bash
-python3 tools/stt_check.py --asr breeze --script episodes/<ep>/script.json \
+python3 tools/stt_check.py --asr breeze-modal --from-select --script episodes/<ep>/script.json \
   --segments out/segments/D1_<ep> --out episodes/<ep>/qa/stt_check.json
 python3 tools/consistency_check.py --script episodes/<ep>/script.json \
   --segments out/master/norm_D1_<ep> --out episodes/<ep>/qa/consistency.json
 python3 tools/measures.py wobble episodes/<ep>/<ep>.mp3 --skip 3.6 --tail 3.6
 python3 tools/gemini_check.py terms --segments out/segments/D1_<ep> --script episodes/<ep>/script.json --terms Ping,pong
 ```
+
+- `--from-select`：Breeze 那一半直接沿用第 5 步存下的選中那次的轉寫，不再轉寫一次；只有 Gemini 那一半要跑。
+  Gemini 轉寫各段同時送（6 個），每段最多重試 3 次，回空白就記成 `"empty": true` 繼續（EP10 的 oh F moment 那段三次都回空白），不會讓整個檢查中斷。
+- 四個檢查彼此獨立，可以同時跑。EP11 的驗收 85 秒（EP10 本機約 9 分鐘）。
 
 | 檢查 | 通過 |
 |---|---|
@@ -223,7 +254,7 @@ python3 tools/gemini_check.py terms --segments out/segments/D1_<ep> --script epi
 
 ```bash
 python3 tools/make_podcast.py episode --voice D1 --script episodes/<ep>/script.json --tag <ep> --only <段> --add-takes 3
-python3 tools/select_takes.py --script episodes/<ep>/script.json --segments out/segments/D1_<ep> --asr breeze --consistency --neighbour --reuse
+python3 tools/select_takes.py --script episodes/<ep>/script.json --segments out/segments/D1_<ep> --asr breeze-modal --consistency --neighbour --reuse
 ```
 
 **自動檢查都不能判斷口音**：Gemini 評審判斷台灣腔與大陸腔跟台灣母語者相反。口音、磁性、整體感覺只能人耳。
@@ -249,16 +280,18 @@ python3 tools/package_episode.py episodes/<ep>
 
 ## 時間與費用（一集約 7 到 9 分鐘）
 
-| 步驟 | 時間 | 費用（2026 年底前） |
-|---|---|---|
-| 2. 改寫，9–10 段各 3 候選 | 約 10 分鐘 | 約 0.35 美元 |
-| 4. 生成，27–30 次 | 約 8 到 10 分鐘 | 約 0.35 美元 |
-| 5. 挑選，Breeze 本機 | 約 20 分鐘 | 0 |
-| 6. 後製 | 約 2 分鐘 | 0 |
-| 7. 驗收 | 約 10 分鐘 | 約 0.06 美元 |
-| 合計 | 約 50 分鐘 | 約 0.8 美元，2027 年起約 1.6 美元 |
+| 步驟 | 以前（EP10，逐一、本機） | 現在（EP11，同時送、Modal） | 費用（2026 年底前） |
+|---|---|---|---|
+| 2. 改寫，10 段各 3 候選 | 約 10 分鐘 | 261 秒 | 約 0.35 美元 |
+| 4. 生成，30 次 | 約 8 分鐘 | 70 秒 | 約 0.35 美元 |
+| 5. 挑選，Breeze | 22 分鐘（CPU） | 93 秒（L4 GPU） | Modal 按秒計費，每集 GPU 只開一兩分鐘 |
+| 6. 後製 | 約 1 分鐘 | 36 秒 | 0 |
+| 7. 驗收 | 約 9 分鐘 | 85 秒 | 約 0.06 美元 |
+| 合計 | 約 50 分鐘 | 約 9 分鐘 | 約 0.8 美元，2027 年起約 1.6 美元，加 Modal |
 
-加上第 1、3 步 agent 自己的寫稿和核對時間。EP02 的實際數字見 `episodes/ep02-harness-probe/README.md`。
+加上第 1、3 步 agent 自己的寫稿和核對時間，以及補生成、重挑的回合（每回合約 2 到 4 分鐘）。
+以前慢在三件事：生成和改寫一個一個等、Breeze 在 4 核 CPU 上轉寫、驗收又把選中的那次轉寫一遍。
+Modal 費用以 Modal 後台帳單為準。EP02 的實際數字見 `episodes/ep02-harness-probe/README.md`。
 
 ## 替代方案
 

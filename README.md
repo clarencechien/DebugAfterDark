@@ -19,6 +19,11 @@
 | [EP11](episodes/ep11-delete-eighty/) | 八成要刪掉：回頭看 2026（接著 EP10） | 定稿；第一集用 Modal GPU 挑選、全程約 9 分鐘 |
 
 - 一集怎麼做：[`docs/recipe.md`](docs/recipe.md)
+- 一集要多久：從定稿的草稿到 mp3 約 9 分鐘，以前約 50 分鐘（2026-11-07，EP11 第一次照新做法跑）。
+  - 改寫的候選、語音的 30 次生成都同時送出，網路斷線各自重試。
+  - 挑選用的 Breeze-ASR-25 改在 Modal 的 L4 GPU 跑（`--asr breeze-modal`，`tools/modal_breeze.py`）。EP10 用 GPU 重挑，10 段選中的跟 CPU 完全一樣。Modal 失敗會退回本機 CPU。
+  - 驗收沿用挑選時的轉寫（`stt_check.py --from-select`），不再轉寫一次。
+  - 細節、指令與注意事項見 recipe 的第 0、4、5、7 步和「時間與費用」。Modal 的 token 在環境變數 `modal`、`modal_secret`，連線要走 proxy（`pip install 'modal[api-proxy-support]'`）。
 - 節目怎麼營運（選題、審稿、跟 imitator 整合、上架平台）：[`PIPELINE.md`](PIPELINE.md)
 - 主持人 Ping 的命名與人設：[`HOST.md`](HOST.md)
 - EP00 自介稿與節目文案：[`episodes/ep00-intro/script.md`](episodes/ep00-intro/script.md)
