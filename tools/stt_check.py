@@ -78,12 +78,17 @@ ASR_MODELS = {
     #       --copy_files tokenizer.json preprocessor_config.json
     "breeze": os.environ.get("BREEZE_CT2", "/home/user/models/breeze-asr-25-ct2-int8"),
     "whisper": "large-v3-turbo",
+    "breeze-modal": "modal",   # same Breeze model on a Modal GPU, tools/modal_breeze.py
 }
 ASR = "whisper"
 
 BEAM = 5   # beam search width; 1 = greedy, several times faster on CPU (see docs/recipe.md step 5)
 
 def whisper_transcribe(paths):
+    if ASR == "breeze-modal":   # the slow step on a cloud GPU (tools/modal_breeze.py), same model and decoding
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from modal_breeze import transcribe_remote
+        return transcribe_remote(paths, beam=BEAM)
     from faster_whisper import WhisperModel
     m = WhisperModel(ASR_MODELS[ASR], device="cpu", compute_type="int8")
     res = {}
