@@ -38,7 +38,8 @@
 - **YouTube**：已上架（2026-11-07），<https://www.youtube.com/@debugafterdark-podcast>（品牌帳號頻道，用 RSS 匯入）
   - 新頻道要滿 24 小時才能送 RSS：2026-11-06 試過，顯示「Your account is too new」。隔天送出成功，台灣可以用 RSS 匯入。
   - 說明欄的格式：YouTube 讀的是 HTML 版說明，段落和編號清單之間會多出好幾行空白。字、編號、連結都對，所以**決定不修**。feed 是各平台共用的，為了 YouTube 改，可能把 Apple、Spotify 弄亂。真的要改，就在 YouTube Studio 手動改那一集的說明。
-- 其他平台：KKBOX、Podcast Index 還沒送
+- 網站的「在這些平台收聽」：Apple Podcasts、Spotify、YouTube（`show.json` 的 `listen_on`）
+- KKBOX、Podcast Index：**決定先不送**（2026-11-07）。Apple、Spotify、YouTube 加上 SoundOn 和網站已經夠用；之後想加再照下面的表做
 - Apple Podcasts Connect 帳號：Account Name 用品牌名「Debug After Dark」、類型 Individual（以後若開付費訂閱，個人帳號可能會顯示真實姓名，要再確認）。Podcasts Connect 的 API key 是給託管平台發佈付費內容（Delegated Delivery）用的，不能拿來送審免費節目
 - 網站功能：每集一頁（`/ep05/` 這種短網址，有各自的分享預覽）、每集「分享這一集」按鈕；在 LINE、Facebook、Instagram 等 app 內建瀏覽器打開時提示改用瀏覽器（LINE 另有一鍵 `openExternalBrowser=1`）；Media Session 讓鎖定畫面顯示集名與封面，可倒退 15 秒、快轉 30 秒（`tools/build_site.py`）
 - 數據：各平台**各算各的**，數的東西也不一樣（下載、播放、瀏覽），不能直接相加（2026-11-06 整理）
