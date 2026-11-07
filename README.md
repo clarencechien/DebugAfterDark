@@ -35,7 +35,10 @@
 - 擁有者信箱：`podcast@ai-apps.work`（Cloudflare Email Routing 轉寄）
 - **Spotify**：已上架（2026-11-06），<https://open.spotify.com/show/56y20c8Jscmnjajo8vUIzw>
 - **Apple Podcasts**：已上架（2026-11-06），<https://podcasts.apple.com/tw/podcast/id6831404475>（節目 ID `6831404475`；網址中間的名稱 Apple 不看，只認 ID）
-- 其他平台：KKBOX、Podcast Index 還沒送；YouTube 品牌頻道已建好，新頻道要滿 24 小時才能送 RSS（2026-11-06 試過，顯示「Your account is too new」；選項有出現，代表台灣可以用 RSS 匯入）
+- **YouTube**：已上架（2026-11-07），<https://www.youtube.com/@debugafterdark-podcast>（品牌帳號頻道，用 RSS 匯入）
+  - 新頻道要滿 24 小時才能送 RSS：2026-11-06 試過，顯示「Your account is too new」。隔天送出成功，台灣可以用 RSS 匯入。
+  - 說明欄的格式：YouTube 讀的是 HTML 版說明，段落和編號清單之間會多出好幾行空白。字、編號、連結都對，所以**決定不修**。feed 是各平台共用的，為了 YouTube 改，可能把 Apple、Spotify 弄亂。真的要改，就在 YouTube Studio 手動改那一集的說明。
+- 其他平台：KKBOX、Podcast Index 還沒送
 - Apple Podcasts Connect 帳號：Account Name 用品牌名「Debug After Dark」、類型 Individual（以後若開付費訂閱，個人帳號可能會顯示真實姓名，要再確認）。Podcasts Connect 的 API key 是給託管平台發佈付費內容（Delegated Delivery）用的，不能拿來送審免費節目
 - 網站功能：每集一頁（`/ep05/` 這種短網址，有各自的分享預覽）、每集「分享這一集」按鈕；在 LINE、Facebook、Instagram 等 app 內建瀏覽器打開時提示改用瀏覽器（LINE 另有一鍵 `openExternalBrowser=1`）；Media Session 讓鎖定畫面顯示集名與封面，可倒退 15 秒、快轉 30 秒（`tools/build_site.py`）
 - 數據：各平台**各算各的**，數的東西也不一樣（下載、播放、瀏覽），不能直接相加（2026-11-06 整理）
@@ -46,7 +49,7 @@
   | 其他 podcast app、手動貼 feed 的人、SoundOn 播放頁 | SoundOn Prefix（`show.json` 的 `enclosure_prefix`，先經過 SoundOn 再 302 回我們的檔案） | 下載 |
   | Spotify | Spotify for Creators 後台（Spotify 從自己的伺服器播，SoundOn 大多看不到） | 播放、聽眾 |
   | 我們的網站（首頁、單集頁） | **Cloudflare Web Analytics**（2026-11-06 加上，`show.json` 的 `cf_web_analytics_token`） | 網頁瀏覽、來源（例如 LINE、Facebook）、國家、裝置；不用 cookie。**不數播放**，網站播放器不經過 Prefix |
-  | YouTube（之後） | YouTube Studio | 觀看 |
+  | YouTube | YouTube Studio | 觀看 |
 
   - Apple 的收聽會同時出現在 SoundOn（下載）和 Podcasts Connect（播放），兩邊不能相加。
   - Cloudflare Web Analytics 在 Cloudflare 後台的「Analytics & Logs → Web Analytics」，站點 `podcast.ai-apps.work`。因為這個子網域的 DNS 是 DNS only（灰雲），Cloudflare 沒辦法自動插入，改由 `tools/build_site.py` 的 `beacon()` 在每一頁放統計程式；token 本來就放在公開網頁裡，不是密鑰。
@@ -55,14 +58,14 @@
 
 ## 上架平台（2026-11-05 整理）
 
-### 建議的順序（Apple、Spotify 已上架，2026-11-06）
+### 建議的順序（Apple、Spotify 已上架 2026-11-06，YouTube 已上架 2026-11-07）
 | 順序 | 平台 | 怎麼上 | 費用 | 審核 | 備註 |
 |---|---|---|---|---|---|
 | 1 | Apple Podcasts | 用 Apple 帳號登入 Podcasts Connect，貼 feed 網址 | 免費（付費訂閱方案另計，非必要） | 通常幾天 | 很多第三方 app（Overcast、Pocket Casts 等）也從 Apple 目錄找節目。內容規範要求 AI 合成聲音在**內容與資料裡都要明顯揭露** |
 | 2 | Spotify | creators.spotify.com →「Find an existing show → Somewhere else」，貼 feed；8 位數驗證碼寄到 feed 的信箱 | 免費 | 通常幾小時 | 驗證碼寄到 `podcast@ai-apps.work` |
 | 3 | KKBOX | 用 KKBOX 帳號綁 feed（一個帳號只能綁一個節目） | 免費 | 約 1–3 個工作天 | 台灣本地平台；找到的資料多是 2020–2023 年，以 KKBOX 官方頁為準 |
 | 4 | Podcast Index | podcastindex.org 貼 feed | 免費 | 幾分鐘 | 開放目錄，Podcast Addict、Fountain 等從這裡抓 |
-| 5 | YouTube | YouTube Studio：建立 → 新增 Podcast → 提交 RSS feed，驗證碼寄到 feed 的信箱 | 免費 | 不一定 | RSS 匯入只開放部分國家，**台灣在不在名單上還沒確認**；YouTube 對量產 AI 內容最嚴，放最後 |
+| 5 | YouTube | YouTube Studio：建立 → 新增 Podcast → 提交 RSS feed，驗證碼寄到 feed 的信箱 | 免費 | 不一定 | 2026-11-07 已上架，台灣可以用 RSS 匯入；新頻道要等 24 小時才能送。YouTube 對量產 AI 內容最嚴，放最後 |
 | 可選 | Amazon Music | Amazon Music for Podcasters 提交 feed | 免費 | 幾天 | 台灣用的人少 |
 
 SoundOn 已經有我們的播放頁，不用另外申請。送審都要登入節目擁有者自己的帳號，由人操作。
