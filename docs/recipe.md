@@ -14,7 +14,7 @@
 | 0. 環境 | 一次性 | pip、轉換 Breeze | 套件、`/home/user/models/breeze-asr-25-ct2-int8` |
 | 1. 選題、草稿與素材 | agent 自己寫 | — | `draft.json`、`sources/<段>.txt`、`episode.json` |
 | 2. 台灣口語改寫 | Gemini 3.8 Flash | `tools/rewrite_episode.py` | `script.json`、`rewrites/<段>.json` |
-| 3. 檢查稿子 | 工具加 agent 逐段核對 | `tools/script_lint.py` | 修正後的 `script.json`，修正紀錄在 `manual_edits` |
+| 3. 檢查稿子 | 工具加 agent 逐段核對 | `tools/script_lint.py`、`tools/twtone_check.py` | 修正後的 `script.json`，修正紀錄在 `manual_edits` |
 | 4. 生成語音 | Gemini 3.8 Flash TTS | `tools/make_podcast.py episode` | `out/segments/D1_<ep>/` 每段三次 |
 | 5. 挑選 | Breeze-ASR-25、Resemblyzer | `tools/select_takes.py` | 每段一個 `<段>.wav`、`select_log.json` |
 | 6. 後製 | ffmpeg | `tools/make_podcast.py master` | `<ep>.mp3` |
@@ -29,6 +29,7 @@
 
 ```bash
 python3 -m pip install -r requirements.txt
+git clone --depth 1 https://github.com/clarencechien/twtonepoc /home/user/twtonepoc && /home/user/twtonepoc/setup.sh   # twtone（第 3 步），會下載 zhtw-mcp 並驗 SHA256
 python3 -m pip install --index-url https://download.pytorch.org/whl/cpu torch
 python3 -m pip install -r requirements-qa.txt
 python3 -m pip install --ignore-installed pillow      # 系統的 Pillow 跟 python3.11 不相容時
@@ -119,6 +120,17 @@ python3 tools/script_lint.py episodes/<ep>/script.json
 ```
 
 通過條件：每段 `mainland_words` 是空的，`precise_numbers` 最多一個。
+
+再跑 twtone（[`clarencechien/twtonepoc`](https://github.com/clarencechien/twtonepoc)，零 token 的繁中檢查：表層 AI 味訊號加上 zhtw-mcp 的台灣用詞與翻譯腔，門檻來自 2015–2022 的台灣同類文章）：
+
+```bash
+python3 tools/twtone_check.py episodes/<ep>/script.json      # 報告存到 episodes/<ep>/qa/twtone.md，每行標出是哪一段
+```
+
+- 「要改」區（超過台灣基準語料任何一篇，最常見的是「不是…而是」對舉）：一句一句最小改動，保留事實與限定詞，記進 `manual_edits`；在澄清誤讀的句子可以留，但同一段別連用。
+- 用詞區（zhtw-mcp）：只是建議，不自動套用。像「數據→資料」「沙箱→沙盒」是教育部立場，口語節目照聽眾習慣決定。
+- 翻譯腔 warning、「略過」區：不主動改。twtone 是給文章用的，Ping 的反問和「對」「嘛」這類口語是刻意的。
+- 2026-11-07 回頭跑已上架的集數：EP05、EP08 各有 2 處對舉超過門檻，EP09 沒有。
 
 接著 agent 逐段對照 `sources/<段>.txt` 讀一遍。這些錯自動檢查抓不到，都實際發生過：
 
