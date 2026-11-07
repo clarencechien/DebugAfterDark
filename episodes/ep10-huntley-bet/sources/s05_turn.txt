@@ -1,0 +1,30 @@
+（注意：依寫稿規則第 18、19 條用白話；不要改口；一段最多一個精確數字；句首不要只說「報告說」，用「這份報告說」。Geoffrey Huntley 是公開人物、這些是他公開寫的話，可以具名；Canva 照講。紐西蘭那位創辦人不具名。「oh fuck」不要念出來，說成「一個不太文雅的名字」。commit 第一次出現要解釋：把寫好的程式碼存進版本紀錄的那一步。$297、60→20 都是 Huntley 的轉述，沒查核，要講明；第四幕「他說中了嗎」的判斷是報告作者的，不是 Huntley 的。不要預告下一集。）
+
+第三幕 · 轉折
+T-1602026-07-24
+然後，在親手宣告開發死亡半年之後，他寫了一篇不太一樣的東西。
+創造，現在幾乎免費。
+驗證，還沒有。
+"Creation is now near-free. Verification/understanding is not, yet. It's time to engineer away the slop."
+「工程師」這個詞，在其他產業的意思是：失敗不可接受。
+他沒有撤回任何一句話。但故事的主角換了。前面十八個月，主角是那台會寫程式的機器。到這裡，主角變成那個能證明機器寫對了的人。
+回頭看，那個人其實一直在。第一篇他就寫過：型別越嚴、編譯器越囉嗦，AI 衝得越猛。Ralph 那篇他也寫過：沒有資深的人在旁邊，這不可能；既有的 codebase，他打死不用。他殺掉的是「開發」。他從頭到尾在救的，是「工程」。
+
+
+## Huntley 原文 · https://ghuntley.com/oh-fuck/
+
+ By Geoffrey Huntley
+ in
+ AI
+ —
+ 14 Jan 2025
+ An "oh fuck" moment in time
+ Over the Christmas break, I’ve been critically looking at my own software development loop, learning a new programming language, and re-learning a language I haven’t used professionally in over seven years.
+It's now 2025. Software assistants are now a core staple of my day-to-day life as a staff software engineer and are the best intern I've ever had. Yes, sometimes the assistants lie/make stuff up, but then again, so does an intern.
+Last weekend, I decided to take Cursor/Windsurfer for a spin after seeing a comment on HackerNews, which can be distilled down to "the better the type system of the programming language and verbosity of compiler errors, the harder LLM's go"
+So I took 'em for a spin and gave it a task...
+convert this rust library at https://github.com/RustAudio/cpal/tree/master to a haskell library using ghc2024.
+- use the hoogle cli to search for the right types and functions 
+- include a comprehensive test suite using hspec and quickcheck
+- run a build after every code change 
+- run tests after every successful buildThen, I took my kids down to the local pool. When I got back, I had a fully fu

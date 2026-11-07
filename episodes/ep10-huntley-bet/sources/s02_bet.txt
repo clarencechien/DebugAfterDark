@@ -1,0 +1,45 @@
+（注意：依寫稿規則第 18、19 條用白話；不要改口；一段最多一個精確數字；句首不要只說「報告說」，用「這份報告說」。Geoffrey Huntley 是公開人物、這些是他公開寫的話，可以具名；Canva 照講。紐西蘭那位創辦人不具名。「oh fuck」不要念出來，說成「一個不太文雅的名字」。commit 第一次出現要解釋：把寫好的程式碼存進版本紀錄的那一步。$297、60→20 都是 Huntley 的轉述，沒查核，要講明；第四幕「他說中了嗎」的判斷是報告作者的，不是 Huntley 的。不要預告下一集。）
+
+第一幕 · 下注
+T-6922025-02-07
+三週後，他把注押下去。
+我看不到有哪條路，會讓大多數工程師在 2026 年底前，還在手工 commit。
+"I seriously can't see a path forward where the majority of software engineers are doing artisanal hand-crafted commits by as soon as the end of 2026."
+同一天，還有一句沒那麼客氣的：
+not gonna make it.
+沒跟上的工程師，不會成功的。不是被裁，是在某一次考績裡，發現基準線已經被別人拉到 16 倍。
+
+
+## Huntley 原文 · https://ghuntley.com/dothings/
+
+ By Geoffrey Huntley
+ in
+ AI
+ —
+ 07 Feb 2025
+ The future belongs to people who can just do things
+ There, I said it. I seriously can't see a path forward where the majority of software engineers are doing artisanal hand-crafted commits by as soon as the end of 2026. If you are a software engineer and were considering taking a gap year/holiday this year it would be an incredibly bad decision/time to do it.
+I'm no longer hiring junior or even mid-level software engineers. 
+Our tokens per codebase: Gumroad: 2M Flexile: 800K Helper: 500K Iffy: 200K Shortest: 100K Both Claude 3.5 Sonnet and o3-mini have context windows of 200K tokens, meaning they can now write 100% of our Iffy and Shortest code if prompted well. 
+It won’t be long until AI will be writing all the code for Helper, Flexile, and Gumroad. 
+Our new process: 1. Sit and chat about what we need to build, doing research with Deep Research as we go. 2. Have AI record everything and turn it into a spec. 3. Clean up the spec, adding any design requirements / other nuances. 4. Have Devin code it up. 5. QA, merge, (auto-)deploy to prod.
+- Sahil Lavingia (Founder of Gumroad)
+It has been a good 43 years of software development where everything has remained roughly the same, but it's time to go up another layer of abstraction, as we 
+
+## Huntley 原文 · https://ghuntley.com/ngmi/
+
+ By Geoffrey Huntley
+ in
+ AI
+ —
+ 07 Feb 2025
+ What do I mean by some software devs are "ngmi"?
+ At "an oh fuck moment in time", I closed off the post with the following quote.
+N period on from now, software engineers who haven't adopted or started exploring software assistants, are frankly not gonna make it. Engineering organizations right now are split between employees who have had that "oh fuck" moment, are leaning into software assistants and those who have not.
+People have asked me to expand. So let's do it. 
+This is a tale about seven fruits. Seven fruits who work at a company and how the shifts in the software industry by AI will affect all companies and their employees. 
+It really doesn't matter what company, as the productivity benefits that are delivered by LLMs and agentic software development are going to rapidly change employee performance metrics dynamics within all companies - all at once. AI has been commoditized and can be purchased with a credit card.
+At this company we have seven software developers, and the company does six-monthly employee performance review cycles.
+Nearly all corporate companies use a Vitality curve. Some companies force the distribution; others do not. Performance season closes and here's the results represented as a tier-list (rather than as a bell-curve - as for the purposes of story telling the distribution doesn't matter).
+Lemon doesn't make it, well, because they are a lemon. 
+Orange and Strawberry are shocked to receive such a lo

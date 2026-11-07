@@ -1,0 +1,32 @@
+{
+ "id": "ep10-huntley-bet",
+ "number": 10,
+ "type": "full",
+ "guid": "debug-after-dark:ep10",
+ "title": "EP10 還剩幾天：Huntley 的賭注",
+ "description": "二〇二五年二月，澳洲工程師 Geoffrey Huntley 押了一個有到期日的注：二〇二六年底前，大多數工程師不會再手工寫程式、手工送出。到期日是今年最後一天。這集從他在聖誕假期被 AI 嚇到的那個下午講起，看他這一年多怎麼一路加碼，又為什麼在宣告「軟體開發已死」半年後，改口說「驗證還不免費」。\n\n今晚的 breakpoint：\n1. Huntley 字面上的賭注大概會輸，但梯子是從最下面那一階，安靜地一階一階不見。\n2. 創造現在幾乎免費，驗證還沒有；他殺掉的是開發，想救的是工程。\n3. 蓋自己的地堡：懂它怎麼跑、錯了自己會知道、最後有一個人簽名。\n\n原文：〈還剩九十五天 — Huntley 的賭注〉 https://imitator.ai-apps.work/r/huntley-18-months\nHuntley 的原文：https://ghuntley.com/oh-fuck/ 、https://ghuntley.com/dothings/ 、https://ghuntley.com/ngmi/ 、https://ghuntley.com/ralph/\n引文為譯文；兩百九十七美元與六十人剩二十人是 Huntley 的轉述，未經查核；「他說中了嗎」的判斷是報告作者的。\n\n延伸收聽：EP08〈無限的是 token，有限的是驗收〉、EP09〈一百萬顆 CPU，是用來驗的〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "huntley-18-months",
+ "source_url": "https://imitator.ai-apps.work/r/huntley-18-months",
+ "status": "draft",
+ "related": [
+  "ep08-unlimited-tokens",
+  "ep09-million-cores"
+ ],
+ "deadline_note": "賭注到期 2026-12-31，要在那之前上架",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "audio": {
+  "file": "ep10-huntley-bet.mp3"
+ }
+}

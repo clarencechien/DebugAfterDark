@@ -1,0 +1,11 @@
+（注意：依寫稿規則第 18、19 條用白話；不要改口；一段最多一個精確數字；句首不要只說「報告說」，用「這份報告說」。Geoffrey Huntley 是公開人物、這些是他公開寫的話，可以具名；Canva 照講。紐西蘭那位創辦人不具名。「oh fuck」不要念出來，說成「一個不太文雅的名字」。commit 第一次出現要解釋：把寫好的程式碼存進版本紀錄的那一步。$297、60→20 都是 Huntley 的轉述，沒查核，要講明；第四幕「他說中了嗎」的判斷是報告作者的，不是 Huntley 的。不要預告下一集。）
+
+T-4942025-08會拿走你工作的，是隔壁的同事，不是 AI。三百行就是一個 agent。不會做，你只是消費者。
+T-3482026-01軟體開發已死。是我殺的。everything is a ralph loop。軟體是轉盤上的陶土，不對就丟回去。
+T-3072026-02寫軟體的成本，低於最低工資。real。競爭對手出現在你家門口，用月算，不是用年。
+T-2892026-03你的腦袋，外包給誰了？cognitive security。改幾個權重，模型就逃不出金門大橋；而你不會發現。
+≈T-2302026-05你的毛利，就是我的機會。新加坡。Block 裁掉一半。他的峇里島導遊，自己在用 AI 寫程式。
+新加坡那場的最後，他說了整段十八個月裡最像鬼故事的一句：
+他們以為 AI 會來敲門。
+它沒有。它在房子底下鑽。
+"They're expecting AI to knock on their doorstep and announce itself, but what's really happening is that it's burrowing under society, under the houses."

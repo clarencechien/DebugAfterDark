@@ -1,0 +1,33 @@
+（注意：依寫稿規則第 18、19 條用白話；不要改口；一段最多一個精確數字；句首不要只說「報告說」，用「這份報告說」。Geoffrey Huntley 是公開人物、這些是他公開寫的話，可以具名；Canva 照講。紐西蘭那位創辦人不具名。「oh fuck」不要念出來，說成「一個不太文雅的名字」。commit 第一次出現要解釋：把寫好的程式碼存進版本紀錄的那一步。$297、60→20 都是 Huntley 的轉述，沒查核，要講明；第四幕「他說中了嗎」的判斷是報告作者的，不是 Huntley 的。不要預告下一集。）
+
+第二幕 · 電稿越打越短
+接下來十五個月，他沒有再解釋。他只是一直加碼。
+T-5622025-06光會寫軟體已經不夠了。你要把「寫軟體」自動化。墨爾本，六個月回顧。說 AI 沒用的人？拿起吉他彈錯一次，就說吉他壞了。
+T-5352025-07while :; do cat PROMPT.md | claude-code ; doneRalph。一份五萬美元的合約，跑出來的帳單是 $297。
+
+
+## Huntley 原文 · https://ghuntley.com/ralph/
+
+ By Geoffrey Huntley
+ in
+ AI
+ —
+ 14 Jul 2025
+ Ralph Wiggum as a "software engineer"
+ How Ralph Wiggum went from 'The Simpsons' to the biggest name in AI right now - Venture Beat 
+watch this to see it in practice and learn the theory; read below to go deeper 
+watch this to learn why the claude code plugin isn’t it 🤝
+😎
+Here's a cool little field report from a Y Combinator hackathon event where they put Ralph Wiggum to the test.
+"We Put a Coding Agent in a While Loop and It Shipped 6 Repos Overnight"
+https://github.com/repomirrorhq/repomirror/blob/main/repomirror.md
+If you've seen my socials lately, you might have seen me talking about Ralph and wondering what Ralph is. Ralph is a technique. In its purest form, Ralph is a Bash loop.
+while :; do cat PROMPT.md | claude-code ; doneRalph can replace the majority of outsourcing at most companies for greenfield projects. It has defects, but these are identifiable and resolvable through various styles of prompts. 
+That's the beauty of Ralph - the technique is deterministically bad in an undeterministic world. 
+Ralph can be done with any tool that does not cap tool calls and usage. 
+Ralph is currently building a brand new programming language. We are on the final leg before a brand new production-grade esoteric programming language is released. What's kind of wild to me is that Ralph has been able to build this language and is also able to program in this language without that language being in the LLM's training data set.
+Amp creating a new programming language AFK https://t.co/KmmOtHIGK4
+— geoff (@GeoffreyHuntley) July 13, 2025
+Building software with Ralph requires a great deal of faith and a belief in eventual consistency. Ralph will test you. Every time Ralph has taken a wrong direction in making CURSED, I haven't blamed the tools; instead, I've looked inside. Each time Ralph does something bad, Ralph gets tuned - like a guitar.
+deliberate intentional practice
+Something I’ve been wondering about for a really long time is, essentially, why do people say AI doesn’t work for them? What do they mean when they say that? From which identity are they coming from? Are they coming from the perspective of an engineer with a job
