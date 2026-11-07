@@ -15,6 +15,8 @@
 | [EP07](episodes/ep07-taiwan-money-again/) | 台灣錢淹腳目，這次淹在別人腳下 | 定稿 |
 | [EP08](episodes/ep08-unlimited-tokens/) | 無限的是 token，有限的是驗收（驗收筆記 1/2） | 定稿 |
 | [EP09](episodes/ep09-million-cores/) | 一百萬顆 CPU，是用來驗的（驗收筆記 2/2） | 定稿 |
+| [EP10](episodes/ep10-huntley-bet/) | 還剩幾天：Huntley 的賭注 | 定稿；開頭倒數改成「不到兩個月」 |
+| [EP11](episodes/ep11-delete-eighty/) | 八成要刪掉：回頭看 2026（接著 EP10） | 定稿；第一集用 Modal GPU 挑選、全程約 9 分鐘 |
 
 - 一集怎麼做：[`docs/recipe.md`](docs/recipe.md)
 - 節目怎麼營運（選題、審稿、跟 imitator 整合、上架平台）：[`PIPELINE.md`](PIPELINE.md)
