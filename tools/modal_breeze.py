@@ -54,7 +54,7 @@ class Breeze:
         return out
 
 
-def transcribe_remote(paths, beam=5, batch=12):
+def transcribe_remote(paths, beam=5, batch=12, timeout=600):
     """Called by stt_check.whisper_transcribe when ASR == 'breeze-modal'. Sends the wavs in batches, in parallel."""
     from pathlib import Path
     os.environ.setdefault("MODAL_TOKEN_ID", os.environ.get("modal", ""))
@@ -62,9 +62,22 @@ def transcribe_remote(paths, beam=5, batch=12):
     paths = [Path(p) for p in paths]
     groups = [[(p.stem, p.read_bytes()) for p in paths[i:i + batch]] for i in range(0, len(paths), batch)]
     cls = modal.Cls.from_name(APP, "Breeze")
-    res = {}
-    for part in cls().transcribe.starmap([(g, beam) for g in groups]):
-        res.update(part)
+    res, failed = {}, []
+    calls = [(g, cls().transcribe.spawn(g, beam)) for g in groups]
+    for g, call in calls:
+        for attempt in range(2):   # 2026-11-07: one run hung with nothing sent; bound each batch and retry it once
+            try:
+                res.update(call.get(timeout=timeout)); break
+            except Exception as e:
+                print(f"  breeze-modal batch of {len(g)} failed ({type(e).__name__}); " + ("retrying" if attempt == 0 else "falling back to the local CPU"))
+                if attempt == 0:
+                    call = cls().transcribe.spawn(g, beam)
+                else:
+                    failed += [n for n, _ in g]
+    if failed:   # never lose a run to the network: transcribe what Modal could not on this machine, same model and settings
+        import stt_check as S
+        S.ASR = "breeze"
+        res.update(S.whisper_transcribe([p for p in paths if p.stem in failed]))
     for k in sorted(res):
         print(f"  breeze-modal {k}: {res[k]['text'][:40]}…")
     return res

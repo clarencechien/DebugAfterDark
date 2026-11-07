@@ -42,7 +42,7 @@ def main(a):
     old = d / "select_log.json"
     T = {}
     if a.reuse and old.exists():   # transcription is the slow part; reuse it and only transcribe new takes
-        T = {Path(r["file"]).stem: {"text": r["text"]} for seg in json.loads(old.read_text(encoding="utf-8"))["segments"] for r in seg["takes"]}
+        T = {Path(r["file"]).stem: {"text": r["text"], "segments": r.get("segments", [])} for seg in json.loads(old.read_text(encoding="utf-8"))["segments"] for r in seg["takes"]}
     missing = [p for p in allc if p.stem not in T]
     if missing:
         T.update(S.whisper_transcribe(missing))
@@ -70,7 +70,8 @@ def main(a):
         for p in takes[s["id"]]:
             hyp = S.norm(T[p.stem]["text"], conv)
             row = {"file": p.name, "cer": round(S.cer(ref, hyp), 3), "unclear": len(S.real_misses(S.misses(ref, hyp))),
-                   "long_pauses_per_min": round(long_pauses(p) / wav_duration(p) * 60, 1), "text": T[p.stem]["text"]}
+                   "long_pauses_per_min": round(long_pauses(p) / wav_duration(p) * 60, 1), "text": T[p.stem]["text"],
+                   "segments": T[p.stem].get("segments", [])}
             row.update(jitter=steady[p.name], cps=round(cps[p.name], 2),
                        terms_ok=all(len(re.findall(re.escape(t), T[p.stem]["text"], re.I)) >= len(re.findall(re.escape(t), s["text"], re.I)) for t in terms))
             if feats:

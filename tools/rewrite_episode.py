@@ -94,11 +94,18 @@ def main(a):
                   .replace("{{previously}}", recap_text(i)))
         avoid = [k for k, cap in PHRASE_CAPS.items() if used[k] >= cap]
         prompt = prompt.replace("{{avoid}}", "、".join(f"「{k}」" for k in avoid) if avoid else "（無）")
-        cands = []
-        for _ in range(a.n):
-            t = c.models.generate_content(model=a.model, contents=prompt,
-                                          config=types.GenerateContentConfig(temperature=a.temperature)).text.strip()
-            cands.append({"text": t, "lint": lint(t)})
+        def one(_):   # the n candidates are independent, so ask for them at once (2026-11-07: ~70 s -> ~25 s a segment)
+            for attempt in range(3):   # proxy resets happen; retry a candidate instead of losing the run
+                try:
+                    return c.models.generate_content(model=a.model, contents=prompt,
+                                                     config=types.GenerateContentConfig(temperature=a.temperature)).text.strip()
+                except Exception as e:
+                    if attempt == 2:
+                        raise
+                    print(f"  {seg['id']}: candidate retry after {type(e).__name__}")
+        from concurrent.futures import ThreadPoolExecutor
+        with ThreadPoolExecutor(max_workers=a.n) as pool:
+            cands = [{"text": t, "lint": lint(t)} for t in pool.map(one, range(a.n))]
         def over_budget(t):
             pc = phrase_counts(t)
             return sum(max(0, used[k] + pc[k] - PHRASE_CAPS[k]) for k in PHRASE_CAPS) + sum(max(0, v - 1) for v in pc.values())

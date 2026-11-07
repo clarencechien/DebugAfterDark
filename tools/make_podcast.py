@@ -170,33 +170,55 @@ def cmd_episode(a):
     log_path = d / "log.json"
     old = {r["id"]: r for r in json.loads(log_path.read_text())} if log_path.exists() else {}
     only = set(a.only.split(",")) if a.only else None
+    # Every take is an independent API call, so they run in parallel (2026-11-07: 30 takes ~10 min -> ~3 min).
+    # Each take keeps its own retry loop: a cached file that fails the duration check is regenerated.
+    jobs, plan = [], []
     for s in sc["segments"]:
         if only and s["id"] not in only:
-            if s["id"] in old: log.append(old[s["id"]])
+            if s["id"] in old: plan.append(("old", old[s["id"]]))
             continue
-        if only and not a.add_takes: a.force = True
         p = d / f"{s['id']}.wav"
         # other languages set their own speaking rate and joiner in script.json (en/ja editions)
         expected = spoken_chars(s["text"]) / sc.get("chars_per_sec", CHARS_PER_SEC)
         style = f"{style_text(sc, a.style)}{sc.get('mood_joiner', '。這一段：')}{s['mood']}"
-        takes = []
         first = len(list(d.glob(f"{s['id']}.take*.wav"))) if a.add_takes else 0   # keep existing takes, add new ones after them
-        for k in range(first, first + (a.add_takes or a.takes)):
+        force = a.force or bool(only and not a.add_takes)
+        ks = list(range(first, first + (a.add_takes or a.takes)))
+        for k in ks:
             tp = p if (a.takes == 1 and not a.add_takes) else d / f"{s['id']}.take{k}.wav"
-            for attempt in range(1, a.retries + 2):
-                if tp.exists() and not a.force and attempt == 1:
-                    wall, tok = 0.0, None
-                else:
-                    wall, tok = tts(c, s["text"], style, vid, tp)
-                dur = wav_duration(tp); ratio = dur / expected
-                ok = OK_RATIO[0] <= ratio <= OK_RATIO[1]
-                lp = long_pauses(tp)
-                print(f"{s['id']:16s} take{k} try{attempt} wall={wall:5.1f}s audio={dur:5.1f}s expected~{expected:5.1f}s ratio={ratio:4.2f} pauses>=0.6s={lp} {'OK' if ok else 'RETRY'}")
-                if ok:
-                    break
-                a.force = True  # cached file failed the check; regenerate
-            a.force = a.force and bool(only)
-            takes.append({"path": tp, "ok": ok, "dur": dur, "ratio": ratio, "pauses": lp, "wall": wall, "tok": tok, "attempt": attempt})
+            jobs.append((s, k, tp, expected, style, force))
+        plan.append(("new", (s, p, expected, ks)))
+
+    def run(job):
+        s, k, tp, expected, style, force = job
+        for attempt in range(1, a.retries + 2):
+            if tp.exists() and not force and attempt == 1:
+                wall, tok = 0.0, None
+            else:
+                for net in range(3):
+                    try:
+                        wall, tok = tts(c, s["text"], style, vid, tp); break
+                    except Exception as e:
+                        if net == 2:
+                            raise
+                        print(f"{s['id']:16s} take{k} network retry after {type(e).__name__}")
+            dur = wav_duration(tp); ratio = dur / expected
+            ok = OK_RATIO[0] <= ratio <= OK_RATIO[1]
+            lp = long_pauses(tp)
+            print(f"{s['id']:16s} take{k} try{attempt} wall={wall:5.1f}s audio={dur:5.1f}s expected~{expected:5.1f}s ratio={ratio:4.2f} pauses>=0.6s={lp} {'OK' if ok else 'RETRY'}", flush=True)
+            if ok:
+                break
+            force = True  # cached file failed the check; regenerate
+        return (s["id"], k), {"path": tp, "ok": ok, "dur": dur, "ratio": ratio, "pauses": lp, "wall": wall, "tok": tok, "attempt": attempt}
+
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(max_workers=max(1, a.parallel)) as pool:
+        done = dict(pool.map(run, jobs))
+    for kind, item in plan:
+        if kind == "old":
+            log.append(item); continue
+        s, p, expected, ks = item
+        takes = [done[(s["id"], k)] for k in ks]
         # pick: passes the duration check, then fewest long pauses per minute, then shorter
         best = min(takes, key=lambda t: (not t["ok"], t["pauses"] / max(t["dur"], 1) * 60, t["dur"]))
         if best["path"] != p:
@@ -206,7 +228,6 @@ def cmd_episode(a):
                     "ratio": round(ratio, 2), "ok": ok, "wall_s": round(wall, 1), "tokens": tok,
                     "takes": [{"file": t["path"].name, "audio_s": round(t["dur"], 1), "pauses_ge_0_6s": t["pauses"], "ok": t["ok"]} for t in takes],
                     "chosen": best["path"].name})
-        a.force = False
     (d / "log.json").write_text(json.dumps(log, ensure_ascii=False, indent=1))
     bad = [r["id"] for r in log if not r["ok"]]
     print("all segments OK" if not bad else f"FAILED after retries: {bad}")
@@ -343,7 +364,7 @@ if __name__ == "__main__":
     sub.add_parser("design")
     p = sub.add_parser("audition"); p.add_argument("--voices", default="")
     p = sub.add_parser("judge"); p.add_argument("files", nargs="+"); p.add_argument("--text"); p.add_argument("--out")
-    p = sub.add_parser("episode"); p.add_argument("--voice", required=True); p.add_argument("--retries", type=int, default=2); p.add_argument("--force", action="store_true"); p.add_argument("--only", default="", help="comma-separated segment ids to regenerate"); p.add_argument("--script", required=True, help="episodes/<ep>/script.json"); p.add_argument("--tag", default="", help="suffix for the segments folder and output, e.g. tw"); p.add_argument("--takes", type=int, default=1, help="takes per segment; keeps the one with fewest long pauses"); p.add_argument("--add-takes", type=int, default=0, help="with --only: render N more takes after the existing ones, leaving them untouched"); p.add_argument("--style", choices=["v1", "v2", "v3", "v4", "v5"], default="v5", help="v5 (default) = Taiwan Mandarin traits, amateur feel, clear tones; v2 = confident and rhythmic but drifts toward a broadcast accent; v3 = rhythmic and Taiwanese-leaning; v4 = v3 plus explicit Taiwan Mandarin phonetic traits and an amateur feel; v5 = v4 plus clear tones (in ep01_tw.json)")
+    p = sub.add_parser("episode"); p.add_argument("--voice", required=True); p.add_argument("--retries", type=int, default=2); p.add_argument("--force", action="store_true"); p.add_argument("--only", default="", help="comma-separated segment ids to regenerate"); p.add_argument("--script", required=True, help="episodes/<ep>/script.json"); p.add_argument("--tag", default="", help="suffix for the segments folder and output, e.g. tw"); p.add_argument("--takes", type=int, default=1, help="takes per segment; keeps the one with fewest long pauses"); p.add_argument("--parallel", type=int, default=6, help="TTS calls in flight at once"); p.add_argument("--add-takes", type=int, default=0, help="with --only: render N more takes after the existing ones, leaving them untouched"); p.add_argument("--style", choices=["v1", "v2", "v3", "v4", "v5"], default="v5", help="v5 (default) = Taiwan Mandarin traits, amateur feel, clear tones; v2 = confident and rhythmic but drifts toward a broadcast accent; v3 = rhythmic and Taiwanese-leaning; v4 = v3 plus explicit Taiwan Mandarin phonetic traits and an amateur feel; v5 = v4 plus clear tones (in ep01_tw.json)")
     p = sub.add_parser("master"); p.add_argument("--voice", required=True); p.add_argument("--script", required=True); p.add_argument("--tag", default="")
     p.add_argument("--ident", help="fixed ident audio inserted after the first segment (show/ident/ident.flac)")
     p.add_argument("--out", help="output mp3, default out/<episode>_<voice>_<tag>.mp3")

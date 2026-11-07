@@ -149,7 +149,17 @@ def main(a):
         G = {k: {"text": v["gemini_text"], "unclear_marks": v["gemini_unclear_marks"]} for k, v in old.items()}
         print("reusing transcripts from", a.reuse)
     else:
-        print("transcribing with whisper…"); W = whisper_transcribe(paths)
+        sel = d / "select_log.json"
+        if a.from_select and sel.exists():   # the chosen takes were already transcribed during selection; don't do it twice
+            log = json.loads(sel.read_text(encoding="utf-8")); ASR_USED = log.get("asr", ASR)
+            chosen = {s["id"]: next(t for t in s["takes"] if t["file"] == s["chosen"]) for s in log["segments"]}
+            W = {sid: {"text": t["text"], "segments": [tuple(x) for x in t.get("segments", [])]} for sid, t in chosen.items()}
+            missing = [p for p in paths if p.stem not in W or not W[p.stem]["segments"]]
+            print(f"reusing {len(paths) - len(missing)} transcripts from {sel} ({ASR_USED})")
+            if missing:
+                W.update(whisper_transcribe(missing))
+        else:
+            print("transcribing with whisper…"); W = whisper_transcribe(paths)
         print("transcribing with gemini…"); G = gemini_transcribe(paths)
     report = {"script": a.script, "asr": ASR, "asr_model": ASR_MODELS[ASR],
               "method": f"blind STT ({ASR} + Gemini 3.8 Flash), tone-aware pinyin filter drops exact homophones", "segments": []}
@@ -188,7 +198,7 @@ def main(a):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); ap.add_argument("--script", required=True); ap.add_argument("--segments", required=True)
-    ap.add_argument("--out"); ap.add_argument("--reuse", help="report JSON from an earlier run; skips transcription")
+    ap.add_argument("--out"); ap.add_argument("--from-select", action="store_true", help="take the local recogniser's transcripts of the chosen takes from <segments>/select_log.json instead of transcribing again"); ap.add_argument("--reuse", help="report JSON from an earlier run; skips transcription")
     ap.add_argument("--beam", type=int, default=5, help="beam size for the local recogniser (1 = greedy)")
     ap.add_argument("--asr", choices=list(ASR_MODELS), default="whisper", help="local recogniser: whisper large-v3-turbo or Breeze-ASR-25")
     a = ap.parse_args(); ASR = a.asr; BEAM = a.beam
