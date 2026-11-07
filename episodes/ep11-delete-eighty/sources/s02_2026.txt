@@ -1,0 +1,20 @@
+（注意：這集是技術題材，術語照講但第一次出現要用一句話解釋：system prompt（給模型的固定指令）、CLAUDE.md（寫給 AI 的專案說明檔）、skill（一包給 AI 的做事說明）、harness（包住模型、讓它能動手的那層程式，像 Claude Code、Codex）、CoT（模型在答案前寫出的推理過程）、回歸題（固定的一組考題）。一段最多兩個術語，其他換白話。依寫稿規則第 18、19 條：不要改口；句首用「這份報告說」。模型名稱（Claude Opus 4、GPT-6 Astra、Fable 5.1、Gemini 4）、公司照講。外部查核的 Cursor 數字是年化營收，要說「換算成一年」。不要預告下一集。）
+
+S-10 · 題目
+數字換了，問題沒換
+tokenmaxxing 這個詞是 2026 年 3 月 NYT 的 Kevin Roose 造的，壽命不到三個月。3 月黃仁勳在 podcast 上說年薪 50 萬的工程師一年沒花 25 萬在 token 上他會「深感警覺」；4 月 WSJ 引 Sequoia 合夥人說「我們都該 tokenmaxxing」，同月 Meta 的 Claudeonomics 排行榜曝光、Uber 燒完全年預算；5 月 Amazon 關掉排行榜，Fortune 5 月 28 日的標題已經是「tokenmaxxing is dead」。上篇寫的就是這條曲線的下坡。
+下半年，同一群人換了一個數字。問題變成「一個人能控幾個 agent」。黃仁勳在 3 月 GTC 就說過每個工程師配一百個 agent，但這句話要到 8 月以後才變成外面的主旋律：一個工程師自述每月 2,000 個 PR、一份 10 月底的清單列了十幾個「軟體工廠」，有人一次開 100 個以上的 agent，有人用 checkpoint 把幾千個沙箱停在半路等著恢復。新聞標題變成「一個年輕人控成千上萬個 agent」。
+轉折最乾淨的一筆在 Meta：9 月初它正式把 token 數從考績拿掉，同一週發給員工一個會自己規劃、執行、迭代的 agent，叫 Hatch。Wired 的報導說員工的 token 用量沒有降，反而繼續漲。同一家公司、同一年，從「數 token」改成「發 agent」，燒的東西沒變。
+兩次數的都是投入。token 是投入，agent 是 token 乘上迴圈，還是投入。上篇的結論是 token 很便宜、稀缺的是審查容量。這篇要問的是：當 agent 多到人不可能審，稀缺的變成什麼。
+
+
+## 外部查核（2026-11-07，節目擁有者要求補的背景）
+- Anthropic〈Introducing Claude 4〉https://www.anthropic.com/news/claude-4 ：發布日期 2025 年 5 月 22 日。同時推出 Claude Opus 4 與 Claude Sonnet 4；同一天 Claude Code 結束研究預覽、正式開放，並推出 VS Code、JetBrains 的擴充套件。
+- Wikipedia〈Cursor (company)〉https://en.wikipedia.org/wiki/Cursor_(company) （引 TechCrunch、Entrepreneur、Bloomberg、SEC 8-K）：
+  - Anysphere 由四位 MIT 學生在 2022 年成立，產品叫 Cursor。
+  - 2025 年 1 月，年化營收（ARR）跨過 1 億美元。
+  - 2025 年 6 月，年化營收超過 5 億美元；6 月 5 日完成 9 億美元 C 輪，估值 99 億美元。
+  - 2025 年 11 月 13 日 D 輪，估值 293 億美元，年化營收據報超過 10 億美元。
+  - 2026 年 5 月，據 Bloomberg 年營收規模約 30 億美元。
+  - 2026 年 8 月 14 日，SpaceX 完成收購 Cursor，以股票換算約 600 億美元（SEC 8-K）。
+  - 註：年化營收（ARR）是用當月營收乘以 12 換算的，不是經過查核的年度營收。

@@ -1,0 +1,31 @@
+{
+ "id": "ep11-delete-eighty",
+ "number": 11,
+ "type": "full",
+ "guid": "debug-after-dark:ep11",
+ "title": "EP11 八成要刪掉：從 Claude 4 到 2026 下半年",
+ "description": "你為 AI 寫的指令，可能八成都該刪了：Anthropic 刪掉 Claude Code 八成以上的 system prompt，寫程式的成績沒有可測量的退步。這集先倒帶：二〇二五年五月 Claude 4 和 Claude Code 正式開放、Cursor 一年內營收翻了十倍；再到二〇二六年的衝 token、GPT-6 Astra。然後是這份下半年 agent 生存指南的十條法則與十六條訂正。\n\n今晚的 breakpoint：\n1. 先刪再加，為上一代模型寫的補丁，現在是負債。\n2. 判斷留在你手上：手腳交給 API，流程、權限、成本、狀態是你的；看動作，不看解釋。\n3. 先去看原始的東西：原始的定價頁、原始的官方文件，還有你自己那份半年沒讀過的說明檔。\n\n原文：〈八成要刪掉 — 2026 下半年 Agent 生存指南〉 https://imitator.ai-apps.work/r/agent-guide-2026h2\n背景查核：Anthropic〈Introducing Claude 4〉https://www.anthropic.com/news/claude-4 、Wikipedia〈Cursor (company)〉https://en.wikipedia.org/wiki/Cursor_(company) 。Cursor 的數字是換算成一年的營收（ARR），不是查核過的年度營收。\n\n延伸收聽：EP08〈無限的是 token，有限的是驗收〉、EP09〈一百萬顆 CPU，是用來驗的〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "agent-guide-2026h2",
+ "source_url": "https://imitator.ai-apps.work/r/agent-guide-2026h2",
+ "status": "draft",
+ "related": [
+  "ep08-unlimited-tokens",
+  "ep09-million-cores"
+ ],
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "audio": {
+  "file": "ep11-delete-eighty.mp3"
+ }
+}

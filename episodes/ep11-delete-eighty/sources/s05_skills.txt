@@ -1,0 +1,14 @@
+（注意：這集是技術題材，術語照講但第一次出現要用一句話解釋：system prompt（給模型的固定指令）、CLAUDE.md（寫給 AI 的專案說明檔）、skill（一包給 AI 的做事說明）、harness（包住模型、讓它能動手的那層程式，像 Claude Code、Codex）、CoT（模型在答案前寫出的推理過程）、回歸題（固定的一組考題）。一段最多兩個術語，其他換白話。依寫稿規則第 18、19 條：不要改口；句首用「這份報告說」。模型名稱（Claude Opus 4、GPT-6 Astra、Fable 5.1、Gemini 4）、公司照講。外部查核的 Cursor 數字是年化營收，要說「換算成一年」。不要預告下一集。）
+
+法則 03skill 不是愈多愈好
+OpenAI 對 Astra 的指引裡最實際的一句：skill 一多，Codex 會自己把描述截短——被截掉的部分是它挑的，不是你挑的。所以描述要盡可能短，觸發條件要具體：「Use when working with databases, queries, models, or persistence」改成「Use when adding or changing a migration, or reviewing its rollout」。
+修剪程序，四步：
+每個 skill 寫一句具體的觸發情境。寫不出「什麼任務會用到它」而只能寫出「什麼領域」的，太寬，合併或刪。
+兩個 skill 觸發條件重疊，留一個。模糊的範圍會讓模型同時載入兩份不需要的指示。
+skill 本體用漸進揭露：SKILL.md 只放判斷何時用與怎麼開始，重的參考資料放連結檔案，需要時才載入。
+用回歸題測 skill 開關（法則 09）。開了沒改變結果的 skill 是死重量。
+要留的兩種句子
+授權語句：「Run them, fix failures caused by the requested change, and rerun affected tests without asking for approval at each step」。完成標準：把「做完是什麼樣子」講清楚，取代任務中途的核准檢查點。這兩種句子是在給模型空間，不是在補它的短處。
+法則 04推理預算用參數調，不用 prompt 求
+「不用 CoT 也一樣準，把 step-by-step 刪掉省錢」這條建議錯在機制：推理預算由 reasoning_effort 控制（low / medium / high / xhigh / max），不是由你 prompt 裡有沒有寫「請逐步說明」決定。無 CoT 模式約 83%，完整模式下 FrontierMath Tier 4 是 97.6%——差快 15 個百分點，而且你刪 prompt 文字省不到 reasoning token。
+一個起手式（這是分類邏輯，不是廠商建議）：分類、抽取、格式轉換走 low；例行修改走 medium；跨檔案重構與除錯走 high；研究等級的數學或架構決策才上 xhigh / max。每一檔在你的回歸題上量一次，比猜準。

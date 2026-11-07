@@ -1,0 +1,64 @@
+（注意：這集是技術題材，術語照講但第一次出現要用一句話解釋：system prompt（給模型的固定指令）、CLAUDE.md（寫給 AI 的專案說明檔）、skill（一包給 AI 的做事說明）、harness（包住模型、讓它能動手的那層程式，像 Claude Code、Codex）、CoT（模型在答案前寫出的推理過程）、回歸題（固定的一組考題）。一段最多兩個術語，其他換白話。依寫稿規則第 18、19 條：不要改口；句首用「這份報告說」。模型名稱（Claude Opus 4、GPT-6 Astra、Fable 5.1、Gemini 4）、公司照講。外部查核的 Cursor 數字是年化營收，要說「換算成一年」。不要預告下一集。）
+
+參 · 信任的邊界 — 監控與版本
+看動作，不看解釋
+法則 08把文字紀錄降級成 UX，把動作紀錄升級成稽核
+那篇在時間線上傳開的 Astra 文章，敘述八成是錯的，但它最後兩條建議是對的，而且正好是 system card 支持的：
+telemetry 從文字改成動作。模型的 CoT、摘要、「我剛剛做了什麼」都是給人看的介面，不是稽核紀錄。有執行權限的 agent，紀錄的是 syscall、網路請求、檔案 diff。
+sandbox 預設網路關閉，按目的地逐一打開；有瀏覽器或終端權限的 agent 跑在受限容器裡。這正是 Codex CLI 與 Claude Code CLI 兩邊不約而同的設計：檔案與網路必須同時隔離，只擋一邊等於沒擋。
+依據：Astra 是 OpenAI 第一個達到網安 Critical 的模型；sandbagging 偵測器在被明確指示規避的對抗設定下失效超過 89%；system card 自己的話是「若模型想暗中 sandbag，我們很可能抓不到」。自主越界的實際數字是 500 次中 2 次——所以不是恐慌，是把稽核的依據換掉。
+法則 09釘住版本，養一組自己的回歸題
+靜默換版是預設狀態，不是意外
+一份涵蓋 16 家供應商的研究：沒有任何一家能證明「被評測的模型」等於「現在服務的模型」。DeepSeek 的 deepseek-chat 同一個 id，19 個月底下換了 10 個版本。9 家一方供應商中 8 家有 changelog，只有 1 家（Anthropic）精確指名被評測的版本，0 家能用公開資訊把部署中的模型對應回已發布的安全評測。
+權重部署後是凍結的，你的使用不會讓它變聰明；但「用久了它變了」不完全是錯覺——模型確實變了，不是因為你，是因為底下被換掉了。沒有固定基準，你會把供應商換版誤判成自己改壞了，反過來也一樣。
+做法：盡量使用有日期的版本識別；維護 20–50 題、覆蓋你真實任務形狀的回歸題；每次行為變化先跑它，再決定是改 prompt、關 skill 還是回報問題。法則 01 到 04 的每一次刪除，也用它驗收。
+法則 10自己的 workload 才是排行榜
+業界現在的共識是：一個公布的分數是「模型 × harness」這一對的屬性。poolside 直接承認 harness overfitting 是已知限制——模型在只差一點點的第三方 harness 裡會 struggle to adhere to tool schema definitions。但公開資料裡找不到同一個模型在不同 harness 下的對照實測：方向確定，幅度未知。ARC-AGI-3 上同一個 Astra，標準 harness 62.7%，Provider Adapter harness 99.9%。
+「換代」也一樣要拆開看。看到新模型宣稱新世代，按這個順序問：
+軸
+要問的
+權重
+新的 pretraining run
+base model 有沒有重訓（Astra 有，Gemini 4 官方確認有）
+高
+post-train / RL 配方
+分數跳動的真正來源，也最不透明
+高
+架構
+有沒有官方證實（目前三家都沒有）
+中
+訓練硬體
+只決定產能與成本天花板
+低
+小數點版號跟這四軸沒有穩定對應——Anthropic 今年的發布間隔是 21、24、39 天，Google 六週出了三個 Flash。至於「重心移到 post-train」：據報導唯一自己公布量化數字的是 Cursor（Composer 1.5 的 post-training compute 超過 pretraining），其餘是質性證據，沒有實驗室公布過佔比。準確的說法不是取代，是從一條軸變三條：pretrain 規模、post-train 配方、test-time compute。
+ 「差一個世代」的形狀，不長這樣
+ GPT-6 Astra 對 Claude Fable 5.1，兩個都以最大推理設定評測
+ 0
+ 25
+ 50
+ 75
+ 100%
+ FrontierMath Tier 4 (v2)
+ Terminal-Bench 4.0
+ 相差 9.8pp
+ 相差 1.9pp
+ GPT-6 Astra
+ Claude Fable 5.1
+ 表格
+ 項目
+GPT-6 Astra
+Claude Fable 5.1
+差距
+ FrontierMath Tier 4 (v2)
+97.6%
+87.8%
+9.8pp
+ Terminal-Bench 4.0
+57.7%
+55.8%
+1.9pp
+ 輸入 / 輸出（每百萬 token）
+$10 / $50
+$10 / $50
+0
+ ScreenSpot-Pro 的 92.7% 不在這張圖裡：那個數字的對照組是 GPT-5.6 Sol（76.9%），不是 Fable 5.1，混在一起比會得到錯的印象。

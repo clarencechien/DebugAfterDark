@@ -115,8 +115,7 @@ def gemini_transcribe(paths):
     from google import genai
     from google.genai import types
     c = genai.Client(api_key=os.environ.get("GEMINI_API_KEY") or os.environ["gemini_key"])
-    res = {}
-    for p in paths:
+    def one(p):
         text = None
         for attempt in range(3):   # an empty reply (r.text is None) crashed EP10's check on 2026-11-07; retry, then record it
             try:
@@ -131,9 +130,12 @@ def gemini_transcribe(paths):
         if not text:
             print(f"  gemini  {p.stem}: no transcript after 3 attempts, comparing against Breeze only")
             text = ""
-        res[p.stem] = {"text": text.strip(), "unclear_marks": text.count("［?］") + text.count("[?]"), "empty": not text}
-        print(f"  gemini  {p.stem}: {res[p.stem]['text'][:40]}…")
-    return res
+        r_ = {"text": text.strip(), "unclear_marks": text.count("［?］") + text.count("[?]"), "empty": not text}
+        print(f"  gemini  {p.stem}: {r_['text'][:40]}…")
+        return p.stem, r_
+    from concurrent.futures import ThreadPoolExecutor   # independent calls; run them at once (2026-11-07)
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        return dict(pool.map(one, paths))
 
 def overlaps(a, b):
     return a["ref_start"] < b["ref_end"] and b["ref_start"] < a["ref_end"] or (a["ref_start"] == b["ref_start"])

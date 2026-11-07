@@ -1,0 +1,95 @@
+（注意：這集是技術題材，術語照講但第一次出現要用一句話解釋：system prompt（給模型的固定指令）、CLAUDE.md（寫給 AI 的專案說明檔）、skill（一包給 AI 的做事說明）、harness（包住模型、讓它能動手的那層程式，像 Claude Code、Codex）、CoT（模型在答案前寫出的推理過程）、回歸題（固定的一組考題）。一段最多兩個術語，其他換白話。依寫稿規則第 18、19 條：不要改口；句首用「這份報告說」。模型名稱（Claude Opus 4、GPT-6 Astra、Fable 5.1、Gemini 4）、公司照講。外部查核的 Cursor 數字是年化營收，要說「換算成一年」。不要預告下一集。）
+
+貳 · 判斷留在殼裡 — HARNESS、RUNTIME、記憶
+API 給你手腳，loop 還是你寫
+法則 05harness 變薄，不是消失
+Responses API 這一年長出來的東西幾乎是照著 harness 的內臟長的：hosted shell 與 container_auto（Debian 12，受控網路）、Agent Skills（SKILL.md）、server-side compaction、內建 web search / file search / computer use / MCP。
+但 OpenAI 自己的教學仍然是：呼叫模型 → 檢查 function_call → 自己執行 tool → 帶 previous_response_id 送回 → 重複。你仍然要做錯誤處理、非同步任務生命週期、成本計算、權限閘門、跨 session 狀態。發布 Astra 的同一篇裡，OpenAI 宣布「we are also updating the Codex harness」——連他們自己都還在養殼。
+所以該做的是拆換，不是拆掉：自己寫的 shell 沙箱、summarize、skill loader 可以評估換成 API 內建；loop、核准、成本、狀態留在你的殼裡。harness 選型的規則只有一條——用廠商自家的，除非你需要接地端模型或多供應商。harness fit 的差距方向確定、幅度未量化（法則 10）。
+法則 06先決定 runtime 落在哪
+產品
+執行在哪
+隔離
+網路預設
+Codex CLI
+你的機器
+Seatbelt / bwrap + seccomp
+關閉
+Codex Cloud
+OpenAI 容器
+每 task 乾淨 checkout，patch 回傳
+agent 階段離線
+Claude Code CLI
+你的機器
+bubblewrap / seatbelt，檔案限 cwd
+proxy 網域白名單
+Claude Code on the web
+Anthropic 雲
+每 session 獨立，金鑰在 sandbox 外
+代理
+Cowork
+Anthropic 雲可橋接你的電腦
+session 容器
+代理
+Claude Agent SDK
+你的基礎設施
+你自己負責
+你自己負責
+Managed Agents
+Anthropic 雲
+他們管 session 與復原
+他們管
+Responses API hosted shell
+OpenAI 容器
+container_auto，Debian 12
+受控
+四條決策規則：要碰只有你機器碰得到的東西（本機 DB、VPN 內網、既有 git remote、未上傳資料）→ 地端；要平行跑、跑很久、要 clean room → 純雲；要雲端模型的判斷力但資料不能離開 → 混合；資料完全不能出境 → 只剩開源 harness 加地端模型，而那時瓶頸是模型能力，不是 harness。
+「地端」指的是 runtime，不是推論：模型權重還在雲上。Codex CLI 沒有在 OpenAI 那邊開 VM，會開的是 Codex Cloud。
+法則 07分清楚哪一層在做記憶，然後給它回饋
+「記憶」底下有十層東西，只有兩層會自己成長；而 CLI 那一層跟 chat / Cowork 完全不相通。把事實放錯層，就是每天重講一次。
+層
+誰寫
+會成長
+作用範圍
+Context window
+自動
+否
+單次 session
+Compaction
+自動
+否，只是壓縮
+單次 session
+CLAUDE.md · AGENTS.md · rules/
+你
+否
+跟 repo 走，可進 git
+Auto Memory
+Claude
+會
+單 repo 單機器，不同步
+Personal memory
+Claude
+會
+chat + Cowork，跨裝置（Claude Code 不在內）
+Project memory
+半自動
+會
+該 project
+Chat search
+自動
+否，是檢索
+帳號
+Skills · SKILL.md
+你
+否
+跨 harness 可攜
+RAG · vector store
+你
+否
+看你怎麼建
+外部 memory layer
+看實作
+看實作
+你說了算
+歸位：專案技術事實進 CLAUDE.md 並進 git（跨機器有效、可 review diff）；跨專案的個人偏好交給 personal memory；可重複的流程寫成 skill——唯一換 harness 還在的一層。API 層沒有第一方的跨 session 記憶：compaction 是 session 內，container 隨 session 拆掉。
+然後是大多數記憶系統都缺的那一層：回饋訊號。它們記「發生了什麼」，不記「結果對不對」。權重凍結下的實證：把每次 episode 蒸餾成可檢索的自然語言規則，只靠成敗訊號是 1.6× baseline，加上事後修正是 2.6×，而且那份記憶換一個模型讀依然有效。可執行版本是在你的自動化迴圈裡多存一欄「這次可不可用」，失敗時把修正寫回去。（該研究只測單一領域，對照組是靜態 RAG。）

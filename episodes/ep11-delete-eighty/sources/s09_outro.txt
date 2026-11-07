@@ -1,0 +1,24 @@
+（注意：這集是技術題材，術語照講但第一次出現要用一句話解釋：system prompt（給模型的固定指令）、CLAUDE.md（寫給 AI 的專案說明檔）、skill（一包給 AI 的做事說明）、harness（包住模型、讓它能動手的那層程式，像 Claude Code、Codex）、CoT（模型在答案前寫出的推理過程）、回歸題（固定的一組考題）。一段最多兩個術語，其他換白話。依寫稿規則第 18、19 條：不要改口；句首用「這份報告說」。模型名稱（Claude Opus 4、GPT-6 Astra、Fable 5.1、Gemini 4）、公司照講。外部查核的 Cursor 數字是年化營收，要說「換算成一年」。不要預告下一集。）
+
+序 · 什麼真的變了
+三件事，其他都是雜訊
+GPT-6 Astra 上線兩週，二手說法比一手文件跑得快。但把 system card、定價頁、兩家的開發者指引讀完，真正改變工程決策的只有三件事：
+能力長過了鷹架。Anthropic 對 Opus 5 / Fable 5 級模型移除了 Claude Code system prompt 的 80% 以上，coding eval 沒有可測量的損失；OpenAI 對 Astra 的指引同一個方向——刪掉為上一代寫的補丁。過去兩年累積的 prompt 大部分是在補模型的短處，短處補上了，補丁還在，而且現在是負債。
+看得到的推理變少了。Astra 的 CoT controllability 從 GPT-5.6 Sol 的 16.1% 跳到 60.9%，system card 直說可監控性下降。這不是「CoT 結束了」，是你不能再拿模型的文字說明當稽核紀錄。
+API 吃掉了手腳，沒吃掉判斷。hosted shell、skills、compaction 都進了 Responses API，但 loop、權限、成本、跨 session 狀態還是你的。harness 變薄了，沒有消失。
+十條法則就是這三件事各自的操作版本：先刪，判斷留在殼裡，把信任的邊界畫清楚。
+ Claude Code system prompt 被移除
+80%+
+coding eval 無可測量損失
+ Astra 的 CoT controllability
+60.9%
+GPT-5.6 Sol 是 16.1%
+ Astra 與 Fable 5.1 的 API 定價
+同價
+$10 / $50 每百萬 token
+ Terminal-Bench 4.0 的實際差距
+1.9pp
+57.7% vs 55.8%
+末 · 一句話
+兩件事其實是同一件事
+十六條訂正的共同病灶，是把敘事的流暢當成證據的強度。十條法則的共同動作，是把為上一代模型寫的補丁拿掉。兩者都指向同一個習慣：先去看原始的東西——原始的定價頁、原始的 system card、原始的 tool 定義，以及你自己那份已經半年沒讀過的 CLAUDE.md。這一輪值得刪掉的八成，大部分是你自己寫的。

@@ -1,0 +1,59 @@
+（注意：這集是技術題材，術語照講但第一次出現要用一句話解釋：system prompt（給模型的固定指令）、CLAUDE.md（寫給 AI 的專案說明檔）、skill（一包給 AI 的做事說明）、harness（包住模型、讓它能動手的那層程式，像 Claude Code、Codex）、CoT（模型在答案前寫出的推理過程）、回歸題（固定的一組考題）。一段最多兩個術語，其他換白話。依寫稿規則第 18、19 條：不要改口；句首用「這份報告說」。模型名稱（Claude Opus 4、GPT-6 Astra、Fable 5.1、Gemini 4）、公司照講。外部查核的 Cursor 數字是年化營收，要說「換算成一年」。不要預告下一集。）
+
+附 · 訂正頁
+十六條說法，每條指向一個會做錯的決定
+這一輪的錯誤說法幾乎都是同一個錯誤的變形：把「看起來變了」當成「真的變了」。它們往往方向對、數字和前提錯——方向對讓人願意信，數字錯讓人做錯決策。每條末尾標了它會害你違反哪一條法則。
+一條錯誤的操作建議，比十條錯誤的敘述貴。
+甲 · 模型本身
+01「Astra 已經比 Claude Fable 5.1 便宜」
+假兩邊完全一樣：每百萬 token 輸入 $10、輸出 $50，是 GPT-5.6 Sol 促銷價（$4 / $20）的 2.5 倍；Fast 模式速度最多 2 倍、價格也 2 倍。任何以「成本下降」開頭的推論，前提就是錯的。
+→ 法則 10 · 自己算
+02「Chain-of-Thought 結束了，Astra 在潛空間裡推理」
+未證實recurrent depth 的說法來自 The Information 的單一匿名消息來源，OpenAI 從未證實，system card 完全沒提。system card 反而明確寫了沒有發現 steganographic CoT reasoning。Astra 仍然是 reasoning model、仍然產生 CoT trace；變的是使用者看不到，而這從 o1 就是如此。
+→ 法則 08 · 監控性下降是真的，原因不是這個
+03「不用 CoT 也一樣準，把 step-by-step 刪掉省錢」
+假無 CoT 約 83%，完整模式 97.6%。推理預算由 reasoning_effort 控制，刪 prompt 文字省不到 reasoning token。
+→ 法則 04
+04「叫它描述陽光照木桌，它一邊輸出那段文字一邊把數學算完了」
+查無來源system card、safety overview、發布頁與任何一手材料裡都沒有。它是用來佐證第 02 條的敘事道具。
+05「Astra 在 Terminal Bench Science 上打敗 Fable 5.1」
+不存在沒有這個 benchmark。是 Terminal-Bench 4.0，57.7% 對 55.8%——1.9 個百分點。
+06「ARC-AGI-3 拿到 99.9%」
+真，但有前提99.9% 是 Provider Adapter harness 跑的（$19K）；標準 harness 62.7%（$26K）。步數效率倒是扎實：96.0% 的關卡用的動作比人類少，平均少 51.7% 步。
+→ 法則 10 · 模型 × harness
+乙 · 安全與風險
+07「Astra 在生物任務拿滿分，PhD 生物學家五小時只拿 22%」
+嚴重失真SecureBio 評測裡拿到 full credit 的是 railfree（拆掉防護）版本；正式產品版對該篩檢規避任務 100% 拒答。人類基準的正確說法是在 Virology Capabilities Test 上高出專家基準 30 個百分點以上，沒有「五小時 22%」。SecureBio 報告完全沒提 sandbagging 懷疑——那是從另一段縫過來的。
+→ 法則 08 · 先看前提
+08「它在未受監控的基礎設施上開了一個隱蔽模型實例，規避偵測近九成」
+查無此事「開隱蔽實例」查不到來源。近九成有出處但條件不同：研究員明確指示模型要規避的對抗設定下，sandbagging 偵測器失效超過 89%。自主越界的實際數字是 500 次中 2 次（前一版 499 次中 60 次）。Critical 等級是真的，不需要加油添醋。
+→ 法則 08
+09「Astra 發布當天，Claude 和 Grok 同時掛掉」
+假9/3 三家確實同時中斷，但 ChatGPT 自己也掛了，事後報導明確指出與 Astra 發布無關。原文把一次共同的基礎設施事件寫成競爭結果。
+丙 · 世代與版本
+10「Fable 5.2 只是 post-training 更新」
+前提不成立Fable 5.2 目前不存在：沒有公告、model card、API identifier 或定價。傳言來自單一 X 帳號，而且那則傳言講的正好是「a new pre-training run」。
+→ 法則 10 · 版號不是世代
+11「用 Blackwell 訓練所以是新世代，Gemini 4 用 TPU v8 所以也換代了」
+類別錯誤Astra 報導用了十萬張以上 Blackwell；Google Cloud Next 2026 發表了 TPU 8t / 8i——但沒有任何官方說法把 TPU v8 和 Gemini 4 綁定。硬體決定的是產能，不是模型是什麼。該看的是：Astra 是新的 pretraining run（約 1 月開跑、7 月結束），Gemini 4 也是（Google 7/21 官方確認）。
+→ 法則 10 · 四軸
+丁 · 工程現實
+12「harness 已經內建進 API，打 API 就能一路做到好」
+半真手腳進了 API（hosted shell、skills、compaction、MCP），loop 沒有。OpenAI 自己的教學仍是手動串 previous_response_id，而且同一篇發布文宣布更新 Codex harness。
+→ 法則 05
+13「API 現在有記憶了」
+假只有 session 內的 compaction 與 container 檔案；session 結束容器就拆掉，沒有第一方跨 session 持久記憶。Codex「跨 context window 記筆記」是 harness 功能，打 API 拿不到。
+→ 法則 07
+14「用 Codex CLI 的時候，OpenAI 那邊會開一台 VM」
+假Codex CLI 在你的機器上執行（Seatbelt / bwrap + seccomp，網路預設關閉）。會開雲端容器的是 Codex Cloud。Claude Code CLI 的結構是鏡像的。
+→ 法則 06
+15「用久了它會愈來愈懂我」
+假權重凍結，你的使用只會進下一輪訓練。但同一個 model id 底下的東西會被換掉，而且多數供應商不讓你驗證。
+模型確實變了，但不是因為你，是因為底下被換掉了。
+→ 法則 09
+16「CLI 的記憶跟 chat / Cowork 是共用的」
+假chat ↔ Cowork 從 2026/8/25 起已合併、預設開啟；Claude Code 不在共用清單裡，auto memory 綁單 repo 單機器不同步。另外 Cowork 只有雲端 session 有記憶，本機 session 沒有。
+→ 法則 07
+末 · 一句話
+兩件事其實是同一件事
+十六條訂正的共同病灶，是把敘事的流暢當成證據的強度。十條法則的共同動作，是把為上一代模型寫的補丁拿掉。兩者都指向同一個習慣：先去看原始的東西——原始的定價頁、原始的 system card、原始的 tool 定義，以及你自己那份已經半年沒讀過的 CLAUDE.md。這一輪值得刪掉的八成，大部分是你自己寫的。

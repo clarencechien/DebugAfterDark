@@ -1,0 +1,36 @@
+（注意：這集是技術題材，術語照講但第一次出現要用一句話解釋：system prompt（給模型的固定指令）、CLAUDE.md（寫給 AI 的專案說明檔）、skill（一包給 AI 的做事說明）、harness（包住模型、讓它能動手的那層程式，像 Claude Code、Codex）、CoT（模型在答案前寫出的推理過程）、回歸題（固定的一組考題）。一段最多兩個術語，其他換白話。依寫稿規則第 18、19 條：不要改口；句首用「這份報告說」。模型名稱（Claude Opus 4、GPT-6 Astra、Fable 5.1、Gemini 4）、公司照講。外部查核的 Cursor 數字是年化營收，要說「換算成一年」。不要預告下一集。）
+
+壹 · 先刪 — PROMPT 與 SKILL
+你寫給模型的東西，八成是給上一代的
+80%
+Anthropic 從 Claude Code 的 system prompt 移除的比例，在 coding eval 上沒有可測量的損失
+法則 01先刪，再加
+Anthropic 點名的四件事，今天就能在自己的 CLAUDE.md 上做：
+刪掉互相衝突的指令。「leave documentation as appropriate」配上「DO NOT add comments」，模型得先花力氣調解你的自相矛盾。
+用判斷取代規則。舊：「預設不寫註解，絕不寫多段 docstring」。新：「寫出讀起來像周圍程式碼的程式碼——比照它的註解密度、命名與慣用法」。
+刪掉 tool 使用範例，改成把參數設計得更有表達力，讓模型從介面本身推斷行為。
+同一條指令只放一處。不要在 system prompt、tool description、skill 三個地方重複，收斂到 tool description。
+Claude Code 的 /doctor 就是拿來找這些多餘約束的。順序很重要：先跑一輪刪，再考慮加任何新東西。
+法則 02一份 CLAUDE.md 的前後
+把兩家點名的 anti-pattern 放進同一份檔案，你會發現它長得非常眼熟：
+刪之前 · 十一條，五種病
+# CLAUDE.md
+- Always read ARCHITECTURE.md, DATABASE.md and DEPLOY.md before ANY change.
+- Default to writing no comments. Never write multi-paragraph docstrings.
+- Leave documentation as appropriate.
+- ALWAYS run the full test suite after every edit. Never skip tests.
+- Think step by step before answering. Explain your reasoning.
+- Example of db_query: db_query({ sql: "SELECT id FROM users WHERE ..." })
+- Ask for approval before running any command.
+- Ask for approval before modifying any file outside src/.
+- Use pnpm, not npm.
+- Follow STYLE.md. Also: 2-space indent, single quotes, no semicolons.
+- Use pnpm, not npm. (see above)
+刪之後 · 五行
+# CLAUDE.md
+Monorepo on pnpm workspaces. Service boundaries: ARCHITECTURE.md. Schema changes: DATABASE.md.
+Write code that reads like the surrounding code — match its comment density, naming and idiom.
+Run the affected tests, fix failures caused by your change, rerun. Don't ask at each step.
+Done means: tests green, lint clean, one PR-sized diff with a two-line summary.
+Ask before: touching migrations/, anything under infra/, or any destructive git operation.
+逐條對應：全域前置閱讀變成任務導向的指標；兩條互相打架的註解規則變成一條判斷；「一定要跑測試」變成授權加完成標準（Astra 自己會跑，留著反而造成多餘測試）；「think step by step」整條刪掉，推理預算不是這樣調的（法則 04）；tool 範例刪掉；兩處的 pnpm 收成一處，STYLE.md 的內容不再複述；「任何指令都要問」變成只在真正危險的三種操作前問——過嚴的核准規則會讓有能力的模型提早停手。
