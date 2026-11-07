@@ -1,0 +1,111 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 10 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "746b36379e2c36250b1e1c0168748e3651d5d92e3a8d9b4d50547cfda268ae49",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "你為 AI 寫的那些指令，可能八成都該刪了。這不是誰的直覺。這份報告說，Anthropic 把 Claude Code 給模型的固定指令，也就是 system prompt，刪掉了八成以上，寫程式的測驗成績卻沒有可測量的退步。過去兩年我們寫的 prompt，很多是在補模型的短處。現在短處補上了，補丁還在，反而變成負擔。這集用這份二〇二六下半年的 agent 生存指南，順便回頭看一下，這一年多到底發生了什麼事。",
+  "lint": {
+   "chars": 195,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 31.5,
+   "max_sentence_len": 76,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "嘿，還醒著嗎？\n你寫給 AI 的那些指令，\n可能八成以上都該刪了。<short pause>\n這真的不是開玩笑喔。\n這份報告說，\nAnthropic 就是把 Claude Code 裡的 system prompt，\n也就是給模型的固定指令，\n直接刪掉了八成以上。<short pause>\n然後你猜結果怎樣？\n對，寫程式的測驗成績完全沒變差耶。\n我看到這邊整個人愣住。\n以前寫 prompt 是在幫模型補缺點，\n現在模型變強了，\n留著那些補丁反而變成負擔啦。\n今晚我們就來看這份生存指南，\n聊聊這一年到底發生了什麼事。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 22.2,
+    "max_sentence_len": 64,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "你最近是不是也塞了一堆 prompt 給 AI？\n欸，那些指令可能八成都該刪了。<short pause>\n你猜會發生什麼事？\n這份報告說，Anthropic 最近做了一次大掃除。\n就是他們把 Claude Code 的 system prompt，\n也就是給模型的固定指令，\n一口氣刪掉了百分之八十以上。\n結果寫程式的測驗，成績完全沒有變差。<laugh>\n我看到這邊真的覺得超扯。\n然後你想想看，以前寫 prompt 都是在補短處。\n現在短處補上了，那些補丁留著反而變成負擔。\n對，今天就來看這份 agent 生存指南，\n搞懂這一年多到底變了什麼吧。",
+   "lint": {
+    "chars": 232,
+    "precise_numbers": [
+     "百分之八十"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 22.2,
+    "max_sentence_len": 54,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？你幫 AI 寫的那些指令，可能八成都要刪掉了喔。這真的不是隨便說說。<short pause>這份報告說，Anthropic 把 Claude Code 裡面的固定指令，也就是 system prompt，直接刪掉了八成以上。結果你猜測驗成績怎樣？完全沒有變差耶。我看到這邊真的起雞皮疙瘩。其實過去寫的很多 prompt，說穿了就是幫模型補短處。現在短處補上了，那些補丁反而變成負債了嘛。這集我們就來看這份 agent 生存指南，看看到底發生了什麼事。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.9,
+    "max_sentence_len": 59,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "嘿，還醒著嗎？你幫 AI",
+   "to": "你幫 AI",
+   "reason": "cold open 不打招呼"
+  },
+  {
+   "from": "看看到底發生了什麼事。",
+   "to": "順便回頭看看，這一年多到底發生了什麼事。",
+   "reason": "這集要做回顧（節目擁有者的要求）"
+  }
+ ]
+}

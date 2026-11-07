@@ -1,0 +1,125 @@
+{
+ "segment": "s01_2025",
+ "position": "第 2 段，共 10 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "7eea71b3708058569a088b761b2b2adfe2d212443bc942f5f668c575266b5502",
+ "previous_context": "現在短處補上了，那些補丁反而變成負債了嘛。這集我們就來看這份 agent 生存指南，看看到底發生了什麼事。",
+ "original": {
+  "text": "先倒帶到二〇二五年。五月二十二號，Anthropic 推出 Claude 4，包括 Opus 4 和 Sonnet 4。同一天，Claude Code 結束試用階段，正式開放，還出了接進 VS Code 和 JetBrains 的版本。同一年，寫程式工具 Cursor 紅到不行。換算成一年的營收，一月才剛過一億美元，六月就超過五億，到十一月破了十億，公司估值也從快一百億美元，衝到將近三百億。可以說，二〇二五年是 AI 寫程式從嘗鮮變成日常的一年。",
+  "lint": {
+   "chars": 206,
+   "precise_numbers": [
+    "二十二",
+    "4",
+    "4",
+    "4",
+    "十一",
+    "一百",
+    "三百"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 33.3,
+   "max_sentence_len": 56,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "我們先把時間倒回二〇二五年。<short pause>\n五月那時候，Anthropic 推出 Claude 4。\n同一天，Claude Code 正式開放，\n還支援了 VS Code 跟 JetBrains。\n你還記得那時候大家都在聊什麼嗎？\n就是那個寫程式工具 Cursor 嘛。\n它到底有多紅？\n換算成一年的營收，一月才剛過一億美元，\n年底居然就衝破十億美元了。<laugh>\n我看到這個成長速度真的嚇傻。\n二〇二五年真的超誇張，\nAI 寫程式就這樣從嘗鮮變成了日常啦。",
+   "lint": {
+    "chars": 194,
+    "precise_numbers": [
+     "4"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 20.6,
+    "max_sentence_len": 39,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "我們直接倒帶回二〇二五年。\n五月二十二號，Anthropic 推出 Claude 4。\n包含 Opus 4 跟 Sonnet 4 都來了。\n同一天，Claude Code 正式結束試用。\n還出了接進 VS Code 的版本。\n然後，你猜同一年 Cursor 到底有多紅？\n如果換算成一年的營收來看喔，\n一月才剛過一億美元。\n結果十一月就衝破十億了耶。<short pause>\n我看到這個數字真的起雞皮疙瘩。<laugh>\n公司估值更是直接衝到將近三百億。\n對，就是二〇二五年。\n用 AI 寫程式，徹底從嘗鮮變成日常了啦。",
+   "lint": {
+    "chars": 211,
+    "precise_numbers": [
+     "二十二",
+     "4",
+     "4",
+     "4",
+     "十一",
+     "三百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 25,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "我們現在先把時間拉回到二〇二五年。<short pause>\n這一年到底有多關鍵？\n你看喔，五月二十二號，\nAnthropic 推出 Claude 4。\n同一天，Claude Code 正式開放，\n連 VS Code 的套件都一起上了。\n然後，寫程式工具 Cursor 更是紅到發燙。<laugh>\n更扯的是它的成長速度。\n換算成一年營收，\n它在短短幾個月內，\n從一億直接飆到十億美元，\n公司估值也衝到快三百億。\n我看到這個數字真的覺得超誇張。\n就是這一年，\nAI 寫程式從大家嘗鮮，\n徹底變成了每天的日常啦。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [
+     "二十二",
+     "4",
+     "三百"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 22.2,
+    "max_sentence_len": 40,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "五月那時候，Anthropic 推出 Claude 4。",
+   "to": "五月二十二號，Anthropic 推出 Claude 4，包括 Opus 4 和 Sonnet 4。",
+   "reason": "補上查核過的日期與型號"
+  }
+ ]
+}

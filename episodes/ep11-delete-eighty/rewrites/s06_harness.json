@@ -1,0 +1,115 @@
+{
+ "segment": "s06_harness",
+ "position": "第 7 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "820f346c8d43a466384c27ea4d124617cbb2798e2469323f6f62aae3fdf60dc1",
+ "previous_context": "模式有沒有開對，表現就差了快百分之十五。你光刪 prompt 裡的字，根本省不到錢喔。",
+ "original": {
+  "text": "接著是第二部分：判斷要留在你手上。報告說，包住模型、讓它能動手的那一層程式，叫 harness，像 Claude Code、Codex 都是。這一層正在變薄，但沒有消失。API 給了它手腳，可是流程、核准、成本、狀態，還是要你自己管。所以該做的是拆換，不是拆掉。另外，記憶有好幾層，只有少數幾層會自己長大。專案的技術事實，要寫進專案的說明檔並放進版本紀錄；可重複的流程寫成 skill。多數記憶系統都少了一樣東西：它們記得發生了什麼，卻不記得結果對不對。",
+  "lint": {
+   "chars": 221,
+   "precise_numbers": [],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 26.6,
+   "max_sentence_len": 49,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "省完錢，接下來聊聊程式架構。\n\n這份報告說，包住模型讓它動手的程式，叫做 harness，像 Claude Code 那樣。\n\n現在 API 內建一堆功能，殼會消失嗎？答案是不會。<short pause>\n\nAPI 雖然給了手腳，但流程跟成本控制，還是要你自己寫。這點我很認同，該做的是拆換，不是拆掉。\n\n然後，記憶放哪一層也很關鍵喔。你可以把重複流程寫成 skill，也就是一包給 AI 的做事說明。\n\n那現在多數記憶系統最缺什麼？缺的是回饋訊號。<short pause> 它們只記發生過什麼事，根本沒在記最後結果到底對不對啦。",
+   "lint": {
+    "chars": 220,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 19.0,
+    "max_sentence_len": 41,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "省完錢，接下來要看你的架構。\n這份報告提到 harness。\n它就是包住模型、讓它動手的那層程式。\n像 Claude Code 就是。\n很多人以為 API 變強，殼就可以丟了？<short pause>\n當然不行啦。\n它只是變薄，沒有消失。\n像流程、成本跟權限，還是得由你來管。\n所以該做的是拆換，不是拆掉。\n然後，記憶這件事也很有趣。\n專案的技術事實，要寫進專案說明檔。\n重複的流程，就寫成 skill。\n這就是一包給 AI 的做事說明。\n不過，很多系統其實少算了一步。\n你知道少了什麼嗎？\n它們只記發生了什麼，卻不管結果對不對。<sigh>\n這點真的很打中盲點。\n多存一個成敗修正，效果可是差了兩倍多喔。",
+   "lint": {
+    "chars": 259,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 13.4,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "講到省錢，判斷還是要留在你手上喔。這份報告說，harness 正在變薄。它就是包住模型、讓它能動手的那層程式。像 Claude Code 或是 Codex 都是。那它會消失嗎？其實不會。<short pause> API 雖然給了手腳，可是流程跟成本，還是要你自己管啦。所以該做的是拆換，不是直接拆掉。另外，我很認同裡面提到記憶的做法。專案的說明檔要放進 git。重複的流程，就把它寫成 skill。那現在的記憶系統缺了什麼？答案是回饋訊號。它們只記得發生了什麼事，卻從來不記結果到底對不對。<sigh>",
+   "lint": {
+    "chars": 223,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 26,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "重複的流程，就寫成 skill。這就是一包給 AI 的做事說明。",
+   "to": "重複的流程，就寫成 skill。",
+   "reason": "skill 在 s05 已解釋"
+  },
+  {
+   "from": "多存一個成敗修正，效果可是差了兩倍多喔。",
+   "to": "有一份研究在單一領域測過，多記一欄成敗、再加上事後的修正，效果是原本的兩倍多喔。",
+   "reason": "補上素材的但書：單一領域、對照是靜態檢索"
+  }
+ ]
+}

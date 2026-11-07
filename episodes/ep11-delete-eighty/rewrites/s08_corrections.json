@@ -1,0 +1,116 @@
+{
+ "segment": "s08_corrections",
+ "position": "第 9 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ffe2a8f3d0abeddd9dce0d13cf746bdfe3542a88907962bf3f2660f911460d1d",
+ "previous_context": "因為公開分數是模型配上 harness，也就是包住模型、讓它動手的那層程式。換到你自己的工作環境，表現很可能完全不一樣喔。",
+ "original": {
+  "text": "報告最後還有一頁，訂正十六條流傳的說法。像是「Astra 比 Claude 便宜」，是錯的，兩家的價格一模一樣。「推理過程已經結束了，它在腦子裡想」，沒有被證實，官方文件反而寫了沒發現這件事。「打 API 就有記憶」，也是錯的，對話一結束，容器就拆掉了。還有一條最常聽到的：「用久了它會越來越懂我」。報告說，模型確實變了，但不是因為你，是因為底下被換掉了。它的總結是，這些錯誤的共同點，是把敘事很流暢，當成證據很強。",
+  "lint": {
+   "chars": 203,
+   "precise_numbers": [
+    "十六"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 28.0,
+   "max_sentence_len": 39,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說到表現不一樣，這份報告最後還整理了一頁，專門訂正市場上流傳的十六條迷思。\n\n像有人說 Astra 比 Claude 便宜，其實兩邊價格完全一模一樣啦。\n\n還有一個常見的說法，是打 API 現在有記憶了。<short pause> 真的有嗎？根本沒有嘛。對，只要對話一結束，容器就拆掉了。\n\n最扯的是哪一個？就是「用久了它會愈來愈懂我」。<laugh>\n\n這份報告說，模型確實變了，但不是因為你喔，是官方在底下把模型換掉了。\n\n看完這些訂正，我真的很有共鳴。<short pause> 我們很容易把流暢的故事，當成強烈的證據。",
+   "lint": {
+    "chars": 212,
+    "precise_numbers": [
+     "十六"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 18.3,
+    "max_sentence_len": 36,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   }
+  },
+  {
+   "text": "這份報告最後還整理了十六條被傳歪的說法。很多根本是大家自己腦補出來的。像是 Astra 比較便宜？假的，跟 Claude 價格完全一樣啦。或是打 API 會有長期記憶？對啊，連線一結束，背後的容器就直接拆掉了。最扯的是那句：用久了它會越來越懂我。這份報告說，模型確實變了。<short pause>但不是因為你，是官方在底層把它換掉了！<laugh> 聽起來超諷刺對吧？大家很容易把順口的故事，當成是真的證據。但做決定前，還是要自己去看原始資料喔。",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [
+     "十六"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "這份報告後面超有意思，特別整理了一頁闢謠清單。<short pause>\n裡面列了十六條大家很常傳的迷思。\n像有人說 Astra 比 Claude 便宜，\n其實根本沒有，兩家算下來一模一樣啦。\n還有一個你一定常聽到的說法：\nAI 用久了，是不是會愈來愈懂我？\n答案是完全不會。<laugh>\n模型表現真的變了，但不是因為你變熟了。\n這份報告說，純粹是廠商在背後把模型換掉了。\n大家很容易把聽起來很順的故事，直接當成是真的。\n但要做工程決定，還是要回頭看官方文件才穩嘛。",
+   "lint": {
+    "chars": 199,
+    "precise_numbers": [
+     "十六"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 21.1,
+    "max_sentence_len": 36,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "或是打 API 會有長期記憶？對啊，連線一結束，背後的容器就直接拆掉了。",
+   "to": "或是打 API 會有長期記憶？也是假的，對話一結束，背後的容器就直接拆掉了。",
+   "reason": "「對啊」聽起來像在認同錯誤說法"
+  }
+ ]
+}

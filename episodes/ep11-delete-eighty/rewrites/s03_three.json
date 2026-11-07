@@ -1,0 +1,113 @@
+{
+ "segment": "s03_three",
+ "position": "第 4 段，共 10 段",
+ "avoid": [
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "615e2c963e113e34e01f75edf7429aa65a869cdda3572bc8e22baee3eea9b26f",
+ "previous_context": "對，九月初 OpenAI 推出 GPT-6 Astra。這份報告就是在 Astra 上線兩週後寫的喔。",
+ "original": {
+  "text": "報告說，新聞很多，但真正改變工程決策的只有三件事。第一，能力長過了鷹架：模型自己就會的事，你寫給它的提醒反而變成負擔。第二，看得到的推理變少了：Astra 在答案前寫的推理過程，跟它實際怎麼想的，對得上的程度下降了，官方文件自己承認變得比較難監控。所以不能再把模型的文字說明，當成稽核紀錄。第三，API 吃掉了手腳，沒吃掉判斷：跑指令的環境、技能包、自動壓縮對話，都進了 API，但流程怎麼跑、權限、成本、跨次對話的狀態，還是你的。",
+  "lint": {
+   "chars": 213,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 41.6,
+   "max_sentence_len": 68,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這份報告說，外面雜訊很多啦，但真正影響工程決策的，只有三件事。第一件是，模型能力長過鷹架了。<short pause>像是 Anthropic 把給模型的固定指令，也就是 system prompt，直接刪掉八成，結果能力居然完全沒掉，超扯的吧？以前寫的補丁，現在反而變成負債。第二件是，看得到的推理變少了。模型寫出來的推理過程，變得更難監控，不能再拿它的文字說明當稽核紀錄喔。那最後一件是什麼？就是 API 吃掉手腳，但沒吃掉判斷。跑指令的環境都進了 API，但權限跟成本怎麼控，還是要靠你把關啦。",
+   "lint": {
+    "chars": 230,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 24.6,
+    "max_sentence_len": 59,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "這份報告說，現在網路上雜訊超多。<short pause>\n但真正影響決策的，其實只有三件事。\n第一，模型能力長過了鷹架。\n以前寫給模型的補丁，現在反而變成負擔。\n像 Anthropic 就把給模型的固定指令，\n也就是 system prompt，直接刪掉了八成。\n<laugh> 這真的很誇張耶。\n第二，你看得到的推理變少了。\n也就是 CoT，模型在答案前寫出的推理過程。\n官方承認變得更難監控了。\n你猜這代表什麼？\n代表你不能再拿那些文字當稽核紀錄喔。\n最後，API 吃掉了手腳，但沒吃掉判斷。\n就算指令都交給 API 跑，\n流程控制、權限跟成本，依然是你的責任啦。",
+   "lint": {
+    "chars": 242,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 44,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "這份報告說，現在外面的雜訊真的超多。<short pause>\n但真正影響工程決策的，只有三件事。\n第一件，是模型能力已經長過了鷹架。\n你知道 Anthropic 做了什麼嗎？\n他們把固定指令 system prompt，\n直接刪掉了八成以上。\n結果解題表現完全沒有掉耶。\n以前寫的補丁，現在反而變負債啦。\n第二件，是看得到的推理變少了。\n你不能再把模型的文字說明當成稽核紀錄。\n那第三件呢？\n就是 API 吃了手腳，沒吃掉判斷。\n自動跑指令這些手腳，官方都包進去了。\n可是流程跟權限，依然得靠工程師把關喔。",
+   "lint": {
+    "chars": 222,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 29,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 2
+}

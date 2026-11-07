@@ -1,0 +1,115 @@
+{
+ "segment": "s05_skills",
+ "position": "第 6 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0f6423a359b6f613ada29406e50f768043c57c1410c75477580f86cbf3047f7c",
+ "previous_context": "看到整個被療癒到。記得先刪一輪，再去考慮加新東西啦。",
+ "original": {
+  "text": "再來是 skill，也就是一包包寫給 AI 的做事說明。報告說，skill 不是越多越好。OpenAI 的指引裡最實際的一句是：skill 一多，Codex 會自己把說明截短，截掉哪一段是它挑的，不是你挑的。所以每個 skill 都要寫清楚，是哪一種任務才用到它。範圍重疊的，留一個。另一個常見的誤會，是以為在 prompt 寫「請一步一步想」就能讓它想得更多。報告說，想多少是用參數調的，從低到最高分好幾檔；刪掉那句話，也省不到推理的費用。",
+  "lint": {
+   "chars": 210,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 29.0,
+   "max_sentence_len": 55,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "講完刪檔案，接著聊聊 skill 吧。<short pause> 所謂 skill，就是一包給 AI 的做事說明。這份報告說，skill 真的不是越多越好。你知道為什麼嗎？因為 skill 一多，Codex 會自己把說明截短。更扯的是，被截哪一段是它挑的，不是你挑的！<laugh> 所以觸發條件要寫超具體，範圍重疊的留一個就好。然後，還有一個工程師很常有的誤會，以為在 prompt 寫請一步一步想，就能控制它要不要用 CoT。<short pause> CoT 就是模型在給答案前的推理過程。重點來了，想不想、想多深，其實是直接調參數控制的。完整推理跟不推理，準確率差了快十五個百分點。你把那句話刪掉，根本省不到費用啦。",
+   "lint": {
+    "chars": 263,
+    "precise_numbers": [
+     "十五",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 20.9,
+    "max_sentence_len": 46,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 3
+   }
+  },
+  {
+   "text": "刪完東西之後，接下來看 skill 齁。它就是一包包給 AI 的做事說明。這份報告說，skill 真的不是越多越好。你知道為什麼嗎？因為如果塞太多，Codex 會自己把它截短。最扯的是，截掉哪一段是它挑的耶。<laugh>所以觸發條件要寫超具體，重疊的留一個。然後，很多人會在 prompt 寫逐步思考對吧？以為這樣寫，AI 就會想得比較深。重點來了，想多少其實是用參數去調的啦。模式有沒有開對，表現就差了快百分之十五。你光刪 prompt 裡的字，根本省不到錢喔。",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [
+     "百分之十五"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.9,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 2.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "說到加東西，下一個陷阱就是 skill。\nskill 就是一包給 AI 的做事說明。\n這份報告說，skill 真的不是越多越好。\nOpenAI 的指引講得超白，\nskill 塞太多，Codex 會自己把它截短。\n最扯的是，它截掉哪段是它挑的，\n不是你挑的喔。<short pause>\n所以觸發條件一定要寫得很具體，\n如果範圍重疊，留一個就好。\n然後，另一個常見的迷思是什麼？\n你以為在 prompt 寫請一步一步想，\n模型就會多思考？\n其實不是嘛。<laugh>\n要想多久，是要靠參數去調的。\n這份報告說，有沒有完整推理，\n表現可以差到快十五個百分點欸。\n而且你刪掉那句話，根本省不到錢啦。",
+   "lint": {
+    "chars": 250,
+    "precise_numbers": [
+     "十五",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 19.8,
+    "max_sentence_len": 35,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "模式有沒有開對，表現就差了快百分之十五。",
+   "to": "有沒有讓它完整推理，數學測驗的成績就差了將近十五個百分點。",
+   "reason": "照素材：無推理約 83%、完整 97.6%，差的是百分點"
+  }
+ ]
+}

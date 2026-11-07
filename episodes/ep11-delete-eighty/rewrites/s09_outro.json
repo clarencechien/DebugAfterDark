@@ -1,0 +1,125 @@
+{
+ "segment": "s09_outro",
+ "position": "第 10 段，共 10 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "fd0cdd0e66a6fece2366d75551ff7cab7f3d207ce450c7535db3e0c90307e669",
+ "previous_context": "大家很容易把順口的故事，當成是真的證據。但做決定前，還是要自己去看原始資料喔。",
+ "original": {
+  "text": "今晚的 breakpoint：一、先刪再加，為上一代模型寫的補丁，現在是負債。二、判斷留在你手上：手腳交給 API，流程、權限、成本、狀態是你的；看動作，不看解釋。三、先去看原始的東西：原始的定價頁、原始的官方文件，還有你自己那份半年沒讀過的說明檔。然後片尾：原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 165,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 26.5,
+   "max_sentence_len": 42,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。\n聊到這裡，你有沒有發現一件事？<short pause>\n其實很多時候，是我們自己寫太多了。\n這份報告真的讓人很有共鳴欸。\n第一，先刪再加，舊模型的補丁現在是負債。\n第二，手腳交給 API，但判斷要留在手裡。\n第三，去看一手資料，包括半年沒讀的說明檔啦。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 161,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n聊了這麼多，到底要帶走什麼？\n其實就這三件事啦。\n第一，先刪再加，舊模型的補丁現在是負債。\n第二，手腳交給 API，但判斷留在自己手上。\n第三，親自去看一手文件，別只聽二手故事。\n對了，半年沒開的說明檔，也該拿去刪囉。\n把這些雜訊濾掉，整個腦袋都清爽多了。<short pause>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 174,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n幫你整理三個帶走的重點。\n第一，先刪掉為上一代模型寫的補丁。\n那些留著的舊設定，現在已經是負債了。\n第二，判斷還是要留在你自己手上。\n手腳可以交給 API，\n但權限跟成本控制，依然是你的責任。\n第三，直接去看原始的東西。\n不管是官方文件，\n還是你自己半年沒讀過的說明檔。\n欸，你有多久沒打開那份檔案了？<short pause>\n今天下班，回去清一下吧。\n\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 206,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 26,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "第二，手腳交給 API，但判斷留在自己手上。",
+   "to": "第二，手腳交給 API，但判斷留在自己手上；看動作，不看解釋。",
+   "reason": "補回素材的重點"
+  },
+  {
+   "from": "對了，半年沒開的說明檔，也該拿去刪囉。",
+   "to": "對了，你那份半年沒讀過的說明檔，也該拿出來讀一讀了。",
+   "reason": "照素材：是去讀原始的東西"
+  }
+ ]
+}

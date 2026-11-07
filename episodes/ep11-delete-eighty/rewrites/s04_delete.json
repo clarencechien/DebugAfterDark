@@ -1,0 +1,109 @@
+{
+ "segment": "s04_delete",
+ "position": "第 5 段，共 10 段",
+ "avoid": [
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ddb950136c1e0a176e724ee596af1ce91dd5308c3748db4aa69b8747c4ad8e1f",
+ "previous_context": "自動跑指令這些手腳，官方都包進去了。可是流程跟權限，依然得靠工程師把關喔。",
+ "original": {
+  "text": "先講刪。Anthropic 點名了四件今天就能做的事。第一，刪掉互相打架的指令，像一邊說「適當寫註解」，一邊又說「絕對不要寫註解」。第二，用判斷取代規則：不要寫「預設不寫註解」，改成「寫出讀起來像周圍程式碼的程式碼」。第三，刪掉工具的使用範例，把工具本身設計得更好懂。第四，同一條指令只放一個地方。報告還舉了一份寫給 AI 的專案說明檔，十一條規則，刪完剩五行，而且順序很重要：先刪一輪，再考慮加任何新東西。",
+  "lint": {
+   "chars": 201,
+   "precise_numbers": [
+    "十一"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三",
+    "第四"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 27.7,
+   "max_sentence_len": 52,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "既然要把關，\n那個專案裡的 CLAUDE.md，\n也就是寫給 AI 的專案說明檔，\n到底該怎麼寫？\n你猜 Anthropic 怎麼說？\n就是很乾脆的先刪再加。\n這份報告說，\n很多人的指令根本互相打架。\n一邊叫 AI 適當寫註解，\n另一邊又叫它絕對不要寫。<laugh>\n然後，\n工具的使用範例直接刪掉，\n重複的指令也只要留一處。\n原本落落長的一整排規則，\n最後居然能刪到只剩五行！<short pause>\n重點來了，\n順序一定要對，\n先用力刪一輪，\n再去想要不要加新東西啦。",
+   "lint": {
+    "chars": 193,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 23.1,
+    "max_sentence_len": 42,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "把關要怎麼把？就是先學會刪東西。\n這份報告說，像你寫在 CLAUDE.md 裡面的規則，也就是寫給 AI 的專案說明檔，很多其實都在扯後腿。\n你猜最常見的是什麼？就是指令互相打架嘛。\n一邊叫它適當寫註解，另一邊又叫它絕對不要寫。模型光是調解矛盾就飽了啦。<laugh>\n然後呢，要用判斷取代死規定，工具範例也順手拿掉，同一件事更不要到處重複講。\n原本整整一大串規則，砍完居然只剩五行。<short pause>\n重點來了，順序一定要先刪乾淨，再考慮加新東西喔。",
+   "lint": {
+    "chars": 200,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.0,
+    "max_sentence_len": 48,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "既然要把關，那你猜第一步是什麼？\n就是先刪東西。\nAnthropic 點名了幾件事。\n像是 CLAUDE.md，\n也就是寫給 AI 的專案說明檔。\n第一，先刪掉互相打架的指令。\n你一邊說要適當寫註解，\n一邊又說絕對不要寫。\nAI 光是調解矛盾就累死了。<laugh>\n然後呢，用判斷取代硬性規則。\n教它寫得跟旁邊的 code 一樣就好。\n工具的範例也能拿掉，\n重複的規定只要留一個地方。\n重點來了，這份報告說，\n原本一長串的規則，\n一口氣刪到只剩五行耶！\n看到整個被療癒到。\n記得先刪一輪，再去考慮加新東西啦。",
+   "lint": {
+    "chars": 224,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 2
+}

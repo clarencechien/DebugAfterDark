@@ -1,0 +1,126 @@
+{
+ "segment": "s07_trust",
+ "position": "第 8 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4308dbbe6ca83ea3ec8a6f304d74f4e6a820e50393e0277bede15d85ede94560",
+ "previous_context": "這點真的很打中盲點。多存一個成敗修正，效果可是差了兩倍多喔。",
+ "original": {
+  "text": "第三部分，是信任的邊界。第一條：看動作，不看解釋。模型說它做了什麼，那是給人看的介面；真正的紀錄，是它下了哪些指令、連了哪些網址、改了哪些檔案。第二條：把版本釘住，養一組自己的考題。報告引了一份研究，十六家供應商裡，沒有一家能證明你現在用的模型，就是當初被評測的那一個。同一個名稱底下，可能已經被換了好幾次。所以準備二、三十題你真實工作的題目，每次覺得它變了，先跑一次。第三條：自己的工作，才是排行榜。公布的分數，是模型加上那一層程式一起跑出來的。",
+  "lint": {
+   "chars": 224,
+   "precise_numbers": [
+    "十六",
+    "三十"
+   ],
+   "enumerations": [
+    "第三",
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 23.9,
+   "max_sentence_len": 46,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "接下來要聊聊信任這件事。第一，要看動作，不要看解釋。模型說它剛剛做了什麼，那只是給人看的介面。它連了什麼網址、改了哪些檔案，那些動作才是真正的紀錄。第二，要把版本釘住。<short pause>你常常覺得模型用久了變笨嗎？那可能真的不是錯覺喔。這份報告說，十六家供應商裡面，沒有一家能證明現在線上的模型，跟當初評測的是同一個版本。底下可能早就偷偷換過好幾輪了。<laugh>所以你得養一組自己的回歸題，也就是固定的一組考題。準備幾十題平常真實工作的題目，只要覺得它怪怪的，就先跑一次確認。然後啊，公開排行榜真的參考就好。因為官方公布的分數，是模型加上 harness，也就是包住模型、讓它能動手的那層程式，兩邊合在一起跑出來的。你自己的工作，才是最真實的排行榜啦。",
+   "lint": {
+    "chars": 311,
+    "precise_numbers": [
+     "十六"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 21.2,
+    "max_sentence_len": 52,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "聊到這裡，我們來看看怎麼信任它吧。\n首先是看動作，不看解釋。\n模型說它做了什麼，那只是介面啦。\n真正該查的，是它實際上改了哪些檔案，\n還有連了哪些網址。\n再來，你覺得模型用久了變笨，是錯覺嗎？\n還真不是喔。<short pause>\n這份報告說，十六家供應商裡，\n沒一家能證明，現在這版跟評測時一樣。\n它底下換版了，你根本不會知道。\n所以要養一組回歸題，也就是固定的考題。\n準備二、三十題平常的任務，\n覺得它怪怪的，就先跑一遍。\n最後，別太迷信外面的排行榜。\n分數是模型配上 harness 測出來的。\nharness 就是包住模型讓它動手的程式。\n在別人那很厲害，換到你這可不一定喔。<laugh>",
+   "lint": {
+    "chars": 261,
+    "precise_numbers": [
+     "十六",
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 31,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "接著聊聊信任這件事。<short pause>\n你覺得模型給你的解釋靠得住嗎？\n其實那個只是給人看的介面啦。\n真正要看的是動作，對吧？\n它改了哪些檔案、連了什麼網路才算數。\n然後版本也是個大問題喔。\n這份報告說，十六家供應商裡，\n沒人能保證現在用的模型，\n就是當初評測的那一顆。\n底下的版本很可能早就被偷偷換掉了。<sigh>\n這真的會讓人超抓狂耶。\n所以你得養一組自己的回歸題，\n也就是固定的一組考題。\n每次覺得它變了，就跑一次看看。\n最後，別人的排行榜參考就好。\n因為公開分數是模型配上 harness，\n也就是包住模型、讓它動手的那層程式。\n換到你自己的工作環境，\n表現很可能完全不一樣喔。",
+   "lint": {
+    "chars": 260,
+    "precise_numbers": [
+     "十六"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 36,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "因為公開分數是模型配上 harness，也就是包住模型、讓它動手的那層程式。",
+   "to": "因為公開分數是模型配上 harness 一起跑出來的。",
+   "reason": "harness 在 s06 已解釋"
+  }
+ ]
+}
