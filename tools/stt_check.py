@@ -117,10 +117,21 @@ def gemini_transcribe(paths):
     c = genai.Client(api_key=os.environ.get("GEMINI_API_KEY") or os.environ["gemini_key"])
     res = {}
     for p in paths:
-        r = c.models.generate_content(model="gemini-3.8-flash",
-              contents=[types.Part.from_bytes(data=p.read_bytes(), mime_type="audio/wav"), GEMINI_PROMPT],
-              config=types.GenerateContentConfig(temperature=0))
-        res[p.stem] = {"text": r.text.strip(), "unclear_marks": r.text.count("［?］") + r.text.count("[?]")}
+        text = None
+        for attempt in range(3):   # an empty reply (r.text is None) crashed EP10's check on 2026-11-07; retry, then record it
+            try:
+                r = c.models.generate_content(model="gemini-3.8-flash",
+                      contents=[types.Part.from_bytes(data=p.read_bytes(), mime_type="audio/wav"), GEMINI_PROMPT],
+                      config=types.GenerateContentConfig(temperature=0))
+                text = r.text
+            except Exception as e:   # network resets through the proxy happen; one bad call should not lose the report
+                print(f"  gemini  {p.stem}: attempt {attempt + 1} failed: {type(e).__name__}")
+            if text:
+                break
+        if not text:
+            print(f"  gemini  {p.stem}: no transcript after 3 attempts, comparing against Breeze only")
+            text = ""
+        res[p.stem] = {"text": text.strip(), "unclear_marks": text.count("［?］") + text.count("[?]"), "empty": not text}
         print(f"  gemini  {p.stem}: {res[p.stem]['text'][:40]}…")
     return res
 
