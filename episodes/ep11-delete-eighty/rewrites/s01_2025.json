@@ -120,6 +120,11 @@
    "from": "五月那時候，Anthropic 推出 Claude 4。",
    "to": "五月二十二號，Anthropic 推出 Claude 4，包括 Opus 4 和 Sonnet 4。",
    "reason": "補上查核過的日期與型號"
+  },
+  {
+   "from": "我們先把時間倒回二〇二五年。<short pause>五月二十二號，",
+   "to": "我們先把時間倒回二〇二五年。<short pause>二月，Huntley 押下那個賭注。過了三個多月，五月二十二號，",
+   "reason": "接上一集：時間線從賭注開始"
   }
  ]
 }

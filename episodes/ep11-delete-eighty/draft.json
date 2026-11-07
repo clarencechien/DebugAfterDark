@@ -1,13 +1,14 @@
 {
  "show": "深夜 Debug",
- "episode": "EP11 八成要刪掉：從 Claude 4 到 2026 下半年",
+ "episode": "EP11 八成要刪掉：回頭看 2026",
  "source": "https://imitator.ai-apps.work/r/agent-guide-2026h2",
  "audience": "工程師、想搞懂 AI 的人",
  "segments": [
   {
    "id": "s00_open",
    "mood": "像深夜跟朋友聊天，有點感性但不畏縮。英文詞（Ping、pong、Claude Code、Three.js、prompt 這些）用台灣工程師平常講英文的念法自然帶過，就像台灣人講 double check 那樣",
-   "text": "你為 AI 寫的那些指令，可能八成都該刪了。這不是誰的直覺。這份報告說，Anthropic 把 Claude Code 給模型的固定指令，也就是 system prompt，刪掉了八成以上，寫程式的測驗成績卻沒有可測量的退步。過去兩年我們寫的 prompt，很多是在補模型的短處。現在短處補上了，補丁還在，反而變成負擔。這集用這份二〇二六下半年的 agent 生存指南，順便回頭看一下，這一年多到底發生了什麼事。"
+   "text": "你為 AI 寫的那些指令，可能八成都該刪了。這不是誰的直覺。這份報告說，Anthropic 把 Claude Code 給模型的固定指令，也就是 system prompt，刪掉了八成以上，寫程式的測驗成績卻沒有可測量的退步。過去兩年我們寫的 prompt，很多是在補模型的短處。現在短處補上了，補丁還在，反而變成負擔。這集用這份二〇二六下半年的 agent 生存指南，順便回頭看一下，這一年多到底發生了什麼事。",
+   "recap": true
   },
   {
    "id": "s01_2025",
@@ -54,5 +55,11 @@
    "mood": "像深夜跟朋友聊天，有點感性但不畏縮。英文詞（Ping、pong、Claude Code、Three.js、prompt 這些）用台灣工程師平常講英文的念法自然帶過，就像台灣人講 double check 那樣",
    "text": "今晚的 breakpoint：一、先刪再加，為上一代模型寫的補丁，現在是負債。二、判斷留在你手上：手腳交給 API，流程、權限、成本、狀態是你的；看動作，不看解釋。三、先去看原始的東西：原始的定價頁、原始的官方文件，還有你自己那份半年沒讀過的說明檔。然後片尾：原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。"
   }
- ]
+ ],
+ "series": "接著 EP10",
+ "previously": {
+  "episode": "EP10",
+  "title": "還剩幾天：Huntley 的賭注",
+  "summary": "Huntley 在二〇二五年二月押注：二〇二六年底前，大多數工程師不會再手工 commit。字面上大概會輸，但他後來說創造幾乎免費、驗證還不免費；殺掉的是開發，想救的是工程。這集接著回頭看二〇二六這一年。"
+ }
 }

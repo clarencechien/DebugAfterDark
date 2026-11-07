@@ -4,7 +4,7 @@
  "type": "full",
  "guid": "debug-after-dark:ep10",
  "title": "EP10 還剩幾天：Huntley 的賭注",
- "description": "二〇二五年二月，澳洲工程師 Geoffrey Huntley 押了一個有到期日的注：二〇二六年底前，大多數工程師不會再手工寫程式、手工送出。到期日是今年最後一天。這集從他在聖誕假期被 AI 嚇到的那個下午講起，看他這一年多怎麼一路加碼，又為什麼在宣告「軟體開發已死」半年後，改口說「驗證還不免費」。\n\n今晚的 breakpoint：\n1. Huntley 字面上的賭注大概會輸，但梯子是從最下面那一階，安靜地一階一階不見。\n2. 創造現在幾乎免費，驗證還沒有；他殺掉的是開發，想救的是工程。\n3. 蓋自己的地堡：懂它怎麼跑、錯了自己會知道、最後有一個人簽名。\n\n原文：〈還剩九十五天 — Huntley 的賭注〉 https://imitator.ai-apps.work/r/huntley-18-months\nHuntley 的原文：https://ghuntley.com/oh-fuck/ 、https://ghuntley.com/dothings/ 、https://ghuntley.com/ngmi/ 、https://ghuntley.com/ralph/\n引文為譯文；兩百九十七美元與六十人剩二十人是 Huntley 的轉述，未經查核；「他說中了嗎」的判斷是報告作者的。\n\n延伸收聽：EP08〈無限的是 token，有限的是驗收〉、EP09〈一百萬顆 CPU，是用來驗的〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "description": "二〇二五年二月，澳洲工程師 Geoffrey Huntley 押了一個有到期日的注：二〇二六年底前，大多數工程師不會再手工寫程式、手工送出。到期日是今年最後一天：報告寫的時候還剩九十五天，到這集上架，剩不到兩個月。這集從他在聖誕假期被 AI 嚇到的那個下午講起，看他這一年多怎麼一路加碼，又為什麼在宣告「軟體開發已死」半年後，改口說「驗證還不免費」。\n\n今晚的 breakpoint：\n1. Huntley 字面上的賭注大概會輸，但梯子是從最下面那一階，安靜地一階一階不見。\n2. 創造現在幾乎免費，驗證還沒有；他殺掉的是開發，想救的是工程。\n3. 蓋自己的地堡：懂它怎麼跑、錯了自己會知道、最後有一個人簽名。\n\n原文：〈還剩九十五天 — Huntley 的賭注〉 https://imitator.ai-apps.work/r/huntley-18-months\nHuntley 的原文：https://ghuntley.com/oh-fuck/ 、https://ghuntley.com/dothings/ 、https://ghuntley.com/ngmi/ 、https://ghuntley.com/ralph/\n引文為譯文；兩百九十七美元與六十人剩二十人是 Huntley 的轉述，未經查核；「他說中了嗎」的判斷是報告作者的。\n\n延伸收聽：EP08〈無限的是 token，有限的是驗收〉、EP09〈一百萬顆 CPU，是用來驗的〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
  "report_slug": "huntley-18-months",
  "source_url": "https://imitator.ai-apps.work/r/huntley-18-months",
  "status": "draft",
@@ -28,14 +28,14 @@
  },
  "audio": {
   "file": "ep10-huntley-bet.mp3",
-  "bytes": 8785358,
-  "sha256": "3f6db8e89a70faf08820a7ec1b0f2ed99038da4964d633383a8f0aab8168f58c",
-  "duration_s": 549.0,
-  "duration": "9:09",
+  "bytes": 8858918,
+  "sha256": "572680706845af0be6dc7cba1f080dbc19700e0cb13187318647b5d5329bb8a2",
+  "duration_s": 553.6,
+  "duration": "9:13",
   "lufs": -16.8
  },
  "qa": {
-  "breeze_cer_mean": 0.035,
+  "breeze_cer_mean": 0.034,
   "jitter_semitones": 0.228,
   "consistency": "qa/consistency.json：10 段裡 7 段被標記，多為接縫亮度（s08→s09 -869 Hz、s07→s08 -886 Hz）與 s01 語速 +13%；各段音高在中位數 ±6 Hz 內",
   "gates": "錯誤率 3.5%（剛好在門檻）、音高跳動 0.228 通過；沒有補念",
@@ -43,6 +43,7 @@
   "gemini_note": "s01（oh F moment 那段）Gemini 三次都回空白，只和 Breeze 比對；stt_check 已改成會重試並記錄，不再中斷",
   "twtone": "qa/twtone.md：對舉從 3 句降到 2 句（報告的招牌句，分在兩段，保留）",
   "asr_check": "同一批 30 次生成用 Modal GPU 重跑挑選，10 段選中的版本完全相同；挑選 79 秒（本機 22 分鐘）",
-  "terms": "Ping、pong 3 次都判為英文念法"
+  "terms": "Ping、pong 3 次都判為英文念法",
+  "countdown_fix": "s00 原本說「只剩九十五天」（報告寫於九月底）；十一月上架時改成「報告寫的時候還剩九十五天，到錄這集已經不到兩個月」，只重錄 s00（3 次，Modal 挑選）"
  }
 }

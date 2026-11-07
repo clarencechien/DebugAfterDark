@@ -3,12 +3,13 @@
  "number": 11,
  "type": "full",
  "guid": "debug-after-dark:ep11",
- "title": "EP11 八成要刪掉：從 Claude 4 到 2026 下半年",
- "description": "你為 AI 寫的指令，可能八成都該刪了：Anthropic 刪掉 Claude Code 八成以上的 system prompt，寫程式的成績沒有可測量的退步。這集先倒帶：二〇二五年五月 Claude 4 和 Claude Code 正式開放、Cursor 一年內營收翻了十倍；再到二〇二六年的衝 token、GPT-6 Astra。然後是這份下半年 agent 生存指南的十條法則與十六條訂正。\n\n今晚的 breakpoint：\n1. 先刪再加，為上一代模型寫的補丁，現在是負債。\n2. 判斷留在你手上：手腳交給 API，流程、權限、成本、狀態是你的；看動作，不看解釋。\n3. 先去看原始的東西：原始的定價頁、原始的官方文件，還有你自己那份半年沒讀過的說明檔。\n\n原文：〈八成要刪掉 — 2026 下半年 Agent 生存指南〉 https://imitator.ai-apps.work/r/agent-guide-2026h2\n背景查核：Anthropic〈Introducing Claude 4〉https://www.anthropic.com/news/claude-4 、Wikipedia〈Cursor (company)〉https://en.wikipedia.org/wiki/Cursor_(company) 。Cursor 的數字是換算成一年的營收（ARR），不是查核過的年度營收。\n\n延伸收聽：EP08〈無限的是 token，有限的是驗收〉、EP09〈一百萬顆 CPU，是用來驗的〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "title": "EP11 八成要刪掉：回頭看 2026",
+ "description": "上一集陪 Huntley 倒數他的賭注，離年底剩不到兩個月；這集回頭看這一年。先從最近的消息講起：你為 AI 寫的指令，可能八成都該刪了。Anthropic 刪掉 Claude Code 八成以上的 system prompt，寫程式的成績沒有可測量的退步。然後倒帶：二〇二五年二月 Huntley 押注，五月 Claude 4 和 Claude Code 正式開放、Cursor 一年內營收翻了十倍；再到二〇二六年的衝 token、GPT-6 Astra。最後是這份下半年 agent 生存指南的十條法則與十六條訂正。\n\n今晚的 breakpoint：\n1. 先刪再加，為上一代模型寫的補丁，現在是負債。\n2. 判斷留在你手上：手腳交給 API，流程、權限、成本、狀態是你的；看動作，不看解釋。\n3. 先去看原始的東西：原始的定價頁、原始的官方文件，還有你自己那份半年沒讀過的說明檔。\n\n原文：〈八成要刪掉 — 2026 下半年 Agent 生存指南〉 https://imitator.ai-apps.work/r/agent-guide-2026h2\n背景查核：Anthropic〈Introducing Claude 4〉https://www.anthropic.com/news/claude-4 、Wikipedia〈Cursor (company)〉https://en.wikipedia.org/wiki/Cursor_(company) 。Cursor 的數字是換算成一年的營收（ARR），不是查核過的年度營收。\n\n上一集：EP10〈還剩幾天：Huntley 的賭注〉\n延伸收聽：EP08〈無限的是 token，有限的是驗收〉、EP09〈一百萬顆 CPU，是用來驗的〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
  "report_slug": "agent-guide-2026h2",
  "source_url": "https://imitator.ai-apps.work/r/agent-guide-2026h2",
  "status": "draft",
  "related": [
+  "ep10-huntley-bet",
   "ep08-unlimited-tokens",
   "ep09-million-cores"
  ],
@@ -26,6 +27,24 @@
   "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
  },
  "audio": {
-  "file": "ep11-delete-eighty.mp3"
+  "file": "ep11-delete-eighty.mp3",
+  "bytes": 8092817,
+  "sha256": "15862091fe5048963993d0697ba29a70a4c125810185b5585845c57e2a357c9d",
+  "duration_s": 505.8,
+  "duration": "8:25",
+  "lufs": -17.0
+ },
+ "series": "接著 EP10〈還剩幾天：Huntley 的賭注〉",
+ "qa": {
+  "breeze_cer_mean": 0.03,
+  "jitter_semitones": 0.229,
+  "sequel": "改成 EP10 的下集：cold open 從 Huntley 的倒數接進來、s01 從他押注的二〇二五年二月開始、s02 標出「賭注到期的這一年」、結尾接回 EP10「殺掉的是開發，想救的是工程」；改過的 4 段各重錄 3 次",
+  "retakes": "s00、s03、s09 再補 3 次（第一輪 s00 音高 -7.5 Hz、s03 +6.6 Hz）；s00 選 take5（CER 2.3%）、s03 選 take4",
+  "manual_pick": "s06 自動挑到 take0，語速比全集中位數慢 23%；手動改用 take3（記在 qa/select_log.json 的 manual_override）",
+  "consistency": "qa/consistency.json：各段音高在中位數 -5.5～+6 Hz；s09 語速 -19%（六次都偏慢，結尾放慢保留最清楚的一次）；接縫亮度 s01→s02 跳最多",
+  "both_wrong": "Codex、Astra 的英文字母，和 s08「對吧」聽成「的吧」",
+  "twtone": "qa/twtone.md：對舉 1 句（報告結論句，保留）；「消息→訊息」「工程→專案」不採用",
+  "asr": "挑選與驗收都用 Modal GPU 上的 Breeze-ASR-25（stt_check --from-select）",
+  "terms": "Ping、pong 3 次都判為英文念法"
  }
 }

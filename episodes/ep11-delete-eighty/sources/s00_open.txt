@@ -27,3 +27,6 @@ Anthropic 點名的四件事，今天就能在自己的 CLAUDE.md 上做：
 刪掉 tool 使用範例，改成把參數設計得更有表達力，讓模型從介面本身推斷行為。
 同一條指令只放一處。不要在 system prompt、tool description、skill 三個地方重複，收斂到 tool description。
 Claude Code 的 /doctor 就是拿來找這些多餘約束的。順序很重要：先跑一輪刪，再考慮加任何新東西。
+
+
+（接上一集，事實出自 EP10 的 sources 與 episode.json：Huntley 在 2025-02-07 押注，大多數工程師在 2026 年底前不會再手工 commit；到期日 2026-12-31；本集上架時是 2026 年 11 月，剩不到兩個月。EP10 的第二個 breakpoint：「他殺掉的是開發，想救的是工程」。）
