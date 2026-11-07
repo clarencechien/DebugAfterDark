@@ -1,0 +1,115 @@
+{
+ "segment": "s03_ralph",
+ "position": "第 4 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f39c2f6671a4f671dbad3acd2c94198a2eb4084efda71e3943fee79b780b968d",
+ "previous_context": "這份報告說，那不是說你會被裁員。而是某次打考績的時候，你突然發現，標準已經被旁邊的同事拉高十幾倍了。",
+ "original": {
+  "text": "接下來一年多，他沒有再解釋，只是一直加碼。二〇二五年六月在墨爾本，他說光會寫軟體已經不夠了，要把寫軟體這件事自動化。說 AI 沒用的人，就像拿起吉他彈錯一次，就說吉他壞了。七月，他公開了一個叫 Ralph 的做法，名字來自卡通辛普森家庭裡那個傻傻的小孩。它其實只有一行指令：讓 AI 讀同一份任務說明，跑完再跑，一直迴圈下去。他轉述，有人用這個方法接了一份五萬美元的案子，最後的 AI 帳單是兩百九十七美元。報告也提醒，這是他的轉述，沒有經過查核。他還說，這個迴圈正在從零做出一個全新的程式語言。",
+  "lint": {
+   "chars": 240,
+   "precise_numbers": [
+    "五萬",
+    "兩百九十七"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 29.0,
+   "max_sentence_len": 38,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "接下來一年多，Huntley 完全沒有停下來。\n他只是一直加碼。\n他在墨爾本就說，光會寫軟體已經不夠了。\n你得把「寫軟體」這件事整個自動化。\n有些人試過一次就說 AI 沒用。\n那是什麼感覺？<short pause>\n他說，就像你第一次拿吉他彈錯一個音。\n轉頭就嫌吉他壞了一樣。\n然後到了七月，他丟出一個叫 Ralph 的做法。\n名字來自辛普森家庭那個傻傻的小孩。\n那它到底是什麼黑科技？\n其實就只是一行無限迴圈的指令而已。\n就是叫 Claude Code 讀同一份需求，一直跑。\n更厲害的是，他轉述有人接了五萬美元的案子。\n最後 AI 帳單只要兩百九十七美元。<laugh>\n不過這份報告也特別提醒。\n這只是他的轉述，完全沒有經過查核喔。",
+   "lint": {
+    "chars": 274,
+    "precise_numbers": [
+     "五萬",
+     "兩百九十七"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 23,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "標準被拉高之後，然後呢？\n那位工程師 Geoffrey Huntley，\n接下來一年多完全沒停手，\n他只是一直加碼。<short pause>\n他甚至說，光會寫程式已經不夠了，\n你要把「寫程式」這件事自動化。\n有人嫌 AI 寫出來的東西不能用，\n他說那就像彈吉他彈錯一個音，\n你就直接說這把吉他是壞的一樣。\n後來他公開一個做法，叫做 Ralph。<short pause>\n你知道那是什麼嗎？\n其實骨子裡就只是一行指令的迴圈。\n就是讓 AI 讀同一份任務說明，\n寫完又重跑，自己一直改下去。\n重點來了，他轉述了一個案例。\n有人接了五萬美元的合約，\n最後 AI 帳單只有兩百九十七美元。<laugh>\n不過這份報告也提醒，\n這只是他的轉述，完全沒查核過喔。\n他甚至說，這個迴圈，\n正在從零做出一個全新的程式語言耶。",
+   "lint": {
+    "chars": 294,
+    "precise_numbers": [
+     "五萬",
+     "兩百九十七"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 23.5,
+    "max_sentence_len": 43,
+    "sentences_over_20": 7,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   }
+  },
+  {
+   "text": "然後，接下來這一年多，Huntley 根本沒打算停下來。他就是一直加碼。\n\n二〇二五年年中，他就說，現在光會寫程式已經不夠了。<short pause>你要做的是把寫程式這件事自動化。有人抱怨 AI 常常寫錯？他笑說，那就像彈吉他彈錯一個音，你就說吉他壞了一樣嘛。\n\n到了七月，他丟出一個叫 Ralph 的做法。那個名字來自辛普森家庭的笨小孩。你知道它本質是什麼嗎？講白了就是一行指令的無窮迴圈。讓 AI 讀同一份 prompt，跑完再接著跑。\n\n重點來了，他轉述別人的經驗，有人用這招接了五萬美元的案子，最後 AI 帳單居然只有兩百九十七美元。<laugh>不過這份報告也特別提醒，這只是他的轉述，沒有查核過喔。更厲害的是，他還用這個迴圈，打算從零做出一個全新的程式語言。",
+   "lint": {
+    "chars": 301,
+    "precise_numbers": [
+     "五萬",
+     "兩百九十七"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 20.5,
+    "max_sentence_len": 46,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0
+}

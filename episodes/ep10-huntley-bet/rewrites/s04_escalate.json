@@ -1,0 +1,109 @@
+{
+ "segment": "s04_escalate",
+ "position": "第 5 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ce2560bfd6fb858b7b046815e39e98606258c713e05c690e33968d2116744c9f",
+ "previous_context": "不過這份報告也特別提醒。這只是他的轉述，完全沒有經過查核喔。",
+ "original": {
+  "text": "他的話越說越重。二〇二五年八月，他說會拿走你工作的，是隔壁先學會的同事，不是 AI；他還說，一個 agent 只要三百行程式，不會自己做一個，你就只是消費者。二〇二六年一月，他寫：軟體開發已死，是我殺的。二月，他說寫軟體的成本，已經比最低工資還便宜。五月在新加坡的一場演講，他講了這一年多裡最像鬼故事的一句：大家以為 AI 會來敲門，宣布它到了。它沒有，它是在社會底下、在房子底下鑽。",
+  "lint": {
+   "chars": 187,
+   "precise_numbers": [
+    "三百"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 30.2,
+   "max_sentence_len": 67,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "Geoffrey Huntley 後來的話越講越重。<short pause>\n像是二〇二五年，他說搶走你工作的，\n才不是 AI 啦，而是隔壁先學會的同事。\n然後他說，做一個 agent 只要三百行。\n如果你不會做，那就只是個消費者而已。\n聽起來很刺耳對不對？\n但更毛骨悚然的還在後面。\n到了隔年，他直接說軟體開發已經死了。\n而且寫軟體的成本，比最低工資還要便宜。\n那最像鬼故事的是哪一句？\n他在新加坡說，大家以為 AI 會來敲門。\n結果完全沒有喔。<short pause>\n它其實是在社會底下、在房子底下鑽耶。",
+   "lint": {
+    "chars": 211,
+    "precise_numbers": [
+     "三百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 34,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "Huntley 後來的發言，其實越來越誇張。他先警告大家，搶走你工作的不是 AI。而是隔壁先學會用的同事喔。因為只要三百行程式，就能做一個 agent。到隔年年初，他甚至宣告軟體開發已經死了。你覺得寫軟體的成本有多低？他說比最低工資還要便宜耶。最像鬼故事的是他在新加坡講的話。<sigh>大家以為 AI 會大搖大擺來敲門。結果呢？根本沒有。<short pause>它其實正在房子底下偷偷鑽啊。我光是讀到這句話就起雞皮疙瘩。",
+   "lint": {
+    "chars": 188,
+    "precise_numbers": [
+     "三百"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 13.5,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "但不管怎樣，Huntley 講話是越來越嗆。前年八月，他說搶走你工作的不是 AI，而是隔壁先學會的同事。而且只要三百行程式，就能做出一個 agent 喔。要是你不會做，就只是個消費者。到了去年初，他直接說軟體開發已死，還說是他殺的。後來他甚至說，寫軟體比最低工資還便宜。最讓我起雞皮疙瘩的，是他在新加坡講的話。大家以為 AI 會怎樣？敲門走進來嗎？完全沒有。<short pause> 它是在整個社會底下、在房子底下鑽啊。",
+   "lint": {
+    "chars": 191,
+    "precise_numbers": [
+     "三百"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1
+}

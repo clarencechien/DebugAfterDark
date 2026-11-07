@@ -1,0 +1,103 @@
+{
+ "segment": "s05_turn",
+ "position": "第 6 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ffb6c125e6be00497160b1f99a6eaab438df57cc84c022d3b731bc08af6ea230",
+ "previous_context": "它其實正在房子底下偷偷鑽啊。我光是讀到這句話就起雞皮疙瘩。",
+ "original": {
+  "text": "然後，在宣告軟體開發已死半年之後，二〇二六年七月，他寫了一篇不太一樣的文章。他說：創造，現在幾乎是免費的；驗證和理解，還不是。是時候用工程的方法，把那些粗製濫造的東西清掉。他也提醒，工程師這個詞在其他產業的意思，是失敗不可接受。這份報告說，他沒有收回任何一句話，但故事的主角換了：前面一年多，主角是那台會寫程式的機器，到這裡，主角變成能證明機器寫對了的人。回頭看，這個人其實一直都在。他第一篇文章就寫過，型別越嚴、編譯器的錯誤訊息越囉嗦，AI 就衝得越猛。他殺掉的是開發，從頭到尾想救的，是工程。",
+  "lint": {
+   "chars": 247,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 29.9,
+   "max_sentence_len": 63,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "結果在宣告開發死亡半年後，他又寫了一篇不太一樣的文章喔。\n\n他說，現在把東西做出來幾乎免費，可是要驗證跟理解，還早得很。\n\n那你覺得「工程師」到底代表什麼？在其他產業，意思就是失敗不可接受。\n\n這份報告說，故事的主角悄悄換人了。前面一年多，主角是會寫 code 的機器；現在的主角，是能證明機器寫對的人。<short pause>\n\n這段轉折真的讓我很有共鳴。回頭看，型別越嚴格、編譯器越囉嗦，AI 反而衝得越猛。他殺掉的只是寫程式的開發，從頭到尾想救的，其實是「工程」啦。",
+   "lint": {
+    "chars": 213,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 22.7,
+    "max_sentence_len": 35,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "然後，就在他宣告軟體開發死掉半年後。\n到了二〇二六年七月，\n他寫了一篇不太一樣的文章。\n他說，現在隨便寫出程式幾乎不用錢。\n那什麼最貴？\n驗證跟搞懂它，依然很貴啊。\n重點來了，在其他產業裡面，\n工程師這三個字，代表失敗不可接受。\n<short pause>\n這份報告說，他其實沒有收回任何一句話。\n可是故事的主角換人了。\n前面一年多，大家都在看機器寫程式。\n現在呢？\n主角變成能證明機器寫對的人。\n對，回頭看，那個人一直都在嘛。\n他一開始就提過，\n型別越嚴格、編譯器越囉嗦，\nAI 其實衝得越猛。\n我覺得這點真的很有共鳴。\n他殺掉的只是開發，\n從頭到尾想救回來的，其實是工程啦。",
+   "lint": {
+    "chars": 255,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 16.0,
+    "max_sentence_len": 29,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "然後，在他宣告軟體開發死掉半年後，\n事情有了一個大轉折。<short pause>\nHuntley 在二〇二六年七月寫了一篇文章。\n他說，現在隨便產出程式碼幾乎是免費的。\n但要去驗證跟搞懂它，目前還不行嘛。\n那工程師的意思是什麼？\n在其他產業，失敗是完全不能接受的。\n這句話真的講得太到位了。\n這份報告說，他一句話都沒收回，\n可是故事的主角換人了。\n前面一年多，主角是會寫 code 的機器。<short pause>\n現在的主角，是能證明機器寫對了的人。\n你不覺得這個人其實一直都在嗎？\n他最早其實就提過：\n型別越嚴格、編譯器越囉嗦，\nAI 就衝得越猛。\n所以說，他殺掉的只是開發，\n他從頭到尾想救回來的，其實是工程啦。",
+   "lint": {
+    "chars": 264,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 19.3,
+    "max_sentence_len": 30,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1
+}

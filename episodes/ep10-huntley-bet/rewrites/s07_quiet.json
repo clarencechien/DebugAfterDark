@@ -1,0 +1,116 @@
+{
+ "segment": "s07_quiet",
+ "position": "第 8 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "492be09a61999114c0239d5dfbf78f2c66c27ba9e1044ec7e41b53e0571137c3",
+ "previous_context": "普及的速度，只會跟社會理解的速度一樣快。所以他的時鐘，很有可能是算太快了啦。",
+ "original": {
+  "text": "可是報告說，鬼故事可怕的地方，從來不是它來得快，而是它來得安靜。Huntley 轉述過一位紐西蘭創辦人的做法：二〇二三年，他跟董事會說，有人離職就不補人。六十個人，現在剩二十個。沒有裁員新聞、沒有抗議，也沒有人被叫進會議室，只是職缺空出來，就讓它空著。這也是他的轉述，沒有查核。報告說，梯子不是被砍斷的，是從最下面那一階，一階一階不見的。所以到了十二月三十一號，大部分工程師大概還在自己寫程式。他會輸掉字面上的賭注，但這不代表地板底下沒有聲音。",
+  "lint": {
+   "chars": 221,
+   "precise_numbers": [
+    "六十",
+    "二十",
+    "十二",
+    "三十一"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 26.6,
+   "max_sentence_len": 43,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "但這份報告說，\n鬼故事可怕的地方，\n從來不是它來得多快。<short pause>\n而是它來得有多安靜。\nHuntley 轉述過紐西蘭一位創辦人的做法，\n不過這件事沒有經過查核喔。\n那家公司原本六十個人，\n現在剩二十個。\n沒有裁員新聞，\n也沒有人被叫進會議室。\n就是職缺空出來，\n就讓它一直空著。\n梯子不是被砍斷的，\n是從最下面那一階慢慢消失。\n聽起來真的讓人毛毛的。<sigh>\n那你覺得他賭贏了嗎？\n到了十二月三十一號，\n大部分工程師大概還是手動 commit，\n也就是自己把程式碼存進版本紀錄。\n他會輸掉字面上的賭注，\n但這不代表地板底下沒有聲音啊。",
+   "lint": {
+    "chars": 237,
+    "precise_numbers": [
+     "六十",
+     "二十",
+     "十二",
+     "三十一"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.5,
+    "max_sentence_len": 44,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "可是這份報告說，\n鬼故事最可怕的，從來不是來得快，\n而是來得太安靜。<short pause>\n你知道最恐怖的是什麼嗎？\n就是過程根本沒有動靜。\nHuntley 轉述了一位紐西蘭創辦人的做法。\n先講喔，這件事其實沒有經過查核。\n那個老闆跟董事會說，有人走就不補缺。\n原本幾十個人的團隊，現在只剩二十個。\n沒有裁員新聞，也沒有抗議，\n職缺空出來，就直接讓它空著。\n光想像那個畫面，就讓人背脊發涼。\n這份報告說，梯子不是被砍斷的，\n是從最下面那一階，慢慢消失的。\n對啊，所以到了年底，\n大家大概還是自己手動 commit，\n也就是把寫好的程式碼，存進版本紀錄啦。\n報告作者覺得，他會輸掉字面的賭注，\n但這不代表，地板底下沒有聲音喔。",
+   "lint": {
+    "chars": 281,
+    "precise_numbers": [
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 22.4,
+    "max_sentence_len": 45,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "可是鬼故事最可怕的，從來不是來得快。\n而是它來得非常安靜。\nHuntley 轉述過一個例子，這沒查核過喔。\n紐西蘭有位創辦人，跟董事會說遇缺不補。\n原本六十個人的團隊，現在剩不到三分之一。\n沒有裁員新聞，也沒有人被叫進會議室。\n職缺空出來，就直接讓它空著。<short pause>\n這像什麼？\n梯子不是被砍斷。\n而是最下面那一階，一階一階不見了。\n我想到這個畫面就覺得有點毛。\n到了十二月底，大家大概還在手工 commit，也就是把寫好的程式碼存進版本紀錄啦。\n字面上他會賭輸。\n但這樣就沒事了嗎？\n這份報告的作者覺得不是。\n地板底下其實早就傳出聲音了。",
+   "lint": {
+    "chars": 248,
+    "precise_numbers": [
+     "六十",
+     "十二"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 14.5,
+    "max_sentence_len": 39,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1
+}

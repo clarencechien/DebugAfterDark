@@ -1,0 +1,121 @@
+{
+ "segment": "s08_bunker",
+ "position": "第 9 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "87edf5a6c60e63641741f7521e17467c8f3a2e16f81f8c76df2f79cc6e834daf",
+ "previous_context": "對啊，所以到了年底，大家大概還是自己手動 commit，也就是把寫好的程式碼，存進版本紀錄啦。報告作者覺得，他會輸掉字面的賭注，但這不代表，地板底下沒有聲音喔。",
+ "original": {
+  "text": "如果這是末日鬼故事，這份報告說，這隻鬼有兩個特徵：它不敲門，而且殺你的不是它，是隔壁那個先學會的人。所以地堡不能挖在地下，因為鬼就是從地下來的；禁用 AI 的公司也不是地堡。地堡是一個你自己蓋的迴圈，有三道牆。第一道，你懂它怎麼跑：自己寫過一個 agent，三百行就好，知道裡面的活塞和化油器是什麼。第二道，它錯的時候，自己會知道：型別、測試、編譯器，他把這叫做背壓。第三道，最後有一個人簽名，失敗不可接受的那種人，那個人是你。報告最後說：寫程式的人會越來越多，但搞懂機器的人，不會自己變多。",
+  "lint": {
+   "chars": 243,
+   "precise_numbers": [
+    "三百"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 33.7,
+   "max_sentence_len": 49,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "如果這真的是末日鬼故事，這份報告說，這隻鬼有兩個特徵喔。它從來不敲門。而且殺你的不是它，是隔壁那個先學會的人。對，那你要躲去哪裡？躲在地底下嗎？不行嘛，鬼就是從地下來的啊。禁用 AI 的公司也不是地堡，作者甚至叫你快點離開那種公司。真正能保護你的地堡，就是自己蓋的一個迴圈。重點來了，這裡面有三道防線。第一，你要真的懂它怎麼跑。自己寫過一個三百行的 agent，知道活塞跟化油器長怎樣。然後呢，是它錯的時候自己會知道。用測試把它擋下來，作者叫它背壓。最後，必須要有一個人簽名負責，那個人就是你。<short pause>這段話真的讓我心頭一震。因為寫程式的人只會越來越多，但真正搞懂機器的人，可不會自己變多喔。",
+   "lint": {
+    "chars": 289,
+    "precise_numbers": [
+     "三百"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 17.1,
+    "max_sentence_len": 32,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "如果這是一個末日鬼故事，<short pause> 那這隻鬼其實有兩個特徵喔。第一是它從來不敲門。更恐怖的是，最後幹掉你的不是鬼耶。那是誰？<short pause> 是隔壁那個先學會用工具的人啦。所以你要怎麼保護自己？這份報告說，禁用 AI 的公司根本不是避難所，他甚至叫你快點離開那裡。真正的地堡，是你自己蓋出來的三道牆。首先，你要搞懂它怎麼跑。像自己寫過一個三百行的 agent，知道裡面的構造長怎樣。然後，程式出錯時它自己要能發現，靠測試跟編譯器把它擋下來。最後，一定要有一個人簽名負責，沒錯，那個人就是你。想想真的有點毛骨悚然。以後寫程式的人只會越來越多，但搞懂機器的人，不會自己變多啊。",
+   "lint": {
+    "chars": 268,
+    "precise_numbers": [
+     "三百"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 18.1,
+    "max_sentence_len": 32,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "如果把這個當成末日鬼故事來看，這份報告說，這隻鬼有兩個特徵。第一個是它根本不敲門，而且殺你的不是鬼，是隔壁那個先學會的人。<sigh>\n\n那你該躲去哪裡？躲去禁用 AI 的公司嗎？不是喔，作者叫你趕快離開那種地方。真正的地堡，是要你自己蓋的，就是一個有三道牆的迴圈。\n\n第一道牆，是你真的懂它怎麼跑。自己寫過一個三百行的 agent，知道裡面的活塞和化油器長怎樣。然後第二道牆，是它出錯的時候，自己會知道，靠測試跟編譯器擋下來。最關鍵的最後一道牆，是有一個人簽名，那個不能接受失敗的人，就是你。\n\n這段話真的讓我心裡震了一下。以後寫程式的人會越來越多，但搞懂機器的人，可不會自己變多啊。",
+   "lint": {
+    "chars": 278,
+    "precise_numbers": [
+     "三百"
+    ],
+    "enumerations": [
+     "第一",
+     "第一",
+     "第二"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 22.2,
+    "max_sentence_len": 32,
+    "sentences_over_20": 7,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0
+}

@@ -1,0 +1,109 @@
+{
+ "segment": "s06_now",
+ "position": "第 7 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0354aa2eb8fd6b1d38795526ec0ad31c39faf0af31ead97062acbc1f55a814cc",
+ "previous_context": "我覺得這點真的很有共鳴。他殺掉的只是開發，從頭到尾想救回來的，其實是工程啦。",
+ "original": {
+  "text": "那他說中了嗎？這份報告的作者給了自己的判斷，不是 Huntley 的。他自己，是說中了：大家說 IDE 已死的時候覺得他瘋了，現在他在手機上跑 agent。但世界還沒有。大多數公司還在開會討論，AI 寫程式工具的授權要買幾套。報告作者估計，九成的公司會花五到十年慢慢改。一個五十人的 AI 團隊，推不倒一家有十年客戶關係、要過稽核、系統又層層串在一起的公司，因為那些護城河從來不是程式碼。諷刺的是，這正好是 Huntley 自己的理論：採用的速度，跟社會理解它的速度一樣快。所以他的時鐘，很可能會錯。",
+  "lint": {
+   "chars": 240,
+   "precise_numbers": [
+    "五十"
+   ],
+   "enumerations": [],
+   "sentences": 9,
+   "avg_sentence_len": 25.7,
+   "max_sentence_len": 56,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那，Huntley 到底有沒有說中？\n這份報告的作者，給了一個很有意思的答案。<short pause>\n作者覺得，他自己算說中了啦。\n當初他說 IDE 已死，大家都覺得他瘋了。\n結果他現在真的在手機上跑 agent。\n但是世界呢？世界根本還沒跟上。\n你看很多公司，現在還在開會。\n討論 Copilot 授權到底要買幾套欸。\n這份報告說，九成公司會花五到十年慢慢改。\n重點是，一個五十人的 AI 團隊，\n根本推不倒那種有十年客戶關係的大公司。\n人家要過稽核、要串 ERP。\n那些護城河，從來都不是程式碼嘛。\n最諷刺的是什麼？\n這正好符合 Huntley 自己的理論。\n普及的速度，只會跟社會理解的速度一樣快。\n所以他的時鐘，很有可能是算太快了啦。",
+   "lint": {
+    "chars": 283,
+    "precise_numbers": [
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 33,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "那他到底有沒有說中？<short pause>這份報告的作者覺得，要分開來看喔。對 Huntley 自己來說，他確實說中了。以前他說 IDE 已死，大家覺得他瘋了。結果現在，他直接在手機上跑 agent 了。可是整個世界呢？根本還沒跟上啦。大部分公司還在開會，算著授權要買幾套。絕大多數公司，會花個好幾年慢慢改。你拿一個五十人的 AI 團隊，根本推不倒累積長年客戶關係的老公司。人家有稽核要過，系統又層層串在一起。那些護城河，從來就不是程式碼嘛。<short pause>最諷刺的是，這剛好是他自己的理論喔。採用的速度，跟社會理解它的速度一樣。所以他的時鐘，很可能會算錯。",
+   "lint": {
+    "chars": 252,
+    "precise_numbers": [
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 30,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那他到底有沒有說中？\n這份報告作者給的判斷很有意思。\n對 Huntley 自己來說，他確實說中了。\n當年他說 IDE 已死，大家都當他瘋了。\n現在他直接在手機上跑 agent 耶。\n可是整個世界有跟上嗎？<short pause>\n完全沒有。\n大多數公司現在還在開會討論，\nCopilot 的授權到底要買幾套。\n這份報告說，大部分公司會花好幾年慢慢改。\n你想想看嘛，\n就算有一個五十人的 AI 團隊，\n也推不倒那些老牌公司。\n因為人家的護城河是長期客戶關係、\n還有嚴格稽核跟 ERP 整合，\n那些東西從來就不是程式碼啦。\n老實說，最諷刺的是什麼？\n這剛好就是 Huntley 自己的理論。\n採用的速度，只會跟社會理解它的速度同步。\n所以他的時鐘，很可能會算錯喔。",
+   "lint": {
+    "chars": 286,
+    "precise_numbers": [
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 18.1,
+    "max_sentence_len": 42,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0
+}
