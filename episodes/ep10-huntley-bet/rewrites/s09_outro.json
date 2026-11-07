@@ -1,0 +1,131 @@
+{
+ "segment": "s09_outro",
+ "position": "第 10 段，共 10 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "52720f64ef500613ec259922319e0b172ecfc6404105ae44f7e80b7cd1e23e71",
+ "previous_context": "這段話真的讓我心頭一震。因為寫程式的人只會越來越多，但真正搞懂機器的人，可不會自己變多喔。",
+ "original": {
+  "text": "今晚的 breakpoint：一、Huntley 字面上的賭注大概會輸，但梯子是從最下面那一階，安靜地一階一階不見。二、創造現在幾乎免費，驗證還沒有；他殺掉的是開發，想救的是工程。三、蓋自己的地堡：懂它怎麼跑、錯了自己會知道、最後有一個人簽名。然後片尾：原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 162,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 26.0,
+   "max_sentence_len": 55,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n面對這些變化該怎麼辦？其實很簡單。\n第一個，賭注雖然會輸，但改變早就開始了。\n第二個，創造現在幾乎免費，但驗證還沒有。\n第三個，替自己蓋好地堡，做最後簽名的人。\n說真的，這一切讓人很有共鳴對吧？對啊。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 149,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 12.5,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n第一，Huntley 表面上可能會輸掉賭注。\n但底層的梯子，其實正在安靜地消失啦。\n第二，寫程式現在幾乎免費，但驗證還沒有。\n對，他殺掉的是開發，想救的是工程。\n那我們現在該怎麼做？<short pause>\n第三，就是替自己蓋好地堡。\n搞懂原理、設好檢查，最後由你簽名負責。\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 171,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 14.5,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n每次想到這裡，我都很有共鳴。\n那面對 AI，我們該怎麼辦呢？\n第一，他打賭會輸，但底層梯子正在消失。\n第二，寫程式幾乎免費，真正值錢的是驗證。\n第三，蓋好自己的地堡，當最後簽名負責的人。\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 141,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "第一個，賭注雖然會輸，但改變早就開始了。",
+   "to": "第一個，Huntley 字面上的賭注大概會輸，但梯子是從最下面那一階，安靜地一階一階不見。",
+   "reason": "照素材的第一個重點"
+  },
+  {
+   "from": "第二個，創造現在幾乎免費，但驗證還沒有。",
+   "to": "第二個，創造現在幾乎免費，但驗證還沒有；他殺掉的是開發，想救的是工程。",
+   "reason": "補回素材"
+  },
+  {
+   "from": "第三個，替自己蓋好地堡，做最後簽名的人。說真的，這一切讓人很有共鳴對吧？對啊。",
+   "to": "第三個，蓋自己的地堡：懂它怎麼跑、錯了自己會知道，最後有一個人簽名。",
+   "reason": "照素材三道牆；刪掉多餘的自問自答"
+  }
+ ]
+}
