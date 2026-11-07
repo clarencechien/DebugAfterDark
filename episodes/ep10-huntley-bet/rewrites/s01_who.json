@@ -1,0 +1,99 @@
+{
+ "segment": "s01_who",
+ "position": "第 2 段，共 10 段",
+ "avoid": [
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e68fe25426f96252e7377ba84a9161ec79ae4f8217ae46759e813df815f9db11",
+ "previous_context": "他到底賭了什麼？還有為什麼到了最後，故事的主角反而換人了？",
+ "original": {
+  "text": "先認識一下這個人。他叫 Geoffrey Huntley，澳洲的工程師，那時候在 Canva 帶 AI 相關的團隊，自己的頭銜是資深工程師。有趣的是，職稱裡有 AI 兩個字，他心裡其實覺得 AI 還不夠好。二〇二四年的聖誕假期，他丟了一個任務給 AI：把一個 Rust 寫的音訊函式庫，整個轉成 Haskell，要有測試，每改一次就重新建置。然後他帶小孩去游泳。回來的時候，東西做完了：編譯得過、有測試，還自己接到 macOS 的音訊系統。他說，這東西世界上本來沒有，它不是在抄網路上的答案，它在發明。他說他下巴掉到地上，還幫那一刻取了一個不太文雅的名字。",
+  "lint": {
+   "chars": 262,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 31.8,
+   "max_sentence_len": 63,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "我們先來看這個主角。他叫 Geoffrey Huntley。那時候他在 Canva 帶 AI 團隊，但他心裡其實覺得，現在的 AI 還不夠好。二〇二四年的聖誕假期，他決定出個難題。你猜他出了什麼題目？<short pause> 他叫 AI 把一個 Rust 的音訊套件，整個翻成 Haskell。而且每次改完都要跑測試，還要自動建置。丟完指令之後，他就帶小孩去游泳了。結果回來一看，東西居然全部做好了喔。不但編譯得過、測試全過，還自己接上了 macOS 的音訊系統。重點來了，這東西世界上根本沒有人寫過。它不是在抄網路上的現成答案耶，它是在發明。我看到這段真的起雞皮疙瘩。<laugh> Huntley 說他下巴直接掉在地上，還給那個瞬間，取了一個不太文雅的名字。",
+   "lint": {
+    "chars": 294,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 20.0,
+    "max_sentence_len": 36,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "故事要先從一個人講起。他叫 Geoffrey Huntley。那時候他在 Canva 帶 AI 團隊。職稱明明掛著 AI，他心裡其實覺得 AI 還不夠好。二〇二四年的聖誕假期，他做了一個實驗。他出門前丟了一個任務給 AI。要把一個 Rust 音訊工具，整個改寫成 Haskell。而且要求自動建置，測試也要跑。交代完，他就帶小孩去游泳了。<laugh>你猜他回家看到什麼？東西居然全部寫完了。不只編譯順利通過，測試也全過了。最厲害的是，它還自己串接了 macOS 的音訊系統。<short pause>這東西世界上本來根本沒有耶。它不是去網路上抄現成答案，它是在發明。我看到這裡整個起雞皮疙瘩。Huntley 說他那時候下巴掉在地上，還替那一刻，取了一個不太文雅的名字。",
+   "lint": {
+    "chars": 299,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 36,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "我們直接來看這個人，他叫 Geoffrey Huntley。\n他那時候在 Canva 帶 AI 團隊啦。\n職稱明明有 AI，他心裡卻覺得 AI 不夠好。\n你猜他在二〇二四年聖誕假期做了什麼？\n出門帶小孩去游泳前，\n他丟了一個任務給 AI 喔。\n就是把一個 Rust 寫的音訊工具，\n整個轉成 Haskell 語言。\n他要求要有測試，每次改完都要自動重跑。\n等他游完泳回到家，你猜結果怎樣？\n東西居然全部做好了。\n不只能編譯，測試過了，\n還自己接到 macOS 的系統裡面。\n重點來了，這東西世界上本來根本沒有耶。\n它不是在抄網路答案，它是在發明。\n我看到這段真的起雞皮疙瘩。<short pause>\n換作是你，下巴應該也掉在地上吧？\nHuntley 後來還幫那一刻，\n取了一個不太文雅的名字。<laugh>",
+   "lint": {
+    "chars": 298,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 18.9,
+    "max_sentence_len": 29,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1
+}

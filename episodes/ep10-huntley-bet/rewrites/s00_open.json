@@ -1,0 +1,105 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 10 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "bec183a80b0317ae43737f550c412fa3d314b7800da38c9d796c067043b41f63",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "二〇二五年二月七日，一位澳洲工程師，押了一個有到期日的注。他寫：我看不到有哪條路，會讓大多數工程師在二〇二六年底前，還在手工寫程式、手工送出。到期日，就是今年的最後一天。這份報告寫的時候，還剩九十五天。它把他這一年多的文章，排成一條倒數的時間線，像在讀一份一份越打越短的電報。這集就來看，他到底賭了什麼，還有為什麼到了最後，故事的主角換了人。",
+  "lint": {
+   "chars": 171,
+   "precise_numbers": [
+    "九十五"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 27.5,
+   "max_sentence_len": 41,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你有想過哪一天，自己會不用手寫程式嗎？\n去年初，有個澳洲工程師，公開押了一個賭注。\n對，他說今年底前，大家就不會再手工 commit 了。\ncommit 就是把寫好的程式碼存進版本紀錄。\n<short pause>\n我看到這邊真的起雞皮疙瘩，超扯的。\n你猜距離到期還剩多久？\n這份報告寫的時候，其實只剩九十五天了喔。\n然後裡面的紀錄，就像一張張越發越短的電報。\n他到底賭了什麼？\n還有為什麼到了最後，故事的主角反而換人了？",
+   "lint": {
+    "chars": 185,
+    "precise_numbers": [
+     "九十五"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 24,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？<short pause>\n你覺得工程師還能自己一行行寫扣多久？\n澳洲有位工程師叫 Geoffrey Huntley，\n他在年初押了一個有到期日的注喔。\n他賭說，到了今年底以前，\n大部分人都不會再手工 commit 了。\ncommit 就是把寫好的程式碼存進版本紀錄。\n重點來了，這份報告寫的時候，\n距離期限竟然只剩九十五天耶。\n我看到那條倒數時間線，整個起雞皮疙瘩。\n感覺像在讀一份一份越打越短的電報。\n他到底賭了什麼？\n這集就來看看他到底押了多大啦。",
+   "lint": {
+    "chars": 204,
+    "precise_numbers": [
+     "九十五"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.4,
+    "max_sentence_len": 39,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？<short pause>\n你覺得手工寫程式這件事，到底還能撐多久啊？\n去年初，有位澳洲工程師押了一個大賭注。\n他說到今年底，\n大家就不會再手工 commit 了。\ncommit 就是把寫好的程式碼，\n存進版本紀錄的那一步。\n對，他賭以後通通不用人工送了啦。\n這份報告寫的時候，\n距離到期日只剩九十五天。\n我看到這個倒數，整個人起雞皮疙瘩。\n你猜他真的賭對了嗎？<short pause>\n其實重點根本不只這個喔。\n今天就來看他到底賭了什麼，\n還有為什麼到了最後，主角竟然換人了。",
+   "lint": {
+    "chars": 204,
+    "precise_numbers": [
+     "九十五"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0
+}

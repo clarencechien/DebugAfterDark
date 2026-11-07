@@ -1,0 +1,100 @@
+{
+ "segment": "s02_bet",
+ "position": "第 3 段，共 10 段",
+ "avoid": [
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "c82a3cf48c5814e8e682467db9bb181a703e7c88d4d4d8e0b2844636e8be7dd5",
+ "previous_context": "我看到這裡整個起雞皮疙瘩。Huntley 說他那時候下巴掉在地上，還替那一刻，取了一個不太文雅的名字。",
+ "original": {
+  "text": "三個禮拜後，他把注押下去。原文是：我看不到有哪條路，會讓大多數工程師，在二〇二六年底前，還在做手工的 commit。commit 就是把寫好的程式碼，一筆一筆存進版本紀錄的那一步。他的意思是，到那時候，大部分的程式不會再是人一行一行敲出來的。同一篇文章他還說，今年如果想休一年長假，會是非常糟的時機。同一天，他還寫了一句沒那麼客氣的：沒跟上的工程師，不會成功。這份報告解釋他的意思：不是被裁員，而是在某一次考績裡，發現基準線已經被同事拉高了十幾倍。",
+  "lint": {
+   "chars": 222,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 30.7,
+   "max_sentence_len": 43,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那個時刻過後三個禮拜，他就直接下注了。\n他說，到了二〇二六年底前，\n工程師不可能還在手工 commit。<short pause>\ncommit 就是把寫好的程式碼，\n存進版本紀錄的那一步啦。\n意思就是，程式不會再是人一行一行敲出來的。\n然後他甚至說，如果今年想休長假，\n會是非常糟糕的時機喔。\n你猜他同一天還說了什麼？\n他補了一句沒那麼客氣的話。\n他說，沒跟上的工程師是不會成功的。\n對，這份報告解釋了他的意思，\n不是說你會直接被裁員啦。<short pause>\n而是在某一次打考績的時候，\n你突然發現，\n基準線已經被別人拉高了十幾倍。\n這壓力光用想的就超大。",
+   "lint": {
+    "chars": 238,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.6,
+    "max_sentence_len": 33,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "三個禮拜之後，他直接把注押下去。<short pause> 他公開說，二〇二六年底前，大多數工程師就不會手工 commit 了。對，commit 就是把寫好的程式碼，存進版本紀錄的那一步。也就是說，程式不用人一行一行敲啦。他甚至說，今年如果想休長假超不明智。然後，同一天他還留了一句更嗆的話。你猜他說什麼？沒跟上的工程師，根本撐不下去。講這句話真的很直接齁？<sigh> 這份報告解釋他的意思，你不是突然被公司裁員喔，而是某次打考績的時候，發現標準早就被同事拉高十幾倍了。",
+   "lint": {
+    "chars": 212,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.2,
+    "max_sentence_len": 49,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "三個禮拜之後，他直接把注押下去。\n他公開說，二〇二六年底前，\n大多數工程師不會再手工 commit 了。\n對，commit 就是把寫好的程式碼，\n存進版本紀錄的那一步。\n以後程式不用人一行一行敲啦。<short pause>\n你猜他還說了什麼？\n他說如果今年你想休長假，\n時機真的非常糟糕。\n然後同一天，他還講了更重的一句話。\n沒跟上的工程師，注定不會成功。\n<sigh> 聽起來很刺耳齁？\n這份報告說，那不是說你會被裁員。\n而是某次打考績的時候，\n你突然發現，\n標準已經被旁邊的同事拉高十幾倍了。",
+   "lint": {
+    "chars": 211,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 33,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2
+}
