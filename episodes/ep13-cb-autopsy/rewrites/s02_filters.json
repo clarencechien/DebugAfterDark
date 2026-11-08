@@ -1,0 +1,119 @@
+{
+ "segment": "s02_filters",
+ "position": "第 3 段，共 13 段",
+ "avoid": [
+  "更扯的是",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "33312efd4a0b046267890b4b7faaac4571579d5462d9c32013033cc46d9894ac",
+ "previous_context": "誘惑超大嘛。 如果大家都換成股票，借的錢就完全不用還了。",
+ "original": {
+  "text": "公司缺錢，跟銀行借就好，為什麼要發可轉債？報告說，走進可轉債市場的公司，多半被三道篩子篩過。第一，借不到便宜的錢：能便宜跟銀行借的，早就跟銀行借了。第二，老闆覺得自家股票貴：發行的時間是公司自己挑的，而管理層是全世界最清楚自家股價的人。第三，零利率的會計幻覺：董事會看到不用付利息就開心，真實成本不會出現在損益表上，所以公司常把換股的權利賣得太便宜。這個太便宜，後面會變成唯一的活口。",
+  "lint": {
+   "chars": 192,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 31.0,
+   "max_sentence_len": 56,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你可能會好奇，\n公司缺錢跟銀行借就好啦，\n為什麼要發可轉債？\n這份報告說，\n會走進這個市場的公司，\n多半被三道篩子篩過。\n第一道是借不到便宜的錢。\n能便宜跟銀行借的，\n早就借光了嘛。<short pause>\n然後是老闆覺得自家股票太貴。\n你想想，誰最清楚公司的股價？\n當然是內部管理層啊。\n他們自認股價被高估，\n才願意用未來的股票還債。\n最後一個我看到覺得超妙，\n就是零利率的幻覺。\n董事會看到利息是百分之零就超開心，\n結果把換股權利賣得太便宜了。<short pause>\n不過這個太便宜，\n後面會變成唯一的活口喔。",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [
+     "百分之零"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 18.5,
+    "max_sentence_len": 30,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "你可能會想，缺錢跟銀行借就好啦？\n幹嘛大費周章發可轉債？\n這份報告說，會來發 CB 的公司，\n其實都被三道篩子篩過一遍。\n第一道，是借不到便宜的錢。\n能便宜借的早就找銀行了嘛，\n留在這裡的信用先天偏弱一點。\n然後，是老闆覺得自家股票太貴。\n老闆最懂公司，覺得股價被高估才願意賣。\n最後一個是零利率的會計幻覺。<laugh>\n董事會看到不用付利息就超開心，\n完全沒發現換股權被自己賣太便宜了。\n我看到這裡真的覺得很妙。\n重點來了。\n這個賣太便宜，後面會變成唯一的活口喔。",
+   "lint": {
+    "chars": 211,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 31,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "那既然這樣，公司缺錢跟銀行借就好了啊。\n為什麼偏偏要發可轉債？<short pause>\n這份報告說，這些公司多半被三道篩子篩過。\n第一，就是借不到便宜的錢。\n能便宜跟銀行借的，早就借光了嘛。\n然後呢，老闆其實覺得自家股票太貴。\n你想想看，誰最清楚這家公司值多少？\n當然是經營階層自己啊。\n覺得股價被高估的時候，才想拿股票來還債。\n最後就是零利率的幻覺。<short pause>\n董事會看到不用付利息就超開心，\n把換股的權利賣得太便宜了啦。\n我看到這裡整個恍然大悟。\n這個賣得太便宜，會變成後面唯一的活口。",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 28,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "我看到這裡整個恍然大悟。",
+   "to": "",
+   "reason": "口頭禪超額"
+  }
+ ]
+}

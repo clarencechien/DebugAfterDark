@@ -1,0 +1,112 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 13 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ce11bac1cc7154c25e3fd8996f27195f6628510add243dd8852cfa15dcf0bd90",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "這份報告的作者，原本在做台股的分析，就是上一集的台股必勝法驗屍。後來他聽說了一個可轉債圈流傳最廣的傳說：公司發了可轉債，就有動機把股價做上去，跟著買就對了。於是他又做了另一組，交給 agent，一個下午、四個多小時，用台股二十年、連已經下櫃的債券都算進去的資料，檢驗了五個假說。結果傳說不只錯，方向整個是反的。但屍體旁邊，躺著一個沒人注意的活口。",
+  "lint": {
+   "chars": 172,
+   "precise_numbers": [
+    "二十"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 33.4,
+   "max_sentence_len": 59,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "嘿，還醒著嗎？\n你有聽過台股一個很有名的都市傳說嗎？\n就是公司發行可轉債，\n就有動機把股價做上去。\n跟著買真的會賺嗎？\n答案居然完全是反的。\n這份報告的作者交給 agent，\n花了四個多小時跑完台股二十年資料。\n連已經下櫃的債券都算進去了喔。<short pause>\n我看到結論真的傻眼。\n那個傳說不只是錯的，\n方向根本整個相反。\n但更扯的是，<short pause>\n屍體旁邊竟然躺著一個沒人注意的活口。\n先提醒一下，這集不是投資建議喔。",
+   "lint": {
+    "chars": 181,
+    "precise_numbers": [
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "你有聽過可轉債的傳說嗎？\n就是那種可以換成股票的債券啦。\n市場傳言說，公司發了可轉債，\n就會有動機把股價做上去。\n真的假的？<short pause>\n先說這不是投資建議喔。\n這份報告的作者，叫 agent 跑了四個多小時，\n用台股二十年完整的資料去驗證。\n我看到結果真的嚇一跳，\n傳說整個是反的！<laugh>\n但最妙的是，\n屍體旁邊居然躺著一個沒人注意的活口。",
+   "lint": {
+    "chars": 149,
+    "precise_numbers": [
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 36,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "嘿，你聽過這個江湖傳說嗎？\n就是公司只要發行可轉債，\n大股東就會想辦法把股價做上去。\n跟著買真的能賺嗎？\n答案居然完全是反的！<laugh>\n作者交給 agent 跑了四個多小時，\n用台股二十年、連下櫃債券都算的資料檢驗。\n我看到那個結果整個嚇一跳。<short pause>\n傳說根本大翻車，\n但更扯的是，\n屍體旁邊竟然躺著一個活口。\n先說好，今天講的不是投資建議喔。",
+   "lint": {
+    "chars": 152,
+    "precise_numbers": [
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 18.0,
+    "max_sentence_len": 36,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "嘿，還醒著嗎？你有聽過台股一個很有名的都市傳說嗎？就是公司發行可轉債，就有動機把股價做上去。跟著買真的會賺嗎？答案居然完全是反的。這份報告的作者交給 agent，花了四個多小時跑完台股二十年資料。",
+   "to": "這份報告的作者，原本在做台股的分析，就是上一集的必勝法驗屍。後來他聽說了一個可轉債的傳說：公司發行可轉債，就有動機把股價做上去，跟著買就對了。真的嗎？於是他又做了另一組。這次交給 agent，花了四個多小時，跑完台股二十年的資料。",
+   "reason": "節目擁有者指定的引子：原本做台股分析，後來聽說可轉債的傳說，又做了另一組；cold open 不打招呼"
+  }
+ ]
+}

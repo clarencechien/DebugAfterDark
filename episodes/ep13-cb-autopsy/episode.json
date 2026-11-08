@@ -1,0 +1,33 @@
+{
+ "id": "ep13-cb-autopsy",
+ "number": 13,
+ "type": "full",
+ "guid": "debug-after-dark:ep13",
+ "title": "EP13 公司發可轉債，是利多還是警訊？",
+ "description": "同一位作者做完台股必勝法的驗屍，又聽說了可轉債圈流傳最廣的傳說：公司發了可轉債，就會把股價做上去，跟著買就對了。這次交給 agent，一個下午、四個多小時，用台股二十年、連已下櫃債券都算進去的資料檢驗五個假說：傳說是反的，但屍體旁邊躺著一個活口。還有台達電的可交換債，以及連最清楚的人都會賣飛的那一筆。台股驗屍下集。\n\n今晚的 breakpoint：\n1. 「發可轉債會把股價做上去」二十年的資料說是反的：發債是最清楚的人在高點賣出，下修是把股東的錢轉給債主。\n2. 同一家公司有兩個座位：股東付錢、可轉債持有人收錢；唯一站對邊的座位，是最少人坐的那個。\n3. 連同上一集，六條規則全是「不做」；如果你不信，就自己跑一次，能重現的才算數。\n\n原文：〈可轉債驗屍報告〉 https://imitator.ai-apps.work/r/cb_story\n程式碼：https://github.com/clarencechien/cb_scanner\n資料：櫃買中心公開 API、MOPS、FinMind。研究以 Anthropic 的 Fable 5 以 agent 方式執行；限制與新地雷列在原文附錄。活口目前是「未否證」，在六個月影子模式中，不是可行的策略。\n本集內容僅供參考，不構成投資建議。\n\n上一集：EP12〈你聽過的台股必勝法〉\n延伸收聽：EP06〈同一隻鬼，換了五張臉〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "cb_story",
+ "source_url": "https://imitator.ai-apps.work/r/cb_story",
+ "status": "draft",
+ "series": "台股驗屍 2/2（上：EP12）",
+ "related": [
+  "ep12-tw-stock-autopsy",
+  "ep06-ghost-five-faces"
+ ],
+ "category_note": "財經類：說明與口播都有不構成投資建議",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "audio": {
+  "file": "ep13-cb-autopsy.mp3"
+ }
+}

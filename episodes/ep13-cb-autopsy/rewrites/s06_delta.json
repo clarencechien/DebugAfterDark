@@ -1,0 +1,101 @@
+{
+ "segment": "s06_delta",
+ "position": "第 7 段，共 13 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4c67dcf32435b304357f1d16e7cfd2055e84308aadd7501a09e3f4d73205d007",
+ "previous_context": "公司剛發可轉債，一年內別買它的股票。轉換價下修一成以上，同樣是賣出警訊喔。",
+ "original": {
+  "text": "那台達電呢？二〇二五年一月，績優生台達電也發了債。但它發的是可交換債，換的不是台達自己新印的股票，是它手上持有的泰國子公司泰達電的股票，台達股東一股都不會被稀釋。條款像教科書：零利率，換股價比泰達電當時的市價高四成。泰達電漲超過四成，等於台達用高四成的價格賣掉持股；沒漲到，三年後被賣回，換算資金成本也很低。兩個結局台達都贏。報告說，中小公司賣的是自己被高估的股票，台達賣的是手上被高估的持股，動作一樣：最清楚的人，覺得那個股票貴了。",
+  "lint": {
+   "chars": 217,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 30.0,
+   "max_sentence_len": 55,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那績優生台達電呢？\n它二〇二五年初也發了債耶。<short pause>\n你可能會想，台達電那麼賺錢，缺錢嗎？\n其實它發的是可交換債。\n換的不是自己的新股票，\n而是它手上的泰國子公司泰達電。\n母公司股東完全不會被稀釋喔。\n重點來了，條款設計得像教科書一樣。\n零利率，換股價比當時市價貴了四成！\n漲上去，台達等於用超高價格賣掉持股；\n沒漲上去，三年後被賣回，成本也超低。\n反正兩個結局台達都贏，真的很厲害。<laugh>\n這份報告裡說，\n中小公司是賣自己被高估的股票，\n台達則是賣手上被高估的持股。\n最清楚狀況的人，\n其實都在暗示同一件事：\n就是那個股票現在太貴了啦。",
+   "lint": {
+    "chars": 246,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 19.5,
+    "max_sentence_len": 35,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "聽到這裡你可能會問，那績優生呢？\n像台達電明明一堆現金，之前也發了債耶。\n你猜它是缺錢嗎？當然不是。\n其實台達發的是可交換債，簡稱 EB。\n換的是泰國子公司的股票，母公司股東完全沒被稀釋喔。\n而且那個條件開得超漂亮，\n換股價直接比市價高了四成。<short pause>\n漲上去，等於在高點把持股賣掉；\n沒漲上去，換算下來利息也超低。\n這操作真的太聰明了，兩個結局它都贏。<laugh>\n所以這份報告裡說，邏輯其實完全一樣。\n中小公司是賣自己被高估的股票，\n台達則是賣手上被高估的持股。\n說穿了，就是最懂的人覺得那個股票太貴了啦。",
+   "lint": {
+    "chars": 231,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 29,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那你可能會問，那績優生台達電呢？\n它手上明明一堆現金，為什麼也要發債？\n其實它發的是可交換債，也就是 EB。<short pause>\n差別在於，它換的是手上的泰國子公司股票，\n台達電自己一股新股都不用印喔。\n重點來了，換股價竟然比當時市價高了四成！\n這筆交易設計得跟教科書一樣厲害。<short pause>\n漲超過四成，等於是用高價把持股賣掉；\n要是沒漲到，三年後借這筆錢的成本也超低。\n不管走哪個結局，台達電都穩賺嘛。\n這份報告說得很精闢，\n中小公司發債，賣的是自己被高估的股票；\n台達電發債，賣的是手上被高估的持股。\n骨子裡完全是一樣的事情。\n就是最懂這家公司的人，覺得那個股票太貴了啦。",
+   "lint": {
+    "chars": 257,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 22.4,
+    "max_sentence_len": 46,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1
+}

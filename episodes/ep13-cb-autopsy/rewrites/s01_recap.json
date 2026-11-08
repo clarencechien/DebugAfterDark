@@ -1,0 +1,112 @@
+{
+ "segment": "s01_recap",
+ "position": "第 2 段，共 13 段",
+ "avoid": [
+  "更扯的是",
+  "傻眼"
+ ],
+ "recap": "EP12〈你聽過的台股必勝法〉：用 231 萬筆台股資料驗跟大戶買、追漲停、無腦正二三招，三招都經不起檢驗，畫出同一條「有效、衰減、反噬」的曲線；散戶最有價值的是不做。這集是同一位作者的第二卷：可轉債。",
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4863f282bec5d57cddba5c70df3c8abf8ea9fd706e2549ecbbb9a6b08017f5f1",
+ "previous_context": "但更扯的是，屍體旁邊竟然躺著一個沒人注意的活口。先提醒一下，這集不是投資建議喔。",
+ "original": {
+  "text": "上一集，我們拿兩百三十一萬筆資料，驗了跟大戶買、追漲停、無腦正二這三招，三招都畫出同一條曲線：有效、衰減、反噬。這集是下集。先說清楚，這集一樣不是投資建議。可轉債是什麼？它是公司發的債券，但拿債券的人可以選擇不拿回現金，改換成這家公司的股票。換股的約定價格，叫轉換價。對公司來說的誘惑是：如果大家都換成股票，債就不用還了。",
+  "lint": {
+   "chars": 161,
+   "precise_numbers": [
+    "兩百三十一萬"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 22.0,
+   "max_sentence_len": 55,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上一集我們看過兩百三十一萬筆資料齁。<short pause>那些必勝法最後都走上反噬的下坡。這集作者要驗的第二卷，就是可轉債。那可轉債到底是什麼啊？它本質上是公司發的債券。但最妙的是，你可以選擇不拿回現金，直接換成這家公司的股票喔。這個換股的約定價格，就叫轉換價。你想想看，這對公司的誘惑有多大？只要大家都把借據換成股票，<laugh> 那借來的錢就完全不用還了耶！",
+   "lint": {
+    "chars": 163,
+    "precise_numbers": [
+     "兩百三十一萬"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 17.1,
+    "max_sentence_len": 29,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "上一集我們聊到，作者用兩百三十一萬筆資料，<short pause> 證明台股三招必勝法全部破功。這集作者換看可轉債，也就是 CB 啦。那到底什麼是可轉債？簡單說就是公司借錢發的債券。但買的人可以選擇不拿現金，改換成這家公司的股票喔。約定好換股的價格，就叫轉換價。那你猜公司為什麼想發這個？誘惑超大嘛。<laugh> 如果大家都換成股票，借的錢就完全不用還了。",
+   "lint": {
+    "chars": 156,
+    "precise_numbers": [
+     "兩百三十一萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 34,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "上一集我們聊到，<short pause>\n作者用兩百三十一萬筆資料，\n把台股三招必勝法全打臉了，\n最後都走向有效、衰減、再反噬。\n這集接著看同一位作者的第二卷：可轉債，\n大家平常都叫它 CB。\n那可轉債到底是什麼？\n就是公司發的債券。\n但你可以選擇不拿回現金，\n直接改換成這家公司的股票。\n約定換股的價格，就叫轉換價。\n欸，你猜公司為什麼想發？\n超誘人的好不好，<laugh>\n要是大家都把債券換成股票，\n這筆錢就完全不用還了耶。",
+   "lint": {
+    "chars": 181,
+    "precise_numbers": [
+     "兩百三十一萬"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 8,
+    "avg_sentence_len": 21.6,
+    "max_sentence_len": 48,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1
+}

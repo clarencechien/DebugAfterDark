@@ -1,0 +1,115 @@
+{
+ "segment": "s11_verify",
+ "position": "第 12 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "15af6b4e40e06de4325a67d70a786caef207147aefc16d2ec40d2c396ece44eb",
+ "previous_context": "你看，這六條全都是「不做」。在大家搶著分食公開資訊的市場裡，知道什麼不能碰，就是散戶唯一不會被搶走的優勢了。",
+ "original": {
+  "text": "最後，作者想說一件事。如果你聽完覺得，這兩篇都不太可信，那就對了。報告自己也把限制全部列出來：這一卷又踩到兩顆新地雷，八成以上的可轉債已經下櫃，不重建當年的名單，回測直接作廢；作者原本的假說，也被自己的資料推翻，押錯的紀錄照樣公開。資料是公開的，程式碼也公開。你應該自己動手跑一篇。能被別人重現的，才叫可以驗證。",
+  "lint": {
+   "chars": 156,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 25.0,
+   "max_sentence_len": 82,
+   "sentences_over_20": 2,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "聊到這裡，作者其實想說一件事。如果你聽完覺得這兩篇都不太可信呢？那就對了啦。<short pause>我覺得最酷的是，他把限制全部攤開。這份報告說，過去的可轉債，有百分之八十三已經下櫃了。如果不重建當年的名單，回測直接作廢。然後作者原本押的假說，也被自己的資料直接打臉，但他照樣公開。對，程式碼跟資料全部都是公開的。你有空應該也要自己動手跑一遍。能被別人重現出來的，才叫可以驗證嘛。",
+   "lint": {
+    "chars": 178,
+    "precise_numbers": [
+     "百分之八十三"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 29,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "最後，這份報告的作者留了一段話。\n如果你聽完覺得不可信，該怎麼辦？\n作者說，那就對了啦。<laugh>\n報告裡把限制全部列出來。\n百分之八十三的可轉債，早就下櫃了。\n如果不重建歷史名單，回測根本直接作廢。\n對，連作者自己猜錯的假說，也照樣公開。\n我真的覺得這點超帥氣。\n一路都順利的研究才要懷疑，對吧？\n然後，程式碼跟資料全都是公開的。\n你真的應該自己動手跑跑看。<short pause>\n可以被別人重現的，才叫可驗證性。",
+   "lint": {
+    "chars": 181,
+    "precise_numbers": [
+     "百分之八十三"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 14.1,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說到這裡，這份報告的作者最後留了一段話。\n如果你聽完覺得不可信，那反而是對的。<laugh>\n你想想看，為什麼回測容易踩地雷？\n因為過去的可轉債，有百分之八十三已經下櫃。\n不把舊名單抓回來，回測算出來直接作廢耶。\n最厲害的是，作者連押錯的紀錄都照樣公開。\n程式碼跟資料，全部都在 GitHub 上面。\n你如果好奇，就自己動手跑一遍嘛。<short pause>\n能夠被別人重現的，才叫可以驗證啦。",
+   "lint": {
+    "chars": 168,
+    "precise_numbers": [
+     "百分之八十三"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 17.7,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "如果你聽完覺得不可信，",
+   "to": "如果你聽完覺得，這兩篇都不太可信，",
+   "reason": "節目擁有者指定：兩篇"
+  }
+ ]
+}

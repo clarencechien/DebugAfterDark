@@ -1,0 +1,102 @@
+{
+ "segment": "s09_pipe",
+ "position": "第 10 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d115e1627d68cc320c16e039f598d4a87fa6331e3d78491656af728f471b9103",
+ "previous_context": "每天記錄該買什麼、實際買不買得到。這份報告裡有一句話我超喜歡：回測會說謊，掛單不會。",
+ "original": {
+  "text": "為什麼買可轉債可以考慮，買發債公司的股票卻是警訊？不是同一家公司嗎？報告說，可轉債市場是一條水管，錢從股東流向債券持有人。發行那天，公司在股價高點賣出換股權；條款因為會計幻覺被賣得太便宜；公司缺錢時，再用下修把更多價值轉給債主。股東出的錢，就是債主收的錢。同一家公司，兩個座位：買它的股票，你坐在付款端；買條款便宜的可轉債，你坐在收款端。",
+  "lint": {
+   "chars": 169,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 27.2,
+   "max_sentence_len": 52,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那既然這樣，很多人就會好奇啦：為什麼買可轉債可以考慮，買發債公司的股票卻是警訊？<short pause>明明是同一家公司耶。這份報告裡的解釋真的超貼切。他說可轉債市場其實就像一條水管，錢會一直從股東那邊，流向債券持有人。重點來了，同一家公司其實有兩個座位。公司缺錢下修條件，等於把更多價值轉給債主。股東出的錢，就是債主收的錢。<short pause>所以買股票的人坐在付款端，買便宜可轉債的人，反而是坐在收款端嘛。",
+   "lint": {
+    "chars": 183,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 21.9,
+    "max_sentence_len": 39,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說到掛單，那買可轉債跟買股票差在哪？\n不是同一家公司嗎？\n這份報告裡說，這個市場就像一條水管。<short pause>\n錢就是從股東那邊，一直流向債券持有人。\n對，同一家公司，其實有兩個位子。\n公司在高點發債，條款又賣得太便宜。\n然後缺錢的時候，還下修條件補貼債主。\n這真的滿諷刺的耶。<laugh>\n股東付出去的錢，剛好就是債券人收的錢。\n買它的股票，你就是坐在付款端。\n買便宜的 CB，你才是坐在收款端啦。",
+   "lint": {
+    "chars": 175,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "講到掛單，你有沒有想過一件事？\n買可轉債可以考慮，\n買發債公司的股票卻是警訊。\n奇怪，這不是同一家公司嗎？<short pause>\n這份報告裡說，可轉債市場其實就像一條水管。\n錢是直接從股東，流向買債券的人。\n發行時在高點賣換股權，條款還賣太便宜；\n公司缺錢時，又改條件把價值轉給債主。\n這整套運作，我讀到真的覺得超妙。\n對，簡單來說，股東出的錢就是債主收的錢。\n買股票的人坐在付款端，\n買可轉債的人坐在收款端。\n同一家公司，你坐的位子根本完全相反啦。",
+   "lint": {
+    "chars": 202,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.2,
+    "max_sentence_len": 36,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1
+}

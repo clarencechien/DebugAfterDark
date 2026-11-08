@@ -1,0 +1,122 @@
+{
+ "segment": "s10_rules",
+ "position": "第 11 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "785321ba0dcc9d5796e80077994dfbe01f43ab9469d794f1f0a0a18b46118c90",
+ "previous_context": "買它的股票，你就是坐在付款端。買便宜的 CB，你才是坐在收款端啦。",
+ "original": {
+  "text": "那一般人帶走什麼？除了兩條新規則，報告還給了一個萬用透鏡：任何公司發行未來可以用股票還的債，先問一句，最清楚的人，為什麼這個時候願意賣出這檔股票的上漲空間？連同上一集，免費規則累計六條：不跟投信連買、投信連買中斷是出場警訊、外資重賣不接刀、不追漲停、發可轉債不買股票、下修就是警訊。六條全是不做。報告說，在公開資訊被大家即時分食的市場，知道什麼不能碰，是散戶唯一不會被套利掉的優勢。",
+  "lint": {
+   "chars": 191,
+   "precise_numbers": [
+    "萬"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 37.2,
+   "max_sentence_len": 68,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [
+    "套利"
+   ],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那一般人到底能帶走什麼？\n這份報告給了一個萬用透鏡。<short pause>\n看到公司發可轉債，先問一句：\n最懂這間公司的人，\n為什麼此刻要賣出股票的上漲空間？\n算一算，現在累積了六條免費規則。對，\n不跟投信、投信中斷就走、外資重賣不碰、\n不追漲停、發 CB 不買股票、下修就警訊。\n你有沒有發現？\n這六條全部都是「不做」欸。\n這結論真的很有共鳴。<short pause>\n這份報告裡說，\n在公開資訊被大家搶光的市場，\n知道什麼不能碰，才是散戶真正的優勢啦。",
+   "lint": {
+    "chars": 190,
+    "precise_numbers": [
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 20.1,
+    "max_sentence_len": 39,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "所以，一般人到底能學到什麼？\n這份報告給了一個很好的萬用透鏡。\n看到公司發行可轉債，你先問一句：\n最懂內部的人，為什麼現在賣出上漲空間？\n對啊，這問題我想想都覺得超關鍵。\n然後，作者整理出來的規則，\n最妙的是，竟然全部都是「不做」。<short pause>\n像是發債就不買股票、下修轉換價就快逃。\n為什麼全是不做？\n因為公開的好處早就被大家搶光了嘛。<short pause>\n這份報告說，知道什麼不能碰，\n才是我們散戶唯一不會被搶走的優勢啦。",
+   "lint": {
+    "chars": 186,
+    "precise_numbers": [
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 19.7,
+    "max_sentence_len": 34,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那，一般人能從這裡學到什麼？\n作者給了一個很棒的透鏡。\n只要看到公司發行未來能換成股票的債，<short pause>\n你先想想看，\n最知情的人為什麼現在要賣？\n對，答案通常就是覺得現在太貴了嘛。\n加上前面講的，我們現在有了六條免費規則。\n不跟投信連買、投信斷買要跑、\n外資大賣不接刀、不追漲停，\n還有發可轉債不買股票、下修轉換價快跑。\n你看，這六條全都是「不做」。\n在大家搶著分食公開資訊的市場裡，\n知道什麼不能碰，\n就是散戶唯一不會被搶走的優勢了。",
+   "lint": {
+    "chars": 200,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 24.0,
+    "max_sentence_len": 45,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "投信斷買要跑、",
+   "to": "投信連買中斷是出場警訊、",
+   "reason": "照原文的規則，不用指令語氣"
+  },
+  {
+   "from": "下修轉換價快跑。",
+   "to": "下修轉換價是警訊。",
+   "reason": "照原文的規則，不用指令語氣"
+  }
+ ]
+}

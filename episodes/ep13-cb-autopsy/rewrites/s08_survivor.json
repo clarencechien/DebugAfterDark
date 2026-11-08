@@ -1,0 +1,120 @@
+{
+ "segment": "s08_survivor",
+ "position": "第 9 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "03c0da75110471ae88f328e8f89f94cf39d5f012e8b74feb2e890a2b823251a8",
+ "previous_context": "跌的時候有地板托著，一張都沒掉喔；飆上去的時候，換股價值衝到面額的一點七倍。這結果真的讓我很有共鳴，報告裡說，你該依賴的不是誰看對方向，而是這種下有地板、上不封頂的結構啦。",
+ "original": {
+  "text": "所以四個假說死了三個半，活口在哪？不是買股票，是買可轉債本身。挑換股門檻離股價不遠、價格貼近面額的可轉債，報告算出每個月平均有一點多的報酬，十四年逐年都是正的；最好的情況賺得多，最差的只賠一點，債底真的在擋跌。它能活，是因為沒有排行榜、沒有跟單人潮，容量小到法人彎不下腰。但這是窄門：一半的可轉債整天零成交，買賣價差就能吃掉大半利潤。所以判決是還沒被推翻，不是可行。它現在進入六個月的影子模式，每天記錄該買什麼、實際買不買得到。報告說：回測會說謊，掛單不會。",
+  "lint": {
+   "chars": 229,
+   "precise_numbers": [
+    "十四"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 27.6,
+   "max_sentence_len": 73,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "四個假說死了三個半，那到底有沒有活下來的？\n答案是有一個，但不是買股票，是買可轉債本身。\n作者挑價格貼近面額的可轉債，\n算出來每個月平均賺一點二五個百分點喔。\n而且十幾年下來，每一年居然都是正的。<short pause>\n跌的時候有底頂著，漲的時候又能跟著分一杯羹。\n\n這聽起來很神對不對？\n但作者很老實，說這扇門其實窄到不行。\n就是有一半的可轉債，整天根本一張都沒成交嘛。<laugh>\n買賣價差隨便一下，獲利就被吃光了。\n它現在被放進半年的影子模式，\n每天掛單測試到底買不買得到。\n這份報告說得很帥：<short pause>回測會說謊，掛單不會啦。",
+   "lint": {
+    "chars": 232,
+    "precise_numbers": [
+     "一點二五",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.1,
+    "max_sentence_len": 32,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   }
+  },
+  {
+   "text": "所以四個假說死了三個半，\n到底還有沒有活口？\n答案是有，\n但不是買股票，\n而是買可轉債本身啦。\n就是挑價格貼近面額、\n換股門檻很低的標的。\n這份報告算出來，\n每個月平均毛報酬是一點二五個百分點，\n而且十四年每年都是正的耶。\n最厲害的是，\n跌的時候有底托著，賺的時候能往上衝。\n那它為什麼沒被擠爆？\n因為市場容量實在太小，\n大法人根本彎不下腰進來搶嘛。<short pause>\n但這其實是一扇超小的窄門。\n有一半的 CB 整天連一張都沒成交，\n買賣價差隨便咬一口，\n獲利可能就直接少掉大半。\n我很認同作者誠實的態度，\n這策略現在還不算真的可行喔。\n它必須經過六個月的影子測試，\n每天真實掛單，看實際上到底買不買得到。\n報告裡說得好：回測會說謊，掛單不會。",
+   "lint": {
+    "chars": 289,
+    "precise_numbers": [
+     "一點二五",
+     "百",
+     "十四"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 23.1,
+    "max_sentence_len": 38,
+    "sentences_over_20": 7,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "講到這裡，四個假說死了三個半。\n那到底有沒有活下來的？\n還真的有一個，但不是買股票喔。\n重點是直接買可轉債本身。\n挑價格貼近面額、換股條件又不差的。\n它每個月平均毛報酬，有百分之一點二五。\n然後十幾年下來，每一年竟然都是正的耶。\n跌的時候有債底擋著，最差也賠不多。\n它為什麼能活？\n就是因為市場太小，連大機構都看不上眼。\n不過作者也說，這完全是一道窄門。<sigh>\n有一半的可轉債，整天根本沒有成交量。\n買賣價差只要滑一下，利潤就全沒了啦。\n所以這策略現在只看不買，先觀察半年。\n每天記錄該買什麼、實際買不買得到。\n這份報告裡有一句話我超喜歡：\n回測會說謊，掛單不會。<short pause>",
+   "lint": {
+    "chars": 263,
+    "precise_numbers": [
+     "百分之一點二五"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 24,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "挑價格貼近面額、換股條件又不差的。",
+   "to": "挑價格貼近面額、換股價又離股價不遠的。",
+   "reason": "原文：低轉換溢價、價格貼近面額"
+  }
+ ]
+}

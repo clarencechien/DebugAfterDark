@@ -1,0 +1,139 @@
+{
+ "segment": "s05_reprice",
+ "position": "第 6 段，共 13 段",
+ "avoid": [
+  "更扯的是",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "19b42c8d1e26038e570b656176970198177cf5b912c368de164c3c4d52985bfd",
+ "previous_context": "這份報告裡說，理性的人永遠走最便宜的路。我們賭它花錢硬拉，它選了免費的那條。",
+ "original": {
+  "text": "那公司下修轉換價，對股東是好事嗎？剛好相反。下修一成以上之後，大約半年內，股票四次裡輸三次，三個年代都一樣。報告說下修有兩層壞消息。第一層是轉帳：轉換價降低，債主手上的換股權變值錢，付錢的是股東。第二層是確認：公司等於公告，我們不覺得股價會自己漲回來，也不想或沒能力掏現金還債。所以第一卷的規則清單，這裡再加兩條：公司剛發可轉債，一年內別買它的股票；公司下修轉換價一成以上，同樣是賣出警訊。",
+  "lint": {
+   "chars": 195,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第一"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 26.9,
+   "max_sentence_len": 55,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那公司把換股價格往下修，對股東是好事嗎？\n你想得美喔，剛好相反。<short pause>\n這份報告說，這根本是從股東口袋轉帳給債主。\n債主的換股權變值錢，稀釋的全是股東。\n然後第二層更殘忍，公司等於直接承認，\n股價自己漲不回來，而且我們沒打算還錢啦。\n下修超過一成之後，四次裡面輸三次耶。<short pause>\n它贏過大盤的成績，是負十二點二個百分點。\n我看到這段真的直冒冷汗。\n所以我們的清單再加兩條規則。\n公司剛發可轉債，一年內別買它的股票。\n要是下修超過一成，那就是賣出警訊囉。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [
+     "十二點二",
+     "百"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 37,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那如果公司下修轉換價，讓債主更容易換股呢？\n你覺得這對股東是好事嗎？\n答案剛好相反喔。<short pause>\n報告裡說，下修一成之後大概半年，\n股票比大盤差了十二點二個百分點。\n算下來四次裡輸三次，三個年代都一樣。\n我看到這裡覺得超諷刺的。\n因為下修其實是兩層壞消息。<short pause>\n第一層是轉帳，拿股東未來的股權貼補債主。\n第二層是承認，公司沒信心股價會自己漲。\n重點是，他們不想、也沒能力掏現金還錢啦。\n所以作者的規則清單，要再添兩條囉：\n公司剛發 CB，一年內別買它的股票；\n下修轉換價一成以上，同樣是賣出警訊。",
+   "lint": {
+    "chars": 227,
+    "precise_numbers": [
+     "十二點二",
+     "百"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 19.6,
+    "max_sentence_len": 51,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那公司把轉換價下修，對股東算好事嗎？\n剛好相反，我看到這邊整個背脊發涼。<short pause>\n下修一成之後，股票半年內四次裡輸三次。\n贏過大盤的中位數，是負十二點二個百分點。\n報告裡說，下修其實有兩層壞消息。\n第一層是轉帳。<short pause>\n債主換股變便宜，付錢稀釋的是股東。\n第二層是確認，公司等於公開承認一件事。\n就是自己沒信心漲回來，也不想掏現金還債。<sigh>\n所以第一卷的清單，作者又加了兩條規則。\n公司剛發可轉債，一年內別買它的股票。\n轉換價下修一成以上，同樣是賣出警訊喔。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [
+     "十二點二",
+     "百"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 3
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "剛好相反，我看到這邊整個背脊發涼。",
+   "to": "剛好相反。",
+   "reason": "口頭禪超額"
+  },
+  {
+   "from": "下修一成之後，",
+   "to": "下修一成以上之後，",
+   "reason": "原文是 ≥10%"
+  },
+  {
+   "from": "贏過大盤的中位數，是負十二點二個百分點。",
+   "to": "",
+   "reason": "術語「中位數」且一段一個數字"
+  }
+ ]
+}

@@ -1,0 +1,129 @@
+{
+ "segment": "s03_reverse",
+ "position": "第 4 段，共 13 段",
+ "avoid": [
+  "更扯的是",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "9cc3e247fbe987719c371438fd9ed9fed143ebdc35d57590c0f1b93ee5fb9ac8",
+ "previous_context": "我看到這裡整個恍然大悟。這個賣得太便宜，會變成後面唯一的活口。",
+ "original": {
+  "text": "那跟著買發可轉債公司的股票呢？二十年的資料說，發行之後一年，股票通常輸給櫃買指數十四個多百分點，三次裡輸兩次。而且分三個年代看，幾乎一模一樣。為什麼？公司挑股價貴的時候發，之後會回落；發行代表未來會印新股；還有套利的機構買可轉債、同時放空股票。你以為跟公司站同一邊，其實公司剛在高點賣了東西給市場。報告也特別說，這跟上一集的投信連買不一樣：投信連買是曾經有效、後來被吃死；這個傳說是從頭到尾都是反的，流傳二十年，只是因為故事好聽、沒有人真的去測。",
+  "lint": {
+   "chars": 223,
+   "precise_numbers": [
+    "二十",
+    "十四",
+    "百",
+    "二十"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 30.9,
+   "max_sentence_len": 73,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [
+    "套利"
+   ],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那如果跟著買發可轉債公司的股票呢？\n答案完全相反喔。\n這份報告裡說，算過二十年的資料，\n發行後一年，正股表現通常比大盤還差，\n而且是輸了十四點五個百分點那麼多。\n算起來三次裡面大概會輸兩次。\n我看到這裡真的哭笑不得。<sigh>\n你猜為什麼會這樣？\n因為公司都挑股價貴的時候發，\n發完之後本來就會回落嘛。\n然後未來還會印新股票，\n機構買了可轉債也會放空避險。\n三股賣壓一口氣湧出來。\n你以為跟公司站在同一邊？\n其實公司剛在高點把東西賣給你啦。\n最諷刺的是，這個傳說從頭到尾都是反的。\n能流傳二十年，只是因為故事很好聽，\n根本沒有人真的去驗證過。",
+   "lint": {
+    "chars": 249,
+    "precise_numbers": [
+     "二十",
+     "十四點五",
+     "百",
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 50,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "既然這樣，那市場上那個很有名的傳說呢？很多人說，公司發可轉債之後會拉股價，對吧？那跟著買股票真的能賺嗎？答案是，股票通常直接跌給你看。<laugh>這份報告翻出二十年的資料。發行後一年，會輸給指數十四點五個百分點。三次裡面差不多就輸兩次。你猜為什麼會這樣？因為公司專挑股價貴的時候發嘛。然後未來會印新股票，還有避險機構在放空。三股賣壓一口氣湧出來。你以為跟公司站同一邊？其實公司剛剛在高點賣東西給市場。最諷刺的是，這個傳說從頭到尾都是反的。流傳二十年，只是因為故事太好聽。根本沒有人真的去算過而已。<short pause>",
+   "lint": {
+    "chars": 242,
+    "precise_numbers": [
+     "二十",
+     "十四點五",
+     "百",
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 14.1,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那既然這樣，跟著買發可轉債公司的股票呢？\n大家常聽說，公司發債後會把股價拉上去。\n結果二十年的資料攤開，方向整個相反。<laugh>\n發行後一年，股票平均是跌給你看的。\n中位數輸給指數十四點五個百分點。\n算下來，三次裡面幾乎輸兩次欸。\n而且分三個年代看，穩定得像物理定律。\n你猜為什麼會這樣？\n因為公司都挑股價很貴的時候發行嘛。\n然後未來會印新股，機構還會放空避險。\n三股賣壓一起來，你以為跟公司同一邊？\n其實是公司剛在高點把東西倒給你啦。<sigh>\n這份報告說，這個傳說從頭到尾都相反。\n流傳二十年，純粹只是因為故事太好聽。",
+   "lint": {
+    "chars": 238,
+    "precise_numbers": [
+     "二十",
+     "十四點五",
+     "百",
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 16.0,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "發行後一年，會輸給指數十四點五個百分點。",
+   "to": "發行後一年，股票通常會輸給櫃買指數十四個多百分點。",
+   "reason": "原文是中位數、基準是櫃買指數；數字說成約數"
+  }
+ ]
+}

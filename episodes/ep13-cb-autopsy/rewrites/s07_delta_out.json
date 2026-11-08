@@ -1,0 +1,111 @@
+{
+ "segment": "s07_delta_out",
+ "position": "第 8 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f3f92e390e8b57f0ebe442332f1f147ff22dbeb23329d7f43deeee88b58e7e0b",
+ "previous_context": "中小公司是賣自己被高估的股票，台達則是賣手上被高估的持股。說穿了，就是最懂的人覺得那個股票太貴了啦。",
+ "original": {
+  "text": "那台達這筆交易後來怎麼了？報告誠實記錄，包括打臉。泰達電先崩了三成，頭半年看起來神準；接著 AI 資本支出潮來了，十八個月後漲到比發行時的價格高了一倍多。方向預言在這個時間尺度上錯了，報告認了：連最清楚的人，都會賣飛自己的股票。但錢最後流向誰？買可交換債的人，崩的時候有債底和賣回權托著，一張都沒掉；飆的時候，換股價值衝到面額的將近一倍七。報告說，你該依賴的不是誰看對方向的故事，是下有地板、上不封頂的報酬形狀。",
+  "lint": {
+   "chars": 204,
+   "precise_numbers": [
+    "十八"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 28.1,
+   "max_sentence_len": 49,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 3,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那台達賣完之後，後來呢？\n這份報告非常誠實，連被打臉都寫出來。`<laugh>`\n泰達電一開始先跌了三成，\n那時候台達看起來超神。`<short pause>`\n結果後來遇到 AI 大爆發，\n一年半後直接飆超過一倍。\n連最懂的人都賣飛了啦。\n但錢最後流向誰？\n就是買這檔可交換債的人喔。\n對，跌的時候有地板托著，\n一張都沒賣掉；\n等股價飆上去，\n換股價值衝到面額的一點七倍。\n這個結果真的超有意思。\n報告裡說，\n你該依靠的從來不是誰看對方向，\n而是下有地板、上不封頂的結構啊。",
+   "lint": {
+    "chars": 200,
+    "precise_numbers": [
+     "一點七"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.0,
+    "max_sentence_len": 39,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那台達這筆交易後來怎麼了？\n你覺得他們有算準嗎？\n其實這份報告超誠實，連被打臉都寫出來。<laugh>\n泰達電頭半年先跌了三成，方向看起來神準。\n然後 AI 浪潮一來，\n一年半後股價直接飆超過一倍，\n連最懂的人都賣飛了自己的股票欸。<short pause>\n那買可交換債的人呢？\n跌的時候有地板托著，一張都沒掉喔；\n飆上去的時候，\n換股價值衝到面額的一點七倍。\n這結果真的讓我很有共鳴，\n報告裡說，\n你該依賴的不是誰看對方向，\n而是這種下有地板、上不封頂的結構啦。",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [
+     "一點七"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 23.6,
+    "max_sentence_len": 47,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那台達這筆交易後來怎麼了？\n這份報告很誠實，連被打臉都記下來。<laugh>\n頭半年泰達電先跌了三成，\n方向看起來神準。\n結果碰到 AI 爆發，\n十八個月後居然飆漲超過一倍。\n連最懂公司的人都會賣飛，\n這真的超神奇耶。\n那買這張債的人有賠到嗎？\n完全沒有喔。\n暴跌的時候有底線撐著，一張都沒賣。\n飆上去時，價值直接衝到面額的一點七倍。\n這份報告說，\n你不用去迷信誰能看對方向啦。\n靠這種下有地板、上不封頂的結構，\n碰到妖股你反而能大賺一筆。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [
+     "十八",
+     "一點七"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 28,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1
+}
