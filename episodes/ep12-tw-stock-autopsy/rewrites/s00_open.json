@@ -1,0 +1,146 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 12 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "88b63860ba71f8d263fcdeb2deb6efc8d1bd68f3df5391adb54b86bb6f8215df",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "如果你拿到一個可以自己長時間跑的 AI agent，你會叫它做什麼？這份報告的作者，拿它去驗台股的必勝法。他原本在 Colab 上手工跑，跑了好幾個晚上還沒跑完；後來換成 Anthropic 今年六月推出的 Fable 5，從手工變成 agent，幾個小時就跑完。資料是台股十三年、兩百三十一萬筆公開資料。驗的是散戶最流行的三招：跟著大戶買、追漲停、無腦買正2。結果三招都經不起檢驗，而且三個毫不相干的地方，量出了同一條曲線。報告最後留了一個問題：下次再聽到必勝法，先問一句，如果十萬個人明天都開始這樣做，這個方法會發生什麼事？",
+  "lint": {
+   "chars": 255,
+   "precise_numbers": [
+    "5",
+    "十三",
+    "兩百三十一萬",
+    "2",
+    "十萬"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 35.4,
+   "max_sentence_len": 71,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "嘿，還醒著嗎？<short pause>\n如果你手上有個厲害的 AI agent，\n你會叫它做什麼？\n這份報告的作者，拿它來檢驗台股必勝法。\n先說喔，今天聊的都不是投資建議啦。\n他抓了台股十三年、兩百三十一萬筆公開資料。\n原本在 Colab 手工跑了好幾晚都跑不完，\n後來換成 Anthropic 的 Fable 5，\n就是用 agent 去跑，幾個小時就搞定。<laugh>\n他驗了散戶最流行的三招：\n跟大戶買、追漲停、還有無腦買正2。\n你猜結果怎麼樣？\n全部都經不起檢驗耶。\n更扯的是，三個毫不相干的方法，\n竟然量出同一條衰退曲線。\n我看到這邊真的超震撼。\n下次再聽到必勝法，先問一句：\n如果明天十萬人都這樣做，\n這招還會有效嗎？",
+   "lint": {
+    "chars": 269,
+    "precise_numbers": [
+     "十三",
+     "兩百三十一萬",
+     "5",
+     "2",
+     "十萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 21.4,
+    "max_sentence_len": 59,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   }
+  },
+  {
+   "text": "如果你手上有個很厲害的 AI agent，你會叫它做什麼？這份報告的作者，拿它去驗台股的必勝法。先說喔，這集不是投資建議。<short pause>他原本在 Colab 手工跑，熬了好幾個晚上都跑不完。後來換成 Anthropic 六月發表的 Fable 5，改用 agent 跑，幾個小時就搞定。他倒進兩百三十一萬筆台股公開資料，檢驗散戶最紅的三招：跟大戶、追漲停，還有無腦買正2。你猜結果怎樣？全部破功。<laugh>我看到這段真的起雞皮疙瘩，三個互不相干的戰法，竟然量出同一條衰減曲線。越多人知道的方法，壽命就越短啦。下次再聽到必勝法，先問一句，如果明天十萬人都醬做，會發生什麼事？",
+   "lint": {
+    "chars": 264,
+    "precise_numbers": [
+     "5",
+     "兩百三十一萬",
+     "2",
+     "十萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 23.0,
+    "max_sentence_len": 42,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？如果你拿到一個很強的 AI agent，你會叫它做什麼？這份報告的作者，拿它去驗台股的必勝法。先說好喔，這集絕對不是投資建議啦。<short pause>他原本在 Colab 手工跑了好幾個晚上，根本跑不完。<sigh>後來換成 Anthropic 六月發表的 Fable 5，用 agent 跑，居然幾個小時就搞定了。他總共驗了台股兩百三十一萬筆公開資料，專門測散戶最愛的三招。像是跟大戶買、追漲停、還有無腦買正2。你猜結果怎樣？全部都破功了。最扯的是，三個完全不相干的方法，最後竟然量出同一條衰減曲線。我看到這邊真的起雞皮疙瘩耶。下次再聽到必勝法，不妨先想一下，如果十萬個人明天都開始這樣做，那個方法還會有效嗎？",
+   "lint": {
+    "chars": 286,
+    "precise_numbers": [
+     "5",
+     "兩百三十一萬",
+     "2",
+     "十萬"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 21.0,
+    "max_sentence_len": 43,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "嘿，還醒著嗎？如果你拿到一個很強的 AI agent，",
+   "to": "如果你拿到一個可以自己長時間跑的 AI agent，",
+   "reason": "cold open 不打招呼；節目擁有者指定的引子：可以長時間運行的 agent"
+  },
+  {
+   "from": "先說好喔，這集絕對不是投資建議啦。<short pause>",
+   "to": "<short pause>",
+   "reason": "不是投資建議放在 s01 說，cold open 不重複"
+  },
+  {
+   "from": "根本跑不完。",
+   "to": "還是沒跑完。",
+   "reason": "照作者的說法：跑了好幾個晚上沒跑完"
+  },
+  {
+   "from": "他總共驗了台股兩百三十一萬筆公開資料，",
+   "to": "他總共驗了台股十三年、兩百三十一萬筆公開資料，",
+   "reason": "補上期間"
+  },
+  {
+   "from": "正2",
+   "to": "正二",
+   "reason": "念法：寫成國字，避免 TTS 念成英文或數字"
+  }
+ ]
+}

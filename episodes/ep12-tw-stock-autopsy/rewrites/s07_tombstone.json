@@ -1,0 +1,127 @@
+{
+ "segment": "s07_tombstone",
+ "position": "第 8 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ee7ecb5e3be118f86e64be6751b20877a1273b91c1703a500b1e1a38ab25e7e3",
+ "previous_context": "真的會讓人停不下來。說穿了，這不是策略，是在買彩券啦。",
+ "original": {
+  "text": "報告也誠實寫了作者自己被騙的事。第一輪回測跑出的數字很漂亮，後來修正兩個陷阱。第一，當年漲停後崩掉、變成殭屍股的公司，已經從今天的股票名單上消失，回測等於自動跳過所有失敗的例子。第二，台股的減資會讓股價一夜跳上去，被程式誤認成漲停。修完之後，賺的幅度少了四成。那些一字漲停、根本買不到的股票呢？修正後，跟買得到的幾乎沒差。你記得的都是鎖上去再翻倍的傳奇，因為只有傳奇活到今天讓你查得到。追不到的那些，多數不是錯過的財富，是躲過的墓碑。",
+  "lint": {
+   "chars": 217,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第一",
+    "第二"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 23.1,
+   "max_sentence_len": 49,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "而且這份報告裡說，作者一開始也被騙。\n第一輪回測跑出百分之一點一九。\n那個數字漂亮到不行。<laugh>\n結果修正兩個陷阱後，多賺的幅度直接縮水四成。\n第一個陷阱是，當年漲停後死掉的公司，\n在今天的名單上根本找不到。\n回測就自動跳過所有賠錢的案例。\n然後台股減資會讓股價一夜跳高，\n程式就會誤認成漲停。\n那你一定想問，那些買不到的一字漲停呢？\n修正完之後，跟買得到的幾乎沒差耶。\n我們都以為沒買到的才是大肉，對不對？\n其實只有活到現在的傳奇才會被你記住嘛。\n那些追不到的，多數不是錯過的財富，\n反而是你躲過的墓碑啦。",
+   "lint": {
+    "chars": 237,
+    "precise_numbers": [
+     "百分之一點一九"
+    ],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 30,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "這份報告裡，作者承認自己也被騙過喔。<short pause>\n他一開始跑回測，那個數字超級漂亮。\n但後來就是抓出兩個陷阱。\n第一，倒閉的公司早從名單消失了。\n程式等於自動略過所有失敗的例子。\n第二，台股減資會讓股價一夜跳升。\n電腦就傻傻當成是漲停。\n修完之後，賺的幅度直接縮水四成。\n欸，那買不到的一字漲停真的很賺嗎？\n大家總覺得錯過的大魚最肥，對吧？\n作者算完發現，根本就沒差多少。\n我看到那句結論整個笑出來。<laugh>\n因為只有活到今天的傳奇會被看到嘛。\n那些追不到的，多數只是你躲過的墓碑啦。",
+   "lint": {
+    "chars": 219,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 2.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "而且這份報告最精彩的地方，<short pause> 是作者很誠實地承認自己被騙。一開始回測跑出來的數字超漂亮，結果修正兩個問題之後，獲利直接少了四成。<sigh> 他到底修了什麼？第一，有些股票當年崩盤下市，今天的名單根本找不到，等於自動跳過失敗的例子。然後台股減資讓股價跳上去，也被程式誤當成漲停。你可能會問，買不到的漲停不是賺翻了嗎？答案是，修正完根本沒差多少。你只記得那些翻倍的傳奇，因為失敗的早就從市場蒸發了。那些追不到的股票，<short pause> 多數不是錯過財富，是躲過墓碑啦。",
+   "lint": {
+    "chars": 214,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 22.8,
+    "max_sentence_len": 36,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "第一，倒閉的公司早從名單消失了。",
+   "to": "第一，當年漲停後崩掉的公司，早就從今天的名單消失了。",
+   "reason": "原文是變成殭屍股、從名單消失，不一定倒閉"
+  },
+  {
+   "from": "我看到那句結論整個笑出來。<laugh>",
+   "to": "",
+   "reason": "講墓碑時笑出來不合語氣"
+  }
+ ]
+}

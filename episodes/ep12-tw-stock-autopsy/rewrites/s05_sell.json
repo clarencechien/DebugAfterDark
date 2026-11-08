@@ -1,0 +1,112 @@
+{
+ "segment": "s05_sell",
+ "position": "第 6 段，共 12 段",
+ "avoid": [
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e223eea72a519a81c437b46ae4611187792dc93603e0830ef78f66c5fe245024",
+ "previous_context": "報告裡把這叫做有效、衰減、到反噬。這個可怕的形狀，後面還會出現兩次喔。",
+ "original": {
+  "text": "不過有一個例外。外資賣超的股票，之後持續弱勢，這個訊號十幾年都沒有失效；外資買超的，扣掉大盤和原本就在漲的慣性，剩下的幾乎不值一提。為什麼賣的訊號活著，買的死了？因為沒有人跟著法人賣。散戶搶著跟買，把買的訊號吃光，卻不會跟著出場，沒人吃的資訊才活得下來。報告還補了一個研究事實：散戶每年輸掉的錢，主體不是被法人碾壓，而是手續費和證交稅一直在放血。",
+  "lint": {
+   "chars": 173,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 27.8,
+   "max_sentence_len": 57,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那大家最愛跟的外資呢？<short pause>\n這份報告抓了十三年的資料，\n結果發現一個很扯的現象。\n外資賣股票的訊號，十幾年都有效；\n可是外資買股票喔，幾乎沒什麼用。\n為什麼會這樣？\n就是散戶都只想做多嘛。\n大家搶著跟買，把那個好處吃光了，\n根本沒人會跟著外資放空或出場。\n然後報告裡還補了一刀。<laugh>\n其實散戶賠錢，不是被法人碾壓，\n是手續費跟證交稅一直在放血啦。",
+   "lint": {
+    "chars": 158,
+    "precise_numbers": [
+     "十三"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 31,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那法人呢？大家都覺得外資最聰明吧？<short pause>\n這份報告看了十三年的資料，\n發現一個很有趣的不對稱。\n外資賣超的股票，後面真的繼續跌。\n可是跟著外資買，預測力小到看不見。\n你猜為什麼？\n因為散戶搶著跟買，把好處吃光了嘛。\n根本沒人想跟著放空或出場。\n報告裡說，更扯的是散戶賠錢的原因，<short pause>\n主體根本不是被法人碾壓，\n其實是被手續費和證交稅默默放血放掉的。<sigh>",
+   "lint": {
+    "chars": 159,
+    "precise_numbers": [
+     "十三"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 16.7,
+    "max_sentence_len": 47,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 3
+   }
+  },
+  {
+   "text": "那外資呢？外資不是號稱最聰明的錢嗎？\n這份報告看了十三年的資料，\n發現外資賣超的股票，後面真的繼續跌，\n而且十幾年都沒有失效耶。\n可是外資買超呢？\n扣掉大盤之後，效果薄得跟紙一樣。\n<laugh> 為什麼賣的活著、買的死了？\n因為根本沒人跟著外資賣嘛。\n散戶都習慣做多，大家搶著跟買，\n買進訊號就這樣被吃光了。\n沒人搶的資訊，反而才能活下來。\n這份報告還講了一個很扯的事實。\n散戶每年賠錢，主要不是被法人輾壓喔。<short pause>\n是手續費跟證交稅在持續放血啦。",
+   "lint": {
+    "chars": 201,
+    "precise_numbers": [
+     "十三"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 42,
+    "sentences_over_20": 2,
+    "particles_per_100": 2.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "後面真的繼續跌，",
+   "to": "後面真的持續偏弱，",
+   "reason": "原文是持續弱勢，不是一直跌"
+  }
+ ]
+}

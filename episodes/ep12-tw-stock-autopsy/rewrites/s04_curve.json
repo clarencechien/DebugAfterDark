@@ -1,0 +1,106 @@
+{
+ "segment": "s04_curve",
+ "position": "第 5 段，共 12 段",
+ "avoid": [
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "bbf9febe2983461d35555ca60ec7ef3805b1c6e38b2a8f09808c71f2e6926082",
+ "previous_context": "這不是訊號壞掉喔。它根本是換了方向，變成幫別人抬轎啦。",
+ "original": {
+  "text": "為什麼以前有效的方法，現在會反過來賠？因為知道的人太多了。報告用巷口美食來比喻：本來只有在地人知道，美食部落客報導之後，排隊的人越來越多，到最後有人排隊，只代表大家都看了同一篇報導。投信連買排行榜就是那篇報導。訊號一公開，搶先的人越來越多，價格在亮燈之前就被推完了；等你照著進場，排在隊伍最尾端，前面的人正轉身把貨賣給你。報告把這叫做有效、衰減、反噬的曲線，它在報告裡還會出現兩次。",
+  "lint": {
+   "chars": 191,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 30.8,
+   "max_sentence_len": 61,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那為什麼以前有效的方法，現在會反過來賠？\n答案很簡單，就是知道的人太多了啦。\n你以為你在跟著投信買嗎？\n其實你是跟所有跟風的人在搶耶。<short pause>\n這份報告用巷口小吃來比喻。\n原本只有在地人吃，被報導之後大排長龍。\n到最後有人排隊，只代表大家都看過報導。\n那個排行榜就是那篇報導嘛。\n大家都在搶跑，價格早就被推上去了。\n等你照著進場，根本排在隊伍最尾端。\n前面的人剛好轉身把貨倒給你。<laugh>\n報告裡說，這就是有效、衰減、最後反噬。\n先記住這個曲線喔，後面還會出現兩次。",
+   "lint": {
+    "chars": 213,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那為什麼以前會賺的方法，\n現在反過來賠？\n答案很簡單，就是知道的人太多了嘛。\n你以為你在跟著投信買？<short pause>\n沒有，你是在跟所有跟投信的人擠耶。\n這份報告用巷口美食來比喻。\n本來只有在地人知道，\n被美食部落客一報導，排隊的人越來越多。\n到最後有人排隊，\n只代表大家都看了同一篇報導。\n那個排行榜，就是那篇報導啦。\n大家都想搶先偷跑，\n價格在亮燈之前就被推完了。\n等你看著榜單進場，剛好排在隊伍最尾端。\n然後隊伍前面的人，正轉身把貨賣給你。<sigh>\n光想就覺得超無奈的吧。\n這份報告把這叫做有效、衰減、到反噬。\n記住這個形狀，後面還會出現兩次喔。",
+   "lint": {
+    "chars": 247,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 2.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "為什麼以前有用，現在反而會賠？\n答案其實很簡單，<short pause> 就是知道的人太多了啦。\n你以為你在跟著法人買？\n沒有，你是在跟所有看榜單的人擠。\n這份報告用巷口小吃來比喻。\n本來只有在地人知道這家店。\n結果部落客一報導，整條巷子排滿人。\n到最後排隊，只代表大家都看過文章而已。<laugh>\n那個排行榜，就是那篇報導。\n訊號一公開，大家都在搶快。\n價格在榜單亮燈前，就已經被推完了。\n等你照著教科書進場，根本排在隊伍最尾端。\n走在前面的人，剛好轉身把股票倒給你。\n報告裡把這叫做有效、衰減、到反噬。\n這個可怕的形狀，後面還會出現兩次喔。",
+   "lint": {
+    "chars": 239,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "報告裡把這叫做有效、衰減、到反噬。",
+   "to": "報告裡把這叫做有效、衰減、反噬的曲線。",
+   "reason": "照原文的名稱"
+  }
+ ]
+}

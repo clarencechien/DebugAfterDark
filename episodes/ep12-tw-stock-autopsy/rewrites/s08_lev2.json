@@ -1,0 +1,146 @@
+{
+ "segment": "s08_lev2",
+ "position": "第 9 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "70a2a5293c4eef865ad852a5c1e627ba6b187f04578ef4bc1e11fecdd63944be",
+ "previous_context": "因為只有活到今天的傳奇會被看到嘛。那些追不到的，多數只是你躲過的墓碑啦。",
+ "original": {
+  "text": "第三招，無腦買正2，也就是每天兩倍槓桿的台股基金。歷史上真的賺很多，年化大約百分之三十九。報告把它拆成三具引擎。第一具是兩倍的大多頭，過去十一年台股本身就是罕見的超級多頭，這叫運氣好的年代，不是正2 的功勞。第二具是一直在扣血的波動稅：漲百分之十再跌百分之十，一倍的剩九十九元，每天兩倍的只剩九十六元。第三具最少人懂，是一筆隱藏紅利：正2 持有的是期貨，每個月要換成下個月的合約，過去期貨長期比較便宜，每次換約都在買便宜貨。",
+  "lint": {
+   "chars": 210,
+   "precise_numbers": [
+    "2",
+    "百分之三十九",
+    "十一",
+    "2",
+    "百分之十",
+    "百分之十",
+    "九十九",
+    "九十六",
+    "2"
+   ],
+   "enumerations": [
+    "第三",
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 34.0,
+   "max_sentence_len": 59,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那，如果是無腦買正2 呢？\n這兩年很多人都覺得正2 賺爛了。<short pause>\n報告裡說，它年化高達百分之三十九點一喔。\n這數字看起來根本像開外掛對吧？\n但作者把它拆開，發現全靠三具引擎。\n首先，就是台股這十幾年罕見的大多頭。\n那個其實叫運氣好，不是正2 厲害啦。\n然後，還有一個每天都在扣血的波動損耗。\n只要大盤上上下下，本金就會被磨掉。\n最厲害的是最後一個，叫隱藏紅利。\n你知道正2 買的其實是期貨嗎？\n它每個月換約，過去常常能買到便宜貨。\n日積月累下來，等於每年在白撿錢耶。",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [
+     "2",
+     "2",
+     "百分之三十九點一",
+     "2",
+     "2"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "那最近幾年最紅的無腦買正2 呢？\n就是每天兩倍槓桿的台股啦。<short pause>\n你一定聽過很多人說買這個賺爛了。\n這份報告算出來，年化有百分之三十九。\n但我跟你說，這背後其實靠三具引擎。\n第一具純粹是運氣，剛好遇到罕見的大多頭。\n然後第二具引擎，其實天天都在扣血。\n因為它每天都要重新設定兩倍槓桿嘛。\n只要股市稍微盤整，本金就會被磨掉喔。<sigh>\n那最少人知道的第三具是什麼？\n最厲害的是，它過去每個月都在買便宜貨。\n因為正2 買的是台指期貨。\n到期換成下個月合約時，常常能白撿紅利。\n不過，這具引擎現在已經熄火了。",
+   "lint": {
+    "chars": 230,
+    "precise_numbers": [
+     "2",
+     "百分之三十九",
+     "2"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那既然選股這麼容易踩雷，<short pause>\n無腦買兩倍槓桿的正2 總可以了吧？\n你這幾年一定常聽過這句話。\n過去它年化報酬真的高達百分之三十九耶。\n但我看這份報告把它拆開，整個大開眼界。\n這報酬其實是靠三具引擎。\n第一具叫運氣，剛好碰上罕見的超級大多頭。\n這是大環境給的，不是正2 自己厲害。\n第二具引擎呢，它其實永遠在扣血。\n就是每天漲跌互相抵消的波動磨損嘛。\n重點來了，第三具引擎最少人搞懂。<short pause>\n正2 買的是期貨，每個月都要換新合約。\n以前期貨常比現貨便宜，每次都在撿便宜啦。",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [
+     "2",
+     "百分之三十九",
+     "2",
+     "2"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.9,
+    "max_sentence_len": 27,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "正2",
+   "to": "正二",
+   "reason": "念法：寫成國字，避免 TTS 念成英文或數字"
+  }
+ ]
+}

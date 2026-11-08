@@ -1,0 +1,130 @@
+{
+ "segment": "s09_bonus",
+ "position": "第 10 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "81232d172817ebe4c42969922ea40a5249b8a5fb6aa657637afdaf7941bcfc52",
+ "previous_context": "到期換成下個月合約時，常常能白撿紅利。不過，這具引擎現在已經熄火了。",
+ "original": {
+  "text": "這筆紅利，在二〇一五到二〇二二年，每年平均大約有一成。二〇二三年急凍，現在已經低到等於倒貼。凶手是誰？就是正2 自己。正2 規模暴增，買期貨的人越來越多，把期貨價格推高，便宜貨買光了。一個公開的甜頭，被湧進來的人吃到翻負，這是報告第三次量到同一條曲線。所以報告說，你現在買正2，買到的只剩台股繼續大多頭這一注。在回到正常的劇本裡，它的期望報酬跟一倍差不多，但你要承受兩倍深的下跌。",
+  "lint": {
+   "chars": 188,
+   "precise_numbers": [
+    "2",
+    "2",
+    "2"
+   ],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 22.5,
+   "max_sentence_len": 34,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "為什麼會熄火？<short pause>\n凶手其實就是正2 自己啦。\n以前每年平均能多賺一成左右。\n然後現在買的人暴增，\n期貨的便宜貨全部被買光了。\n原本公開的甜頭，\n被湧進來的人吃到翻負。\n這結果光想就覺得很諷刺。<sigh>\n對，這份報告裡說，\n這已經是第三次出現一樣的衰減了。\n那現在買正2 到底算什麼？\n說穿了，\n你只剩押注台股繼續大多頭這一注。\n要是市場回到正常狀況，\n賺的跟一般人差不多，\n下跌的時候你卻要痛兩倍耶。",
+   "lint": {
+    "chars": 178,
+    "precise_numbers": [
+     "2",
+     "2"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 33,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "這筆紅利以前平均每年有一成耶。<short pause>\n但現在呢？\n直接縮水到像在倒貼。\n那凶手是誰？\n就是正2 自己。<sigh>\n因為買的人實在太多了。\n大家瘋狂搶買，把便宜好處全吃光了。\n這份報告裡說，\n現在買正2，只剩最後一注可以賭。\n那個賭注就是台股會繼續大漲。\n如果行情回到常態，\n期望報酬其實跟一倍差不多。\n但你卻得承受兩倍深的下跌。\n我光是用想的就替大家捏一把冷汗。\n過去那種保護墊，現在真的沒了啦。",
+   "lint": {
+    "chars": 175,
+    "precise_numbers": [
+     "2",
+     "2"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 12.5,
+    "max_sentence_len": 22,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "這筆換約紅利，以前每年平均大概有一成。<short pause>\n但現在已經急凍，甚至低到實質倒貼了。\n凶手是誰？<short pause>\n答案就是正2 自己啦。\n因為買的人暴增，便宜貨全被買光了。\n一個公開的甜頭，被大家分食到翻負。\n所以這份報告說，你現在買正2，\n就只剩賭台股繼續大漲這一注了。\n如果回到常態，\n多賺的部分沒了，你還要扛兩倍的下跌耶。<sigh>\n光是用想的，就覺得壓力超大。",
+   "lint": {
+    "chars": 156,
+    "precise_numbers": [
+     "2",
+     "2"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 29,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 3
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "我光是用想的就替大家捏一把冷汗。",
+   "to": "",
+   "reason": "s03 已經用過「捏一把冷汗」"
+  },
+  {
+   "from": "正2",
+   "to": "正二",
+   "reason": "念法：寫成國字，避免 TTS 念成英文或數字"
+  }
+ ]
+}

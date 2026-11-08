@@ -1,0 +1,142 @@
+{
+ "segment": "s11_outro",
+ "position": "第 12 段，共 12 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "567fcc898a474eb2d5176f4f5ba0322b4335f4de63cef1407eeb13543b8d1b2b",
+ "previous_context": "再買正2，就是在原本的滿倉上再加倍。所以該問的不是賠不賠得起，而是你想把多少身家，全都綁在同一座島上？",
+ "original": {
+  "text": "今晚的 breakpoint。第一，公開、人人能照做、沒有結構保護的賺錢方法，壽命跟它的知名度成反比：投信連買、漲停傳奇、正2 紅利，是同一條曲線。第二，散戶最有價值的，是不做：不跟投信連買、不追漲停、外資重賣不接刀；少交易一半，你就贏過了一半的努力。第三，正2 現在只剩台股繼續大多頭這一注；選策略前，先決定你能忍多深、泡多久。下次再聽到必勝法，先問一句：如果十萬個人明天都這樣做，會怎樣？再提醒一次，這集不是投資建議。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 245,
+   "precise_numbers": [
+    "2",
+    "2",
+    "十萬"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 26.2,
+   "max_sentence_len": 57,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，任何公開、大家都抄得到的方法，知道的人越多，就死得越快。\n第二，對散戶最有價值的事其實是「不做」，少交易幾次就先贏一半啦。\n第三，買正2 前，先想清楚自己能扛多深、可以抱多久。\n<short pause>\n所以啊，下次再聽到什麼必勝法，不妨先反問自己一句：如果明天有十萬個人照著做，這招還會有效嗎？\n對了，這集聊的完全不是投資建議喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 204,
+    "precise_numbers": [
+     "2",
+     "十萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 21.7,
+    "max_sentence_len": 45,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n第一，任何公開又能照抄的方法，知道的人越多，死得越快。\n\n第二，散戶最有價值的事其實是不做。光是少交易一半，就贏過一半的努力啦。\n\n第三，正2 已經沒有隱藏紅利了，買它就只是在賭台股一直漲。\n\n下次又聽到什麼必勝法，先問自己一句。如果十萬個人明天都照做，會怎樣？其實好處馬上就被搶光了嘛。\n\n聽完真的覺得，管好自己的手比到處衝更重要。<short pause>\n\n然後提醒一下，這集不是投資建議喔。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 228,
+    "precise_numbers": [
+     "2",
+     "十萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 27,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n第一，公開又人人能照做的方法，\n知名度越高，壽命就越短。\n第二，散戶最有價值的動作，其實是不做。\n不追漲停、外資大賣不接刀。\n光是少交易一半，你就贏過一半的努力了啦。\n第三，正2 現在只剩繼續大多頭這一注。\n選策略前，先決定你能忍多深、抱多久。\n\n下次再聽到必勝法，先問一句。\n如果明天有十萬人都照著做，會怎樣？\n\n<short pause> 再提醒一次，這集不是投資建議喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [
+     "2",
+     "十萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 26,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "不追漲停、外資大賣不接刀。",
+   "to": "不跟投信連買、不追漲停、外資大賣不接刀。",
+   "reason": "補上第一條規則"
+  },
+  {
+   "from": "正2",
+   "to": "正二",
+   "reason": "念法：寫成國字，避免 TTS 念成英文或數字"
+  }
+ ]
+}

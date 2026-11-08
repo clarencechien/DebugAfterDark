@@ -1,0 +1,122 @@
+{
+ "segment": "s06_limitup",
+ "position": "第 7 段，共 12 段",
+ "avoid": [
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "7c2dcc76f400b6e7885d4b2d7bd2943246aeb22cc1548a4ff067c3c7542b2da2",
+ "previous_context": "散戶每年賠錢，主要不是被法人輾壓喔。是手續費跟證交稅在持續放血啦。",
+ "original": {
+  "text": "第二招，追漲停。今天漲停、明天續攻，是台股最古老的信仰。報告看了二〇二二年以來一萬多次漲停，隔天開盤買進、抱五天。平均是小賺，但典型的一次追進是賠的，勝率比擲硬幣還低一點。平均被少數飆股撐起來，你單次追進吃到的，是中間那一次。那為什麼一堆人靠它賺大錢還開課？報告說兩個原因：賺到的人發文開課，賠掉的人默默離場；還有偶爾才中、不知道何時中的獎勵，最讓人停不下來，吃角子老虎機就是這樣設計的。這是彩券，不是策略。",
+  "lint": {
+   "chars": 204,
+   "precise_numbers": [
+    "一萬"
+   ],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 24.5,
+   "max_sentence_len": 64,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那接下來看第二個信仰，就是追漲停。\n很多人相信今天漲停、明天會續攻齁。\n這份報告的作者看了一萬多次漲停事件。\n隔天開盤買進抱五天，你猜結果怎樣？\n勝率只有百分之四十八。\n比擲硬幣還要低耶。<short pause>\n平均看似小賺，其實全靠少數飆股在撐。\n你只要單次追進去，大部分都在賠錢。\n那為什麼還是一堆人靠這招開課？\n很簡單，賺錢的人特別大聲。\n賠錢的都默默離開嘛。<short pause>\n這種偶爾中獎的刺激，就像吃角子老虎機。\n真的會讓人停不下來。\n說穿了，這不是策略，是在買彩券啦。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [
+     "一萬",
+     "百分之四十八"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 13.9,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說到放血，很多人還很愛追漲停。\n台股有個老信仰，叫今天漲停明天續攻。\n這份報告的作者，統計了一萬多次漲停。\n如果隔天開盤買進、抱個五天，\n你猜會怎樣？\n算出來的勝率，只有百分之四十八欸。\n這比丟銅板還要低，對吧？\n重點來了，雖然平均看起來小賺，\n但其實是被少數飆股拉上去的啦。\n一般人單次追進去，大多時候都是賠的。\n那為什麼還有一堆人開課？\n因為賺大錢的人最大聲，賠錢的默默離場嘛。\n而且這種不知何時會中的大獎，\n最讓人停不下來了。<short pause>\n這機制給我的感覺，就像吃角子老虎機。\n追漲停真的不是策略，它就是彩券啦。",
+   "lint": {
+    "chars": 238,
+    "precise_numbers": [
+     "一萬",
+     "百分之四十八"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 17.3,
+    "max_sentence_len": 29,
+    "sentences_over_20": 2,
+    "particles_per_100": 2.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "除了被手續費放血，很多人還很愛追漲停。\n大家都聽過「今天漲停，明天續攻」吧。\n這份報告的作者，統計了一萬多次的漲停。\n如果隔天開盤買進、抱個五天呢？\n勝率只有百分之四十八，比丟硬幣還低耶。\n平均看起來能小賺，但多數人單次追都是賠。\n因為那都是少數飆股，把數字撐起來的。\n<short pause>\n那你一定會好奇，為什麼還有一堆人在開課？\n因為只有賺到大錢的人，才會上網炫耀嘛。\n心理學上，這就跟玩吃角子老虎機一樣。\n偶爾中一次大獎，就會讓人停不下來。\n作者的結論很直接。\n這純粹是買彩券，根本不是什麼策略啦。",
+   "lint": {
+    "chars": 229,
+    "precise_numbers": [
+     "一萬",
+     "百分之四十八"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "說穿了，這不是策略，是在買彩券啦。",
+   "to": "說穿了，這就是在買彩券啦。",
+   "reason": "twtone：對舉「不是…是」"
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "segment": "s01_rules",
+ "position": "第 2 段，共 12 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "6b183805fa59e87380c063f28eec104e36b4464132eb24791fc0694170c834b8",
+ "previous_context": "我看到這邊真的起雞皮疙瘩耶。下次再聽到必勝法，不妨先想一下，如果十萬個人明天都開始這樣做，那個方法還會有效嗎？",
+ "original": {
+  "text": "先說清楚，這集不是投資建議，也不報明牌。開始前先講兩件事。第一，這份報告的績效，都是看贏過大盤的部分。一檔股票漲百分之五，大盤也漲百分之五，那你只是搭到電梯，不是會選股；這樣才能把大多頭的水分先擠掉。第二，法人買賣的資料，每天收盤後下午四、五點才公布。所以報告一律假設，你隔天開盤才買得到。很多網路上的回測，用訊號當天的收盤價，那是現實中買不到的價格。",
+  "lint": {
+   "chars": 176,
+   "precise_numbers": [
+    "百分之五",
+    "百分之五"
+   ],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 24.1,
+   "max_sentence_len": 48,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先說好喔，這集完全不是投資建議。\n聊細節前，這份報告有兩個設定很關鍵。\n第一個是，績效只看贏過大盤的部分。\n你買的股票漲百分之五很厲害嗎？\n如果大盤也漲一樣多，\n那你只是搭到電梯啦。<laugh>\n這樣才能把大多頭的水分擠掉。\n然後就是，法人資料都是收盤後才公布，\n所以這份報告假設你隔天開盤才買進。\n很多網路回測都用當天收盤價算，\n<short pause> 現實中那個價格根本買不到嘛！",
+   "lint": {
+    "chars": 164,
+    "precise_numbers": [
+     "百分之五"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 8,
+    "avg_sentence_len": 19.5,
+    "max_sentence_len": 34,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "先打個預防針，這集不是投資建議喔。\n開始前呢，我們先搞懂兩個重點就好。\n第一個，是看贏過大盤的部分。\n股票漲百分之五，大盤也漲一樣多，\n你猜算賺嗎？其實只是搭到電梯啦。<short pause>\n這份報告把大多頭的水分都先擠掉了。\n然後第二個重點，你現實中買得到嗎？\n法人買賣資料，都是每天下午收盤才出來。\n所以作者一律假設，隔天開盤才能進場。\n很多網路回測用當天收盤價算，\n欸，那個價格在現實中根本買不到啊！<laugh>",
+   "lint": {
+    "chars": 182,
+    "precise_numbers": [
+     "百分之五"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 30,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "先打個預防針，這集不是投資建議喔。看數據之前，就是先搞懂兩件事。第一，作者算的績效，只看贏過大盤的部分。如果你的股票漲百分之五，大盤也漲一樣多。<short pause>那你真的賺到了嗎？其實沒有。你只是搭到電梯，不是真的會選股嘛。這樣才能把大多頭的水分擠掉。然後，第二點更關鍵。法人買賣資料，每天下午收盤後才公布。你猜很多網路回測怎麼做？他們竟然用當天收盤價算進場。現實中根本買不到啊。<laugh>所以這份報告一律假設，你隔天開盤才買得到。",
+   "lint": {
+    "chars": 202,
+    "precise_numbers": [
+     "百分之五"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 13.4,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "看數據之前",
+   "to": "看結果之前",
+   "reason": "twtone 用詞：數據"
+  }
+ ]
+}

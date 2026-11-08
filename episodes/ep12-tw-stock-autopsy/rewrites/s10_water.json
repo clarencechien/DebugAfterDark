@@ -1,0 +1,142 @@
+{
+ "segment": "s10_water",
+ "position": "第 11 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0382d63aeb681a3c44c99eb2ce01177bce439479f0129be4691d2cca31e610fe",
+ "previous_context": "我光是用想的就替大家捏一把冷汗。過去那種保護墊，現在真的沒了啦。",
+ "original": {
+  "text": "還有兩個體感。第一，抱無腦正2 的這十一年半，有四成的日子，帳戶距離最高點跌超過一成，加起來大約四年半。年化報酬是真的，但多數人是在水最深的時候棄船，然後那個報酬就跟他無關了。第二，報告說最重要的一題：你住台灣、薪水來自台灣公司、房子在台灣、存款是台幣，你的人生已經是一檔台灣兩倍槓桿基金了。台股正2，是在滿倉上再加倍。所以問題不是這筆錢賠光受不受得了，而是你全部身家有幾成綁在台灣。",
+  "lint": {
+   "chars": 191,
+   "precise_numbers": [
+    "2",
+    "十一",
+    "2"
+   ],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 30.8,
+   "max_sentence_len": 57,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "然後啊，報告裡說還有一個很殘酷的體感。\n過去十一年多，有四成日子帳戶都在縮水。\n最慘的時候直接跌掉百分之五十五。<sigh>\n多數人根本撐不到最後，水最深時就棄船了。\n重點來了，這還不是最危險的喔。\n你想想看，你的薪水、房子存款都在台灣吧？\n其實你的人生早就已經押在台灣上面了。\n再買正2，就是在原本的滿倉上再加倍。\n所以該問的不是賠不賠得起，<short pause>\n而是你想把多少身家，全都綁在同一座島上？",
+   "lint": {
+    "chars": 178,
+    "precise_numbers": [
+     "十一",
+     "百分之五十五",
+     "2"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 32,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說真的，正2 的體感比你想的殘酷很多。<short pause>\n過去這十幾年，有四成的日子，\n你的帳戶都是從高點跌掉一成以上。\n最慘的時候，甚至跌超過百分之五十五。\n年化報酬再漂亮又怎樣？\n你在水最深的時候受不了棄船，\n後面漲回來就跟你完全沒關係了嘛。\n然後，這份報告裡提了一個超扎心的點。<short pause>\n你算過自己的人生綁在台灣多少嗎？\n薪水、存款、房子全都在這裡，\n你本身就已經滿手台灣了耶。\n再買正2，等於是在槓桿上繼續加倍。\n所以重點不是這筆錢賠不賠得起，\n而是你到底還要把身家再放大幾倍？",
+   "lint": {
+    "chars": 216,
+    "precise_numbers": [
+     "2",
+     "百分之五十五",
+     "2"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.6,
+    "max_sentence_len": 30,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說到抱正2的體感，你真的抱得住嗎？\n這份報告裡說，過去十一年多裡面，\n有四成的日子，帳戶都從高點跌超過一成喔。\n算下來有四年半都在水裡泡著。\n最慘的時候甚至掉過一半以上，\n我光用想的都替大家心臟痛。<sigh>\n很多投資人根本撐不到最後，\n都在水最深的時候棄船了。\n然後作者點出一個超關鍵的問題。\n你薪水是台幣，房子也在台灣對吧？\n其實你整個人生，本來就是台灣的槓桿了。\n買正2根本是在滿載上面又加倍。\n重點不是賠光受不受得了，\n而是你到底要把幾成身家，綁在同一座島上啦。",
+   "lint": {
+    "chars": 217,
+    "precise_numbers": [
+     "2",
+     "十一",
+     "2"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.7,
+    "max_sentence_len": 35,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "過去十一年多，有四成日子帳戶都在縮水。",
+   "to": "過去十一年多，有四成的日子，帳戶比最高點少了一成以上。",
+   "reason": "原文的定義：距離最高點跌超過一成的日子占四成"
+  },
+  {
+   "from": "其實你的人生早就已經押在台灣上面了。",
+   "to": "其實你的人生，早就是一檔台灣兩倍槓桿基金了。",
+   "reason": "照原文的說法"
+  },
+  {
+   "from": "正2",
+   "to": "正二",
+   "reason": "念法：寫成國字，避免 TTS 念成英文或數字"
+  },
+  {
+   "from": "所以該問的不是賠不賠得起，<short pause>而是你想把多少身家，全都綁在同一座島上？",
+   "to": "所以真正該問的，<short pause>是你想把多少身家，全都綁在同一座島上？",
+   "reason": "twtone：對舉「不是…而是」"
+  }
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "segment": "s03_streak",
+ "position": "第 4 段，共 12 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e4417b5469af300695f5900a06a0473c7889fa20076ced2c8a94081b168674b3",
+ "previous_context": "看盤軟體上的神準是真的。只是那個神準，從來就不是給你用的啦。",
+ "original": {
+  "text": "那最紅的跟單招式呢？投信連續買超好幾天，每個看盤軟體都有排行榜。報告追蹤了所有投信連買五天的事件，隔天開盤買進，按年代切開，像一齣三幕劇。二〇一三到二〇一七年，真的有肉。二〇一八到二〇二一年，肉越來越薄。二〇二二年以後，跟著買平均反過來賠錢，而且不是巧合。更誇張的是連買十天，訊號越強、越多人看到，下場越慘。它沒有失效，是換了方向：從買進訊號，變成幫別人抬轎的訊號。",
+  "lint": {
+   "chars": 183,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 21.9,
+   "max_sentence_len": 36,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那大家最愛看的投信連買排行榜呢？\n每個軟體都有，跟著買總可以了吧？\n這份報告的作者追蹤了連買五天的股票。\n十幾年前跟著買，真的有賺到肉喔。\n但這幾年直接反過來，平均都在賠錢。\n你猜連買十天會怎樣？<short pause>\n訊號越強，下場反而越慘。\n這幾年跟著買，平均多賠百分之一點六。\n我看到這邊真的覺得很扯。<laugh>\n這招不是壞掉，是它換了方向。\n從買進訊號，變成抓你進去幫忙抬轎啦。",
+   "lint": {
+    "chars": 167,
+    "precise_numbers": [
+     "百分之一點六"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 17,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那如果看最紅的投信連買呢？\n每個看盤軟體都有排行榜嘛。\n你覺得跟著買會賺嗎？<short pause>\n以前可以，現在是賠錢的。\n這份報告的作者追蹤了連買五天的股票。\n隔天開盤買進，看能不能贏過大盤。\n結果那個走勢就像一齣三幕劇。\n以前真的有肉吃，後來肉越來越薄。\n到了這幾年，跟著買平均反而在賠錢。\n然後，連買更久的下場更扯。\n訊號越強、越多人看見，反而賠越慘。\n我看到這邊真的替大家捏一把冷汗。\n這不是訊號壞掉喔。\n它根本是換了方向，變成幫別人抬轎啦。",
+   "lint": {
+    "chars": 202,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 13.4,
+    "max_sentence_len": 17,
+    "sentences_over_20": 0,
+    "particles_per_100": 2.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "那排行榜上最紅的招式呢？\n你一定看過投信連續買超排行榜。\n這招總可以跟了吧？\n答案是十年前可以，\n現在跟著買平均會賠錢喔。\n這份報告追蹤投信連買五天，\n隔天開盤買進，\n發現這根本是一齣三幕劇。\n十年前跟著買，真的有肉。\n後來肉越來越薄。\n最近這幾年更扯，\n反過來變成賠錢，\n而且作者說這完全不是巧合。<short pause>\n最慘的是那個連買十天的，\n訊號越強，下場越慘，\n後來平均多賠百分之一點六。\n我看到這裡真的快笑出來，<laugh>\n這不是訊號壞掉，\n是變成幫別人抬轎的訊號啦。",
+   "lint": {
+    "chars": 206,
+    "precise_numbers": [
+     "百分之一點六"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.6,
+    "max_sentence_len": 34,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1
+}
