@@ -27,6 +27,22 @@
   "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
  },
  "audio": {
-  "file": "ep12-tw-stock-autopsy.mp3"
+  "file": "ep12-tw-stock-autopsy.mp3",
+  "bytes": 9423574,
+  "sha256": "f81e9ca64ccfc4b2cae16150271ec6789daf3801c303d49ff28ce0663235deac",
+  "duration_s": 588.9,
+  "duration": "9:48",
+  "lufs": -16.9
+ },
+ "qa": {
+  "breeze_cer_mean": 0.033,
+  "jitter_semitones": 0.233,
+  "gates": "錯誤率 3.3% 通過；音高跳動 0.233，比門檻 0.23 高一點（EP09 定稿時 0.247）",
+  "retakes": "s02、s06、s11 各補 3 次（第一輪選中的音高 +7.8、+9.1、+6.5 Hz）",
+  "manual_pick": "s02 改 take4（CER 0、+2.9 Hz）、s11 改 take3（-4.7 Hz）；s06 六次裡音高正常的兩次不是太抖（jitter 0.288）就是錯誤率 10%，保留 take5（+7.8 Hz）",
+  "consistency": "qa/consistency.json：s06 音高 +7.8 Hz、s04 音色偏暗；接縫亮度 s10→s11 跳最多",
+  "both_wrong": "s05「輾壓」聽成「減壓」、s07「跳升」聽成「調升」、s09「只剩」聽成「隻剩」（同音）、pong 的 ng",
+  "twtone": "qa/twtone.md：對舉 2 句改掉，「數據」改「資料」",
+  "terms": "Ping、pong 3 次都判為英文念法"
  }
 }
