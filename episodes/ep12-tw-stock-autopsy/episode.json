@@ -7,7 +7,7 @@
  "description": "如果你拿到一個可以自己長時間跑的 AI agent，你會叫它做什麼？這份報告的作者拿它去驗台股的必勝法：原本在 Colab 手工跑了好幾個晚上沒跑完，換成 agent 之後幾個小時跑完。台股十三年、兩百三十一萬筆公開資料，檢驗散戶最流行的三招：跟著大戶買、追漲停、無腦正2。三招都經不起檢驗，而且三個毫不相干的地方量出同一條曲線。台股驗屍上集。\n\n今晚的 breakpoint：\n1. 公開、人人能照做、沒有結構保護的賺錢方法，壽命跟它的知名度成反比：投信連買、漲停傳奇、正2 的隱藏紅利，是同一條曲線。\n2. 散戶最有價值的是「不做」：不跟投信連買、不追漲停、外資重賣不接刀；少交易一半。\n3. 正2 現在只剩「台股繼續大多頭」這一注；選策略前，先決定能忍多深、泡多久。\n\n原文：〈台股必勝法驗屍報告〉 https://imitator.ai-apps.work/r/tw-stock-winner\n資料：FinMind 開放 API，2013-01 到 2026-07，804 檔上市櫃股票。研究以 Anthropic 的 Fable 5 以 agent 方式執行；限制與已知的坑列在原文附錄。\n本集內容僅供參考，不構成投資建議。\n\n延伸收聽：EP06〈同一隻鬼，換了五張臉〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
  "report_slug": "tw-stock-winner",
  "source_url": "https://imitator.ai-apps.work/r/tw-stock-winner",
- "status": "draft",
+ "status": "final",
  "series": "台股驗屍 1/2（下：可轉債）",
  "related": [
   "ep06-ghost-five-faces"
@@ -44,5 +44,6 @@
   "both_wrong": "s05「輾壓」聽成「減壓」、s07「跳升」聽成「調升」、s09「只剩」聽成「隻剩」（同音）、pong 的 ng",
   "twtone": "qa/twtone.md：對舉 2 句改掉，「數據」改「資料」",
   "terms": "Ping、pong 3 次都判為英文念法"
- }
+ },
+ "published": "2026-11-08T21:32:00+08:00"
 }
