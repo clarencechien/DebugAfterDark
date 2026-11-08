@@ -28,6 +28,22 @@
   "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
  },
  "audio": {
-  "file": "ep13-cb-autopsy.mp3"
+  "file": "ep13-cb-autopsy.mp3",
+  "bytes": 9992010,
+  "sha256": "574ec5b11fee7efbb68e8a0386399095cfe3fd8450e6eb034b6da86c4c09f2ee",
+  "duration_s": 624.5,
+  "duration": "10:24",
+  "lufs": -17.0
+ },
+ "qa": {
+  "breeze_cer_mean": 0.034,
+  "jitter_semitones": 0.221,
+  "gates": "錯誤率 3.4%、音高跳動 0.221 都通過",
+  "retakes": "s04、s05、s08 各補 3 次（第一輪 s04 音高 +7 Hz、s05 語速慢 15%、s08 三次都偏抖）",
+  "manual_pick": "s09 改 take2（自動挑的 take0 音高 +8.3 Hz、jitter 0.275）",
+  "consistency": "qa/consistency.json：各段音高在中位數 -5～+3.5 Hz；s07 音色偏暗；接縫亮度 s11→s12 跳最多",
+  "both_wrong": "「泰達電」的泰聽成臺、「滿」聽成「蠻」、「位子」聽成「位置」（同音）；百分之一點二五是數字寫法不同",
+  "twtone": "qa/twtone.md：沒有超過基準的項目",
+  "terms": "Ping、pong 3 次都判為英文念法"
  }
 }

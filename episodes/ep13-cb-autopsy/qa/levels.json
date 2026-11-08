@@ -1,0 +1,80 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -22.2,
+  "gain_db": 2.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_recap",
+  "lufs_before": -20.2,
+  "gain_db": 0.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_filters",
+  "lufs_before": -21.1,
+  "gain_db": 1.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_reverse",
+  "lufs_before": -20.5,
+  "gain_db": 0.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_cheaper",
+  "lufs_before": -21.2,
+  "gain_db": 1.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_reprice",
+  "lufs_before": -22.2,
+  "gain_db": 2.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_delta",
+  "lufs_before": -22.3,
+  "gain_db": 2.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_delta_out",
+  "lufs_before": -22.2,
+  "gain_db": 2.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_survivor",
+  "lufs_before": -21.5,
+  "gain_db": 1.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_pipe",
+  "lufs_before": -23.4,
+  "gain_db": 3.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s10_rules",
+  "lufs_before": -22.4,
+  "gain_db": 2.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s11_verify",
+  "lufs_before": -21.0,
+  "gain_db": 1.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s12_outro",
+  "lufs_before": -22.8,
+  "gain_db": 2.8,
+  "lufs_after": -20.0
+ }
+]
