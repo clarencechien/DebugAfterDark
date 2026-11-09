@@ -1,0 +1,27 @@
+{
+ "id": "ep15-japan-white-goods",
+ "number": 15,
+ "type": "full",
+ "guid": "debug-after-dark:ep15",
+ "title": "EP15 不是被打敗，是被賣掉的",
+ "description": "稍微有點年紀的人都說，家電買日本的就對了；現在年輕人買冰箱洗衣機，更常考慮韓國牌或中國牌。日本家電是被打敗了嗎？Sony 和 Panasonic 還是那個日本品牌嗎？幾個 Google 搜尋回答不了，這份報告的作者交給 agent 去查，拿回來的是一張三十年的轉讓清單：韓國打贏的是電視，中國是把日本白色家電的品牌一張一張買下來，而賣的理由，是母公司要集中到鐵道、能源、AI。\n\n今晚的 breakpoint：\n1. 日本白色家電是母公司切掉的拖油瓶，中國廠是接手的人，不是攻城的人。\n2. 韓國打贏的是電視；它拿走的是日本白色家電的靠山。\n3. 日本設計、日本資本、日本製造是三件事，看銘牌最準。\n\n原文：〈不是被打敗，是被賣掉的 — 日本白色家電 1993–2026〉 https://imitator.ai-apps.work/r/japan-white-goods-transfer\n查核日 2026-10-27；台灣各型號的產地依型號而異，報告標「看銘牌」的地方沒有逐台查核。節目不推薦任何品牌。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "japan-white-goods-transfer",
+ "source_url": "https://imitator.ai-apps.work/r/japan-white-goods-transfer",
+ "status": "draft",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "audio": {
+  "file": "ep15-japan-white-goods.mp3"
+ }
+}

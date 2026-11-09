@@ -1,0 +1,117 @@
+{
+ "segment": "s06_nojima",
+ "position": "第 7 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e0dc2fac329221d1646c27f24fbb63e617f6305647b2895e1fb66dc5e5dea5be",
+ "previous_context": "那它是怎麼沒的？就是在談判桌上，一張一張簽出去的啦。",
+ "original": {
+  "text": "其中有一張很有戲劇性。日立在二〇二三年想做最後一搏：指定高階家電的售價，禁止通路折扣，想把定價權從量販店手上拿回來。結果沒有成功，再加上中國廠的低價攻勢，今年四月，日立把國內家電事業賣給了日本的量販店野島。有趣的是，野島一九五九年創業的時候，就是日立的地區販賣店。六十七年後，當年賣日立家電的店，回頭買下了日立家電。日經用了一個詞形容：下剋上。",
+  "lint": {
+   "chars": 172,
+   "precise_numbers": [
+    "六十七"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 27.7,
+   "max_sentence_len": 46,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "其中"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "裡面有一張轉讓單，真的很扯。\n日立在前幾年，其實想拚最後一次。\n他們規定高階家電不能打折，\n就是想把定價權從量販店搶回來。\n結果呢？完全沒成功。\n然後又碰上中國廠的低價攻勢，\n日立最後還是把家電業務賣掉了。\n買家是誰你知道嗎？\n對，是日本量販店野島。\n<short pause>\n野島剛創業時，只是日立的地區小店欸。\n結果過了六十七年，\n當年賣貨的小弟，竟然回頭買下母廠了。<laugh>\n日經新聞說這叫下剋上，\n聽起來真的有夠諷刺的啦。",
+   "lint": {
+    "chars": 185,
+    "precise_numbers": [
+     "六十七"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 28,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "這裡面有一張轉讓單，過程超戲劇化的。\n其實日立幾年前，有試過最後一搏喔。\n他們指定高階家電不能打折。\n想把定價權從量販店手上拿回來。\n結果呢？這招完全沒有成功。<sigh>\n再加上中國廠一直打低價攻勢。\n撐到後來，日立還是把家電賣給野島了。\n那個野島是誰？\n野島最早只是一家幫日立賣家電的店耶。\n六十七年後，竟然回頭把日立家電買下來。<laugh>\n日經就形容，這根本就是下剋上嘛。",
+   "lint": {
+    "chars": 168,
+    "precise_numbers": [
+     "六十七"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 13.0,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "像這張轉讓單就很扯。<short pause>\n日立在兩三年前想做最後一搏，\n就是規定高階家電不准打折，\n想把定價權從量販店手上搶回來。\n結果呢？\n完全沒成功。<laugh>\n中國廠的低價攻勢又一直打過來。\n最後日立只好把家電事業賣給野島啦。\n你知道野島以前是做什麼的嗎？\n它六十七年前剛創業的時候，\n其實只是幫日立賣電器的小店耶。\n當年賣家電的小弟，\n回頭把老大哥買了下來，\n日經直接用三個字形容，叫做下剋上。",
+   "lint": {
+    "chars": 173,
+    "precise_numbers": [
+     "六十七"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 41,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "日立還是把家電賣給野島了。",
+   "to": "日立還是把日本國內的家電事業，賣給了量販店野島。",
+   "reason": "照原文"
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+{
+ "segment": "s10_taiwan",
+ "position": "第 11 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "738be337ab595cc9efab3ec827d43ed9372aa8637a467e098e46569abfa03d3a",
+ "previous_context": "報告裡說，很有可能是韓國喔。美的跟海信，正用同一套打法進攻美國市場。",
+ "original": {
+  "text": "那台灣呢？台灣是個特例。日系品牌在台灣，常有台灣子公司自己的工廠，像台灣松下在中和、台灣日立冷氣在桃園。所以日本總部把電視交給創維、把冷氣賣給德國的博世，不一定改變台灣這條線。反過來，三洋在台灣早就是台灣品牌，跟日本三洋、跟海爾都沒有關係。報告說，日本設計、日本資本、日本製造，是三件事。想知道自己家那台是誰的，最簡單是看機身銘牌上的製造商和製造國。報告也提醒，很多型號它沒有逐台查核，要以機身標示為準。",
+  "lint": {
+   "chars": 202,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 24.2,
+   "max_sentence_len": 39,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "聊完國外，那台灣呢？\n其實台灣是個特例喔。\n很多日系品牌在台灣，都有自己的工廠。\n像松下在中和、日立冷氣在桃園。\n所以日本總部就算把電視交給創維，\n就是……也不一定會影響台灣這條線。\n反過來，三洋在台灣早就是本土品牌了。\n它跟日本三洋或海爾都沒有關係。\n那要怎麼知道自己買到的是誰？<short pause>\n報告裡說，日本設計、資本和製造，\n根本是三件完全不同的事。\n我覺得最快的方法，就是直接看機身銘牌。\n看上面的製造商跟製造國是誰。\n不過報告裡也有保留喔，\n很多型號沒有逐台查核，\n大家還是要以機身上的標示為準啦。",
+   "lint": {
+    "chars": 232,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.3,
+    "max_sentence_len": 37,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "那台灣呢？\n欸，台灣其實是個特例喔。\n很多日系品牌在台灣，都有自己的工廠。\n像是松下在中和、日立冷氣在桃園。\n所以就算日本總部把電視交給創維，\n或是把冷氣賣給德國 Bosch，\n台灣這條線也不一定會變。\n然後三洋更特別，\n它在台灣早就完全是台資了，\n跟日本三洋或海爾都沒有關係。\n那你買到的到底算哪一國？<short pause>\n這份報告說，這根本是三碼子事。\n就是日本設計、日本資本，還有日本製造。\n這點我真的很認同。\n想搞清楚最快的方法，就是看機身銘牌。\n呃不對，主要是看製造商跟製造國那兩欄。\n不過報告裡也有提醒，\n他們沒有逐台查核，\n最後還是要以機身上的標示為準啦。",
+   "lint": {
+    "chars": 256,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 18.7,
+    "max_sentence_len": 42,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "聊完國外市場，那你家客廳的電器呢？\n在台灣買日系品牌，真的算日本製嗎？\n這份報告說，台灣其實是個特例。<short pause>\n因為很多日系品牌在台灣都有工廠。\n像松下在中和、日立在桃園……\n呃我是說蘆竹，自己就有產線啦。\n所以就算日本總部把電視交給創維、\n冷氣賣給 Bosch，台灣也不一定受影響。\n反過來，台灣三洋早就變成純台資，\n跟日本三洋或海爾完全沒關係。\n報告裡說，資本、設計跟製造是三件事，\n這點我真的很有共鳴。<short pause>\n想知道是誰做的？看機身銘牌最準。\n不過報告也提醒，很多型號沒有逐機查核喔。",
+   "lint": {
+    "chars": 224,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 19.4,
+    "max_sentence_len": 35,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 2,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "就是……也不一定會影響台灣這條線。",
+   "to": "也不一定會影響台灣這條線。",
+   "reason": "規則 18"
+  },
+  {
+   "from": "我覺得最快的方法，",
+   "to": "最快的方法，",
+   "reason": "這是報告的建議，不是 Ping 的經驗"
+  }
+ ]
+}

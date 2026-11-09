@@ -1,0 +1,108 @@
+{
+ "segment": "s02_home",
+ "position": "第 3 段，共 12 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "908819f6dd0c91bda3f001e504699f09993c5b957dd7dd9cbf1bdad069853acc",
+ "previous_context": "日立跟東芝把家電賣掉，是因為母公司想集中去做鐵道、能源跟 AI。家電就這樣被當成拖油瓶切掉了。",
+ "original": {
+  "text": "先倒帶到一九九〇年代。那時候日本企業幾乎壟斷全球的電視市場。但白色家電跟汽車不一樣，幾乎不出口。日本廠的王國，是國內市場加上電視；白色家電在全世界的市占，本來就不高。看需求就知道：九〇年代，日本占全球洗衣機需求的比重，從一成二掉到七％出頭，中國一路往上。報告說，日本白色家電從來不是世界市場的王，它是一個被國內市場養得很好的王。這決定了後面三十年的劇本：國內飽和、母公司出事的時候，它沒有海外可以退。",
+  "lint": {
+   "chars": 200,
+   "precise_numbers": [
+    "三十"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 27.6,
+   "max_sentence_len": 43,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你可能以為，日本家電以前稱霸全世界齁？\n欸，其實大家都誤會了。<short pause>\n一九九〇年代，日本真正壟斷的是電視，\n市占一度超過九成，非常驚人。\n可是冰箱跟洗衣機完全不同，幾乎不出口。\n這份報告裡說，日本白電從來不是世界的王，\n它只是一個被國內市場養得很好的王。\n我看到這邊整個被點醒耶。\n那時候日本自己的需求，早就一直在縮了。\n你猜後面會怎樣？\n國內市場一飽和，母公司其他事業又出事，\n他們在海外，根本連一點退路都沒有嘛。",
+   "lint": {
+    "chars": 194,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 20.6,
+    "max_sentence_len": 36,
+    "sentences_over_20": 3,
+    "particles_per_100": 2.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "不過，為什麼會變成拖油瓶？\n我們把時間拉回一九九〇年代。<short pause>\n那時候日本電視超強，\n全世界九成都是他們的天下。\n但你有沒有想過，冰箱洗衣機呢？\n其實完全是兩回事。對，\n汽車會外銷，\n但日本的白色家電幾乎不出口。\n也就是說，他們根本不是世界市場的王，\n純粹只是被自己國內市場養大的。\n然後你看需求就知道，\n九〇年代日本的需求一直在掉，\n中國那邊卻一路衝上來。<short pause>\n我看到這邊才恍然大悟。\n這份報告的作者說得很精準，\n日本白電後面根本沒有海外腹地可以退。\n國內市場一旦飽和，\n母公司只要出事，就真的只能切掉啦。",
+   "lint": {
+    "chars": 232,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.1,
+    "max_sentence_len": 34,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那為什麼家電會變拖油瓶？\n我們拉回一九九〇年代來看。\n那時候日本電視超強，\n直接吃下全球九成以上的市場。\n可是你有想過嗎？\n像冰箱洗衣機這些白色家電，\n那時候幾乎沒什麼在出口欸。\n日本廠的天下，就是國內加上電視。\n報告裡說，\n他們在被打之前，就退出量的中心了。\n日本洗衣機需求一路掉，只剩百分之七點三。\n我看到這邊整個愣住。<short pause>\n換個說法，日本白電不是全世界的王，\n就只是被自家市場養大的王。\n對啊，這就注定了後面的劇本嘛。\n一旦國內飽和、母公司出事，\n它在海外根本沒有退路可以走。",
+   "lint": {
+    "chars": 223,
+    "precise_numbers": [
+     "百分之七點三"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 29,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "那時候日本自己的需求，早就一直在縮了。",
+   "to": "那時候日本占全球的需求比重，早就一直在縮了。",
+   "reason": "原文是占全球需求的比重"
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "segment": "s03_tv",
+ "position": "第 4 段，共 12 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ffde30bfd081debf9073809c4a29f566806df2642623df0c93a3eac56e662a10",
+ "previous_context": "你猜後面會怎樣？國內市場一飽和，母公司其他事業又出事，他們在海外，根本連一點退路都沒有嘛。",
+ "original": {
+  "text": "那韓國打贏的是什麼？是電視。三星在兩千年代初押注液晶，比 Sony、Panasonic 都快。到二〇一一年，三星的全球電視市占，已經是 Sony 的兩倍多。二〇一五年，Panasonic 和東芝退出美國電視市場。這條線走到二〇二六年：Panasonic 把歐美的電視事業交給中國的創維；Sony 把 BRAVIA 電視拆成一家新公司，TCL 持股百分之五十一，二〇二七年四月開始營運。報告說，日本的電視品牌，到今天只剩 Panasonic 在日本國內還完全自己做。",
+  "lint": {
+   "chars": 220,
+   "precise_numbers": [
+    "兩千",
+    "百分之五十一"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 30.4,
+   "max_sentence_len": 80,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "大家常說韓國打趴日本家電，<short pause> 但他們到底打贏什麼？\n其實就是電視啦。\n那個時候，三星很早就押注液晶。\n呃我是說，他們動作真的比 Sony 快超多。\n沒幾年，三星市占就是 Sony 的兩倍多。\n<sigh> 我看到這邊真的蠻感慨的。\n日系大廠一路退守，連美國市場都放掉了。\n你猜最後變成怎樣？\nPanasonic 把歐美電視交給創維。\n然後 Sony 也把 BRAVIA 拆出去，\n讓 TCL 拿到百分之五十一的股份。\n這份報告裡說，\n現在只剩 Panasonic 在日本國內，\n電視還完全是自己做的喔。",
+   "lint": {
+    "chars": 216,
+    "precise_numbers": [
+     "百分之五十一"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 18.6,
+    "max_sentence_len": 37,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那韓國打贏的仗到底是哪一場？答案是電視。三星在兩千年代初就直接押注 LCD，速度比 Sony 那些日廠快超多。到了二〇一一年，<short pause>三星全球市占已經是 Sony 的兩倍多了。我看到這一段真的蠻震撼的。然後 Panasonic 跟東芝陸續退出美國市場。那個，退到最後變怎樣你知道嗎？Panasonic 把歐美業務交給創維。更扯的是 Sony，把電視部門拆成新公司，讓 TCL 拿到百分之五十一的股份。報告裡說，<short pause>日系電視現在只剩 Panasonic，還完全在日本國內自己做啦。",
+   "lint": {
+    "chars": 221,
+    "precise_numbers": [
+     "兩千",
+     "百分之五十一"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 21.1,
+    "max_sentence_len": 35,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那韓國打贏的到底是什麼？<short pause>\n答案是電視啦。\n三星在兩千年代初押注液晶，速度超快。\n那個時候，Sony 跟 Panasonic，\n腳步完全慢了半拍。\n到了二〇一一年，\n三星的市占率已經是 Sony 的兩倍多。\n你覺得日系品牌撐得住嗎？\n根本守不住啊。<sigh>\n二〇一五年，Panasonic 跟東芝，\n直接退出美國市場。\n然後這條路走到後面，\nSony 把 BRAVIA 電視拆成新公司，\n居然讓 TCL 持股百分之五十一。\n這份報告的作者就說，\n到了今天，\n只剩 Panasonic 在日本國內還完全自己做。",
+   "lint": {
+    "chars": 221,
+    "precise_numbers": [
+     "兩千",
+     "百分之五十一"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 21.1,
+    "max_sentence_len": 43,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "那個時候，三星很早就押注液晶。呃我是說，他們動作真的比 Sony 快超多。沒幾年，三星市占就是 Sony 的兩倍多。",
+   "to": "那個時候，三星很早就押注液晶，動作比 Sony、Panasonic 都快。到二〇一一年，三星的電視市占，已經是 Sony 的兩倍多。",
+   "reason": "規則 18；補上年份"
+  },
+  {
+   "from": "真的蠻感慨的",
+   "to": "真的滿感慨的",
+   "reason": "台灣用字"
+  }
+ ]
+}

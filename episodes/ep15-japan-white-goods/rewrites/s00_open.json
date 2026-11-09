@@ -1,0 +1,122 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 12 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "7483d77c796abd1db7fa555b5fa0c5409276230e3f135d3131fb0d17f2544e57",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "稍微有點年紀的人，大概都聽過一句話：買家電，買日本的就對了。可是現在年輕人買冰箱、洗衣機，可能更常考慮韓國牌，或中國牌。那日本家電是被打敗了嗎？Sony 和 Panasonic，還是我們印象中那個日本品牌嗎？這份報告的作者發現，這種問題，查幾個 Google 搜尋回答不了。所以他交給 agent 去查。agent 交回來的，是一張三十年的轉讓清單，標題只有一句話：不是被打敗，是被賣掉的。",
+  "lint": {
+   "chars": 188,
+   "precise_numbers": [
+    "三十"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 25.9,
+   "max_sentence_len": 41,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你挑家電的時候，是不是也常聽長輩說這句話？\n買日本的就對了啦。\n可是現在挑冰箱，很多人都改買韓國或中國牌耶。\n那，日本家電是真的被打敗了嗎？\nPanasonic 還是原本那個日本品牌嗎？\n這份報告的作者本來想用 Google 查。\n欸不是，查幾個網頁根本查不出答案嘛。<short pause>\n他後來叫 agent 去查。\n結果交回來的，是一張三十年的轉讓單。\n我看到結論整個嚇了一跳。\n上面寫說：日本家電不是被打敗，是被賣掉的。",
+   "lint": {
+    "chars": 188,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 2.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？\n你應該也常聽長輩說，買家電挑日本的就對了齁。\n可是現在挑洗衣機，很多人更常看韓國或中國牌。\n那日本家電到底是被打敗了嗎？\nSony 還有 Panasonic，還是原本那個日本牌嗎？\n這份報告的作者發現，光靠 Google 根本查不出答案。\n你猜他怎麼做？<short pause>\n他直接交給 agent 去查，查出來的東西超扯。\nagent 交回來的，是一張三十年的轉讓單。<short pause>\n重點來了，結論只有一句話。\n日本家電不是被打敗，是被賣掉的。",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.9,
+    "max_sentence_len": 26,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   }
+  },
+  {
+   "text": "你家挑冰箱的時候，\n是不是也覺得買日本的就對了？\n但現在大家好像更常看韓國牌，\n或是中國牌對吧。\n那日本家電到底是被打敗了嗎？\n像 Panasonic，\n還是以前那個日本品牌嗎？\n作者發現，只靠 Google 根本查不出來。<short pause>\n所以他就叫 agent 去挖深一點。\n結果交回來的，是一張三十年的轉讓單。\n最扯的是什麼，你知道嗎？\n標題只有一句話。\n不是被打敗，是被賣掉的。<short pause>\n我看到這句真的整個人愣住。",
+   "lint": {
+    "chars": 181,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 22,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "可是現在挑冰箱，很多人都改買韓國或中國牌耶。",
+   "to": "可是現在挑冰箱，很多年輕人可能更常考慮韓國牌，或中國牌耶。",
+   "reason": "節目擁有者的引子：年輕人可能更多考慮"
+  },
+  {
+   "from": "Panasonic 還是原本那個日本品牌嗎？",
+   "to": "Sony 跟 Panasonic，還是原本那個日本品牌嗎？",
+   "reason": "節目擁有者的引子有 Sony"
+  },
+  {
+   "from": "這份報告的作者本來想用 Google 查。欸不是，查幾個網頁根本查不出答案嘛。",
+   "to": "這份報告的作者本來想用 Google 查，可是查了幾個網頁，根本查不出答案嘛。",
+   "reason": "規則 18：不自我更正"
+  }
+ ]
+}

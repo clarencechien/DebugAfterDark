@@ -1,0 +1,105 @@
+{
+ "segment": "s01_three",
+ "position": "第 2 段，共 12 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a9b21fc5c6ec183681f5ae1882c531baff46164d2c69e6e57d7090f206599cee",
+ "previous_context": "我看到結論整個嚇了一跳。上面寫說：日本家電不是被打敗，是被賣掉的。",
+ "original": {
+  "text": "報告一開頭先下了三個結論。第一，日本白色家電，也就是冰箱、洗衣機這類，垮掉的順序跟電視完全相反：先是資本，再來是市占，至於製造，早就不在日本了。第二，大家常說韓國入侵，其實是誤讀：三星和 LG 打垮的是日本的電視和面板，從來沒有攻進日本的冰箱洗衣機市場。第三，中國廠不是攻城的人，是接手的人。日立、東芝、三洋把家電賣掉，都是母公司決定集中到鐵道、能源、AI，白色家電被當成拖油瓶切掉。",
+  "lint": {
+   "chars": 190,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 37.0,
+   "max_sentence_len": 58,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這份報告裡直接給了三個震撼的結論。\n第一，大家買的白色家電，就是冰箱洗衣機。\n它們垮掉的順序，跟電視完全相反喔。\n是資本先垮，市占率最後才掉。\n那製造呢？製造早就不在日本了啦。\n然後第二點，你以為打垮日本的是韓國嗎？\n其實根本不是。\n三星跟 LG 當年打垮的是電視跟面板。\n日本的冰箱洗衣機，韓國從來沒攻進去過。\n只是電視失血太慘，母公司只好賣白電求生。\n最扯的是第三點。<short pause>\n中國廠商不是來攻城的，他們只是接手的人。\n日立跟東芝把家電賣掉，\n是因為母公司想集中去做鐵道、能源跟 AI。\n家電就這樣被當成拖油瓶切掉了。",
+   "lint": {
+    "chars": 240,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 15.0,
+    "max_sentence_len": 30,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "這份報告裡直接下了三個結論。\n大家以為白色家電跟電視一樣被打爆？\n其實順序完全相反。<short pause>\n它是資本先垮，市占率最後才動，\n而且製造早就不在日本了。\n那你一定會問，那韓國的三星跟 LG 呢？\n這就是大家誤會的地方喔。\n韓國打垮的只有電視跟面板，\n根本沒攻進日本的冰箱洗衣機市場。\n只是日本大廠失血太慘，\n才想把白電賣掉求生。\n然後接手的是誰？就是中國廠嘛。\n像日立、東芝想去做鐵道、能源跟 AI，\n白色家電就被當成拖油瓶切掉了。",
+   "lint": {
+    "chars": 195,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.7,
+    "max_sentence_len": 32,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "這份報告一開頭就講得很直接。<short pause>\n白色家電像冰箱、洗衣機，\n垮掉的順序跟電視完全相反喔。\n資本先撐不住，市占最後才掉，\n製造甚至早就已經不在日本了。\n那你可能會問，韓國品牌不是打很兇嗎？\n對，但三星跟 LG 搶下的是電視跟面板。\n他們根本沒攻進日本的冰箱洗衣機市場啦。\n只是把日本大廠打到失血，逼他們賣掉家電。\n更扯的是，中國廠商其實不是來攻城的，<short pause>\n他們只是來接盤的。\n像日立、東芝想轉去搞鐵道、能源跟 AI，\n白色家電就這樣被當成拖油瓶切掉了。",
+   "lint": {
+    "chars": 206,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 21.9,
+    "max_sentence_len": 35,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0
+}

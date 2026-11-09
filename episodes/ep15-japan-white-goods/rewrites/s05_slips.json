@@ -1,0 +1,114 @@
+{
+ "segment": "s05_slips",
+ "position": "第 6 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "950d50ef8b4270c49473230291121c7ccc607a06540a647eb6a24ec08636f07d",
+ "previous_context": "我讀到這段整個愣住。韓國根本沒搶走日本家電的市占，它搶走的，是日本家電的靠山啦。",
+ "original": {
+  "text": "接下來是中國。報告把十七年來的轉讓，一張一張列出來。二〇一二年，三洋的洗衣機冰箱賣給海爾，AQUA 這個品牌就是這樣來的。二〇一六年，東芝的白色家電賣給美的，連東芝品牌都授權了四十年；同一年，夏普賣給台灣的鴻海。二〇一八年，東芝電視賣給海信。之後日立的海外家電賣給土耳其，東芝、日立的冷氣分別賣給美國和德國的公司。到了今年，Panasonic 歐美電視給創維，Sony 電視給 TCL。報告的結論是：日本白色家電不是在市場上被打掉的，是在併購桌上，一張一張簽掉的。",
+  "lint": {
+   "chars": 228,
+   "precise_numbers": [
+    "十七",
+    "四十"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 27.5,
+   "max_sentence_len": 44,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "靠山被搶走之後，接下來輪到中國了。\n\n這份報告的作者，把轉讓紀錄全列了出來。最震撼的是什麼你知道嗎？<short pause>日本家電根本不是在賣場被打敗的。他們全是在併購桌上，一張一張被簽掉的。就是那個……講白一點，全是用買的啦。\n\n先是三洋把洗衣機跟冰箱賣給海爾，AQUA 這個牌子就是醬來的。然後東芝把白色家電賣給美的，夏普也賣給了台灣的鴻海。後來日立海外家電賣給土耳其，東芝跟日立的冷氣，也陸續切給歐美。到了今年，連 Sony 的電視都要交給 TCL。\n\n整整十七年，買方名單長長一串。<sigh>你應該也以為他們是賣不好才退場的吧？結果完全不是，是對手直接整包買走。",
+   "lint": {
+    "chars": 259,
+    "precise_numbers": [
+     "十七"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 18.9,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那靠山沒了之後呢？<short pause>\n接下來這段就是中國了。\n這份報告把十七年來的轉讓單一張一張排開。\n你知道日本家電是怎麼輸的嗎？\n很多人以為是在賣場被打敗，其實不是耶。\n像三洋的洗衣機跟冰箱先賣給海爾，\n那個 AQUA 就是醬來的。\n然後東芝的白色家電賣給美的，\n東芝連品牌都——\n就是連商標，都給了幾十年的長期授權。\n同一年夏普也賣給鴻海，\n後來東芝電視賣給海信。\n東芝跟日立的冷氣，也都陸續賣給歐美公司。\n更扯的是，連 Sony 跟 Panasonic 的電視，\n最後也都交給中國品牌了。\n<sigh> 這份報告的結論真的讓我起雞皮疙瘩。\n日本家電根本不是在市場被打掉的，\n就是在併購桌上一張一張簽掉的啦。",
+   "lint": {
+    "chars": 268,
+    "precise_numbers": [
+     "十七"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 21.3,
+    "max_sentence_len": 39,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那日本家電到底去了哪裡？<short pause>\n答案是併購桌。\n這份報告列出十幾年來的轉讓單。\n很多你以為是日本牌子的家電，\n其實早就換了老闆。\n像二〇一二年，\n三洋把洗衣機跟冰箱賣給海爾。\n然後美的買下東芝的白色家電，\n同一年鴻海也買下了夏普。\n後來日立跟東芝的冷氣，\n也是陸續賣給歐美企業。\n最扯的是連電視也是醬。\n今年 Panasonic 跟 Sony 的電視，\n就是歐美那邊的業務啦，\n也陸續簽給了中國廠商。<sigh>\n所以日本家電根本不是在市場上輸掉的。\n那它是怎麼沒的？\n就是在談判桌上，一張一張簽出去的啦。",
+   "lint": {
+    "chars": 223,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 41,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "今年 Panasonic 跟 Sony 的電視，就是歐美那邊的業務啦，也陸續簽給了中國廠商。",
+   "to": "今年 Panasonic 把歐美的電視業務交給創維，Sony 也把電視事業的多數股份賣給了 TCL。",
+   "reason": "Sony 賣的是整個電視事業的 51%，不只歐美"
+  }
+ ]
+}

@@ -1,0 +1,134 @@
+{
+ "segment": "s11_outro",
+ "position": "第 12 段，共 12 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "803d62d7a7769ef5577a874ffce3e12a25d6d4364d2ac12badc60d121a971faf",
+ "previous_context": "看上面的製造商跟製造國是誰。不過報告裡也有保留喔，很多型號沒有逐台查核，大家還是要以機身上的標示為準啦。",
+ "original": {
+  "text": "所以回到一開始的問題。日本家電被打敗了嗎？報告的答案是，與其說被打敗，不如說被賣掉、被放棄。Sony 的電視，二〇二七年起是 TCL 控股的公司；Panasonic 還是日資，被日經稱為最後的堡壘。今晚的 breakpoint。第一，日本白色家電是母公司切掉的拖油瓶，中國廠是接手的人，不是攻城的人。第二，韓國打贏的是電視，它拿走的是日本白色家電的靠山。第三，日本設計、日本資本、日本製造是三件事，看銘牌最準。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 237,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 11,
+   "avg_sentence_len": 20.5,
+   "max_sentence_len": 48,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以聊到最後，日本家電真的是被打敗的嗎？其實不是耶。<short pause> 這份報告說，它們就是被母公司主動放棄的。集團想要集中資源，然後把白色家電當拖油瓶切掉啦。想想真的讓人有點感慨。<sigh> 好，今晚的 breakpoint。第一，日本白色家電不是被打敗，而是被母公司放棄。第二，中國廠商是買下日本牌子，然後留下日本工程師。第三，日本品牌不等於日本製造，看機身銘牌最準。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 206,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 24,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "所以回到最根本的問題。\n你覺得日本家電被打敗了嗎？\n這份報告說，其實是被放棄的啦。<short pause>\n母公司為了集中資源搞 AI，\n直接把利潤低的家電當拖油瓶切掉。\n中國廠只是接盤，不是打勝仗喔。\n這份分析的結論，真的讓我起雞皮疙瘩。\n好，今晚的 breakpoint。\n第一，日本白電不是被打敗，是被主動放棄。\n第二，中國廠買品牌留工程師，用借殼打贏。\n第三，日本演完了，下一張轉讓單輪到韓國。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 214,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 28,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "聊到這裡，日本家電真的被打敗了嗎？\n其實這份報告說，他們根本是被放棄的啦。\n母公司想把資源轉走，家電就變成拖油瓶。\n中國廠商只是來接盤，不是什麼攻城者喔。\n最厲害的是，他們買下品牌、留著工程師。\n難怪 Panasonic 會被說是最後的堡壘。<sigh>\n好，今晚的 breakpoint。\n第一，日本白電不是被打敗，是被母公司放棄。\n第二，中國廠買日本品牌，留日本工程師研發。\n第三，設計、資本跟製造是三件事，看銘牌啦。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 230,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 16.7,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "最厲害的是，他們買下品牌、留著工程師。難怪 Panasonic 會被說是最後的堡壘。",
+   "to": "那 Sony 跟 Panasonic 呢？Sony 的電視，二〇二七年起是 TCL 控股的公司；Panasonic 還是日資，被日經稱為最後的堡壘。",
+   "reason": "回答開頭的問題"
+  },
+  {
+   "from": "第三，設計、資本跟製造是三件事，看銘牌啦。",
+   "to": "第三，日本設計、日本資本、日本製造是三件事，看銘牌最準。",
+   "reason": "照 breakpoint 原句"
+  },
+  {
+   "from": "第一，日本白電不是被打敗，是被母公司放棄。",
+   "to": "第一，日本白電是被母公司放棄的拖油瓶，中國廠是接手的人。",
+   "reason": "twtone 對舉；標題句已在開頭用過"
+  }
+ ]
+}

@@ -1,0 +1,128 @@
+{
+ "segment": "s07_damage",
+ "position": "第 8 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "3ff166db4e187e63b72e368902aa3880c1df4a829bddd840c45034b5ee4b1664",
+ "previous_context": "六十七年後，竟然回頭把日立家電買下來。日經就形容，這根本就是下剋上嘛。",
+ "original": {
+  "text": "那到底有多嚴重？報告分三層看，三層的答案不一樣。第一層，世界市占，已經結束了：冰箱前五名沒有任何日本品牌，中國的美的，是全球營收最大的家電公司。第二層，日本國內，市場其實沒有萎縮，去年出貨額是三十多年來第二高，問題是誰在切這塊餅：在日本，中國企業賣的電視已經過半，海爾也宣稱洗衣機超越 Panasonic，排到第二。第三層，製造，早就不在日本了：夏普在二〇一九年，日本國內的白色家電生產就歸零，全部移到泰國。只是消費者現在，才從機身標籤上發現。",
+  "lint": {
+   "chars": 221,
+   "precise_numbers": [
+    "三十"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第二",
+    "第二",
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 35.8,
+   "max_sentence_len": 84,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那現在到底有多嚴重？\n\n報告裡說，這要分三層來看。第一層是世界市占，老實說已經結束了。全球冰箱前五名，連一家日本牌子都沒有。重點是，全球家電營收第一名是中國的美的。\n\n那日本自己的主場呢？其實日本市場根本沒有縮水。<short pause> 出貨金額還是三十多年來第二高，問題是切餅的人換了。現在日本賣的電視，中國品牌加起來已經過半。海爾甚至宣稱，洗衣機超越了 Panasonic，<short pause> 直接升到第二名。這真的蠻驚人的。<sigh>\n\n最後一層是製造，其實早就搬空了啦。像夏普在二〇一九年，日本白電生產全部歸零，全部移去泰國。大家都是看機身標籤，才突然發現這件事。",
+   "lint": {
+    "chars": 252,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [
+     "第一",
+     "第一",
+     "第二",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 17.0,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   }
+  },
+  {
+   "text": "那日本家電現在到底傷得多重？\n這份報告分了三層來看。<short pause>\n第一層是全球市占，\n那個局面基本上已經結束了啦。\n像冰箱前五名，連一家日本品牌都沒有。\n全世界營收最大的家電公司，現在是中國的美的。\n光看那個差距就覺得很誇張。\n然後看日本國內，\n你以為日本市場在萎縮嗎？\n其實完全沒有喔。<short pause>\n去年的出貨額，還是三十幾年來的第二高耶。\n重點是，切這塊餅的人變了。\n像日本賣的電視，中國品牌早就過半，\n海爾也宣稱自家的洗衣機衝到第二名。\n最扯的是製造，早就不在日本了。\n夏普在二〇一九年，\n日本國內的白色家電生產就全部歸零，\n全部移到泰國去。<sigh>\n你真的要翻過來看機身標籤，才會發現這件事。",
+   "lint": {
+    "chars": 266,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 18.0,
+    "max_sentence_len": 33,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   }
+  },
+  {
+   "text": "那到底傷得有多嚴重？\n這份報告分了三層來看。<short pause>\n第一層是全球市場，這裡其實早就結束了。\n全球冰箱前五名，完全找不到日本品牌。\n更扯的是，中國的美的，\n已經是全球營收最大的家電公司。\n第二層呢，就是日本國內。\n你以為日本市場在萎縮嗎？完全沒有喔。\n去年日本的出貨額，是三十多年來第二高耶。\n問題是，切這塊餅的人變了。\n日本現在賣出的電視，中國品牌早就過半。\n海爾也宣稱他們的洗衣機，在日本排到第二名。\n最後是製造端，那更是早就不在日本了啦。\n夏普在二〇一九年，\n日本國內白電生產就直接歸零，全部移到泰國。\n大家只是到了現在，\n才在機身標籤上突然看懂這件事。<laugh>",
+   "lint": {
+    "chars": 260,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第二",
+     "第二"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 29,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2
+}

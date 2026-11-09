@@ -1,0 +1,113 @@
+{
+ "segment": "s08_aircon",
+ "position": "第 9 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "abf42b8b0586d66c0c8a1f2c0a8a3f7e0858fd5a7238082f2ea4326ba97d665e",
+ "previous_context": "夏普在二〇一九年，日本國內白電生產就直接歸零，全部移到泰國。大家只是到了現在，才在機身標籤上突然看懂這件事。",
+ "original": {
+  "text": "有一個例外，是冷氣。日本家用冷氣到今天，還有六家是純日資，像大金、Panasonic、三菱電機。被賣掉的只有東芝、日立、夏普三家，而且都是電機集團底下的冷氣部門，不是專做空調的公司。冷氣的心臟是壓縮機。大金、Panasonic、三菱電機都自己做。有趣的是，中國的美芝，名字就是美的加東芝：一九九五年雙方合資，東芝出技術。現在美芝一年做的冷氣壓縮機，接近全球的一半。報告說，專做空調、握著壓縮機的公司，一家都沒賣。",
+  "lint": {
+   "chars": 206,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 24.8,
+   "max_sentence_len": 42,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "不過白電裡面，有一個例外是冷氣。\n日本家用冷氣到現在，其實還有好幾家純日資喔。<short pause>\n像大金、Panasonic、三菱電機都還在。\n真正被賣掉的，只有東芝、日立跟夏普。\n而且它們都只是電機集團底下的部門。\n為什麼冷氣守得住？\n關鍵就是冷氣的心臟，也就是壓縮機。\n專做空調的大牌子，壓縮機全都自己做。\n這點我覺得差超級多。\n那其他家呢？\n那個……我是說，有些牌子其實是用買的。\n像市占超高的一家叫美芝，\n你知道美芝是誰嗎？\n其實就是美的加東芝啦。<short pause>\n一九九五年東芝把技術拿去合資，\n現在美芝做出來的量，接近全球的一半。\n這份報告裡說，\n手裡握著壓縮機的，一家都沒被賣掉。",
+   "lint": {
+    "chars": 263,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 32,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 2,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "不過冷氣這塊，情況完全不一樣喔。\n日本家用冷氣到現在，還有六家是純日資。\n像是大金、Panasonic，還有三菱電機。\n那為什麼冷氣能活下來？\n關鍵就是心臟，也就是冷氣的壓縮機。<short pause>\n專門做空調的這幾家，壓縮機都自己做。\n被賣掉的東芝、日立跟夏普，\n其實都只是集團底下的冷氣部門啦。\n像那個美芝壓縮機，名字就是美的加東芝。\n東芝在一九九五年合資，對，那時候出技術。\n那美芝現在有多大？\n它一年做出來的量，接近全球的一半耶。<laugh>\n這份報告裡說，\n只要壓縮機還在自己手上，公司真的都沒賣。",
+   "lint": {
+    "chars": 225,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "不過白電裡面有一個例外，就是冷氣。\n為什麼冷氣能活下來？<short pause>\n因為冷氣的心臟壓縮機，還握在自己手上啦。\n日本到現在還有六家純日資，\n像是大金、Panasonic 還有三菱電機。\n被賣掉的其實只有三家，\n而且都是大集團底下的部門，\n不是專門做空調的公司喔。\n那其他牌子的心臟哪裡來的？\n市佔超高的美芝，名字就是美的加東芝。\n一九九五年東芝把技術拿去合資，\n現在美芝一年的產量，接近全球的一半。\n報告裡說，握著壓縮機的公司，一家都沒賣。\n光看這個對比就覺得差很多耶。",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.5,
+    "max_sentence_len": 35,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "東芝在一九九五年合資，對，那時候出技術。",
+   "to": "一九九五年東芝跟美的合資，由東芝出技術。",
+   "reason": "口語順一點"
+  },
+  {
+   "from": "只要壓縮機還在自己手上，公司真的都沒賣。",
+   "to": "專做空調、壓縮機握在自己手上的公司，一家都沒賣。",
+   "reason": "照原文的限定"
+  }
+ ]
+}

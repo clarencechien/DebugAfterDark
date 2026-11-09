@@ -1,0 +1,118 @@
+{
+ "segment": "s09_why",
+ "position": "第 10 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0c8e697d25577e9da94f8815871a7297d9f8e0cd3b2b2ce7e42cbd20d62b3cb9",
+ "previous_context": "它一年做出來的量，接近全球的一半耶。這份報告裡說，只要壓縮機還在自己手上，公司真的都沒賣。",
+ "original": {
+  "text": "把這些收在一起，報告給了三個反直覺的結論。第一，日本白色家電不是被打敗的，是被放棄的：每一張轉讓單，賣方的理由都一樣，集中資源到鐵道、能源、AI 這些企業生意。中國廠買的，是賣方已經決定不要的東西。第二，中國的打法，是買日本品牌，再留下日本工程師；韓國當年硬推自己的品牌，二〇〇七年退出日本。韓國用自己的牌子打，輸了；中國用日本的牌子打，贏了。第三，下一張轉讓單的賣方，可能是韓國：美的、海信正用同一套打法，進攻三星和 LG 在美國的市場。",
+  "lint": {
+   "chars": 217,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 35.2,
+   "max_sentence_len": 57,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "把這些收在一起看，\n報告裡給了很反直覺的結論。\n第一個，日本白色家電不是被打敗的。\n他們其實是被集團主動放棄的啦。\n賣掉的理由都一樣，要轉去做鐵道或能源。\n中國廠買的，是人家已經不要的東西。<short pause>\n那他們在日本是怎麼打贏的？\n重點來了，買日本品牌，留日本工程師。\n這招真的很聰明。<short pause>\n韓國當年硬推自己牌子，\n二〇〇七年退出日本市場。\n用自己的牌子打會輸，\n借日本的牌子反而贏了。\n那下一張轉讓單會輪到誰？\n報告裡說，很有可能是韓國喔。\n中國廠正用同一套打法，\n進攻三星跟 LG 的美國市場。\n我看日本的劇本演完了，\n韓國的才剛翻到中段咧。",
+   "lint": {
+    "chars": 245,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 23,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "這份報告把這些收斂成三個反直覺的結論。\n第一個，日本白電不是被打敗的，\n其實是被自己人放棄的。<short pause>\n每一張轉讓單上，日廠的理由都一樣，\n就是要把資源集中到鐵道、能源跟 AI。\n對，中國廠商買的，是人家不要的拖油瓶。\n那中國廠到底是怎麼打下來的？\n答案是買下日本品牌，把日本工程師留下來。\n這跟韓國當年硬推自己品牌差超多。\n韓國在二〇〇七年退出日本，直接打輸；\n中國用日本的牌子打，反而贏了。<short pause>\n我讀到這裡真的覺得超諷刺的。\n最後一個重點，下一張轉讓單會是誰來賣？\n報告裡說，很有可能是韓國喔。\n美的跟海信，正用同一套打法進攻美國市場。",
+   "lint": {
+    "chars": 249,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 19.8,
+    "max_sentence_len": 34,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "把這些整理起來，\n這份報告給的結論超反直覺。\n第一個是，日本家電不是被打敗的。\n它是被自己人放棄的。<short pause>\n每一張轉讓單的理由都一樣，\n就是把資源轉去做鐵道或能源。\n中國廠買走的，\n根本是人家不要的拖油瓶嘛。\n那中國廠怎麼打贏的？\n他們買下日本品牌，\n然後留著日本工程師做設計。\n你看韓國當年硬推自己的牌子，\n二〇〇七年直接退出日本。<short pause>\n結果韓國自己打輸了，\n中國借日本的牌子反而贏了。\n最耐人尋味的是，\n下一張轉讓單會輪到誰？\n報告裡說，很有可能是韓國喔。\n像美的跟海信，\n現在正用同一套打法，\n去美國進攻三星跟 LG 的市場了。",
+   "lint": {
+    "chars": 240,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 19.0,
+    "max_sentence_len": 31,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "正用同一套打法進攻美國市場。",
+   "to": "正用同一套打法，進攻三星和 LG 在美國的市場。",
+   "reason": "照原文"
+  }
+ ]
+}

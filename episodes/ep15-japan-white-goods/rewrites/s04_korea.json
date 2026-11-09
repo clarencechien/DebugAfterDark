@@ -1,0 +1,111 @@
+{
+ "segment": "s04_korea",
+ "position": "第 5 段，共 12 段",
+ "avoid": [
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "96a0cd107c9b170fdd05140f4a3fa3012d7fe155e34260cb572ad9697468be25",
+ "previous_context": "然後 Sony 也把 BRAVIA 拆出去，讓 TCL 拿到百分之五十一的股份。這份報告裡說，現在只剩 Panasonic 在日本國內，電視還完全是自己做的喔。",
+ "original": {
+  "text": "可是韓國從來沒有攻進日本的冰箱洗衣機。三星在二〇〇七年就退出日本的家電市場；LG 的洗衣機冰箱賣不動，退出日本十二年，到去年才在考慮回去。在美國，三星連續八年家電市占第一，可是被擠下去的，是美國本土的品牌，跟日本無關。所以報告說，韓國對日本白色家電的影響是間接的：它打垮了電機大廠的電視和面板，讓母公司失血，才有後面把白色家電賣掉求生的動機。韓國沒拿走日本白色家電一台市占，它拿走的，是日本白色家電的靠山。",
+  "lint": {
+   "chars": 202,
+   "precise_numbers": [
+    "十二"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 39.4,
+   "max_sentence_len": 61,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那大家常聽到的韓國大軍呢？\n你猜韓國有沒有打進日本的冰箱洗衣機？\n答案是完全沒有耶。<short pause>\n三星早在二〇〇七年，就退出日本市場了。\nLG 的洗衣機也是賣不動，退出了十幾年。\n就算在美國，三星連續好幾年拿第一，\n被打趴的也是美國本土牌子，跟日本無關。\n所以這份報告裡說，韓國影響其實超間接。\n它打垮的是日本的電視跟面板事業，\n母公司狂失血，只好把家電賣掉求生。<sigh>\n我讀到這段整個愣住。\n韓國根本沒搶走日本家電的市占，\n它搶走的，是日本家電的靠山啦。",
+   "lint": {
+    "chars": 206,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 19.6,
+    "max_sentence_len": 35,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "電視被韓國和中國打慘了對不對？\n但你猜韓國有打進日本的冰箱洗衣機嗎？\n完全沒有喔。<short pause>\n三星早在二〇〇七年就退出日本家電了。\n然後 LG 的洗衣機跟冰箱，\n也因為賣不動，在日本消失了十幾年耶。\n就算在美國三星連續多年市占第一，\n被擠下去的也是美國本土牌子，跟日本無關。\n那韓國到底影響了什麼？\n這份報告裡說，那個打擊其實是間接的。\n它先把日本大廠的電視跟面板打趴，\n讓母公司一直失血，\n最後只好把白色家電賣掉換現金求生。\n<sigh> 我覺得最慘的就是這個。\n韓國根本沒搶走日本白電的一台市占，\n它拿走的，其實是日本白電的靠山啦。",
+   "lint": {
+    "chars": 239,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 20.7,
+    "max_sentence_len": 41,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "講到電視，你可能會想，那韓國品牌呢？\n他們不是把日本打得很慘嗎？\n其實在冰箱洗衣機這塊，\n韓國根本沒打進日本市場過喔。\n三星在兩千零七年就退出日本了。\nLG 的洗衣機也賣不動，撤出了十幾年。\n那美國市場呢？\n三星在那邊也是連拿好幾年第一耶。\n但被擠下去的是美國本土牌子，跟日本無關。\n這份報告裡說，\n韓國造成的影響其實很間接。\n就是他們打垮了日本的電視跟面板，\n讓母公司失血過多。\n最後為了活命，才把冰箱洗衣機賣掉。\n<sigh> 你仔細想，這其實超殘酷的。\n韓國根本沒搶走日本一台家電，\n它拿走的，是日本家電最大的靠山。",
+   "lint": {
+    "chars": 237,
+    "precise_numbers": [
+     "兩千零七"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 29,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0
+}
