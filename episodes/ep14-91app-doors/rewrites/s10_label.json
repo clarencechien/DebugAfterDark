@@ -1,0 +1,123 @@
+{
+ "segment": "s10_label",
+ "position": "第 11 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "更扯的是",
+  "我看到這",
+  "我是說"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ec911e5cd7496994d8a2b5224498c102dd37c697f2f52762b26859aa96d7b754",
+ "previous_context": "中午還沒查出原因，就先決定全額退還。先說喔，這是條文整理，我不是律師啦。",
+ "original": {
+  "text": "為什麼 AI 攻擊這個說法這麼好用？報告說，對公司，它把責任往外推，新型態的攻擊聽起來不是誰該預見的；對媒體，它新鮮；對資安業，它好賣。三方的誘因剛好對齊，所以這四個字會比根因更早出現在標題上。公平地說，91APP 自己的報告也寫了，工具新穎不改變公司的責任。報告想指出的是：如果問題是 AI，答案就是買 AI 防禦；如果問題是沒修補、沒驗收、沒紀錄，答案就沒有那麼好買。",
+  "lint": {
+   "chars": 180,
+   "precise_numbers": [
+    "91"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 35.0,
+   "max_sentence_len": 52,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你有沒有想過，\n為什麼大家都愛講「AI 攻擊」？\n這份報告裡說，對出事公司來說，\n這四個字可以把責任往外推嘛。\n然後對媒體來說很新鮮，\n對資安廠商來說產品又好賣。<sigh>\n這根本……就是三方的誘因剛好兜在一起。\n不過平心而論，\n91APP 自己的報告也承認，\n工具再新，責任還是在自己身上。\n我讀到這段真的很有共鳴。\n你想想看，如果問題是 AI，\n去買 AI 防禦就好啦。\n但如果問題是沒修補、沒驗收，\n那解法就真的沒那麼好買了。<short pause>",
+   "lint": {
+    "chars": 192,
+    "precise_numbers": [
+     "91"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 23.0,
+    "max_sentence_len": 35,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "欸，你有沒有發現一件很妙的事？\n為什麼出事時，大家都愛推給 AI 攻擊？\n這份報告點出一個很有意思的觀察。\n推給 AI，聽起來就像不可抗力的天災嘛。\n對媒體來說夠新鮮，對廠商來說又很好賣。\n三方的誘因剛好對齊，難怪標題都這樣下。\n不過平心而論啦，\n91APP 自己也說得很白，\n工具再新，公司該負的責任都不會變。\n重點來了，\n如果問題真的是 AI，花錢買 AI 防禦就好啦。\n但要是問題出在沒修補、沒驗收，\n那種基本功，就真的沒辦法花錢解決了。<sigh>",
+   "lint": {
+    "chars": 203,
+    "precise_numbers": [
+     "91"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 21.6,
+    "max_sentence_len": 37,
+    "sentences_over_20": 3,
+    "particles_per_100": 2.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "聊完責任，你有沒有想過一件事？\n為什麼「AI 攻擊」這個詞這麼好用？\n這份報告裡說，因為大家都需要它嘛。\n對公司來說，責任推給 AI，\n聽起來就不是自己能預防的。\n然後對媒體來說很新鮮，\n對資安業來說又很好賣。\n大家想法剛好對齊，\n標題當然就先寫 AI 啦。\n我讀到這段真的很有共鳴。\n91APP 自己報告其實有承認，\n工具再新，也不會改變公司的責任。<sigh>\n你想想看，如果問題真的是 AI，\n是不是買個 AI 防禦就好？\n但如果是沒修補、沒驗收，\n那個就沒那麼好買到了，對吧？",
+   "lint": {
+    "chars": 213,
+    "precise_numbers": [
+     "91"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.3,
+    "max_sentence_len": 30,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "那種基本功，就真的沒辦法花錢解決了。",
+   "to": "那種基本功，就沒那麼好用錢買到了。",
+   "reason": "照原文"
+  },
+  {
+   "from": "91APP",
+   "to": "九一 APP",
+   "reason": "念法：九一，不是九十一"
+  }
+ ]
+}

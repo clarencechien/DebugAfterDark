@@ -1,0 +1,28 @@
+{
+ "id": "ep14-91app-doors",
+ "number": 14,
+ "type": "full",
+ "guid": "debug-after-dark:ep14",
+ "title": "EP14 門沒換，只是敲門的變多了",
+ "description": "十月底到十一月初，台灣兩起資安事件：91APP 的訂單資料庫被讀走，最多波及四百七十九萬人；永豐銀行 418 個帳戶在一個上午被轉走 4,176 萬元。一家說是 AI 自動化攻擊，一家說不是 AI、是單一駭客。這份調查整理把 AI 兩個字從兩條攻擊路線裡拿掉再讀一次：沒修的漏洞、放在程式碼平台的資料庫金鑰、能直連正式資料庫的主機、用身分證字號試出帳戶，每一環都還是會發生。\n\n今晚的 breakpoint：\n1. 把 AI 拿掉再讀一次，每一環都還成立；門不會認人，它只認有沒有鎖。\n2. AI 改變的是有多少扇門被試，不是門會不會開；它是天候，不是肇因。\n3. 讀取也要有帳本，保留期就是事故的影響半徑；「已確認」和「足以通知」是兩個門檻。\n\n原文：〈門沒換，只是敲門的變多了 — 91APP 與永豐銀兩案調查整理〉v0.2 https://imitator.ai-apps.work/r/91app-breach-findings\n報告依公開資料整理，無第一手鑑識資料，查核截至 2026-11-09；標為推論與未知的部分，可能隨後續報告改變。不構成法律意見。\n消費者：91APP 官方通知只從 @91app.com 寄出，補償登記受理到 2027-02-01；要你操作網銀、ATM 或先付手續費的都是詐騙。永豐的款項已於 11/3 當天退還，不需要申請。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "91app-breach-findings",
+ "report_version": "v0.2（2026-11-09）",
+ "source_url": "https://imitator.ai-apps.work/r/91app-breach-findings",
+ "status": "draft",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "audio": {
+  "file": "ep14-91app-doors.mp3"
+ }
+}

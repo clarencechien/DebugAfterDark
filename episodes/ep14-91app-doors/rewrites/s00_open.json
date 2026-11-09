@@ -1,0 +1,135 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 13 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "fab09617785c55ec9b187994923372efc01ffa8a4df2a53af723abed24dc051a",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "十月底到十一月初，台灣出了兩件資安事件。電商平台 91APP 的訂單資料庫被讀走，最多波及四百七十九萬人。永豐銀行有四百多個帳戶，在一個上午被轉走四千多萬元。一家說是 AI 自動化攻擊，一家說不是 AI，是單一駭客。這份報告做了一件事：把 AI 這兩個字，從兩條攻擊路線裡拿掉，再讀一次。結果每一環都還是會發生。報告的結論是：門不會認人，它只認有沒有鎖。",
+  "lint": {
+   "chars": 170,
+   "precise_numbers": [
+    "十一",
+    "91",
+    "四百七十九萬",
+    "四百",
+    "四千",
+    "萬"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 23.3,
+   "max_sentence_len": 33,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "嘿，還醒著嗎？\n最近台灣資安圈出了兩件大事。\n九一 APP 的資料庫被看光，\n最多可能影響四百七十九萬人。\n然後永豐銀行，一個上午被轉走四千多萬。\n你猜兩家公司怎麼解釋？\n一家說是 AI 自動化攻擊，\n另一家說不是 AI，是單一駭客。\n但這份報告做了一個實驗。\n把 AI 這兩個字抽掉，\n呃就是拿掉之後再讀一次，\n結果勒？每一步都還是會照樣發生。\n我看到這句結論真的起雞皮疙瘩：<short pause>\n門不會認人，它只認你有沒有鎖好啦。",
+   "lint": {
+    "chars": 187,
+    "precise_numbers": [
+     "四百七十九萬",
+     "四千",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.7,
+    "max_sentence_len": 31,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？<short pause>\n十月底那陣子，台灣爆了兩件大案子。\n91APP 的資料庫被讀走，波及四百多萬人。\n然後永豐銀在一個上午，\n被轉走四千一百七十六萬元。\n我看到金額整個人都醒了。\n更扯的是，一家公司說是 AI 自動化攻擊，\n另一家卻說不是，是單一駭客。\n你猜這份報告做了什麼？\n它把 AI 兩個字拿掉，重新看一次。\n就是，呃，就算沒有 AI，\n該破的每一環，其實還是會發生。\n門又不會認人，它只認你有沒有鎖好嘛。",
+   "lint": {
+    "chars": 186,
+    "precise_numbers": [
+     "91",
+     "四百",
+     "萬",
+     "四千一百七十六萬"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 32,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？\n欸，台灣前陣子爆了兩件資安大事喔。\n91APP 的資料庫被讀走，\n最多波及四百七十九萬人。\n然後永豐銀行的網銀，\n一個上午就被轉走四千多萬。\n一家公司說，這是 AI 自動化攻擊啦。\n另一家說不是 AI，\n就是……那個，是單一駭客做的。\n這真的跟 AI 有關嗎？\n這份報告把 AI 拿掉，再讀一次。\n你猜怎麼著？<short pause>\n每一環居然都還是會發生。\n我看到這邊真的起雞皮疙瘩。\n門本來就不會認人，\n它只認你有沒有鎖好嘛。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [
+     "91",
+     "四百七十九萬",
+     "四千",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 24,
+    "sentences_over_20": 3,
+    "particles_per_100": 2.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "嘿，還醒著嗎？最近台灣資安圈出了兩件大事。",
+   "to": "最近台灣資安圈出了兩件大事。",
+   "reason": "cold open 不打招呼"
+  },
+  {
+   "from": "資料庫被看光",
+   "to": "訂單資料庫被讀走",
+   "reason": "照原文"
+  },
+  {
+   "from": "把 AI 這兩個字抽掉，呃就是拿掉之後再讀一次，",
+   "to": "把 AI 這兩個字拿掉之後，再讀一次。",
+   "reason": "規則 18：不自我更正"
+  }
+ ]
+}

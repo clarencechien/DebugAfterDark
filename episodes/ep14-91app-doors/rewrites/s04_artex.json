@@ -1,0 +1,132 @@
+{
+ "segment": "s04_artex",
+ "position": "第 5 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0c4dcb64ff81b6b15829c4b809fb88dd443e4aee906f402b749a524df301ddca",
+ "previous_context": "像公司事後限制連線，報告就推測，那台負責打包的機器，呃我是說 CI 主機，當時竟然能直連正式資料庫耶。測試跟正式環境，那時候搞不好根本沒切開。",
+ "original": {
+  "text": "那 AI 在哪裡？91APP 說，系統裡找到 ARTEX 的痕跡。ARTEX 是一套開源的 AI 滲透測試系統，它不是模型，是一套流程：偵察、找漏洞、規劃路徑、執行、記錄，模型可以隨便插。九、十月，它在好幾份獨立調查裡出現：韓國的金融機構、日本的企業、還有被點名是國家級的團體。同一個工具，出現在營利集團和國家級團體手上，代表它已經是商品。所以報告說，沒有任何公開資料，把 91APP 這件事歸到任何一個人身上。工具相同，不代表人相同。",
+  "lint": {
+   "chars": 208,
+   "precise_numbers": [
+    "91",
+    "91"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 28.7,
+   "max_sentence_len": 57,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "講到這裡你可能會問，那 AI 到底在哪？\n91APP 說，系統裡有 ARTEX 的痕跡。\n那 ARTEX 到底是啥？\n它其實是一套開源的 AI 滲透測試系統。\n簡單講，它本身不是模型喔。\n比較像是幫你找漏洞的自動化流程。\n呃我是說，它背後要插哪一家模型都可以。\n重點來了，這套工具不只出現在台灣。\n韓國的金融機構、日本的企業，都抓到過它。\n連國家級的駭客組織，手上都有一套。\n這代表什麼？\n代表這套系統，早就已經變成商品了嘛。\n所以這份報告說，目前沒有任何公開資料，\n能把 91APP 算在特定組織頭上。<short pause>\n工具相同，真的不代表攻擊的人相同啦。",
+   "lint": {
+    "chars": 246,
+    "precise_numbers": [
+     "91",
+     "91"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 34,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [
+     "啥"
+    ],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "環境沒切好就算了，那這次傳成這樣的 AI 到底在哪？\n91APP 說，他們在系統裡抓到 ARTEX 的痕跡。\n這個 ARTEX 到底是什麼呢？\n它是一套開源的 AI 滲透測試工具。\n它自己不是模型，呃應該說，它像是個排程框架，\n負責把找漏洞的流程串好，後面要接什麼模型都可以。\n重點來了，九月到十月這段時間，\n很多調查報告都抓到它。\n韓國金融機構、日本企業，連國家級駭客都在用。\n光看名單就讓人毛骨悚然。<short pause>\n你知道這代表什麼嗎？\n代表它早就變成隨手能買的軍火了嘛。\n所以這份報告提醒，目前根本沒有公開資料，\n能確認 91APP 到底是誰打的。\n大家工具長得一樣，不代表背後是同一群人啊。",
+   "lint": {
+    "chars": 267,
+    "precise_numbers": [
+     "91",
+     "91"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 21.2,
+    "max_sentence_len": 45,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "講到這裡，你一定會好奇，那 AI 到底在哪？\n91APP 說，他們在系統裡發現了 ARTEX。<short pause>\n那個，ARTEX 其實不是模型喔。\n應該說，它是一套自動化流程啦。\n專門幫忙找漏洞，再規劃路徑打進去。\n後面插的 AI 大腦，你要換哪一家都可以。\n然後在九月跟十月，好多份調查都看到它。\n韓國的銀行遇過，日本企業也看過。\n連國家級的組織都在用，真的很誇張耶。<laugh>\n那這代表什麼？\n就是這套工具，早就變成隨處能流通的商品了。\n所以這份報告裡說，目前根本沒有公開資料，\n可以確定 91APP 到底是被誰攻擊的。\n拿一樣的工具，不代表背後是同一個人嘛。",
+   "lint": {
+    "chars": 247,
+    "precise_numbers": [
+     "91",
+     "91"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 18.0,
+    "max_sentence_len": 37,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "<short pause>那個，ARTEX 其實不是模型喔。應該說，它是一套自動化流程啦。",
+   "to": "<short pause>ARTEX 其實不是模型喔，它是一套自動化流程啦。",
+   "reason": "規則 18：不自我更正"
+  },
+  {
+   "from": "韓國的銀行遇過",
+   "to": "韓國的金融機構遇過",
+   "reason": "原文是金融機構"
+  },
+  {
+   "from": "91APP",
+   "to": "九一 APP",
+   "reason": "念法：九一，不是九十一"
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "segment": "s12_outro",
+ "position": "第 13 段，共 13 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "應該說",
+  "更扯的是",
+  "我看到這",
+  "我是說"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "867e1ded5bca9c9438c9c5c04d16e41cd444fcd10730f01855746847048e4ec3",
+ "previous_context": "只要叫你操作網銀或 ATM，那百分之百是詐騙啦。至於永豐的錢，當天就退還了，你完全不用另外申請喔。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，把 AI 拿掉再讀一次，兩條攻擊路線的每一環都還成立；門不會認人，它只認有沒有鎖。第二，AI 改變的是有多少扇門被試，不是門會不會開；它是天候，不是肇因。第三，讀取也要有帳本，保留期就是事故的影響半徑；已經確認和足以通知，是兩個門檻。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 168,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 23.0,
+   "max_sentence_len": 41,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n大家都在談 AI，但這真的是關鍵嗎？其實不是喔。\n第一個，拿掉 AI，這兩起事件每一環都成立。\n第二個，AI 是壞天氣，門被開是因為沒鎖好。\n對，就是那個……漏洞本來就在那邊啦。\n第三個，存取沒留紀錄，影響範圍只能抓上限。\n這份報告看下來，真的讓人滿感慨的。<short pause>\n原文連結在節目資訊欄。我是 Ping。有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 174,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 13.5,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n你可能會想問，這兩起事件的核心到底是什麼？\n就是那個，很現實的三件事啦。\n第一，把 AI 拿掉，兩邊的破口其實都還成立。\n第二，AI 就像壞天氣，它影響速度但不是肇因。\n第三，沒有逐筆紀錄，影響範圍就只能抓到上限。\n門沒鎖好，就算不靠 AI 也遲早會出事嘛。<sigh>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 172,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。\n所以問題真的出在 AI 嗎？\n<short pause> 其實不是，它只是加速敲門而已啦。\n看到這份報告這樣寫，心情滿複雜的。\n對，就是，工具變快，但防線早就鬆了。\n第一，就算拿掉 AI，兩邊破口每步都成立。\n第二，AI 就像壞天氣，門沒鎖才會被推開啦。\n第三，沒記好誰讀過，放多久資料就算多久。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 177,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>大家都在談 AI，但這真的是關鍵嗎？其實不是喔。第一個，拿掉 AI，這兩起事件每一環都成立。第二個，AI 是壞天氣，門被開是因為沒鎖好。對，就是那個……漏洞本來就在那邊啦。第三個，存取沒留紀錄，影響範圍只能抓上限。這份報告看下來，真的讓人滿感慨的。<short pause>原文連結在節目資訊欄。我是 Ping。有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，把 AI 拿掉再讀一次，這兩起事件的每一環都還是成立。門不會認人，它只認有沒有鎖。第二，AI 改變的是有多少扇門被試，不是門會不會開。它是天候，不是肇因。第三，讀取也要有帳本，保留期就是事故的影響半徑。已經確認，跟足以通知客戶，是兩個門檻。<short pause>原文連結在節目資訊欄。我是 Ping。有收到的話，回我一個 pong。下次見。",
+   "reason": "breakpoint 三點照前面講過的；去掉自我更正"
+  }
+ ]
+}

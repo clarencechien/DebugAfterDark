@@ -1,0 +1,107 @@
+{
+ "segment": "s07_weather",
+ "position": "第 8 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "更扯的是",
+  "我看到這",
+  "我是說"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "33703cbca6a93a6092cb439e03e829f527bf8738ee6362293733cf63f42608e3",
+ "previous_context": "永豐的系統是跟廠商買的，以為對方會盯。兩邊說穿了，其實都沒鎖好啦。",
+ "original": {
+  "text": "那 AI 到底改變了什麼？報告列了三個數字。今年公開的漏洞編號數量，是去年同期的兩倍多；組織修補漏洞的時間反而拉長；觀測到的 AI 代理式攻擊，一個多月就翻了將近三倍。漏洞被找到的速度在加快，修補的速度沒跟上，中間那段空窗，就是攻擊者的工作時間。以前不值得花人力去打的後台小工具，現在試一次幾乎不花錢。所以 AI 改變的，是有多少扇門會被試，它沒有改變這扇門會不會開。報告用飛航事故調查來比喻：AI 在這兩件事裡的位置，就像天候，它影響速度，不決定哪扇門會開。",
+  "lint": {
+   "chars": 223,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 30.9,
+   "max_sentence_len": 59,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那 AI 到底改變了什麼？\n這份報告列了幾個數字。\n公開的漏洞編號比去年多了一倍以上。\n然後大家修補的速度反而變慢了，\n觀測到的 AI 代理攻擊，\n一個多月就翻了將近三倍。\n你問中間這段空窗是什麼？\n那就是攻擊者的上班時間啦。\n以前不值得花人力去試的小後台，\n現在丟給工具跑，成本幾乎是零。\n有專家就說連納骨塔系統都有人打，\n我看到這個描述整個毛毛的。<short pause>\n其實就是，AI 改變了有多少扇門被敲，\n呃，被拿去試探的次數啦，\n但門最後會不會開，\n還是看你有沒有鎖好。\n這份報告把它比成天候，\n天氣不好會加速出事，但不是起因。<short pause>",
+   "lint": {
+    "chars": 237,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 22.7,
+    "max_sentence_len": 48,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "所以啊，AI 到底在裡面扮演什麼角色？\n\n這份報告列了幾個改變。最誇張的是公開漏洞編號，居然飆到二點二倍。然後組織修補的速度完全沒跟上。中間那個空窗期，就成了攻擊者的工作時間耶。\n\n現在有了自動化工具，測試成本小到幾乎不用錢。以前懶得打的後台，現在通通被掃一遍，連納骨塔的系統都有人打。\n\n你想想看，這代表什麼？\n\n其實就是被敲門的次數變多了嘛。這份報告的比喻很有意思，它把 AI 比喻成天候。颳大風會影響速度，<short pause> 但狂風暴雨不會替小偷開鎖啦。門會被推開，純粹是因為本來就沒鎖好。",
+   "lint": {
+    "chars": 227,
+    "precise_numbers": [
+     "二點二"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 29,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "所以問題來了，那 AI 到底改變了什麼？\n\n它讓駭客變神了嗎？其實沒有。\n\n這份報告裡說，AI 改變的其實是分母，也就是有多少扇門會被拿去試。\n\n光是公開漏洞編號，就暴增到兩點二倍。<short pause>\n\n但大家修補的速度根本沒跟上。\n\n然後自動化工具——就是那個攻擊工具，變得超便宜。以前沒人要打的小系統，現在順手掃一下，幾乎零成本。\n\n這真的滿讓人焦慮的齁。\n\n你想想看，這就像路上突然多了一大群小偷，每扇門都轉轉看。要是門鎖本來就鎖好，他轉也轉不開嘛。\n\n對，AI 影響的是速度，不是門會不會開。<short pause>\n\n報告裡打了一個比喻，我覺得超精準。它說 AI 就像空難調查裡的天候，影響了風險，但它本身不是失事的原因啦。",
+   "lint": {
+    "chars": 272,
+    "precise_numbers": [
+     "兩點二"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 18.4,
+    "max_sentence_len": 33,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1
+}

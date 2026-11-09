@@ -1,0 +1,136 @@
+{
+ "segment": "s01_read",
+ "position": "第 2 段，共 13 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "23eccfc5a6b6ce0edede74900dbfebb8b984e75f70c0b7a6b90a5b0226f3e9c9",
+ "previous_context": "每一步都還是會照樣發生。我看到這句結論真的起雞皮疙瘩：門不會認人，它只認你有沒有鎖好啦。",
+ "original": {
+  "text": "先講這份報告怎麼讀。它是依公開資料整理的，沒有第一手的鑑識資料，查核到十一月九號。每一句話後面都蓋了章：已證實、公司自己的說法、報告從措施反推的推論，還有公開資料裡沒有的未知。這集也照這個分法講。先看 91APP。它是幫品牌架官網和 App 的電商平台，品牌的訂單和會員資料放在它的系統裡。可能外洩的是姓名、電話、地址、email 和訂單紀錄，公司說不含密碼和信用卡。因為判斷不出實際被拿走哪些，它用最大範圍認定：十八個月內、一千三百多個品牌的消費者。",
+  "lint": {
+   "chars": 222,
+   "precise_numbers": [
+    "十一",
+    "91",
+    "十八",
+    "一千三百"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 26.8,
+   "max_sentence_len": 46,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先說一下，這份報告是依公開資料整理的。\n裡面每件事都有分等級喔。\n像是主管機關確認的「已證實」，\n還有公司自己講的「官方說法」。\n那 91APP 這次到底被打掉什麼？\n它是幫品牌架官網跟 App 的電商系統。\n被拿走的是放短期訂單的資料庫，\n放了最近十八個月的交易紀錄。<short pause>\n你猜有哪些東西可能外洩？\n姓名、電話、配送地址跟訂單明細。\n不過公司說，密碼跟信用卡號沒有掉。\n因為查不出對方具體偷了哪些，\n他們就抓最大範圍，\n估計有一千三百多家品牌受影響。\n我看到這範圍真的倒抽一口氣。",
+   "lint": {
+    "chars": 221,
+    "precise_numbers": [
+     "91",
+     "十八",
+     "一千三百"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 19.1,
+    "max_sentence_len": 37,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "所以，這次門到底怎麼被開的？\n在聊細節之前，先講這份報告要怎麼聽。\n這份報告是用公開資料整理的。\n裡面每一件事，我都幫你分清楚：\n看是主管機關已證實、公司自己講的，\n還是這份報告推測的，或是根本還不知道。\n好，先來看大家很常用的 91APP。\n它是幫品牌架官網跟 App 的電商服務。<short pause>\n官方說法是，放短期訂單的資料庫被偷了。\n主管機關也證實，確實有資料被拿走。\n那到底外洩了什麼？<short pause>\n有姓名、電話、email 跟訂單紀錄。\n不過公司說，密碼跟信用卡都沒有事。\n很扯的是，因為搞不清楚到底哪些被拿走，\n91APP 乾脆用最大範圍去算。\n受影響的品牌有一千三百多家，\n算下來，消費者最多可能有四百八十萬人，\n那個……我是說，這是官方認定的上限啦。",
+   "lint": {
+    "chars": 298,
+    "precise_numbers": [
+     "91",
+     "91",
+     "一千三百",
+     "四百八十萬"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 21.9,
+    "max_sentence_len": 51,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 2,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "先說這份報告要怎麼讀。它是用公開資料整理的，沒有第一手鑑識。裡面的事情，我們會分清楚是公司講的，還是主管機關已經證實的。\n\n好，先來看 91APP。<short pause> 你可能在很多品牌官網買過東西，那個背後其實就是他們的系統。公司說，放短期訂單的資料庫被偷了。主管機關也證實，部分資料真的被拿走。\n\n那到底外洩了什麼？公司說有姓名、電話、地址跟訂單紀錄。不過公司說，密碼跟信用卡都沒事啦。\n\n最扯的是，因為查不出具體被偷走哪些，他們直接抓最大範圍，牽涉到一千三百二十九家品牌。對，換個說法，就是有將近五百萬名消費者都在名單裡。",
+   "lint": {
+    "chars": 246,
+    "precise_numbers": [
+     "91",
+     "一千三百二十九",
+     "五百萬"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 19.5,
+    "max_sentence_len": 41,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "裡面每件事都有分等級喔。像是主管機關確認的「已證實」，還有公司自己講的「官方說法」。",
+   "to": "裡面每件事都有分等級喔。像是主管機關確認的「已證實」、公司自己講的「官方說法」，還有報告自己的推論，跟目前不知道的。",
+   "reason": "補上四種章"
+  },
+  {
+   "from": "被打掉什麼",
+   "to": "被打的是什麼",
+   "reason": "用字"
+  },
+  {
+   "from": "91APP",
+   "to": "九一 APP",
+   "reason": "念法：九一，不是九十一"
+  }
+ ]
+}

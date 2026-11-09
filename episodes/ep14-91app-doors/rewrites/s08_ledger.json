@@ -1,0 +1,136 @@
+{
+ "segment": "s08_ledger",
+ "position": "第 9 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "更扯的是",
+  "我看到這",
+  "我是說"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "88dd0d827b0f7ffb473d017553d171519bada7a10b730e63084d81eef6844d67",
+ "previous_context": "颳大風會影響速度， 但狂風暴雨不會替小偷開鎖啦。門會被推開，純粹是因為本來就沒鎖好。",
+ "original": {
+  "text": "兩件事還有一個共同點：最先發現的都是客戶，沒有一步是內部監控先發現的。差別在客戶響了之後。永豐在客訴後四小時多就下架，當天退款；91APP 從第一次通報到找到破口，花了十一天。還有一個差別，決定了事後能說多少：寫入的路徑有帳本，讀取的路徑沒有。轉帳本來就會留紀錄，所以永豐能說出每一筆的金額和去向；91APP 重建不出攻擊者查了哪些資料，只能給上限。報告說，這讓兩個平常被當成成本的設定，變成了直接損失：查詢的稽核紀錄，和資料保留期。這座短期資料庫留了十八個月，影響範圍就是十八個月。",
+  "lint": {
+   "chars": 240,
+   "precise_numbers": [
+    "91",
+    "十一",
+    "91",
+    "十八",
+    "十八"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 33.3,
+   "max_sentence_len": 51,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "門沒鎖好就算了，最尷尬的是什麼？<short pause> 是門被推開了，公司自己完全沒發現。\n\n這兩起事件最先叫的警報器，都是客戶欸。永豐是存戶發現錢沒了，91APP 則是消費者接到詐騙。\n\n但客戶反應之後呢？永豐四個多小時就下架退款；91APP 公司說一開始……就是方向先往外查，最後花了十一天才找到破口。<sigh>\n\n重點來了，轉帳本來就會記帳，所以永豐講得出每一筆錢去了哪；但單純讀取資料通常不留痕跡，91APP 根本沒辦法確認對方翻了什麼。\n\n這份報告推測，那個短期資料庫留了一年半，平時又沒存查詢的稽核紀錄，出事就只能通通當成外洩來處理。真的光想就替他們捏一把冷汗。",
+   "lint": {
+    "chars": 259,
+    "precise_numbers": [
+     "91",
+     "91",
+     "十一",
+     "91"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 27.8,
+    "max_sentence_len": 61,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說到開鎖，這兩家最先發現問題的都是客戶。\n內部監控根本沒先抓到，這點滿諷刺的。<sigh>\n差別在客戶反應之後。\n永豐四個多小時就下架系統，當天退款。\n91APP 找到破口，前後花了十一天。\n怎麼會差這麼多？\n公司說，他們一開始習慣先去查外部夥伴啦。\n重點來了，事後能交代多少，差在有沒有帳本。\n轉帳本來就會記帳，永豐能說出每一筆去向。\n可是查資料沒記下來，對，讀取動作沒留底。\n91APP 重建不出被偷看什麼，只能給出上限。\n這份報告推測，平常想省成本，這下全變損失了。\n一個是查資料的稽核紀錄，就是操作留痕跡。\n另一個是保留期，短期資料庫竟然放了一年半。\n要是只留半年，受害人數是不是就少一大半？",
+   "lint": {
+    "chars": 278,
+    "precise_numbers": [
+     "91",
+     "十一",
+     "91"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "說到鎖門這件事。<short pause> 其實這兩起事件最可怕的點是什麼？就是最先發現門開了的，全都是客戶。內部監控完全沒響欸。差別是在客戶反應之後。永豐收到客訴之後，四小時十八分就下架。但 91APP 呢？他們花了十幾天，才終於找到破口在哪。然後重點來了。事後能講清楚多少，全看有沒有記帳。轉帳本來就會留下紀錄嘛，永豐可以把每一筆錢的去向講得很清楚。可是查詢資料通常不會記。那個，小偷到底翻了……就是攻擊者到底查了什麼，根本重建不出來。你光看那幾百萬筆的上限，頭皮就發麻了吧。這份報告推測，有兩個平常被當成成本的設定，直接變成了損失。就是查詢的稽核紀錄，跟資料保留期。那座號稱短期的資料庫，居然留了一年半。",
+   "lint": {
+    "chars": 289,
+    "precise_numbers": [
+     "十八",
+     "91",
+     "百萬"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 16.0,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "要是只留半年，受害人數是不是就少一大半？",
+   "to": "要是只留半年，訂單大概只剩三分之一。",
+   "reason": "照原文：訂單約剩三分之一，人數不等比例縮"
+  },
+  {
+   "from": "91APP",
+   "to": "九一 APP",
+   "reason": "念法：九一，不是九十一"
+  }
+ ]
+}

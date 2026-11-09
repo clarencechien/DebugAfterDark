@@ -1,0 +1,138 @@
+{
+ "segment": "s05_sinopac",
+ "position": "第 6 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d6e0745c9bd4dff6859c34bf5166a73d01cdc72d5702289eca3221c5b025c23e",
+ "previous_context": "所以這份報告裡說，目前根本沒有公開資料，可以確定 91APP 到底是被誰攻擊的。拿一樣的工具，不代表背後是同一個人嘛。",
+ "original": {
+  "text": "再看永豐銀行。它的新網銀，是買國外一家廠商的系統。十一月三號上午，四百一十八個帳戶被轉出，多數一筆十萬元，全部轉到同一個帳戶。早上九點多客服開始接到申訴，中午還沒查出原因，就決定不管結果先全額退還，下午一點多把 App 下架，兩點多全部退完。攻擊路線，銀行只說了一部分：駭客用身分證字號試出有效的帳戶，然後利用供應商系統導入時留下的瑕疵，跳過驗證。跳過哪一道、為什麼能超過非約定轉帳的上限，目前都沒有公開。總經理明確說，這次不是 AI 群攻，是單一駭客。",
+  "lint": {
+   "chars": 223,
+   "precise_numbers": [
+    "十一",
+    "四百一十八",
+    "十萬"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 30.9,
+   "max_sentence_len": 55,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說完 91APP，我們來看永豐銀行這件事。\n他們的「新網銀」，是買國外廠商的新技術。\n十一月初某天早上，事情就大條了。\n四百一十八個帳戶，錢突然被轉走。\n而且全部轉進同一個帳戶耶。<short pause>\n你問銀行反應快不快？\n老實說，危機處理算非常快啦。\n中午決定先全額退款，\n下午一點多就把 App 下架。\n但駭客到底怎麼辦到的？\n銀行是說，對方用身分證字號隨機試誤，\n那個……就是用猜的，找出有效的活帳號。\n然後利用系統導入時的瑕疵，跳過驗證。\n至於跳過哪一道，官方目前沒有公開。\n永豐總經理也有明確表示喔，\n這不是代理式 AI 群攻，是單一駭客發動的。",
+   "lint": {
+    "chars": 248,
+    "precise_numbers": [
+     "91",
+     "十一",
+     "四百一十八"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 18.1,
+    "max_sentence_len": 36,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "講完 91APP，我們來看永豐銀行。<short pause>\n他們的新網銀，是買國外廠商的系統。\n十一月三號早上，有四百一十八個帳戶出事。\n總共四千多萬，多數一筆十萬塊，\n全被轉進同一個帳戶，真的很扯。\n那銀行的反應呢？<short pause>\n他們中午還沒查清原因，就決定全額退款，\n下午一點多下架 App，兩點多就退完錢了。\n這處理速度我光用聽的就覺得超猛。\n那駭客到底怎麼辦到的？\n銀行說是先用身分證字號，試出有效帳號，\n然後利用系統導入的瑕疵，直接跳過驗證。\n就是……那個安全設定根本沒做好啦。\n但跳過哪道驗證，目前完全沒公開；\n怎麼突破轉帳上限，官方也沒有解釋。\n總經理只有強調，這不是 AI 群攻，\n確定是單一外部駭客發動的。",
+   "lint": {
+    "chars": 275,
+    "precise_numbers": [
+     "91",
+     "十一",
+     "四百一十八",
+     "四千",
+     "萬",
+     "十萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 21.9,
+    "max_sentence_len": 38,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那換個場景，來看永豐銀行的案子。\n他們的新網銀，是買國外廠商的系統。\n十一月初的某天上午，突然出大事了。\n有四百一十八個帳戶，莫名其妙被轉走錢。\n而且全部轉進同一個戶頭，\n金額加起來有好幾千萬耶。<sigh>\n你會問，銀行那時候怎麼處理？\n客服早上接到申訴，高層中午緊急開會。\n他們還沒查出……就是還沒搞清楚原因啦，\n就決定先全額退款，\n然後下午把 App 下架。\n處理速度真的算很快。對，\n但駭客到底怎麼辦到的？\n銀行說，對方是用身分證字號隨機亂猜，\n找出有效帳戶，\n再利用系統導入時的瑕疵跳過驗證。\n至於是跳過哪一道檢查？\n官方目前完全沒有公開喔。\n永豐總經理只有澄清，這不是 AI 群攻啦。",
+   "lint": {
+    "chars": 270,
+    "precise_numbers": [
+     "十一",
+     "四百一十八",
+     "千萬"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 18.3,
+    "max_sentence_len": 40,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "十一月初某天早上",
+   "to": "十一月三號上午",
+   "reason": "照原文"
+  },
+  {
+   "from": "對方用身分證字號隨機試誤，那個……就是用猜的，找出有效的活帳號。",
+   "to": "對方用身分證字號隨機試誤，也就是用猜的，找出有效的帳號。",
+   "reason": "規則 18"
+  },
+  {
+   "from": "91APP",
+   "to": "九一 APP",
+   "reason": "念法：九一，不是九十一"
+  }
+ ]
+}

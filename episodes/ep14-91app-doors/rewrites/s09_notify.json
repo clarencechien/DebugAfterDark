@@ -1,0 +1,152 @@
+{
+ "segment": "s09_notify",
+ "position": "第 10 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "更扯的是",
+  "我看到這",
+  "我是說"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "5f8963b060c8112e0ab945f1b7669ed52008f56da0673650d98236d336d2f548",
+ "previous_context": "另一個是保留期，短期資料庫竟然放了一年半。要是只留半年，受害人數是不是就少一大半？",
+ "original": {
+  "text": "那先查明再通知，錯在哪？報告整理了法條：對消費者，個資法要求的是查明後通知，91APP 等到範圍確定才公布，在條文上說得通。問題在另一條線，就是品牌。品牌是被消費者追問的第一線，卻在十月四號到十五號之間，沒有收到平台的任何警示，只能自己比對詐騙訊息去猜範圍。報告說，已經確認，和已經足以通知客戶，是兩個不同的門檻。永豐剛好是反例：中午還沒查出原因，就先決定全額退還。報告也特別註明，這是條文層面的整理，不是法律意見。",
+  "lint": {
+   "chars": 207,
+   "precise_numbers": [
+    "91",
+    "十五"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 28.6,
+   "max_sentence_len": 53,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 3,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "除了保留期，還有一個點被罵翻。<short pause>\n就是「先查明再通知」到底錯在哪？\n個資法規定要查明後通知當事人。\n所以 91APP 確定才對消費者公布，\n在條文上說得通。\n但真正的問題其實出在品牌端。\n誰在第一線被客人追著問？就是品牌耶。\n結果品牌中間有十天，完全沒收到警示，\n只能自己拿詐騙信去猜範圍。\n這份報告裡說，已經確認跟足以通知客戶，\n根本是兩碼子事，呃不是，是兩個不同門檻。\n91APP 混為一談，董事長也為此道歉了。<sigh>\n反過來看永豐銀行，做法就完全相反。\n中午還沒查出原因，就先決定全額退還。\n先說喔，這是條文整理，我不是律師啦。",
+   "lint": {
+    "chars": 246,
+    "precise_numbers": [
+     "91",
+     "91"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 38,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "除了保留期，還有一個點很多人在問。<short pause>\n就是平台說的「先查明再通知」，錯在哪？\n個資法規定要查明後通知當事人。\n所以 91APP 等到十月二十九號才公布，\n其實在法條上說得通啦。\n可是品牌端呢？\n品牌才是被消費者追著問的第一線耶。\n結果整整十幾天，品牌完全沒收到通知，\n只能自己拿詐騙信去猜，超無奈的。<sigh>\n報告裡說，已經確認跟可以先提醒客戶，\n那個、根本是兩回事嘛。\n91APP 混在一起，董事長後來也為此道歉。\n反觀永豐，中午還沒查出原因，\n就先決定全部退還給客戶了。\n先說喔，這是看公開資料的整理，不是法律意見。",
+   "lint": {
+    "chars": 238,
+    "precise_numbers": [
+     "91",
+     "二十九",
+     "91"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 20.6,
+    "max_sentence_len": 33,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "除了保留期，還有通知的時間點。\n\n很多人會問，先查清楚再通知，到底錯在哪？\n\n這份報告裡說，個資法規定查明後通知。所以 91APP 等到十月二十九號才公布，在法條上其實說得通啦。\n\n但問題在那些合作的品牌商家啊。<short pause> 品牌要在第一線面對客人耶。結果中間有十幾天，完全沒收到平台警示。只能拿著詐騙信，不對，是詐騙訊息去猜範圍。這真的讓人蠻傻眼的。<sigh>\n\n就是，你知道嗎？「完全確認」跟「足以提醒客戶」，根本是兩回事。91APP 把兩件事當成同一個，連董事長後來都為這件事道歉。\n\n你看永豐剛好是反例。中午還沒查出原因，就先決定全額退還。\n\n先說喔，這是報告的條文整理，不是法律意見啦。",
+   "lint": {
+    "chars": 271,
+    "precise_numbers": [
+     "91",
+     "二十九",
+     "91"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 17.1,
+    "max_sentence_len": 29,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "結果品牌中間有十天，",
+   "to": "結果品牌中間有十幾天，",
+   "reason": "10/4 到 10/15"
+  },
+  {
+   "from": "根本是兩碼子事，呃不是，是兩個不同門檻。",
+   "to": "根本是兩個不同的門檻。",
+   "reason": "規則 18：不自我更正"
+  },
+  {
+   "from": "先說喔，這是條文整理，我不是律師啦。",
+   "to": "報告也特別說，這是條文整理，不是法律意見喔。",
+   "reason": "Ping 沒有個人身分；照原文"
+  },
+  {
+   "from": "91APP",
+   "to": "九一 APP",
+   "reason": "念法：九一，不是九十一"
+  },
+  {
+   "from": "報告也特別說，這是條文整理",
+   "to": "這份報告也特別說，這是條文整理",
+   "reason": "規則 19"
+  }
+ ]
+}

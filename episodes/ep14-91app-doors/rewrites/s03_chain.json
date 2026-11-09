@@ -1,0 +1,120 @@
+{
+ "segment": "s03_chain",
+ "position": "第 4 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "33f5720e981440885db7c198a52be159dc38fe18ed4f6503749276ecb14de461",
+ "previous_context": "最諷刺的是誰先發現的？對，竟然是那些收到詐騙簡訊的消費者耶。",
+ "original": {
+  "text": "攻擊路線，公司給的是這樣：第一步，一個沒套更新的 Appsmith，這是拼內部後台用的開源工具，公司叫它內部效率工具。第二步，從這台機器進到內網。第三步，在放程式碼的 GitLab 上，找到一座訂單資料庫的金鑰。第四步，經過一台負責自動建置的 CI 主機，碰到正式的訂單資料庫。報告還用了一個方法：一份事後補洞的清單，等於一份事發時有哪些洞的清單。公司事後限制 CI 主機連資料庫，報告就推論，當時 CI 主機可以直連正式資料庫；事後隔離測試和正式環境，推論當時沒有切開。",
+  "lint": {
+   "chars": 227,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三",
+    "第四"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 36.8,
+   "max_sentence_len": 57,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那駭客到底怎麼溜進去的？公司公布的攻擊路線是醬。<short pause>一開始是一個沒套更新的 Appsmith，這是一種拿來拼內部後台的開源工具啦。攻擊者從這台機器鑽進內網，然後在 GitLab，就是放程式碼的平台，居然翻到了訂單資料庫的金鑰。最後經過負責自動建置的 CI 主機，碰到了正式的短期訂單資料庫。這份報告用了一個很妙的切入點，看官方事後補什麼洞，反推當時長怎樣。像事後限制 CI 主機連線，呃換個說法，報告推測當時 CI 主機根本能直連正式環境。事後又隔離測試跟正式環境，等於推測那時候兩邊根本沒切開嘛。<sigh>",
+   "lint": {
+    "chars": 239,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 28.9,
+    "max_sentence_len": 46,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那攻擊者到底怎麼打進去的？\n\n公司公布的攻擊鏈是醬的。起點是一個叫 Appsmith 的工具，<short pause>它是用來拼內部後台的開源軟體，因為有漏洞沒更新，成了破口。\n\n對方進到內網之後，在放程式碼的 GitLab 上面，居然摸到訂單資料庫的金鑰。然後透過自動建置的 CI 主機，碰到短期訂單資料庫，部分資料就這樣被拿走了。\n\n這份報告點出一個很妙的角度。<laugh>看官方事後補了什麼洞，就知道事發時漏了什麼。像公司事後限制連線，報告就推測，那台負責打包的機器，呃我是說 CI 主機，當時竟然能直連正式資料庫耶。測試跟正式環境，那時候搞不好根本沒切開。",
+   "lint": {
+    "chars": 250,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 26.8,
+    "max_sentence_len": 48,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.4,
+    "written_words": [
+     "透過"
+    ],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那駭客到底怎麼溜進去的？\n官方公布的攻擊鏈是醬子的：<short pause>\n一開始是一台沒更新的 Appsmith，\n就是用來拼內部後台的開源工具。\n駭客先拿到這台機器的權限，\n然後就是，呃換個說法，\n他靠這個破口直接摸進內網。\n接著在放程式碼的 GitLab 上，\n居然找到訂單資料庫的金鑰！\n最後經過負責自動建置的 CI 主機，\n把部分訂單資料給拿走了。\n光聽這個過程我都捏一把冷汗耶。<short pause>\n報告裡說，看官方事後補了哪些洞，\n就能反推事發時到底長怎樣。\n像事後才限制 CI 主機連線，\n這份報告推測，\n當時這台主機根本能直連正式資料庫嘛。\n事後才去隔離測試環境，\n代表那時候兩邊根本沒切開啊。",
+   "lint": {
+    "chars": 260,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 27.9,
+    "max_sentence_len": 46,
+    "sentences_over_20": 7,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "然後透過自動建置的 CI 主機",
+   "to": "然後經過自動建置的 CI 主機",
+   "reason": "書面語「透過」"
+  },
+  {
+   "from": "報告就推測，那台負責打包的機器，呃我是說 CI 主機，當時竟然能直連正式資料庫耶。",
+   "to": "這份報告就推測，那台 CI 主機當時竟然能直連正式資料庫耶。",
+   "reason": "規則 18、19"
+  }
+ ]
+}

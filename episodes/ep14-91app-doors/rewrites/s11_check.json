@@ -1,0 +1,139 @@
+{
+ "segment": "s11_check",
+ "position": "第 12 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "應該說",
+  "更扯的是",
+  "我看到這",
+  "我是說"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "81c1879f042421536bceb2289e76bebd1de8c8aa5373ace2f04aef8dfd7a5009",
+ "previous_context": "重點來了，如果問題真的是 AI，花錢買 AI 防禦就好啦。但要是問題出在沒修補、沒驗收，那種基本功，就真的沒辦法花錢解決了。",
+ "original": {
+  "text": "報告最後的建議，不是給這兩家公司的，是給任何有內部工具、有 CI、有客戶資料、有買來的系統的團隊。把內部工具列進資產清單，修補時限跟對外系統一樣；只有員工在用，不再等於不會被試。正式資料庫的帳密不進程式碼平台。CI 和內部工具預設連不到正式資料庫。查詢和驗證的入口要有速率限制。買來的系統，安全設定由自己人逐項驗收。讀取也要有帳本。如果你是消費者：91APP 的官方通知只從 91app.com 寄出，任何要你操作網銀、ATM，或先付手續費才能領補償的，都是詐騙。永豐的款項當天已經退還，不用申請。",
+  "lint": {
+   "chars": 244,
+   "precise_numbers": [
+    "91",
+    "91"
+   ],
+   "enumerations": [],
+   "sentences": 9,
+   "avg_sentence_len": 26.1,
+   "max_sentence_len": 62,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "對，所以這份報告最後給的建議，其實是給所有工程團隊的。你知道最該先做什麼嗎？就是回頭巡一下那些內部工具。修補漏洞的時間，要比照對外系統。因為只有內部在用，早就不能當護身符了啦。<short pause> 然後正式資料庫的密碼，絕對不要明文寫進 CI 裡面。還有外購系統，那個，安全設定一定要自己一項一項驗收。門是買來的，鎖還是自己的責任嘛。那如果你是一般消費者呢？只要叫你操作網銀、按 ATM 領補償，百分之百都是詐騙。91APP 官方信件只會從 91app.com 寄出。至於永豐扣錯的款項，當天就已經退還，不用另外申請喔。",
+   "lint": {
+    "chars": 242,
+    "precise_numbers": [
+     "百分之百",
+     "91",
+     "91"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 19.2,
+    "max_sentence_len": 26,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "所以這份報告最後列的建議，其實是給所有工程團隊看的。說真的，看到這份基本功清單，你應該也會捏一把冷汗吧。就是，大家以為內部工具沒人看，沒有，現在只要連網其實都有風險。修補漏洞的速度，一定要比照對外系統。然後，CI 主機跟內部工具，預設千萬不能直接連正式資料庫。正式環境的密碼，也絕對不能明文寫進 repo 裡面。買來的系統，安全設定一定要自己驗收。那如果你是消費者呢？這時候最怕的就是被二次詐騙。<short pause> 91APP 官方只會用官網信箱寄信。只要叫你操作 ATM 或先付手續費，通通都是詐騙啦。永豐扣錯的款項，十一月三號當天就退還了，完全不用自己申請喔。",
+   "lint": {
+    "chars": 266,
+    "precise_numbers": [
+     "91",
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 21.2,
+    "max_sentence_len": 30,
+    "sentences_over_20": 7,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "所以這份報告最後給的建議，<short pause>\n其實不是只針對這兩家公司喔。\n而是給所有工程團隊的檢查清單。\n你以為內部工具只有自己在用，\n別人就找不到嗎？怎麼可能嘛。\n像放程式碼的平台或 CI 主機，\n修補時限都要比照對外系統。\n而且正式資料庫的帳密，\n絕對不能直接寫在變數裡。\n然後買來的系統更要小心，\n那個、安全設定一定要自己驗收，\n不能廠商說交付了就全盤相信。<sigh>\n另外，如果你是消費者呢？\n91APP 的信只會從官方寄。\n只要叫你操作網銀或 ATM，\n那百分之百是詐騙啦。\n至於永豐的錢，當天就退還了，\n你完全不用另外申請喔。",
+   "lint": {
+    "chars": 235,
+    "precise_numbers": [
+     "91",
+     "百分之百"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.4,
+    "max_sentence_len": 40,
+    "sentences_over_20": 7,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "而且正式資料庫的帳密，絕對不能直接寫在變數裡。",
+   "to": "而且正式資料庫的帳密，絕對不能放進程式碼平台。",
+   "reason": "照原文"
+  },
+  {
+   "from": "那個、安全設定",
+   "to": "安全設定",
+   "reason": "口頭填充"
+  },
+  {
+   "from": "的信只會從官方寄。",
+   "to": "的信只會從官方網域寄出。",
+   "reason": "照原文"
+  },
+  {
+   "from": "91APP",
+   "to": "九一 APP",
+   "reason": "念法：九一，不是九十一"
+  }
+ ]
+}

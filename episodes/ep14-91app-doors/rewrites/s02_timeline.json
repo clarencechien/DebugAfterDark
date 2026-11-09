@@ -1,0 +1,117 @@
+{
+ "segment": "s02_timeline",
+ "position": "第 3 段，共 13 段",
+ "avoid": [
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "df35ccb47ab51ef8f80b6dbd5a073a1266f0f77df49d32b353f4aade63943248",
+ "previous_context": "因為查不出對方具體偷了哪些，他們就抓最大範圍，估計有一千三百多家品牌受影響。我看到這範圍真的倒抽一口氣。",
+ "original": {
+  "text": "時間線是這樣的，以下是公司的說法。十月三號，訂單資料庫被非法存取。隔天，第一個品牌通報：消費者收到帶有真實資訊的詐騙訊息。可是比對之後，詐騙訊息裡的資料有部分對不上，所以先往品牌那端查。十月七號，一天又多了五家品牌通報。十月八號成立應變小組，但這天品牌沒有收到提醒，董事長事後承認是疏失。十四號外部團隊進駐，當晚就找到破口。從被入侵到找到破口，花了十一天；最先發現的，是收到詐騙訊息的消費者。",
+  "lint": {
+   "chars": 196,
+   "precise_numbers": [
+    "十四",
+    "十一"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 23.5,
+   "max_sentence_len": 33,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那整件事到底怎麼發生的？\n以下都是公司公開的說法喔。\n十月三號，訂單資料庫就被人動過了。\n隔天就有客人收到帶有真實訂單的詐騙訊息。\n然後品牌跑去反應。\n公司一開始比對覺得對不上，<short pause>\n呃就是，以為是品牌自己那邊漏的。\n結果幾天後，又有好幾家品牌通報。<sigh>\n你猜這時候其他品牌知道了嗎？\n完全沒有。\n公司開應變會議，卻沒提醒其他品牌，\n董事長事後也承認這確實是疏失啦。\n重點來了，外部專家一進來，當晚就抓到破口。\n整個過程整整拖了十一天耶。\n最扯的是，最先發現被駭的竟然是消費者。",
+   "lint": {
+    "chars": 221,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.0,
+    "max_sentence_len": 32,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "來看一下時間線，這都是公司的說法喔。\n十月初，他們的資料庫被非法存取。\n隔天就有消費者收到很準的詐騙訊息。\n你猜公司一開始怎麼想？\n他們比對之後發現資料對不上。<short pause>\n呃就是……先懷疑是品牌端自己外洩啦。\n結果幾天後，又連爆了好幾家品牌通報。<sigh>\n公司這才成立應變小組。\n但更扯的是，他們當天完全沒通知品牌。\n這點連他們董事長事後都承認是疏失。\n直到外部團隊進駐，當晚才抓到破口。\n這中間拖了整整十一天。\n最諷刺的是誰先發現的？\n對，竟然是那些收到詐騙簡訊的消費者耶。",
+   "lint": {
+    "chars": 216,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 14.4,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那這到底是怎麼發生的？\n\n照公司的說法，<short pause> 十月初資料庫就被偷開了。隔天就有品牌來反應。就是，有客人收到很逼真的詐騙簡訊。\n\n那官方當下有發現嗎？完全沒有。因為資料對不上，呃我是說，細節不太吻合，他們還以為是品牌自己漏出去的。\n\n然後過沒幾天，好幾家品牌也通報。<sigh> 公司這才成立應變小組，但那時完全沒提醒其他品牌，董事長事後也承認這是疏失。\n\n後來外部團隊進駐，當晚就找到破口。最扯的是什麼？從入侵到找到問題，整整花了十一天耶。結果最先發現的，居然是買東西的客人，這真的會讓人超傻眼齁。",
+   "lint": {
+    "chars": 231,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 36,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "<short pause>呃就是……先懷疑是品牌端自己外洩啦。",
+   "to": "<short pause>所以先懷疑是品牌端外洩啦。",
+   "reason": "規則 18：不自我更正"
+  }
+ ]
+}
