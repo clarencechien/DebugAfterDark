@@ -19,6 +19,8 @@
 | [EP11](episodes/ep11-delete-eighty/) | 八成要刪掉：回頭看 2026（接著 EP10） | 定稿；第一集用 Modal GPU 挑選、全程約 9 分鐘 |
 | [EP12](episodes/ep12-tw-stock-autopsy/) | 你聽過的台股必勝法（台股驗屍 1/2） | 定稿 |
 | [EP13](episodes/ep13-cb-autopsy/) | 公司發可轉債，是利多還是警訊？（台股驗屍 2/2） | 定稿 |
+| [EP14](episodes/ep14-91app-doors/) | 門沒換，只是敲門的變多了（91APP 與永豐銀） | 定稿；報告 v0.2（11/9） |
+| [EP15](episodes/ep15-japan-white-goods/) | 不是被打敗，是被賣掉的（日本白色家電） | 定稿 |
 
 - 一集怎麼做：[`docs/recipe.md`](docs/recipe.md)
 - 一集要多久：從定稿的草稿到 mp3 約 9 分鐘，以前約 50 分鐘（2026-11-07，EP11 第一次照新做法跑）。

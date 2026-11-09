@@ -8,7 +8,7 @@
  "report_slug": "91app-breach-findings",
  "report_version": "v0.2（2026-11-09）",
  "source_url": "https://imitator.ai-apps.work/r/91app-breach-findings",
- "status": "draft",
+ "status": "final",
  "voice": {
   "provider": "gemini",
   "model": "gemini-3.8-flash-tts",
@@ -40,5 +40,6 @@
   "both_wrong": "語尾「勒／呢」寫成「咧」、「滿」寫成「蠻」、ARTEX 的字母",
   "twtone": "qa/twtone.md：兩句對舉是永豐總經理的原話，保留",
   "terms": "Ping、pong 3 次都判為英文念法"
- }
+ },
+ "published": "2026-11-09T10:37:00+08:00"
 }
