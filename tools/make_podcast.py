@@ -167,6 +167,12 @@ def cmd_judge(a):
 def cmd_episode(a):
     c = client(); sc = load_script(a.script); d = seg_dir(a); d.mkdir(parents=True, exist_ok=True)
     vid = voice_id(a.voice); log = []
+    if os.environ.get("modal"):   # selection runs Breeze on Modal next; start its container now (2026-11-10)
+        try:
+            from modal_breeze import warm_remote
+            warm_remote()
+        except ImportError:
+            pass
     log_path = d / "log.json"
     old = {r["id"]: r for r in json.loads(log_path.read_text())} if log_path.exists() else {}
     only = set(a.only.split(",")) if a.only else None
