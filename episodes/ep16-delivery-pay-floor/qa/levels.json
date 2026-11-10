@@ -1,0 +1,80 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -22.1,
+  "gain_db": 2.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_law",
+  "lufs_before": -21.5,
+  "gain_db": 1.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_prices",
+  "lufs_before": -20.3,
+  "gain_db": 0.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_data",
+  "lufs_before": -20.1,
+  "gain_db": 0.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_formula",
+  "lufs_before": -21.9,
+  "gain_db": 1.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_cities",
+  "lufs_before": -22.6,
+  "gain_db": 2.6,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_rule",
+  "lufs_before": -21.7,
+  "gain_db": 1.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_check",
+  "lufs_before": -21.6,
+  "gain_db": 1.6,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_result",
+  "lufs_before": -21.3,
+  "gain_db": 1.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_nyc",
+  "lufs_before": -20.7,
+  "gain_db": 0.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s10_waits",
+  "lufs_before": -20.1,
+  "gain_db": 0.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s11_homework",
+  "lufs_before": -22.5,
+  "gain_db": 2.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s12_outro",
+  "lufs_before": -22.5,
+  "gain_db": 2.5,
+  "lufs_after": -20.0
+ }
+]

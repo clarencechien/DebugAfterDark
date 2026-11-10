@@ -23,6 +23,23 @@
   "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
  },
  "audio": {
-  "file": "ep16-delivery-pay-floor.mp3"
+  "file": "ep16-delivery-pay-floor.mp3",
+  "bytes": 9468705,
+  "sha256": "97d1fe7d7c7dc7f2a7ad8c93146b57b250569be811197cebba0062bbbdce55d0",
+  "duration_s": 591.8,
+  "duration": "9:51",
+  "lufs": -16.9
+ },
+ "qa": {
+  "breeze_cer_mean": 0.035,
+  "jitter_semitones": 0.234,
+  "gates": "錯誤率 3.5%（剛好在門檻）；音高跳動 0.234，比門檻 0.23 高一點",
+  "manual_pick": "s02、s03、s09、s10 改用音高正常的那次（自動挑到的高 8.7–11.4 Hz），不用補錄",
+  "consistency": "qa/consistency.json：s05、s11 音高 -6.3 Hz；s07 語速 -10%；接縫亮度 s08→s09 跳最多",
+  "breeze_s11": "s11 Breeze 錯誤率 9.8%，多為 foodpanda、寫 code 和同音字；Gemini 1.1%",
+  "both_wrong": "「滿」寫成「蠻」兩次、「進來時」的時寫成是",
+  "selection_time": "挑選 9 分鐘：Modal 第一批在開始後 412 秒才回來，GPU 實際只算了 37.5 秒；四批 GPU 合計 123 秒，其餘是等容器開機，而且四批由同一台容器依序處理。本機特徵約 30 秒",
+  "twtone": "qa/twtone.md：沒有超過基準的項目",
+  "terms": "Ping、pong 3 次都判為英文念法"
  }
 }
