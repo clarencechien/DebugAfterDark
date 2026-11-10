@@ -24,6 +24,23 @@
   "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
  },
  "audio": {
-  "file": "ep19-ownership-token.mp3"
+  "file": "ep19-ownership-token.mp3",
+  "bytes": 10237768,
+  "sha256": "7c2ab9fb3be6285d49af2af55af86d0d9885d4a356fe82ed6862955fcea73087",
+  "duration_s": 639.8,
+  "duration": "10:39",
+  "lufs": -16.8
+ },
+ "qa": {
+  "breeze_cer_mean": 0.031,
+  "jitter_semitones": 0.226,
+  "retakes": "s05 把「查核完之後」改成「接下來」（兩套辨識都聽成「茶喝」）、s11 把「分果實跟擋蓋廠」改成「把果實分出去，跟擋下新的廠」（兩套都聽不懂），兩段各重錄 3 次",
+  "manual_pick": "s11 改 take1（take0 jitter 0.273）",
+  "consistency": "qa/consistency.json：各段音高在中位數 ±6 Hz 內；s02、s04、s10 語速偏快一成多；接縫亮度 s03→s04 跳最多",
+  "both_wrong": "「量尺」的尺、「經濟權」的權、「滿」寫成「蠻」兩次",
+  "selection_time": "挑選 1 分 27 秒；補錄後重選 Modal 12–13 秒",
+  "twtone": "qa/twtone.md：沒有超過基準的項目",
+  "terms": "Ping、pong 3 次都判為英文念法",
+  "gates": "錯誤率 3.1%、音高跳動 0.226 都通過"
  }
 }

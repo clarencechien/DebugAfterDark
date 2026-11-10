@@ -1,0 +1,80 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -22.8,
+  "gain_db": 2.8,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_two",
+  "lufs_before": -24.1,
+  "gain_db": 4.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_spacex",
+  "lufs_before": -20.4,
+  "gain_db": 0.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_halves",
+  "lufs_before": -23.1,
+  "gain_db": 3.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_texas",
+  "lufs_before": -21.1,
+  "gain_db": 1.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_labor",
+  "lufs_before": -21.9,
+  "gain_db": 1.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_futures",
+  "lufs_before": -22.0,
+  "gain_db": 2.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_share",
+  "lufs_before": -20.4,
+  "gain_db": 0.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_vote",
+  "lufs_before": -20.6,
+  "gain_db": 0.6,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_midterm",
+  "lufs_before": -21.3,
+  "gain_db": 1.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s10_block",
+  "lufs_before": -21.1,
+  "gain_db": 1.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s11_action",
+  "lufs_before": -21.4,
+  "gain_db": 1.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s12_outro",
+  "lufs_before": -21.7,
+  "gain_db": 1.7,
+  "lufs_after": -20.0
+ }
+]
