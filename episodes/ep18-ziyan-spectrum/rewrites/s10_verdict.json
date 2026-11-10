@@ -1,0 +1,111 @@
+{
+ "segment": "s10_verdict",
+ "position": "第 11 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "更扯的是",
+  "我看到這",
+  "真的假的",
+  "呃不對"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "21f174017f1a4d10043d7b7beff730dd1fdfdf117cbbf7cd636e96c5b292d0ed",
+ "previous_context": "然後華為又把整套電驅賣給其他品牌。對，這兩種相反的模式，在中國同時存在耶。",
+ "original": {
+  "text": "所以七欄查完，報告的結論是：要看穿自研，問的從來不是誰做的，而是三題。規格是誰定的？系統是誰調的？出事的時候，誰改得動？拿這三題回頭看：追覓的馬達和清潔產品，三題多半是它，但擴張用的錢不是它的，監管一收就改不動。戴森的吸塵器馬達三題都是它，吹風機那顆，跟追覓是同一個問號。下次你在鐵道博物館看到那顆吊起來的電樞，可以想一想：做出它的人、檢修它的人、名字被記住的人，可能都不一樣。",
+  "lint": {
+   "chars": 189,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 26.0,
+   "max_sentence_len": 52,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 3,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以這份報告查完，到底什麼叫自研？\n其實關鍵從來不是誰做的。<short pause>\n你要問的是：規格誰定的？系統誰調的？\n還有出事的時候，誰改得動？\n追覓在馬達上，這三題多半過關。\n可是擴張用的錢不是自己的。\n出事就改不動了，對吧？\n戴森也是喔，吸塵器自己做，吹風機就未必。\n我看到結論真的很有共鳴。\n名字被記住的人，跟守住技術的人，\n那個……常常根本不是同一批人嘛。\n名字是行銷，這三題才是真本事啦。",
+   "lint": {
+    "chars": 179,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 13.9,
+    "max_sentence_len": 31,
+    "sentences_over_20": 1,
+    "particles_per_100": 2.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 1
+   }
+  },
+  {
+   "text": "講了這麼多，那到底怎樣才算自研？<short pause>\n這份報告的作者給了三個問題。\n不是問誰做的，而是規格誰定的？\n系統誰調的？還有，出事時誰改得動？\n拿這三題來看，追覓的清潔馬達多半是它。\n對，可是它擴張用的錢不是自己的，\n監管一收，它就改不動了。<short pause>\n戴森的吸塵器馬達三題都過關，\n但吹風機那顆馬達，就跟追覓一樣打個問號。\n就是，我讀到這段其實很有共鳴。\n名字被大家記住的人，\n跟真正守住技術的人，常常不是同一群嘛。",
+   "lint": {
+    "chars": 187,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.7,
+    "max_sentence_len": 33,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   }
+  },
+  {
+   "text": "所以整份報告查完，作者給了一個很有意思的判定標準。要看穿所謂的自研，重點從來不是「東西是誰做的」。<short pause>而是這三題：規格是誰定的？系統是誰調的？出事的時候，誰改得動？你看追覓，馬達跟清潔產品這三題多半能過關。但他們擴張的錢不是自己的，監管一收緊，那個層次你就完全改不動啦。戴森也是，吸塵器馬達三題都是它，可是吹風機裝中驅電機的那款，就留下跟追覓一樣的問號。說穿了，名字被大家記住，跟技術守不守得住，常常是兩回事。",
+   "lint": {
+    "chars": 203,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 21.6,
+    "max_sentence_len": 41,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "所以這份報告查完，到底什麼叫自研？其實關鍵從來不是誰做的。<short pause>你要問的是：規格誰定的？系統誰調的？還有出事的時候，誰改得動？追覓在馬達上，這三題多半過關。可是擴張用的錢不是自己的。出事就改不動了，對吧？戴森也是喔，吸塵器自己做，吹風機就未必。我看到結論真的很有共鳴。名字被記住的人，跟守住技術的人，那個……常常根本不是同一批人嘛。名字是行銷，這三題才是真本事啦。",
+   "to": "所以這份報告查完，到底什麼叫自研？關鍵從來不是誰做的。<short pause>你要問的是三題：規格是誰定的？系統是誰調的？出事的時候，誰改得動？拿這三題回頭看：追覓的馬達和清潔產品，三題多半是它，可是擴張用的錢不是它的，監管一收就改不動了。戴森的吸塵器馬達，三題都是它；吹風機那顆，跟追覓是同一個問號。下次你在鐵道博物館看到那顆吊起來的電樞，可以想一想：做出它的人、檢修它的人、名字被記住的人，可能都不一樣。",
+   "reason": "規則 18；照原文的判定；回到開頭的博物館"
+  }
+ ]
+}

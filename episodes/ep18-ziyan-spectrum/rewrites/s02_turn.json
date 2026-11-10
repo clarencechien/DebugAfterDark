@@ -1,0 +1,112 @@
+{
+ "segment": "s02_turn",
+ "position": "第 3 段，共 12 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "9c88f21ab33191c3662bd4888fb60bd42ab4389f96678eb3be6b4ae5b6c2b86d",
+ "previous_context": "然後創辦人相信技術可以到處套用。最扯的重點來了，支撐他們的錢根本不是掃地機賺的，而是靠造車的故事去拉地方資金啦。",
+ "original": {
+  "text": "轉折在今年五、六月。先是一篇爆文，直指追覓盯上地方政府的產業基金；接著中國國務院發了私募基金的監管意見，點名政府投資基金。之後，再跟地方國資合作成立新基金幾乎不可能，募資和融資兩條路同時被堵。六月中，兩百多個事業單位收斂成四大板塊，整車量產歸零。報告說，這是融資引擎熄火後，被迫砍掉最燒錢的線，談不上壯士斷腕。主業沒垮，總部照常上班。判定是：無邊界是融資敘事，不是技術能力。",
+  "lint": {
+   "chars": 187,
+   "precise_numbers": [
+    "兩百"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 25.7,
+   "max_sentence_len": 50,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "可是這個泡沫破得超快，轉折就在年中。\n先是一篇爆料，說他們盯上地方政府的錢。\n然後官方突然出手，收緊了投資基金的監管。\n你猜結果怎樣？<short pause> 融資的路直接全被堵死。\n更扯的是，兩百多個單位瞬間被砍，\n整車量產直接歸零。\n<sigh> 我看到這邊真的捏一把冷汗耶。\n不過主業其實沒垮，總部大家還是照常上班。\n重點來了，這份報告的作者說得很白：\n那個技術無邊界，說穿了只是融資話術啦。",
+   "lint": {
+    "chars": 170,
+    "precise_numbers": [
+     "兩百"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 35,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "但這個好日子其實沒過多久。\n\n就是五、六月的時候，\n官方收緊了地方基金的監管。\n你猜結果怎樣？\n募資跟融資的路直接被堵死。\n最燒錢的造車計畫根本撐不住。<short pause>\n整車量產直接歸零，\n兩百多個業務單位被狠狠縮編。\n\n我看到這邊真的直搖頭。<sigh>\n報告裡說這談不上什麼壯士斷腕啦，\n就是融資熄火後被迫停掉而已。\n不過他們掃地機的主業沒垮，\n總部停車場還是天天停滿滿。\n重點來了，\n那個所謂的技術無邊界，\n說穿了只是拉投資的故事而已。",
+   "lint": {
+    "chars": 190,
+    "precise_numbers": [
+     "兩百"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 18.0,
+    "max_sentence_len": 29,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "轉折就發生在今年五、六月。<short pause>\n那時候官方發布了監管意見。\n政府投資基金直接被點名。\n你猜後果是什麼？\n地方資金直接斷掉。\n募資跟融資兩條路都被堵死啦。\n原本兩百多個 BU，一口氣被砍到剩四塊。\n整車量產也直接歸零。\n<sigh> 我看到這邊真的很感慨。\n這份報告說，這根本談不上壯士斷腕。\n就是融資引擎熄火，被迫砍掉燒錢的線。\n雖然掃地機主業總部還正常上班，\n但作者的判定很直接。\n那個所謂的技術無邊界，\n說穿了就只是拿來融資的故事而已嘛。",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [
+     "兩百"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 27,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "原本兩百多個 BU，",
+   "to": "原本兩百多個事業單位，",
+   "reason": "用字"
+  }
+ ]
+}

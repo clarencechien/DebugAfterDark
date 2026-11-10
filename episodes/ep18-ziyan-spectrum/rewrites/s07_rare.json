@@ -1,0 +1,104 @@
+{
+ "segment": "s07_rare",
+ "position": "第 8 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "789dfa776645dad3581bf1ebadb9ef632fcf859c971bedefd2efdebf22b9dba7",
+ "previous_context": "這份報告裡說，高速馬達能做出來，是結構、材料、晶片跟控制演算法，四條線在兩千年代交會的結果。對啊。",
+ "original": {
+  "text": "說到磁鐵，就會講到稀土。常聽到一句話：沒有中國的稀土，就沒有馬達。報告說，這跟清華天才攻克戴森是同一類敘事。馬達端其實有退路：特斯拉早期用感應馬達，轉子不放磁鐵；BMW 用電勵磁，轉子繞線圈通電當磁鐵；也有車用便宜的鐵氧體磁鐵。代價是效率或體積。所以稀土決定的，是每公斤能擠出多少功率。電動車空間比較寬，可以用體積換；手持的高速馬達賣的就是小、輕、快，越在乎體積重量，越離不開稀土。",
+  "lint": {
+   "chars": 190,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 26.1,
+   "max_sentence_len": 58,
+   "sentences_over_20": 2,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說到材料，常聽人說沒有稀土就做不出馬達。\n真的假的啦？\n這份報告裡說，馬達其實有很多退路。\n像特斯拉早期用感應馬達，裡面根本不放磁鐵。\nBMW 是用電勵磁，也就是轉子繞線圈通電。<short pause>\n那不用稀土的代價是什麼？\n就是體積會變大，或是稍微耗電一點。\n所以稀土決定的，是每公斤能擠出多少功率。\n電動車空間比較大，可以用體積去換。\n可是手持高速馬達要的是小跟輕嘛。<short pause>\n越在乎體積重量，就越離不開稀土啦。",
+   "lint": {
+    "chars": 183,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說到材料，很多人常說，沒有稀土就做不出馬達。真的只能靠稀土嗎？<short pause> 其實沒有這回事。這份報告的作者說，替代方案多的是。像是特斯拉早期用感應馬達，完全不放磁鐵。BMW 是在轉子繞線圈，通電當電磁鐵。那稀土到底差在哪裡？答案就是體積跟重量啦。電動車底盤空間很大，馬達做大顆一點沒關係。可是手持吸塵器不行啊。你要拿在手上，體積本身就是產品嘛。你看戴森第二代換成釹磁鐵，體積直接縮到只剩三分之一。所以越在乎輕巧的東西，就越離不開稀土。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 25,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "講到材料，大家一定會聯想到稀土。\n常有人說，沒有稀土就做不出馬達。\n真的是醬嗎？其實不是耶。<short pause>\n像特斯拉早期轉子根本沒放磁鐵，\nBMW 也是靠線圈通電，那個，就是當電磁鐵啦。\n那代價是什麼？\n就是馬達會變比較大顆，不然就比較耗電。\n這份報告裡說，稀土真正決定的，\n是每公斤到底能擠出多少功率。\n電動車空間大，可以用體積去換嘛。\n但手持高速馬達不行啊，賣點就是小跟輕。\n我讀到這整個被點醒，\n越在乎體積跟重量，才越離不開稀土。",
+   "lint": {
+    "chars": 198,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.0,
+    "max_sentence_len": 36,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0
+}

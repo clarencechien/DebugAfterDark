@@ -1,0 +1,127 @@
+{
+ "segment": "s03_motor",
+ "position": "第 4 段，共 12 段",
+ "avoid": [
+  "你猜"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "c7278d35cfc4cbc2c0a629964524ba10d86d0e6baf75d5e0d5b6bceed63b344e",
+ "previous_context": "雖然掃地機主業總部還正常上班，但作者的判定很直接。那個所謂的技術無邊界，說穿了就只是拿來融資的故事而已嘛。",
+ "original": {
+  "text": "那十萬轉的馬達，到底有多難？報告說，真的難，三件事同時變難：轉子一點點不對稱就會振動、晶片要即時算電流才不會失控、還有做幾百萬顆每顆一樣穩。二〇一五年它確實難，因為整條供應鏈還不存在。然後它被填平了：戴森二〇一六年推出高速吹風機，深圳的馬達老廠看到才切入；控制晶片也國產化，直接賣現成方案。到後來，一整台高速吹風機賣兩百元人民幣。報告的判定是：門檻是被整個珠三角填平的，不是被一個天才攻克的。",
+  "lint": {
+   "chars": 196,
+   "precise_numbers": [
+    "十萬",
+    "百萬",
+    "兩百"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 31.7,
+   "max_sentence_len": 55,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那十萬轉的高速馬達，到底有多難？<short pause>\n欸，是真的難喔。\n轉子只要歪一點點，整台就會震到不行。\n而且晶片還要即時算電流，才不會失控。\n做一顆不難，做幾百萬顆都穩才可怕。\n不過，這份報告的作者說，重點在供應鏈。\n戴森把市場做出來，晶片廠就出成熟方案。\n那個門檻……我是說整條供應鏈，\n就這樣直接被填平了。<laugh>\n到後來整台吹風機兩百塊就買得到。\n作者的判定超直接。\n這不是靠哪一個天才攻克的，\n是整個珠三角供應鏈一起把它填平的啦。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [
+     "十萬",
+     "百萬",
+     "兩百"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 30,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 2,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，那退一步看，十萬轉馬達到底有多難？\n你覺得很神對不對？\n這份報告說，十年前那時候是真的難。\n<short pause>\n難在轉子稍微不對稱就會震動，\n控制晶片沒算好就會失控，\n還要量產幾百萬顆每顆都一樣穩。\n我看到這邊也覺得很扯，\n但重點來了，這門檻後來整個被填平了耶。\n就是……那個戴森吹風機紅了之後，\n深圳的老廠跟晶片廠全部跳進來，\n直接把複雜技術打包成現成零件賣。<short pause>\n最誇張的是，現在整台吹風機只要幾百塊啦。\n所以作者的判定很清楚，\n門檻是被整個珠三角填平的，\n根本不是單靠哪一個天才攻克的嘛。",
+   "lint": {
+    "chars": 223,
+    "precise_numbers": [
+     "十萬",
+     "百萬",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 26.9,
+    "max_sentence_len": 46,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "講到技術無邊界，\n那個十萬轉的馬達，真的有這麼難嗎？\n報告裡說，是真的難啦。<short pause>\n轉速飆上去，平衡抓不好整台就狂震。\n然後晶片算電流慢半拍，馬達就失控。\n更別說做幾百萬顆，每顆都要一樣穩。\n十年前那個時間點確實難，\n那個……欸，整條供應鏈根本還沒長出來。\n重點來了，戴森把市場做起來之後，\n深圳那些馬達老手跟晶片廠全部衝進去。\n大家一棒接一棒，把零件做成現成方案。\n更扯的是，現在一整台吹風機只要兩百塊。\n你看這變化有多大？\n所以這份報告的判定很直白。<short pause>\n門檻是被整個珠三角一起填平的，\n根本不是靠哪一個天才攻克的好嗎。",
+   "lint": {
+    "chars": 242,
+    "precise_numbers": [
+     "十萬",
+     "百萬",
+     "兩百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 19.2,
+    "max_sentence_len": 33,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "那個門檻……我是說整條供應鏈，就這樣直接被填平了。",
+   "to": "整條供應鏈，就這樣把門檻填平了。",
+   "reason": "規則 18"
+  },
+  {
+   "from": "這不是靠哪一個天才攻克的，是整個珠三角供應鏈一起把它填平的啦。",
+   "to": "門檻是整個珠三角的供應鏈一起填平的，哪一個天才都沒有這麼大的本事啦。",
+   "reason": "twtone 對舉"
+  }
+ ]
+}

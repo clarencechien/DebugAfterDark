@@ -1,0 +1,28 @@
+{
+ "id": "ep18-ziyan-spectrum",
+ "number": 18,
+ "type": "full",
+ "guid": "debug-after-dark:ep18",
+ "title": "EP18 「自研」是一個光譜",
+ "description": "國家鐵道博物館的柴電工場，吊著一顆有碳刷的火車牽引馬達；它跟吸塵器、電動車裡會轉的東西，原理一樣，只是大小不一樣。這份報告從一張圖卡開始倒著追：追覓三個月裁掉約一萬人、造車歸零，「清華天才攻克戴森高速馬達」經不經得起查？一路追到深圳的馬達供應商、戴森的大學家譜、稀土，最後追到雙 B 和日系車廠。\n\n今晚的 breakpoint：\n1. 自研是一個光譜：要問的不是誰做的，是規格誰定、系統誰調、出事時誰改得動。\n2. 門檻常常是被一整條供應鏈填平的，不是被一個天才攻克的；做的人和留名的人，常常不是同一個。\n3. 稀土的護城河在製程，不在地底；馬達有退路，體積越小，退路越窄。\n\n原文：〈「自研」是一個光譜 — 從追覓裁員追到馬達、稀土與車廠〉v0.2（2026-11-10 修訂） https://imitator.ai-apps.work/r/ziyan-guangpu\n引子：國家鐵道博物館〈動力．火車——柴電工場〉 https://www.nrm.gov.tw/News_Content.aspx?n=9134&s=240873\n拆解只有一份、能耗實測只有一場，報告的判定照原文保留。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "ziyan-guangpu",
+ "report_version": "v0.2（2026-11-10）",
+ "source_url": "https://imitator.ai-apps.work/r/ziyan-guangpu",
+ "status": "draft",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "audio": {
+  "file": "ep18-ziyan-spectrum.mp3"
+ }
+}

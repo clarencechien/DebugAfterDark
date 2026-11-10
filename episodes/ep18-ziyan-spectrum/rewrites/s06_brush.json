@@ -1,0 +1,135 @@
+{
+ "segment": "s06_brush",
+ "position": "第 7 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ac6f1cc221db86b97465782e342fb4696caca16e820ed30ae470f742cfe2fb45",
+ "previous_context": "最後是一九〇三年美國法院判了才算。這份報告裡說得很實在：真正做出來的人，跟最後留名的人，往往不是同一個嘛。",
+ "original": {
+  "text": "回到博物館那顆有碳刷的馬達。報告提醒，大家常把幾個詞混在一起講，其實是兩個維度。有刷和無刷，講的是電流怎麼換方向：火車那顆靠碳刷接觸來換，吸塵器裡的無刷馬達，改成晶片即時去算、去切換。永磁、感應、磁阻，講的是磁場從哪裡來。吸塵器常見的無刷直流馬達，就是無刷加永磁；戴森第一代馬達是無刷加磁阻，轉子上連磁鐵都沒有。報告說，高速馬達是馬達結構、磁鐵材料、功率電子、控制演算法，四條線在兩千年代交會的結果。",
+  "lint": {
+   "chars": 200,
+   "precise_numbers": [
+    "兩千"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 32.3,
+   "max_sentence_len": 51,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "講到馬達，你有去過鐵道博物館嗎？\n裡面吊著一顆超大的火車馬達。\n它跟吸塵器裡的馬達，原理其實一樣。\n只是大家常把名詞混在一起。\n到底差在哪？\n報告裡說，這其實是兩個維度啦。\n有刷跟無刷，是在講電流怎麼換方向。\n火車靠碳刷接觸，吸塵器用晶片去算。\n那磁場從哪裡來？\n這就是看永磁還是磁阻嘛。\n像吸塵器通常是無刷加永磁。\n戴森第一代很特別，\n轉子上竟然……它連磁鐵都沒有，<laugh>\n這叫做無刷加磁阻。<short pause>\n對，就是材料跟演算法幾條線碰在一起，\n大概在兩千年代，才把高速馬達生出來的。",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [
+     "兩千"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 36,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說到這個，大家去過鐵道博物館嗎？\n裡面那顆火車馬達，其實超有意思的。\n它跟吸塵器裡會轉的東西，原理根本一樣。\n只是大家常把幾個詞混在一起講。<short pause>\n到底差在哪？其實是兩個維度啦。\n有刷跟無刷，講的是電流怎麼換方向。\n火車是用碳刷去接觸，就是用磨的啦。\n吸塵器不用磨，是靠晶片即時去算。\n那磁場從哪裡來？又是另一件事。\n吸塵器通常是無刷加永磁。\n戴森第一代更特別，轉子上連磁鐵都沒有。<laugh>\n這份報告裡說，高速馬達能做出來，\n是結構、材料、晶片跟控制演算法，\n四條線在兩千年代交會的結果。對啊。",
+   "lint": {
+    "chars": 227,
+    "precise_numbers": [
+     "兩千"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 14.1,
+    "max_sentence_len": 45,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "講到這個，鐵道博物館那顆火車馬達也是。\n它跟吸塵器裡會轉的東西，原理根本一樣。\n只是大家很常把名詞搞混。\n這份報告裡說，這其實要分開來看。\n電流到底怎麼換方向？\n火車靠碳刷接觸，吸塵器靠晶片即時去算。\n這就是有刷跟無刷的差別啦。\n那磁場又是哪裡來的？\n用磁鐵的是永磁，沒磁鐵的就是磁阻。\n吸塵器常見的規格，就是無刷加上永磁。<short pause>\n不過戴森第一代超酷的，\n轉子上面連磁鐵都沒有，是用磁阻。\n只能說高速馬達，就是兩千年代技術交會的成果啊。",
+   "lint": {
+    "chars": 203,
+    "precise_numbers": [
+     "兩千"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 26,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "說到這個，大家去過鐵道博物館嗎？裡面那顆火車馬達，其實超有意思的。",
+   "to": "回到開頭鐵道博物館那顆火車馬達。",
+   "reason": "開頭已經講過博物館，這裡接回去"
+  },
+  {
+   "from": "火車是用碳刷去接觸，就是用磨的啦。吸塵器不用磨，是靠晶片即時去算。",
+   "to": "火車那顆是靠碳刷接觸來切換，碳刷會磨損。吸塵器裡的無刷馬達，改成晶片即時去算、去切換。",
+   "reason": "說清楚碳刷的作用"
+  },
+  {
+   "from": "四條線在兩千年代交會的結果。對啊。",
+   "to": "四條線在兩千年代交會的結果。",
+   "reason": "口頭填充"
+  }
+ ]
+}

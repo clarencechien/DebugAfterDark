@@ -1,0 +1,115 @@
+{
+ "segment": "s04_dyson",
+ "position": "第 5 段，共 12 段",
+ "avoid": [
+  "你猜"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "414d70ff6d5d7fe83144a387027a106112cdd995206bfbc76a43a71c9edc436b",
+ "previous_context": "作者的判定超直接。這不是靠哪一個天才攻克的，是整個珠三角供應鏈一起把它填平的啦。",
+ "original": {
+  "text": "查到這裡，最大的反轉出現了。有人拆解戴森今年的一款吹風機，裡面的高速馬達，來自深圳的中驅電機；另一份拆解，追覓的吹風機馬達，也是中驅。兩家都說自己的馬達很厲害，至少在吹風機這條線，裝的是同一家深圳供應商的馬達。報告說，自研是一個光譜：自己設計、自己做、找人代工、直接買現成，行銷只講最好看的那一端。不過也要公平講：法院沒說追覓偷了馬達，德國法院判它沒侵權，它是以戴森為座標，繞開專利設計。",
+  "lint": {
+   "chars": 194,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 37.8,
+   "max_sentence_len": 52,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "講到供應鏈，更扯的反轉來了。\n有人拆解戴森的吹風機，\n裡面的馬達轉速高達十一萬轉，<short pause>\n居然是深圳中驅電機做的。\n然後追覓的吹風機呢？也是同一家。\n我看到這裡真的愣了一下。\n那兩家平常吵成那樣是吵什麼？\n這份報告裡說，自研其實是一個光譜啦。\n呃就是……你可以自己設計，也能找人代工，\n甚至直接買現成的。\n行銷通常只挑最好聽的那一端講嘛。\n不過平心而論，法院可沒說追覓偷東西喔。\n德國法院判他們沒有侵權，\n追覓就是繞開對手的專利去設計而已啦。",
+   "lint": {
+    "chars": 205,
+    "precise_numbers": [
+     "十一萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 36,
+    "sentences_over_20": 3,
+    "particles_per_100": 2.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "說到供應鏈，最扯的反轉來了。有人去拆戴森的吹風機，<short pause> 裡面的高速馬達，竟然是深圳的中驅電機。額定轉速有十一萬轉喔。那追覓呢？拆開一看，竟然也是中驅。<laugh> 欸，兩家宣傳都講得超厲害，結果吹風機裝的根本同一家。這份報告裡說，自研其實是一個光譜啦。從自己設計、找代工，到直接買現成，反正行銷只會挑最好聽的那端講。<short pause> 不過平心而論，追覓也沒有偷馬達。德國法院還判它沒侵權。它比較像是……對，拿戴森當坐標，然後想辦法繞開專利設計啦。",
+   "lint": {
+    "chars": 204,
+    "precise_numbers": [
+     "十一萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 31,
+    "sentences_over_20": 4,
+    "particles_per_100": 2.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 3
+   }
+  },
+  {
+   "text": "講到供應鏈，<short pause> 最大反轉來了。\n有人去拆解戴森的吹風機，\n裡面的高速馬達，是深圳的中驅電機。\n然後更扯的是，追覓拆開來也是中驅。<laugh>\n我看到這邊整個人愣住。\n兩家宣傳都講得超厲害，\n結果吹風機裝的，根本同一家的馬達嘛。\n這份報告裡說，自研其實是一個光譜。\n就是……呃應該說，每家位置都不同，\n行銷通常只挑最好看的那端講。\n那追覓到底有沒有偷？其實沒有喔。\n德國法院判它沒侵權，\n它只是拿戴森當座標，合法繞開專利啦。",
+   "lint": {
+    "chars": 191,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 18.1,
+    "max_sentence_len": 30,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 2,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "講到供應鏈，<short pause> 最大反轉來了。有人去拆解戴森的吹風機，裡面的高速馬達，是深圳的中驅電機。然後更扯的是，追覓拆開來也是中驅。<laugh>我看到這邊整個人愣住。兩家宣傳都講得超厲害，結果吹風機裝的，根本同一家的馬達嘛。這份報告裡說，自研其實是一個光譜。就是……呃應該說，每家位置都不同，行銷通常只挑最好看的那端講。那追覓到底有沒有偷？其實沒有喔。德國法院判它沒侵權，它只是拿戴森當座標，合法繞開專利啦。",
+   "to": "講到供應鏈，<short pause>最大的反轉來了。有人去拆解戴森今年的一款吹風機，裡面的高速馬達，來自深圳的中驅電機。更扯的是，另一份拆解，追覓的吹風機馬達也是中驅。<laugh>兩家宣傳都講得超厲害，結果至少在吹風機這條線，裝的是同一家深圳供應商的馬達。這份報告說，自研其實是一個光譜：自己設計、自己做、找人代工、直接買現成。每家的位置都不一樣，行銷通常只挑最好看的那一端講。那追覓有沒有偷？報告說要公平講，沒有證據。德國法院判它沒侵權，它是拿戴森當座標，合法繞開專利啦。",
+   "reason": "規則 18；照原文補上光譜的四種位置"
+  },
+  {
+   "from": "報告說要公平講，沒有證據。",
+   "to": "這份報告說要公平講，沒有證據。",
+   "reason": "規則 19"
+  }
+ ]
+}

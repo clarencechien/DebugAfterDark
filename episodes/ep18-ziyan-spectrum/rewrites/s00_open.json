@@ -1,0 +1,115 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 12 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "c831d550dc3a15838f3ebad067f863daedc9b2ca973cb32bd7ed6f03137dc136",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "你有沒有去過國家鐵道博物館的柴電工場？裡面用機器吊著一顆火車的牽引馬達，旁邊的螢幕在播它怎麼檢修。那顆馬達有碳刷。其實它跟你家吸塵器、電動車裡面會轉的那個東西，原理是一樣的，只是大小不一樣。這份報告就是從馬達開始追的。起點是一張圖卡：中國掃地機公司追覓，三個月裁掉大約一萬人，造車歸零。報告想查的是：故事裡那句清華天才用十萬塊攻克了戴森的高速馬達，到底經不經得起查？",
+  "lint": {
+   "chars": 183,
+   "precise_numbers": [
+    "一萬",
+    "十萬"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 25.1,
+   "max_sentence_len": 39,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "欸，你看過鐵道博物館吊著的火車馬達嗎？\n旁邊螢幕還在播怎麼檢修。<short pause>\n那個大傢伙其實有碳刷。\n它跟你家吸塵器、\n還有電動車裡會轉的東西，\n原理根本一樣，就是大小不同而已啦。\n重點來了，這份報告的起點，\n是一張超聳動的網路圖卡。\n做掃地機的追覓，\n短短幾個月裁掉上萬人，\n造車計畫直接歸零耶。<sigh>\n你猜這份報告真正想查什麼？\n查那個很神的話術，\n呃、我是說那個創業故事啦。\n說清華天才只拿十萬塊，\n就攻克戴森的高速馬達。\n這件事到底經不經得起查？\n我看到這邊整個好奇起來。",
+   "lint": {
+    "chars": 214,
+    "precise_numbers": [
+     "萬",
+     "十萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 18.5,
+    "max_sentence_len": 36,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "你有去過鐵道博物館看過火車馬達嗎？\n那顆吊在半空中的大傢伙，\n跟你家吸塵器裡會轉的東西，原理根本一樣。\n差在哪裡？\n那個，就是大小不一樣而已啦。<short pause>\n然後這份報告，就是從一顆小馬達開始追的。\n起點是一張圖卡，\n說做掃地機的追覓，造車計畫整個歸零。\n呃換個說法，就是他們造車夢徹底碎了。\n你猜這份報告最想查什麼？\n它想查那個傳奇故事：\n清華天才用十萬塊，攻克了戴森的高速馬達。\n這件事到底經不經得起查啊？",
+   "lint": {
+    "chars": 187,
+    "precise_numbers": [
+     "十萬"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.7,
+    "max_sentence_len": 31,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   }
+  },
+  {
+   "text": "嘿，你逛過鐵道博物館嗎？\n柴電工場裡面，吊著一顆超大的火車馬達。\n那個是有碳刷的。<short pause> 其實啊，\n它跟你家吸塵器、電動車裡會轉的東西，\n原理根本一樣，只是大小差很多而已。\n你猜這跟今天的主題有什麼關係？\n這份報告的作者，就是從馬達一路往回追。\n起點是一張圖卡，說追覓造車整個歸零，\n然後三個月內裁掉了上萬人。<short pause>\n最扯的是那個創業神話，\n說清華天才只拿十萬塊，\n就攻克了戴森的高速馬達，\n這到底經不經得起查啊？",
+   "lint": {
+    "chars": 188,
+    "precise_numbers": [
+     "萬",
+     "十萬"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 22.5,
+    "max_sentence_len": 44,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "你有去過鐵道博物館看過火車馬達嗎？那顆吊在半空中的大傢伙，跟你家吸塵器裡會轉的東西，原理根本一樣。差在哪裡？那個，就是大小不一樣而已啦。<short pause>然後這份報告，就是從一顆小馬達開始追的。起點是一張圖卡，說做掃地機的追覓，造車計畫整個歸零。呃換個說法，就是他們造車夢徹底碎了。你猜這份報告最想查什麼？它想查那個傳奇故事：清華天才用十萬塊，攻克了戴森的高速馬達。這件事到底經不經得起查啊？",
+   "to": "你有沒有去過國家鐵道博物館的柴電工場？裡面用機器吊著一顆火車的牽引馬達，旁邊的螢幕在播它怎麼檢修。那顆馬達是有碳刷的。<short pause>其實它跟你家吸塵器、跟電動車裡面會轉的那個東西，原理是一樣的，只是大小不一樣。這份報告，就是從馬達開始追的。起點是一張圖卡：做掃地機的追覓，三個月裁掉大約一萬人，造車整個歸零。你猜作者最想查什麼？就是那個傳奇故事：清華天才用十萬塊，攻克了戴森的高速馬達。這件事，到底經不經得起查？",
+   "reason": "節目擁有者的引子（柴電工場、碳刷、吸塵器和電動車）；規則 18：不自我更正"
+  }
+ ]
+}

@@ -1,0 +1,129 @@
+{
+ "segment": "s01_dreame",
+ "position": "第 2 段，共 12 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d45c2bcf823fe63002935034e10d58abe1f29f069836747731095b246a629dce",
+ "previous_context": "它想查那個傳奇故事：清華天才用十萬塊，攻克了戴森的高速馬達。這件事到底經不經得起查啊？",
+ "original": {
+  "text": "先看追覓。它的起點確實是硬的：創辦人俞浩是清華航太出身，二〇一五年帶著同學從馬達切入，兩年後做出第一顆十萬轉的馬達，以小米生態鏈的身分進市場。後來營收從四十億長到四百億人民幣，海外占八成。那它為什麼要做車？報告說有三個推力：掃地機陷入價格戰、創辦人相信技術可以無邊界地複用，還有最關鍵的，錢不是掃地機賺的，是靠產業基金撬動地方政府的資金。",
+  "lint": {
+   "chars": 169,
+   "precise_numbers": [
+    "十萬",
+    "四十",
+    "四百"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 32.8,
+   "max_sentence_len": 65,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先看追覓這家公司。<short pause>\n它的起點其實真的很硬喔。\n創辦人俞浩是清華航太背景，\n當年帶著同學做出了十萬轉的高速馬達，\n就這樣打進小米生態鏈。\n後來營收衝到幾百億，大半都在海外。\n那他幹嘛突然跑去造車？\n你猜是錢太多嗎？\n其實正好相反啦。<laugh>\n這份報告說背後有三個推力。\n第一是掃地機陷入價格戰，\n本業根本在失血；\n然後創辦人以為馬達做順了，\n就能跨界去造車；\n最扯的是，\n他的錢其實不是掃地機賺的，\n而是靠各地的產業基金在撐場面。",
+   "lint": {
+    "chars": 194,
+    "precise_numbers": [
+     "十萬",
+     "百"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 20.6,
+    "max_sentence_len": 73,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "我們先來看追覓。創辦人俞浩是清華航太出身。十年前他帶同學切入馬達，兩年後做出第一顆十萬轉馬達。他們靠小米生態鏈打進市場，營收後來翻了快十倍耶。那它為什麼不好好賣家電，跑去造車？你猜真的是因為錢太多嗎？其實不是。<short pause>報告裡提到三個推力。首先是掃地機陷入價格戰，整個市場賣越多越不賺錢。然後創辦人相信技術可以到處套用。最扯的重點來了，支撐他們的錢根本不是掃地機賺的，而是靠造車的故事去拉地方資金啦。",
+   "lint": {
+    "chars": 195,
+    "precise_numbers": [
+     "十萬"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 16.7,
+    "max_sentence_len": 39,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "先看追覓這家公司。\n它的起點確實超硬的，\n創辦人俞浩是清華航太出身，\n帶著同學做出十萬轉的高速馬達，\n掛在小米生態鏈底下賣。<short pause>\n後來營收衝到幾百億，海外占了八成。\n那既然這麼賺，為什麼還要跳去造車？\n這份報告裡說，背後有三個推力。\n第一是掃地機打價格戰，主業在失血。\n然後創辦人太相信技術複利，\n以為吸塵器做得出來，車子也行。<laugh>\n但重點來了，你猜錢哪裡來的？\n根本不是賣掃地機賺的，\n是拿造車的故事，去撬動地方資金啦。",
+   "lint": {
+    "chars": 194,
+    "precise_numbers": [
+     "十萬",
+     "百"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 20.6,
+    "max_sentence_len": 48,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "而是靠造車的故事去拉地方資金啦。",
+   "to": "而是靠產業基金，去撬動地方政府的資金啦。",
+   "reason": "照原文：以產業生態為名的地方資金"
+  },
+  {
+   "from": "支撐他們的錢根本不是掃地機賺的，而是靠產業基金，去撬動地方政府的資金啦。",
+   "to": "支撐他們擴張的錢，靠的是產業基金撬動的地方政府資金，掃地機賺的根本撐不起來啦。",
+   "reason": "twtone 對舉"
+  }
+ ]
+}

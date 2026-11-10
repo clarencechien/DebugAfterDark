@@ -1,0 +1,128 @@
+{
+ "segment": "s11_outro",
+ "position": "第 12 段，共 12 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "更扯的是",
+  "我看到這",
+  "真的假的",
+  "呃不對"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "60bfc40a428f2137ea7d634b0041b2c6f3db727e5d37c5711ce23379a4e0d22b",
+ "previous_context": "名字被記住的人，跟守住技術的人，那個……常常根本不是同一批人嘛。名字是行銷，這三題才是真本事啦。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，自研是一個光譜，要問的不是誰做的，是規格誰定、系統誰調、出事時誰改得動。第二，門檻常常是被一整條供應鏈填平的，不是被一個天才攻克的；做的人和留名的人，常常不是同一個。第三，稀土的護城河在製程，不在地底；馬達有退路，只是體積越小，退路越窄。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 173,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 23.7,
+   "max_sentence_len": 46,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n怎麼看一家公司是不是真自研？\n對，看規格誰定、系統誰調，出事誰改得動。\n然後那個，很多門檻是整條供應鏈填平的。\n留名字的人，跟守住技術的人常常不一樣喔。\n最後就是，稀土護城河在製程不在地底。<short pause>\n馬達雖然有退路，但體積越小退路越窄啦。\n搞懂這幾點，看八卦就不會被牽著鼻子走。\n原文連結在節目資訊欄。\n我是 Ping。\n有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 182,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，東西是誰做的很重要嗎？其實不是。\n你要看規格是誰定、出事時誰改得動。\n第二，門檻其實是整條供應鏈填平的啦。\n留名的人，跟真正做出來的人常常不一樣。\n第三，那個稀土的護城河是在製程。\n關鍵在技術，不是地底下的礦。\n馬達雖然有退路，但體積越小退路越窄嘛。\n想通這幾點，看行銷就不會被牽著走啦。<short pause>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 193,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 13.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，要怎麼看懂自研？\n重點不是誰做的，是出事時誰改得動。\n第二，留名的人就是技術主人嗎？\n不是嘛，門檻常常是整條供應鏈填平的。\n第三，稀土的護城河其實是在製程，\n根本不是埋在地底下的礦喔。\n然後馬達體積越小，退路就越窄啦。\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 159,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 28,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>怎麼看一家公司是不是真自研？對，看規格誰定、系統誰調，出事誰改得動。然後那個，很多門檻是整條供應鏈填平的。留名字的人，跟守住技術的人常常不一樣喔。最後就是，稀土護城河在製程不在地底。<short pause>馬達雖然有退路，但體積越小退路越窄啦。搞懂這幾點，看八卦就不會被牽著鼻子走。原文連結在節目資訊欄。我是 Ping。有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，自研是一個光譜，要問的不是誰做的，是規格誰定、系統誰調、出事的時候誰改得動。第二，門檻常常是被一整條供應鏈填平的，不是被一個天才攻克的；做的人和留名的人，常常不是同一個。第三，稀土的護城河在製程，不在地底；馬達有退路，只是體積越小，退路越窄。<short pause>原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "breakpoint 三點照原句；規則 18"
+  },
+  {
+   "from": "第一，自研是一個光譜，要問的不是誰做的，是規格誰定、系統誰調、出事的時候誰改得動。",
+   "to": "第一，自研是一個光譜，要問的是規格誰定、系統誰調、出事的時候誰改得動。",
+   "reason": "twtone 對舉"
+  }
+ ]
+}

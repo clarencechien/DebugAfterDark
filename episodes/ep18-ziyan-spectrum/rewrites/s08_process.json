@@ -1,0 +1,116 @@
+{
+ "segment": "s08_process",
+ "position": "第 9 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "更扯的是",
+  "我看到這",
+  "真的假的"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "adba9ebf050c015d06b1f1151a408d31bbce1eabf38d1c45b53b6527d7d5bc90",
+ "previous_context": "可是手持高速馬達要的是小跟輕嘛。越在乎體積重量，就越離不開稀土啦。",
+ "original": {
+  "text": "那中國的稀土優勢在哪？報告說，礦不是護城河，製程才是。全世界都有礦，美國加州的礦場，到一九九〇年代都還是全球最大的稀土產地；後來中國用環境代價換低價，美國礦場在二〇〇二年關閉。西方把最髒的那段外包出去，三十年後發現外包商變成守門人。今天中國大約占全球八成五的精煉。但槓桿是雙向的：中國的重稀土要靠緬甸戰區，磁鐵產能又嚴重過剩，每打一次這張牌，也在傷自家業者。日本在二〇一〇年被斷稀土之後，也示範過可以慢慢脫身。",
+  "lint": {
+   "chars": 205,
+   "precise_numbers": [
+    "三十"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 28.3,
+   "max_sentence_len": 60,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "既然離不開，那中國的稀土到底強在哪？\n這份報告說，礦根本不是護城河。\n重點是那個製程技術啦。\n全世界地底其實都有稀土，\n只是提煉太髒了，西方以前就通通外包。\n結果幾十年後，外包商直接變成了守門人。\n我聽到的時候真的愣了一下。<short pause>\n對，現在精煉有大約八成五都在中國。\n那這張牌打出來就無敵了嗎？\n其實也沒有喔。\n他們自己很缺重稀土，要從緬甸戰區買，\n國內磁鐵產能又多到賣不完。\n每次一限制出口，就是，呃不對，\n自家業者也跟著一起內傷。<laugh>\n你看日本之前被斷貨，\n最後還不是順利脫身了嘛。",
+   "lint": {
+    "chars": 223,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 30,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那中國的稀土到底強在哪？\n這份報告說，礦根本不是重點。<short pause>\n真正的護城河，其實是提煉的製程。\n全世界地底其實都有礦啊。\n西方當年把最髒那段外包出去，\n三十年後才發現，\n外包商居然變成守門人了。<laugh>\n現在中國精煉就占了全球八成五。\n但這張牌真的無敵嗎？其實也沒有。\n就是，他們的重稀土要靠緬甸，\n而且磁鐵產能嚴重過剩。\n限制出口這招，每打一次也在傷自家業者。\n像日本當年被斷供，\n後來也示範過可以慢慢脫身啦。",
+   "lint": {
+    "chars": 186,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 33,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那大家常問，中國的稀土到底強在哪？\n這份報告說，礦不是護城河，製程才是。\n其實地底下到處都有礦，連美國自己都有。\n那為什麼西方不自己煉？\n提煉很髒嘛，他們當年就外包給中國了。<short pause>\n結果三十年過去，外包商直接變成守門人。\n這個局面看起來超諷刺的。\n現在中國占了全球大約八成五的精煉——\n就是說，最難搞的加工步驟都在他們手裡。\n可是這張牌真的很好打嗎？\n其實槓桿是雙向的喔。\n他們重稀土要靠緬甸，磁鐵產能又過剩。\n每管制一次，自家的業者也在流血啦。\n像日本以前被斷過，後來也是慢慢找到退路。",
+   "lint": {
+    "chars": 228,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 36,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "既然離不開，那中國的稀土到底強在哪？這份報告說，礦根本不是護城河。重點是那個製程技術啦。全世界地底其實都有稀土，只是提煉太髒了，西方以前就通通外包。結果幾十年後，外包商直接變成了守門人。我聽到的時候真的愣了一下。<short pause>對，現在精煉有大約八成五都在中國。那這張牌打出來就無敵了嗎？其實也沒有喔。他們自己很缺重稀土，要從緬甸戰區買，國內磁鐵產能又多到賣不完。每次一限制出口，就是，呃不對，自家業者也跟著一起內傷。<laugh>你看日本之前被斷貨，最後還不是順利脫身了嘛。",
+   "to": "既然離不開，那中國的稀土到底強在哪？這份報告說，礦不是護城河，製程才是。全世界地底都有稀土，美國加州的礦場，到一九九〇年代都還是全球最大的產地。後來提煉太髒，西方就把這段外包出去，結果三十年後，外包商變成了守門人。現在全球大約八成五的精煉在中國。那這張牌打出來就無敵了嗎？其實也沒有喔。中國的重稀土要靠緬甸戰區，國內的磁鐵產能又多到賣不完，每限制一次出口，自家業者也跟著受傷。<laugh>日本在二〇一〇年被斷貨之後，也示範過可以慢慢脫身。",
+   "reason": "規則 18：不自我更正；照原文補上加州礦場"
+  }
+ ]
+}
