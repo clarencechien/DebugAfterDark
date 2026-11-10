@@ -1,0 +1,112 @@
+{
+ "segment": "s07_check",
+ "position": "第 8 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "3e49dbfe408f71ff2f7a3a3733a96096f6406769da0c0eefd2b53c43a174256b",
+ "previous_context": "你想留住薪水，就得設門檻擋人。可是設門檻，不就直接打臉零工的自由了嗎？",
+ "original": {
+  "text": "報告拿台灣上路兩週的數字去對這個模型。那兩週消費者價格還沒動，服務費八月中才加，所以看到的，就是人進來的速度。結果只有人會立刻湧進來的版本對得上，就是教科書上的自由進入。西雅圖也走過一樣的路：每單底薪翻倍，第一個月外送員的收入真的上升，第二個月起，新進的人就把它抵平了，淨效果是零。西雅圖花了兩個月，台灣只花兩週。報告猜原因不難：七月底是暑假，加上專法前停跑的人回來了。",
+  "lint": {
+   "chars": 185,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 29.8,
+   "max_sentence_len": 55,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "對啊，那實際上到底有多快？<short pause>\n這份報告的作者拿兩週的數字去算。\n那時候消費者價格根本還沒漲喔。\n所以算出來的，純粹就是人湧進來的速度。\n結果只有人會立刻衝進來的版本才對得上。\n這根本就是教科書等級的自由進出。\n西雅圖之前每單底薪翻倍。\n花了兩個月，新人才把多賺的錢全部抵平。\n那台灣花了多久？\n兩週就扯平了。<sigh>\n這速度快到讓我直搖頭。\n為什麼會衝這麼快？\n剛好碰上暑假，加上停跑的人全回來了嘛。",
+   "lint": {
+    "chars": 183,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 13.1,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "這份報告的作者，拿台灣剛上路兩週的數字去算。那時候點餐費用還沒加，單純就是看外送員湧進來的速度。結果算出來，只有「大家立刻衝進來」的版本才對得上。你知道西雅圖花了多久嗎？人家花了兩個月，新進來的人才把薪水完全稀釋掉。台灣呢？台灣竟然只花兩週就抵平了。<laugh> 這個速度真的太驚人了吧。這份報告的作者推測，剛好七月底碰上暑假嘛，加上之前沒跑的人通通回流，大家的單子一下就被分光了啦。",
+   "lint": {
+    "chars": 185,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 19.6,
+    "max_sentence_len": 47,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "對啊，而且現實跑得比想像還快。\n這份報告的作者拿台灣前兩週的數據去算。\n那時候點餐價格根本還沒變動喔。\n所以看出來的，就是新人湧進來的速度。\n結果算出來怎樣？\n只有設定成大家立刻湧進來，才對得起來。\n這完全是教科書等級的自由進出嘛。<laugh>\n你知道西雅圖走到收入被抵平花了多久嗎？\n那邊花了整整兩個月。\n那台灣呢？\n台灣居然兩週就扯平了。<short pause>\n我整個起雞皮疙瘩。\n報告裡認為原因其實很單純啦，\n剛好碰上放暑假，\n加上之前停跑的人，全跑回來搶單了。",
+   "lint": {
+    "chars": 203,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 38,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "教科書等級的自由進出",
+   "to": "教科書等級的自由進入",
+   "reason": "照原文"
+  }
+ ]
+}

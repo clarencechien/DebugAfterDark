@@ -41,7 +41,8 @@ class Breeze:
     @modal.method()
     def transcribe(self, items, beam=5):
         """items: [(name, wav_bytes)] -> {name: {"text", "segments"}}"""
-        import io, wave
+        import io, time, wave
+        t0 = time.perf_counter()
         out = {}
         for name, data in items:
             with wave.open(io.BytesIO(data)) as w:
@@ -51,12 +52,15 @@ class Breeze:
             if segs and segs[-1].end > dur + 1.0:
                 segs = list(self.m.transcribe(io.BytesIO(data), condition_on_previous_text=False, temperature=0.0, **kw)[0])
             out[name] = {"text": "".join(s.text for s in segs), "segments": [(round(s.start, 2), s.text) for s in segs]}
+        out["__gpu_s"] = round(time.perf_counter() - t0, 1)   # inference only; the caller subtracts it from wall time
         return out
 
 
 def transcribe_remote(paths, beam=5, batch=12, timeout=600):
     """Called by stt_check.whisper_transcribe when ASR == 'breeze-modal'. Sends the wavs in batches, in parallel."""
+    import time
     from pathlib import Path
+    t_start = time.perf_counter()
     os.environ.setdefault("MODAL_TOKEN_ID", os.environ.get("modal", ""))
     os.environ.setdefault("MODAL_TOKEN_SECRET", os.environ.get("modal_secret", ""))
     paths = [Path(p) for p in paths]
@@ -67,7 +71,10 @@ def transcribe_remote(paths, beam=5, batch=12, timeout=600):
     for g, call in calls:
         for attempt in range(2):   # 2026-11-07: one run hung with nothing sent; bound each batch and retry it once
             try:
-                res.update(call.get(timeout=timeout)); break
+                r = call.get(timeout=timeout); gpu = r.pop("__gpu_s", None); res.update(r)
+                # 2026-11-10: selection took 2 to 10 minutes on Modal while local features took 44 s; log where it goes
+                print(f"  breeze-modal batch of {len(g)}: done {time.perf_counter() - t_start:.0f}s after start, GPU {gpu}s")
+                break
             except Exception as e:
                 print(f"  breeze-modal batch of {len(g)} failed ({type(e).__name__}); " + ("retrying" if attempt == 0 else "falling back to the local CPU"))
                 if attempt == 0:

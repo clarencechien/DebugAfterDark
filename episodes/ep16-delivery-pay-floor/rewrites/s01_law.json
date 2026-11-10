@@ -1,0 +1,125 @@
+{
+ "segment": "s01_law",
+ "position": "第 2 段，共 13 段",
+ "avoid": [
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "62e376cf3c19f7de13abd17f2227e787a3774b5ea5f5fbd4ec0c9fa1c640b126",
+ "previous_context": "就是，加給外送員的錢到底跑去哪裡了？報告裡說，其實一行式子就看得出來。",
+ "original": {
+  "text": "先看法條保障了什麼。今年七月二十一號上路的外送專法，規定每一筆訂單的報酬不得低於四十五元，換算時薪不得低於最低工資的一點二五倍，也就是兩百四十五元。重點是，這個時間只算接單之後：去店家、等餐、送到客人手上。打開 App 等派單的時間不算。勞動部的說明寫得很直接：兩百四十五是接單那幾分鐘的換算，不是一小時的保底。一小時只接到一張十二分鐘的單，這一小時就是四十九元。",
+  "lint": {
+   "chars": 180,
+   "precise_numbers": [
+    "二十一",
+    "四十五",
+    "一點二五",
+    "兩百四十五",
+    "兩百四十五",
+    "十二",
+    "四十九"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 29.0,
+   "max_sentence_len": 63,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先來看專法到底保障了什麼。很多人以為每小時都有保底薪水對吧？<short pause>其實完全不是醬。法律保障的只有接單送餐的那幾分鐘，就是從你接單、去店家等餐、送到客人手上。打開 App 在路邊等單的時間，一毛都沒有。勞動部自己也說得很直白，兩百四十五元只是換算率，不是保底。你猜如果一小時只接到一張十幾分鐘的單呢？對，你那一小時就只能拿幾十塊錢。<laugh>我看到這裡真的覺得差很多耶。",
+   "lint": {
+    "chars": 174,
+    "precise_numbers": [
+     "兩百四十五"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 18.3,
+    "max_sentence_len": 36,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "我們先來看法律到底保證了什麼。<short pause>\n新聞都說換算時薪是兩百四十五元。\n但那個時間，只算你接單之後喔。\n包含騎去店家、等餐，還有送到門口。\n你在路邊滑手機等單的時間，一毛都沒有。\n勞動部講得很直接，這不是一小時保底。\n你猜如果這小時只接到一張單會怎樣？\n送完十幾分鐘，你這小時就只賺幾十塊。<sigh>\n看到這裡真的蠻傻眼的。\n只要單量不夠，\n那個時薪根本就看得到吃不到嘛。",
+   "lint": {
+    "chars": 168,
+    "precise_numbers": [
+     "兩百四十五"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "我們先看，法條到底保障了什麼。\n大家看到換算時薪兩百四十五元，\n你以為這代表時薪有保底嗎？\n答案是完全沒有喔。<laugh>\n因為這個錢，只有在送單時才算。\n你去店家拿餐、在路上騎車算時間，\n但打開 App 在路邊等單，一毛都沒有。\n那個時薪數字，其實只是送單當下的換算率。\n我看到這份說明，整個愣住。<short pause>\n如果你一小時只接到一張十幾分鐘的單，\n對，你那個小時就真的只拿幾十塊而已啦。",
+   "lint": {
+    "chars": 171,
+    "precise_numbers": [
+     "兩百四十五"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 20.4,
+    "max_sentence_len": 36,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "我們先來看法律到底保證了什麼。<short pause>新聞都說換算時薪是兩百四十五元。",
+   "to": "我們先來看法律到底保證了什麼。<short pause>今年七月上路的外送專法，規定每一筆不能低於四十五元，換算時薪是兩百四十五元。",
+   "reason": "補上法條的每單地板"
+  },
+  {
+   "from": "蠻傻眼",
+   "to": "滿傻眼",
+   "reason": "台灣用字"
+  }
+ ]
+}

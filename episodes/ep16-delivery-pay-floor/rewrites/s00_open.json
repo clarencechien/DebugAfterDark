@@ -1,0 +1,123 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 13 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a5cbd6e93411865314f82b5d39debeb354c55bf4c793d096d05bd489bade0ef7",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "外送專法上路之後，每一趟外送的錢加了三成。Uber Eats 說，外送員的時薪漲了百分之二十七；可是外送員說，賺得比以前少。有人在社群上問：我上線一小時都沒接到單，平台會給我兩百四十五元嗎？這份報告說，這兩句話可以同時為真，而且一行式子就看得出為什麼。這集要算的，就是加給外送員的錢，最後去了哪裡。",
+  "lint": {
+   "chars": 147,
+   "precise_numbers": [
+    "百分之二十七",
+    "兩百四十五"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 28.4,
+   "max_sentence_len": 38,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "外送專法上路之後，每趟的錢加了三成。\nUber Eats 說，時薪漲了百分之二十七。\n可是外送員卻說，賺得比以前還要少耶。\n<short pause>\n你猜哪一邊在說謊？\n答案是，兩邊都沒說謊喔。\n平台算的是手上有單的時候，\n外送員算的是出門一整天。\n這份報告說，這兩件事可以同時為真。\n我看到這邊真的覺得很扯。<laugh>\n那個加給外送員的錢，最後到底去了哪裡？",
+   "lint": {
+    "chars": 151,
+    "precise_numbers": [
+     "百分之二十七"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 24,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？\n外送專法上路之後，每趟的錢加了三成。\n平台說外送員時薪漲了百分之二十七。\n可是外送員卻說，賺得比以前還要少耶。\n<short pause>\n你猜兩邊誰在說謊？\n答案是都沒說謊。\n<short pause>\n平台算的是手上有單的時候。\n外送員算的是出門一整天。\n我看到這個落差真的覺得超扯。\n就是，加給外送員的錢到底跑去哪裡了？\n報告裡說，其實一行式子就看得出來。",
+   "lint": {
+    "chars": 151,
+    "precise_numbers": [
+     "百分之二十七"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 12.7,
+    "max_sentence_len": 17,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "外送專法把每趟的錢加了三成。Uber Eats 說，外送員時薪漲了百分之二十七。可是外送員卻說，賺得比以前還要少。欸，這兩邊到底是誰在說謊？答案是，兩邊都沒說謊喔。<short pause>一個算的是手上真的有單的時候，另一個算的是在外面等了一整天。我看到這份報告真的覺得超扯。<short pause>作者只用一行式子，就能看出加給外送員的錢最後去了哪裡。這集我們就來算這筆帳。",
+   "lint": {
+    "chars": 162,
+    "precise_numbers": [
+     "百分之二十七"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 17.0,
+    "max_sentence_len": 29,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "嘿，還醒著嗎？外送專法上路之後，",
+   "to": "外送專法上路之後，",
+   "reason": "cold open 不打招呼"
+  },
+  {
+   "from": "可是外送員卻說，賺得比以前還要少耶。",
+   "to": "可是外送員卻說，賺得比以前還要少耶。還有人在網路上問：我上線一小時都沒接到單，平台會給我兩百四十五元嗎？",
+   "reason": "補回原文的引子"
+  },
+  {
+   "from": "我看到這個落差真的覺得超扯。就是，加給外送員的錢到底跑去哪裡了？",
+   "to": "那加給外送員的錢，到底跑去哪裡了？",
+   "reason": "口語填充；口頭禪"
+  }
+ ]
+}

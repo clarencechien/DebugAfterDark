@@ -1,0 +1,28 @@
+{
+ "id": "ep16-delivery-pay-floor",
+ "number": 16,
+ "type": "full",
+ "guid": "debug-after-dark:ep16",
+ "title": "EP16 加薪留不住",
+ "description": "外送專法上路後，每一趟的錢加了三成。Uber Eats 說外送員時薪漲了 27%，外送員說賺得比以前少。兩句話可以同時為真：一小時賺的錢，等於送單時每小時的價，乘上一小時裡真的在送單的比例，而專法只動了前面那個數。這份報告拿西雅圖的研究和台灣上路兩週的數字去對，再看紐約為什麼不一樣。\n\n今晚的 breakpoint：\n1. 每一趟加了錢，每一小時沒有：專法只動了送單時的價，管不到真的在送單的比例。\n2. 錢變多就有人來分，分到跟外面的工作差不多為止；西雅圖兩個月走完的路，台灣兩週就走完了。\n3. 紐約讓加薪留得住，代價是把人擋在門外；要不要付那個代價，才是該討論的問題。\n\n原文：〈加薪留不住 — 外送專法把錢給了外送員，市場把錢分給了更多外送員〉v0.2 https://imitator.ai-apps.work/r/delivery-pay-floor\n上路後的數據多由平台公佈；模型出自 An、Garin、Kovak（NBER Working Paper 34545）。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "delivery-pay-floor",
+ "report_version": "v0.2",
+ "source_url": "https://imitator.ai-apps.work/r/delivery-pay-floor",
+ "status": "draft",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "audio": {
+  "file": "ep16-delivery-pay-floor.mp3"
+ }
+}

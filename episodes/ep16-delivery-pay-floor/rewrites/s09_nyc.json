@@ -1,0 +1,102 @@
+{
+ "segment": "s09_nyc",
+ "position": "第 10 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "9ea1d994cfe19d59622ca7f213bc4a1274b82c0d6b3bc4287e491cfd2db1e439",
+ "previous_context": "那個影響直接被壓扁了。所以整張表看下來，真正決定大家收入的，只有人進來的速度啦。",
+ "original": {
+  "text": "那紐約為什麼不一樣？紐約鎖的不是送單時的價，是整個乘積。連等單時間都要付錢，平台只好自己想辦法，讓每個人一小時裡在送單的比例拉高。紐約政府十月的報告記錄了結果：送單時間的占比，從四成多升到快八成，含小費的平均時薪漲了一倍多，訂單量也成長。代價寫在同一份報告裡：平台限制外送員進入平台、懲罰拒單，偶爾上線跑幾單的做法消失了。台灣兩樣都沒做，報告的結論是：成本落在外送員身上，權力留在平台手上。",
+  "lint": {
+   "chars": 195,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 31.5,
+   "max_sentence_len": 53,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那紐約是怎麼做到的？\n他們的做法很不一樣，\n連等單的時間都要算錢喔。<short pause>\n等單變成平台的成本，\n平台就只能想辦法，\n把真的在送單的時間拉高。\n那個，紐約官方報告說，\n外送員含小費的時薪，\n直接漲了一倍多耶。\n但天下哪有白吃的午餐？<short pause>\n平台開始限制名額，\n外送員拒單還會被處罰。\n你以前想上線就上線，\n現在根本擠不進去。\n這就是人為把進來的人數卡死啦。\n反觀台灣兩樣都沒做，\n等單不給錢，也沒去管平台。\n結果成本都留給外送員扛，\n控制權卻全都留在平台手裡。",
+   "lint": {
+    "chars": 206,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.6,
+    "max_sentence_len": 30,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說到人進來的速度，那紐約是怎麼做的？\n紐約的做法很不一樣，\n他們規定連等單的時間都要付錢。\n平台為了省錢，<short pause> 只好想辦法把單塞滿。\n這份報告裡說，大家真的在送單的時間占比，\n直接從四成多飆到快八成，時薪也翻倍。\n聽起來很棒對不對？\n但代價是什麼？\n平台開始把新人擋在門外，而且懲罰拒單。\n你如果只想偶爾上線跑幾單，根本進不去。\n而台灣就是兩樣都沒做啦。\n等單不算錢，成本外送員自己扛，\n可是排班的權力，依然牢牢留在平台手上。",
+   "lint": {
+    "chars": 198,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 37,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "那國外呢？像紐約的做法就很不一樣。\n\n紐約規定，連等單的時間平台都要付錢。欸，這樣乾等就變成平台的成本了。\n\n平台要怎麼辦？就是想辦法讓大家一直有單送。<short pause>紐約官方的報告就記錄，外送員送單的時間比例，直接衝到七成八，含小費的平均時薪也翻了一倍多。\n\n但我讀到代價那段，心裡滿震撼的。平台為了省錢，開始懲罰拒單，連想加入的新人都被擋在門外。那種偶爾上線跑幾單的做法，整個消失了。\n\n那台灣呢？台灣空等不算錢。這份報告的結論很直白，成本全在外送員身上，但權力依然留在平台手上啦。",
+   "lint": {
+    "chars": 227,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 44,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 2
+}

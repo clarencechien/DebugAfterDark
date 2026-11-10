@@ -1,0 +1,102 @@
+{
+ "segment": "s06_rule",
+ "position": "第 7 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2a8dc8f5ff563b743097d61dc8335e07f58d574149fd7e0f67de6c4f62948a4d",
+ "previous_context": "那關鍵到底差在哪？差的就只有一件事，到底誰要付空等的錢啦。",
+ "original": {
+  "text": "這題其實有人解過了。三位經濟學家去年底的論文，研究西雅圖的每單保底，給了一個很簡單的模型。規則只有一條：跑外送比外面的工作划算，就會有人進來；進來的人多了，每個人分到的單變少，划算的程度被稀釋，稀釋到跟外面的工作差不多就停。所以要讓加薪留得住，兩個條件缺一不可：不能讓人自由進來，而且客人不能因為變貴就少叫太多。論文作者也點出矛盾：要留住加薪就得設門檻，而門檻，正好是零工經濟彈性的反面。",
+  "lint": {
+   "chars": 194,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 37.8,
+   "max_sentence_len": 66,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實這題早就有人解過了。\n去年底有三位經濟學家，\n跑去研究西雅圖的保底制度。\n他們發現規則其實只有一條。\n只要外送比外面好賺，大家就會衝進來。\n然後呢？人變多了嘛。<short pause>\n每個人分到的單就變少。\n多賺的錢，就這樣被稀釋掉了。\n稀釋到最後，又跟外面的薪水差不多。\n說真的，這邏輯其實很殘酷對吧？\n那加薪到底要怎麼留得住？\n答案就是不能讓人隨便進來，\n而且客人還不能少叫。\n但這份報告的作者就點出一個大矛盾。\n你想留住薪水，就得設門檻擋人。\n可是設門檻，不就直接打臉零工的自由了嗎？",
+   "lint": {
+    "chars": 221,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 13.7,
+    "max_sentence_len": 23,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   }
+  },
+  {
+   "text": "對，這題其實早就有人解過了。<short pause>三位經濟學家去年底寫了論文，他們專門研究西雅圖的每單保底。這份報告說，背後的邏輯只有一條。只要跑外送比外面的工作划算，大家是不是就會搶著進來？會嘛。可是人一變多，每個人分到的單就變少，多賺的錢又被稀釋到跟外面差不多。那要怎麼讓加薪真正留得住？<short pause>作者說有兩個條件，缺一不可。不能讓人自由進來，而且客人不能跑掉。但這就出現一個超諷刺的矛盾，你要設門檻擋新人，不就徹底破壞零工經濟的彈性了嗎？<sigh>",
+   "lint": {
+    "chars": 206,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.6,
+    "max_sentence_len": 38,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 3
+   }
+  },
+  {
+   "text": "其實這題早就有人算過了。三位經濟學家去年底寫了一篇論文，就是在研究西雅圖的每單保底。那裡面的邏輯其實很簡單，只要跑外送比外面划算，大家就會聞到錢的味道跑進來。<short pause> 然後呢？人變多了，每個人分到的單就變少，賺的錢又被稀釋回去嘛。所以這份報告的作者說，要讓加薪真的留得住，除非你把門關起來、不讓新人進來，而且客人還不能少叫喔。但你不覺得很諷刺嗎？零工經濟最大的好處就是自由耶，結果要保住薪水，反而要先立一道門檻擋住別人。",
+   "lint": {
+    "chars": 205,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 24.6,
+    "max_sentence_len": 47,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0
+}

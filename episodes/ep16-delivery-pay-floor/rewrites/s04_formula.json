@@ -1,0 +1,111 @@
+{
+ "segment": "s04_formula",
+ "position": "第 5 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "940307a95f9656e17fd1cf7876dbfb8f4279a32f88b883c858b13d7e389a218e",
+ "previous_context": "而且跟外送員在社群抱怨的完全對得上。這邏輯順到我真的默默點頭耶。",
+ "original": {
+  "text": "現在來看那一行式子。外送員一小時賺的錢，等於送單時每小時的價，乘上一小時裡真的在送單的比例。專法動的是前面那個數，送單時的價；它管不到後面那個數。後面那個比例，由多少人同時上線、分同一堆單決定。平台說時薪漲了，算的是手上有單的時候；外送員說賺少了，算的是出門一整天。兩邊都沒說謊，差額就落在那個比例上。",
+  "lint": {
+   "chars": 151,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 24.2,
+   "max_sentence_len": 35,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這份報告把算法拆得很乾淨。\n外送員一小時賺多少？\n其實就是兩個數字相乘而已。\n一個是送單時每小時的價錢。\n另一個是一小時裡真的在送單的比例。\n重點來了，專法只動了前面那個價錢。\n後面那個比例，專法根本管不到啊。\n那為什麼兩邊講法差這麼多？\n平台算的是手上有單的時候。\n外送員算的是出門一整天嘛。<short pause>\n算出來真的很有意思，兩邊都沒說謊。\n那個差額，完全就落在比例上面了。",
+   "lint": {
+    "chars": 171,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 13.2,
+    "max_sentence_len": 16,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "來，我們來看這份報告寫的一行式子。<short pause>外送員一小時賺多少？其實就是兩個數字相乘。一個是送單時每小時的價錢，另一個是一小時裡，真的在送單的比例。專法只動了前面那個價錢，管不到後面的比例。那比例由誰決定？由路上多少人搶單決定嘛。那為什麼平台說漲了，外送員卻說賺變少？因為平台算的是手上有單的時候，外送員算的是出門一整天耶。兩邊都沒說謊，差別全卡在那個比例上。",
+   "lint": {
+    "chars": 175,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 30,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "那這到底是怎麼算的？其實只要看一行很簡單的式子。外送員一小時賺多少，就是兩個數字相乘。第一個是送單時每小時的價錢，然後乘上一小時裡真的在送單的比例。重點來了，專法改的只有前面那個價錢，它根本管不到後面的比例嘛。那為什麼外送員說變少、平台說變多？因為平台算的是手上有單的時候，外送員算的是出門一整天。兩邊其實都沒說謊喔。<short pause>差額就是被那個比例吃掉了，很合理耶。",
+   "lint": {
+    "chars": 177,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 18.7,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "把算法拆得很乾淨",
+   "to": "把算式拆得很乾淨",
+   "reason": "twtone 用詞；這裡是算式"
+  }
+ ]
+}

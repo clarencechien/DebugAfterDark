@@ -1,0 +1,109 @@
+{
+ "segment": "s11_homework",
+ "position": "第 12 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "515f89f00706efbb2a748f475069b2e42a6551db0e8dce3df1d8caca3ed17eb1",
+ "previous_context": "等餐時間就這樣被硬生生拉長。這份報告說，這搞不好才是專法對消費者最大的影響耶。",
+ "original": {
+  "text": "報告最後很誠實：進來的時候有五個問題，出去的時候拿到的是五個事實，不全是答案，大約答了兩個半。剩下的不是查不到，是還沒發生。一個等店家的資料：有調菜單和沒調菜單的店，單量差多少。一個等外送員的行為資料：等疊單到底有多普遍。還有一個等併購：Uber 要收購 foodpanda 的母公司，預計明年下半年完成；兩大平台如果變成同一個老闆，foodpanda 現在不漲價的競爭效果就沒了。",
+  "lint": {
+   "chars": 187,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 36.4,
+   "max_sentence_len": 75,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "我覺得這份報告的作者最後蠻坦白的。進來的時候帶著五個問題，最後只算答了兩個半。<short pause>那你可能會問，剩下那一半去哪了？其實不是算不出來，是事情根本還沒發生啦。像是有調外送菜單的店家單量差多少，還有外送員等疊單到底多普遍，這些都還在等真實資料。然後還有最關鍵的一件事，就是 Uber 預計收購對手母公司的進度。兩大平台要是真的變成同一個老闆，現在那種不漲價的競爭效果，可就直接沒了喔。",
+   "lint": {
+    "chars": 185,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 7,
+    "avg_sentence_len": 25.4,
+    "max_sentence_len": 41,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "這份報告的作者其實蠻老實的。<short pause> 他一開始列了五個問題，最後大概只答了兩個半。那剩下的問題呢？不是算不出來喔，是事情還沒發生。這種不把話說死的態度，真的很踏實。像是要等店家的資料，看調高菜單價錢的店，單量到底差多少；還有外送員等疊單的行為到底有多普遍，也都還在觀察。然後就是那個跨國併購案。如果兩家最後變成同一個老闆，foodpanda 現在不漲價的競爭效果，那時候就完全不成立啦。",
+   "lint": {
+    "chars": 187,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 22.4,
+    "max_sentence_len": 52,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "這份報告最後其實很坦白。\n作者進來時問了好幾個問題，\n出去拿到幾項事實，\n算一算大概才答了兩個半。<short pause>\n那你問剩下的呢？\n不是查不到喔，是根本還沒發生。\n像是有調外送價格的店家，\n單量到底差多少？\n然後外送員等疊單的狀況，\n實際上到底有多普遍？\n最關鍵的，就是兩大平台的收購案。\n要是 Uber 真的把對手買下來，\n那個不漲價的競爭效果，\n直接就沒了嘛。<sigh>\n這感覺就像寫 code 還在等 API 回傳啦。",
+   "lint": {
+    "chars": 180,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 19.0,
+    "max_sentence_len": 33,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "要是 Uber 真的把對手買下來，",
+   "to": "要是 Uber 真的把 foodpanda 的母公司買下來，",
+   "reason": "照原文"
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "segment": "s10_waits",
+ "position": "第 11 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d94b7bc2fbb46469d25752614b1112d02395389bbb3929d444978d55b71a108e",
+ "previous_context": "台灣空等不算錢。這份報告的結論很直白，成本全在外送員身上，但權力依然留在平台手上啦。",
+ "original": {
+  "text": "還有兩件事，模型沒有算到。第一，總單量持平，不代表沒有店在掉。重新定價的店掉得很兇，上路第三天就有麵館說，午餐訂單從十幾張掉到一兩張；沒動菜單的店不受影響，加起來看起來像沒事。第二，疊單現在每一單分開算錢，外送員學會等疊單。接單率掉了兩成多，平均每六筆派單只接一筆，消費者等餐從二十七分鐘拉到三十四分鐘。報告說，這可能才是專法對消費者最大的實際影響。",
+  "lint": {
+   "chars": 175,
+   "precise_numbers": [
+    "二十七",
+    "三十四"
+   ],
+   "enumerations": [
+    "第一",
+    "第三",
+    "第二"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 28.2,
+   "max_sentence_len": 56,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "然後，還有兩件事是模型沒算到的。\n平台說總單量沒掉，但真的是這樣嗎？\n其實是漲價的店掉很兇，\n沒調價格的店沒差，加起來才像沒事啦。\n重點來了，外送員開始學會等疊單。<short pause>\n因為現在每單分開算錢，一趟可以拿兩份。\n結果接單率掉了兩成多，大家都在挑單。\n你最近叫外送是不是也覺得等超久？\n客人等餐時間，直接拉長到三十四分鐘。\n這背後的邏輯真的很有意思。\n報告裡說，這才是專法對客人最大的影響喔。",
+   "lint": {
+    "chars": 182,
+    "precise_numbers": [
+     "三十四"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 28,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "不過這份模型，其實有些事沒算到喔。<short pause>\n先說店家好了，總單量持平不代表沒事耶。\n那客人到底有沒有少叫？\n其實是有漲價的店掉超兇，沒動的沒差。\n有麵館的午餐單，直接掉到剩一兩張。\n然後重點來了，外送員的習慣也變了。\n現在疊單分開算錢，大家就學會等疊單。<short pause>\n結果接單率掉了百分之二十二，都在挑單。\n消費者等餐的時間，就這樣默默被拉長。\n這份報告說，這搞不好才是最大的影響啦。",
+   "lint": {
+    "chars": 173,
+    "precise_numbers": [
+     "百分之二十二"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "不過這份報告的作者也提到，<short pause>\n模型其實有兩件事沒算進去。\n第一個是店家的狀況。\n平台說總單量看起來沒變，\n但其實有漲價的店掉超兇，\n沒動菜單的店沒受影響，\n加起來才看似沒事啦。\n看到店家午餐單掉到剩一兩張，\n心裡真的揪了一下。\n\n然後，就是等餐時間。\n你有發現最近叫外送變慢了嗎？\n對，因為現在疊單分開算錢，\n外送員會選擇留在現場等疊單。<short pause>\n結果接單率直接掉了兩成多，\n平均每六筆派單只接一筆。\n等餐時間就這樣被硬生生拉長。\n這份報告說，\n這搞不好才是專法對消費者最大的影響耶。",
+   "lint": {
+    "chars": 219,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 20.9,
+    "max_sentence_len": 44,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2
+}

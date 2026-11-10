@@ -1,0 +1,125 @@
+{
+ "segment": "s08_result",
+ "position": "第 9 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ca1dc2bbec9f8c7b5d172a51480a798d3a76792a1b39a2d1c24607c8df2f39f4",
+ "previous_context": "為什麼會衝這麼快？剛好碰上暑假，加上停跑的人全回來了嘛。",
+ "original": {
+  "text": "把數字代進去，答案是：送單時的價漲了百分之二十七，外送員上線一整天的時薪，只多了零到百分之二。其餘的，變成多兩成多的人，分同一塊餅。那消費者呢？大約多付百分之四，總單量最多少百分之五。有趣的是，客人會不會因為變貴少叫，對外送員的收入幾乎沒影響，因為外送員的報酬只占一單的一小部分，被這個比例壓扁了。整張表真正在動的，只有人進來的速度，而這個速度已經量到了。",
+  "lint": {
+   "chars": 178,
+   "precise_numbers": [
+    "百分之二十七",
+    "百分之二",
+    "百分之四",
+    "百分之五"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 28.7,
+   "max_sentence_len": 56,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "人進來這麼多，那這份報告代出來的數字是什麼？\n送單時每小時的價，一口氣漲了百分之二十七。<short pause>\n那你覺得，外送員上線時薪會多多少？\n算出來只多了一兩趴，甚至很可能是零。<sigh>\n真的超無奈對吧？\n那加薪的錢到底都去哪了？\n就是變成多兩成的人進來，分同一塊餅嘛。\n而且客人會不會因為變貴少叫？\n影響其實很小，總單量頂多掉一點點。\n整張表真正在動的，就是人進來的速度有多快啦。",
+   "lint": {
+    "chars": 170,
+    "precise_numbers": [
+     "百分之二十七"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 16.0,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 2
+   }
+  },
+  {
+   "text": "人一變多，算出來的結果就很殘酷了。\n這份報告的作者把數字代進去算，\n就算送單時每小時的價漲了百分之二十七，\n<short pause>\n那你覺得外送員時薪會多多少？\n答案是：幾乎沒變，最多就多一點點。\n因為多出來的錢，\n全被多兩成跑進來的人分掉了嘛。\n那客人會不會因為變貴就不叫了？\n其實這對收入的影響，\n小到肉眼看不出來。\n因為外送報酬只占整單的一小部分，\n直接被稀釋掉了。\n所以關鍵根本不是客人叫不叫，\n而是人衝進來的速度，對吧？",
+   "lint": {
+    "chars": 190,
+    "precise_numbers": [
+     "百分之二十七"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 22.8,
+    "max_sentence_len": 47,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "然後呢，這份報告把數字代進去算。<short pause>\n每趟送單時的價錢，明明漲了百分之二十七。\n那外送員實際上到底多賺多少？\n答案很殘酷，時薪最多只多兩趴。\n甚至很可能根本是零。\n多出來的錢，全被新跑進來的人分光了。<sigh>\n你可能會問，客人因為變貴少叫，影響大嗎？\n答案是幾乎沒差喔。\n外送費只佔整張單的一小塊。\n那個影響直接被壓扁了。\n所以整張表看下來，\n真正決定大家收入的，只有人進來的速度啦。",
+   "lint": {
+    "chars": 175,
+    "precise_numbers": [
+     "百分之二十七"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 28,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "時薪最多只多兩趴。",
+   "to": "時薪最多只多百分之二。",
+   "reason": "用字"
+  },
+  {
+   "from": "外送費只佔整張單的一小塊。",
+   "to": "外送員拿到的錢，只占整張單的一小塊。",
+   "reason": "原文是外送報酬占客單的比例"
+  }
+ ]
+}

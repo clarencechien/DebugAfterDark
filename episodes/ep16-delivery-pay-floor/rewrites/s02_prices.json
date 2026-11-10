@@ -1,0 +1,126 @@
+{
+ "segment": "s02_prices",
+ "position": "第 3 段，共 13 段",
+ "avoid": [
+  "超扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f174178222e3e63d4bd5679c68e085cafc42b5147e5daab6800a0953eac8b5fa",
+ "previous_context": "看到這裡真的蠻傻眼的。只要單量不夠，那個時薪根本就看得到吃不到嘛。",
+ "original": {
+  "text": "平台那邊漲了三波。Uber 的會員月費從一百二十元漲到一百九十九元，平台說跟專法無關。商家的抽成多了兩個半百分點。消費者每一筆訂單的服務費，平均多四到六元。商家為了打平，又把抽成灌進外送菜單。報告估算，消費者價格大約漲了百分之四到四點五。還有一件專法之前就存在的事：抽成三成五的話，一百元的餐點要賣一百五十四元，商家才拿回一百元。所以外送價本來就比內用貴三成以上。",
+  "lint": {
+   "chars": 181,
+   "precise_numbers": [
+    "一百二十",
+    "一百九十九",
+    "百",
+    "百分之四",
+    "四點五",
+    "一百",
+    "一百五十四",
+    "一百"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 21.6,
+   "max_sentence_len": 45,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那平台跟客人這邊呢？\n其實平台一口氣漲了三波。\n會員費變貴、商家抽成變高。\n然後每筆訂單還多收幾塊錢。\n你猜店家會自己吸收嗎？<short pause>\n當然不會嘛，全部灌回菜單裡。\n這份報告算出來，\n消費者買單的價格大約漲了百分之四點五。\n重點是，外送本來就比內用貴三成以上了喔。\n專法之前就是這樣了。\n因為平台抽三成多，\n一百塊的餐點要賣一百五十幾塊才能打平。\n看到這裡我真的替荷包捏把冷汗。\n大家早就買得很貴了，現在又往上加。",
+   "lint": {
+    "chars": 190,
+    "precise_numbers": [
+     "百分之四點五",
+     "一百",
+     "一百五十"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 27,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "然後平台這邊動作也很快，陸續調漲了三波。<short pause>像是會員月費變貴，商家的抽成跟訂單服務費也都漲了。你猜店家會怎麼做？當然就是把被抽的成數灌進菜單裡嘛。這份報告算出來，客人端最後面對的價格，大概漲了百分之四點五。我看到這邊真的蠻無言的。其實外送本來就比內用貴了三成以上耶。一百塊的東西，店家要賣到一百五十幾塊才打平。等於大家本來就已經買貴了，現在又再往上加一筆。",
+   "lint": {
+    "chars": 176,
+    "precise_numbers": [
+     "百分之四點五",
+     "一百",
+     "一百五十"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 18.6,
+    "max_sentence_len": 29,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "而且不只時薪問題，平台動作也很快。他們其實連漲了三波。會員月費先變貴。平台說這跟專法沒關係啦。然後商家抽成變高，每單也多收幾塊錢。你猜店家會怎麼辦？<short pause>當然是直接灌進外送菜單啊。這份報告算了一下。消費者前後大約多付百分之四點五。我看到這裡才發現一件很妙的事。外送本來就因為抽成，比內用貴三成以上耶。現在再往上加，大家可能真的會少叫外送了。",
+   "lint": {
+    "chars": 167,
+    "precise_numbers": [
+     "百分之四點五"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 12.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "消費者前後大約多付百分之四點五。",
+   "to": "消費者前後大約多付百分之四到四點五。",
+   "reason": "照原文"
+  }
+ ]
+}

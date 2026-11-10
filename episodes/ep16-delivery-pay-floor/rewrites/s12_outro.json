@@ -1,0 +1,114 @@
+{
+ "segment": "s12_outro",
+ "position": "第 13 段，共 13 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "50917b42006e32edcc7f28a2d036256ae7e1707dcd16149ca9db0967aee49310",
+ "previous_context": "要是 Uber 真的把對手買下來，那個不漲價的競爭效果，直接就沒了嘛。這感覺就像寫 code 還在等 API 回傳啦。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，每一趟加了錢，每一小時沒有：一小時賺的錢，等於送單時的價，乘上真的在送單的比例，專法只動了前面那個數。第二，錢變多就有人來分，分到跟外面的工作差不多為止；西雅圖兩個月走完的路，台灣兩週就走完了。第三，紐約讓加薪留得住，代價是把人擋在門外；要不要付那個代價，才是真正該討論的問題。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 193,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 26.6,
+   "max_sentence_len": 53,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>聊了這麼多，到底該怎麼看這件事？其實就是三個重點。第一，單趟有加錢，每小時收入卻沒變喔。因為空等的時間變長了嘛。第二，只要變好賺，新人就會跑進來分。那個多出來的錢，兩週就被稀釋光了。第三，紐約能守住時薪，代價是設門檻。想偶爾跑一下的人，直接被擋在門外啦。這個代價要不要付，很值得大家想想耶。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 198,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 2.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。\n\n算到這裡，真的讓人想很多耶。\n\n第一，每趟加錢，不代表每小時賺更多。\n你知道為什麼嗎？\n就是因為等單的時間變長了嘛。\n\n第二，時薪只要一變高，新人就會進來分。\n那個差額，大概兩週就被大家分光了。\n\n第三，紐約能加到薪，代價是把人擋在門外。\n要不要付這個代價？\n這才是真正該討論的事喔。<short pause>\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 184,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 13.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。\n\n你覺得專法真的能讓外送員賺更多嗎？答案是完全沒有，每小時收入根本沒變多。每趟雖然加了錢，但空等的時間也變長了嘛。\n\n然後，只要有差額，新的人兩週就分光了。西雅圖走過的路，台灣兩週就重現了。看到算出來的結果，我真的很感慨。<short pause>\n\n最後看紐約，他們雖然把時薪留住了，但那個代價，就是把想兼差的人擋在門外喔。要不要付這個代價，才是大家該想的問題。\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 217,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.1,
+    "max_sentence_len": 36,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1
+}

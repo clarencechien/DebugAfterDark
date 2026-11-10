@@ -1,0 +1,120 @@
+{
+ "segment": "s05_cities",
+ "position": "第 6 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "397f8debde63d8f925cbd14ee990fb9f7f59debd3d063dbe0c31e7f3d30b721e",
+ "previous_context": "算出來真的很有意思，兩邊都沒說謊。那個差額，完全就落在比例上面了。",
+ "original": {
+  "text": "別的城市也走過這條路。紐約，連等單的時間都算錢，而且平台可以限制上線人數，也真的在做。西雅圖，跟台灣一樣只付接單的時間，但法律禁止平台限制人數。台灣，也只付接單的時間，法律沒有禁止平台管人數，但平台也沒必要管。很多人說台灣的地板只有西雅圖的三分之一，比較溫和。報告說那是匯率：除以當地的最低時薪之後，台灣和西雅圖的地板幾乎在同一個位置。差的只有一件事：誰付等單的時間。",
+  "lint": {
+   "chars": 184,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 25.3,
+   "max_sentence_len": 37,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "別的城市其實也走過這條路喔。有人說台灣的地板比西雅圖低很多，對吧？這份報告的作者說，那個是匯率的錯覺啦。<short pause>除以當地的最低時薪，兩邊高度其實差不多。那到底差在哪裡？重點就是，空等的時間算誰的。西雅圖跟台灣一樣，平台只付接單的時間。但紐約很不一樣，連等單的時間都要算錢。所以紐約的費率最高，直接拉到兩點二倍。<laugh>更扯的是，紐約平台還真的會限制上線人數喔。",
+   "lint": {
+    "chars": 172,
+    "precise_numbers": [
+     "兩點二"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 2.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "其實別的城市也走過這條路。像紐約、西雅圖跟台灣，做法就很不一樣喔。有人說台灣的地板比較溫和，看起來只有西雅圖的三分之一。真的是醬嗎？<short pause>這份報告說，那根本只是被匯率騙了啦。如果除以最低時薪，兩邊其實在同一個高度。真正高的是紐約，費率直接拉到最低時薪的兩點二倍。因為紐約連等單的時間，都要算錢。所以這幾個地方最大的差別在哪？就差在誰要付那個空等的時間而已。",
+   "lint": {
+    "chars": 175,
+    "precise_numbers": [
+     "兩點二"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 26,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "別的城市其實也走過這條路喔。\n像紐約連等單都算錢，平台也能限制人數。\n西雅圖跟台灣一樣，只算真的在送單的時間。\n有人說台灣的地板只有西雅圖的三成。\n聽起來好像比較溫和對吧？\n其實這份報告的作者說，那是匯率的錯覺啦。\n如果除以最低時薪，兩邊根本差不多欸。<short pause>\n真正高的是紐約，足足有兩點二倍。\n就是因為紐約把等單也直接算進成本。\n那關鍵到底差在哪？\n差的就只有一件事，到底誰要付空等的錢啦。",
+   "lint": {
+    "chars": 182,
+    "precise_numbers": [
+     "兩點二"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 2.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "有人說台灣的地板只有西雅圖的三成。",
+   "to": "有人說台灣的地板只有西雅圖的三分之一。",
+   "reason": "照原文"
+  },
+  {
+   "from": "真正高的是紐約，足足有兩點二倍。",
+   "to": "真正高的是紐約，費率是當地最低時薪的兩倍多。",
+   "reason": "說清楚是什麼的兩倍"
+  }
+ ]
+}
