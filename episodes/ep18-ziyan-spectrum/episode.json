@@ -23,6 +23,23 @@
   "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
  },
  "audio": {
-  "file": "ep18-ziyan-spectrum.mp3"
+  "file": "ep18-ziyan-spectrum.mp3",
+  "bytes": 9056604,
+  "sha256": "58a3fa605dba55ee2b4706416c18e71b3252fab413e674dbb4fe612020915bb8",
+  "duration_s": 566.0,
+  "duration": "9:25",
+  "lufs": -16.8
+ },
+ "qa": {
+  "breeze_cer_mean": 0.032,
+  "jitter_semitones": 0.219,
+  "gates": "錯誤率 3.2%、音高跳動 0.219 都通過；沒有補念",
+  "manual_pick": "s08 改 take0（自動挑的 take2 jitter 0.303）；s03 改回 take2（鄰段比對換成的 take1 偏慢）",
+  "consistency": "qa/consistency.json：s06 音高 +7.3 Hz（另兩次一次太抖、一次錯誤率 9%）；接縫亮度 s01→s02 跳最多",
+  "both_wrong": "「推力」的力、「緬甸戰區」聽成「佔據／產」",
+  "selection_time": "挑選 1 分 49 秒，Modal 三批 46 秒內回來",
+  "rewrite": "改寫稿自我更正很多，s00、s04、s05、s08、s10、s11 人工重寫",
+  "twtone": "qa/twtone.md：對舉 3 句改掉",
+  "terms": "Ping、pong 3 次都判為英文念法"
  }
 }

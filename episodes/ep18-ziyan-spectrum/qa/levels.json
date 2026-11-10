@@ -1,0 +1,74 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -22.5,
+  "gain_db": 2.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_dreame",
+  "lufs_before": -21.9,
+  "gain_db": 1.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_turn",
+  "lufs_before": -23.1,
+  "gain_db": 3.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_motor",
+  "lufs_before": -22.5,
+  "gain_db": 2.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_dyson",
+  "lufs_before": -22.0,
+  "gain_db": 2.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_lineage",
+  "lufs_before": -20.6,
+  "gain_db": 0.6,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_brush",
+  "lufs_before": -20.7,
+  "gain_db": 0.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_rare",
+  "lufs_before": -22.1,
+  "gain_db": 2.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_process",
+  "lufs_before": -21.8,
+  "gain_db": 1.8,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_cars",
+  "lufs_before": -21.7,
+  "gain_db": 1.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s10_verdict",
+  "lufs_before": -21.6,
+  "gain_db": 1.6,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s11_outro",
+  "lufs_before": -21.4,
+  "gain_db": 1.4,
+  "lufs_after": -20.0
+ }
+]
