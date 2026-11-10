@@ -1,0 +1,116 @@
+{
+ "segment": "s07_share",
+ "position": "第 8 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "152038251442eed655ff11522b1e699440546d5209ca679217a56a0713b70a5b",
+ "previous_context": "重點來了，持股只是基本門票，但還不夠。因為經濟上的權利，最後得靠政治來守啊。",
+ "original": {
+  "text": "今年從政治光譜的兩端，都有人在談分股票。馬斯克要送每個美國小孩一股；Anthropic 宣布拿出一部分股份，設一個公益基金，報告一樣揭露利益衝突；美國參議員 Sanders 提案，對大型 AI 公司一次課徵一半的股票，放進主權基金，被批評是資產沒收；OpenAI 提議設公共財富基金；川普也說過，政府持有 AI 公司的股份，有點像跟美國大眾合夥。大家都在談，規模卻差了兩個數量級。歷史上的先例，是挪威的石油主權基金，和阿拉斯加每年發給居民的油田分紅：個人買不起的產能，由集體持有，再分配。",
+  "lint": {
+   "chars": 236,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 58.0,
+   "max_sentence_len": 144,
+   "sentences_over_20": 2,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以啊，今年政治光譜的兩端，<short pause>居然都在聊怎麼分股票。像馬斯克就說，要送每個美國小孩一股。Anthropic 也打算拿股份設公益基金，這份報告自己揭露有利益衝突喔。然後參議員 Sanders 更直接，提議對大型 AI 公司課徵百分之五十的股票，拿去放進國家的主權基金。連川普都說過，政府持股就像全民合夥。大家為什麼都在搶著分？說穿了，就像挪威的石油基金，或是阿拉斯加每年發給居民的油田分紅。一般人買不起昂貴的產能，那就乾脆集體持有，把利潤分出來嘛。",
+   "lint": {
+    "chars": 217,
+    "precise_numbers": [
+     "百分之五十"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 26.1,
+    "max_sentence_len": 47,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "既然要靠政治守，<short pause>\n今年大家還真的開始談分股票了。\n而且兩邊陣營都在談喔。\n像馬斯克就說，要送每個美國小孩一股。\n川普也提過，政府持股就像跟全民合夥。\n那另一邊的 Sanders 呢？\n他直接提案要課大公司百分之五十的股票，\n拿去成立主權基金，\n結果被罵說是資產沒收。<laugh>\n另外 Anthropic 也想設個公益基金，\n不過這份報告自己有揭露利益衝突啦。\n你想問，這種事真的可能嗎？\n其實歷史上早就做過了嘛。\n挪威拿石油收入買股票給全民，\n還有阿拉斯加每年直接發油錢給居民。\n講到底就是那個概念，\n個人買不起的產能，\n乾脆由集體持有再來分配。",
+   "lint": {
+    "chars": 247,
+    "precise_numbers": [
+     "百分之五十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 21.5,
+    "max_sentence_len": 38,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "對，今年很奇妙。<short pause>\n從川普到左派的參議員 Sanders，\n大家居然都在談怎麼分股票給大眾。\n馬斯克說要送每個美國小孩一股 SpaceX。\nAnthropic 也說要拿出股份成立公益基金。\n不過這份報告自己有揭露利益衝突喔。\nSanders 更猛，\n他提案直接對大公司課百分之五十的股票稅。\n你說這不是很像以前的石油嗎？\n就像挪威把石油放進國家基金，\n阿拉斯加每年直接發支票給居民那樣。\n就是大眾自己買不起的巨大產能，\n大家一起想辦法分一點啦。<short pause>\n我讀到這一段其實覺得滿震撼的。\n原來現在連分股票都變成政治戰場了。",
+   "lint": {
+    "chars": 237,
+    "precise_numbers": [
+     "百分之五十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.5,
+    "max_sentence_len": 33,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "Sanders 更猛，他提案直接對大公司課百分之五十的股票稅。你說這不是很像以前的石油嗎？就像挪威把石油放進國家基金，阿拉斯加每年直接發支票給居民那樣。",
+   "to": "Sanders 更猛，他提案對大型 AI 公司，一次課一半的股票稅，放進主權基金。歷史上也有例子：挪威把石油收入放進國家基金，阿拉斯加每年直接發支票給居民。",
+   "reason": "照原文：對象是大型 AI 公司；去掉不通順的比喻"
+  }
+ ]
+}

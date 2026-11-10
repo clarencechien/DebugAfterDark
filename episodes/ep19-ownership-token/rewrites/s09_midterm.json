@@ -1,0 +1,112 @@
+{
+ "segment": "s09_midterm",
+ "position": "第 10 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0a0e0e26d910ce505ca0f37807617536059feb14a800d963eebac1dc4df0a539",
+ "previous_context": "這對它的約束力，搞不好比股東大會還大喔。買股票可能只是分到錢，真正能管住它們的，反而還是你的選票。",
+ "original": {
+  "text": "報告寫完三週後，美國期中選舉做了第一次實測。民主黨拿下參眾兩院；馬斯克給共和黨大約五億美元的政治獻金，報導說幾乎沒換到東西；SpaceX 的股價，選後一度跌到八月以來最低。可是選票用的方向，跟報告原本寫的不一樣。原本寫的是，失業的多數用選票逼出重分配，也就是分。這次發生的是擋：好幾個州的社區對資料中心公投，限制案幾乎都通過。到報告修訂為止，作者沒查到公共持股被排進議程。",
+  "lint": {
+   "chars": 185,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 29.8,
+   "max_sentence_len": 62,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這份報告寫完才三個禮拜，<short pause>\n剛好就碰上美國期中選舉的實測。\n結果民主黨直接拿下參眾兩院。\n馬斯克砸了大約五億美元的政治獻金，\n新聞說幾乎什麼都沒換到啦。<laugh>\n然後 SpaceX 的股價，\n選後還一度跌到幾個月來的新低。\n這結果真的超現實的。\n但大家是把選票拿去逼政府分錢嗎？\n不是耶。\n選民手上的票，全拿去擋了。\n好幾個州的社區辦公投，\n限制蓋資料中心的案子，幾乎都通過。\n而且這份報告的作者也說，\n目前根本沒人把公共持股排進議程喔。",
+   "lint": {
+    "chars": 198,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 29,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "對，那選票真的管得住嗎？\n這份報告寫完三週，美國就辦了期中選舉。<short pause>\n結果民主黨直接拿下參眾兩院。\n馬斯克給共和黨差不多五億美元的獻金，\n報導說幾乎什麼都沒換到。<laugh>\nSpaceX 的股價也跌到幾個月來新低。\n可是，大家手上的選票到底拿來做什麼？\n不是去逼政府把錢分出來喔。\n報告的作者發現，大家這次反而是去「擋」。<short pause>\n很多地方辦公投，限制蓋資料中心，\n結果那些限制案居然幾乎都通過了。\n至於公共持股，根本連議程都沒排進去啦。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 18.6,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   }
+  },
+  {
+   "text": "真的被這份報告說中了。\n這份報告寫完才三個禮拜，<short pause>\n美國期中選舉就直接來了一場實測。\n結果民主黨拿下參眾兩院。\n馬斯克砸了大約五億美元政治獻金，\n新聞說他幾乎什麼都沒換到，\n連 SpaceX 股價都跌到八月以來新低。<laugh>\n那你覺得，大家投票是想分錢嗎？\n完全不是耶。\n這份報告原本以為大家會逼政府分錢，\n結果大家選的竟然是「擋」。<short pause>\n好多地方公投限制蓋資料中心，\n而且那些限制案幾乎都通過了。\n最妙的是，\n這份報告的作者去查，\n根本沒人把全民分股票排進議程啦。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 22.2,
+    "max_sentence_len": 47,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 3
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "報告的作者發現，大家這次反而是去「擋」。",
+   "to": "這份報告的作者發現，大家這次反而是去「擋」。",
+   "reason": "規則 19"
+  }
+ ]
+}

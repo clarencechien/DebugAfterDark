@@ -1,0 +1,131 @@
+{
+ "segment": "s06_futures",
+ "position": "第 7 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "9580c845641a8671002fc214f505f074e0b766b4528dcd69f5996fbfa1f1ab71",
+ "previous_context": "那你說該怎麼辦？靠薪水生活的人，手上有點股票當保險嘛。",
+ "original": {
+  "text": "那如果錢真的淡出，手上的股份還剩什麼價值？報告把未來分成四種。第一種，真正的豐裕，不持股也過得好。第二種，漫長的過渡，薪水的人越來越吃力，持股是救生艇。第三種，豐裕但集中，持股決定你是有請求權的人，還是等重分配的人。第四種，持有但兌現不了：被稀釋、被重稅、被管制，或者買在太高的價格。作者認為第二種最可能，而且已經在發生。報告的結論是，持股是必要條件，但還不夠：經濟權，要靠政治權來守。",
+  "lint": {
+   "chars": 193,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三",
+    "第四",
+    "第二"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 23.1,
+   "max_sentence_len": 33,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "但手上的股票真的保險嗎？\n這份報告把未來分成了四種。\n第一種是徹底豐裕，東西近乎免費。\n這時候你沒股票也沒差啦。\n然後第二種是漫長的過渡期。<short pause>\n靠薪水越來越吃力，股票就是救生艇。\n第三種是資源被少數人抓著。\n有持股，你才拿得到東西。\n那最後一種最慘。<short pause>\n股票被稀釋或被課重稅，根本換不到東西。\n你覺得哪一種最可能？\n這份報告的作者認為是第二種。\n而且現在就正在發生，想起來真的蠻毛的。\n重點來了，持股只是基本門票，但還不夠。\n因為經濟上的權利，最後得靠政治來守啊。",
+   "lint": {
+    "chars": 216,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三",
+     "第二"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 13.4,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "但如果錢真的變不值錢，\n手上那些股票還有用嗎？\n這份報告把未來分成四種情境。\n第一種是大家都過超好，\n東西幾乎免費，沒股票也沒差啦。\n第二種是漫長的過渡期，\n靠薪水會越來越吃力，\n這時候股票就像救生艇一樣。對，\n然後第三種是資源被少數人壟斷，\n持股決定你是分錢的人，還是等救助的人。\n最後一種最慘，就是股票換不到東西，\n可能被稀釋、被課重稅，甚至被管制。\n這份報告的作者認為，第二種最可能發生喔，\n而且早就已經在發生了。<short pause>\n手上有股票就穩了嗎？並沒有。\n重點來了，持股只是基本的門檻，\n你手上的經濟權，最後得靠政治權來守住。",
+   "lint": {
+    "chars": 245,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三",
+     "第二"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 23.5,
+    "max_sentence_len": 35,
+    "sentences_over_20": 7,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "可是如果錢真的淡出，股票還有用嗎？\n這份報告把未來分成四種狀況喔。\n第一種是真正的全面豐裕，\n東西幾乎免費，沒股票也過很好。<short pause>\n第二種是漫長的過渡期。\n靠薪水越來越吃力，持股就是救生艇。\n作者認為第二種最可能，而且正在發生。\n第三種是資源都被少數人抓著，\n有沒有持股，決定你能不能分到餅。\n然後第四種最慘，\n股票被稀釋或課重稅，根本換不到東西。<sigh>\n那你覺得光買股票就夠了嗎？\n答案是不夠。\n這也是這份報告讓我很有共鳴的地方。\n經濟權最後還是要靠政治權來守啦。",
+   "lint": {
+    "chars": 213,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第二",
+     "第三",
+     "第四"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 29,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "蠻毛的",
+   "to": "滿毛的",
+   "reason": "台灣用字"
+  }
+ ]
+}

@@ -1,0 +1,137 @@
+{
+ "segment": "s04_texas",
+ "position": "第 5 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e638953c5cdaa1626fcb1f953b83067b9352beef4cdedcb4ba4fc980c925b31f",
+ "previous_context": "根本過不了嘛。這就是拿得到分紅，但管不到公司啦。",
+ "original": {
+  "text": "SpaceX 還把註冊地從德拉瓦州搬到德州，把德州新法的保護全部用上。持有一股，你可以出席股東會、拿資訊、賣掉；可是要提案、要替公司提告，得持有百分之三，以現在的市值算，大約六百億美元。今年就有一位持有一百股的股東，在德州被駁回，連是非都沒審。章程還禁止集體訴訟。報告比較了四家做 AI 產能的公司，結構都一樣：散戶拿得到經濟權，拿不到治理權，差別只在治理權留給誰。報告也自己揭露：它是用 Anthropic 的 Claude 整理的，提到 Anthropic 的部分有利益衝突。",
+  "lint": {
+   "chars": 231,
+   "precise_numbers": [
+    "百分之三",
+    "六百",
+    "一百"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 37.5,
+   "max_sentence_len": 57,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "像 SpaceX 搬去德州，\n就是把法律的保護開到最大。\n你買一股，頂多去開開會、賣掉股票。\n那想提提案，或是替公司告高層呢？\n門檻高得嚇人，要持有百分之三的股份。\n換算下來，根本是好幾百億美金。<sigh>\n真的超誇張。\n今年有小股東去告，直接被法院打槍。\n連案子的對錯都沒審喔。\n而且章程還規定，禁止大家集體訴訟。\n這份報告比了四家做 AI 的大公司，\n發現結構全都一個樣。\n就是散戶能分到錢，但完全管不到公司。<short pause>\n差別只在權力最後握在誰手上。\n對了，這份報告自己有揭露利益衝突。\n它是用 Anthropic 的 Claude 整理的。\n提到 Anthropic 的部分，記得要自己查核啦。",
+   "lint": {
+    "chars": 264,
+    "precise_numbers": [
+     "百分之三",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 25,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "這還不算最誇張的喔。\nSpaceX 直接把註冊地搬去德州。\n把那邊法律能給的保護全用上了。\n你買一股，頂多去開開會、賣賣股票。\n那如果要提案，或是替公司告人呢？\n門檻居然要持有百分之三。<short pause>\n換算下來大概要好幾百億美元耶。\n這防守真的滴水不漏到讓人傻眼。\n今年有小股東在德州提告，\n法院連案子的是非都沒審，直接駁回。\n而且公司章程還禁止集體訴訟。\n報告裡比較了四家做 AI 的公司，\n其實大家的結構都長得一模一樣。\n就是散戶拿得到分紅，拿不到管理權啦。\n差別只在權力保留給誰而已。\n對了，這份報告有特別揭露利益衝突。\n因為內容是用 Claude 整理的。\n報告提到 Anthropic 的部分，\n大家記得要自己查核喔。",
+   "lint": {
+    "chars": 282,
+    "precise_numbers": [
+     "百分之三",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 29,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "像 SpaceX 就直接把公司搬到德州。\n德州的新法律對大老闆超友善。\n買了一股到底能幹嘛？\n可以去股東會、看資料，然後賣掉。\n但如果你想提提案、甚至告高層呢？\n門檻直接拉到百分之三。<short pause>\n換算下來大概要六百億美元耶。\n散戶哪拿得出來嘛！<laugh>\n今年有持有一百股的股東去提告。\n德州法院直接駁回，連案情都沒審。\n公司章程甚至還禁止集體訴訟。\n報告裡比較了四家 AI 產能公司。\n發現大家的結構都一樣。\n散戶能分到錢，但管不到公司啦。\n對了，這份報告是用 Claude 整理的。\n報告裡有自己揭露。\n提到 Anthropic 的部分有利益衝突喔。",
+   "lint": {
+    "chars": 243,
+    "precise_numbers": [
+     "百分之三",
+     "六百",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 13.3,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 2.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "今年有小股東在德州提告，法院連案子的是非都沒審，直接駁回。",
+   "to": "今年就有一位只持有一百股的股東，在德州對另一家公司提告，法院連案子的是非都沒審，直接駁回。",
+   "reason": "照原文：是西南航空的股東"
+  },
+  {
+   "from": "對了，這份報告有特別揭露利益衝突。因為內容是用 Claude 整理的。報告提到 Anthropic 的部分，大家記得要自己查核喔。",
+   "to": "對了，這份報告有特別揭露利益衝突：它是用 Anthropic 的 Claude 整理的。所以這份報告提到 Anthropic 的部分，大家記得要自己查核喔。",
+   "reason": "說清楚是誰的利益衝突；規則 19"
+  },
+  {
+   "from": "這防守真的滴水不漏到讓人傻眼。",
+   "to": "",
+   "reason": "段落超過 300 字"
+  },
+  {
+   "from": "報告裡比較了四家做 AI 的公司，其實大家的結構都長得一模一樣。",
+   "to": "報告裡比較了四家做 AI 的公司，結構都一樣。",
+   "reason": "段落超過 300 字"
+  }
+ ]
+}

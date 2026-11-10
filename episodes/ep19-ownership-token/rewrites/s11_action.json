@@ -1,0 +1,103 @@
+{
+ "segment": "s11_action",
+ "position": "第 12 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "1f737d5bcaf5a71d2270aabad2a648b007401eb3330b6679f686631cc37292e3",
+ "previous_context": "他說算力變便宜 SpaceX 營收也會掉啊，在賭場裡面，兩邊都不准哭啦。你看，這份報告說得很白，政治權力拿來擋，傷到的是還沒蓋好的新產能，反而保護了那些早就蓋好的人。",
+ "original": {
+  "text": "報告最後給的是框架，不是投資建議。經濟權那一手：用籃子，不要單押；把自己的工作算進去，如果你本來就在 AI 硬體的供應鏈工作，薪水已經押在同一個方向；還有估值紀律，SpaceX 上市一個月跌掉一半就是提醒，方向對、價格錯，一樣賠。政治權那一手：了解你持有的基金和退休金怎麼投票；盯著主權基金、全民分紅這類集體持有的制度；還有選票和組織。最後一點最重要：支持限制興建，和支持公共持份，是兩件事。",
+  "lint": {
+   "chars": 193,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 47.2,
+   "max_sentence_len": 94,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以這份報告最後給了一個行動方案。\n先說清楚喔，這不是投資建議啦。<short pause>\n面對未來，這份報告說要抓緊兩隻手。\n一手是經濟權，就是買股票。\n記得要用籃子裝，千萬不要單押。\n如果你本來就在 AI 硬體廠上班，\n那你的薪水就已經押在同一邊了嘛。\n然後，一定要注意買進的價格。\n你還記得 SpaceX 嗎？<short pause>\n上市一個月就跌掉一半耶。\n這就提醒我們，方向對、買太貴一樣賠。\n那另一手政治權呢？就是選票。\n你可以去盯著退休金或主權基金怎麼運作。\n最關鍵的是，分果實跟擋蓋廠是兩回事喔。\n兩隻手都要抓，不然隨時會被另一邊拿走。",
+   "lint": {
+    "chars": 235,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 30,
+    "sentences_over_20": 1,
+    "particles_per_100": 2.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "所以這份報告最後給了一個行動框架。\n先說好喔，這不是投資建議。\n未來的籌碼有兩手，一手股票，一手選票。\n經濟這手，建議用籃子分散，不要單押。\n如果你本身就在硬體鏈上班，\n你的薪水早就押在那了，可別重複冒險。\n而且買太貴的話，就算方向對也是賠錢。\n那政治那手該怎麼辦？<short pause>\n可以盯緊主權基金或全民分紅這種制度。\n最關鍵的是，支持限制蓋廠，\n跟支持全民分紅，完全是兩回事喔。\n你投那一票，是在分餅，還是在幫別人關門？\n這真的滿值得大家好好思考的。",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 30,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "所以這份報告最後整理出一個框架。先提醒一下，這絕對不是投資建議喔。他說未來的籌碼有兩隻手，一手是股票，一手是選票。你可能會問，股票這手要怎麼顧？就是買一整籃，不要單押。如果你已經在 AI 供應鏈上班，薪水都押在上面了，別再重複加碼。<short pause> 而且方向看對但買太貴，一樣會賠啦。那政治這手要看什麼？去看你的退休基金怎麼投票，然後盯緊全民分紅這種制度。說真的，這段話我很有共鳴。<laugh> 支持限制蓋廠，跟支持大家分果實，那完全是兩回事欸。你只顧一邊，另一手遲早會把它拿走。",
+   "lint": {
+    "chars": 222,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 29,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0
+}

@@ -1,0 +1,128 @@
+{
+ "segment": "s05_labor",
+ "position": "第 6 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8e8aa28ed58d28c39b5415bde3cd0765508efec2401c6d0bfc9b6c3f1515efeb",
+ "previous_context": "因為內容是用 Claude 整理的。報告提到 Anthropic 的部分，大家記得要自己查核喔。",
+ "original": {
+  "text": "為什麼分到經濟權突然變重要？因為另一個來源在縮。看薪水占整個經濟產出的比例：二戰後五十年，大約是三分之二；今年第一季，美國這個數字是一九四七年有統計以來最低，五成出頭。這個趨勢跑了二十多年，AI 可能讓它加速。也有反例：MIT 的經濟學家 Autor 主張，比例下降，工資還是可能上漲。報告說，兩派都同意的只有一點：果實會先流向資本那一邊。所以對靠薪水的人，手上有一點資本那一邊的東西，是一種保險，急不急，要看哪一派對。",
+  "lint": {
+   "chars": 206,
+   "precise_numbers": [
+    "五十",
+    "二十"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 28.4,
+   "max_sentence_len": 59,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "聊完工具，我們來看大家的荷包。\n為什麼大家現在這麼急著想買股票？<short pause>\n因為我們靠薪水能分到的餅，正在變小。\n對，就是薪水占整個經濟產出的比例，\n以前差不多是三分之二，\n今年第一季掉到百分之五十三點七，\n是有統計以來最低，幾乎要變成五五分了。\n然後這個趨勢跑了二十多年，\nAI 又讓它更快了。\n雖然 MIT 的 Autor 認為工資還是會漲，\n但這份報告說，大家都有一個共識，\n就是賺到的果實，會先流向有資產的人啦。\n我很能體會那種焦慮。<short pause>\n手上握一點資本，真的就像買保險嘛。",
+   "lint": {
+    "chars": 216,
+    "precise_numbers": [
+     "百分之五十三點七",
+     "二十"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 8,
+    "avg_sentence_len": 26.0,
+    "max_sentence_len": 62,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "查核完之後，來看另一個嚴肅的問題喔。為什麼分到經濟權，突然變這麼重要？因為薪水占整體產出的比例，一直在縮水。二戰後那幾十年，大概還能分到三分之二。到了今年初，只剩下百分之五十三點七。<sigh> 這是有統計以來的最低紀錄。上班族看了一定會覺得壓力超大。這份報告說，這個趨勢跑了二十多年。AI 的出現，很有可能會讓它加速。錢砸進資料中心，好處先流向拿股票的人。雖然 MIT 的學者主張，工資搞不好還會漲。但兩派都同意，果實會先流向資本那一邊。那你說該怎麼辦？靠薪水生活的人，手上有點股票當保險嘛。",
+   "lint": {
+    "chars": 237,
+    "precise_numbers": [
+     "百分之五十三點七",
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "好，那為什麼這件事突然變重要？\n因為薪水占整個產出的比例，正在變小。\n二戰後五十年，大概可以分到三分之二。\n到了今年第一季，只剩百分之五十三點七。<short pause>\n這是統計以來最低點，看了真讓人焦慮。<sigh>\n這個趨勢跑了二十多年，AI 還會加速。\nMIT 的學者 Autor 倒是有不同看法。\n他覺得工資搞不好還是會漲喔。\n那這兩派到底有什麼共識？\n這份報告裡說，大家唯一同意的就是：\n賺到的果實，一定先流到資本那一邊。\n所以靠領薪水的人，手上有點資本當保險，\n急不急，就看你相信哪一派了。",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [
+     "五十",
+     "百分之五十三點七",
+     "二十"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 33,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "靠薪水生活的人，手上有點股票當保險嘛。",
+   "to": "靠薪水生活的人，手上有點資本那一邊的東西，就是保險。至於急不急，要看哪一派對。",
+   "reason": "照原文的保留"
+  }
+ ]
+}

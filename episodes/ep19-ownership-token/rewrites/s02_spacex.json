@@ -1,0 +1,134 @@
+{
+ "segment": "s02_spacex",
+ "position": "第 3 段，共 13 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a2a624ff49991688e1aa56c19a15c6c80f9f99715ab3d9140bcf79cb06e9248b",
+ "previous_context": "我看到這段真的很有共鳴。對滿街都是的東西，錢可能不重要；但對稀缺的東西，所有權反而更重要，對吧？",
+ "original": {
+  "text": "照馬斯克自己的框架，SpaceX 剛好是最好的樣本。它有三個事業：把東西送上軌道，用噸計；在軌道上賣網路，就是 Starlink；還有賣算力，用瓦計。今年第三季，是它上市以來第一次單季獲利，而且算力部門的營收，第一次超過了 Starlink。這檔股票六月以史上最大的 IPO 上市，一個月內從高點跌掉大約一半。報告說，一股 SpaceX 對應的，是 Starlink 的訂戶、一座租給 Anthropic 和 Google 的算力農場，還有 Starship。如果馬斯克的框架成立，這一股本來就是用瓦特和噸計價的資產。",
+  "lint": {
+   "chars": 245,
+   "precise_numbers": [],
+   "enumerations": [
+    "第三",
+    "第一",
+    "第一"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 39.8,
+   "max_sentence_len": 65,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "對應"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說到所有權，SpaceX 剛好就是最棒的例子。\n它底下基本上就是三個事業。\n一個把東西送上太空，用噸來算；\n一個是在軌道賣網路的 Starlink；\n然後最後一個是賣算力，用瓦特來算。\n\n你知道最狂的是什麼嗎？<short pause>\n今年第三季，算力營收第一次超越 Starlink，\n而且這也是它上市後，第一次單季賺錢。\n先說喔，這絕對不是投資建議啦。\n這檔股票六月用史上最大 IPO 上市，\n結果不到一個月，就從高點跌掉大約一半。\n\n那你猜，買一股 SpaceX 到底是買到什麼？\n報告裡說，你買到的不是抽象概念，\n而是有一千三百六十萬個訂戶的網路、\n一座算力農場，還有送上軌道的太空船。\n如果照馬斯克的邏輯來看，\n這本來就是用瓦特和噸計價的資產。\n就算以後錢淡出了，它也不會跟著消失嘛。",
+   "lint": {
+    "chars": 309,
+    "precise_numbers": [
+     "一千三百六十萬"
+    ],
+    "enumerations": [
+     "第三",
+     "第一",
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 27.1,
+    "max_sentence_len": 50,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "講到所有權，SpaceX 就是最好的例子。先說喔，這段不是投資建議啦。<short pause>照馬斯克的想法，它其實就三個事業：一個把火箭送上太空，用噸算；一個在軌道賣網路，就是 Starlink；還有一個，就是賣算力。那買它的一股到底買到了什麼？你猜它現在最厲害的是哪個？今年第三季，算力營收第一次超車 Starlink。這份報告裡說，你買到的一股，包含了一千三百六十萬個網路訂戶，剛把衛星送上軌道的 Starship，重點來了，還有一座算力農場，租給 Google 還有 Anthropic。對了，報告有特別揭露喔，他們跟 Anthropic 其實有利益衝突。我看到這裡真的覺得超酷的。<laugh>這一股本來就是拿瓦特跟噸計價的資產嘛。",
+   "lint": {
+    "chars": 293,
+    "precise_numbers": [
+     "一千三百六十萬"
+    ],
+    "enumerations": [
+     "第三",
+     "第一"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 28.3,
+    "max_sentence_len": 81,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "照馬斯克的邏輯，SpaceX 是最好的例子。\n先說喔，這裡完全不是投資建議。\n它其實分成三個事業。\n一個把東西送上太空，用噸算。\n一個在軌道賣網路，就是 Starlink。\n然後第三個是賣算力，用瓦特算。\n你猜哪一個成長最猛？\n答案是算力，營收第一次超過 Starlink。\n而且這季也是他們上市後，第一次獲利。\n它六月以史上最大 IPO 上市，\n結果一個月內，股價就跌掉大約一半。<sigh>\n那買一股 SpaceX，到底算買到什麼？\n報告裡說，是上千萬個網路訂戶、\n剛發射的 Starship，還有一座算力農場。\n對了，算力有租給 Anthropic，\n報告自己揭露有利益衝突喔。\n我看到這邊覺得這個想法真的很酷。\n如果這些資產，本來就是用瓦特和噸計價，\n就算錢淡出，它也不會跟著淡出吧。",
+   "lint": {
+    "chars": 314,
+    "precise_numbers": [
+     "千萬"
+    ],
+    "enumerations": [
+     "第三",
+     "第一",
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 19.9,
+    "max_sentence_len": 36,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "先說喔，這段不是投資建議啦。<short pause>照馬斯克的想法",
+   "to": "<short pause>照馬斯克的想法",
+   "reason": "開頭和結尾已經說過不是投資建議"
+  },
+  {
+   "from": "對了，報告有特別揭露喔，他們跟 Anthropic 其實有利益衝突。",
+   "to": "",
+   "reason": "利益揭露放在 s04，這句的「他們」會被聽成 SpaceX"
+  }
+ ]
+}

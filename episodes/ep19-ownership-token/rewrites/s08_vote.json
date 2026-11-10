@@ -1,0 +1,105 @@
+{
+ "segment": "s08_vote",
+ "position": "第 9 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "5e884bc9caa4553d344e1176c36090504b90b2ecec9824d1bd317dbafa644619",
+ "previous_context": "我讀到這一段其實覺得滿震撼的。原來現在連分股票都變成政治戰場了。",
+ "original": {
+  "text": "那選票呢？報告說，代議士會聽人民的，靠的是幾條管道：選票、稅基、罷工，還有真實的人際網路。一篇論文指出，AI 取代勞動之後，這些管道都會被削弱，可是一人一票的規則，不會因為 AI 改變，它是最難被自動化的一條。這對 SpaceX 特別成立：它高度依賴政府的合約、頻譜執照和發射許可。報告說，公民透過選票影響這些機構，對 SpaceX 的約束力，可能比股東大會還大。股權讓你分到錢，真正能約束它的，反而是你那張票。",
+  "lint": {
+   "chars": 199,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 32.2,
+   "max_sentence_len": 56,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "透過"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "既然股票變成戰場，那選票呢？\n這份報告提到一個很有趣的觀點。<short pause>\n你想想看。\n如果 AI 以後什麼都能做，\n大家去罷工可能根本沒人理，\n政府稅收也不一定要靠你。\n那人民到底還剩下什麼籌碼？\n答案就是你手上的選票啦。\n因為不管科技再怎麼強，\n一人一票的規則還是動不了嘛。\n像 SpaceX 就是很典型的例子。\n他們超依賴政府合約跟發射許可。\n身為公民投下的那一票，\n搞不好比股東大會還更有約束力耶。\n我讀到這裡覺得這個切入點滿酷的。\n買股票只是讓你分到錢，\n但真正能管住大公司的，反而是你的選票。",
+   "lint": {
+    "chars": 225,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 36,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "既然股票是戰場，那選票呢？如果工作都被 AI 拿走，我們還剩什麼籌碼？答案其實是選票喔。<short pause>這份報告提到一篇論文，以後勞工罷工可能沒人理了，可是「一人一票」很難被自動化取代。這對 SpaceX 這種公司特別明顯。它超級依賴政府的發射許可跟大合約耶。公民用選票選出來的政府，對它的約束力，搞不好比股東大會還大。我讀到這裡很有共鳴。股票可能只是讓你分到錢，真正能踩剎車的，反而是你手上的選票啦。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 20.0,
+    "max_sentence_len": 40,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "那如果連股票都搶不贏，我們還剩下什麼？\n答案可能很老派，就是選票。\n這份報告提到，AI 把工作取代之後，\n罷工可能根本沒人理你。\n然後，最難被自動化的東西，就是一人一票。\n你有沒有想過，像 SpaceX 這種公司怕誰？\n答案是政府。\n它超依賴政府合約，還有發射許可耶。<short pause>\n對啊，公民手裡的選票，能影響這些機構。\n這對它的約束力，搞不好比股東大會還大喔。\n買股票可能只是分到錢，\n真正能管住它們的，反而還是你的選票。",
+   "lint": {
+    "chars": 192,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 28,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 2
+}

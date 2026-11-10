@@ -1,0 +1,29 @@
+{
+ "id": "ep19-ownership-token",
+ "number": 19,
+ "type": "full",
+ "guid": "debug-after-dark:ep19",
+ "title": "EP19 錢不重要之後，誰握著產能",
+ "description": "馬斯克說，2036 年錢就不重要了，價值改用瓦數和噸數來算。就算他說對，計價單位換掉之後，什麼還留在你手上？這份報告從一股 SpaceX 倒推：說錢不重要的人，握著四成多的股權和八成以上的投票權；一股有經濟權和治理權兩半，散戶只拿得到一半。再看薪水占經濟產出的比例探底、四種未來、各方提出的分股票方案，以及美國期中選舉後，選票第一次出手，用在「擋」。\n\n今晚的 breakpoint：\n1. 說錢不重要的人，沒有說所有權不重要；對稀缺的東西，所有權會更重要。\n2. 一股有兩半：散戶拿得到經濟權，拿不到治理權。\n3. 誰擁有產能靠股票；誰能決定產能蓋不蓋、果實怎麼分，靠選票。\n\n原文：〈錢不重要之後，誰握著產能〉v0.2（2026-11-10 修訂，補上期中選舉） https://imitator.ai-apps.work/r/ownership-token\n報告自己揭露：它是用 Anthropic 的 Claude 整理的，涉及 Anthropic 的部分有利益衝突。Chamath Palihapitiya 對算力合約的估計是他個人的推估。\n本集內容僅供參考，不構成投資建議。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "ownership-token",
+ "report_version": "v0.2（2026-11-10）",
+ "source_url": "https://imitator.ai-apps.work/r/ownership-token",
+ "status": "draft",
+ "category_note": "財經類：說明與口播都有不構成投資建議；報告自揭利益衝突（Anthropic）",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "audio": {
+  "file": "ep19-ownership-token.mp3"
+ }
+}

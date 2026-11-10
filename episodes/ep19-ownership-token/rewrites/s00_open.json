@@ -1,0 +1,104 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 13 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "dd3210133c2a287387ccfb7bfcc82b75005ba2c6d97d070ca518b72a308bebb3",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "馬斯克說，到了二〇三六年，錢就不重要了。他的說法是：機器人和太空旅行，會把經濟做到比地球大好幾個數量級，到時候價值改用瓦數和噸數來算；人類能做的事，AI 和機器人都做得更好，人就像退休族一樣，種菜、做藝術、找自己的意義。這份報告問了一個問題：就算他說對了，計價的單位換掉之後，什麼東西還留在你手上？先說清楚，這集談到股票，但不是投資建議。",
+  "lint": {
+   "chars": 168,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 41.0,
+   "max_sentence_len": 88,
+   "sentences_over_20": 2,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "馬斯克說，到了二〇三六年，錢就不重要了。<short pause>你相信嗎？我聽到的時候真的愣了一下。他的意思是，AI 和機器人會包辦所有事情。到時候價值改用物理量算，像是電量跟重量。大家就像退休一樣，種菜、做藝術、找意義。但是，這份報告問了一個很痛的問題。<short pause>就算他說對了，什麼東西還留在你手上？先說在前面，這集談股票，不是投資建議喔。",
+   "lint": {
+    "chars": 153,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 16.0,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "嘿，你有想過不缺錢的生活嗎？\n馬斯克說，到了二〇三六年，\n錢這東西就不重要了。<short pause>\n就是他說機器人和太空旅行，\n會把整個經濟做超大。\n到時候的價值，\n改用電力的瓦數跟重量的噸數來算。\n然後人類能做的事，\nAI 全都做得更好。\n我們每個人就像退休一樣，\n去種種菜、搞搞藝術。\n聽起來很美好對吧？\n但我看到這裡，只想問一個問題。\n如果計價單位換掉了，\n還有什麼東西會留在你手上？\n對了先提醒一下，這集有聊到股票，\n但完全不是投資建議喔。",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 18.7,
+    "max_sentence_len": 26,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "馬斯克說到了二〇三六年，錢就不重要了。\n你相信嗎？<short pause>\n他的意思是，機器人和 AI 會把餅做超大。\n到時候算價值不是用鈔票，\n是用電力的瓦數跟重量的噸數。\n人類全都可以退休去種菜、做藝術。\n但我看到這裡就在想，\n就算他說對了，\n計價單位換掉之後，\n還有什麼東西是真正留在你手上？\n欸先講清楚，這集聊到股票，\n但絕對不是投資建議喔。",
+   "lint": {
+    "chars": 150,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 7,
+    "avg_sentence_len": 20.4,
+    "max_sentence_len": 40,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "他的意思是，AI 和機器人會包辦所有事情。到時候價值改用物理量算，像是電量跟重量。",
+   "to": "他的意思是，機器人和太空旅行會讓經濟大上好幾個數量級。到時候價值改用物理量算，像是瓦數跟噸數。",
+   "reason": "照原文：wattage 和 tonnage"
+  }
+ ]
+}

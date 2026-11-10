@@ -1,0 +1,122 @@
+{
+ "segment": "s10_block",
+ "position": "第 11 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ca691c174240a67cd6545b756c699af81a5bfc4d0988a99c20c956fe90928416",
+ "previous_context": "很多地方辦公投，限制蓋資料中心，結果那些限制案居然幾乎都通過了。至於公共持股，根本連議程都沒排進去啦。",
+ "original": {
+  "text": "擋，也不只一個方向。選後，投資人 Chamath 在節目上算了另一筆帳：新的資料中心蓋得更慢，算力的價格可能上漲，SpaceX 跟 Anthropic 的算力合約，有提前九十天通知就能終止的條款，他認為 SpaceX 可以拿來重新議價。這是他個人的推估，合約金額沒有公開，報告也揭露了利益衝突。馬斯克的回應是：這當然是雙向的，算力如果變得充足又便宜，SpaceX 的營收就會下降，賭場裡兩邊都不准哭。報告說，政治權可以用來分，也可以用來擋；擋，傷到的是還沒蓋的產能，保護的是已經蓋好的。",
+  "lint": {
+   "chars": 235,
+   "precise_numbers": [
+    "九十"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 46.0,
+   "max_sentence_len": 100,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "推估"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "大家到處擋著不給蓋。\n但你以為擋下來就沒事了嗎？\n其實沒有喔。\n投資人 Chamath 就在節目上算了另一筆帳。\n如果新的資料中心蓋得更慢，\n那已經蓋好的算力，價格反而會變貴。\n像 SpaceX 跟 Anthropic 的合約，\n任一方提前九十天通知就能終止。\n他認為 SpaceX 可以拿這條重新議價。\n不過這份報告自己揭露有利益衝突，\n而且合約金額其實沒有公開啦。\n那馬斯克在 X 上怎麼回？\n他說賭場裡兩邊都不准哭。<laugh>\n算力要是變便宜，SpaceX 營收也會掉。\n講白了就是願賭服輸嘛。\n這份報告裡說，\n政治權可以用來分，也可以用來擋。\n擋，傷到的是還沒蓋的產能，\n反而保護了那些已經蓋好的。<short pause>",
+   "lint": {
+    "chars": 269,
+    "precise_numbers": [
+     "九十"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 35,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "不過大家都在擋，真的只有壞處嗎？\n其實不一定喔。\n投資人 Chamath 就算了另一筆帳。\n如果新資料中心蓋得變慢，\n那已經蓋好的算力，不就更搶手？\nSpaceX 跟 Anthropic 有簽算力合約。\n只要提前九十天通知，就能解約。\nChamath 覺得 SpaceX 可以趁機重新開價。\n但這是他個人的推估，數字沒公開。\n而且這份報告自己揭露，有利益衝突喔。\n馬斯克在 X 上回說，這當然是雙向的嘛。\n要是算力變便宜，SpaceX 也會少賺。\n他說在賭場裡，兩邊都不准哭啦。<short pause>\n我看到這個回應真的超想笑。<laugh>\n所以這份報告說，政治權力不只拿來分，\n還可以拿來擋。\n擋下去，傷到還沒蓋的產能，\n反而保護了那些已經蓋好的設施。",
+   "lint": {
+    "chars": 282,
+    "precise_numbers": [
+     "九十"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 27,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.4,
+    "written_words": [
+     "推估"
+    ],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "可是欸，擋下興建真的只有壞處嗎？<short pause>\n其實不一定喔。\n投資人 Chamath 在節目上算了另一筆帳。\n如果新的資料中心蓋得更慢，\n那現有的算力不就變貴了嗎？\n像 SpaceX 跟 Anthropic 簽的算力合約，\n只要提前九十天通知，\n隨時都可以直接終止耶。\n他覺得 SpaceX 可以拿這條重新議價。\n先講好，這只是他個人猜測啦，\n合約沒公開，報告自己也揭露有利益衝突。\n然後馬斯克的反應超帥。\n他說算力變便宜 SpaceX 營收也會掉啊，\n在賭場裡面，兩邊都不准哭啦。<laugh>\n你看，這份報告說得很白，\n政治權力拿來擋，\n傷到的是還沒蓋好的新產能，\n反而保護了那些早就蓋好的人。",
+   "lint": {
+    "chars": 259,
+    "precise_numbers": [
+     "九十"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 24.9,
+    "max_sentence_len": 46,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "合約沒公開，報告自己也揭露有利益衝突。",
+   "to": "合約沒公開，這份報告自己也揭露有利益衝突。",
+   "reason": "規則 19"
+  }
+ ]
+}

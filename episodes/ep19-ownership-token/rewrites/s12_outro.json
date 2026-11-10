@@ -1,0 +1,131 @@
+{
+ "segment": "s12_outro",
+ "position": "第 13 段，共 13 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f8389f4b87730a8f0a193023957d56bde87c83f01d97694be1d976d5639fdd4a",
+ "previous_context": "最關鍵的是，分果實跟擋蓋廠是兩回事喔。兩隻手都要抓，不然隨時會被另一邊拿走。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，說錢不重要的人，沒有說所有權不重要；對豐裕的東西錢會不重要，對稀缺的東西所有權會更重要。第二，一股有兩半，散戶拿得到經濟權，拿不到治理權。第三，誰擁有產能，靠股票；誰能決定產能蓋不蓋、果實怎麼分，靠選票。再提醒一次，這集不是投資建議。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 171,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 20.4,
+   "max_sentence_len": 46,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n這份報告讀下來，真的讓人想了蠻多的。\n我們就把今晚的內容，收斂成三句話。\n第一，東西越是稀缺，所有權就比錢更重要。\n第二，散戶只拿得到分紅，拿不到治理權。\n第三，產能歸誰看股票，果實怎麼分靠選票。\n<short pause>\n最後要提醒大家，這集完全不是投資建議喔。\n平常買股票還是要自己做好功課啦。<laugh>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 183,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 0,
+    "tags": 3
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，對稀缺的東西來說，所有權比錢更重要。\n第二，散戶拿得到經濟分紅，但拿不到治理權喔。\n第三，誰擁有產能靠股票，果實怎麼分要靠選票。<short pause>\n想清楚這三件事，看未來的局勢會清楚很多。\n欸對了，最後提醒一下，這集不是投資建議喔。\n大家買股票前，還是要自己做好功課啦。\n原文連結在節目資訊欄。\n我是 Ping。\n有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 177,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 2.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 0,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。\n\n第一，就算錢不重要，稀缺東西的所有權更重要。\n第二，散戶拿得到經濟權，但拿不到治理權。\n第三，產能歸誰要看股票，果實怎麼分得看選票。\n\n你問我聽完會不會焦慮？<short pause>老實說還真的有一點。光買股票真的不夠，遊戲規則才是關鍵嘛。然後還是要提醒大家，這集不是投資建議喔。\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 177,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 21,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "這份報告讀下來，真的讓人想了蠻多的。我們就把今晚的內容，收斂成三句話。第一，東西越是稀缺，所有權就比錢更重要。",
+   "to": "第一，說錢不重要的人，沒有說所有權不重要。東西越是稀缺，所有權就比錢更重要。",
+   "reason": "breakpoint 第一點照原文；台灣用字"
+  },
+  {
+   "from": "第三，產能歸誰看股票，果實怎麼分靠選票。",
+   "to": "第三，產能歸誰看股票，產能蓋不蓋、果實怎麼分，靠選票。",
+   "reason": "照原文"
+  }
+ ]
+}

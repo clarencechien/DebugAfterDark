@@ -1,0 +1,106 @@
+{
+ "segment": "s03_halves",
+ "position": "第 4 段，共 13 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b0f992c0b254bd9ef49bf1e2f9ac09a0b82f2fc1b90679cfb48f67dfc78be136",
+ "previous_context": "我看到這裡真的覺得超酷的。這一股本來就是拿瓦特跟噸計價的資產嘛。",
+ "original": {
+  "text": "但一股裡面，其實有兩種權利：分享成長的經濟權，和決定公司怎麼做的治理權。在 SpaceX，這兩樣是分開賣的。你在市場上買到的股票，一股一票；另一種股票一股十票，不對外發行，馬斯克持有九成以上。把馬斯克以外所有人的票加起來，不到兩成。Google 的母公司也一樣。今年它的股東會有一個一股一票的提案，只拿到三成支持；可是把內部人的票拿掉，外部股東的支持度估計超過九成五。報告說，這就是有經濟權，沒有治理權。",
+  "lint": {
+   "chars": 200,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 27.6,
+   "max_sentence_len": 52,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "但是你買了一股，真的就算老闆嗎？\n其實沒有喔。<short pause>\n這份報告的作者說，股票要拆成兩半看。\n一半是分錢的經濟權，一半是做決定的治理權。\n像 SpaceX 就是把這兩樣分開賣。\n你在市場上買到的股票，一股只有一票。\n然後馬斯克拿的那種，一股有十票。\n他明明只出四成左右的錢，\n卻掌握了整整百分之八十二的投票權。\n其他人票數加起來，連兩成都不到。\n最厲害的是 Google 也是這套。\n外部股東想改回一股一票，你猜結果怎樣？\n根本過不了嘛。<laugh>\n這就是拿得到分紅，但管不到公司啦。",
+   "lint": {
+    "chars": 216,
+    "precise_numbers": [
+     "百分之八十二"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 28,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "不過買了股票，你真的說得上話嗎？\n其實一股裡面，分成了兩半喔。\n一半是分錢的經濟權，\n另一半是管公司的投票權。\n重點來了，SpaceX 把這兩件事分開賣。\n你在市場上買到的股票，一股只有一票。\n馬斯克拿的那種股票，一股算十票耶。<short pause>\n所以他只用四成多的股份，\n就直接拿下了百分之八十二的投票權。\n你猜外部股東管得動他嗎？\n根本不可能嘛。<laugh>\n像 Google 母公司也是這樣搞。\n今年股東想推一股一票，\n外面小股東九成多都投贊成，\n最後還是被內部人直接擋下來。\n報告裡說，這就是拿得到分紅，\n卻完全沒有話語權啦。",
+   "lint": {
+    "chars": 233,
+    "precise_numbers": [
+     "百分之八十二"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.4,
+    "max_sentence_len": 37,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "不過你買了一股，真的就算老闆嗎？\n其實一股裡面，分成了兩半。\n一半是分錢的經濟權。\n另一半是管事的治理權。\n在 SpaceX，這兩件事是分開賣的。<short pause>\n機制就是所謂的雙層股權。\n你在市場買的股票，一股只有一票。\n但馬斯克手上那種，一股有十票耶。\n重點來了，他只拿四成左右的股份，\n投票權居然有百分之八十二！<short pause>\n把其他人全加起來，連兩成都不到。\n這感覺真的很妙齁？\nGoogle 母公司也是這樣。\n之前外部股東幾乎都想要一股一票，\n結果也是完全翻不動。\n這份報告說，這就是你能賺錢，\n但管不到公司啦。",
+   "lint": {
+    "chars": 228,
+    "precise_numbers": [
+     "百分之八十二"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0
+}

@@ -1,0 +1,99 @@
+{
+ "segment": "s01_two",
+ "position": "第 2 段，共 13 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ff5056f6664f118e585135416125a499f10577146e9103d131be19e9cdeb4659",
+ "previous_context": "就算他說對了，什麼東西還留在你手上？先說在前面，這集談股票，不是投資建議喔。",
+ "original": {
+  "text": "報告說，這句話其實有兩個主詞：錢，和產能。錢是計價單位，產能是被計價的東西。在同一場訪談裡，被問到自己的財富，馬斯克說，那主要是 SpaceX 和 Tesla 的持股，他需要大比例的持股來維持投票權。所以，說錢不重要的人，自己握著四成多的股權和八成以上的投票權。有經濟學家問他，既然錢不重要，要不要在二〇三六年前把財富捐出去？之後他宣布，送每個美國小孩一股 SpaceX。報告說：他能給的，是股份，不是錢。對豐裕的東西，錢會不重要；對稀缺的東西，所有權會更重要。",
+  "lint": {
+   "chars": 226,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 27.2,
+   "max_sentence_len": 57,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這份報告的作者說，這句話其實有兩個主詞：錢，還有產能。錢只是拿來計價的尺，產能才是真正被量的東西。那被問到自己的身價，馬斯克怎麼說？他說那都是持股，他需要投票權留在掌舵的位置。最扯的是，他抓著八成以上的投票權耶。<laugh> 我看到這段真的很有共鳴。有位經濟學家就問他，既然錢不重要，要不要把大筆財富全捐掉？結果你猜他怎麼做？他宣布要送每個美國小孩一股 SpaceX。報告裡說，他能給的是股份，不是錢。重點來了，對到處都有的東西，錢可能不重要；但對稀缺的東西，所有權反而更重要了。",
+   "lint": {
+    "chars": 232,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.1,
+    "max_sentence_len": 38,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "這份報告裡提到，馬斯克說以後錢不重要了。\n但這句話其實有兩個主詞：錢，跟產能。\n錢只是量尺，產能才是真正值錢的東西。<short pause>\n更扯的是，說錢不重要的人，\n自己手上抓著八成以上的投票權耶。\n有經濟學家問他，那你要不要把錢全捐出來？\n你猜他怎麼做？<short pause>\n他宣布要送每個美國小孩一股 SpaceX 股票。\n這份報告就說，他能給的是股份，不是錢。\n我看到這段真的很有共鳴。\n對滿街都是的東西，錢可能不重要；\n但對稀缺的東西，所有權反而更重要，對吧？",
+   "lint": {
+    "chars": 201,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.1,
+    "max_sentence_len": 35,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "這份報告的作者點出一個超有趣的細節。<short pause>\n馬斯克常說，以後傳統的錢不重要了。\n但仔細看，這句話其實有兩個主詞，\n就是錢跟產能。\n錢只是拿來算的單位嘛，\n產能才是被算價值的東西。\n那你猜馬斯克自己怎麼做？\n他其實牢牢抓著公司的所有權。\n他自己就握著百分之四十二的股權耶。\n<laugh> 我看到這段真的忍不住笑了。\n嘴巴說錢不重要，權力抓得比誰都緊。\n後來有經濟學家問他，\n既然錢不重要，要不要把財富捐出去？\n結果他宣布，\n明年送每個美國小孩一股 SpaceX。\n這份報告說，他給的是股份，不是錢。\n重點來了，\n滿街都是的東西，錢確實不重要；\n可是稀缺的資產，所有權反而更關鍵。<short pause>",
+   "lint": {
+    "chars": 259,
+    "precise_numbers": [
+     "百分之四十二"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 18.9,
+    "max_sentence_len": 36,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   }
+  }
+ ],
+ "chosen": 1
+}
