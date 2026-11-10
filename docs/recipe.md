@@ -186,6 +186,11 @@ python3 tools/select_takes.py --script episodes/<ep>/script.json --segments out/
 每批 12 個檔同時送出，每批最多等 600 秒、失敗重試一次，還是失敗就在本機 CPU 轉寫那一批，所以網路斷了也不會丟掉整次執行。
 沒有 Modal 時改用 `--asr breeze`（本機）。
 
+**Modal 等開機（2026-11-10）**：EP16 挑選 9 分鐘，第一批在開始後 412 秒才回來，GPU 實際只算了 37 秒，其餘是在排 L4；
+本機的聲紋、抖動、亮度合計約 30–44 秒，不是瓶頸，所以聲紋不搬上 Modal。現在 `gpu=["L4", "A10G", "T4"]`（排不到 L4 就用別的），
+`make_podcast.py episode` 開始生成時就先 `warm_remote()` 叫醒容器，容器閒置 10 分鐘才關。EP17 挑選 1 分 16 秒，
+補錄後重選 40 秒（Modal 8 秒）。`transcribe_remote` 每批會印「開始後幾秒回來、GPU 算了幾秒」，差很多就是在等開機。
+
 依序篩選：
 1. **清楚**：Breeze 盲聽錯誤率跟最好的那次差 0.012 以內。
 2. **專有名詞**（`--terms`）：盲聽稿要出現同樣次數。**Breeze 會把 Ping 寫成「pin」**，所以 Ping 不要放進 `--terms`，

@@ -28,6 +28,22 @@
   "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
  },
  "audio": {
-  "file": "ep17-ambition-unit.mp3"
+  "file": "ep17-ambition-unit.mp3",
+  "bytes": 9310302,
+  "sha256": "a2a0f334aff261612e653d7affde57c25a08bfe42ecd7cea3ed9096350f0bee4",
+  "duration_s": 581.9,
+  "duration": "9:41",
+  "lufs": -16.8
+ },
+ "qa": {
+  "breeze_cer_mean": 0.024,
+  "jitter_semitones": 0.237,
+  "gates": "錯誤率 2.4% 通過；音高跳動 0.237 比門檻 0.23 高一點：s02 補了 3 次，六次都在 0.27–0.29，判斷是這段文字本身",
+  "manual_pick": "s05、s06、s12 手動選（jitter、音高、語速）",
+  "consistency": "qa/consistency.json：各段音高在中位數 -5.5～+6 Hz；接縫亮度 s01→s02 跳最多",
+  "both_wrong": "「釘住」聽成「頂住／定住」、「每一格」聽成「每一個」、「滿」寫成「蠻」",
+  "selection_time": "挑選 1 分 16 秒（EP16 是 9 分鐘）：生成語音時先預熱 Modal 容器、加了 A10G／T4 備選；四批同時在 44 秒內回來。補錄後重選 40 秒，Modal 8 秒",
+  "twtone": "qa/twtone.md：對舉 3 句改掉",
+  "terms": "Ping、pong 3 次都判為英文念法"
  }
 }
