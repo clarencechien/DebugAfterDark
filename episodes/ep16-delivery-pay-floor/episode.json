@@ -8,7 +8,7 @@
  "report_slug": "delivery-pay-floor",
  "report_version": "v0.2",
  "source_url": "https://imitator.ai-apps.work/r/delivery-pay-floor",
- "status": "draft",
+ "status": "final",
  "voice": {
   "provider": "gemini",
   "model": "gemini-3.8-flash-tts",
@@ -42,5 +42,6 @@
   "twtone": "qa/twtone.md：沒有超過基準的項目",
   "terms": "Ping、pong 3 次都判為英文念法"
  },
- "series": "外送專法 1/2（下：EP17）"
+ "series": "外送專法 1/2（下：EP17）",
+ "published": "2026-11-10T11:51:00+08:00"
 }

@@ -7,7 +7,7 @@
  "description": "上一集〈加薪留不住〉是怎麼做出來的？五個午餐時聊到的問題，兩個小時，agent 工作了三十六分鐘，人坐在螢幕前大約半小時、說了八句話，其中四句改變了結論。這集講那個下午：Google、Chat、Agent 三種答案長得有什麼不一樣，人在哪四個時刻收線，agent 犯的四個錯，還有大約五百萬 token 花在哪裡。\n\n今晚的 breakpoint：\n1. 一份看起來完整的答案，最大的問題不在錯，在它寫得讓人不想追問；每一格有出處，錯誤才找得出來。\n2. 跑的成本降了兩個數量級，看的成本沒有降；改變結論的，是在答案看起來完整的時候再問一次。\n3. 野心的單位變小了：對更小的事，用同樣的標準。\n\n原文：〈野心的單位變小了 — 從 Google 搜尋到 agent，一個答案的代價〉 https://imitator.ai-apps.work/r/ambition-unit\n\n上一集：EP16〈加薪留不住〉\n延伸收聽：EP01〈記住了第一招，漏掉了第五招〉、EP02〈第五招的實驗：跑從來不是問題，看才是〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
  "report_slug": "ambition-unit",
  "source_url": "https://imitator.ai-apps.work/r/ambition-unit",
- "status": "draft",
+ "status": "final",
  "series": "外送專法 2/2（上：EP16）",
  "related": [
   "ep16-delivery-pay-floor",
@@ -45,5 +45,6 @@
   "selection_time": "挑選 1 分 16 秒（EP16 是 9 分鐘）：生成語音時先預熱 Modal 容器、加了 A10G／T4 備選；四批同時在 44 秒內回來。補錄後重選 40 秒，Modal 8 秒",
   "twtone": "qa/twtone.md：對舉 3 句改掉",
   "terms": "Ping、pong 3 次都判為英文念法"
- }
+ },
+ "published": "2026-11-10T11:53:00+08:00"
 }

@@ -21,6 +21,8 @@
 | [EP13](episodes/ep13-cb-autopsy/) | 公司發可轉債，是利多還是警訊？（台股驗屍 2/2） | 定稿 |
 | [EP14](episodes/ep14-91app-doors/) | 門沒換，只是敲門的變多了（91APP 與永豐銀） | 定稿；報告 v0.2（11/9） |
 | [EP15](episodes/ep15-japan-white-goods/) | 不是被打敗，是被賣掉的（日本白色家電） | 定稿 |
+| [EP16](episodes/ep16-delivery-pay-floor/) | 加薪留不住（外送專法 1/2） | 定稿 |
+| [EP17](episodes/ep17-ambition-unit/) | 野心的單位變小了（外送專法 2/2） | 定稿；挑選改成先預熱 Modal，9 分鐘降到 1 分多 |
 
 - 一集怎麼做：[`docs/recipe.md`](docs/recipe.md)
 - 一集要多久：從定稿的草稿到 mp3 約 9 分鐘，以前約 50 分鐘（2026-11-07，EP11 第一次照新做法跑）。
