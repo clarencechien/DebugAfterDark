@@ -1,0 +1,116 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 13 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "eb11d0e91c4889f3ac99d64e86204bd8a1b6d8236bd41b9c8c047ed7317c1c3a",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "五個午餐時聊到的問題，兩個小時的牆上時間。其中 agent 工作了三十六分鐘，人坐在螢幕前大約半小時，換到一篇有模型、也有驗算的報告。那篇報告，就是上一集的加薪留不住。這一集不講外送，講的是那兩個小時裡發生了什麼：誰做了什麼，錯在哪裡，花了多少。報告的標題是：野心的單位變小了。",
+  "lint": {
+   "chars": 137,
+   "precise_numbers": [
+    "三十六"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 26.4,
+   "max_sentence_len": 43,
+   "sentences_over_20": 2,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "其中"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "五個午餐隨口聊的問題，\n花了兩個小時的牆上時間。<short pause>\n其中 agent 工作了三十六分鐘，\n人坐在螢幕前，呃我是說作者，\n大概也才半小時吧。\n你猜最後換到了什麼？\n換到一篇有模型、也有驗算的完整報告。\n老實說，我看到那個過程真的覺得超扯。\n那兩個小時到底發生了什麼？\n誰做了什麼、錯在哪裡，又花了多少？\n作者下的標題就是：<short pause>\n野心的單位變小了。",
+   "lint": {
+    "chars": 156,
+    "precise_numbers": [
+     "三十六"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 18.5,
+    "max_sentence_len": 38,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.6,
+    "written_words": [
+     "其中"
+    ],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "五個午餐隨口聊到的問題。<short pause>\n你猜換成一份完整報告要多久？\n答案是兩個小時。\n人真正坐在螢幕前，大概才半小時喔。\n然後 agent 跑了三十六分鐘。<short pause>\n我看到這個紀錄真的覺得超扯。\n就是啊，這集其實不聊外送。\n我們來看那兩個小時到底發生了什麼。\n誰做了什麼、哪裡搞錯了，然後花了多少。\n這份報告的標題是：野心的單位變小了。",
+   "lint": {
+    "chars": 147,
+    "precise_numbers": [
+     "三十六"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 13.7,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "午餐隨口聊到的幾個問題，\n然後花了兩個小時，\n你猜最後換到什麼？\n換到一篇有模型、有驗算的報告。\n裡面的 agent 跑了三十六分鐘，\n人坐在螢幕前其實才半小時吧。\n我看到這個紀錄真的覺得超扯。<short pause>\n那兩個小時到底發生了什麼事？\n就是，誰做了什麼、錯在哪裡，\n呃我是說，連花了多少都算進去了。\n作者說，這叫做野心的單位變小了。",
+   "lint": {
+    "chars": 149,
+    "precise_numbers": [
+     "三十六"
+    ],
+    "enumerations": [],
+    "sentences": 7,
+    "avg_sentence_len": 20.3,
+    "max_sentence_len": 29,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "我看到這個紀錄真的覺得超扯。就是啊，這集其實不聊外送。",
+   "to": "這集不聊外送了。",
+   "reason": "口頭填充"
+  }
+ ]
+}

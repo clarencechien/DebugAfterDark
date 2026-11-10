@@ -1,0 +1,115 @@
+{
+ "segment": "s05_reel",
+ "position": "第 6 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "11d69de8b81b14b08f36e92d46135db075894a8fa15076175d0a3849201c5513",
+ "previous_context": "一個模型、離答案有多遠，還有作業。對，它連還缺什麼都列出來，真的很酷耶。",
+ "original": {
+  "text": "報告說，釣竿是 agent 在甩，可是四次改變結論的時刻，都是人判斷線鬆了。第一次，人問：一小時只有一單，還有時薪嗎？因為 agent 的第一輪寫了一句只保障接單後的時間，寫得很順，順到像是講完了。這一問，才逼出整篇的起點。第二次，人問：有沒有論文或模型？在這之前，整件事只是查核加評論，這一問把它變成可以算的東西。線鬆的訊號，一個是一句話講得太順，一個是結論有了，但沒有式子。",
+  "lint": {
+   "chars": 185,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第一",
+    "第二"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 25.4,
+   "max_sentence_len": 37,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這份報告裡打了一個比方。<short pause>\n釣竿是 agent 在甩沒錯，\n但關鍵的四次轉折，都是作者在收線。\n作者怎麼知道線鬆了？\n第一次，agent 查完資料寫得非常順，\n說只保障接單後的時間喔。\n作者立刻抓到盲點，反問它：\n那如果一小時只有一單，還有時薪嗎？\n這一問，直接逼出法規真正的結構。\n原來空等的成本，全在外送員身上。\n第一個訊號，就是一句話講得太順。<short pause>\n然後第二次，作者問：有沒有論文或模型？\n這一問，直接把評論變成可以算的東西。\n這次的訊號又是什麼？\n就是結論都有了，底下卻沒有式子啦。",
+   "lint": {
+    "chars": 225,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第一",
+     "第二"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   }
+  },
+  {
+   "text": "這份報告裡打了一個比方。<short pause>釣竿是 agent 在甩，但線什麼時候鬆了，是作者在看。裡面有兩次關鍵收線，我看了很有共鳴。第一次，agent 寫得很順，說只保障接單後的時間。<short pause>這時候要怎麼辦？作者直接問：一小時只有一單，還有時薪嗎？對，一句話講得太順，其實就是線鬆了。然後第二次收線，整份分析本來只是查核跟評論啦，作者就追問：有沒有論文或模型？直接把它變成可以算的東西。結論有了卻沒有式子，這也是線鬆了喔。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 18.6,
+    "max_sentence_len": 37,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "這份報告裡說，釣竿雖然是 agent 在甩，<short pause>\n但幾次關鍵轉折，都是作者發現線鬆了。\n線鬆了是什麼意思？\n就是 AI 其實沒抓到核心啦。\n像第一次，作者直接問：\n如果一小時只有一單，還有時薪嗎？\n因為 agent 之前寫得太順，\n順到好像已經講完了。\n這一問，才逼出整篇論點的起點。\n然後第二次，作者問：有沒有論文或模型？\n在這之前，整件事只是查核加評論，\n問完立刻變成可以算的東西。\n線鬆的訊號到底長怎樣？\n一個是話講得太順，\n另一個，是結論有了卻沒有算式喔。",
+   "lint": {
+    "chars": 210,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 20.0,
+    "max_sentence_len": 37,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0
+}

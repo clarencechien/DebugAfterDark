@@ -1,0 +1,118 @@
+{
+ "segment": "s12_outro",
+ "position": "第 13 段，共 13 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "84e2f2e20d91deb5ec59028c583ae556a63161a88e7f490b3bd5eeb622735286",
+ "previous_context": "準備換個題目再跑一次。能成功跑第二次，這套流程才算成立。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，一份看起來完整的答案，最大的問題不在錯，在它寫得讓人不想追問；每一格有出處，錯誤才找得出來。第二，跑的成本降了兩個數量級，看的成本沒有降；改變結論的，是在答案看起來完整的時候，再問一次。第三，野心的單位變小了：對更小的事，用同樣的標準。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 172,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 23.6,
+   "max_sentence_len": 48,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，看似完整的答案，最怕讓人不想追問。\n這真的很危險耶，錯誤都被藏起來了。\n第二，跑的成本降了，但看的成本一點沒變喔。\n那人的價值在哪？<short pause>\n就是答案看起來很完整時，你敢再問一次。\n第三，野心的單位變小了。\n也就是對更小的事，用同樣的高標準。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 167,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，一份看似完整的答案，最怕的是讓你根本不想追問。\n第二，機器跑的成本大降，但人類看的成本，可是一點都沒少喔。\n那關鍵在哪？在答案看似完整時，你敢不敢再問一次。\n第三，就是野心的單位變小了啦。對更小的事情，也要用完全一樣的標準。\n這點真的讓我很能體會。<short pause>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 176,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 15.0,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>第一，看起來很完整的答案，最怕的不是錯，而是它讓人根本不想追問啦。第二，agent 跑的成本降了超多，但人去看的成本，真的一點都沒少喔。那現在最關鍵的能力是什麼？就是在答案看起來很完美時，決定再問一次。第三，野心的單位變小了，就算只是一件小事，也要用同樣的標準。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 183,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 19.3,
+    "max_sentence_len": 33,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0
+}

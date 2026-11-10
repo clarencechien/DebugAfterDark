@@ -1,0 +1,101 @@
+{
+ "segment": "s04_three",
+ "position": "第 5 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "23c0904ce3d828fb6048192b206654a6e7380ecf54b87dc07fbc7d06b3f2ad7f",
+ "previous_context": "算一算，作者真正坐在電腦前大概半小時。這根本像在掛機等結果嘛。",
+ "original": {
+  "text": "報告拿同一個問題，到底會多貴，比較三個時代給的答案。Google 搜尋給你十條連結：工會一個說法、平台一個說法、協會一個說法、媒體又一個說法，三角測量是你自己做。Chat 給你一份文件，有結論，但出處被壓平了，錯了也很難發現，因為每一格的語氣都一樣。Agent 給的是事實，每個數字有出處，平台自己報的也標出來，還多了三樣東西：一個模型、離答案還有多遠，和回家作業。",
+  "lint": {
+   "chars": 180,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 44.0,
+   "max_sentence_len": 56,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "掛機等出來的成果長怎樣？這份報告拿「到底會多貴」這題來比。以前用 Google，它給你十條連結。工會講一套、平台講一套，你得自己去比對。<short pause>那換成普通的 Chat 呢？它直接給你一份整理好的結論。但出處全被壓平了，錯在哪裡真的很難抓。對，那 Agent 呢？它除了每個數字都標出處，最厲害的是，還多給了三樣東西。一個推算模型、離答案多遠，還有留給你的作業。<short pause>這根本是把整個計算過程攤開給你看嘛。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 26,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那掛機等完，到底拿到什麼？\n這份報告拿「到底會多貴」來當例子。\n三個時代給的答案，形狀完全不同。\n最早用 Google 搜尋，它給你十條連結。\n工會講工會的，平台講平台的。\n誰對誰錯，你要自己去交叉比對。\n後來用 Chat，直接給你一份現成結論。\n可是出處全被壓平了。<short pause>\n錯了你很難抓，因為每一格語氣都一樣。\n那 agent 給什麼？\n它給有出處的事實，連誰自報的都標好。\n最厲害的是，它還多給了三樣東西。\n一個模型、離答案有多遠，還有作業。\n對，它連還缺什麼都列出來，真的很酷耶。",
+   "lint": {
+    "chars": 222,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "報告裡拿「到底會多貴」來示範。\n同樣問這個，三個時代給的東西差超多。\n用 Google 搜，直接丟給你十條連結。\n每家講的都不一樣，你要自己比對。\n換成 Chat 呢，它給出一份漂亮的結論。\n可是出處全被壓平了，<short pause>\n每一格語氣都一樣，錯在哪根本看不出來啦。\n那 agent 呢？它到底給了什麼？\n它每個數字都標出處，\n最厲害的是，它還附上了模型，\n告訴你離答案還有多遠，外加待辦作業。\n這份分析真的讓人很有共鳴，\n這才是 agent 真正多做出來的東西嘛。",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.7,
+    "max_sentence_len": 41,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1
+}

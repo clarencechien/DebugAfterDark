@@ -1,0 +1,118 @@
+{
+ "segment": "s10_ambition",
+ "position": "第 11 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "9e4c3bd96626c2d787f5d4f619fede2fb8ebe18e82b8927d834d33e889ca34b6",
+ "previous_context": "然後鏡子前面，是你那半小時的追問。最後一層最關鍵，就是得有人在旁邊看著啦。",
+ "original": {
+  "text": "還記得第一集的 Felix 嗎？他講的野心，是去做本來會打消念頭的事，而打消念頭的理由通常是成本。外送為什麼變貴，本來只是午餐聊天的題目，正常人不會為它花兩週。兩週變成順手的半小時之後，這個理由就不成立了。報告說，野心的單位，從專案縮到了問題：對更小的事，用同樣的標準。第二集那句話也在這裡：跑從來不是問題，看才是。跑的成本降了兩個數量級，看的成本一點沒降，人的工作沒有變少，只是換了位置。",
+  "lint": {
+   "chars": 193,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 26.6,
+   "max_sentence_len": 36,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "還記得第一集講的 Felix 嗎？\n他講的野心，就是去做本來會放棄的事。\n會打消念頭，通常都是因為成本太高嘛。\n外送為什麼變貴，本來只是午餐隨口聊聊。\n誰會為了聊天題目，真的花兩週去建模？\n正常人都不會啊。<short pause>\n可是只要半小時，那個藉口就不成立了。\n這份報告裡說，野心的單位縮小了。\n對更小的事，用一模一樣的標準。\n我讀到這裡真的很能體會。\n第二集說的：跑從來不是問題，看才是。\n跑的成本降超多。\n可是看的成本，真的一點都沒降。<laugh>\n人的工作沒有變少，不對，是那個位置變了。\n從自己動手做，變成退到後面判斷。\n看事情做到哪裡該停，還是該整個翻掉啦。",
+   "lint": {
+    "chars": 253,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "還記得第一集聊過的 Felix 嗎？\n他說的野心，就是去做本來會放棄的事。\n對，因為以前成本太高了嘛。\n像外送為什麼變貴，本來只是午餐閒聊，\n正常人哪會為了這個查兩週？光想就累。\n可是現在只要半小時，<short pause>\n那個放棄的理由就不成立了。\n這份報告裡說，野心的單位縮小了。\n就是……對更小的事情，用一樣嚴格的標準。\n這不就是第二集講的嗎？\n跑從來不是問題，看才是。\n跑的成本降了超多，看卻一點都沒變少。\n人的工作其實沒有變少，只是換了位置啦。",
+   "lint": {
+    "chars": 202,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 30,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "講到這裡，還記得之前聊過的 Felix 嗎？\n他講的野心，就是去做本來會打消念頭的事。\n會放棄通常是因為太花時間嘛。\n像外送為什麼變貴，本來只是午餐閒聊。\n誰會為了一個話題，花大半個月去讀論文？\n但如果大半個月縮成半小時呢？<short pause>\n那個放棄的理由就不成立了。\n報告裡說，野心從專案縮到了一個問題。\n換個說法，就是對更小的事用同樣的標準。\n這不就回到之前說的嗎？\n跑從來不是問題，看才是關鍵。<short pause>\nagent 跑的成本降超多，\n可是人看的成本完全沒變。\n人的工作根本沒變少，<sigh>\n只是換成站在旁邊判斷，該追問還是該翻掉。",
+   "lint": {
+    "chars": 235,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 17.1,
+    "max_sentence_len": 29,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 3
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "人的工作沒有變少，不對，是那個位置變了。",
+   "to": "人的工作沒有變少，是位置變了。",
+   "reason": "規則 18"
+  }
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "segment": "s09_human",
+ "position": "第 10 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "3bf0ddd2a82aee65bc627f4b434c901bc7ca1410bcfb420449903dfc0f9c439e",
+ "previous_context": "這份報告說，這就是 agent 的結構性成本。對，它記得越多，每一步就越貴，很真實耶。",
+ "original": {
+  "text": "換成人的時間呢？作者估計，這個下午做的事，大概是一個經濟系研究生一到兩週的工作量：查三個城市的官方報告、讀論文的模型、找數據、寫腳本、寫文章。可是對照的另一邊要寫對：研究生的兩週是全職，這個下午人花的半小時是順手，像午餐時順口問一句，吃完飯回來看一眼答案。報告說，代價有三層：訂閱費藏在鏡子後面；人的半小時和那四句追問在鏡子前面；還有一層，叫作要有人看。",
+  "lint": {
+   "chars": 177,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 43.2,
+   "max_sentence_len": 62,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那如果換算成人類的時間呢？\n這份報告的作者算了一下，\n那個工作量，研究生大概要全職做一兩週。\n要查資料、讀論文模型，還要寫出文章。\n可是作者花多久？只有順手的半小時喔。\n<short pause>\n就像午餐順手問一句，\n吃飽回來看一眼答案。\n這種落差我真的越想越毛。\n然後，報告裡說，代價其實有三層。\n第一層是訂閱費，\n把幾百萬 token 藏在鏡子後面。\n第二層是人的半小時，還有追問的習慣。\n最後一層最妙，就是鏡子本身。\n因為 agent 犯的錯，有人看才修得掉啦。",
+   "lint": {
+    "chars": 204,
+    "precise_numbers": [
+     "百萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.0,
+    "max_sentence_len": 30,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "那換成人的時間算呢？\n作者估計，這大概要花研究生兩週耶。<short pause>\n要查資料、讀模型，還要寫文章。\n可是作者那天下午，其實只花了半小時。\n而且不是專心坐著喔，是順手切出來的。\n像吃午餐順手問一句，吃完回來看答案。\n全職兩週對上半小時，光用想的就差很多。\n那這中間到底付出了什麼？\n這份報告說，代價其實有三層。\n第一層是付給 agent 的訂閱費。\n然後鏡子前面，是你那半小時的追問。<short pause>\n最後一層最關鍵，就是得有人在旁邊看著啦。",
+   "lint": {
+    "chars": 194,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那如果換成真人來做呢？\n作者估計，這大概是研究生全職做兩週。\n查官方報告、讀論文模型、寫 script。\n但作者那天下午花多久？\n只有順手的半小時耶。<short pause>\n就像吃午餐順口問一句，吃完回來看一眼答案。\n兩週對上半小時，難怪野心可以變那麼小。\n不過，這份報告說代價其實有三層。\n第一層是 agent 的訂閱費。\n第二層是鏡子前面，花半小時追問的習慣。\n然後第三層最關鍵，就是得有人盯著看。<sigh>\n那些藏在對話裡的錯，你看得到才修得掉啊。",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "第一層是付給 agent 的訂閱費。",
+   "to": "第一層是付給 agent 的訂閱費，藏在鏡子後面。",
+   "reason": "補上鏡子的比喻"
+  },
+  {
+   "from": "而且不是專心坐著喔，是順手切出來的。",
+   "to": "而且是從別的事情裡，順手切出來的喔。",
+   "reason": "twtone 對舉"
+  }
+ ]
+}

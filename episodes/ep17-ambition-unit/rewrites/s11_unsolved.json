@@ -1,0 +1,113 @@
+{
+ "segment": "s11_unsolved",
+ "position": "第 12 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "20b331c76f61d85d8a61cfbce69e42d031a54904ab950d18ed167b45bb920c7b",
+ "previous_context": "從自己動手做，變成退到後面判斷。看事情做到哪裡該停，還是該整個翻掉啦。",
+ "original": {
+  "text": "報告也很誠實地列了沒解的事。這個流程只跑過一次，可能只是題目剛好：剛好有論文、平台剛好公佈了數字、模型剛好只有一行式子。釘住參數的數字只有平台有，agent 可以標出來，但不能替代一個獨立的資料來源。回家作業還是人的：哪一題值得追，取決於你還關不關心。作者把這個下午寫成八個步驟，下一個午餐問題再跑一次，能跑第二次，這篇才算成立。",
+  "lint": {
+   "chars": 164,
+   "precise_numbers": [],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 31.8,
+   "max_sentence_len": 45,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "而且這份報告很誠實，直接寫出沒解開的事。\n這套流程其實只跑過一次喔。\n會不會只是運氣好？<short pause>\n作者說，可能只是題目剛好。\n剛好有論文，模型剛好只有一行式子。\n更關鍵的是，核心數據只有平台拿得出來。\nagent 只能幫你標出來，變不出資料啦。\n那接下來怎麼辦？\n作業還是要回到人身上。\n哪一題值得追，取決於你還在不在乎嘛。\n作者最後把這個下午，整理成八個步驟。<short pause>\n呃不是，算是一套可以重跑的流程啦。\n換個題目再跑一次，能複製才算數。",
+   "lint": {
+    "chars": 199,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 2.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "這份報告其實滿老實的。\n沒解開的問題，作者全列了出來。\n因為這套流程目前只跑過一次。\n能跑順，只是剛好題目很漂亮。\n有現成的論文，模型剛好只有一行。\n那換個題目還行嗎？\n作者自己也說不知道喔。<short pause>\n而且關鍵數據只有平台拿得出來。\nagent 只能幫你標記，變不出新資料嘛。\n剩下哪題值得追，agent 也排不出來。\n說穿了，就是看你還在不在意啦。\n作者把下午整理成八個步驟。\n準備換個題目再跑一次。\n能成功跑第二次，這套流程才算成立。",
+   "lint": {
+    "chars": 200,
+    "precise_numbers": [],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 13.3,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "而且這份報告很誠實喔。作者直接承認，這套只跑過一次。這真的能重複用嗎？<short pause> 其實很難講。因為這次剛好有論文，平台也剛好有數據。要是換個題目，這些剛好可能就少一個。關鍵數據只有平台有，agent 根本變不出來。那接下來哪一題值得追？還是得看人啊。畢竟 agent 排不出優先順序嘛。作者把流程整理成八個步驟，下個題目再跑一次，跑得動才算成立啦。",
+   "lint": {
+    "chars": 165,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 14.0,
+    "max_sentence_len": 30,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "關鍵數據只有",
+   "to": "關鍵數字只有",
+   "reason": "twtone 用詞"
+  }
+ ]
+}

@@ -1,0 +1,114 @@
+{
+ "segment": "s01_recap",
+ "position": "第 2 段，共 13 段",
+ "avoid": [
+  "超扯"
+ ],
+ "recap": "EP16〈加薪留不住〉：外送專法讓每一趟的錢多三成，外送員上線一整天的時薪只多零到百分之二，多出來的錢被更多進來的外送員分掉。這集是同一份研究的下篇：那篇報告是怎麼在兩個小時裡做出來的。",
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0c2edeadf5d6b895d5db9034e77f01063179d552d5aa1d96b2112f7fda66c42d",
+ "previous_context": "誰做了什麼、哪裡搞錯了，然後花了多少。這份報告的標題是：野心的單位變小了。",
+ "original": {
+  "text": "上一集我們算過，外送專法讓每一趟多了三成，可是外送員一整天的時薪，只多了零到百分之二，多出來的錢被更多進來的人分掉了。這份報告的作者說，那天下午的起點，是一份 Gemini 整理好的文件，和五個問題。那份文件結構很漂亮，有摘要、有對照表，八成的數字查下去都是對的。問題是，剩下兩成跟那八成寫在同一張表裡，用一樣的語氣。報告說，它最大的問題不在錯，在它寫得讓人不會想追問。",
+  "lint": {
+   "chars": 183,
+   "precise_numbers": [
+    "百分之二"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 35.6,
+   "max_sentence_len": 58,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上一集我們聊過外送專法。<short pause>\n每趟錢雖然多三成，\n但外送員整天時薪只多了零到百分之二。\n多出來的錢，都被新加入的人分掉了嘛。\n這集就要來看，\n那份報告怎麼在兩個小時裡做出來的。\n這份報告的作者說，\n起點是一份 Gemini 整理好的文件。\n排版很漂亮，\n查下去大概八成數字都是對的。\n那問題在哪？<short pause>\n就是剩下兩成也混在裡面，\n語氣還一模一樣。\n我看到這段真的替他捏一把冷汗。\n你知道最棘手的是什麼嗎？\n不是寫錯，\n是它寫得太漂亮，讓人完全不會想追問。",
+   "lint": {
+    "chars": 204,
+    "precise_numbers": [
+     "百分之二"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 26,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "上一集我們聊到，外送專法讓每趟多三成，\n但外送員一整天時薪，只多零到百分之二。\n多出來的錢都被分掉了啦。\n這集就來看，那份報告怎麼在兩小時做出來。\n\n作者說，那個起點是 Gemini 整理的文件。\n然後結構超級漂亮，連對照表都有。\n大概八成數字都對，你猜問題在哪？\n就是剩下的兩成，用同一種語氣混在裡面。\n我看到這段真的很有共鳴。<short pause>\n這份報告裡說，它最大的問題不是寫錯，\n而是太順了，順到讓人完全不想追問耶。",
+   "lint": {
+    "chars": 190,
+    "precise_numbers": [
+     "百分之二"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 20.1,
+    "max_sentence_len": 37,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "上一集我們聊到，外送專法讓每趟多三成。但外送員整天的時薪，只多零到百分之二啦。多出來的錢，全被新加入的人分掉了。這集接著看，報告怎麼在兩小時內做出來的。\n\n作者說那天起點，是一份 Gemini 整理的文件。排版超漂亮，呃應該說結構很完整。八成的數字查了都是對的。那問題在哪？就是剩下的兩成，跟對的混在同一個表裡，語氣還一模一樣耶。<short pause>我看到這邊很有共鳴，那個最可怕的是什麼？這份報告裡說，它最大的問題不是寫錯喔，是寫得太像真的，讓你根本不會想追問。",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [
+     "百分之二"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 36,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "它最大的問題不是寫錯，而是太順了，",
+   "to": "它最大的問題，在於寫得太順了，",
+   "reason": "twtone 對舉"
+  }
+ ]
+}

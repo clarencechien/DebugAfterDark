@@ -1,0 +1,117 @@
+{
+ "segment": "s03_time",
+ "position": "第 4 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b35c66bedf2f5ad79b88473f7cc9280a27b368c4a561c63bb3478b685eeb3bf3",
+ "previous_context": "裡面一半改變了結論，另一半在調順序跟格式。重點是，作者完全沒給任何新資訊耶。",
+ "original": {
+  "text": "還有一件事，表格看不出來：人不在電腦前。從對話紀錄的時間算，兩個小時裡，agent 從收到一句話到交出結果，加起來只工作了三十六分鐘；其餘時間，是 agent 做完在等人。等的時間有兩種：短的幾分鐘，是人回來讀產出、想下一句；長的十幾二十分鐘，是人去做別的事了。加起來，人真正坐在這件事前面的時間，大約半小時。",
+  "lint": {
+   "chars": 152,
+   "precise_numbers": [
+    "三十六",
+    "二十"
+   ],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 37.0,
+   "max_sentence_len": 62,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "然後更妙的是，表格看不出一件事。就是作者其實沒一直坐在電腦前。你知道兩個小時裡 agent 跑多久嗎？加起來只有三十六分鐘。剩下的時間咧？全部都是 agent 做完在等人欸。等的時間有長有短啦。短的幾分鐘，是看產出、想下一句。長的十幾分鐘，呃，是人跑去做別的事。算一算，作者真正坐在電腦前大概半小時。這根本像在掛機等結果嘛。<laugh>",
+   "lint": {
+    "chars": 158,
+    "precise_numbers": [
+     "三十六"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 13.4,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 2.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "而且還有一件事，看表格完全看不出來喔。\n就是作者其實常常不在電腦前。\n這兩個小時裡，你以為 agent 一直在跑嗎？\n根本沒有。<short pause>\nagent 真正動工的時間，\n加起來只有三十六分鐘。\n其他大半時間，都是它做完了在等人。\n那些空檔，有的是回來看產出、想下一句，\n有的乾脆是跑去做別的事，\n呃我是說，去忙別的工作啦。\n算一算，人真正坐在這件事前面的時間，\n其實也才半小時左右耶。",
+   "lint": {
+    "chars": 173,
+    "precise_numbers": [
+     "三十六"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 20.6,
+    "max_sentence_len": 43,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "然後還有一件事，表格完全看不出來喔。\n就是其實作者根本沒一直坐在電腦前。\n在這兩個小時裡，你覺得 agent 忙了多久？\n加起來其實只有三十六分鐘。<short pause>\n剩下的時間，全都是 agent 做完在等人啦。\n一種是作者要想下一句。\n另一種是——呃就是作者跑去忙別的事。\n算作者真正盯著螢幕，大概才半小時耶。\n這比例真的很有意思。<laugh>",
+   "lint": {
+    "chars": 147,
+    "precise_numbers": [
+     "三十六"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 2.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "長的十幾分鐘，呃，是人跑去做別的事。",
+   "to": "長的十幾分鐘，是人跑去做別的事。",
+   "reason": "規則 18"
+  }
+ ]
+}

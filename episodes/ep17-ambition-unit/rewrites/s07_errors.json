@@ -1,0 +1,131 @@
+{
+ "segment": "s07_errors",
+ "position": "第 8 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "257b40b5a01445698c12a1c428f1f4199ea6713ca19564862c2ef5ca7bcb5bed",
+ "previous_context": "線鬆的訊號，就是生活經驗跟數字對不上。這份報告說，現在最稀缺的技能，就是看到答案很完整，還敢不敢再追問一次。",
+ "original": {
+  "text": "agent 在這兩個小時裡犯了四個錯，報告照記。第一個，第一輪寫台灣的地板只有西雅圖的三分之一，下一輪它自己查到，那是匯率，是 agent 自己翻掉的。第二個，轉嫁率少算一倍，是人抓的。第三個，釘住參數的數字全部來自平台，這是出處問題，要跟結論一樣顯眼。第四個，檢查器第一次跑到舊版本的檔案。報告說，agent 犯的錯沒有比較少，變的是錯誤可以修，因為每一個都有出處，所以錯得出來。",
+  "lint": {
+   "chars": 187,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第一",
+    "第二",
+    "第三",
+    "第四",
+    "第一"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 30.2,
+   "max_sentence_len": 49,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "作者記得很清楚，agent 兩小時犯了四個錯。像第一輪它搞錯匯率，下一輪自己重算抓包。然後商家灌水的那一塊，就是作者抓到的。<laugh> 另外還有出處偏向平台，或是檢查器跑了舊檔案。\n\n那你說，agent 真的有比較厲害嗎？其實沒有喔。這份報告說，agent 犯的錯其實沒有比較少。以前用 chat，錯誤都包在很順的語氣裡。但現在每一步都有出處。<short pause> 錯抓得出來，就修得掉啦。",
+   "lint": {
+    "chars": 172,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那敢追問之後呢？\n作者發現，agent 在這兩小時裡，\n其實一共犯了四個錯喔。\n這份報告全部記下來，完全沒在遮。\n像第一輪說台灣只有西雅圖的三分之一，\n結果下一輪它自己抓到算錯匯率，直接翻盤。\n然後有些是人抓的，也有跑錯舊檔案。\n我覺得這點真的很酷。<short pause>\n那你覺得 agent 犯的錯有變少嗎？\n完全沒有。應該說，數量根本沒變少。\n那差別到底在哪？\n就是現在每一步都有出處啦。\n錯得明明白白，你才修得掉嘛。",
+   "lint": {
+    "chars": 186,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 14.5,
+    "max_sentence_len": 37,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "敢追問到底會抓出什麼？\n作者記下 agent 在這兩小時，犯的四個錯。\n它第一輪把台灣，寫成西雅圖的三分之一。\n結果下一輪自己翻掉，欸那是匯率算錯啦。\n然後外送費少算商家那一塊，是作者抓到的。\n還有引用平台的數據，跟檢查工具跑錯舊檔。\n作者把錯全列出來，我真的覺得很誠實。\n那你覺得 agent 有少犯錯嗎？\n根本沒有嘛。<short pause>\n這份報告說，差別在於每個步驟都有出處。\n對，就是那個過程看得到，錯誤才修得掉。",
+   "lint": {
+    "chars": 187,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 16.0,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "結果下一輪自己翻掉，欸那是匯率算錯啦。",
+   "to": "結果下一輪它自己翻掉了，那只是匯率造成的錯覺啦。",
+   "reason": "照原文：除以當地最低時薪後幾乎一樣"
+  },
+  {
+   "from": "然後外送費少算商家那一塊，是作者抓到的。",
+   "to": "然後轉嫁率少算了店家灌進菜單的那一塊，是作者抓到的。",
+   "reason": "照原文"
+  },
+  {
+   "from": "還有引用平台的數據，",
+   "to": "還有，釘住參數的數字全靠平台自己公佈，",
+   "reason": "照原文：出處問題"
+  }
+ ]
+}

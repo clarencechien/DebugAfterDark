@@ -1,0 +1,122 @@
+{
+ "segment": "s06_reel2",
+ "position": "第 7 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a547ee6b80d671ecce58b4c80a2b54a74448c24bd63de2127487d4e6a1bb1fd4",
+ "previous_context": "這次的訊號又是什麼？就是結論都有了，底下卻沒有式子啦。",
+ "original": {
+  "text": "第三次，人說：先用真實資料，再開旋鈕。沒有這句，模型會變成好幾個參數隨便撥的遊戲；有了這句，平台公佈的數字先把人進來的速度釘住，剩下的旋鈕才有意義。第四次，人說：店家也有轉嫁，外送價比內用價貴三成。這是 agent 自己沒看到的洞，第一版的轉嫁率少算了一倍。線鬆的訊號是：你自己的生活經驗，跟報告裡的數字對不上。報告說，agent 時代稀缺的技能，可能是在答案看起來完整的時候，決定還要不要再問一次。",
+  "lint": {
+   "chars": 197,
+   "precise_numbers": [],
+   "enumerations": [
+    "第三",
+    "第四",
+    "第一"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 31.8,
+   "max_sentence_len": 54,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "再來第三次。\n作者提醒它：先用真實資料，再開旋鈕。\n如果沒有這句，\n模型就只是參數隨便調的玩具。\n有了這句，\n平台公布的數據先把數字釘住，\n剩下的旋鈕調起來才有意義。<short pause>\n然後第四次更經典。\n外送價其實比內用貴了三成，對吧？\n但 agent 根本沒看到這個洞。\n轉嫁的數字，直接少算了一整倍。\n這時候線鬆的訊號是什麼？\n就是你自己的生活經驗，跟數字對不上嘛。\n這份報告說，現在最稀缺的技能，\n就是在答案看起來很完整時，\n你還敢不敢再去追問一次。",
+   "lint": {
+    "chars": 203,
+    "precise_numbers": [],
+    "enumerations": [
+     "第三",
+     "第四"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 39,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "然後第三次收線，作者提醒了一句。\n先用真實資料，再開旋鈕。\n要是沒這句，模型就只是在玩參數遊戲嘛。\n這時候線鬆的訊號是什麼？\n就是參數太多，每個都能隨便調啦。\n<short pause>\n到了第四次更精彩。\n作者發現，外送價其實比內用貴了三成。\n這件事 agent 完全沒想到。\n對，結果第一版轉嫁率整整少算了一倍。\n你有沒有發現？\n線鬆的訊號，就是生活經驗跟數字對不上。\n這份報告說，現在最稀缺的技能，\n就是看到答案很完整，還敢不敢再追問一次。",
+   "lint": {
+    "chars": 195,
+    "precise_numbers": [],
+    "enumerations": [
+     "第三",
+     "第四",
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 34,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "然後第三次收線，作者說了一句關鍵的話。\n就是先用真實資料，再開旋鈕。<short pause>\n沒有這句，參數隨便調，根本只是在玩玩具。\n先把真實數據釘住，剩下的才有意義嘛。\n到了第四次，作者提醒說，店家也會轉嫁啊。\n你平常有點外送吧？\n外送價通常比內用貴了三成耶！\n這就是 agent 漏掉的洞，轉嫁率少算了一倍。\n那線鬆掉的訊號是什麼？\n就是生活經驗跟上面的數字對不上了啦。\n這份報告說，現在最稀缺的技能，\n是在答案看起來很完整時，敢不敢再追問一次。",
+   "lint": {
+    "chars": 201,
+    "precise_numbers": [],
+    "enumerations": [
+     "第三",
+     "第四"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 17.3,
+    "max_sentence_len": 35,
+    "sentences_over_20": 2,
+    "particles_per_100": 2.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "作者發現，外送價其實比內用貴了三成。",
+   "to": "作者發現，店家也在轉嫁，外送價其實比內用貴了三成。",
+   "reason": "照原文：店家轉嫁"
+  }
+ ]
+}

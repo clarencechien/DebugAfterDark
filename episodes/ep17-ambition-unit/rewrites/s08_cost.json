@@ -1,0 +1,127 @@
+{
+ "segment": "s08_cost",
+ "position": "第 9 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "cae59de144fcbbe69e1e4a94baad700f2a7514878f20d7d7595299507f8ffd6f",
+ "previous_context": "這份報告說，差別在於每個步驟都有出處。對，就是那個過程看得到，錯誤才修得掉。",
+ "original": {
+  "text": "那花了多少？作者把對話紀錄裡每一次呼叫的用量加起來，用接近實際計價的方式加權，整個下午大約五百萬 token。有兩件事很有意思。第一，真正輸出的字，包含三版報告和所有回答，不到總量的百分之二，其餘都是讀。第二，查資料最貴，可是貴的不在查，在重讀：查到的東西留在對話裡，之後每一次呼叫都再掃一遍，掃下來佔了一半。報告說，這是 agent 的結構性成本：它記得的東西越多，每一步越貴。",
+  "lint": {
+   "chars": 187,
+   "precise_numbers": [
+    "五百萬",
+    "百分之二"
+   ],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 30.2,
+   "max_sentence_len": 52,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那這樣跑下來，到底要花多少代價？\n\n作者算了一下用量，就是加權算下來，整個下午大約五百萬 token。\n\n你覺得這些 token 都花在哪？<short pause> 最讓我意外的是，真正輸出的字，算下來不到百分之二。對，剩下的全部都在讀。\n\n然後重點來了，查資料佔了一半以上。可是貴的不是查的當下喔，是重讀。查到的東西一直留在對話裡，後面每一次呼叫，它就全部重新看一次。<sigh>\n\n這份報告說，這是 agent 的結構性成本啦。它記得越多，每一步就越貴。",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [
+     "五百萬",
+     "百分之二"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 18.7,
+    "max_sentence_len": 31,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那這樣的代價到底有多高？\n作者把呼叫紀錄加起來，\n整個下午大概花了五百萬 token。<short pause>\n你覺得這些額度都花在哪裡？\n產出內容嗎？其實不是喔。\n真正寫出來的字，少到像零頭一樣。\n就是，剩下的幾乎全部都在讀東西。\n然後裡面最花錢的，居然是查資料。\n那個，應該說不是貴在查，是貴在重讀啦。\n查到的東西留在對話裡，\nagent 後面每動一次，\n就得把整包資料重新讀一遍。<short pause>\n這份報告說，這就是 agent 的結構性成本。\n對，它記得越多，每一步就越貴，很真實耶。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [
+     "五百萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 35,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那，這樣跑下來到底要花多少？作者把每一次呼叫的用量加起來，整個下午大概花了五百萬 token 啦。你知道最貴的地方在哪嗎？<short pause> 不是查資料，也不是寫報告喔。最貴的竟然是重讀。<sigh> 查到的資料一直留在對話裡，每做一步，它就全部重讀一遍。重點來了，真正輸出的成果，連總量的百分之二都不到。這份報告裡說，這是它的結構性成本。就是……那個，換個說法好了，它記得越清楚，每一步就變得越貴。<short pause>",
+   "lint": {
+    "chars": 181,
+    "precise_numbers": [
+     "五百萬",
+     "百分之二"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 19.1,
+    "max_sentence_len": 32,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 2,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "那個，應該說不是貴在查，是貴在重讀啦。",
+   "to": "而且不是貴在查，是貴在重讀啦。",
+   "reason": "規則 18"
+  },
+  {
+   "from": "而且不是貴在查，是貴在重讀啦。",
+   "to": "而且真正貴的，是重讀啦。",
+   "reason": "twtone 對舉"
+  }
+ ]
+}
