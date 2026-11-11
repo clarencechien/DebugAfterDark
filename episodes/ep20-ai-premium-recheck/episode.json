@@ -27,6 +27,22 @@
   "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
  },
  "audio": {
-  "file": "ep20-ai-premium-recheck.mp3"
+  "file": "ep20-ai-premium-recheck.mp3",
+  "bytes": 8898643,
+  "sha256": "33993e156cc1d9245dba0211b68dd5244308177ae634a547ae5b4ca2c75cee50",
+  "duration_s": 556.1,
+  "duration": "9:16",
+  "lufs": -16.8
+ },
+ "qa": {
+  "breeze_cer_mean": 0.024,
+  "jitter_semitones": 0.207,
+  "manual_pick": "s04 改 take0（自動挑的 take2 語速快兩成）",
+  "consistency": "qa/consistency.json：各段音高在中位數 ±4 Hz 內；s10 語速 +13%",
+  "both_wrong": "「用量」的用、「就／只」聽成「是」、「擋連線」的擋",
+  "selection_time": "挑選約 1 分半，Modal 三批 40 秒內回來",
+  "twtone": "qa/twtone.md：沒有超過基準的項目",
+  "terms": "Ping、pong 3 次都判為英文念法",
+  "gates": "錯誤率 2.4%、音高跳動 0.207 都通過，沒有補念"
  }
 }
