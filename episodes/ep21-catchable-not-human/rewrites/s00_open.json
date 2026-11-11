@@ -1,0 +1,117 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 12 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "84c7b79621e0a7319ce61f0a1aaf87d8b3771dc351451460f43bb5532874cb31",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "你現在聽到的這個聲音，是 AI 合成的。節目資訊欄每一集都寫著。研究說，知道這件事之後，你可能會給這一集扣分。這份報告從一個很怪的現象講起：一千六百多個人，分不出哪首詩是 AI 寫的，還比較喜歡 AI 寫的那些；可是一被告知是 AI 寫的，就把分數扣下來。報告說，工具抓得到的，是字面上的痕跡；讀者扣分扣的，是另一樣東西。這集就來把這兩件事拆開，看哪一件修得掉。",
+  "lint": {
+   "chars": 173,
+   "precise_numbers": [
+    "一千六百"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 27.8,
+   "max_sentence_len": 66,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你現在聽到的這個聲音，是 AI 合成的喔。\n節目的資訊欄每一集都有寫。\n但研究說，知道這件事之後，你可能就會想扣分。<laugh>\n報告裡提到一個很扯的現象。\n有一千六百多個人去測驗，看能不能分出 AI 寫的詩。\n你猜大家選得怎麼樣？\n結果根本分不出來，那個，大家甚至還比較喜歡 AI 寫的。\n可是重點來了。\n一被告知是 AI 寫的，分數就直接被大家扣下來啦。\n我看到這裡覺得超有意思。\n工具抓得到的是字面痕跡，對吧？\n但讀者扣的，完全是另一樣東西。<short pause>\n這集我們就把這兩件事拆開，看看哪一件修得掉。",
+   "lint": {
+    "chars": 221,
+    "precise_numbers": [
+     "一千六百"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.0,
+    "max_sentence_len": 25,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "你現在聽到的這個聲音，其實是 AI 合成的。<short pause>\n節目資訊欄每一集都有寫喔。\n研究說你一旦知道這件事，可能就會偷偷扣分。\n欸，你猜大家真的分得出來嗎？\n答案是完全分不出來。\n有一份研究找了一千六百多人，讓大家猜那些詩是誰寫的。\n結果大家不只猜不出來，甚至還比較喜歡 AI 寫的耶。\n更扯的是，一被告知是 AI 寫的，分數就直接被扣下來了。<sigh>\n這份報告裡說，工具抓得到的是字面的痕跡；\n讀者扣分扣的，那個……應該說是另一樣東西啦。\n這集我們就把這兩件事拆開，看看哪一件修得掉。",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [
+     "一千六百"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.8,
+    "max_sentence_len": 41,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 2,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "嘿，先問你一個問題。<short pause>如果知道現在講話的聲音是 AI，你會扣分嗎？節目資訊欄其實每一集都有寫啦。但這份報告講了一個很怪的現象。有一千六百多個人去猜詩是誰寫的，大家根本分不出來，甚至還比較喜歡 AI 寫的。可是重點來了。<laugh> 一被告知那是 AI 寫的，大家就默默把分數扣下來。就是……那個落差很有意思。工具抓得到字面上的痕跡，但讀者扣分的，完全是另一回事。這集我們就來拆開看，到底哪一件修得掉。",
+   "lint": {
+    "chars": 187,
+    "precise_numbers": [
+     "一千六百"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.7,
+    "max_sentence_len": 36,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "嘿，先問你一個問題。",
+   "to": "先問你一個問題。",
+   "reason": "cold open 不打招呼"
+  },
+  {
+   "from": "就是……那個落差很有意思。",
+   "to": "這個落差很有意思。",
+   "reason": "規則 18"
+  }
+ ]
+}

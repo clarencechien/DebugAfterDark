@@ -1,0 +1,118 @@
+{
+ "segment": "s11_outro",
+ "position": "第 12 段，共 12 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "醬",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f85fa9d092908809a6a1f4a42c45f537b28ba7aaf89c011f24db039b468b2d32",
+ "previous_context": "其實不是喔，那個是作者自己的判讀。我覺得報告把推論跟證據分開，滿負責任的。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，讀者分不出 AI 寫的字，甚至比較喜歡；扣分發生在被告知之後，扣的是真誠，不是品質。第二，能修的只有字面那一層；叫模型寫得像人，救不回來，人味不在文字裡。第三，句子可以交出去，取捨交不出去。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 147,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 20.0,
+   "max_sentence_len": 42,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n想一想，我們到底能交出什麼給 AI 呢？\n我整理了三個可以帶走的重點喔。\n第一，讀者分不出 AI 寫的字，扣分扣的是真誠。\n第二，工具能修的只有表面，人味根本不在文字裡。\n第三，就是那個句子可以交出去，但取捨交不出去。<short pause>\n對，把關的永遠是人，這真的讓我鬆了一口氣。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 175,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 22,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "回過頭來看，人味到底是什麼？\n其實想通了就沒那麼玄啦。\n好，今晚的 breakpoint。<short pause>\n第一，大家分不出 AI，扣分扣的是真誠喔。\n第二，工具只能修字面，人味根本不在字詞裡。\n第三，句子可以交給模型，但取捨交不出去。\n<short pause>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 140,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，讀者分不出 AI 的字，扣分是扣真誠喔。\n第二，工具只能修字面，要模型學人救不回來。\n第三，句子可以交出去，但那個取捨交不出去。\n那人味到底在哪？\n就是你最後留下來的那些決定啦。\n對，我覺得這個結論真的滿耐人尋味的。<short pause>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 157,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1
+}

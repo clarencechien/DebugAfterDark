@@ -1,0 +1,115 @@
+{
+ "segment": "s01_tool",
+ "position": "第 2 段，共 12 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f2bdd60e219018cd991fc83a92a03d8f3f081e4817ff05f0a674189ee345ff48",
+ "previous_context": "工具抓得到字面上的痕跡，但讀者扣分的，完全是另一回事。這集我們就來拆開看，到底哪一件修得掉。",
+ "original": {
+  "text": "這份報告是從一支工具開始的。作者寫了一個不用呼叫模型的檢查器，叫 twtone，拿二〇一五到二〇二二年的台灣科技評論當基準，去量自己的報告有多少 AI 痕跡。第一篇量出來，不是什麼而是什麼這種句型，密度是台灣作者的十六倍。順帶一提，這個節目從第十集開始，每一集的稿子都會跑這支工具。改掉之後，數字降到基準範圍內。然後問題來了：表面乾淨了，這篇文章有沒有人味？工具答不了。它量的是句式和用詞，這些有基準；人味沒有。",
+  "lint": {
+   "chars": 203,
+   "precise_numbers": [
+    "十六"
+   ],
+   "enumerations": [
+    "第一",
+    "第十"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 24.4,
+   "max_sentence_len": 61,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先講這份報告是怎麼來的。<short pause> 作者寫了一個檢查工具，叫做 twtone。他是拿台灣以前的科技文章當標準，去量自己的報告有多少 AI 痕跡。結果你猜抓到什麼？「不是 A 而是 B」這種對照句型，密度居然是台灣作者的十六倍！<laugh> 誇張吧。順便說一下，我們節目從第十集開始，每篇稿子其實也都會跑 twtone 檢查。改掉之後，數字是降下來了沒錯。可是問題來了：字面乾淨了，文章就有人味了嗎？這工具根本答不出來。因為用詞有標準，但人味完全沒有基準嘛。",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [
+     "十六"
+    ],
+    "enumerations": [
+     "第十"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 35,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "這份報告其實是從一支工具開始的。\n作者寫了一個檢查器，叫做 twtone。\n它不用呼叫模型，就是零 token 啦。\n作者拿台灣科技評論當基準，\n去抓自己報告裡的 AI 痕跡。\n你猜第一篇抓到什麼？<short pause>\n光是「不是 A 而是 B」這種對比句，\n密度就是台灣作者的十六倍。<laugh>\n欸，順帶一提，\n我們節目從第十集開始，每集稿子也都有跑它。\n後來作者把這些痕跡改掉，數字是降下來了。\n可是，表面變乾淨，文章就真的有人味了嗎？\n工具答不出來。<short pause>\n句式可以重跑，但人味哪來的基準嘛！",
+   "lint": {
+    "chars": 210,
+    "precise_numbers": [
+     "十六"
+    ],
+    "enumerations": [
+     "第一",
+     "第十"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 18.1,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   }
+  },
+  {
+   "text": "這份報告其實是從一支工具開始的。\n作者寫了一個檢查器，叫做 twtone。\n它完全不用花 token。\n就是拿以前台灣科技評論當基準，\n去量自己的報告有多少 AI 痕跡。\n結果量出來，你猜抓到什麼？\n像「不是 A 而是 B」這種句型，\n密度居然是台灣作者的十六倍！<laugh>\n順帶一提，我們節目從第十集開始，\n每集稿子也都會跑這支工具喔。\n改掉之後，表面數字確實降下來了。\n但這樣文章就有人味了嗎？<short pause>\n工具根本答不出來。它只能量句式，\n呃我是說，它量得到字面，\n但人味哪來的標準答案嘛。",
+   "lint": {
+    "chars": 216,
+    "precise_numbers": [
+     "十六"
+    ],
+    "enumerations": [
+     "第十"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 18.6,
+    "max_sentence_len": 30,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1
+}

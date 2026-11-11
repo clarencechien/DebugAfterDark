@@ -1,0 +1,110 @@
+{
+ "segment": "s07_twoq",
+ "position": "第 8 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "c57e9588f85c8d3b7b79a9f09fb9fc2a8fb63926091a7579521081f5f11d4070",
+ "previous_context": "這層完全量不到，也不是修不修的問題。它要嘛有，要嘛沒有，對吧？",
+ "original": {
+  "text": "接下來是作者自己的判讀，報告特別蓋了章。它說：喜歡，和像不像人，是答案卡上的兩題。讀者比較喜歡 AI 的詩，同時那些詩沒有人味；他們被告知之後扣分，但在那之前，他們是真的喜歡。所以把文字改到讀者喜歡，跟改到有人味，是兩個不同的工程。如果去 AI 味的工具以讀者喜歡為目標，會越改越像 AI 的詩，分數越高，被揭露的那一刻掉得越多。作者說，人味更像一種授權：讀者相信這段文字背後，有一個人花了心力。",
+  "lint": {
+   "chars": 192,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 31.0,
+   "max_sentence_len": 44,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這份報告的作者給了一個判讀，我很能體會。\n他說，喜不喜歡跟像不像人，\n根本是答案卡上分開的兩題。<short pause>\n大家本來真的很喜歡 AI 寫的詩，\n知道是 AI 之後才扣分嘛。\n所以把文字改到討喜，\n跟改到有人味，完全是兩碼子事。\n呃不是，應該說這是兩個不同的工程啦。\n欸，那去 AI 味的工具到底在忙什麼？\n如果只是把句子修得順眼，\n反而會越改越像 AI 喔，<laugh>\n被抓包的時候只會摔得更慘。\n作者說，人味其實比較像一種授權。\n你相信背後有人花了心力，\n才願意用對人的方式去讀它。",
+   "lint": {
+    "chars": 210,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 22.3,
+    "max_sentence_len": 35,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "對，所以這份報告的作者提出了一個判讀。\n他說，喜不喜歡跟像不像人，根本是兩題啦。\n讀者一開始是真的喜歡 AI 的詩喔。<short pause>\n但知道是 AI 之後，分數才直接掉下來。\n你知道這代表什麼嗎？\n把文字改到討喜，跟改到有人味，\n呃，就是完全不同的兩個工程。\n現在很多標榜「去 AI 味」的工具，\n如果只是把句子修得更順，\n那只會越修越像 AI 寫的嘛！\n分數看似變高，被抓包時掉得更慘。<sigh>\n作者覺得，人味其實比較像一種授權。\n就是讀者願意相信，背後有個人花了心力啦。",
+   "lint": {
+    "chars": 206,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.6,
+    "max_sentence_len": 40,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "這份報告裡說，喜歡跟像不像人是兩回事。\n你可能也覺得很妙，對吧？\n讀者一開始是真的滿喜歡 AI 詩喔。\n節奏整齊又好懂，模型最擅長這個了。\n但知道是 AI 之後，分數直接掉零點八。\n<short pause>\n所以作者判讀說，這是兩個工程。\n把文章改到討喜，跟改到有人味完全不同。\n欸，我是說，方向根本完全反過來。\n如果工具只追求討喜，只會越改越像 AI。\n然後被拆穿的那一刻，分數掉得更慘。<sigh>\n那人味到底是什麼？\n作者說它其實更像一種授權啦。\n讀者相信背後有人花心力，才願意好好讀它。",
+   "lint": {
+    "chars": 211,
+    "precise_numbers": [
+     "零點八"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "呃，就是完全不同的兩個工程。",
+   "to": "是完全不同的兩個工程。",
+   "reason": "規則 18"
+  }
+ ]
+}

@@ -1,0 +1,129 @@
+{
+ "segment": "s08_choices",
+ "position": "第 9 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "80921cfcf789b933b70cf6e1726cd3c74f1e17d72f3f6ab4865f5ae5228e8928",
+ "previous_context": "作者覺得，人味其實比較像一種授權。就是讀者願意相信，背後有個人花了心力啦。",
+ "original": {
+  "text": "作家 Ted Chiang 說過，藝術是很多選擇累積出來的：一萬字的小說大約有一萬個選擇，一百字的 prompt 只有一百個，剩下的由模型替你填。也有人反駁，人類本來就不太原創，重新下 prompt 也是在做選擇。報告的判讀是，兩邊吵的不是同一件事：讀者扣分的時候，看的是有沒有人在那裡做選擇。台中市議會今年質詢文學獎會不會變成文字代工廠，文化局的回答是：有疑慮時，請參賽者提供草稿和創作歷程。他們沒說要用偵測器，他們要的是過程。",
+  "lint": {
+   "chars": 208,
+   "precise_numbers": [
+    "一萬",
+    "一萬",
+    "一百",
+    "一百"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 40.6,
+   "max_sentence_len": 67,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那這個心力到底是什麼？\n作家 Ted Chiang 講過一個很有趣的說法。\n他說藝術是很多選擇累積出來的。\n一篇小說可能有一萬個選擇，\n但你如果只下 prompt，\n剩下的選擇就全被模型填掉了。\n雖然有人反駁說人類寫作本來沒多原創啦，\n但這份報告作者的判讀很不一樣，\n我覺得這個切入點真的滿厲害的。\n他覺得大家在意的不是數量，\n而是到底有沒有人在那邊做選擇。\n就像台中市議會之前質詢文學獎，\n議員很擔心比賽變成文字代工廠。\n結果文化局怎麼做？\n他們完全不用偵測器喔。<short pause>\n文化局要參賽者交出草稿跟創作歷程。\n也就是，呃我是說，\n他們要看的是創作的過程，\n看你有沒有親自做過取捨嘛。",
+   "lint": {
+    "chars": 266,
+    "precise_numbers": [
+     "一萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 23.2,
+    "max_sentence_len": 48,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "說到心力，作家 Ted Chiang 有個說法。\n他說一萬字的小說，裡面全都是選擇。<short pause>\n就是你如果只給短短幾句 prompt，\n剩下的選擇，就全被模型填掉了。\n雖然有人反駁，說改 prompt 也是選擇……\n呃不對，另一派是說人類本來就不原創。\n但作者的判讀是，大家吵的不是這個。\n重點是，讀者看的是有沒有人在做決定。\n像今年台中文學獎，被質詢會不會變代工廠？\n文化局怎麼回？\n他們說有疑慮，就請參賽者交草稿跟歷程。\n對，他們連偵測器都不用，要的是過程。\n這點真的很能體會。\n句子可以交給模型，取捨交不出去嘛。",
+   "lint": {
+    "chars": 235,
+    "precise_numbers": [
+     "一萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.6,
+    "max_sentence_len": 38,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 2,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "說到心力，作家 Ted Chiang 提過一個比喻。\n我聽完很能體會。\n他說寫長篇小說，大概要做一萬個選擇。\n但丟一段 prompt，可能只做了幾十個。\n剩下的，全都是模型幫你填上去的。\n後來有人反駁，改 prompt 也是選擇啊。\n作者的判讀是，大家在意的根本不是數量。<short pause>\n重點是有沒有人，真的在那裡做決定。\n像今年台中文學獎被質詢，怕變成文字代工廠。\n結果文化局怎麼回？\n他們要求有疑慮的人，交出草稿跟歷程。\n就是……他們不用偵測器，他們要看過程啦。\n要證明你真的在那裡取捨過，對。",
+   "lint": {
+    "chars": 224,
+    "precise_numbers": [
+     "一萬"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "我聽完很能體會。",
+   "to": "",
+   "reason": "Ping 沒有個人經歷"
+  },
+  {
+   "from": "但丟一段 prompt，可能只做了幾十個。",
+   "to": "但一百字的 prompt，只有一百個。",
+   "reason": "照原文"
+  },
+  {
+   "from": "就是……他們不用偵測器",
+   "to": "他們不用偵測器",
+   "reason": "規則 18"
+  }
+ ]
+}

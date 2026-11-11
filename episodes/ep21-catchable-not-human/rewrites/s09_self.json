@@ -1,0 +1,108 @@
+{
+ "segment": "s09_self",
+ "position": "第 10 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "3cb5e191ca4bef1ec0548a54abf399f2978e4ed0aa16c511dcb56383e542aeb7",
+ "previous_context": "就是……他們不用偵測器，他們要看過程啦。要證明你真的在那裡取捨過，對。",
+ "original": {
+  "text": "報告最後回到那支檢查器。它會告訴你哪幾句太像 AI、哪個詞是對岸用語，這些該修；但修完之後有沒有人味，它答不了。作者列了三件自己做、工具沒碰的事：選了這個題目、決定把喜歡和像人拆成兩題、決定把判讀蓋章。報告說，這三件事就是作者欄。這個節目其實也一樣：聲音是合成的，稿子是 AI 改寫的；但選哪一份報告、哪一句要改掉、這一集要不要上架，是節目背後的人決定的。報告的最後一句是：句子可以交出去，取捨交不出去。",
+  "lint": {
+   "chars": 199,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 32.2,
+   "max_sentence_len": 60,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 3,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "講到取捨，那支檢查器最後還是派上用場了。\n它會挑出太像 AI 的句子，也會抓對岸用語。\n但修完之後，文章到底有沒有人味？\n<short pause>\n檢查器其實回答不出來啦。\n作者說，有三件事工具完全沒碰——\n呃，應該說工具碰不到啦。\n就是選這個題目、把喜歡跟像人拆開，\n還有最後，替自己的判讀蓋章。\n這份報告說，這三件事就是作者欄。\n欸，其實我們這個節目也是醬子。\n你現在聽到的聲音是合成的，\n稿子也是 AI 改寫的。\n但哪份報告要講、哪句要修、能不能上架？\n這些全是節目背後的人決定的。\n作者最後那句話，我聽了真的很有共鳴。\n<short pause>\n句子可以交出去，取捨交不出去。",
+   "lint": {
+    "chars": 247,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 18.0,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 2,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說到取捨，那支檢查工具修完之後呢？\n它根本答不出來文章有沒有人味。\n這份報告的作者就說，\n有三件事工具完全沒碰喔。\n選這個題目、決定怎麼拆問題，\n還有最後承認那是自己的判讀。\n作者說這三件事才是作者欄。\n欸，我們這節目其實也差不多是醬。<short pause>\n聲音是合成的，\n稿子也是 AI 改寫的。\n那真人……呃我是說背後的人在哪？\n選哪篇報告、哪一句該修掉，\n還有這一集到底要不要上架，\n全部是節目背後的人決定的。\n對，這就是取捨。\n這份報告最後有一句話超精準。<short pause>\n句子可以交出去，\n但你的取捨，永遠交不出去啦。",
+   "lint": {
+    "chars": 227,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 38,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 2,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說到取捨，那份報告最後回到了檢查器。\n它能挑出哪個詞怪怪的、哪幾句太像 AI。\n但改完真的就有人味了嗎？<short pause>\n作者自己都說，它答不出來嘛。\n因為有三件事，工具根本沒碰。\n選這個題目、決定把問題拆開，\n還有蓋章承認那是自己的判讀。\n這份報告說，這幾件事才是作者欄。\n欸，其實我們這個節目也是醬子。\n聲音是合成的，稿子也是 AI 改寫的。\n但到底要挑什麼題目？\n哪一句要改掉、這一集能不能上架，\n就是……背後那個真人決定的。\n作者最後那句話我很有共鳴：\n句子可以交出去，取捨交不出去啦。",
+   "lint": {
+    "chars": 222,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 29,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "就是……背後那個真人決定的。",
+   "to": "是節目背後的人決定的。",
+   "reason": "規則 18"
+  }
+ ]
+}

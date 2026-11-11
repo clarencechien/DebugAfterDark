@@ -1,0 +1,110 @@
+{
+ "segment": "s10_limits",
+ "position": "第 11 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "醬",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "27bbefc077e87b5faacd579c6613693287e03908fb6efa9ec5c103895140e87b",
+ "previous_context": "哪一句要改掉、這一集能不能上架，就是……背後那個真人決定的。作者最後那句話我很有共鳴：句子可以交出去，取捨交不出去啦。",
+ "original": {
+  "text": "報告也誠實列了沒驗證的部分。這些研究的受試者是美國、印度、日本的人，沒有一份用台灣讀者；台灣讀者對繁體中文 AI 文字的反應，目前沒有研究。人味是選擇留下的痕跡，這是作者的判讀，沒有研究直接量過選擇。台灣語料的基準只有十一篇，門檻會隨著語料變多而改變。所以這集講的研究結果，是讀者的反應；至於人味到底是什麼，報告給的是一個判讀，不是定論。",
+  "lint": {
+   "chars": 167,
+   "precise_numbers": [
+    "十一"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 32.4,
+   "max_sentence_len": 53,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說到這裡，這份報告其實滿誠實的。<short pause>\n它自己列了一堆還沒驗證的事。\n裡面的研究找的都是美國、日本或印度讀者。\n那台灣讀者看繁中 AI 文字是什麼感覺？\n答案是，目前根本還沒有人研究過啦。\n然後那個台灣語料基準，現在只有十一篇。\n語料變多之後，標準可能就會跟著改。\n那「人味是選擇的痕跡」這句話算事實嗎？\n其實不是喔，那個是作者自己的判讀。\n我覺得報告把推論跟證據分開，滿負責任的。",
+   "lint": {
+    "chars": 177,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 16.7,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "不過老實說，這份報告也有寫出還沒驗證的地方啦。<short pause>像那些研究的受試者，都是美國、印度跟日本讀者。台灣人對繁體中文 AI 文字的反應呢？目前完全沒有研究喔。而且台灣語料的基準只有十一篇，門檻隨時會變。然後啊，說什麼人味是選擇留下的痕跡，這其實也是作者自己的判讀，不是實驗測出來的定論。就是……換個說法，它給的是觀察方向，不是標準答案啦。",
+   "lint": {
+    "chars": 163,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 7,
+    "avg_sentence_len": 22.3,
+    "max_sentence_len": 41,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 2,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "不過這份報告也很誠實啦。\n它特別列出還沒驗證的地方。\n像是那些研究的受試者，\n都是美國、印度跟日本的讀者。\n那台灣讀者怎麼看繁中 AI 文字？\n目前完全沒有研究。<short pause>\n然後啊，說人味就是選擇的痕跡，\n這其實是作者自己的判讀。就是……\n還沒有論文真的去量過選擇。\n而且台灣語料的基準也才十一篇，\n之後資料變多，門檻可能就會變。\n所以人味到底是什麼？\n這份報告給的是個看法，不是定論喔。",
+   "lint": {
+    "chars": 175,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 29,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0
+}

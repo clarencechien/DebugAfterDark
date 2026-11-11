@@ -1,0 +1,117 @@
+{
+ "segment": "s05_converge",
+ "position": "第 6 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "47e0c000cdc4958cb8376a9f1ee77a87180cd3dadbeb55a9835ae99bb45104ec",
+ "previous_context": "就是你在學會抓 AI 的同時，自己的講法也被拉過去了。像模型愛用的單字，在人類演講裡也變多了。",
+ "original": {
+  "text": "還有一個代價，在群體那一端。一個實驗讓三百位作者寫短篇故事，拿到 AI 點子的那組，故事比較新穎，而且幫最多的，是本來寫得最差的人。可是同一組人的故事，彼此也變得更像。報告說：個人變好，群體變一樣，是同一個動作。另一份研究發現，AI 的建議讓印度受試者的寫法往西方靠。台灣也有自己的位置：繁體中文會被往簡體中文的用法拉。報告說，台灣用語檢查器修的是在地化那一層，那一層不叫人味。",
+  "lint": {
+   "chars": 186,
+   "precise_numbers": [
+    "三百"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 25.6,
+   "max_sentence_len": 49,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "群體那邊的代價更大喔。\n有份研究找了三百人寫短篇故事。\n拿到 AI 點子的人，\n就是本來寫最差的那群，進步最多。\n那代價是什麼？<short pause>\n大家寫出來的東西，變得超級像欸。\n這份報告說，\n個人變好跟群體變一樣，是同一個動作。\n我看到這句真的很有共鳴。\n然後文化上也是醬，\n像印度的寫作風格被拉向西方。\n台灣的繁體中文，也會被拉去簡體用法。\n所以檢查台灣用語的工具，\n修的只是在地化那一層，不是人味啦。",
+   "lint": {
+    "chars": 180,
+    "precise_numbers": [
+     "三百"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.0,
+    "max_sentence_len": 28,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "不只是單字喔，連想法都會被拉過去。\n有一份研究找了三百個人寫短篇故事。\n拿到 AI 點子的人，確實寫得比較好。\n特別是本來寫最差的人，進步最多。\n但代價是什麼？<short pause>\n大家寫出來的東西，變得超級像。\n光是拿一個點子，\n相似度就高了百分之十點七。\n這份報告裡說，\n個人變厲害跟群體變一樣，\n呃我是說，這根本是同一個動作。\n我看到這個結論真的起雞皮疙瘩。<short pause>\n然後換到語言文化也是醬。\n像繁體中文，很容易被拉去簡體用法。\n所以檢查台灣用語的工具，\n修的只是在地化，還稱不上人味啦。",
+   "lint": {
+    "chars": 216,
+    "precise_numbers": [
+     "三百",
+     "百分之十點七"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.0,
+    "max_sentence_len": 33,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "更妙的是，群體付出的代價更大。\n有篇研究找了三百人寫短篇故事。\n有 AI 幫忙，每個人確實寫得更好。\n而且幫最多的，是本來寫最差的人。\n那大家的故事放一起會怎樣？\n結果彼此相似度，高了百分之十點七。<short pause>\n這份報告的作者說得很精闢：\n個人變好，跟群體變一樣，是同一個動作。\n我看到這句話真的起雞皮疙瘩。\n就是大家的棱角……呃，換個說法。\n大家的個人風格，都被磨平了嘛。\n文化上也是醬，對吧？\n印度人的寫法，會被 AI 往西方拉。\n繁體中文也很容易被往簡體拉。\n那個檢查台灣用語的工具，修的只是在地化。\n那一層根本還碰不到人味啦。",
+   "lint": {
+    "chars": 242,
+    "precise_numbers": [
+     "三百",
+     "百分之十點七"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 31,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 2,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "拿到 AI 點子的人，就是本來寫最差的那群，進步最多。",
+   "to": "拿到 AI 點子的人，故事比較新穎，而且進步最多的，是本來寫最差的那群。",
+   "reason": "句子不通；照原文"
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "segment": "s06_layers",
+ "position": "第 7 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "6ec8974d8f9719eb0e20cb44a7d8c4378144d8ddd66245e7c0887cad22a81062",
+ "previous_context": "台灣的繁體中文，也會被拉去簡體用法。所以檢查台灣用語的工具，修的只是在地化那一層，不是人味啦。",
+ "original": {
+  "text": "所以報告把 AI 味分成三層。第一層是字面：用詞、標點、句型，量得到，也修得掉，用規則就能做，不用模型。第二層是分布：句子長短的變化、段落銜接太順、風格越寫越像，量得到，但幾乎修不掉。研究發現，叫模型寫得像人一點，效果很小；AI 味是模型訓練最後那幾步加上去的，改寫 prompt 救不回來。第三層是作者：有沒有一個人做了選擇、刪了什麼、願不願意站一個立場。這一層量不到，也不是修的問題，要嘛有，要嘛沒有。",
+  "lint": {
+   "chars": 198,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 32.0,
+   "max_sentence_len": 50,
+   "sentences_over_20": 5,
+   "particles_per_100": 1.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以這份報告把 AI 味拆成三層來看。第一層是字面，像用詞跟標點。對，這個量得到也修得掉。連模型都不用，寫個規則就搞定。那第二層是什麼？就是統計分布。<short pause> 像是句子長短的變化、段落接得太順。這層雖然量得到，但幾乎修不掉喔。這份報告說，叫模型寫得像人一點根本沒用。那個 AI 味是模型訓練最後幾步加上去的。改寫 prompt 也救不回來。<sigh> 重點來了，最深的那層是作者。有沒有人做選擇？願不願意站一個立場？這層完全量不到啦。它不是能不能修的問題，要嘛有，要嘛沒有。",
+   "lint": {
+    "chars": 220,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 12.8,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "這份報告把 AI 味拆成三層。\n第一層是字面問題。\n像是用詞、標點跟句型。\n這層量得到，也修得掉。\n用簡單規則就能解決，不用模型喔。\n然後是分布那一層。\n也就是句子長短太固定、段落接得太順。\n這層雖然量得到，但幾乎修不掉。\n叫模型寫得像人一點有用嗎？\n研究說效果超差的啦。<short pause>\n那個 AI 味是模型最後訓練被壓進去的。\n你光靠改寫 prompt 根本救不回來。\n最殘酷的是最後那一層。\n呃我是說，作者層。\n看有沒有人真的做取捨、願不願意站立場。\n這層完全量不到，也不是修不修的問題。\n它要嘛有，要嘛沒有，對吧？",
+   "lint": {
+    "chars": 231,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 12.6,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 2.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "所以這份報告把 AI 味切成了三層。\n第一層最表面，就是用詞跟標點。\n這能量也能修，寫規則引擎就搞定，\n根本不需要模型。\n然後第二層是分布，\n像是句子長短變化、或是接得太順。\n這能量出來，但幾乎修不掉喔。\n叫模型寫得像人一點有用嗎？\n其實沒用，那個……應該說效果極差。\n作者認為這在訓練後期就被定型了，\n下改寫 prompt 也救不回來。<short pause>\n重點來了，最後一層是作者。\n有沒有人真的在做取捨、願意選邊站？\n這完全量不到。\n這段分析我真的很有共鳴，\n它要嘛有、要嘛沒有，不是修得出來的啦。",
+   "lint": {
+    "chars": 223,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 30,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 2,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "呃我是說，作者層。",
+   "to": "就是作者那一層。",
+   "reason": "規則 18"
+  }
+ ]
+}

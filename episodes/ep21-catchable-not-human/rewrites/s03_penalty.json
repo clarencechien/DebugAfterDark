@@ -1,0 +1,115 @@
+{
+ "segment": "s03_penalty",
+ "position": "第 4 段，共 12 段",
+ "avoid": [
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "c2bbfaab123e440f2b2bf30d9ec1d55971b207da1b9a4761eb8c95070be992ce",
+ "previous_context": "作者的判讀是，大家把好懂當成了人味。但那個訊號，根本整個反過來了啦。",
+ "original": {
+  "text": "可是同一首詩，只要告訴讀者這是 AI 寫的，分數就掉了，而且跟真正的作者無關：人寫的詩被標成 AI，一樣掉。華頓商學院做了十六個實驗、兩萬七千多人，同一段文字標成 AI 寫的，品質、創意、喜愛度都被打低。他們試了各種辦法：幫 AI 取人名、說是人機協作，都沒用。解釋力最強的是真誠度。另一個實驗裡，讀者被告知道歉信是 AI 寫的之後，形容寄件者的詞，從真誠、用心，變成懶、沒花心思。報告說，扣掉的分數有一個名字，叫心力。",
+  "lint": {
+   "chars": 201,
+   "precise_numbers": [
+    "十六",
+    "兩萬七千"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 32.5,
+   "max_sentence_len": 50,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "而且更妙的是，\n只要跟讀者說這首詩是 AI 寫的，\n分數馬上往下掉。\n就算根本是真人寫的，\n只要被標成 AI，一樣很慘。\n華頓商學院做過兩萬七千多人的實驗。<short pause>\n不管幫 AI 取人名，\n還是說是人機協作，\n分數通通被打低。\n你猜大家到底在扣什麼？\n不是文筆喔。\n這份報告說，關鍵其實是真誠度。\n然後，像道歉信被發現是 AI 寫的，\n評價就直接變成偷懶、沒花心思。<sigh>\n我看到這邊真的很有共鳴。\n說穿了，那個被扣掉的分數，\n其實就是你沒付出的心力嘛。",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [
+     "兩萬七千"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 18.7,
+    "max_sentence_len": 30,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "怎麼說呢？\n因為只要跟讀者說「這是 AI 寫的」，\n分數就直接掉下來。<short pause>\n最慘的是，就算原本是人寫的，\n只要掛上 AI 的標籤，一樣照扣喔。\n華頓商學院做了一系列實驗，\n測了兩萬七千多個人，\n不管幫 AI 取人名，還是說是人機協作，\n大家通通不買單。\n像是在道歉信的實驗裡，\n讀者一知道是 AI 寫的，\n評價就從真誠，變成偷懶、沒花心思。\n你猜大家到底是在扣什麼分？<short pause>\n其實不是品質，是真誠度啦。\n這份報告說，那個被扣掉的分數，\n說白了就是心力。\n讀者覺得你本來該花的力氣，\n你根本就沒有花嘛。<sigh>",
+   "lint": {
+    "chars": 220,
+    "precise_numbers": [
+     "兩萬七千"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 23.4,
+    "max_sentence_len": 48,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   }
+  },
+  {
+   "text": "而且更殘酷的是什麼，你知道嗎？\n只要讀者被告知這是 AI 寫的，\n那個評分就直接往下掉耶。<short pause>\n就算原本是真人寫的，\n只要貼上 AI 標籤，一樣照扣不誤。\n華頓商學院找了兩萬七千多人做實驗。\n他們試著幫 AI 取人名、說是人機協作，\n結果完全沒用，分數照樣很慘。\n我看到這段真的哭笑不得。<laugh>\n你猜大家到底在扣什麼分？\n答案其實不是好不好，而是真誠度。\n像另一個實驗測道歉信，\n讀者一知道是 AI 寫的，\n評價立刻從很用心，\n變成在罵寄件人很懶、沒花心思。\n這份報告裡說，大家扣掉的那個分數，\n說穿了就是心力啦。",
+   "lint": {
+    "chars": 228,
+    "precise_numbers": [
+     "兩萬七千"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 21.8,
+    "max_sentence_len": 45,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "其實就是你沒付出的心力嘛。",
+   "to": "其實就是讀者覺得，寄件者沒付出的心力嘛。",
+   "reason": "說清楚誰的心力"
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+{
+ "segment": "s02_poetry",
+ "position": "第 3 段，共 12 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "455e2d3fab34615b25631d19cc57e1a0bb1293af9eabf91ef3364dcdfbbf4c06",
+ "previous_context": "工具答不出來。句式可以重跑，但人味哪來的基準嘛！",
+ "original": {
+  "text": "先看讀者分不分得出來。二〇二四年一個實驗，請一千六百多人讀十首詩，五首是莎士比亞、狄金森這些名家寫的，五首是 AI 模仿他們的風格寫的。判斷正確率不到一半，比丟銅板還低；最常被判成人寫的前五首裡，有四首是 AI 寫的。另一組人只評好不好，AI 的詩幾乎每一項都贏，只有原創性沒差。原因是好懂：AI 的詩押韻整齊，人寫的常被說看不懂。讀者把好懂當成人寫的訊號，這個訊號剛好反了。",
+  "lint": {
+   "chars": 182,
+   "precise_numbers": [
+    "一千六百"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 29.3,
+   "max_sentence_len": 54,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先來看讀者到底分不分得出來。\n二〇二四年有一個實驗，\n找了一千六百多人，就是請大家讀十首詩。\n裡面有莎士比亞的作品，\n也有 AI 模仿名家風格寫的。\n你猜大家猜對的機率有多高？\n<short pause>\n只有四成六六，比丟銅板還低！\n最扯的是，大家覺得最像人寫的前五首，\n裡面居然有四首是 AI 寫的。<laugh>\n然後另一組人只評寫得好不好，\nAI 幾乎全贏，只有原創性打平。\n研究作者說，關鍵其實是好不好懂。\nAI 押韻超整齊，名家寫的反而看不懂。\n大家把好懂當成人寫的訊號，\n結果那個訊號完全反了啦。",
+   "lint": {
+    "chars": 214,
+    "precise_numbers": [
+     "一千六百"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.4,
+    "max_sentence_len": 30,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "先看讀者到底分不分得出來。<short pause>\n二〇二四年有個很扯的實驗。\n研究找了一千六百多人，來猜詩是誰寫的。\n一半是莎士比亞這種大師，一半是 AI 仿寫。\n結果大家猜對的比例，只有四成六。\n比丟銅板還低，超誇張的對不對？\n最常被當成真人寫的前五首，有四首是 AI。\n然後換一批人只打分數，不猜作者。\n你猜誰贏？<laugh>\nAI 幾乎每一項都贏。\n大家反而覺得 AI 寫的比較好懂。\n作者的判讀是，大家把好懂當成了人味。\n但那個訊號，根本整個反過來了啦。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [
+     "一千六百"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.1,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "說到人味，讀者真的分得出來嗎？\n二〇二四年有個實驗超扯的。<short pause>\n研究找了一千六百多人來猜詩是誰寫的。\n裡面有莎士比亞的名作，也有 AI 模仿的。\n你猜正確率多少？\n四十六點六趴，居然比丟銅板還低耶！\n更扯的是，大家最覺得像人寫的前五首，\n裡面居然有四首是 AI 寫的。<laugh>\n後來換一批人只打分數，AI 幾乎每項都贏。\n這份研究說，那是因為 AI 的詩比較好懂。\n而且押韻超級整齊喔。\n大家就把好懂當成真人寫的訊號。\n結果那個訊號根本完全反了嘛！",
+   "lint": {
+    "chars": 199,
+    "precise_numbers": [
+     "一千六百",
+     "四十六點六"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 30,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "作者的判讀是，大家把好懂當成了人味。",
+   "to": "研究者的解釋是，大家把好懂，當成了人寫的訊號。",
+   "reason": "這是研究者的解釋，不是報告作者的判讀"
+  }
+ ]
+}

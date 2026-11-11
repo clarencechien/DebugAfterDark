@@ -1,0 +1,115 @@
+{
+ "segment": "s04_experts",
+ "position": "第 5 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2af70b818a8bf2388e91833724b0b7bc14a38bc7e1019bdf0c18d87b0285ac50",
+ "previous_context": "我看到這邊真的很有共鳴。說穿了，那個被扣掉的分數，其實就是你沒付出的心力嘛。",
+ "original": {
+  "text": "那有沒有人分得出來？有：常用 AI 寫東西的人。一份研究找了五個經常用模型寫作的人，不給訓練，讓他們判斷三百篇文章，五個人多數決，只錯一篇，比大部分偵測器都準。他們靠的主要是用詞，也有一部分是說不清楚的整體感覺。有趣的是另一面：ChatGPT 上線之後，一些它偏好的英文單字，在人類的口語演講裡也變多了。讀者在學會認出 AI 的同時，自己的寫法也被它拉過去。",
+  "lint": {
+   "chars": 174,
+   "precise_numbers": [
+    "三百"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 28.0,
+   "max_sentence_len": 55,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那到底有沒有人分得出來？\n答案是有啦，就是那些天天用 AI 寫作的人。\n有份研究找了五個常常用模型的人，\n讓他們去判斷三百篇文章。\n結果五個人表決，居然只錯了一篇！\n比一堆偵測工具都還要準。<short pause>\n他們除了看特定用詞，\n其實也是靠一種說不清楚的整體感覺。\n但最妙的是什麼，你知道嗎？\n這份研究發現，大家在學會抓 AI 的同時，\n人類自己的習慣也被拉過去了。<laugh>\n某些 AI 愛用的單字，\n在人類演講裡反而變多了。\n這真的超微妙的耶。",
+   "lint": {
+    "chars": 192,
+    "precise_numbers": [
+     "三百"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 32,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那，到底有沒有人分得出來？\n答案是有，就是那些常常用 AI 寫作的人。\n有份研究找人去判斷三百篇文章。<short pause>\n結果他們多數決，居然幾乎全對。\n這甚至比一般的偵測器還準耶。\n他們靠的是抓 AI 偏好的詞，\n還有那個……講白了，\n就是一種說不清楚的整體感覺啦。\n然後更妙的是什麼，你知道嗎？\n就是你在學會抓 AI 的同時，\n自己的講法也被拉過去了。<laugh>\n像模型愛用的單字，在人類演講裡也變多了。",
+   "lint": {
+    "chars": 173,
+    "precise_numbers": [
+     "三百"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 37,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那到底有沒有人分得出來？\n有喔，答案是天天用 AI 的人。\n有一份研究找了五個人，\n讓他們看三百篇文章。\n這五個人用多數決，\n結果居然只猜錯一篇。<short pause>\n比一堆偵測工具還要準。\n那他們是怎麼抓出來的？\n主要就是看用詞，\n應該說，看久了會有一種整體的直覺啦。\n但我看到後面覺得最妙的是，\n現在人類演講的時候，\nAI 愛用的單字也變多了。\n我們越來越會認 AI，\n但自己的講法，好像也慢慢被它拉過去了耶。",
+   "lint": {
+    "chars": 179,
+    "precise_numbers": [
+     "三百"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 18.9,
+    "max_sentence_len": 34,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "還有那個……講白了，就是一種說不清楚的整體感覺啦。",
+   "to": "還有一種說不清楚的整體感覺啦。",
+   "reason": "規則 18"
+  }
+ ]
+}
