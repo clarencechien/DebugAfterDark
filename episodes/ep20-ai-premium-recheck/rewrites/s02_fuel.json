@@ -1,0 +1,119 @@
+{
+ "segment": "s02_fuel",
+ "position": "第 3 段，共 12 段",
+ "avoid": [
+  "更扯的是",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a22fa8d9fdf910ec8d1ff08b8bd3ece55dac1eec4b4da45fec915fe16f51850f",
+ "previous_context": "竟然是廣告平台跟二手車電商。最怕 AI 的，反而擠滿半導體公司。",
+ "original": {
+  "text": "先看第一個系統，用量。報告看的是 OpenRouter 這個模型平台，每週處理多少 token。十月底那一週，是一百九十四兆，半年成長將近九倍；股價下跌的這四個月，用量的成長沒有放慢，還稍微快一點。不過報告也誠實說：這是 token 的數量，不是收入。用量第一名是一個中國的低價模型，前十名裡有七個是中國實驗室的便宜模型。每一顆 token 變便宜了，所以大家用得更兇。報告的比喻是：燃料流量還在加速，但每公升變便宜了。",
+  "lint": {
+   "chars": 203,
+   "precise_numbers": [
+    "一百九十四"
+   ],
+   "enumerations": [
+    "第一",
+    "第一"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 28.0,
+   "max_sentence_len": 50,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先來看這份報告的第一個指標：用量。\n這份報告看的是，模型平台的 token 用量。\n你可以把 token 當成 AI 運算的小單位。\n十月底那一週，衝到了一百九十四兆。<short pause>\n半年下來，成長了將近九倍喔。\n你猜股價大跌這幾個月，用量有變慢嗎？\n完全沒有，成長甚至稍微變快耶。\n不過重點來了，用量暴增就等於賺大錢嗎？\n答案是沒有。<short pause>\n因為排第一名的，是主打便宜的模型。\n就像每公升油變便宜，大家才狂踩油門啦。\n對做應用的是好消息。\n但對賣算力的人來說，就是雙面刃了。",
+   "lint": {
+    "chars": 210,
+    "precise_numbers": [
+     "一百九十四"
+    ],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "為什麼會醬？\n先來看第一個指標，也就是用量。\n這份報告看的是 OpenRouter 的數據。\n簡單說就是大家每週用了多少 token。\n十月底那一週，衝到一百九十四兆。<short pause>\n你猜這半年成長了多少？\n答案是將近九倍喔。\n這四個月股價明明在大跌，\n可是用量完全沒放慢，還加速耶。\n<laugh> 我看到這裡也覺得超神奇。\n不過這份報告的作者有提醒，\n這只能代表用量，不代表賺很多錢。\n因為排行榜上很多都是便宜的低價模型。\n單價變便宜了，大家當然用得更兇。\n就像油管裡的油跑得更快，\n但是每公升汽油其實變便宜了啦。",
+   "lint": {
+    "chars": 226,
+    "precise_numbers": [
+     "一百九十四"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "先看第一個指標，也就是實際用量。\n這份報告是看 OpenRouter 的每週用量。\n到十月底，衝到了一百九十四兆顆 token。\n半年就暴增了將近九倍欸。\n<laugh> 你猜這四個月股價在幹嘛？\n股市明明在跌，用量卻完全沒減速。\n甚至還越跑越快喔。\n但重點來了，用量大就等於賺大錢嗎？\n其實不是醬喔。<short pause>\n現在排第一名的，都是超便宜的模型。\n大家會狂用，是因為單價變便宜了。\n報告裡說得很貼切：\n引擎燃料狂噴，但每公升變便宜了啦。",
+   "lint": {
+    "chars": 191,
+    "precise_numbers": [
+     "一百九十四"
+    ],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 25,
+    "sentences_over_20": 2,
+    "particles_per_100": 2.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0
+}

@@ -1,0 +1,118 @@
+{
+ "segment": "s03_compress",
+ "position": "第 4 段，共 12 段",
+ "avoid": [
+  "更扯的是",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "c972a98427d3159cf340344c6dbe4ee49369c5b1d7328bae24232e6fb11f75b1",
+ "previous_context": "對做應用的是好消息。但對賣算力的人來說，就是雙面刃了。",
+ "original": {
+  "text": "第二個系統，基本面。台積電第三季營收年增大約五成，連續六季創新高，還上修了全年的成長；法說會上說，需求遠超過今天的供給能力。美國四大雲端今年的資本支出，合計大約八千億美元，也還在往上修。報告說，沒有一個基本面數字在這四個月轉向。市場在十月中擔心的，不是需求，是這些錢從哪裡來：利率升、AI 基建靠舉債。但它也提醒，這些都是落後指標；需求遠超供給，是供應商說的話，不是買方說的話。",
+  "lint": {
+   "chars": 188,
+   "precise_numbers": [
+    "八千"
+   ],
+   "enumerations": [
+    "第二",
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 30.3,
+   "max_sentence_len": 51,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那基本面的狀況到底如何？\n先看大家最關心的台積電。\n第三季營收年增大概五成。\n而且連續六季創新高喔。\n法說會還說，需求遠遠超過供給。\n然後四大雲端巨頭，\n今年預估砸了八千億美元買設備，\n數字甚至還在往上調。\n這份報告裡說，基本面完全沒有轉向。\n那你猜大家到底在慌什麼？\n市場擔心的其實不是沒訂單，\n而是買設備的錢要從哪裡來啦。<short pause>\n利率變高，借錢買算力的利息變重了。\n不過作者也提醒，財報終究是過去的事。\n而且「需求遠超供給」，\n那也是賣方自己說的話嘛。",
+   "lint": {
+    "chars": 210,
+    "precise_numbers": [
+     "八千"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 33,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "賣算力的是不是真的不行了？\n我們直接來看基本面的讀數。\n台積電第三季營收年增約五成。\n而且是連續六季創下新高耶。\n全年成長還上修到百分之四十四。<short pause>\n然後四大雲端的支出，也是八千億等級。\n這份報告說，基本面完全沒有轉向嘛。\n那大家上週到底在慌什麼？\n市場擔心的，其實就是錢從哪裡來。\n現在利率高，建機房很多都是靠借錢。\n但我看到這邊，心裡還是會打個問號。\n畢竟這些財報都是落後指標啦。\n而且需求遠超供給，也是供應商說的嘛。",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [
+     "百分之四十四",
+     "八千"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 17,
+    "sentences_over_20": 0,
+    "particles_per_100": 2.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "下一項來看基本面。<short pause>\n我們先看台積電跟四大雲端的帳本。\n台積電第三季營收年增大約五成，\n連續六季創下新高紀錄。\n法說會甚至直接講明，\n需求遠遠超過供給能力。\n那四大雲端的資本支出呢？\n合計大約八千億美元，而且還在往上修喔。\n我看到這段真的蠻放心的。\n這份報告說，\n基本面數字在這四個月完全沒有轉向。\n那大家十月到底在慌什麼？\n市場擔心的其實不是沒需求，\n而是利率升上去之後，\n借錢蓋機房的成本變貴了啦。\n不過作者也提醒大家，\n這些都是落後指標。<short pause>\n而且需求爆滿是供應商講的，\n可不是掏錢的買方說的喔。",
+   "lint": {
+    "chars": 230,
+    "precise_numbers": [
+     "八千"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 35,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0
+}

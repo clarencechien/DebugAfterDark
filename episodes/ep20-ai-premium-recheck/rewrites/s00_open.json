@@ -1,0 +1,112 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 12 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "6b264f3379c08eb03ac85fb41babb08891efddc9548bda8e7091a5c7bab7677d",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "上個禮拜，費城半導體指數一天跌了一成二，隔天台股盤中跌了三千七百多點，是史上最大的盤中跌點。從十月初的高點算，台股一個月跌了兩成。大家都在問：AI 熄火了嗎？這份報告像一張汽車的複檢單，把一台車拆成三個系統分開測：用量、基本面、價格。最後再把七月做過的一場台股實驗，用新的資料整個重跑一次。先說清楚，這集談股市，但不是投資建議，也不報明牌。",
+  "lint": {
+   "chars": 169,
+   "precise_numbers": [
+    "三千七百"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 27.2,
+   "max_sentence_len": 45,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上週台股盤中跌了三千七百多點。<short pause>\n你那天是不是也看著螢幕傻眼？\n那可是史上最大的盤中跌點耶。\n就是短短一個月，台股跌掉了兩成。\n大家都在問：AI 真的熄火了嗎？\n<sigh> 我看到那個數字也倒抽一口氣。\n這份報告很有趣，像一張汽車複檢單。\n它就是把車子拆成三個部分來看：\n用量、基本面，還有價格。\n然後把七月的台股實驗整個重跑一次。\n先說好喔，這集純分析，不是投資建議。\n我們絕對不報明牌啦。",
+   "lint": {
+    "chars": 177,
+    "precise_numbers": [
+     "三千七百"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 26,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？\n上週那個盤面真的很嚇人。<sigh>\n費城半導體指數一天跌掉一成多。\n隔天台股盤中直接摔了三千七百三十七點。\n對，這是史上最大的盤中跌點。\n短短一個月就跌掉兩成耶。<short pause>\n你一定也想問，AI 真的熄火了嗎？\n其實這份報告把市場當成車子在複檢。\n分成用量、基本面還有價格三個系統。\n然後把七月的全市場實驗整個重跑一次。\n先說好喔，這不是投資建議，也不報明牌啦。",
+   "lint": {
+    "chars": 167,
+    "precise_numbers": [
+     "三千七百三十七"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "上個禮拜，台股盤中跌了三千七百三十七點。<short pause>\n你上週看盤，有沒有被嚇到？\n看到那個綠油油一片，心臟真的會漏跳半拍。<sigh>\n大家現在都在問：AI 真的熄火了嗎？\n這份報告的作者，就像把車子拉回原廠複檢，\n把市場拆成三個系統來看喔：\n就是用量、基本面，還有價格。\n然後把七月的全市場實驗，用新資料整個重跑一次。\n先說好，這集聊股市，但不是投資建議啦。\n我們不報明牌，單純看資料到底發生什麼事。",
+   "lint": {
+    "chars": 179,
+    "precise_numbers": [
+     "三千七百三十七"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 21.4,
+    "max_sentence_len": 46,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "嘿，還醒著嗎？上週那個盤面真的很嚇人。",
+   "to": "上週那個盤面，真的很嚇人。",
+   "reason": "cold open 不打招呼"
+  }
+ ]
+}

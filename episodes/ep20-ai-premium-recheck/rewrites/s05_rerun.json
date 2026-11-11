@@ -1,0 +1,102 @@
+{
+ "segment": "s05_rerun",
+ "position": "第 6 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e7149235b58dae5564229e40c56dc75ee7a20d43c90bb566e960bb963c765926",
+ "previous_context": "這就是市場說的打折賣，也就是估值壓縮啦。最妙的是，台股晚了三個半月才跌，結果一個月就追完了。",
+ "original": {
+  "text": "接著是路試：把七月的實驗重跑一次。做法是，算出每一檔台股的股價有多跟著 AI 用量動，每週把股票分成五組，看最敏感的那組，有沒有長期贏過最不敏感的那組。如果台股真的在為 AI 曝險付錢，五組的報酬應該一路往上爬。資料多了四個月，正好涵蓋這一輪下跌。結果，七月的結論一字不改：台股沒有 AI 溢酬，平均起來還是零。多了四個月、多了一次兩成的修正，零還是零。",
+  "lint": {
+   "chars": 171,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 27.5,
+   "max_sentence_len": 56,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "追完之後，作者把七月的實驗整個重跑一次。就是看台股有沒有為 AI 概念多給報酬啦。做法是每週把股票照敏感度分成五組。看最跟著 AI 走的那組，有沒有賺得比較多。如果大家真的買單，報酬應該要一路往上吧？那實際結果怎麼樣？這次把最近四個月的大跌也算進去了喔。重點來了，結論竟然一字不改。市場為 AI 多給的報酬，算出來依舊是零。<sigh> 多了一次兩成的修正，零還是零。這結果真的讓我忍不住笑了出來。<laugh>",
+   "lint": {
+    "chars": 186,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "追完之後呢？這份報告的作者把七月實驗重跑了一次。<short pause>你想知道結果有沒有變對不對？答案是完全沒有。實驗是看哪檔股票最跟著 AI 用量動，然後每週分成五組，看最敏感的股票有沒有賺比較多。這次多加了四個月資料，剛好把最近的大跌也算進去。如果市場願意為 AI 多給報酬，線圖應該要一路往上衝嘛。結果算出來多賺的部分竟然還是零。<laugh>多跌了兩成，零還是零，完全沒變啦。",
+   "lint": {
+    "chars": 170,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 40,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "接著這份報告的作者，把七月實驗重跑了一次。就是看每檔台股，有多跟著 AI 用量在動。然後每週把股票分成五組。<short pause>如果市場真的為 AI 買單，哪組該賺最多？當然是最敏感的那組嘛。這次作者把資料拉長了四個月。剛好把最近這波大跌也算進去。結果你覺得有變嗎？完全沒有喔。重點來了，結論竟然一字不改。市場多付給 AI 的報酬，平均依然是零。多了四個月，零還是零。<laugh>我看到結果真的覺得很不可思議。",
+   "lint": {
+    "chars": 183,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 13.1,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2
+}

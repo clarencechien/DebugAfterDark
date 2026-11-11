@@ -1,0 +1,126 @@
+{
+ "segment": "s11_outro",
+ "position": "第 12 段，共 12 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "aca74197e2087b212491e80788ef675dcd78128b53e203fb99c3e9c6006c89f7",
+ "previous_context": "就是程式碼跟資料全部公開在 GitHub，任何人都能抓下來重跑一次。能被大家重現的研究，這樣看下來才真的站得住腳嘛。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，熄火是價格的詞，不是技術的詞：用量和基本面還在走，熄的是市場願意為算力付的價格。第二，台股沒有 AI 溢酬，不等於 AI 曝險不影響台股：它放大漲跌，但長期不給補償。第三，什麼叫真的熄火，先寫死判準；價格是儀表，不是判準。再提醒一次，這集不是投資建議。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 176,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 21.0,
+   "max_sentence_len": 42,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "聊了這麼多，所以 AI 到底熄火了嗎？<short pause>\n\n好，今晚的 breakpoint。\n\n第一，熄火說的是價格，不是技術停下來。\n第二，它只會放大漲跌，長期沒有多給報酬。\n第三，有沒有熄火看用量，股價只是儀表板。\n\n那你手上有這些股票嗎？<short pause>\n老話一句，這集內容完全不是投資建議喔。\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 159,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一個，熄火是講價格，用量跟技術根本沒停。\n熄掉的，只是市場願意掏出來的錢。\n第二個，股價被 AI 放大波動，長期卻沒有多賺。\n也就是說，你承擔了風險，市場卻不付錢。<laugh>\n第三個，到底怎樣才算真的熄火？\n標準要先寫死，看用量，價格只是儀表板啦。\n這份分析看下來，真的讓人冷靜很多。\n對了，這集聊的完全不是投資建議喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 200,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 15.7,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，熄火講的是價格，不是技術。\nAI 用量跟基本面根本沒停，掉的只是開價啦。\n第二，台股雖然沒有額外給報酬，\n但它會放大波動，跌起來真的超痛。\n那到底怎樣才算真的熄火？\n第三，看用量跟基本面，價格只是儀表板。\n判準先寫死，你才不會自己騙自己嘛。\n照例提醒一下，這集不是投資建議喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 186,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 30,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "第二，它只會放大漲跌，長期沒有多給報酬。第三，有沒有熄火看用量，股價只是儀表板。那你手上有這些股票嗎？<short pause>老話一句，",
+   "to": "第二，台股沒有 AI 溢酬，不代表 AI 不影響台股：它會放大漲跌，但長期沒有多給報酬。第三，有沒有真的熄火，看用量和基本面，股價只是儀表板。<short pause>老話一句，",
+   "reason": "breakpoint 照原文；不問聽眾持股"
+  }
+ ]
+}

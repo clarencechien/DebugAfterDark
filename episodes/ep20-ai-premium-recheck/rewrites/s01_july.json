@@ -1,0 +1,116 @@
+{
+ "segment": "s01_july",
+ "position": "第 2 段，共 12 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8877d158cfbbb82c49ce33a6cbc2eb24b7075337c72d1260ad920ddc85236a94",
+ "previous_context": "然後把七月的全市場實驗整個重跑一次。先說好喔，這不是投資建議，也不報明牌啦。",
+ "original": {
+  "text": "先講七月那場實驗。美國耶魯等三位學者，拿到大約三百八十兆個真的有人付錢的 AI token 帳單，證明美股在為 AI 曝險多付報酬：股價越跟著 AI 用量動的公司，平均報酬越高。這份報告的作者把同一套方法搬到台股，用將近兩千檔股票跑了一次，結果是乾淨的零。報告的說法是：訂單流向台灣，風險定價留在美國。還有一個反直覺的發現：在美股，對 AI 最敏感的是廣告平台、二手車電商、旅遊網站、電力公司，不是輝達；最怕 AI 行情的名單裡，反而擠滿半導體。",
+  "lint": {
+   "chars": 212,
+   "precise_numbers": [
+    "三百八十",
+    "兩千"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 41.4,
+   "max_sentence_len": 72,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.5,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "七月的實驗到底發現了什麼？就是有幾位美國學者，拿到三百八十兆個付費帳單。<short pause> 他們發現美股會為 AI 多給報酬喔。股價越跟著 AI 用量跑，就漲越多。然後這份報告的作者把它搬到台股。測了快兩千檔股票，你猜結果怎樣？居然是乾淨的零。<laugh> 我看到這邊整個傻眼。這份報告說，訂單是流向台灣，但風險定價留在美國。更扯的是，對 AI 最敏感的不是輝達耶。竟然是廣告平台跟二手車電商。最怕 AI 的，反而擠滿半導體公司。",
+   "lint": {
+    "chars": 190,
+    "precise_numbers": [
+     "三百八十",
+     "兩千"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 23,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "我們先看美國那篇研究。\n學者拿了三百八十兆個付費 AI 帳單，\n發現美股真的會為 AI 多給報酬喔。\n就是股價越跟著 AI 用量動，報酬越高。\n那台股呢？\n這份報告的作者拿快兩千檔股票來測，\n你猜結果怎樣？\n竟然是乾淨的零。<short pause>\n我看到整個愣住耶。\n報告裡說，訂單流向台灣，定價留在美國。\n然後還有個超扯的發現。\n美股對 AI 最敏感的不是輝達，\n反而是廣告平台、二手車電商跟電力公司。\n最怕 AI 行情的，竟然是一堆半導體族群。",
+   "lint": {
+    "chars": 190,
+    "precise_numbers": [
+     "三百八十",
+     "兩千"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 32,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "先看七月那場實驗。\n美國學者拿到三百八十兆個付費帳單。<short pause>\n證明美股會為股價跟著 AI 動的公司多付報酬。\n這份報告的作者把同一套方法搬到台股，\n拿將近兩千檔股票測了一次。\n你猜結果怎樣？\n居然是乾淨的零，完全沒有。\n我看到這邊整個愣住。<laugh>\n這份報告說，訂單流向台灣，定價留在美國啦。\n然後更扯的是，\n美股對 AI 最敏感的居然不是輝達，\n反而是廣告平台跟二手車電商。\n最怕 AI 行情的名單裡，\n竟然擠滿了半導體公司，超反直覺的吧。",
+   "lint": {
+    "chars": 195,
+    "precise_numbers": [
+     "三百八十",
+     "兩千"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 18.5,
+    "max_sentence_len": 36,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "股價越跟著 AI 用量跑，就漲越多。",
+   "to": "股價越跟著 AI 用量跑的公司，平均報酬越高。",
+   "reason": "照原文：是報酬溢價，不是漲越多"
+  }
+ ]
+}

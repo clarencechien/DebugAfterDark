@@ -1,0 +1,109 @@
+{
+ "segment": "s10_limits",
+ "position": "第 11 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e47e7abb678f15c006c641a6a70a8b02cd862e05eb4cc3531e8a9f831d72fc37",
+ "previous_context": "而且它占台股權重將近四成，台股晚熄火，基本上就是台積電晚熄火啦。看到這裡，真的會提醒自己先別衝動。",
+ "original": {
+  "text": "報告也把限制全部列出來。樣本只有兩年八個月，其中兩年半是多頭，下跌只有四個月；這個長度的資料，就算台股真的有小小的 AI 溢酬，也不到一成的機會測得出來，所以它說的是區間，不是斬釘截鐵。用量只有 token 一條腿，沒有美元營收。有一段時間的上市股價，因為證交所的資料端點擋住了執行環境，用別的來源補齊再校正。程式碼和資料都放在公開的倉庫，任何人可以重跑。還記得台股驗屍那集嗎？能重現的，才叫可以驗證。",
+  "lint": {
+   "chars": 197,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 27.1,
+   "max_sentence_len": 78,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "其中"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "不過這份報告最讓人佩服的，是作者非常坦白。報告裡把所有限制都攤開來講。像樣本時間其實只有兩年八個月，<short pause>而且大部分都在漲，下跌才幾個月而已。資料時間這麼短，能測出來的結論其實很有限。那用量呢？作者也只算了 token，根本還沒把賺進多少美元算進去。中間甚至遇到證交所端點擋連線，作者還特地找其他資料校正補齊。最厲害的是什麼？就是程式碼跟資料全部公開在 GitHub，任何人都能抓下來重跑一次。<short pause>能被大家重現的研究，這樣看下來才真的站得住腳嘛。",
+   "lint": {
+    "chars": 216,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.6,
+    "max_sentence_len": 32,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "不過這份報告最讓我佩服的，是作者很誠實。\n報告裡把所有限制都攤開來講。\n整個樣本其實只有兩年多，\n而且大部分都在多頭，下跌才四個月。\n資料這麼短，真的測得出來嗎？\n其實很難。<short pause>\n就算市場真有多給 AI 溢酬，\n測出來的機率也只有百分之十。\n所以結論給的是區間，不是講死的。\n然後用量只算了 token，\n沒有算進賺了多少美元。\n中間甚至有一段上市股價，\n因為證交所擋連線，只好用其他資料補齊。\n最厲害的是，程式碼跟資料，\n全都放在公開的 GitHub，任何人都能重跑。\n對嘛，能自己重現的分析，看起來才踏實啦。",
+   "lint": {
+    "chars": 235,
+    "precise_numbers": [
+     "百分之十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.4,
+    "max_sentence_len": 34,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "而且這份報告的作者超坦白的。\n報告裡把所有限制都列出來了喔。\n你可能會問，這樣跑出來的結果準嗎？\n其實樣本只有兩年八個月，\n而且大部分時間都是大漲的多頭，\n下跌只有四個月。\n資料這麼短，就算真有 AI 溢酬，\n也就是市場多給的報酬，\n能抓到的機率也不到百分之十。<short pause>\n所以作者只給了一個範圍，\n沒有把話說死啦。\n然後用量指標也只算 token，\n還沒算進實際營收。\n中間證交所端點被擋，\n他還找其他來源補齊再校正。\n最厲害的是，\n全部 script 跟資料都放 GitHub 了。\n任何人都能抓下來自己重跑。\n這種把限制講得清清楚楚的做法，\n我真的覺得超級踏實。",
+   "lint": {
+    "chars": 253,
+    "precise_numbers": [
+     "百分之十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 22.0,
+    "max_sentence_len": 39,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0
+}

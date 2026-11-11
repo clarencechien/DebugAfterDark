@@ -1,0 +1,126 @@
+{
+ "segment": "s04_ignite",
+ "position": "第 5 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "04460787834ac9b3884b3e71e4ebe976efa4fbdbd517af6c3e63f4de6e9c191c",
+ "previous_context": "不過作者也提醒，財報終究是過去的事。而且「需求遠超供給」，那也是賣方自己說的話嘛。",
+ "original": {
+  "text": "第三個系統，價格，這裡就熄火了。費城半導體指數從六月的高點跌了三成多，台股從十月的高點跌了兩成。報告把這四個月每一次大跌的理由排成時間軸：AI 基建成本太高、台積電資本支出比預期多、通膨偏熱擔心升息，還有十一月五號，美國期中選舉之後，市場擔心新國會加強資料中心的審查。沒有一條理由在說，大家用 AI 用得少了；每一條都在說，這些現金流值多少錢。報告說，熄火是一個關於估值的詞。台股比費半晚了三個半月，然後用一個月追完。",
+  "lint": {
+   "chars": 206,
+   "precise_numbers": [
+    "十一"
+   ],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 33.3,
+   "max_sentence_len": 84,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以第三個點火系統，也就是市場價格，<short pause> 這裡就真的熄火了。費城半導體跌了快三成，台股後來也跌了兩成。\n\n可是大家到底在怕什麼？是不是 AI 沒人用了？其實完全不是喔。\n\n這份報告的作者把大跌原因排開，發現全都在吵成本太高、利率要升，還有美國那邊要審查資料中心。我看到這邊整個被點醒。沒有人在說賺不到錢，大家只是在吵這些錢值多少嘛。這就是市場說的打折賣，也就是估值壓縮啦。最妙的是，台股晚了三個半月才跌，結果一個月就追完了。<sigh>",
+   "lint": {
+    "chars": 203,
+    "precise_numbers": [],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 19.3,
+    "max_sentence_len": 44,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "所以來看第三個系統，也就是價格。<short pause>\n這裡就真的熄火了。\n費城半導體指數跌了快三成。\n台股在十月見頂之後，也跌了兩成。\n這幾個月大家到底在怕什麼？\n報告裡把每次大跌的原因排出來。\n像是基建太貴、或是擔心升息。\n重點是，完全沒人說 AI 沒人用喔。\n十一月費半單日跌了百分之十二點二。<short pause>\n原因竟然只是市場擔心政策審查。\n每一條理由，都在懷疑未來值多少錢。\n這份報告說，熄火只是估值在縮水。\n我看到走勢真的替大家捏一把冷汗。\n台股雖然比美股晚了三個半月，\n結果只花了一個月就追跌上去，超痛的啦。",
+   "lint": {
+    "chars": 226,
+    "precise_numbers": [
+     "十一",
+     "百分之十二點二"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 32,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "所以看基本面不準，還是要看市場價格。\n那價格表現怎樣？\n欸，這裡就真的熄火了。<short pause>\n費城半導體指數從高點跌了將近三成，\n台股也跌了百分之二十。\n這份報告的作者把大跌理由排成時間軸。\n你知道大家都在怕什麼嗎？\n全都是基建成本太高、或者市場擔心升息。\n重點來了，完全沒人在說 AI 沒人用喔。\n每一條都在算，這些獲利到底值多少錢。\n所以這份報告說，熄火只是身價被打折啦。\n我看到這段真的很有共鳴。\n最妙的是，台股比美股晚了三個半月反應，\n結果只花一個月就追完進度，很扯吧。",
+   "lint": {
+    "chars": 217,
+    "precise_numbers": [
+     "百分之二十"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.1,
+    "max_sentence_len": 35,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "費城半導體跌了快三成，台股後來也跌了兩成。",
+   "to": "費城半導體從六月的高點跌了三成多，台股從十月的高點也跌了兩成。",
+   "reason": "照原文"
+  },
+  {
+   "from": "沒有人在說賺不到錢，大家只是在吵這些錢值多少嘛。",
+   "to": "沒有人在說大家用 AI 用得少了，大家只是在吵這些錢值多少嘛。",
+   "reason": "照原文"
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "segment": "s06_crash",
+ "position": "第 7 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f2bb45e4b77137e847118efe19ab2d6f71e115145bd294974d9a091059deaae5",
+ "previous_context": "多了四個月，零還是零。我看到結果真的覺得很不可思議。",
+ "original": {
+  "text": "可是車主最想問的是：下跌的時候，跟 AI 最有關的股票，是不是跌得比較多？答案是，是。七月到十月初，最敏感的那一組，比最不敏感的那一組多漲了十六個百分點；十月高點之後，又把它全部吐回去。到了崩盤那一週，最敏感的那組平均跌了兩成三，最不敏感的跌一成三，第一次出現教科書式的排序。被排進最敏感那組的，是 AI 伺服器、載板、記憶體這些族群。報告說，市場正在用 AI 用量這把尺，重新給台股分組。",
+  "lint": {
+   "chars": 189,
+   "precise_numbers": [
+    "十六",
+    "百"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 30.5,
+   "max_sentence_len": 49,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "但大家最想問的，應該是下跌時怎麼辦？<short pause>\n那些跟 AI 連動的股票，跌得比較多嗎？\n答案是，真的跌慘了。\n十月高點前，敏感組多漲了十六個百分點。\n結果一反轉，全部直接吐回去。<sigh>\n到了十一月崩盤那一週，差得更多。\n最敏感的那組，整週跌掉兩成多。\n最不敏感的那組，只跌了一成多。\n這份報告說，市場正拿 AI 用量重新分組。\n跌最兇的就是 AI 伺服器、載板跟記憶體。\n先拿到甜頭再全部交回去，超無奈的吧。",
+   "lint": {
+    "chars": 181,
+    "precise_numbers": [
+     "十六",
+     "百",
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "既然平均是零，那大跌的時候呢？大家最想知道，跟 AI 最有關的股票，下跌時有沒有跌比較慘？對，答案是真的有。七月到十月初，最敏感的那組漲超多，比不敏感的多賺了十六個百分點。結果十月見頂，全部吐回去了喔。<sigh> 到了十一月崩盤那週，就是見真章的時候。最敏感的跌了兩成多，最不敏感的只跌一成多。整齊到像教科書一樣，超扯。<short pause> 然後你看那個名單，跌最慘的是 AI 伺服器、載板跟記憶體族群。報告裡說，市場正在用 AI 用量這把尺，重新給台股分組了啦。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [
+     "十六",
+     "百",
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.9,
+    "max_sentence_len": 31,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "大家這時候最想問的，應該是下跌的時候吧？跟 AI 最相關的股票，是不是跌得比較慘？答案是，真的跌超兇。<short pause>十月初之前，最敏感的那組原本多漲很多。累積下來，整整領先了十六個百分點。然後高點一過，短短一個月就全部吐光。<sigh>光是看那個走勢，真的就覺得心裡很涼耶。到了崩盤那一週，最敏感的那組跌了兩成多。不敏感的那組，大概只跌了一成出頭。跌最慘的，就是 AI 伺服器、載板跟記憶體。這份報告說，市場正在重新洗牌喔。大家正用 AI 用量這把尺，替台股重新分組。",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [
+     "十六",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2
+}

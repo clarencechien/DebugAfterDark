@@ -1,0 +1,115 @@
+{
+ "segment": "s08_rule",
+ "position": "第 9 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "1b2d0ae674d429e1b61485b7111de7dd3eba5e8a29fbd3f6c8c1178b7f550e66",
+ "previous_context": "我讀到這裡真的很感慨。市場其實只替「用 AI」的公司買單，不是給那些「造零件」的公司喔。",
+ "original": {
+  "text": "這份報告還做了一件很少見的事：它先把下一次複檢，什麼才叫真的熄火，寫死。兩個條件，只要成立一個：第一，用量，模型平台每週的 token，最近三個月的平均低於前三個月；第二，基本面，台積電高效能運算的營收開始季減，或四大雲端明年的資本支出合計下修一成以上。至於股價，不算判準。報告說：價格是儀表，不是判準。先寫下來，是為了不要在下一輪翻資料，翻到看見自己想要的答案為止。",
+  "lint": {
+   "chars": 183,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 35.6,
+   "max_sentence_len": 89,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這份報告還做了一件超酷的事。<short pause>\n作者把下次怎樣才算「真的熄火」，直接寫死。\n為什麼要醬做？\n因為人會騙自己嘛，\n大家總會一直翻資料，翻到自己想看的答案為止。<laugh>\n這真的很需要紀律耶。\n他訂了兩個條件，只要中一個就算數。\n第一是用量，\n看模型平台的用量，最近三個月有沒有比前三個月低；\n第二是基本面，\n像是台積電的高效能運算營收季減，\n或是四大雲端的資本支出，合計下修超過一成。\n那股價跌算不算？\n這份報告裡說，價格只是儀表板，不是判準啦。",
+   "lint": {
+    "chars": 203,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 21.6,
+    "max_sentence_len": 73,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "然後，這份報告的作者做了一件超帥的事。他們把 AI 算不算真的熄火，先直接把條件寫死。為什麼要先寫好？就是怕自己下次看資料，翻到想要的答案才停嘛。<laugh> 兩個條件只要中一個就算：第一是看用量，模型平台每週 token 用量，最近一季比前一季還低。第二是看基本面，台積電高效能運算營收季減，或是四大雲端未來的資本支出，合計下修了一成以上。那股價大跌算不算？完全不算喔。這份報告裡說，價格只是儀表，不是判準啦。",
+   "lint": {
+    "chars": 195,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 20.7,
+    "max_sentence_len": 44,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "這份報告的作者還做了一件事，<short pause> 我覺得超值得學。他先把「怎樣才算真的熄火」直接寫死。為什麼要這樣搞？就是怕以後翻資料，翻到自己想看的為止嘛。他列了兩個條件，中一個就算數。第一是用量，模型平台每週的 token 用量，三個月平均掉到前三個月以下。第二是基本面，台積電高效能運算營收季減，或是四大雲端未來的資本支出合計下修一成以上。那股價跌算不算？不算喔。這份報告裡說，價格只是儀表板。數字真的縮水，引擎才算真的熄火啦。",
+   "lint": {
+    "chars": 204,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 41,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0
+}

@@ -1,0 +1,109 @@
+{
+ "segment": "s07_priced",
+ "position": "第 8 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "93e2b119d95b8aace5762644b53cae40526f57874e42c0fa41706e3547ced149",
+ "previous_context": "這份報告說，市場正在重新洗牌喔。大家正用 AI 用量這把尺，替台股重新分組。",
+ "original": {
+  "text": "所以兩件事同時為真。報告說：台股沒有 AI 溢酬，不等於 AI 曝險不影響台股。這四個月，AI 曝險決定了誰漲得多、誰跌得深；但承擔這個曝險，平均起來沒有拿到額外的補償。報告的白話版是：你承擔的是一個會放大漲跌，但長期不給額外報酬的曝險。這跟七月的發現是同一件事的兩面：市場付錢的對象，是用 AI 用得深的公司，不是做 AI 零件的公司；而這一輪跌最重的，正好是造零件的那一邊。",
+  "lint": {
+   "chars": 180,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 35.0,
+   "max_sentence_len": 65,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "分組之後呢？市場到底有沒有多給錢？\n報告裡說，答案其實是沒有。\n你可能會問，那為什麼跌得這麼慘？\n<short pause>\n因為市場把漲跌放大了，卻不給額外報酬。\n像是伺服器或載板這類族群，\n在崩盤那一週，跌幅是別人的快兩倍。\n等於你扛了超大波動，最後根本沒多賺嘛。\n我讀到這裡真的很感慨。<sigh>\n市場其實只替「用 AI」的公司買單，\n不是給那些「造零件」的公司喔。",
+   "lint": {
+    "chars": 157,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那分組之後到底發生什麼事？<short pause>\n這份報告的作者發現，兩件事居然同時是真的。\n股價跟著 AI 連動越深的公司，\n漲的時候多漲了十六個百分點，\n五週跌下來，就把賺的全部吐回去。\n你承擔了這種大起大落，\n平均下來市場卻完全沒多給你補償。<sigh>\n這不是很像去坐最晃的雲霄飛車，\n結果下車連個安慰獎都沒有嗎？\n而且跌最慘的，都是造硬體零件的公司，\n不是真正把 AI 拿來應用的那一群人喔。",
+   "lint": {
+    "chars": 170,
+    "precise_numbers": [
+     "十六",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 6,
+    "avg_sentence_len": 27.3,
+    "max_sentence_len": 43,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "分組之後呢？<short pause>\n這份報告的作者發現一件很妙的事。\n股價跟著 AI 跑越兇的公司，\n在多頭時確實多漲了十六個百分點。\n聽起來很棒對不對？\n可是崩盤的時候，跌幅是別人的快兩倍，\n直接把多賺的全部吐回去耶。<sigh>\n也就是說，你承擔了更大的心跳跟震盪，\n但長期下來根本沒有多賺到錢。\n這份報告說，市場願意掏錢買單的，\n其實是用 AI 的公司，\n而不是造零件的硬體廠啦。",
+   "lint": {
+    "chars": 161,
+    "precise_numbers": [
+     "十六",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 7,
+    "avg_sentence_len": 22.0,
+    "max_sentence_len": 37,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0
+}

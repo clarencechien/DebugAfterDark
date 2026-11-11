@@ -1,0 +1,32 @@
+{
+ "id": "ep20-ai-premium-recheck",
+ "number": 20,
+ "type": "full",
+ "guid": "debug-after-dark:ep20",
+ "title": "EP20 AI 熄火了嗎？四個月後的複檢",
+ "description": "費城半導體一天跌一成二，台股一個月跌兩成，大家都在問 AI 熄火了嗎。這份報告像一張汽車複檢單，把車拆成三個系統：用量還在加速，台積電和雲端的基本面還在上修，熄火的是價格。再把七月那場實驗用新資料重跑：台股還是沒有 AI 溢酬，但跟 AI 最有關的股票，漲的時候多漲、崩的時候多跌。\n\n今晚的 breakpoint：\n1. 熄火是價格的詞，不是技術的詞：用量和基本面還在走，熄的是市場願意為算力付的價格。\n2. 台股沒有 AI 溢酬，不等於 AI 曝險不影響台股：它放大漲跌，但長期不給補償。\n3. 什麼叫真的熄火，先寫死判準；價格是儀表，不是判準。\n\n原文：〈AI 熄火了嗎？四個月後的複檢〉 https://imitator.ai-apps.work/r/ai-premium-tw-report-2026-11\n七月版：〈AI 溢酬：一般人版報告〉 https://imitator.ai-apps.work/r/AI_premium\n原始論文：Borri, Liu & Tsyvinski, AI Premium (arXiv 2606.30583)。描述性研究，樣本兩年八個月、下跌只有四個月，限制列在原文。\n本集內容僅供參考，不構成投資建議。\n\n延伸收聽：EP12〈你聽過的台股必勝法〉、EP19〈錢不重要之後，誰握著產能〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "ai-premium-tw-report-2026-11",
+ "source_url": "https://imitator.ai-apps.work/r/ai-premium-tw-report-2026-11",
+ "status": "draft",
+ "related": [
+  "ep12-tw-stock-autopsy",
+  "ep19-ownership-token"
+ ],
+ "category_note": "財經類：說明與口播都有不構成投資建議；不念個股",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "audio": {
+  "file": "ep20-ai-premium-recheck.mp3"
+ }
+}

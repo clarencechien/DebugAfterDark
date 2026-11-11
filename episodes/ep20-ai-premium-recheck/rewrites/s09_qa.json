@@ -1,0 +1,103 @@
+{
+ "segment": "s09_qa",
+ "position": "第 10 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ed332eb3dc5dbd825834f65609282d618d7231a463b30268495417ad1a9a19f8",
+ "previous_context": "那股價跌算不算？這份報告裡說，價格只是儀表板，不是判準啦。",
+ "original": {
+  "text": "那跌了兩成，可以撿了嗎？報告的回答很老實：這張複檢單能告訴你的是，引擎沒壞，跌的是價格；它不能告訴你價格跌夠了沒有，因為估值壓到哪裡停，取決於利率、政策和資金成本，這三樣它一樣都沒測。報告引了七月版的一句話：開始重新定價，和定價完了，是兩回事。至於台積電，它的高點跟台股是同一天，比費半晚了三個半月；它占加權指數將近四成，台股晚熄火，基本上就是台積電晚熄火。",
+  "lint": {
+   "chars": 179,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 43.8,
+   "max_sentence_len": 79,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "很多人一定想問，跌了兩成，可以撿了嗎？這份報告的作者回答超老實。<laugh>工單只能告訴你引擎沒壞，跌的只是價格。那到底跌夠了沒？作者說，不知道。因為利率跟政策那些，這份報告根本沒測嘛。作者提醒，開始重新定價，跟定價定完了，完全是兩回事。<short pause>那台積電呢？是不是跟著美股走？它的高點其實比費半晚了三個半月。它占了大盤將近四成，台股晚熄火，根本就是台積電晚熄火啦。",
+   "lint": {
+    "chars": 172,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 27,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   }
+  },
+  {
+   "text": "你可能會想問，那跌了兩成，可以撿了嗎？這份報告作者回答超老實。<laugh> 他說引擎沒壞，跌的只是價格。但跌夠了沒？根本不知道喔。因為估值壓到哪裡停，取決於利率跟政策，作者一個都沒測嘛。報告裡提醒，開始重新定價，跟定價定完了，完全是兩回事。然後大家常問的台積電，高點其實比費半晚了三個半月。它占大盤權重快四成，台股晚熄火，根本就是台積電晚熄火啦。",
+   "lint": {
+    "chars": 166,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 17.4,
+    "max_sentence_len": 27,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "跌了那麼多，可以進場撿便宜了嗎？這份報告的作者回答得很坦白喔。他說引擎沒壞，跌的只是價格。但跌夠了沒？這份報告沒辦法回答。<short pause>因為開始重新定價，跟定價完了是兩回事嘛。那台積電呢？它真的跟著費半走嗎？其實台積電高點比費半晚了三個半月。而且它占台股權重將近四成，台股晚熄火，基本上就是台積電晚熄火啦。看到這裡，真的會提醒自己先別衝動。<sigh>",
+   "lint": {
+    "chars": 163,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 13.8,
+    "max_sentence_len": 31,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2
+}
