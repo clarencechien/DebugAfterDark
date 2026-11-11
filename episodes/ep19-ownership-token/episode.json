@@ -8,7 +8,7 @@
  "report_slug": "ownership-token",
  "report_version": "v0.2（2026-11-10）",
  "source_url": "https://imitator.ai-apps.work/r/ownership-token",
- "status": "draft",
+ "status": "final",
  "category_note": "財經類：說明與口播都有不構成投資建議；報告自揭利益衝突（Anthropic）",
  "voice": {
   "provider": "gemini",
@@ -42,5 +42,6 @@
   "twtone": "qa/twtone.md：沒有超過基準的項目",
   "terms": "Ping、pong 3 次都判為英文念法",
   "gates": "錯誤率 3.1%、音高跳動 0.226 都通過"
- }
+ },
+ "published": "2026-11-11T08:56:00+08:00"
 }

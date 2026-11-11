@@ -8,7 +8,7 @@
  "report_slug": "ziyan-guangpu",
  "report_version": "v0.2（2026-11-10）",
  "source_url": "https://imitator.ai-apps.work/r/ziyan-guangpu",
- "status": "draft",
+ "status": "final",
  "voice": {
   "provider": "gemini",
   "model": "gemini-3.8-flash-tts",
@@ -41,5 +41,6 @@
   "rewrite": "改寫稿自我更正很多，s00、s04、s05、s08、s10、s11 人工重寫",
   "twtone": "qa/twtone.md：對舉 3 句改掉",
   "terms": "Ping、pong 3 次都判為英文念法"
- }
+ },
+ "published": "2026-11-11T08:54:00+08:00"
 }
