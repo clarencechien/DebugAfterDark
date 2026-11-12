@@ -21,10 +21,12 @@
 | [EP13](episodes/ep13-cb-autopsy/) | 公司發可轉債，是利多還是警訊？（台股驗屍 2/2） | 定稿 |
 | [EP14](episodes/ep14-91app-doors/) | 門沒換，只是敲門的變多了（91APP 與永豐銀） | 定稿；報告 v0.2（11/9） |
 | [EP15](episodes/ep15-japan-white-goods/) | 不是被打敗，是被賣掉的（日本白色家電） | 定稿 |
-| [EP16](episodes/ep16-delivery-pay-floor/) | 加薪留不住（外送專法 1/2） | 定稿 |
-| [EP17](episodes/ep17-ambition-unit/) | 野心的單位變小了（外送專法 2/2） | 定稿；挑選改成先預熱 Modal，9 分鐘降到 1 分多 |
+| [EP16](episodes/ep16-delivery-pay-floor/) | 加薪留不住（外送專法 1/2） | 定稿；11/11 說明欄補更正（主數字改為 0–12%，見二校） |
+| [EP17](episodes/ep17-ambition-unit/) | 野心的單位變小了（外送專法 2/2） | 定稿；挑選改成先預熱 Modal，9 分鐘降到 1 分多；11/11 說明欄補更正（token 帳） |
 | [EP18](episodes/ep18-ziyan-spectrum/) | 「自研」是一個光譜（從鐵道博物館的馬達講起） | 定稿；報告 v0.2（11/10） |
 | [EP19](episodes/ep19-ownership-token/) | 錢不重要之後，誰握著產能 | 定稿；報告 v0.2（11/10，補期中選舉） |
+| [EP20](episodes/ep20-ai-premium-recheck/) | AI 熄火了嗎？四個月後的複檢 | 定稿 |
+| [EP21](episodes/ep21-catchable-not-human/) | 抓得到的，都不是人味 | 定稿 |
 
 - 一集怎麼做：[`docs/recipe.md`](docs/recipe.md)
 - 一集要多久：從定稿的草稿到 mp3 約 9 分鐘，以前約 50 分鐘（2026-11-07，EP11 第一次照新做法跑）。

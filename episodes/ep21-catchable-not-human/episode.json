@@ -7,7 +7,7 @@
  "description": "你現在聽到的聲音是 AI 合成的，研究說，知道之後你可能會扣分。一千六百多人分不出哪首詩是 AI 寫的，還比較喜歡 AI 的那些；可是一被告知，就把分數扣下來，扣的是真誠，不是品質。這份報告從一支檢查 AI 痕跡的工具出發，把十二份研究攤開：讀者分不分得出來、內行人靠什麼認、為什麼個人變好群體變一樣，以及 AI 味的三層，哪一層修得掉。\n\n今晚的 breakpoint：\n1. 讀者分不出 AI 寫的字，甚至比較喜歡；扣分發生在被告知之後，扣的是真誠，不是品質。\n2. 能修的只有字面那一層；叫模型寫得像人救不回來，人味不在文字裡。\n3. 句子可以交出去，取捨交不出去。\n\n原文：〈抓得到的，都不是人味 — 讀者分不出 AI 寫的字，卻在被告知之後扣了分〉 https://imitator.ai-apps.work/r/catchable-not-human\n檢查器：twtone https://github.com/clarencechien/twtonepoc （本節目從 EP10 起每集稿子都會跑）\n研究的受試者沒有台灣讀者；「人味是選擇留下的痕跡」是報告作者的判讀。\n\n延伸收聽：EP10〈還剩幾天：Huntley 的賭注〉、EP17〈野心的單位變小了〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
  "report_slug": "catchable-not-human",
  "source_url": "https://imitator.ai-apps.work/r/catchable-not-human",
- "status": "draft",
+ "status": "final",
  "related": [
   "ep10-huntley-bet",
   "ep17-ambition-unit"
@@ -44,5 +44,6 @@
   "selection_time": "挑選約 1 分半；補錄後重選 Modal 20 秒",
   "twtone": "qa/twtone.md：沒有超過基準的項目（這集講的就是這支工具）",
   "terms": "Ping、pong 3 次都判為英文念法"
- }
+ },
+ "published": "2026-11-12T08:50:00+08:00"
 }
