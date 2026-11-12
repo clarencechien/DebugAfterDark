@@ -27,6 +27,24 @@
   "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
  },
  "audio": {
-  "file": "ep23-inner-doors.mp3"
+  "file": "ep23-inner-doors.mp3",
+  "bytes": 9231730,
+  "sha256": "818c37a8bd8d16c4b30429fcbe5c94e6461ac5176c09d113fd23fa7abd5d7c2d",
+  "duration_s": 576.9,
+  "duration": "9:36",
+  "lufs": -16.7
+ },
+ "qa": {
+  "breeze_cer_mean": 0.038,
+  "gemini_cer_mean": 0.018,
+  "jitter_semitones": 0.214,
+  "gates": "Breeze 錯誤率 3.8%，比門檻 3.5% 高；Gemini 1.8%。Breeze 多錯在同音或聲調相近的詞（金鑰→禁藥、幣安→彼岸／弊案、權限→全線），s06、s09、s11 補到六到九次也都在 5% 上下。音高跳動 0.214 通過",
+  "retakes": "s03、s06、s09 補 3 次（音高）；s00、s06、s09、s11 再補 3 次（錯誤率）",
+  "manual_pick": "s03 take5、s06 take6、s09 take6、s11 take1（見 qa/select_log.json 的 manual_override）",
+  "consistency": "qa/consistency.json：各段音高在中位數 ±6 Hz 內；s02 語速 -11%；接縫亮度 s08→s09 跳最多",
+  "both_wrong": "「那集」的集、「先響」聽成「現象」、「幣安」聽成「弊案」、「搜」聽成「收」",
+  "rewrite": "改寫稿幾乎每段都有自我更正，13 段全部依原文人工重寫",
+  "twtone": "qa/twtone.md：重寫稿的分號與結論冒號已改，重跑後沒有超過基準",
+  "terms": "Ping、pong 3 次都判為英文念法"
  }
 }
