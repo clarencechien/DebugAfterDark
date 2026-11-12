@@ -1,0 +1,127 @@
+{
+ "segment": "s11_outro",
+ "position": "第 12 段，共 12 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "我看到這",
+  "很扯",
+  "我是說",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b08223194a70a4e399454cb2675bbae1f08fa52e8e4ee2641526e4abc801ff1b",
+ "previous_context": "以作者查核的二十三則來說，根本沒差。真正會過期的，就只有那張傳單本身啦。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，這些傳單是同一張表單填出來的：舊片新標、引言移植、真內容換包裝；長文和名單，才是主商品。第二，內建在前，名詞在後：你看到傳單的時候，它教你手工搭的東西，已經是一個指令了。第三，拿到傳單，對日期、找原話、查它是不是已經內建；真正會過期的，只有傳單本身。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 179,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 24.6,
+   "max_sentence_len": 46,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，那些大神免費課都是同個套路。舊影片換新標題，訂閱名單才是主商品。\n第二，內建功能永遠走在名詞前面。催你手工搭的東西，早就變成指令了。官方說明頁往往比兩小時的課還清楚。\n第三，記得先對日期、找原話、查指令。晚幾個月看會怎樣？你根本不會有損失。真正會過期的，就只有那張傳單本身啦。<laugh>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 192,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 13.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause> 第一，那些催你的貼文都是套路，就是……對，其實只是想收你的訂閱名單啦。第二，傳單教你手工硬幹的東西，工具官方常常早就做成指令了。那下次再看到要怎麼辦？第三，花幾分鐘對日期、找原話，查一下是不是早就內建了。真正會過期的，就只有傳單本身喔。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 171,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 18.0,
+    "max_sentence_len": 34,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，那些課都是同張傳單，主商品是名單啦。\n第二，催你手工學的，工具早就內建變成指令了。\n第三，先對日期找原話，再查工具內建了沒。\n你覺得晚三個月看，會損失什麼嗎？\n這份報告的作者說，根本找不到任何損失。<laugh>\n那些內容都掛在網路上，逐字稿也不會刪。\n真正會過期的，就只有那張傳單本身而已。\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "第一，那些大神免費課都是同個套路。舊影片換新標題，訂閱名單才是主商品。第二，內建功能永遠走在名詞前面。催你手工搭的東西，早就變成指令了。官方說明頁往往比兩小時的課還清楚。第三，記得先對日期、找原話、查指令。晚幾個月看會怎樣？你根本不會有損失。真正會過期的，就只有那張傳單本身啦。",
+   "to": "第一，這些大神免費課，是同一張表單填出來的：舊片新標、引言移植、真內容換包裝；長文和名單，才是主商品。第二，內建在前，名詞在後：催你手工搭的東西，早就變成指令了，讀官方那一頁說明就夠了。第三，拿到傳單，先對日期、找原話、查指令。以這二十三則來說，晚幾個月看，找不到任何損失。真正會過期的，就只有那張傳單本身啦。",
+   "reason": "breakpoint 照原文"
+  }
+ ]
+}

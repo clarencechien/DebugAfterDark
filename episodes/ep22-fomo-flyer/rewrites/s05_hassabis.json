@@ -1,0 +1,139 @@
+{
+ "segment": "s05_hassabis",
+ "position": "第 6 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "我看到這",
+  "很扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "762b753430e9929dddb6c2a34a8a50fca20cb642105efe0ccea641da98f59ff4",
+ "previous_context": "整支五十一分鐘的影片搜完字幕，loop 這個詞一次都沒出現。 那個……訪談是真的啦，但引號裡的話，根本是發文的人自己填上去當鉤子的。",
+ "original": {
+  "text": "最誇張的一則，是掛在 DeepMind 的 Hassabis 名下的兩句話：真正懂 AI 的一個人，會勝過整個新創團隊；五年內，用 AI 的人可以用十分之一的人力經營一間公司。十一月七號這則被 Musk 轉貼，只寫了一個字，Interesting，原帖兩百多萬次瀏覽。往回查，它至少是第四手，五月就被註記過：影片裡沒有這句話。作者把原片的字幕整份搜過，那是一場講 AlphaFold 和科學發現的演講，team 出現三次，講的是他小時候待過的西洋棋青年隊。",
+  "lint": {
+   "chars": 215,
+   "precise_numbers": [
+    "十一",
+    "兩百",
+    "萬"
+   ],
+   "enumerations": [
+    "第四"
+   ],
+   "sentences": 4,
+   "avg_sentence_len": 52.8,
+   "max_sentence_len": 79,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "而且這種事不只發生一次喔。\n最誇張的是掛在 Hassabis 名下的名言。\n說什麼懂 AI 的一個人，能打趴整個團隊；\n五年內只要十分之一人力就能開公司。\nMusk 還轉貼，只回了一句 Interesting。\n光是原貼文就有兩百多萬次瀏覽。<short pause>\n但你知道最諷刺的是什麼嗎？\n這句話五月就被社群註記打臉了。\n因為註記掛在貼文上，換人重發就歸零啦。\n這份報告的作者直接去翻原片字幕。\n整場演講都在講 AlphaFold 跟科學發現。\n裡面提到 team，呃我是說團隊，\n全部都在講他小時候比西洋棋的事。<laugh>\n根本跟一人公司沒有關係好不好。",
+   "lint": {
+    "chars": 242,
+    "precise_numbers": [
+     "兩百",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 19.2,
+    "max_sentence_len": 35,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "講到自己填鉤子，還有更誇張的。\n這份報告查到最誇張的一則，\n居然直接掛在 Hassabis 名下。\n說懂 AI 的一個人，能抵過整個新創團隊。\n五年內只要十分之一人力就能開公司。\nMusk 轉發只留了一個字，Interesting。<short pause>\n原貼文直接衝破兩百萬次瀏覽。\n你以為這是第一手消息嗎？\n完全不是，這早就轉到第四手了啦。\n更誇張的是，五月這句話就被社群註記過。\n就是……早就被抓包影片裡根本沒這段。\n這份報告的作者去搜了演講字幕。\n整場都在講 AlphaFold 跟科學發現。\n裡面的 team 只有出現三次。\n而且是在講他小時候的西洋棋隊。<laugh>\n我真的起雞皮疙瘩。\n換個帳號重發，大家又全都信了欸。",
+   "lint": {
+    "chars": 274,
+    "precise_numbers": [
+     "兩百萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第四"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 29,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "這種硬塞引言的套路，最誇張的是掛在 Hassabis 名下那篇。\n貼文說，懂 AI 的一個人勝過整間新創，\n然後五年內，用十分之一的人力就能開公司。\n後來連 Musk 都轉貼了。<short pause> 他只回了一個詞，Interesting。\n你知道這篇最後有多少人看嗎？\n光是原貼文，就累積了兩百多萬次瀏覽，超誇張的。\n作者原本以為這則比較接近源頭。\n呃不對，他往回查才發現，這至少是第四手。\n這句話五月就被加過社群註記，說演講裡根本沒這段話。\n但換個帳號重發，那個註記就直接歸零了耶。<sigh>\n作者把整場演講的字幕搜了一遍，整場都在講 AlphaFold。\nteam 這個字出現三次，講的還是西洋棋青年隊。\n到底跟一人公司有什麼關係啦。",
+   "lint": {
+    "chars": 284,
+    "precise_numbers": [
+     "兩百",
+     "萬"
+    ],
+    "enumerations": [
+     "第四"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 20.8,
+    "max_sentence_len": 37,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "就是……早就被抓包影片裡根本沒這段。",
+   "to": "註記寫得很清楚：影片裡根本沒有這段。",
+   "reason": "規則 18"
+  },
+  {
+   "from": "我真的起雞皮疙瘩。換個帳號重發，大家又全都信了欸。",
+   "to": "換個帳號重發，註記就不見了，又拿到兩百多萬次瀏覽。",
+   "reason": "原文沒有說大家都信了；照原文：註記不跟著引言走"
+  },
+  {
+   "from": "Musk 轉發",
+   "to": "Musk 轉貼",
+   "reason": "twtone 用詞"
+  }
+ ]
+}

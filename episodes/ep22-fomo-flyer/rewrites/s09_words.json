@@ -1,0 +1,118 @@
+{
+ "segment": "s09_words",
+ "position": "第 10 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "我看到這",
+  "很扯",
+  "我是說",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "90947cd239b1faf1d06d062c1ba4fc7b00661fb0aee12867a9cf262e3b8b89d7",
+ "previous_context": "像 Google 有個 agent 工具，更新紀錄就寫著幾年後要停止服務。對，如果你是在電腦跑地端模型，那些架構還是得自己動手搭啦。",
+ "original": {
+  "text": "第九集我們說過，今年上半年大家在數 token，下半年在數 agent，數的都是投入。報告說，X 上數的是第三種：你學了哪個詞。prompt、context、harness、loop、graph，大約一季換一個，每換一次，傳單就重印一次。有一件事很好笑：傳單引用的一手材料，自己都在勸人別急。那場被包裝成 Opus 5.5 課程的工作坊，第一段就在講，為舊模型加的修補，新模型出來就用不到了。報告說：材料在說少做一點、晚一點再做；包裝在說你已經落後了。",
+  "lint": {
+   "chars": 220,
+   "precise_numbers": [
+    "5.5"
+   ],
+   "enumerations": [
+    "第九",
+    "第三",
+    "第一"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 35.7,
+   "max_sentence_len": 54,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "第九集我們提過嘛，\n上半年大家在數 token，\n下半年改數 agent，\n這兩次數的其實都是投入。\n這份報告的作者發現，\n現在 X 上面開始數第三種東西。\n數你又學了哪個新詞。\n就是、多背了哪個流行詞啦。\n像 prompt、context 還有 harness，\n大概一季就換一個吧。<short pause>\n每次一換，\n宣傳階梯就再往上多疊一格。\n但多學一個詞，\n手上的事情就會自動做完嗎？\n當然不會啊。\n<laugh> 最妙的是，\n那些課程引用的原廠一手材料，\n其實都在勸大家不要急耶。\n像那個被拿來開課的工作坊，\n開頭就挑明了講，\n為舊模型加的修補，\n新模型一出來就用不到了啦。\n你看，原廠材料都在叫你晚點做，\n外面的包裝卻一直說你落後了。",
+   "lint": {
+    "chars": 274,
+    "precise_numbers": [],
+    "enumerations": [
+     "第九",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 23.9,
+    "max_sentence_len": 44,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "大家上半年在數 token，\n下半年就改數 agent。\n數來數去其實都是投入啦。\n那社群上現在又在數什麼？\n在數你到底背了哪個新單字。\n像是 prompt、context 到 harness，\n大概一季就會換一個。\n每換一次，\n免費課的傳單就跟著重印。<laugh>\n可是背了這些新詞，\n你的工作有做完嗎？\n根本沒有嘛。\n然後最妙的，\n呃其實滿諷刺的啦，\n這份報告說，\n那些傳單引用的一手材料，\n自己都在勸大家別急。\n像被包裝成大師課的工作坊，\n第一段就在講 harness 會過期。<short pause>\n你替舊模型加的修補，\n新模型一出來就用不到了。\n一手材料明明叫大家晚點做，\n但外面的包裝，\n卻一直喊著你已經落後了。",
+   "lint": {
+    "chars": 265,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 21.1,
+    "max_sentence_len": 42,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "第九集聊過，上半年大家數 token，下半年數 agent。<short pause>\n這份報告說，社群現在數的是第三種。\n數你學了哪個新名詞。\n像 prompt、context、harness，差不多每季換一個。\n詞一換，宣傳圖就跟著重畫一次。\n可是，學了新名詞，手上的 bug 也不會自己修好嘛。\n更妙的是什麼，你知道嗎？\n那些宣傳引用的官方材料，自己都在勸大家別急。<laugh>\n那場被拿來包裝成課程的工作坊，一開頭就講得很明。\n替舊模型寫的那些修補，換新模型根本用不到。\n一手材料明明叫你少做一點、晚點再做。\n外面的包裝卻一直恐嚇你，說你又落後了。",
+   "lint": {
+    "chars": 243,
+    "precise_numbers": [],
+    "enumerations": [
+     "第九",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 19.2,
+    "max_sentence_len": 32,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2
+}

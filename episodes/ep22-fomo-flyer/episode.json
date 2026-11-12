@@ -1,0 +1,33 @@
+{
+ "id": "ep22-fomo-flyer",
+ "number": 22,
+ "type": "full",
+ "guid": "debug-after-dark:ep22",
+ "title": "EP22 催你學的，已經內建了",
+ "description": "「某位大神上週把畢生所學濃縮成兩小時免費課，先收藏。」這份報告的作者收了 23 則這種貼文，拆開來是同一張補習班招生傳單：七個欄位的填空表，舊片新標、引言移植、真內容換包裝，最下面的出口是長文、訂閱名單和業配。更有意思的是，傳單催你學的東西，在它爆紅之前，多半已經是一個內建的指令。驗收筆記番外。\n\n今晚的 breakpoint：\n1. 這些傳單是同一張表單填出來的：舊片新標、引言移植、真內容換包裝；長文和名單才是主商品。\n2. 內建在前，名詞在後：你看到傳單的時候，它教你手工搭的東西已經是一個指令。\n3. 拿到傳單，對日期、找原話、查它是不是已經內建；真正會過期的只有傳單本身。\n\n原文：〈催你學的，已經內建了 — 驗收筆記 番外〉v0.2 https://imitator.ai-apps.work/r/fomo-flyer\n樣本 23 則（2026-05 至 11），觀看數是報告查閱時的值；收入來源的部分報告標為推測。節目不念發文帳號的名稱。\n\n延伸收聽：EP08〈無限的是 token，有限的是驗收〉、EP09〈一百萬顆 CPU，是用來驗的〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "fomo-flyer",
+ "report_version": "v0.2（2026-11-11）",
+ "source_url": "https://imitator.ai-apps.work/r/fomo-flyer",
+ "status": "draft",
+ "series": "驗收筆記 番外",
+ "related": [
+  "ep08-unlimited-tokens",
+  "ep09-million-cores"
+ ],
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "audio": {
+  "file": "ep22-fomo-flyer.mp3"
+ }
+}

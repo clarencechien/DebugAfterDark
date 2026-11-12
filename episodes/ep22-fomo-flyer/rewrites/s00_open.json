@@ -1,0 +1,115 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 12 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "dec8b370e409e26b6d76ab8255c99d88c8be801fce882e2455e0ee52b35e392d",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "你一定看過這種貼文：某位大神上週，把畢生所學濃縮成一堂兩小時的免費課，別人花上萬美元的課，教的都比這少；你現在大概沒空看，先收藏，別讓它從動態消失。這份報告的作者，從五月到十一月收了二十三則，拆開來，是同一張傳單。他的比喻是補習班的招生傳單：名師的頭銜放最大，旁邊印著原價和限時，最下面是報名專線。更有意思的是，傳單催你學的東西，在它爆紅之前，多半已經是一個內建的指令了。",
+  "lint": {
+   "chars": 186,
+   "precise_numbers": [
+    "萬",
+    "十一",
+    "二十三"
+   ],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 45.5,
+   "max_sentence_len": 73,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "嘿，還醒著嗎？\n你最近滑社群，應該常看到這種貼文吧。\n就是某位大神，把畢生所學濃縮成免費課，\n催你現在先收藏，別讓它消失。\n<short pause>\n這份報告的作者，總共收集了二十三則。\n拆開來看，根本全都是補習班招生傳單嘛。\n名師頭銜放超大，旁邊印著原價跟限時，\n底下就是報名專線，呃，其實是訂閱名單。\n但最扯的是什麼，你知道嗎？\n傳單上催你趕快學的那些東西，\n在爆紅之前，早就已經是內建指令了啦。<laugh>",
+   "lint": {
+    "chars": 177,
+    "precise_numbers": [
+     "二十三"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 21.1,
+    "max_sentence_len": 36,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "你最近滑手機，應該常看到這種貼文吧？\n某個大神把畢生所學，濃縮成精華免費課。\n還叫你先按收藏，別讓它從動態消失。\n你是不是也順手存了好幾篇？<laugh>\n這份報告的作者，半年收了二十三則貼文。\n拆開來看，根本全都是同一張傳單嘛。\n那個感覺，就像補習班的招生廣告。\n名師頭銜印超大，旁邊寫著原價跟限時。\n最下面就是報名專線，要你去留名單。\n重點是，傳單上催你趕快學的東西，\n呃，我是說那些看起來很神的大招，\n在它爆紅之前，其實早就已經內建了。<short pause>",
+   "lint": {
+    "chars": 203,
+    "precise_numbers": [
+     "二十三"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.3,
+    "max_sentence_len": 48,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？\n你一定在社群上看過這種貼文吧。\n就是某位大神，把畢生所學濃縮成免費課。\n然後下面寫著：原價幾萬塊，先收藏再說。\n<laugh> 你猜大家會看嗎？\n根本不會嘛。\n這份報告的作者，收集了二十三則這種貼文。\n拆開來看，其實全部……\n對，根本就是同一張補習班傳單。<short pause>\n上面名師頭銜放超大，底下留報名專線。\n但更扯的是什麼？\n傳單催你趕快學的，早就已經內建了啦。",
+   "lint": {
+    "chars": 164,
+    "precise_numbers": [
+     "萬",
+     "二十三"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 13.9,
+    "max_sentence_len": 25,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "呃，我是說那些看起來很神的大招，",
+   "to": "",
+   "reason": "規則 18"
+  }
+ ]
+}

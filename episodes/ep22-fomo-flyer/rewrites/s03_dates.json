@@ -1,0 +1,123 @@
+{
+ "segment": "s03_dates",
+ "position": "第 4 段，共 12 段",
+ "avoid": [
+  "應該說",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2a9843f11d0366513cea42d8f5594215a8b4402c3fc6f75bcf40fbf00b84df8a",
+ "previous_context": "我看到作者把手法分成三種類型，像是舊片新標、把名言亂移植，還有把真的內容換上新包裝。每一招套路真的都抓得很準耶。",
+ "original": {
+  "text": "第一型最好查，只要對日期。有一則說，Karpathy 上週把所學濃縮成兩小時；實際上，那是他二〇二五年二月發佈的一支，教一般人怎麼用聊天機器人的影片。另一則說，Karpathy 要大家刪掉一切、只留 graph；附的影片，是他二〇二三年在史丹佛講 Transformer 架構的課。這兩則都被 X 的社群註記更正了。可是註記只掛在那一則貼文上。換個帳號，把同一段文字再發一次，又拿到幾十萬次觀看。",
+  "lint": {
+   "chars": 191,
+   "precise_numbers": [
+    "十萬"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 30.8,
+   "max_sentence_len": 61,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先來看第一種舊片新標。\n這有多誇張？\n只要對日期就穿幫了。\n像是有貼文說 Karpathy 上週發新課，\n把畢生所學濃縮成兩小時。\n結果你去查，\n那根本是二〇二五年二月的舊影片嘛。\n內容只是教大家用聊天機器人。\n然後另一篇也很誇張，\n說他叫大家刪掉一切、只留 graph。\n影片點開，是他在 Stanford 講課，\n對，是在講 Transformer 的舊內容。\n雖然這兩篇都被社群註記了，\n但你猜後來怎樣？\n<laugh> 註記只會掛在那篇貼文。\n換個帳號整篇複製貼上，\n過幾天又拿到幾十萬次觀看。\n我看到作者整理這段，真的很傻眼。",
+   "lint": {
+    "chars": 236,
+    "precise_numbers": [
+     "十萬"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 18.7,
+    "max_sentence_len": 39,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "先來看最容易抓的第一種手法，基本上對日期就好。像是有篇貼文說，Karpathy 上週發了一支兩小時新片。你猜實際上是什麼？<short pause>那是他二〇二五年二月發的舊影片啦。內容也只是在教一般人怎麼用聊天機器人。然後還有一篇更誇張，說他叫大家刪掉一切、只留 graph。結果附上的連結，是他前年在 Stanford 講課的舊內容。我看到這段真的傻眼。<sigh>重點來了，這兩篇雖然都被社群註記抓包，但那個標籤就只掛在原貼文上。就是……醬講好了，另一個帳號把同一段話再貼一次，居然又拿到幾十萬次觀看耶。你看這是不是很像打地鼠？",
+   "lint": {
+    "chars": 244,
+    "precise_numbers": [
+     "十萬"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 21.2,
+    "max_sentence_len": 36,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "第一種手法最容易抓，就是去對日期。\n像是有人發文說，Karpathy 上週剛出新課。\n你猜那支影片到底是哪時候的？\n<short pause> 其實是二〇二三年的舊錄影耶。\n人家明明在講 Transformer 架構，\n貼文硬要掰成他在教大家建 graph。\n我看到這個操作整個傻眼。\n重點來了，雖然貼文會被社群註記抓包，\n可是那個註記只會掛在那一篇底下。\n換個別的帳號照抄，\n就是連字都不改直接重發，\n轉眼間又拿到幾十萬次觀看。<sigh>\n這招就是賭大家平常都不會點進去看嘛。",
+   "lint": {
+    "chars": 204,
+    "precise_numbers": [
+     "十萬"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 21.7,
+    "max_sentence_len": 37,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "像是有人發文說，Karpathy 上週剛出新課。你猜那支影片到底是哪時候的？<short pause> 其實是二〇二三年的舊錄影耶。人家明明在講 Transformer 架構，貼文硬要掰成他在教大家建 graph。",
+   "to": "像是有人發文說，Karpathy 上週把所學濃縮成兩小時。你猜那支影片到底是哪時候的？<short pause>其實是二〇二五年二月的舊影片，教一般人怎麼用聊天機器人。另一則說他要大家刪掉一切、只留 graph，附的卻是二〇二三年他在史丹佛講 Transformer 架構的課。",
+   "reason": "兩則傳單被混成一則；照原文分開"
+  }
+ ]
+}

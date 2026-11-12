@@ -1,0 +1,151 @@
+{
+ "segment": "s01_opus",
+ "position": "第 2 段，共 12 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e2d9376f079b419d4bda4cea734eab057389fc474dc6298bac40d03855b11c1c",
+ "previous_context": "最下面就是報名專線，要你去留名單。重點是，傳單上催你趕快學的東西，呃，我是說那些看起來很神的大招，在它爆紅之前，其實早就已經內建了。",
+ "original": {
+  "text": "先看一張。十一月十號，一則貼文一天多累積二十萬次觀看，說這是 Claude Opus 5.5 最好的課程之一，幾千塊的教育訓練還不如看這個。影片本身是真的，而且不差：是 Anthropic 的工程師在一場開發者大會上的工作坊。對不上的是標籤。那場大會在七月初，可是 Opus 5.5 是九月二十二號才發佈的；官方十月上架的時候，標題和開頭都沒有 Opus 5.5 這幾個字。上架不到九個小時，英文版的傳單就出現了，多了一張寫著 Opus 5.5 的片頭字卡。",
+  "lint": {
+   "chars": 214,
+   "precise_numbers": [
+    "十一",
+    "二十萬",
+    "5.5",
+    "千",
+    "5.5",
+    "二十二",
+    "5.5",
+    "5.5"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 34.7,
+   "max_sentence_len": 60,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "我們就先來看其中一張傳單。\n\n十一月有篇貼文超紅，一天多就衝了二十萬次觀看。貼文說這是 Opus 5.5 最好的課，還說外面幾千塊的培訓都比不上它。\n\n那影片是真的嗎？真的啦，內容，呃應該說講得滿紮實的。<short pause> 是 Anthropic 工程師在七月初辦的工作坊。\n\n但奇怪的點來了，你猜怎麼著？大會辦完的時候，根本還沒有這個模型啊！對，Opus 5.5 是九月二十二號才發佈的耶。官方十月把錄影放上網，結果不到九個小時，英文版傳單就冒出來了。就是整支被重新剪過，還硬塞了一張片頭字卡上去。我看到這邊真的覺得很扯。<laugh>",
+   "lint": {
+    "chars": 239,
+    "precise_numbers": [
+     "十一",
+     "二十萬",
+     "5.5",
+     "千",
+     "5.5",
+     "二十二"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.9,
+    "max_sentence_len": 32,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.8,
+    "written_words": [
+     "其中"
+    ],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "我們就先來看其中一張傳單。<short pause>\n十一月的時候，有一則貼文超紅，\n才一天多就累積了二十萬次觀看。\n它說這是 Claude Opus 5.5 最厲害的神課，\n外面幾千塊的課都比不上。\n那影片是真的嗎？\n真的，內容很扎實，\n是 Anthropic 原廠工程師開的工作坊。\n但重點來了，你猜時間對得起來嗎？\n根本對不上。<laugh>\n那場活動是在七月初辦的，\n可是那個模型，對，我是說 5.5，\n明明九月二十二號才發佈耶。\n官方十月才把錄影放上網，\n然後不到半天，英文版傳單就跑出來了。\n整支被重新打包，\n片頭還硬塞了一張寫著新模型的字卡。\n我看到這邊真的覺得很扯。",
+   "lint": {
+    "chars": 247,
+    "precise_numbers": [
+     "十一",
+     "二十萬",
+     "5.5",
+     "千",
+     "5.5",
+     "二十二"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 21.5,
+    "max_sentence_len": 40,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.4,
+    "written_words": [
+     "其中"
+    ],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "先來看這份報告作者抓到的第一張傳單。\n貼文才發一天多，就累積二十幾萬次觀看。\n它說這是 Opus 5.5 最厲害的課，\n幾千塊的培訓都不如看這支。<short pause>\n影片是真的嗎？是真的，而且講得很好。\n就是 Anthropic 的工程師在工作坊講的。\n重點來了，時間點整個對不上。\n那場活動是在七月初辦的。\n可是 Opus 5.5 呢？九月二十二號才發佈耶。\n官方十月把影片放上網，壓根沒寫模型名字。\n結果上架不到半天，英文版傳單就出來了。\n四段影片被接成一支，還硬塞了片頭字卡。\n上面居然直接寫著 with Opus 5.5。<laugh>\n我看到這邊真的覺得太扯了啦。",
+   "lint": {
+    "chars": 247,
+    "precise_numbers": [
+     "二十",
+     "萬",
+     "5.5",
+     "千",
+     "5.5",
+     "二十二",
+     "5.5"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 29,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "我們就先來看其中一張傳單。",
+   "to": "我們先來看一張傳單。",
+   "reason": "書面語「其中」"
+  },
+  {
+   "from": "內容，呃應該說講得滿紮實的。",
+   "to": "內容也講得滿紮實的。",
+   "reason": "規則 18"
+  },
+  {
+   "from": "培訓",
+   "to": "教育訓練",
+   "reason": "twtone 用詞：台灣說教育訓練"
+  }
+ ]
+}

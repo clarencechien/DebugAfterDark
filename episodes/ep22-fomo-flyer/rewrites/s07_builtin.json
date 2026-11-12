@@ -1,0 +1,114 @@
+{
+ "segment": "s07_builtin",
+ "position": "第 8 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "我看到這",
+  "很扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8427e8c40107ed9d11c048687d5113daf7be09ef22ac6c8d3419b488a43bb9c6",
+ "previous_context": "作者推測，光靠平台分潤養不起這種產量。收集名單跟接業配，比較像是真正的收入。",
+ "original": {
+  "text": "寫到這裡，作者開始懷疑：傳單催我學的東西，會不會過三個月就內建到工具裡？查了日期，答案更進一步：多數是功能已經內建了，名詞才紅起來。以 loop 為例：社群先流傳一支讓 agent 反覆執行到做完的腳本；四月底 Codex 把它做成指令，五月 Claude Code 跟進，叫 slash goal；六月初才有文章給它取名叫 loop engineering；再過十一天，第一張掛著黃仁勳的 loop 傳單出現。報告說：你看到傳單的時候，它教你手工搭的東西，已經是一個指令了。",
+  "lint": {
+   "chars": 223,
+   "precise_numbers": [
+    "十一"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 4,
+   "avg_sentence_len": 54.8,
+   "max_sentence_len": 124,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說到名單，這份報告的作者其實還懷疑一件事。\n那些傳單急著要你學的東西，真的需要學嗎？\n會不會過陣子，工具就直接內建了啊？\n查了時間才發現，事情更幽默。<short pause>\n常常是功能早就內建了，新名詞才流行起來。\n為什麼會醬？\n原來順序通常是倒過來的。\n最早是社群寫腳本，讓 agent 自己跑完。\n廠商覺得不錯，就直接做成內建指令。\n像是 Claude Code 的 slash goal。\n對，等指令都上線了。\n那個，我是說，才有人寫文章取個酷名字。\n最後就是掛著大神的傳單，催你限時上課。\n看到這裡我真的會笑出來。<laugh>\n這份報告裡說，當傳單教你手工慢慢串，\n其實工具早就只要打一行指令了啦。",
+   "lint": {
+    "chars": 264,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 33,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "講到那些傳單，作者發現了一個時間差。\n大家拼命催你學的新招，會不會早就內建了？\n查了才發現，功能早就做好，名詞才紅起來。\n拿 loop 當例子好了。\n一開始是社群有人寫 script 自己跑，\n然後廠商直接把它做成指令，\n像是 Claude Code 的 slash goal。\n最厲害的是什麼你知道嗎？\n功能都已經做好好幾週了，\n才有人寫文章取名叫 loop engineering。\n接著才冒出掛著黃仁勳的推銷傳單。<short pause>\n你看到傳單急著想學手工怎麼搭，\n呃不對，是人家工具早就按個鍵就解決啦。\n這份報告裡說，等傳單傳開，早就不用學了。",
+   "lint": {
+    "chars": 243,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 23.3,
+    "max_sentence_len": 54,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "講到名單，這份報告的作者就懷疑了一件事。<short pause>\n傳單催你趕快學的東西，\n會不會幾個月後就被內建，根本不用學？\n結果去對了日期才發現，重點來了喔。\n根本是功能早就內建了，名詞才開始紅。\n像是大家常聽到的 loop。\n一開始是社群寫 script，\n讓 agent 自己反覆跑到好。\n後來 Claude Code 直接做成指令，\n名字就叫 slash goal。\n你想說傳單什麼時候出來？\n隔了一個月才有人寫文章命名，\n接著掛黃仁勳的傳單才冒出來。<laugh>\n報告裡說得很酸——\n不，也是很真實啦，\n等你看到傳單教你手工搭的時候，\n那個功能早就只要打一行指令了啦。",
+   "lint": {
+    "chars": 247,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 23.7,
+    "max_sentence_len": 48,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "對，等指令都上線了。那個，我是說，才有人寫文章取個酷名字。",
+   "to": "對，等指令都上線了，才有人寫文章，取個酷名字。",
+   "reason": "規則 18"
+  }
+ ]
+}

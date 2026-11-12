@@ -1,0 +1,27 @@
+（注意：X 上發文的帳號名稱一律不念（一般帳號，不點名私人）；公眾人物照講：Karpathy、黃仁勳、Andrew Ng、Hassabis、Musk、Boris Cherny、Addy Osmani、Peter Steinberger。不說這些帳號在詐騙，只講報告查到的事實；報告標「推測」的地方要說是推測。這集是 EP08、EP09「驗收筆記」的番外，可以接回第九集「上半年數 token、下半年數 agent」。英文指令念法：slash goal。每段最多一個精確數字。做查核的人稱「這份報告的作者」。）
+
+X-06 · 時間差
+ 內建在前，名詞在後
+ 寫到這裡，我開始懷疑一件事。這些傳單催我學的東西，會不會過三個月就內建到工具裡，根本不用學？
+ 查了日期之後，答案比我猜的更進一步。多數情況是功能已經內建了，名詞才紅起來。
+ 熱詞 對應的內建功能 名詞開始流行 樣本裡最早的傳單 內建早多少 
+ Loop Claude Code 的 /goal ，5/11。更早還有 3 月的 /loop 6/7，Addy Osmani 的文章命名 6/18 約 4 週 
+ Graph Managed Agents 的多 agent 編排，5/6。Dynamic Workflows，5/28 7/18，Steinberger 的提問 7 月下旬 7 到 10 週 
+ Memory、dreaming Claude Code 的 auto memory，2/25。Managed Agents 的 dreaming，5/6 11/6，Anthropic 的記憶文章 11/8 起 6 到 8 個月 
+ Harness Managed Agents（代管的 harness），4/8 2 月上旬 未單獨出現 名詞早 2 個月 
+ LOOP
+ 4 週
+ 指令比名詞早
+ GRAPH
+ 7–10 週
+ 功能比名詞早
+ MEMORY
+ 6–8 個月
+ 功能比名詞早
+ 四個裡有三個，順序是這樣的：
+ 01 社群土法 有人寫了一支腳本，讓 agent 自己跑到做完 
+ 02 廠商內建 腳本變成一個指令或一個 API 
+ 03 有人命名 一篇文章給這個做法取了名字 
+ 04 傳單 名字配上名師、原價和限時 
+ /goal 就是這樣來的。社群先流傳一支讓 agent 反覆執行的腳本，Codex 在 4 月 30 日把它做成指令，Claude Code 在 5 月 11 日跟進。6 月 2 日，Claude Code 的負責人 Boris Cherny 在訪談裡說他不再 prompt Claude 了，他寫 loop 去 prompt 它。五天後 Osmani 的文章把這件事叫做 loop engineering。再過十一天，第一張掛著黃仁勳的 loop 傳單出現。
+ 你看到傳單的時候，它教你手工搭的東西已經是一個指令。 而且讓這個名詞紅起來的人裡面，有一位就是做那個指令的人。名詞流行，有一部分是廠商在介紹自己剛上線的功能。

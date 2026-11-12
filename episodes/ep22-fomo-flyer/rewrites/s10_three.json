@@ -1,0 +1,127 @@
+{
+ "segment": "s10_three",
+ "position": "第 11 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "我看到這",
+  "很扯",
+  "我是說",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "83e3737f1f01aa256b933a552b15d0827a7521f01b79937c863c80fc4379b23c",
+ "previous_context": "一手材料明明叫你少做一點、晚點再做。外面的包裝卻一直恐嚇你，說你又落後了。",
+ "original": {
+  "text": "那拿到傳單之後怎麼辦？作者現在會做三件事，各花一分鐘。第一，對日期：找到影片原始的上傳頁，看上傳日。第二，找原話：引言有沒有附訪談連結或時間點；沒有姓名的某公司工程師，直接當作沒有出處；同一句話搜得到兩個只差一個詞的版本，兩個都先不信。第三，查它是不是已經是一個指令：打開你在用的工具的更新紀錄，搜那個詞。報告還問：這些貼文晚三個月才看，會損失什麼？以這二十三則來說，作者找不到損失。真正會過期的，只有傳單本身。",
+  "lint": {
+   "chars": 206,
+   "precise_numbers": [
+    "二十三"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 24.8,
+   "max_sentence_len": 67,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以滑到這種恐嚇傳單，要怎麼辦？\n這份報告的作者分享了三個動作。\n每個動作大概只要一分鐘喔。\n第一步先對日期。\n去找原始影片到底是什麼時候上傳的。\n然後去找原話。\n看引言有沒有附訪談連結或是時間點。\n要是只寫某工程師，就當作沒有出處。<short pause>\n最後去查它是不是早就變成指令了。\n翻工具的更新紀錄，看官方說明快超多。\n那要是晚三個月才看，會損失什麼嗎？\n以這二十三則來說，作者發現根本沒損失。<laugh>\n真正會過期的，其實只有傳單本身啦。",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [
+     "二十三"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那拿到這種傳單之後，到底要怎麼辦呢？\n這份報告的作者，平常會做三個動作。\n而且每個動作只要一分鐘喔。\n第一個是看日期，去找影片原始上傳日。\n然後是找原話。\n要是沒寫名字，不對，只要沒出處就先別信。\n對，搜出兩個版本的話也先別信。\n最後去翻工具的更新紀錄。\n看那個功能是不是早就變成指令了。\n<short pause>\n你可能會問，晚三個月看會損失什麼？\n我讀到這裡真的快笑出來。<laugh>\n因為答案是完全不會。\n以作者查核的二十三則來說，根本沒差。\n真正會過期的，就只有那張傳單本身啦。",
+   "lint": {
+    "chars": 211,
+    "precise_numbers": [
+     "二十三"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 14.1,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那如果真的拿到這種傳單，要怎麼辦？\n這份報告的作者分享了三個動作，\n每個動作只要一分鐘喔。\n先對日期，去看影片原始的上傳時間。<short pause>\n然後找原話，\n沒有附來源連結的，就先不要信。\n最後去查更新紀錄，\n看那個功能，就是那個詞，\n是不是早就變成指令了。\n那你晚三個月才看到這些貼文，會怎樣嗎？\n其實完全不會怎樣耶。<short pause>\n這份報告查了二十三則，\n發現你根本不會損失任何東西。\n<laugh> 真正會過期的，\n就只有那張傳單本身嘛。",
+   "lint": {
+    "chars": 185,
+    "precise_numbers": [
+     "二十三"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 19.6,
+    "max_sentence_len": 31,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "要是沒寫名字，不對，只要沒出處就先別信。對，搜出兩個版本的話也先別信。",
+   "to": "沒有附訪談連結或時間點的，先別信；只寫某公司工程師的，當作沒有出處；同一句話搜到兩個只差一個詞的版本，兩個都先別信。",
+   "reason": "規則 18；照原文"
+  }
+ ]
+}

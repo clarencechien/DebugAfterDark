@@ -1,0 +1,111 @@
+{
+ "segment": "s08_caveat",
+ "position": "第 9 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "我看到這",
+  "很扯",
+  "我是說",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f52b143cc93766510b5257db59d3e57e263f0e2305670e6c14f2423a31c90ad5",
+ "previous_context": "看到這裡我真的會笑出來。這份報告裡說，當傳單教你手工慢慢串，其實工具早就只要打一行指令了啦。",
+ "original": {
+  "text": "報告也把這張表的限制講清楚。graph 和 memory 也一樣，功能比名詞早了好幾週到好幾個月，OpenAI 和 Google 的方向也相同；可是 harness 這個詞，是名詞先出現的。另外，內建的是機制，不是答案：slash goal 的完成條件、驗收的評分標準，還是要你自己寫。還有一件事：內建不等於長久，Google 的一個 agent 工具，更新紀錄最後一則寫著，它會在今年年底停止服務。用本機模型的人也不在這張表裡，他們的工具還是要自己搭。",
+  "lint": {
+   "chars": 214,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 41.8,
+   "max_sentence_len": 72,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "不過這份報告的作者很誠實。<short pause> 他自己列了這張表的好幾個限制。其實 OpenAI 跟 Google 方向也差不多，很多功能都比流行名詞早出來。但 harness 這個詞，就是名詞先紅的喔。然後呢，就算工具幫你內建了機制，像 slash goal 的驗收標準，還是得要你自己動手寫啊。難道內建了就一勞永逸嗎？<laugh> 才沒有這回事。像 Google 有個 agent 工具，更新紀錄就寫著幾年後要停止服務。對，如果你是在電腦跑地端模型，那些架構還是得自己動手搭啦。",
+   "lint": {
+    "chars": 210,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 22.3,
+    "max_sentence_len": 43,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "不過這份報告的作者，也很老實地講了限制。\n不只 Anthropic 啦，OpenAI 跟 Google 其實也都差不多。\n功能幾乎都比名詞流行還要早出來。\n但 harness 這個詞就是例外，它是名詞先紅的。\n然後，工具內建的只是機制。\n像 slash goal 的完成條件，你還是得自己寫啊。<sigh>\n最幽默的是，內建不代表會活很久喔。\nGoogle 的一個工具，更新紀錄最後一行，居然寫著今年年底要關掉。<laugh>\n你說地端模型呢？抱歉，不在表裡，通通得自己搭。\n所以比較保險的說法是，等名詞變成傳單，工具早就做好了啦。",
+   "lint": {
+    "chars": 233,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.2,
+    "max_sentence_len": 33,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "不過這份報告的作者很老實。他直接列出這張表的限制。<short pause>\n除了 Anthropic，他補查了 OpenAI 跟 Google。\n方向其實都差不多。\n功能上線的時間，幾乎都比名詞流行早了好幾個月。\n只有 harness 這個詞，是名詞先跑出來的。\n然後，內建的其實只是機制。\n像 slash goal 的完成條件，你還是要自己寫啊。\n驗收的標準也是要自己訂。\n更妙的是，內建也不保證會活很久。<sigh>\n像 Google 的 Jules，更新紀錄最後竟然寫著，二零二六年年底就要停止服務了。\n那跑地端模型的人呢？\n完全不在這張表裡面。\n你的 harness 還是得自己摸索、自己搭啦。",
+   "lint": {
+    "chars": 257,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 17.4,
+    "max_sentence_len": 39,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "更新紀錄就寫著幾年後要停止服務。",
+   "to": "更新紀錄就寫著，今年年底要停止服務。",
+   "reason": "照原文：2026-12-31"
+  }
+ ]
+}

@@ -1,0 +1,110 @@
+{
+ "segment": "s06_exit",
+ "position": "第 7 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "我看到這",
+  "很扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8eb92df7c7f39e573eb1024deba6ed7f7745f44120a3f9b8d17a8ec27de3521d",
+ "previous_context": "我真的起雞皮疙瘩。換個帳號重發，大家又全都信了欸。",
+ "original": {
+  "text": "那這些傳單要你去哪裡？每一張的最下面，都指向同一個地方：下面的指南，也就是一篇 X 上的長文。長文的主題常常跟影片無關，掛著黃仁勳的影片，連出去的是量化交易的框架。作者點開七篇長文，發現長文的觀看數，是傳單的好幾倍。報告說，傳單是替長文導流的，長文才是主商品。長文的出口，是 Telegram 群組、電子報訂閱名單，還有業配，作者沒有看到賣課。他也推測，光靠平台的分潤養不起這種產量，名單和業配比較像是真正的收入。",
+  "lint": {
+   "chars": 203,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 28.0,
+   "max_sentence_len": 39,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那，這些傳單到底要帶你去哪？\n\n重點就在最下面那一列。\n\n每一張傳單，最後都連到一篇 X 的長文。\n\n更妙的是，長文主題常常跟影片完全無關喔。\n\n前面掛黃仁勳，點開居然在講交易框架。\n\n這份報告的作者，點開了七篇長文。<short pause>\n\n結果長文的觀看數，比影片多出好幾倍欸。\n\n看到這裡我整個恍然大悟。\n\n長文才是主商品，影片只是負責抓眼球啦。\n\n那文章最後要幹嘛？\n\n就是導去 Telegram、收集名單，或是接業配。\n\n而且完全沒人在賣課。\n\n報告裡推測，光靠平台分潤賺不了多少，\n\n名單跟業配，可能才是真正的收入來源。",
+   "lint": {
+    "chars": 226,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 35,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  },
+  {
+   "text": "那這些傳單到底要帶你去哪？\n你看傳單最下面那一行，都是連到 X 長文。\n而且長文的主題，常常跟影片完全無關喔。\n像是影片放黃仁勳，點進去卻在講量化交易。\n這份報告的作者點開七篇長文來看。<short pause>\n結果長文的觀看數，比傳單多了好幾倍。\n原來傳單只是誘餌，長文才是主商品啦。\n但長文最後要賣你什麼？\n你可能會以為是大神賣課對吧？\n結果完全沒有。\n文末全都導去 Telegram 群或是電子報。\n作者推測，光靠平台分潤養不起這種產量。\n收集名單跟接業配，比較像是真正的收入。",
+   "lint": {
+    "chars": 214,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   }
+  },
+  {
+   "text": "那這些傳單到底要帶你去哪？\n每一張的最下面，都叫你點進去一篇長文。\n重點是，長文主題常常跟影片完全無關喔。\n像掛黃仁勳的影片，點開竟然在講量化交易。\n影片只是讓你停下來，長文才是主商品啦。\n而且長文的觀看數，比傳單多了好幾倍。<short pause>\n那長文最後又連去哪？\n都是 Telegram 群組，還有電子報名單。\n這份報告的作者發現，裡面根本沒在賣課欸。\n就是……完全沒看到課，全都是要你留名單。\n或是接產品業配。\n作者推測啦，光靠平台給的分潤根本養不起。\n拿到名單跟業配，那個才是真正的收入。<laugh>",
+   "lint": {
+    "chars": 225,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "文末全都導去 Telegram 群或是電子報。",
+   "to": "文末多半導去 Telegram 群或是電子報，也有業配。",
+   "reason": "照原文"
+  }
+ ]
+}

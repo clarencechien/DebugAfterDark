@@ -1,0 +1,124 @@
+{
+ "segment": "s04_words",
+ "position": "第 5 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "應該說",
+  "我看到這",
+  "很扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b391442f45fbfe346cfda08c335f281ded514c330b6526fb233a7906b05625c6",
+ "previous_context": "換個別的帳號照抄，就是連字都不改直接重發，轉眼間又拿到幾十萬次觀看。這招就是賭大家平常都不會點進去看嘛。",
+ "original": {
+  "text": "第二型比較難查，因為引言沒有日期。可是把同一個人名下的句子按時間排開，會看到句子跟著熱門的詞在動。六月，黃仁勳的版本是：沒人寫 prompt 了，新工作是寫 loop，將近一百萬次觀看。八月，graph 紅了，同一句話就變成：新工作是建 loop 和 graph。作者去找了發文者自己貼的原片，是一支美聯社的專訪，把五十一分鐘的字幕整份搜過，loop 這個字，一次都沒有出現。報告說：訪談是真的，日期是真的，引號裡的句子，是填上去的。",
+  "lint": {
+   "chars": 209,
+   "precise_numbers": [
+    "一百萬",
+    "五十一"
+   ],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 33.8,
+   "max_sentence_len": 54,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "對，而且還有一種狀況更難查。因為引言裡面根本沒寫日期嘛。\n\n可是把同一個人講過的話按時間排開，重點來了，裡面的詞居然會跟著流行變。像六月有人掛黃仁勳的名字發文，說沒人寫 prompt 了，新工作是寫 loop，隨便就拿了快一百萬次觀看耶。\n\n結果到了八月，graph 這個詞紅了。你知道同一句話變成什麼嗎？竟然改成新工作是建 loop 跟 graph。\n\n這份報告的作者跑去找原片對答案，把五十一分鐘的專訪字幕整個搜一遍，<short pause> 結果咧？loop 這個字一次都沒出現。<laugh> \n\n換個說法好了，訪談是真的，日期也是真的，只有引號裡那句話，是人家自己填上去的啦。",
+   "lint": {
+    "chars": 256,
+    "precise_numbers": [
+     "一百萬",
+     "五十一"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 24.6,
+    "max_sentence_len": 50,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "不只這樣，還有一種是直接換關鍵字。這份報告的作者把同個人的句子排開，發現那些名言，根本是跟著流行在變的。像六月大家在講 loop，掛黃仁勳名字的貼文，就寫成沒人寫 prompt 了，新工作是寫 loop。到了八月呢？<short pause> 換成 graph 紅了，同一句話就自己加碼，變成新工作是建 loop 跟 graph。那黃仁勳到底有沒有講過？這份報告的作者去找了美聯社專訪。整支五十一分鐘的影片搜過一遍——呃那個，他是搜自動字幕啦，loop 這個字根本一次都沒出現。<laugh> 你看，訪談是真的，日期也是真的，只有引號裡面的話，是自己填上去的嘛。",
+   "lint": {
+    "chars": 249,
+    "precise_numbers": [
+     "五十一"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 26.7,
+    "max_sentence_len": 45,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "而且不只直接照抄喔。第二種手法更難查，因為引言通常沒寫日期。可是你把發文照時間排開，會發現句子都在跟著熱門關鍵字跑。六月流行 loop，黃仁勳就被塞了一句「新工作是寫 loop」。到了八月換 graph 紅了，<laugh> 同一句話馬上被加料，變成新工作是建 loop 跟 graph。你知道最絕的是什麼嗎？這份報告的作者跑去翻了專訪原片。整支五十一分鐘的影片搜完字幕，loop 這個詞一次都沒出現。<sigh> 那個……訪談是真的啦，但引號裡的話，根本是發文的人自己填上去當鉤子的。",
+   "lint": {
+    "chars": 220,
+    "precise_numbers": [
+     "五十一"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 23.4,
+    "max_sentence_len": 40,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "那個……訪談是真的啦",
+   "to": "訪談是真的啦",
+   "reason": "規則 18"
+  }
+ ]
+}

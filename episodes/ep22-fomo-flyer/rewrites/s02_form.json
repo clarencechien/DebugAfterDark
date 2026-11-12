@@ -1,0 +1,123 @@
+{
+ "segment": "s02_form",
+ "position": "第 3 段，共 12 段",
+ "avoid": [
+  "應該說",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "1db67480d4a0e2b69b0dfc033c9b952b3c30cc01f38e39e93b0809837c43878d",
+ "previous_context": "就是整支被重新剪過，還硬塞了一張片頭字卡上去。我看到這邊真的覺得很扯。",
+ "original": {
+  "text": "把二十三則排在一起，句型幾乎可以疊起來。作者把它還原成一張有七個欄位的填空表：權威，像 Karpathy、黃仁勳、Andrew Ng；時效，上週、昨天剛出；時長，很精確，但常常跟原片對不上；價格，上萬美元的訓練營；階梯，從 prompt 到 agent、loop、graph；急迫，你現在沒空看、先收藏；最後是出口，下面的指南。報告說，補習班的傳單也是這樣印的：名師換一個，科目換一個，原價和限時不用動。作者把樣本分成三型：舊片新標、引言移植、真內容換包裝。",
+  "lint": {
+   "chars": 224,
+   "precise_numbers": [
+    "二十三",
+    "萬"
+   ],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 55.0,
+   "max_sentence_len": 138,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "更誇張的是，連發文的文案都長得一模一樣耶。\n這份報告的作者把二十三則貼文排在一起，<short pause>\n結果發現句型根本可以直接疊起來。\n就好像大家都拿同一張填空表在抄一樣。\n你猜這張表長怎樣？\n裡面有幾個固定的格子。\n主角可以填 Karpathy 或是黃仁勳，\n時間就寫上週或是昨天剛出，\n然後時長抓個幾十分鐘，\n再補一句別人的課要上萬塊。\n最後一定要叫你趕快收藏、看下面的指南。\n這根本是補習班在印招生傳單嘛。<laugh>\n名師換一個，科目換一個，\n不對，是免費跟限時的招牌永遠不用換啦。\n報告裡說，作者把這些套路分成三種，\n像是舊片換新標題，\n把名人的話移花接木，\n還有把真的內容重新換包裝喔。",
+   "lint": {
+    "chars": 265,
+    "precise_numbers": [
+     "二十三",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 25.5,
+    "max_sentence_len": 55,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "更誇張的在後面。\n這份報告的作者把二十三則貼文排在一起，\n發現句型根本可以直接疊起來。<short pause>\n你猜像什麼？\n就像補習班印傳單嘛。\n基本上就是一張現成的填空表。\n最前面的大師，就填 Karpathy 或黃仁勳。\n時間就寫「昨天剛出」。<short pause>\n然後時長隨便寫，\n反正常常跟原片對不上。\n階梯就填 prompt、agent 那些字。\n再補一句「別人花上萬塊上的課」。\n最後催你「現在沒空先收藏」。<laugh>\n欸，那個……我是說，根本就是一套公式啊。\n作者把這些手法分成三種型態，\n就是舊片新標、引言移植，\n還有拿真內容換包裝。",
+   "lint": {
+    "chars": 229,
+    "precise_numbers": [
+     "二十三",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 35,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 2,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 3
+   }
+  },
+  {
+   "text": "不只剪輯動手腳。<short pause>\n這份報告的作者把二十三則貼文排在一起，\n發現句型根本可以直接疊起來。\n你猜有幾個空格要填？\n就是那幾格固定的欄位啦。\n大神名字可以填 Karpathy 或黃仁勳，\n時間就寫上週剛出，\n時長就隨便抓，那個、抓個幾十分鐘，\n然後內容就塞個 prompt 到 agent。\n最後就是叫你先收藏、別讓貼文消失。\n這不就跟補習班印傳單一模一樣嘛？<laugh>\n名師換一下，科目換一下，原價完全不用動。\n我看到作者把手法分成三種類型，\n像是舊片新標、把名言亂移植，\n還有把真的內容換上新包裝。\n每一招套路真的都抓得很準耶。",
+   "lint": {
+    "chars": 238,
+    "precise_numbers": [
+     "二十三"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 22.8,
+    "max_sentence_len": 65,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "時長就隨便抓，那個、抓個幾十分鐘，然後內容就塞個 prompt 到 agent。",
+   "to": "時長寫得很精確，但常常跟原片對不上；階梯就排個 prompt、agent、loop、graph。",
+   "reason": "規則 18；照原文"
+  },
+  {
+   "from": "原價完全不用動。我看到作者把手法分成三種類型，",
+   "to": "原價跟限時完全不用動。作者把手法分成三種類型，",
+   "reason": "照原文；口頭禪超額"
+  }
+ ]
+}
