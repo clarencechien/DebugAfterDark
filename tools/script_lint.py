@@ -21,7 +21,9 @@ JARGON = ["超額報酬", "過擬合", "樣本外", "樣本內", "套利", "投�
 JARGON_EN = re.compile(r"\b(?:edge|alpha|beta|Sharpe|PF)\b", re.I)
 # Bare 「報告」 opening a sentence or clause is heard as 「包括」 (EP06, EP09); say 「這份報告」「報告裡」 (prompt rule 19).
 MISHEARD = re.compile(r"(?:^|[。！？，；：])\s*報告(?!裡|中|上)")
-SELF_FIX = re.compile(r"呃我是說|我是說|呃不對|換個說法|應該說|——|……")
+# 2026-11-12: widened after EP14-EP23, where almost every rewritten segment had one of these (prompt rule 20)
+SELF_FIX = re.compile(r"呃|我是說|啊不對|，不對，|換個說法|應該說|——|……|`")
+GREETING = re.compile(r"^\s*(?:嘿|哈囉|嗨|歡迎|大家好)|還醒著嗎")
 # Mainland-flavoured words a Taiwanese listener flags (keep in sync with rule 13 of the prompt)
 # Not mainland usage, but Taiwanese listeners say people around them rarely talk like this (2026-11-04: 超有感).
 AVOID = {"有感": r"有感(?!觸|情|應|而)"}
@@ -49,6 +51,7 @@ def lint(text):
         "written_words": [w for w in WRITTEN if w in clean],
         "jargon": [w for w in JARGON if w in clean] + JARGON_EN.findall(clean),
         "self_corrections": len(SELF_FIX.findall(clean)),
+        "greeting": bool(GREETING.search(clean)),
         "bare_report": len(MISHEARD.findall(clean)),
         "mainland_words": [w for w in MAINLAND if w in clean and not (w == "兒" and ("兒子" in clean or "女兒" in clean))],
         "avoid_words": [w for w, rx in AVOID.items() if re.search(rx, clean)],

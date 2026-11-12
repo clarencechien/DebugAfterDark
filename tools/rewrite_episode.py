@@ -104,13 +104,24 @@ def main(a):
                         raise
                     print(f"  {seg['id']}: candidate retry after {type(e).__name__}")
         from concurrent.futures import ThreadPoolExecutor
-        with ThreadPoolExecutor(max_workers=a.n) as pool:
-            cands = [{"text": t, "lint": lint(t)} for t in pool.map(one, range(a.n))]
+        # A self-correction (呃我是說, 應該說...), a greeting in the cold open or a stray backtick had to be removed by hand
+        # in almost every segment of EP14-EP23 (prompt rules 12, 14, 20). Rank those last, and if every candidate has
+        # one, ask for another batch, up to --extra-rounds times (2026-11-12).
+        def flaws(c):
+            L = c["lint"]
+            return L["self_corrections"] + (1 if i == 0 and L.get("greeting") else 0)
+        cands = []
+        for rnd in range(1 + a.extra_rounds):
+            with ThreadPoolExecutor(max_workers=a.n) as pool:
+                cands += [{"text": t, "lint": lint(t), "round": rnd} for t in pool.map(one, range(a.n))]
+            if min(flaws(c) for c in cands) == 0:
+                break
+            print(f"  {seg['id']}: every candidate so far has a self-correction or greeting; asking for {a.n} more")
         def over_budget(t):
             pc = phrase_counts(t)
             return sum(max(0, used[k] + pc[k] - PHRASE_CAPS[k]) for k in PHRASE_CAPS) + sum(max(0, v - 1) for v in pc.values())
         needs_recap = i == recap_i and prev_ep is not None
-        key = lambda j: (needs_recap and "上一集" not in cands[j]["text"], len(cands[j]["lint"]["mainland_words"]) + len(cands[j]["lint"]["avoid_words"]), over_budget(cands[j]["text"]),
+        key = lambda j: (flaws(cands[j]) > 0, needs_recap and "上一集" not in cands[j]["text"], len(cands[j]["lint"]["mainland_words"]) + len(cands[j]["lint"]["avoid_words"]), over_budget(cands[j]["text"]),
                          len(cands[j]["lint"]["precise_numbers"]), cands[j]["lint"]["sentences_over_20"],
                          cands[j]["lint"]["avg_sentence_len"])
         best = min(range(len(cands)), key=key)
@@ -126,7 +137,7 @@ def main(a):
         new_segments.append({"id": seg["id"], "mood": mood_of(seg), "text": text})
         previous = last_sentences(text)
         L = cands[best]["lint"]
-        print(f"{seg['id']:16s} chose {best}  chars {n}->{L['chars']}  avg_sent {L['avg_sentence_len']}  nums {L['precise_numbers']}  mainland {L['mainland_words']}  avoid {avoid}")
+        print(f"{seg['id']:16s} chose {best}/{len(cands)}  selffix {L['self_corrections']}  chars {n}->{L['chars']}  avg_sent {L['avg_sentence_len']}  nums {L['precise_numbers']}  mainland {L['mainland_words']}  avoid {avoid}")
     out = {k: v for k, v in sc.items() if k != "segments"}
     out["note"] = "由 tools/rewrite_episode.py 依 prompts/spoken_script_zh-TW.md 改寫；人工修正記在 rewrites/<id>.json 的 manual_edits"
     out["segments"] = new_segments
@@ -137,6 +148,7 @@ def main(a):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); ap.add_argument("--n", type=int, default=3)
+    ap.add_argument("--extra-rounds", type=int, default=2, help="more batches of --n when every candidate has a self-correction or greeting")
     ap.add_argument("--episode", required=True, help="episodes/<ep>")
     ap.add_argument("--model", default="gemini-3.8-flash"); ap.add_argument("--temperature", type=float, default=0.8)
     ap.add_argument("--resume", action="store_true", help="reuse segments already written to episodes/<ep>/rewrites/")
