@@ -28,6 +28,22 @@
   "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
  },
  "audio": {
-  "file": "ep22-fomo-flyer.mp3"
+  "file": "ep22-fomo-flyer.mp3",
+  "bytes": 9716980,
+  "sha256": "474e68973cc163faac3331748d25e5d2fd252c449281ec3df6e13afe09174135",
+  "duration_s": 607.3,
+  "duration": "10:07",
+  "lufs": -16.9
+ },
+ "qa": {
+  "breeze_cer_mean": 0.027,
+  "jitter_semitones": 0.222,
+  "gates": "錯誤率 2.7%、音高跳動 0.222 都通過",
+  "retakes": "s03、s08、s11 各補 3 次（第一輪音高偏差 7 Hz 上下、s03 偏快）；s03 選 take5、s11 選 take4",
+  "manual_pick": "s05 take2（鄰段比對換成的 take0 偏抖）、s08 take5（自動挑的 take0 +7.3 Hz）",
+  "consistency": "qa/consistency.json：各段音高在中位數 ±4 Hz 內；s00、s11 語速偏慢一成多、s08 偏快；接縫亮度 s03→s04 跳最多",
+  "both_wrong": "多為英文字母（Karpathy、slash goal）和同音字（滿／蠻、格／個、地端／低端、搜／收）",
+  "twtone": "qa/twtone.md：沒有超過基準的項目",
+  "terms": "Ping、pong 3 次都判為英文念法"
  }
 }

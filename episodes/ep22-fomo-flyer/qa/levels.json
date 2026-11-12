@@ -1,0 +1,74 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -21.1,
+  "gain_db": 1.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_opus",
+  "lufs_before": -21.2,
+  "gain_db": 1.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_form",
+  "lufs_before": -22.4,
+  "gain_db": 2.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_dates",
+  "lufs_before": -22.5,
+  "gain_db": 2.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_words",
+  "lufs_before": -20.9,
+  "gain_db": 0.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_hassabis",
+  "lufs_before": -21.1,
+  "gain_db": 1.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_exit",
+  "lufs_before": -22.1,
+  "gain_db": 2.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_builtin",
+  "lufs_before": -23.5,
+  "gain_db": 3.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_caveat",
+  "lufs_before": -19.9,
+  "gain_db": -0.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_words",
+  "lufs_before": -21.9,
+  "gain_db": 1.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s10_three",
+  "lufs_before": -22.3,
+  "gain_db": 2.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s11_outro",
+  "lufs_before": -22.0,
+  "gain_db": 2.0,
+  "lufs_after": -20.0
+ }
+]
