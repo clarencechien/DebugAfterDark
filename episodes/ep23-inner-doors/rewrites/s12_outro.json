@@ -1,0 +1,133 @@
+{
+ "segment": "s12_outro",
+ "position": "第 13 段，共 13 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "醬",
+  "應該說",
+  "我看到這",
+  "很扯",
+  "我是說",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a37bd3bba23013a4801cc6bcfc65fd73b1b09ad0c36ea03b6fc09639eb7e35e1",
+ "previous_context": "求職作業或隨便搜到的安裝檔，千萬別在工作電腦上跑。 幣安那兩扇外牆門，就是醬子被打開的。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，最常沒鎖的，是門牌寫著內部的那扇；內部說的是誰在用，不是誰碰得到。第二，換鎖，收不回已經被抄走的門牌。第三，新加進來的 AI 工具，如果答不出用誰的身分、碰得到什麼、權杖多久過期、有沒有被監控，它就是下一扇內部的門。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 160,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 21.9,
+   "max_sentence_len": 54,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，最常沒鎖的，就是寫著內部的那扇門。\n內部只代表誰在用，不代表誰碰得到喔。\n第二，光換門鎖有用嗎？\n沒用，被抄走的名冊根本收不回來嘛。\n對，那個鎖……不對，整張門牌早就被抄走了。\n第三，新加的 AI 工具如果權限說不清楚，\n它就是下一扇沒鎖好的門。\n我光想到這點就覺得毛毛的。<sigh>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 184,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 15.7,
+    "max_sentence_len": 30,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，最常沒鎖的往往是內部工具。\n因為「內部」只代表誰在用，不是誰碰得到嘛。\n第二，只換鎖有用嗎？\n根本沒用，你收不回已經被抄走的名冊啦。<short pause>\n最後，就是那個新加進來的 AI 工具。\n講白一點，搞不清楚身分跟權限的話，\n對，它就是下一扇沒鎖好的門。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 167,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 15.7,
+    "max_sentence_len": 30,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一個，門牌寫內部的門，最容易被推開。\n為什麼？\n因為內部只代表誰在用，不代表外人碰不到啊。\n然後第二個，就算你換了鎖，\n也收不回已經被抄走的名單，\n呃不對，那個，是員工名冊啦。<laugh>\n第三個，新引進的 AI 工具，權限管好了嗎？\n如果答不出來，它就是下一扇沒上鎖的門喔。\n原文連結在節目資訊欄。\n我是 Ping。有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 177,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 39,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>第一個，門牌寫內部的門，最容易被推開。為什麼？因為內部只代表誰在用，不代表外人碰不到啊。然後第二個，就算你換了鎖，也收不回已經被抄走的名單，呃不對，那個，是員工名冊啦。<laugh>第三個，新引進的 AI 工具，權限管好了嗎？如果答不出來，它就是下一扇沒上鎖的門喔。原文連結在節目資訊欄。我是 Ping。有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，最常沒鎖的，是門牌寫著內部的那扇；內部說的是誰在用，不是誰碰得到。第二，換了鎖，收不回已經被抄走的門牌。第三，新加進來的 AI 工具，如果答不出它用誰的身分、碰得到什麼、權杖多久過期、有沒有被監控，它就是下一扇內部的門。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "改寫稿自我更正太多（規則 18）、s06 標籤外有反引號、s01 把第十四集說成上一集；整段依原文重寫，保留口語；九一 APP 寫成國字讓 TTS 念對"
+  },
+  {
+   "from": "好，今晚的 breakpoint。<short pause>第一，最常沒鎖的，是門牌寫著內部的那扇；內部說的是誰在用，不是誰碰得到。第二，換了鎖，收不回已經被抄走的門牌。第三，新加進來的 AI 工具，如果答不出它用誰的身分、碰得到什麼、權杖多久過期、有沒有被監控，它就是下一扇內部的門。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，最常沒鎖的，是門牌寫著內部的那扇。內部說的是誰在用，不是誰碰得到。第二，換了鎖，收不回已經被抄走的門牌。第三，新加進來的 AI 工具，如果答不出它用誰的身分、碰得到什麼、權杖多久過期、有沒有被監控，它就是下一扇內部的門。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "規則 19（句首「報告」加「這份」）；twtone：分號拆成句號、去掉結論提示冒號、書面語「其中」"
+  }
+ ]
+}

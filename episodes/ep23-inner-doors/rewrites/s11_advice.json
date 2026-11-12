@@ -1,0 +1,111 @@
+{
+ "segment": "s11_advice",
+ "position": "第 12 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這",
+  "很扯",
+  "我是說",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "96a45b0b47a56dfd86c2e71f0ea78503fd0fe7a83198122c6e4f1c468e99c368",
+ "previous_context": "最讓人捏把冷汗的是，銀行承認當初驗收安全設定時，過程「有些例外」。自己架工具是沒人盯，買來的系統，則是大家都以為對方有盯，結果那扇門根本就沒鎖好啦。",
+ "original": {
+  "text": "報告最後的建議，是照碰得到什麼，重畫一次門窗表。給平台業者：內部工具和對外服務用同一套修補時限；正式環境的金鑰不放進程式碼庫，改用短效的憑證；內部 AI 工具給它自己的身分和最小權限，不讓它直接控制別人的電腦；偵測要做到內部先發現，不要等消費者先收到詐騙。給品牌客戶：合約寫清楚事件通知的時限，不要以調查完成當起點。給工程師個人：求職作業、搜尋找到的安裝程式，不要在工作電腦上執行。幣安兩扇外牆的門，都是這樣開的。",
+  "lint": {
+   "chars": 205,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 40.0,
+   "max_sentence_len": 101,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "門沒鎖好，到底該怎麼防？這份報告建議，照「碰得到什麼」重畫門窗表。對平台來說，內部工具修補要跟對外一樣快。對，應該說，「不對外」不能當拖延的藉口啦。正式環境金鑰別放進程式碼，改用短效憑證。內部 AI 工具也要給獨立身分，限制它的權限。而且偵測要自己先發現，<short pause> 總不能每次都等消費者被騙才知道吧？至於品牌客戶，合約要寫清楚通知時限。那對工程師自己呢？求職作業或隨便搜到的安裝檔，千萬別在工作電腦上跑。<short pause> 幣安那兩扇外牆門，就是醬子被打開的。",
+   "lint": {
+    "chars": 213,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 18.4,
+    "max_sentence_len": 27,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那要怎麼防？<short pause>\n這份報告說，就是照碰得到什麼來檢查。\n對平台業者來說，內部工具更新不能拖，\n時限要跟對外服務一模一樣。\n然後，正式金鑰別塞進程式碼，\n改用短效憑證。\n給內部 AI 工具最小權限，\n不能讓它直接控制別人的電腦。\n還有啊，異常偵測要自己先抓到，\n不能像九一 APP 醬，等被騙了才發現。\n品牌客戶簽合約也要注意，\n通知時限要寫清楚，別等調查完才講。\n那工程師自己呢？<short pause>\n求職作業跟網路上抓的安裝程式，\n呃應該說，只要來源不熟的檔案，\n拜託不要在工作電腦執行。\n幣安兩扇外牆的門，都是這樣被開的喔。",
+   "lint": {
+    "chars": 232,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 22.2,
+    "max_sentence_len": 41,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "那到底該怎麼防？\n這份報告整理的建議，真的要聽進去。<short pause>\n核心原則是看工具碰得到什麼。\n對，是看權限多大，而不是看誰在用。\n內部系統更新不能拖，要跟對外服務一樣快。\n正式環境的金鑰，不要再塞進程式碼裡面啦。\n內部 AI 工具要給獨立身分，\n絕對不能讓它直接控制別人的電腦。\n然後異常偵測要跑在前面，\n不要等消費者被騙了才知道。\n至於工程師個人呢？\n面試作業或網路抓的安裝檔，\n拜託千萬不要在工作電腦上跑。<sigh>\n幣安兩扇外牆的門，可都是醬被敲開的喔。",
+   "lint": {
+    "chars": 205,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "門沒鎖好，到底該怎麼防？這份報告建議，照「碰得到什麼」重畫門窗表。對平台來說，內部工具修補要跟對外一樣快。對，應該說，「不對外」不能當拖延的藉口啦。正式環境金鑰別放進程式碼，改用短效憑證。內部 AI 工具也要給獨立身分，限制它的權限。而且偵測要自己先發現，<short pause> 總不能每次都等消費者被騙才知道吧？至於品牌客戶，合約要寫清楚通知時限。那對工程師自己呢？求職作業或隨便搜到的安裝檔，千萬別在工作電腦上跑。<short pause> 幣安那兩扇外牆門，就是醬子被打開的。",
+   "to": "那到底該怎麼防？這份報告建議，照碰得到什麼，重畫一次門窗表。對平台來說，內部工具的修補要跟對外系統一樣快，不對外，不能當拖延的藉口。正式環境的金鑰別放進程式碼平台，改用短效的憑證。內部 AI 工具要給它自己的身分，限制它的權限。偵測也要做到自己先發現，<short pause>總不能每次都等消費者被騙才知道吧？品牌客戶呢，合約要寫清楚通知的時限。那工程師自己呢？求職作業、隨便搜到的安裝檔，千萬別在工作電腦上跑。<short pause>幣安那兩扇外牆的門，就是這樣被打開的。",
+   "reason": "改寫稿自我更正太多（規則 18）、s06 標籤外有反引號、s01 把第十四集說成上一集；整段依原文重寫，保留口語；九一 APP 寫成國字讓 TTS 念對"
+  }
+ ]
+}

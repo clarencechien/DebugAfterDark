@@ -1,0 +1,124 @@
+{
+ "segment": "s06_contrast",
+ "position": "第 7 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "很扯",
+  "我是說",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "74d061e3b70ed93843b6d4a18bd9f8251132432e4d3fe7695a2b3731e416af41",
+ "previous_context": "TRM Labs 和 FBI 都指向北韓，北韓當然否認嘛。對了，報告裡特別說，幣安這案子，完全沒提到那個 AI 攻擊框架喔。",
+ "original": {
+  "text": "把兩案放在一起，是兩種敲門法，同一種門。91APP 這邊，敲門的是 AI 框架，系統裡找到 AI 滲透測試工具的痕跡；幣安那邊，敲門的是人，花了好幾個月，先用竄改過的工具，再用兩輪假面試，一個一個換到工程師的電腦。AI 在幣安案出現兩次：誘餌是工程師正在找的 AI 開發工具，橋是幣安自己的內部 AI 工具。報告說：在 91APP，AI 是攻擊者手上的工具；在幣安，AI 是防守方自己牆內的一條走廊。",
+  "lint": {
+   "chars": 187,
+   "precise_numbers": [
+    "91",
+    "91"
+   ],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 45.8,
+   "max_sentence_len": 81,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "把這兩案放在一起看，<short pause> 其實很有意思喔。\n那個，應該說是兩種敲門法，敲同一種門。\n在 91APP，敲門的是 AI 框架；\n但幣安呢？敲門的其實是真人。\n對方花了好幾個月。\n先改開發工具，再用假面試一個個換進去。\n那幣安的 AI 到底出現在哪？\n誘餌是 AI 開發工具，\n然後當成橋樑的，就是內部的 AI 工具啦。\n這份報告有一句話，講得真的很傳神。\n在 91APP，AI 是攻擊者手上的工具；\n在幣安，AI 則是防守方牆內的一條走廊。\n<sigh> 聽完你應該也會覺得滿毛的吧。",
+   "lint": {
+    "chars": 206,
+    "precise_numbers": [
+     "91",
+     "91"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.7,
+    "max_sentence_len": 37,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "沒錯，把這兩案放在一起看，\n根本是兩種敲門法、同一種門。`<short pause>`\n在九一 APP，敲門的是 AI 框架；\n幣安這邊呢，敲門的其實是真人，\n對方花了好幾個月，\n就是用竄改的工具跟假面試摸進來。\n那 AI 在幣安扮演什麼角色？`<short pause>`\n它其實出現了兩次喔，\n一開始是釣魚誘餌，\n後面就變成幣安內部的跳板啦。\n這對比真的讓人毛骨悚然。\n報告裡說，在九一 APP，\nAI 是攻擊者手上的工具；\n但在幣安，\nAI 竟然是防守方自己牆內的一條走廊。",
+   "lint": {
+    "chars": 192,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 6,
+    "avg_sentence_len": 31.0,
+    "max_sentence_len": 57,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "對，因為幣安敲門的不是 AI，是人。\n把這兩案放在一起看，很有意思。\n根本是兩種敲門法，敲同一種門啦。\n91APP 那邊，敲門的是 AI 框架，\n官方說在系統裡找到滲透工具的痕跡。\n那幣安這邊呢？敲門的是真人。<short pause>\n對方花了幾個月，\n用假工具跟兩輪面試換進工程師電腦。\n那 AI 到底在哪？\n它其實出現了兩次。\n呃就是，一次是工程師在找的開發工具，變成誘餌；\n然後另一次，是幣安自家的內部 AI 工具。\n這份報告說的一句話，我非常認同。\n在 91APP，AI 是攻擊者手上的工具；\n但在幣安，AI 卻是防守方牆內的一條走廊。",
+   "lint": {
+    "chars": 235,
+    "precise_numbers": [
+     "91",
+     "91"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.6,
+    "max_sentence_len": 41,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "沒錯，把這兩案放在一起看，根本是兩種敲門法、同一種門。`<short pause>`在九一 APP，敲門的是 AI 框架；幣安這邊呢，敲門的其實是真人，對方花了好幾個月，就是用竄改的工具跟假面試摸進來。那 AI 在幣安扮演什麼角色？`<short pause>`它其實出現了兩次喔，一開始是釣魚誘餌，後面就變成幣安內部的跳板啦。這對比真的讓人毛骨悚然。報告裡說，在九一 APP，AI 是攻擊者手上的工具；但在幣安，AI 竟然是防守方自己牆內的一條走廊。",
+   "to": "把兩案放在一起看，是兩種敲門法，同一種門。<short pause>九一 APP 這邊，敲門的是 AI 框架；幣安那邊，敲門的是人，花了好幾個月，用竄改的工具跟假面試，一個一個換到工程師的電腦。那 AI 在幣安扮演什麼角色？<short pause>它出現了兩次：一開始是誘餌，就是工程師正在找的 AI 開發工具；後面變成跳板，就是幣安自己的內部 AI 工具。報告說：在九一 APP，AI 是攻擊者手上的工具；在幣安，AI 是防守方自己牆內的一條走廊。",
+   "reason": "改寫稿自我更正太多（規則 18）、s06 標籤外有反引號、s01 把第十四集說成上一集；整段依原文重寫，保留口語；九一 APP 寫成國字讓 TTS 念對"
+  },
+  {
+   "from": "把兩案放在一起看，是兩種敲門法，同一種門。<short pause>九一 APP 這邊，敲門的是 AI 框架；幣安那邊，敲門的是人，花了好幾個月，用竄改的工具跟假面試，一個一個換到工程師的電腦。那 AI 在幣安扮演什麼角色？<short pause>它出現了兩次：一開始是誘餌，就是工程師正在找的 AI 開發工具；後面變成跳板，就是幣安自己的內部 AI 工具。報告說：在九一 APP，AI 是攻擊者手上的工具；在幣安，AI 是防守方自己牆內的一條走廊。",
+   "to": "把兩案放在一起看，是兩種敲門法，同一種門。<short pause>九一 APP 這邊，敲門的是 AI 框架。幣安那邊，敲門的是人，花了好幾個月，用竄改的工具跟假面試，一個一個換到工程師的電腦。那 AI 在幣安扮演什麼角色？<short pause>它出現了兩次：一開始是誘餌，就是工程師正在找的 AI 開發工具。後面變成跳板，就是幣安自己的內部 AI 工具。這份報告說：在九一 APP，AI 是攻擊者手上的工具。在幣安，AI 是防守方自己牆內的一條走廊。",
+   "reason": "規則 19（句首「報告」加「這份」）；twtone：分號拆成句號、去掉結論提示冒號、書面語「其中」"
+  }
+ ]
+}

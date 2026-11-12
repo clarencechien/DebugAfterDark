@@ -1,0 +1,32 @@
+{
+ "id": "ep23-inner-doors",
+ "number": 23,
+ "type": "full",
+ "guid": "debug-after-dark:ep23",
+ "title": "EP23 門牌寫著內部的門",
+ "description": "幣安今年被盜轉六十多億美元，起點是一場假的求職面試。第十四集講過 91APP 和永豐銀行：門不會認人，它只認有沒有鎖。這份續報往下追一層，把 91APP 和幣安的攻擊路徑照建築的「門窗表」重抄一次：七扇門裡有五扇，門牌寫的是內部。在 91APP，AI 是攻擊者手上的工具；在幣安，AI 是防守方自己牆內的一條走廊。\n\n今晚的 breakpoint：\n1. 最常沒鎖的，是門牌寫著內部的那扇；內部說的是誰在用，不是誰碰得到。\n2. 換鎖，收不回已經被抄走的門牌。\n3. 新加進來的 AI 工具，答不出用誰的身分、碰得到什麼、權杖多久過期、有沒有被監控，它就是下一扇內部的門。\n\n原文：〈門牌寫著內部的門 — 91APP 被駭事件續報〉v0.1（資料截至 2026-11-04） https://imitator.ai-apps.work/r/91app-inner-doors\n永豐銀的部分依〈門沒換，只是敲門的變多了〉v0.2（查核截至 2026-11-09）：已確認為外部駭客。https://imitator.ai-apps.work/r/91app-breach-findings\n報告整理公開資料，不是鑑識報告；幣安案依幣安自述，歸因為 TRM Labs 與 FBI 的說法，北韓否認。\n\n上一集：EP14〈門沒換，只是敲門的變多了〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "91app-inner-doors",
+ "report_version": "v0.1（2026-11-04）",
+ "source_url": "https://imitator.ai-apps.work/r/91app-inner-doors",
+ "status": "draft",
+ "series": "資安事件 2/2（上：EP14）",
+ "related": [
+  "ep14-91app-doors"
+ ],
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "audio": {
+  "file": "ep23-inner-doors.mp3"
+ }
+}

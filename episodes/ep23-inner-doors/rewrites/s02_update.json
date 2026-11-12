@@ -1,0 +1,126 @@
+{
+ "segment": "s02_update",
+ "position": "第 3 段，共 13 段",
+ "avoid": [
+  "我看到這",
+  "很扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2e7fff99c0a7e8b53a75d60f8cf0a8c7fa5bb2cb7d0914571644205ef2acd9d0",
+ "previous_context": "我看到這邊真的覺得很扯。今天這集續報，我們就接著看，最常沒鎖的到底是哪扇門。",
+ "original": {
+  "text": "這份續報先回頭看：上一份留下的空格，六天後填了哪幾格？91APP 開始通知消費者，但前提是品牌要先在後台簽授權書；全家說，如果有消費者求償，會向 91APP 追究；台灣無印良品確認大約十八萬名會員受影響；股價再創歷史新低。可是哪一個漏洞、那個後台工具有沒有對外開放、AI 工具執行了哪一段，還是一格都沒填。報告說：填上的格子全在善後那一側；門是怎麼被打開的那一側，一格都沒填。",
+  "lint": {
+   "chars": 184,
+   "precise_numbers": [
+    "91",
+    "91",
+    "十八萬"
+   ],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 45.0,
+   "max_sentence_len": 80,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這份續報隔了六天，\n回頭看上一份留下來的空格。\n你猜填上了哪幾格？<short pause>\n結果填上的，全部都在善後那一側。\n像是 91APP 開始通知消費者啦，\n全家說後續求償會找他們算帳，\n台灣無印良品也確認，\n有大約十八萬名會員受到影響，\n股價呢，就是直接摔到歷史新低。\n但重點來了，門到底是怎麼被打開的？\n哪一個漏洞、後台有沒有對外開放，\n呃我是說，駭客到底走哪條路進來的？\n這份報告裡說，全部都還是未知數。<sigh>\n最諷刺的是，善後的格子填了一堆，\n最關鍵的那扇門，居然一格都沒填。",
+   "lint": {
+    "chars": 214,
+    "precise_numbers": [
+     "91",
+     "十八萬"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 25.8,
+    "max_sentence_len": 68,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   }
+  },
+  {
+   "text": "先從上一份留下的空格看起好了。\n過了快一個禮拜，到底填了哪幾格？<short pause>\n答案是，全都在善後那一側。\n像是 91APP 開始聯絡消費者，\n然後全家說有求償會找他們算帳，\n台灣無印良品也說，\n大概有十八萬名會員被影響。\n對，股價甚至掉到歷史新低。\n那關鍵的那扇門呢？<short pause>\n呃我是說，技術上的原因啦，\n哪一個漏洞、後台有沒有對外開放，\n報告裡說，技術這一側根本一格都沒填。\n欸，門到底怎麼被開的，大家還是不知道啊。",
+   "lint": {
+    "chars": 185,
+    "precise_numbers": [
+     "91",
+     "十八萬"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 22.1,
+    "max_sentence_len": 51,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "先來看上一份留下來的待辦清單。<short pause>\n過了六天，到底補了哪幾格？\n你猜填上了什麼？\n結果補的全是善後的事啦。\n像台灣無印良品就確認，\n大約十八萬名會員受影響。\n然後全家也說後續會求償，\n還有 91APP 股價又跌到歷史新低。\n那個，就是……呃不是，\n大家最想知道的門呢？\n哪一個漏洞被利用？\n後台工具有沒有對外開放？\n答案是通通未公布喔。\n我心裡真的滿感慨的。<sigh>\n這份報告裡說得很好，\n新填上的格子都在善後那一邊。\n那門當初是怎麼開的？\n對，到現在一格都沒填。",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [
+     "十八萬",
+     "91"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 13.8,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 6,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "先從上一份留下的空格看起好了。過了快一個禮拜，到底填了哪幾格？<short pause>答案是，全都在善後那一側。像是 91APP 開始聯絡消費者，然後全家說有求償會找他們算帳，台灣無印良品也說，大概有十八萬名會員被影響。對，股價甚至掉到歷史新低。那關鍵的那扇門呢？<short pause>呃我是說，技術上的原因啦，哪一個漏洞、後台有沒有對外開放，報告裡說，技術這一側根本一格都沒填。欸，門到底怎麼被開的，大家還是不知道啊。",
+   "to": "先從上一份留下的空格看起。過了快一個禮拜，到底填了哪幾格？<short pause>答案是，全都在善後那一側。九一 APP 開始通知消費者，但前提是品牌要先簽授權書；全家說，有人求償會找九一 APP 追究；台灣無印良品說，大概十八萬名會員受影響；股價也掉到歷史新低。那門到底怎麼被打開的？哪一個漏洞、那個後台有沒有對外開放，報告說，這一側一格都還沒填。",
+   "reason": "改寫稿自我更正太多（規則 18）、s06 標籤外有反引號、s01 把第十四集說成上一集；整段依原文重寫，保留口語；九一 APP 寫成國字讓 TTS 念對"
+  },
+  {
+   "from": "先從上一份留下的空格看起。過了快一個禮拜，到底填了哪幾格？<short pause>答案是，全都在善後那一側。九一 APP 開始通知消費者，但前提是品牌要先簽授權書；全家說，有人求償會找九一 APP 追究；台灣無印良品說，大概十八萬名會員受影響；股價也掉到歷史新低。那門到底怎麼被打開的？哪一個漏洞、那個後台有沒有對外開放，報告說，這一側一格都還沒填。",
+   "to": "先從上一份留下的空格看起。過了快一個禮拜，到底填了哪幾格？<short pause>答案是，全都在善後那一側。九一 APP 開始通知消費者，但前提是品牌要先簽授權書。全家說，有人求償會找九一 APP 追究。台灣無印良品說，大概十八萬名會員受影響。股價也掉到歷史新低。那門到底怎麼被打開的？哪一個漏洞、那個後台有沒有對外開放，這份報告說，這一側一格都還沒填。",
+   "reason": "規則 19（句首「報告」加「這份」）；twtone：分號拆成句號、去掉結論提示冒號、書面語「其中」"
+  }
+ ]
+}

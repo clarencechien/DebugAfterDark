@@ -1,0 +1,126 @@
+{
+ "segment": "s05_binance2",
+ "position": "第 6 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "很扯",
+  "我是說",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b6625f8737acaeed354e4e91c1b4f4def9f6aac7788e6569400e2a409548dd9c",
+ "previous_context": "對，報告裡說這都是北韓駭客的老招。幣安說他們今年就擋了大約五十七起耶。",
+ "original": {
+  "text": "接下來是最關鍵的一扇門。十月二十號，幣安自己的內部 AI 工具，被用來從那台受害的電腦，控制另外兩位錢包工程師的電腦。其中一台上面，有部署容器的權杖。攻擊者拿它部署容器，碰到內部的錢包簽章服務，在正常的提領流程之外，把資產轉出去。這次是幣安內部的大額轉帳警示先響，暫停提領，大約四小時後封鎖。區塊鏈分析公司 TRM Labs 和美國 FBI 都指向北韓，北韓否認。報告也特別說，幣安這一案，沒有提到 91APP 那套 AI 攻擊框架。",
+  "lint": {
+   "chars": 206,
+   "precise_numbers": [
+    "二十",
+    "91"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 28.4,
+   "max_sentence_len": 44,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "其中"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "然後最關鍵的門來了。<short pause>\n駭客竟然拿幣安內部的 AI 工具當跳板，\n直接控制另外兩位錢包工程師的電腦。\n你可能會想，控制電腦要幹嘛？\n重點是其中一台有部署容器的 token，\n就是通行憑證啦。\n他們就靠這個碰到內部的錢包簽章服務，\n完全繞過正常的提領流程把錢轉走。<sigh>\n還好大額轉帳的警報有響，\n幣安立刻暫停提領，\n大概四個小時後封鎖。\n後來 TRM Labs 和 FBI 都指向北韓，\n北韓當然否認。\n而且這起事件，\n報告裡完全沒提到那個攻擊框架喔。",
+   "lint": {
+    "chars": 200,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 24.0,
+    "max_sentence_len": 34,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.5,
+    "written_words": [
+     "其中"
+    ],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "但最關鍵的門在後面。\n到了十月二十號，駭客用了內部的 AI 工具。\n然後從那台受害電腦，控制另外兩位工程師。\n這根本是拿公司的工具打自己人嘛。<sigh>\n換個說法，駭客其實是拿到了一張通行證。\n就是工程師電腦裡，部署容器的權杖啦。\n他們繞過提領流程，把錢包裡的錢轉出去。\n好險大額轉帳警示響了，大概四個小時後封鎖。\n那到底是誰幹的？\n對，TRM Labs 跟美國 FBI 都指向北韓。\n不過北韓當然否認啦。\n這份報告說，這案子跟 AI 攻擊框架沒關係。",
+   "lint": {
+    "chars": 202,
+    "precise_numbers": [
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "然後，最關鍵的一扇門來了。\n到了十月下旬，\n駭客動到了幣安內部的 AI 工具。\n他們拿來幹嘛？\n直接拿去控制另外兩名錢包工程師的電腦。\n這招真的會讓人背脊發涼欸。\n<short pause>\n其中一台電腦上有部署權杖，\n呃就是部署 container 的通行證啦。\n駭客就用它摸到錢包簽章服務，\n繞過正常流程把資產轉出去。\n還好內部的大額轉帳警示響了，\n幣安緊急暫停提領，\n大概四個小時後才完全封鎖。\nTRM Labs 和 FBI 都指向北韓，\n北韓當然否認嘛。\n對了，報告裡特別說，\n幣安這案子，\n完全沒提到那個 AI 攻擊框架喔。",
+   "lint": {
+    "chars": 226,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 21.6,
+    "max_sentence_len": 35,
+    "sentences_over_20": 6,
+    "particles_per_100": 2.2,
+    "written_words": [
+     "其中"
+    ],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "然後，最關鍵的一扇門來了。到了十月下旬，駭客動到了幣安內部的 AI 工具。他們拿來幹嘛？直接拿去控制另外兩名錢包工程師的電腦。這招真的會讓人背脊發涼欸。<short pause>其中一台電腦上有部署權杖，呃就是部署 container 的通行證啦。駭客就用它摸到錢包簽章服務，繞過正常流程把資產轉出去。還好內部的大額轉帳警示響了，幣安緊急暫停提領，大概四個小時後才完全封鎖。TRM Labs 和 FBI 都指向北韓，北韓當然否認嘛。對了，報告裡特別說，幣安這案子，完全沒提到那個 AI 攻擊框架喔。",
+   "to": "然後，最關鍵的一扇門來了。十月二十號，駭客動到了幣安自己的內部 AI 工具，拿它從那台受害的電腦，去控制另外兩位錢包工程師的電腦。這真的會讓人背脊發涼。<short pause>一台電腦上有部署容器的權杖，駭客就用它碰到內部的錢包簽章服務，在正常的提領流程之外，把資產轉出去。這次是幣安內部的大額轉帳警示先響，暫停提領，大約四個小時後封鎖。TRM Labs 和 FBI 都指向北韓，北韓否認。報告也特別說，幣安這案，沒有提到九一 APP 那套 AI 攻擊框架。",
+   "reason": "改寫稿自我更正太多（規則 18）、s06 標籤外有反引號、s01 把第十四集說成上一集；整段依原文重寫，保留口語；九一 APP 寫成國字讓 TTS 念對"
+  },
+  {
+   "from": "然後，最關鍵的一扇門來了。十月二十號，駭客動到了幣安自己的內部 AI 工具，拿它從那台受害的電腦，去控制另外兩位錢包工程師的電腦。這真的會讓人背脊發涼。<short pause>一台電腦上有部署容器的權杖，駭客就用它碰到內部的錢包簽章服務，在正常的提領流程之外，把資產轉出去。這次是幣安內部的大額轉帳警示先響，暫停提領，大約四個小時後封鎖。TRM Labs 和 FBI 都指向北韓，北韓否認。報告也特別說，幣安這案，沒有提到九一 APP 那套 AI 攻擊框架。",
+   "to": "然後，最關鍵的一扇門來了。十月二十號，駭客動到了幣安自己的內部 AI 工具，拿它從那台受害的電腦，去控制另外兩位錢包工程師的電腦。這真的會讓人背脊發涼。<short pause>一台電腦上有部署容器的權杖，駭客就用它碰到內部的錢包簽章服務，在正常的提領流程之外，把資產轉出去。這次是幣安內部的大額轉帳警示先響，暫停提領，大約四個小時後封鎖。TRM Labs 和 FBI 都指向北韓，北韓否認。這份報告也特別說，幣安這案，沒有提到九一 APP 那套 AI 攻擊框架。",
+   "reason": "規則 19（句首「報告」加「這份」）；twtone：分號拆成句號、去掉結論提示冒號、書面語「其中」"
+  }
+ ]
+}

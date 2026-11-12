@@ -1,0 +1,132 @@
+{
+ "segment": "s01_recap",
+ "position": "第 2 段，共 13 段",
+ "avoid": [
+  "傻眼"
+ ],
+ "recap": "EP14〈門沒換，只是敲門的變多了〉：91APP 訂單資料庫被讀走、永豐銀行帳戶被盜轉，一家說是 AI 攻擊、一家說不是；把 AI 拿掉，每一環都還是會發生。門不會認人，它只認有沒有鎖。這集是續報：最常沒鎖的是哪一扇門。",
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "5d985c1e2b3eb1e135490154be9d29674d48f243523343d524b789c76617d251",
+ "previous_context": "呃就是，大家以為自己人才看得到的門。對，最常沒鎖的，反而就是門牌寫著內部的那扇啦。",
+ "original": {
+  "text": "先幫大家回顧第十四集。91APP 的訂單資料庫被讀走，最多波及四百多萬人，入口是一個沒有更新的內部後台工具，接著在放程式碼的平台上找到資料庫的金鑰，再經過一台能直連正式資料庫的主機。永豐銀行四百多個帳戶，一個上午被轉走四千多萬元，駭客用身分證字號試出有效帳號，利用供應商系統導入時的瑕疵，跳過驗證。那集的結論是：把 AI 兩個字拿掉，每一環都還是會發生。",
+  "lint": {
+   "chars": 174,
+   "precise_numbers": [
+    "十四",
+    "91",
+    "四百",
+    "萬",
+    "四百",
+    "四千",
+    "萬"
+   ],
+   "enumerations": [
+    "第十四"
+   ],
+   "sentences": 4,
+   "avg_sentence_len": 42.5,
+   "max_sentence_len": 78,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上一集我們聊過這個痛點。<short pause> 就是 91APP 的訂單資料庫被看光，還有永豐銀行的帳戶被盜轉。一家推給 AI，另一家說只是單一駭客。但你猜怎麼著？把 AI 拿掉再看一次，每一環根本都還是會發生啊。<short pause> 91APP 是內部工具沒更新，在 GitLab 被翻到金鑰；永豐則是系統導入有瑕疵，驗證直接被跳過。結果四百多萬人的資料被看光，四千多萬就這樣被轉走。門哪會認人嘛，它只看你有沒有鎖好而已。",
+   "lint": {
+    "chars": 181,
+    "precise_numbers": [
+     "91",
+     "91",
+     "四百",
+     "萬",
+     "四千",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 21.6,
+    "max_sentence_len": 46,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "像上一集聊到的兩起大案子。<short pause>\n九一 APP 訂單被搬走，波及四百多萬人，\n永豐銀行一個上午被轉走四千多萬。\n一家推給 AI 攻擊，另一家說根本不是 AI。\n但你看那個過程，\n入口是沒更新的內部工具，\n金鑰直接放在內部平台上，\n還有系統導入時留下來的瑕疵。\n你猜怎麼著？<short pause>\n就算把 AI 拿掉，每一環照樣會發生嘛。\n門不會認人，它只認有沒有鎖好啦。\n這集我們接著看，最常沒鎖的到底是哪扇門。",
+   "lint": {
+    "chars": 174,
+    "precise_numbers": [
+     "四百",
+     "萬",
+     "四千",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 20.8,
+    "max_sentence_len": 45,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "上一集我們聊到 91APP 跟永豐銀行。一家說是 AI 攻擊，另一家說不是。<short pause>但把 AI 拿掉，每一環都還是會發生。門不會認人，它只看你有沒有鎖好嘛。你猜駭客怎麼進去的？就是那個沒更新的後台工具啦，還有直接放在內部平台上的金鑰。永豐則是系統有瑕疵，直接被跳過驗證，轉走四千多萬。我看到這邊真的覺得很扯。<laugh>今天這集續報，我們就接著看，最常沒鎖的到底是哪扇門。",
+   "lint": {
+    "chars": 170,
+    "precise_numbers": [
+     "91",
+     "四千",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "上一集我們聊到 91APP 跟永豐銀行。一家說是 AI 攻擊，另一家說不是。<short pause>但把 AI 拿掉，每一環都還是會發生。門不會認人，它只看你有沒有鎖好嘛。你猜駭客怎麼進去的？就是那個沒更新的後台工具啦，還有直接放在內部平台上的金鑰。永豐則是系統有瑕疵，直接被跳過驗證，轉走四千多萬。我看到這邊真的覺得很扯。<laugh>今天這集續報，我們就接著看，最常沒鎖的到底是哪扇門。",
+   "to": "先幫大家回顧一下第十四集。九一 APP 的訂單資料庫被讀走，最多波及四百多萬人。駭客怎麼進去的？一個沒更新的內部後台工具，加上直接放在程式碼平台上的資料庫金鑰。永豐銀行則是被用身分證字號試出帳號，再利用供應商系統的瑕疵跳過驗證，一個上午轉走四千多萬。<short pause>那集的結論是，把 AI 兩個字拿掉，每一環都還是會發生。今天這集續報，就接著看最常沒鎖的到底是哪一扇門。",
+   "reason": "改寫稿自我更正太多（規則 18）、s06 標籤外有反引號、s01 把第十四集說成上一集；整段依原文重寫，保留口語；九一 APP 寫成國字讓 TTS 念對"
+  }
+ ]
+}

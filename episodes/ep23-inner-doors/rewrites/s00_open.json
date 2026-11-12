@@ -1,0 +1,120 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 13 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2e7945596c7471636e7151882ef1e89b3880851a5b6a741e58e170b7928302e7",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "全球最大的加密貨幣交易所幣安，今年被盜轉了六十多億美元。起點不是什麼高深的漏洞，是一場假的求職面試。第十四集我們講過 91APP 和永豐銀行，結論是：門不會認人，它只認有沒有鎖。這份續報往下追了一層，把同一個月的 91APP 和幣安放在一起看，發現攻擊者最後走進核心系統時經過的門，大多被歸類成同一種：內部。報告的標題是：最常沒鎖的，是門牌寫著內部的那扇。",
+  "lint": {
+   "chars": 174,
+   "precise_numbers": [
+    "六十",
+    "十四",
+    "91",
+    "91"
+   ],
+   "enumerations": [
+    "第十四"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 33.8,
+   "max_sentence_len": 62,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "幣安被盜轉了六十多億美元。\n你猜起點是什麼？\n不是什麼神級漏洞喔，\n就只是一場線上的假面試。<short pause>\n我看到這邊整個傻眼。\n那攻擊者到底怎麼摸進核心系統的？\n這份報告把 91APP 跟幣安放在一起看，\n發現他們最後走進去的門，\n其實都被歸類成「內部」。<short pause>\n呃就是，大家以為自己人才看得到的門。\n對，最常沒鎖的，\n反而就是門牌寫著內部的那扇啦。",
+   "lint": {
+    "chars": 153,
+    "precise_numbers": [
+     "六十",
+     "91"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 18.1,
+    "max_sentence_len": 42,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  },
+  {
+   "text": "幣安前陣子被盜轉了六十多億美元。你猜駭客是怎麼進去的？<short pause>不是什麼超神的漏洞喔，居然只是一場假的求職面試。我看到調查結果整個傻眼。同一個月還有 91APP 的事件。這份報告把這兩起案件放在一起看，發現一件很毛的事。<short pause>攻擊者最後溜進核心系統，經過的那些門，全都被歸類成……呃就是所謂的「內部」。報告裡說得超貼切，最常沒鎖的，往往就是門牌寫著內部的那扇啦。",
+   "lint": {
+    "chars": 171,
+    "precise_numbers": [
+     "六十",
+     "91"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 20.4,
+    "max_sentence_len": 37,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "嘿，還醒著嗎？\n全球最大的加密貨幣交易所幣安，\n最近被盜轉了六十多億美元。\n你猜駭客是怎麼進去的？<short pause>\n不是什麼神級漏洞，\n就只是一場假的求職面試。\n我看到這段真的覺得超扯。\n大家常以為駭客都是走外網，\n呃應該說，是從外面硬打進來。\n但這份報告把幣安跟 91APP 放在一起看，\n發現攻擊者最後走進核心系統的門，\n其實都被歸類在內部啦。\n對，最常沒鎖的，\n往往是門牌寫著內部的那扇。",
+   "lint": {
+    "chars": 174,
+    "precise_numbers": [
+     "六十",
+     "91"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 20.8,
+    "max_sentence_len": 46,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   }
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "幣安被盜轉了六十多億美元。你猜起點是什麼？不是什麼神級漏洞喔，就只是一場線上的假面試。<short pause>我看到這邊整個傻眼。那攻擊者到底怎麼摸進核心系統的？這份報告把 91APP 跟幣安放在一起看，發現他們最後走進去的門，其實都被歸類成「內部」。<short pause>呃就是，大家以為自己人才看得到的門。對，最常沒鎖的，反而就是門牌寫著內部的那扇啦。",
+   "to": "幣安今年被盜轉了六十多億美元。你猜起點是什麼？不是什麼神級漏洞喔，就只是一場假的求職面試。<short pause>我看到這邊整個傻眼。第十四集我們聊過九一 APP 跟永豐銀行，結論是：門不會認人，它只認你有沒有鎖。這份續報再往下追一層，把九一 APP 跟幣安放在一起看，發現攻擊者最後走進去的門，大多被歸類成同一種：內部。<short pause>對，最常沒鎖的，反而就是門牌寫著內部的那扇啦。",
+   "reason": "改寫稿自我更正太多（規則 18）、s06 標籤外有反引號、s01 把第十四集說成上一集；整段依原文重寫，保留口語；九一 APP 寫成國字讓 TTS 念對"
+  }
+ ]
+}

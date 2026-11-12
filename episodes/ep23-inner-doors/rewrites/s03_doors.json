@@ -1,0 +1,117 @@
+{
+ "segment": "s03_doors",
+ "position": "第 4 段，共 13 段",
+ "avoid": [
+  "我看到這",
+  "很扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d00ce63fd2e9aadddd6d665875edfd21f8101e92d9ecc6f86c0b2d80bacbe6bc",
+ "previous_context": "呃我是說，技術上的原因啦，哪一個漏洞、後台有沒有對外開放，報告裡說，技術這一側根本一格都沒填。欸，門到底怎麼被開的，大家還是不知道啊。",
+ "original": {
+  "text": "接著作者借了一個建築的工具：門窗表。施工圖裡，每一扇門都有一個編號，寫它在哪、通到哪、用什麼鎖。作者把 91APP 和幣安公開的攻擊路徑，照這個格式重抄一次，列出七扇門。91APP 有三扇：一個叫內部效率工具的後台、內部的程式碼平台，和內部的建置主機。幣安有四扇，等一下講。抄完之後，門牌上寫的，跟門後實際通到的，差距就攤開了。七扇門裡，有五扇的門牌寫的是內部，或只給自己人用。",
+  "lint": {
+   "chars": 186,
+   "precise_numbers": [
+    "91",
+    "91"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 25.6,
+   "max_sentence_len": 39,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以作者借了一個建築工具，叫門窗表。\n你知道那是幹嘛的嗎？\n就是每扇門給個編號，\n寫它在哪裡、通到哪，還有用什麼鎖啦。\n然後，作者把公開的攻擊路徑照著重抄，\n整理下來，剛好列出七扇門。<short pause>\n91APP 佔了幾扇，\n像內部效率工具、還有放金鑰的程式碼平台。\n呃我是說，還有連進資料庫的 CI 主機。\n至於幣安那幾扇，我們等一下再看。\n重點來了，門牌跟門後通到的，差距超級大。\n七扇門裡面，大半的門牌都寫著內部專用，\n結果門打開，根本暢行無阻耶。<laugh>",
+   "lint": {
+    "chars": 204,
+    "precise_numbers": [
+     "91"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 21.7,
+    "max_sentence_len": 32,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   }
+  },
+  {
+   "text": "所以，這份報告的作者做了一件事。\n他借用了建築業的門窗表。\n呃，就是施工圖裡標記每扇門的清單啦。\n把兩家公開的攻擊路徑照著抄一次，\n算一算總共排出了七扇門。<short pause>\n像是 91APP 的內部工具跟 GitLab，\n還有那個 CI 主機。\n幣安的那幾扇門，我們等一下再聊。\n重點來了，你猜這些門平常是給誰走的？\n最諷刺的是，大半門牌上都寫著自己人用耶。\n門牌寫一套，門後通到哪又是另一回事了。",
+   "lint": {
+    "chars": 176,
+    "precise_numbers": [
+     "91"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 18.6,
+    "max_sentence_len": 28,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   }
+  },
+  {
+   "text": "不過這份報告用了一個超妙的比喻，就是建築圖裡面的門窗表。<short pause>你知道那是幹嘛的嗎？它會記錄每扇門在哪裡、通去哪、用什麼鎖。作者就把兩家公司被攻擊的路徑，呃我是說，把那些破口直接列成七扇門啦。像是 91APP 就佔了三扇，有內部工具、程式碼平台，還有建置主機。幣安那邊有四扇，我們等一下講。<short pause>排出來之後，最妙的是什麼，你猜猜看？門牌跟門後通到的地方，差距完全攤開了。那七扇門裡面，竟然有五扇，門牌上明明寫著內部或自己人用耶。",
+   "lint": {
+    "chars": 205,
+    "precise_numbers": [
+     "91"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 21.8,
+    "max_sentence_len": 33,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   }
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "所以，這份報告的作者做了一件事。他借用了建築業的門窗表。呃，就是施工圖裡標記每扇門的清單啦。把兩家公開的攻擊路徑照著抄一次，算一算總共排出了七扇門。<short pause>像是 91APP 的內部工具跟 GitLab，還有那個 CI 主機。幣安的那幾扇門，我們等一下再聊。重點來了，你猜這些門平常是給誰走的？最諷刺的是，大半門牌上都寫著自己人用耶。門牌寫一套，門後通到哪又是另一回事了。",
+   "to": "所以，這份報告的作者借了一個建築業的工具，叫門窗表。施工圖裡，每一扇門都有編號，寫它在哪、通到哪、用什麼鎖。他把兩家公開的攻擊路徑照著抄一次，總共排出七扇門。<short pause>九一 APP 有三扇：叫做內部效率工具的後台、內部的程式碼平台，還有內部的建置主機。幣安那幾扇，等一下再聊。重點來了，七扇門裡，有五扇的門牌寫的是內部，或只給自己人用。門牌寫一套，門後通到哪，又是另一回事了。",
+   "reason": "改寫稿自我更正太多（規則 18）、s06 標籤外有反引號、s01 把第十四集說成上一集；整段依原文重寫，保留口語；九一 APP 寫成國字讓 TTS 念對"
+  }
+ ]
+}
