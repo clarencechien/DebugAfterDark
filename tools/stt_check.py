@@ -41,7 +41,9 @@ def int_zh(n):
 def zh_numbers(s):
     """Breeze writes 1,500 萬, 3.8％, 2500 萬; the script says 一千五百萬, 百分之三點八, 兩千五百萬.
     Read digits the way they were spoken so number formatting doesn't count as an error (EP24: 5.9% -> see qa)."""
+    s = re.sub(r"\d{1,2},\d{3}(?!\d)", lambda m: int_zh(int(m.group(0).replace(",", ""))), s)   # 42,000
     s = re.sub(r"(?<=\d),(?=\d{3})", "", s)
+    s = re.sub(r"(?<!\d)\d{5}(?!\d)", lambda m: int_zh(int(m.group(0))), s)                  # 18000
     s = re.sub(r"(\d+(?:\.\d+)?)\s*[%％]", r"百分之\1", s)
     s = re.sub(r"(\d+)\.(\d+)", lambda m: int_zh(int(m.group(1))) + "點" + "".join(DIGITS[int(c)] for c in m.group(2)), s)
     s = re.sub(r"\d{4,5}(?=\s*[萬億塊元倍次])", lambda m: int_zh(int(m.group(0))), s)

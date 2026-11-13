@@ -1,0 +1,142 @@
+{
+ "segment": "s10_recalc",
+ "position": "第 11 段，共 15 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "151bf3cd1a90f8ec00dbdaa1fa942cb13e217e5910c3fca2953a5259305a6453",
+ "previous_context": "所以如果會，股票比例可以放低一點嘛。把一個普通的計畫老老實實做完，絕對勝過半路放棄的完美計畫啦。",
+ "original": {
+  "text": "每年領多少？缺口提領率在百分之二點五以下、想省事的人，用固定照領。其他人用每年重算，再加上下限和上限。公式值是年初資產乘以一個因子，因子用活到一百歲來攤，六十五歲是百分之四點六五。上限是目標生活費的一點二五倍減掉地板。這對夫妻的公式值，每月大約三萬八千八，超過上限三萬三，所以今年每月領三萬三，生活費七萬五。假設這一年股市跌兩成，年底資產約八百零七萬，隔年重算是每月三萬一千八，生活費七萬三千八。股市跌兩成的隔年，生活費只從七萬五降到七萬四。上限把好年頭多出來的錢留在帳上，壞年頭就有東西墊著。",
+  "lint": {
+   "chars": 247,
+   "precise_numbers": [
+    "百分之二點五",
+    "一百",
+    "六十五",
+    "百分之四點六五",
+    "一點二五",
+    "三萬八千八",
+    "三萬三",
+    "三萬三",
+    "七萬五",
+    "八百零七萬",
+    "三萬一千八",
+    "七萬三千八",
+    "七萬五",
+    "七萬四"
+   ],
+   "enumerations": [],
+   "sentences": 9,
+   "avg_sentence_len": 26.4,
+   "max_sentence_len": 44,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "比例定好之後，每年到底要領多少出來花？\n如果你的資金缺口很小，固定領當然最省事。\n但其實更多人適合每年重新算一次。\n然後再幫領出來的錢，設一個天花板跟地板。\n天花板就是目標生活費的一點二五倍。<short pause>\n扣掉基礎年金，多的錢就先留在帳戶裡。\n你可能會想，幹嘛有錢不花？\n因為好年頭把錢留著，壞年頭才有東西墊著嘛。\n像那對夫妻每個月原本花七萬多。\n就算遇到股市大跌兩成，資產縮水很多。\n隔年重新算，生活費居然只少一千塊左右。<laugh>\n這種避震效果真的超厲害。\n順風時把多的錢留在帳上，\n逆風來的時候，你就完全不用慌啦。",
+   "lint": {
+    "chars": 236,
+    "precise_numbers": [
+     "一點二五",
+     "七萬",
+     "一千"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 27,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "計畫排好之後，每年到底要領多少？\n缺口很小又想省事的人，固定照領就好啦。<short pause>\n其他人其實可以用每年重算的方法。\n也就是年初的資產，乘上一個年齡因子。\n六十五歲剛好是百分之四點六五。\n然後記得給它設個上限跟下限喔。\n為什麼要特別設上限？\n好年頭少領一點，帳上才留得住錢。\n等壞年頭來了，就有東西替你墊著嘛。<short pause>\n像前面算過的那對夫妻，\n就算碰上股市跌了整整兩成，\n隔年每個月居然只少花一千多塊。<laugh>\n這種穩定度，真的會讓人超安心耶。\n你應該也很想要這種底氣吧？",
+   "lint": {
+    "chars": 210,
+    "precise_numbers": [
+     "六十五",
+     "百分之四點六五",
+     "一千"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 38,
+    "sentences_over_20": 1,
+    "particles_per_100": 2.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 3
+   },
+   "round": 0
+  },
+  {
+   "text": "接下來就要看，每年到底要領多少錢？\n如果想省事，每年固定照領最輕鬆啦。<short pause>\n要是想多花一點，可以每年一月重算一次。\n方法是用年初的資產，乘以一個比例。\n以六十五歲來說，是百分之四點六五。\n算出來要是太高，就不能全部領走喔。\n最多只能領到目標生活費再多兩成半。\n像剛才那對夫妻，那年月領剛好撞到上限。\n更扯的是，就算那年股市跌了兩成，\n隔年他們的生活費，也只少了一千多塊。\n這機制真的超聰明耶。<laugh>\n你知道為什麼要設上限嗎？\n因為在行情好的時候，把多出來的錢留著，\n遇到壞年頭，帳上自然就有東西墊著啦。",
+   "lint": {
+    "chars": 233,
+    "precise_numbers": [
+     "六十五",
+     "百分之四點六五",
+     "一千"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.4,
+    "max_sentence_len": 36,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "計畫排好之後，每年到底要領多少？缺口很小又想省事的人，固定照領就好啦。<short pause>其他人其實可以用每年重算的方法。也就是年初的資產，乘上一個年齡因子。六十五歲剛好是百分之四點六五。然後記得給它設個上限跟下限喔。為什麼要特別設上限？好年頭少領一點，帳上才留得住錢。等壞年頭來了，就有東西替你墊著嘛。<short pause>像前面算過的那對夫妻，就算碰上股市跌了整整兩成，隔年每個月居然只少花一千多塊。<laugh>這種穩定度，真的會讓人超安心耶。你應該也很想要這種底氣吧？",
+   "to": "計畫排好之後，每年到底要領多少？缺口提領率在百分之二點五以下、又想省事的人，固定照領就好啦。<short pause>其他人可以用每年重算。年初的資產，乘上一個年齡因子，因子是用活到一百歲來攤的，六十五歲是百分之四點六五。然後記得設上限跟下限。上限是目標生活費的一點二五倍，再減掉地板。為什麼要設上限？好年頭少領一點，帳上才留得住錢，等壞年頭來了，就有東西替你墊著。<short pause>像前面那對夫妻，今年每個月生活費七萬五。就算碰上股市跌了兩成，隔年也只降到七萬四左右。",
+   "reason": "補回上限算法與活到一百歲；例子改說生活費七萬五降到七萬四；刪個人反應"
+  }
+ ]
+}

@@ -1,0 +1,217 @@
+{
+ "limits": {
+  "neighbour_sim": 0.93,
+  "pitch_hz": 6.0,
+  "centroid_hz": 350.0,
+  "lufs_db": 1.0,
+  "seam_hz": 400.0,
+  "pace": 0.1
+ },
+ "segments": [
+  {
+   "id": "s00_open",
+   "start": "0:03",
+   "pitch_hz": 93.0,
+   "centroid_hz": 2345,
+   "lufs": -20.0,
+   "sim_prev": null,
+   "sim_next": 0.969,
+   "sim_episode": 0.986,
+   "seam_hz": null,
+   "chars_per_s": 4.02,
+   "issues": []
+  },
+  {
+   "id": "s01_recap",
+   "start": "0:48",
+   "pitch_hz": 90.2,
+   "centroid_hz": 2440,
+   "lufs": -20.0,
+   "sim_prev": 0.969,
+   "sim_next": 0.959,
+   "sim_episode": 0.985,
+   "seam_hz": -371,
+   "chars_per_s": 3.82,
+   "issues": []
+  },
+  {
+   "id": "s02_gap",
+   "start": "1:35",
+   "pitch_hz": 93.0,
+   "centroid_hz": 2585,
+   "lufs": -20.0,
+   "sim_prev": 0.959,
+   "sim_next": 0.96,
+   "sim_episode": 0.981,
+   "seam_hz": 36,
+   "chars_per_s": 3.99,
+   "issues": []
+  },
+  {
+   "id": "s03_floor",
+   "start": "2:20",
+   "pitch_hz": 91.6,
+   "centroid_hz": 2580,
+   "lufs": -20.0,
+   "sim_prev": 0.96,
+   "sim_next": 0.963,
+   "sim_episode": 0.985,
+   "seam_hz": -604,
+   "chars_per_s": 4.0,
+   "issues": [
+    "接縫亮度跳 -604 Hz"
+   ]
+  },
+  {
+   "id": "s04_widow",
+   "start": "3:16",
+   "pitch_hz": 96.8,
+   "centroid_hz": 2429,
+   "lufs": -20.0,
+   "sim_prev": 0.963,
+   "sim_next": 0.963,
+   "sim_episode": 0.986,
+   "seam_hz": -305,
+   "chars_per_s": 3.61,
+   "issues": []
+  },
+  {
+   "id": "s05_methods",
+   "start": "4:15",
+   "pitch_hz": 95.6,
+   "centroid_hz": 2247,
+   "lufs": -20.0,
+   "sim_prev": 0.963,
+   "sim_next": 0.947,
+   "sim_episode": 0.976,
+   "seam_hz": 566,
+   "chars_per_s": 3.67,
+   "issues": [
+    "接縫亮度跳 +566 Hz"
+   ]
+  },
+  {
+   "id": "s06_unspent",
+   "start": "5:09",
+   "pitch_hz": 89.6,
+   "centroid_hz": 2266,
+   "lufs": -20.0,
+   "sim_prev": 0.947,
+   "sim_next": 0.963,
+   "sim_episode": 0.979,
+   "seam_hz": -44,
+   "chars_per_s": 4.28,
+   "issues": []
+  },
+  {
+   "id": "s07_tolerance",
+   "start": "5:59",
+   "pitch_hz": 95.2,
+   "centroid_hz": 2483,
+   "lufs": -20.0,
+   "sim_prev": 0.963,
+   "sim_next": 0.962,
+   "sim_episode": 0.982,
+   "seam_hz": -545,
+   "chars_per_s": 4.05,
+   "issues": [
+    "接縫亮度跳 -545 Hz"
+   ]
+  },
+  {
+   "id": "s08_target",
+   "start": "6:47",
+   "pitch_hz": 90.2,
+   "centroid_hz": 2178,
+   "lufs": -20.0,
+   "sim_prev": 0.962,
+   "sim_next": 0.966,
+   "sim_episode": 0.981,
+   "seam_hz": 946,
+   "chars_per_s": 3.97,
+   "issues": [
+    "接縫亮度跳 +946 Hz"
+   ]
+  },
+  {
+   "id": "s09_where",
+   "start": "7:35",
+   "pitch_hz": 95.6,
+   "centroid_hz": 2461,
+   "lufs": -20.0,
+   "sim_prev": 0.966,
+   "sim_next": 0.959,
+   "sim_episode": 0.987,
+   "seam_hz": -582,
+   "chars_per_s": 4.03,
+   "issues": [
+    "接縫亮度跳 -582 Hz"
+   ]
+  },
+  {
+   "id": "s10_recalc",
+   "start": "8:32",
+   "pitch_hz": 92.7,
+   "centroid_hz": 2413,
+   "lufs": -20.0,
+   "sim_prev": 0.959,
+   "sim_next": 0.97,
+   "sim_episode": 0.979,
+   "seam_hz": -215,
+   "chars_per_s": 3.9,
+   "issues": []
+  },
+  {
+   "id": "s11_january",
+   "start": "9:21",
+   "pitch_hz": 94.5,
+   "centroid_hz": 2504,
+   "lufs": -20.0,
+   "sim_prev": 0.97,
+   "sim_next": 0.964,
+   "sim_episode": 0.989,
+   "seam_hz": 0,
+   "chars_per_s": 3.98,
+   "issues": []
+  },
+  {
+   "id": "s12_stress",
+   "start": "10:10",
+   "pitch_hz": 95.2,
+   "centroid_hz": 2535,
+   "lufs": -20.0,
+   "sim_prev": 0.964,
+   "sim_next": 0.952,
+   "sim_episode": 0.976,
+   "seam_hz": 55,
+   "chars_per_s": 4.12,
+   "issues": []
+  },
+  {
+   "id": "s13_hands",
+   "start": "11:04",
+   "pitch_hz": 88.9,
+   "centroid_hz": 2468,
+   "lufs": -20.0,
+   "sim_prev": 0.952,
+   "sim_next": 0.957,
+   "sim_episode": 0.982,
+   "seam_hz": 119,
+   "chars_per_s": 3.83,
+   "issues": []
+  },
+  {
+   "id": "s14_outro",
+   "start": "11:47",
+   "pitch_hz": 91.3,
+   "centroid_hz": 2241,
+   "lufs": -20.0,
+   "sim_prev": 0.957,
+   "sim_next": null,
+   "sim_episode": 0.984,
+   "seam_hz": 188,
+   "chars_per_s": 3.71,
+   "issues": []
+  }
+ ]
+}

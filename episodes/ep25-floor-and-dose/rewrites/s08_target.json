@@ -1,0 +1,163 @@
+{
+ "segment": "s08_target",
+ "position": "第 9 段，共 15 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4c48a89b9ab9179f5d2cdd5fa9617c0b1dd82f00e071388a59958850bf2e35fb",
+ "previous_context": "其實是可以啦，但每個月只能過得很省。畢竟破產率低跟日子好過，完全是兩回事嘛。",
+ "original": {
+  "text": "接下來是實戰篇，把觀念換成自己的數字。算式只有兩行：每月缺口等於每月總支出減掉地板；目標資產等於每月缺口乘以十二，除以提領率。提領率用百分之三點五當規劃線，百分之四是上限。例如每月缺口兩萬，用百分之三點五算，大約要六百八十六萬。已經知道自己有多少錢的人，就反過來算缺口提領率：百分之二點五以下很寬鬆；三點七以下可以；超過四點五，計畫要重做。這筆錢從哪裡來？月薪六萬的夫妻，兩個人都自提百分之六、做滿三十五年，勞退專戶合計就在一千萬上下。",
+  "lint": {
+   "chars": 218,
+   "precise_numbers": [
+    "十二",
+    "百分之三點五",
+    "百分之四",
+    "兩萬",
+    "百分之三點五",
+    "六百八十六萬",
+    "百分之二點五",
+    "三點七",
+    "四點五",
+    "六萬",
+    "百分之六",
+    "三十五",
+    "一千萬"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 30.1,
+   "max_sentence_len": 55,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以日子要怎麼過得踏實？\n其實只要算兩個算式就好。\n先用每個月總花費，減掉剛剛算的地板。\n算出來的數字，就是每個月的缺口啦。\n然後把缺口乘上十二個月，\n再除以提領率，就是該存的目標總額。\n提領率大概要抓多少才穩？\n依模擬結果，規劃線可以抓百分之三點五。\n要是超過百分之四，計畫就得重做囉。\n那這筆錢到底要怎麼存出來？<short pause>\n其實光靠每個月勞退自提，就能搞定一大半。\n夫妻都月薪六萬、自提百分之六，\n做滿三十幾年，加起來大概就有一千萬左右。\n這樣聽起來是不是就沒那麼可怕了？",
+   "lint": {
+    "chars": 220,
+    "precise_numbers": [
+     "十二",
+     "百分之三點五",
+     "百分之四",
+     "六萬",
+     "百分之六",
+     "三十",
+     "一千萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.3,
+    "max_sentence_len": 34,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "所以到底要存多少，日子才算好過？\n其實算式很單純。\n先把每個月的花費，扣掉底層的年金。\n剩下的缺口，就是得靠投資補上的錢。\n然後把一整年的缺口，除以提領率。\n<short pause>\n提領率用百分之三點五來算剛剛好。\n假設你每個月缺兩萬，\n算出來大概要存將近七百萬。\n看到這個數字，是不是覺得有點壓力？\n但這筆錢要從哪裡來？\n其實很多人靠勞退自提就存得到。\n像是月薪六萬的夫妻，\n兩個人都自提存滿三十幾年，\n專戶加起來就有一千萬上下耶。\n我算完之後整個人放心超多的。\n所以退休缺口真的沒有那麼可怕啦。",
+   "lint": {
+    "chars": 222,
+    "precise_numbers": [
+     "百分之三點五",
+     "兩萬",
+     "七百萬",
+     "六萬",
+     "三十",
+     "一千萬"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 36,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "所以我們就來算自己的數字吧。<short pause>\n算式其實超簡單，只有兩步。\n第一步，把每月支出扣掉地板，就是缺口。\n第二步，把一年的缺口除以提領率。\n那提領率要用多少？\n這份報告建議用百分之三點五當基準。\n舉個例子，每月缺口兩萬塊的話，\n算下來大概要準備七百萬左右。\n這數字聽起來蠻嚇人的吧？\n不過錢要從哪裡生出來？\n其實光靠勞退專戶就有機會啦。\n像雙薪夫妻在上班時都自提，\n三十幾年下來，專戶加起來就有一千萬上下。\n目標資產有一大半就這樣存出來了。",
+   "lint": {
+    "chars": 203,
+    "precise_numbers": [
+     "百分之三點五",
+     "兩萬",
+     "七百萬",
+     "三十",
+     "一千萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 32,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "第二步，把一年的缺口除以提領率。",
+   "to": "第二步，把一年的缺口除以提領率，就是目標資產。",
+   "reason": "補結果"
+  },
+  {
+   "from": "這數字聽起來蠻嚇人的吧？不過錢要從哪裡生出來？",
+   "to": "那這筆錢要從哪裡來？",
+   "reason": "刪添加的情緒"
+  },
+  {
+   "from": "像雙薪夫妻在上班時都自提，三十幾年下來，專戶加起來就有一千萬上下。",
+   "to": "像月薪六萬的雙薪夫妻，兩個人都自提百分之六、做滿三十五年，兩個專戶加起來就有一千萬上下。",
+   "reason": "補回原文條件"
+  }
+ ]
+}

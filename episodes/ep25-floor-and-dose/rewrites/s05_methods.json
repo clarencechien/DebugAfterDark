@@ -1,0 +1,130 @@
+{
+ "segment": "s05_methods",
+ "position": "第 6 段，共 15 段",
+ "avoid": [
+  "你猜",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "042294c52034f800ea3d611eb97bcba7ab124d5b2d584c6f826af1a64373608d",
+ "previous_context": "其實不算喔。因為那筆錢領完就沒了，要算在資產啦。",
+ "original": {
+  "text": "第三個觀念是花法，同一筆錢有四種領法。全放定存，缺多少領多少。固定照領，錢拿去投資，每月固定領，每年跟著物價調，像自己發一份固定薪水，四趴法則就是這種。護欄，平常照領，資產跌到某條線就少領一成，漲過某條線就多領一成。每年重算，每年一月用還剩多少錢、還要用幾年，重算今年能花多少，跟房貸月付金是同一條公式，方向相反。這套研究後來又做了一輪：護欄被每年重算加一層平滑取代；常聽到的留三年生活費在現金桶，在每個情境都沒有降低破產率。",
+  "lint": {
+   "chars": 213,
+   "precise_numbers": [],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 34.5,
+   "max_sentence_len": 55,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "算完資產之後，接下來就是怎麼花啦。\n同一筆錢其實有四種領法。\n最直覺的就是全放定存，缺多少領多少。\n第二種是固定照領，錢拿去投資。\n每月領固定的錢，像給自己發薪水。\n每年跟著物價微調。\n百分之四法則就是這種。\n再來是護欄，市場跌就少領，漲了就多領。\n最後是每年重算，每年一月重算能花多少。\n它跟房貸公式一樣，只是方向相反。\n那你覺得哪種比較好？<short pause>\n重點來了，這份報告後來做了新測試。\n很多人常說要留三年生活費在現金桶，\n結果在每個情境，居然都沒降低破產率耶。<laugh>\n知道這個結果時，我真的蠻意外的。",
+   "lint": {
+    "chars": 231,
+    "precise_numbers": [
+     "百分之四"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 35,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "搞清楚資產之後，第三個觀念是怎麼花錢。\n同一筆退休金，其實有四種領法喔。\n最單純的就是全放定存，缺多少領多少。\n然後是固定照領。\n這就是大家常聽到的百分之四法則啦。\n把錢拿去投資，每月給自己發固定薪水。\n第三種叫護欄，資產跌破線就少領一點。\n那第四種呢？\n就是每年一月重新算一次。<short pause>\n看還剩多少錢、預計用幾年，\n算出今年可以花多少。\n它跟房貸月付金用同一條公式，\n只是方向剛好相反。\n這招把房貸反過來算，我覺得超聰明。\n重點來了，常聽說身邊要留幾年生活費，\n真的能降低風險嗎？\n這份報告說，它完全沒有降低破產率喔。",
+   "lint": {
+    "chars": 240,
+    "precise_numbers": [
+     "百分之四"
+    ],
+    "enumerations": [
+     "第三",
+     "第三",
+     "第四"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 26,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "算完資產，接下來第三個觀念是怎麼花。\n同一筆錢其實有四種領法喔。\n你可以全放定存，缺多少就領多少。\n然後是固定照領。\n就是大家常聽到的百分之四法則。<short pause>\n錢拿去投資，每年照著物價調整，\n就像每個月給自己發一份固定薪水。\n再來一種叫護欄，\n跌到某條線少領一成，漲上去就多領一成。\n那最後一種呢？\n每年一月看剩多少錢跟時間，重新算一次。\n這跟房貸月付金是同一個公式，方向相反。\n重點來了，這套研究後來又更新了一輪。\n更扯的是什麼你知道嗎？\n很多人常說要留幾年生活費在現金桶，\n結果破產率完全沒有變低耶。<laugh>\n我看到這個結論真的滿臉問號。",
+   "lint": {
+    "chars": 246,
+    "precise_numbers": [
+     "百分之四"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "算完資產之後，接下來就是怎麼花啦。同一筆錢其實有四種領法。最直覺的就是全放定存，缺多少領多少。第二種是固定照領，錢拿去投資。每月領固定的錢，像給自己發薪水。每年跟著物價微調。百分之四法則就是這種。再來是護欄，市場跌就少領，漲了就多領。最後是每年重算，每年一月重算能花多少。它跟房貸公式一樣，只是方向相反。那你覺得哪種比較好？<short pause>重點來了，這份報告後來做了新測試。很多人常說要留三年生活費在現金桶，結果在每個情境，居然都沒降低破產率耶。<laugh>知道這個結果時，我真的蠻意外的。",
+   "to": "算完地板，接下來就是怎麼花啦。同一筆錢，其實有四種領法。最直覺的是全放定存，缺多少領多少。第二種是固定照領，錢拿去投資，每月領固定的錢，每年跟著物價調，像給自己發薪水。百分之四法則就是這種。再來是護欄，資產跌到某條線就少領一成，漲過某條線就多領一成。最後是每年重算，每年一月用還剩多少錢、還要用幾年，重算今年能花多少。<short pause>這套研究後來又做了一輪。護欄被每年重算加一層平滑取代。還有，很多人說要留三年生活費在現金桶，結果在每個情境，都沒有降低破產率。",
+   "reason": "護欄是看資產線、不是看市場；補每年重算怎麼算與平滑；刪個人反應"
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "segment": "s13_hands",
+ "position": "第 14 段，共 15 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f80d86514ae36a4c359edd7c80df6ae035b9365a809a163483761535340c3502",
+ "previous_context": "雖然多準備幾百萬能擋一下，但開銷如果再翻倍，光靠存款根本扛不住啦，這時候長照保險跟家人的安排都要算進去。這整套測試看下來，真的會讓人捏一把冷汗耶。",
+ "original": {
+  "text": "實戰篇把最後一個風險叫做副作用：自己的手。所有數字只對照著做的人成立。研究模擬過一種人：股票跌超過三成、持續半年以上，就全部換成現金，等一年多才回來。這樣做的人，失敗率是照做的人的一點五到兩倍。所以把規則寫在紙上，交代給另一半，比臨場判斷可靠。如果你的爸媽只信定存，這份報告的建議是，不必勸他們全部拿去買股票，先從會不會活到九十五歲聊起。",
+  "lint": {
+   "chars": 169,
+   "precise_numbers": [
+    "一點五",
+    "九十五"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 27.2,
+   "max_sentence_len": 46,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "但其實還有一個更大的副作用。<short pause>就是我們自己的手啦。你懂那種慌張的感覺嗎？市場一大跌，很多人忍不住全部換成現金。然後等了一年多才敢再買回來。這份報告說，醬做的人失敗率直接翻倍耶。<sigh>所以把規則寫在紙上，交代給另一半比較穩。那要是爸媽只信定存，該怎麼跟他們聊？其實不用急著勸他們去買股票啦。先坐下來聊聊，會不會活到九十五歲就好囉。",
+   "lint": {
+    "chars": 160,
+    "precise_numbers": [
+     "九十五"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 15.0,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "不過其實最大的風險，是我們自己的手。<short pause>你知道最慘的情況是什麼嗎？就是股票大跌，你就嚇到全部換成現金。這份報告說，這樣做失敗率會高達兩倍耶。這種臨場的恐慌真的超致命的。<sigh>所以把規則寫在紙上，比臨場反應可靠多了。那如果爸媽只信定存呢？其實不必硬勸他們買股票啦。先跟他們聊聊，自己會不會活到九十五歲就好。",
+   "lint": {
+    "chars": 147,
+    "precise_numbers": [
+     "九十五"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "但其實還有一個很大的副作用。\n就是你自己的手。<short pause>\n前面的數字，都只對照著做的人成立喔。\n要是大跌就嚇到全換現金，你覺得會怎樣？\n這份報告說，這種人的失敗率直接翻倍。\n我光用想的，就覺得這是最難防的 bug 耶。<laugh>\n所以把規則寫在紙上，交代給另一半。\n絕對比自己到時候緊張亂猜可靠得多。\n那如果爸媽只信定存怎麼辦？\n其實不必逼他們買股票啦。\n先從會不會活到九十五歲，跟他們聊起就好。",
+   "lint": {
+    "chars": 176,
+    "precise_numbers": [
+     "九十五"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 15.0,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "但其實還有一個更大的副作用。<short pause>就是我們自己的手啦。你懂那種慌張的感覺嗎？市場一大跌，很多人忍不住全部換成現金。然後等了一年多才敢再買回來。這份報告說，醬做的人失敗率直接翻倍耶。<sigh>所以把規則寫在紙上，交代給另一半比較穩。那要是爸媽只信定存，該怎麼跟他們聊？其實不用急著勸他們去買股票啦。先坐下來聊聊，會不會活到九十五歲就好囉。",
+   "to": "但其實還有一個風險，實戰篇把它叫做副作用，就是我們自己的手啦。<short pause>研究模擬過一種人：股票跌超過三成、持續半年以上，就全部換成現金，等一年多才敢買回來。這份報告說，這樣做的人，失敗率是照著做的人的一點五到兩倍。<sigh>所以把規則寫在紙上，交代給另一半，比臨場判斷可靠。那要是爸媽只信定存，該怎麼跟他們聊？其實不用急著勸他們去買股票啦。先坐下來，聊聊會不會活到九十五歲就好。",
+   "reason": "「翻倍」改回一點五到兩倍；補條件；醬改這樣"
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "id": "ep25-floor-and-dose",
+ "number": 25,
+ "type": "full",
+ "guid": "debug-after-dark:ep25",
+ "title": "EP25 一千萬夠不夠，先問地板有多硬",
+ "description": "退休要存多少？有人說八百萬，有人說三千萬，差這麼多，多半出在同一個變數：每個月有多少錢不必動用存款就會入帳。一對 65 歲的夫妻，勞保年金合計 4.2 萬、資產一千萬，在模擬裡把退休過一萬遍：缺口提領率只有 2.16%，全放定存的家庭在年金打七折時有四成撐不到最後，固定照領的家庭卻在過世時留下將近三千萬。後半段是實戰篇：缺口除以 3.5% 算目標資產、八成股兩成債、每年一月重算加上下限，以及年金七折、剩一個人、長照三個壓力測試。退休三部曲的基礎篇與實戰篇合成一集。\n\n今晚的 breakpoint：\n1. 一千萬夠不夠，先問地板有多硬：缺口提領率＝（生活費－年金）×12÷存款，3.5% 是規劃線。\n2. 定存是把退休押在年金一毛都不會少；多存的錢買到的是對年金改革的容錯。第二個人獨自活到 95 歲要當成主要情境。\n3. 每年一月重算一次，加上上下限，好年頭多的錢留著墊壞年頭；最大的風險是長照，和自己的手。\n\n原文：〈一千萬夠不夠，先問地板有多硬〉退休三部曲・基礎篇 v0.1 https://imitator.ai-apps.work/r/retire-floor-basics\n〈退休金的用法用量〉退休三部曲・實戰篇 v0.1 https://imitator.ai-apps.work/r/retire-floor-playbook（有試算器）\n模擬：美國 1934–2023 年報酬與通膨重排、每格 10,000 條路徑、八成股兩成債；喪偶後的年金依勞保規定（遺屬年金折半、與自己的年金擇一）。稅、交易成本、年金改革與長照的機率沒有算，細節在原文。\n本集是模擬結果與制度的整理，不構成投資、稅務或保險建議；節目提到的商品只是類型舉例。\n\n上一集：EP24〈月租六萬住六千萬，你是盤子嗎？〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "retire-floor-basics",
+ "report_version": "v0.1（2026-11-12）；實戰篇 retire-floor-playbook v0.1（2026-11-12）",
+ "source_url": "https://imitator.ai-apps.work/r/retire-floor-basics",
+ "status": "draft",
+ "series": "退休三部曲・基礎與實戰（倒著講，2/3）",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "related": [
+  "ep24-rent-or-plate"
+ ],
+ "audio": {
+  "file": "ep25-floor-and-dose.mp3",
+  "bytes": 12398627,
+  "sha256": "39ca6f1ab2fc82dedbe9a04576835f9199eb1723c09a36e951038de227a454f0",
+  "duration_s": 774.9,
+  "duration": "12:54",
+  "lufs": -16.9
+ },
+ "qa": {
+  "breeze_cer_mean": 0.022,
+  "jitter_semitones": 0.225,
+  "gates": "錯誤率 2.2%、音高跳動 0.225 都通過",
+  "retakes": "s01、s04、s07 改稿後重錄：「租與買」聽成豬與馬、「遺屬年金」聽成移屬（改成白話說法）、「領法」聽成 0 法、「將近一成五」聽成 1.5%（改成百分之十五）",
+  "manual_pick": "s01 take1（take0 把地板念成地盤）",
+  "consistency": "qa/consistency.json：各段音高在中位數 ±4.2 Hz 內、語速在 ±10% 內",
+  "both_wrong": "s00「借」聽成「藉」、s07「意義」聽成「意思」，都是同義",
+  "twtone": "qa/twtone.md：沒有超過基準的項目",
+  "cer_note": "stt_check 的數字正規化再補上 42,000、18000 這類沒有接「萬」的四五位數"
+ }
+}

@@ -1,0 +1,133 @@
+{
+ "segment": "s11_january",
+ "position": "第 12 段，共 15 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a1ec30878df8eca8047354e1ee746157fa386e90ef314ba44ac57fc7546b61cc",
+ "previous_context": "這種穩定度，真的會讓人超安心耶。你應該也很想要這種底氣吧？",
+ "original": {
+  "text": "下限是砍不掉的支出減掉地板，像房租、健保費、基本伙食、水電這些。公式值比下限低，就領到下限。實戰篇把每年要做的事，寫成一月的六個動作，大約一個小時。一，記帳：寫下十二月三十一號的資產總額。二，查表：用今年的年齡查因子。三，夾住：套上下限和上限。四，調回：把股債比例調回八比二，順便把今年要用的錢賣出來。五，自動：設好每月固定轉帳到生活帳戶，之後一整年不用再看。六，留底：記一行年份、資產和月領金額，另一半也要知道這張紙放在哪裡。",
+  "lint": {
+   "chars": 214,
+   "precise_numbers": [
+    "十二",
+    "三十一"
+   ],
+   "enumerations": [],
+   "sentences": 9,
+   "avg_sentence_len": 22.8,
+   "max_sentence_len": 33,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實做法超簡單喔。\n先講下限，就是砍不掉的開銷減去地板。\n像房租、水電還有基本伙食這些。\n要是算出來太低，就直接領下限的金額。\n<short pause>\n那每年具體要怎麼執行？\n只要在一月花一個小時，做六件事。\n首先記下年底總資產，再去查表找因子。\n算出來之後，用上下限把它夾住。\n然後把股債調回八比二，把生活費賣出來。\n最棒的是什麼你知道嗎？\n設好每個月自動轉帳。\n接下來一整年，你完全不用再盯盤耶。<laugh>\n最後寫一張紙留底，跟另一半說放哪就好啦。",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實要做到這樣，一點都不複雜喔。先算好底線，像是水電伙食這種砍不掉的支出。如果算出來的金額太低，就直接領這個下限。最棒的是，每年一月只要花大約一個小時。<short pause>你一定會想，這一個小時要做什麼？其實就順順做完幾個動作。先記下年底的總資產，然後查表算出數字，再用上下限把它夾住。接著把股債調回八比二，順便把今年要用的錢賣出來。然後設好每個月自動轉帳，最後寫一張紙條留底。這張紙放哪裡，記得要跟另一半說一聲喔。光是想到做完就能不管它，就覺得超省心耶。接下來一整年，你都不用再盯盤啦。",
+   "lint": {
+    "chars": 234,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.5,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "要拿到這種底氣，底線要先守住。\n下限就是砍不掉的支出，扣掉年金地板。\n像房租、水電和健保費，這些都不能少。\n如果公式算出來更低，就直接領下限金額。\n那退休後具體要怎麼執行？\n其實每年一月只要花一個小時搞定。\n先記下年底總資產，查表算出數字。\n接著套上下限，夾出今年每個月領多少。\n然後把股債調回八比二，把這年的錢賣出來。\n設好每月自動轉帳，整年都不用再盯盤。<laugh>\n這種完全不用操心的感覺超讚吧？\n最後寫一張紙留底，記好資產和月領金額。\n連另一半都要知道紙放在哪裡喔。",
+   "lint": {
+    "chars": 219,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "要是算出來太低，就直接領下限的金額。",
+   "to": "公式值比下限低，就直接領下限。",
+   "reason": "說清楚是公式值"
+  },
+  {
+   "from": "然後把股債調回八比二，把生活費賣出來。",
+   "to": "然後把股債調回八比二，順便把今年要用的錢賣出來。",
+   "reason": "原文用語"
+  },
+  {
+   "from": "你完全不用再盯盤耶。<laugh>",
+   "to": "你完全不用再盯盤耶。",
+   "reason": "刪笑聲"
+  },
+  {
+   "from": "最後寫一張紙留底，跟另一半說放哪就好啦。",
+   "to": "最後寫一行留底，年份、資產跟月領金額，另一半也要知道這張紙放在哪裡。",
+   "reason": "補原文內容"
+  }
+ ]
+}

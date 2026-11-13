@@ -1,0 +1,137 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 15 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "de495153cc6683b6f27e8487a18ae624ab16d8d0a1ceed16506d3e67b3b10c63",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "退休要存多少？有人說八百萬，有人說三千萬。數字差這麼多，多半出在同一個變數：每個月有多少錢，不必動用存款就會入帳。這份報告借一對六十五歲的夫妻，用真實的歷史資料，讓他們把退休過一萬遍。結論是，一千萬夠不夠，要先問地板有多硬。算完之後還有一個意外：對這對夫妻來說，更常見的問題不是錢不夠，是錢花不完。有一種領法，讓他們最後帳上還有將近三千萬。這份報告說，那三千萬，是他們沒有過到的日子。",
+  "lint": {
+   "chars": 192,
+   "precise_numbers": [
+    "八百萬",
+    "三千萬",
+    "六十五",
+    "一萬",
+    "一千萬",
+    "三千萬",
+    "三千萬"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 23.0,
+   "max_sentence_len": 36,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "退休到底要存多少才夠？有人說幾百萬，有人說要幾千萬。為什麼會差這麼多？其實關鍵就只有一個。<short pause>就是每個月不靠存款，會進帳多少錢。這份報告找了一對六十多歲的夫妻，用真實歷史，讓他們把退休過了一萬次。算出來的結果很扯喔。你猜大家最怕的是什麼？通常是怕錢不夠對吧。但其實更常遇到的問題，是錢花不完。照某種領法，最後帳上還留下好幾千萬。我看到這邊真的愣了一下。這份報告說，那些沒花完的錢，其實都是他們沒有過到的日子耶。",
+   "lint": {
+    "chars": 203,
+    "precise_numbers": [
+     "百萬",
+     "千萬",
+     "六十",
+     "一萬",
+     "千萬"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 33,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "退休到底要存多少？\n有人說幾百萬，有人喊到幾千萬。\n你猜為什麼差這麼多？\n其實就看每個月，\n有多少錢不用動老本就會進帳啦。\n這份報告找了一對夫妻，\n用真實資料把退休模擬了一萬遍。\n算出來的結果超反直覺喔。\n對他們來說，\n最常遇到的問題不是錢不夠，\n反而是錢根本花不完！<short pause>\n有一種領法，\n走的時候帳上居然留了將近三千萬。\n我看到這句整個起雞皮疙瘩。\n這份報告說，\n那三千萬，\n都是他們這輩子沒有過到的日子。",
+   "lint": {
+    "chars": 185,
+    "precise_numbers": [
+     "百萬",
+     "千萬",
+     "一萬",
+     "三千萬",
+     "三千萬"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 28,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "退休到底要存多少錢才夠？有人說幾百萬，也有人說要幾千萬。差這麼多，其實只差在一個關鍵。<short pause>就是每個月不動老本，有多少錢會進帳。這份報告模擬了上萬次退休生活。結果最常遇到的狀況，竟然不是錢不夠喔。而是錢根本花不完。<laugh>你猜最後剩多少？帳上居然還有將近三千萬耶。我看到這句整個愣住。這份報告說，那三千萬都是他們沒過到的日子啦。",
+   "lint": {
+    "chars": 157,
+    "precise_numbers": [
+     "百萬",
+     "千萬",
+     "萬",
+     "三千萬",
+     "三千萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 13.3,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "退休到底要存多少錢才夠？有人說幾百萬，也有人說要幾千萬。差這麼多，其實只差在一個關鍵。<short pause>就是每個月不動老本，有多少錢會進帳。這份報告模擬了上萬次退休生活。結果最常遇到的狀況，竟然不是錢不夠喔。而是錢根本花不完。<laugh>你猜最後剩多少？帳上居然還有將近三千萬耶。我看到這句整個愣住。這份報告說，那三千萬都是他們沒過到的日子啦。",
+   "to": "退休到底要存多少錢才夠？有人說八百萬，也有人說要三千萬。差這麼多，其實多半出在同一個變數。<short pause>就是每個月不動用存款，有多少錢會自己進帳。這份報告借一對六十五歲的夫妻，用真實的歷史資料，讓他們把退休過了一萬遍。結論是，一千萬夠不夠，要先問地板有多硬。算完還有一個意外，對這對夫妻來說，更常見的問題不是錢不夠，而是錢花不完。有一種領法，讓他們最後帳上還有將近三千萬。這份報告說，那三千萬，是他們沒有過到的日子。",
+   "reason": "補回「先問地板有多硬」與八百萬／三千萬；「最常遇到」限定在這對夫妻；刪個人反應"
+  }
+ ]
+}

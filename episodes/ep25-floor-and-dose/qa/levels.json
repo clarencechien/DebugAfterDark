@@ -1,0 +1,92 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -21.5,
+  "gain_db": 1.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_recap",
+  "lufs_before": -22.3,
+  "gain_db": 2.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_gap",
+  "lufs_before": -21.2,
+  "gain_db": 1.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_floor",
+  "lufs_before": -22.1,
+  "gain_db": 2.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_widow",
+  "lufs_before": -20.1,
+  "gain_db": 0.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_methods",
+  "lufs_before": -19.5,
+  "gain_db": -0.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_unspent",
+  "lufs_before": -21.9,
+  "gain_db": 1.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_tolerance",
+  "lufs_before": -19.7,
+  "gain_db": -0.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_target",
+  "lufs_before": -22.9,
+  "gain_db": 2.9,
+  "lufs_after": -20.1
+ },
+ {
+  "id": "s09_where",
+  "lufs_before": -20.9,
+  "gain_db": 0.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s10_recalc",
+  "lufs_before": -23.4,
+  "gain_db": 3.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s11_january",
+  "lufs_before": -21.2,
+  "gain_db": 1.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s12_stress",
+  "lufs_before": -21.6,
+  "gain_db": 1.6,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s13_hands",
+  "lufs_before": -23.1,
+  "gain_db": 3.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s14_outro",
+  "lufs_before": -22.1,
+  "gain_db": 2.1,
+  "lufs_after": -20.0
+ }
+]

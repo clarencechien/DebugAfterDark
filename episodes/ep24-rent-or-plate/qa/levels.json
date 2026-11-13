@@ -49,8 +49,8 @@
  },
  {
   "id": "s08_scale",
-  "lufs_before": -22.3,
-  "gain_db": 2.3,
+  "lufs_before": -20.3,
+  "gain_db": 0.3,
   "lufs_after": -20.0
  },
  {
@@ -79,8 +79,8 @@
  },
  {
   "id": "s13_outro",
-  "lufs_before": -23.1,
-  "gain_db": 3.1,
+  "lufs_before": -20.7,
+  "gain_db": 0.7,
   "lufs_after": -20.0
  }
 ]

@@ -1,0 +1,137 @@
+{
+ "segment": "s04_widow",
+ "position": "第 5 段，共 15 段",
+ "avoid": [
+  "你猜",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d6b362e4adf6e604dab51d6343b9ed16a7db6006ec66a03052613d8e05358a5d",
+ "previous_context": "政府有修法負責，年金不會真的歸零。所以大家該盯著看的，是打七折那一列喔。",
+ "original": {
+  "text": "定存撐不住的地方很具體。先生先走之後，太太一個人的年金只剩一萬四千二：勞保的遺屬年金是原年金的一半，而且和自己的老年年金只能二選一。生活費降到四萬五，每月缺口卻從一萬八變成三萬一，不會長大的定存，就在她長壽的那些年被慢慢領光。所以實戰篇第一步查地板，要記三個數字：兩個人都在的；剩一個人的，用比較低的那種情況；還有打七折的版本。另外，勞退專戶不算地板，選月領也只是把餘額攤完就停，要把它當成資產。",
+  "lint": {
+   "chars": 198,
+   "precise_numbers": [
+    "一萬四千二",
+    "四萬五",
+    "一萬八",
+    "三萬一"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 38.6,
+   "max_sentence_len": 53,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "對，全放定存到底會在哪裡卡關？<short pause>\n重點就在先生如果先走了。\n勞保年金只能二選一。\n太太能領的錢立刻砍半。\n生活費沒少多少，每個月缺口卻直接翻倍！\n定存又不會增值，最後幾年會被慢慢領光。\n<sigh>這狀況想起來真的很讓人冒冷汗。\n所以第一步查地板，你一定要算好三個版本。\n第一是兩個人都在的時候。\n然後是只剩一個人。\n記得要挑比較低的那種喔。\n最後是年金打七折的壓力測試版。\n欸，勞退專戶算不算地板？\n其實不算喔。\n因為那筆錢領完就沒了，要算在資產啦。",
+   "lint": {
+    "chars": 205,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 12.7,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 2.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實全放定存最危險的地方在哪裡？<short pause>\n就在先生先走之後。\n因為太太的年金只剩一萬四千兩百元。\n<short pause>\n你可能會想，生活費不是變少了嗎？\n對，但每個月的資金缺口反而翻倍。\n不會增值的定存，就這樣被慢慢領光了。\n光想到那個畫面就覺得壓力超大。\n所以實戰第一步算地板，要記三個版本。\n兩個人都在的，還有只剩一個人的狀況。\n最後再算一個打七折的壓力測試版。\n然後提醒大家，勞退專戶不算地板喔。\n因為就算選月領，它發完就沒了。\n要把它當成資產才對。",
+   "lint": {
+    "chars": 201,
+    "precise_numbers": [
+     "一萬四千兩百"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 14.5,
+    "max_sentence_len": 17,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實定存撐不住的原因很具體。<short pause>如果先生先走，太太能領的年金會直接縮水。你知道為什麼嗎？因為自己的年金跟先生的，只能二選一。太太每個月只剩一萬四千兩百元。生活費缺口，直接從不到兩萬暴增到三萬多。光想就覺得很殘酷。<sigh>定存又不會長大，最後就被慢慢花光了。所以算每個月地板，一定要記三個版本。兩人都在、只剩一人，還有打七折的版本。剩一個人的情況，記得要挑比較低的算。然後勞退專戶不算地板喔。它領完就沒了，其實要算成資產才對啦。",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [
+     "一萬四千兩百",
+     "兩萬",
+     "三萬"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "對，全放定存到底會在哪裡卡關？<short pause>重點就在先生如果先走了。勞保年金只能二選一。太太能領的錢立刻砍半。生活費沒少多少，每個月缺口卻直接翻倍！定存又不會增值，最後幾年會被慢慢領光。<sigh>這狀況想起來真的很讓人冒冷汗。所以第一步查地板，你一定要算好三個版本。第一是兩個人都在的時候。然後是只剩一個人。記得要挑比較低的那種喔。最後是年金打七折的壓力測試版。欸，勞退專戶算不算地板？其實不算喔。因為那筆錢領完就沒了，要算在資產啦。",
+   "to": "那全放定存，到底會在哪裡卡關？<short pause>重點就在先生如果先走了。勞保的遺屬年金是原本的一半，而且跟自己的年金只能二選一。太太一個人，只剩一萬四千二。生活費降到四萬五，每個月缺口卻從一萬八變成三萬一。定存又不會長大，就在她長壽的那些年，被慢慢領光。所以實戰篇的第一步查地板，要算好三個版本。第一是兩個人都在的時候。然後是只剩一個人，記得挑比較低的那種情況。最後是年金打七折的壓力測試版。欸，勞退專戶算不算地板？其實不算喔。選月領也只是把餘額攤完就停，要算在資產裡。",
+   "reason": "「太太的錢砍半」「缺口翻倍」改回原文數字（一萬四千二、一萬八變三萬一）；刪個人反應"
+  },
+  {
+   "from": "勞保的遺屬年金是原本的一半，而且跟自己的年金只能二選一。",
+   "to": "勞保規定，另一半過世後，可以改領對方年金的一半，可是跟自己的年金只能二選一。",
+   "reason": "「遺屬」被聽成移屬；改成白話說法"
+  }
+ ]
+}
