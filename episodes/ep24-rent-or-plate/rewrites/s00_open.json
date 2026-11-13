@@ -1,0 +1,126 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 14 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "1779b9843b4f3fa8681b02761048ea2efe469e295e3513b68ead7a2623987133",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "「退休前一定要買房，老了租房子很危險。」你應該聽過這句話。也可能聽過另一句：能租就租，房價越貴越是如此。這兩句話，出自同一個研究的兩份報告。一份說，存款一千萬的退休夫妻如果租屋，每個數字都會壞一級；另一份說，租比買划算。這份報告的作者發現，兩句話都沒錯，只是比的東西不一樣。這集是退休三部曲的番外篇，租與買。這個系列我們倒著講，先從這篇開始，因為後面會一直用到的兩個詞，地板和缺口，在這裡最好懂。",
+  "lint": {
+   "chars": 198,
+   "precise_numbers": [
+    "一千萬"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 23.8,
+   "max_sentence_len": 43,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你一定聽過老了租房子很危險。<short pause>但你可能也聽過另一句，能租就租。這兩句話竟然出自同一個研究，很扯吧？其實兩邊都沒錯，只是比的東西不一樣。一邊比的是兩家都有一千萬存款，但其中一家，額外還有一間房子。這份報告說，另一邊比的則是總資產一樣。這集是退休三部曲的番外篇，聊租屋跟買房。對，我們這次倒著講。<short pause>因為後面會一直出現地板跟缺口提領率。地板就是每個月砍不掉的最低開銷。缺口提領率，就是每年要從存款拿幾趴來補。先把這兩個搞懂，後面算退休就超清楚啦。",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [
+     "一千萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 29,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.9,
+    "written_words": [
+     "其中"
+    ],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "退休前一定要買房，老了租屋很危險。\n你應該也聽過這句話吧？\n但你可能也聽過另一句，能租就租。\n奇怪的是，這兩句出自同一個研究。\n有一份說，存款一千萬去租屋會很慘。\n另一份卻說，租比買划算。\n<short pause>\n到底哪一句才對？\n其實兩句都沒錯。\n只是比較的基準不一樣啦。\n我看到這邊整個愣了一下。<laugh>\n這份報告說，兩邊立足點根本不同。\n這集是退休系列的番外篇，聊租與買。\n我們倒著講，先從這篇開始聊。\n因為後面會講到的地板跟缺口，在這裡最好懂。",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [
+     "一千萬"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 13.1,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "退休前一定要買房，老了租屋很危險。\n你應該也常聽過這句話吧？\n但另一派卻說，能租就租。\n而且房價越貴，租屋就越划算。\n<short pause>\n奇怪了，這兩句話根本在打架啊。<laugh>\n更扯的是，它們竟然出自同一個研究。\n這份報告說，存款一千萬如果租屋很危險。\n可是同一個作者又說，租比買還要划算。\n你猜為什麼會這樣？\n其實兩邊都沒有算錯。\n只是比較的基礎完全不一樣啦。\n這集是退休三部曲的番外篇，聊租與買。\n我們倒著講，先搞懂這個，後面就簡單了。",
+   "lint": {
+    "chars": 194,
+    "precise_numbers": [
+     "一千萬"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 13.9,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "退休前一定要買房，老了租屋很危險。你應該也聽過這句話吧？但你可能也聽過另一句，能租就租。奇怪的是，這兩句出自同一個研究。有一份說，存款一千萬去租屋會很慘。另一份卻說，租比買划算。<short pause>到底哪一句才對？其實兩句都沒錯。只是比較的基準不一樣啦。我看到這邊整個愣了一下。<laugh>這份報告說，兩邊立足點根本不同。這集是退休系列的番外篇，聊租與買。我們倒著講，先從這篇開始聊。因為後面會講到的地板跟缺口，在這裡最好懂。",
+   "to": "退休前一定要買房，老了租屋很危險。你應該也聽過這句話吧？但你可能也聽過另一句，能租就租。奇怪的是，這兩句出自同一個研究。有一份說，存款一千萬的退休夫妻去租屋，每個數字都會壞一級。另一份卻說，租比買划算。<short pause>到底哪一句才對？其實兩句都沒錯。只是比較的基準不一樣啦。這份報告說，兩邊比的根本是不同的東西。這集是退休三部曲的番外篇，聊租與買。這個系列我們倒著講，先從這篇開始。因為後面一直會講到的地板跟缺口，在這裡最好懂。",
+   "reason": "「很慘」改回原文「每個數字都會壞一級」；系列名改回退休三部曲；刪 Ping 的個人反應"
+  },
+  {
+   "from": "每個數字都會壞一級",
+   "to": "每個數字都會變差一級",
+   "reason": "三次生成「壞一級」都被聽成換一級／劃一級"
+  }
+ ]
+}

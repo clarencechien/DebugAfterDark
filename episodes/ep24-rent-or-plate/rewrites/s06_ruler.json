@@ -1,0 +1,161 @@
+{
+ "segment": "s06_ruler",
+ "position": "第 7 段，共 14 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "11d4eea53bd5a5adf71bd36681d4d0a95d3768bc30d65850b554e73a184b48d6",
+ "previous_context": "我光是用想的都覺得壓力好大。因為就算存款一樣，房子越貴，越容易把老本給燒光喔。",
+ "original": {
+  "text": "另一把尺量的是房子本身，叫租金收益率，就是一年的房租除以房價。它只回答這間房子該租還是該買，跟你有多少錢無關。算法是比拿不回來的錢。租的人拿不回來的是房租。買的人拿不回來的有兩筆：錢壓在房子裡少賺的報酬，保守取百分之三點五，加上每年百分之零點九的稅、管理費和維修，合計是房價的百分之四點四。一間一千五百萬、月租一萬五的房子，一年房租十八萬，買的成本六十六萬。買要划算，房價得每年比物價多漲百分之三點二，而且要一直漲下去。",
+  "lint": {
+   "chars": 210,
+   "precise_numbers": [
+    "百分之三點五",
+    "百分之零點九",
+    "百分之四點四",
+    "一千五百萬",
+    "一萬五",
+    "十八萬",
+    "六十六萬",
+    "百分之三點二"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 29.0,
+   "max_sentence_len": 66,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以這份報告拿了另一把尺，專門量房子本身。這把尺叫租金收益率，也就是一年的房租除以房價。它只回答一個問題：這間房子到底該租還是該買？其實這跟你手上有多少存款完全無關喔。比法很單純，看哪邊丟進水裡的錢比較多。租屋拿不回來的，當然就是房租嘛。那買房子的人拿不回來的是什麼？就是少賺的投資報酬，加上稅金和修繕。這份報告算出來，買房一年蒸發掉的錢，大約是房價的百分之四點四。<short pause>這是什麼概念？一間一千五百萬的房子，租一年只要十幾萬，買下來一年卻要燒掉六十幾萬耶。我想一想真的替買房的人捏一把冷汗。買要划算，房價得比物價漲得更兇，每年要多漲百分之三，而且要一直漲下去喔。",
+   "lint": {
+    "chars": 278,
+    "precise_numbers": [
+     "百分之四點四",
+     "一千五百萬",
+     "萬",
+     "六十",
+     "萬",
+     "百分之三"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 20.4,
+    "max_sentence_len": 35,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "那到底該租還是該買？其實就要看另一把尺。它量的是房子，叫租金收益率，也就是把一整年的房租除以房價。它只看該租還該買，跟存款多少無關。比較的方法很簡單，就是比拿不回來的錢。租屋拿不回來的是房租。那買房呢？買房少賺的投資報酬，加上稅金管理費，這份報告算出來，每年總共是房價的百分之四點四。<short pause>如果一間一千五百萬的房子，月租是一萬五。一整年的房租只要十幾萬，但買下來每年的持有成本，要六十幾萬耶。重點來了，買房要怎麼打平？房價每年得比物價多漲超過百分之三，而且還要一直漲下去喔。我算到這裡真的倒抽一口氣。<sigh>",
+   "lint": {
+    "chars": 247,
+    "precise_numbers": [
+     "百分之四點四",
+     "一千五百萬",
+     "一萬五",
+     "萬",
+     "六十",
+     "萬",
+     "百分之三"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 18.0,
+    "max_sentence_len": 40,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "所以到底該租還是該買？\n其實這份報告給了另一把尺。\n這把尺專門量房子，叫做租金收益率。\n也就是拿一年的房租，除以房子總價。\n它只看划不划算，跟你的存款無關喔。\n這兩邊要怎麼比？\n關鍵在於誰拿不回來的錢比較多。<short pause>\n租屋拿不回來的，就是付出去的房租嘛。\n買房拿不回來的，除了稅金和維護費，\n還有資金壓在裡面少賺的投資報酬。\n算起來一年大約是房價的百分之四出頭。\n拿一千五百萬的房子來看，\n一年租金不到二十萬，\n買房拿不回來的錢，每年卻要六十幾萬耶！<laugh>\n房租只有買房成本的三成不到。\n那買房到底要怎麼打平？\n房價每年得比物價多漲百分之三點二。\n而且還要一直漲下去喔。",
+   "lint": {
+    "chars": 261,
+    "precise_numbers": [
+     "百分之四",
+     "一千五百萬",
+     "二十萬",
+     "六十",
+     "萬",
+     "百分之三點二"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 40,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "它只看划不划算，跟你的存款無關喔。",
+   "to": "它只回答這間房子該租還是該買，跟你的存款無關喔。",
+   "reason": "改回原文的用途"
+  },
+  {
+   "from": "拿一千五百萬的房子來看",
+   "to": "拿一千五百萬、月租一萬五的房子來看",
+   "reason": "補月租"
+  },
+  {
+   "from": "每年卻要六十幾萬耶！<laugh>",
+   "to": "每年卻要六十幾萬耶。",
+   "reason": "刪不合語境的笑聲"
+  },
+  {
+   "from": "那買房到底要怎麼打平？",
+   "to": "那買房要怎樣才划算？",
+   "reason": "「打平」三次都被聽成打拼"
+  }
+ ]
+}

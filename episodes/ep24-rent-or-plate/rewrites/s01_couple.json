@@ -1,0 +1,139 @@
+{
+ "segment": "s01_couple",
+ "position": "第 2 段，共 14 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8c2b5486b840d1eeb9cfd3ccaac73974f17497629b094f627f54f80e65457f68",
+ "previous_context": "我們倒著講，先從這篇開始聊。因為後面會講到的地板跟缺口，在這裡最好懂。",
+ "original": {
+  "text": "先說一句，這集是模擬結果的整理，不是購屋、投資或稅務建議，也不預測房價。主角是一對六十五歲的夫妻。兩個人的勞保年金加起來，每個月四萬兩千塊。住房以外的生活費每個月五萬，其中兩萬五是砍不掉的。作者拿美國一九三四到二〇二三年的真實報酬和通膨，剪成片段重新排列，讓這對夫妻把退休過一萬遍。這裡說的破產，意思是還有人活著，投資帳戶卻歸零了，之後只能靠年金過日子。",
+  "lint": {
+   "chars": 177,
+   "precise_numbers": [
+    "六十五",
+    "四萬兩千",
+    "五萬",
+    "兩萬五",
+    "一萬"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 28.5,
+   "max_sentence_len": 45,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "其中"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先說好喔，這集只是模擬整理。不是買房或投資建議，也不預測房價啦。主角是一對六十五歲的退休夫妻。你猜他們日子怎麼過？扣掉住的，生活費每個月算五萬塊。兩人的勞保年金加起來，大約是四萬兩千塊。然後研究把過去快百年的市場數據切碎重排。讓這對夫妻把退休生活過了一萬次。我看到這裡都覺得很扯。<short pause>那報告裡說的破產是什麼意思？就是人還活著，投資帳戶卻全部歸零了。後面只能靠年金過日子，其實壓力超大耶。",
+   "lint": {
+    "chars": 191,
+    "precise_numbers": [
+     "六十五",
+     "五萬",
+     "四萬兩千",
+     "百",
+     "一萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "先講好喔，這集純粹是模擬整理，不提供任何買房或投資建議。其實主角是一對六十幾歲的退休夫妻。你猜他們每個月能領多少年金？兩個人加起來是四萬兩千塊。扣掉房子，生活費抓五萬左右，然後有一半是砍不掉的開銷。這份報告把美國快百年的市場數據，隨機重排了一萬次，等於讓他們把退休生活過了一萬遍。<short pause>光想像就覺得壓力超大的耶。裡面的破產是什麼意思呢？就是人還活著，但帳戶先歸零了，之後就只能單靠年金過日子啦。",
+   "lint": {
+    "chars": 194,
+    "precise_numbers": [
+     "六十",
+     "四萬兩千",
+     "五萬",
+     "百",
+     "一萬",
+     "一萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 20.6,
+    "max_sentence_len": 40,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "先提醒一下，這集不是投資或買房建議。\n對，這份報告的主角是一對六十五歲夫妻。\n他們每個月有四萬多塊的勞保年金。\n扣掉住的開銷，生活費每個月抓五萬塊。\n那你猜模擬是怎麼跑的？\n作者把過去近百年的真實市場數據，\n拿去重新排列了一萬次。<short pause>\n等於讓這對夫妻把退休過一萬遍，超酷的。\n然後這份報告說的破產是什麼意思？\n其實就是人還活著，投資帳戶卻歸零了，\n之後每個月只能靠年金過日子啦。",
+   "lint": {
+    "chars": 177,
+    "precise_numbers": [
+     "六十五",
+     "四萬",
+     "五萬",
+     "百",
+     "一萬",
+     "一萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 18.7,
+    "max_sentence_len": 32,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "先說好喔，這集只是模擬整理。不是買房或投資建議，也不預測房價啦。主角是一對六十五歲的退休夫妻。你猜他們日子怎麼過？扣掉住的，生活費每個月算五萬塊。兩人的勞保年金加起來，大約是四萬兩千塊。然後研究把過去快百年的市場數據切碎重排。讓這對夫妻把退休生活過了一萬次。我看到這裡都覺得很扯。<short pause>那報告裡說的破產是什麼意思？就是人還活著，投資帳戶卻全部歸零了。後面只能靠年金過日子，其實壓力超大耶。",
+   "to": "先說好喔，這集只是模擬結果的整理。不是買房或投資建議，也不預測房價啦。主角是一對六十五歲的退休夫妻。扣掉住的，生活費每個月算五萬塊，其中兩萬五是砍不掉的。兩人的勞保年金加起來，大約是四萬兩千塊。然後作者把美國將近九十年的真實報酬跟通膨切成片段，重新排列。讓這對夫妻把退休生活過了一萬次。<short pause>那這份報告說的破產，是什麼意思？就是人還活著，投資帳戶卻歸零了。之後只能靠年金過日子。",
+   "reason": "「快百年」改為美國將近九十年（1934–2023）；補回砍不掉的兩萬五；刪個人反應；bare 報告"
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "ep24-rent-or-plate",
+ "number": 24,
+ "type": "full",
+ "guid": "debug-after-dark:ep24",
+ "title": "EP24 租屋沒有比較差，差的是盤子",
+ "description": "「退休前一定要買房，老了租房子很危險。」同一個研究的另一份報告卻說：能租就租，房價越貴越是如此。這份報告把房子算回家庭的資產裡，用一對 65 歲、勞保年金合計 4.2 萬的夫妻跑一萬次模擬：盤子一樣大的時候，租屋的家庭反而比較安全。該租還是該買看年租除以房價；買錯的時候有多痛，看盤子，而年金讓小資痛得最輕。退休三部曲・番外，這個系列倒著講，從這篇開始。\n\n今晚的 breakpoint：\n1. 租屋沒有比較差，差的是盤子：把房子算進去，盤子一樣大的時候，租屋的家庭反而比較安全。\n2. 比例決定該租還是該買，房價超過年租三十倍就租；盤子決定買錯的時候有多痛，而年金讓小資痛得最輕。\n3. 租方的弱點是房租上漲和老了租不到，所以存款要多留一格；買房買到的，是確定。\n\n原文：〈租屋沒有比較差，差的是盤子〉退休三部曲・番外篇 v0.2 https://imitator.ai-apps.work/r/rent-ratio-or-scale\n模擬：美國 1934–2023 年報酬與通膨重排、每格 10,000 條路徑、八成股兩成債、固定照領；持有成本率 0.9%。沒算賣房換屋成本、以房養老、房貸與稅制，細節在原文。\n本集是模擬結果的整理，不構成購屋、投資或稅務建議，也不預測房價。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "rent-ratio-or-scale",
+ "report_version": "v0.2（2026-11-12）",
+ "source_url": "https://imitator.ai-apps.work/r/rent-ratio-or-scale",
+ "status": "draft",
+ "series": "退休三部曲・番外（倒著講，1/3）",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "related": [],
+ "audio": {
+  "file": "ep24-rent-or-plate.mp3",
+  "bytes": 10880178,
+  "sha256": "6b62527b93a6db3d1faf0ebfd443e0e181bc018017c8fef1db86c1802d5b88a2",
+  "duration_s": 680.0,
+  "duration": "11:19",
+  "lufs": -16.8
+ },
+ "qa": {
+  "breeze_cer_mean": 0.016,
+  "jitter_semitones": 0.219,
+  "gates": "錯誤率 1.6%、音高跳動 0.219 都通過",
+  "cer_note": "stt_check 的數字正規化 2026-11-13 補上 ％、小數和「1000 萬」這類四位數：改之前這集 Breeze 量到 5.9%（Gemini 1.5%），差距幾乎全是數字的寫法",
+  "retakes": "s00、s03、s06、s07、s10、s12、s13 改稿後重錄（打平→打拼、五六萬→5 600 萬、近似→淨死、壞一級→換一級這類聽錯）；s07 再補 3 次",
+  "manual_pick": "s06 take1（take0 快 15%）、s07 take3（take2 把盤子念成班子）、s11 take2（take0 快 11%、偏暗）",
+  "consistency": "qa/consistency.json：各段音高在中位數 93.4 Hz 的 +4.6／-3.8 Hz 內；s03、s06 語速快一成；接縫亮度跳動最多是 s11→s12",
+  "both_wrong": "只剩 s00「這篇」聽成「這邊」",
+  "twtone": "qa/twtone.md：沒有超過基準的項目；「算法」是計算方法的意思，不改",
+  "terms": "Ping、pong 3 次都判為英文念法"
+ }
+}

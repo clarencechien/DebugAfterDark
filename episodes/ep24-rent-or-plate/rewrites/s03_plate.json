@@ -1,0 +1,131 @@
+{
+ "segment": "s03_plate",
+ "position": "第 4 段，共 14 段",
+ "avoid": [
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "bd9eb03f207a8cb3ebbef3c74cf718f9a4a9d009d5a5c2e9888cd8fda34f04e6",
+ "previous_context": "算下來大概要補兩萬八進去喔。沒算清楚的話，真的會越住越心慌耶。",
+ "original": {
+  "text": "基礎篇那句「租屋每個數字都會壞一級」，少交代一件事：拿來對照的那一家，除了一千萬，還有一間房子。這份報告把家庭的全部資產叫做盤子，房子也算在裡面。讓兩家的盤子一樣大，都是兩千萬：有房的那家，房子一千萬、存款一千萬；租屋的那家，兩千萬全部留在帳戶裡，月租一萬五。結果是租屋的那家比較安全，年金打七折的時候差距更明顯。有房的人不用付房租，但要付稅、管理費和維修；更要緊的是，房子那一大塊錢，不會幫忙付生活費。",
+  "lint": {
+   "chars": 202,
+   "precise_numbers": [
+    "一千萬",
+    "兩千萬",
+    "一千萬",
+    "一千萬",
+    "兩千萬",
+    "一萬五"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 39.4,
+   "max_sentence_len": 56,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以很多人會想，那乾脆買房好了？\n其實之前有個說法，租屋會讓退休數字變超慘。\n但你知道問題出在哪嗎？<short pause>\n對照的那家除了存款，本來就多一間房子耶。\n這份報告把家庭全部資產叫做盤子。\n如果讓兩家盤子一樣大，比方說都是兩千萬呢？\n一家拿一半去買房，留一半在手邊。\n另一家兩千萬全放投資帳戶，然後去租房子。\n結果超意外，竟然是租屋的那家比較安全。\n買房雖然省了租金，但稅跟維修還是要繳嘛。\n重點是，卡在房子的錢，根本不會幫忙付生活費。",
+   "lint": {
+    "chars": 202,
+    "precise_numbers": [
+     "兩千萬",
+     "兩千萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.4,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "其實大家常說租屋比較慘，但比較的基準真的公平嗎？\n之前說租屋會變危險，其實少交代了一件事。\n拿來比的那一家，除了存款，還多了一間房子耶。\n這份報告把全部資產叫做盤子，房子也算在裡面。\n如果兩家的盤子一樣大，總資產都算兩千萬，你猜結果誰比較安全？\n<short pause>\n其實是租屋的這家比較穩喔。\n因為買房那大筆錢卡在房子裡，根本不會幫忙付生活費嘛。<laugh>\n而且每年還要付稅跟維修，算下來現金流反而更緊繃耶。",
+   "lint": {
+    "chars": 182,
+    "precise_numbers": [
+     "兩千萬"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 21.8,
+    "max_sentence_len": 29,
+    "sentences_over_20": 6,
+    "particles_per_100": 2.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實之前說租屋比較慘，根本不太公平嘛。因為有房的那家，手上還多了一間房子耶。這份報告把全部資產叫做盤子，連房子也算進去。那如果讓兩邊的盤子一樣大呢？你猜哪一邊比較安全？對，結果反而是租屋的那家更穩。<short pause>就算退休年金打七折，差距還更明顯喔。買房雖然不用付房租，但要付管理費跟稅金。重點是，壓在房子裡的錢，又不能拿來買菜啊。能動用的現金變少，日子真的會越過越慌耶。",
+   "lint": {
+    "chars": 178,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 2.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "其實之前說租屋比較慘，根本不太公平嘛。因為有房的那家，手上還多了一間房子耶。這份報告把全部資產叫做盤子，連房子也算進去。那如果讓兩邊的盤子一樣大呢？你猜哪一邊比較安全？對，結果反而是租屋的那家更穩。<short pause>就算退休年金打七折，差距還更明顯喔。買房雖然不用付房租，但要付管理費跟稅金。重點是，壓在房子裡的錢，又不能拿來買菜啊。能動用的現金變少，日子真的會越過越慌耶。",
+   "to": "三部曲的基礎篇說，租屋每個數字都會壞一級。可是這樣比，其實不太公平嘛。因為拿來對照的那一家，除了一千萬，還多了一間房子耶。這份報告把全部資產叫做盤子，連房子也算進去。那如果讓兩邊的盤子一樣大，都是兩千萬呢？你猜哪一邊比較安全？對，結果反而是租屋的那家更穩。<short pause>年金打七折的時候，差距還更明顯喔。買房雖然不用付房租，但要付稅金、管理費跟維修。重點是，壓在房子裡的那一大塊錢，又不能拿來買菜啊。",
+   "reason": "「之前說租屋比較慘」改回基礎篇原句；補回兩千萬的對照；刪結尾添加的「越過越慌」"
+  },
+  {
+   "from": "每個數字都會壞一級",
+   "to": "每個數字都會變差一級",
+   "reason": "同上，三次都聽成換一級"
+  }
+ ]
+}

@@ -1,0 +1,154 @@
+{
+ "segment": "s04_renters",
+ "position": "第 5 段，共 14 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e01dc1cb80e6dd745245c1958a4d78092d43636eb1c53ec4c8e199141fe04c98",
+ "previous_context": "重點是，壓在房子裡的錢，又不能拿來買菜啊。能動用的現金變少，日子真的會越過越慌耶。",
+ "original": {
+  "text": "那基礎篇的租屋家庭呢？存款一千萬、月租兩萬，盤子就只有一千萬，破產率百分之三點八。這份報告說，他們吃虧在盤子比有房的那一家小了一間房子，租屋這件事本身沒有讓他們吃虧。那租屋的人，存款要多少？想把破產率壓到百分之二以下：月租一萬五要一千萬，月租兩萬要一千兩百萬，月租三萬要一千五百萬。大約是房租每多五千塊，存款要多一百五十到兩百萬。要連年金打七折也過關的話，存款還得再往上加一到兩級。",
+  "lint": {
+   "chars": 191,
+   "precise_numbers": [
+    "一千萬",
+    "兩萬",
+    "一千萬",
+    "百分之三點八",
+    "百分之二",
+    "一萬五",
+    "一千萬",
+    "兩萬",
+    "一千兩百萬",
+    "三萬",
+    "一千五百萬",
+    "五千",
+    "一百五十",
+    "兩百萬"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 26.3,
+   "max_sentence_len": 45,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那如果完全不買房呢？\n對，只靠存款租屋，到底安不安全？\n這份報告說，租屋其實沒有比較吃虧。\n他們只是總資產少了一間房子的錢。\n像存款一千萬的夫妻，每個月租兩萬，\n把錢花光的機率，大約是百分之三點八。\n<short pause>\n所以租屋的人，帳戶到底要放多少錢才夠？\n其實房租每多五千塊，\n存款就得跟著多抓兩百萬。\n如果你每個月房租是兩萬塊，\n存款可能要一千兩百萬才穩喔。\n要是之後年金被打折，\n手頭上的存款還要再往上加。\n算到這裡我都替租屋族擦一把冷汗了啦。",
+   "lint": {
+    "chars": 203,
+    "precise_numbers": [
+     "一千萬",
+     "兩萬",
+     "百分之三點八",
+     "五千",
+     "兩百萬",
+     "兩萬",
+     "一千兩百萬"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.3,
+    "max_sentence_len": 34,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "所以，如果完全不買房呢？\n基礎篇那個租屋家庭，總資產只有一千萬。\n算出來退休金花光的機率，\n大概是百分之三點八。<short pause>\n這份報告說，租屋其實沒有吃虧。\n這結論真的滿反直覺的耶。\n他們只是總資產少了一間房。\n那租屋到底要存多少才安全？\n重點其實在房租啦。\n房租每多五千塊，存款就要多兩百萬。\n月租兩萬的話，大概需要一千兩百萬。\n要是以後年金打折，存款還要再往上加喔。",
+   "lint": {
+    "chars": 168,
+    "precise_numbers": [
+     "一千萬",
+     "百分之三點八",
+     "五千",
+     "兩百萬",
+     "兩萬",
+     "一千兩百萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "對啊，那只靠租屋的人該怎麼辦？\n\n其實這份報告說，租屋這件事本身並沒有吃虧。\n\n他們只是總資產少了一間房子啦。\n\n像存款一千萬又月租兩萬的人，<short pause>\n\n退休把錢花光光的機率，只有百分之三點八。\n\n那你可能會想，存款到底要多少才夠？\n\n數字攤開來看超清楚。\n\n租金每個月一萬五，大概要一千萬。\n\n然後房租只要每多五千塊，\n\n存款就要跟著多準備快兩百萬耶。\n\n萬一年金被打七折，<sigh>\n\n那這筆養老金還得再往上疊上去了。",
+   "lint": {
+    "chars": 180,
+    "precise_numbers": [
+     "一千萬",
+     "兩萬",
+     "百分之三點八",
+     "一萬五",
+     "一千萬",
+     "五千",
+     "兩百萬",
+     "萬一"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 19.0,
+    "max_sentence_len": 33,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "所以，如果完全不買房呢？基礎篇那個租屋家庭，總資產只有一千萬。算出來退休金花光的機率，大概是百分之三點八。<short pause>這份報告說，租屋其實沒有吃虧。這結論真的滿反直覺的耶。他們只是總資產少了一間房。那租屋到底要存多少才安全？重點其實在房租啦。房租每多五千塊，存款就要多兩百萬。月租兩萬的話，大概需要一千兩百萬。要是以後年金打折，存款還要再往上加喔。",
+   "to": "那基礎篇那個租屋家庭呢？存款一千萬、月租兩萬，盤子就只有一千萬。算出來破產率大概是百分之三點八。<short pause>這份報告說，他們吃虧在盤子小了一間房子，租屋這件事本身沒有讓他們吃虧。那租屋到底要存多少才安全？想把破產率壓到百分之二以下，月租兩萬的話，大概需要一千兩百萬。房租每多五千塊，存款就要多一百五十到兩百萬。要是年金打七折也要過關，存款還得再往上加一到兩級喔。",
+   "reason": "「多兩百萬」改回一百五十到兩百萬；補回 2% 的目標；「總資產一千萬」改為存款"
+  }
+ ]
+}

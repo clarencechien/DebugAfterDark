@@ -1,0 +1,145 @@
+{
+ "segment": "s08_scale",
+ "position": "第 9 段，共 14 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "de91d9248cf4e51204923fe3a7b5fe1fbb8565e881b6f9128504c21b5e2d9119",
+ "previous_context": "像那間一千五百萬的房子，月租要衝到五、六萬才值得買耶。但這份報告說，台北的租金其實低得誇張。",
+ "original": {
+  "text": "常有人拿更貴的房子問同一題：月租三萬住三千萬的房子，月租六萬住六千萬的房子，該租還是該買？這是比例的問題，兩間的收益率都是百分之一點二，都遠低於分界線。可是現實裡有一樣東西不會跟著放大，就是年金。勞保的投保薪資有上限，住六千萬房子的家庭，年金也還是四萬多。把年金固定住，其他的資產、房價、房租和生活費一起放大兩倍、四倍：租的那一邊，破產率幾乎沒動；買的那一邊，從不到百分之一，升到一成，再升到兩成多。",
+  "lint": {
+   "chars": 200,
+   "precise_numbers": [
+    "三萬",
+    "三千萬",
+    "六萬",
+    "六千萬",
+    "百分之一點二",
+    "六千萬",
+    "四萬",
+    "百分之一"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 39.0,
+   "max_sentence_len": 71,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這時候就有人問啦，換更貴的房子呢？比如月租三萬住三千萬，月租六萬住六千萬。這到底是該買還是該租？其實答案還是一樣喔。兩間的收益率，都只有百分之一點二。<short pause>但現實中有一樣東西不會跟著變多。對，就是政府給的勞保年金。不管房子多貴，上限每個月就四萬多。所以資產放大四倍之後，結果會怎樣？選擇用租的，把錢花光的機率幾乎沒變。但選擇用買的，破產機率一路飆到兩成多。這個落差真的大到嚇死人。<sigh>原來年金只保護小資，盤子越大越靠不到它啦。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [
+     "三萬",
+     "三千萬",
+     "六萬",
+     "六千萬",
+     "百分之一點二",
+     "四萬"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.0,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那如果換成更貴的房子呢？\n常常有人問，月租三萬住三千萬該怎麼選？\n或是月租六萬住六千萬呢？\n其實這一樣是比例問題啦。\n兩邊算下來，收益率都是百分之一點二。\n所以答案還是偏向用租的。\n不過，現實裡有一樣東西不會跟著放大喔。\n你想想看是什麼？<short pause>\n對，答案是勞保年金。\n因為投保薪資有上限嘛。\n就算住六千萬的房子，年金也還是四萬多。\n所以當資產放大，買房買錯的代價完全不同。\n這份報告模擬出來，買房把錢花光的機率，\n直接從不到百分之一衝到兩成多耶。<sigh>\n這差距大到讓我倒抽一口氣。\n反而用租的那組，風險幾乎完全沒動。",
+   "lint": {
+    "chars": 237,
+    "precise_numbers": [
+     "三萬",
+     "三千萬",
+     "六萬",
+     "六千萬",
+     "百分之一點二",
+     "六千萬",
+     "四萬",
+     "百分之一"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 34,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那如果往上看更貴的房子呢？\n像是月租好幾萬、住幾千萬的豪宅，該買還租？\n其實答案一樣偏向用租的喔。<short pause>\n重點來了，現實裡有一樣東西不會等比例變大。\n你知道是什麼嗎？就是勞保年金啦。\n因為投保薪資有上限，頂多就領四萬多。\n所以這份報告把資產跟開銷放大好幾倍去算，\n用租的人，把錢花光的機率幾乎是零；\n可是用買的，破產機率竟然飆到百分之二十二！\n我只能說，年金這塊地板越有錢越薄耶。",
+   "lint": {
+    "chars": 178,
+    "precise_numbers": [
+     "萬",
+     "千萬",
+     "四萬",
+     "百分之二十二"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 57,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "那如果往上看更貴的房子呢？像是月租好幾萬、住幾千萬的豪宅，該買還租？其實答案一樣偏向用租的喔。<short pause>重點來了，現實裡有一樣東西不會等比例變大。你知道是什麼嗎？就是勞保年金啦。因為投保薪資有上限，頂多就領四萬多。所以這份報告把資產跟開銷放大好幾倍去算，用租的人，把錢花光的機率幾乎是零；可是用買的，破產機率竟然飆到百分之二十二！我只能說，年金這塊地板越有錢越薄耶。",
+   "to": "那如果往上看更貴的房子呢？像是月租三萬住三千萬、月租六萬住六千萬，該買還是租？兩間的收益率都只有百分之一點二，答案一樣偏向用租的喔。<short pause>重點來了，現實裡有一樣東西不會跟著變大。你知道是什麼嗎？就是勞保年金啦。因為投保薪資有上限，住六千萬房子的家庭，年金也還是四萬多。這份報告把年金固定住，其他的資產跟開銷放大兩倍、四倍去算。用租的，破產率幾乎沒動；用買的，從不到百分之一，一路升到百分之二十二。",
+   "reason": "「豪宅」改回原文的兩級房子；說清楚是年金固定、其他放大；刪個人反應"
+  }
+ ]
+}

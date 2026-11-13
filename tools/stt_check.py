@@ -25,10 +25,32 @@ def num_to_zh(m):
     if n < 1000: return DIGITS[n // 100] + "百" + ("" if n % 100 == 0 else ("零" if n % 100 < 10 else "") + num_to_zh(re.match(r"\d+", str(n % 100))).lstrip("一" if n % 100 >= 10 and n % 100 < 20 else ""))
     return m.group(0)
 
+def int_zh(n):
+    """Quantity reading up to 99,999: 1200 -> 一千二百, 1050 -> 一千零五十 (兩 is folded into 二 by norm)."""
+    if n < 1000: return num_to_zh(re.match(r"\d+", str(n)))
+    if n >= 100000: return str(n)
+    out, zero = "", False
+    for unit, name in ((10000, "萬"), (1000, "千"), (100, "百"), (10, "十"), (1, "")):
+        d, n = divmod(n, unit)
+        if d:
+            out += ("零" if zero else "") + DIGITS[d] + name; zero = False
+        elif out:
+            zero = True
+    return out
+
+def zh_numbers(s):
+    """Breeze writes 1,500 萬, 3.8％, 2500 萬; the script says 一千五百萬, 百分之三點八, 兩千五百萬.
+    Read digits the way they were spoken so number formatting doesn't count as an error (EP24: 5.9% -> see qa)."""
+    s = re.sub(r"(?<=\d),(?=\d{3})", "", s)
+    s = re.sub(r"(\d+(?:\.\d+)?)\s*[%％]", r"百分之\1", s)
+    s = re.sub(r"(\d+)\.(\d+)", lambda m: int_zh(int(m.group(1))) + "點" + "".join(DIGITS[int(c)] for c in m.group(2)), s)
+    s = re.sub(r"\d{4,5}(?=\s*[萬億塊元倍次])", lambda m: int_zh(int(m.group(0))), s)
+    return re.sub(r"\d+", num_to_zh, s)
+
 def norm(s, conv):
     s = conv.convert(s)
     s = re.sub(r"<[^>]+>|［\?］|\[\?\]", "", s)
-    s = re.sub(r"\d+", num_to_zh, s)
+    s = zh_numbers(s)
     s = re.sub(r"[^\w]", "", s).lower()
     return s.replace("醬子", "這樣子").replace("醬", "這樣").replace("兩", "二")
 

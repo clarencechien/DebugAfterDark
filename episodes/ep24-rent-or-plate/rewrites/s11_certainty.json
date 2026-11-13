@@ -1,0 +1,128 @@
+{
+ "segment": "s11_certainty",
+ "position": "第 12 段，共 14 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "eaeeef4d5f9b6b3355a976b0d77046d68e4968c9da8826c08394c0770f548f24",
+ "previous_context": "我讀到這個數字心裡真的涼了一下。要是老了被迫只能用現金買房，這份報告算出來，晚年把錢花光的機率會直接飆高，甚至有滿多人到時候，根本已經買不起了。",
+ "original": {
+  "text": "第三，表裡屋主的破產，指的是存款歸零，房子還在。現實裡屋主還可以賣房改租，或辦以房養老，這兩條路模擬都沒有算，所以有房那一邊的破產率是高估的；租方沒有這條退路。這份報告說，三件事合起來，買房買到的東西很清楚：房租不會漲到你頭上，房東不能請你走，最壞的時候還有一間房可以變現。這份確定是有價格的：一千五百萬、月租兩萬的房子，是每年四十二萬的機會成本。對小資來說，以後可能被迫買，是租屋最實際的風險；覺得自己遲早要買的人，早買比較穩。",
+  "lint": {
+   "chars": 215,
+   "precise_numbers": [
+    "一千五百萬",
+    "兩萬",
+    "四十二萬"
+   ],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 42.0,
+   "max_sentence_len": 56,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實還有一個很大的差別。\n\n這份報告算屋主破產，只是存款歸零而已。但人家名下的房子還在欸。\n\n你想想看，如果真的沒錢了會怎樣？大不了把房子賣掉，或是拿去辦以房養老。屋主至少還有退路，租屋族完全沒有嘛。<short pause>\n\n所以買房到底買到了什麼？就是買一份確定感。<short pause>房租漲不到你，房東也趕不走你，最壞的狀況，還有一間房子可以變現。\n\n只是這份確定也是有代價的喔。換算下來，每年大約是四十二萬的代價。這結論我讀了真的很有共鳴。如果你覺得遲早都要買，早點買真的比較穩啦。",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [
+     "四十二萬"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 31,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "而且你可能不知道，<short pause>這份報告說的破產，其實只是存款花光，房子都還在耶。你想想看，屋主就算沒現金了，他還能把房子賣掉改用租的，或是拿房子去辦以房養老啊。但租屋族要是錢花光，就真的沒退路了。所以買房到底買到什麼？其實就是買到一份確定感嘛。房東趕不走你，房租也不會一直漲。最慘的時候，手頭還有一間房子可以變現。但這份確定感是有代價的喔。換算下來，每年大概有四十二萬的機會成本。如果你覺得自己遲早都得買，那其實早一點買，心裡真的會比較踏實啦。",
+   "lint": {
+    "chars": 216,
+    "precise_numbers": [
+     "四十二萬"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.6,
+    "max_sentence_len": 39,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "其實這份報告裡說屋主把錢花光，\n他的房子都還在手上喔。\n你想想看，最差的情況會怎樣？\n屋主還能把房子賣掉，去辦以房養老。\n租屋族就完全沒有這條退路了。<short pause>\n我仔細想想，買房買的到底是什麼？\n買到的其實就是一種確定感啦。\n房租不會一直漲，房東也不能趕人。\n最慘的時候，至少還有一間房能變現。\n但這份確定感是有代價的，\n算下來每年大約是四十二萬。\n所以要是你覺得自己遲早得買，\n早點買真的會比較穩一點喔。",
+   "lint": {
+    "chars": 186,
+    "precise_numbers": [
+     "四十二萬"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 26,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "其實還有一個很大的差別。這份報告算屋主破產，只是存款歸零而已。但人家名下的房子還在欸。你想想看，如果真的沒錢了會怎樣？大不了把房子賣掉，或是拿去辦以房養老。屋主至少還有退路，租屋族完全沒有嘛。<short pause>所以買房到底買到了什麼？就是買一份確定感。<short pause>房租漲不到你，房東也趕不走你，最壞的狀況，還有一間房子可以變現。只是這份確定也是有代價的喔。換算下來，每年大約是四十二萬的代價。這結論我讀了真的很有共鳴。如果你覺得遲早都要買，早點買真的比較穩啦。",
+   "to": "第三，這份報告算屋主破產，只是存款歸零而已。但人家名下的房子還在欸。真的沒錢了，還可以把房子賣掉改租，或是拿去辦以房養老。這兩條路模擬都沒算，所以屋主那邊的破產率其實是高估的。租屋族就沒有這條退路。<short pause>所以買房到底買到了什麼？就是買一份確定。房租漲不到你，房東也趕不走你，最壞的狀況，還有一間房子可以變現。只是這份確定也有價格喔。一千五百萬、月租兩萬的房子，每年大約是四十二萬的機會成本。如果你覺得自己遲早要買，早點買比較穩啦。",
+   "reason": "補回「屋主破產率是高估」；四十二萬要說是哪一間房子；刪個人反應"
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -21.4,
+  "gain_db": 1.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_couple",
+  "lufs_before": -22.2,
+  "gain_db": 2.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_floor",
+  "lufs_before": -20.3,
+  "gain_db": 0.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_plate",
+  "lufs_before": -22.1,
+  "gain_db": 2.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_renters",
+  "lufs_before": -22.3,
+  "gain_db": 2.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_owners",
+  "lufs_before": -22.9,
+  "gain_db": 2.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_ruler",
+  "lufs_before": -21.5,
+  "gain_db": 1.5,
+  "lufs_after": -20.1
+ },
+ {
+  "id": "s07_threshold",
+  "lufs_before": -20.3,
+  "gain_db": 0.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_scale",
+  "lufs_before": -22.3,
+  "gain_db": 2.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_pain",
+  "lufs_before": -21.1,
+  "gain_db": 1.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s10_weak",
+  "lufs_before": -20.1,
+  "gain_db": 0.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s11_certainty",
+  "lufs_before": -22.3,
+  "gain_db": 2.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s12_three",
+  "lufs_before": -22.2,
+  "gain_db": 2.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s13_outro",
+  "lufs_before": -23.1,
+  "gain_db": 3.1,
+  "lufs_after": -20.0
+ }
+]

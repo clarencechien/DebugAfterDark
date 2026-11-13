@@ -1,0 +1,138 @@
+{
+ "segment": "s05_owners",
+ "position": "第 6 段，共 14 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "554271bb1b3f7ee9161a1624e7b700d09762feeca8177184a749d4bfdeadcd7d",
+ "previous_context": "月租兩萬的話，大概需要一千兩百萬。要是以後年金打折，存款還要再往上加喔。",
+ "original": {
+  "text": "反過來，已經有房的人呢？有房、存款一千萬，就是三部曲的主角，房子八百萬到一千五百萬，破產率都在百分之一以下。最辛苦的是另一種家庭：有房，但存款只有三五百萬。房子一千萬、存款三百萬，破產率超過四成；存款五百萬，也將近一成。這份報告的說法是：盤子不小，能動的太少。另外，房子越貴，持有成本越高，同樣的存款，破產率也越高。",
+  "lint": {
+   "chars": 158,
+   "precise_numbers": [
+    "一千萬",
+    "八百萬",
+    "一千五百萬",
+    "百分之一",
+    "三五百萬",
+    "一千萬",
+    "三百萬",
+    "五百萬"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 25.3,
+   "max_sentence_len": 41,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那反過來看，自己有房子的人呢？其實如果房子買好了，身邊還有一千萬存款，在模擬裡面，把錢花光的機率小到像零一樣。<short pause>這裡講的破產，就是活著的時候把錢全花光啦。但哪種家庭最辛苦？答案是有房子，存款卻只有三五百萬的人。這份報告說得很傳神，叫做盤子不小，能動的太少。而且房子越貴，每年的持有成本就越高。我光是用想的都覺得壓力好大。<sigh>因為就算存款一樣，房子越貴，越容易把老本給燒光喔。",
+   "lint": {
+    "chars": 184,
+    "precise_numbers": [
+     "一千萬",
+     "三五百萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 19.4,
+    "max_sentence_len": 39,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那如果已經買房了呢？\n其實最辛苦的，反而是有房但存款只有三五百萬的人。\n你想想看為什麼？<short pause>\n因為房子很貴，每年的維護費用就吃掉一堆錢。\n這份報告說這叫盤子不小，能動的太少。\n要是你有一千萬的房子，存款只有三百萬，\n老了把錢花光見底的機率，竟然超過四成耶。\n存款有一千萬的話，這個風險才會掉到百分之一以下。\n<sigh> 真的滿殘酷的，\n房子越貴，反而要留更多現金在身邊才行喔。",
+   "lint": {
+    "chars": 171,
+    "precise_numbers": [
+     "三五百萬",
+     "一千萬",
+     "三百萬",
+     "一千萬",
+     "百分之一"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 20.4,
+    "max_sentence_len": 38,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那已經有房的人呢？<short pause>\n你可能會想，沒房租壓力應該很輕鬆吧？\n其實不一定喔。\n如果存款有一千萬，\n房子就算到一千五百萬，\n錢花光的破產機率都在百分之一以下。\n重點來了，最辛苦的是存款只有幾百萬的人。\n這份報告說，這叫盤子不小，能動的太少。\n而且房子越貴，\n每年要付的稅金跟維修費就越高。\n光是想像資產都卡在房子裡，\n我就覺得壓力超大。<short pause>",
+   "lint": {
+    "chars": 154,
+    "precise_numbers": [
+     "一千萬",
+     "一千五百萬",
+     "百分之一",
+     "百萬"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 36,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "那反過來看，自己有房子的人呢？其實如果房子買好了，身邊還有一千萬存款，在模擬裡面，把錢花光的機率小到像零一樣。<short pause>這裡講的破產，就是活著的時候把錢全花光啦。但哪種家庭最辛苦？答案是有房子，存款卻只有三五百萬的人。這份報告說得很傳神，叫做盤子不小，能動的太少。而且房子越貴，每年的持有成本就越高。我光是用想的都覺得壓力好大。<sigh>因為就算存款一樣，房子越貴，越容易把老本給燒光喔。",
+   "to": "那反過來看，自己有房子的人呢？如果房子買好了，身邊還有一千萬存款，模擬裡的破產率都在百分之一以下。<short pause>那哪種家庭最辛苦？答案是有房子，存款卻只有三五百萬的人。房子一千萬、存款三百萬，破產率超過四成。這份報告說得很傳神，叫做盤子不小，能動的太少。而且房子越貴，每年的持有成本就越高。<sigh>就算存款一樣，房子越貴，破產率也越高喔。",
+   "reason": "「小到像零」改為百分之一以下；補回四成的例子；刪重複的破產定義與個人反應"
+  }
+ ]
+}

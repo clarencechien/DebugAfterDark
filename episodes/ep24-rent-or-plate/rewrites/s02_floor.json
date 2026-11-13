@@ -1,0 +1,135 @@
+{
+ "segment": "s02_floor",
+ "position": "第 3 段，共 14 段",
+ "avoid": [
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4c69ad74bb11fa6881df6f1559d1df4109529cd0bb5d6f2c174a767b07b04b7c",
+ "previous_context": "就是人還活著，投資帳戶卻全部歸零了。後面只能靠年金過日子，其實壓力超大耶。",
+ "original": {
+  "text": "第一個詞是地板。年金是每個月固定入帳、活多久領多久的錢，三部曲把它叫做地板。第二個詞是缺口。每個月的生活費加上住房，扣掉年金，剩下要從存款裡拿的，就是缺口；一年的缺口除以存款，叫做缺口提領率，量的是這樣住，錢撐不撐得到最後。這對夫妻的年金，差不多剛好付掉吃飯過日子的錢，所以缺口幾乎全部來自住。如果月租兩萬，每個月的缺口是五萬加兩萬、減掉四萬二，等於兩萬八。",
+  "lint": {
+   "chars": 179,
+   "precise_numbers": [
+    "兩萬",
+    "五萬",
+    "兩萬",
+    "四萬二",
+    "兩萬八"
+   ],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 28.8,
+   "max_sentence_len": 65,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以我們要先搞懂兩個詞。第一個是地板，也就是每個月固定入帳的年金。活多久就領多久，算是底線啦。那缺口又是什麼？就是生活費扣掉年金後，不夠花的錢。重點來了，一年的缺口除以存款，叫缺口提領率。這把尺超關鍵，專門算你這樣住，錢能不能撐到最後。<short pause>像這對夫妻，年金剛好打平日常開銷，剩下的缺口幾乎全部都是房租。月租如果兩萬，存款每個月就得多扣一筆。我光看都覺得那個壓力真的好大喔。",
+   "lint": {
+    "chars": 184,
+    "precise_numbers": [
+     "兩萬"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 17.4,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "要搞懂這件事，我們先看兩個詞。\n第一個詞叫做地板，其實就是年金啦。\n每個月固定進帳，而且活多久領多久。\n第二個詞叫做缺口提領率。<short pause>\n這把尺在量什麼？\n量你這樣住，存款能不能撐到最後。\n生活費加房租扣掉年金，不夠的就是缺口。\n像這對夫妻，年金剛好夠平常吃喝。\n所以他們的缺口，幾乎全部都是房租。\n你猜租個房子，每個月缺口是多少？\n算下來大概要補兩萬八進去喔。<short pause>\n沒算清楚的話，真的會越住越心慌耶。",
+   "lint": {
+    "chars": 184,
+    "precise_numbers": [
+     "兩萬八"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "所以我們要先搞懂兩個概念。地板就是活多久領多久的年金。有這筆保底的錢，心裡才會踏實嘛。<short pause>再來就是缺口提領率。你猜這是什麼？其實就是不夠花、要從存款拿的比例。生活費加房租，扣掉年金就是缺口。這把尺，能幫你量出錢撐不撐得到最後。像這對夫妻的年金，剛好夠付平常生活費。所以他們的缺口，幾乎全部都來自住。如果房租兩萬，每個月缺口就是兩萬八。每個月都要挖老本，其實蠻讓人心慌的耶。",
+   "lint": {
+    "chars": 184,
+    "precise_numbers": [
+     "兩萬",
+     "兩萬八"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "要搞懂這件事，我們先看兩個詞。第一個詞叫做地板，其實就是年金啦。每個月固定進帳，而且活多久領多久。第二個詞叫做缺口提領率。<short pause>這把尺在量什麼？量你這樣住，存款能不能撐到最後。生活費加房租扣掉年金，不夠的就是缺口。像這對夫妻，年金剛好夠平常吃喝。所以他們的缺口，幾乎全部都是房租。你猜租個房子，每個月缺口是多少？算下來大概要補兩萬八進去喔。<short pause>沒算清楚的話，真的會越住越心慌耶。",
+   "to": "要搞懂這件事，我們先看兩個詞。第一個詞叫做地板，其實就是年金啦。每個月固定進帳，而且活多久領多久。第二個詞叫做缺口。生活費加上住房，扣掉年金，不夠的就是缺口。<short pause>一年的缺口除以存款，叫做缺口提領率。它量的是，你這樣住，存款能不能撐到最後。像這對夫妻，年金差不多剛好夠平常吃喝。所以他們的缺口，幾乎全部來自住。如果月租兩萬，每個月要從存款補的，就是兩萬八。",
+   "reason": "補回缺口提領率的定義（年缺口÷存款）；兩萬八要說是月租兩萬的情況"
+  }
+ ]
+}

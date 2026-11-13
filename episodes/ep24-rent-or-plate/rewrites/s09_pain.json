@@ -1,0 +1,124 @@
+{
+ "segment": "s09_pain",
+ "position": "第 10 段，共 14 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "20aaa59d7156edd1a9dd53148168b89ba447d2d06974e42b30f238c013c8703f",
+ "previous_context": "所以這份報告把資產跟開銷放大好幾倍去算，用租的人，把錢花光的機率幾乎是零；可是用買的，破產機率竟然飆到百分之二十二！我只能說，年金這塊地板越有錢越薄耶。",
+ "original": {
+  "text": "三個家庭的比例完全一樣，差別只在四萬二的年金：對小資家庭，是將近七成的生活費；對放大四倍的家庭，只剩不到兩成。這份報告的一句話是：比例決定該租還是該買，盤子決定買錯的時候有多痛，而年金讓小資痛得最輕。換個角度說，年金是小資家庭最大的一塊地板；盤子越大的人，這塊地板相對越薄，住房的決定就越重。",
+  "lint": {
+   "chars": 146,
+   "precise_numbers": [
+    "四萬二"
+   ],
+   "enumerations": [],
+   "sentences": 3,
+   "avg_sentence_len": 47.7,
+   "max_sentence_len": 54,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "為什麼會差這麼多？\n其實這三個家庭的比例完全一樣。\n差別就只在每個月四萬二的年金。\n對小資來說，年金扛了快七成的開銷喔。\n但對開銷大的人，年金連兩成都不到。\n所以這份報告講得很傳神。\n比例決定該租還是該買。\n資產規模決定你買錯會有多痛。\n而年金讓小資痛得最輕。\n我對這段結論超有共鳴。<short pause>\n資產越龐大，年金這塊地板就越薄嘛。\n買房的決定反而變得非常沉重。",
+   "lint": {
+    "chars": 164,
+    "precise_numbers": [
+     "四萬二"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 12.7,
+    "max_sentence_len": 17,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "為什麼會差這麼多？\n其實這三個家庭的比例完全一樣。<short pause>\n差別只在每個月四萬二的年金啦。\n這筆錢對小資能包辦大半開銷，\n對有錢人家卻只佔一小角。\n這份報告有句話我超認同。\n比例決定租還買，身家決定買錯有多痛。\n你知道這代表什麼嗎？\n年金就是小資家庭最大的地板。<short pause>\n盤子越大的人，買房的決定反而越重喔。",
+   "lint": {
+    "chars": 137,
+    "precise_numbers": [
+     "四萬二"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 25,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實這三個家庭的財務比例完全一樣喔。那為什麼買房的結果差這麼多？差別就在每個月四萬二的年金啦。<short pause>這筆錢對小資族來說，可以搞定大半的生活費。但對開銷很大的人，根本只算零頭而已。這份報告說得很傳神。比例決定該租還是該買。口袋深度決定買錯會有多痛。年金就是保底的安全網，像小資族的地板。越有錢的人，這塊地板相對越薄。買房的壓力自然也越重啦。",
+   "lint": {
+    "chars": 166,
+    "precise_numbers": [
+     "四萬二"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 14.1,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "為什麼會差這麼多？其實這三個家庭的比例完全一樣。差別就只在每個月四萬二的年金。對小資來說，年金扛了快七成的開銷喔。但對開銷大的人，年金連兩成都不到。所以這份報告講得很傳神。比例決定該租還是該買。資產規模決定你買錯會有多痛。而年金讓小資痛得最輕。我對這段結論超有共鳴。<short pause>資產越龐大，年金這塊地板就越薄嘛。買房的決定反而變得非常沉重。",
+   "to": "為什麼會差這麼多？其實這三個家庭的比例完全一樣。差別就只在每個月四萬二的年金。對小資來說，年金扛了快七成的開銷喔。但對放大四倍的家庭，連兩成都不到。所以這份報告講得很傳神。比例決定該租還是該買。盤子決定你買錯的時候有多痛。而年金讓小資痛得最輕。<short pause>換個角度說，盤子越大，年金這塊地板相對就越薄。買房的決定，反而變得非常沉重。",
+   "reason": "「資產規模」改回盤子；「開銷大的人」改為放大四倍的家庭；刪個人反應"
+  }
+ ]
+}

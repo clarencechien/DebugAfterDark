@@ -1,0 +1,141 @@
+{
+ "segment": "s13_outro",
+ "position": "第 14 段，共 14 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0295781389afebd6e0c785d9113685b03b9d944554913fcc9c5834b3ec84e599",
+ "previous_context": "更關鍵的是，你到底有多怕老了租不到？這種焦慮根本沒有公式，只能自己定價啦。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，租屋沒有比較差，差的是盤子：把房子算進去，盤子一樣大的時候，租屋的家庭反而比較安全。第二，比例決定該租還是該買，房價超過年租三十倍就租；盤子決定買錯的時候有多痛，而年金讓小資痛得最輕。第三，租方的弱點是房租上漲和老了租不到，所以存款要多留一格；買房買到的，是確定。再提醒一次，這集不是投資建議。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 201,
+   "precise_numbers": [
+    "三十"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 24.1,
+   "max_sentence_len": 49,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n聽完是不是覺得很難選？\n對，所以只要記住三件事就好。\n第一，算進房子後總資產一樣，租屋其實更安全。\n第二，年租除以房價不到百分之三，租比較划算。\n第三，買房買的是確定感，租屋就要多存一點錢。\n說真的，焦慮這種事真的很難用公式算啦。\n然後這集完全不是投資建議喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 177,
+    "precise_numbers": [
+     "百分之三"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 21,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，總資產相同時，租屋其實比買房更安全。\n第二，看租金房價比例，就能決定該租還是買。\n第三，租房要多備存款，買房買的則是確定感。\n聽完你覺得自己適合哪種？\n其實只要想清楚就不慌了啦。\n看完這些數據，我整個人真的踏實很多。\n對了，這不是投資建議，也沒預測房價喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 178,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n第一，總資產一樣大時，租屋其實更安全。\n然後，房價超過年租三十倍，租屋比較划算。\n最後，租屋要多留預備金，買房買的是確定感。\n\n算完有沒有覺得踏實一點？\n其實知道底線在哪，焦慮真的少一半啦。<short pause>\n先提醒一下，這集不是投資建議喔。\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 159,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>第一，總資產相同時，租屋其實比買房更安全。第二，看租金房價比例，就能決定該租還是買。第三，租房要多備存款，買房買的則是確定感。聽完你覺得自己適合哪種？其實只要想清楚就不慌了啦。看完這些數據，我整個人真的踏實很多。對了，這不是投資建議，也沒預測房價喔。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，租屋沒有比較差，差的是盤子。盤子一樣大的時候，租屋的家庭反而比較安全。第二，比例決定該租還是該買，房價超過年租三十倍就租；盤子決定買錯的時候有多痛，而年金讓小資痛得最輕。第三，租屋的弱點是房租上漲跟老了租不到，所以存款要多留一格；買房買到的，是確定。再提醒一次，這集不是投資建議喔。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "breakpoint 改回草稿的三點；刪結尾的個人感想"
+  },
+  {
+   "from": "所以存款要多留一格",
+   "to": "所以存款要多抓一點",
+   "reason": "同 s12，一格是表格用語"
+  }
+ ]
+}
