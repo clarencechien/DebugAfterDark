@@ -1,0 +1,121 @@
+{
+ "segment": "s07_seventy",
+ "position": "第 8 段，共 15 段",
+ "avoid": [
+  "重點來了",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b8d682790ef9cacab98942976286b44e4ad99342fb7df041908550abb0e676b0",
+ "previous_context": "直接寫明中央政府要負最後支付責任。所以政府最後一定得認帳啦。",
+ "original": {
+  "text": "可是這份報告提醒，法律保證的是政府會付。付多少、幾歲開始付、依哪幾年的薪水算，法律沒有保證。二〇一七年行政院送過一版改革草案，方向是把費率提高到百分之十八，把最高六十個月平均，逐年拉長到一百八十個月。那一版沒有通過，問題還在。所以比較實際的判斷是：年金歸零幾乎不會發生，給付條件被調整，隨時都有可能。最務實的做法只有一個：規劃退休的時候，把自己算出來的勞保年金打七折，看計畫還撐不撐得住。",
+  "lint": {
+   "chars": 194,
+   "precise_numbers": [
+    "百分之十八",
+    "六十",
+    "一百八十"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 31.3,
+   "max_sentence_len": 53,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "但這份報告說，法律只保證政府一定會付喔。那到底要付多少？幾歲開始給？對，法律完全沒保證。`<short pause>`其實以前政府提過改革，想把費率拉高到百分之十八，還要拉長計算薪水的年數。雖然那次沒過，問題其實一直都在。`<sigh>`所以你猜最後會變怎樣？年金直接歸零是不太可能啦。但給付條件被調整，隨時都有可能。最務實的做法只有一個，你算退休金的時候，勞保年金直接給它打七折，看自己的計畫還撐不撐得住。",
+   "lint": {
+    "chars": 185,
+    "precise_numbers": [
+     "百分之十八"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 44,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 4,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "但你仔細想想，政府認帳就等於沒事了嗎？\n其實不是喔。<short pause>\n這份報告說，法律只保證政府會付錢。\n可是要付多少、幾歲能開始領，法律完全沒寫死。\n像以前提過的草案，就想把採計期間拉長很多。\n那一版後來雖然沒過，但問題其實一直都在。\n我想到這點就覺得滿抖的。<sigh>\n所以說，年金要直接歸零，幾乎不可能。\n但條件被縮水調整，隨時都可能發生。\n那你可以怎麼防守？\n最務實的做法，就是把算出來的錢直接打七折。\n然後看看你的退休計畫，還撐不撐得住啦。",
+   "lint": {
+    "chars": 201,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "政府一定認帳，但問題來了。政府保證會付，那到底付多少？這份報告提醒，法律其實完全沒寫喔。<short pause>幾歲開始領、用哪幾年的薪水算，通通沒保證。其實幾年前行政院就想改了。那時候打算調高費率，還要把採計薪水的時間拉長三倍。雖然當時沒通過，但問題一直都在啊。所以我自己覺得，年金歸零幾乎不可能。但給付條件被修改，隨時都有可能發生。<sigh>那你該怎麼辦？最務實的做法，就是把算出來的年金直接打七折。看看打折之後，你的退休計畫還撐不撐得住啦。",
+   "lint": {
+    "chars": 206,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 24,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "但你仔細想想，政府認帳就等於沒事了嗎？其實不是喔。<short pause>這份報告說，法律只保證政府會付錢。可是要付多少、幾歲能開始領，法律完全沒寫死。像以前提過的草案，就想把採計期間拉長很多。那一版後來雖然沒過，但問題其實一直都在。我想到這點就覺得滿抖的。<sigh>所以說，年金要直接歸零，幾乎不可能。但條件被縮水調整，隨時都可能發生。那你可以怎麼防守？最務實的做法，就是把算出來的錢直接打七折。然後看看你的退休計畫，還撐不撐得住啦。",
+   "to": "但你仔細想想，政府認帳，就等於沒事了嗎？其實不是喔。<short pause>這份報告說，法律只保證政府會付。可是付多少、幾歲開始付、照哪幾年的薪水算，法律都沒有保證。二〇一七年，行政院送過一版改革草案，想把費率提高到百分之十八，把最高六十個月的平均，逐年拉長到一百八十個月。那一版沒有通過，可是問題一直都在。所以年金直接歸零，幾乎不可能；但給付條件被調整，隨時都可能發生。那要怎麼防守？最務實的做法，就是把自己算出來的勞保年金打七折，看退休計畫還撐不撐得住。",
+   "reason": "補回二〇一七草案內容；刪個人反應"
+  }
+ ]
+}

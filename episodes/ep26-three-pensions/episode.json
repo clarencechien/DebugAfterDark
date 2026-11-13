@@ -1,0 +1,48 @@
+{
+ "id": "ep26-three-pensions",
+ "number": 26,
+ "type": "full",
+ "guid": "debug-after-dark:ep26",
+ "title": "EP26 繳了二十八年，家人只領到九萬八",
+ "description": "勞保加國保繳了二十八年，人走了，八十多歲的父母只領到九萬八千元的喪葬給付，新聞標題寫「保費充公」。這份報告查下去：不是充公，是三道門同時關上；而且有一筆錢，三道門都關不住。勞保、勞退、國保常被當成同一件事，其實兩筆是大家共用的保險，只有一筆寫著你的名字。勞保年金怎麼算、會不會倒、為什麼規劃時要先打七折、離職轉國保的洞怎麼補、自提 6% 划不划算。退休三部曲倒著講的最後一集，也是三部曲的第一篇。\n\n今晚的 breakpoint：\n1. 三筆退休金，只有一筆寫著你的名字：勞保和國保是共用的保險，活多久領多久；勞退是你的存款，沒領完家人可以領回。\n2. 勞保倒的機率很低，被改的機率不低，規劃時先打七折。\n3. 最大的洞是離職轉國保：生病先辦留職停薪續保，不要直接離職；家裡有人走了，記得去查勞退專戶。\n\n原文：〈三筆退休金，只有一筆寫著你的名字〉退休三部曲・1／3 v0.1 https://imitator.ai-apps.work/r/three-pensions-plain（有試算器）\n數字查核日 2026-11-12，出處列在原文；個案依《鏡週刊》2026-05-15 與《工商時報》2026-10-03 報導，節目不念當事人的身分資訊。\n本集是制度說明與試算，不構成個人理財或法律建議；實際請領資格與金額以勞保局核定為準。\n\n上一集：EP25〈一千萬夠不夠，先問地板有多硬〉\n延伸收聽：EP24〈月租六萬住六千萬，你是盤子嗎？〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "three-pensions-plain",
+ "report_version": "v0.1（資料截至 2026-11-12）",
+ "source_url": "https://imitator.ai-apps.work/r/three-pensions-plain",
+ "status": "draft",
+ "series": "退休三部曲・地板（倒著講，3/3）",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "related": [
+  "ep25-floor-and-dose",
+  "ep24-rent-or-plate"
+ ],
+ "audio": {
+  "file": "ep26-three-pensions.mp3",
+  "bytes": 11508378,
+  "sha256": "5d3225e356dd1fe4977b23d674c4c3dab30c2a213f9248c0aadaf66fb201ae3a",
+  "duration_s": 719.2,
+  "duration": "11:59",
+  "lufs": -16.9
+ },
+ "qa": {
+  "breeze_cer_mean": 0.029,
+  "jitter_semitones": 0.229,
+  "gates": "錯誤率 2.9%、音高跳動 0.229 都通過（音高跳動剛好在門檻下）",
+  "gemini": "2026-11-13 Gemini API 碰到每月花費上限（429），Gemini 盲聽和 Ping／pong 檢查都沒有跑；兩套都聽錯的清單只有 Breeze 一邊，要靠人耳試聽",
+  "manual_pick": "s02 take2（take0 抖、專戶念成賺戶）、s04 take1、s07 take1（take0 +6.9 Hz）、s10 take1（take0 +6.1 Hz）、s13 take0（take2 +8.1 Hz）、s14 take1（take0 跟 s13 聲紋 0.900）",
+  "breeze_flags": "s14「離職」三處被 Breeze 寫成離子／留子、s06「最後支付責任」寫成最後之負責任、s10「育嬰」寫成運營；要人耳確認",
+  "consistency": "qa/consistency.json：各段音高在中位數 ±4 Hz 內、相鄰段聲紋都 ≥ 0.93；s09 語速快一成",
+  "twtone": "qa/twtone.md：沒有超過基準的項目；「快退」是誤判"
+ }
+}

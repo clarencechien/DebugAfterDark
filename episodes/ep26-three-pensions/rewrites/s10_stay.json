@@ -1,0 +1,128 @@
+{
+ "segment": "s10_stay",
+ "position": "第 11 段，共 15 段",
+ "avoid": [
+  "重點來了",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f3efd5bf777b202e7a438229c137b2bc9680342f4a4c0804f374ef0dd3d5e54c",
+ "previous_context": "要是轉去國保，只剩十萬塊左右。對，同一個人，竟然差了一百五十萬。",
+ "original": {
+  "text": "那怎麼合法留在勞保裡？生病或受傷暫時不能上班，先不要離職，請公司辦留職停薪續保，普通傷病最長一年，職業災害最長兩年。年資滿十五年被資遣，可以自願續保，一路保到能領老年給付。離職後改接案、自己開業，可以加入本業的職業工會，但必須真的在做這一行，掛名加保被查到，年資取消、保費不退。重病已經達到失能標準的人，要在還有勞保身分的時候申請失能給付。單身沒有子女的人要多想一步：勞退專戶可以指定請領人。",
+  "lint": {
+   "chars": 196,
+   "precise_numbers": [
+    "十五"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 31.7,
+   "max_sentence_len": 52,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那要怎麼合法留在勞保裡面？<short pause>\n其實有幾條路可以走。\n如果你生病受傷暫時不能上班，\n先不要離職，\n去請公司辦留職停薪續保。\n要是工作滿十五年被公司資遣，\n你猜怎麼著？\n竟然可以自願續保，一路保到領退休金耶。\n然後改去接案的人，可以加本業的工會。\n但你必須真的有在做喔，\n掛名被抓到年資會取消，保費也不退。\n看到規定寫年資全作廢，真的會冒冷汗。\n那如果是單身又沒有小孩呢？\n記得去把勞退專戶指定請領人填好啦。",
+   "lint": {
+    "chars": 188,
+    "precise_numbers": [
+     "十五"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "所以到底要怎麼合法留在勞保裡？\n其實有幾條路啦。\n要是你生病或受傷，先不要急著離職。\n你可以請公司辦留職停薪續保。\n育嬰留停也能申請續保，年資照算。\n那要是年資滿十五年被資遣呢？\n你猜能怎麼辦？\n你可以自願續保，一路保到領老年給付。\n如果你離職改接案，可以加入工會。\n但一定要真的有做這一行喔。\n掛名加保被抓到，年資會被取消。\n而且繳過的保費完全不退耶。<sigh>\n光是保費不退，就讓人起雞皮疙瘩。<short pause>\n對了，單身沒有子女的人要多想一步。\n勞退專戶可以指定請領人，要先安排好。",
+   "lint": {
+    "chars": 217,
+    "precise_numbers": [
+     "十五"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 13.5,
+    "max_sentence_len": 17,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那要怎麼合法留在勞保裡？\n其實有幾條路可以走。\n如果生病受傷沒辦法上班，先不要急著離職喔。\n請公司辦留職停薪續保，最長可以保到兩年。\n要是年資滿十五年被資遣，\n你可以自願續保，一路保到能領老年給付。\n離職改去接案的話，就加本業工會。<short pause>\n但我看到掛名被抓、年資取消，\n保費還全部不退，真的替對方捏一把冷汗。\n還有，要是身體達到失能標準，\n一定要在還有勞保身分時申請。\n那你猜單身沒小孩的人要多注意什麼？\n記得去勞退專戶指定請領人，\n錢才給得到你想給的人啦。",
+   "lint": {
+    "chars": 213,
+    "precise_numbers": [
+     "十五"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.3,
+    "max_sentence_len": 32,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "<sigh>光是保費不退，就讓人起雞皮疙瘩。",
+   "to": "",
+   "reason": "刪個人反應"
+  },
+  {
+   "from": "可以加入工會。",
+   "to": "可以加入本業的職業工會。",
+   "reason": "原文用語"
+  }
+ ]
+}

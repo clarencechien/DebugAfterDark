@@ -1,0 +1,131 @@
+{
+ "segment": "s01_recap",
+ "position": "第 2 段，共 15 段",
+ "avoid": [],
+ "recap": "EP25〈一千萬夠不夠，先問地板有多硬〉：上一集用一對勞保年金合計四萬二的夫妻，算一千萬夠不夠：答案要先問地板（活多久領多久的年金）有多硬，年金打七折時差很多。這集講地板本身：勞保、勞退、國保。",
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b2908f135eefc0342bef4090fb863f26c8aab909590d83dadef997702635ddf4",
+ "previous_context": "所以常常搞混。其實裡面只有一筆錢，是真的寫著你的名字。",
+ "original": {
+  "text": "上一集我們算了一千萬夠不夠，答案是要先問地板有多硬。這集就來看地板本身。退休三部曲我們倒著講，這是最後一集，也是三部曲的第一篇。先說一句，這集是制度說明和試算，不是個人理財或法律建議，實際能領多少，以勞保局核定為準。這份報告用的是二〇二六年十一月查得到的數字。它給趕時間的人的版本只有四行：勞保是保險，勞退是存款，勞保倒掉的機率很低、被改少的機率不低，還有自提百分之六，稅率百分之十二以上或五十歲以後，幾乎都划算。",
+  "lint": {
+   "chars": 207,
+   "precise_numbers": [
+    "一千萬",
+    "十一",
+    "百分之六",
+    "百分之十二",
+    "五十"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 33.5,
+   "max_sentence_len": 76,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上一集我們算了一千萬夠不夠。當時說要先看地板有多硬。<short pause>那這集要聊什麼？對，我們直接來看地板本身，也就是勞保、勞退跟國保。先提醒大家喔，這集純粹是制度說明，實際能領多少以勞保局核定為準。這份報告給趕時間的人四句話，我看到這個總結真的覺得超精準。<short pause>其實勞保是保險，勞退才是寫你名字的存款。然後勞保倒閉的機率很低，但是被改少的機率不低，所以規劃時最好先打個折吧。最後你猜自提百分之六划算嗎？這份報告說，年紀大一點幾乎都划算啦。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [
+     "一千萬",
+     "百分之六"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.8,
+    "max_sentence_len": 35,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "上一集我們算了一千萬夠不夠。<short pause>關鍵就在地板有多硬。這集我們就接著看地板本身，也就是勞保、勞退跟國保。先提醒大家喔，這集只是制度說明，實際能領多少，要以勞保局核定為準啦。這份報告幫趕時間的人整理了精華，我看到這段整理覺得超清楚的。你猜重點有幾行？其實才四行。勞保是保險，勞退是你自己的存款。然後勞保倒掉機率很低，但有可能被改少。最後是自己多提繳百分之六，只要所得稅率高一點，或是五十歲以後，基本上都非常划算喔。",
+   "lint": {
+    "chars": 203,
+    "precise_numbers": [
+     "一千萬",
+     "百分之六",
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.3,
+    "max_sentence_len": 40,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "上一集我們算了一千萬夠不夠，當時說要先看地板有多硬。這集我們就來看地板本身，把勞保、勞退跟國保講清楚。退休三部曲我們倒著講，今天這集其實是第一篇。先說好喔，這集只是制度說明，不是個人的理財建議，實際能領多少，要以勞保局核定為準。你猜這份報告精華在哪裡？其實重點超簡單。<short pause> 勞保是大家共用的保險齁，勞退才是寫你名字的存款。重點來了，勞保倒掉機率很低，但很可能會被改少，所以規劃時先打個折比較穩。然後自提百分之六，對很多上班族來說都超划算啦。",
+   "lint": {
+    "chars": 217,
+    "precise_numbers": [
+     "一千萬",
+     "百分之六"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 23.1,
+    "max_sentence_len": 40,
+    "sentences_over_20": 7,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "上一集我們算了一千萬夠不夠。當時說要先看地板有多硬。<short pause>那這集要聊什麼？對，我們直接來看地板本身，也就是勞保、勞退跟國保。先提醒大家喔，這集純粹是制度說明，實際能領多少以勞保局核定為準。這份報告給趕時間的人四句話，我看到這個總結真的覺得超精準。<short pause>其實勞保是保險，勞退才是寫你名字的存款。然後勞保倒閉的機率很低，但是被改少的機率不低，所以規劃時最好先打個折吧。最後你猜自提百分之六划算嗎？這份報告說，年紀大一點幾乎都划算啦。",
+   "to": "上一集我們算了一千萬夠不夠，答案是要先問地板有多硬。那這集，就來看地板本身。退休三部曲我們倒著講，這是最後一集，也是三部曲的第一篇。<short pause>先提醒一下喔，這集是制度說明跟試算，不是個人理財或法律建議，實際能領多少，以勞保局核定為準。這份報告給趕時間的人四句話。勞保是保險，勞退是存款。勞保倒掉的機率很低，可是被改少的機率不低，規劃時先打七折。還有自提百分之六，稅率百分之十二以上，或是五十歲以後，幾乎都划算。",
+   "reason": "補倒著講的最後一集；自提的條件改回原文；刪個人反應"
+  }
+ ]
+}

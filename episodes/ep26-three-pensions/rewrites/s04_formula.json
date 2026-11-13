@@ -1,0 +1,156 @@
+{
+ "segment": "s04_formula",
+ "position": "第 5 段，共 15 段",
+ "avoid": [
+  "重點來了",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "dc72bec58bda20eb755856faf2798174e6b5bb86c0c8c26afee80093de38dc9c",
+ "previous_context": "你沒工作、沒別的保險才會收到單子。雖然便宜，但保障真的滿薄的。",
+ "original": {
+  "text": "勞保年金怎麼算？絕大多數人只用一條公式：平均月投保薪資，乘以年資，再乘以百分之一點五五。平均月投保薪資取你整段加保期間最高的六十個月，不必是最後五年；年資要滿十五年才能領年金。有三件事要記得。第一，投保薪資上限是四萬五千八，月薪十萬和月薪四萬六的人，勞保年金一樣多。第二，一個人做滿四十年、全程頂格，也只有兩萬八千多。第三，現實比公式低：勞保局統計，二〇二五年平均每月一萬九千多，超過一半的人領不到兩萬。",
+  "lint": {
+   "chars": 202,
+   "precise_numbers": [
+    "百分之一點五五",
+    "六十",
+    "十五",
+    "四萬五千八",
+    "十萬",
+    "四萬六",
+    "四十",
+    "兩萬八千",
+    "一萬九千",
+    "兩萬"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 27.9,
+   "max_sentence_len": 43,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那如果是大家最常繳的勞保呢？\n其實算起來超簡單。\n你猜公式長怎樣？\n就拿最高的五年平均薪水，\n乘以你的工作年數，\n再乘以百分之一點五五。<short pause>\n然後年資要滿十五年才能按月領。\n但最扯的是什麼？\n勞保的投保上限只有四萬五千多。\n所以月薪十萬跟月薪四萬六，\n退休能領的錢根本一模一樣啦。\n就算你做滿四十年全部保到頂，\n每個月也才兩萬八千多塊而已。<sigh>\n而且現實比公式更殘酷。\n現在超過一半的人，\n每個月其實領不到兩萬塊。\n我查到這裡真的覺得滿無力的。",
+   "lint": {
+    "chars": 202,
+    "precise_numbers": [
+     "百分之一點五五",
+     "十五",
+     "四萬五千",
+     "十萬",
+     "四萬六",
+     "四十",
+     "兩萬八千",
+     "兩萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 31,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那勞保每個月到底可以領多少？其實絕大多數人，都只看一條公式。用最高五年的平均薪資，乘上年資。然後再乘上百分之一點五五。<short pause>只要年資滿十五年，就可以按月領喔。但你知道最扯的是什麼嗎？投保薪資上限只有四萬五千八。月薪十萬跟四萬六的人，領得一模一樣。就算你做滿四十年，每個月也才兩萬八。<sigh>而且現實比公式更殘酷。勞保局說現在平均每月才領一萬九。超過一半的人，每個月根本領不到兩萬啦。",
+   "lint": {
+    "chars": 184,
+    "precise_numbers": [
+     "百分之一點五五",
+     "十五",
+     "四萬五千八",
+     "十萬",
+     "四萬六",
+     "四十",
+     "兩萬八",
+     "一萬九",
+     "兩萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那如果是一般勞保，到底能領多少？\n其實算式很單純，大家都用同一條。<short pause>\n就是抓你薪水最高的五年平均，\n乘以年資，再乘以百分之一點五五。\n你猜月薪十萬跟四萬六，誰領比較多？\n答案是一樣多啦，很扯吧！<laugh>\n因為投保上限就卡在四萬五千多。\n所以薪水越高，能靠勞保補的比例越低。\n我算到這邊只覺得，這天花板也太低了。\n就算你做滿四十年、全程報到頂，\n每個月也才兩萬八千多塊。\n更殘酷的是，勞保局最新的統計，\n超過一半的人，月領其實不到兩萬塊耶。",
+   "lint": {
+    "chars": 202,
+    "precise_numbers": [
+     "百分之一點五五",
+     "十萬",
+     "四萬六",
+     "四萬五千",
+     "四十",
+     "兩萬八千",
+     "兩萬"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.2,
+    "max_sentence_len": 32,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "那如果是一般勞保，到底能領多少？其實算式很單純，大家都用同一條。<short pause>就是抓你薪水最高的五年平均，乘以年資，再乘以百分之一點五五。你猜月薪十萬跟四萬六，誰領比較多？答案是一樣多啦，很扯吧！<laugh>因為投保上限就卡在四萬五千多。所以薪水越高，能靠勞保補的比例越低。我算到這邊只覺得，這天花板也太低了。就算你做滿四十年、全程報到頂，每個月也才兩萬八千多塊。更殘酷的是，勞保局最新的統計，超過一半的人，月領其實不到兩萬塊耶。",
+   "to": "那勞保年金，到底能領多少？算式很單純，絕大多數人都用同一條。<short pause>就是你投保薪資最高的六十個月平均，乘以年資，再乘以百分之一點五五。年資要滿十五年，才能領年金。你猜月薪十萬跟四萬六，誰領比較多？答案是一樣多。因為投保薪資的上限，就卡在四萬五千八。所以薪水越高，勞保能補的比例越低。就算你做滿四十年、全程頂格，每個月也才兩萬八千多。更現實的是，勞保局統計，二〇二五年平均每個月一萬九千多，超過一半的人，月領不到兩萬塊。",
+   "reason": "「薪水最高的五年」改為投保薪資最高的六十個月；補十五年門檻；刪笑聲與個人反應"
+  }
+ ]
+}

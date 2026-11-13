@@ -1,0 +1,138 @@
+{
+ "segment": "s12_lock",
+ "position": "第 13 段，共 15 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "14d5ba020247978cf74b44f5016db05359819a81f3694fd0cf67fdc7e536d3d4",
+ "previous_context": "要是最後輸給定存，國庫還會幫你補貼。但要小心喔，單一年度市場差還是會賠啦。",
+ "original": {
+  "text": "第三件事，才是真正的代價：自提的錢鎖到六十歲。買房不行，結婚和失業也不行，你也不能決定它買什麼。所以這份報告的建議是：稅率百分之十二以上，提滿。五十歲以後，不管稅率多少都提滿，鎖的時間短，節稅的效果又大。稅率百分之五、離六十歲還有二三十年、手上又有買房或創業計畫的人，先顧好緊急預備金和頭期款，自提可以從百分之一到三開始。如果你很清楚自己存不住錢，那就不用算了，自提是最省力的強迫儲蓄。",
+  "lint": {
+   "chars": 193,
+   "precise_numbers": [
+    "六十",
+    "百分之十二",
+    "五十",
+    "百分之五",
+    "六十",
+    "二三十",
+    "百分之一"
+   ],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 31.2,
+   "max_sentence_len": 58,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "既然收益有保障，那最大的代價是什麼？其實就是你的錢會被鎖到六十歲。<short pause>買房不能拿，結婚或失業也不行。這對很多人來說真的很卡欸。那到底該怎麼決定？這份報告說，稅率在百分之十二以上，就直接提滿，節稅效果很補。然後五十歲以後，也建議直接提滿，因為能鎖的時間其實很短嘛。如果你還年輕、稅率在最低級距，手上又有買房計畫，先顧好手邊的頭期款比較要緊啦。要是你平常根本存不住錢，那就不用想了，當成強迫儲蓄就對了。",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [
+     "六十",
+     "百分之十二",
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 20.9,
+    "max_sentence_len": 38,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "所以報酬不是最大問題。\n真正的代價，其實是這筆錢會鎖到六十歲。\n你想買房不能領，失業也不能領出來。\n想到錢要鎖這麼久，我心裡也是會怕啦。<sigh>\n那到底要怎麼選？\n其實這份報告給了很清楚的原則喔。\n稅率百分之十二以上的人，直接提滿就對了。\n對，五十歲以後的人，不管賺多少也都提滿。\n因為鎖的時間變短，節稅效果超級划算。\n但如果你還年輕、繳的稅又很低呢？\n那先把買房頭期款跟緊急預備金存好。\n自提只要撥一點點薪水進去就好。<short pause>\n除非你真的很難存錢，那就當成強迫儲蓄吧。",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [
+     "六十",
+     "百分之十二",
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實真正的代價不是報酬率。\n而是你的錢會一路被鎖到六十歲。\n買房不能拿，失業也不能動。\n說真的，光想到要被綁幾十年就很掙扎。<short pause>\n那到底要怎麼選？\n這份報告說得很乾脆。\n稅率在百分之十二以上，直接提滿。\n五十歲之後也是，不管稅率都建議提滿。\n因為能少繳稅，又不用被綁太久嘛。\n那如果還年輕、稅率在最低級距呢？\n手上有買房計畫，先顧好頭期款比較實在。\n自提先提一點點感受一下就好。\n對了，要是你平常根本存不住錢，<laugh>\n自提就是最省事的強迫儲蓄啦。",
+   "lint": {
+    "chars": 205,
+    "precise_numbers": [
+     "六十",
+     "百分之十二",
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 28,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "所以報酬不是最大問題。真正的代價，其實是這筆錢會鎖到六十歲。你想買房不能領，失業也不能領出來。想到錢要鎖這麼久，我心裡也是會怕啦。<sigh>那到底要怎麼選？其實這份報告給了很清楚的原則喔。稅率百分之十二以上的人，直接提滿就對了。對，五十歲以後的人，不管賺多少也都提滿。因為鎖的時間變短，節稅效果超級划算。但如果你還年輕、繳的稅又很低呢？那先把買房頭期款跟緊急預備金存好。自提只要撥一點點薪水進去就好。<short pause>除非你真的很難存錢，那就當成強迫儲蓄吧。",
+   "to": "所以報酬不是好理由。真正的代價，是第三件事：自提的錢會鎖到六十歲。想買房不能領，結婚、失業也不行，你也不能決定它買什麼。<short pause>那要怎麼選？這份報告的原則很清楚。稅率百分之十二以上，提滿。五十歲以後，不管稅率多少，也都提滿，因為鎖的時間短，節稅的效果又大。稅率百分之五、離六十歲還有二三十年，手上又有買房或創業計畫的人，先顧好緊急預備金跟頭期款，自提可以從百分之一到三開始。如果你很清楚自己存不住錢，那就不用算了，自提就是最省力的強迫儲蓄。",
+   "reason": "「撥一點點」改回百分之一到三；強迫儲蓄的意思改回原文；刪個人反應"
+  }
+ ]
+}

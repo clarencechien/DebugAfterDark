@@ -1,0 +1,141 @@
+{
+ "segment": "s05_account",
+ "position": "第 6 段，共 15 段",
+ "avoid": [
+  "重點來了",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4e04ba82ae56d6206dbc01a906659e992b0f8c59537e6e31e97fde699336baa8",
+ "previous_context": "就算你做滿四十年、全程報到頂，每個月也才兩萬八千多塊。更殘酷的是，勞保局最新的統計，超過一半的人，月領其實不到兩萬塊耶。",
+ "original": {
+  "text": "勞退沒有公式，看放進去多少、基金賺多少。月薪六萬、做滿三十五年，扣掉通膨後每年賺百分之三，光是雇主那百分之六，專戶大約兩百六十五萬；自己再提百分之六，直接乘以二。夫妻兩人都這樣做，合計大約一千零六十萬，就是上一集那一千萬。基金的成績，二〇一三年到今年九月，年化大約百分之八，也有賠錢的年份。還有一件事很多人搞錯：勞退的月領不是終身俸，它是把專戶餘額照平均餘命攤開來發，攤完就停。活多久領多久的，是勞保。",
+  "lint": {
+   "chars": 201,
+   "precise_numbers": [
+    "六萬",
+    "三十五",
+    "百分之三",
+    "百分之六",
+    "兩百六十五萬",
+    "百分之六",
+    "一千零六十萬",
+    "一千萬",
+    "百分之八"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 32.5,
+   "max_sentence_len": 60,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以大家才把希望放在勞退上。\n那你猜勞退到底可以領多少？\n其實它沒有公式。\n就看你放多少進去，還有基金賺多少。\n假設兩個人薪水都是六萬而且都有自提，\n存三十幾年，加起來也能累積破千萬。\n基金平均每年大概賺百分之八。\n不過它偶爾也是會賠錢的喔。\n然後很多人以為勞退月領是終身俸。\n你是不是也這樣想過？\n其實根本不是耶。<laugh>\n知道真相真的會愣一下。\n它是把你帳戶的錢按平均壽命攤開來發，\n領完就真的沒了。<short pause>\n活多久領多久的是勞保，兩者剛好相反啦。",
+   "lint": {
+    "chars": 204,
+    "precise_numbers": [
+     "六萬",
+     "三十",
+     "千萬",
+     "百分之八"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 34,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那另一筆勞退能拿多少？\n其實勞退完全沒有公式。\n能領多少，看你放多少、然後基金賺多少。\n過去這十幾年，基金年化大概賺了百分之八。\n所以如果月薪六萬、做滿三十五年，\n夫妻兩人都自提，\n專戶合計竟然可以存破一千萬耶。<short pause>\n你以為月領可以像終身俸領一輩子嗎？\n完全不是醬。\n對，勞退月領只是把你專戶的錢攤開來發。\n發完就直接歸零了。<sigh>\n活多久領多久的那筆，其實是勞保啦。",
+   "lint": {
+    "chars": 168,
+    "precise_numbers": [
+     "百分之八",
+     "六萬",
+     "三十五",
+     "一千萬"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 38,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "勞保靠不住，那勞退到底能存到多少？\n其實勞退完全沒有固定公式。\n關鍵就看你放了多少，還有基金賺了多少。\n像月薪六萬的夫妻，兩個人都存好存滿。\n工作三十幾年，可以滾出一千多萬耶。\n你猜這檔基金長期表現到底好不好？\n算下來年化報酬大約百分之八。\n<short pause>\n老實說這個數字還蠻漂亮的啦。\n不過很多人以為勞退月領是終身俸。\n<sigh>\n對，這真的是天大的誤會。\n它是把你專戶裡的錢按時間分開發。\n只要扣完了，後面就一毛都沒有囉。\n真正活多久領多久的，其實是勞保啦。",
+   "lint": {
+    "chars": 205,
+    "precise_numbers": [
+     "六萬",
+     "三十",
+     "一千",
+     "萬",
+     "百分之八"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "那另一筆勞退能拿多少？其實勞退完全沒有公式。能領多少，看你放多少、然後基金賺多少。過去這十幾年，基金年化大概賺了百分之八。所以如果月薪六萬、做滿三十五年，夫妻兩人都自提，專戶合計竟然可以存破一千萬耶。<short pause>你以為月領可以像終身俸領一輩子嗎？完全不是醬。對，勞退月領只是把你專戶的錢攤開來發。發完就直接歸零了。<sigh>活多久領多久的那筆，其實是勞保啦。",
+   "to": "那勞退能拿多少？勞退沒有公式。能領多少，看你放進去多少，還有基金賺多少。月薪六萬、做滿三十五年，扣掉通膨後每年賺百分之三，光是雇主那百分之六，專戶大約兩百六十五萬。自己再提百分之六，就直接乘以二。夫妻兩個人都這樣做，合計大約一千零六十萬，就是上一集那一千萬。<short pause>還有一件事很多人搞錯。你以為勞退月領，是領一輩子的終身俸嗎？不是喔。它是把專戶的錢，照平均餘命攤開來發，發完就停了。<sigh>活多久領多久的那一筆，是勞保。",
+   "reason": "一千零六十萬是用實質百分之三算的，不是基金的百分之八；補雇主與自提的分別；醬改這樣"
+  }
+ ]
+}

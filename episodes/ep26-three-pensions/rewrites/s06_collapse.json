@@ -1,0 +1,131 @@
+{
+ "segment": "s06_collapse",
+ "position": "第 7 段，共 15 段",
+ "avoid": [
+  "重點來了",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a0629dddfbbde506ad0ab3d5ffeac176184d97dd912298050ef5aad6d4e78672",
+ "previous_context": "發完就直接歸零了。活多久領多久的那筆，其實是勞保啦。",
+ "original": {
+  "text": "那勞保會不會倒？先看壞消息。勞保是現在工作的人繳錢，付給現在退休的人，人口老化之後入不敷出。最近一次精算推估，基金二〇三一年用完。費率二〇二七年調到百分之十三，已經碰到法律寫的上限。再看這幾年實際發生的事：政府從二〇二〇年開始用預算撥補，到明年合計六千四百多億。二〇二五年十二月三十號，立法院三讀修法，把撥補寫成法定財源，還明定勞保的財務，由中央政府負最後支付責任。",
+  "lint": {
+   "chars": 183,
+   "precise_numbers": [
+    "百分之十三",
+    "六千四百",
+    "十二",
+    "三十"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 25.1,
+   "max_sentence_len": 51,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "推估"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那大家最擔心的，就是勞保會不會倒？\n先講壞消息齁。<short pause>\n勞保是現在上班的人繳錢，給退休的人領。\n人口變老之後，繳的人少、領的人變多。\n這份精算報告說，基金幾年後就會見底。\n而且費率調到百分之十三，就碰頂了。\n光聽這樣是不是覺得心很涼？\n但其實不用自己嚇自己啦。<short pause>\n這幾年政府一直撥預算，補了六千多億。\n立法院後來也直接三讀修法。\n明定勞保財務由中央政府負最後責任喔。\n所以說，基金直接歸零的機率其實很低。",
+   "lint": {
+    "chars": 188,
+    "precise_numbers": [
+     "百分之十三",
+     "六千"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那大家最擔心的勞保到底會不會倒？<short pause>\n其實倒閉的機率很低，\n但是被改條件的機率不小喔。\n壞消息是，\n勞保是現在上班的人在養退休的人。\n大家越來越老，錢自然不夠分嘛。\n精算結果說基金幾年後就會見底，\n而且費率調到百分之十三就封頂了，\n不能再隨便往上加。\n你猜政府怎麼處理？\n政府這幾年一直自己編預算貼錢，\n前後加起來貼了好幾千億。\n然後立法院也修法通過了，\n明文規定政府要負最後的責任。\n我看到修法這段，\n真的稍微鬆了一口氣。<sigh>\n法律等於保證政府一定會付錢啦。",
+   "lint": {
+    "chars": 210,
+    "precise_numbers": [
+     "百分之十三",
+     "千"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.0,
+    "max_sentence_len": 39,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那勞保到底會不會倒？\n你應該也常聽別人這樣講。\n其實壞消息大家都知道。\n勞保是上班的人繳錢，付給退休的人。\n高齡化之後，錢根本入不敷出。\n精算甚至說幾年後基金就會乾掉。\n費率調到百分之十三，也已經碰頂了。\n聽起來超抖的對吧？<short pause>\n但這幾年政府其實一直拿預算在補。\n前前後後也丟了六千多億進去。\n而且立法院後來也修法了。<short pause>\n直接寫明中央政府要負最後支付責任。\n所以政府最後一定得認帳啦。",
+   "lint": {
+    "chars": 177,
+    "precise_numbers": [
+     "百分之十三",
+     "六千"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 12.6,
+    "max_sentence_len": 16,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "那勞保到底會不會倒？你應該也常聽別人這樣講。其實壞消息大家都知道。勞保是上班的人繳錢，付給退休的人。高齡化之後，錢根本入不敷出。精算甚至說幾年後基金就會乾掉。費率調到百分之十三，也已經碰頂了。聽起來超抖的對吧？<short pause>但這幾年政府其實一直拿預算在補。前前後後也丟了六千多億進去。而且立法院後來也修法了。<short pause>直接寫明中央政府要負最後支付責任。所以政府最後一定得認帳啦。",
+   "to": "那勞保到底會不會倒？你應該也常聽別人這樣講。其實壞消息大家都知道。勞保是上班的人繳錢，付給退休的人。高齡化之後，錢根本入不敷出。最近一次精算推估，基金二〇三一年就會用完。費率調到百分之十三，也已經碰頂了。聽起來很可怕對吧？<short pause>但這幾年政府其實一直拿預算在補。從二〇二〇年到明年，合計六千四百多億。二〇二五年底，立法院也三讀修法了。<short pause>直接寫明中央政府要負最後支付責任。所以政府最後一定得認帳啦。",
+   "reason": "補回年份與數字；超抖改為很可怕"
+  }
+ ]
+}

@@ -1,0 +1,129 @@
+{
+ "segment": "s03_three",
+ "position": "第 4 段，共 15 段",
+ "avoid": [
+  "重點來了",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "3f8b7f55765ee576b19f367c70a0f9ebb66d6f69169c664d690ffb21a7338883",
+ "previous_context": "然後勞退是進個人專戶。上面寫著你的名字啦。",
+ "original": {
+  "text": "勞保買到的是三樣東西：六十五歲起活多久領多久的老年年金、在職期間的失能和死亡保障，還有生育和傷病給付。錢不在你名下，沒領到的部分不會變成遺產。勞退是存款：雇主每月至少提繳百分之六，你可以自己再加一到六，專戶跟著人走，換工作不會歸零。六十歲可以領，不必離職；六十歲前過世，專戶裡的錢由家屬或你指定的人一次領回。國保是替代品：二十五到六十五歲、沒有其他社會保險的人才會收到繳款單，保費低，保障也薄。",
+  "lint": {
+   "chars": 197,
+   "precise_numbers": [
+    "六十五",
+    "百分之六",
+    "六十",
+    "六十",
+    "二十五",
+    "六十五"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 38.4,
+   "max_sentence_len": 50,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "對，這就是最大差別。<short pause>\n勞保其實是買保險，錢是大家共用的。\n他保你活多久領多久，還有失能跟傷病。\n但錢不在你名下，沒領完不會變遺產喔。\n那勞退呢？<short pause>\n勞退就是你自己的存款。\n老闆每個月至少幫你存百分之六。\n換工作也是跟著你走，到了年紀就能領。\n要是提早走了，家屬也能全部領回。\n我每次翻到這項規定，都覺得特別安心。\n然後國保就是個備胎啦。\n你沒工作、沒別的保險才會收到單子。\n雖然便宜，但保障真的滿薄的。",
+   "lint": {
+    "chars": 188,
+    "precise_numbers": [
+     "百分之六"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 13.5,
+    "max_sentence_len": 17,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "所以這兩個到底差在哪？\n其實勞保就像買保險，\n錢是大家混在一起共用的。\n只要活著就可以一直領年金，\n還有失能跟傷病補助。\n但這筆錢不在你名下，\n沒領完也不會變遺產喔。\n勞退就不一樣了，\n它完全就是你的個人存款。\n雇主每個月至少提繳百分之六，<short pause>\n專戶跟著你走，換工作也不會消失。\n等到年紀到了，不必離職也能領。\n萬一提早走掉，家屬也能全額領回。\n那國保又是什麼？\n它就是沒工作時的替代品啦。<short pause>\n保費雖然便宜，但保障真的薄到不行。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [
+     "百分之六",
+     "萬一"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 29,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那勞保呢？它其實就像買保險。\n錢進了共用的池子，不在你的名下喔。\n它保你在職的傷病失能，還有退休年金。\n萬一沒領完就走了，這筆錢不會變遺產。\n這差別真的很大。<short pause>\n那勞退呢？你猜它算什麼？\n對，勞退其實就是你的專屬存款啦。\n老闆每個月至少要幫你存百分之六。\n換工作它也會跟著走，完全不會歸零。\n就算提早離開，家屬也能整筆領回。\n然後還有一個國保。\n那是沒工作時的替代品。\n保費雖然便宜，但保障其實超薄的耶。<sigh>",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [
+     "萬一",
+     "百分之六"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 11.6,
+    "max_sentence_len": 17,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "對，這就是最大差別。<short pause>勞保其實是買保險，錢是大家共用的。他保你活多久領多久，還有失能跟傷病。但錢不在你名下，沒領完不會變遺產喔。那勞退呢？<short pause>勞退就是你自己的存款。老闆每個月至少幫你存百分之六。換工作也是跟著你走，到了年紀就能領。要是提早走了，家屬也能全部領回。我每次翻到這項規定，都覺得特別安心。然後國保就是個備胎啦。你沒工作、沒別的保險才會收到單子。雖然便宜，但保障真的滿薄的。",
+   "to": "對，這就是最大的差別。<short pause>勞保是買保險，錢是大家共用的。它保你六十五歲起活多久領多久，還有在職期間的失能跟死亡。但錢不在你名下，沒領完，不會變成遺產喔。那勞退呢？<short pause>勞退就是你自己的存款。老闆每個月至少幫你提百分之六，你自己還可以再加。換工作也跟著你走，六十歲就能領，不必離職。要是六十歲前過世，專戶裡的錢，家屬可以一次領回。然後國保是個替代品啦。沒有其他社會保險的人，才會收到繳款單。保費便宜，保障也真的滿薄的。",
+   "reason": "「到了年紀」改回六十歲；「提早走了」改為六十歲前過世；刪個人反應"
+  }
+ ]
+}

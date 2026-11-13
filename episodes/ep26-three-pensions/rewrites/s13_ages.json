@@ -1,0 +1,129 @@
+{
+ "segment": "s13_ages",
+ "position": "第 14 段，共 15 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "57a84e2af046d01c395d5ecd7f8e87b86aa03b0b7699fd4923c090036c4a6698",
+ "previous_context": "自提只要撥一點點薪水進去就好。除非你真的很難存錢，那就當成強迫儲蓄吧。",
+ "original": {
+  "text": "最後是三個年齡該做的事。剛開始工作，上勞保局的網站或 App，確認公司有照實際薪資投保，高薪低報會同時吃掉你的勞保和勞退；換工作空窗期收到國保繳款單，要繳。工作一陣子，用公式算一次自己六十五歲的勞保年金，再算一個七折版本，這就是你退休的地板。快退休的時候，夫妻裡年金比較高、家族比較長壽的那一位，盡量等到六十五歲再領：提早五年領的人，八十五歲就會被追上。還有，跟另一半一起算剩一個人時的年金，家庭收入最多會掉到原來的三分之一。",
+  "lint": {
+   "chars": 212,
+   "precise_numbers": [
+    "六十五",
+    "六十五",
+    "八十五"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 41.4,
+   "max_sentence_len": 64,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "講完自提，其實不同年齡該做的事完全不同。\n剛出社會你最該防的是什麼？\n答案是被公司高薪低報。\n趕快開 App 查一下，\n不然退休金會默默縮水喔。\n換工作收到國保繳款單，也記得要繳。\n等工作一陣子，可以先算算自己的退休地板。\n那快退休的時候呢？\n<short pause>\n如果家族比較長壽，勞保盡量等到六十五歲再領。\n太早領的話，八十幾歲就會被追過去了。\n然後，記得跟另一半算算看，\n萬一哪天只剩一個人，\n收入可能會直接掉到原本的三成。\n<sigh> 想到這個落差，我都替大家捏一把冷汗。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [
+     "六十五",
+     "八十",
+     "萬一"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 37,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "然後，不同階段到底該做什麼？\n其實剛出社會的話，先查有沒有被高薪低報。\n這會同時吃掉你的勞保跟勞退喔。\n換工作收到國保繳款單，記得要去繳。\n工作一陣子之後，先算一下退休金的地板。\n可以先打個折算看看，心裡比較有個底。\n那快退休的人要怎麼選？\n身體好、家族長壽的，盡量晚一點再領。\n太早領的話，老了反而會被追過去啦。\n對了，一定要跟另一半好好算過。<short pause>\n萬一剩一個人，年金是不能同時領的。\n收入最多會掉到原本的三分之一。\n看到這個差距真的會起雞皮疙瘩耶。",
+   "lint": {
+    "chars": 212,
+    "precise_numbers": [
+     "萬一"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "其實不同年齡有不同功課。\n剛開始工作，記得開勞保局 App 檢查一下。\n看公司有沒有高薪低報。\n要是被少報，勞保勞退兩邊都會縮水喔。\n待業時收到國保繳款單，也要記得繳啦。\n工作一陣子之後，你可以先算算看退休金。\n直接打個七折，當成未來的基本生活費。\n那快退休的時候呢？\n夫妻裡比較長壽的，盡量等到六十五歲再領。\n<short pause>\n提早領的話，八十幾歲就會被追過去。\n然後，你有算過只剩一個人時能領多少嗎？\n金額可能直接掉到剩三分之一。<sigh>\n這落差我看了都替大家捏一把冷汗。",
+   "lint": {
+    "chars": 211,
+    "precise_numbers": [
+     "六十五",
+     "八十"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "然後，不同階段到底該做什麼？其實剛出社會的話，先查有沒有被高薪低報。這會同時吃掉你的勞保跟勞退喔。換工作收到國保繳款單，記得要去繳。工作一陣子之後，先算一下退休金的地板。可以先打個折算看看，心裡比較有個底。那快退休的人要怎麼選？身體好、家族長壽的，盡量晚一點再領。太早領的話，老了反而會被追過去啦。對了，一定要跟另一半好好算過。<short pause>萬一剩一個人，年金是不能同時領的。收入最多會掉到原本的三分之一。看到這個差距真的會起雞皮疙瘩耶。",
+   "to": "最後，不同年紀該做什麼？剛出社會，先上勞保局的網站或 App，查公司有沒有照實際薪資投保，高薪低報會同時吃掉你的勞保跟勞退。換工作的空窗期收到國保繳款單，記得要繳。工作一陣子之後，用公式算一次自己的勞保年金，再算一個七折的版本，那就是你退休的地板。<short pause>快退休的時候，夫妻裡年金比較高、家族比較長壽的那一位，盡量等到六十五歲再領。提早五年領的人，八十五歲就會被六十五歲才領的人追上。還有，一定要跟另一半一起算，剩一個人的時候，家庭收入最多會掉到原本的三分之一。",
+   "reason": "晚領的條件改回年金較高的那一位與六十五歲；補損益兩平；刪個人反應"
+  }
+ ]
+}

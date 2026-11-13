@@ -1,0 +1,146 @@
+{
+ "segment": "s08_case",
+ "position": "第 9 段，共 15 段",
+ "avoid": [
+  "重點來了",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e8aaafcc4247882fb4a3fc556391700a5bc9dbff861e38a787e0491fac1f1e31",
+ "previous_context": "最務實的做法，就是把算出來的錢直接打七折。然後看看你的退休計畫，還撐不撐得住啦。",
+ "original": {
+  "text": "回到開頭那個案例。一位單身男性，勞保投保大約十八年，後來因病不能工作，離職改繳國保，加起來二十八年。他五十四歲過世，父母只領到國保的喪葬給付。第一道門：過世時他已經不是勞保的被保險人，勞保的死亡給付只給在保期間發生的事；如果還在保，家屬大約可以領八十三萬。第二道門：他還沒到能領老年給付的年紀和條件。第三道門：國保給家屬的年金，和母親自己的國保年金只能二選一，母親已經在領自己的了。",
+  "lint": {
+   "chars": 191,
+   "precise_numbers": [
+    "十八",
+    "二十八",
+    "五十四",
+    "八十三萬"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 30.8,
+   "max_sentence_len": 56,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "回到開頭提到的那個案例。\n男生繳了快二十年勞保，後來生病離職。\n他轉去繳國保，五十幾歲就過世了。\n結果八十幾歲的爸媽，只拿到國保喪葬給付。\n你猜怎麼會這樣？\n其實是三道門同時關上了。<short pause>\n第一道門，他過世時已經沒有勞保身分。\n勞保只給在保期間發生的事嘛。\n如果還在保，家屬原本能拿八十三萬左右。\n然後第二道門，是他年紀還沒到。\n離職時不到五十歲，完全領不到老年給付。\n最後一道門更無奈，國保年金只能二選一。\n媽媽已經在領年金了，依法不能多拿這一筆。<sigh>\n看到這種結果，真的替這家人心酸啦。",
+   "lint": {
+    "chars": 227,
+    "precise_numbers": [
+     "二十",
+     "五十",
+     "八十",
+     "八十三萬",
+     "五十"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "而且除了打折，其實還有個很大的漏洞喔。<short pause>\n你猜生病離職轉國保，會發生什麼事？\n新聞報導過一個案例。\n一位先生繳了勞保加國保快三十年。\n他五十四歲過世，父母最後只拿到十萬塊耶。\n這真的讓人心裡超難過。<sigh>\n對，因為三道門同時關上了。\n第一是他過世時退保了。\n本來可以領的八十三萬死亡給付，直接泡湯。\n然後他也還沒到領老年給付的條件嘛。\n最後是媽媽已經在領自己的年金。\n依規定跟兒子的這筆只能二選一啦。",
+   "lint": {
+    "chars": 185,
+    "precise_numbers": [
+     "三十",
+     "五十四",
+     "十萬",
+     "八十三萬"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 14.4,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 2.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實這還不是最慘的狀況。<sigh>\n你記得開頭那個案例嗎？\n他繳了快三十年的保費，\n最後家人只拿到一點點錢。\n新聞說保費被充公，\n真的有這麼誇張嗎？\n其實是三道門同時關上了。\n第一，他走的時候已經改繳國保。\n勞保死亡給付一定要在保才能領。\n如果那時候還在保，家屬大約能拿八十三萬。\n然後呢，他又還沒到領老年給付的條件。\n最無奈的是第三道門，\n國保給家屬的錢跟媽媽的年金只能二選一。\n媽媽已經在領自己的，兒子的就拿不到了啦。",
+   "lint": {
+    "chars": 193,
+    "precise_numbers": [
+     "三十",
+     "八十三萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 28,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "其實這還不是最慘的狀況。<sigh>你記得開頭那個案例嗎？",
+   "to": "<sigh>回到開頭那個案例。",
+   "reason": "跟上一段接不起來"
+  }
+ ]
+}

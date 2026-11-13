@@ -1,0 +1,132 @@
+{
+ "segment": "s14_outro",
+ "position": "第 15 段，共 15 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "c6abe3033aa2c1c0661b4b41ca3f1f01d398d1d44f4543d25b38caed18e52e77",
+ "previous_context": "收入最多會掉到原本的三分之一。看到這個差距真的會起雞皮疙瘩耶。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，三筆退休金，只有一筆寫著你的名字：勞保和國保是共用的保險，活多久領多久；勞退是你的存款，沒領完，家人可以領回。第二，勞保倒的機率很低，被改的機率不低，規劃時先打七折。第三，最大的洞是離職轉國保：生病先辦留職停薪續保，不要直接離職；家裡有人走了，記得去查勞退專戶。退休三部曲倒著講到這裡，從盤子，到缺口，到地板本身。再提醒一次，這集不是理財建議。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 226,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 24.1,
+   "max_sentence_len": 57,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n第一，三筆退休金裡面，只有勞退寫著你的名字，沒領完家屬可以領回。\n\n第二，勞保被改的機率不低，你在算退休金的時候，記得先打七折。\n\n第三，最大的洞是隨便離職轉國保，生病請先辦留職停薪續保。\n\n退休三部曲倒著講，到這裡全部結束啦。<short pause>\n\n其實知道了底線在哪裡，心裡就比較有底了吧？\n\n再提醒一次，這集不是理財建議喔。\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 198,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 31,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n第一，三筆退休金裡面，只有勞退寫著你的名字。\n\n勞保跟國保是保險，活多久就領多久。\n\n勞退是你的個人存款，沒領完家屬可以領回。\n\n第二，勞保被改的機率不低，算缺口時記得先打七折。\n\n第三，最大的洞就是離職轉國保。\n\n生病先辦留停續保，不要直接離職喔。\n\n其實退休這塊，先抓出每個月進來的地板，缺口就很清楚了。\n\n這集只是制度說明，實際還是以勞保局為主啦。\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 216,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 17.0,
+    "max_sentence_len": 26,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 0,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n第一，三筆退休金裡面，只有勞退寫著你的名字。\n\n它是你的個人存款，沒領完家屬可以領回。\n\n第二，勞保被改的機率不低，算缺口先打七折。\n\n這樣你才會知道，自己每個月到底還要存多少。\n\n第三，生病記得先辦留職停薪續保，不要直接離職。\n\n然後家裡有人走了，記得去查對方的勞退專戶。\n\n<sigh> 算完這些，你是不是也覺得安心多了？\n\n不過再提醒一次，這集不是個人的理財建議喔。\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 22,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>第一，三筆退休金裡面，只有勞退寫著你的名字。它是你的個人存款，沒領完家屬可以領回。第二，勞保被改的機率不低，算缺口先打七折。這樣你才會知道，自己每個月到底還要存多少。第三，生病記得先辦留職停薪續保，不要直接離職。然後家裡有人走了，記得去查對方的勞退專戶。<sigh> 算完這些，你是不是也覺得安心多了？不過再提醒一次，這集不是個人的理財建議喔。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，三筆退休金，只有一筆寫著你的名字。勞保跟國保是共用的保險，活多久領多久；勞退是你的存款，沒領完，家人可以領回。第二，勞保倒的機率很低，被改的機率不低，規劃的時候先打七折。第三，最大的洞是離職轉國保。生病先辦留職停薪續保，不要直接離職；家裡有人走了，記得去查勞退專戶。退休三部曲倒著講到這裡，從盤子，到缺口，到地板本身。再提醒一次，這集不是理財建議喔。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "breakpoint 改回草稿；刪結尾感想"
+  }
+ ]
+}

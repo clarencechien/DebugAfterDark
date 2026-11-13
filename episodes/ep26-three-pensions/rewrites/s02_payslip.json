@@ -1,0 +1,147 @@
+{
+ "segment": "s02_payslip",
+ "position": "第 3 段，共 15 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "acc9ffe53e5a5de549a8178251a90ca80ce8ea67d40d8757c741aae981fecdd3",
+ "previous_context": "最後你猜自提百分之六划算嗎？這份報告說，年紀大一點幾乎都划算啦。",
+ "original": {
+  "text": "先看薪資單。以月薪四萬五千八的人為例，薪資單上看得到的勞保費，每個月一千一百四十五塊。同一個月，雇主還替你付了兩筆你看不到的：雇主負擔的勞保費四千零八，加上提繳到勞退的百分之六，兩千七百四十八。這兩行合起來六千七百多，比你看到的那一行大得多。勞保費流進勞保基金，跟全台一千多萬名勞工的錢混在一起。勞退那兩千七百多塊，流進你的個人專戶，帳上寫著你的名字。",
+  "lint": {
+   "chars": 176,
+   "precise_numbers": [
+    "四萬五千八",
+    "一千一百四十五",
+    "四千零八",
+    "百分之六",
+    "兩千七百四十八",
+    "六千七百",
+    "一千",
+    "萬",
+    "兩千七百"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 28.3,
+   "max_sentence_len": 53,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實在聊自提之前，先看一下薪資單。你有仔細看過每個月扣多少勞保嗎？自付的部分大概就一千多塊，對吧。重點來了，雇主還幫你多出了兩筆錢。如果你月薪四萬五千八百元，<short pause>雇主出的勞保加勞退，竟然有六千多塊喔。我看到這筆帳真的覺得差超多。那這兩邊的錢到底流去哪了？勞保是進到大池子，跟全台灣勞工混在一起。然後勞退是進個人專戶。上面寫著你的名字啦。",
+   "lint": {
+    "chars": 166,
+    "precise_numbers": [
+     "一千",
+     "四萬五千八百",
+     "六千"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 31,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "想搞懂這件事，先回頭看薪資單。\n你平常看薪水，是不是只看被扣多少？\n其實老闆在背後付的，比你看到的還多喔。\n以月薪四萬五千八百元來說，\n你每個月只要自付一千多塊勞保。\n可是老闆另外幫你付了四千多塊，\n然後每個月還提繳兩千多塊勞退。\n兩筆加起來有六千多塊耶！\n我看到這數字其實滿吃驚的。<short pause>\n重點來了，這兩筆錢去的地方完全不同。\n勞保丟進大池子，跟一千多萬人混著用。\n那勞退的錢呢？\n那是直接存進寫著你名字的專戶喔。",
+   "lint": {
+    "chars": 193,
+    "precise_numbers": [
+     "四萬五千八百",
+     "一千",
+     "四千",
+     "兩千",
+     "六千",
+     "一千",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 29,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "那到底錢是怎麼扣的？你拿薪資單出來看就知道了。假設月薪四萬五千八百元，你每個月自付的勞保費只有一千多塊。<short pause> 但其實雇主私底下幫你付更多喔。雇主負擔的勞保加上勞退，加起來居然超過六千塊！<laugh> 比你自己繳的多很多吧？所以重點是這兩筆錢去的地方完全不同。勞保是丟進全體共用的大池子，然後勞退是直接存進你的個人專戶，上面真的寫著你的名字啦。",
+   "lint": {
+    "chars": 161,
+    "precise_numbers": [
+     "四萬五千八百",
+     "一千",
+     "六千"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 19.1,
+    "max_sentence_len": 41,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "其實在聊自提之前，先看一下薪資單。",
+   "to": "先看一下薪資單。",
+   "reason": "自提還沒講到"
+  },
+  {
+   "from": "我看到這筆帳真的覺得差超多。",
+   "to": "",
+   "reason": "刪個人反應"
+  },
+  {
+   "from": "雇主出的勞保加勞退，竟然有六千多塊喔。",
+   "to": "雇主出的勞保加上勞退的百分之六，竟然有六千七百多塊喔。",
+   "reason": "補勞退百分之六"
+  }
+ ]
+}

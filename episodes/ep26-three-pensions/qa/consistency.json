@@ -1,0 +1,217 @@
+{
+ "limits": {
+  "neighbour_sim": 0.93,
+  "pitch_hz": 6.0,
+  "centroid_hz": 350.0,
+  "lufs_db": 1.0,
+  "seam_hz": 400.0,
+  "pace": 0.1
+ },
+ "segments": [
+  {
+   "id": "s00_open",
+   "start": "0:03",
+   "pitch_hz": 92.3,
+   "centroid_hz": 2123,
+   "lufs": -20.0,
+   "sim_prev": null,
+   "sim_next": 0.942,
+   "sim_episode": 0.975,
+   "seam_hz": null,
+   "chars_per_s": 3.9,
+   "issues": []
+  },
+  {
+   "id": "s01_recap",
+   "start": "0:44",
+   "pitch_hz": 94.9,
+   "centroid_hz": 2120,
+   "lufs": -20.0,
+   "sim_prev": 0.942,
+   "sim_next": 0.947,
+   "sim_episode": 0.978,
+   "seam_hz": 312,
+   "chars_per_s": 3.91,
+   "issues": []
+  },
+  {
+   "id": "s02_payslip",
+   "start": "1:31",
+   "pitch_hz": 92.0,
+   "centroid_hz": 2354,
+   "lufs": -20.0,
+   "sim_prev": 0.947,
+   "sim_next": 0.953,
+   "sim_episode": 0.98,
+   "seam_hz": -212,
+   "chars_per_s": 3.82,
+   "issues": []
+  },
+  {
+   "id": "s03_three",
+   "start": "2:07",
+   "pitch_hz": 91.3,
+   "centroid_hz": 2126,
+   "lufs": -20.0,
+   "sim_prev": 0.953,
+   "sim_next": 0.947,
+   "sim_episode": 0.976,
+   "seam_hz": -270,
+   "chars_per_s": 3.85,
+   "issues": []
+  },
+  {
+   "id": "s04_formula",
+   "start": "2:54",
+   "pitch_hz": 89.2,
+   "centroid_hz": 2567,
+   "lufs": -20.0,
+   "sim_prev": 0.947,
+   "sim_next": 0.957,
+   "sim_episode": 0.984,
+   "seam_hz": 1029,
+   "chars_per_s": 3.59,
+   "issues": [
+    "接縫亮度跳 +1029 Hz"
+   ]
+  },
+  {
+   "id": "s05_account",
+   "start": "3:45",
+   "pitch_hz": 90.2,
+   "centroid_hz": 2325,
+   "lufs": -20.0,
+   "sim_prev": 0.957,
+   "sim_next": 0.954,
+   "sim_episode": 0.984,
+   "seam_hz": -142,
+   "chars_per_s": 3.81,
+   "issues": []
+  },
+  {
+   "id": "s06_collapse",
+   "start": "4:33",
+   "pitch_hz": 94.1,
+   "centroid_hz": 2286,
+   "lufs": -20.0,
+   "sim_prev": 0.954,
+   "sim_next": 0.937,
+   "sim_episode": 0.978,
+   "seam_hz": 229,
+   "chars_per_s": 4.09,
+   "issues": []
+  },
+  {
+   "id": "s07_seventy",
+   "start": "5:16",
+   "pitch_hz": 94.9,
+   "centroid_hz": 2198,
+   "lufs": -20.0,
+   "sim_prev": 0.937,
+   "sim_next": 0.945,
+   "sim_episode": 0.97,
+   "seam_hz": -936,
+   "chars_per_s": 3.9,
+   "issues": [
+    "接縫亮度跳 -936 Hz"
+   ]
+  },
+  {
+   "id": "s08_case",
+   "start": "6:06",
+   "pitch_hz": 91.6,
+   "centroid_hz": 2280,
+   "lufs": -20.0,
+   "sim_prev": 0.945,
+   "sim_next": 0.952,
+   "sim_episode": 0.979,
+   "seam_hz": -168,
+   "chars_per_s": 4.01,
+   "issues": []
+  },
+  {
+   "id": "s09_door",
+   "start": "6:47",
+   "pitch_hz": 96.0,
+   "centroid_hz": 2236,
+   "lufs": -20.0,
+   "sim_prev": 0.952,
+   "sim_next": 0.947,
+   "sim_episode": 0.983,
+   "seam_hz": 311,
+   "chars_per_s": 4.31,
+   "issues": [
+    "語速偏 +10%"
+   ]
+  },
+  {
+   "id": "s10_stay",
+   "start": "7:29",
+   "pitch_hz": 89.6,
+   "centroid_hz": 2315,
+   "lufs": -20.0,
+   "sim_prev": 0.947,
+   "sim_next": 0.959,
+   "sim_episode": 0.977,
+   "seam_hz": -1167,
+   "chars_per_s": 3.67,
+   "issues": [
+    "接縫亮度跳 -1167 Hz"
+   ]
+  },
+  {
+   "id": "s11_selfpay",
+   "start": "8:20",
+   "pitch_hz": 92.7,
+   "centroid_hz": 2390,
+   "lufs": -20.0,
+   "sim_prev": 0.959,
+   "sim_next": 0.965,
+   "sim_episode": 0.984,
+   "seam_hz": -332,
+   "chars_per_s": 4.29,
+   "issues": []
+  },
+  {
+   "id": "s12_lock",
+   "start": "9:07",
+   "pitch_hz": 92.7,
+   "centroid_hz": 2213,
+   "lufs": -20.0,
+   "sim_prev": 0.965,
+   "sim_next": 0.977,
+   "sim_episode": 0.985,
+   "seam_hz": 176,
+   "chars_per_s": 3.67,
+   "issues": []
+  },
+  {
+   "id": "s13_ages",
+   "start": "10:00",
+   "pitch_hz": 96.0,
+   "centroid_hz": 2155,
+   "lufs": -20.0,
+   "sim_prev": 0.977,
+   "sim_next": 0.956,
+   "sim_episode": 0.981,
+   "seam_hz": -273,
+   "chars_per_s": 3.95,
+   "issues": []
+  },
+  {
+   "id": "s14_outro",
+   "start": "10:52",
+   "pitch_hz": 93.0,
+   "centroid_hz": 2231,
+   "lufs": -20.0,
+   "sim_prev": 0.956,
+   "sim_next": null,
+   "sim_episode": 0.985,
+   "seam_hz": -506,
+   "chars_per_s": 3.77,
+   "issues": [
+    "接縫亮度跳 -506 Hz"
+   ]
+  }
+ ]
+}

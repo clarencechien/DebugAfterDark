@@ -1,0 +1,126 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 15 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "bc41ba3c434c86ae32cad50586639831414947ebdcf8b5a0c34c98beeafbc133",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "繳了二十八年的保險，人走了，八十多歲的父母，最後只領到九萬八千塊。今年五月，鏡週刊報導了這個案例，標題寫的是保費充公。這份報告查下去，發現不是充公，是三道門同時關上了；而且有一筆錢，這三道門都關不住，報導裡沒有提。這集要講的，就是我們每個月薪資單上那幾筆退休金：勞保、勞退、國保。它們常被當成同一件事，其實是三筆性質不同的錢。兩筆是大家共用的保險，只有一筆，寫著你的名字。",
+  "lint": {
+   "chars": 186,
+   "precise_numbers": [
+    "二十八",
+    "八十",
+    "九萬八千"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 30.0,
+   "max_sentence_len": 47,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "繳了二十八年的保險。<short pause>\n人走之後，家屬居然只拿到不到十萬塊。\n鏡週刊報導這個案例，真的讓人看得很毛。\n新聞標題直接寫保費被充公。\n但這份報告查下去，其實不是充公喔。\n那是怎麼回事？\n對，是三道制度的大門同時關上了。\n然後重點來了。\n其實有一筆錢根本關不住，報導裡卻沒提。\n薪水扣的勞保勞退跟國保，你分得清楚嗎？\n很多人以為它們全都是同一件事啦。\n所以常常搞混。\n其實裡面只有一筆錢，是真的寫著你的名字。",
+   "lint": {
+    "chars": 188,
+    "precise_numbers": [
+     "二十八",
+     "十萬"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 13.5,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "繳了將近三十年的保險。<short pause>人走了，八十多歲的爸媽，最後竟然只拿到九萬八千八百零五元。你覺得這很扯對不對？新聞標題甚至寫著保費充公啦。我看到這個案例真的嚇一跳。<short pause>其實這根本不是充公，而是制度上的三道門同時關上了。然後，有一筆門關不住的錢，報導裡反而完全沒提。大家每個月薪水扣的勞保跟勞退，你分得清楚差在哪裡嗎？其實差非常多喔。有一筆是大家共用的保險，只有一筆，上面真正寫著你的名字。",
+   "lint": {
+    "chars": 187,
+    "precise_numbers": [
+     "三十",
+     "八十",
+     "九萬八千八百零五"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.7,
+    "max_sentence_len": 28,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "繳了將近三十年的保險，人走了。\n八十多歲的老父母，\n最後竟然只拿到九萬八千八百零五元。<sigh>\n你覺得這是保費被充公了嗎？\n其實不是。<short pause>\n這份報告說，是三道門同時關上了。\n我看到這個報導的時候，心裡真的很震撼。\n重點來了，\n更扯的是，有一筆錢這三道門根本關不住。\n只是當時的報導完全沒有提到喔。\n我們每個月扣的勞保、勞退跟國保，\n你猜它們是同一件事嗎？\n對，大家常搞混，但本質完全不一樣啦。\n裡面有兩筆是大家共用的保險。\n只有一筆錢，\n上面真正寫著你的名字。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [
+     "三十",
+     "八十",
+     "九萬八千八百零五"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 26,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "繳了二十八年的保險。<short pause>人走之後，家屬居然只拿到不到十萬塊。鏡週刊報導這個案例，真的讓人看得很毛。新聞標題直接寫保費被充公。但這份報告查下去，其實不是充公喔。那是怎麼回事？對，是三道制度的大門同時關上了。然後重點來了。其實有一筆錢根本關不住，報導裡卻沒提。薪水扣的勞保勞退跟國保，你分得清楚嗎？很多人以為它們全都是同一件事啦。所以常常搞混。其實裡面只有一筆錢，是真的寫著你的名字。",
+   "to": "繳了二十八年的保險，人走了。八十多歲的父母，最後只領到九萬八千塊。<short pause>今年五月，鏡週刊報導了這個案例，標題直接寫保費充公。但這份報告查下去，發現不是充公喔。是三道門，同時關上了。然後還有一筆錢，這三道門都關不住，報導裡卻沒有提。薪水單上的勞保、勞退跟國保，你分得清楚嗎？很多人以為它們是同一件事。其實是三筆性質不同的錢。兩筆是大家共用的保險，只有一筆，寫著你的名字。",
+   "reason": "補回父母與九萬八；刪個人反應"
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "segment": "s09_door",
+ "position": "第 10 段，共 15 段",
+ "avoid": [
+  "重點來了",
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "83f2d4266aed763e3192ae6c848c52346c71f90acbae309517fb2244f84bde3f",
+ "previous_context": "最無奈的是第三道門，國保給家屬的錢跟媽媽的年金只能二選一。媽媽已經在領自己的，兒子的就拿不到了啦。",
+ "original": {
+  "text": "有一筆錢，這三道門都關不住：勞退專戶。只要過去的雇主有提繳，專戶裡的錢就是他的財產，家屬可以在十年內向勞保局申請一次領回。報導沒有提到這一筆，這份報告說，家屬值得去查。同一年十月，工商時報刊了一個試算：投保四萬五千八、年資二十二年的人，五十二歲離職。如果之後還有勞保身分，五十四歲過世，家屬可以領大約一百六十萬；如果轉成國保，只有喪葬給付大約十萬。同一個人，差了一百五十萬。",
+  "lint": {
+   "chars": 187,
+   "precise_numbers": [
+    "四萬五千八",
+    "二十二",
+    "五十二",
+    "五十四",
+    "一百六十萬",
+    "十萬",
+    "一百五十萬"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 30.2,
+   "max_sentence_len": 48,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "不過其實還有一筆錢，\n連這三道門都關不住，就是勞退專戶啦。\n只要老闆以前有提繳過，那筆錢就是你的。\n所以家屬在十年之內，都可以向勞保局領回喔。\n這份報告說，這筆錢真的要去查一下。\n那兩邊保障到底差多少？\n報紙做過試算，\n看完真的會倒抽一口氣。<short pause>\n如果維持勞保，家屬能拿一百六十幾萬。\n要是轉去國保，只剩十萬塊左右。\n對，同一個人，竟然差了一百五十萬。",
+   "lint": {
+    "chars": 164,
+    "precise_numbers": [
+     "一百六十",
+     "萬",
+     "十萬",
+     "一百五十萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 27,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "不過，真的全都拿不到了嗎？\n其實有一筆錢，這三道門都關不住喔。\n那就是勞退專戶。\n只要雇主有提繳過，專戶裡的錢就是你的。\n家屬十年內都可以去申請一次領回。\n這份報告說，新聞完全漏掉了這筆。\n我替他們覺得超可惜耶。<short pause>\n然後，報紙上有刊過一個試算。\n保最高級距、工作二十幾年的人。\n五十出頭離開職場。\n有勞保的話，家屬可以領一百多萬。\n要是轉去國保，就只剩十萬左右。\n同一個人，竟然差了一百五十萬。\n這差很多對吧？就差在那個身分而已啦。",
+   "lint": {
+    "chars": 202,
+    "precise_numbers": [
+     "二十",
+     "五十",
+     "一百",
+     "萬",
+     "十萬",
+     "一百五十萬"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 12.5,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 2.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "不過其實還有一筆錢，這三道門擋不住啦。就是勞退的個人專戶。<short pause>只要以前老闆有提繳過嘛，那筆錢就完全是你的資產。家屬在十年之內，都可以去勞保局一次領出來。這份報告說，這筆真的很值得去查。然後你猜兩者差多少？<short pause>報紙算過一個例子。五十幾歲離職，如果過世時還有勞保，家屬能拿到一百多萬。但要是換成國保，就只剩下十萬出頭。對，同一個人，居然整整差了一百五十萬。<sigh>這落差真的大到嚇死人耶。",
+   "lint": {
+    "chars": 184,
+    "precise_numbers": [
+     "五十",
+     "一百",
+     "萬",
+     "十萬",
+     "一百五十萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 15.7,
+    "max_sentence_len": 26,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 3
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "不過其實還有一筆錢，連這三道門都關不住，就是勞退專戶啦。只要老闆以前有提繳過，那筆錢就是你的。所以家屬在十年之內，都可以向勞保局領回喔。這份報告說，這筆錢真的要去查一下。那兩邊保障到底差多少？報紙做過試算，看完真的會倒抽一口氣。<short pause>如果維持勞保，家屬能拿一百六十幾萬。要是轉去國保，只剩十萬塊左右。對，同一個人，竟然差了一百五十萬。",
+   "to": "不過，有一筆錢，這三道門都關不住，就是勞退專戶。只要過去的老闆有提繳，那筆錢就是他的財產，家屬在十年之內，都可以向勞保局申請一次領回。報導沒有提到這一筆，這份報告說，家屬值得去查。<short pause>那還在勞保跟轉去國保，到底差多少？今年十月，工商時報做過一個試算：投保四萬五千八、年資二十二年的人，五十二歲離職。之後如果還在勞保，五十四歲過世，家屬大約可以領一百六十萬。要是轉去國保，只剩喪葬給付，大約十萬。同一個人，差了一百五十萬。",
+   "reason": "補回試算條件；刪個人反應"
+  }
+ ]
+}
