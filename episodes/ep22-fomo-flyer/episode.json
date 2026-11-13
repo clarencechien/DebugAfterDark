@@ -8,7 +8,7 @@
  "report_slug": "fomo-flyer",
  "report_version": "v0.2（2026-11-11）",
  "source_url": "https://imitator.ai-apps.work/r/fomo-flyer",
- "status": "draft",
+ "status": "final",
  "series": "驗收筆記 番外",
  "related": [
   "ep08-unlimited-tokens",
@@ -45,5 +45,6 @@
   "both_wrong": "多為英文字母（Karpathy、slash goal）和同音字（滿／蠻、格／個、地端／低端、搜／收）",
   "twtone": "qa/twtone.md：沒有超過基準的項目",
   "terms": "Ping、pong 3 次都判為英文念法"
- }
+ },
+ "published": "2026-11-13T08:30:00+08:00"
 }

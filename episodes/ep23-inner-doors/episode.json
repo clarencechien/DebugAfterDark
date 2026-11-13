@@ -8,7 +8,7 @@
  "report_slug": "91app-inner-doors",
  "report_version": "v0.1（2026-11-04）",
  "source_url": "https://imitator.ai-apps.work/r/91app-inner-doors",
- "status": "draft",
+ "status": "final",
  "series": "資安事件 2/2（上：EP14）",
  "related": [
   "ep14-91app-doors"
@@ -46,5 +46,6 @@
   "rewrite": "改寫稿幾乎每段都有自我更正，13 段全部依原文人工重寫",
   "twtone": "qa/twtone.md：重寫稿的分號與結論冒號已改，重跑後沒有超過基準",
   "terms": "Ping、pong 3 次都判為英文念法"
- }
+ },
+ "published": "2026-11-13T08:32:00+08:00"
 }

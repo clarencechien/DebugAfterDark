@@ -27,6 +27,8 @@
 | [EP19](episodes/ep19-ownership-token/) | 錢不重要之後，誰握著產能 | 定稿；報告 v0.2（11/10，補期中選舉） |
 | [EP20](episodes/ep20-ai-premium-recheck/) | AI 熄火了嗎？四個月後的複檢 | 定稿 |
 | [EP21](episodes/ep21-catchable-not-human/) | 抓得到的，都不是人味 | 定稿 |
+| [EP22](episodes/ep22-fomo-flyer/) | 催你學的，已經內建了（驗收筆記 番外） | 定稿 |
+| [EP23](episodes/ep23-inner-doors/) | 門牌寫著內部的門（資安事件 2/2，上：EP14） | 定稿；Breeze 3.8%（同音字），Gemini 1.8% |
 
 - 一集怎麼做：[`docs/recipe.md`](docs/recipe.md)
 - 選題對照：[`docs/report-candidates.md`](docs/report-candidates.md)（imitator 2026 年的報告，標了已做、推薦、可做、不做）
