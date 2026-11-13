@@ -1,0 +1,132 @@
+{
+ "segment": "s07_ssh",
+ "position": "第 8 段，共 16 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2ffc941646f7ce53f997221e0133c6d1719eea52227234a7aac9cef8f6aed101",
+ "previous_context": "承諾的目的只有一個，就是把時間釘死。就像 Victor 要等 Peggy 進洞才喊一樣嘛。",
+ "original": {
+  "text": "可是互動很麻煩，雙方要同時在線上。一九八六年，Fiat 和 Shamir 想到一招：題目只需要是證明的人控制不了的隨機值，那何必真的找個人來出題？把承諾丟進雜湊函數，算出來的值就當題目。三個回合併成一則訊息，證明變成一個可以貼在網頁上、寄給別人的字串。再把要簽的訊息一起丟進去，就是 Schnorr 簽章。Ed25519、比特幣的 Taproot，都是這一支。所以這份講義說，零知識不是什麼異星科技，它最基本的形式，早就在你的系統裡跑了很多年。證明我知道一把金鑰，是免費的；貴的是下一步。",
+  "lint": {
+   "chars": 238,
+   "precise_numbers": [
+    "25519"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 28.8,
+   "max_sentence_len": 52,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "可是你想想，互動其實超麻煩的。\n兩個人都要同時在線上。<short pause>\n而且做出來的證明，沒辦法拿給別人看。\n那何必真的找個人來出題？\nFiat 跟 Shamir 想到一招。\n直接把承諾丟進雜湊函數。\n算出來的值就當作題目啦。\n雜湊沒人猜得到，你送出就反悔不了。\n這樣三個回合，就濃縮成一串文字。\n你可以貼在網頁上，也能寄 email 給別人。\n最厲害的是，把要簽的訊息一起放進去。\n你拿到的就是 Schnorr 簽章。\n你平常用的 SSH 金鑰，\n如果是 ed25519，就是這一套喔。\n所以這份講義說，零知識不是什麼外星科技。\n它最基本的樣子，在系統裡跑了三十年。\n證明自己知道一把金鑰，基本上是免費的。<short pause>\n真正貴的，是後面那些複雜條件啦。",
+   "lint": {
+    "chars": 286,
+    "precise_numbers": [
+     "25519",
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 28,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "可是這種一來一往的互動，其實超麻煩的。\n兩人都要同時在線上。\n<short pause>\n而且證明還沒辦法拿給第三個人看。\n一九八六年，Fiat 和 Shamir 想出一招。\n既然題目只要隨機就好，何必找真人出題？\n直接把承諾丟進雜湊函數。\n算出來的值，直接拿來當題目就好啦。\n這樣證明的人就沒辦法反悔。\n三個回合直接變成一串字，寄信就能傳。\n最厲害的是，把要簽的訊息一起丟進去。\n你得到的，其實就是 Schnorr 簽章。\n像 ed25519 的 SSH 金鑰，就是這套。\n這份講義說，零知識根本不是外星科技嘛。\n它早就默默在你的系統裡，跑了幾十年。\n證明你知道一把金鑰，基本上是免費的。\n真正貴的，是下一節那些複雜的條件。",
+   "lint": {
+    "chars": 275,
+    "precise_numbers": [
+     "25519"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "可是每次都要兩個人在線上，其實超麻煩的。\n證明還沒辦法直接拿給別人看。\n那要怎麼辦？<short pause>\n一九八六年 Fiat 和 Shamir 想到一招。\n老實說這招真的超聰明。\n既然題目只要沒人猜得到就好，\n何必真的找個人來出題？\n直接把承諾丟進雜湊函數，\n算出來的結果就是題目啦。\n你只要改了承諾，題目就會跟著變。\n所以三個回合，直接縮成一則訊息。\n證明變成一段字串，隨便你要貼給誰。\n最厲害的是，\n把訊息一起丟進去，就成了 Schnorr 簽章。\n你連 SSH 用的 ed25519 就是它。<short pause>\n這份講義說，零知識根本不是外星科技。\n它早就默默在你的系統裡跑了幾十年。\n證明「我知道私鑰」是免費的，\n真正貴的，是後面那些複雜條件喔。",
+   "lint": {
+    "chars": 281,
+    "precise_numbers": [
+     "25519"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 17.7,
+    "max_sentence_len": 29,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "最厲害的是，把要簽的訊息一起丟進去。",
+   "to": "再來，把要簽的訊息一起丟進去。",
+   "reason": "刪口頭禪"
+  },
+  {
+   "from": "跑了幾十年。",
+   "to": "跑了很多年。",
+   "reason": "Schnorr 是一九八九年，不到四十年；原文寫三十年"
+  }
+ ]
+}

@@ -1,0 +1,140 @@
+{
+ "segment": "s14_test",
+ "position": "第 15 段，共 16 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "9cc343e710461139b7106b768cad470a3237f2d5f0656fc98c156c11f22c3f54",
+ "previous_context": "跟主管機關說你不知道對方是誰？這等於是直接承認自己違規啦。",
+ "original": {
+  "text": "最後，講義給了三個問題，答不出來就別用。第一，有沒有一個你不想信、或不能永遠依賴的第三方？如果 Google 一直都在、你也信它，OIDC 就是對的工具。第二，驗證的人持有你的原始資料，是不是一種負債？像開頭那間只想知道你滿十八歲的酒吧。第三，需不需要讓別人便宜地驗證一段昂貴的運算？三個都答不出來，就不需要零知識證明，替代方案便宜得多。可是只要有一題答得出來，那個需求通常沒有別的解法。這份講義說：零知識證明不是一個更好的做法，它是一個原本做不到的做法。",
+  "lint": {
+   "chars": 225,
+   "precise_numbers": [
+    "十八"
+   ],
+   "enumerations": [
+    "第一",
+    "第三",
+    "第二",
+    "第三"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 24.0,
+   "max_sentence_len": 33,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.4,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 3,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以到底什麼時候才真的需要零知識證明？\n這份講義給了三個問題，讓大家自己檢查。\n第一，你有不能永遠依賴的第三方嗎？\n如果你完全相信 Google，\n那直接用現成的 OIDC 就好啦。\n再來，對方拿到你的資料，會是一種負債嗎？\n像是對方巴不得不要碰個資，免得外洩被罰。\n最後，你需要讓別人便宜驗證昂貴的運算嗎？\n你答得出來嗎？<short pause>\n如果三個都答不出來，那就千萬不要用。\n因為現成的做法便宜太多了。<laugh>\n可是最厲害的是，只要你能答出其中一題，\n那個需求通常就沒有別的解法了。\n這份講義說得超好，\n零知識證明不是更好的做法，\n它是原本根本做不到的做法。",
+   "lint": {
+    "chars": 251,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 19.9,
+    "max_sentence_len": 34,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.4,
+    "written_words": [
+     "其中"
+    ],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "所以到底什麼時候才該用零知識證明？這份講義列了三個問題。<short pause> 你要是答不出來，就先別碰。第一，有沒有你不想信的第三方？如果 Google 一直都在你也信它，用現成的 OIDC 就很夠啦。然後，對方拿到你的資料是不是負債？如果對方怕個資外洩要賠錢，才需要它嘛。最後，要不要讓別人便宜驗證很貴的運算？要是三個都答不出來呢？那你完全不需要零知識證明，因為其他現成工具便宜超多。<short pause> 可是只要有一題答得出來，那個需求通常沒有別的解法。我超認同這點。這份講義說，它不是一個更好的做法，它是一個原本做不到的做法。",
+   "lint": {
+    "chars": 240,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 29,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "所以到底什麼時候該用零知識證明？\n這份講義列了三個問題。\n只要你答不出來，就千萬別用。\n第一個問題，你有沒有不想依賴的第三方？\n如果你完全信任 Google，用 OIDC 就好啦。\n第二個，對方拿到你的個資，會是負債嗎？\n要是對方超怕資料外洩被罰錢，這才有用嘛。\n最後，你需要讓別人便宜驗證昂貴運算嗎？\n你說要是三個都用不到呢？\n那就真的完全不需要碰。<laugh>\n因為傳統的做法便宜太多了。\n其實只要你中了一題，通常就沒有別的解法。\n這份講義說得超好。\n零知識證明不是一個更好的做法。\n它是幫你做到原本做不到的事。",
+   "lint": {
+    "chars": 235,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第三",
+     "第二"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "要是對方超怕資料外洩被罰錢，這才有用嘛。",
+   "to": "像開頭那間只想知道你滿十八歲的酒吧。",
+   "reason": "接回開場"
+  },
+  {
+   "from": "那就真的完全不需要碰。<laugh>",
+   "to": "那就不需要零知識證明。",
+   "reason": "刪笑聲"
+  }
+ ]
+}

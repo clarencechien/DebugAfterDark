@@ -1,0 +1,123 @@
+{
+ "segment": "s04_tape",
+ "position": "第 5 段，共 16 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "942c3811b4de5c827fc4720152af910e30376fa0bb86c74abdc09a87dd685480",
+ "previous_context": "重點來了，Victor 沒聽到半句咒語。但他已經不得不信了，超神耶。",
+ "original": {
+  "text": "這裡有個關鍵：Victor 一定要等 Peggy 進去之後才喊。如果他先喊，她直接走那一邊就好，什麼咒語都不用會。接著講義問了一個很妙的問題：如果有人把整場過程錄下來，拿給第三個人看，能說服他嗎？不能。只要攝影師跟 Peggy 串通好，把喊錯的片段剪掉，就能拍出一模一樣的影片。帶子沒有說服力，這不是漏洞，反而是它零知識的證據。這也是一九八五年那篇論文最漂亮的一步：只要一個完全不知道秘密的人，也能編出一份看起來一模一樣的紀錄，那原本的紀錄裡，就不可能藏著秘密。",
+  "lint": {
+   "chars": 226,
+   "precise_numbers": [],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 31.3,
+   "max_sentence_len": 66,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實這裡有個超重要的細節，就是順序。\nVictor 一定要等 Peggy 進去之後才喊。\n要是他先喊呢？\nPeggy 直接挑那一邊走進去就好啦。\n她根本什麼咒語都不用會嘛。\n然後這份講義問了一個超妙的問題。\n如果把整場過程錄影下來，拿給你看，\n能說服你嗎？ <short pause>\n答案是完全不行。\n你想想看喔，只要攝影師跟她串通好，\n把喊錯的片段偷偷剪掉，\n就能拍出一模一樣的影片了啊。\n<laugh> 所以這卷帶子根本沒有說服力。\n但最酷的是，這不是系統的漏洞喔。\n這反而剛好證明了它是零知識。\n因為只要一個不知道秘密的人，\n也能自己編出一模一樣的紀錄，\n那就代表原本那份紀錄裡，\n根本就不可能藏著秘密嘛。",
+   "lint": {
+    "chars": 263,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 19.2,
+    "max_sentence_len": 51,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實這招有個關鍵，就是順序。<short pause>\nVictor 一定要等 Peggy 進去之後才喊。\n要是他先喊，\nPeggy 挑那一邊走進去就好啦，\n她什麼咒語都不用會嘛。\n然後這份講義問了一個超妙的問題。\n如果把整個過程錄下來，拿給別人看，\n你覺得能說服他嗎？\n答案是完全不行。\n只要攝影師跟 Peggy 串通好，\n把走錯的片段剪掉，\n就能拍出一模一樣的影片啊。\n錄影帶沒有說服力，這不是漏洞喔，\n反而正好是零知識的證據。\n我覺得這個想法真的很聰明。<short pause>\n你想想看，\n如果一個不知道秘密的人，\n也能編出一模一樣的紀錄，\n那原本的紀錄裡，怎麼可能藏著秘密嘛。",
+   "lint": {
+    "chars": 244,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 23.4,
+    "max_sentence_len": 46,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "但這整個遊戲，順序絕對不能反過來喔。\n\nVictor 一定要等 Peggy 進去之後才喊。\n\n如果先喊，Peggy 直接挑那一邊走就好啦。\n\n她什麼咒語都不用會嘛。\n\n那如果把整場過程錄影下來呢？\n\n拿給別人看，能說服大家嗎？\n\n其實完全不行喔。<short pause>\n\n因為只要跟攝影師串通好，\n\n把喊錯的片段通通剪掉，\n\n就能剪出一模一樣的影片了。<laugh>\n\n帶子居然完全不能當證據，超妙的。\n\n但這份講義說，這反而是它最強的證明。\n\n只要一個完全不知道秘密的人，\n\n也能自己編出一份一模一樣的紀錄，\n\n那原本的紀錄裡，本來就沒藏秘密嘛。",
+   "lint": {
+    "chars": 224,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 19.4,
+    "max_sentence_len": 46,
+    "sentences_over_20": 3,
+    "particles_per_100": 2.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "<laugh>帶子居然完全不能當證據，超妙的。",
+   "to": "帶子不能當證據。",
+   "reason": "刪笑聲"
+  },
+  {
+   "from": "這反而是它最強的證明。",
+   "to": "這反而是它零知識的證據。",
+   "reason": "原文說法"
+  }
+ ]
+}

@@ -1,0 +1,156 @@
+{
+ "segment": "s10_succinct",
+ "position": "第 11 段，共 16 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a4f25ad6527fbe30b06074c146d6a74bd372835adcd65e887f3b844cfa97cb0c",
+ "previous_context": "STARK 就完全不需要這一步。它甘願檔案大很多，換的就是這份安心啦。",
+ "original": {
+  "text": "接下來是這份講義說最反直覺的一節：零知識證明的主戰場，不是隱私。SNARK 的第一個 S 是簡潔：證明很小、驗證很快，而且幾乎不會隨著被證明的運算量變大。你在以太坊的第二層網路跑了一萬筆交易，壓成一份幾百 bytes 的證明，主鏈只驗這一份，就知道一萬筆全部合法。證明一萬筆和一百萬筆，驗證的成本幾乎一樣。而且這些 zk-rollup 的交易內容，通常是公開的。這裡沒有秘密要保護，買到的是完整性：便宜地確認一段昂貴的運算沒被動手腳。在這之前，你只能重算，或者相信對方。",
+  "lint": {
+   "chars": 228,
+   "precise_numbers": [
+    "一萬",
+    "百",
+    "一萬",
+    "一萬",
+    "一百萬"
+   ],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 31.6,
+   "max_sentence_len": 52,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "不過這份講義說，零知識證明的主戰場，其實根本不是隱私。這真的很反直覺吧？zk-SNARK 的第一個字 S，代表的就是簡潔。<short pause>也就是證明可以非常小，而且驗證超快。就算運算量再龐大，證明也幾乎不會跟著變大。像是以太坊 L2 跑了一萬筆交易，主鏈根本不用重跑，只要驗證一份小檔案就好。你好奇交易內容有被藏起來嗎？完全沒有，通常全部都是公開的喔。最厲害的是，它買到的不是保密，是確認運算沒被動手腳的完整性。在這之前，你只能自己重算，不然就只能完全信任對方啦。",
+   "lint": {
+    "chars": 220,
+    "precise_numbers": [
+     "2",
+     "一萬"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 21.0,
+    "max_sentence_len": 35,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "安心歸安心，其實這份講義說了一個超反直覺的事。你以為零知識證明的主戰場是隱私嗎？其實根本不是喔。<short pause> SNARK 的第一個 S 代表簡潔。意思是證明很小、驗證極快。而且證明的大小，幾乎不會隨運算量變大。像在以太坊的第二層網路跑一萬筆交易，最後只要壓成幾百個 bytes 的證明。主鏈只要看這份就好，一萬筆全部都不用重跑。驗證一萬筆跟一百萬筆，花的時間幾乎一樣，這真的超扯耶。<laugh> 所以像 zk-rollup 的交易內容，其實通常都是公開的。這裡沒有秘密要藏，我們買到的是便宜的完整性。在以前你要嘛重算，要嘛只能選擇盲目相信對方啦。",
+   "lint": {
+    "chars": 252,
+    "precise_numbers": [
+     "一萬",
+     "百",
+     "一萬",
+     "一萬",
+     "一百萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 20.0,
+    "max_sentence_len": 35,
+    "sentences_over_20": 6,
+    "particles_per_100": 2.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "說到這裡，這份講義說了一個超反直覺的點。\n其實零知識證明的主戰場，根本不是隱私。\n大家以為它是拿來藏秘密的，對吧？\n其實完全相反。<short pause>\nzk-SNARK 的第一個 S 代表簡潔，\n英文叫做 succinct。\n意思是證明非常小，而且驗證超級快。\n運算量不管怎麼變大，證明幾乎不會變大。\n你在以太坊第二層跑了一萬筆交易，\n全部可以壓成一份幾百 bytes 的證明。\n主鏈只要驗這一份，就知道全部合法。\n要是交易量多上百倍呢？\n驗證花的力氣幾乎一樣，超神奇的。\n所以 zk-rollup 的內容通常是公開的喔。\n大家買的根本不是保密，\n而是確認運算沒被動手腳的完整性。\n在這之前，你除了自己重算一遍，\n就只能閉著眼睛選擇相信對方了啦。",
+   "lint": {
+    "chars": 288,
+    "precise_numbers": [
+     "一萬",
+     "百",
+     "百"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 19.6,
+    "max_sentence_len": 34,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "第一個字 S",
+   "to": "第一個字母 S",
+   "reason": "用詞"
+  },
+  {
+   "from": "最厲害的是，它買到的",
+   "to": "它買到的",
+   "reason": "刪口頭禪"
+  },
+  {
+   "from": "它買到的不是保密，是確認運算沒被動手腳的完整性。",
+   "to": "它買到的是完整性：確認運算沒被動手腳，跟保密無關。",
+   "reason": "twtone：對舉句太多"
+  }
+ ]
+}

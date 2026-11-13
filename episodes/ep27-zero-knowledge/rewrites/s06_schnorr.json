@@ -1,0 +1,116 @@
+{
+ "segment": "s06_schnorr",
+ "position": "第 7 段，共 16 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ad5b8d0ea4891f7249257d98fa9a0feda1b2309d04a35fe433e5bf4940a4e6d5",
+ "previous_context": "但要證明不一樣，傳統上真的超難。這份講義說得很好，有些事情你證明不出來，但你可以一直答對。",
+ "original": {
+  "text": "把洞穴換成數學，就是一九八九年的 Schnorr 協定，實務上最小、也最常見的零知識證明。它只證明一句話：我知道那把私鑰。步驟跟洞穴一樣：先承諾、再被出題、最後回答。為什麼騙不過去？如果一個作弊的人，能對同一個承諾回答兩道不同的題目，把兩份答案相減，私鑰就直接掉出來了。這份講義的說法是：有本事作弊兩次，就等於真的知道秘密。所以承諾一定要在題目之前送出，承諾存在的唯一目的，就是把時間釘死，跟 Victor 一定要等 Peggy 進洞才喊，是同一件事。",
+  "lint": {
+   "chars": 220,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 30.4,
+   "max_sentence_len": 59,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "對，這套把戲搬到數學上，<short pause>\n就是一九八九年的 Schnorr 協定。\n它是實務上最小、最常見的零知識證明喔。\n它其實只證明一句話：我知道私鑰。\n步驟跟洞穴一模一樣。\n先給承諾、再被出題、最後回答。\n那要怎麼防止別人作弊？\n最酷的地方就在這裡啦。\n如果有人能對同一個承諾，\n回答出兩道不同的題目，\n兩份答案一相減，私鑰就直接掉出來了。\n這份講義說，有本事作弊兩次，\n就等於你真的握有秘密。<short pause>\n所以順序絕對不能顛倒。\n承諾一定要在題目之前送出。\n承諾的目的只有一個，就是把時間釘死。\n就像 Victor 要等 Peggy 進洞才喊一樣嘛。",
+   "lint": {
+    "chars": 243,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 17.7,
+    "max_sentence_len": 40,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "把這個概念寫成數學，就是 Schnorr 協定。它是一九八九年提出來的，也是實務上最小的零知識證明。它要證明的其實只有一句話，就是我知道那把私鑰。步驟跟前面的洞穴一模一樣喔。先給承諾，接著被出題，最後再回答。那為什麼作弊會騙不過去？因為只要你能對同一個承諾，答對兩道不同的題目，把兩份答案相減，私鑰就直接掉出來了啦。<short pause>我讀到這一段覺得設計得超漂亮。這份講義說，有本事作弊兩次，就等於你真的知道秘密。所以那個順序絕對不能換。承諾一定要在題目出來前送出。要是證明的人先看到題目，他就能倒著算來矇混過去嘛。承諾唯一的目的，就是把時間釘死。這跟 Victor 等 Peggy 進洞才喊，其實是一模一樣的事。",
+   "lint": {
+    "chars": 292,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 19.9,
+    "max_sentence_len": 41,
+    "sentences_over_20": 7,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "把這套邏輯搬到數學上，最經典的例子，就是一九八九年的 Schnorr 協定。它其實只想要證明一句話，就是我知道那把私鑰。步驟跟前面的洞穴一模一樣喔，先送承諾，然後被出題，最後回答。那為什麼作弊的人騙不過去？如果他能對同一個承諾，回答出兩道不同的題目，把答案相減，私鑰就直接掉出來了。這份講義的說法超漂亮，有本事作弊兩次，就等於你真的知道秘密啦。<laugh> 所以承諾一定要在出題之前送出。你想想看，順序如果反過來呢？作弊的人就能先看題目倒著算，當場矇混過去。<short pause> 承諾唯一的目的，就是把時間釘死。這跟 Victor 一定要等 Peggy 進洞才喊，完全是同一件事。",
+   "lint": {
+    "chars": 266,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 23.2,
+    "max_sentence_len": 37,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "最酷的地方就在這裡啦。",
+   "to": "關鍵在這裡。",
+   "reason": "語氣"
+  }
+ ]
+}

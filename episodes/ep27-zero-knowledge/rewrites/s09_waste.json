@@ -1,0 +1,132 @@
+{
+ "segment": "s09_waste",
+ "position": "第 10 段，共 16 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "5c8eccad5c75307b82d7f65da23b6c519c9872b87688b443428c1dd9192a390e",
+ "previous_context": "這差在哪裡？檔案太大的話，在區塊鏈上根本就塞不下啦。",
+ "original": {
+  "text": "有一類方案叫 SNARK，開始運作之前，得先有人產生一組公開參數。麻煩的是，過程中會冒出一批隨機值，必須當場銷毀，業界直接叫它有毒廢料。誰偷留了一份，誰就能替假的說法做出通過驗證的證明，而且從外面完全看不出來。對策是辦一場儀式：找很多人排隊，每個人依序加一點自己的隨機性進去。只要有任何一個人老實把自己那份燒掉，整組參數就是安全的。以太坊二〇二三年那場，有超過十四萬人次參加。另一類方案 STARK 完全不需要這一步，它甘願讓證明大上一百倍，換的就是這個。",
+  "lint": {
+   "chars": 225,
+   "precise_numbers": [
+    "十四萬",
+    "一百"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 31.1,
+   "max_sentence_len": 37,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以大家很愛用 SNARK，因為檔案超小。\n但它其實有個滿大的代價。<short pause>\nSNARK 運作前要先產生一組公開參數。\n這過程會冒出一批隨機值，必須立刻銷毀。\n業界直接叫它有毒廢料。\n為什麼有毒？\n有人偷留的話，就能做假證明騙過大家。\n而且外面完全看不出來，安全性直接歸零。\n我覺得這聽起來真的超毛的。<short pause>\n那要怎麼防？\n他們想到的對策，就是辦一場儀式。\n找很多人排隊，每個人輪流加點隨機性。\n只要有一個人老實刪掉，整組參數就安全了。\n像以太坊之前就辦過一場。\n那次有超過十四萬人次參加喔。\n雖然這招很聰明，但終究是個假設嘛。\nSTARK 就完全不需要這一步。\n它甘願檔案大很多，換的就是這份安心啦。",
+   "lint": {
+    "chars": 274,
+    "precise_numbers": [
+     "十四萬"
+    ],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "除了大小之外，其實還有一個關鍵。\n也就是大家常聽到的可信設定。\n像 SNARK 在跑之前，得先產生公開參數。\n麻煩的是，過程會冒出一批隨機值。\n這批東西必須當場銷毀。\n業界直接叫它有毒廢料。\n為什麼會說它有毒？<short pause>\n因為誰要是偷留一份，就能做出假證明。\n而且外面完全看不出來，真的很毛耶。\n所以大家想出一個對策，叫做辦儀式。\n找一堆人排隊，每個人加一點隨機性。\n只要有一個人老實把它燒掉，那就安全了。\n以太坊那場，就有超過十四萬人次參加喔。\n但這在密碼學上，終究只是一個假設嘛。\n那 STARK 呢？它完全不需要這一步。\n它甘願讓證明大上一百倍。\n換來的就是這種不用賭人性的踏實感啦。",
+   "lint": {
+    "chars": 270,
+    "precise_numbers": [
+     "十四萬",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 14.0,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "其實除了大小問題，<short pause>\n還有一個東西更關鍵，叫做可信設定。\n像 SNARK 在跑之前，\n得先找人產生一組公開參數。\n麻煩的是，過程會冒出一批隨機數值，\n必須當場銷毀掉。\n業界甚至直接叫它有毒廢料。\n為什麼有毒？\n因為誰偷留一份，誰就能偽造證明，\n而且外面完全看不出來。\n這聽起來是不是超毛的？\n對，所以他們的解法是去辦儀式。\n找很多人排隊，每個人加一點隨機進去。\n只要有一個人老實燒掉，整組就安全了。\n像以太坊那場儀式，\n就有超過十四萬人次去參加。\n但這終究還是個假設嘛。\n另一邊的 STARK，完全不需要這一步。\n它寧願證明大上一百倍，\n換的就是這種心安啦。",
+   "lint": {
+    "chars": 256,
+    "precise_numbers": [
+     "十四萬",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 17.3,
+    "max_sentence_len": 26,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "我覺得這聽起來真的超毛的。<short pause>",
+   "to": "<short pause>",
+   "reason": "刪個人反應"
+  },
+  {
+   "from": "像以太坊之前就辦過一場。",
+   "to": "以太坊二〇二三年就辦過一場。",
+   "reason": "補年份"
+  }
+ ]
+}

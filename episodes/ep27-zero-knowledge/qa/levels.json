@@ -1,0 +1,98 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -21.2,
+  "gain_db": 1.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_door",
+  "lufs_before": -20.6,
+  "gain_db": 0.6,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_props",
+  "lufs_before": -21.9,
+  "gain_db": 1.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_cave",
+  "lufs_before": -21.9,
+  "gain_db": 1.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_tape",
+  "lufs_before": -21.9,
+  "gain_db": 1.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_balls",
+  "lufs_before": -21.7,
+  "gain_db": 1.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_schnorr",
+  "lufs_before": -22.7,
+  "gain_db": 2.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_ssh",
+  "lufs_before": -21.8,
+  "gain_db": 1.8,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_circuit",
+  "lufs_before": -22.3,
+  "gain_db": 2.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_waste",
+  "lufs_before": -20.4,
+  "gain_db": 0.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s10_succinct",
+  "lufs_before": -22.2,
+  "gain_db": 2.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s11_both",
+  "lufs_before": -21.5,
+  "gain_db": 1.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s12_identity",
+  "lufs_before": -21.1,
+  "gain_db": 1.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s13_fail",
+  "lufs_before": -19.6,
+  "gain_db": -0.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s14_test",
+  "lufs_before": -20.7,
+  "gain_db": 0.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s15_outro",
+  "lufs_before": -19.8,
+  "gain_db": -0.2,
+  "lufs_after": -20.0
+ }
+]

@@ -1,0 +1,139 @@
+{
+ "segment": "s15_outro",
+ "position": "第 16 段，共 16 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "877559c2bd651dd27d5f62efa657b716f2c6513ca658363c7bbfa4c564de8111",
+ "previous_context": "零知識證明不是一個更好的做法。它是幫你做到原本做不到的事。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，零知識證明的精神是用做得到，取代給你看；有些事情你證明不出來，但你可以一直答對。第二，它最大的用途不是隱私，是簡潔：一萬筆交易壓成幾百 bytes 讓別人驗；而最簡單的版本，早就在你的 ed25519 金鑰裡。第三，它不創造信任，只搬運信任；答不出那三個問題，就別用。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 184,
+   "precise_numbers": [
+    "一萬",
+    "百",
+    "25519"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 25.3,
+   "max_sentence_len": 60,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，它是用做得到，取代給你看。\n有些事證明不出來，但你可以一直答對。\n第二，它最大的用途不是隱私，而是簡潔。\n讓你不用重算，就能便宜驗證昂貴運算。\n第三，那三個問題答不出來，就先別用啦。\n現成工具成本更低，而且早就很好用了。\n那你說它值得花時間弄懂嗎？\n其實只要有一題需要，它就是唯一的解法。\n我光是想到這點，就覺得超酷的欸。<short pause>\n原文連結在節目資訊欄。\n我是 Ping。\n有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 13.9,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，它是用做得到，取代拿給你看。\n第二，它最大的價值真的是隱私嗎？\n其實不是，它是在幫昂貴運算大瘦身啦。\n第三，如果剛剛三個問題你都答不出來，\n那就別硬用，現成工具更省事。\n你問我它值得花時間嗎？我覺得超值得。\n因為有些情境，真的只有它才搞得定。<short pause>\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 171,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 14.5,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。\n\n第一，零知識是用做得到，取代給你看。只要一直答對，就不用把秘密交出去啦。\n\n然後，它最大的價值其實是把運算壓縮。讓別人可以用很低的成本驗證整批交易。\n\n最後，答不出那三個問題，就先別用喔。現成的工具早就夠便宜、夠好用了。它是拿來搞定原本做不到的事。<short pause>\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 173,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 0,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>第一，它是用做得到，取代給你看。有些事證明不出來，但你可以一直答對。第二，它最大的用途不是隱私，而是簡潔。讓你不用重算，就能便宜驗證昂貴運算。第三，那三個問題答不出來，就先別用啦。現成工具成本更低，而且早就很好用了。那你說它值得花時間弄懂嗎？其實只要有一題需要，它就是唯一的解法。我光是想到這點，就覺得超酷的欸。<short pause>原文連結在節目資訊欄。我是 Ping。有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，零知識證明的精神，是用做得到，取代給你看；有些事情你證明不出來，但你可以一直答對。第二，它最大的用途不是隱私，是簡潔：一萬筆交易壓成幾百 bytes，讓別人便宜地驗；而它最簡單的版本，早就在你的 ed25519 金鑰裡。第三，它不創造信任，只搬運信任；那三個問題答不出來，就先別用。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "breakpoint 改回草稿；刪結尾感想"
+  },
+  {
+   "from": "讓別人便宜地驗；",
+   "to": "讓別人花很少的力氣驗證；",
+   "reason": "「便宜地驗」聽不清楚"
+  }
+ ]
+}

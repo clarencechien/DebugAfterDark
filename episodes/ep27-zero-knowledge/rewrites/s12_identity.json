@@ -1,0 +1,144 @@
+{
+ "segment": "s12_identity",
+ "position": "第 13 段，共 16 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "1dcfc14290dac6e4f76390fa071aec3e346212b6d836fbad8d2156dd5471d0ba",
+ "previous_context": "一邊必須驗證，另一邊偏偏不能公開。最後只能找雙方勉強接受的第三方收場啦。",
+ "original": {
+  "text": "那身分呢？這份講義先修一個常見的誤會：OAuth 是授權，不是登入，真正做身分的是疊在上面的 OIDC。你每一次用 Google 登入，Google 都在場，而且它看得見；它斷線你就進不去，技術上它也能冒充你。零知識證明買的，就是這個結構的反面。不過揭露不是開關，是一道光譜：出示整張證件；只給生日，可是簽章值會變成追蹤器；每次出示都不一樣、對不起來；最後才是只證明滿十八歲。歐盟要求今年底前提供數位身分皮夾，強制的基線停在第二格，所以數位皮夾等於零知識，這個等式是打折的。",
+  "lint": {
+   "chars": 232,
+   "precise_numbers": [
+    "十八"
+   ],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 37.7,
+   "max_sentence_len": 64,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那如果是每天都在用的登入呢？這份講義先幫大家釐清觀念。OAuth 其實只是管授權。真正做身分認證的是疊在上面的 OIDC。它們跟零知識差在哪？你用 Google 登入，它每次都在場。它要是斷線你就進不去。技術上它隨時可以冒充你。<short pause>ZKP 要換掉的就是這個結構。不過選擇性揭露不等於零知識喔。這件事其實是一道光譜。最左邊是整張證件全給你看。中間好一點，可以只給生日。可是那個簽章值依然能拿來追蹤。走到最右邊，才是只證明你滿十八歲。歐盟推數位皮夾，要求其實只停在第二格。所以數位皮夾等於零知識嗎？這句話在實務上根本是打折的啦。",
+   "lint": {
+    "chars": 255,
+    "precise_numbers": [
+     "十八"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 18,
+    "avg_sentence_len": 13.2,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "那如果回到我們天天在用的登入呢？這份講義先修正了一個觀念。OAuth 解的是授權，疊在上面的 OIDC 才是做身分。你有想過用 Google 登入的代價嗎？其實每一次它都在場，而且都看得到喔。萬一它斷線，你全部的服務都進不去。<short pause>ZKP 想買的，就是把它從中間踢掉。但選擇性揭露真的等於零知識嗎？不是喔，它其實是一道光譜啦。最陽春是出示整張身分證。好一點是只給生日，但簽章能跨站追蹤你。最厲害是連生日都不給，只證明滿十八歲。歐盟推的數位皮夾，標準其實只停在第二格。所以說數位皮夾等於零知識，根本就打折了。",
+   "lint": {
+    "chars": 244,
+    "precise_numbers": [
+     "萬一",
+     "十八"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 25,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "那換到身分認證呢？\n這份講義先幫大家釐清一個誤會。\nOAuth 其實只是做授權，不是認證喔。\n真正做身分登入的，是疊在上面的 OIDC。\n你每次用 Google 登入，它都在旁邊看著。\n萬一它當機，你就什麼都進不去啦。<short pause>\n技術上它甚至能直接冒充你。\n零知識證明要買的，剛好就是這個反面。\n我讀到這張比較表真的很有共鳴。\n不過揭露資料不是開關，而是一道光譜。\n最粗糙的是直接出示整張證件。\n再來是只給生日，但簽章會變成追蹤碼。\n更好的是每次出示都對不起來。\n最厲害的是純粹證明自己滿十八歲。<short pause>\n你知道歐盟選了哪一種嗎？\n他們推數位皮夾，標準其實只停在第二格。\n也就是只遮欄位，私下對帳還是認得出是你。\n所以說數位皮夾等於零知識，根本就打折了嘛。",
+   "lint": {
+    "chars": 298,
+    "precise_numbers": [
+     "萬一",
+     "十八"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 18,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "那如果是每天都在用的登入呢？這份講義先幫大家釐清觀念。OAuth 其實只是管授權。真正做身分認證的是疊在上面的 OIDC。它們跟零知識差在哪？你用 Google 登入，它每次都在場。它要是斷線你就進不去。技術上它隨時可以冒充你。<short pause>ZKP 要換掉的就是這個結構。不過選擇性揭露不等於零知識喔。這件事其實是一道光譜。最左邊是整張證件全給你看。中間好一點，可以只給生日。可是那個簽章值依然能拿來追蹤。走到最右邊，才是只證明你滿十八歲。歐盟推數位皮夾，要求其實只停在第二格。所以數位皮夾等於零知識嗎？這句話在實務上根本是打折的啦。",
+   "to": "那每天都在用的登入呢？這份講義先釐清一件事：OAuth 其實是管授權，真正做身分認證的，是疊在上面的 OIDC。你用 Google 登入，它每次都在場，而且看得見；它斷線你就進不去，技術上它也能冒充你。零知識證明要換掉的，就是這個結構。<short pause>不過揭露不是開關，是一道光譜。最左邊是整張證件給你看。第二格是只給生日，可是那個簽章值，能拿來追蹤你。第三格是每次出示都不一樣，對不起來。最右邊，才是只證明你滿十八歲。歐盟要求今年底前提供數位身分皮夾，強制的基線停在第二格。所以數位皮夾等於零知識，這個等式是打折的。",
+   "reason": "補回光譜的第三格與歐盟時程"
+  },
+  {
+   "from": "不過揭露不是開關，是一道光譜。",
+   "to": "不過揭露有分程度，像一道光譜。",
+   "reason": "twtone：對舉句太多"
+  },
+  {
+   "from": "強制的基線停在第二格。",
+   "to": "強制的最低要求，停在第二格。",
+   "reason": "「基線」兩套辨識都聽成極限"
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "segment": "s02_props",
+ "position": "第 3 段，共 16 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d8dbbfe6954eebd05a92ee899b39edeb142e254ce851fa9f5a0fe58f0995ef61",
+ "previous_context": "用做得到，來取代給你看。所以後面那些算式，其實都只是在講這件事啦。",
+ "original": {
+  "text": "一九八五年，Goldwasser、Micali 和 Rackoff 三個人，把證明從一串寫死的推導，改成一場對話：證明的人和驗證的人來回幾輪，最後由驗證的人決定信不信。一旦證明變成對話，就可以追問：驗證的人從對話裡，到底聽走了什麼？他們要求三件事。陳述是真的，誠實的人幾乎一定說服得了；陳述是假的，作弊的人只有極小的機率過關；還有第三件，驗證的人除了這件事是真的，什麼都學不到。順便一提，有些密碼管理器說自己是零知識架構，那其實只是金鑰不上傳，裡面沒有任何證明。",
+  "lint": {
+   "chars": 228,
+   "precise_numbers": [],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 44.6,
+   "max_sentence_len": 80,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實這件事在一九八五年就被提出來了。\n當時 Goldwasser、Micali 和 Rackoff 三個人，\n幫密碼學做了一個超酷的翻轉。\n以前的證明，都是紙上寫死的推導。<short pause>\n他們卻問：為什麼證明不能是一場對話？\n也就是兩個人來回聊幾輪，再決定信不信。\n你猜這帶來了什麼好處？\n我們就可以追問：驗證的人到底偷聽了什麼？\n這份講義就提到，他們要求了三件事。\n真的時候一定能說服。\n假的時候，作弊極難過關。\n最厲害的是第三點，零知識性。\n對方除了知道是真的，其他什麼細節都學不到。\n我看到這裡真的覺得超聰明的。<laugh>\n順便提醒一下喔。\n有些密碼管理器很愛說自己是零知識架構。\n那其實只是金鑰不上傳，完全沒有證明協定啦。",
+   "lint": {
+    "chars": 283,
+    "precise_numbers": [],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 16.7,
+    "max_sentence_len": 44,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實這個想法，以前就有人認真想過了。一九八五年，Goldwasser、Micali 和 Rackoff 寫了篇論文。他們把證明從寫死的推導，改成一場對話。證明的人跟驗證的人，來回你一句我一句。你猜為什麼要改成對話？這樣就能追問：對方到底聽走了什麼？重點來了，這場對話要滿足三個要求。事情是真的，誠實講就一定能說服對方。如果是假的，想作弊的人幾乎不可能過關。最厲害的是最後一件事。對方除了知道這是真的，其他什麼都學不到。我看到這個設計整個起雞皮疙瘩。<short pause>對了，你應該也看過某些密碼管理器，廣告說自己是零知識架構吧？其實那只是金鑰沒上傳而已啦。那裡面根本沒有證明，純粹是兩回事喔。",
+   "lint": {
+    "chars": 283,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 36,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "一九八五年，有三位密碼學家提出一個新想法。\n他們是 Goldwasser、Micali 跟 Rackoff。\n以前大家覺得證明就是寫死的推導。\n但他們把證明變成一場對話。\n兩邊你一句我一句，最後由對方決定信不信。\n你猜這樣改有什麼好處？\n你就可以問，驗證的人到底聽走了什麼。\n重點來了，這裡面要求三個條件。\n真的話，誠實的人一定能說服對方。\n假的話，作弊的人只有極小機率過關。\n最厲害的是第三個。\n對方除了知道是真的，其他什麼都學不到。\n<short pause>\n我看到這個切入點真的覺得太神了。\n對了，有些密碼管理器也說自己是零知識。\n那其實只是金鑰不上傳而已。\n裡面根本沒有證明協定，純粹是行銷詞啦。",
+   "lint": {
+    "chars": 271,
+    "precise_numbers": [],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 28,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "<short pause>我看到這個切入點真的覺得太神了。",
+   "to": "<short pause>",
+   "reason": "刪個人反應"
+  },
+  {
+   "from": "真的話，誠實的人一定能說服對方。",
+   "to": "真的話，誠實的人幾乎一定能說服對方。",
+   "reason": "原文是幾乎必定"
+  }
+ ]
+}

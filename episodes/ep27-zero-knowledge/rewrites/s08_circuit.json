@@ -1,0 +1,135 @@
+{
+ "segment": "s08_circuit",
+ "position": "第 9 段，共 16 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "44f3926e40113708a70b9616dfebb261a38da0e74f2c6fa2b449e65c841497ae",
+ "previous_context": "證明你知道一把金鑰，基本上是免費的。真正貴的，是下一節那些複雜的條件。",
+ "original": {
+  "text": "如果你想證明的是我滿十八歲，或這一萬筆交易全部合法，Schnorr 就派不上用場了。現代的做法，是把條件寫成一個電路，可以想成一台只會吐零或一的機器。你要證明的話，統一變成：我知道一組輸入，能讓這台機器吐出一。任何條件都寫得成電路，所以這一步等於一次解鎖全部。代價就在寫成電路這件事：迴圈要整個攤開，if 跟 else 兩邊都要算一遍，連比大小都意外地貴。這份講義說，這是導入零知識證明最大的一筆隱形成本，而且通常會被低估。不同方案的證明大小也差很多，最小的大約兩百個 bytes，STARK 要到幾十、幾百 KB。",
+  "lint": {
+   "chars": 251,
+   "precise_numbers": [
+    "十八",
+    "一萬",
+    "兩百",
+    "百"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 34.9,
+   "max_sentence_len": 44,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "比如你想證明自己滿十八歲，\n或是那一萬筆交易全部合法，\n這時候 Schnorr 就完全派不上用場啦。\n那現代的方案是怎麼搞定的？\n做法是把你想證明的條件寫成電路。\n你可以把它想成一台只吐零跟一的機器。\n只要條件寫得成電路，就什麼都能證。\n可是光是寫成電路，其實就超痛苦的。<sigh>\n平常寫程式的直覺，在這裡全部失靈。\n迴圈得整個攤開來，\n寫個 if else，兩邊竟然都要算一遍。\n連單純比個大小都貴得要命。\n這份講義說，這是最容易被低估的隱形成本。\n而且產出來的證明大小，差了上千倍。\n最小的只要兩百個 bytes，\n換成 STARK 卻能大到幾百 KB 耶。",
+   "lint": {
+    "chars": 253,
+    "precise_numbers": [
+     "十八",
+     "一萬",
+     "千",
+     "兩百",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 20.1,
+    "max_sentence_len": 45,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "如果今天你想證明自己滿十八歲呢？\n這時候 Schnorr 就完全派不上用場啦。\n那現代的做法怎麼搞？\n就是把你想證明的條件，先寫成電路。\n你可以想成一台只會吐零或一的機器。\n只要你能讓它吐出一，就代表條件符合。\n這樣等於一次解鎖所有你想證明的東西。\n但是這背後的代價，老實說超級痛。<sigh>\n因為寫電路的時候，\n平常寫程式的直覺全部不管用。\n你的迴圈得整條攤開來算，\n連 if 跟 else 兩邊，都得各自跑過一遍。\n這份講義說，\n這才是導入時最容易被低估的隱形成本。\n然後不同方案的證明，大小差了三個數量級。\n最小的大約兩百個 bytes，\n可是像 STARK 那種，\n可能就會暴增到上百 KB 喔。",
+   "lint": {
+    "chars": 269,
+    "precise_numbers": [
+     "十八",
+     "兩百",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 19.7,
+    "max_sentence_len": 37,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "對，因為如果你想證明的不是金鑰呢？\n比方說你已經成年，或是交易全都合法。\n這種時候 Schnorr 就派不上用場了。\n現在的做法，是把你想驗證的條件寫成電路。\n你可以把它想成一台很簡單的機器。\n答案餵進去，它只會吐出一或零。\n所以任何條件，其實都能一次解鎖耶。\n但是寫成電路的代價超大。<sigh>\n平常寫的迴圈要全部攤開來。\n連 if 跟 else 兩邊都得硬算一遍。\n這種寫法真的超級反直覺。\n這份講義說，這是大家最常低估的隱形成本。\n然後做出來的證明大小，也差非常多喔。\n最小的 Groth16 大概兩百 bytes。\n換成 STARK，直接差到幾千倍。\n這差在哪裡？\n檔案太大的話，在區塊鏈上根本就塞不下啦。",
+   "lint": {
+    "chars": 276,
+    "precise_numbers": [
+     "16",
+     "兩百",
+     "千"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "換成 STARK，直接差到幾千倍。這差在哪裡？檔案太大的話，在區塊鏈上根本就塞不下啦。",
+   "to": "換成 STARK，要到幾十、幾百 KB，大上幾百倍。大小決定了它能不能放上區塊鏈。",
+   "reason": "幾千倍改回原文的數量級"
+  }
+ ]
+}

@@ -1,0 +1,123 @@
+{
+ "segment": "s01_door",
+ "position": "第 2 段，共 16 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "bf91ad427fffd5a79b7620dcd9582c1fd5788bc6b5e57e509afb6d370819df22",
+ "previous_context": "早在四十年前，就有人把它寫成了數學。如果你連線用的 SSH 金鑰是 ed25519，最厲害的是，你今天搞不好早就用過它的基本版囉。",
+ "original": {
+  "text": "今晚說一本書，其實是一份講義，叫做〈我不告訴你，但你會相信〉，講的是零知識證明。它從一件你每天都在做的事開始。假設你要讓房東相信你有這間房子的鑰匙。最笨的做法是把鑰匙拿給他看，可是這樣他就知道鑰匙長什麼樣，回頭可以自己去打一把。比較聰明的做法是，當著他的面把門打開。門開了，他就知道你有鑰匙，可是他從頭到尾沒看到鑰匙。這份講義說，零知識證明的全部精神就是這句：用做得到，取代給你看。剩下的一切，都只是在把這句話變成數學。",
+  "lint": {
+   "chars": 210,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 25.2,
+   "max_sentence_len": 39,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "對，今晚要聊的這份講義很酷。\n標題叫我不告訴你但你會相信。\n它聊的就是零知識證明。\n要怎麼讓別人相信你？\n而且完全不用把秘密講出來。\n這份講義從一件日常小事開始聊。\n假設你要讓房東相信你有鑰匙。\n最笨的做法，是直接掏給他看。\n可是這樣他不就知道鑰匙長怎樣了？\n回頭搞不好還自己偷打一把。<laugh>\n那聰明的做法是什麼？\n其實很簡單，當著他的面把門打開。\n門開了，他就知道你有鑰匙。\n但他從頭到尾都沒看到鑰匙本身。\n我看到這邊真的很有共鳴。\n這份講義說，零知識證明的全部精神，\n就是用做得到，來取代給你看。\n剩下的一切，都只是把這句話變成數學啦。",
+   "lint": {
+    "chars": 250,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 13.7,
+    "max_sentence_len": 30,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "其實今晚要聊的這份講義，標題很有趣，叫做我不告訴你，但你會相信。它開頭丟了一個超貼切的比喻。你想像一下，要怎麼讓房東相信你有鑰匙？<short pause> 最笨的方法，就是直接把鑰匙拿給他看嘛。可是他看過之後，回頭就能自己去打一把。那要怎麼辦？聰明的做法，是當著他的面把門打開。門開了，他就知道你有鑰匙，但他從頭到尾都沒看到鑰匙長怎樣。我看到這個例子真的覺得超傳神。<laugh> 這份講義說，零知識證明的精神就是用做得到，取代給你看。所以後面那些密碼學，其實都只是在把這句話變成數學而已啦。",
+   "lint": {
+    "chars": 225,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 19.5,
+    "max_sentence_len": 31,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實今晚要聊的，是一份網路上的講義。<short pause>它的標題很妙，叫做我不告訴你但你會相信。它從一件平常的事開始，你一定能體會。假設你要讓房東相信你有鑰匙。你猜最笨的方法是什麼？對，直接掏給他看嘛。可是這樣他就知道長相，回頭還能偷打一把。那比較聰明的做法呢？很簡單，當著他的面把大門打開。門一打開他就信了，但他從頭到尾沒看到鑰匙。我看到這個比喻，真的覺得太傳神了。<laugh>這份講義說，零知識證明的核心就是這句話。用做得到，來取代給你看。所以後面那些算式，其實都只是在講這件事啦。",
+   "lint": {
+    "chars": 227,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "其實今晚要聊的，是一份網路上的講義。",
+   "to": "今晚說書，說的是一份講義。",
+   "reason": "說書的框架"
+  },
+  {
+   "from": "我看到這個比喻，真的覺得太傳神了。<laugh>",
+   "to": "",
+   "reason": "刪個人反應"
+  },
+  {
+   "from": "今晚說書，說的是一份講義。",
+   "to": "今晚來說書。這次說的，是一份講義。",
+   "reason": "「說書」兩套辨識都聽成說說"
+  }
+ ]
+}

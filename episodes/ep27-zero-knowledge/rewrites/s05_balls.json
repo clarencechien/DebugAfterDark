@@ -1,0 +1,124 @@
+{
+ "segment": "s05_balls",
+ "position": "第 6 段，共 16 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "98bd98810c9539c8d2bbf30acea98aad35480aaa3fca4f5ed0e6987dab745d10",
+ "previous_context": "但這份講義說，這反而是它最強的證明。只要一個完全不知道秘密的人，也能自己編出一份一模一樣的紀錄，那原本的紀錄裡，本來就沒藏秘密嘛。",
+ "original": {
+  "text": "第二個例子換個角度。Victor 是紅綠色盲，Peggy 手上有一紅一綠兩顆球，在 Victor 眼裡長得一模一樣。她想證明兩顆顏色不同，又不想說哪顆是紅的。做法是，Victor 兩手各拿一顆藏到背後，自己決定要不要交換，再伸出來問：我換過了嗎？Peggy 看得見顏色，每次都答得出來；如果兩顆其實同色，她只能猜。要證明兩個東西一樣很容易，要證明它們不一樣，傳統上非常難。這份講義說：有些事情你證明不出來，但你可以一直答對。",
+  "lint": {
+   "chars": 206,
+   "precise_numbers": [],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 28.4,
+   "max_sentence_len": 43,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "第二個例子換個角度來看。\n假設 Victor 是紅綠色盲。\nPeggy 手上有一紅一綠兩顆球，\n在 Victor 眼裡長得完全一樣。\n她要證明顏色不同，\n又不想透露哪顆是紅的。\n那要怎麼辦？\nVictor 把球藏到背後，\n自己決定要不要換手，\n伸出來問一句：我有換嗎？\nPeggy 看得見，當然每次都答對啊。\n如果她是用猜的，猜幾十次早破功了啦。\n我覺得這個設計超神。<short pause>\n證明兩個東西一樣很容易，\n但要證明不一樣，傳統上超級難。\n可是只要允許對方隨機出題，\n問題就解開了嘛。\n這份講義說得很漂亮，\n有些事情你證明不出來，\n但你可以一直答對。",
+   "lint": {
+    "chars": 243,
+    "precise_numbers": [],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 19.2,
+    "max_sentence_len": 34,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "我們來看講義裡的第二個例子。\nVictor 是紅綠色盲，\nPeggy 手上有一紅一綠兩顆球。\n在 Victor 眼裡，兩顆長得完全一樣。\nPeggy 想證明它們顏色不同，\n但又不想講哪顆是紅的。\n那要怎麼做？<short pause>\nVictor 把球藏背後，自己決定要不要換手。\n然後伸出來問她：我有換過嗎？\nPeggy 看得到顏色，每次都答得出來。\n要是兩顆顏色一樣，她就只能用猜的嘛。\n多測幾次，Victor 也只能相信啦。\n其實要證明兩個東西一樣很容易，\n但要證明它們不一樣，超級難。\n這份講義說得超好，有些事你證明不出來，\n但只要對方隨機出題，你就可以一直答對。",
+   "lint": {
+    "chars": 251,
+    "precise_numbers": [],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 19.9,
+    "max_sentence_len": 37,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "我們再來看講義裡的第二個例子。這個例子我覺得超妙。<short pause>Victor 是紅綠色盲。Peggy 手上有一紅一綠兩顆球。在 Victor 眼裡，它們長得一模一樣。Peggy 想證明顏色不同，又不想說哪顆是紅的。那她要怎麼做？其實超簡單。Victor 把球藏背後，自己決定要不要換手。然後伸出來問她：我有換過嗎？Peggy 看得見顏色嘛，每次都能答對。要是球根本同顏色，她就只能用猜的啦。重複個幾十次，Victor 就信了。對，這就是互動的威力。你證明兩個東西一樣很容易，對照一下就好。但要證明不一樣，傳統上真的超難。這份講義說得很好，有些事情你證明不出來，但你可以一直答對。",
+   "lint": {
+    "chars": 274,
+    "precise_numbers": [],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "這個例子我覺得超妙。",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

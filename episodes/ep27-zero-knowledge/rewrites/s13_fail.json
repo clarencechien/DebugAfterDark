@@ -1,0 +1,121 @@
+{
+ "segment": "s13_fail",
+ "position": "第 14 段，共 16 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ba243ddc3fa8fe35afe48fd9fb0c58c42f9763603095270a3beeda39bfdb88f2",
+ "previous_context": "所以數位皮夾等於零知識嗎？這句話在實務上根本是打折的啦。",
+ "original": {
+  "text": "這份講義也講了會咬人的地方。最常被忽略的一句：零知識證明不創造信任，只搬運信任。發證的機關一開始就發錯了，你會拿到一個數學上完美的證明，證明著一件假事，而且因為證明無懈可擊，反而更難被質疑。撤銷是最難的工程題：去查撤銷清單，這個查詢本身就洩漏了你是誰。電路的 bug 很難用測試抓到，因為測試只驗證合法的輸入會通過，抓不到非法的輸入也會通過。還有法遵：如果你的服務要做洗錢防制，我用零知識，所以不知道使用者是誰，在主管機關面前不是抗辯，是自己承認違規。",
+  "lint": {
+   "chars": 224,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 36.3,
+   "max_sentence_len": 54,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實這份講義最後點出幾個會咬人的地方。\n有一句話真的很貼切。\n零知識證明不創造信任，它只搬運信任。\n如果發證單位一開始就搞錯了呢？\n你只會拿到一個數學上完美的證明。\n而且還證明了一件假事。<short pause>\n再來，撤銷也是個大麻煩。\n你跑去查撤銷清單。\n這個查詢本身就把身分洩漏光了嘛。\n然後電路的 bug 超難用測試抓。\n因為測試抓不到非法的輸入偷跑。\n最後如果你要做洗錢防制。<short pause>\n跟主管機關說你不知道對方是誰？\n這等於是直接承認自己違規啦。<laugh>",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 13.1,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   },
+   "round": 0
+  },
+  {
+   "text": "而且這份講義其實列了不少會咬人的陷阱。最常被大家忽略的一點，就是零知識證明不創造信任，它只搬運信任。如果發證機關一開始就搞錯，<short pause>你就會拿到一個數學上完美的證明，去證明一件假的事。這感覺超可怕的吧？因為證明無懈可擊，大家反而更難質疑它。然後憑證撤銷也是個大難題。你去查撤銷清單，不就直接洩漏你是誰了嗎？對，辛苦建立的隱私直接還回去。<short pause>寫電路的 bug 也很難抓。因為測試只看合法輸入會不會過，抓不到非法輸入其實也能通過。最後還有法遵問題。主管機關如果查洗錢，你說不知道他是誰，那真的不是抗辯，是在承認違規啦。",
+   "lint": {
+    "chars": 249,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 19.8,
+    "max_sentence_len": 37,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實這份講義後面，講了超多會咬人的地方。\n最容易被忽略的一句話是，<short pause>\n零知識證明不創造信任，它只搬運信任。\n如果發證方一開始就給錯資料呢？\n你只會拿到一個數學上完美的假證明。\n而且因為算式完全正確，反而更難被抓包。\n然後最難搞的工程問題是憑證撤銷。\n你去查撤銷清單，不就洩漏自己是誰了嗎？\n辛苦建立的隱私瞬間全部還回去耶。<sigh>\n這真的會讓人超崩潰。\n還有在寫電路的時候，一般的測試抓不到漏洞。\n測試只驗證合法會過，抓不到非法也能過。\n最後法規也是個大麻煩喔。\n如果你的系統需要做洗錢防制，\n主管機關可不管你密碼學多厲害，\n說不知道使用者是誰，等於直接承認違規啦。",
+   "lint": {
+    "chars": 263,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 19.2,
+    "max_sentence_len": 48,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "因為測試抓不到非法的輸入偷跑。",
+   "to": "因為測試只驗證合法的輸入會通過，抓不到非法的輸入也會通過。",
+   "reason": "說清楚"
+  },
+  {
+   "from": "這等於是直接承認自己違規啦。<laugh>",
+   "to": "這等於是直接承認自己違規。",
+   "reason": "刪笑聲"
+  }
+ ]
+}

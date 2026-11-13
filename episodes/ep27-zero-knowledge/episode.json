@@ -1,0 +1,47 @@
+{
+ "id": "ep27-zero-knowledge",
+ "number": 27,
+ "type": "full",
+ "guid": "debug-after-dark:ep27",
+ "title": "EP27 我不告訴你，但你會相信",
+ "description": "酒吧只想知道你滿十八歲，你卻得把名字、生日、身分證字號全遞出去；兩個互不信任的國家，要確認對方銷毀的是真核彈頭，又不能讓檢查的人看到設計。這兩題有同一個答案，一九八五年就寫成了數學：零知識證明。這集說書，把一份講義講成白話：當著房東的面開門、阿里巴巴的洞穴、色盲和兩顆球、有毒廢料和十四萬人的儀式，還有一個反直覺的結論：它最大的用途不是隱私。如果你的 SSH 金鑰是 ed25519，你今天很可能已經用過它最簡單的版本。\n\n今晚的 breakpoint：\n1. 零知識證明的精神是「用做得到，取代給你看」；有些事情你證明不出來，但你可以一直答對。\n2. 它最大的用途不是隱私，是簡潔：一萬筆交易壓成幾百 bytes 讓別人驗；最簡單的版本早就在你的 ed25519 金鑰裡。\n3. 它不創造信任，只搬運信任；答不出那三個問題，就別用。\n\n原文：〈我不告訴你，但你會相信：零知識證明講義〉 https://imitator.ai-apps.work/r/zkp-report\n參考起點：Goldwasser, Micali & Rackoff（1985）、Quisquater 等（1989）〈How to Explain Zero-Knowledge Protocols to Your Children〉、Fiat & Shamir（1986）、Schnorr（1989）。證明大小是代表性數量級，以實作為準。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "zkp-report",
+ "report_version": "",
+ "source_url": "https://imitator.ai-apps.work/r/zkp-report",
+ "status": "draft",
+ "related": [],
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "audio": {
+  "file": "ep27-zero-knowledge.mp3",
+  "bytes": 13589792,
+  "sha256": "8f35a45dd2a16b2ef2b6ab9d1e863bb8e82972acde179310744561932d09f0c7",
+  "duration_s": 849.3,
+  "duration": "14:09",
+  "lufs": -16.8
+ },
+ "qa": {
+  "breeze_cer_mean": 0.038,
+  "gemini_cer_mean": 0.018,
+  "jitter_semitones": 0.229,
+  "gates": "Breeze 錯誤率 3.8%，比門檻 3.5% 高（Gemini 1.8%）；音高跳動 0.229 通過",
+  "cer_note": "Breeze 的錯多在英文和術語：ed25519 寫成 1D2519K、零知識寫成靈芝、講義寫成獎勵、Groth16、STARK；EP23 同樣情況（3.8%）經同意上架",
+  "retakes": "s01、s12、s15 改稿後重錄：「說書」聽成說說、「基線」聽成極限、「便宜地驗」聽不清楚",
+  "manual_pick": "s00 take0、s02 take2、s04 take2、s08 take0、s13 take2（音高跳動較低）；s14 take1（take2 音高 +10.2 Hz）",
+  "both_wrong": "都是同音字：格／個、滿／蠻、身分／身份、通通／統統",
+  "consistency": "qa/consistency.json：各段音高在中位數 ±5 Hz 內、相鄰段聲紋都 ≥ 0.93",
+  "twtone": "qa/twtone.md：對舉句一開始超過基準，改掉兩句後沒有超過的項目",
+  "terms": "Ping、pong 3 次都判為英文念法"
+ }
+}

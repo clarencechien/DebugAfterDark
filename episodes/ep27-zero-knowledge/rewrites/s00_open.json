@@ -1,0 +1,129 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 16 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e3091135f01633d162d0c599eb581047f576103dbc2ec3560affa9421023c139",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "你去酒吧，店員只想確認一件事：你滿十八歲了沒。可是你遞出去的身分證上，有你的名字、生日、身分證字號。店家其實也不想要這些，拿了只會在外洩那天多賠一筆。那有沒有辦法，只證明我滿十八歲，生日從頭到尾不離開你的手機？還有更難的一題：兩個互相不信任的國家，要怎麼確認對方銷毀的是一枚真的核彈頭，卻不讓檢查的人看到核彈怎麼設計？這兩題有同一個答案，一九八五年就寫成了數學。而且如果你的 SSH 金鑰是 ed25519，你今天很可能已經用過它最簡單的版本。",
+  "lint": {
+   "chars": 219,
+   "precise_numbers": [
+    "十八",
+    "十八",
+    "25519"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 30.3,
+   "max_sentence_len": 53,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.5,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你去酒吧買酒，店員只想確認你滿十八了沒。\n可是你掏出身分證，名字跟生日全被看光。\n其實店家根本不想要這些個資啦。\n因為拿了就是負債，外洩那天還要多賠一筆。\n那有沒有可能，只證明你年齡合格，\n生日卻完全不離開手機？\n還有更扯的喔。\n兩個互相不信任的國家，\n要怎麼確認銷毀的是真核彈，\n卻又不讓對方偷看武器設計？\n<short pause>\n你猜這要怎麼解？\n其實這兩題的答案，四十年前就寫成數學了。\n我看到這邊真的覺得超神。\n更酷的是，如果你的 SSH 是 ed25519，\n你每天上班連線，早就已經在用它了。",
+   "lint": {
+    "chars": 223,
+    "precise_numbers": [
+     "十八",
+     "四十",
+     "25519"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 19.3,
+    "max_sentence_len": 37,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "你去酒吧，店員只想確認你滿十八歲了沒。\n但你掏出身分證，連生日都被看光光。\n其實店家也不想要這些個資齁。\n拿到等於是負債，外洩那天還要多賠一筆錢。\n那有沒有辦法，只證明你成年就好？\n可以，你的生日完全不用離開手機。\n<short pause>\n更扯的是，互相不信任的國家要查核核彈頭。\n既不能洩漏設計機密，又要確認那是真傢伙。\n你猜怎麼著？這兩題其實是同一個答案。\n早在四十年前，就有人把它寫成了數學。\n如果你連線用的 SSH 金鑰是 ed25519，\n最厲害的是，你今天搞不好早就用過它的基本版囉。",
+   "lint": {
+    "chars": 222,
+    "precise_numbers": [
+     "十八",
+     "四十",
+     "25519"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 43,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "你去酒吧點酒，店員只要確認你滿十八歲。\n但你遞出身分證，對方就看到了全部。\n包括你的名字、生日跟身分證字號。\n其實店家根本不想要這些個資啦，\n因為哪天外洩了，只會賠更多錢。\n那有沒有辦法，只證明你滿十八，\n但生日完全不離開你的手機？\n更扯的還有查核核彈頭這件事。<short pause>\n兩個互不信任的國家，\n要確定對方銷毀的是真核彈，\n卻又不能把設計細節看光光。\n你猜這兩題怎麼解？\n其實是同一套數學。\n它在一九八五年就被發明出來了。<short pause>\n我第一次讀到這段真的覺得超神。\n而且如果你的 SSH 金鑰是 ed25519，\n你今天搞不好早就已經用過它了喔。",
+   "lint": {
+    "chars": 244,
+    "precise_numbers": [
+     "十八",
+     "十八",
+     "25519"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 19.3,
+    "max_sentence_len": 35,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "最厲害的是，你今天",
+   "to": "你今天",
+   "reason": "刪口頭禪"
+  }
+ ]
+}

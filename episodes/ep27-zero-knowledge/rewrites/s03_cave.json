@@ -1,0 +1,129 @@
+{
+ "segment": "s03_cave",
+ "position": "第 4 段，共 16 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "7d30a20f848abdaf80fa92cd9cb5ff4ac19f708faf2ccb9b34c96b824bacf52f",
+ "previous_context": "那其實只是金鑰不上傳而已。裡面根本沒有證明協定，純粹是行銷詞啦。",
+ "original": {
+  "text": "這份講義用了一個一九八九年的經典例子，那篇論文的標題叫〈如何向你的小孩解釋零知識協定〉。想像一個 U 字形的洞穴，左右兩條路在最深處會合，中間隔著一道門，要念咒語才打得開。Peggy 說她會咒語，但不打算告訴任何人。Victor 先站在洞外，看不到裡面；Peggy 自己走進去，隨便挑左邊或右邊。等她就定位了，Victor 才走到分岔口，隨口喊左或右，Peggy 必須從他喊的那一邊走出來。不會咒語的話，她只能賭，一次是一半的機率。玩二十次，矇對的機會大約是一百萬分之一。而 Victor 從頭到尾，沒聽到半個字的咒語。",
+  "lint": {
+   "chars": 251,
+   "precise_numbers": [
+    "二十",
+    "一百萬"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 30.4,
+   "max_sentence_len": 44,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那真的零知識長怎樣？\n這份講義舉了一個很經典的洞穴例子。\n想像一個 U 字形的洞穴。\n裡面左右兩條路在最深處會合。\n中間有道門，要念咒語才打得開喔。\nPeggy 說她會咒語，但不想告訴別人。\n那 Victor 要怎麼確認她沒在唬爛？\n其實很簡單。<short pause>\nVictor 先站在洞外，完全看不到裡面。\n然後 Peggy 隨便挑左邊或右邊走進去。\n等她就定位，Victor 才到路口隨便喊一邊。\nPeggy 就得從他喊的那邊走出來。\n如果她真的會咒語，開門穿過去就好啦。\n如果她根本不會，你覺得會怎樣？\n她就只能靠運氣硬猜，一半一半嘛。\n連續玩二十次的話呢？\n全部矇中的機率，只有一百萬分之一。\n重點來了，Victor 沒聽到半句咒語。\n但他已經不得不信了，超神耶。<laugh>",
+   "lint": {
+    "chars": 298,
+    "precise_numbers": [
+     "二十",
+     "一百萬"
+    ],
+    "enumerations": [],
+    "sentences": 19,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "所以真正的零知識證明到底長怎樣？\n這份講義舉了一個三十多年前的經典例子。\n想像一個 U 字形的洞穴。<short pause>\n左右兩條路在最深處會合，中間隔著一道門。\n那道門要念咒語才打得開。\nPeggy 說她知道咒語，但打死不跟別人講。\nVictor 想確認她有沒有唬爛，那要怎麼做？\n其實很簡單，Victor 先站在洞穴外面。\nPeggy 自己走進去，隨便挑左邊或右邊。\n等她就定位了，Victor 才走到分岔路口。\n然後隨口大喊左邊或右邊。\nPeggy 就必須從他喊的那一邊走出來。\n如果她真的會咒語，直接開門走出來就好啦。\n但如果她根本不會呢？\n她就只能用猜的，賭自己剛好站在同一邊嘛。\n玩一次是一半機率，連續玩個二十次呢？\n她能全部矇對的機率，大概只有一百萬分之一。<short pause>\n這個設計我真的覺得超神。\nVictor 到最後不想信也得信，\n最厲害的是，他從頭到尾都沒聽到咒語喔。",
+   "lint": {
+    "chars": 349,
+    "precise_numbers": [
+     "三十",
+     "二十",
+     "一百萬"
+    ],
+    "enumerations": [],
+    "sentences": 19,
+    "avg_sentence_len": 17.4,
+    "max_sentence_len": 34,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那到底什麼才是真的零知識證明？\n這份講義用了一個三十幾年前的經典故事。\n你想像一個 U 字形的洞穴。<short pause>\n裡面有左右兩條路，在最深處會合。\n但中間隔著一道門，要念咒語才打得開。\nPeggy 說她會咒語，但不想告訴任何人。\nVictor 想確認她是不是在唬爛。\n那要怎麼驗證？其實超簡單。\nVictor 先在洞外等，\nPeggy 自己走進去，隨便選一邊。\n等她就定位了，Victor 才隨口喊左或右。\nPeggy 必須從他喊的那邊走出來。\n如果她不會咒語，一次只有一半機率猜對。\n連玩二十次，矇對的機率只有一百萬分之一。\n重點來了，\nVictor 從頭到尾沒聽到半句咒語，\n卻完全被說服了啦。<laugh>",
+   "lint": {
+    "chars": 268,
+    "precise_numbers": [
+     "三十",
+     "二十",
+     "一百萬"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 16.9,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "那真的零知識長怎樣？這份講義舉了一個很經典的洞穴例子。想像一個 U 字形的洞穴。裡面左右兩條路在最深處會合。中間有道門，要念咒語才打得開喔。Peggy 說她會咒語，但不想告訴別人。那 Victor 要怎麼確認她沒在唬爛？其實很簡單。<short pause>Victor 先站在洞外，完全看不到裡面。然後 Peggy 隨便挑左邊或右邊走進去。等她就定位，Victor 才到路口隨便喊一邊。Peggy 就得從他喊的那邊走出來。如果她真的會咒語，開門穿過去就好啦。如果她根本不會，你覺得會怎樣？她就只能靠運氣硬猜，一半一半嘛。連續玩二十次的話呢？全部矇中的機率，只有一百萬分之一。重點來了，Victor 沒聽到半句咒語。但他已經不得不信了，超神耶。<laugh>",
+   "to": "那真的零知識長怎樣？這份講義用了一個一九八九年的例子，那篇論文的標題叫，如何向你的小孩解釋零知識協定。想像一個 U 字形的洞穴，左右兩條路在最深處會合，中間有道門，要念咒語才打得開。Peggy 說她會咒語，但不想告訴別人。<short pause>Victor 先站在洞外，完全看不到裡面。Peggy 隨便挑左邊或右邊走進去。等她就定位，Victor 才到路口，隨口喊一邊，Peggy 就得從那邊走出來。會咒語的話，開門穿過去就好。不會的話，她只能猜，一半一半。連續玩二十次，全部矇中的機會，大約只有一百萬分之一。而 Victor 從頭到尾，沒聽到半句咒語。",
+   "reason": "超過 300 字；補回論文標題；刪「超神」與笑聲"
+  }
+ ]
+}

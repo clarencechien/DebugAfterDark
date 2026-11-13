@@ -1,0 +1,134 @@
+{
+ "segment": "s11_both",
+ "position": "第 12 段，共 16 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0fce06925194fcea778b25f7a08ed5c52b17665b175042230dc4413e7dae082e",
+ "previous_context": "最厲害的是，它買到的不是保密，是確認運算沒被動手腳的完整性。在這之前，你只能自己重算，不然就只能完全信任對方啦。",
+ "original": {
+  "text": "還有一類用途，價值在讓兩個互相衝突的要求同時成立。交易所證明準備金足額，卻不揭露客戶名單；選舉證明計票正確，卻不揭露任何一張選票；還有開頭那題，核彈頭查核：確認被銷毀的是真彈頭，又不洩漏設計。二〇一四年，普林斯頓的團隊在《自然》期刊發表過一個零知識取向的物理協定。這幾個案例的結構都一樣：稽核的人必須驗證，被稽核的人不能揭露。在零知識證明出現以前，這種局面只能找一個雙方都勉強能忍受的第三方來收場。",
+  "lint": {
+   "chars": 199,
+   "precise_numbers": [],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 38.8,
+   "max_sentence_len": 70,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實還有另一種狀況很妙喔，就是讓兩個衝突的要求同時成立。那具體是遇到什麼狀況？就是稽核方一定要驗證，但被稽核的人絕對不能洩漏資料。比方說交易所要證明準備金足夠，但不能把客戶名單交出來嘛。然後像選舉要證明計票正確，卻完全不能公開任何一張選票。二〇一四年普林斯頓團隊做過核彈頭查核，能確認銷毀的是真核彈，又不會洩漏武器設計。這真的超神奇的。<short pause> 那這種僵局以前要怎麼解？根本只能找第三方來收場啦，而且是雙方都勉強能接受的人，對吧？",
+   "lint": {
+    "chars": 210,
+    "precise_numbers": [],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 22.3,
+    "max_sentence_len": 39,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "其實還有另一種超酷的用途。<short pause>就是讓兩個衝突的要求同時成立。你想想看，這有可能嗎？答案是完全可以喔。像是交易所要證明準備金夠多，但絕對不能洩漏客戶名單。或是選舉要證明計票完全正確，可是不能公開任何一張選票。連查核核彈頭都有人用這招。普林斯頓團隊在二〇一四年，發表過一個查核核彈頭的協定。能確認銷毀的是真彈頭，又完全不洩漏彈頭的設計。這真的超神奇的吧？<laugh>以前遇到這種狀況真的很頭痛。一邊必須驗證，另一邊偏偏不能公開。最後只能找雙方勉強接受的第三方收場啦。",
+   "lint": {
+    "chars": 223,
+    "precise_numbers": [],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 26,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實還有另一類用途也很厲害。<short pause>它能讓兩個完全衝突的要求同時成立。對。你覺得這有可能嗎？<short pause>以前大家也覺得不可能嘛。像是交易所要證明準備金夠用，可是又不能把客戶名單交出來。或是選舉要證明計票沒算錯，但絕對不能洩露任何一張選票。還有核彈頭查核也很經典。要確認被銷毀的是真彈頭，又絕對不能把武器設計給對方看。普林斯頓團隊在二零一四年，就發表過一個零知識物理協定喔。這種情況下，一方必須驗證，另一方卻死都不能公開。以前遇到這種僵局，只能找雙方都勉強信任的第三方啦。",
+   "lint": {
+    "chars": 225,
+    "precise_numbers": [],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 27,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "這真的超神奇的吧？<laugh>",
+   "to": "",
+   "reason": "刪笑聲"
+  },
+  {
+   "from": "發表過一個查核核彈頭的協定。",
+   "to": "在《自然》期刊發表過一個零知識取向的物理協定。",
+   "reason": "原文說法"
+  },
+  {
+   "from": "其實還有另一種超酷的用途。",
+   "to": "其實還有另一種用途。",
+   "reason": "超字太多"
+  }
+ ]
+}

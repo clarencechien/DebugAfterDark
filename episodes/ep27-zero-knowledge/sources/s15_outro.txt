@@ -1,0 +1,16 @@
+（注意：這集是說書，把一份零知識證明的講義講給工程師聽，聽眾沒有密碼學背景也要聽得懂。不要念公式和符號，用比喻。人名照講：Goldwasser、Micali、Rackoff、Schnorr、Fiat、Shamir、Peggy、Victor。英文術語（SSH、ed25519、OAuth、OIDC、zk-rollup、STARK、SNARK）照台灣工程師的念法。說「這份講義說」或「這份報告說」，不要只說「報告」。）
+
+09 · THE TEST
+三個問題，答不出來就別用
+問題一
+有沒有一個你不想信、或不能永遠依賴的第三方？
+如果答案是「Google 一直都在，而且我信它」，OIDC 就是對的工具。ZKP 買的是發證方離線、IdP 無法冒充你。沒有這個需求，就是在為不存在的問題付錢。
+問題二
+驗證方持有原始資料，是不是一種負債？
+如果對方巴不得不要拿到你的個資（法遵風險、外洩賠償），選擇性揭露就有商業價值。如果對方本來就要拿去做業務，那揭露本來就是需求，談不上問題。
+問題三
+需不需要讓別人便宜地驗證一段昂貴的運算？
+這條與隱私無關，卻是 ZKP 目前最大的產業用途。如果你的問題裡沒有「外包運算」或「批次壓縮」的形狀，succinctness 對你就是零。
+三個都答不出來，就不需要 ZKP。這麼說並不保守，因為替代方案的成本低到不成比例：OIDC 有現成 SDK、現成信任錨、清楚的法律地位；端對端加密解掉了絕大多數「伺服器不該看到內容」的需求；而 Schnorr 簽章早就免費幫你證明了「我持有這把金鑰」。
+反過來說，只要有一題答得出來，那個需求通常 沒有別的解法 。ZKP 不是一個更好的做法，它是一個原本做不到的做法。這也是為什麼它值得你花時間讀懂，即使今年不會用到。
+參考起點：Goldwasser, Micali & Rackoff（1985）《The Knowledge Complexity of Interactive Proof-Systems》· Quisquater 等（1989）《How to Explain Zero-Knowledge Protocols to Your Children》· Fiat & Shamir（1986）· Schnorr（1989）· eIDAS 2.0 架構參考框架的 ZKP 討論文件
