@@ -8,7 +8,7 @@
  "report_slug": "rent-ratio-or-scale",
  "report_version": "v0.2（2026-11-12）",
  "source_url": "https://imitator.ai-apps.work/r/rent-ratio-or-scale",
- "status": "draft",
+ "status": "final",
  "series": "退休三部曲・番外（倒著講，1/3）",
  "voice": {
   "provider": "gemini",
@@ -43,5 +43,6 @@
   "both_wrong": "s11「租屋族」聽成「租屋主」、s13「租屋的人」少了屋，意思沒變",
   "twtone": "qa/twtone.md：沒有超過基準的項目；「算法」是計算方法的意思，不改",
   "terms": "Ping、pong 3 次都判為英文念法"
- }
+ },
+ "published": "2026-11-14T13:45:00+08:00"
 }

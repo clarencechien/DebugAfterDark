@@ -8,7 +8,7 @@
  "report_slug": "retire-floor-basics",
  "report_version": "v0.1（2026-11-12）；實戰篇 retire-floor-playbook v0.1（2026-11-12）",
  "source_url": "https://imitator.ai-apps.work/r/retire-floor-basics",
- "status": "draft",
+ "status": "final",
  "series": "退休三部曲・基礎與實戰（倒著講，2/3）",
  "voice": {
   "provider": "gemini",
@@ -44,5 +44,6 @@
   "both_wrong": "s00「借」聽成「藉」、s07「意義」聽成「意思」，都是同義",
   "twtone": "qa/twtone.md：沒有超過基準的項目",
   "cer_note": "stt_check 的數字正規化再補上 42,000、18000 這類沒有接「萬」的四五位數"
- }
+ },
+ "published": "2026-11-14T13:47:00+08:00"
 }

@@ -1,7 +1,9 @@
 # imitator 2026 報告對照表
 
-更新：2026-11-12。來源：imitator 的 `archive/report/`（`report_list.json` 的日期，沒有的用第一次 commit 的日期；10-02 那一批是搬家日，不是寫作日）。
+更新：2026-11-14。來源：imitator 的 `archive/report/`（`report_list.json` 的日期，沒有的用第一次 commit 的日期；10-02 那一批是搬家日，不是寫作日）。
 狀態：**已做**（集數）、**推薦**（下一批優先）、可做、不做（工具、mockup、旅遊、私人、自家產品、轉載、內部筆記）。
+
+2026-11-12 新增的退休三部曲（rent-ratio-or-scale、retire-floor-basics、retire-floor-playbook、three-pensions-plain）不在下表：前兩集做成 EP24、EP25，取代了下表的租買專題與「1000 萬退休的三種人生」；three-pensions-plain 是 EP26（製作中），取代 labor_insurance 那篇。zkp-report 是 EP27（製作中）。連結的 slug 一律用連字號（imitator 會把檔名的底線換成連字號）。
 
 共 124 份：已做 25、推薦 12、可做 42、不做 45。
 
@@ -10,12 +12,12 @@
 | 報告 | 為什麼 |
 |---|---|
 | [Howard Marks：戰勝大腦的出場策略](https://imitator.ai-apps.work/r/selling-out) | 財經：Howard Marks 的出場策略，台股剛大跌，時機對 |
-| [台灣勞保、勞退與國保終極解析與自救指南](https://imitator.ai-apps.work/r/labor_insurance) | 台灣勞保、勞退、國保，一般人都用得到 |
-| [Meta 詐騙廣告醜聞完整解析 ／ 聖塔克拉拉郡 vs Meta 訴訟 2026.5.11](https://imitator.ai-apps.work/r/meta_lawsuit) | Meta 詐騙廣告訴訟，台灣人天天看到詐騙廣告 |
+| [台灣勞保、勞退與國保終極解析與自救指南](https://imitator.ai-apps.work/r/labor-insurance) | 台灣勞保、勞退、國保，一般人都用得到 |
+| [Meta 詐騙廣告醜聞完整解析 ／ 聖塔克拉拉郡 vs Meta 訴訟 2026.5.11](https://imitator.ai-apps.work/r/meta-lawsuit) | Meta 詐騙廣告訴訟，台灣人天天看到詐騙廣告 |
 | [Uncle Bob 為何不讀 AI 寫的程式碼？｜完整研究](https://imitator.ai-apps.work/r/uncle-bob) | Uncle Bob 為什麼不讀 AI 寫的程式碼，工程師會點 |
 | [不是誰追上誰，而是哪一層 — 2026 年美中 AI 與半導體的分層讀法](https://imitator.ai-apps.work/r/layers-of-llm) | 美中 AI 與半導體的分層，跟台灣有關 |
-| [月租 6 萬住 6000 萬的房子，是佔便宜還是被坑？](https://imitator.ai-apps.work/r/bysq_report_rent_vs_buy) | 月租 6 萬住 6000 萬的房子，標題就是鉤子 |
-| [1000 萬退休的三種人生：一對台灣夫妻的壓力測試](https://imitator.ai-apps.work/r/bysq_report_tw_case) | 1000 萬退休的三種人生，財經題材 |
+| [月租 6 萬住 6000 萬的房子，是佔便宜還是被坑？](https://imitator.ai-apps.work/r/bysq-report-rent-vs-buy) | 月租 6 萬住 6000 萬的房子，標題就是鉤子 |
+| [1000 萬退休的三種人生：一對台灣夫妻的壓力測試](https://imitator.ai-apps.work/r/bysq-report-tw-case) | 1000 萬退休的三種人生，財經題材 |
 | [熄燈的窗 · 台灣少子化與房價](https://imitator.ai-apps.work/r/birthrate-vs-housing) | 台灣少子化與房價 |
 | [國家給保險公司補錢，等於要爆炸嗎？](https://imitator.ai-apps.work/r/japan-insurer-bailout-report-1) | 國家給保險公司補錢等於要爆炸嗎，財經時事 |
 | [平均數幫不了單店：11% 成長底下的服務業對帳](https://imitator.ai-apps.work/r/gdp-service-ledger) | 11% 成長底下服務業的帳，台灣經濟 |
@@ -100,9 +102,9 @@
 | 2026-09-02 | [Claude 為什麼說不能改 Apps Script？一次把問題拆到真正的邊界](https://imitator.ai-apps.work/r/claude-apps-script-incident-report) | 不做 | 單一事件排錯 |
 | 2026-09-01 | [Claude Code 連線地圖](https://imitator.ai-apps.work/r/session-connectivity) | 不做 | Claude Code 內部筆記 |
 | 2026-08-26 | [Working Artifact — HTML 什麼時候值得做](https://imitator.ai-apps.work/r/html-working-artifact) | 不做 | 內部筆記 |
-| 2026-08-25 | [Anthropic’s approach to teaching and learning AI ／ Claude by Anthropic](https://imitator.ai-apps.work/r/learningAI) | 不做 | 轉載 Anthropic 文章 |
+| 2026-08-25 | [Anthropic’s approach to teaching and learning AI ／ Claude by Anthropic](https://imitator.ai-apps.work/r/learningai) | 不做 | 轉載 Anthropic 文章 |
 | 2026-08-25 | [疊 Kasanemu 封測手冊](https://imitator.ai-apps.work/r/kasanemu) | 不做 | 自家產品手冊 |
-| 2026-08-25 | [Autonomy and Innovation – Stratechery by Ben Thompson](https://imitator.ai-apps.work/r/AnI-by-Ben) | 不做 | 轉載他人文章 |
+| 2026-08-25 | [Autonomy and Innovation – Stratechery by Ben Thompson](https://imitator.ai-apps.work/r/ani-by-ben) | 不做 | 轉載他人文章 |
 | 2026-08-23 | [Windows 11 25H2 × YouTube 卡頓：現象、根因與解法](https://imitator.ai-apps.work/r/win1125h2-youtube) | 不做 | 單一故障排除 |
 | 2026-08-22 | [演員登台:從 Actor 模型到 Durable Objects 的五十年](https://imitator.ai-apps.work/r/actor) | 可做 | Actor 模型到 Durable Objects（有三個版本） |
 | 2026-08-20 | [迴圈工程](https://imitator.ai-apps.work/r/loop-engineering) | 可做 | 迴圈工程，EP22 提過 |
@@ -111,10 +113,10 @@
 | 2026-08-17 | [熄燈的窗 · 台灣少子化與房價](https://imitator.ai-apps.work/r/birthrate-vs-housing) | **推薦** | 台灣少子化與房價 |
 | 2026-08-11 | [一個 agent loop,還是一條有界的流程?](https://imitator.ai-apps.work/r/test-agent-arch) | 可做 | 架構 |
 | 2026-08-11 | [它們不會報錯,它們會成功 — 兩個 AI 系統的架構選型](https://imitator.ai-apps.work/r/agent-arch) | 可做 | 架構系列 1 |
-| 2026-08-10 | [1000 萬退休的三種人生：一對台灣夫妻的壓力測試](https://imitator.ai-apps.work/r/bysq_report_tw_case) | **推薦** | 1000 萬退休的三種人生，財經題材 |
-| 2026-08-10 | [月租 6 萬住 6000 萬的房子，是佔便宜還是被坑？](https://imitator.ai-apps.work/r/bysq_report_rent_vs_buy) | **推薦** | 月租 6 萬住 6000 萬的房子，標題就是鉤子 |
-| 2026-07-31 | [manemu 完整成本分析 · 字幕 fallback + 金流毛利](https://imitator.ai-apps.work/r/manemu_cost_analysis) | 不做 | 自家產品成本 |
-| 2026-07-30 | [Manemu 方案與策略平台](https://imitator.ai-apps.work/r/manemu_price) | 不做 | 自家產品 |
+| 2026-08-10 | [1000 萬退休的三種人生：一對台灣夫妻的壓力測試](https://imitator.ai-apps.work/r/bysq-report-tw-case) | **推薦** | 1000 萬退休的三種人生，財經題材 |
+| 2026-08-10 | [月租 6 萬住 6000 萬的房子，是佔便宜還是被坑？](https://imitator.ai-apps.work/r/bysq-report-rent-vs-buy) | **推薦** | 月租 6 萬住 6000 萬的房子，標題就是鉤子 |
+| 2026-07-31 | [manemu 完整成本分析 · 字幕 fallback + 金流毛利](https://imitator.ai-apps.work/r/manemu-cost-analysis) | 不做 | 自家產品成本 |
+| 2026-07-30 | [Manemu 方案與策略平台](https://imitator.ai-apps.work/r/manemu-price) | 不做 | 自家產品 |
 | 2026-07-30 | [manemu 定價模型 · 把翻譯分鐘當 eSIM 賣](https://imitator.ai-apps.work/r/manemu) | 不做 | 自家產品定價 |
 | 2026-07-30 | [我們的家宴｜婚禮網站 Mockup](https://imitator.ai-apps.work/r/family-feast) | 不做 | 私人網站 mockup |
 | 2026-07-28 | [不是誰追上誰，而是哪一層 — 2026 年美中 AI 與半導體的分層讀法](https://imitator.ai-apps.work/r/layers-of-llm) | **推薦** | 美中 AI 與半導體的分層，跟台灣有關 |
@@ -123,28 +125,28 @@
 | 2026-07-24 | [測試在測什麼?— 可測的、不可測的、與兩者之間的搬運(第三篇)](https://imitator.ai-apps.work/r/llm-testing-essence) | 可做 | 測試在測什麼，系列 3/3 |
 | 2026-07-23 | [工具在手,怎麼用才算數?— Claude Code 使用指南(下篇)](https://imitator.ai-apps.work/r/ai-amp-or-mirror-2) | 可做 | Claude Code 使用指南，系列 2/3 |
 | 2026-07-23 | [同一個工具,為什麼結果差這麼多?— LLM 使用者差異研究綜述](https://imitator.ai-apps.work/r/ai-amp-or-mir) | 可做 | 使用者差異研究，系列 1/3 |
-| 2026-07-11 | [AI 溢酬:一般人版報告 — 論文、分析師與台股實證](https://imitator.ai-apps.work/r/AI_premium) | **已做** | EP20（背景） |
-| 2026-07-10 | [釜山旅遊指南 부산 — 給第一次去的台灣人](https://imitator.ai-apps.work/r/busan_v3) | 不做 | 旅遊手冊 |
-| 2026-07-10 | [釜山旅遊書 · 第一次就上手｜부산 여행](https://imitator.ai-apps.work/r/busan_v2) | 不做 | 旅遊手冊 |
-| 2026-07-10 | [釜山初旅手帖｜台灣人的第一次釜山自由行](https://imitator.ai-apps.work/r/busan_v1) | 不做 | 旅遊手冊 |
-| 2026-07-08 | [可轉債驗屍報告／公司發 CB 是利多還是警訊?用 20 年資料回答](https://imitator.ai-apps.work/r/cb_story) | **已做** | EP13 |
+| 2026-07-11 | [AI 溢酬:一般人版報告 — 論文、分析師與台股實證](https://imitator.ai-apps.work/r/ai-premium) | **已做** | EP20（背景） |
+| 2026-07-10 | [釜山旅遊指南 부산 — 給第一次去的台灣人](https://imitator.ai-apps.work/r/busan-v3) | 不做 | 旅遊手冊 |
+| 2026-07-10 | [釜山旅遊書 · 第一次就上手｜부산 여행](https://imitator.ai-apps.work/r/busan-v2) | 不做 | 旅遊手冊 |
+| 2026-07-10 | [釜山初旅手帖｜台灣人的第一次釜山自由行](https://imitator.ai-apps.work/r/busan-v1) | 不做 | 旅遊手冊 |
+| 2026-07-08 | [可轉債驗屍報告／公司發 CB 是利多還是警訊?用 20 年資料回答](https://imitator.ai-apps.work/r/cb-story) | **已做** | EP13 |
 | 2026-07-07 | [台股必勝法驗屍報告／用 231 萬筆資料回答你不敢問的問題](https://imitator.ai-apps.work/r/tw-stock-winner) | **已做** | EP12 |
 | 2026-06-30 | [誠實魔術 · Match-3 TAS](https://imitator.ai-apps.work/r/match-tree-magic) | 不做 | 遊戲，小眾 |
 | 2026-06-30 | [Match-3 Architecture: Scanner & Validation](https://imitator.ai-apps.work/r/match-tree) | 不做 | 遊戲架構，小眾 |
-| 2026-06-17 | [路上有雨嗎](https://imitator.ai-apps.work/r/tapiei_rain_report) | 不做 | 工具 |
-| 2026-06-16 | [前沿與生態之間，藏著一條沒人標出來的曲線](https://imitator.ai-apps.work/r/frontier_vs_ecosystem) | 可做 | AI 產業分析 |
+| 2026-06-17 | [路上有雨嗎](https://imitator.ai-apps.work/r/tapiei-rain-report) | 不做 | 工具 |
+| 2026-06-16 | [前沿與生態之間，藏著一條沒人標出來的曲線](https://imitator.ai-apps.work/r/frontier-vs-ecosystem) | 可做 | AI 產業分析 |
 | 2026-06-09 | [智慧的經濟學 · Cursor Developer Habits Report 重點一頁](https://imitator.ai-apps.work/r/ai-economics) | 可做 | Cursor 開發習慣報告，一頁重點 |
-| 2026-05-29 | [SPCX 戰情指揮面板 v8.3 — 家族辦公室機構版](https://imitator.ai-apps.work/r/spcx_war_room) | 不做 | 投資面板 |
-| 2026-05-20 | [Meta 詐騙廣告醜聞完整解析 ／ 聖塔克拉拉郡 vs Meta 訴訟 2026.5.11](https://imitator.ai-apps.work/r/meta_lawsuit) | **推薦** | Meta 詐騙廣告訴訟，台灣人天天看到詐騙廣告 |
-| 2026-05-20 | [台灣勞保、勞退與國保終極解析與自救指南](https://imitator.ai-apps.work/r/labor_insurance) | **推薦** | 台灣勞保、勞退、國保，一般人都用得到 |
+| 2026-05-29 | [SPCX 戰情指揮面板 v8.3 — 家族辦公室機構版](https://imitator.ai-apps.work/r/spcx-war-room) | 不做 | 投資面板 |
+| 2026-05-20 | [Meta 詐騙廣告醜聞完整解析 ／ 聖塔克拉拉郡 vs Meta 訴訟 2026.5.11](https://imitator.ai-apps.work/r/meta-lawsuit) | **推薦** | Meta 詐騙廣告訴訟，台灣人天天看到詐騙廣告 |
+| 2026-05-20 | [台灣勞保、勞退與國保終極解析與自救指南](https://imitator.ai-apps.work/r/labor-insurance) | **推薦** | 台灣勞保、勞退、國保，一般人都用得到 |
 | 2026-04-27 | [Howard Marks：戰勝大腦的出場策略](https://imitator.ai-apps.work/r/selling-out) | **推薦** | 財經：Howard Marks 的出場策略，台股剛大跌，時機對 |
 | 2026-04-25 | [SpaceX 2026 AR Calendar](https://imitator.ai-apps.work/r/spacex) | 不做 | 行事曆 |
 | 2026-04-14 | [DataBlock (Excel 快查 Prototype)](https://imitator.ai-apps.work/r/datablock) | 不做 | 工具原型 |
 | 2026-03-30 | [雙北地區房價趨勢](https://imitator.ai-apps.work/r/house-dashboard) | 不做 | 資料儀表板 |
-| 2026-03-24 | [xAI 將會獲勝：Elon Musk 的生態系戰略與時間軸圖表](https://imitator.ai-apps.work/r/xAI-will-win) | 可做 | 3 月寫的，與 EP19 重疊 |
+| 2026-03-24 | [xAI 將會獲勝：Elon Musk 的生態系戰略與時間軸圖表](https://imitator.ai-apps.work/r/xai-will-win) | 可做 | 3 月寫的，與 EP19 重疊 |
 | 2026-03-24 | [雙北捷運全線｜租金熱力地圖](https://imitator.ai-apps.work/r/mrt-rental) | 不做 | 資料儀表板 |
 | 2026-02-23 | [Tesla Comet：基於 ClickHouse 的千兆級觀測平台技術解析](https://imitator.ai-apps.work/r/tesla-with-clickhouse) | 可做 | 工程師向、小眾 |
-| 2026-02-16 | [巨變前夕：AI 生存指南](https://imitator.ai-apps.work/r/ai_shift_2026) | 可做 | 2 月寫的，可能過時 |
+| 2026-02-16 | [巨變前夕：AI 生存指南](https://imitator.ai-apps.work/r/ai-shift-2026) | 可做 | 2 月寫的，可能過時 |
 | 2026-02-14 | [Bruce ／ 現實世界的鍊金術師](https://imitator.ai-apps.work/r/alchemist-bio) | 不做 | 私人介紹 |
 | 2026-02-14 | [訪談實錄：從台積電到魔藥學 ／ Bruce 的職涯鍊金術](https://imitator.ai-apps.work/r/alchemist) | 不做 | 私人訪談 |
 | 2026-01-08 | [2026-2030 AI 時代財富生存指南](https://imitator.ai-apps.work/r/ai-weath-survival) | 可做 | 財經，1 月寫的，內容可能過時 |
