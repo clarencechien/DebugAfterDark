@@ -1,0 +1,137 @@
+{
+ "segment": "s09_weak",
+ "position": "第 10 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a367be7ce2da86b39e111653f76ff2aa8753114dd97eae7fe5489cb868da3ced",
+ "previous_context": "連這份報告起稿的時候，Claude 也有幫忙。寫的和被寫的有利害關係，這點大家要算進去喔。",
+ "original": {
+  "text": "這份報告也先講明這個比法的兩個弱點。第一，比特幣和 AI 不是同一種東西。比特幣沒有現金流，照 Marks 的原則開不出價；AI 公司有營收，帳算得出來，只是算不準。第二，適度部位沒有數字，不給數字的建議，很難被證明是錯的。主張這次連帳都不一樣的人，手上也有材料：這一輪花錢最多的，是幾家本業現金流很厚的大公司，Marks 自己也認為它們的估值不太可能高得離譜。他擔心的是，這些過去不必借錢的公司，現在開始舉債。誰對要等很久，他說基礎建設的報酬，得十年後才看得出來。",
+  "lint": {
+   "chars": 227,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 31.4,
+   "max_sentence_len": 67,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [
+    "部位"
+   ],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實這份報告自己也承認，<short pause>\n拿比特幣來比 AI，有兩個弱點。\n第一，這兩種東西根本不一樣嘛。\n比特幣沒有現金流，連價格都開不出來。\nAI 公司是有營收的喔，\n帳算得出來，只是算不準而已。\n然後第二個弱點，他說要買適度金額，\n到底是多少？\n根本沒給數字嘛。<laugh>\n你不給具體數字，事後怎麼可能算錯？\n不過話說回來，\n現在砸最多錢的，都是本業超賺的大公司，\n連 Marks 自己都覺得估值沒有太離譜。\n那他到底在擔心什麼？\n他擔心的是，這些巨頭以前根本不用借錢，\n現在卻開始動用現金，甚至跑去借錢。\n這兩邊誰對誰錯？\n他說這筆投資到底划不划算，\n得等十年後才看得出來啦。",
+   "lint": {
+    "chars": 257,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 20.4,
+    "max_sentence_len": 44,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實這份報告自己也承認，拿比特幣來比有兩個弱點。第一，比特幣沒有現金流，根本算不出價格。AI 公司至少有營收，算得出來，只是算不準而已。第二，Marks 建議大家持有適度的量，但他根本沒給數字。<short pause> 沒給數字的建議，你怎麼證明他是錯的嘛。不過，很多人覺得這次連帳都完全不一樣。因為現在砸大錢的，都是口袋很深的大公司。Marks 自己也覺得，這些公司不算太貴。那他到底在擔心什麼？他擔心的是，連這些以前不借錢的巨頭，現在都開始借錢了。<sigh> 到底哪一邊說的才對？Marks 說，這種基礎建設的報酬，要等十年後才看得出來啦。",
+   "lint": {
+    "chars": 249,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 19.8,
+    "max_sentence_len": 28,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實這份報告也承認，這個比法有缺點啦。\n第一，比特幣跟 AI 根本不是同一種東西。\n比特幣沒有現金流，Marks 根本開不出價。\n但 AI 公司有營收，帳算得出來，只是算不準。\n第二個弱點，他說要持有適度部位。\n但適度到底是多少？他不講。\n不給具體數字，你很難證明他是錯的嘛。<laugh>\n不過，反對他的人手上也是有材料的。\n你覺得這次連帳都一樣嗎？\n其實這輪砸錢最多的，都是現金很厚的大公司。\nMarks 也覺得，這幾家的估值不可能高得離譜。\n那他到底在擔心什麼？\n他擔心的是，這些公司以前不借錢，現在開始借了。<short pause>\n到底誰講的才對？\n他說基礎建設的報酬，要十年後才看得出來喔。",
+   "lint": {
+    "chars": 262,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 22,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [
+     "部位"
+    ],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "不給具體數字，你很難證明他是錯的嘛。<laugh>",
+   "to": "不給具體數字，你很難證明他是錯的嘛。",
+   "reason": "刪笑聲"
+  },
+  {
+   "from": "不過，反對他的人手上也是有材料的。你覺得這次連帳都一樣嗎？",
+   "to": "不過，主張這次連帳都不一樣的人，手上也有材料。",
+   "reason": "原句意思寫反了"
+  }
+ ]
+}

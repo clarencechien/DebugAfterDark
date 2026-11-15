@@ -1,0 +1,137 @@
+{
+ "segment": "s12_outro",
+ "position": "第 13 段，共 13 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "5207728ccbc9e1bae49fd97746e132aeeaa99f29d5fe1eeae5be27e928775896",
+ "previous_context": "我覺得這段比喻最妙的地方在於，當物那一欄每次都不一樣，他每次都得重新學。可是當金那一欄的寫法，這二十幾年來，其實都是同一種筆跡。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，這次不一樣是兩句話：東西不一樣，常常是真的；所以舊的帳不適用，很少是真的。第二，比特幣他靠二手消息改口花了三年半，AI 他親手用了 Claude，十一週就改口；可是用過只驗得了貨，驗不了價，AI 的方向有六七分把握，報酬只有兩分。第三，賣的理由要從東西本身來：論點變了，或是有更好的可以換；因為價格動了就出手，是看著當金在動。再提醒一次，這集不是投資建議。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 229,
+   "precise_numbers": [
+    "十一"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 27.6,
+   "max_sentence_len": 74,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。\n\n第一，這次不一樣其實有兩句話。東西變了常常是真的，但舊的帳很少會失效。\n\n第二，親手試過只能驗貨，算不出合適的價格。你看懂了技術方向，不代表就能賺到大錢嘛。\n\n第三，你問那到底什麼時候該賣？要看當初看好的理由變了沒，不要跟著價格慌。\n\n光是把貨跟價分開看，整個心態就穩超級多。\n\n<short pause>\n\n照慣例提醒一下，這集真的不是投資建議喔。\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 205,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一個重點，這次不一樣其實分兩半。\n東西不一樣常常是真的，\n但舊的帳不適用，可就很少是真的了。\n第二個重點，親手試過 Claude 確實很驚豔，\n但那也只能驗貨，\n你沒辦法光靠體驗，就算出合理的價格。\n第三個重點，那到底什麼時候該賣？\n出場的理由必須回到東西本身，\n像是原本的論點變了，\n或者是找到更好的選擇，\n而不是盯著當票上的價格數字瞎起鬨啦。<laugh>\n最後再提醒一次，這集完全不是投資建議喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 235,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 22.5,
+    "max_sentence_len": 52,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，這次不一樣其實是兩句話。\n東西本身不一樣，常常是真的。\n可是說舊的算帳方式沒用，很少是真的。\n然後，親手用過工具只能幫你驗貨。\n對技術再有把握，也不代表現在買會賺錢。\n最後，該不該賣，要看東西本身變了沒。\n不要因為價格動了，就跟著慌張出手。\n你是不是也常常忍不住一直盯盤？\n這樣其實很容易焦慮耶。<laugh>\n再提醒大家一次，這集聊的不是投資建議喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 216,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 14.4,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>第一，這次不一樣其實是兩句話。東西本身不一樣，常常是真的。可是說舊的算帳方式沒用，很少是真的。然後，親手用過工具只能幫你驗貨。對技術再有把握，也不代表現在買會賺錢。最後，該不該賣，要看東西本身變了沒。不要因為價格動了，就跟著慌張出手。你是不是也常常忍不住一直盯盤？這樣其實很容易焦慮耶。<laugh>再提醒大家一次，這集聊的不是投資建議喔。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，這次不一樣是兩句話：東西不一樣，常常是真的；所以舊的帳不適用，很少是真的。第二，比特幣他靠二手消息，改口花了三年半；AI 他親手用了 Claude，十一週就改口。可是用過只驗得了貨，驗不了價：AI 的方向有六七分把握，報酬只有兩分。第三，賣的理由要從東西本身來，論點變了，或是有更好的可以換；因為價格動了就出手，是看著當金在動。再提醒一次，這集不是投資建議喔。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "breakpoint 改回草稿；刪「盯盤很焦慮」等添加的話"
+  },
+  {
+   "from": "是看著當金在動。",
+   "to": "是看著價錢那一欄在動。",
+   "reason": "同 s01"
+  }
+ ]
+}

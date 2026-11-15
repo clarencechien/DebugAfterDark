@@ -1,0 +1,139 @@
+{
+ "segment": "s10_sell",
+ "position": "第 11 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "5e69b2bb54b7e9f6a2e405a8f149d8fda4ab298fb3aaea2914c0d1ff7cdd5a91",
+ "previous_context": "到底誰講的才對？他說基礎建設的報酬，要十年後才看得出來喔。",
+ "original": {
+  "text": "那什麼時候該賣？這份報告的前身，是一頁整理 Marks 出場策略的筆記，回頭對原文，有好幾處要更正。二〇二二年的〈Selling Out〉，他只認兩個賣的理由：投資論點變弱了，或是出現更好的標的。部位太大可以修剪。那頁筆記寫的價格極端高估就賣，〈Selling Out〉沒有這一條，他反而說，為了擇時而賣，通常不是好主意。還有那句讓贏家跑，出自那篇附錄的父子對話，那是兒子 Andrew 的立場，想獲利了結的，是 Marks 自己。所以因為漲了而賣、因為跌了而賣，都是看著當金那一欄在動就出手，他說，跌了才賣比漲了就賣更糟。",
+  "lint": {
+   "chars": 254,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 35.3,
+   "max_sentence_len": 52,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [
+    "部位"
+   ],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那什麼時候才該賣股票？\n其實這份報告的前身，只是一頁整理筆記。\n內容是 Marks 的出場策略。\n不過回頭去對原文，發現有好幾處要更正耶。\n他在文章裡，只認兩個賣的理由。\n第一個是原本看好的理由變弱了。\n第二個是找到了更好的標的。\n手上的股票佔太滿，修剪一下也可以啦。\n那如果價格極端高估，該不該賣？\n答案是不要。<short pause>\nMarks 說為了抓時機而賣，通常不是好主意。\n大家常聽到的讓贏家繼續跑，\n其實是他兒子 Andrew 講的。\n想獲利了結的，反而是 Marks 自己。<laugh>\n所以因為漲了而賣、因為跌了而賣，\n都是看著當金那一欄在動就出手。\n他說，跌了才賣比漲了就賣更糟喔。",
+   "lint": {
+    "chars": 261,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "說到這裡，那到底什麼時候該賣股票？\n其實這份報告，原本是在整理 Marks 的筆記。\n結果回去看二〇二二年的 Selling Out。\n我看完真的覺得差超多的耶。\nMarks 真正認可賣出的理由，其實只有兩個。\n第一個是原本看好的理由變弱了。\n第二個是找到了更好的標的。\n手上買太多，頂多也只是稍微修剪調節。\n你可能會問，那漲太高不賣嗎？\n他說不用喔，為了抓時機賣通常不是好主意。\n很有趣的是，那句很有名的讓贏家跑。\n其實是他兒子 Andrew 講的。<short pause>\n想落袋為安的，反而是 Marks 自己。<laugh>\n所以只看漲跌就出手，都是在盯著當金看。\n他說跌了才賣，比漲了就賣還要更糟啦。",
+   "lint": {
+    "chars": 263,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 21,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那到底什麼時候該賣？\n其實這份報告的前身，\n只是一張整理 Marks 出場策略的筆記。\n回頭去對原文，發現好幾處都寫錯了。<short pause>\n他在二〇二二年寫過一篇 Selling Out，\n裡面真正認可的賣出理由，其實只有兩個。\n就是你當初買進的理由變弱了，\n或是你找到了更好的新標的。\n如果手上這檔買太多，稍微修剪就好。<short pause>\n你是不是也覺得漲太多就該賣？\nMarks 反而說，\n為了猜時機去賣，通常不是好主意。\n大家常講的讓贏家繼續跑，\n其實是他兒子 Andrew 的立場，\nMarks 自己那時候還想先賺了就跑耶。<laugh>\n所以只看價格漲跌就急著出手，\n根本是只盯著當票上的當金在看嘛。\n他說跌了才賣，比漲了就賣更糟糕喔。",
+   "lint": {
+    "chars": 274,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 23.9,
+    "max_sentence_len": 46,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "他在文章裡，只認兩個賣的理由。",
+   "to": "他在二〇二二年的〈Selling Out〉裡，只認兩個賣的理由。",
+   "reason": "補出處"
+  },
+  {
+   "from": "那如果價格極端高估，該不該賣？答案是不要。",
+   "to": "那頁筆記寫的價格極端高估就賣呢？〈Selling Out〉裡沒有這一條。",
+   "reason": "「答案是不要」是改寫加的，原文只說沒有這一條"
+  },
+  {
+   "from": "想獲利了結的，反而是 Marks 自己。<laugh>",
+   "to": "想獲利了結的，反而是 Marks 自己。",
+   "reason": "刪笑聲"
+  },
+  {
+   "from": "看著當金那一欄在動就出手",
+   "to": "看著價錢那一欄在動就出手",
+   "reason": "同 s01"
+  }
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 13 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "47501279f90e91912ca4656a387fb4cc2335c80b2d467a3ebde7e55e6e0bd527",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "台股從十月初將近五萬點，到十一月六號跌破四萬點，跌了兩成多。這時候你一定會聽到一句話：AI 這次不一樣。一九八七年十月，紐約時報一篇文章引了投資大師 Templeton 的話，說投資裡最危險的四個字，就是這次不一樣。文章刊出八天後，美股一天跌掉百分之二十二。寫了三十幾年備忘錄、一直提醒大家別輕信這四個字的 Howard Marks，自己在比特幣和 AI 上，各改過一次口。這份報告把兩次改口攤開來對，發現他改的都是對東西的看法，算帳的方法，一次也沒動過。",
+  "lint": {
+   "chars": 221,
+   "precise_numbers": [
+    "五萬",
+    "十一",
+    "四萬",
+    "百分之二十二",
+    "三十"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 35.8,
+   "max_sentence_len": 53,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "最近行情震盪成這樣，\n你身邊一定有人會說，\nAI 這次真的不一樣啦。\n你信這句話嗎？\n先說好這不是投資建議喔。<short pause>\n投資大師 Templeton 以前就說過，\n這四個字是市場上最危險的話。\n更扯的是，\n他講完才過一個多禮拜，\n美股一天就跌掉百分之二十二。<sigh>\n投資大咖 Howard Marks 一直叫大家別信。\n結果他自己在比特幣跟 AI 上，\n其實也各改口過一次。<laugh>\n我看到這邊整個笑了出來。\n重點來了，\n這份報告把他的說法攤開來看，\n他改的只有對東西的想像，\n算帳的方法，\n根本一次都沒動過。",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [
+     "百分之二十二"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 23.2,
+    "max_sentence_len": 45,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 3
+   },
+   "round": 0
+  },
+  {
+   "text": "台股最近跌得這麼慘，你身邊一定有人說，AI 這次不一樣。先說好這集不是投資建議喔。<short pause> 但是這句話真的能信嗎？一九八七年投資大師 Templeton 就說過，投資裡面最危險的四個字，就是這次不一樣。更扯的是，文章刊出來才八天，美股一天就跌掉百分之二十二。<sigh> 連寫了三十幾年備忘錄的 Howard Marks，也一直叫大家千萬別信這句話。但他自己有沒有改口過？其實有耶。在比特幣跟 AI 上面，他各改口過一次。這份報告把這兩次攤開來對，我看到這邊很有共鳴。原來他改的只是對東西的看法，算帳的方法他一次都沒動過。",
+   "lint": {
+    "chars": 242,
+    "precise_numbers": [
+     "百分之二十二",
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 21.0,
+    "max_sentence_len": 41,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "台股最近跌了兩成多。\n你最近一定很常聽到一句話，\n也就是 AI 這次不一樣。\n先說好，這集是說書，不是投資建議喔。\n投資大師 Templeton 講過，\n投資裡最危險的四個字，就是這次不一樣。\n你猜後來怎麼了？\n文章登出來才八天，\n美股一天就跌掉百分之二十二。<short pause>\nHoward Marks 寫了三十幾年備忘錄，\n也一直提醒大家不要信這四個字。\n更扯的是，他自己其實也改過口，\n在比特幣跟 AI 上各改過一次耶。\n這份報告把這兩次改口攤開來對，\n我看到結論整個愣住。\n其實他改的只是對新東西的看法，\n算帳的方法，人家可是一次都沒動過。",
+   "lint": {
+    "chars": 241,
+    "precise_numbers": [
+     "百分之二十二",
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 23.1,
+    "max_sentence_len": 35,
+    "sentences_over_20": 7,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "最近行情震盪成這樣，你身邊一定有人會說，AI 這次真的不一樣啦。你信這句話嗎？先說好這不是投資建議喔。<short pause>投資大師 Templeton 以前就說過，這四個字是市場上最危險的話。更扯的是，他講完才過一個多禮拜，美股一天就跌掉百分之二十二。<sigh>投資大咖 Howard Marks 一直叫大家別信。結果他自己在比特幣跟 AI 上，其實也各改口過一次。<laugh>我看到這邊整個笑了出來。重點來了，這份報告把他的說法攤開來看，他改的只有對東西的想像，算帳的方法，根本一次都沒動過。",
+   "to": "AI 來了，股市這次不一樣嗎？台股從十月初將近五萬點，到十一月六號跌破四萬點，跌了兩成多。你身邊一定有人說，AI 這次真的不一樣啦。先說好，這集是說書，不是投資建議喔。<short pause>一九八七年十月，紐約時報一篇文章引了投資大師 Templeton 的話：投資裡最危險的四個字，就是這次不一樣。文章刊出八天後，美股一天跌掉百分之二十二。一直叫大家別輕信這四個字的 Howard Marks，自己在比特幣跟 AI 上，也各改過一次口。這份報告把兩次改口攤開來對，他改的都是對東西的看法，算帳的方法，一次也沒動過。",
+   "reason": "使用者 2026-11-15：標題和開場加鉤子「AI 來了，股市這次不一樣嗎」；補回台股數字和一九八七年；「講完一個多禮拜」改為文章刊出八天後；刪個人反應"
+  }
+ ]
+}

@@ -1,0 +1,139 @@
+{
+ "segment": "s04_btc",
+ "position": "第 5 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "742055dd144f7eccaa190bdbd43edb5c26f30ae70c9f2188660729af70daadd2",
+ "previous_context": "就像當年市值最高的那批巨頭，到了現在，竟然只剩下六家還在榜上。就算你押對了整個新科技，也不代表你買對了活下來的那家公司啦。",
+ "original": {
+  "text": "第二張票，比特幣，他一開始拒收。二〇一七年七月的備忘錄，他寫了三次 not real，說這是沒有根據的一時風潮，還把它跟一六三七年的鬱金香、一九九九年的網路股排在一起。當時比特幣大約兩千五百五十美元。那篇是他二十八年來回響最多的一篇，在社群上被罵得很兇。六週後他寫了續篇，承認自己批評比特幣沒有內在價值的理由，套在美元上一樣成立，所以改口說，看不出比特幣為什麼不能是一種貨幣。他形容自己少了一點恐龍味。不過他仍然認為那是投機泡沫，也不打算買。",
+  "lint": {
+   "chars": 219,
+   "precise_numbers": [
+    "兩千五百五十",
+    "二十八"
+   ],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 30.3,
+   "max_sentence_len": 65,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以來看第二張當票，也就是比特幣。\n其實他一開始根本拒收。\n他在備忘錄連寫了三次 not real。\n他說這根本不是真的，只是一時的風潮。\n還把它跟當年的鬱金香泡沫排在一起。\n當時一顆比特幣大約兩千五百五十美元。\n結果社群直接炸鍋，把他罵到臭頭。\n這篇成了他二十八年來回響最多的一篇。\n你知道大師被罵之後怎麼做嗎？\n他六個星期後居然寫了續篇。\n他說如果罵比特幣沒有內在價值，\n這套說法套在美元身上其實也一樣嘛。<laugh>\n坦白說，大師能這樣公開認錯真的蠻酷的。\n所以他改口了。\n他說看不出比特幣為什麼不能當貨幣。\n他還自嘲說，自己少了一點恐龍味。<short pause>\n不過他還是覺得這是投機泡沫。\n他自己從頭到尾都不打算買啦。",
+   "lint": {
+    "chars": 279,
+    "precise_numbers": [
+     "兩千五百五十",
+     "二十八"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 31,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "然後來看第二張當票，就是比特幣。Howard Marks 一開始完全拒收這件貨。他在備忘錄連寫了三次 not real，說這搞不好是老鼠會，還拿以前的鬱金香泡沫來比。當時一顆大約兩千五百五十美元。<short pause>結果呢？在社群上直接被罵爆啦。是他寫了快三十年回響最多的一篇。你覺得他會硬凹嗎？完全沒有。才過六個禮拜，他就寫了續篇。他承認批評比特幣沒有價值的理由，拿去套在美元上，其實也成立嘛。所以他改口說，看不出比特幣為什麼不能當貨幣。他還笑說自己少了一點恐龍味。<laugh>不過他還是覺得那是投機泡沫，說自己完全不打算買啦。",
+   "lint": {
+    "chars": 245,
+    "precise_numbers": [
+     "兩千五百五十",
+     "三十"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 40,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "除了挑公司很難，\n遇到全新的東西更讓人頭痛。\n來看第二張當票，比特幣。\nHoward Marks 一開始根本直接拒收。\n二〇一七年的備忘錄，\n他連寫了三次 not real。\n說這是一時的狂熱，搞不好還是老鼠會。\n甚至把它跟當年的鬱金香泡沫排在一起。\n當時比特幣大約兩千五百五十美元。\n結果大家反應怎樣？<short pause>\n那篇被社群罵到臭頭，迴響是有史以來最多。\n換作是你被罵成這樣，會怎麼辦？\n他六週後竟然就發了續篇。\n他承認罵比特幣沒有內在價值的理由，\n套在美元身上其實也一樣成立嘛。\n所以他把結論改成，\n看不出比特幣為什麼不能是一種貨幣。\n他還自嘲說，自己少了一點恐龍味。<laugh>\n這種認錯的態度坦白說滿厲害的。\n不過重點來了，\n他依然覺得那是投機泡沫，\n他自己可是一顆都不打算買喔。",
+   "lint": {
+    "chars": 308,
+    "precise_numbers": [
+     "兩千五百五十"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 32,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "除了挑公司很難，遇到全新的東西更讓人頭痛。來看第二張當票，比特幣。Howard Marks 一開始根本直接拒收。二〇一七年的備忘錄，他連寫了三次 not real。說這是一時的狂熱，搞不好還是老鼠會。甚至把它跟當年的鬱金香泡沫排在一起。當時比特幣大約兩千五百五十美元。結果大家反應怎樣？<short pause>那篇被社群罵到臭頭，迴響是有史以來最多。換作是你被罵成這樣，會怎麼辦？他六週後竟然就發了續篇。他承認罵比特幣沒有內在價值的理由，套在美元身上其實也一樣成立嘛。所以他把結論改成，看不出比特幣為什麼不能是一種貨幣。他還自嘲說，自己少了一點恐龍味。<laugh>這種認錯的態度坦白說滿厲害的。不過重點來了，他依然覺得那是投機泡沫，他自己可是一顆都不打算買喔。",
+   "to": "來看第二張當票，比特幣，Marks 一開始直接拒收。二〇一七年七月的備忘錄，他連寫了三次 not real，說這是沒有根據的一時風潮，還把它跟鬱金香泡沫排在一起。當時比特幣大約兩千五百五十美元。那篇是他二十八年來迴響最多的一篇，在社群上被罵得很兇。<short pause>六週後，他發了續篇，承認自己罵比特幣沒有內在價值的理由，套在美元身上也一樣成立，所以改口說，看不出比特幣為什麼不能是一種貨幣。他還自嘲，少了一點恐龍味。不過他依然覺得那是投機泡沫，自己也不打算買。",
+   "reason": "超過 300 字；「有史以來最多」改回二十八年來；刪笑聲與個人反應"
+  },
+  {
+   "from": "Marks 一開始直接拒收。",
+   "to": "Marks 一開始直接說不收。",
+   "reason": "「拒收」兩次被聽成舉手"
+  }
+ ]
+}

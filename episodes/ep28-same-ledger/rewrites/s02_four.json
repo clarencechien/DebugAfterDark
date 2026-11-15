@@ -1,0 +1,119 @@
+{
+ "segment": "s02_four",
+ "position": "第 3 段，共 13 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "adb2b925f22f024b0fa8bbf5ccd75127398fbd459a8303945b0a9f4768694398",
+ "previous_context": "這集就借這張票，看他碰過的三樣新東西。也就是網路股、比特幣，還有現在的 AI 啦。",
+ "original": {
+  "text": "先說那四個字。Templeton 講這次不一樣最危險，同一篇文章也記了他的但書：講這句話的人，有兩成的時候是對的。Marks 二〇一九年用這四個字當標題寫了一篇備忘錄，逐條檢查當時流行的九個說法，像是衰退可以避免、赤字不要緊。可是他替科技留了一道門：在科技這類領域，他賭真的不一樣的比例，會高過兩成。這份報告說，所以這次不一樣其實是兩句話。前半句說東西不一樣，後半句說，所以舊的帳不適用。前半句他願意信，尤其是科技；後半句，他不信。",
+  "lint": {
+   "chars": 214,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 29.6,
+   "max_sentence_len": 54,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "我們先來看投資界最危險的四個字。\n就是「這次不一樣」啦。\n大師 Templeton 說過這句話。\n但他有留但書，說其實有兩成是對的喔。<short pause>\n那 Marks 怎麼看？\n他覺得在科技領域，真的不一樣的機率更高。\n重點來了，你猜他怎麼面對這句話？\n他直接把這四個字拆成兩半。\n前半句是說「東西不一樣」。<short pause>\n後半句是說「所以舊的帳不適用了」。\n對，我超喜歡他這個切入角度。\n前半句他願意信，尤其是遇到新科技；\n可是後半句要大家不看舊帳，他可不買單啦。",
+   "lint": {
+    "chars": 202,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 36,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "看這三張票之前，先聊聊那四個字。投資裡最危險的四個字，叫這次不一樣。但這句話真的全錯嗎？其實不一定喔。大師 Templeton 自己都說，有兩成是對的。Marks 就把這四個字直接拆成兩句。這個切角我真的覺得超精準。<short pause>前半句是說，這個新東西真的不一樣。後半句是說，所以舊的算帳方式不算數了。你猜 Marks 信哪一句？其實前半句他很願意信，特別是碰到科技。但後半句說舊帳不用算？他完全不買單啦。",
+   "lint": {
+    "chars": 191,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 13.7,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "看這三張票之前，先來看那句名言。\n投資界最危險的四個字，叫這次不一樣。<short pause>\n你猜這句話真的每次都錯嗎？\n其實也不一定喔。\n大師 Templeton 就說過，\n講這句話的人，有兩成其實是對的。\nMarks 甚至覺得，在科技領域比例更高。\n重點來了，他把這四個字拆成兩句。\n前半句是說，東西真的不一樣了。\n後半句是說，舊的算帳方式不管用了。\n這邏輯真的讓人很佩服耶。\n因為前半句他願意信，尤其是科技。\n但是後半句，他完全不買單啦。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 30,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "看這三張票之前，先聊聊那四個字。投資裡最危險的四個字，叫這次不一樣。但這句話真的全錯嗎？其實不一定喔。大師 Templeton 自己都說，有兩成是對的。Marks 就把這四個字直接拆成兩句。這個切角我真的覺得超精準。<short pause>前半句是說，這個新東西真的不一樣。後半句是說，所以舊的算帳方式不算數了。你猜 Marks 信哪一句？其實前半句他很願意信，特別是碰到科技。但後半句說舊帳不用算？他完全不買單啦。",
+   "to": "看這三張票之前，先聊那四個字。這次不一樣，真的全錯嗎？其實不一定喔。Templeton 自己就留了但書：講這句話的人，有兩成的時候是對的。Marks 二〇一九年用這四個字當標題寫了一篇備忘錄，逐條檢查當時流行的九個說法，可是他替科技留了一道門：在科技這類領域，真的不一樣的比例，會高過兩成。<short pause>這份報告說，這次不一樣其實是兩句話。前半句說，東西不一樣；後半句說，所以舊的帳不適用。前半句他很願意信，特別是科技；後半句，他完全不買單。",
+   "reason": "「Marks 把四個字拆成兩句」是報告的讀法，不是他說的；補二〇一九年備忘錄；刪個人反應"
+  },
+  {
+   "from": "Templeton 自己就留了但書：",
+   "to": "Templeton 自己也補了一句：",
+   "reason": "「但書」被聽成單數、淡出"
+  }
+ ]
+}

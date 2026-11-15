@@ -1,0 +1,140 @@
+{
+ "segment": "s03_dotcom",
+ "position": "第 4 段，共 13 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "985cc51209f43bf71ae7d559a821b050050e0a761ab113d40a4ce86251ddbff5",
+ "previous_context": "但後半句說舊帳不用算？他完全不買單啦。",
+ "original": {
+  "text": "第一張票，二〇〇〇年一月二號，網路股。Marks 寫了一篇〈bubble.com〉，說科技和網路股的價格已經脫離常理。他寫了快十年的備忘錄，這是第一篇有讀者回信的。二十五年後他回顧，評語是：說對了，而且很快就說對了，那一波泡沫在那年年中開始破。這張票示範了兩句話可以同時成立：網路是真的，世界沒有回到沒有網路的樣子；當時的價格也是錯的。他舉過一個數字：二〇〇〇年初指數裡權重最高的二十家公司，到二〇二四年只剩六家還在前二十名。押對東西的人，不一定押對了手上那家公司。",
+  "lint": {
+   "chars": 232,
+   "precise_numbers": [
+    "二十五",
+    "二十",
+    "二十"
+   ],
+   "enumerations": [
+    "第一",
+    "第一"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 32.1,
+   "max_sentence_len": 45,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以先來看第一張當票。\n時間拉回千禧年剛開始的時候。\nHoward Marks 寫了一篇備忘錄，\n名字就叫 bubble.com。\n重點是，他在那之前寫了快十年，\n其實從來沒有讀者回過信喔。\n你猜這次怎麼了？\n這篇是第一次有人回信給他。\n結果才過半年，泡沫真的就破了。<short pause>\n這張票厲害的地方在於，\n它證明了兩句話可以同時成立。\n網路是真的，世界再也回不去了。\n可是當時的股票價格，也真的錯得離譜。\n我讀到這段真的很有共鳴。<short pause>\n就像當年市值最高的那批巨頭，\n到了現在，竟然只剩下六家還在榜上。\n就算你押對了整個新科技，\n也不代表你買對了活下來的那家公司啦。",
+   "lint": {
+    "chars": 254,
+    "precise_numbers": [
+     "千"
+    ],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 18.5,
+    "max_sentence_len": 33,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "先來看第一張當票。千禧年剛開始的時候，Marks 寫了一篇 bubble.com。那時候他寫了快十年的備忘錄，那是第一次有讀者回信給他。<laugh> 結果半年之後，網路泡沫真的破了。你猜他後來給自己的評語是什麼？他說自己說對了，而且很快就被市場驗證。重點來了，最厲害的是兩件事同時成立。網路是真的，但當時的價格也是真的錯了。你覺得押對新技術就一定會賺嗎？其實完全不是這樣喔。當年排名前二十大的大公司，過了二十幾年，竟然只有六家還留在榜上。押對了方向，手上的公司還是可能死掉，這真的讓人超毛的吧。",
+   "lint": {
+    "chars": 238,
+    "precise_numbers": [
+     "千",
+     "二十",
+     "二十"
+    ],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 31,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "所以來看他開出的第一張當票。\n千禧年網路泡沫那時候，\nMarks 寫了一篇 bubble.com。\n他在那之前寫了好幾年，\n你猜怎樣？\n那是第一次有讀者回信給他喔。<laugh>\n重點來了。\n二十幾年後他回頭看這件事，\n他說自己說對了，而且很快就應驗。\n大概半年後泡沫就開始破了。\n這張當票最厲害的是什麼？\n其實它示範了兩件事可以同時成立。\n網路是真的，世界真的離不開網路。\n但當時的價格也是真的脫離常理嘛。\n技術留了下來，買太貴照樣賠慘。\n而且當時排名前二十大的大公司，\n幾十年後居然只剩六家還在榜上。\n這點真的很讓人起雞皮疙瘩耶。\n也就是說，\n你就算押對了未來的趨勢，\n也不代表你手上的公司能活下來啦。",
+   "lint": {
+    "chars": 274,
+    "precise_numbers": [
+     "千",
+     "二十",
+     "二十"
+    ],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 17.3,
+    "max_sentence_len": 32,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "所以先來看第一張當票。時間拉回千禧年剛開始的時候。Howard Marks 寫了一篇備忘錄，名字就叫 bubble.com。重點是，他在那之前寫了快十年，其實從來沒有讀者回過信喔。你猜這次怎麼了？這篇是第一次有人回信給他。結果才過半年，泡沫真的就破了。<short pause>這張票厲害的地方在於，它證明了兩句話可以同時成立。網路是真的，世界再也回不去了。可是當時的股票價格，也真的錯得離譜。我讀到這段真的很有共鳴。<short pause>就像當年市值最高的那批巨頭，到了現在，竟然只剩下六家還在榜上。就算你押對了整個新科技，也不代表你買對了活下來的那家公司啦。",
+   "to": "先來看第一張當票，二〇〇〇年一月二號，網路股。Marks 寫了一篇備忘錄，名字就叫 bubble.com，說網路股的價格已經脫離常理。他在那之前寫了快十年，從來沒有讀者回過信，這篇是第一次有人回。那一波泡沫，在那年年中開始破。<short pause>這張票示範了兩句話可以同時成立。網路是真的，世界再也回不去了；可是當時的價格，也真的錯了。他舉過一個數字：二〇〇〇年初指數裡權重最高的二十家公司，到二〇二四年，只剩六家還在前二十名。押對了新科技，不代表你押對了手上那家公司。",
+   "reason": "「市值最高的巨頭」改回原文的指數權重前二十；補日期；刪個人反應"
+  }
+ ]
+}

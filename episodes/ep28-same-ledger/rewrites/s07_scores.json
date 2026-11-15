@@ -1,0 +1,144 @@
+{
+ "segment": "s07_scores",
+ "position": "第 8 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "68d3e8ca80a00d3f2d152dcd30aac5fdc0aba1e23ef28beae87b9d61d9f8a67e",
+ "previous_context": "不過整篇備忘錄，他還是堅持自己寫。因為對他來說，寫作本身就是一種樂趣啦。",
+ "original": {
+  "text": "上完課，他在當物這一欄改口改得很乾脆，認為 AI 的潛力比較可能被低估。可是當金那一欄，他沒有動：談到資料中心這一波狂蓋，他寫的是，沒有理由假設這次會不一樣。今年十一月十一號的第三篇，他請 Claude 替 AI 各個環節的可預測性打分數，一分最難料，十分最好料。AI 繼續進步、繼續擴散，六到七分；晶片，四分；前沿模型實驗室，兩分；AI 投資的報酬，也是兩分。這份報告說，東西往哪裡走有六七分把握，錢賺不賺得回來，只有兩分。他還算了一筆：四個判斷就算各有六成把握，四個全對的機率只有百分之十三。",
+  "lint": {
+   "chars": 240,
+   "precise_numbers": [
+    "十一",
+    "十一",
+    "百分之十三"
+   ],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 39.0,
+   "max_sentence_len": 48,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上完課之後，他對 AI 的看法改得很乾脆喔。\n他覺得 AI 的潛力很可能被大家低估了。\n可是聊到價格，他完全沒有退讓。\n看到資料中心到處狂蓋，他只寫了一句：\n沒有理由相信這次會不一樣。<short pause>\n後來在第三篇，他請 Claude 替各個環節打分數。\n一分最難料，十分最好料。\n你覺得賺不賺得到錢拿幾分？\n答案居然只有兩分。<sigh>\n技術往哪裡走，大家有六七成把握，\n可是錢能不能賺回來，把握只有兩分。\n最厲害的是他還算了一筆帳。\n假設四個判斷各有六成把握，\n四個全部猜對的機率，其實只有百分之十三。\n這數字真的低到讓人倒抽一口氣耶。",
+   "lint": {
+    "chars": 237,
+    "precise_numbers": [
+     "百分之十三"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 32,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "上完課之後，他改口改得超乾脆。\n他承認 AI 的潛力很可能被低估了。\n不過，要出多少錢去買，他完全沒鬆口喔。\n看到大家現在狂蓋資料中心，他只說了一句。\n沒有理由相信這次會不一樣。<short pause>\n然後到了第三篇，他請 Claude 做了一次評分。\n他想知道 AI 每個環節好不好預測。\n結果技術往前走，大概有六七成把握。\n可是大家最在意的回本呢？\n這份報告說，賺不賺得回來，只有兩分把握。\n<sigh> 這落差真的讓人倒抽一口氣。\n技術會贏，不代表買股票的人能賺錢耶。\n所以他最後算了一筆帳。\n就算四個判斷各自都有六成勝算，\n最後全部猜對的機率是多少？\n其實只有百分之十三而已啦。",
+   "lint": {
+    "chars": 254,
+    "precise_numbers": [
+     "百分之十三"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 27,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "上完課之後，他在驗貨這關改口改得超乾脆。他覺得 AI 的潛力很可能被低估了。可是當金那一欄，他一步都沒退。面對狂蓋資料中心，他說這次沒有不一樣。然後他在第三篇，問了 Claude 一個很有意思的問題。<short pause> 他請 Claude 評估各個環節有多好預測。滿分十分，你覺得投資能賺多少拿到幾分？答案只有兩分。<sigh> 技術往前走，Claude 還有給到六七分喔。可是錢能不能賺回來，直接掉到兩分。這個落差真的會讓人心涼一半耶。所以他算了一筆帳。就算四個判斷各自都有六成把握，全部猜對的機率，其實只有百分之十三。",
+   "lint": {
+    "chars": 237,
+    "precise_numbers": [
+     "百分之十三"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 32,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "然後到了第三篇，",
+   "to": "然後今年十一月十一號的第三篇，",
+   "reason": "補日期"
+  },
+  {
+   "from": "結果技術往前走，大概有六七成把握。",
+   "to": "結果 AI 繼續進步、繼續擴散，六到七分。",
+   "reason": "原文是分數不是成數"
+  },
+  {
+   "from": "<sigh> 這落差真的讓人倒抽一口氣。",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

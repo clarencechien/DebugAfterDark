@@ -1,0 +1,80 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -20.8,
+  "gain_db": 0.8,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_counter",
+  "lufs_before": -22.1,
+  "gain_db": 2.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_four",
+  "lufs_before": -21.9,
+  "gain_db": 1.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_dotcom",
+  "lufs_before": -22.8,
+  "gain_db": 2.8,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_btc",
+  "lufs_before": -22.2,
+  "gain_db": 2.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_son",
+  "lufs_before": -23.9,
+  "gain_db": 3.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_claude",
+  "lufs_before": -21.4,
+  "gain_db": 1.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_scores",
+  "lufs_before": -22.6,
+  "gain_db": 2.6,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_witness",
+  "lufs_before": -20.6,
+  "gain_db": 0.6,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_weak",
+  "lufs_before": -22.1,
+  "gain_db": 2.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s10_sell",
+  "lufs_before": -20.5,
+  "gain_db": 0.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s11_taiwan",
+  "lufs_before": -22.1,
+  "gain_db": 2.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s12_outro",
+  "lufs_before": -22.8,
+  "gain_db": 2.8,
+  "lufs_after": -20.0
+ }
+]

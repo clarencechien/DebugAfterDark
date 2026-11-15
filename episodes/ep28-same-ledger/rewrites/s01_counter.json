@@ -1,0 +1,118 @@
+{
+ "segment": "s01_counter",
+ "position": "第 2 段，共 13 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "71a2786a4c7d269ea887517a3cd7b009c328441ab47a4eadac6966b5ba8fb00f",
+ "previous_context": "我看到這邊整個笑了出來。重點來了，這份報告把他的說法攤開來看，他改的只有對東西的想像，算帳的方法，根本一次都沒動過。",
+ "original": {
+  "text": "先說一句，這集是說書，不是投資建議。Howard Marks 是橡樹資本的共同創辦人，本行是信用投資，也就是把錢借出去、再把錢收回來的生意。借錢的人看東西有個習慣，東西再好，他也只問兩件事：這是不是真貨，憑這個我敢借多少。這份報告用老當舖的當票來比：客人把東西遞上櫃檯，朝奉先驗貨，再開價。當票上，當物和當金是分開的兩欄。這集就借這張票的格式，把 Marks 碰過的三樣新東西，各開一張：網路股、比特幣，還有 AI。",
+  "lint": {
+   "chars": 203,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 32.8,
+   "max_sentence_len": 49,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先提醒一下，這集是說書，不是投資建議喔。主角 Howard Marks 是橡樹資本的創辦人。他的本行是把錢借出去，再把錢收回來。做這種生意的人看東西，習慣問什麼？其實就兩件事。這是不是真貨？憑這個我敢借多少？這份報告用老當舖來比喻，我覺得超傳神。客人把東西遞上來，朝奉先驗貨，再開價。當票上的當物跟當金，本來就是分開的。<short pause>這集我們就借這個格式。來看他碰過的三樣新東西。也就是網路股、比特幣，還有現在的 AI 啦。",
+   "lint": {
+    "chars": 200,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.4,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "先說一句，這集是說書，不是投資建議喔。\n主角 Howard Marks，是橡樹資本的創辦人。\n他做的是信用投資。<short pause>\n其實就是把錢借出去、再收回來的生意。\n借錢的人看東西，習慣跟別人不太一樣。\n你猜他會問什麼？\n東西再好，他也只問這是不是真貨。\n然後，憑這個東西我敢借多少錢。\n這份報告用老當舖來比，超傳神的。\n朝奉站在櫃檯，一定是先驗貨，再開價。\n所以當票上的當物跟當金，是分開的兩欄。\n我們就借這張當票，看他碰過的三樣新東西。\n也就是網路股、比特幣，還有現在的 AI 啦。",
+   "lint": {
+    "chars": 220,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 23,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "先說一聲，這集是說書，不是投資建議喔。\n他是橡樹資本創辦人 Howard Marks。\n他的本行是信用投資，專門把錢借出去。\n你猜借錢的人看東西，最在乎什麼？\n其實就兩件事：這是不是真貨，我敢借多少。\n這份報告用老當舖的當票來打比方。\n客人把東西遞上去，朝奉先驗貨，再開價。\n當票上的東西跟金額，本來就是分開兩欄嘛。\n我看到這個比喻，覺得超貼切的。<short pause>\n這集就借這張票，看他碰過的三樣新東西。\n也就是網路股、比特幣，還有現在的 AI 啦。",
+   "lint": {
+    "chars": 203,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "先說一聲，這集是說書，不是投資建議喔。他是橡樹資本創辦人 Howard Marks。他的本行是信用投資，專門把錢借出去。你猜借錢的人看東西，最在乎什麼？其實就兩件事：這是不是真貨，我敢借多少。這份報告用老當舖的當票來打比方。客人把東西遞上去，朝奉先驗貨，再開價。當票上的東西跟金額，本來就是分開兩欄嘛。我看到這個比喻，覺得超貼切的。<short pause>這集就借這張票，看他碰過的三樣新東西。也就是網路股、比特幣，還有現在的 AI 啦。",
+   "to": "Howard Marks 是橡樹資本的共同創辦人，本行是信用投資，專門把錢借出去、再收回來。你猜借錢的人看東西，最在乎什麼？其實就兩件事：這是不是真貨，憑這個我敢借多少。這份報告用老當舖的當票來打比方。客人把東西遞上櫃檯，朝奉先驗貨，再開價。當票上，當物跟當金，本來就是分開的兩欄。<short pause>這集就借這張票，看他碰過的三樣新東西：網路股、比特幣，還有現在的 AI。",
+   "reason": "「創辦人」改共同創辦人；當物、當金兩欄要說出來，後面一直用；刪重複的免責和個人反應"
+  },
+  {
+   "from": "客人把東西遞上櫃檯，朝奉先驗貨，再開價。當票上，當物跟當金，本來就是分開的兩欄。",
+   "to": "客人把東西遞上櫃檯，師傅先驗貨，再開價。當票上分成兩欄：一欄寫東西，一欄寫借多少錢。",
+   "reason": "「當物、當金」三次生成都被聽成當務、當今；改說東西那一欄、價錢那一欄。朝奉改師傅"
+  }
+ ]
+}

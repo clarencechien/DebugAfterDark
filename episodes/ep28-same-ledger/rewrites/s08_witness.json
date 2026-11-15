@@ -1,0 +1,149 @@
+{
+ "segment": "s08_witness",
+ "position": "第 9 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "80451f5d85cd8a3b9b26f7d7d7d6eae5b9b1e11dddf8fcd9d4ed00cf504882c1",
+ "previous_context": "就算四個判斷各自都有六成勝算，最後全部猜對的機率是多少？其實只有百分之十三而已啦。",
+ "original": {
+  "text": "比特幣那次他靠二手消息，從拒收到認錯花了三年半；這次他親手驗了貨，改口只花十一週。可是這份報告說，一手證據只管得到當物那一欄。用過 Claude，可以知道它會不會做事，沒辦法知道雲端業者借來蓋機房的錢收不收得回來。他引了高盛的數字：今年全球 AI 相關的發債，接近六千億美元。還有一個驗貨人的問題：他請來評估 AI 好不好料的，就是 AI 自己。會計上，經手的人不能兼覆核。這份報告也自己記了一筆：它從查原文到起稿都有 Claude 參與，寫的一方和被寫的東西有利害關係，請把這一點算進去。",
+  "lint": {
+   "chars": 236,
+   "precise_numbers": [
+    "十一",
+    "六千"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 32.7,
+   "max_sentence_len": 55,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以回頭看 Marks，差別到底在哪裡？\n其實就在於證據嘛。\n比特幣那次他聽二手消息，三年多才認錯。\n這次他親手摸過 Claude，十一週就改口了。\n但我跟你講，一手證據也是有盲點的喔。\n你用過 AI，頂多知道它會不會做事。\n可是雲端大廠借錢蓋機房，收不收得回來？\n這件事你用一百個小時也看不出來啊。\n這份報告引了高盛的數字。\n今年全球 AI 相關發債，接近六千億美元。\n這完全就是帳上的事情了嘛。\n更妙的是，他找誰評估 AI 有沒有泡沫？\n答案就是 AI 本身。<laugh>\n在會計上，經手的人不能兼覆核啊。\n連這份報告也承認，起稿都有 Claude 參與。\n這裡面有利害關係。\n我們讀的時候，這筆帳自己要算進去啦。",
+   "lint": {
+    "chars": 276,
+    "precise_numbers": [
+     "十一",
+     "一百",
+     "六千"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "那 Marks 這次為什麼改口這麼快？\n比特幣那次他聽二手的，認錯花了三年半。\n這次他親自試用了，改口只花十一週。\n可是這份報告說，一手證據只管得到驗貨啦。\n用過 Claude，你會知道它多會做事。\n但雲端大廠借錢蓋機房，錢收得回來嗎？\n光是今年全球 AI 發債，就接近六千億美元耶。<short pause>\n我覺得整件事最妙的，其實是驗貨的人。\n他找來評估泡沫的證人，竟然就是 AI 自己。<laugh>\n在會計上，經手的人哪能兼覆核嘛。\n連這份報告起稿的時候，Claude 也有幫忙。\n寫的和被寫的有利害關係，這點大家要算進去喔。",
+   "lint": {
+    "chars": 229,
+    "precise_numbers": [
+     "十一",
+     "六千"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.1,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "所以 Marks 這次態度轉變這麼快，差別就在於他親自驗了貨。上次看比特幣他靠二手消息，花了三年多才認錯。這次他直接用了 Claude，十一週就改口了。可是親手用過，真的就能看懂全貌嗎？其實不行。這份報告說，你用過 Claude，只知道它很會做事。但你根本不知道雲端大廠借錢蓋機房，到底收不收得回來。<short pause>光是今年全球跟 AI 相關的借債，就接近六千億美元耶。而且最妙的是，Marks 找來評估 AI 是不是泡沫的，就是 AI 本身。<laugh>在會計上，經手的人根本不能兼覆核嘛。這份報告也滿老實的，坦白說自己起稿時 Claude 也有參與。寫的人跟被寫的對象有關係，這點大家可要自己算進去喔。",
+   "lint": {
+    "chars": 276,
+    "precise_numbers": [
+     "十一",
+     "六千"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 22.0,
+    "max_sentence_len": 31,
+    "sentences_over_20": 9,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "光是今年全球 AI 發債，就接近六千億美元耶。",
+   "to": "他引了高盛的數字，今年全球 AI 相關的發債，就接近六千億美元耶。",
+   "reason": "補出處"
+  },
+  {
+   "from": "<short pause>我覺得整件事最妙的，其實是驗貨的人。",
+   "to": "<short pause>還有一個驗貨人的問題。",
+   "reason": "刪個人反應"
+  },
+  {
+   "from": "竟然就是 AI 自己。<laugh>",
+   "to": "就是 AI 自己。",
+   "reason": "刪笑聲"
+  },
+  {
+   "from": "連這份報告起稿的時候，Claude 也有幫忙。",
+   "to": "這份報告也自己記了一筆：它從查原文到起稿，都有 Claude 參與。",
+   "reason": "原文的揭露"
+  },
+  {
+   "from": "在會計上，經手的人哪能兼覆核嘛。",
+   "to": "在會計上，經手的人，不能自己查自己的帳嘛。",
+   "reason": "「兼覆核」三次都被聽成兼負荷"
+  }
+ ]
+}

@@ -1,0 +1,139 @@
+{
+ "segment": "s05_son",
+ "position": "第 6 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ded311ae14238731eb5353b63459b3db91bb11b88e4f5660b05dabe55710b4ba",
+ "previous_context": "這種認錯的態度坦白說滿厲害的。不過重點來了，他依然覺得那是投機泡沫，他自己可是一顆都不打算買喔。",
+ "original": {
+  "text": "二〇二一年一月，比特幣漲到三萬四千美元上下。他寫道，當年的懷疑到那時為止沒有被事實印證，自己還不夠懂，有人來問加密貨幣，就轉給兒子 Andrew 回答。Andrew 很看好比特幣，也替家裡持有了一些。四個時間點排起來，他在當物這一欄一路退：從不是真的，退到可以是貨幣，再退到我不夠懂。當金那一欄，從頭到尾是空的，他從沒開過價。這份報告特別記了一筆：讓他改口的證據都來自別人，有罵他的讀者，有沒跌回去的價格，還有買了的兒子。這件貨，他自己沒有驗過。",
+  "lint": {
+   "chars": 220,
+   "precise_numbers": [
+    "三萬四千"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 30.4,
+   "max_sentence_len": 51,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "到了二〇二一年一月，\n比特幣來到三萬四千美元左右。<short pause>\n他坦承當年的懷疑根本沒被印證。\n他說自己其實不夠懂。\n有人問加密貨幣，他就轉給兒子 Andrew。\n因為 Andrew 很看好，還幫家裡買了一點。\n你有發現哪裡怪怪的嗎？\n其實他在驗貨這一欄一路往後退欸。\n從說不是真的，\n退到承認可以是貨幣，\n最後乾脆承認自己不懂。\n那他到底肯為這個東西開多少價？\n答案是從頭到尾完全沒開過價。<short pause>\n這份報告特別點出一件事，真的很有意思。\n讓他改口的證據全部都來自別人。\n罵他的讀者、沒跌回去的價格，\n還有替家裡買進的兒子。\n說穿了，這件貨他自己根本沒有驗過嘛。",
+   "lint": {
+    "chars": 252,
+    "precise_numbers": [
+     "三萬四千"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 17.0,
+    "max_sentence_len": 27,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "到了二〇二一年一月，\n比特幣已經衝到三萬四千美元左右。\n他這時承認，\n當初的懷疑沒有被事實印證。\n那有人來問加密貨幣怎麼辦？\n他就直接轉給兒子 Andrew 回答。<laugh>\n因為 Andrew 很看好，\n也替家裡買了一些啦。\n我讀到這裡覺得他滿誠實的。\n所以你看他在驗貨這件事上，\n其實一路在後退。\n從不是真的，退到可以是貨幣，\n最後退到承認自己不夠懂。\n至於肯借多少錢的當金那一欄呢？\n從頭到尾都是空的，他完全沒開價。\n這份報告特別記了一筆，\n很有意思喔。<short pause>\n讓他改口的證據其實都來自別人。\n有罵他的讀者、沒跌回去的價格，\n還有買了的兒子。\n這件貨他自己根本沒有驗過嘛。",
+   "lint": {
+    "chars": 257,
+    "precise_numbers": [
+     "三萬四千"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 17.4,
+    "max_sentence_len": 25,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "到了二〇二一年一月。\n比特幣已經漲到三萬四千美元左右。\n他那時承認，當年的懷疑一直沒被證實。\n自己其實還不夠懂。\n那如果有人跑來問他加密貨幣呢？\n他就直接轉給兒子 Andrew 去回答。\n因為 Andrew 很看好，還替家裡買了一點。\n整理下來，他在當物這欄一路後退。\n從說這不是真的，退到可以是貨幣。\n再退到乾脆說自己不夠懂。\n可是當金那一欄，從頭到尾都是空的。\n他本人從來沒開過價。\n這份報告還特別記了一筆。\n讓他改口的證據，其實全都來自別人喔。\n像是罵他的讀者，還有買了的兒子。\n還有那個一直沒跌回去的價格。\n我想想也覺得滿奇妙的。<short pause>\n這件貨，他自己根本就沒有驗過嘛。",
+   "lint": {
+    "chars": 265,
+    "precise_numbers": [
+     "三萬四千"
+    ],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 13.7,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "我想想也覺得滿奇妙的。<short pause>",
+   "to": "<short pause>",
+   "reason": "刪個人反應"
+  },
+  {
+   "from": "還替家裡買了一點。",
+   "to": "還替家裡持有了一些。",
+   "reason": "原文用語"
+  },
+  {
+   "from": "他在當物這欄一路後退。",
+   "to": "他在東西那一欄一路後退。",
+   "reason": "同 s01"
+  },
+  {
+   "from": "可是當金那一欄，",
+   "to": "可是價錢那一欄，",
+   "reason": "同 s01"
+  }
+ ]
+}
