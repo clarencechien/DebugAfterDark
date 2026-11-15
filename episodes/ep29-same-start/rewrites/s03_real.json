@@ -1,0 +1,141 @@
+{
+ "segment": "s03_real",
+ "position": "第 4 段，共 14 段",
+ "avoid": [
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "7a6508ed219defe9025ea2e4ae42ab86546ffe7b3fb5cd7f52ca45c1664b5e9a",
+ "previous_context": "智邦跟欣興當年差不多，現在也是差了一大截。所以在這份資料裡面，你只能看到最後的結果，背後真正的公式根本看不到啦。",
+ "original": {
+  "text": "名目上，這十八個位子有十七個五年是漲的。可是這五年物價累計漲了百分之十一點七五，扣掉物價再看一次就不一樣了。台積電實質多了五成五，廣達多了將近四成；中華電名目多百分之十二，剛好被物價吃光，原地不動；欣興少了百分之四，統一少了百分之十一。同一段時間，全國全時上班族的年薪中位數，從二〇二二年的五十五萬兩千，到二〇二四年的五十八萬五千，扣掉物價只多百分之一。這份報告說，被行情改寫的只是少數幾條分紅公式，其餘的位子，五年只是跟著物價走，有的還沒跟上。",
+  "lint": {
+   "chars": 223,
+   "precise_numbers": [
+    "十八",
+    "十七",
+    "百分之十一點七五",
+    "百分之十二",
+    "百分之四",
+    "百分之十一",
+    "五十五萬兩千",
+    "五十八萬五千",
+    "百分之一"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 43.6,
+   "max_sentence_len": 63,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這十八個位子裡面，有十七個五年下來都是漲的喔。\n\n可是扣掉物價之後呢？\n\n重點來了，這五年累計物價，漲了百分之十一點七五。<short pause>\n\n一扣掉物價，整個數字直接現出原形。\n\n十八個位子裡面，扣完物價還能多出三成以上的，其實只有六個。<short pause>\n\n你猜中華電信怎麼樣？\n\n帳面看起來漲了一成多，結果剛好被物價吃光光，完全在原地踏步。\n\n更慘的是欣興跟統一，算下來實質薪水還是倒退的。<sigh>\n\n這份報告說，被行情改寫的只有少數幾條分紅公式啦。其餘大部分的位子，五年下來只是勉強跟著物價走而已。",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [
+     "十八",
+     "十七",
+     "百分之十一點七五",
+     "十八"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.5,
+    "max_sentence_len": 29,
+    "sentences_over_20": 7,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   },
+   "round": 0
+  },
+  {
+   "text": "其實如果單看薪水數字，十八個位子裡面有十七個都在漲。但你有算過物價嗎？<short pause>算進去之後就完全不是那麼一回事了。這五年物價累計漲了百分之十一點七五。也就是說，薪水沒跑贏這個數字，買到的東西其實根本沒有變多嘛。像中華電五年下來剛好跟物價打平，欣興跟統一甚至還縮水耶。然後，全台灣上班族的中位數，扣掉物價也是差不多原地踏步。<sigh>這份報告說，真正被大行情改寫的，其實就只有少數幾條分紅公式啦。其他絕大多數的位子，五年來只是勉強跟著物價走，有的甚至還沒跟上，這結論讓人覺得滿心酸的。",
+   "lint": {
+    "chars": 231,
+    "precise_numbers": [
+     "十八",
+     "十七",
+     "百分之十一點七五"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 24.7,
+    "max_sentence_len": 43,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "對啊，但如果把物價算進去呢？\n結果可能跟你想的完全不一樣喔。\n表面上，這十八個位子幾乎都在漲。\n可是這五年物價累計漲了百分之十一點七五。\n重點來了，扣掉物價再看一次。<short pause>\n裡面只有六個位子，實質多了三成以上。\n像中華電名目多了一成多，剛好跟物價打平。\n欣興跟統一甚至還往後退耶。\n更扯的是，連全國上班族的中位數，\n扣掉物價後，實質上也只多了一點點。\n這聽起來真的滿無奈的。<sigh>\n這份報告說，被改寫的只有少數分紅公式。\n其餘位子只是跟著物價走，有的還沒跟上啦。",
+   "lint": {
+    "chars": 213,
+    "precise_numbers": [
+     "十八",
+     "百分之十一點七五"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 32,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "扣掉物價後，實質上也只多了一點點。這聽起來真的滿無奈的。<sigh>",
+   "to": "扣掉物價後，實質也只多了百分之一。<sigh>",
+   "reason": "補數字、刪個人反應"
+  },
+  {
+   "from": "被改寫的只有少數分紅公式。",
+   "to": "被行情改寫的，只有少數幾家公司的分紅。",
+   "reason": "「分紅公式」三次都被聽成分紅公司"
+  }
+ ]
+}

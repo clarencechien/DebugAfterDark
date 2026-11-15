@@ -1,0 +1,49 @@
+{
+ "id": "ep29-same-start",
+ "number": 29,
+ "type": "full",
+ "guid": "debug-after-dark:ep29",
+ "title": "EP29 同梯不同命？同一個起點，五年差多少",
+ "description": "二〇二〇年，廣達和統一的非主管年薪中位數站在同一格，只差六萬；五年後差了六十八萬，統一那一格幾乎沒動。台積電和鴻海從差十六萬，拉到差一百一十三萬。這份報告把零零五零成分股、零售餐飲醫療，和照俸表推算的公教，放在同一把尺上量了五年：拉開差距的不是行業，是公司分獲利的公式；沒被行情改寫的位子，扣掉物價是原地或後退。再試算一次：每年把兩成薪水拿去買零零五零，會改變什麼、不會改變什麼。最後是唯一真正的同梯：公教。\n\n今晚的 breakpoint：\n1. 同一格起跑，五年後拉開差距的不是行業，也不是誰比較認真，是公司分獲利的公式。\n2. 沒有被行情改寫的位子，扣掉物價是原地或後退；全國全時上班族的中位數，實質只多 1%。\n3. 把兩成薪水換成零零五零，資產的差距比薪水小，但排名不會變，而且這六年是特例。\n\n原文：〈同一格起跑的位子，五年後差在哪〉 https://imitator.ai-apps.work/r/0050-salary-five-years\n資料：證交所非主管全職員工薪資中位數（量的是位子，不是追蹤同一批人）、主計總處行業平均與全時受僱員工中位數、公教俸表推算。零零五零那一段是回測。\n本集是資料整理與回測，不構成投資建議，也不能拿來決定個人去留。\n\n延伸收聽：EP28〈AI 來了，股市這次不一樣嗎？〉、EP12〈你聽過的台股必勝法〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "0050-salary-five-years",
+ "report_version": "資料至 2026-11-12",
+ "source_url": "https://imitator.ai-apps.work/r/0050-salary-five-years",
+ "status": "draft",
+ "related": [
+  "ep28-same-ledger",
+  "ep12-tw-stock-autopsy"
+ ],
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "audio": {
+  "file": "ep29-same-start.mp3",
+  "bytes": 10693365,
+  "sha256": "cdcf9b13c8a3a2f79ec6aed635fcadfae26e53bc7bedbf8cafc04cc278e6cbac",
+  "duration_s": 668.3,
+  "duration": "11:08",
+  "lufs": -16.8
+ },
+ "qa": {
+  "breeze_cer_mean": 0.032,
+  "gemini_cer_mean": 0.025,
+  "jitter_semitones": 0.211,
+  "gates": "錯誤率 3.2%、音高跳動 0.211 都通過",
+  "retakes": "s03、s13 改稿重錄：「分紅公式」被聽成分紅公司、「同一格起跑」被聽成旗袍；s02 重錄（第一輪音高 +10 Hz）",
+  "manual_pick": "s03 take2（take0 慢一成多）、s10 take0（take2 -6.3 Hz）",
+  "both_wrong": "「位子」都念成位置（同義）；s08「分紅公式」聽成分紅公司；s13「格／個」",
+  "consistency": "qa/consistency.json：各段音高在中位數 ±5.5 Hz 內、語速在 ±10% 內",
+  "twtone": "qa/twtone.md：沒有超過基準的項目；「行業→產業」是誤判",
+  "terms": "Ping、pong 3 次都判為英文念法"
+ }
+}

@@ -1,0 +1,154 @@
+{
+ "segment": "s05_shapes",
+ "position": "第 6 段，共 14 段",
+ "avoid": [
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "bfcaff3a203a7c81e05641c850fa09ffef441a3682c002bafeed56d4b945ae5f",
+ "previous_context": "所以有一半的全職上班族，都在這條線左邊。光看這把尺的落差，心裡就覺得蠻震撼的。",
+ "original": {
+  "text": "同一格起跑之後，這五年實際出現過六種形狀。第一種是台階：台積電每年往上走一格，二〇二〇年一百八十二萬，現在三百一十六萬。第二種是高原：聯發科本來就很高，二〇二一年高峰之後的低點三百零九萬，還是高過大多數公司的高峰。第三種，報告叫它中樂透再還俗：長榮二〇二二年一年四百二十一萬，五年加起來比台積電還多八十四萬，可是隔年就摔回一百四十一萬。這份報告說，長榮二〇二五年的一百八十一萬是好年薪，不是下一張彩券。",
+  "lint": {
+   "chars": 201,
+   "precise_numbers": [
+    "一百八十二萬",
+    "三百一十六萬",
+    "三百零九萬",
+    "四百二十一萬",
+    "八十四萬",
+    "一百四十一萬",
+    "一百八十一萬"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 39.2,
+   "max_sentence_len": 60,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實大家站在同一個起點，走出來的形狀完全不同。這份報告把這五年分成了六種型態。像台積電就是踩台階，每年穩穩往上走一階。<short pause>五年前一百八十幾萬，現在已經衝到三百一十六萬了。你猜聯發科長怎樣？人家根本是高山平台。就算遇到景氣低點，隨便算也還有三百萬出頭，直接壓過多數公司的高峰。然後長榮更有趣，叫做中樂透再還俗。<laugh>有一年一口氣衝破四百萬，隔年又馬上摔回一百多萬。這份報告說，長榮現在的一百八十幾萬算好年薪，但那就不是彩券了啦。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [
+     "一百八十",
+     "萬",
+     "三百一十六萬",
+     "三百萬",
+     "四百萬",
+     "一百",
+     "萬",
+     "一百八十",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.8,
+    "max_sentence_len": 32,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "如果把大家放在同一個起點，其實會走出完全不同的五年喔。<short pause>這份報告把走勢分成了好幾種形狀。像台積電就是踩台階，每年穩穩往上爬，把薪資地板整個墊高。聯發科則是高原循環，就算掉到谷底，還是比別人的高峰高。那你猜最像坐雲霄飛車的是誰？對，就是長榮。<short pause>這份報告形容成中樂透再還俗。<laugh>他們五年總額甚至比台積電還多，最狂的一年衝到四百二十一萬，隔年就直接摔回凡間。你說這還能當下一張彩券嗎？其實很難啦，之後就是一份不錯的正常年薪而已。",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [
+     "四百二十一萬"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.7,
+    "max_sentence_len": 38,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   },
+   "round": 0
+  },
+  {
+   "text": "對啊，如果放在同一個起點看，這五年其實走出了好幾種形狀。第一種像台積電，是台階型。薪水每年往上墊高，從一百八十幾萬，一路踩到現在的三百一十六萬。第二種是高原型，像是聯發科。你猜他掉到谷底有多高？低點還有三百萬出頭耶，比很多公司的高峰都還要高。<short pause>然後第三種最戲劇化，這份報告叫它中樂透再還俗。<laugh>長榮在航運大好那年衝到四百多萬，五年加起來甚至比台積電還多。可是隔年就摔回一百四十幾萬。這份報告說得很傳神，現在一百八十萬左右是好年薪，但已經不是下一張彩券了啦。",
+   "lint": {
+    "chars": 225,
+    "precise_numbers": [
+     "一百八十",
+     "萬",
+     "三百一十六萬",
+     "三百萬",
+     "四百",
+     "萬",
+     "一百四十",
+     "萬",
+     "一百八十萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 21.5,
+    "max_sentence_len": 36,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "這份報告形容成中樂透再還俗。<laugh>",
+   "to": "這份報告形容成中樂透再還俗。",
+   "reason": "刪笑聲"
+  }
+ ]
+}

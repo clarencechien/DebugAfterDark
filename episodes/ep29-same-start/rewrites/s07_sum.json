@@ -1,0 +1,140 @@
+{
+ "segment": "s07_sum",
+ "position": "第 8 段，共 14 段",
+ "avoid": [
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "834cda356ea592df8faf7292f0e7b504673ea3539732d5e001861a96a2fb573c",
+ "previous_context": "這張圖疊在一起真的很讓人感慨。就算公司股票能擠進零零五零，薪水也是活在另一套公式裡，根本吃不到運價或 GPU 的紅利。",
+ "original": {
+  "text": "如果把五個年度的中位數加起來，看得到單年看不到的東西。這份報告提醒，這不是同一個人待滿五年，比較像那個位子五年大約發出多少現金。長榮和中華電，二〇二〇年是一百四十三和一百四十七萬，二〇二五年是一百八十一和一百六十五萬，頭尾都在同一格；中間五年加起來，長榮多了五百四十九萬。最頭和最尾：聯發科五年加起來一千七百八十二萬，住宿餐飲業的行業平均加起來大約兩百二十萬。這份報告的一句話是：差的是獲利分享的公式，不是誰比較認真。",
+  "lint": {
+   "chars": 209,
+   "precise_numbers": [
+    "一百四十三",
+    "一百四十七萬",
+    "一百八十一",
+    "一百六十五萬",
+    "五百四十九萬",
+    "一千七百八十二萬",
+    "兩百二十萬"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 40.8,
+   "max_sentence_len": 71,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "對，如果把這五年的數字加總來看，<short pause>事情就更有意思了。這份報告提醒大家喔，這量的是位子，不是同一個人待滿五年啦。它比較像這個位子五年總共發出多少現金。你猜長榮跟中華電信差多少？兩家公司在頭尾幾年看都差不多，結果中間五年加起來，長榮硬是多了五百四十九萬。最厲害的是聯發科，五年加總算下來有一千七百多萬。然後住宿餐飲的行業平均只有兩百多萬耶。<sigh>差這麼多，其實是差在公司的獲利分享公式，完全不是誰工作比較認真嘛。",
+   "lint": {
+    "chars": 200,
+    "precise_numbers": [
+     "五百四十九萬",
+     "一千七百",
+     "萬",
+     "兩百",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 24.0,
+    "max_sentence_len": 37,
+    "sentences_over_20": 5,
+    "particles_per_100": 2.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "所以把這五年加總來看，差別就更明顯了。這份報告算的是這個位子發出的現金，不是同一個人待滿五年喔。有些公司單年看起來差不多，那你猜五年加起來會怎樣？像長榮跟中華電信，頭尾幾年數字都很接近，但五年加起來，長榮足足多發了五百四十九萬。<sigh> 這真的會讓人很感慨耶。最前面的聯發科，五年將近一千八百萬，但住宿餐飲業平均，加起來大概只有兩百多萬。對啊，其實差的是獲利分享公式，真的不是誰比較認真啦。",
+   "lint": {
+    "chars": 190,
+    "precise_numbers": [
+     "五百四十九萬",
+     "一千八百萬",
+     "兩百",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 7,
+    "avg_sentence_len": 26.1,
+    "max_sentence_len": 40,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "其實如果把五年的數字疊加起來看，很多事情就更清楚了。對，這份報告算的是同一個位子，五年總共發出多少現金，不是同一個人做五年喔。你看長榮跟中華電，頭尾兩年的年薪其實差不多耶。但中間這五年加起來，你猜差了多少？長榮整整多發了五百四十九萬。<short pause>然後看最兩極的對比，聯發科五年加起來快要一千八百萬，住宿餐飲業平均只有兩百多萬。我讀到這句結論真的很有共鳴。這份報告說，差的只是獲利分享的公式，根本不是誰比較認真啦。",
+   "lint": {
+    "chars": 200,
+    "precise_numbers": [
+     "五百四十九萬",
+     "一千八百萬",
+     "兩百",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 24.0,
+    "max_sentence_len": 39,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "我讀到這句結論真的很有共鳴。",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

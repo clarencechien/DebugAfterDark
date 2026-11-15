@@ -1,0 +1,122 @@
+{
+ "segment": "s12_limits",
+ "position": "第 13 段，共 14 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8419e03839d7bc57d5d4dbcf540e4a089839ed7d22d6d2c2a69da13781024818",
+ "previous_context": "高普考少了兩三成，國營聯招更是掉了將近六成。大家用腳投票的速度，其實比想像中還要快耶。",
+ "original": {
+  "text": "這份報告也講明了，它回答不了什麼。第一，該留還是該走。公司的中位數把不同職務混在一起，日月光量到五萬六千人，正中間那一位貼近產線，讀不出工程師領多少；要比，得比同一種職務在兩家公司的行情，這份資料沒有。第二，有的公司不能當趨勢讀，像緯穎每年申報的人數變來變去，中位數跟著亂跳。第三，股票和工時都沒進圖。這份報告說，圖回答的是這個位子典型的現金包，不是你個人的薪資單。",
+  "lint": {
+   "chars": 183,
+   "precise_numbers": [
+    "五萬六千"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 29.5,
+   "max_sentence_len": 73,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "不過，這份報告其實也坦白說，有些事它回答不了喔。<short pause>\n像是你到底該留還是該走？這上面根本看不出來。\n因為公司的中位數，會把所有職務混在一起。\n像日月光量了五點六萬人，排在中間的那位其實更貼近產線，根本看不出工程師領多少嘛。\n然後，有些公司也不能隨便拿來看趨勢。\n像緯穎每年的申報人數差很多，數字就會跟著亂跳。\n更何況大家最在意的股票跟工時，其實通通沒算進去。<sigh>\n這份報告說，它算的是這個位子典型的現金包，可不是你個人的薪資單啦。",
+   "lint": {
+    "chars": 204,
+    "precise_numbers": [
+     "五點六萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 21.7,
+    "max_sentence_len": 39,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "不過看到這裡，你可能會想問，那我到底該留還是該走？其實這份報告有講明，它回答不了這個問題。<short pause>因為公司的中位數，把所有職務混在一起。像日月光就量了五萬六千人，排在正中間的位子，其實比較偏產線，你根本看不出工程師到底領多少嘛。然後，有些公司的人數變動太大，薪水跟著亂跳，也不能當趨勢看。而且連股票跟工時都沒算進去喔。這份報告說，它量的只是這個位子的典型現金包，可不是你個人的薪資單啦。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [
+     "五萬六千"
+    ],
+    "enumerations": [],
+    "sentences": 7,
+    "avg_sentence_len": 26.0,
+    "max_sentence_len": 45,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "不過看到這裡，你可能會想，那我該離職嗎？\n其實這份報告有講明，它回答不了這個問題。<short pause>\n因為公司的中位數，把不同職務全混在一起了。\n像日月光有五萬六千人，正中間那位貼近產線。\n你根本看不出工程師到底領多少嘛。\n想比同職務跨公司的行情，資料裡完全沒有。\n然後，有些公司也不能當成趨勢來看。\n像緯穎申報人數大起大落，中位數就跟著亂跳。\n更何況股票跟工時也都沒算進去。\n所以這份報告說，它只代表這個位子的現金包。\n絕對不是你個人的薪資單啦。",
+   "lint": {
+    "chars": 205,
+    "precise_numbers": [
+     "五萬六千"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2
+}

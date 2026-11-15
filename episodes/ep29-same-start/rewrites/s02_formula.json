@@ -1,0 +1,150 @@
+{
+ "segment": "s02_formula",
+ "position": "第 3 段，共 14 段",
+ "avoid": [
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8cb61d9282d6445b5afa643a6acc9341a19630a78824469d3ebd7165493b8954",
+ "previous_context": "對了，後面有一段回測。先說好，這不是投資建議喔。",
+ "original": {
+  "text": "那把位子拉開的是什麼？不是行業。聯發科和日月光都算半導體，二〇二五年一個三百五十五萬，一個八十二萬，差四倍多。這份報告說，差在兩件事。第一，公司把多少獲利分給員工、怎麼分。第二，那個中位數量到的是誰：日月光申報的是五萬六千人，排在正中間的那一位，貼近產線。再看一組：智邦和欣興，二〇二〇年只差兩萬，現在差四十六萬。這兩件事，在這份資料裡都只看得到結果，看不到公式本身。",
+  "lint": {
+   "chars": 184,
+   "precise_numbers": [
+    "三百五十五萬",
+    "八十二萬",
+    "五萬六千",
+    "兩萬",
+    "四十六萬"
+   ],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 22.0,
+   "max_sentence_len": 41,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那把大家的位子拉開的到底是什麼？\n你猜是行業別嗎？其實不是喔。<short pause>\n聯發科和日月光都算半導體業。\n聯發科年薪中位數是三百五十五萬。\n日月光只有八十幾萬，差了四倍多耶。<short pause>\n這份報告說，關鍵在兩件事。\n第一是公司獲利怎麼分給員工。\n第二是中位數到底量到了誰。\n日月光申報五萬多人，中間那位貼近產線。\n智邦跟欣興當年幾乎平手，現在差快五十萬。<sigh>\n光看這個差距就覺得好驚人。\n但我們只能看到結果，看不到背後的公式啦。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [
+     "三百五十五萬",
+     "八十",
+     "萬",
+     "五萬",
+     "五十萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 13.5,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   },
+   "round": 0
+  },
+  {
+   "text": "所以到底是誰把大家的差距拉開的？\n你猜是選錯行業嗎？\n其實根本不是喔。\n同樣做半導體。\n聯發科跟日月光差了四點三倍。\n看到這個差距真的滿傻眼的。<short pause>\n這份報告說，主要差在兩件事。\n第一是公司賺了錢到底怎麼分。\n然後第二個，是中位數到底量到誰。\n像日月光有五萬多人。\n排在正中間那位很貼近產線。\n智邦跟欣興當年只差兩萬多。\n現在居然差了四十幾萬。\n你光看資料，其實只看得到結果啦。\n背後怎麼算的公式，根本看不到。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [
+     "四點三",
+     "五萬",
+     "兩萬",
+     "四十",
+     "萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 11.6,
+    "max_sentence_len": 15,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "那到底是什麼把位子拉開的？\n其實不是看行業喔。<short pause>\n像聯發科跟日月光都算半導體，\n結果兩邊年薪差了四倍多。\n看到這個落差真的滿震驚的。\n這份報告說，主要差在兩件事。\n第一是公司獲利怎麼分給員工嘛，\n然後是中位數到底量到了誰。\n像日月光申報了五萬六千人，<short pause>\n排在正中間那位貼近產線。\n智邦跟欣興當年差不多，\n現在也是差了一大截。\n所以在這份資料裡面，\n你只能看到最後的結果，\n背後真正的公式根本看不到啦。",
+   "lint": {
+    "chars": 184,
+    "precise_numbers": [
+     "五萬六千"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 19.4,
+    "max_sentence_len": 34,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "看到這個落差真的滿震驚的。",
+   "to": "",
+   "reason": "刪個人反應"
+  },
+  {
+   "from": "結果兩邊年薪差了四倍多。",
+   "to": "二〇二五年一個三百五十五萬，一個八十二萬，差了四倍多。",
+   "reason": "補數字"
+  }
+ ]
+}

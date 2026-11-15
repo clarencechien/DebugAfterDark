@@ -1,0 +1,141 @@
+{
+ "segment": "s10_2026",
+ "position": "第 11 段，共 14 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "516887dfefaa4db1dd6d6274c57a9716b090bffda80cc8e98a435b63338dc004",
+ "previous_context": "可是高薪的人搞不好能存一半以上。所以真實世界的差距，其實只會比試算更大喔。",
+ "original": {
+  "text": "那二〇二六年呢？證交所要到明年六月底才公布，現在推得到的只有三塊。公教幾乎確定：七月起專業加給每月多兩千。行業平均有方向：前三季電子零組件業的總薪資年增百分之十一點三五，金融保險業百分之六點二七，住宿餐飲業不到百分之二。台積電只有區間：過去五年，獲利每多百分之一，非主管中位數大約多百分之零點四六；今年前九個月獲利年增六成八，照這個比例外推，中位數大約三百九十到四百二十萬。這份報告說，二〇二六年那把尺，還會再變長。",
+  "lint": {
+   "chars": 208,
+   "precise_numbers": [
+    "兩千",
+    "百分之十一點三五",
+    "百分之六點二七",
+    "百分之二",
+    "百分之一",
+    "百分之零點四六",
+    "三百九十",
+    "四百二十萬"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 33.7,
+   "max_sentence_len": 76,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那二〇二六年會變怎樣？\n證交所要到明年六月底才公布。\n不過其實現在推得出三塊喔。<short pause>\n像是公教人員，七月起每個月加薪兩千塊。\n然後看主計總處的行業平均。\n電子零組件業年增了百分之十一點三五。\n可是住宿餐飲業成長連百分之二都不到。\n還有大家最關心的台積電。\n照獲利推算，中位數大約會落在四百萬左右。\n真的滿驚人的。<short pause>\n你覺得這代表什麼？\n對，這份報告說，那把尺只會被拉得更長啦。",
+   "lint": {
+    "chars": 174,
+    "precise_numbers": [
+     "兩千",
+     "百分之十一點三五",
+     "百分之二",
+     "四百萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 13.5,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那二〇二六年會變怎樣？\n證交所要到後年中才公布。\n現在其實只能先推算一部分。\n公教待遇幾乎確定了，\n七月起專業加給每月多兩千。\n然後行業平均也有個方向。\n主計總處前三季的統計，\n電子零組件年增百分之十一點三五。\n金融業大概百分之六，\n住宿餐飲業還不到百分之二喔。\n那台積電呢？\n照獲利比例外推，\n非主管中位數大概落在四百萬上下。<short pause>\n光看這幾塊放在一起，\n我心裡真的抖了一下。<laugh>\n這份報告說，\n二〇二六年那把尺還會再變長。",
+   "lint": {
+    "chars": 192,
+    "precise_numbers": [
+     "兩千",
+     "百分之十一點三五",
+     "百分之六",
+     "百分之二",
+     "四百萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 26,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那如果往後看二〇二六年呢？\n證交所要到後年才會公布數字。\n不過現在其實看得出端倪了喔。<short pause>\n像是公教人員，\n七月開始每個月專業加給多兩千。\n那其他行業呢？\n你看主計總處的統計，\n電子零組件業的總薪資，\n年增率達到百分之十一點三五。\n而大家最關注的台積電，\n前九個月獲利衝了快七成。\n照比例推算，\n中位數大概會來到四百萬上下。\n我光看這個數字就覺得很驚人。<short pause>\n這份報告說，\n二〇二六年那把尺，\n接下來只會被拉得更長而已啦。",
+   "lint": {
+    "chars": 191,
+    "precise_numbers": [
+     "兩千",
+     "百分之十一點三五",
+     "四百萬"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 18.1,
+    "max_sentence_len": 34,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "那如果往後看二〇二六年呢？證交所要到後年才會公布數字。不過現在其實看得出端倪了喔。<short pause>像是公教人員，七月開始每個月專業加給多兩千。那其他行業呢？你看主計總處的統計，電子零組件業的總薪資，年增率達到百分之十一點三五。而大家最關注的台積電，前九個月獲利衝了快七成。照比例推算，中位數大概會來到四百萬上下。我光看這個數字就覺得很驚人。<short pause>這份報告說，二〇二六年那把尺，接下來只會被拉得更長而已啦。",
+   "to": "那二〇二六年呢？證交所要到明年六月底才會公布，現在推得到的只有三塊。<short pause>公教幾乎確定：七月起，專業加給每個月多兩千。行業平均有方向：前三季電子零組件業的總薪資，年增百分之十一點三五；金融保險業百分之六點二七；住宿餐飲業不到百分之二。台積電只有區間：過去五年，獲利每多百分之一，非主管中位數大約多百分之零點四六；今年前九個月獲利年增六成八，照這個比例外推，中位數大約三百九十到四百二十萬。這份報告說，二〇二六年那把尺，還會再變長。",
+   "reason": "「後年才公布」改回明年六月底；補回金融與餐飲；刪個人反應"
+  }
+ ]
+}

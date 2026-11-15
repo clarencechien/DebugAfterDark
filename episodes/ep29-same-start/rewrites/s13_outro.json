@@ -1,0 +1,146 @@
+{
+ "segment": "s13_outro",
+ "position": "第 14 段，共 14 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e2218ec991980706043a9dbfbccc336e196463597df5bde277246b4cc54ae40a",
+ "previous_context": "所以這份報告說，它只代表這個位子的現金包。絕對不是你個人的薪資單啦。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，同一格起跑，五年後拉開差距的不是行業，也不是誰比較認真，是公司分獲利的公式。第二，沒有被行情改寫的位子，扣掉物價是原地或後退，全國全時上班族的中位數，實質只多百分之一。第三，把兩成薪水換成零零五零，資產的差距會比薪水小，但排名不會變，而且這六年是特例。再提醒一次，這集不是投資建議。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 195,
+   "precise_numbers": [
+    "百分之一"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 23.4,
+   "max_sentence_len": 45,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n聽完你會想換工作嗎？\n其實先別急著丟辭呈啦。\n第一，拉開差距的關鍵，是公司分錢的公式。\n第二，扣掉物價，多數人實質只多百分之一。<sigh>\n第三，就算定期買零零五零，排名也不會變。\n靠投資就能躺平嗎？\n這六年其實是特例，差距縮小但順序沒變。\n再提醒一次，這集回測絕對不是投資建議喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 182,
+    "precise_numbers": [
+     "百分之一"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n你覺得五年後拉開差距的是什麼？\n其實第一，不是看誰比較認真，\n而是看公司分獲利的公式啦。\n第二，沒被行情改寫的位子，\n扣掉物價之後其實都在原地或倒退。\n全國全時上班族的中位數，\n實質上只多了百分之一喔。\n第三，把兩成薪水換成零零五零，\n資產差距會縮小，但排名不會變。\n而且這六年真的只是特例，\n所以要提醒大家，這集完全不是投資建議喔。<short pause>\n\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 210,
+    "precise_numbers": [
+     "百分之一"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 20.0,
+    "max_sentence_len": 31,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n算完這些數字，其實心裡滿感慨的。那聽完這集該帶走什麼？\n\n第一，拉開薪水差距的不是你多認真，而是公司分獲利的公式。\n\n第二，扣掉物價以後，全國上班族的中位數，實質只多百分之一，幾乎都在原地踏步。\n\n第三，就算把部分薪水換成零零五零，資產差距會縮小，但原本的排名不會變，而且這幾年純屬特例啦。\n\n對了，這集完全不是投資建議喔。<short pause>\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [
+     "百分之一"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 19.7,
+    "max_sentence_len": 45,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>聽完你會想換工作嗎？其實先別急著丟辭呈啦。第一，拉開差距的關鍵，是公司分錢的公式。第二，扣掉物價，多數人實質只多百分之一。<sigh>第三，就算定期買零零五零，排名也不會變。靠投資就能躺平嗎？這六年其實是特例，差距縮小但順序沒變。再提醒一次，這集回測絕對不是投資建議喔。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，同一格起跑，五年後拉開差距的不是行業，也不是誰比較認真，是公司分獲利的公式。第二，沒有被行情改寫的位子，扣掉物價是原地或後退，全國全時上班族的中位數，實質只多百分之一。第三，把兩成薪水換成零零五零，資產的差距會比薪水小，但排名不會變，而且這六年是特例。再提醒一次，這集不是投資建議喔。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "breakpoint 改回草稿；刪「先別急著丟辭呈」等"
+  },
+  {
+   "from": "第一，同一格起跑，五年後拉開差距的不是行業，也不是誰比較認真，是公司分獲利的公式。",
+   "to": "第一，從同一格出發，五年後拉開差距的不是行業，也不是誰比較認真，是公司怎麼分獲利。",
+   "reason": "「同一格起跑」兩次被聽成同一個旗袍、「公式」被聽成公事、公司"
+  }
+ ]
+}

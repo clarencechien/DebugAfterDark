@@ -1,0 +1,136 @@
+{
+ "segment": "s04_ruler",
+ "position": "第 5 段，共 14 段",
+ "avoid": [
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a55a1901c17dfeffd98a8c2a814ae2eb7ca127a834dc46768b0dc9f2fec307c3",
+ "previous_context": "這份報告說，被改寫的只有少數分紅公式。其餘位子只是跟著物價走，有的還沒跟上啦。",
+ "original": {
+  "text": "整把尺也變長了。二〇二〇年，這十八個位子裡最高的聯發科，是最低的欣興的四點一倍；二〇二五年變成五點一倍。這份報告把所有數字畫在同一把尺上，右端固定在三百六十萬，沒有截短。聯發科一條三百五十五萬，幾乎鋪滿；住宿餐飲業的行業平均是四十六萬，只佔這把尺的八分之一。尺上還有一條虛線，是全國全時上班族的中位數五十八萬五千：一半的全職上班族，在這條線的左邊。這份報告說，餐飲那一截看起來很短，那就是真的很短。",
+  "lint": {
+   "chars": 199,
+   "precise_numbers": [
+    "十八",
+    "四點一",
+    "五點一",
+    "三百六十萬",
+    "三百五十五萬",
+    "四十六萬",
+    "五十八萬五千"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 32.2,
+   "max_sentence_len": 44,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "不只薪水拉開，連整把尺都變長了。\n五年前最高跟最低大概差四倍。\n現在呢？直接拉開到五點一倍。\n你知道這差距看起來有多誇張嗎？\n這份報告把大家都畫在同一把尺上。\n右邊上限抓在三百多萬。\n聯發科那一條幾乎整根鋪滿。<short pause>\n那餐飲業呢？\n整條只佔了這把尺的八分之一左右。\n圖上還有一條全體全職中位數的線。\n其實有一半的人，都在這條線左邊。\n我看了真的倒抽一口氣。<sigh>\n餐飲那一截不是縮小，是真的就那麼短啦。",
+   "lint": {
+    "chars": 183,
+    "precise_numbers": [
+     "五點一",
+     "三百",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 12.1,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "而且不只沒跟上，整把尺都被拉長了。二〇二〇年最高跟最低大概差了四倍。到了二〇二五年呢？<short pause>居然拉開到了五點一倍。這份報告把所有數字畫在同一把尺上。最頂端的聯發科，幾乎把整把尺占滿。那餐飲業呢？其實只佔了整把尺的八分之一左右。這份報告說，它看起來很短。那是因為它真的很短啦。<sigh>中間還有一條全國全職上班族的中位數。落在不到六十萬的位置。所以有一半的全職上班族，都在這條線左邊。光看這把尺的落差，心裡就覺得蠻震撼的。",
+   "lint": {
+    "chars": 202,
+    "precise_numbers": [
+     "五點一",
+     "六十萬"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 13.4,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "所以你會發現，整把尺根本被拉長了。\n你猜最高跟最低差多少？\n五年前差了四倍多，\n現在直接拉開到五點一倍。\n這份報告把大家放在同一把尺上，\n頂端抓在三百多萬。\n聯發科那一條幾乎填滿。\n那餐飲業呢？\n居然只佔了八分之一，\n真的很讓人心酸耶。<sigh>\n其實中間還畫了一條虛線，\n是全台灣全職員工的中位數，\n大概落在六十萬左右。\n對，有一半的上班族都在這條線左邊喔。\n這份報告就說，\n餐飲那一截看起來很短，\n那就是真的很短啦。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [
+     "五點一",
+     "三百",
+     "萬",
+     "六十萬"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 34,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "光看這把尺的落差，心裡就覺得蠻震撼的。",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

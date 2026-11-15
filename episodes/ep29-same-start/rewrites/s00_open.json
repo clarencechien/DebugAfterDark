@@ -1,0 +1,139 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 14 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d45ec7d46b76e8ce6e13848e6156cc7f0d027b20e777c6f6c99591a440c8c1c9",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "二〇二〇年，廣達非主管員工的年薪中位數是一百一十一萬，統一是一百零五萬，兩家站在同一格，只差六萬。五年後，廣達一百七十二萬，統一一百零四萬，差了六十八萬，統一那一格幾乎沒動。往上一格也一樣：台積電和鴻海，二〇二〇年差十六萬，二〇二五年差一百一十三萬。同梯不同命？同一個起點，五年後到底差多少，又是差在哪裡？這集的報告，把零零五零成分股和幾個圈外行業的薪水，放在同一把尺上量了一遍。",
+  "lint": {
+   "chars": 190,
+   "precise_numbers": [
+    "一百一十一萬",
+    "一百零五萬",
+    "六萬",
+    "一百七十二萬",
+    "一一百零四萬",
+    "六十八萬",
+    "十六萬",
+    "一百一十三萬"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 30.7,
+   "max_sentence_len": 48,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "五年前起跑點差不多的位子，五年後待遇可以差到多少？你看廣達跟統一，五年前非主管年薪只差幾萬塊喔。然後五年後呢？廣達衝到一百七十幾萬，統一那一格幾乎留在原地。兩邊差距直接拉開到快七十萬。台積電跟鴻海更誇張，當年只差十幾萬，現在一年就差了一百一十三萬。<short pause>我看到這個差距整個起雞皮疙瘩。你一定也很好奇，明明站在同一格，到底為什麼會差這麼多啊？所以這份報告做了一件事，把零零五零跟幾個圈外行業，全都放在同一把尺上量了一遍啦。",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [
+     "萬",
+     "一百七十",
+     "萬",
+     "七十萬",
+     "萬",
+     "一百一十三萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 22.0,
+    "max_sentence_len": 39,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "五年前，廣達跟統一非主管的年薪差不多。兩家只差幾萬元，根本站在同一格嘛。你猜五年後會變怎樣？<short pause>廣達一路衝上去，統一幾乎停在原地。兩邊差距，一口氣拉開到六十八萬。往上看台積電跟鴻海，當年也只差十幾萬。五年後竟然差了一百多萬耶。<sigh>我看到這組對比真的覺得超扯。同一格起跑，五年後到底差在哪裡？其實這份報告把零零五零成分股，跟幾個圈外行業，放在同一把尺上量了一遍。帶你來看這些位子，五年後到底散到哪去啦。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [
+     "萬",
+     "六十八萬",
+     "萬",
+     "一百",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 34,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "五年前站在同一個起跑點，\n五年後年薪到底能差多少？\n二〇二〇年的時候，\n廣達跟統一非主管的年薪中位數，\n當年其實只差六萬。<short pause>\n結果五年過去，\n廣達一路衝到一百七十幾萬，\n統一幾乎完全原地踏步。\n台積電跟鴻海更誇張，\n當初差一點點，\n現在直接差了一百多萬耶。\n我看到這個對比真的傻眼。<sigh>\n你猜問題到底出在哪？\n其實這份報告量的是位子，\n不是追蹤同一個人啦。\n這集就把零零五零跟圈外行業，\n通通放在同一把尺量給你看。",
+   "lint": {
+    "chars": 188,
+    "precise_numbers": [
+     "六萬",
+     "一百七十",
+     "萬",
+     "一百",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 22.5,
+    "max_sentence_len": 32,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "五年前，廣達跟統一非主管的年薪差不多。兩家只差幾萬元，根本站在同一格嘛。你猜五年後會變怎樣？<short pause>廣達一路衝上去，統一幾乎停在原地。兩邊差距，一口氣拉開到六十八萬。往上看台積電跟鴻海，當年也只差十幾萬。五年後竟然差了一百多萬耶。<sigh>我看到這組對比真的覺得超扯。同一格起跑，五年後到底差在哪裡？其實這份報告把零零五零成分股，跟幾個圈外行業，放在同一把尺上量了一遍。帶你來看這些位子，五年後到底散到哪去啦。",
+   "to": "同梯不同命？二〇二〇年，廣達非主管員工的年薪中位數是一百一十一萬，統一是一百零五萬，兩家站在同一格，只差六萬。你猜五年後會變怎樣？<short pause>廣達衝到一百七十二萬，統一一百零四萬，幾乎停在原地，兩邊一口氣差了六十八萬。往上一格也一樣：台積電跟鴻海，當年只差十六萬，五年後差了一百一十三萬。同一個起點，五年後到底差多少，又是差在哪裡？這份報告把零零五零成分股，跟幾個圈外行業，放在同一把尺上量了一遍。",
+   "reason": "使用者的鉤子「同梯不同命」放到第一句；補回原文數字；刪個人反應"
+  }
+ ]
+}

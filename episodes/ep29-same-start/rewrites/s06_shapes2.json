@@ -1,0 +1,148 @@
+{
+ "segment": "s06_shapes2",
+ "position": "第 7 段，共 14 段",
+ "avoid": [
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "26befcb89f4e5831ba7c53309b793f22ebf3317d1371cfe77c09a45ecbef8f28",
+ "previous_context": "你說這還能當下一張彩券嗎？其實很難啦，之後就是一份不錯的正常年薪而已。",
+ "original": {
+  "text": "第四種是後半場才開始：廣達前三年只多十一萬，AI 起來之後，後三年多了五十萬，台達電、奇鋐、智邦也是這樣。第五種是幾乎沒發生：中華電、統一、富邦金，五年就是跟著物價走。這份報告說，穩定本身就是這一種五年，可預期的班表，換不到外銷循環的分紅。第六種，報告叫它另一個國家：超商、餐飲、零售，還有日月光和欣興，落在四十六到九十一萬之間。股票可以進零零五零，薪水卻活在另一套公式裡，不會因為運價或 GPU 被改寫。",
+  "lint": {
+   "chars": 200,
+   "precise_numbers": [
+    "十一萬",
+    "五十萬",
+    "四十六",
+    "九十一萬"
+   ],
+   "enumerations": [
+    "第四",
+    "第五",
+    "第六"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 39.0,
+   "max_sentence_len": 51,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那第四種形狀呢？其實是後半場才開跑。像廣達前幾年薪水幾乎沒動，AI 起來之後，後三年直接多拿五十萬。<short pause>台達電跟奇鋐也是類似的走勢。然後第五種形狀，這份報告說幾乎沒發生。像是中華電信或統一，五年下來薪水大概只貼著物價走。你可能會問，這樣很虧嗎？其實不會啦，規律的班表本身就是一種選擇嘛。最後一種形狀，被叫做另一個國家。像是超商、餐飲，或是日月光，年薪中位數大概都在幾十萬打轉。這張圖疊在一起真的很讓人感慨。<sigh>就算公司股票能擠進零零五零，薪水也是活在另一套公式裡，根本吃不到運價或 GPU 的紅利。",
+   "lint": {
+    "chars": 242,
+    "precise_numbers": [
+     "五十萬",
+     "十萬"
+    ],
+    "enumerations": [
+     "第四",
+     "第五"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 19.2,
+    "max_sentence_len": 41,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "第四種形狀是後半場才開始。像廣達前三年只多十一萬，後來 AI 題材爆發，後三年直接多五十萬，台達電跟智邦也是類似醬的走勢。第五種就平淡很多，叫幾乎沒發生。中華電、統一還有富邦金，五年下來薪水幾乎只跟著物價飄。可預期的正常班表，自然換不到外銷循環的大紅包嘛。<short pause>最後一種更殘酷，這份報告說這根本是另一個國家。超商、餐飲、零售，還有日月光這種大廠，薪水落在四十六到九十幾萬。你猜這代表什麼？就算公司股票擠進零零五零，薪資也不會因為運價或晶片被改寫啦。",
+   "lint": {
+    "chars": 219,
+    "precise_numbers": [
+     "十一萬",
+     "五十萬",
+     "四十六",
+     "九十",
+     "萬"
+    ],
+    "enumerations": [
+     "第四",
+     "第五"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 23.3,
+    "max_sentence_len": 45,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "那除了這種中樂透的，其實有一批公司是後半場才醒過來。像是廣達或奇鋐，前面幾年表現都很普通，直到 AI 出現才一口氣拉上去。廣達後三年就多拿了整整五十萬耶。那如果完全沒吃到科技紅利呢？像中華電信或是統一，這份報告說，穩定本身就是一種五年。既然選了可預期的班表，就換不到外銷循環的大分紅了。<short pause>然後最讓人感慨的，是這份報告形容的「另一個國家」。<sigh>像是超商、餐飲或是日月光，員工年薪大多都在幾十萬的範圍。就算公司股票被買進零零五零，薪水也不會因為 GPU 大賣而被改寫啦。",
+   "lint": {
+    "chars": 226,
+    "precise_numbers": [
+     "五十萬",
+     "十萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 24.1,
+    "max_sentence_len": 32,
+    "sentences_over_20": 7,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "那第四種形狀呢？其實是後半場才開跑。像廣達前幾年薪水幾乎沒動，AI 起來之後，後三年直接多拿五十萬。<short pause>台達電跟奇鋐也是類似的走勢。然後第五種形狀，這份報告說幾乎沒發生。像是中華電信或統一，五年下來薪水大概只貼著物價走。你可能會問，這樣很虧嗎？其實不會啦，規律的班表本身就是一種選擇嘛。最後一種形狀，被叫做另一個國家。像是超商、餐飲，或是日月光，年薪中位數大概都在幾十萬打轉。這張圖疊在一起真的很讓人感慨。<sigh>就算公司股票能擠進零零五零，薪水也是活在另一套公式裡，根本吃不到運價或 GPU 的紅利。",
+   "to": "那第四種形狀，是後半場才開跑。廣達前三年只多十一萬，AI 起來之後，後三年多了五十萬，台達電、奇鋐、智邦也是類似的走勢。<short pause>第五種，這份報告說幾乎沒發生：中華電、統一、富邦金，五年就貼著物價走。報告的說法是，穩定本身就是這一種五年，可預期的班表，換不到外銷循環的分紅。最後一種，被叫做另一個國家：超商、餐飲、零售，還有日月光和欣興，落在四十六到九十一萬之間。就算公司股票能擠進零零五零，薪水也活在另一套公式裡，不會因為運價或 GPU 被改寫。",
+   "reason": "「規律的班表本身就是一種選擇」是改寫加的；補回廣達數字與區間；刪個人反應"
+  },
+  {
+   "from": "報告的說法是，穩定",
+   "to": "這份報告的說法是，穩定",
+   "reason": "rule 19"
+  }
+ ]
+}

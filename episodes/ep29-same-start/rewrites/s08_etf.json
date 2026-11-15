@@ -1,0 +1,128 @@
+{
+ "segment": "s08_etf",
+ "position": "第 9 段，共 14 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "881a5aa8a69936cc8c678222b6ba4013e0cfbb4ea364749cde847d77404211ab",
+ "previous_context": "我讀到這句結論真的很有共鳴。這份報告說，差的只是獲利分享的公式，根本不是誰比較認真啦。",
+ "original": {
+  "text": "接著報告換個問法：如果每個位子每年都把年薪的兩成拿去買零零五零，會改變什麼？先說，這是回測，不是投資建議。結果有一件事會變：停住的位子也吃得到行情。統一的年薪五年沒動，可是這筆錢在二〇二五年一年的帳面獲利，就有六十七萬，差不多等於它跟廣達的薪水差距。零零五零裡台積電佔將近六成，這份報告說，買它，等於拿薪水去換分紅公式裡，股東的那一半。資產的差距也比薪水小：廣達對統一，年薪差一點六五倍，資產只差一點二四倍。",
+  "lint": {
+   "chars": 204,
+   "precise_numbers": [
+    "六十七萬",
+    "一點六五",
+    "一點二四"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 33.0,
+   "max_sentence_len": 50,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以這份報告換了一個角度問。<short pause>如果每年把兩成薪水拿去買零零五零呢？先說喔，這是歷史回測，不是投資建議啦。我覺得這個切入角度真的很聰明。其實有一件事會徹底改變。薪水沒動的位子，也吃得到市場行情。像統一的年薪五年都沒漲，但光是二〇二五那一年，獲利就有六十七萬。這幾乎追平了跟廣達同年的薪水差。為什麼會這樣？因為零零五零裡面，台積電佔了快六成。這份報告說，這等於拿薪水去換股東分紅嘛。然後資產的差距，也會比薪水差距小很多喔。年薪差了一倍多，資產差距其實縮小非常多。",
+   "lint": {
+    "chars": 228,
+    "precise_numbers": [
+     "六十七萬"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 31,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "所以這份報告接著換了個問法。如果每年把年薪兩成拿去買零零五零呢？先提醒大家，這只是歷史回測喔，真的不是投資建議啦。你覺得這樣能改變什麼？<short pause>其實停在原地的位子，也吃得到大行情耶。像統一的年薪雖然五年都沒動，但這筆投資在最後一年，帳面賺了六十七萬。這筆錢幾乎補平了它跟廣達當年的薪水差距。因為零零五零裡面，台積電就佔了快六成。這份報告說，買它就像拿薪水去當股東分紅。所以最後累積的資產差距，比薪水小很多。我看到這個對比，覺得這個切入點超聰明。",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [
+     "六十七萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 33,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "既然講到公式，這份報告接著換了個問法。\n如果每年把年薪的兩成，拿去買零零五零呢？\n先說喔，這是回測，不是投資建議啦。\n<laugh>\n那到底會改變什麼？\n其實連沒調薪的人，也吃得到行情喔。\n像統一的年薪五年都沒動，\n但到了二〇二五年，\n這筆錢一年的帳面獲利就有六十七萬，\n差不多補平了跟廣達當年的薪水差。\n因為零零五零裡面，台積電佔了快六成嘛。\n這份報告說，買它等於去分股東那一半。\n所以資產的差距，其實會被縮小。\n廣達薪水是統一的一倍半以上，\n但最後資產，只差了一點二倍多。\n用這招去吃紅利，聽起來真的很聰明耶。",
+   "lint": {
+    "chars": 235,
+    "precise_numbers": [
+     "六十七萬",
+     "一點二"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.4,
+    "max_sentence_len": 53,
+    "sentences_over_20": 2,
+    "particles_per_100": 2.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "所以這份報告換了一個角度問。<short pause>如果每年把兩成薪水拿去買零零五零呢？先說喔，這是歷史回測，不是投資建議啦。我覺得這個切入角度真的很聰明。其實有一件事會徹底改變。薪水沒動的位子，也吃得到市場行情。像統一的年薪五年都沒漲，但光是二〇二五那一年，獲利就有六十七萬。這幾乎追平了跟廣達同年的薪水差。為什麼會這樣？因為零零五零裡面，台積電佔了快六成。這份報告說，這等於拿薪水去換股東分紅嘛。然後資產的差距，也會比薪水差距小很多喔。年薪差了一倍多，資產差距其實縮小非常多。",
+   "to": "所以這份報告換了一個角度問：如果每年把兩成薪水拿去買零零五零呢？先說喔，這是歷史回測，不是投資建議。<short pause>有一件事會改變：薪水沒動的位子，也吃得到行情。統一的年薪五年都沒漲，但這筆錢光是二〇二五年一年的帳面獲利，就有六十七萬，幾乎等於它跟廣達同年的薪水差距。為什麼？因為零零五零裡面，台積電佔了快六成。這份報告說，買它，等於拿薪水去換分紅公式裡，股東的那一半。資產的差距也比薪水小：廣達對統一，年薪差一點六五倍，資產只差一點二四倍。",
+   "reason": "「年薪差一倍多」改回一點六五倍、資產一點二四倍；帳面獲利；刪個人反應"
+  }
+ ]
+}

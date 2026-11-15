@@ -1,0 +1,113 @@
+{
+ "segment": "s01_what",
+ "position": "第 2 段，共 14 段",
+ "avoid": [
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f284e093ace5ad88f73470d0b0a13edc408795fafebf19fa512f6df17bff1d5e",
+ "previous_context": "其實這份報告把零零五零成分股，跟幾個圈外行業，放在同一把尺上量了一遍。帶你來看這些位子，五年後到底散到哪去啦。",
+ "original": {
+  "text": "先講清楚這份報告量的是什麼。零零五零的公司，用的是證交所每年公布的非主管全職員工年薪中位數；零售、餐飲、醫療這幾個圈外行業，用主計總處的行業平均。時間是二〇二〇到二〇二五年。最要緊的一點：證交所每年量到的，是當年在職的那群人，沒有追蹤同一批人。所以這份報告回答的是，二〇二〇年那個位子，五年後值多少，回答不了二〇二〇年進去的人後來領多少。真正能追同一個人的，只有照俸表走的公教，那是最後的番外。後面有一段是回測，先說，不是投資建議。",
+  "lint": {
+   "chars": 216,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 29.9,
+   "max_sentence_len": 58,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "不過看數字之前，要先搞清楚這份報告量的是什麼。零零五零的公司，是用證交所每年公布的中位數，也就是排在正中間那個人領多少。圈外的餐飲或零售，是用主計總處的行業平均。你看得出差別在哪嗎？<short pause>重點來了，這份報告量的是位子，不是追蹤同一批人喔。我看到這邊才恍然大悟。它回答的是那個位子五年後值多少，回答不了你進去以後能領多少。真正能追同一個人的，只有照俸表走的公教人員啦。<laugh>對了，後面看到的投資回測，先講清楚，這可不是投資建議喔。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 22.1,
+    "max_sentence_len": 36,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "看下去之前，有一件事要先講清楚。\n這份報告量的是什麼？\n零零五零的公司，看非主管年薪中位數。\n圈外的餐飲或醫療，看的是行業平均。\n重點來了，它量的是位子，不是同一批人。<short pause>\n這差在哪裡？\n這份報告回答的是，這個位子五年後值多少。\n它回答不了你當年進去，現在薪水變多少啦。\n真正能追同一個人的，只有照俸表走的公教。\n我看到這邊才搞懂這個差別。\n對了，後面有一段回測。\n先說好，這不是投資建議喔。",
+   "lint": {
+    "chars": 183,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "先弄清楚這把尺到底量了什麼。零零五零的公司，看的是非主管年薪中位數。圈外的餐飲跟醫療，是用行業平均薪資。這份報告看的是二〇二〇開始的五年。那最關鍵的是什麼？<short pause>其實它量的是位子，不是追蹤同一個人喔。證交所每年量到的，都是當年在職的那群人。所以它回答的是，那個位子五年後值多少錢。至於你當年進去現在領多少？這份報告回答不了，我看到滿多人誤會的。<laugh>真正能追同梯同一個人的，只有照俸表的公教。對了，後面有一段回測，這不是投資建議喔。",
+   "lint": {
+    "chars": 210,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "我看到這邊才搞懂這個差別。",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}
