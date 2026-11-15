@@ -3,7 +3,7 @@
 更新：2026-11-14。來源：imitator 的 `archive/report/`（`report_list.json` 的日期，沒有的用第一次 commit 的日期；10-02 那一批是搬家日，不是寫作日）。
 狀態：**已做**（集數）、**推薦**（下一批優先）、可做、不做（工具、mockup、旅遊、私人、自家產品、轉載、內部筆記）。
 
-2026-11-12 新增的退休三部曲（rent-ratio-or-scale、retire-floor-basics、retire-floor-playbook、three-pensions-plain）不在下表：前兩集做成 EP24、EP25，取代了下表的租買專題與「1000 萬退休的三種人生」；three-pensions-plain 是 EP26（製作中），取代 labor_insurance 那篇。zkp-report 是 EP27（製作中）。連結的 slug 一律用連字號（imitator 會把檔名的底線換成連字號）。
+2026-11-12 新增的退休三部曲（rent-ratio-or-scale、retire-floor-basics、retire-floor-playbook、three-pensions-plain）不在下表：前兩集做成 EP24、EP25，取代了下表的租買專題與「1000 萬退休的三種人生」；three-pensions-plain 是 EP26，取代 labor_insurance 那篇。zkp-report 是 EP27。連結的 slug 一律用連字號（imitator 會把檔名的底線換成連字號）。
 
 共 124 份：已做 25、推薦 12、可做 42、不做 45。
 
@@ -61,7 +61,7 @@
 | 2026-10-06 | [它很會分，但它不會想 — Jev 在 agent workflow 裡的位置](https://imitator.ai-apps.work/r/agent-arch-4) | 可做 | 架構系列 4 |
 | 2026-10-05 | [人人都是建築師，那誰來簽證 — AI 時代的程式設計師](https://imitator.ai-apps.work/r/everyone-an-architect) | 可做 | AI 時代的程式設計師 |
 | 2026-10-04 | [劍客、小孩，與一面歪掉的鏡子 — 2026H2 Agent 生存指南](https://imitator.ai-apps.work/r/agent-survival-2026h2) | 可做 | 與 EP11 主題接近 |
-| 2026-10-02 | [我不告訴你，但你會相信 — 零知識證明講義](https://imitator.ai-apps.work/r/zkp-report) | **推薦** | 零知識證明，有好比喻的科普 |
+| 2026-10-02 | [我不告訴你，但你會相信 — 零知識證明講義](https://imitator.ai-apps.work/r/zkp-report) | **已做** | EP27 |
 | 2026-10-02 | [一天一萬顆神經元能買到什麼 — Workers AI 番外](https://imitator.ai-apps.work/r/workers-ai-appendix) | 可做 | Workers AI 番外，小眾 |
 | 2026-10-02 | [你連的是什麼線 — 從一百萬則通知的假議題，到 AI 時代的架構師](https://imitator.ai-apps.work/r/which-wire) | 可做 | AI 時代的架構師 |
 | 2026-10-02 | [帽子可以借，印章借不走：一人公司裡的 AI-native SDLC](https://imitator.ai-apps.work/r/sdlc-seal) | 可做 | 一人公司的 AI-native SDLC |

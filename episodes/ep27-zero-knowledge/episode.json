@@ -8,7 +8,7 @@
  "report_slug": "zkp-report",
  "report_version": "",
  "source_url": "https://imitator.ai-apps.work/r/zkp-report",
- "status": "draft",
+ "status": "final",
  "related": [],
  "voice": {
   "provider": "gemini",
@@ -43,5 +43,6 @@
   "consistency": "qa/consistency.json：各段音高在中位數 ±5 Hz 內、相鄰段聲紋都 ≥ 0.93",
   "twtone": "qa/twtone.md：對舉句一開始超過基準，改掉兩句後沒有超過的項目",
   "terms": "Ping、pong 3 次都判為英文念法"
- }
+ },
+ "published": "2026-11-15T09:11:00+08:00"
 }

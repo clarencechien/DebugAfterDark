@@ -8,7 +8,7 @@
  "report_slug": "three-pensions-plain",
  "report_version": "v0.1（資料截至 2026-11-12）",
  "source_url": "https://imitator.ai-apps.work/r/three-pensions-plain",
- "status": "draft",
+ "status": "final",
  "series": "退休三部曲・地板（倒著講，3/3）",
  "voice": {
   "provider": "gemini",
@@ -39,10 +39,11 @@
   "breeze_cer_mean": 0.029,
   "jitter_semitones": 0.229,
   "gates": "錯誤率 2.9%、音高跳動 0.229 都通過（音高跳動剛好在門檻下）",
-  "gemini": "2026-11-13 Gemini API 碰到每月花費上限（429），Gemini 盲聽和 Ping／pong 檢查都沒有跑；兩套都聽錯的清單只有 Breeze 一邊，要靠人耳試聽",
+  "gemini": "2026-11-13 Gemini API 碰到每月花費上限（429），Gemini 盲聽和 Ping／pong 檢查都沒有跑；兩套都聽錯的清單只有 Breeze 一邊，要靠人耳試聽；2026-11-15 試聽通過後定稿",
   "manual_pick": "s02 take2（take0 抖、專戶念成賺戶）、s04 take1、s07 take1（take0 +6.9 Hz）、s10 take1（take0 +6.1 Hz）、s13 take0（take2 +8.1 Hz）、s14 take1（take0 跟 s13 聲紋 0.900）",
   "breeze_flags": "s14「離職」三處被 Breeze 寫成離子／留子、s06「最後支付責任」寫成最後之負責任、s10「育嬰」寫成運營；要人耳確認",
   "consistency": "qa/consistency.json：各段音高在中位數 ±4 Hz 內、相鄰段聲紋都 ≥ 0.93；s09 語速快一成",
   "twtone": "qa/twtone.md：沒有超過基準的項目；「快退」是誤判"
- }
+ },
+ "published": "2026-11-15T09:09:00+08:00"
 }
