@@ -1,0 +1,111 @@
+{
+ "segment": "s02_ideas",
+ "position": "第 3 段，共 13 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "6b70341b625b45c722482fa84fead9d4962cbc4f9d3aa66c16b7b9260592d8e8",
+ "previous_context": "這份報告說，他文章寫得好，標題下得超準。所以拆開來看，裡面哪些零件真的有用？",
+ "original": {
+  "text": "原文的主幹是這樣。你沒到那裡，是因為你還不是那種人：改行動是次要的，改自己是誰才是主要的。所有行為都有目的，他引用阿德勒，說拖延可能是在保護自己免於被評價，說自己缺乏自律，只是比較好聽的解釋。身分是一個會自我保護的循環。智力就是拿到你想要的東西的能力，靠的是一個迴圈：設目標、行動、量測、比較、修正。這份報告說，最後這一段其實是全文最實在的一段。",
+  "lint": {
+   "chars": 173,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 27.8,
+   "max_sentence_len": 50,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實原文的核心概念蠻清楚的。他說你做不到，是因為你還不是那種人。重點不是改行動，而是改你覺得自己是誰。<short pause>那你猜，人為什麼會拖延？他引用阿德勒說，拖延是為了保護自己。怕被別人評價啦。說自己缺乏自律，其實只是比較好聽的藉口。然後他把智力，定義成拿到想要東西的能力。也就是設目標、行動、量測、比較再修正。這份報告說，這一段其實是全文最實在的。",
+   "lint": {
+    "chars": 167,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 15.7,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "其實原文的核心概念很簡單。你還沒到那裡，是因為你還不是那種人。改行動只是表面，改自己是誰才是關鍵。然後他借用了阿德勒的說法喔。<short pause>你猜拖延真的是不自律嗎？其實可能只是怕被評價，在保護自己啦。最厲害的是，他把智力定義成一個迴圈。就是設目標、行動、量測然後修正。這份報告說，這一段其實是全文最實在的。我看到這邊超認同的耶。",
+   "lint": {
+    "chars": 157,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "我們直接來看原文的核心。\n他說，你還沒走到那裡。\n是因為你還不是那種人。\n重點不是改行動，而是改自己是誰。\n然後他引用阿德勒，說所有行為都有目的。\n你覺得拖延只是不自律嗎？其實不是。\n拖延是在保護自己，免得被別人打分數。\n說缺乏自律，只是聽起來比較好聽啦。<short pause>\n最厲害的是，他把智力重新定義。\n智力就是拿到你想要的東西的能力。\n靠的是設目標、行動、再修正這個迴圈。\n這份報告說，這段是全文最實在的地方喔。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 13.5,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "<short pause>最厲害的是，他把智力重新定義。",
+   "to": "<short pause>再來，他把智力重新定義。",
+   "reason": "刪口頭禪"
+  }
+ ]
+}

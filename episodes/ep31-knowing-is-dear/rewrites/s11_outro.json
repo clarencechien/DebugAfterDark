@@ -1,0 +1,132 @@
+{
+ "segment": "s11_outro",
+ "position": "第 12 段，共 12 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4a3c984183ccbf6d0f1a60df51783e982157aaf775fc1e82e1537c6be060744e",
+ "previous_context": "孫文的部分，純粹只是類比啦。我覺得把限制先講清楚，真的蠻誠實的。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，知易行難和行易知難可以同時成立：人自己動手時，意圖只有一半變成行動；相信自己做得到，是做成之後才有的。第二，交給 agent 之後，行動變便宜了，瓶頸從做移到看：試飛的十五次迭代，全花在自動裁判看不見的地方。第三，交出去之前先寫清楚怎樣算對，把每一輪的失敗記下來，再留一塊自己動手。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 193,
+   "precise_numbers": [
+    "十五"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 26.6,
+   "max_sentence_len": 53,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n那今天能帶走什麼？其實就是三件事啦。\n第一，自己的事，先挑一件最小的做。\n把時間地點訂好，做完留下紀錄就好。\n然後，交給 agent 的事，先寫怎樣算對。\n每一輪失敗都記下來，清單比成品還值錢。\n最後，記得留一塊親手做。\n能力如果完全不練，真的會悄悄消失耶。\n光是這點就讓我很有共鳴。<short pause>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 186,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 13.3,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n你可以想想，野心的本錢到底是什麼？\n其實就是一筆一筆驗得出來的紀錄啦。\n那聽完這集要帶走什麼？\n我幫大家整理三個重點。\n第一，自己的事先做一件小的，把時間寫死。\n第二，交給 agent 的事，先定義好怎樣算對。\n第三，記得留一塊自己動手，能力才不會不見。\n自己動手這件事，我真的特別有共鳴。<laugh>\n因為委託的代價，就是能力停止發展嘛。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。你聽完會不會覺得，理論離生活有點遠？其實不會啦，核心講穿了就是行動而已。看著驗得出來的紀錄，真的讓人很踏實。第一，自己的事先做一件小的，把紀錄留下來。第二，交給 agent 之前，先寫清楚怎樣算對。第三，記得留一塊親手做，別讓能力退化掉。每一輪失敗的清單，比做完的成品更值錢喔。<short pause>原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 190,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>那今天能帶走什麼？其實就是三件事啦。第一，自己的事，先挑一件最小的做。把時間地點訂好，做完留下紀錄就好。然後，交給 agent 的事，先寫怎樣算對。每一輪失敗都記下來，清單比成品還值錢。最後，記得留一塊親手做。能力如果完全不練，真的會悄悄消失耶。光是這點就讓我很有共鳴。<short pause>原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，知易行難和行易知難可以同時成立：人自己動手時，意圖只有一半變成行動；相信自己做得到，是做成之後才有的。第二，交給 agent 之後，行動變便宜了，瓶頸從做移到看，試飛的十五次迭代，全花在自動裁判看不見的地方。第三，交出去之前，先寫清楚怎樣算對，把每一輪的失敗記下來，再留一塊自己動手。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "breakpoint 被換成帶走的三件事，改回草稿；刪個人反應"
+  }
+ ]
+}

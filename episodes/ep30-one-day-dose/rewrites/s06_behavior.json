@@ -1,0 +1,107 @@
+{
+ "segment": "s06_behavior",
+ "position": "第 7 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "7db1a9f10c1853a0082bb856b9b5140e24ca8e35b1bc0d95cb0e1a360799a22d",
+ "previous_context": "但這份報告說，講八九成真的太誇張了啦。大多數人會放棄沒錯，但絕對沒那麼絕望。",
+ "original": {
+  "text": "同一份研究還有一個更有意思的發現。撐過來的人，進入新年之後，用的多半是行為層面的做法，比較少靠提高覺察和放大情緒。偏偏這一天的流程，重心就放在後面這兩項：寫到痛的反願景、隨時問自己在逃避什麼。這份報告說，這不代表流程沒用，在下決心的階段，覺察和情緒本來就重要，問題出在下決心之後。所以報告對這一天的定位是：它適合拿來啟動，撐下去，要靠別的東西。",
+  "lint": {
+   "chars": 172,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 33.4,
+   "max_sentence_len": 43,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "而且研究裡面還有一個更有意思的發現。\n那些撐過半年的人，到底做對了什麼？\n其實他們靠的多半是具體的行為習慣。\n反而很少在放大情緒，或是一直反省自己。\n偏偏 Dan Koe 給的流程，重心都在後者。\n像是逼你寫下痛苦的反願景。<short pause>\n那這套流程真的沒用嗎？\n其實也不是啦。\n這份報告說，情緒跟覺察適合拿來下定決心。\n只是下完決心之後，要撐下去得靠別的做法。\n所以這套流程很適合拿來開機點火。\n但後面能跑多久，又是另一回事了。",
+   "lint": {
+    "chars": 194,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "其實 Norcross 的研究還有一個更妙的發現。那些最後真的撐過來的人，到底做了什麼？他們靠的都是具體的行為改變，比較少一直去提高覺察、放大情緒。偏偏 Dan Koe 這套流程，重心剛好全壓在情緒上面。<laugh>像是把反願景寫到很痛，隨時逼問自己在逃避什麼。但這份報告說，這不代表他的做法沒用喔。在下決心的階段，情緒確實很有用嘛。<short pause>可是下完決心之後呢？你總不可能每天都在那邊自我感動吧？所以這份報告說，這套流程很適合拿來啟動。但要一路撐下去，就得靠別的招數了啦。",
+   "lint": {
+    "chars": 221,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 19.1,
+    "max_sentence_len": 29,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實同一份研究，還有一個很有趣的發現喔。<short pause>那些真正撐過來的人，到底靠的是什麼？答案是具體行為上的做法。他們在新年之後，其實很少一直放大情緒。可是 Dan Koe 的流程，重心偏偏全在情緒。像是逼你寫出很痛的反願景。這份報告說，這不代表他的流程沒用啦。剛開始要下決心時，情緒確實超有幫助。這種對比讓我很有共鳴。所以這份報告說，這套流程很適合開局啟動。但後面要撐下去，你就得靠別的武器了。",
+   "lint": {
+    "chars": 188,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0
+}

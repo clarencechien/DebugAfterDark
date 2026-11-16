@@ -1,0 +1,147 @@
+{
+ "segment": "s05_proxy",
+ "position": "第 6 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "1758c3bd5c040e056a3e129c65ae915ac5da15d2605dce454e7ea30534fc4baa",
+ "previous_context": "孫文覺得大家不信，所以寫書想說服大家。但光靠口頭說服，偏偏是效果最弱的那種耶。",
+ "original": {
+  "text": "第四站，委外。Bandura 二〇〇一年把能動性分成三種：自己做的，委託別人做的，一群人一起做的。這份報告說，把事情交給 agent，屬於第二種，委託。Bandura 當年就寫了委託的代價：第一，依賴別人，會讓自己的能力停止發展；第二，安全感從此寄放在別人的能力和好意上。把別人換成 agent，這幾段幾乎不用改。也有初步的資料：微軟研究院和卡內基美隆大學二〇二五年問了三百一十九位知識工作者，對 AI 越有信心的人，回報的批判思考越少；對自己越有信心的人，越多。不過這是問卷，只能說明相關。",
+  "lint": {
+   "chars": 240,
+   "precise_numbers": [
+    "三百一十九"
+   ],
+   "enumerations": [
+    "第四",
+    "第二",
+    "第一",
+    "第二"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 33.3,
+   "max_sentence_len": 72,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那如果口頭說服沒用，直接找幫手呢？\n這就來到第四站，委外。<short pause>\n學者 Bandura 把能動性分成三種。\n親自做、大家一起做，還有委託別人做。\n這份報告說，用 agent 其實就是委託。\n那委託會有什麼代價？\n其實理論上早就寫好了。\n第一，太依賴別人，能力會停止發展；\n第二，安全感會全寄託在對方身上。\n把別人換成 agent，完全一模一樣耶。\n更扯的是，現在真的有初步研究。\n他們調查了三百一十九位知識工作者。\n結果對 AI 越有信心的人，\n回報的批判思考反而越少。<sigh>\n你應該也覺得這聽起來很毛吧？\n不過這只是填問卷，只能說明相關啦。",
+   "lint": {
+    "chars": 243,
+    "precise_numbers": [
+     "三百一十九"
+    ],
+    "enumerations": [
+     "第四",
+     "第一",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 32,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "所以第四站要聊聊委外。\n大家現在很愛用 agent 對吧？\n但你覺得這算哪一種能動性？\n學者 Bandura 在二〇〇一年把能動性分三種。\n自己動手、委託別人、還有一群人一起做。\n這份報告說，用 agent 其實就是第二種委託。<short pause>\n那委託的代價是什麼？\n其實二十幾年前就寫好了。\n第一，依賴別人會讓自己的能力停止發展。\n第二，安全感只能寄託在別人身上。\n把別人換成 agent，聽起來超毛的吧？\n微軟的研究調查了三百多位知識工作者。\n對 AI 越有信心的人，批判思考回報得越少。\n反而對自己越有信心，批判思考才越多。\n不過這只是問卷啦，只能說明相關喔。",
+   "lint": {
+    "chars": 252,
+    "precise_numbers": [
+     "二十",
+     "三百"
+    ],
+    "enumerations": [
+     "第四",
+     "第二",
+     "第一",
+     "第二"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 22,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "光靠口頭說服不夠，那找幫手呢？\n來到第四站，委外。\n對，也就是找 agent 幫忙。\n心理學家 Bandura 說過，能動性分三種。\n自己做、大家一起做，還有委託別人做。\n這份報告說，把任務丟給 agent 就是委託。\n那你想過委託的代價是什麼嗎？\n第一，依賴別人會讓你的能力停止進步。\n第二，你的安全感只能寄託在別人身上。\n換成 agent，其實完全講得通耶。<short pause>\n微軟的研究找了三百一十九位工作者。\n越信任 AI 的人，回報的批判思考越少。\n對自己越有信心的人，思考反而越多。\n雖然這份問卷只能說明相關。\n但代價早就寫好了，看著滿毛的啦。<sigh>",
+   "lint": {
+    "chars": 246,
+    "precise_numbers": [
+     "三百一十九"
+    ],
+    "enumerations": [
+     "第四",
+     "第一",
+     "第二"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "微軟的研究找了三百一十九位工作者。",
+   "to": "微軟研究院和卡內基美隆大學，問了三百一十九位知識工作者。",
+   "reason": "補出處"
+  },
+  {
+   "from": "但代價早就寫好了，看著滿毛的啦。<sigh>",
+   "to": "但委託的代價，理論上早就寫好了。",
+   "reason": "刪個人反應"
+  }
+ ]
+}

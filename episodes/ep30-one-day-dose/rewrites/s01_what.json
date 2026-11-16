@@ -1,0 +1,113 @@
+{
+ "segment": "s01_what",
+ "position": "第 2 段，共 13 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "bb545dc279e5603735436e3e9ca8ec719c8521fb67939989ccd7c721577a915d",
+ "previous_context": "年底又要到了對吧？在寫明年的計畫之前，先來聽這一集吧。",
+ "original": {
+  "text": "先看這帖藥是什麼。Dan Koe 是寫個人成長和創作者經濟的作者，主業是賣課程和數位產品。這篇長文最早在二〇二五年十二月寄給他的電子報訂閱者，副標寫著，二〇二六年之前做完這件事。今年一月他把它貼上 X，成為那年流傳最廣的文章之一，中文圈引用的瀏覽數是兩億多次，還有人把中文譯本包成電子書來賣。這份報告的作者說，這篇文章寫得好，標題也下得準；他想知道的是，拆開來之後，哪些零件真的有用。",
+  "lint": {
+   "chars": 189,
+   "precise_numbers": [
+    "十二"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 36.8,
+   "max_sentence_len": 55,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "我們今天來看這帖藥到底是什麼。\n作者叫 Dan Koe。\n他專門寫個人成長，主業是賣線上課程。\n他在前年底把這篇長文寄給訂閱者。\n副標寫得很吸引人喔。\n要你在跨年之前搞定這件事。\n隔年一月他貼上 X，結果直接被轉爆。<short pause>\n你猜大家傳成什麼樣？\n中文圈很多人說，瀏覽數超過兩億次耶。\n甚至還有人把它包成電子書拿來賣。<laugh>\n這份報告說，他文章寫得好，標題下得超準。\n所以拆開來看，裡面哪些零件真的有用？",
+   "lint": {
+    "chars": 181,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 14.1,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "我們今天聊的這篇長文，作者叫 Dan Koe。\n他平時的主業，其實是賣課程跟數位產品。\n這篇文章一貼到 X 上面，直接大爆紅。\n你猜有多少人看過？\n中文圈流傳的瀏覽數，居然有兩億多次耶。<short pause>\n兩億多到底是什麼概念，超級扯的。<laugh>\n甚至還有人把它翻成中文，包成電子書來賣。\n這份報告說，原作者標題真的下得很準。\n文章本身其實也寫得很好。\n但拆開來看，到底哪些東西真的有用？\n這就是我們今天想找的答案啦。",
+   "lint": {
+    "chars": 182,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "先來看看這帖藥到底是什麼吧。寫這篇長文的人叫 Dan Koe。他主業是賣課程跟數位產品。他在二〇二五年底把文章發給訂閱者。副標寫著要在二〇二六年之前做完這件事。你知道這篇有多紅嗎？隔年一月他貼上 X，整個大瘋傳耶。中文圈傳說瀏覽數高達兩億多次。更扯的是還有人把它包成電子書拿去賣。<short pause>我看到這個數字真的嚇一跳。這份報告說，原作者寫得好，標題也抓得很準。所以作者想知道，裡面哪些零件真的有用？",
+   "lint": {
+    "chars": 190,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "我們今天來看這帖藥到底是什麼。作者叫 Dan Koe。他專門寫個人成長，主業是賣線上課程。他在前年底把這篇長文寄給訂閱者。副標寫得很吸引人喔。要你在跨年之前搞定這件事。隔年一月他貼上 X，結果直接被轉爆。<short pause>你猜大家傳成什麼樣？中文圈很多人說，瀏覽數超過兩億次耶。甚至還有人把它包成電子書拿來賣。<laugh>這份報告說，他文章寫得好，標題下得超準。所以拆開來看，裡面哪些零件真的有用？",
+   "to": "先看這帖藥是什麼。作者叫 Dan Koe，專門寫個人成長和創作者經濟，主業是賣線上課程和數位產品。他在去年十二月，把這篇長文寄給電子報的訂閱者，副標寫著，二〇二六年之前做完這件事。今年一月他把它貼上 X，結果直接被轉爆，中文圈引用的瀏覽數是兩億多次，還有人把中文譯本包成電子書來賣。<short pause>這份報告的作者說，這篇文章寫得好，標題也下得準。他想知道的是，拆開來之後，哪些零件真的有用。",
+   "reason": "「前年底」改為去年十二月、「隔年一月」改為今年一月；刪笑聲"
+  }
+ ]
+}

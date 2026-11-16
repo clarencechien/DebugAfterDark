@@ -1,0 +1,111 @@
+{
+ "segment": "s03_day",
+ "position": "第 4 段，共 13 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "3eb591e30e29c2ee36ad8797d3415f527a448e5733657b0f4b421da78bd99931",
+ "previous_context": "靠的是設目標、行動、再修正這個迴圈。這份報告說，這段是全文最實在的地方喔。",
+ "original": {
+  "text": "後半是那一天的流程。早上寫反願景，也就是五年、十年都不改變，你會變成什麼樣子；再寫一個最小的願景，和一句身分宣言。白天讓手機在隨機的時間提醒你，問自己：我現在在逃避什麼？晚上把一天的體悟壓成兩句話，再訂一年、一個月和明天的目標。最後把人生變成遊戲：反願景是賭注，一年目標是主線，一個月的專案是打頭目，每天的任務是日常。還有最後一項叫限制條件，就是你不願意犧牲的東西。這份報告說，轉述的人常常漏掉它，可是整套系統裡，只有它是煞車。",
+  "lint": {
+   "chars": 214,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 29.6,
+   "max_sentence_len": 46,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "然後他把這些濃縮成一天的流程。\n你早上要先寫反願景。\n也就是如果五年都不改變，你會變多慘。\n接著寫最小願景，還有一句身分宣言。\n白天呢？\n他讓手機在隨機時間跳提醒。\n問自己：我現在在逃避什麼？\n晚上把心得壓成兩句話，再訂目標。\n最厲害的是，他把人生當成遊戲在破關。\n一年目標是主線，一個月專案是打頭目。\n每天做的事情就是解日常。<short pause>\n那最後一項是什麼？\n答案叫限制條件。\n其實就是你打死都不願意犧牲的事情啦。\n這份報告說，轉述的人常常會漏掉它。\n我看到這邊整個起雞皮疙瘩。\n因為整套系統裡面，只有它是煞車喔。",
+   "lint": {
+    "chars": 236,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 12.9,
+    "max_sentence_len": 17,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "然後呢，他把這一套排成一整天的流程。\n早上先寫反願景。\n也就是如果五年都不改變，你會變多慘。\n接著寫最小願景，還有一句身分宣言。\n白天更妙，手機會在隨機時間跳提醒。<short pause>\n猜猜看問什麼？\n問你現在到底在逃避什麼啦。\n晚上就把今天的心得壓成兩句話，\n然後排好接下來的目標。\n最厲害的是，他把人生當成遊戲在打。\n主線任務跟打頭目都有，樣樣不缺。\n但重點來了，<short pause>\n裡面有一項叫限制條件，\n也就是你絕對不願意犧牲的東西。\n這份報告說，很多人轉述時都會漏掉它。\n可是整套系統裡面，其實只有它是煞車耶。",
+   "lint": {
+    "chars": 226,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那他具體的一天長怎樣？\n其實流程排得很緊湊喔。\n早上要先寫反願景。\n也就是如果好幾年都不改變，自己會有多慘。\n然後寫最小願景跟身分宣言。\n白天最妙的是，讓手機隨機跳提醒。\n問自己：我現在在逃避什麼？<short pause>\n你猜晚上要幹嘛？\n把體悟濃縮成兩句話，再排明天的目標。\n最厲害的是，他把人生當成遊戲在打。\n主線是一年目標，打頭目是一個月的專案。\n每天要做的事就是日常任務啦。\n重點來了，裡面有一項叫限制條件。\n也就是你絕對不願意犧牲的東西。\n這份報告說，很多人轉述時都漏掉這項。\n我看到這邊整個被點醒。<short pause>\n因為整套系統裡面，只有它是煞車耶。\n其他全部都是油門。",
+   "lint": {
+    "chars": 255,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 13.2,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "我看到這邊整個起雞皮疙瘩。",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

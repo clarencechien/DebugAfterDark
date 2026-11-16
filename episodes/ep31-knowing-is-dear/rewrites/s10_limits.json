@@ -1,0 +1,120 @@
+{
+ "segment": "s10_limits",
+ "position": "第 11 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "cecea594e8253e4b97698258faa1d56fe9fae5fe7d83761ff13bc1ae5896022d",
+ "previous_context": "這條是從 Bandura 的理論推出來的。目前還沒有實驗直接支持啦。",
+ "original": {
+  "text": "這份報告也把限制講明了。第二站的幾個數字，來自不同的後設分析，比較的基準不一樣，不能拿來排名。自我效能的研究看的是同一個人前後的變化，不能直接推到人和人之間。微軟那份是自陳問卷。試飛是一個人做的一次實驗，樣本很小。孫文的部分，是類比。",
+  "lint": {
+   "chars": 117,
+   "precise_numbers": [],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 18.5,
+   "max_sentence_len": 34,
+   "sentences_over_20": 2,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那這些推論穩嗎？其實這份報告自己講得很誠實喔。<short pause> 像第二站的數字是不同研究湊出來的，比較基準不一樣，不能拿來排名。自我效能只看同一個人前後的改變，對，不能隨便套到人和人之間嘛。然後試飛也只是一個人做一次實驗而已。那孫文呢？純粹只是拿來做類比啦。肯把限制講這麼坦白，我覺得滿加分的。<laugh>",
+   "lint": {
+    "chars": 138,
+    "precise_numbers": [],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 8,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 2.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實這份報告自己也把限制講得很清楚。<short pause> 像前面幾個數字來自不同的研究彙整。比較的基準不一樣，不能直接拿來排名啦。那自我效能呢？它只看同一個人前後的改變，沒辦法直接套到別人身上。然後試飛只是一個人做的一次實驗，樣本超級小。至於孫文的部分，就只是個類比喔。<short pause> 作者把這些限制全攤開來，我真的很佩服。",
+   "lint": {
+    "chars": 143,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 16.9,
+    "max_sentence_len": 24,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實這份報告自己也把限制講得很清楚。\n你可能會問，那前面那些數字能信嗎？\n對，前面那些數字的比較基準不同，不能拿來排名。\n自我效能看的是個人前後的變化。\n不能直接推到不同的人身上。\n然後微軟那份是自己填的問卷。\n試飛也只是一個人做的一次實驗。\n樣本超級小。<laugh>\n孫文的部分，純粹只是類比啦。\n我覺得把限制先講清楚，真的蠻誠實的。",
+   "lint": {
+    "chars": 153,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "其實這份報告自己也把限制講得很清楚。你可能會問，那前面那些數字能信嗎？對，前面那些數字的比較基準不同，不能拿來排名。自我效能看的是個人前後的變化。不能直接推到不同的人身上。然後微軟那份是自己填的問卷。試飛也只是一個人做的一次實驗。樣本超級小。<laugh>孫文的部分，純粹只是類比啦。我覺得把限制先講清楚，真的蠻誠實的。",
+   "to": "這份報告也把限制講得很清楚。第二站的幾個數字，來自不同的後設分析，比較的基準不一樣，不能拿來排名。自我效能的研究，看的是同一個人前後的變化，不能直接推到人和人之間。微軟那份是自己填的問卷。試飛只是一個人做的一次實驗，樣本很小。孫文的部分，是類比。",
+   "reason": "刪笑聲與個人反應"
+  }
+ ]
+}

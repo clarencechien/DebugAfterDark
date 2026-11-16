@@ -1,0 +1,132 @@
+{
+ "segment": "s07_sun",
+ "position": "第 8 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2e0341209df3ba32c367140e96c96e18c7a6fb43bf7c6852ebc29eea9d1c00ee",
+ "previous_context": "這份報告說得超貼切。交給 agent 之後，看這件事，就從加分項，變成整條線的產能上限了。",
+ "original": {
+  "text": "這份報告還拿孫文的三期，對照今天交辦 agent 的三種做法，它說是類比，不代表孫文預見了什麼。第一期不知而行：丟一句話就讓它跑，跑完也不知道對不對。第二期行而後知：跑完看結果，把失敗記下來再改，知在失敗清單裡。第三期知而後行：先寫清楚怎樣算對，再讓它跑，知在規格和檢驗裡。孫文還把人分成三種，創造發明的、仿效推行的，和竭力樂成的，書裡第七章的章名就叫不知亦能行。照這個分工，agent 接走的是竭力樂成那一段，留給人的，是前面兩段。",
+  "lint": {
+   "chars": 214,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三",
+    "第七"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 34.7,
+   "max_sentence_len": 45,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "而且這份報告還拿孫文來做類比。<short pause>\n作者有特別強調喔，這純粹是借來比喻，\n不代表孫文預見了什麼。\n這段對照我覺得超傳神。\n他把交辦 agent 的做法分成三種。\n第一種是不知而行，\n丟一句話就讓它跑，\n跑完其實也不知道對不對。\n然後是行而後知，\n跑完看結果，把失敗記下來再改。\n那知而後行呢？\n就是先寫清楚怎樣算對，才讓它跑。\n孫文甚至把人分成三種，\n有一種叫做竭力樂成，\n書裡還有一章就叫不知亦能行。\n你仔細想想，agent 接走的是哪一段？\n不就是這個竭力樂成嗎？\n它負責拼命做，\n留給我們的，其實是前面的規格跟檢驗耶。",
+   "lint": {
+    "chars": 239,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 18.9,
+    "max_sentence_len": 34,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "這份報告甚至拿孫文來比喻。<short pause>\n作者有先說喔，這純粹是個類比，\n不代表孫文預見了什麼啦。\n但他把進化分成三期。\n套在 agent 身上超貼切。\n最原始的做法是不知而行。\n丟一句話就讓它跑，跑完對不對也不知道。\n然後進步一點，叫行而後知。\n跑完看結果，把失敗記下來再改。\n最厲害的做法是知而後行。\n先寫清楚怎樣算對，再讓它跑。\n那你覺得 agent 負責哪一段？\n其實孫文還把人分成三種。\n不知不覺的人，負責努力把事情做完。\n書裡甚至有一章就叫不知亦能行。<laugh>\n對，agent 接走的就是這一段。\n留給我們的，其實是前面的規格跟檢驗嘛。",
+   "lint": {
+    "chars": 242,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 14.1,
+    "max_sentence_len": 26,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實這份報告還拉出孫文來做類比。作者特別強調，這不代表孫文預見了什麼啦。但他拿來對照交辦 agent，真的很貼。第一種叫不知而行。丟一句話就讓它跑，跑完對不對也不知道。然後第二種叫行而後知。跑完看結果，把失敗記下來再改。那最理想的是什麼？<short pause> 就是知而後行。先寫清楚怎樣算對，再放手讓它跑。孫文還把人分成三種，有一種叫竭力樂成。書裡第七章就叫不知亦能行。<laugh> 所以你想想看，agent 接走的是哪一段？其實就是竭力樂成這一段。留給我們人類的，只有前面兩段而已。",
+   "lint": {
+    "chars": 222,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第七"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 13.8,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "書裡第七章就叫不知亦能行。<laugh> 所以",
+   "to": "書裡第七章就叫不知亦能行。所以",
+   "reason": "刪笑聲"
+  },
+  {
+   "from": "<short pause> 就是知而後行。",
+   "to": "<short pause>就是知而後行。",
+   "reason": "空白"
+  }
+ ]
+}

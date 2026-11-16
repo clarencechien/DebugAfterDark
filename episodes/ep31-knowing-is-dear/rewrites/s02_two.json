@@ -1,0 +1,125 @@
+{
+ "segment": "s02_two",
+ "position": "第 3 段，共 12 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a08af254adcd255435ac2e53c1f33d37f21107f76f0688dada21fb9914121f99",
+ "previous_context": "我看到產線這個比喻，覺得超貼切的啦。所以這集就來看，瓶頸現在到底停在哪一站。",
+ "original": {
+  "text": "第一站，兩句話。《尚書》說非知之艱，行之惟艱，知道不難，做到才難，也就是知易行難。一九一八年，孫文把它倒過來，寫了一本書，舉了十件事當證據，像是飲食、用錢、寫文章，論點是人類一向沒弄懂原理就先做了。他寫這本書有很實際的目的：辛亥之後建設推不動，他認為病根是大家覺得知易行難，所以輕知怯行。這份報告說，兩句話看起來相反，講的知其實不一樣：一個是知道該做什麼，一個是懂得為什麼、怎樣做才對。兩句可以同時成立，要分開量。",
+  "lint": {
+   "chars": 207,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 33.5,
+   "max_sentence_len": 57,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "產線第一站，先來看兩句話。\n古人說知易行難。\n意思就是知道不難，做到才難。\n但孫文把它倒過來，說行易知難。\n你猜他為什麼要這樣講？<short pause>\n因為辛亥之後建設計畫推不動嘛。\n大家都覺得太難，結果不敢跨出第一步。\n他舉了吃飯跟用錢當例子。\n人類本來就是還沒弄懂原理，就先做了。\n這份報告說，這兩句話其實沒有衝突。\n重點來了，它們講的知根本不一樣。\n一個是知道該做什麼。\n另一個是懂得背後的原理。\n我看到這邊覺得超有意思的。\n所以兩句話可以同時成立，要分開來量喔。",
+   "lint": {
+    "chars": 211,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 13.1,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "產線的第一站，我們先來看兩句老話。\n古人說知易行難，知道不難，做到才難。\n但孫文在一九一八年把它倒過來，\n說其實是行易知難。\n他舉了吃飯、花錢這種日常小事當證據。\n重點是，人類常常沒搞懂原理就先做了嘛。\n那時候建設計畫推不動。\n大家沒搞懂就不敢做，整個被卡死。\n你猜這兩句話到底差在哪？\n其實這份報告說，兩邊講的知道完全不同。\n一個是知道該做什麼，另一個是搞懂為什麼。\n我看到這邊真的很有共鳴。<short pause>\n所以這兩句話可以同時成立，得拆開來量啦。",
+   "lint": {
+    "chars": 206,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 23,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "我們先來看產線第一站。\n這裡擺了兩句完全相反的話。\n大家平常都聽過知易行難吧？\n知道很容易，要做到超難。\n但孫文在一九一八年把它倒過來。\n他舉了吃飯、花錢跟寫文章當例子，\n說大家根本沒搞懂原理，就先去做了。<laugh>\n你猜他幹嘛要這樣講？\n因為當時建設計畫推不動，大家不敢做嘛。\n重點來了，這份報告說，這兩句其實都成立。\n因為裡面說的知，根本是兩回事。<short pause>\n一個是知道該做卻沒做。\n另一個是沒搞懂不敢做，但做了才會懂。\n我看到這邊覺得這個切入點超聰明的。\n所以這兩道落差，在產線上要分開量喔。",
+   "lint": {
+    "chars": 225,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 32,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "古人說知易行難。",
+   "to": "《尚書》說非知之艱，行之惟艱，也就是知易行難。",
+   "reason": "補出處"
+  },
+  {
+   "from": "我看到這邊覺得超有意思的。",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

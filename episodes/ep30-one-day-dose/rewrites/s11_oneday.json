@@ -1,0 +1,134 @@
+{
+ "segment": "s11_oneday",
+ "position": "第 12 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "79513d7bec6a951ac43001a5250e253016261e990691339fe35f3fd0bf52b66f",
+ "previous_context": "光寫明天要運動，根本動不起來嘛。寫成下班換好衣服、出門走走，大腦才知道該怎麼做，我覺得這招超踏實的耶。",
+ "original": {
+  "text": "回頭看，一天是行銷用語。這份報告說，一天能做的是開機：寫下一個方向，排好明天的第一件事。修好要靠後面每一天的量測和修正，也就是撐過六個月的那些人在做的事。量測這件事也有數字：二〇一六年一份彙整一百三十八篇研究的後設分析發現，更常回頭看自己的進度，能提升目標達成，結果公開或真的寫下來，效果更強。所以這帖藥值得吃一次，前提是吃完之後，把注意力從那一天，移到接下來的三十天。",
+  "lint": {
+   "chars": 185,
+   "precise_numbers": [
+    "一百三十八",
+    "三十"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 36.0,
+   "max_sentence_len": 69,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以回頭看，一天真的能修好人生嗎？\n老實說，這份報告覺得，一天只是行銷用語啦。\n一天真正能做到的，其實只有開機。\n也就是寫好方向，排好明天的第一件事。\n能不能修好，全靠後面每一天的微調耶。\n就像船被風吹偏了，就要隨時拉回來。\n那要怎麼持續？<short pause>\n就是常常檢查進度。\n如果有把成果寫下來，達成率會高非常多喔。\n我覺得這帖藥真的很值得吃一次。\n只是吃完之後，要把力氣留給接下來的三十天。",
+   "lint": {
+    "chars": 179,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "所以回頭來看，一天真的能修好人生嗎？<short pause>\n其實一天只是行銷包裝啦。\n這份報告說，一天能做到的只有開機而已。\n也就是寫下新方向，排好明天的第一件事。\n真正把人生修好的，是後面每天的量測和修正。\n就像船被風吹偏了，你得隨時轉舵修正嘛。\nNorcross 研究裡撐過半年的人，就是醬做。\n二〇一六年有一份分析一百多篇文獻的研究，\n發現常檢查進度、寫下來，目標更容易達成。\n我覺得這帖藥很值得吃一次。<laugh>\n但吃完之後呢？\n你要把注意力，移到接下來的三十天。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [
+     "一百",
+     "三十"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 39,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "回頭來看，一天搞定其實只是行銷話術啦。<short pause>\n這份報告說，一天能做的頂多就是開機。\n幫你寫下方向，排好明天的第一件事。\n但這樣就算修好了嗎？\n當然還沒嘛。\n真的要修好，得靠後面每一天的量測跟修正。\n也就是 Norcross 說的那些撐過半年的人。\n而且這份報告整理了一百多篇研究發現，\n只要更常檢查進度，目標就更容易達成。\n特別是白紙黑字寫下來，效果還會更好喔。\n那這帖藥值不值得吃？\n我覺得很值得試一次啦。<short pause>\n只是吃完之後，記得把心力移到接下來三十天。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [
+     "一百",
+     "三十"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 35,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "所以回頭看，一天真的能修好人生嗎？老實說，這份報告覺得，一天只是行銷用語啦。一天真正能做到的，其實只有開機。也就是寫好方向，排好明天的第一件事。能不能修好，全靠後面每一天的微調耶。就像船被風吹偏了，就要隨時拉回來。那要怎麼持續？<short pause>就是常常檢查進度。如果有把成果寫下來，達成率會高非常多喔。我覺得這帖藥真的很值得吃一次。只是吃完之後，要把力氣留給接下來的三十天。",
+   "to": "所以回頭看，一天真的能修好人生嗎？這份報告說，一天是行銷用語。一天能做到的，是開機：寫下一個方向，排好明天的第一件事。能不能修好，要靠後面每一天的量測和修正，也就是撐過六個月的那些人在做的事。<short pause>量測也有數字：二〇一六年一份彙整一百三十八篇研究的後設分析發現，更常回頭看自己的進度，能提升目標達成，結果寫下來或公開，效果更強。所以這份報告說，這帖藥值得吃一次，前提是吃完之後，把注意力移到接下來的三十天。",
+   "reason": "「達成率會高非常多」改回原文；「我覺得」改為這份報告說"
+  }
+ ]
+}

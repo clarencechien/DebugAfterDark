@@ -1,0 +1,128 @@
+{
+ "segment": "s09_keep1",
+ "position": "第 10 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "6adf7bcee78c518c53b0ecff7ebeecef120210bce5308690e9a2423cb555a7ed",
+ "previous_context": "要是你已經覺得走投無路，還硬要寫到痛。那真的不是推力，只是多一份自責而已啦。",
+ "original": {
+  "text": "那留下來的三樣是什麼？第一，看行為，別看宣稱。早上有一題問：如果有人只看你的行為，完全不聽你說什麼，他會判斷你真正想要什麼？白天的提醒也是同一件事：假設有人錄下你過去兩個小時，他會怎麼看你。這份報告說，這是全文最銳利的工具，也最不需要相信任何理論。寫程式的人應該很熟悉：要知道系統實際在做什麼，看 log 比看 README 可靠。人也一樣，行事曆和螢幕使用時間，比年初寫下的目標誠實。",
+  "lint": {
+   "chars": 189,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 26.0,
+   "max_sentence_len": 38,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以過濾之後，有哪些東西值得留下來？\n第一樣，就是看行為，別看嘴巴說什麼。\n問你喔，如果有人錄下你過去兩個小時，\n而且完全不聽你解釋。\n你覺得他會判斷你真正想要什麼？<short pause>\n這份報告說，這是整篇長文最銳利的工具。\n寫程式的人應該超懂這種感覺吧。\n想知道系統在幹嘛，看 log 比看 README 準。\n其實人也是醬。\n你的行事曆跟螢幕使用時間，\n絕對比年初寫下的目標誠實太多了啦。",
+   "lint": {
+    "chars": 173,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 29,
+    "sentences_over_20": 3,
+    "particles_per_100": 2.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "那過濾完之後，到底留下了什麼？\n其實就三樣。\n第一樣，看行為，不要看宣稱。\n早上有一題問得很直接喔。\n如果有人完全不聽你講話，只看你的動作。\n你覺得他會判斷你真正想要什麼？\n他看到的，可能只是你一直躺在床上滑手機啦。<laugh>\n這份報告說，這是全文最銳利的一個工具。\n你寫程式應該很懂這種感覺。<short pause>\n要知道系統實際上在跑什麼，\n看 log 永遠比看 README 還要可靠。\n人其實也是醬。\n你的行事曆跟螢幕使用時間，\n絕對比年初寫下的新希望誠實多了。",
+   "lint": {
+    "chars": 202,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "所以整套方法拆完，真正能留下來的是什麼？第一樣，看行為，別看宣稱。早上有一題問你，如果有人只看你的行為、完全不聽你說話，他會判斷你真正想要什麼？白天的提醒也是同一件事。假設有人側錄你過去兩小時，他會怎麼看？這份報告說，這招其實最銳利，而且完全不需要相信任何理論。寫程式的人應該超有共鳴吧。<short pause> 想知道系統在做什麼，看 log 永遠比看 README 可靠。其實人也是醬。你的行事曆跟螢幕使用時間，絕對比年初寫下的目標誠實太多了啦。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 19.8,
+    "max_sentence_len": 38,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "他看到的，可能只是你一直躺在床上滑手機啦。<laugh>",
+   "to": "白天的提醒也一樣：假設有人錄下你過去兩個小時，他會怎麼看你。",
+   "reason": "「躺在床上滑手機」是改寫加的；補回原文的白天提醒"
+  },
+  {
+   "from": "人其實也是醬。",
+   "to": "人其實也是這樣。",
+   "reason": "醬改這樣"
+  }
+ ]
+}

@@ -1,0 +1,138 @@
+{
+ "segment": "s08_ambition",
+ "position": "第 9 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b83b39c9ce65831283eb8d7c2a9b9607c53672fbbeeb05367521489256fa1daa",
+ "previous_context": "其實就是竭力樂成這一段。留給我們人類的，只有前面兩段而已。",
+ "original": {
+  "text": "第六站，出貨：野心接在哪裡。第十七集聊過 Felix Rieseberg 那篇怎麼更有野心，他用的詞就是自我效能，可是他舉的例子，漏掉了最強的來源，親身做成過。拿同一把尺量〈一天修好人生〉：身分宣言是別人說你可以，反願景是調動情緒，只有晚上最後一題，排明天的事，才是親身做成。這份報告說，兩篇都把力氣放在比較弱的來源上，這也解釋了它們為什麼讀起來很有感，做起來卻撐不久。用 agent 之後，要累積的紀錄換了內容：以前是我寫得出來，現在是我交代得清楚、給得出條件、驗得出對錯。",
+  "lint": {
+   "chars": 233,
+   "precise_numbers": [
+    "十七"
+   ],
+   "enumerations": [
+    "第六",
+    "第十七"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 45.6,
+   "max_sentence_len": 62,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [
+    "有感"
+   ],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "第六站來到出貨。<short pause>\n野心到底要接在哪裡？\n第十七集聊過 Felix Rieseberg。\n他談野心，其實就是在講自我效能。\n但他漏掉最強的來源，也就是親身做成過。\n拿這把尺去量 Dan Koe，結果超像。\n整套流程大半都在調動情緒。\n只有晚上排明天的事，才算親身做成。\n這份報告說，難怪大家讀了很有共鳴，\n做起來卻撐不久。<laugh>\n這段話聽起來超赤裸。\n因為野心其實是做成紀錄的下游。\n那現在用 agent 之後呢？\n你要累積的紀錄完全換了內容。\n以前是證明自己寫得出來。\n現在是你交代得清楚、驗得出對錯。\n少了這種紀錄，野心再大也沒用。\n長出來的全是裝飾啦。",
+   "lint": {
+    "chars": 252,
+    "precise_numbers": [
+     "十七"
+    ],
+    "enumerations": [
+     "第六",
+     "第十七"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 13.8,
+    "max_sentence_len": 24,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "既然只剩前面兩段，那野心要接在哪裡？第六站是出貨。我們第十七集聊過 Felix Rieseberg。他講的野心，就是 Bandura 說的自我效能。但你知道最強的信心來源是什麼嗎？其實就是親身做成過的紀錄啦。結果他和 Dan Koe 都把力氣放錯地方，大半都在調動情緒跟寫身分宣言。這份報告說，這就解釋了一件事。難怪大家讀完很有共鳴，做起來卻撐不久。<sigh>所以用 agent 之後，要累積的紀錄完全換了。以前是你自己寫得出來，現在是你交代得清楚、給得出條件，而且最後還要驗得出對錯喔。",
+   "lint": {
+    "chars": 230,
+    "precise_numbers": [
+     "十七"
+    ],
+    "enumerations": [
+     "第六",
+     "第十七"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 19.9,
+    "max_sentence_len": 39,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "第六站是出貨，要聊野心接在哪裡。\n第十七集聊過 Felix Rieseberg 談野心。\n他講的野心，就是心理學說的自我效能，\n也就是相信自己做得到。\n但他漏掉最強的來源，親身做成過。\n你覺得 Dan Koe 的流程有比較好嗎？\n其實也很像啦。\n身分宣言跟反願景，都只是在調動情緒。\n只有晚上排明天的事，才是親身做成。\n這份報告說，兩篇都花在比較弱的來源上。\n我讀到這覺得超貼切的，\n難怪你讀完很有共鳴，做起來卻撐不久。<laugh>\n那現在用 agent，野心要接在哪裡？\n其實能算數的做成紀錄，內容早就換了。\n以前是你自己寫得出來。\n現在是你交代得清楚、給得出條件，\n然後還驗得出對錯。\n要是少了這種紀錄，野心再大也沒用，\n長出來的全都是裝飾喔。",
+   "lint": {
+    "chars": 293,
+    "precise_numbers": [
+     "十七"
+    ],
+    "enumerations": [
+     "第六",
+     "第十七"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 18.5,
+    "max_sentence_len": 28,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "<laugh>這段話聽起來超赤裸。因為",
+   "to": "因為",
+   "reason": "刪笑聲與個人反應"
+  }
+ ]
+}

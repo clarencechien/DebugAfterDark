@@ -1,0 +1,129 @@
+{
+ "segment": "s10_keep23",
+ "position": "第 11 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d077f9b0cb696e2a1b6a02c4caab059d5631154d870d927dcaebea40c8337795",
+ "previous_context": "人其實也是醬。你的行事曆跟螢幕使用時間，絕對比年初寫下的新希望誠實多了。",
+ "original": {
+  "text": "第二，反願景可以做，但照研究的版本做：寫完不想要的未來，再寫眼前的現實是什麼樣子，和最可能卡住你的那個障礙。動手之前先誠實問自己，這件事我覺得有機會嗎？覺得沒有，就先把目標縮小到覺得有機會的尺寸。第三，明天的兩三件事，寫成何時、何地、做什麼。這叫執行意圖，二〇〇六年一份彙整了九十四個檢驗的後設分析，效果屬於中到大。明天要運動幫助不大；明天下班到家、換完衣服，就出門走二十分鐘，才是研究裡測過的那種。",
+  "lint": {
+   "chars": 200,
+   "precise_numbers": [
+    "九十四",
+    "二十"
+   ],
+   "enumerations": [
+    "第二",
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 32.3,
+   "max_sentence_len": 53,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "接著是反願景。這份報告說，照研究的版本做比較穩。寫完不想變成的樣子，再補上眼前的現實跟障礙。動手前要問自己什麼？問自己覺得這件事有機會嗎。覺得沒機會，就把目標縮小到有信心的大小。<short pause> 然後，挑出明天要做的兩三件事。這招叫執行意圖，也就是寫清楚何時、何地、做什麼。一份彙整九十四個檢驗的分析發現，它的效果算中等到大。光寫明天要運動，根本動不起來嘛。寫成下班換好衣服、出門走走，大腦才知道該怎麼做，我覺得這招超踏實的耶。",
+   "lint": {
+    "chars": 205,
+    "precise_numbers": [
+     "九十四"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 34,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "第二個能留下來的工具是反願景。<short pause>\n但要照科學研究的版本做喔。\n寫完不想要的未來之後，\n記得補上眼前的現實，\n還有最可能卡住你的障礙。\n動手前先問自己一句，\n這件事你真的覺得有機會嗎？\n答案如果是否定的，\n就把目標縮小到覺得有機會的尺寸嘛。\n然後，挑兩三件明天能做的事，\n寫成何時、何地、要做什麼。\n這在心理學叫做執行意圖。<short pause>\n有一份彙整了九十四個檢驗的研究，\n證實這種寫法的效果算中到大。\n光寫「明天要運動」有用嗎？\n其實幫助真的不大啦。\n你寫「下班回家換完衣服，出門走一走」，\n才是研究裡測過真正有效的那種。",
+   "lint": {
+    "chars": 236,
+    "precise_numbers": [
+     "九十四"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 20.5,
+    "max_sentence_len": 33,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "接著，反願景這招其實可以做。\n不過你要照研究的做法來喔。\n寫完不想要的未來之後，\n接著寫眼前的現實，\n還有最容易卡住你的障礙。\n這時候先問自己一句，你覺得有機會嗎？\n如果答案是沒有，\n先把目標縮小到覺得有機會的尺寸嘛。<short pause>\n然後，最厲害的是下一步。\n把明天的行動，\n寫成在什麼時間、地點、做什麼。\n你覺得只寫「明天要運動」有用嗎？\n其實幫助很小。<laugh>\n要寫成「明天下班換好衣服，\n就出門走二十分鐘」。\n這在研究裡叫執行意圖，\n彙整了幾十個檢驗的大型分析發現，\n這種具體寫法的效果真的非常明顯喔。",
+   "lint": {
+    "chars": 226,
+    "precise_numbers": [
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 19.5,
+    "max_sentence_len": 43,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "大腦才知道該怎麼做，我覺得這招超踏實的耶。",
+   "to": "才是研究裡測過的那種寫法。",
+   "reason": "刪個人反應"
+  }
+ ]
+}

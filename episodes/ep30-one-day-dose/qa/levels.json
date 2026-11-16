@@ -1,0 +1,80 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -22.2,
+  "gain_db": 2.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_what",
+  "lufs_before": -20.4,
+  "gain_db": 0.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_ideas",
+  "lufs_before": -21.6,
+  "gain_db": 1.6,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_day",
+  "lufs_before": -22.3,
+  "gain_db": 2.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_parts",
+  "lufs_before": -22.6,
+  "gain_db": 2.6,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_norcross",
+  "lufs_before": -22.1,
+  "gain_db": 2.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_behavior",
+  "lufs_before": -22.0,
+  "gain_db": 2.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_identity",
+  "lufs_before": -21.6,
+  "gain_db": 1.6,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_antivision",
+  "lufs_before": -19.5,
+  "gain_db": -0.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_keep1",
+  "lufs_before": -22.3,
+  "gain_db": 2.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s10_keep23",
+  "lufs_before": -20.4,
+  "gain_db": 0.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s11_oneday",
+  "lufs_before": -22.3,
+  "gain_db": 2.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s12_outro",
+  "lufs_before": -21.5,
+  "gain_db": 1.5,
+  "lufs_after": -20.0
+ }
+]

@@ -1,0 +1,133 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 12 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "233697756bf63cd726c646da2aa8f7074c62029325c1a407c5941a238851d465",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "國父說的知難行易，我們從小背到大。這份報告的作者去翻了原書，書名叫《孫文學說：行易知難》，他查的全文裡，找不到知難行易這四個字。意思一樣，可是一百年後，這句話突然變成了字面上的意思：AI agent 把做的價格打了下來。第二集我們聊過一次試飛：叫 Claude Code 寫三個小程式，十五次迭代、零次人工介入，跑從來沒有出過問題；十五次，全部花在自動裁判看不見的地方。AI 幫你做完了，你知道它做對了嗎？",
+  "lint": {
+   "chars": 197,
+   "precise_numbers": [
+    "一百",
+    "十五",
+    "十五"
+   ],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 38.4,
+   "max_sentence_len": 71,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "國父說的知難行易，大家從小背到大齁。這份報告的作者去翻原書，裡面根本找不到知難行易這四個字，書名寫的是行易知難。<short pause>一百年後，這句話在 AI 時代成真了。現在交給 agent 寫 code，成本超低。第二集我們聊過 Claude Code 試飛，跑了整整十五次，從頭到尾都沒報錯喔。那你猜問題卡在哪？全卡在自動測試看不到的地方。<laugh>比方說畫面歪了，或是數字算錯了。所以動手做變容易了，最難的反而是，你真的知道它做對了嗎？",
+   "lint": {
+    "chars": 198,
+    "precise_numbers": [
+     "一百",
+     "十五"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 21.0,
+    "max_sentence_len": 37,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "大家從小背到大的知難行易。\n其實根本被我們講反了。<short pause>\n這份報告的作者去翻了孫文的原書。\n查了整本書，找不到知難行易這四個字。\n原來的書名其實叫行易知難。\n一百年後，這句話居然完全變成真的。\n現在有了 AI agent，動手做變得超便宜。\n像我們第二集聊過的那次試飛。\n交給 Claude Code，跑了整整十五次。\n程式跑得很順，一次都沒報錯喔。\n那你猜這十五次到底都在忙什麼？\n全部都在修自動裁判看不出來的錯。\n這真的讓我起雞皮疙瘩。<short pause>\nAI 都幫你做完了，你真的知道它做對了嗎？",
+   "lint": {
+    "chars": 221,
+    "precise_numbers": [
+     "一百",
+     "十五",
+     "十五"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "從小背到大的知難行易，<short pause> 原書其實不是這樣寫的。這份報告的作者去翻原書，書名其實叫行易知難啦。裡面完全找不到知難行易四個字。意思雖然一樣，但一百多年後的今天，這句話突然變成字面上的意思了。現在交給 AI agent 做，執行的成本變超低。第二集我們聊過一次試飛，叫 Claude Code 寫幾個小程式，程式跑起來完全沒報錯。更扯的是，那十五次修改，全部花在自動裁判看不見的地方。你猜卡在哪裡？卡在畫面跟數字對不對嘛。AI 幫你做完了，但你真的知道它做對了嗎？",
+   "lint": {
+    "chars": 221,
+    "precise_numbers": [
+     "一百",
+     "十五"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 21.1,
+    "max_sentence_len": 40,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "國父說的知難行易，大家從小背到大齁。這份報告的作者去翻原書，裡面根本找不到知難行易這四個字，書名寫的是行易知難。<short pause>一百年後，這句話在 AI 時代成真了。現在交給 agent 寫 code，成本超低。第二集我們聊過 Claude Code 試飛，跑了整整十五次，從頭到尾都沒報錯喔。那你猜問題卡在哪？全卡在自動測試看不到的地方。<laugh>比方說畫面歪了，或是數字算錯了。所以動手做變容易了，最難的反而是，你真的知道它做對了嗎？",
+   "to": "國父說的知難行易，大家從小背到大。這份報告的作者去翻了原書，書名寫的是行易知難，他查的全文裡，找不到知難行易這四個字。<short pause>意思一樣，可是一百年後，這句話變成了字面上的意思：AI agent 把做的成本打了下來。第二集我們聊過一次試飛，叫 Claude Code 寫三個小程式，十五次迭代、零次人工介入，跑從頭到尾都沒出過問題。那你猜問題卡在哪？十五次，全部花在自動裁判看不見的地方，像是畫面錯了、數字錯了。AI 幫你做完了，你知道它做對了嗎？",
+   "reason": "標題的問句放回最後一句；補回三個小程式與零次人工介入；刪笑聲"
+  }
+ ]
+}

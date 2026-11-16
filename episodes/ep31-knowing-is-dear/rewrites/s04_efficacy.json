@@ -1,0 +1,124 @@
+{
+ "segment": "s04_efficacy",
+ "position": "第 5 段，共 12 段",
+ "avoid": [
+  "重點來了",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "be936b1b41facb0a00d8df35e1d8ab88f145e01d71198d0ed4dc741d46a9a15e",
+ "previous_context": "所以這份報告判定，古代人講得沒錯。人自己動手的時候，瓶頸真的就在行啦。",
+ "original": {
+  "text": "第三站，量孫文那一半。他說吾心信其可行，則移山填海之難，終有成功之日。心理學家 Bandura 一九七七年替這種信念取了名字，叫自我效能，列了四個來源：親身做成過、看到跟自己相似的人做到、別人說你可以、當下的身體和情緒狀態，最強的是第一個。後來的資料也說，自我效能主要是過去表現的產物：先有做成的紀錄，才有相信自己的本錢。這份報告還有一個讀法：孫文診斷的是大家不相信做得到，開的藥卻是寫一本書去說服大家，照 Bandura 的排序，這是比較弱的那種來源。",
+  "lint": {
+   "chars": 223,
+   "precise_numbers": [],
+   "enumerations": [
+    "第三",
+    "第一"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 43.6,
+   "max_sentence_len": 82,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "第三站，我們來看孫文講的那一半。\n他說人只要相信做得到，最後就會成功。\n心理學家 Bandura 在一九七七年，\n替這種信念取了個名字，叫做自我效能。\n說穿了，就是你相不相信自己做得到啦。\n他列了信心的四個來源。\n你猜最強的是哪一個？\n答案是你自己真的親手做成過。\n後來的研究也發現，\n其實是先有成功的紀錄，\n人才有本錢相信自己。\n所以信念根本是行動的產物嘛。<short pause>\n這份報告說，回頭看孫文其實蠻幽默的。\n他診斷出大家是不相信自己，\n結果開出來的解法是什麼？\n他居然是寫了一本書想說服大家。<laugh>\n但照心理學來看，光用講的力道其實超弱耶。",
+   "lint": {
+    "chars": 245,
+    "precise_numbers": [],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 35,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，那孫文講的另一半呢？\n他說只要心裡相信，移山填海都做得到。\n這到底有沒有根據？\n你猜心理學家怎麼說？\nBandura 在一九七七年把這叫自我效能。\n他列了四個來源，最厲害的是哪一個？\n就是你自己真的親手做成過嘛。\n後來的研究也發現，信心是過去表現的產物。\n你要先有做成的紀錄，才有本錢相信自己啊。\n然後這份報告提出一個超好玩的觀察。<laugh>\n孫文覺得大家不信，所以寫書想說服大家。\n但光靠口頭說服，偏偏是效果最弱的那種耶。",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "好，那孫文講的那一半呢？\n他說只要心裡相信做得到，\n移山填海都能成功。\n心理學家 Bandura 在一九七七年，\n替這種信念取了名字叫自我效能。\n也就是相信自己做得到的那種信心啦。\n他列了四個來源，\n最強的是哪一個？\n其實就是你真的親身做成過。<short pause>\n這份報告說，\n自我效能主要是過去表現的產物。\n你得先有做成的紀錄，\n才有相信自己的本錢。\n然後這份報告還有一個讀法，\n我覺得超級幽默。<laugh>\n孫文覺得大家不相信做得到，\n結果他開出來的解法，\n竟然是寫一本書去說服大家。\n照心理學的排序，\n光用講的其實是力道最弱的那種耶。",
+   "lint": {
+    "chars": 234,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.3,
+    "max_sentence_len": 35,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "然後這份報告提出一個超好玩的觀察。<laugh>",
+   "to": "然後報告作者有一個自己的讀法。",
+   "reason": "刪笑聲；原文標明是作者的讀法"
+  },
+  {
+   "from": "但光靠口頭說服，偏偏是效果最弱的那種耶。",
+   "to": "但照 Bandura 的排序，口頭說服是比較弱的那種來源。",
+   "reason": "「最弱」改回比較弱"
+  }
+ ]
+}

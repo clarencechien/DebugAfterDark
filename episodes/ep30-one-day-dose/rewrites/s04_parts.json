@@ -1,0 +1,113 @@
+{
+ "segment": "s04_parts",
+ "position": "第 5 段，共 13 段",
+ "avoid": [
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d2adc6803e92ecb6cb13017a5c2b100bbaef090b771f1c15021a7528ac1b5fef",
+ "previous_context": "我看到這邊整個起雞皮疙瘩。因為整套系統裡面，只有它是煞車喔。",
+ "original": {
+  "text": "這份報告接著做的事，是幫每個零件找原廠。行為都有目的，來自阿德勒，文章自己也引用了。先改身分、行為就會跟上，來自《原子習慣》，可是 James Clear 的版本是用小行動替新身分投票，順序是行為先。九個自我發展階段，原本是研究用的評估架構，到這裡變成讀者對號入座的地圖。反願景和排明天的事，在心理學裡各有一套研究。報告說，好的科普本來就是重新組裝，這不算缺點；值得注意的是，有些零件裝上去的時候，原廠附的說明書被拿掉了。",
+  "lint": {
+   "chars": 208,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 33.7,
+   "max_sentence_len": 54,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "煞車看完了，這份報告接著做了一件事。<short pause>\n你猜是什麼？\n它跑去幫文章裡的每個零件找原廠。\n其實好的科普本來就是重新組裝啦。\n這完全不是缺點喔。\n但重點來了。\n有些零件裝上去的時候，\n原廠的說明書居然被拿掉了。\n像是文章說先改身分，行為自然跟上。\n但 James Clear 在原子習慣裡明明是說，\n要先用小行動替新身分投票耶。\n順序剛好是行為在前面。\n還有九個自我發展階段，\n原本是研究用的評估架構，\n結果在這裡，\n變成讓讀者對號入座的地圖。<laugh>\n這份報告說，零件本身沒壞，\n問題是組裝時少了原本的說明啦。",
+   "lint": {
+    "chars": 229,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.1,
+    "max_sentence_len": 41,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "煞車講完，這份報告接著做了一件很酷的事。\n它跑去幫文章裡的每個零件找原廠。\n像是拖延是為了保護自己，這來自阿德勒。\n那先改身分行為就會跟上呢？\n你猜是誰的？\n就是 James Clear 的《原子習慣》嘛。\n但他原版是說用行動投票，順序是行為先喔。\n還有那個自我發展階段，原本是研究工具，\n在這裡直接變成讀者對號入座的地圖。\n這份報告說，把知識重新組裝不算缺點。<short pause>\n但重點來了。\n有些零件裝上去時，原廠說明書被拿掉了耶。",
+   "lint": {
+    "chars": 195,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.7,
+    "max_sentence_len": 35,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "這份報告接著做了一件超酷的事。\n就是去幫文章裡的每個零件找原廠。<short pause>\n其實好的科普本來就是重新組裝嘛。\n這份報告說這完全不算缺點喔。\n但重點來了，組裝的時候發生了什麼？\n原廠附的說明書，好像被偷偷拿掉了。<laugh>\n像文章說要先改身分，行為才會跟上。\n這概念來自 James Clear 的《原子習慣》。\n可是原版是說，要用小行動替新身分投票耶。\n所以真實順序，其實是行動走在前面喔。\n還有那個九個自我發展階段。\n原本只是研究用的評估架構。\n在這裡直接變成讓讀者對號入座的地圖。",
+   "lint": {
+    "chars": 217,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.7,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "原廠附的說明書，好像被偷偷拿掉了。<laugh>",
+   "to": "原廠附的說明書，被拿掉了。",
+   "reason": "刪笑聲"
+  }
+ ]
+}

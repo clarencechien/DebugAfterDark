@@ -1,0 +1,111 @@
+{
+ "segment": "s01_recap",
+ "position": "第 2 段，共 12 段",
+ "avoid": [],
+ "recap": "EP30〈一天修好人生？兩億人讀過，只有三樣有效〉：上一集拆了 Dan Koe〈一天修好人生〉：一天只適合開機，撐下去靠行為；先做成一件小事比先改身分有用。這集接著問知道和做到之間的落差，交給 agent 之後變成什麼樣子。",
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "806284c0df9a1b41ba71e3bce1b3f959f25125d39b1e125c88a729d0c5175a9e",
+ "previous_context": "比方說畫面歪了，或是數字算錯了。所以動手做變容易了，最難的反而是，你真的知道它做對了嗎？",
+ "original": {
+  "text": "上一集我們拆了〈一天修好人生〉，結論是一天只適合拿來開機，撐下去靠的是行為：先做成一件小事，比先改身分有用。這集接著問同一個落差：知道和做到之間的那道縫，交給 agent 之後，變成什麼樣子？這份報告把這個問題當成一件貨，送進一條六站的產線：進料、作業、回流、委外、檢驗、出貨，看瓶頸現在停在哪一站。",
+  "lint": {
+   "chars": 148,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 3,
+   "avg_sentence_len": 48.3,
+   "max_sentence_len": 53,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上一集我們拆了〈一天修好人生〉齁。當時說一天只適合開機，撐下去還是要靠具體行為。先做成一件小事，比先改身分有用。那這集要接著看什麼？其實就是把知道跟做到的落差，整包交給 agent，看看最後會變成什麼樣子。<short pause>我看到這份報告的切入點超有共鳴。它把這個落差當成一件貨，送進六站的產線，要看現在瓶頸到底卡在哪裡啦。",
+   "lint": {
+    "chars": 152,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 7,
+    "avg_sentence_len": 20.7,
+    "max_sentence_len": 35,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "上一集我們拆了 Dan Koe 的一天修好人生。那時候發現一天只適合開機，撐下去還是得靠行為。先做成一件小事，其實比先改身分有用多了。這集接著問，知道跟做到的落差交給 agent 會怎樣？你猜瓶頸會消失嗎？<short pause>這份報告把這道落差當成一件貨，直接送進一條六站的產線。我看到這個產線的比喻超佩服的，剛好能看瓶頸現在停在哪裡啦。",
+   "lint": {
+    "chars": 154,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 7,
+    "avg_sentence_len": 21.0,
+    "max_sentence_len": 28,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "上一集我們拆了 Dan Koe 的一天修好人生。結論是一天只適合開機，撐下去要靠行為。先做成一件小事，其實比先改身分有用。那知道跟做到的落差，交給 agent 之後呢？它會變成什麼樣子？答案是行變便宜了。<short pause>這份報告把這個老問題，當成一件貨。送進一條六站的產線來檢查。我看到產線這個比喻，覺得超貼切的啦。所以這集就來看，瓶頸現在到底停在哪一站。",
+   "lint": {
+    "chars": 165,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "我看到產線這個比喻，覺得超貼切的啦。",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

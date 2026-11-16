@@ -1,0 +1,131 @@
+{
+ "segment": "s12_outro",
+ "position": "第 13 段，共 13 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d4c51b52326a8bb6154cb453deec11b688a5ab2687104de968a50c1852f60ca3",
+ "previous_context": "我覺得這帖藥真的很值得吃一次。只是吃完之後，要把力氣留給接下來的三十天。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，新年新希望大多會失敗，但不是八到九成；撐過六個月的人，靠的是行為上的做法，一天的流程只適合拿來啟動。第二，先改身分，不如先做成一件事；反願景只對覺得有機會的人有用。第三，帶走三樣：看行為不看宣稱；反願景加上現實和障礙；明天的事寫成何時、何地、做什麼。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 179,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 24.6,
+   "max_sentence_len": 52,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n聊完這帖藥，其實真的滿有共鳴的。\n那我們到底該怎麼做呢？\n所以整理下來其實只有三件事。\n第一，一天只適合開機，持續修正才是關鍵。\n第二，想改身分嗎？不如先做成一件事啦。\n第三，明天的事要寫好何時、何地、做什麼。\n對，醬子執行起來才不容易迷路喔。<laugh>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 169,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 13.1,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n今天三個帶走的重點，幫大家整理一下。\n第一，一天只適合開機，撐下去要靠每天修正。\n第二，與其想著改變身分，不如先做成一件事。\n第三，把明天要做的事，寫下時間地點跟動作。\n聽完你是不是覺得踏實多了？對，我也是喔。\n其實把生活當成系統維護，感覺真的很棒耶。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 174,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n聊到這裡，這份報告真的很能讓人冷靜下來。\n第一，一天的流程只適合拿來開機。\n想撐過半年，靠的是每天量測跟修正。\n第二，改身分有用嗎？\n其實先做成一件事更實在。\n而且反願景，只對覺得有機會的人有用喔。\n第三，明天要做什麼？\n寫清楚何時何地跟動作，才真的做得出來啦。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 177,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 13.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>聊完這帖藥，其實真的滿有共鳴的。那我們到底該怎麼做呢？所以整理下來其實只有三件事。第一，一天只適合開機，持續修正才是關鍵。第二，想改身分嗎？不如先做成一件事啦。第三，明天的事要寫好何時、何地、做什麼。對，醬子執行起來才不容易迷路喔。<laugh>原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，新年新希望大多會失敗，但不是八到九成；撐過六個月的人，靠的是行為上的做法，一天的流程只適合拿來開機。第二，先改身分，不如先做成一件事；反願景，只對覺得有機會的人有用。第三，帶走三樣：看行為，不看宣稱；反願景加上現實和障礙；明天的事，寫成何時、何地、做什麼。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "breakpoint 改回草稿；刪添加的話與笑聲"
+  }
+ ]
+}

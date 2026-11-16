@@ -1,0 +1,132 @@
+{
+ "segment": "s08_antivision",
+ "position": "第 9 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a6b8c98cfa52bf37966308d5f2d2c896ba5dda6d2a2a8f38efe425ee9c030f97",
+ "previous_context": "光在筆記本寫我是這種人，根本沒用啦。你得先照那種人的方式去做一件事，才算數。",
+ "original": {
+  "text": "最紅的反願景，心理學裡有很接近的研究，是 Oettingen 二十多年的心理對照實驗。她先發現一件反直覺的事：只在腦中描繪美好的未來，會降低後續的努力，大腦像是提前領到了獎賞。有效的做法，是把想要的未來和眼前的現實放在一起想，把卡住你的障礙想清楚。可是研究附了一個條件：你本來就覺得這件事有機會做到。覺得希望渺茫的人，對照之後，承諾和幹勁反而一起下降。這份報告說，文章沒提這個條件；對已經覺得走投無路的人，把失敗人生寫到痛，比較可能只是多了一份自責。",
+  "lint": {
+   "chars": 223,
+   "precise_numbers": [
+    "二十"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 36.2,
+   "max_sentence_len": 48,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說到寫筆記。Dan Koe 最紅的反願景，其實心理學家早就研究過了。Oettingen 做了二十多年的實驗。她發現了一件很反直覺的事喔。只在腦袋裡幻想美好未來，後面的努力反而會變少。因為大腦以為提前領到獎勵，就根本不急著動了。\n\n那要怎樣才會想動？你要把想要的未來，跟眼前的現實障礙放在一起想。拿糟糕的未來跟現在對照，也能逼自己行動。這其實就是反願景嘛。<short pause>\n\n可是重點來了。這招只有在你相信自己做得到的時候才管用。如果本來就覺得希望渺茫呢？對照之後，幹勁反而會直接掉下去。這份報告說，原文完全沒提這個限制。對已經走投無路的人來說，把失敗寫到會痛，比較可能只是多了一份自責而已啦。",
+   "lint": {
+    "chars": 281,
+    "precise_numbers": [
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 35,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "說到行動，原文最紅的概念就是反願景。\n心理學其實有很像的研究喔。\n學者 Oettingen 做過二十多年的實驗。\n她發現一件很反直覺的事。\n光在腦袋幻想美好未來，行動力反而會變差。\n因為大腦會以為，自己已經提前領到獎賞了。<laugh>\n那要怎麼做才有用？\n答案是把想要的未來，跟眼前障礙放在一起想。\n或者把糟糕的未來拿來對照，逼自己動起來。\n這聽起來跟 Dan Koe 的反願景超像，對吧？\n但重點來了，這個做法有一個大前提。\n就是你本來就要覺得，自己有機會做得到。\n如果你本來就覺得希望渺茫呢？\n對照下去，你的幹勁反而會直接崩盤。\n這份報告說，原文完全沒提這個條件。\n要是你已經覺得走投無路，還硬要寫到痛。\n那真的不是推力，只是多一份自責而已啦。<sigh>",
+   "lint": {
+    "chars": 297,
+    "precise_numbers": [
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "說到文章裡最紅的概念，其實就是反願景。\n心理學家 Oettingen 做過二十幾年的研究。\n她發現了一件很反直覺的事喔。\n光在腦中想像美好未來，\n後續的努力反而會變少。\n為什麼會這樣？\n因為大腦以為自己提前領到了獎賞。\n有效的做法，是把理想和現實放在一起想，\n然後把卡住你的障礙想清楚。\nDan Koe 說的反願景，大概就是這樣。\n可是重點來了，這個做法其實有個前提。\n就是你本來就覺得有機會做到。\n要是你早就覺得希望渺茫呢？\n對照之後，幹勁反而會直接掉下去。<short pause>\n這份報告說，原文完全沒提到這個條件。\n這點真的講得太中肯了。\n要是有人已經覺得走投無路，\n硬逼他把失敗寫到會痛，\n其實只是多了一份自責而已啦。<sigh>",
+   "lint": {
+    "chars": 280,
+    "precise_numbers": [
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 17.7,
+    "max_sentence_len": 37,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "說到行動，原文最紅的概念就是反願景。心理學其實有很像的研究喔。學者 Oettingen 做過二十多年的實驗。她發現一件很反直覺的事。光在腦袋幻想美好未來，行動力反而會變差。因為大腦會以為，自己已經提前領到獎賞了。<laugh>那要怎麼做才有用？答案是把想要的未來，跟眼前障礙放在一起想。或者把糟糕的未來拿來對照，逼自己動起來。這聽起來跟 Dan Koe 的反願景超像，對吧？但重點來了，這個做法有一個大前提。就是你本來就要覺得，自己有機會做得到。如果你本來就覺得希望渺茫呢？對照下去，你的幹勁反而會直接崩盤。這份報告說，原文完全沒提這個條件。要是你已經覺得走投無路，還硬要寫到痛。那真的不是推力，只是多一份自責而已啦。<sigh>",
+   "to": "說到最紅的反願景，心理學裡有很接近的研究，是 Oettingen 二十多年的實驗。她先發現一件反直覺的事：光在腦袋裡想像美好的未來，後續的努力反而會變少，大腦像是提前領到了獎賞。有效的做法，是把想要的未來，跟眼前的現實和障礙放在一起想；拿糟糕的未來來對照，也一樣能推人動起來。<short pause>可是研究附了一個前提：你本來就覺得這件事有機會做到。覺得希望渺茫的人，對照之後，承諾和幹勁反而一起下降。這份報告說，原文沒提這個條件；已經覺得走投無路的人，硬要寫到痛，比較可能只是多一份自責。",
+   "reason": "超過 300 字；「幹勁直接崩盤」改回原文；刪笑聲"
+  },
+  {
+   "from": "跟眼前的現實和障礙放在一起想；拿糟糕的未來",
+   "to": "跟眼前的現實和障礙放在一起想。拿糟糕的未來",
+   "reason": "twtone：分號太多"
+  },
+  {
+   "from": "原文沒提這個條件；已經覺得走投無路的人",
+   "to": "原文沒提這個條件。已經覺得走投無路的人",
+   "reason": "twtone：分號太多"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "ep30-one-day-dose",
+ "number": 30,
+ "type": "full",
+ "guid": "debug-after-dark:ep30",
+ "title": "EP30 一天修好人生？兩億人讀過，只有三樣有效",
+ "description": "你今年一月立的新年新希望，還剩幾個？網路說八到九成會失敗，可是一份每兩週打一次電話、追了半年的研究說，四成六的人還撐著。今年一月，〈一天修好人生〉在 X 上被看了兩億多次。這份報告把它當成一帖藥拆開成分表：大部分零件都有更早的原廠，有研究撐腰、值得帶走的只有三樣；最紅的反願景，對覺得走投無路的人可能是反效果。寫明年的計畫之前，先聽這一集。知行筆記上集。\n\n今晚的 breakpoint：\n1. 新年新希望大多會失敗，但不是八到九成；撐過六個月的人靠的是行為上的做法，一天的流程只適合拿來啟動。\n2. 先改身分，不如先做成一件事；反願景只對覺得有機會的人有用。\n3. 帶走三樣：看行為不看宣稱；反願景加上現實和障礙；明天的事寫成何時、何地、做什麼。\n\n原文：〈這帖藥，有效成分三樣：讀 Dan Koe〈一天修好人生〉〉v0.2 https://imitator.ai-apps.work/r/dankoe-one-day\nDan Koe 原文：How to fix your entire life in 1 day（2025-12-23）。研究出處（Norcross、Oettingen、Gollwitzer、Sitzmann & Yeo、Harkin 等）列在原文。\n本集是讀後感與研究整理，不是醫療或心理諮商建議。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "dankoe-one-day",
+ "report_version": "v0.2（2026-11）",
+ "source_url": "https://imitator.ai-apps.work/r/dankoe-one-day",
+ "status": "draft",
+ "related": [],
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "series": "知行筆記 1/2",
+ "audio": {
+  "file": "ep30-one-day-dose.mp3",
+  "bytes": 10246983,
+  "sha256": "3082ad7f43b93aa73ae6662d402ee4ac171c815db762528d03ccad65da803ef7",
+  "duration_s": 640.4,
+  "duration": "10:40",
+  "lufs": -16.9
+ },
+ "qa": {
+  "breeze_cer_mean": 0.026,
+  "gemini_cer_mean": 0.02,
+  "jitter_semitones": 0.226,
+  "gates": "錯誤率 2.6%、音高跳動 0.226 都通過",
+  "retakes": "第一次混音音高跳動 0.240：s03、s04、s05、s06、s08、s11、s12 各補 3 次，每段在音高 ±5 Hz、語速 ±10%、錯誤率接近最佳的版本裡挑最穩的（scratchpad steady_pick）",
+  "both_wrong": "Dan Koe、Oettingen 的拼法；s01「這帖藥」被聽成到底；s10 檢驗／研究",
+  "consistency": "qa/consistency.json：各段音高在中位數 ±4.4 Hz 內、語速在 ±10% 內",
+  "twtone": "qa/twtone.md：分號一開始超過基準，拆句後沒有超過的項目",
+  "terms": "Ping、pong 3 次都判為英文念法"
+ }
+}

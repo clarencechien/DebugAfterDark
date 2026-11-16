@@ -1,0 +1,127 @@
+{
+ "segment": "s05_norcross",
+ "position": "第 6 段，共 13 段",
+ "avoid": [
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "bf9ccc933c0fb02e3b5e351b948050aa9222b5513d81c0ec76af597fd45e6893",
+ "previous_context": "原本只是研究用的評估架構。在這裡直接變成讓讀者對號入座的地圖。",
+ "original": {
+  "text": "先看開頭那句八到九成會失敗。文章說是研究結果，但沒有附出處。心理學家 Norcross 二〇〇二年追蹤了一百五十九位新年立志的人，和一百二十三位也想改變、但打算之後再說的人，每一兩週打一次電話，追了六個月。結果立志的人有百分之四十六一直維持著，沒立志的那組只有百分之四。Norcross 也提醒，研究團隊一直打電話，這本身就會提高維持率，實際數字可能更低。所以大多數人會失敗，大致成立；八到九成，就說得太重了。",
+  "lint": {
+   "chars": 202,
+   "precise_numbers": [
+    "一百五十九",
+    "一百二十三",
+    "百分之四十六一",
+    "百分之四"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 32.7,
+   "max_sentence_len": 70,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "地圖畫得漂亮，那數據到底真的假的？\n像文章開頭就說，新年新希望八九成會失敗。\n他說是研究結果，但根本沒給出處喔。<short pause>\n真的有這麼慘嗎？\n其實心理學家 Norcross 做過這方面的追蹤。\n他找了兩百多個人，連續追蹤了整整半年。\n然後你猜怎樣？\n有立志的人，半年後還有百分之四十六撐著耶。\n雖然研究員一直打電話，數字可能有點灌水啦。\n但要說多數人失敗還可以，八九成就講太重了。",
+   "lint": {
+    "chars": 174,
+    "precise_numbers": [
+     "兩百",
+     "百分之四十六"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "先來看文章開頭說的新年新希望。\n作者說八九成會失敗，而且是研究結果。\n但文章完全沒附出處。\n真的有這麼高嗎？\n心理學家 Norcross 做過追蹤研究。<short pause>\n他找了兩組想改變的人，追蹤了半年。\n一組認真立志，另一組打算之後再說。\n然後研究人員每隔一兩週就打電話關心。\n你猜最後立志的那組，剩下多少人？\n居然還有百分之四十六耶。\n看到這個數字我真的鬆一口氣。\n雖然 Norcross 本人有提醒喔，\n一直被打電話追蹤，維持率本來就會變高。\n所以真實數字可能會再低一點。\n但這份報告說，講八九成真的太誇張了啦。\n大多數人會放棄沒錯，但絕對沒那麼絕望。",
+   "lint": {
+    "chars": 252,
+    "precise_numbers": [
+     "百分之四十六"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 35,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "然後，文章開頭丟了一個超聳動的數字。他說新年新希望有八到九成會失敗。文章說是研究結果，但其實根本沒附出處。<short pause>你猜真正的研究怎麼說？心理學家 Norcross 二十多年前做過追蹤。他找了兩百多人，定期打電話追了半年。結果有立志的人，最後有百分之四十六撐著。沒立志的那組，幾乎全部放棄。不過 Norcross 自己也說喔，常打電話關心，本身就會提高維持率啦。所以現實中撐下來的人，應該會再少一點。但直接說八到九成失敗，真的講太重了。<laugh>",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [
+     "二十",
+     "兩百",
+     "百分之四十六"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 18.0,
+    "max_sentence_len": 33,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "看到這個數字我真的鬆一口氣。",
+   "to": "沒立志的那組，只有百分之四。",
+   "reason": "刪個人反應、補對照組"
+  }
+ ]
+}

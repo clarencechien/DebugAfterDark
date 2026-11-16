@@ -1,0 +1,124 @@
+{
+ "segment": "s09_take",
+ "position": "第 10 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "cd03494900bced7bc26534780f714e5c7a795c16bf08398e7e88f0e8eca55ac7",
+ "previous_context": "少了這種紀錄，野心再大也沒用。長出來的全是裝飾啦。",
+ "original": {
+  "text": "那帶得走的三件事是什麼？第一，自己的事，先做一件小的：把時間地點寫死，做完留下紀錄，我是哪種人，等紀錄累積了再說。第二，交出去的事，先寫怎樣算對：能交給機器檢查的交給機器，檢查不到的列成清單自己看；每一輪的失敗都記下來，這份報告說，那份清單比成品值錢。第三，留一塊自己動手：委託的代價是能力停止發展，哪一塊要保持親手做，自己先選好，別等它悄悄不見。報告作者也說，最後這一條是他從理論和那份問卷推出來的，目前沒有實驗直接支持。",
+  "lint": {
+   "chars": 212,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 41.4,
+   "max_sentence_len": 68,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以，今天能帶走哪三件事？\n第一，自己的事，先做一件小的就好。\n把時間和地點寫死。\n做完就留下紀錄。\n至於自己是哪種人，等紀錄多了再說嘛。\n然後交出去的事，先寫好怎樣算對。\n能交給機器的，就讓機器去驗。\n檢查不到的，列成清單自己看。\n這份報告說，失敗清單比成品還值錢喔。\n我超喜歡這個切入點。<short pause>\n最後，一定要留一塊自己動手。\n為什麼？\n因為全交出去，能力就停止成長了。\n哪一塊要親手做，自己要先選好。\n別等它悄悄不見了。\n作者有說，這是從 Bandura 的理論推出來的。\n目前還沒有實驗直接支持喔。\n野心的本錢，是一筆筆驗得出來的紀錄啦。",
+   "lint": {
+    "chars": 250,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 18,
+    "avg_sentence_len": 12.9,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "所以今天有三件事可以帶走。\n那具體要怎麼做？\n先從自己的一件小事開始。\n把時間地點寫死，做完一定要留下紀錄。\n你是哪種人，等紀錄累積了再說嘛。<short pause>\n然後，交出去的事，先寫好怎樣算對。\n能給機器檢查的，就交給機器。\n剩下的列成清單自己看。\n每次失敗都要記下來喔。\n這份報告說，這張清單其實比成品更值錢。\n這句話我聽了真的超有共鳴。<short pause>\n最後，一定要留一塊自己動手。\n全交給別人，能力就會停止成長。\n選好哪塊要親手做，別等它悄悄消失啦。\n不過報告作者說，這點還沒有實驗支持，\n是他從 Bandura 的理論推出來的。",
+   "lint": {
+    "chars": 235,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 35,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "所以我們能帶走哪三件事？\n第一，自己的事，先做一件最小的。\n把時間地點寫死，做完留下紀錄。\n至於你是哪種人，等紀錄累積了再說嘛。\n然後，交出去的事，先寫清楚怎樣算對。\n能交給機器檢查的，就交給機器。\n檢查不到的，列成清單自己看。\n每一輪的失敗都要記下來。\n這份報告說，那份清單比成品還值錢。\n最後，一定要留一塊給自己親手做。\n為什麼？<short pause>\n因為全部委託出去，能力就會停止發展。\n這點光用想的就覺得很恐怖。\n自己先選好哪一塊，別等它默默不見喔。\n對了，作者也有特別說明。\n這條是從 Bandura 的理論推出來的。\n目前還沒有實驗直接支持啦。",
+   "lint": {
+    "chars": 250,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 13.7,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "這點光用想的就覺得很恐怖。",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

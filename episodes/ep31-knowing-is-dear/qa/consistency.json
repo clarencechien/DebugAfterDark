@@ -1,0 +1,181 @@
+{
+ "limits": {
+  "neighbour_sim": 0.93,
+  "pitch_hz": 6.0,
+  "centroid_hz": 350.0,
+  "lufs_db": 1.0,
+  "seam_hz": 400.0,
+  "pace": 0.1
+ },
+ "segments": [
+  {
+   "id": "s00_open",
+   "start": "0:03",
+   "pitch_hz": 92.3,
+   "centroid_hz": 2427,
+   "lufs": -20.0,
+   "sim_prev": null,
+   "sim_next": 0.972,
+   "sim_episode": 0.986,
+   "seam_hz": null,
+   "chars_per_s": 3.59,
+   "issues": []
+  },
+  {
+   "id": "s01_recap",
+   "start": "0:57",
+   "pitch_hz": 93.8,
+   "centroid_hz": 2163,
+   "lufs": -20.0,
+   "sim_prev": 0.972,
+   "sim_next": 0.952,
+   "sim_episode": 0.985,
+   "seam_hz": 276,
+   "chars_per_s": 4.06,
+   "issues": []
+  },
+  {
+   "id": "s02_two",
+   "start": "1:30",
+   "pitch_hz": 91.3,
+   "centroid_hz": 2216,
+   "lufs": -20.0,
+   "sim_prev": 0.952,
+   "sim_next": 0.953,
+   "sim_episode": 0.98,
+   "seam_hz": 217,
+   "chars_per_s": 4.18,
+   "issues": []
+  },
+  {
+   "id": "s03_intention",
+   "start": "2:16",
+   "pitch_hz": 94.9,
+   "centroid_hz": 2425,
+   "lufs": -20.0,
+   "sim_prev": 0.953,
+   "sim_next": 0.955,
+   "sim_episode": 0.982,
+   "seam_hz": 784,
+   "chars_per_s": 3.73,
+   "issues": [
+    "接縫亮度跳 +784 Hz"
+   ]
+  },
+  {
+   "id": "s04_efficacy",
+   "start": "3:01",
+   "pitch_hz": 98.4,
+   "centroid_hz": 2585,
+   "lufs": -20.0,
+   "sim_prev": 0.955,
+   "sim_next": 0.972,
+   "sim_episode": 0.983,
+   "seam_hz": -431,
+   "chars_per_s": 4.17,
+   "issues": [
+    "接縫亮度跳 -431 Hz"
+   ]
+  },
+  {
+   "id": "s05_proxy",
+   "start": "3:45",
+   "pitch_hz": 93.0,
+   "centroid_hz": 2043,
+   "lufs": -20.0,
+   "sim_prev": 0.972,
+   "sim_next": 0.98,
+   "sim_episode": 0.99,
+   "seam_hz": 1245,
+   "chars_per_s": 4.3,
+   "issues": [
+    "音色偏暗 -360 Hz",
+    "接縫亮度跳 +1245 Hz"
+   ]
+  },
+  {
+   "id": "s06_shift",
+   "start": "4:39",
+   "pitch_hz": 94.9,
+   "centroid_hz": 2428,
+   "lufs": -20.0,
+   "sim_prev": 0.98,
+   "sim_next": 0.978,
+   "sim_episode": 0.986,
+   "seam_hz": 81,
+   "chars_per_s": 4.21,
+   "issues": []
+  },
+  {
+   "id": "s07_sun",
+   "start": "5:30",
+   "pitch_hz": 90.6,
+   "centroid_hz": 2452,
+   "lufs": -20.0,
+   "sim_prev": 0.978,
+   "sim_next": 0.958,
+   "sim_episode": 0.986,
+   "seam_hz": -1236,
+   "chars_per_s": 4.32,
+   "issues": [
+    "接縫亮度跳 -1236 Hz"
+   ]
+  },
+  {
+   "id": "s08_ambition",
+   "start": "6:17",
+   "pitch_hz": 92.3,
+   "centroid_hz": 2294,
+   "lufs": -20.0,
+   "sim_prev": 0.958,
+   "sim_next": 0.972,
+   "sim_episode": 0.985,
+   "seam_hz": 265,
+   "chars_per_s": 3.77,
+   "issues": []
+  },
+  {
+   "id": "s09_take",
+   "start": "7:15",
+   "pitch_hz": 92.7,
+   "centroid_hz": 2380,
+   "lufs": -20.0,
+   "sim_prev": 0.972,
+   "sim_next": 0.958,
+   "sim_episode": 0.985,
+   "seam_hz": -285,
+   "chars_per_s": 3.79,
+   "issues": []
+  },
+  {
+   "id": "s10_limits",
+   "start": "8:11",
+   "pitch_hz": 93.4,
+   "centroid_hz": 2209,
+   "lufs": -20.0,
+   "sim_prev": 0.958,
+   "sim_next": 0.962,
+   "sim_episode": 0.979,
+   "seam_hz": 822,
+   "chars_per_s": 3.8,
+   "issues": [
+    "接縫亮度跳 +822 Hz"
+   ]
+  },
+  {
+   "id": "s11_outro",
+   "start": "8:40",
+   "pitch_hz": 89.2,
+   "centroid_hz": 2511,
+   "lufs": -20.0,
+   "sim_prev": 0.962,
+   "sim_next": null,
+   "sim_episode": 0.987,
+   "seam_hz": -1668,
+   "chars_per_s": 3.54,
+   "issues": [
+    "接縫亮度跳 -1668 Hz"
+   ]
+  }
+ ]
+}

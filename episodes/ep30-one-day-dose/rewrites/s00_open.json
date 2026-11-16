@@ -1,0 +1,111 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 13 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "1f7a41661bc9d013072621dd4f46809270c8960b28600969cdb0f67ac73bf323",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "你今年一月有沒有立過新年新希望？到現在還剩幾個？網路上常說，新年新希望有八到九成會失敗。可是真的有心理學家，每一兩週打一次電話，追蹤了半年：六個月後，還有四成六的人撐著。今年一月，一篇叫〈一天修好人生〉的長文，在 X 上被看了兩億多次。這份報告把它當成一帖藥，拆開成分表來看：大部分零件都有更早的原廠，有研究撐腰、值得帶走的，只有三樣。而且最紅的那一樣，對某些人可能是反效果。年底快到了，寫明年的計畫之前，先聽這一集。",
+  "lint": {
+   "chars": 207,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 24.9,
+   "max_sentence_len": 49,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你今年立的新年新希望，現在還剩幾個？\n網路上常說八到九成會失敗。\n其實沒那麼慘。<short pause>\n有心理學家追蹤了半年發現，\n六個月後，其實還有四成六的人撐著喔。\n今年有篇長文叫〈一天修好人生〉，\n在 X 上居然被看了兩億多遍，超扯的。<laugh>\n我看到這個數字整個嚇一跳。\n這份報告把它當成一帖藥拆開來看，\n真正有研究撐腰的成分，其實只有三樣。\n最紅的那樣，對某些人搞不好還是反效果。\n你猜為什麼？<short pause>\n因為下決心跟撐下去，方法根本不同嘛。\n在寫明年計畫之前，先聽聽看這一集吧。",
+   "lint": {
+    "chars": 210,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 18.1,
+    "max_sentence_len": 33,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   },
+   "round": 0
+  },
+  {
+   "text": "你今年一月立的新年新希望，現在還剩幾個？\n你猜網路上怎麼說？\n大家都在傳，八到九成的人最後都會失敗。\n其實真的有心理學家做過追蹤。<short pause>\n連續半年每兩週打一次電話。\n結果六個月後，還有四成六的人撐著欸。\n所以根本沒有傳得那麼慘嘛。\n然後今年初，有一篇長文在 X 上超級紅。\n標題叫一天修好人生，被看了兩億多次。\n這份報告把這篇文章當成藥方來拆。\n發現真正有研究撐腰的，只有三樣。\n我看到這個結論真的很有共鳴。<laugh>\n年底又要到了對吧？\n在寫明年的計畫之前，先來聽這一集吧。",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 14.4,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "你今年立的新年新希望，現在還剩幾個？\n網路上常說，九成的人最後都會失敗。\n<laugh> 其實真的沒那麼慘啦。\n有心理學家追蹤了半年。\n發現四成六的人，其實都還好好撐著。\n不過今年 X 上有一篇長文，被看了兩億多次。\n標題很狂，說一天就能修好人生。\n這份報告把它當成一帖藥，拆開來看。\n裡面的零件，大部分都有更早的原廠。\n真正有研究撐腰的，其實只有三樣喔。\n我看到分析的時候，真的超有共鳴。\n這套方法很適合開局，想撐下去得靠別的。\n寫明年的計畫之前，先聽聽這帖藥怎麼吃吧。",
+   "lint": {
+    "chars": 214,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "你今年一月立的新年新希望，現在還剩幾個？你猜網路上怎麼說？大家都在傳，八到九成的人最後都會失敗。其實真的有心理學家做過追蹤。<short pause>連續半年每兩週打一次電話。結果六個月後，還有四成六的人撐著欸。所以根本沒有傳得那麼慘嘛。然後今年初，有一篇長文在 X 上超級紅。標題叫一天修好人生，被看了兩億多次。這份報告把這篇文章當成藥方來拆。發現真正有研究撐腰的，只有三樣。我看到這個結論真的很有共鳴。<laugh>年底又要到了對吧？在寫明年的計畫之前，先來聽這一集吧。",
+   "to": "你今年一月立的新年新希望，現在還剩幾個？網路上都在傳，八到九成的人最後會失敗。可是真的有心理學家做過追蹤，連續半年，每一兩週打一次電話。<short pause>六個月後，還有四成六的人撐著。所以沒有傳得那麼慘嘛。今年一月，有一篇叫〈一天修好人生〉的長文，在 X 上被看了兩億多次。這份報告把它當成一帖藥，拆開成分表來看：有研究撐腰、值得帶走的，只有三樣。而且最紅的那一樣，對某些人可能是反效果。年底又要到了，寫明年的計畫之前，先來聽這一集。",
+   "reason": "補回「最紅的那一樣可能是反效果」的懸念；刪個人反應與笑聲"
+  }
+ ]
+}

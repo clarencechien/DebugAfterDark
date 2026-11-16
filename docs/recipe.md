@@ -64,7 +64,7 @@ ct2-transformers-converter --model MediaTek-Research/Breeze-ASR-25 \
 
 | 位置 | 內容 |
 |---|---|
-| 第一段 | **cold open**：一個鉤子直接切進痛點，不打招呼、不自我介紹（固定開場會接在後面） |
+| 第一段 | **cold open**：一個鉤子直接切進痛點，不打招呼、不自我介紹（固定開場會接在後面）。標題和第一段怎麼下鉤子見 [`docs/hooks.md`](hooks.md) |
 | 中間 | 正文，每段一個重點或一個例子 |
 | 最後一段 | **今晚的 breakpoint**：三個帶走的重點，每個一句、只能是前面講過的；接片尾「原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。」 |
 
@@ -207,6 +207,7 @@ Breeze 在 CPU 上轉寫 30 次生成約 20 到 25 分鐘；用 Modal 時整個�
 
 - **`--reuse` 是用檔名對轉寫**：改了稿子重新生成的段落，檔名還是 `take0`～`take2`，會拿到舊稿的轉寫。
   改稿的段落要先刪掉它的 `*.take*.wav`，並把那段從 `select_log.json` 拿掉，再生成、挑選。
+- **整集音高跳動超過 0.23**（EP30、EP31 第一次混音是 0.240、0.249）：挑跳動最高的幾段各補 3 次，`select_takes.py --reuse` 之後跑 `python3 tools/steady_pick.py <ep>`：每段在音高 ±5 Hz、語速 ±10%、錯誤率離最佳 0.02 以內的版本裡挑跳動最低的，寫進 `manual_override`。它會蓋掉之前的手動指定，要重做。`tools/f0.py out/segments/D1_<ep>` 列出每次生成的音高。
 - **音高不在篩選條件裡**：挑完看一下各段選中那次的中位音高，離整集中位數超過 ±6 Hz 就補生成再挑（第 7 步的 `consistency_check.py` 也會標）。
 - **手動指定**：自動挑的那次有問題（例如語速慢兩成），把想要的 take 複製成 `<段>.wav`，在 `select_log.json` 那段改 `chosen`
   並寫 `manual_override` 說明原因。之後再跑 `select_takes.py` 會蓋掉，要重做一次。

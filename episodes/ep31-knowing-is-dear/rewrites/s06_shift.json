@@ -1,0 +1,139 @@
+{
+ "segment": "s06_shift",
+ "position": "第 7 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "921fa4db4f299aef85f23fc9ee0344e448ec345ca65a463741808b90eafd1fad",
+ "previous_context": "雖然這份問卷只能說明相關。但代價早就寫好了，看著滿毛的啦。",
+ "original": {
+  "text": "第五站，檢驗。上一集說，全文最實在的是那個迴圈：設目標、行動、量測、比較、修正。人自己跑這個迴圈，卡在行動；交給 agent 之後，行動的成本掉下來，卡住的地方跟著移動。這就回到第二集的試飛：Claude Code 做三題，十五次迭代、五十分鐘、大約十五萬 token，三題的 console error 都是零，跑從頭到尾沒出問題。十五次迭代全部花在自動裁判看不見的地方，像是畫面錯、數字錯，為了看見這些，還另外寫了大約兩百五十行探針。這份報告說，交給 agent 之後，看，從加分項，變成整條線的產能上限。",
+  "lint": {
+   "chars": 245,
+   "precise_numbers": [
+    "十五",
+    "五十",
+    "十五萬",
+    "十五",
+    "兩百五十"
+   ],
+   "enumerations": [
+    "第五",
+    "第二"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 39.8,
+   "max_sentence_len": 75,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "第五站要來看檢驗。<short pause>\n那個迴圈其實很眼熟。\n就是設目標、行動、量測，\n然後再比較跟修正。\n人自己跑的時候，\n往往都卡在行動。\n但交給 agent 之後呢？\n行動變便宜了，\n塞車的地方立刻跟著換站。\n第二集那個試飛紀錄就是這樣。\n讓 Claude Code 連續跑了十幾次，\n總共花了大概十五萬 token，\n中途完全沒有報錯。\n那到底是在忙什麼？<short pause>\n全都是自動裁判看不見的地方。\n比方說畫面長錯、數字不對。\n為了看懂這些，\n還另外寫了幾百行探針去抓。\n這真的超級扯耶。\n這份報告說，\n把行動交出去之後，\n看這件事就從加分項，\n直接變成整條線的產能上限了啦。",
+   "lint": {
+    "chars": 248,
+    "precise_numbers": [
+     "十五萬",
+     "百"
+    ],
+    "enumerations": [
+     "第五",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 16.7,
+    "max_sentence_len": 42,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，接著來看檢驗這一站喔。那個控制迴圈，其實人自己做都卡在行動啦。但把行動交給 agent 之後呢？卡住的地方就換了。就像第二集聊到的試飛。讓 Claude Code 跑了幾題。整個過程連 console error 都完全沒有。那它幾十次迭代都在忙什麼？全部都在修裁判看不見的毛病。<laugh>比方說畫面歪了，或是數字算錯。更扯的是，光是為了看見這些錯。還另外寫了兩百五十行的探針欸。這份報告說得超貼切。交給 agent 之後，看這件事，就從加分項，變成整條線的產能上限了。",
+   "lint": {
+    "chars": 222,
+    "precise_numbers": [
+     "兩百五十"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 32,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "接著看檢驗這一站。<short pause>\nDan Koe 提過一個控制迴圈，\n從設目標、行動，一路到量測跟修正。\n其實人自己做的時候，\n通常都卡在行動那一步。\n但把行動交給 agent 之後呢？\n行動成本直接掉下來，\n卡住的瓶頸，就跟著換地方了。\n還記得第二集的試飛嗎？\n那時候叫 Claude Code 解題目。\n前前後後總共迭代了十五次。\n跑了快一小時，噴掉超多 token。\n更扯的是，console error 完全沒報錯。\n我光看那個紀錄就覺得不可思議。\n也就是說，跑從頭到尾都沒問題。\n那到底是卡在哪裡？\n全都花在自動檢查看不見的地方，\n像是畫面跑掉，或是數字算錯。\n為了看見這些，\n甚至另外寫了兩百多行探針去測。\n這份報告說得很貼切，\n當你把行動交給 agent，\n看，就從加分項，變成產能上限了啦。",
+   "lint": {
+    "chars": 313,
+    "precise_numbers": [
+     "十五",
+     "兩百"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 18.6,
+    "max_sentence_len": 39,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "好，接著來看檢驗這一站喔。那個控制迴圈，其實人自己做都卡在行動啦。但把行動交給 agent 之後呢？卡住的地方就換了。就像第二集聊到的試飛。讓 Claude Code 跑了幾題。整個過程連 console error 都完全沒有。那它幾十次迭代都在忙什麼？全部都在修裁判看不見的毛病。<laugh>比方說畫面歪了，或是數字算錯。更扯的是，光是為了看見這些錯。還另外寫了兩百五十行的探針欸。這份報告說得超貼切。交給 agent 之後，看這件事，就從加分項，變成整條線的產能上限了。",
+   "to": "好，來到第五站，檢驗。上一集說，全文最實在的是那個迴圈：設目標、行動、量測、比較、修正。人自己跑，卡在行動；把行動交給 agent 之後，卡住的地方就換了。<short pause>就像第二集的試飛：Claude Code 做三題，十五次迭代、五十分鐘、大約十五萬 token，三題的 console error 都是零，跑從頭到尾沒出問題。那十五次迭代在忙什麼？全部在修裁判看不見的毛病，像是畫面錯、數字錯，為了看見這些，還另外寫了大約兩百五十行的探針。這份報告說，交給 agent 之後，看這件事，就從加分項，變成整條線的產能上限。",
+   "reason": "「幾十次迭代」改回十五次、「跑了幾題」改回三題；刪笑聲"
+  }
+ ]
+}

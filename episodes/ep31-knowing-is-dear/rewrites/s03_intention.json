@@ -1,0 +1,142 @@
+{
+ "segment": "s03_intention",
+ "position": "第 4 段，共 12 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "bc4256cf1103a118494ab6f6b2446b5a08daf0c9d7453573f67104bd3f82e39a",
+ "previous_context": "我看到這邊覺得超有意思的。所以兩句話可以同時成立，要分開來量喔。",
+ "original": {
+  "text": "第二站，量《尚書》那一半。心理學把打算做叫意圖，有人彙整過四百二十二篇研究，結論白話說，意圖大約只有一半會變成行動。更直接的是實驗：四十七個成功拉高意圖的實驗，意圖平均提升零點六六個標準差，行為只跟著動了零點三六。把人說服到想做，離做到還有一大段。有兩樣工具被反覆驗證能補上：一是寫成如果怎樣、我就做什麼；二是定期回頭看自己的進度，寫下來效果更強。這份報告的判定是：人自己動手的時候，瓶頸在行。",
+  "lint": {
+   "chars": 197,
+   "precise_numbers": [
+    "四百二十二",
+    "四十七",
+    "零點六六",
+    "零點三六"
+   ],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 31.8,
+   "max_sentence_len": 49,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那我們先來看第二站，量古人說行很難的那一半。其實心理學研究了幾十年，統整了四百多篇研究發現，心裡想做的事，大概只有一半真的會去做。<short pause>那要怎麼補上這一段？你猜有用的是什麼？重點在於把規則寫死。像是寫成如果碰到什麼狀況、我就做什麼。然後定期回去檢查進度，只要白紙黑字寫下來，效果還會更強喔。我看到這結論真的很有共鳴。這份報告說得很清楚，人自己動手的時候，瓶頸真的都在行啦。",
+   "lint": {
+    "chars": 183,
+    "precise_numbers": [
+     "四百"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 19.3,
+    "max_sentence_len": 42,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "第二站先來量《尚書》講的那半句。\n心理學把打算要做的事叫作意圖。\nSheeran 整理了四百二十二篇研究。\n你猜結果怎樣？\n你想做的念頭，大約只有一半會變成行動。\n光是想做跟真的做到，中間差超多的。\n那要怎麼補上這段落差？\n這份報告說有兩招很有用。\n第一招是寫成如果遇到狀況我就做什麼。\n然後是定期看進度，實際寫下來效果更好喔。\n我看到這邊真的很能體會。<short pause>\n人自己動手的時候，瓶頸真的都是卡在行啦。",
+   "lint": {
+    "chars": 186,
+    "precise_numbers": [
+     "四百二十二"
+    ],
+    "enumerations": [
+     "第二",
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 14.5,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "好，我們接著量《尚書》的那半句。\n心理學把打算去做叫做意圖。\n研究發現，意圖大約只有一半會變成行動。\n你應該也遇過吧？\n心裡明明很想動，身體卻動不了。<short pause>\n那到底要怎麼補上這個落差？\n其實有兩招被證實很有效。\n一個是把條件寫死。\n像是如果幾點到了，我就去做。\n然後是定期檢查自己的進度。\n重點來了，實際寫下來的效果更強喔。\n我看到這邊整個被擊中。<short pause>\n所以這份報告判定，古代人講得沒錯。\n人自己動手的時候，瓶頸真的就在行啦。",
+   "lint": {
+    "chars": 195,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 12.9,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "我看到這邊整個被擊中。<short pause>",
+   "to": "<short pause>",
+   "reason": "刪個人反應"
+  },
+  {
+   "from": "所以這份報告判定，古代人講得沒錯。",
+   "to": "所以這份報告判定，《尚書》那半句成立。",
+   "reason": "原文說法"
+  },
+  {
+   "from": "好，我們接著量《尚書》的那半句。",
+   "to": "好，我們接著量知易行難那半句。",
+   "reason": "「尚書」兩套辨識都聽成上述"
+  },
+  {
+   "from": "判定，《尚書》那半句成立。",
+   "to": "判定，知易行難那半句成立。",
+   "reason": "同上"
+  }
+ ]
+}
