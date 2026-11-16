@@ -33,6 +33,8 @@
 | [EP25](episodes/ep25-floor-and-dose/) | 一千萬夠不夠，先問地板有多硬（退休三部曲 基礎＋實戰，2/3，上：EP24） | 定稿；兩份報告合成一集 |
 | [EP26](episodes/ep26-three-pensions/) | 繳了二十八年，家人只領到九萬八（退休三部曲 地板，3/3，上：EP25） | 定稿；Gemini 達花費上限時只跑了 Breeze（2.9%），人耳試聽通過 |
 | [EP27](episodes/ep27-zero-knowledge/) | 我不告訴你，但你會相信（說書：零知識證明） | 定稿；Breeze 3.8%（英文術語），Gemini 1.8% |
+| [EP28](episodes/ep28-same-ledger/) | AI 來了，股市這次不一樣嗎？（說書：Howard Marks） | 定稿 |
+| [EP29](episodes/ep29-same-start/) | 同梯不同命？同一個起點，五年差多少 | 定稿 |
 
 - 一集怎麼做：[`docs/recipe.md`](docs/recipe.md)
 - 選題對照：[`docs/report-candidates.md`](docs/report-candidates.md)（imitator 2026 年的報告，標了已做、推薦、可做、不做）

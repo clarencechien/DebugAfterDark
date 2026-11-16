@@ -5,13 +5,12 @@
 
 2026-11-15：補上 11-12 之後的新報告，以及只用 curl 推、不在 archive 的公開報告（從 `GET /v1/a` 列出）。退休三部曲做成 EP24–EP26，取代原本推薦的租買專題、「1000 萬退休的三種人生」和勞保那篇；selling-out 被同作者改寫成 same-ledger。連結的 slug 一律用連字號（imitator 會把檔名的底線換成連字號）。
 
-共 136 份：已做 33、推薦 10、可做 44、不做 49。
+共 136 份：已做 35、推薦 9、可做 43、不做 49。
 
 ## 推薦的下一批
 
 | 報告 | 為什麼 |
 |---|---|
-| [不一樣的是東西，一樣的是帳 — Howard Marks 的三張當票](https://imitator.ai-apps.work/r/same-ledger) | 財經說書：Howard Marks 在網路股、比特幣、AI 三次判斷，改口的是東西、沒改的是算帳；他自己用了 Claude，也提到台股 10–11 月的跌幅，時機對 |
 | [這帖藥，有效成分三樣 — 讀 Dan Koe〈一天修好人生〉](https://imitator.ai-apps.work/r/dankoe-one-day) | 兩億次瀏覽的自我成長長文拆成分，只有三樣有研究撐腰；標題自帶流量 |
 | [一個指標個案，和一條隔離線 — Qwen3.8 沙箱事件查核報告](https://imitator.ai-apps.work/r/qwen-index-case) | Qwen 沙箱事件查核，AI 安全事件 |
 | [同一句話，換成簡體，答案就翻面](https://imitator.ai-apps.work/r/jevlike-tw-script) | 同一句關於台灣的話，用繁體和簡體問 AI，答案相反；自家部署的模型比論文測的每一家都嚴重。題材敏感，要寫得中性 |
@@ -26,7 +25,7 @@
 
 | 日期 | 報告 | 狀態 | 備註 |
 |---|---|---|---|
-| 2026-11-13 | [不一樣的是東西，一樣的是帳 — Howard Marks 的三張當票](https://imitator.ai-apps.work/r/same-ledger) | **推薦** | 財經說書：Howard Marks 在網路股、比特幣、AI 三次判斷，改口的是東西、沒改的是算帳；他自己用了 Claude，也提到台股 10–11 月的跌幅，時機對 |
+| 2026-11-13 | [不一樣的是東西，一樣的是帳 — Howard Marks 的三張當票](https://imitator.ai-apps.work/r/same-ledger) | **已做** | EP28 |
 | 2026-11-12 | [這帖藥，有效成分三樣 — 讀 Dan Koe〈一天修好人生〉](https://imitator.ai-apps.work/r/dankoe-one-day) | **推薦** | 兩億次瀏覽的自我成長長文拆成分，只有三樣有研究撐腰；標題自帶流量 |
 | 2026-11-12 | [行變便宜了，知還是貴的 — 知行筆記](https://imitator.ai-apps.work/r/knowing-is-dear) | 可做 | 知易行難對行易知難，agent 把「行」變便宜；跟 dankoe-one-day 同一個系列，可接成下集 |
 | 2026-11-12 | [三筆退休金，只有一筆寫著你的名字](https://imitator.ai-apps.work/r/three-pensions-plain) | **已做** | EP26 |
@@ -102,7 +101,7 @@
 | 2026-10-02 | [八成要刪掉 — 2026 下半年 Agent 生存指南](https://imitator.ai-apps.work/r/agent-guide-2026h2) | **已做** | EP11 |
 | 2026-10-02 | [你早就在用 harness 了 — 買哪一層、刻哪一層](https://imitator.ai-apps.work/r/agent-arch-3) | 可做 | 架構系列 3 |
 | 2026-10-02 | [演員登台:從 Actor 模型到 Durable Objects 的五十年](https://imitator.ai-apps.work/r/actor-to-durable-objects-public) | 可做 | 同上 |
-| 2026-10-02 | [同一把尺上，才看得出誰被行情改寫](https://imitator.ai-apps.work/r/0050-salary-five-years) | 可做 | 0050 公司薪資，圖表多、改成聲音吃力 |
+| 2026-10-02 | [同一把尺上，才看得出誰被行情改寫](https://imitator.ai-apps.work/r/0050-salary-five-years) | **已做** | EP29 |
 | 2026-09-17 | [教師版 · EV Charge Ops 七天工作坊竣工紀錄（含 D1–D7 共 8 份）](https://imitator.ai-apps.work/r/ev-charge-ops-teacher) | 不做 | 工作坊教材 |
 | 2026-09-08 | [私架網路裁決備忘 · 設備不是重點，行為才是](https://imitator.ai-apps.work/r/private-lan-verdict) | 不做 | 內部網路備忘 |
 | 2026-09-08 | [國家給保險公司補錢，等於要爆炸嗎？](https://imitator.ai-apps.work/r/japan-insurer-bailout-report-1) | **推薦** | 國家給保險公司補錢等於要爆炸嗎，財經時事 |

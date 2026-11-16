@@ -8,7 +8,7 @@
  "report_slug": "0050-salary-five-years",
  "report_version": "資料至 2026-11-12",
  "source_url": "https://imitator.ai-apps.work/r/0050-salary-five-years",
- "status": "draft",
+ "status": "final",
  "related": [
   "ep28-same-ledger",
   "ep12-tw-stock-autopsy"
@@ -45,5 +45,6 @@
   "consistency": "qa/consistency.json：各段音高在中位數 ±5.5 Hz 內、語速在 ±10% 內",
   "twtone": "qa/twtone.md：沒有超過基準的項目；「行業→產業」是誤判",
   "terms": "Ping、pong 3 次都判為英文念法"
- }
+ },
+ "published": "2026-11-16T08:40:00+08:00"
 }
