@@ -1,0 +1,124 @@
+{
+ "segment": "s02_genre",
+ "position": "第 3 段，共 13 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "09095f78103dc7f18c7c57331ff8c384b60a7f4376ff1073f6dd1638906f20ee",
+ "previous_context": "其實開發者沒證實，這份案卷說參考就好啦。重點來了，AI 讓他花一年多做出來，別人卻只花兩個月，直接整碗端走了。",
+ "original": {
+  "text": "先講這是哪一類遊戲。一九八〇年有一款叫 Rogue 的遊戲：每次進地城，地圖都重新隨機產生，角色死了就從頭來。後來長得像它的，就叫 roguelike；再加上跨局成長、死了也能帶點東西出來的，叫 roguelite，像《Hades》、《殺戮尖塔》。這條線上還有一串拉霸機的遊戲：拉霸加上構築，再到用撲克牌型爆倍率的《Balatro》，去年的 CloverPit 上市一天賣了十萬套。Slotbound 的點子，是讓拉霸連線變成召喚兵種，再接上自動戰鬥和塔防。",
+  "lint": {
+   "chars": 222,
+   "precise_numbers": [
+    "十萬"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 43.4,
+   "max_sentence_len": 66,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那到底是什麼遊戲，會這麼好抄？\n其實要聊到 roguelike 這個類型。\n你有玩過死掉就重來的遊戲嗎？\n四十幾年前有款始祖遊戲叫 Rogue。\n後來關卡隨機、死掉重來的，都算這類。\n如果死了還能帶點東西，就叫 roguelite。\n像是 Hades 或是殺戮尖塔都是。<short pause>\n這條路線後來還長出拉霸機玩法。\n像 Balatro 用撲克牌打倍率就大紅。\n去年的 CloverPit，一天就賣出十萬套。\n那 Slotbound 玩的到底是什麼？\n它是拉霸連線召喚兵種，再打自動塔防。\n我光看那個設計就覺得點子超讚。\n但這種遊戲的精髓，全在數值跟規則裡。\n只要給人玩 Demo，底牌就全被看光了嘛。",
+   "lint": {
+    "chars": 268,
+    "precise_numbers": [
+     "四十",
+     "十萬"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 16.9,
+    "max_sentence_len": 22,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "那到底是什麼遊戲這麼好抄？\n其實這跟它的類型很有關係。<short pause>\n這類遊戲叫 roguelike。\n特點就是關卡隨機、死掉就重來。\n死掉還能留點東西的，叫 roguelite。\n像是殺戮尖塔或 Hades 都是。\n後來這條線還長出了拉霸機玩法。\n前陣子有款恐怖拉霸，一天就賣了十萬套。\n那這款 Slotbound 是玩什麼？\n它把拉霸連線，做成召喚兵種。\n然後再接上自動戰鬥和塔防。\n光聽這個組合，就覺得超吸引人吧？\n對，所以核心機制一旦被看光，\n別人要照著做真的太快了啦。",
+   "lint": {
+    "chars": 213,
+    "precise_numbers": [
+     "十萬"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 26,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "為什麼可以抄這麼快？\n其實跟這款遊戲的類型很有關係。\n這遊戲屬於廣義的 roguelite 類型。\n這名字最早來自老遊戲 Rogue。\n特色是地圖隨機生成，\n角色死掉就要從頭來。\n如果死了能留點東西讓下一局變強，\n這就叫做 roguelite。\n像卡牌神作 Slay the Spire 就是嘛。\n然後這條線還長出了拉霸機玩法喔。\n像是用撲克牌算倍率的 Balatro，\n還有去年的拉霸遊戲 CloverPit，\n上市一天就賣出十萬套耶。<short pause>\n那這款 Slotbound 是怎麼玩的？\n他是把拉霸連線變成召喚士兵，\n後面再去接自動戰鬥跟塔防。\n這種遊戲的精髓都在數值跟規則。\n所以只要放一個能玩的 Demo 出去，\n等於把整套核心直接送給別人啦。<laugh>",
+   "lint": {
+    "chars": 289,
+    "precise_numbers": [
+     "十萬"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 21.2,
+    "max_sentence_len": 48,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "光聽這個組合，就覺得超吸引人吧？",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

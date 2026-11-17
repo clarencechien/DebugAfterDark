@@ -1,0 +1,144 @@
+{
+ "segment": "s13_outro",
+ "position": "第 14 段，共 14 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "真的假的",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "00b206a3a7fa4b15eaf86cdfec2921992c5b53ed3960a4ee7ac1de8d8a650c52",
+ "previous_context": "更妙的是，這份報告查核也用了 Fable 五點二。等於叫模型查自己，聽的時候要算進去喔。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，一句話做一個遊戲是真的，但指令是一句，計費單位是小時：從十六美元到一萬四千多美元，差的是模型跑了多久。第二，這一波的野心幾乎都花在速度上，高度是零；模型測得出有沒有錯，測不出好不好玩。第三，做便宜了，看還是貴的，被認得最貴。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 166,
+   "precise_numbers": [
+    "十六",
+    "一萬四千"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 22.7,
+   "max_sentence_len": 53,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，一句話做遊戲是真的喔。\n但背後要跑好幾小時，做其實變便宜了。\n第二，你覺得模型能測出好不好玩嗎？\n不行，看還是非常貴的。\n第三，最貴的是被玩家認得。\n十萬人等著玩，再強的模型也寫不出來啦。\n光是想到這件事只能靠人，就覺得很佩服耶。<sigh>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 165,
+    "precise_numbers": [
+     "十萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 14.0,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，一句話做遊戲是真的啦。\n但指令雖然只有一句，背後要跑好幾個小時喔。\n第二，模型測得出有沒有錯，測不出好不好玩。\n你問好玩的標準是什麼？\n終究要靠真人花時間玩下去嘛。\n第三，做東西變便宜了，但看還是很貴。\n最貴的，永遠是大家認不認得你。\n光靠下 prompt，可換不到真正的支持者耶。<short pause>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 2.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，做能動的遊戲確實變便宜了。\n對，指令只是一句，差的是背後跑了多久。\n第二，模型能測出錯誤，測不出好不好玩。\n這點你應該也很有共鳴吧？\n第三，東西做出來之後，剩下什麼最貴？\n其實是被大家認得最貴啦。\n這件事沒有任何指令買得到。\n所以說，能驗野心的東西，離能賣還很遠。<sigh>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 181,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 14.1,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>第一，做能動的遊戲確實變便宜了。對，指令只是一句，差的是背後跑了多久。第二，模型能測出錯誤，測不出好不好玩。這點你應該也很有共鳴吧？第三，東西做出來之後，剩下什麼最貴？其實是被大家認得最貴啦。這件事沒有任何指令買得到。所以說，能驗野心的東西，離能賣還很遠。<sigh>原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，一句話做一個遊戲是真的，但指令是一句，計費單位是小時：從十六美元到一萬四千多美元，差的是模型跑了多久。第二，這一波的野心幾乎都花在速度上，高度是零；模型測得出有沒有錯，測不出好不好玩。第三，做，便宜了；看，還是貴的；被認得，最貴。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "breakpoint 改回草稿；刪個人反應"
+  },
+  {
+   "from": "好，今晚的 breakpoint。<short pause>第一，一句話做一個遊戲是真的，但指令是一句，計費單位是小時：從十六美元到一萬四千多美元，差的是模型跑了多久。第二，這一波的野心幾乎都花在速度上，高度是零；模型測得出有沒有錯，測不出好不好玩。第三，做，便宜了；看，還是貴的；被認得，最貴。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，一句話做一個遊戲是真的，但指令是一句，計費單位是小時：從十六美元到一萬四千多美元，差的是模型跑了多久。第二，這一波的野心幾乎都花在速度上，高度是零。模型測得出有沒有錯，測不出好不好玩。第三，做，便宜了。看，還是貴的。被認得，最貴。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "twtone：分號太多，拆句"
+  }
+ ]
+}

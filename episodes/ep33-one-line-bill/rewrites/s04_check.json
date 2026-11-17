@@ -1,0 +1,137 @@
+{
+ "segment": "s04_check",
+ "position": "第 5 段，共 14 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "真的假的",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0786526d64bdbae62b2b2c38886fe0d14572eb308f1425c953f34935b6beab3f",
+ "previous_context": "另一條才是像 Saltline，用 three.js 寫網頁。直接點開就能玩，這兩條路差超多的好嗎。",
+ "original": {
+  "text": "流傳的說法是，這些遊戲只用 three.js，沒有任何 3D 物件。這份報告先把話說準：畫面上的貨櫃和機器狗，還是 3D 模型，只是沒有對應的模型檔，全是遊戲啟動時由程式當場算出來的，這叫程序化生成，是幾十年的老技術。報告的作者把網路上的公開副本抓下來掃了一遍：一個一百四十多萬位元組的 HTML 檔，內嵌圖片零個，沒有任何模型或音效的載入器，貼圖是程式當場畫的，正弦函數出現三百多次。結論是，這句話對 Saltline 成立，只是他看的是轉存的副本，做的是靜態掃描。",
+  "lint": {
+   "chars": 225,
+   "precise_numbers": [
+    "3",
+    "3",
+    "一百四十",
+    "萬",
+    "三百"
+   ],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 55.2,
+   "max_sentence_len": 81,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "對應"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "網路上傳說它沒有 3D 物件，是真的嗎？\n其實這份報告說得很清楚，\n畫面裡當然還是有 3D 模型啦。\n只是它沒有另外存檔案，\n全部都是遊戲啟動時當場算出來的。\n這招叫做程序化生成，\n在繪圖界根本是幾十年的老技術了。\n那大家還是會懷疑啊，\n裡面會不會偷偷藏了圖片？\n所以這份報告的作者，\n直接把公開的 HTML 檔抓來掃一遍。\n結果超乾淨，連一張圖片都沒有。<short pause>\n裡面完全沒有模型載入器，\n貼圖全都是用程式現場畫的，\n光是正弦函數就出現了三百多次。\n看到這裡真的覺得超狂。<laugh>\n所以對 Saltline 來說，這句話確實成立。\n不過作者也特別說明喔，\n他看的是轉存副本，只有做靜態掃描啦。",
+   "lint": {
+    "chars": 263,
+    "precise_numbers": [
+     "3",
+     "3",
+     "三百"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 22.9,
+    "max_sentence_len": 39,
+    "sentences_over_20": 8,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "網路上很多人傳，Saltline 只有用 three.js。\n連一個 3D 物件都沒有。\n這真的有這麼神嗎？<short pause>\n其實這份報告先把話講清楚了。\n畫面裡的機器狗，當然還是 3D 模型啦。\n只是它沒有外部模型檔。\n全部都是網頁打開時，用程式現場算出來的。\n這叫程序化生成，早就是老技術了。\n那檔案裡有沒有偷藏圖片？\n這份報告的作者直接把公開副本抓下來掃。\n整個 HTML 檔大概一點四 MB。\n裡面一張內嵌圖片都沒有。\n也沒有載入外部模型或音效的程式碼。\n連貼圖都是程式當場畫出來的。\n光是正弦函數就出現三百多次。\n作者連這個都去數，我看了超佩服。<laugh>\n所以這個說法對 Saltline 確實成立。\n不過作者也說，他看的是轉存副本。\n而且只有做靜態掃描而已啦。",
+   "lint": {
+    "chars": 295,
+    "precise_numbers": [
+     "3",
+     "3",
+     "一點四",
+     "三百"
+    ],
+    "enumerations": [],
+    "sentences": 19,
+    "avg_sentence_len": 14.5,
+    "max_sentence_len": 27,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "網路上說它完全沒有 3D 物件。\n這是真的嗎？\n其實這份報告說，畫面上還是 3D 模型啦。\n只是它沒有獨立的模型檔。\n全都是遊戲打開時，靠程式當場算出來的。\n這種做法叫程序化生成，早就不是新鮮事了。\n那你會想，程式碼裡真的沒偷藏圖片嗎？\n這份報告的作者，真的去掃描了公開檔案。<short pause>\n整份 HTML 裡面，一張內嵌圖片都沒有。\n檔案裡完全沒有模型或音效的載入器。\n最扯的是，連貼圖都是程式當場畫出來的。\n裡面的正弦函數甚至出現了三百多次。<laugh>\n所以這句話對 Saltline 確實成立。\n不過作者也老實說，他看的是轉存副本。\n而且也只有做靜態掃描而已喔。",
+   "lint": {
+    "chars": 250,
+    "precise_numbers": [
+     "3",
+     "3",
+     "三百"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 15.7,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "裡面的正弦函數甚至出現了三百多次。<laugh>",
+   "to": "裡面的正弦函數甚至出現了三百多次。",
+   "reason": "刪笑聲"
+  }
+ ]
+}

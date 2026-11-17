@@ -1,0 +1,2028 @@
+{
+ "script": "episodes/ep33-one-line-bill/script.json",
+ "asr": "breeze-modal",
+ "asr_model": "modal",
+ "method": "blind STT (breeze-modal + Gemini 3.8 Flash), tone-aware pinyin filter drops exact homophones",
+ "segments": [
+  {
+   "id": "s00_open",
+   "cer_whisper": 0.031,
+   "cer_gemini": 0.019,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 25,
+     "ref_end": 27,
+     "script": "th",
+     "heard": "d",
+     "context": "十一月初an【th】ropic發",
+     "hyp_pos": 25,
+     "by": "whisper",
+     "whisper_heard": "d",
+     "gemini_heard": "—",
+     "episode_time": "0:08"
+    },
+    {
+     "ref_start": 143,
+     "ref_end": 144,
+     "script": "直",
+     "heard": "之",
+     "context": "真的假的最反【直】覺的是指令給",
+     "hyp_pos": 142,
+     "by": "whisper",
+     "whisper_heard": "之",
+     "gemini_heard": "—",
+     "episode_time": "0:39"
+    },
+    {
+     "ref_start": 145,
+     "ref_end": 146,
+     "script": "的",
+     "heard": "得",
+     "context": "假的最反直覺【的】是指令給一句",
+     "hyp_pos": 144,
+     "by": "whisper",
+     "whisper_heard": "得",
+     "gemini_heard": "—",
+     "episode_time": "0:39"
+    }
+   ],
+   "whisper_text": "你最近應該看過一句話就能叫 AI 做遊戲吧11 月初 Andropic 發表新模型一位工程師貼出遊戲說他只下了一句指令中間完全沒有任何回饋喔重點來了你猜模型自己跑了多久它自己連續跑了 8 個小時帳單換算下來大約 550 美元接下來一周社群直接被 100 多件作品洗版所以這份報告想搞清楚這到底是真的假的最反之覺得是指令給一句記費卻用小時算",
+   "whisper_segments": [
+    [
+     0.0,
+     "你最近應該看過一句話就能叫 AI 做遊戲吧"
+    ],
+    [
+     4.84,
+     "11 月初 Andropic 發表新模型"
+    ],
+    [
+     8.88,
+     "一位工程師貼出遊戲"
+    ],
+    [
+     10.56,
+     "說他只下了一句指令"
+    ],
+    [
+     13.04,
+     "中間完全沒有任何回饋喔"
+    ],
+    [
+     16.48,
+     "重點來了"
+    ],
+    [
+     17.64,
+     "你猜模型自己跑了多久"
+    ],
+    [
+     20.32,
+     "它自己連續跑了 8 個小時"
+    ],
+    [
+     23.88,
+     "帳單換算下來大約 550 美元"
+    ],
+    [
+     27.24,
+     "接下來一周"
+    ],
+    [
+     28.56,
+     "社群直接被 100 多件作品洗版"
+    ],
+    [
+     31.72,
+     "所以這份報告想搞清楚"
+    ],
+    [
+     34.0,
+     "這到底是真的假的"
+    ],
+    [
+     36.04,
+     "最反之覺得是指令給一句"
+    ],
+    [
+     38.72,
+     "記費卻用小時算"
+    ]
+   ],
+   "gemini_text": "你最近應該看過一句話就能叫AI做遊戲吧。嗯，十一月初Anthropic發表新模型，一位工程師貼出遊戲，說他只下了一句指令，中間完全沒有任何回饋喔。重點來了。你猜模型自己跑了多久？它自己連續跑了八個小時。唉，帳單換算下來大約五百五十美元。接下來一週，社群直接被一百多件作品洗版。所以這份報告想搞清楚這到底是真的是假的。最反直覺的是指令給一句，計費卻用小時算。"
+  },
+  {
+   "id": "s01_recap",
+   "cer_whisper": 0.037,
+   "cer_gemini": 0.069,
+   "gemini_unclear_marks": 2,
+   "flagged": [
+    {
+     "ref_start": 30,
+     "ref_end": 33,
+     "script": "und",
+     "heard": "mb",
+     "context": "slotbo【und】結果試玩版放",
+     "hyp_pos": 30,
+     "by": "whisper",
+     "whisper_heard": "mb",
+     "gemini_heard": "—",
+     "episode_time": "0:44"
+    },
+    {
+     "ref_start": 44,
+     "ref_end": 45,
+     "script": "就",
+     "heard": "卻",
+     "context": "放出去沒多久【就】被抄去手機上",
+     "hyp_pos": 43,
+     "by": "whisper",
+     "whisper_heard": "卻",
+     "gemini_heard": "—",
+     "episode_time": "0:52"
+    },
+    {
+     "ref_start": 1,
+     "ref_end": 2,
+     "script": "一",
+     "heard": "",
+     "context": "上【一】集我們聊到一",
+     "hyp_pos": 1,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "",
+     "episode_time": "?"
+    },
+    {
+     "ref_start": 117,
+     "ref_end": 122,
+     "script": "fable",
+     "heard": "",
+     "context": "稿其實也用了【fable】五點二喔等於",
+     "hyp_pos": 117,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "",
+     "episode_time": "?"
+    },
+    {
+     "ref_start": 131,
+     "ref_end": 132,
+     "script": "的",
+     "heard": "",
+     "context": "喔等於請當事【的】模型查自己的",
+     "hyp_pos": 126,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "",
+     "episode_time": "?"
+    },
+    {
+     "ref_start": 140,
+     "ref_end": 141,
+     "script": "潮",
+     "heard": "草稿",
+     "context": "查自己的上市【潮】所以我們在聽",
+     "hyp_pos": 134,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "草稿",
+     "episode_time": "?"
+    }
+   ],
+   "whisper_text": "上一集我們聊到一個不會寫程式的人花了 13 個月做出 slot bomb結果試玩版放出去沒多久卻被抄去手機上最後是靠一群認得他的人才把山寨擋下來這集我們要從 13 個月直接跳到一句話不過重點來了你猜這份報告怎麼寫的這份報告的查核跟出稿其實也用了 Fable 5.2等於請當事的模型查自己的上市潮所以我們在聽的時候也要把這件事算進去啦",
+   "whisper_segments": [
+    [
+     0.0,
+     "上一集我們聊到一個不會寫程式的人花了 13 個月做出 slot bomb"
+    ],
+    [
+     5.36,
+     "結果試玩版放出去沒多久"
+    ],
+    [
+     7.44,
+     "卻被抄去手機上"
+    ],
+    [
+     9.08,
+     "最後是靠一群認得他的人才把山寨擋下來"
+    ],
+    [
+     13.08,
+     "這集我們要從 13 個月直接跳到一句話"
+    ],
+    [
+     18.44,
+     "不過重點來了"
+    ],
+    [
+     19.84,
+     "你猜這份報告怎麼寫的"
+    ],
+    [
+     22.04,
+     "這份報告的查核跟出稿其實也用了 Fable 5.2"
+    ],
+    [
+     26.68,
+     "等於請當事的模型"
+    ],
+    [
+     28.84,
+     "查自己的上市潮"
+    ],
+    [
+     30.84,
+     "所以我們在聽的時候也要把這件事算進去啦"
+    ]
+   ],
+   "gemini_text": "上集我們聊到啊，一個不會寫程式的人，花了十三個月做出Slotbound，結果試玩版放出去沒多久，就被抄去手機上，最後是靠一群認得他的人，才把山寨擋下來。這集我們要從十三個月，直接跳到一句話。不過重點來了，你猜這份報告怎麼寫的？這份報告的查核跟初稿，其實也用了［?］五點二喔，等於請當事［?］模型，查自己的上市草稿，所以我們在聽的時候，也要把這件事算進去了。"
+  },
+  {
+   "id": "s02_flood",
+   "cer_whisper": 0.055,
+   "cer_gemini": 0.014,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 114,
+     "ref_end": 115,
+     "script": "i",
+     "heard": "",
+     "context": "felixr【i】eseber",
+     "hyp_pos": 114,
+     "by": "whisper",
+     "whisper_heard": "",
+     "gemini_heard": "—",
+     "episode_time": "1:41"
+    },
+    {
+     "ref_start": 117,
+     "ref_end": 122,
+     "script": "eberg",
+     "heard": "pawn",
+     "context": "ixries【eberg】發表沒幾分鐘",
+     "hyp_pos": 116,
+     "by": "whisper",
+     "whisper_heard": "pawn",
+     "gemini_heard": "—",
+     "episode_time": "1:41"
+    },
+    {
+     "ref_start": 155,
+     "ref_end": 157,
+     "script": "射擊",
+     "heard": "涉及",
+     "context": "饋喔然後他把【射擊】遊戲salt",
+     "hyp_pos": 153,
+     "by": "whisper",
+     "whisper_heard": "涉及",
+     "gemini_heard": "—",
+     "episode_time": "1:51"
+    },
+    {
+     "ref_start": 161,
+     "ref_end": 163,
+     "script": "lt",
+     "heard": "w",
+     "context": "射擊遊戲sa【lt】line單獨",
+     "hyp_pos": 159,
+     "by": "both",
+     "whisper_heard": "w",
+     "gemini_heard": "",
+     "episode_time": "1:51"
+    },
+    {
+     "ref_start": 160,
+     "ref_end": 161,
+     "script": "a",
+     "heard": "ou",
+     "context": "把射擊遊戲s【a】ltline",
+     "hyp_pos": 160,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "ou",
+     "episode_time": "?"
+    }
+   ],
+   "whisper_text": "其實這種洗版的場面今年秋天已經不是第一次看到了9 月初 OpenAI 發表新模型的時候社群上就全是一句話做出來的遊戲有人不到一個小時就弄出一款能玩的結果兩個月後Anthropic 發表新模型同樣的事又來了一次他們自家做產品的 Felix Respawn 發表沒幾分鐘就貼出第一批遊戲業委還註明完全沒有人給過回饋喔然後他把涉及遊戲 saw line 單獨貼出來短短幾天就有 430 萬次觀看你猜接下來發生什麼事隔沒兩天網路上就到處在傳換了名字的中文版了啦",
+   "whisper_segments": [
+    [
+     0.0,
+     "其實這種洗版的場面"
+    ],
+    [
+     3.08,
+     "今年秋天已經不是第一次看到了"
+    ],
+    [
+     6.0,
+     "9 月初 OpenAI 發表新模型的時候"
+    ],
+    [
+     10.04,
+     "社群上就全是一句話做出來的遊戲"
+    ],
+    [
+     13.56,
+     "有人不到一個小時就弄出一款能玩的"
+    ],
+    [
+     16.46,
+     "結果兩個月後"
+    ],
+    [
+     17.84,
+     "Anthropic 發表新模型"
+    ],
+    [
+     19.96,
+     "同樣的事又來了一次"
+    ],
+    [
+     21.92,
+     "他們自家做產品的 Felix Respawn 發表沒幾分鐘就貼出第一批遊戲"
+    ],
+    [
+     28.24,
+     "業委還註明"
+    ],
+    [
+     29.08,
+     "完全沒有人給過回饋喔"
+    ],
+    [
+     32.04,
+     "然後他把涉及遊戲 saw line 單獨貼出來"
+    ],
+    [
+     35.48,
+     "短短幾天就有 430 萬次觀看"
+    ],
+    [
+     38.48,
+     "你猜接下來發生什麼事"
+    ],
+    [
+     40.44,
+     "隔沒兩天網路上就到處在傳換了名字的中文版了啦"
+    ]
+   ],
+   "gemini_text": "其實這種洗版的場面，今年秋天已經不是第一次看到了。九月初，OpenAI發表新模型的時候，社群上就全是一句話做出來的遊戲。有人不到一個小時就弄出一款能玩的。結果兩個月後，Anthropic發表新模型，同樣的事又來了一次。他們自家做產品的Felix Rieseberg，發表沒幾分鐘就貼出第一批遊戲，頁尾還註明，完全沒有人給過回饋喔。然後他把射擊遊戲Soul Line單獨貼出來，短短幾天就有四百三十萬次觀看。你猜接下來發生什麼事？隔沒兩天，網路上就到處在傳換了名字的中文版了啦。"
+  },
+  {
+   "id": "s03_routes",
+   "cer_whisper": 0.045,
+   "cer_gemini": 0.106,
+   "gemini_unclear_marks": 2,
+   "flagged": [
+    {
+     "ref_start": 144,
+     "ref_end": 146,
+     "script": "al",
+     "heard": "of",
+     "context": "一條才是像s【al】tline用",
+     "hyp_pos": 143,
+     "by": "both",
+     "whisper_heard": "of",
+     "gemini_heard": "",
+     "episode_time": "2:36"
+    },
+    {
+     "ref_start": 152,
+     "ref_end": 157,
+     "script": "three",
+     "heard": "三",
+     "context": "tline用【three】js寫網頁直",
+     "hyp_pos": 151,
+     "by": "whisper",
+     "whisper_heard": "三",
+     "gemini_heard": "—",
+     "episode_time": "2:38"
+    },
+    {
+     "ref_start": 22,
+     "ref_end": 23,
+     "script": "支",
+     "heard": "一隻",
+     "context": "來的齁其實那【支】十八秒的短片",
+     "hyp_pos": 22,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "一隻",
+     "episode_time": "?"
+    },
+    {
+     "ref_start": 60,
+     "ref_end": 65,
+     "script": "fable",
+     "heard": "",
+     "context": "帳號的他是讓【fable】寫pytho",
+     "hyp_pos": 61,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "",
+     "episode_time": "?"
+    }
+   ],
+   "whisper_text": "很多人以為這波是官方恐龍影片帶起來的其實那支 18 秒的短片根本不是官方發表的這份報告說那是研究員自己貼在個人帳號的他是讓 Fable 寫 Python 去操控 Blender你以為那可以玩嗎完全不行那只是一支算好的影片而已所以洗版其實分成兩條完全不同的路線一條是把影片算出來像那群恐龍另一條才是像 soft line用 3.js 寫網頁直接點開就能玩這兩條路差超多的好嗎",
+   "whisper_segments": [
+    [
+     0.0,
+     "很多人以為這波是官方恐龍影片帶起來的"
+    ],
+    [
+     4.84,
+     "其實那支 18 秒的短片根本不是官方發表的"
+    ],
+    [
+     9.72,
+     "這份報告說那是研究員自己貼在個人帳號的"
+    ],
+    [
+     14.12,
+     "他是讓 Fable 寫 Python 去操控 Blender"
+    ],
+    [
+     17.76,
+     "你以為那可以玩嗎"
+    ],
+    [
+     19.88,
+     "完全不行"
+    ],
+    [
+     21.2,
+     "那只是一支算好的影片而已"
+    ],
+    [
+     23.76,
+     "所以洗版其實分成兩條完全不同的路線"
+    ],
+    [
+     28.24,
+     "一條是把影片算出來"
+    ],
+    [
+     30.36,
+     "像那群恐龍"
+    ],
+    [
+     31.72,
+     "另一條才是像 soft line"
+    ],
+    [
+     33.64,
+     "用 3.js 寫網頁"
+    ],
+    [
+     35.84,
+     "直接點開就能玩"
+    ],
+    [
+     37.64,
+     "這兩條路差超多的好嗎"
+    ]
+   ],
+   "gemini_text": "很多人以為這波是官方恐龍影片帶起來的哦，其實那一隻十八秒的短片，根本不是官方發表的。這份報告說，那是研究員自己貼在個人帳號的，他是讓［?］寫 Python 去操控 blender。呃，你以為那可以玩嗎？完全不行，那只是一隻算好的影片而已。所以洗版其實分成兩條完全不同的路線，一條是把影片算出來，像那群恐龍；另一條才是像［?］用 three 點 js 寫網頁，直接點開就能玩。這兩條路差超多的好嗎？"
+  },
+  {
+   "id": "s04_check",
+   "cer_whisper": 0.026,
+   "cer_gemini": 0.044,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 187,
+     "ref_end": 188,
+     "script": "a",
+     "heard": "ou",
+     "context": "以這句話對s【a】ltline",
+     "hyp_pos": 187,
+     "by": "whisper",
+     "whisper_heard": "ou",
+     "gemini_heard": "—",
+     "episode_time": "3:30"
+    },
+    {
+     "ref_start": 189,
+     "ref_end": 190,
+     "script": "t",
+     "heard": "",
+     "context": "句話對sal【t】line確實",
+     "hyp_pos": 190,
+     "by": "both",
+     "whisper_heard": "",
+     "gemini_heard": "ds",
+     "episode_time": "3:30"
+    },
+    {
+     "ref_start": 192,
+     "ref_end": 194,
+     "script": "ne",
+     "heard": "ght",
+     "context": "saltli【ne】確實成立不過",
+     "hyp_pos": 192,
+     "by": "both",
+     "whisper_heard": "ght",
+     "gemini_heard": "ds",
+     "episode_time": "3:30"
+    }
+   ],
+   "whisper_text": "網路上說它完全沒有 3D 物件這是真的嗎其實這份報告說畫面上還是 3D 模型啦只是它沒有獨立的模型檔全都是遊戲打開時靠程式當場算出來的這種做法叫程序化生成早就不是新鮮事了那你會想程式碼裡真的沒偷藏圖片嗎這份報告的作者真的去掃描了公開檔案整份 HTML 裡面一張內嵌圖片都沒有檔案裡完全沒有模型或音效的載入器最扯的是連貼圖都是程式當場畫出來的裡面的正弦函數甚至出現了 300 多次所以這句話對 SoulLight 確實成立不過作者也老實說他看的是轉存副本而且也只有做靜態掃描而已喔",
+   "whisper_segments": [
+    [
+     0.0,
+     "網路上說它完全沒有 3D 物件"
+    ],
+    [
+     3.04,
+     "這是真的嗎"
+    ],
+    [
+     4.84,
+     "其實這份報告說畫面上還是 3D 模型啦"
+    ],
+    [
+     8.64,
+     "只是它沒有獨立的模型檔"
+    ],
+    [
+     11.04,
+     "全都是遊戲打開時靠程式當場算出來的"
+    ],
+    [
+     15.76,
+     "這種做法叫程序化生成"
+    ],
+    [
+     18.12,
+     "早就不是新鮮事了"
+    ],
+    [
+     20.36,
+     "那你會想"
+    ],
+    [
+     21.2,
+     "程式碼裡真的沒偷藏圖片嗎"
+    ],
+    [
+     24.2,
+     "這份報告的作者真的去掃描了公開檔案"
+    ],
+    [
+     28.72,
+     "整份 HTML 裡面"
+    ],
+    [
+     30.72,
+     "一張內嵌圖片都沒有"
+    ],
+    [
+     32.92,
+     "檔案裡完全沒有模型或音效的載入器"
+    ],
+    [
+     36.6,
+     "最扯的是"
+    ],
+    [
+     37.88,
+     "連貼圖都是程式當場畫出來的"
+    ],
+    [
+     41.28,
+     "裡面的正弦函數甚至出現了 300 多次"
+    ],
+    [
+     45.16,
+     "所以這句話對 SoulLight 確實成立"
+    ],
+    [
+     47.88,
+     "不過作者也老實說"
+    ],
+    [
+     50.0,
+     "他看的是轉存副本"
+    ],
+    [
+     51.76,
+     "而且也只有做靜態掃描而已喔"
+    ]
+   ],
+   "gemini_text": "網路上說它完全沒有三D物件，這是真的嗎？其實這份報告說，畫面上還是三D模型啦，只是它沒有獨立的模型檔，全都是遊戲打開時，靠程式當場算出來的。這種做法叫程序化生成，早就不是新鮮事了。那你會想，程式碼裡真的沒偷藏圖片嗎？這份報告的作者真的去掃描了公開檔案，欸，整份HTML裡面一張內嵌圖片都沒有，檔案裡完全沒有模型或音效的載入器，最扯的是，連貼圖都是程式當場畫出來的。裡面的正弦函數甚至出現了三百多次，所以這句話對Slow Roads確實成立。不過作者也老實說啊，他看的是轉存副本，而且也只有做靜態掃描而已喔。"
+  },
+  {
+   "id": "s05_ocean",
+   "cer_whisper": 0.025,
+   "cer_gemini": 0.0,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 76,
+     "ref_end": 77,
+     "script": "a",
+     "heard": "o",
+     "context": "就有人用cl【a】udecod",
+     "hyp_pos": 76,
+     "by": "whisper",
+     "whisper_heard": "o",
+     "gemini_heard": "—",
+     "episode_time": "3:56"
+    },
+    {
+     "ref_start": 79,
+     "ref_end": 80,
+     "script": "e",
+     "heard": "",
+     "context": "用claud【e】code算出",
+     "hyp_pos": 79,
+     "by": "whisper",
+     "whisper_heard": "",
+     "gemini_heard": "—",
+     "episode_time": "3:56"
+    },
+    {
+     "ref_start": 93,
+     "ref_end": 94,
+     "script": "一",
+     "heard": "",
+     "context": "片海而且比這【一】次的發表還早",
+     "hyp_pos": 92,
+     "by": "whisper",
+     "whisper_heard": "",
+     "gemini_heard": "—",
+     "episode_time": "3:59"
+    },
+    {
+     "ref_start": 145,
+     "ref_end": 146,
+     "script": "怎",
+     "heard": "這",
+     "context": "成那作者自己【怎】麼寫作者根本",
+     "hyp_pos": 143,
+     "by": "whisper",
+     "whisper_heard": "這",
+     "gemini_heard": "—",
+     "episode_time": "4:12"
+    },
+    {
+     "ref_start": 163,
+     "ref_end": 164,
+     "script": "改",
+     "heard": "蓋",
+     "context": "途還給過回饋【改】雲層這份報告",
+     "hyp_pos": 161,
+     "by": "whisper",
+     "whisper_heard": "蓋",
+     "gemini_heard": "—",
+     "episode_time": "4:17"
+    }
+   ],
+   "whisper_text": "而且其實不是每一款都完全不靠素材同一波裡面有些直接拿現成的步槍模型來用有些是用別的工具生成 3D 跟配樂這種不靠素材的做法也不是這次才有的喔10 月就有人用 cloud code 算出一片海而且比這次的發表還早了三個星期這份報告把轉述報導跟作者的文件拿來對比報導說只花 30 分鐘完全由模型生成那作者自己這麼寫作者根本沒寫時間中途還給過回饋蓋雲層這份報告說得很好作品是真的可是傳出去的話往往比作品簡單太多了啦",
+   "whisper_segments": [
+    [
+     0.0,
+     "而且其實不是每一款都完全不靠素材"
+    ],
+    [
+     3.72,
+     "同一波裡面有些直接拿現成的步槍模型來用"
+    ],
+    [
+     8.4,
+     "有些是用別的工具生成 3D 跟配樂"
+    ],
+    [
+     11.96,
+     "這種不靠素材的做法也不是這次才有的喔"
+    ],
+    [
+     16.28,
+     "10 月就有人用 cloud code 算出一片海"
+    ],
+    [
+     19.88,
+     "而且比這次的發表還早了三個星期"
+    ],
+    [
+     23.4,
+     "這份報告把轉述報導跟作者的文件拿來對比"
+    ],
+    [
+     28.4,
+     "報導說只花 30 分鐘"
+    ],
+    [
+     30.48,
+     "完全由模型生成"
+    ],
+    [
+     32.6,
+     "那作者自己這麼寫"
+    ],
+    [
+     34.72,
+     "作者根本沒寫時間"
+    ],
+    [
+     36.48,
+     "中途還給過回饋"
+    ],
+    [
+     37.92,
+     "蓋雲層"
+    ],
+    [
+     39.56,
+     "這份報告說得很好"
+    ],
+    [
+     41.12,
+     "作品是真的"
+    ],
+    [
+     42.6,
+     "可是傳出去的話往往比作品簡單太多了啦"
+    ]
+   ],
+   "gemini_text": "而且其實不是每一款都完全不靠素材。同一波裡面有些直接拿現成的步槍模型來用，有些是用別的工具生成 3D 跟配樂。這種不靠素材的做法也不是這次才有的喔。十月就有人用 Claude Code 算出一片海，而且比這一次的發表還早了三個星期。這份報告把轉述報導跟作者的文件拿來對比，報導說只花三十分鐘，完全由模型生成，那作者自己怎麼寫？作者根本沒寫時間，中途還給過回饋、改雲層。這份報告說得很好，作品是真的，可是傳出去的話往往比作品簡單太多了啦。"
+  },
+  {
+   "id": "s06_docks",
+   "cer_whisper": 0.026,
+   "cer_gemini": 0.021,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 63,
+     "ref_end": 64,
+     "script": "捏",
+     "heard": "黏",
+     "context": "程式碼它不會【捏】黏土可是很會",
+     "hyp_pos": 63,
+     "by": "whisper",
+     "whisper_heard": "黏",
+     "gemini_heard": "—",
+     "episode_time": "4:44"
+    },
+    {
+     "ref_start": 101,
+     "ref_end": 103,
+     "script": "然後",
+     "heard": "",
+     "context": "跟雨中的反光【然後】玩過的人回報",
+     "hyp_pos": 101,
+     "by": "whisper",
+     "whisper_heard": "",
+     "gemini_heard": "—",
+     "episode_time": "4:56"
+    },
+    {
+     "ref_start": 161,
+     "ref_end": 162,
+     "script": "只",
+     "heard": "這",
+     "context": "說這不是遊戲【只】是技術展示啦",
+     "hyp_pos": 159,
+     "by": "both",
+     "whisper_heard": "這",
+     "gemini_heard": "這",
+     "episode_time": "5:12"
+    }
+   ],
+   "whisper_text": "而且你有沒有注意到這一波做出來的畫面長得都很像全都是下雨的夜晚還有貨櫃碼頭為什麼會這樣這份報告說語言模型的手其實是程式碼它不會黏黏土可是很會寫函式所以它擅長數學和幾何能描述的東西像是貨櫃鋼架跟雨中的反光玩過的人回報的毛病也差不多小物件互相穿插樓梯懸在半空甚至有人一進去滑鼠就直接失控討論區裡有一句評語超酸他說這不是遊戲這是技術展示啊其實那句 prompt 本來也只要求一個小關卡嘛",
+   "whisper_segments": [
+    [
+     0.0,
+     "而且你有沒有注意到"
+    ],
+    [
+     1.8,
+     "這一波做出來的畫面長得都很像"
+    ],
+    [
+     5.36,
+     "全都是下雨的夜晚還有貨櫃碼頭"
+    ],
+    [
+     9.72,
+     "為什麼會這樣"
+    ],
+    [
+     12.4,
+     "這份報告說"
+    ],
+    [
+     13.76,
+     "語言模型的手其實是程式碼"
+    ],
+    [
+     16.6,
+     "它不會黏黏土"
+    ],
+    [
+     18.2,
+     "可是很會寫函式"
+    ],
+    [
+     20.08,
+     "所以它擅長數學和幾何能描述的東西"
+    ],
+    [
+     24.52,
+     "像是貨櫃"
+    ],
+    [
+     26.04,
+     "鋼架跟雨中的反光"
+    ],
+    [
+     29.16,
+     "玩過的人回報的毛病也差不多"
+    ],
+    [
+     32.64,
+     "小物件互相穿插"
+    ],
+    [
+     34.72,
+     "樓梯懸在半空"
+    ],
+    [
+     36.44,
+     "甚至有人一進去滑鼠就直接失控"
+    ],
+    [
+     40.08,
+     "討論區裡有一句評語超酸"
+    ],
+    [
+     42.52,
+     "他說這不是遊戲"
+    ],
+    [
+     44.32,
+     "這是技術展示啊"
+    ],
+    [
+     47.32,
+     "其實那句 prompt 本來也只要求一個小關卡嘛"
+    ]
+   ],
+   "gemini_text": "而且你有沒有注意到，這一波做出來的畫面長得都很像，全都是下雨的夜晚，還有貨櫃碼頭。欸，為什麼會這樣？這份報告說，語言模型的手其實是程式碼，它不會捏黏土，可是很會寫函式，所以它擅長數學和幾何能描述的東西，像是貨櫃、鋼架，跟雨中的反光。然後玩過的人回報的毛病也差不多，小物件互相穿插、樓梯懸在半空，甚至有人一進去滑鼠就直接失控。討論區裡有一句評語超酸，他說「這不是遊戲，這是技術展示啊」。欸，其實那句 prompt 本來也只要求一個小關卡嘛。"
+  },
+  {
+   "id": "s07_bill",
+   "cer_whisper": 0.05,
+   "cer_gemini": 0.04,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 1,
+     "ref_end": 2,
+     "script": "一",
+     "heard": "",
+     "context": "那【一】句話到底要多",
+     "hyp_pos": 1,
+     "by": "both",
+     "whisper_heard": "",
+     "gemini_heard": "這",
+     "episode_time": "5:19"
+    },
+    {
+     "ref_start": 11,
+     "ref_end": 12,
+     "script": "a",
+     "heard": "o",
+     "context": "底要多少錢s【a】ltline",
+     "hyp_pos": 10,
+     "by": "both",
+     "whisper_heard": "o",
+     "gemini_heard": "bo",
+     "episode_time": "5:21"
+    },
+    {
+     "ref_start": 13,
+     "ref_end": 14,
+     "script": "t",
+     "heard": "d",
+     "context": "多少錢sal【t】line大約",
+     "hyp_pos": 12,
+     "by": "whisper",
+     "whisper_heard": "d",
+     "gemini_heard": "—",
+     "episode_time": "5:21"
+    },
+    {
+     "ref_start": 60,
+     "ref_end": 61,
+     "script": "千",
+     "heard": "零零零",
+     "context": "的卻有四億四【千】多萬差了一百",
+     "hyp_pos": 59,
+     "by": "whisper",
+     "whisper_heard": "零零零",
+     "gemini_heard": "—",
+     "episode_time": "5:29"
+    },
+    {
+     "ref_start": 142,
+     "ref_end": 143,
+     "script": "千",
+     "heard": "",
+     "context": "不走快取要三【千】六百多美元把",
+     "hyp_pos": 143,
+     "by": "whisper",
+     "whisper_heard": "",
+     "gemini_heard": "—",
+     "episode_time": "5:54"
+    },
+    {
+     "ref_start": 144,
+     "ref_end": 145,
+     "script": "百",
+     "heard": "零零",
+     "context": "快取要三千六【百】多美元把查得",
+     "hyp_pos": 144,
+     "by": "whisper",
+     "whisper_heard": "零零",
+     "gemini_heard": "—",
+     "episode_time": "5:54"
+    },
+    {
+     "ref_start": 130,
+     "ref_end": 131,
+     "script": "十",
+     "heard": "",
+     "context": "的部分壓到四【十】分之一完全不",
+     "hyp_pos": 132,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "",
+     "episode_time": "?"
+    }
+   ],
+   "whisper_text": "那句話到底要多少錢Sold Line 大約 550 美元有意思的是結構模型寫出來的只有 270 萬 token讀進去的卻有 4 億 4000 多萬差了 160 多倍因為它每動一步就要把前面的工作重讀一遍改一點跑一下看結果八個小時都在轉這個迴圈帳單沒有爆掉是靠快取把重複讀的部分壓到四十分之一完全不走快取要 3600 多美元把查得到的帳單排在一起有人照做 41 分鐘 16 美元也有人跑了快兩天 14000 多美元同樣教一句話做遊戲差了 900 多倍",
+   "whisper_segments": [
+    [
+     0.0,
+     "那句話到底要多少錢"
+    ],
+    [
+     2.88,
+     "Sold Line 大約 550 美元"
+    ],
+    [
+     5.84,
+     "有意思的是結構"
+    ],
+    [
+     7.68,
+     "模型寫出來的只有 270 萬 token"
+    ],
+    [
+     10.8,
+     "讀進去的卻有 4 億 4000 多萬"
+    ],
+    [
+     13.88,
+     "差了 160 多倍"
+    ],
+    [
+     16.08,
+     "因為它每動一步"
+    ],
+    [
+     17.52,
+     "就要把前面的工作重讀一遍"
+    ],
+    [
+     20.52,
+     "改一點"
+    ],
+    [
+     21.6,
+     "跑一下"
+    ],
+    [
+     22.64,
+     "看結果"
+    ],
+    [
+     24.1,
+     "八個小時都在轉這個迴圈"
+    ],
+    [
+     27.0,
+     "帳單沒有爆掉"
+    ],
+    [
+     28.44,
+     "是靠快取"
+    ],
+    [
+     29.6,
+     "把重複讀的部分壓到四十分之一"
+    ],
+    [
+     33.48,
+     "完全不走快取"
+    ],
+    [
+     34.96,
+     "要 3600 多美元"
+    ],
+    [
+     37.64,
+     "把查得到的帳單排在一起"
+    ],
+    [
+     39.96,
+     "有人照做 41 分鐘 16 美元"
+    ],
+    [
+     43.4,
+     "也有人跑了快兩天"
+    ],
+    [
+     45.04,
+     " 14000 多美元"
+    ],
+    [
+     46.72,
+     "同樣教一句話做遊戲"
+    ],
+    [
+     48.52,
+     "差了 900 多倍"
+    ]
+   ],
+   "gemini_text": "那這句話到底要多少錢 bottom line 大約五百五十美元 有意思的是結構 模型寫出來的只有兩百七十萬 token 讀進去的卻有四億四千多萬 差了一百六十多倍 因為它每動一步 就要把前面的工作重讀一遍 改一點 跑一下 看結果 八個小時都在轉這個迴圈 帳單沒有爆掉 是靠快取 把重複讀的部分壓到四分之一 完全不走快取 要三千六百多美元 把查得到的帳單排在一起 有人照做 四十一分鐘 十六美元 也有人跑了快兩天 一萬四千多美元 同樣教一句話做遊戲 差了九百多倍"
+  },
+  {
+   "id": "s08_ambition",
+   "cer_whisper": 0.054,
+   "cer_gemini": 0.064,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 11,
+     "ref_end": 13,
+     "script": "ne",
+     "heard": "ght",
+     "context": "saltli【ne】的felix",
+     "hyp_pos": 11,
+     "by": "both",
+     "whisper_heard": "ght",
+     "gemini_heard": "ght",
+     "episode_time": "6:09"
+    },
+    {
+     "ref_start": 21,
+     "ref_end": 22,
+     "script": "e",
+     "heard": "",
+     "context": "elixri【e】seberg",
+     "hyp_pos": 22,
+     "by": "whisper",
+     "whisper_heard": "",
+     "gemini_heard": "—",
+     "episode_time": "6:09"
+    },
+    {
+     "ref_start": 23,
+     "ref_end": 24,
+     "script": "e",
+     "heard": "",
+     "context": "ixries【e】berg就是",
+     "hyp_pos": 23,
+     "by": "whisper",
+     "whisper_heard": "",
+     "gemini_heard": "—",
+     "episode_time": "6:09"
+    },
+    {
+     "ref_start": 57,
+     "ref_end": 58,
+     "script": "尺",
+     "heard": "詞",
+     "context": "告拿他自己的【尺】量他自己的作",
+     "hyp_pos": 56,
+     "by": "whisper",
+     "whisper_heard": "詞",
+     "gemini_heard": "—",
+     "episode_time": "6:17"
+    },
+    {
+     "ref_start": 87,
+     "ref_end": 89,
+     "script": "ne",
+     "heard": "ght",
+     "context": "saltli【ne】的速度有而且",
+     "hyp_pos": 86,
+     "by": "both",
+     "whisper_heard": "ght",
+     "gemini_heard": "ght",
+     "episode_time": "6:27"
+    },
+    {
+     "ref_start": 116,
+     "ref_end": 117,
+     "script": "招",
+     "heard": "遭",
+     "context": "小時深度有一【招】要求三a等級",
+     "hyp_pos": 116,
+     "by": "whisper",
+     "whisper_heard": "遭",
+     "gemini_heard": "—",
+     "episode_time": "6:34"
+    },
+    {
+     "ref_start": 6,
+     "ref_end": 8,
+     "script": "al",
+     "heard": "ou",
+     "context": "巧的是做出s【al】tline的",
+     "hyp_pos": 6,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "ou",
+     "episode_time": "?"
+    },
+    {
+     "ref_start": 82,
+     "ref_end": 84,
+     "script": "al",
+     "heard": "ou",
+     "context": "度深度廣度s【al】tline的",
+     "hyp_pos": 85,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "ou",
+     "episode_time": "?"
+    }
+   ],
+   "whisper_text": "巧的是 作出 salt light 的 Felix Risberg就是我們第一集聊過那篇怎麼更有野心的作者這份報告拿他自己的詞量他自己的作品他把野心分成四種速度高度深度廣度salt light 的速度有而且是主體一個小關卡從幾個月縮到 8 小時深度有一遭要求 3A 等級的寫實畫面廣度沾到一點高度是 0沒有人問這款遊戲要給誰玩為什麼要有它做完就結束了那怎麼判斷有沒有高度他自己的方法是你會不會為這件事開會沒有人會為一個技術展示開會",
+   "whisper_segments": [
+    [
+     0.0,
+     "巧的是 作出 salt light 的 Felix Risberg"
+    ],
+    [
+     3.72,
+     "就是我們第一集聊過那篇怎麼更有野心的作者"
+    ],
+    [
+     8.12,
+     "這份報告拿他自己的詞"
+    ],
+    [
+     10.08,
+     "量他自己的作品"
+    ],
+    [
+     11.84,
+     "他把野心分成四種"
+    ],
+    [
+     13.88,
+     "速度"
+    ],
+    [
+     14.84,
+     "高度"
+    ],
+    [
+     15.76,
+     "深度"
+    ],
+    [
+     16.6,
+     "廣度"
+    ],
+    [
+     17.92,
+     "salt light 的速度有"
+    ],
+    [
+     20.4,
+     "而且是主體"
+    ],
+    [
+     21.64,
+     "一個小關卡從幾個月縮到 8 小時"
+    ],
+    [
+     24.76,
+     "深度有一遭要求 3A 等級的寫實畫面"
+    ],
+    [
+     29.24,
+     "廣度沾到一點"
+    ],
+    [
+     31.24,
+     "高度是 0"
+    ],
+    [
+     32.48,
+     "沒有人問這款遊戲要給誰玩"
+    ],
+    [
+     35.2,
+     "為什麼要有它"
+    ],
+    [
+     36.6,
+     "做完就結束了"
+    ],
+    [
+     38.2,
+     "那怎麼判斷有沒有高度"
+    ],
+    [
+     40.44,
+     "他自己的方法是"
+    ],
+    [
+     42.16,
+     "你會不會為這件事開會"
+    ],
+    [
+     44.44,
+     "沒有人會為一個技術展示開會"
+    ]
+   ],
+   "gemini_text": "巧的是做出Southlight的Felix Rieseberg，就是我們第一集聊過那篇怎麼更有野心的作者。這份報告拿他自己的尺，量他自己的作品。他把野心分成四種：速度、高度、深度、廣度。嗯，Southlight的速度有，而且是主體，一個小關卡從幾個月縮到八小時；深度有一招，要求三A等級的寫實畫面；廣度沾到一點；高度是零。沒有人問這款遊戲要給誰玩、為什麼要有它，做完就結束了。那怎麼判斷有沒有高度？他自己的方法是，你會不會為這件事開會？沒有人會為一個技術展示開會。"
+  },
+  {
+   "id": "s09_judge",
+   "cer_whisper": 0.011,
+   "cer_gemini": 0.021,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 126,
+     "ref_end": 127,
+     "script": "包",
+     "heard": "爆",
+     "context": "分鐘馬上就抓【包】了更扯的是有",
+     "hyp_pos": 126,
+     "by": "whisper",
+     "whisper_heard": "爆",
+     "gemini_heard": "—",
+     "episode_time": "7:23"
+    },
+    {
+     "ref_start": 4,
+     "ref_end": 5,
+     "script": "集",
+     "heard": "季",
+     "context": "其實第一【集】講過的第五招",
+     "hyp_pos": 4,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "季",
+     "episode_time": "?"
+    },
+    {
+     "ref_start": 174,
+     "ref_end": 175,
+     "script": "集",
+     "heard": "季",
+     "context": "很好就像第二【集】的標題跑從來",
+     "hyp_pos": 174,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "季",
+     "episode_time": "?"
+    }
+   ],
+   "whisper_text": "其實第一集講過的第五招很有意思他說不要讓模型給自己打分數這一波大家做法進步很多模型會自己開瀏覽器截圖讀錯誤訊息甚至還會找別的評審代理來看圖可是這樣就真的沒問題了嗎當然不是嘛截圖根本看不出滑鼠會不會失控也看不出樓梯是不是懸在半空中你進去玩個半分鐘馬上就抓爆了更扯的是有作者老實承認了一件事裡面的 14 個音效從頭到尾沒人聽過耶所以這份報告說得很好就像第二集的標題跑從來不是問題看才是",
+   "whisper_segments": [
+    [
+     0.0,
+     "其實第一集講過的第五招很有意思"
+    ],
+    [
+     3.12,
+     "他說不要讓模型給自己打分數"
+    ],
+    [
+     6.0,
+     "這一波大家做法進步很多"
+    ],
+    [
+     8.08,
+     "模型會自己開瀏覽器"
+    ],
+    [
+     9.92,
+     "截圖"
+    ],
+    [
+     10.84,
+     "讀錯誤訊息"
+    ],
+    [
+     12.4,
+     "甚至還會找別的評審代理來看圖"
+    ],
+    [
+     15.28,
+     "可是這樣就真的沒問題了嗎"
+    ],
+    [
+     18.36,
+     "當然不是嘛"
+    ],
+    [
+     20.28,
+     "截圖根本看不出滑鼠會不會失控"
+    ],
+    [
+     23.16,
+     "也看不出樓梯是不是懸在半空中"
+    ],
+    [
+     25.88,
+     "你進去玩個半分鐘馬上就抓爆了"
+    ],
+    [
+     28.8,
+     "更扯的是"
+    ],
+    [
+     29.84,
+     "有作者老實承認了一件事"
+    ],
+    [
+     32.16,
+     "裡面的 14 個音效從頭到尾沒人聽過耶"
+    ],
+    [
+     36.16,
+     "所以這份報告說得很好"
+    ],
+    [
+     38.08,
+     "就像第二集的標題"
+    ],
+    [
+     39.76,
+     "跑從來不是問題"
+    ],
+    [
+     41.96,
+     "看才是"
+    ]
+   ],
+   "gemini_text": "其實第一季講過的第五招很有意思，他說不要讓模型給自己打分數。這一波大家做法進步很多，模型會自己開瀏覽器、截圖、讀錯誤訊息，甚至還會找別的評審代理來看圖，可是這樣就真的沒問題了嗎？當然不是嘛。截圖根本看不出滑鼠會不會失控，也看不出樓梯是不是懸在半空中，你進去玩個半分鐘馬上就抓包了。更扯的是，有作者老實承認了一件事，裡面的十四個音效，從頭到尾沒人聽過欸。所以這份報告說得很好，就像第二季的標題，跑，從來不是問題，看，才是。"
+  },
+  {
+   "id": "s10_own",
+   "cer_whisper": 0.088,
+   "cer_gemini": 0.019,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 2,
+     "ref_end": 3,
+     "script": "看",
+     "heard": "khan",
+     "context": "說到【看】這份報告的作",
+     "hyp_pos": 2,
+     "by": "whisper",
+     "whisper_heard": "khan",
+     "gemini_heard": "—",
+     "episode_time": "7:41"
+    },
+    {
+     "ref_start": 37,
+     "ref_end": 38,
+     "script": "紙",
+     "heard": "紫",
+     "context": "ra做了一架【紙】飛機飛在一片",
+     "hyp_pos": 40,
+     "by": "whisper",
+     "whisper_heard": "紫",
+     "gemini_heard": "—",
+     "episode_time": "7:46"
+    },
+    {
+     "ref_start": 80,
+     "ref_end": 81,
+     "script": "只",
+     "heard": "隻",
+     "context": "下三件事第一【只】用three",
+     "hyp_pos": 83,
+     "by": "whisper",
+     "whisper_heard": "隻",
+     "gemini_heard": "—",
+     "episode_time": "8:02"
+    },
+    {
+     "ref_start": 82,
+     "ref_end": 87,
+     "script": "three",
+     "heard": "三",
+     "context": "件事第一只用【three】js撐不了多",
+     "hyp_pos": 85,
+     "by": "whisper",
+     "whisper_heard": "三",
+     "gemini_heard": "—",
+     "episode_time": "8:02"
+    },
+    {
+     "ref_start": 155,
+     "ref_end": 156,
+     "script": "a",
+     "heard": "o",
+     "context": "十月那片cl【a】ude做的海",
+     "hyp_pos": 154,
+     "by": "whisper",
+     "whisper_heard": "o",
+     "gemini_heard": "—",
+     "episode_time": "8:18"
+    },
+    {
+     "ref_start": 158,
+     "ref_end": 159,
+     "script": "e",
+     "heard": "",
+     "context": "片claud【e】做的海第三測",
+     "hyp_pos": 157,
+     "by": "whisper",
+     "whisper_heard": "",
+     "gemini_heard": "—",
+     "episode_time": "8:18"
+    },
+    {
+     "ref_start": 191,
+     "ref_end": 192,
+     "script": "它",
+     "heard": "他能不",
+     "context": "飛一下才知道【它】能拿來驗自己",
+     "hyp_pos": 189,
+     "by": "whisper",
+     "whisper_heard": "他能不",
+     "gemini_heard": "—",
+     "episode_time": "8:31"
+    },
+    {
+     "ref_start": 19,
+     "ref_end": 20,
+     "script": "十",
+     "heard": "四",
+     "context": "了自己的一次【十】月底他用gp",
+     "hyp_pos": 19,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "四",
+     "episode_time": "?"
+    },
+    {
+     "ref_start": 27,
+     "ref_end": 28,
+     "script": "六",
+     "heard": "四",
+     "context": "底他用gpt【六】astra做",
+     "hyp_pos": 27,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "四",
+     "episode_time": "?"
+    },
+    {
+     "ref_start": 99,
+     "ref_end": 100,
+     "script": "窗",
+     "heard": "場",
+     "context": "久想要森林和【窗】景就得借別人",
+     "hyp_pos": 99,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "場",
+     "episode_time": "?"
+    },
+    {
+     "ref_start": 152,
+     "ref_end": 153,
+     "script": "片",
+     "heard": "篇",
+     "context": "法是借十月那【片】claude",
+     "hyp_pos": 152,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "篇",
+     "episode_time": "?"
+    }
+   ],
+   "whisper_text": "說到 Khan這份報告的作者也交代了自己的一次十月底他用 GPT6 Astra 坐了一架紫飛機飛在一片沒有邊的海上第一晚從九點多坐到隔天早上前後提交了 25 次他記下三件事第一只用 3.js 撐不了多久想要森林和窗景就得借別人的開源程式和照片第二借和抄差在帳上有沒有寫他把授權都列了也承認漏了一筆那片海的做法是借十月那片 cloud 做的海第三測試只能確認畫面有在動海像不像海要人打開來飛一下才知道他能不能拿來驗自己的野心不能拿來賣因為沒有任何人在等他",
+   "whisper_segments": [
+    [
+     0.0,
+     "說到 Khan"
+    ],
+    [
+     1.68,
+     "這份報告的作者也交代了自己的一次"
+    ],
+    [
+     5.04,
+     "十月底他用 GPT6 Astra 坐了一架紫飛機"
+    ],
+    [
+     10.64,
+     "飛在一片沒有邊的海上"
+    ],
+    [
+     13.44,
+     "第一晚從九點多坐到隔天早上"
+    ],
+    [
+     16.44,
+     "前後提交了 25 次"
+    ],
+    [
+     18.68,
+     "他記下三件事"
+    ],
+    [
+     20.44,
+     "第一"
+    ],
+    [
+     21.44,
+     "只用 3.js 撐不了多久"
+    ],
+    [
+     23.96,
+     "想要森林和窗景"
+    ],
+    [
+     25.76,
+     "就得借別人的開源程式和照片"
+    ],
+    [
+     28.68,
+     "第二"
+    ],
+    [
+     29.52,
+     "借和抄"
+    ],
+    [
+     31.02,
+     "差在帳上有沒有寫"
+    ],
+    [
+     33.68,
+     "他把授權都列了"
+    ],
+    [
+     35.28,
+     "也承認漏了一筆"
+    ],
+    [
+     37.08,
+     "那片海的做法是借十月那片 cloud 做的海"
+    ],
+    [
+     42.08,
+     "第三"
+    ],
+    [
+     43.28,
+     "測試只能確認畫面有在動"
+    ],
+    [
+     45.8,
+     "海像不像海"
+    ],
+    [
+     47.52,
+     "要人打開來飛一下才知道"
+    ],
+    [
+     50.56,
+     "他能不能拿來驗自己的野心"
+    ],
+    [
+     52.96,
+     "不能拿來賣"
+    ],
+    [
+     54.24,
+     "因為沒有任何人在等他"
+    ]
+   ],
+   "gemini_text": "說到看，這份報告的作者也交代了自己的一次。四月底，他用 GPT-4、Astra 做了一架紙飛機，飛在一片沒有邊的海上。第一晚從九點多做到隔天早上，前後提交了二十五次。他記下三件事：第一，只用 Three.js 撐不了多久，想要森林和場景，就得借別人的開源程式和照片。第二，借和抄，差在帳上有沒有寫。他把授權都列了，也承認漏了一筆。那片海的做法，是借十月那篇 Claude 做的海。第三，測試只能確認畫面有在動，海像不像海，要人打開來飛一下才知道。它能拿來驗自己的野心，不能拿來賣，因為沒有任何人在等它。"
+  },
+  {
+   "id": "s11_back",
+   "cer_whisper": 0.031,
+   "cer_gemini": 0.047,
+   "gemini_unclear_marks": 1,
+   "flagged": [
+    {
+     "ref_start": 17,
+     "ref_end": 18,
+     "script": "t",
+     "heard": "w",
+     "context": "了你看slo【t】bound搬",
+     "hyp_pos": 17,
+     "by": "whisper",
+     "whisper_heard": "w",
+     "gemini_heard": "—",
+     "episode_time": "8:40"
+    },
+    {
+     "ref_start": 83,
+     "ref_end": 84,
+     "script": "了",
+     "heard": "的",
+     "context": "告查不到誰賺【了】錢那現在到底",
+     "hyp_pos": 83,
+     "by": "whisper",
+     "whisper_heard": "的",
+     "gemini_heard": "—",
+     "episode_time": "8:53"
+    },
+    {
+     "ref_start": 120,
+     "ref_end": 121,
+     "script": "成",
+     "heard": "產",
+     "context": "有一個能動的【成】品然後看還是",
+     "hyp_pos": 121,
+     "by": "whisper",
+     "whisper_heard": "產",
+     "gemini_heard": "—",
+     "episode_time": "9:02"
+    },
+    {
+     "ref_start": 156,
+     "ref_end": 157,
+     "script": "得",
+     "heard": "的",
+     "context": "實是被大家認【得】像slotb",
+     "hyp_pos": 157,
+     "by": "whisper",
+     "whisper_heard": "的",
+     "gemini_heard": "—",
+     "episode_time": "9:10"
+    },
+    {
+     "ref_start": 161,
+     "ref_end": 162,
+     "script": "t",
+     "heard": "w",
+     "context": "認得像slo【t】bound上",
+     "hyp_pos": 162,
+     "by": "whisper",
+     "whisper_heard": "w",
+     "gemini_heard": "—",
+     "episode_time": "9:13"
+    },
+    {
+     "ref_start": 33,
+     "ref_end": 41,
+     "script": "saltline",
+     "heard": "",
+     "context": "花了二個月但【saltline】改成中文版只",
+     "hyp_pos": 33,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "",
+     "episode_time": "?"
+    }
+   ],
+   "whisper_text": "這就接回我們上集的案子了你看 slow bound 搬去手機花了兩個月但 salt line 改成中文版只要兩天耶因為它就是個 HTML 檔能看就能改而且到目前為止這份報告查不到誰賺的錢耶那現在到底什麼才值錢其實就三件事第一做東西變便宜了幾小時就有一個能動的產品然後看還是很貴喔模型測得出有沒有錯測不出好不好玩最貴的其實是被大家認的像 slow bound 上市前就有十萬人在等這件事沒有任何一句指令做得出來",
+   "whisper_segments": [
+    [
+     0.0,
+     "這就接回我們上集的案子了"
+    ],
+    [
+     2.08,
+     "你看 slow bound 搬去手機花了兩個月"
+    ],
+    [
+     6.32,
+     "但 salt line 改成中文版"
+    ],
+    [
+     8.72,
+     "只要兩天耶"
+    ],
+    [
+     10.16,
+     "因為它就是個 HTML 檔"
+    ],
+    [
+     12.24,
+     "能看就能改"
+    ],
+    [
+     13.72,
+     "而且到目前為止"
+    ],
+    [
+     15.4,
+     "這份報告查不到誰賺的錢耶"
+    ],
+    [
+     18.12,
+     "那現在到底什麼才值錢"
+    ],
+    [
+     20.52,
+     "其實就三件事"
+    ],
+    [
+     22.08,
+     "第一"
+    ],
+    [
+     22.88,
+     "做東西變便宜了"
+    ],
+    [
+     24.64,
+     "幾小時就有一個能動的產品"
+    ],
+    [
+     26.96,
+     "然後看還是很貴喔"
+    ],
+    [
+     29.08,
+     "模型測得出有沒有錯"
+    ],
+    [
+     31.16,
+     "測不出好不好玩"
+    ],
+    [
+     32.84,
+     "最貴的其實是被大家認的"
+    ],
+    [
+     35.16,
+     "像 slow bound 上市前就有十萬人在等"
+    ],
+    [
+     38.84,
+     "這件事沒有任何一句指令做得出來"
+    ]
+   ],
+   "gemini_text": "這就接回我們上集的案子了。你看，Slotbound搬去手機，花了兩個月。但［?］改成中文版，只要兩天耶。因為它就是個HTML檔，能看就能改。而且，到目前為止，這份報告查不到誰賺了錢耶。那現在到底什麼才值錢？其實就三件事。第一，做東西變便宜了，幾小時就有一個能動的成品。然後，看，還是很貴喔。模型測得出有沒有錯，測不出好不好玩。最貴的，其實是被大家認得。像Slotbound，上市前就有十萬人在等。這件事，沒有任何一句指令做得出來。"
+  },
+  {
+   "id": "s12_limits",
+   "cer_whisper": 0.028,
+   "cer_gemini": 0.055,
+   "gemini_unclear_marks": 1,
+   "flagged": [
+    {
+     "ref_start": 74,
+     "ref_end": 75,
+     "script": "一",
+     "heard": "",
+     "context": "價回推的那這【一】波作品到底有",
+     "hyp_pos": 74,
+     "by": "whisper",
+     "whisper_heard": "",
+     "gemini_heard": "—",
+     "episode_time": "9:37"
+    },
+    {
+     "ref_start": 121,
+     "ref_end": 122,
+     "script": "a",
+     "heard": "i",
+     "context": "查核也用了f【a】ble五點二",
+     "hyp_pos": 120,
+     "by": "both",
+     "whisper_heard": "i",
+     "gemini_heard": "",
+     "episode_time": "9:44"
+    },
+    {
+     "ref_start": 123,
+     "ref_end": 124,
+     "script": "l",
+     "heard": "r",
+     "context": "也用了fab【l】e五點二等於",
+     "hyp_pos": 122,
+     "by": "both",
+     "whisper_heard": "r",
+     "gemini_heard": "",
+     "episode_time": "9:44"
+    },
+    {
+     "ref_start": 19,
+     "ref_end": 21,
+     "script": "al",
+     "heard": "oo",
+     "context": "講了限制像s【al】tline的",
+     "hyp_pos": 19,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "oo",
+     "episode_time": "?"
+    }
+   ],
+   "whisper_text": "所以這份報告其實很誠實直接講了限制像 salt line 的時間跟費用只是約略數字而且他本人是模型員工沒有記錄能核對那些美元金額多半是拿 API 價回推的那這波作品到底有沒有賺到錢答案是沒有資料連恐龍短片也沒公佈指令跟費用更妙的是這份報告查核也用了 Fibre 5.2等於叫模型查自己聽的時候要算進去喔",
+   "whisper_segments": [
+    [
+     0.0,
+     "所以這份報告其實很誠實"
+    ],
+    [
+     2.66,
+     "直接講了限制"
+    ],
+    [
+     4.34,
+     "像 salt line 的時間跟費用只是約略數字"
+    ],
+    [
+     8.54,
+     "而且他本人是模型員工"
+    ],
+    [
+     11.0,
+     "沒有記錄能核對"
+    ],
+    [
+     12.96,
+     "那些美元金額多半是拿 API 價回推的"
+    ],
+    [
+     16.88,
+     "那這波作品到底有沒有賺到錢"
+    ],
+    [
+     19.52,
+     "答案是沒有資料"
+    ],
+    [
+     21.18,
+     "連恐龍短片也沒公佈指令跟費用"
+    ],
+    [
+     24.32,
+     "更妙的是這份報告查核也用了 Fibre 5.2"
+    ],
+    [
+     28.12,
+     "等於叫模型查自己"
+    ],
+    [
+     29.32,
+     "聽的時候要算進去喔"
+    ]
+   ],
+   "gemini_text": "所以這份報告其實很誠實，直接講了限制，像 Soot Line 的時間跟費用只是約略數字，而且他本人是模型員工，沒有記錄能核對，那些美元金額多半是拿 API 價回推的。那這一波作品到底有沒有賺到錢？答案是沒有資料，連恐龍短片也沒公佈指令跟費用。更妙的是，這份報告查核也用了［?］五點二，等於叫模型查自己，聽的時候要算進去喔。"
+  },
+  {
+   "id": "s13_outro",
+   "cer_whisper": 0.027,
+   "cer_gemini": 0.007,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 129,
+     "ref_end": 130,
+     "script": "g",
+     "heard": "k",
+     "context": "欄我是pin【g】有收到的話回",
+     "hyp_pos": 129,
+     "by": "whisper",
+     "whisper_heard": "k",
+     "gemini_heard": "—",
+     "episode_time": "10:23"
+    },
+    {
+     "ref_start": 141,
+     "ref_end": 143,
+     "script": "ng",
+     "heard": "em",
+     "context": "回我一個po【ng】下次見",
+     "hyp_pos": 141,
+     "by": "whisper",
+     "whisper_heard": "em",
+     "gemini_heard": "—",
+     "episode_time": "10:25"
+    },
+    {
+     "ref_start": 111,
+     "ref_end": 112,
+     "script": "得",
+     "heard": "的",
+     "context": "還是貴的被認【得】最貴原文連結",
+     "hyp_pos": 111,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "的",
+     "episode_time": "?"
+    }
+   ],
+   "whisper_text": "好今晚的 break point第一一句話做一個遊戲是真的但指令是一句計費單位是小時從 16 美元到 14,000 多美元差的是模型跑了多久第二這一波的野心幾乎都花在速度上高度是 0模型測得出有沒有錯測不出好不好玩第三坐便宜了看還是貴的被認得最貴原文連結在節目資訊欄我是 Pink有收到的話回我一個 poem下次見",
+   "whisper_segments": [
+    [
+     0.0,
+     "好"
+    ],
+    [
+     0.68,
+     "今晚的 break point"
+    ],
+    [
+     2.54,
+     "第一"
+    ],
+    [
+     3.16,
+     "一句話做一個遊戲是真的"
+    ],
+    [
+     5.88,
+     "但指令是一句"
+    ],
+    [
+     7.4,
+     "計費單位是小時"
+    ],
+    [
+     9.22,
+     "從 16 美元到 14,000 多美元"
+    ],
+    [
+     12.32,
+     "差的是模型跑了多久"
+    ],
+    [
+     14.7,
+     "第二"
+    ],
+    [
+     15.28,
+     "這一波的野心幾乎都花在速度上"
+    ],
+    [
+     18.16,
+     "高度是 0"
+    ],
+    [
+     19.48,
+     "模型測得出有沒有錯"
+    ],
+    [
+     21.32,
+     "測不出好不好玩"
+    ],
+    [
+     23.32,
+     "第三"
+    ],
+    [
+     24.2,
+     "坐便宜了"
+    ],
+    [
+     25.72,
+     "看還是貴的"
+    ],
+    [
+     27.52,
+     "被認得最貴"
+    ],
+    [
+     29.44,
+     "原文連結在節目資訊欄"
+    ],
+    [
+     31.72,
+     "我是 Pink"
+    ],
+    [
+     33.0,
+     "有收到的話回我一個 poem"
+    ],
+    [
+     35.12,
+     "下次見"
+    ]
+   ],
+   "gemini_text": "好，今晚的 breakpoint。第一，一句話做一個遊戲是真的，但指令是一句，計費單位是小時，從十六美元到一萬四千多美元，差的是模型跑了多久。第二，這一波的野心幾乎都花在速度上，高度是零。模型測得出有沒有錯，測不出好不好玩。第三，做便宜了，看還是貴的，被認的最貴。原文連結在節目資訊欄。我是 ping，有收到的話回我一個 pong。下次見。"
+  }
+ ]
+}

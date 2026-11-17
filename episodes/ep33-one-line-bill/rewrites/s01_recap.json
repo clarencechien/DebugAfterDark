@@ -1,0 +1,130 @@
+{
+ "segment": "s01_recap",
+ "position": "第 2 段，共 14 段",
+ "avoid": [
+  "真的假的",
+  "傻眼"
+ ],
+ "recap": "EP32〈還沒上市，手機版就先被抄了〉：上一集：一個不會寫程式的開發者用 AI 做了十三個月的 Slotbound，試玩版兩個月就被搬上手機；擋住山寨的不是玩法也不是法律，是一群認得他的人。這集從十三個月跳到一句話。",
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d4cf5c353ca4cc213da64c4780ace2ba205aa65f3ff23f7e89e9364072dc9f17",
+ "previous_context": "所以這份報告想搞清楚，這到底是真的假的？最反直覺的是，指令給一句，計費卻用小時算。",
+ "original": {
+  "text": "上一集，一個不會寫程式的開發者，用 AI 花了十三個月做出 Slotbound，試玩版兩個月就被搬上手機；最後擋住山寨的，不是玩法也不是法律，是一群認得他的人。這集是案卷的下集，從十三個月，跳到一句話。先說一件事：這份報告的查核和初稿，也用了 Fable 5.2，等於請當事的模型，查自己的上市潮。報告作者請讀的人把這一點算進去，我們聽的時候也一樣。",
+  "lint": {
+   "chars": 170,
+   "precise_numbers": [
+    "十三",
+    "十三",
+    "5.2"
+   ],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 41.5,
+   "max_sentence_len": 76,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上一集我們聊到，一個不會寫程式的人，\n花了十三個月做出 Slotbound。\n結果試玩版放出去沒多久，就被抄去手機上。\n最後是靠一群認得他的人，才把山寨擋下來。\n這集我們要從十三個月，直接跳到一句話。\n<short pause>\n不過重點來了，你猜這份報告怎麼寫的？\n這份報告的查核跟初稿，\n其實也用了 Fable 5.2 喔。\n等於請當事模型查自己，這超妙的吧？<laugh>\n所以我們在聽的時候，也要把這件事算進去啦。",
+   "lint": {
+    "chars": 177,
+    "precise_numbers": [
+     "十三",
+     "十三",
+     "5.2"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 21.1,
+    "max_sentence_len": 35,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "上一集我們聊到，\n一個不會寫程式的開發者，\n用 AI 花了十三個月做出 Slotbound。\n結果試玩版才放出來沒多久，\n就整碗被抄去手機上了。<short pause>\n最後救了他的，是一群認得他的人。\n所以這集要聊的更誇張，\n直接從十三個月跳到一句話。\n不過開始前要先提醒一件事。\n這份報告的查核跟初稿，\n其實也是用 Fable 5.2 做的喔。\n你猜這代表什麼？\n等於請模型查它自己的上市潮耶。<laugh>\n報告作者有特別提醒，\n我們聽的時候，也要把這點算進去啦。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [
+     "十三",
+     "十三",
+     "5.2"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 20.8,
+    "max_sentence_len": 40,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "上一集我們聊到一個開發者，他完全不會寫程式。\n花了十三個月做出 Slotbound，\n結果試玩版才出兩個多月，就被直接搬上手機。\n最後擋住山寨的不是法律，\n而是一群認得他的人。<short pause>\n這集我們直接從十三個月，跳到一句話做遊戲。\n不過開始前要先講清楚喔。\n這份報告的查核跟初稿，其實也用了 Fable 5.2。\n這等於請當事模型查自己，你覺得能全信嗎？\n所以聽的時候，大家記得先把這點算進去啦。",
+   "lint": {
+    "chars": 181,
+    "precise_numbers": [
+     "十三",
+     "十三",
+     "5.2"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 21.6,
+    "max_sentence_len": 38,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "等於請當事模型查自己，這超妙的吧？<laugh>",
+   "to": "等於請當事的模型，查自己的上市潮。",
+   "reason": "刪笑聲"
+  }
+ ]
+}

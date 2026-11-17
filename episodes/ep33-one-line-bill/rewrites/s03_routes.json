@@ -1,0 +1,127 @@
+{
+ "segment": "s03_routes",
+ "position": "第 4 段，共 14 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "真的假的",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "1814fe43685b95c0f595106b2e6a9056a52d67194cebe8d9c3d27862e7160c9f",
+ "previous_context": "你猜接下來發生什麼事？隔沒兩天，網路上就到處在傳換了名字的中文版了啦。",
+ "original": {
+  "text": "這一波常被說成是官方的恐龍影片帶起來的。那支十八秒的恐龍短片，是 Anthropic 的研究員 Jeremy Berman 自己貼的，說明是 Fable 寫 Python 去操控建模軟體 Blender，從零做出來。這份報告指出兩點：它不在官方的發表頁上；而且它是一支算好的影片，不能玩。所以這一波其實走兩條路：一條讓模型寫 Blender 的腳本，做出來是影片；一條讓模型寫在瀏覽器裡跑的 three.js 程式，打開網頁就能玩。Saltline 是後者。",
+  "lint": {
+   "chars": 214,
+   "precise_numbers": [
+    "十八"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 41.8,
+   "max_sentence_len": 77,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "然後大家都在傳，<short pause>\n這波是不是官方的恐龍 demo 帶起來的？\n其實根本不是官方發的喔。\n那支十八秒的短片，\n是 Anthropic 的研究員自己貼的。\n他讓模型寫 Python 去操控 Blender。\n這份報告說，那只是一支算好的影片，\n你點開完全不能玩，也沒有互動。<sigh>\n所以這波洗版其實走兩條路。\n哪兩條？\n一條是用 Blender 算影片出來看。\n另一條是寫在瀏覽器跑的 three.js，\n讓你打開網頁就能直接玩。\nSaltline 就是走後面這一條啦。",
+   "lint": {
+    "chars": 206,
+    "precise_numbers": [
+     "十八"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.6,
+    "max_sentence_len": 31,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "說到洗版，很多人以為是官方恐龍影片帶頭的。\n其實不是喔。\n那支十八秒的短片，是研究員自己的貼文啦。\n他是 Anthropic 的研究員 Jeremy Berman。\n他是讓模型寫 Python 去操控 Blender。\n成品就是一支算好的影片，根本不能玩。\n<short pause>你以為打開能玩對不對？完全不行。\n這份報告說，這波作品其實分成了兩條路。\n第一條是 Blender 路線，做出來就是影片。\n然後第二條是 three.js，做在瀏覽器裡面。\n這個才是在網頁上直接可以玩的遊戲。\n像前面提到的 Saltline，就是走這條路啦。\n我看到這邊整個恍然大悟。",
+   "lint": {
+    "chars": 248,
+    "precise_numbers": [
+     "十八"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 16.7,
+    "max_sentence_len": 27,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "很多人以為這波是官方恐龍影片帶起來的齁。\n其實那支十八秒的短片，根本不是官方發表的。\n這份報告說，那是研究員自己貼在個人帳號的。\n他是讓 Fable 寫 Python 去操控 Blender。<short pause>\n你以為那可以玩嗎？完全不行。\n那只是一支算好的影片而已。<laugh>\n所以洗版其實分成兩條完全不同的路線。\n一條是把影片算出來，像那群恐龍。\n另一條才是像 Saltline，用 three.js 寫網頁。\n直接點開就能玩，這兩條路差超多的好嗎。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [
+     "十八"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 27,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "那只是一支算好的影片而已。<laugh>",
+   "to": "那只是一支算好的影片而已。",
+   "reason": "刪笑聲"
+  }
+ ]
+}

@@ -1,0 +1,135 @@
+{
+ "segment": "s09_judge",
+ "position": "第 10 段，共 14 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這",
+  "真的假的",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "497f6c8e6f4f4c9e11e824220450d421bd710c37c88e83112e54046c6ab1ad22",
+ "previous_context": "他說看你會不會為了這件事去開會。畢竟真的沒有人會為技術展示開會嘛。",
+ "original": {
+  "text": "第一集說的第五招，是不要讓模型評自己，要有模型以外的東西來判。這一波比以前進步：模型會自己開瀏覽器、截圖、讀錯誤訊息，沒有錯誤才收工；那片海的作者，還另外找了評審代理來看截圖。可是截圖看不出滑鼠會不會失控，樓梯是不是懸在半空，那是人玩了三十秒才發現的。有一位照做的作者也老實寫了：他的十四個音效只檢查過有沒有爆音，沒有人真的聽過。這份報告說，第二集那個試飛報告的標題，又成立了一次：跑從來不是問題，看才是。",
+  "lint": {
+   "chars": 203,
+   "precise_numbers": [
+    "三十",
+    "十四"
+   ],
+   "enumerations": [
+    "第一",
+    "第五",
+    "第二"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 39.6,
+   "max_sentence_len": 56,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實第一集聊過的第五招，你還記得嗎？\n就是千萬不要讓模型自己給自己打分數。\n這次大家的方法其實進步很多喔。<short pause>\n模型會自己打開瀏覽器、截圖，\n確認沒有錯誤訊息才收工。\n做海景的作者更講究，\n他還找了另一個模型代理人來看截圖。\n但光看截圖真的夠嗎？根本不夠嘛。\n像滑鼠會不會失控，或是樓梯懸在半空，\n你親自進去玩個三十秒就破功了。<laugh>\n作者自己也承認，十幾個音效根本沒人聽過，\n只用程式測過有沒有爆音而已。\n這份報告說得真的很貼切，\n就像第二集講的，跑從來不是問題，看才是。",
+   "lint": {
+    "chars": 219,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [
+     "第一",
+     "第五",
+     "第二"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 20.9,
+    "max_sentence_len": 33,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實第一集講過的第五招很有意思。\n它說不要讓模型給自己打分數。\n這一波大家做法進步很多。\n模型會自己開瀏覽器、截圖、讀錯誤訊息。\n甚至還會找別的評審代理來看圖。\n可是這樣就真的沒問題了嗎？\n當然不是嘛。<sigh>\n截圖根本看不出滑鼠會不會失控。\n也看不出樓梯是不是懸在半空中。\n你進去玩個半分鐘，馬上就抓包了。\n更扯的是，有作者老實承認了一件事。\n裡面的十四個音效，從頭到尾沒人聽過耶。\n所以這份報告說得很好。\n就像第二集的標題。\n跑從來不是問題，看才是。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [
+     "十四"
+    ],
+    "enumerations": [
+     "第一",
+     "第五",
+     "第二"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 12.9,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "對啊，那成果到底誰來驗收？\n\n第一集講過第五招，不要讓模型自己打分。\n\n這一次大家確實有進步喔。\n\n模型會自己開瀏覽器、截圖、檢查錯誤。\n\n做那片海的作者更厲害，\n\n他還找了另一個模型代理來看截圖。\n\n但這樣就夠了嗎？其實根本不夠。<sigh>\n\n截圖哪看得出滑鼠會不會失控？\n\n樓梯是不是懸在半空中？\n\n這些狀況，你進去玩個三十秒就發現了啦。\n\n另一位作者也很老實，\n\n他說十幾個音效，從頭到尾沒人真的聽過，\n\n只用工具檢查有沒有爆音而已。\n\n看到作者這麼坦白，我真的很有共鳴。<laugh>\n\n這份報告說得很貼切，\n\n第二集的標題又成立了一次：\n\n跑從來不是問題，看才是。",
+   "lint": {
+    "chars": 243,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [
+     "第一",
+     "第五",
+     "第二"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 17.7,
+    "max_sentence_len": 42,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1
+}

@@ -1,0 +1,132 @@
+{
+ "segment": "s05_ocean",
+ "position": "第 6 段，共 14 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "真的假的",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "6d2b5e69547773c6aa04311c80802a37ea2855198b5dd95c700861fac2420081",
+ "previous_context": "不過作者也老實說，他看的是轉存副本。而且也只有做靜態掃描而已喔。",
+ "original": {
+  "text": "可是不是每一款都這樣。同一波裡有的用 AI 生成 3D 素材和配樂，有的教學直接載入現成的步槍模型。不靠素材也不是這次才有：十月就有人用 Claude Code 做了一片即時算圖的海，比 Fable 5.2 早三個星期。這份報告把一篇轉述報導，和那片海作者自己寫的說明文件並排：報導說只花三十分鐘、完全由模型生成；說明文件裡沒提時間，還寫了作者中途給過回饋，雲的做法也因此換過。這份報告說，作品是真的，傳出去的那句話，比作品簡單。",
+  "lint": {
+   "chars": 205,
+   "precise_numbers": [
+    "3",
+    "5.2",
+    "三十"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 40.0,
+   "max_sentence_len": 78,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "因此"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "而且其實不是每一款都完全不靠素材。同一波裡面，有些直接拿現成的步槍模型來用。有些是用別的工具生成 3D 跟配樂。這種不靠素材的做法，也不是這次才有的喔。十月就有人用 Claude Code 算出一片海。而且比這一次的發表，還早了三個星期。這份報告把轉述報導跟作者的文件拿來對比。報導說只花三十分鐘，完全由模型生成。那作者自己怎麼寫？作者根本沒寫時間，中途還給過回饋改雲層。<laugh> 我看到這邊真的覺得包裝太誇張了。這份報告說得很好，作品是真的。可是傳出去的話，往往比作品簡單太多了啦。",
+   "lint": {
+    "chars": 232,
+    "precise_numbers": [
+     "3",
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "其實不是每一款作品都長這樣喔。<short pause>\n同一波被吹捧的作品，做法其實差很多。\n有的直接載入現成步槍模型，\n有的靠 AI 生成 3D 素材跟配樂。\n而且完全不靠素材，也不是現在才有的啦。\n十月就有人用 Claude Code 算出一片海，\n時間比 Fable 5.2 還早了三個星期。\n更扯的是什麼你知道嗎？\n報告裡把轉述報導，拿來跟作者的文件對照。\n報導吹說只花三十分鐘，完全由模型生成。\n結果原作者根本沒提時間啊，\n他中途給過回饋，連雲的做法都改過。<laugh>\n所以我看這段真的很有共鳴。\n作品本身的技術是真的，\n可是傳出去的那句話，永遠比作品簡單很多啦。",
+   "lint": {
+    "chars": 246,
+    "precise_numbers": [
+     "3",
+     "5.2",
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 21.4,
+    "max_sentence_len": 40,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "而且其實不是每一款都長這樣喔。同一波作品裡面，甚至有人直接載入現成的步槍模型。\n\n完全不靠外部素材，也不是這次才有的事。像十月就有人用 Claude Code 做一片海，比 Fable 5.2 還早了三個星期耶。\n\n更扯的是什麼？<short pause>這份報告把轉述報導跟作者的文件拿來對比。報導說只花三十分鐘、完全由模型生成。結果作者根本沒提時間，中途還給過回饋，連雲的做法都換過。\n\n我看到這段真的很有共鳴。這份報告說，作品是真的，但傳出去的那句話，比作品簡單太多了啦。",
+   "lint": {
+    "chars": 214,
+    "precise_numbers": [
+     "5.2",
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.4,
+    "max_sentence_len": 39,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "<laugh> 我看到這邊真的覺得包裝太誇張了。",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "segment": "s03_easy",
+ "position": "第 4 段，共 13 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "6a19d777c64c94fbb55ae73ac61594ef023e489ac67e920fda8a2544ddcb36fa",
+ "previous_context": "光聽這個組合，就覺得超吸引人吧？對，所以核心機制一旦被看光，別人要照著做真的太快了啦。",
+ "original": {
+  "text": "這份案卷說，這個類型適合小團隊，也正是因為這樣，好改也好抄。一款 roguelike 的內容，大多是數值和規則的組合：二十種道具兩兩交互，就有幾百種可能，開發者不必一個一個畫關卡、寫劇情；想試新點子，改幾條規則就能再玩一輪。可是同一個性質也有另一面：規則和數值都裝在遊戲裡，一份能完整遊玩的試玩版，等於把它們全部交了出去。它的難處在平衡，運氣和策略的比例一失準，玩家就會覺得輸贏都不是自己決定的。",
+  "lint": {
+   "chars": 196,
+   "precise_numbers": [
+    "二十",
+    "百"
+   ],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 48.0,
+   "max_sentence_len": 79,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這份案卷說，roguelike 真的超適合小團隊。\n但重點是，它好做也好改，其實也超好抄。\n為什麼會這樣？\n因為它的核心，全都是規則跟數值的組合。\n只要有二十種道具互相搭配，\n馬上就能跑出幾百種變化耶。\n開發者不用慢慢畫關卡，也不用寫劇情。\n想試新點子，改幾條規則就能再玩一輪。\n可是你仔細想想，這其實是雙面刃喔。\n因為所有規則和數值，都直接裝在遊戲裡。\n你放出一個能玩的 Demo，\n等於是把全部心血都交出去了嘛。<sigh>\n而且最難調的，其實是遊戲的平衡。\n運氣跟策略的比例只要稍微跑掉，\n玩家就會覺得，輸贏根本不是自己決定的。",
+   "lint": {
+    "chars": 245,
+    "precise_numbers": [
+     "二十",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 19.4,
+    "max_sentence_len": 33,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "這份案卷說，其實這種 roguelike 遊戲超適合小團隊。你知道為什麼嗎？因為它的內容大部分是數值跟規則的組合啦。開發者不用一個一個畫關卡，也不用寫複雜的劇情。想試新點子，改幾條規則就能再玩一輪。光是二十種道具互相搭配，就能生出幾百種可能，這對小團隊來說真的很方便。但重點來了。<short pause> 你放出一個能玩的 Demo，等於把所有底牌直接交了出去。而且它最難的地方是調平衡。運氣跟策略只要失準，玩家就會覺得輸贏根本不是自己決定的嘛。",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [
+     "二十",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.7,
+    "max_sentence_len": 34,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "這份案卷說，roguelike 特別適合小團隊。為什麼？因為它好改，但也超好抄。它的核心內容大多是數值和規則。你只要做二十種道具互相搭配，重點來了，裡面就能產生幾百種變化喔。開發者完全不用一關一關去刻地圖，想測新點子，改幾條規則就能重玩一輪。<short pause>其實這完全是一把雙面刃。你猜放出一份能玩的 Demo 會怎樣？等於把全部的底牌都送給別人了嘛。對，然後它的平衡又超級難調。運氣跟策略稍微失準，玩家就會覺得輸贏全看臉啦。光想就替開發者捏一把冷汗耶。",
+   "lint": {
+    "chars": 216,
+    "precise_numbers": [
+     "二十",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.0,
+    "max_sentence_len": 33,
+    "sentences_over_20": 4,
+    "particles_per_100": 2.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "光想就替開發者捏一把冷汗耶。",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

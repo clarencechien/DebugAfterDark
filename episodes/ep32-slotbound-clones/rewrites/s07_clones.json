@@ -1,0 +1,123 @@
+{
+ "segment": "s07_clones",
+ "position": "第 8 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "很扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "17cb507462051afe0b813c024ad12b7039aae40fcbef507b0943e0ebaad7e535",
+ "previous_context": "課金制的山寨就已經在收錢了。整個邏輯都被顛倒過來，真的很扯。",
+ "original": {
+  "text": "第一款在抖音，介面、美術和兵種設計幾乎一樣，已經接上付費系統；一位中國粉絲代為檢舉，遊戲被下架。第二款在微信，名字的發音近似 Slot，做得更精緻，韓國媒體列出的相似處具體到畫面：同樣的三乘三拉霸配右側拉桿，盾牌和法師帽符號的造型，草原上兩側有樹、背景有太陽。開發者人在韓國，中國平台的檢舉要中國手機號碼驗證，他自己送不出去，還是那位粉絲去檢舉。這份案卷注意到一件事：被指認的相似處，都在介面和美術；玩法相同，從頭到尾沒有被當成理由。",
+  "lint": {
+   "chars": 216,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 4,
+   "avg_sentence_len": 53.0,
+   "max_sentence_len": 80,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那這兩款山寨到底抄到什麼程度？<short pause>\n第一款出現在抖音。\n介面、美術跟兵種設計，幾乎一模一樣。\n而且早就接好課金系統了啦。\n後來是一位中國粉絲幫忙檢舉，才成功下架。\n然後第二款更精緻，出現在微信。\n它的名字念起來就很像 Slot 嘛。\n畫面連三乘三拉霸、法師帽造型都照抄。\n甚至戰場草原兩側的樹也都一樣。\n開發者想自己檢舉還沒辦法。<sigh>\n你知道為什麼嗎？\n因為中國平台要手機號碼認證。\n他人在韓國根本送不出去。\n最後還是靠同一個粉絲去檢舉。\n但這份案卷點出一個關鍵。\n被指認的相似處，全都在介面跟美術。\n玩法一模一樣這件事，完全沒被當成理由喔。",
+   "lint": {
+    "chars": 249,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 13.6,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那這兩款山寨到底抄得多像？\n第一款在抖音上。\n介面跟美術幾乎一模一樣，兵種也是。\n而且他們早就接了付費系統。\n後來是靠中國粉絲幫忙檢舉，才順利下架。\n然後第二款出在微信，做得更精緻。\n連拉桿位置跟盾牌造型都照抄。\n但你知道最麻煩的是什麼嗎？\n中國平台檢舉要綁當地的手機號碼。\n開發者人在韓國根本送不出去。<sigh>\n你光想就覺得很無奈吧。\n最後還是靠那位粉絲幫忙送件。\n其實這份案卷提醒了一件事。\n大家比對半天，都只有畫面跟美術。\n玩法被抄走這件事，完全沒被當成檢舉理由喔。",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 13.5,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "其實那時候出現了兩款山寨。第一款出現在抖音。介面跟兵種設計幾乎一模一樣。而且早就接好付費系統了。還好有熱心粉絲幫忙。最後順利把它檢舉下架。<short pause>然後第二款更精緻，出現在微信。一樣是三乘三拉霸，右邊配拉桿。連草原上的樹跟太陽都照著搬。開發者人在韓國要怎麼檢舉？他根本送不出去，因為要驗證當地手機。所以又是同一位粉絲出面幫忙。不過這份案卷點出一件很有意思的事。你發現了嗎？大家抓出來的證據，全都在美術跟介面。至於玩法一模一樣這件事呢？在整個過程裡，完全沒被當成理由喔。",
+   "lint": {
+    "chars": 229,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 12.5,
+    "max_sentence_len": 17,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2
+}

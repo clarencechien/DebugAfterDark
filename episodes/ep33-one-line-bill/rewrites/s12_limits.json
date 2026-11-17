@@ -1,0 +1,126 @@
+{
+ "segment": "s12_limits",
+ "position": "第 13 段，共 14 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "真的假的",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "1b64ec6fc28d8da203e812eff5320cd169867f1c7d0a1bf282eb08c43ef18d6a",
+ "previous_context": "你覺得有哪句 prompt 做得到這件事？根本不可能嘛。",
+ "original": {
+  "text": "這份報告也講明了限制。Saltline 的時間、token 和費用，都是作者自己公布的約略數字，沒有紀錄可以核對，而他本人是模型廠商的員工。各家的美元數字，多半是照 API 價回推的估算，不是實際付出的錢。恐龍短片沒有公布指令、時間和費用。這一波作品有沒有任何一款賺到錢，也沒有資料。再提醒一次，這份報告的查核也用了 Fable 5.2。",
+  "lint": {
+   "chars": 163,
+   "precise_numbers": [
+    "5.2"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 26.2,
+   "max_sentence_len": 56,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以其實這份報告自己也講得很白。<short pause>很多數字大家聽聽就好。像 Saltline 花的時間跟費用，都是作者自己給的大概數字。他本人就是模型廠商的員工耶。而且各家的花費，多半只是拿 API 價格回推的估算。那恐龍短片有沒有人工修過？不知道，完全沒公布。最妙的是，這份報告的查核跟初稿，居然也是叫 Fable 五點二去寫的。等於叫當事模型查自己嘛。然後這一波作品到底有沒有人賺到錢？答案是完全沒有資料啦。",
+   "lint": {
+    "chars": 191,
+    "precise_numbers": [
+     "五點二"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 32,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "所以聽完這些，是不是該冷靜一下？<short pause>其實這份報告自己也承認有限制啦。像 Saltline 花的時間跟費用，都是作者自己公布的大概數字。而且他本人就是模型廠商的員工喔。各家提到的美元金額，大多只是拿 API 牌價回推的估算。恐龍短片甚至連 prompt 都沒公布。那這波作品到底有沒有賺到錢？答案是完全沒有資料。對了，這份報告查核時，其實也用了 Fable 五點二。等於請當事模型查自己。大家聽的時候要自己打個折喔。",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [
+     "五點二"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.9,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "所以這份報告其實很誠實，直接講了限制。\n像 Saltline 的時間跟費用，只是約略數字。\n而且他本人是模型員工，沒有紀錄能核對。\n那些美元金額，多半是拿 API 價回推的。\n那這一波作品到底有沒有賺到錢？\n答案是完全沒有資料啦。<laugh>\n連恐龍短片也沒公布指令跟費用。\n更妙的是，這份報告查核也用了 Fable 五點二。\n等於叫模型查自己，聽的時候要算進去喔。",
+   "lint": {
+    "chars": 163,
+    "precise_numbers": [
+     "五點二"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 17.1,
+    "max_sentence_len": 22,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "答案是完全沒有資料啦。<laugh>",
+   "to": "答案是，沒有資料。",
+   "reason": "刪笑聲"
+  }
+ ]
+}

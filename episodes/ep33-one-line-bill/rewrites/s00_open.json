@@ -1,0 +1,129 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 14 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "df90154e24c61214b419139f4edc7fe9a0bac9241d8b4f6cf9bb178b96d7fa9c",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "十一月九號，Anthropic 發表 Claude Fable 5.2。同一天，一位員工貼出一關射擊遊戲，說只下了一句指令。那則貼文也附了帳單：模型自己跑了八小時，大約五百五十美元。接下來一週，社群上點得開的作品超過一百六十件，一句話做一個遊戲，洗遍了整個時間軸。這份報告想查三件事：是真的嗎？要多少錢？這算哪一種野心？先講它查到最反直覺的一句：指令是一句，計費單位是小時。",
+  "lint": {
+   "chars": 183,
+   "precise_numbers": [
+    "十一",
+    "5.2",
+    "五百五十",
+    "一百六十"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 21.9,
+   "max_sentence_len": 40,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 3,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你只下了一句 prompt，AI 還真的做出一款射擊遊戲。但你看到帳單的時候，真的會當場愣住。<short pause>因為模型自己默默跑了八個小時，算下來大約五百五十美元耶。其實在十一月，Anthropic 發表 Fable 5.2 的時候，整個社群就被這類遊戲洗版了。<short pause>大家都在傳一句話做遊戲，對吧？這份報告就去認真查了三件事。是真的嗎？要花多少錢？還有這算哪一種野心？最扯的重點是什麼？你指令只給了一句話，計費單位居然是用小時在算的喔。",
+   "lint": {
+    "chars": 201,
+    "precise_numbers": [
+     "五百五十",
+     "十一",
+     "5.2"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.3,
+    "max_sentence_len": 43,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "你最近應該看過，一句話就能叫 AI 做遊戲吧？\n十一月初 Anthropic 發表新模型。\n一位工程師貼出遊戲，說他只下了一句指令。\n中間完全沒有任何回饋喔。\n重點來了，你猜模型自己跑了多久？\n它自己連續跑了八個小時。<short pause>\n帳單換算下來，大約五百五十美元。\n我看到那個數字真的傻眼。<laugh>\n接下來一週，社群直接被一百多件作品洗版。\n所以這份報告想搞清楚，這到底是真的假的？\n最反直覺的是，指令給一句，計費卻用小時算。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [
+     "十一",
+     "五百五十",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "你最近是不是也被一句話做遊戲洗版了？十一月 Anthropic 發表新模型 Fable 5.2。他們的員工貼出一款射擊遊戲，說自己真的只給了一句指令喔。更扯的是隨後附上的帳單。你猜模型自己跑了多久？答案是整整八個小時耶。換算費用大約是五百五十美元。我看到這個數字整個人愣住。<laugh>短短一週，網路上冒出一百多款遊戲。這份報告其實想弄懂三件事。是真的嗎？要多少錢？這算哪種野心？重點來了，指令只有一句，計費單位卻是用小時在算啦。",
+   "lint": {
+    "chars": 205,
+    "precise_numbers": [
+     "十一",
+     "5.2",
+     "五百五十",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 13.6,
+    "max_sentence_len": 27,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "我看到那個數字真的傻眼。<laugh>",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

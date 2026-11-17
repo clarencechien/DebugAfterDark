@@ -1,0 +1,111 @@
+{
+ "segment": "s11_limits",
+ "position": "第 12 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "很扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d7e8f171cb3fa72384f181182403c46cddfd250d7a319451fcae3286d558d107",
+ "previous_context": "最妙的是，連宣傳山寨的人，都硬要吹成官方手機版。這真的讓人很感慨，因為大家心裡都知道誰才有價值。",
+ "original": {
+  "text": "有一則中文圈的心得問過：AI 做的東西多到一個程度之後，玩家會不會更願意為跟創作者有強連結的作品付錢？這份案卷的回答是，在這個案子裡，連結沒有反映在售價上，它反映在被抄的時候有人幫忙守。而且這種連結不只敘事型的開發者才有，一個美術大半交給 AI 的人，靠著公開的試玩版和一直回應玩家，也累積出來了。案卷也講明了它證明不了的事：山寨造成多少損失沒有資料，全篇只有開發者一方的說法，這是公開資訊的整理，不是法律意見。",
+  "lint": {
+   "chars": 203,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 49.8,
+   "max_sentence_len": 56,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那到底什麼才能真正擋住山寨？\n其實回到那一則網路心得問的問題。\n玩家會為跟創作者有強連結的作品多付錢嗎？\n從這個案子來看，答案是不會。\n因為遊戲定價根本沒有比較高。\n但最厲害的是，\n這種連結反映在完全不同的地方。\n被抄的時候，有人會跳出來幫你守著。<short pause>\n我覺得這真的很讓人佩服。\n而且這不是只有敘事型的遊戲才有喔。\n就算美術大半靠 AI，\n只要你放公開試玩版、認真回應玩家，\n大家一樣會認得你。\n不過這份案卷說得很清楚，\n山寨造成多少損失，其實沒有資料。\n而且整篇只有開發者一方的說法。\n這只是公開資訊的整理，不是法律意見啦。",
+   "lint": {
+    "chars": 244,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 35,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "其實之前有人問過一個問題。大家會因為喜歡作者，就多付錢買單嗎？這份案卷給的答案很有意思。在這個案子裡，連結並沒有反映在售價上。對，它的定價其實很普通耶。<short pause>但這個連結，反映在被抄的時候有人幫忙守。這種深厚連結，只有講故事的遊戲才有嗎？完全不是喔。所以一個美術大半交給 AI 的人，靠著公開 Demo 和一直回應玩家，也一樣能累積出這種信任。不過這份案卷也有講明，山寨到底造成多少損失，目前完全沒有資料。全篇也都只是開發者單方面的說法。這只是公開資訊的整理，不是法律意見啦。",
+   "lint": {
+    "chars": 230,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 42,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "所以回到網路上那篇心得問的問題。<short pause>玩家會為了跟創作者的連結，多掏錢嗎？其實在這個案子裡，定價根本沒有變貴。最讓我震撼的是，這種連結反映在別的地方。就是被抄的時候，有人跳出來幫忙守。而且誰說只有很會說故事的遊戲能做到？你看一位美術大半靠 AI 的開發者，靠著公開試玩版，認真回覆玩家，也一樣能把鐵粉聚起來耶。不過這份案卷也說得很白啦，山寨到底造成多少損失，其實沒有資料。整件事也只有開發者單方面的說法。這只是公開資訊的解讀，不是法律意見喔。",
+   "lint": {
+    "chars": 216,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.6,
+    "max_sentence_len": 42,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1
+}

@@ -1,0 +1,138 @@
+{
+ "segment": "s10_answer",
+ "position": "第 11 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "很扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "79dddda1cc70f950eaf577f42b852c9520c57bc55c9c6b31d3e80c7c9a2d8c00",
+ "previous_context": "那一人團隊要怎麼辦？對手在海外的小遊戲平台，你根本沒本錢跨海耗上好幾年官司嘛。",
+ "original": {
+  "text": "所以擋住山寨的是什麼？案卷裡實際起作用的只有三樣。第一，有人替他看著：兩款山寨都是中國玩家發現的，第一款也是靠粉絲檢舉才下架。第二，有人在等正版：上市前就有十萬人把它放進願望清單，這些人認得哪一個才是原作。第三，他一直在改：第一款山寨出現的隔月，他照樣推出大改版，山寨搬走的是當時的試玩版。這份案卷說，這三樣其實是同一件事：有一群人認得他。連宣傳山寨的人都知道這件事值錢，所以要把它說成官方的手機版。",
+  "lint": {
+   "chars": 200,
+   "precise_numbers": [
+    "十萬"
+   ],
+   "enumerations": [
+    "第一",
+    "第一",
+    "第二",
+    "第三",
+    "第一"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 27.6,
+   "max_sentence_len": 41,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以到底是什麼擋住了山寨？其實這份案卷裡，真正起作用的只有三件事。第一是有玩家幫他盯著，兩款山寨都是粉絲發現的。第二是有十萬人在等正版，大家都認得哪一個才是原作喔。然後是他一直在改版，山寨搬走舊的 Demo，正版早就往前走了。<short pause>最厲害的是，這三樣其實都是同一件事，也就是有一群人認得他。連宣傳山寨的短影音都知道這點值錢，還要把它說成官方手機版耶。<laugh>",
+   "lint": {
+    "chars": 171,
+    "precise_numbers": [
+     "十萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 7,
+    "avg_sentence_len": 23.4,
+    "max_sentence_len": 29,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "所以到底是什麼擋住了山寨？\n其實這份案卷說，真正起作用的只有三件事。<short pause>\n首先，有人替他盯著。\n兩款山寨都是玩家發現的，而且靠粉絲檢舉才下架。\n然後，有人在等正版。\n遊戲上市前就有十萬人放進願望清單耶。\n這些人認得出誰才是原作。\n最後是他一直在更新。\n山寨搬走的只是舊 Demo，正版早就往前走了。\n你仔細想想，這三樣東西說穿了是什麼？\n就是有一群人認得他嘛。\n最妙的是，連宣傳山寨的人，都硬要吹成官方手機版。\n這真的讓人很感慨，因為大家心裡都知道誰才有價值。",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [
+     "十萬"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 23,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "所以最後真正擋住山寨的是什麼？\n答案其實跟法律完全沒關係。\n這份案卷整理出三樣東西。\n第一是有玩家幫忙盯著，山寨一冒出來就被粉絲檢舉下架。\n第二是有人在等正版，發售前就有十萬人加了願望清單，大家都認得原作。\n然後最厲害的是他一直在改版，山寨抄走的只是舊的 Demo，正版早就跑遠了。<short pause>\n你仔細想一下，這三樣不都是同一件事嗎？\n就是有一群人認得你嘛。\n連宣傳山寨的人，都要騙大家說是官方手機版，這代表創作者的名字本身就超有價值啊。",
+   "lint": {
+    "chars": 204,
+    "precise_numbers": [
+     "十萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 21.7,
+    "max_sentence_len": 38,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "這真的讓人很感慨，因為大家心裡都知道誰才有價值。",
+   "to": "出處如果沒有價值，就不必借用。",
+   "reason": "改回原文的說法"
+  }
+ ]
+}

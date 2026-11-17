@@ -1,0 +1,126 @@
+{
+ "segment": "s06_model",
+ "position": "第 7 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e2966111e49e60fa0309bba63db71092ff5c207fef95c2953fc92c84721e72f3",
+ "previous_context": "這份案卷說，措辭在法律上差很多。韓國官方規定得很直接，純 AI 做出來的東西，不受著作權保護啦。",
+ "original": {
+  "text": "再看收錢的方式。Slotbound 是買斷制，九點九九美元，另外有免費的試玩版；兩款山寨都在中國的手機小遊戲平台，免費下載，靠廣告和內購。試玩版本來是行銷工具，讓玩家先玩再加願望清單，那十萬個願望清單就是這樣累積的。可是對山寨的人來說，一份能完整遊玩的試玩版，就是一份現成的產品規格，搬上手機、改成免費加廣告，就是另一門生意。這份案卷的一句話是：買斷制的正版還沒開賣，課金制的山寨已經在收錢了。",
+  "lint": {
+   "chars": 196,
+   "precise_numbers": [
+    "九點九九",
+    "十萬"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 38.2,
+   "max_sentence_len": 59,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "除了法律問題，收錢方式其實差更多。\n那山寨方到底圖什麼？<short pause>\n你看兩邊的賣法就知道啦。\nSlotbound 走買斷制，賣九點九九美元。\n官方另外有放免費 Demo。\n很多做遊戲的人，應該很習慣這樣宣傳吧。\n本來是為了累積願望清單。\n但對山寨的人來說呢？\n這份 Demo 就是現成的產品規格。\n直接搬去手機小遊戲，改成免費看廣告。\n這份案卷說了一句超諷刺的話。\n買斷制的正版都還沒開賣。\n課金制的山寨就已經在收錢了。<sigh>",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [
+     "九點九九"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 13.5,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "聊完法律，我們來看收錢的方式。其實它們的商業模式差超多。正版是買斷制，定價九點九九美元。它在 Steam 上放了免費試玩版。你覺得試玩版是拿來幹嘛的？本來是行銷工具，想累積願望清單嘛。結果對山寨的人來說，那叫現成的規格書。然後他們直接搬去手機小遊戲平台。改成免費下載，靠廣告跟內購來賺。最諷刺的是什麼？這份案卷有一句話講得很貼切。<sigh>買斷制的正版都還沒開賣。課金制的山寨就已經在收錢了。整個邏輯都被顛倒過來，真的很扯。",
+   "lint": {
+    "chars": 205,
+    "precise_numbers": [
+     "九點九九"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 13.6,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "除了法律問題，其實收錢的方式也很關鍵喔。\n正版 Slotbound 走買斷制，賣九點九九美元。\n而且官方在 Steam 上放了免費 Demo。\n你覺得這個試玩版是拿來幹嘛的？\n本來是想衝願望清單，吸引大家先玩玩看嘛。\n可是對山寨團隊來說，這哪裡只是試玩版？\n這根本是現成的產品規格書。\n他們直接搬去手機小遊戲，改成免費加廣告。\n這份案卷有一句話形容得很傳神。\n正版都還沒正式開賣，山寨就已經在收錢了。<sigh>",
+   "lint": {
+    "chars": 186,
+    "precise_numbers": [
+     "九點九九"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 23,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "整個邏輯都被顛倒過來，真的很扯。",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

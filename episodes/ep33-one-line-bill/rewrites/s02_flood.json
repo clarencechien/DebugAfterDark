@@ -1,0 +1,151 @@
+{
+ "segment": "s02_flood",
+ "position": "第 3 段，共 14 段",
+ "avoid": [
+  "重點來了",
+  "真的假的",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0365835445209bbf51ec545f9198f80c107d25ca4bca6643faa95ab8a47a4c0c",
+ "previous_context": "等於請當事模型查自己，這超妙的吧？所以我們在聽的時候，也要把這件事算進去啦。",
+ "original": {
+  "text": "這種場面，今年秋天已經看過一次。九月三號 OpenAI 發表 GPT-6 Astra，那個週末，X 上滿是一句話做出來的 3D 遊戲，有人說四十五分鐘就拿到一款能玩的遊戲。十一月九號 Fable 5.2 一發表，三分鐘後，Anthropic 做產品的 Felix Rieseberg 就貼出第一批作品，頁尾註明都是初稿，沒有人給過回饋。當天稍晚，他把其中一款射擊遊戲 Saltline 單獨貼出來，附上 token 數和費用，到十四號有四百三十多萬次觀看。兩天後，簡體中文圈就出現了改了名字的中文版。",
+  "lint": {
+   "chars": 232,
+   "precise_numbers": [
+    "6",
+    "3",
+    "四十五",
+    "十一",
+    "5.2",
+    "十四",
+    "四百三十",
+    "萬"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 45.4,
+   "max_sentence_len": 74,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "其中"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實這種洗版的場面，\n今年秋天已經不是第一次看到了。\n九月初 OpenAI 發表新模型的時候，\n社群上就全是一句話做出來的遊戲，\n有人不到一個小時就弄出一款能玩的。\n結果兩個月後 Anthropic 發表新模型，\n更扯的事情又來了。<laugh>\n他們自家做產品的 Felix Rieseberg，\n發表沒幾分鐘就貼出第一批遊戲，\n頁尾還註明完全沒有人給過回饋喔。\n我看到那個速度真的起雞皮疙瘩。\n然後他把射擊遊戲 Saltline 單獨貼出來，\n短短幾天就有四百三十萬次觀看。\n你猜接下來發生什麼事？\n隔沒兩天，\n網路上就到處在傳換了名字的中文版了啦。",
+   "lint": {
+    "chars": 247,
+    "precise_numbers": [
+     "四百三十萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 8,
+    "avg_sentence_len": 29.9,
+    "max_sentence_len": 53,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "其實這種洗版場面，\n今年秋天大家早就看過一次了。\n九月初 OpenAI 發表新模型的時候，\nX 上面全是那種一句話做出的遊戲。\n結果到了十一月，\n換 Anthropic 發表 Fable 5.2。\n<sigh> 歷史又馬上重演。\n發表才過幾分鐘喔，\n他們的員工 Felix Rieseberg 就貼出作品。\n其中有一款射擊遊戲叫 Saltline。\n你猜大家反應怎樣？\n不到一週，\n那則貼文累積了四百三十多萬次觀看。\n我看到這個數字整個嚇一跳。\n更扯的是，才過沒幾天，\n網路上就已經出現改名的中文版了啦。",
+   "lint": {
+    "chars": 219,
+    "precise_numbers": [
+     "十一",
+     "5.2",
+     "四百三十",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.9,
+    "max_sentence_len": 33,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.9,
+    "written_words": [
+     "其中"
+    ],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "其實這種被洗版的場面，大家兩個月前才剛看過一次。九月 OpenAI 發新模型的時候，X 上面滿滿是一句話做出來的 3D 遊戲。\n\n結果十一月換 Anthropic 發 Fable 5.2。<short pause>你猜速度有多快？發表才過三分鐘，他們做產品的 Felix Rieseberg 就貼出作品了。頁尾還註明全部是初稿，完全沒有人給過回饋喔。\n\n然後他把一款射擊遊戲 Saltline 貼出來，附上 token 數跟指令，光是那則貼文，就衝出了四百三十多萬次觀看。<laugh>更扯的是，才過兩天，網路上就出現改了名字的中文版，整款遊戲包成一個 HTML 檔，到處在網路硬碟上面瘋傳耶。",
+   "lint": {
+    "chars": 255,
+    "precise_numbers": [
+     "3",
+     "十一",
+     "5.2",
+     "四百三十",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 30.9,
+    "max_sentence_len": 54,
+    "sentences_over_20": 7,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "更扯的事情又來了。<laugh>",
+   "to": "同樣的事又來了一次。",
+   "reason": "刪笑聲"
+  },
+  {
+   "from": "我看到那個速度真的起雞皮疙瘩。",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

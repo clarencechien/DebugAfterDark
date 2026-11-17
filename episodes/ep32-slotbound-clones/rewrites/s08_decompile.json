@@ -1,0 +1,111 @@
+{
+ "segment": "s08_decompile",
+ "position": "第 9 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "很扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "9f50cbfc27c12bcb83a70c8c31113574b19de927c5aadf259a14879a4d8c2764",
+ "previous_context": "至於玩法一模一樣這件事呢？在整個過程裡，完全沒被當成理由喔。",
+ "original": {
+  "text": "開發者認為，山寨是用 AI 反編譯做出來的，理由是一款沒有公開原始碼的電腦遊戲，兩個月就變成手機版。這份案卷提醒，這是他的推論，報導也註明沒有直接證據；山寨有沒有讓他少賣，也查不到資料。韓國媒體的報導是，AI 確實讓反編譯和移植快了很多，有人估計從試玩版做出山寨，可能只要幾天。可是能跑起來和做對是兩件事，後者還是要有人驗。對山寨的人來說，能跑、看起來像就夠了。十月 Steam 新品節前，已經有獨立遊戲因為怕被 AI 複製，撤下了試玩版。開發者自己的立場是，試玩版還是該放。",
+  "lint": {
+   "chars": 231,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 32.0,
+   "max_sentence_len": 47,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那開發者是怎麼推論的？\n其實他認為對方是用 AI 反編譯做出來的。\n因為沒公開原始碼的電腦遊戲，\n兩個月就變成手機版，\n不靠 AI 幾乎不可能。\n不過這份案卷說，目前完全沒有直接證據喔。\n而且山寨有沒有害他少賣，也查不到資料。\n然後韓媒報導提到，現在靠 AI 幫忙，\n從試玩版做出山寨可能只要幾天。\n聽到這裡你可能覺得很可怕吧？\n但能跑起來跟做對，其實是兩回事。<short pause>\n只是對山寨的人來說，看起來像就夠了。\n所以新品節前，真的有團隊怕到撤下試玩版。\n但這位韓國開發者覺得，試玩版還是該放，\n只要把遊戲做得更好，就能贏過複製品啦。",
+   "lint": {
+    "chars": 241,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.9,
+    "max_sentence_len": 37,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "其實開發者會這麼篤定，是因為速度太快了。<short pause>\n一款沒公開原始碼的電腦遊戲，\n兩個月就生出手機版。\n他推論對方是用 AI 反編譯抄出來的。\n不過這份案卷特別提醒，這只是他的推論喔，\n報導也說沒有直接證據，\n而且山寨有沒有害他少賣，目前也查不到。\n那用 AI 移植真的有這麼容易嗎？\n韓國媒體說，現在可能幾天就能弄出山寨版。\n雖然能跑起來跟做對是兩回事，\n但對山寨的人來說，看起來有像就夠了啦。\n我讀到這其實滿替獨立遊戲捏一把冷汗。<short pause>\n像十月新品節前，\n就有團隊怕被 AI 抄走，直接把試玩版撤掉了耶。\n不過這位開發者覺得，試玩版還是該放，\n只要把遊戲做得更好，就能贏過那些複製品。",
+   "lint": {
+    "chars": 265,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 25.5,
+    "max_sentence_len": 49,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實開發者一直推論，\n山寨是用 AI 反編譯做出來的。\n因為一款沒有公開原始碼的 PC 遊戲，\n兩個月內就跑出手機版。\n不過這份案卷有特別提醒喔，\n這目前只是開發者單方面的推論，\n並沒有直接證據能證明。\n而且山寨到底有沒有害他少賣，\n目前也查不到資料啦。<short pause>\n相關報導有提到，\n現在靠 AI 輔助，\n有人估計從 Demo 做出山寨只要幾天。\n但你應該也能體會，\n程式能跑跟做對，完全是兩回事。\n那山寨的人在乎嗎？\n其實根本不在乎。\n他們只要看起來像、能跑就夠了。\n我光是看著其他獨立團隊嚇到撤掉 Demo，\n就覺得這股焦慮真的很可怕。\n不過這位韓國開發者覺得，\nDemo 還是該放，\n只要把遊戲做得更好，就能贏過複製品。",
+   "lint": {
+    "chars": 277,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 24.2,
+    "max_sentence_len": 38,
+    "sentences_over_20": 8,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0
+}

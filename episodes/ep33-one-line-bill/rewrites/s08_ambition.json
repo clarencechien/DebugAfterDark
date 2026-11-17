@@ -1,0 +1,133 @@
+{
+ "segment": "s08_ambition",
+ "position": "第 9 段，共 14 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "真的假的",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8d27ceed5a58425abc4d531391f5d2d5aa567944738a9b428a6670985c96f2c2",
+ "previous_context": "有人只花幾十分鐘、十幾美元，也有人跑了快兩天，噴了一萬四千多美元。同樣是一句話做遊戲，費用竟然可以差到九百多倍。",
+ "original": {
+  "text": "做出 Saltline 的 Felix Rieseberg，剛好就是〈怎麼更有野心〉那篇文章的作者，我們第一集就聊過。這份報告拿他自己的尺來量他自己的作品。他把野心拆成四種：速度、高度、深度、廣度。Saltline 的速度有，而且是主體，一個小關卡從幾個月變成八小時；深度有一招，要求三 A 等級的寫實畫面；廣度有一點；高度沒有。照他自己的梯子，做一款射擊遊戲給我，還沒踏上第一階，因為沒有人問這款遊戲要給誰玩、為什麼要有它。他給的判斷方法是：你會不會為這件事開會？沒有人會為一個技術展示開會。",
+  "lint": {
+   "chars": 240,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第一"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 33.3,
+   "max_sentence_len": 62,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "做出 Saltline 的 Felix Rieseberg，\n其實就是我們第一集聊過的那位作者喔。\n這份報告拿他自己的尺來量他自己的作品。\n我看到這段覺得超有意思。\n他把野心拆成速度、高度、深度跟廣度。\n那 Saltline 到底算哪一種？\n<short pause>\n其實主體全都在速度啦。\n一個小關卡從幾個月縮成八小時。\n深度只有要求三 A 等級的寫實畫面，\n廣度沾到一點，但高度根本是零。\n為什麼說高度沒有？\n因為一件任務做完就做完了，\n根本沒人問這要給誰玩、為什麼要有它。\n照他的梯子，這連第一階都還沒踏上去。\n他給過一個很妙的判斷方法，\n你會為了這件事去開會嗎？\n<laugh>\n顯然不會嘛，誰會為技術展示開會啦。",
+   "lint": {
+    "chars": 266,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 19.5,
+    "max_sentence_len": 43,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "做出 Saltline 的 Felix Rieseberg，\n剛好就是我們第一集聊過的那位作者。\n這份報告很有趣。\n拿他自己的尺，回頭量他自己的作品。<short pause>\n他把野心拆成速度、高度、深度跟廣度。\nSaltline 在速度上很猛，\n把幾個月的工縮成八小時。\n深度有要求 3A 畫面，廣度也有一點。\n那高度呢？\n答案是完全沒有。\n為什麼高度是零？\n因為做完這款遊戲，後面沒有下一個目標嘛。\n沒有人問這款遊戲給誰玩，做完就結束了。\n我看到這個分析，其實很佩服他的坦白。\n他給的判斷方法是：你會為了這件事開會嗎？\n根本沒有人會為了一個技術展示開會啦。",
+   "lint": {
+    "chars": 246,
+    "precise_numbers": [
+     "3"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 42,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "超巧的是，\n做出 Saltline 的 Felix Rieseberg，\n就是我們第一集聊過那篇的作者。\n拿他自己的尺量自己的作品，最公平了啦。\n其實他把野心分成四種喔。\n也就是速度、高度、深度還有廣度。\n那 Saltline 到底算哪一種？\n最厲害的其實是速度。<short pause>\n一個小關卡從好幾個月縮到八小時。\n然後深度有一點，要求三 A 級的寫實畫面。\n廣度也稍微沾到邊。\n可是高度這項，居然完全是零。\n沒有人問這款遊戲要給誰玩、為什麼要做。\n做一款射擊遊戲，做完就結束了。\n我看到這邊整個很有共鳴。<laugh>\n那要怎麼判斷有沒有高度？\n他說看你會不會為了這件事去開會。\n畢竟真的沒有人會為技術展示開會嘛。",
+   "lint": {
+    "chars": 268,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 45,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "超巧的是，做出 Saltline 的 Felix Rieseberg，就是我們第一集聊過那篇的作者。拿他自己的尺量自己的作品，最公平了啦。其實他把野心分成四種喔。也就是速度、高度、深度還有廣度。那 Saltline 到底算哪一種？最厲害的其實是速度。<short pause>一個小關卡從好幾個月縮到八小時。然後深度有一點，要求三 A 級的寫實畫面。廣度也稍微沾到邊。可是高度這項，居然完全是零。沒有人問這款遊戲要給誰玩、為什麼要做。做一款射擊遊戲，做完就結束了。我看到這邊整個很有共鳴。<laugh>那要怎麼判斷有沒有高度？他說看你會不會為了這件事去開會。畢竟真的沒有人會為技術展示開會嘛。",
+   "to": "巧的是，做出 Saltline 的 Felix Rieseberg，就是我們第一集聊過那篇〈怎麼更有野心〉的作者。這份報告拿他自己的尺，量他自己的作品。他把野心分成四種：速度、高度、深度、廣度。<short pause>Saltline 的速度有，而且是主體，一個小關卡從幾個月縮到八小時；深度有一招，要求三 A 等級的寫實畫面；廣度沾到一點；高度是零。沒有人問這款遊戲要給誰玩、為什麼要有它，做完就結束了。那怎麼判斷有沒有高度？他自己的方法是：你會不會為這件事開會？沒有人會為一個技術展示開會。",
+   "reason": "超過 300 字；刪個人反應與笑聲"
+  },
+  {
+   "from": "巧的是，做出 Saltline 的 Felix Rieseberg，就是我們第一集聊過那篇〈怎麼更有野心〉的作者。這份報告拿他自己的尺，量他自己的作品。他把野心分成四種：速度、高度、深度、廣度。<short pause>Saltline 的速度有，而且是主體，一個小關卡從幾個月縮到八小時；深度有一招，要求三 A 等級的寫實畫面；廣度沾到一點；高度是零。沒有人問這款遊戲要給誰玩、為什麼要有它，做完就結束了。那怎麼判斷有沒有高度？他自己的方法是：你會不會為這件事開會？沒有人會為一個技術展示開會。",
+   "to": "巧的是，做出 Saltline 的 Felix Rieseberg，就是我們第一集聊過那篇〈怎麼更有野心〉的作者。這份報告拿他自己的尺，量他自己的作品。他把野心分成四種：速度、高度、深度、廣度。<short pause>Saltline 的速度有，而且是主體，一個小關卡從幾個月縮到八小時。深度有一招，要求三 A 等級的寫實畫面。廣度沾到一點。高度是零。沒有人問這款遊戲要給誰玩、為什麼要有它，做完就結束了。那怎麼判斷有沒有高度？他自己的方法是：你會不會為這件事開會？沒有人會為一個技術展示開會。",
+   "reason": "twtone：分號太多，拆句"
+  }
+ ]
+}

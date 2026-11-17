@@ -1,0 +1,128 @@
+{
+ "segment": "s11_back",
+ "position": "第 12 段，共 14 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "真的假的",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "78d42d0e3a4fba17a59fcd6516a2ff6c8c289f57b094ad81d7e7f88e9b3f154f",
+ "previous_context": "但絕對不能拿來賣。因為外面根本沒有任何人在等它嘛。",
+ "original": {
+  "text": "接回上集。Slotbound 被搬上手機，花了別人兩個月；Saltline 被改成中文版，只花了兩天，因為它本來就是一個打得開的檔案。能檢查，就能改。到目前為止，這份報告查不到這一波有哪一款賣了錢。兩集查下來，它的結論是三句話：做，便宜了，一句話加幾個小時的額度，就有一個能動的東西；看，還是貴的，模型測得出有沒有錯，測不出好不好玩；被認得，最貴，Slotbound 上市前就有十萬人在等，這件事沒有任何一句指令做得出來。",
+  "lint": {
+   "chars": 208,
+   "precise_numbers": [
+    "十萬"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 40.6,
+   "max_sentence_len": 110,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "接回我們前面講的案子。\nSlotbound 當初被搬上手機，花了兩個月。\nSaltline 改成中文版，居然兩天就搞定。\n因為檔案打開就能改嘛。\n這份報告查到現在，到底有誰真的賺到錢？\n答案是，目前一個都查不到。<short pause>\n說穿了，現在做東西變得太便宜了。\n下個 prompt 跑幾小時，東西就能動。\n可是看還是很貴喔。\n模型測得出錯誤，測不出好不好玩。\n最貴的，其實是被大家認得。\nSlotbound 上市前就有十萬人在等耶。\n這種事，哪是一句 prompt 做得出來的？",
+   "lint": {
+    "chars": 213,
+    "precise_numbers": [
+     "十萬"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 22,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "像 Slotbound 被搬上手機，\n別人也花了幾個月。\n但這次的 Saltline 變成中文版，\n居然幾天就被改完了。\n因為它就是個單一 HTML 檔嘛。\n你能檢查，別人就能改。\n那這些做出來的遊戲有賣到錢嗎？\n<short pause>\n完全沒有。\n這份報告查了半天，\n根本沒看到哪一款有賺到錢。\n所以現在到底什麼最貴？\n做一個能動的東西，現在很便宜。\n但要有人看、有人玩，還是很貴。\n模型測得出有沒有 bug，\n測不出遊戲好不好玩。\n其實被大家認得，才是最貴的。\n像 Slotbound 在上市前，\n就已經有十萬人在等它了。\n這種事情，\n可沒有任何一句 prompt 寫得出來喔。",
+   "lint": {
+    "chars": 249,
+    "precise_numbers": [
+     "十萬"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 27,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "這就接回我們上集的案子了。\n你看，Slotbound 搬去手機花了兩個月。\n但 Saltline 改成中文版，只要兩天耶。<short pause>\n因為它就是個 HTML 檔，能看就能改。\n而且到目前為止，這份報告查不到誰賺了錢。\n那現在到底什麼才值錢？\n其實就三件事。\n第一，做東西變便宜了。\n幾小時就有一個能動的成品。\n然後，看還是很貴喔。\n模型測得出有沒有錯，測不出好不好玩。\n最貴的，其實是被大家認得。\n像 Slotbound 上市前就有十萬人在等。<sigh>\n你覺得有哪句 prompt 做得到這件事？\n根本不可能嘛。",
+   "lint": {
+    "chars": 224,
+    "precise_numbers": [
+     "十萬"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 13.9,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "<sigh>你覺得有哪句 prompt 做得到這件事？根本不可能嘛。",
+   "to": "這件事，沒有任何一句指令做得出來。",
+   "reason": "刪添加的反問"
+  }
+ ]
+}

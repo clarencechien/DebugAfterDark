@@ -1,0 +1,126 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 13 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "43be07d46cfab71775077ef209d2d7ea04d0d699b5d34f6541968edff29c611c",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "一款遊戲，號稱上架四十八小時就賣了四億七千萬韓元，折合台幣一千多萬。開發者不會寫程式，用 AI 做了十三個月。可是遊戲還沒上市，討論區就有玩家來問：手機上那個小程式，是你們授權的嗎？官方從來沒有出過手機版。他的免費試玩版放出去大約兩個月，就被人搬上了手機，而且比他先開始收錢。AI 讓他十三個月做出一款遊戲，也讓別人兩個月就搬走它。那最後擋住山寨的，到底是什麼？這份案卷先講結論：不是玩法，也不是法律。",
+  "lint": {
+   "chars": 198,
+   "precise_numbers": [
+    "四十八",
+    "七千萬",
+    "一千",
+    "萬",
+    "十三",
+    "十三"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 23.8,
+   "max_sentence_len": 35,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你敢相信嗎？一款號稱上架兩天，就賣了四億七千萬韓元的遊戲，開發者完全不會寫程式，靠 AI 做了十幾個月。結果正式版都還沒上市，試玩版才放出去兩個月，手機版居然先冒出來了。<short pause> 更扯的是，對方還比他先開始收錢。就有玩家跑來問，手機上那個是授權的嗎？我看到這段真的替他捏一把冷汗。AI 讓你花一年多生出遊戲，也讓別人兩個月就整碗搬走。那最後擋住山寨的到底是什麼？靠玩法嗎？還是靠法律？其實這份案卷說，都不是喔。",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [
+     "七千萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.9,
+    "max_sentence_len": 43,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "如果你的遊戲還沒上市，<short pause>\n別人就先抄去手機上收錢，\n你會怎麼辦？\n一位不會寫程式的韓國獨立開發者，\n靠著 AI 做了十三個月。\n網路上說他上架兩天，\n就賣了四億七千萬韓元。\n但重點來了，\n他的免費試玩版才放出去兩個月，\n討論區就有玩家跑來問，\n手機上的小遊戲是你們授權的嗎？\n其實官方根本沒做過手機版耶。<sigh>\n更扯的是，\n盜版居然比他還早開始賺錢啦。\nAI 幫他做出了遊戲，\n也讓別人兩個月就整碗端走。\n那最後擋住山寨的到底是什麼？\n這份案卷說，不是玩法，也不是法律。",
+   "lint": {
+    "chars": 211,
+    "precise_numbers": [
+     "十三",
+     "七千萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 22.4,
+    "max_sentence_len": 46,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "遊戲都還沒正式上市，山寨版居然已經先在手機上收錢了。這是一位韓國獨立開發者的真實遭遇啦。他完全不會寫程式，靠 AI 摸索了十三個月。好不容易放出免費試玩版，結果才過兩個月，整款就被抄去手機上了喔。更扯的是，對方還比他先開始收錢。<sigh> 傳說這款遊戲兩天賺了四億七千萬韓元。AI 幫你省下的時間，抄你的人也一樣能省。那你猜猜看，最後擋住山寨的到底是什麼？其實這份案卷說，答案不是玩法，更不是法律。",
+   "lint": {
+    "chars": 190,
+    "precise_numbers": [
+     "十三",
+     "七千萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 20.1,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "你敢相信嗎？一款號稱上架兩天，就賣了四億七千萬韓元的遊戲，開發者完全不會寫程式，靠 AI 做了十幾個月。結果正式版都還沒上市，試玩版才放出去兩個月，手機版居然先冒出來了。<short pause> 更扯的是，對方還比他先開始收錢。就有玩家跑來問，手機上那個是授權的嗎？我看到這段真的替他捏一把冷汗。AI 讓你花一年多生出遊戲，也讓別人兩個月就整碗搬走。那最後擋住山寨的到底是什麼？靠玩法嗎？還是靠法律？其實這份案卷說，都不是喔。",
+   "to": "一款號稱上架四十八小時，就賣了四億七千萬韓元的遊戲，開發者完全不會寫程式，靠 AI 做了十三個月。可是正式版還沒上市，討論區就有玩家跑來問：手機上那個小程式，是你們授權的嗎？官方從來沒有出過手機版。<short pause>他的試玩版才放出去兩個月，就被人搬上手機，而且比他先開始收錢。AI 讓他花十三個月做出一款遊戲，也讓別人兩個月就整碗端走。那最後擋住山寨的，到底是什麼？靠玩法，還是靠法律？這份案卷說，都不是。",
+   "reason": "「十幾個月」改回十三個月；補回玩家的提問；刪個人反應"
+  }
+ ]
+}

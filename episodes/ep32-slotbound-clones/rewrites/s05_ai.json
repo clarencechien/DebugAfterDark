@@ -1,0 +1,137 @@
+{
+ "segment": "s05_ai",
+ "position": "第 6 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d7b668ba617d2aae3be2983bf56fd623ff00e273e07ebebcd9ef305f2edc46e2",
+ "previous_context": "轉三乘三的拉霸，連線召喚小兵自動打敵人。光是想像那個畫面，我就覺得超有創意的啦。",
+ "original": {
+  "text": "七月的試玩版拿到 Steam 的極度好評，一度衝到試玩版同時上線人數的第二名；九月願望清單破十萬；十一月十二號，正式版上架，原價九點九九美元。那 AI 做了多少？有三個版本。試玩版剛出時，俄國媒體轉述他說程式碼百分之百由 AI 生成，美術也大多是 AI 做的；被山寨之後，他對韓國媒體說，AI 用得很多，但不是全部；Steam 頁面的揭露又寫得更窄。這份案卷說，措辭的差別在法律上有意義：韓國去年的指引寫得很直接，沒有人類創作介入的純 AI 產出，不受著作權保護。",
+  "lint": {
+   "chars": 220,
+   "precise_numbers": [
+    "十萬",
+    "十一",
+    "十二",
+    "九點九九",
+    "百分之百"
+   ],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 43.0,
+   "max_sentence_len": 81,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這款遊戲七月推出試玩版，成績超級好。\n願望清單甚至一路衝破十萬大關。\n然後在十一月中直接推出正式版。\n那這款遊戲到底有多少是 AI 做的？\n其實前後總共出現過三個說法喔。\n最早俄國媒體轉述開發者的話。\n他說程式碼百分之百都是 AI 寫的。\n連美術大部分也是靠 AI 搞定。\n可是後來被山寨抄襲，他怎麼說？\n他跟韓國媒體說，自己其實動手改了不少。\n結果在 Steam 頁面，範圍又寫得更窄了。\n這份案卷說，說法會變是有原因的。<short pause>\n因為韓國官方的指引寫得很直接。\n純 AI 產出的東西，不受著作權保護。\n你必須證明自己有動手修改才能算數。<sigh>\n光是替他想這件事，我都覺得壓力超大耶。",
+   "lint": {
+    "chars": 261,
+    "precise_numbers": [
+     "十萬",
+     "十一",
+     "百分之百"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "這個點子後來真的大受歡迎。\n七月的 Demo 一路衝到排行榜第二名。\n九月願望清單甚至破了十萬。\n到了十一月中，正式版直接開賣。\n不過，這裡面到底有多少是 AI 做的？\n答案竟然有三種說法。<short pause>\n俄國媒體一開始轉述他的話。\n說遊戲程式碼，百分之百都是 AI 寫的。\n可是被山寨之後呢？\n他對韓國媒體說，其實有很多是人工做的。\n然後在 Steam 頁面上，他又寫得更保守。\n只提到特效跟 UI 這些素材。\n這份案卷說，措辭差這麼多是有原因的喔。\n韓國官方規定，純 AI 產出不受著作權保護。\n你必須證明自己動手修改過。\n才有機會主張權利啦。",
+   "lint": {
+    "chars": 240,
+    "precise_numbers": [
+     "十萬",
+     "十一",
+     "百分之百"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 14.0,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "這款遊戲後來有多紅？他在 Steam 推出試玩版，拿到極度好評，甚至還衝上排行前幾名。到了年底，正式版也順利上架。那大家最好奇的是什麼？一定是 AI 到底幫他做了多少。其實答案有三個版本喔。試玩版剛出時，媒體轉述開發者的說法，他說程式碼百分之百是 AI 寫的。<short pause>聽起來真的超級狂耶。可是等遊戲被山寨之後，他又跟媒體解釋，自己其實動手改了很多。然後在 Steam 上，AI 的範圍寫得更窄。為什麼說法會不一樣？這份案卷說，措辭在法律上差很多。韓國官方規定得很直接，純 AI 做出來的東西，不受著作權保護啦。",
+   "lint": {
+    "chars": 240,
+    "precise_numbers": [
+     "百分之百"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 32,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "這款遊戲後來有多紅？他在 Steam 推出試玩版，拿到極度好評，甚至還衝上排行前幾名。到了年底，正式版也順利上架。那大家最好奇的是什麼？一定是 AI 到底幫他做了多少。其實答案有三個版本喔。試玩版剛出時，媒體轉述開發者的說法，他說程式碼百分之百是 AI 寫的。<short pause>聽起來真的超級狂耶。可是等遊戲被山寨之後，他又跟媒體解釋，自己其實動手改了很多。然後在 Steam 上，AI 的範圍寫得更窄。為什麼說法會不一樣？這份案卷說，措辭在法律上差很多。韓國官方規定得很直接，純 AI 做出來的東西，不受著作權保護啦。",
+   "to": "後來它有多紅？七月的試玩版拿到 Steam 的極度好評，一度衝到試玩版同時上線人數的第二名；九月願望清單破十萬；十一月十二號，正式版上架。那大家最好奇的，一定是 AI 到底幫他做了多少。答案有三個版本。試玩版剛出時，俄國媒體轉述他說，程式碼百分之百是 AI 寫的。<short pause>被山寨之後，他跟韓國媒體說，AI 用得很多，但不是全部，也有相當多的人工。Steam 頁面的揭露，又寫得更窄。這份案卷說，措辭的差別在法律上有意義：韓國去年的指引寫得很直接，沒有人類創作介入的純 AI 產出，不受著作權保護。",
+   "reason": "「排行前幾名」改回同時上線人數第二名、「年底」改回十一月十二號、「規定」改回指引；刪個人反應"
+  }
+ ]
+}

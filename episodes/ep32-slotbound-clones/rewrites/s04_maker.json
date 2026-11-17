@@ -1,0 +1,124 @@
+{
+ "segment": "s04_maker",
+ "position": "第 5 段，共 13 段",
+ "avoid": [
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "db14dc0228846cc837c0f2669936833dd0bb5faf7cabd3ebcdb8e3bcf6001b8c",
+ "previous_context": "運氣跟策略稍微失準，玩家就會覺得輸贏全看臉啦。光想就替開發者捏一把冷汗耶。",
+ "original": {
+  "text": "開發者在海外長大，在英國念過資訊工程，沒念完就回到韓國，原本既不會寫程式，也不會畫圖。念資工的哥哥教了他 vibe coding。他第一次試的 prompt 是：做一個能用 WASD 移動方塊的遊戲，AI 交出的東西跟描述一樣，他當下就決定要做遊戲。靈感來自 CloverPit 裡三個符號連成一線的那一刻：如果三個槍連線，就跑出一個替你作戰的槍兵，一定很好玩。核心循環就變成：轉三乘三的拉霸，連線的符號召喚兵種，兵種自動迎戰一波波敵人。",
+  "lint": {
+   "chars": 210,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 41.0,
+   "max_sentence_len": 54,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實這位韓國開發者，背景超級特別。\n他在英國念過資工，可是根本沒念完。<short pause>\n回到韓國時，他不會寫程式也不會畫圖耶。\n那他是怎麼開始的？\n答案是他哥哥教他 vibe coding。\n他第一次下的 prompt 超簡單，\n就是做一個能用 WASD 移動方塊的遊戲。\n結果 AI 一下子就做出來了。\n他當下就決定要來做遊戲。<laugh>\n他的靈感來自另一款遊戲 CloverPit。\n你猜他想到什麼？\n如果連出三個槍，就跑出一個槍兵幫你打。\n我光用想的，就覺得這個點子超酷。\n所以遊戲的核心，就是轉三乘三的拉霸，\n靠連線召喚兵種，讓小兵自動迎戰敵人啦。",
+   "lint": {
+    "chars": 242,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 36,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實這位韓國開發者，原本根本不會寫程式喔。他在英國念資工沒念完，而且也不會畫圖。後來念資工的哥哥，教他怎麼 vibe coding。你猜他第一次下的 prompt 是什麼？做一個能用 WASD 移動方塊的遊戲。結果 AI 還真的寫出來，他當下決定要做遊戲。<short pause>然後他的靈感也很妙。他想說如果三個槍連線，就跑出槍兵替你作戰。對，這就變成整個遊戲的核心循環。轉三乘三的拉霸，連線召喚小兵自動打敵人。光是想像那個畫面，我就覺得超有創意的啦。",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 23,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "話說回來，這位韓國開發者其實超特別的。他原本既不會寫程式，也不會畫圖喔。他在英國念資工沒念完，回韓國之後，是哥哥教他 vibe coding 的。你猜他第一次下的 prompt 是什麼？他就叫 AI 做一個能用 WASD 移動方塊的遊戲。結果 AI 還真的寫出來了。<laugh> 他當下就覺得，自己也可以做遊戲耶！那靈感是怎麼來的？他在玩別的拉霸遊戲時突然想，如果三個槍符號連線，就跑出一個替你作戰的槍兵，這樣應該超好玩的吧。所以核心玩法就醬定下來了。<short pause> 轉三乘三的拉霸，連線就召喚兵種，小兵自動迎戰一波波的敵人啦。",
+   "lint": {
+    "chars": 238,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 20.6,
+    "max_sentence_len": 46,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "光是想像那個畫面，我就覺得超有創意的啦。",
+   "to": "這個點子，來自 CloverPit 裡三個符號連成一線的那一刻。",
+   "reason": "刪個人反應；補回靈感來源"
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "segment": "s09_law",
+ "position": "第 10 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "很扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "5ab4b3292e3f279fa6c3aae55cebf9d0fff6b48164cb189cd25c5f6146b1bd5e",
+ "previous_context": "所以新品節前，真的有團隊怕到撤下試玩版。但這位韓國開發者覺得，試玩版還是該放，只要把遊戲做得更好，就能贏過複製品啦。",
+ "original": {
+  "text": "那法律幫得上多少？韓國剛好有一個案子可以量。一家韓國公司的手遊「運氣好多遊戲」，累計營收超過一千兩百億韓元，告一款長得很像的遊戲，指出地形、敵人路線、按鈕配置和三隻合成的系統。假處分被駁回；今年四月一審，著作權的主張全部駁回，只認定不正競爭，賠大約五億五千七百萬韓元，對方的遊戲照常營運，現在還在上訴。這份案卷說，這已經是條件最好的情況：大公司、在自己國家的法院、告本國同業。Slotbound 一樣都沒有，對手在中國的平台，一人工作室也撐不起好幾年的官司。",
+  "lint": {
+   "chars": 228,
+   "precise_numbers": [
+    "一千兩百",
+    "五千七百萬"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 37.0,
+   "max_sentence_len": 65,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "既然要面對抄襲，那走法律途徑有用嗎？\n其實韓國剛好有個案子可以看喔。\n有款手遊叫「運氣好多遊戲」，\n累計營收破了一千多億韓元。\n他們告另一款抄襲，\n連地圖跟按鈕都幾乎一樣。\n結果法院怎麼判？\n假處分先被駁回，\n一審著作權主張也全軍覆沒。\n法院只認定不正競爭，\n判賠大約五億五千七百萬韓元。\n對方的遊戲照常營運，現在還在上訴。\n這份案卷說，\n這已經是條件最好的狀況了啦。\n大公司在自己國家告同業，\n官司打到底也就這樣。<sigh>\n換作是 Slotbound 的一人工作室，\n對手在海外的小遊戲平台，\n誰有辦法撐得起好幾年的官司嘛。",
+   "lint": {
+    "chars": 239,
+    "precise_numbers": [
+     "一千",
+     "五千七百萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.7,
+    "max_sentence_len": 45,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "那走法律途徑有用嗎？其實韓國剛好有個案子可以參考。手遊「運氣好多遊戲」賺了一千多億韓元。他們告另一款遊戲抄襲，連地圖跟合成系統都長得很像。結果怎麼樣？著作權的主張全被駁回。<sigh> 法院只認定不正競爭，判賠大約五點五七億韓元。而且對方的遊戲照樣繼續營運，現在案子還在上訴耶。光看就覺得很心酸對吧？這份案卷說，這已經是條件最好的狀況了。大公司在自己國家告同業，都只能打成這樣。<short pause> 而 Slotbound 呢？對手在中國的平台，一人工作室根本打不起好幾年的官司啦。",
+   "lint": {
+    "chars": 221,
+    "precise_numbers": [
+     "一千",
+     "五點五七"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.0,
+    "max_sentence_len": 26,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那走法律途徑有用嗎？\n其實韓國剛好有一場官司可以當參考。\n手遊「運氣好多遊戲」賺了上千億韓元，\n他們告另一家公司抄襲合成玩法。\n結果法院怎麼判？\n著作權的主張全部被駁回。\n最後只認定是不正當競爭，\n判賠大約五億五千七百萬韓元。\n<sigh> 但對方的遊戲完全沒停，照樣在營運欸。\n這份案卷說，這已經是條件最好的情況了。\n大公司在自己國家告同業，都拿對方沒輒。\n那一人團隊要怎麼辦？\n對手在海外的小遊戲平台，\n你根本沒本錢跨海耗上好幾年官司嘛。",
+   "lint": {
+    "chars": 201,
+    "precise_numbers": [
+     "千",
+     "五千七百萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.3,
+    "max_sentence_len": 32,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "<sigh> 但對方",
+   "to": "<sigh>但對方",
+   "reason": "空白"
+  }
+ ]
+}

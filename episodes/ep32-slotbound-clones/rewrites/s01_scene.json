@@ -1,0 +1,132 @@
+{
+ "segment": "s01_scene",
+ "position": "第 2 段，共 13 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "5709cda7060f5eb23f859af8db0ea2d89459643ac83a2fb3f8289aa742e314df",
+ "previous_context": "還是靠法律？其實這份案卷說，都不是喔。",
+ "original": {
+  "text": "這款遊戲叫 Slotbound，是韓國一人工作室的第一款作品。今年七月，免費試玩版在 Steam 上架，正式版預定十一月推出。九月八號，一位中國玩家到 Steam 的討論區通報：抖音上有一款小遊戲，看起來就是 Slotbound，裡面已經放了廣告和內購，有些短影音還把它介紹成官方的手機版。十月又來一次，這回是微信小程式。開發者的回答是，他沒有授權過手機版。至於開頭那個四億七千萬韓元，出自一則 X 貼文，開發者自己沒有公布過，這份案卷說，只能當參考。",
+  "lint": {
+   "chars": 218,
+   "precise_numbers": [
+    "十一",
+    "七千萬"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 35.3,
+   "max_sentence_len": 78,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先說這款遊戲好了，它叫做 Slotbound。<short pause>是一位韓國獨立開發者的第一款作品。他七月在 Steam 上架免費試玩版。正式版原本預計十一月才要出。結果你猜發生什麼事？九月的時候，手機版居然先跑出來了。<sigh>有玩家在抖音看到一模一樣的遊戲。裡面塞滿廣告跟內購，還自稱官方版。隔了一個月，微信小程式又冒出一款。開發者整個傻眼，說他根本沒授權啊。對了，網路上傳他賺了四億七千萬韓元。其實只是一則貼文講的啦。開發者自己根本沒證實過。所以這份案卷說，聽聽當參考就好。",
+   "lint": {
+    "chars": 222,
+    "precise_numbers": [
+     "十一",
+     "七千萬"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "這款遊戲叫 Slotbound。\n是一位韓國獨立開發者的第一款作品。\n他在七月在 Steam 放了免費 Demo。\n原本預計十一月才要出正式版喔。\n你猜後來發生什麼事？\n正式版都還沒出，手機版居然先上線了。<laugh>\n九月有玩家去通報，說抖音上有抄襲的遊戲。\n裡面不但塞滿廣告，還能花錢儲值耶。\n十月更誇張，連微信小程式都冒出來了。\n開發者只能澄清，自己根本沒有授權過。\n我看到這邊真的覺得超荒謬。<sigh>\n對了，網路上傳的四點七億韓元營收，\n其實只出自一則貼文。\n開發者自己根本沒公開過喔。\n這份案卷說，那個數字當參考就好啦。",
+   "lint": {
+    "chars": 237,
+    "precise_numbers": [
+     "十一",
+     "四點七"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 26,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "這款遊戲叫 Slotbound。<short pause> 是韓國獨立開發者的第一款作品。他在 Steam 放了試玩版，正式版根本還沒出喔。結果你猜怎麼著？手機版居然先跑出來了。有玩家通報，在別的平台看到山寨版。裡面甚至放了廣告，還能內購耶。<laugh> 我看到這邊真的覺得超傻眼。開發者完全沒授權，正版都還沒做完嘛。網路上傳說，這遊戲兩天賺了四點七億韓元。其實開發者沒證實，這份案卷說參考就好啦。重點來了，AI 讓他花一年多做出來，別人卻只花兩個月，直接整碗端走了。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [
+     "四點七"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 33,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "這款遊戲叫 Slotbound。<short pause> 是韓國獨立開發者的第一款作品。他在 Steam 放了試玩版，正式版根本還沒出喔。結果你猜怎麼著？手機版居然先跑出來了。有玩家通報，在別的平台看到山寨版。裡面甚至放了廣告，還能內購耶。<laugh> 我看到這邊真的覺得超傻眼。開發者完全沒授權，正版都還沒做完嘛。網路上傳說，這遊戲兩天賺了四點七億韓元。其實開發者沒證實，這份案卷說參考就好啦。重點來了，AI 讓他花一年多做出來，別人卻只花兩個月，直接整碗端走了。",
+   "to": "這款遊戲叫 Slotbound，是韓國一人工作室的第一款作品。今年七月，免費試玩版在 Steam 上架，正式版預定十一月推出。<short pause>九月八號，一位中國玩家到 Steam 的討論區通報：抖音上有一款小遊戲，看起來就是 Slotbound，裡面已經放了廣告和內購，有些短影音還說它是官方的手機版。十月又來一次，這回是微信小程式。開發者說，他從來沒授權過手機版。至於開頭那個四億七千萬韓元，出自一則 X 貼文，開發者自己沒有公布過，這份案卷說，只能當參考。",
+   "reason": "補回日期與兩個平台；刪笑聲與個人反應"
+  }
+ ]
+}

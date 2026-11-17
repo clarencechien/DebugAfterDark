@@ -1,0 +1,121 @@
+{
+ "segment": "s06_docks",
+ "position": "第 7 段，共 14 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "真的假的",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "48c1b476f6731acb58a3aa3a5482f402753e8945b9e4fadd32359449a1d08f5f",
+ "previous_context": "這份報告說得很好，作品是真的。可是傳出去的話，往往比作品簡單太多了啦。",
+ "original": {
+  "text": "這一波還有一個共同點：畫面都很像雨夜的貨櫃碼頭。這份報告的解釋是，語言模型的手是程式碼，它不會捏黏土，但會寫函式，所以擅長能用幾何和數學描述的東西：貨櫃、鋼架、無人機、雨和反光。玩過的人回報的毛病也在同一個方向：小物件互相穿插，樓梯懸在半空，還有人一進遊戲滑鼠就失控。討論區裡最短的一句評語是：這不是遊戲，是技術展示。那句指令本身，也只要求一個很小的關卡。",
+  "lint": {
+   "chars": 178,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 34.6,
+   "max_sentence_len": 64,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.6,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "而且你有沒有注意到？\n這一波做出來的畫面，長得都很像。\n全都是下雨的夜晚，還有貨櫃碼頭。<short pause>\n為什麼會醬？\n這份報告說，語言模型的手其實是程式碼。\n它不會捏黏土，可是很會寫函式。\n所以它擅長數學和幾何能描述的東西。\n像是貨櫃、鋼架跟雨中的反光。\n然後玩過的人回報的毛病，也差不多。\n小物件互相穿插，樓梯懸在半空。\n甚至有人一進去，滑鼠就直接失控。<laugh>\n討論區裡有一句評語超酸。\n他說這不是遊戲，只是技術展示啦。\n其實那句 prompt，本來也只要求一個小關卡嘛。",
+   "lint": {
+    "chars": 213,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 23,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "而且你有沒有發現？\n為什麼這波做出來的畫面，\n都很像雨夜裡的貨櫃碼頭？<short pause>\n這份報告的解釋很有意思。\n語言模型的手其實是程式碼，\n它不會捏黏土，但很會寫函式。\n所以能用幾何和數學算出來的東西，\n像鋼架、無人機還有積水反光，\n它就畫得特別好。<short pause>\n但你只要停下來細看，\n就會看到樓梯懸在半空中。\n甚至有人滑鼠一動就失控，\n根本沒辦法玩耶。\n討論區有一句評語超中肯的，\n說這不是遊戲，只是技術展示啦。",
+   "lint": {
+    "chars": 180,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 21.5,
+    "max_sentence_len": 37,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "而且你有沒有注意到？\n這些作品都很像雨夜裡的貨櫃碼頭。\n這份報告說得很傳神。<short pause>\n模型的手其實是程式碼。\n它不會捏黏土，只會寫函式啦。\n所以它最會畫幾何跟數學算出來的東西。\n像貨櫃、鋼架，還有下雨的反光。\n那玩家實際玩起來怎樣？\n很多人抱怨小物件會互相穿插，\n連樓梯都懸在半空中耶。\n更扯的是，有人一進去滑鼠就直接失控。\n討論區有一句評論我看了很有共鳴。<laugh>\n他說這不是遊戲，這只是技術展示嘛。\n其實那句 prompt 本身，\n本來就只要求做一個小關卡而已啦。",
+   "lint": {
+    "chars": 210,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 28,
+    "sentences_over_20": 2,
+    "particles_per_100": 2.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "為什麼會醬？",
+   "to": "為什麼會這樣？",
+   "reason": "醬改這樣"
+  },
+  {
+   "from": "甚至有人一進去，滑鼠就直接失控。<laugh>",
+   "to": "甚至有人一進去，滑鼠就直接失控。",
+   "reason": "刪笑聲"
+  }
+ ]
+}
