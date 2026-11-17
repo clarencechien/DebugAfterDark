@@ -8,7 +8,7 @@
  "report_slug": "knowing-is-dear",
  "report_version": "v0.2（2026-11）",
  "source_url": "https://imitator.ai-apps.work/r/knowing-is-dear",
- "status": "draft",
+ "status": "final",
  "related": [
   "ep30-one-day-dose",
   "ep02-harness-probe",
@@ -40,12 +40,13 @@
   "breeze_cer_mean": 0.038,
   "gemini_cer_mean": 0.026,
   "jitter_semitones": 0.221,
-  "gates": "Breeze 錯誤率 3.8%，比門檻 3.5% 高（Gemini 2.6%）；音高跳動 0.221 通過",
+  "gates": "Breeze 錯誤率 3.8%，比門檻 3.5% 高（Gemini 2.6%）；音高跳動 0.221 通過；2026-11-17 試聽後同意上架",
   "cer_note": "Breeze 的錯多在 Felix Rieseberg 的拼法、「知易行難」被寫成型男、「行」寫成醒；Gemini 都聽對。s03 原本的「尚書」兩套都聽成上述，改成知易行難重錄",
   "retakes": "第一次混音音高跳動 0.249：s01、s03、s04、s07、s08、s09、s11 各補 3 次後挑最穩的；s03 改稿重錄 6 次",
   "manual_pick": "s04 take4、s07 take1（音高跳動較低）；s08 換掉 +12.7 Hz 的 take0；s11 take4（六次裡唯一錯誤率低又穩的，語速慢一成）",
   "consistency": "qa/consistency.json：各段音高在中位數 ±5 Hz 內",
   "twtone": "qa/twtone.md：沒有超過基準的項目",
   "terms": "Ping、pong 3 次都判為英文念法"
- }
+ },
+ "published": "2026-11-17T08:33:00+08:00"
 }

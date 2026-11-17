@@ -68,8 +68,8 @@
 | EP27 | 我不告訴你，但你會相信 | [`zkp-report`](https://imitator.ai-apps.work/r/zkp-report) | 上架 |
 | EP28 | AI 來了，股市這次不一樣嗎？ | [`same-ledger`](https://imitator.ai-apps.work/r/same-ledger) | 上架 |
 | EP29 | 同梯不同命？同一個起點，五年差多少 | [`0050-salary-five-years`](https://imitator.ai-apps.work/r/0050-salary-five-years) | 上架 |
-| EP30 | 一天修好人生？兩億人讀過，只有三樣有效 | [`dankoe-one-day`](https://imitator.ai-apps.work/r/dankoe-one-day) | 試聽中 |
-| EP31 | AI 幫你做完了，你知道它做對了嗎？ | [`knowing-is-dear`](https://imitator.ai-apps.work/r/knowing-is-dear) | 試聽中 |
+| EP30 | 一天修好人生？兩億人讀過，只有三樣有效 | [`dankoe-one-day`](https://imitator.ai-apps.work/r/dankoe-one-day) | 上架 |
+| EP31 | AI 幫你做完了，你知道它做對了嗎？ | [`knowing-is-dear`](https://imitator.ai-apps.work/r/knowing-is-dear) | 上架 |
 
 另外標已做、但沒有自己一集的：[第五個錯，和漏掉的第六個 — 外送專法篇二校](https://imitator.ai-apps.work/r/second-read)（EP16、EP17 說明欄更正）、[AI 溢酬:一般人版報告 — 論文、分析師與台股實證](https://imitator.ai-apps.work/r/ai-premium)（EP20 的背景資料）。
 

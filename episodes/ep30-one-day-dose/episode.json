@@ -8,7 +8,7 @@
  "report_slug": "dankoe-one-day",
  "report_version": "v0.2（2026-11）",
  "source_url": "https://imitator.ai-apps.work/r/dankoe-one-day",
- "status": "draft",
+ "status": "final",
  "related": [],
  "voice": {
   "provider": "gemini",
@@ -42,5 +42,6 @@
   "consistency": "qa/consistency.json：各段音高在中位數 ±4.4 Hz 內、語速在 ±10% 內",
   "twtone": "qa/twtone.md：分號一開始超過基準，拆句後沒有超過的項目",
   "terms": "Ping、pong 3 次都判為英文念法"
- }
+ },
+ "published": "2026-11-17T08:31:00+08:00"
 }

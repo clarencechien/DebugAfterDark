@@ -35,6 +35,8 @@
 | [EP27](episodes/ep27-zero-knowledge/) | 我不告訴你，但你會相信（說書：零知識證明） | 定稿；Breeze 3.8%（英文術語），Gemini 1.8% |
 | [EP28](episodes/ep28-same-ledger/) | AI 來了，股市這次不一樣嗎？（說書：Howard Marks） | 定稿 |
 | [EP29](episodes/ep29-same-start/) | 同梯不同命？同一個起點，五年差多少 | 定稿 |
+| [EP30](episodes/ep30-one-day-dose/) | 一天修好人生？兩億人讀過，只有三樣有效（知行筆記 1/2） | 定稿 |
+| [EP31](episodes/ep31-knowing-is-dear/) | AI 幫你做完了，你知道它做對了嗎？（知行筆記 2/2，上：EP30） | 定稿；Breeze 3.8%（英文人名、成語），Gemini 2.6% |
 
 - 一集怎麼做：[`docs/recipe.md`](docs/recipe.md)
 - 選題對照：[`docs/report-candidates.md`](docs/report-candidates.md)（imitator 2026 年的報告，標了已做、推薦、可做、不做）
