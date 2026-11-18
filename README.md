@@ -37,6 +37,8 @@
 | [EP29](episodes/ep29-same-start/) | 同梯不同命？同一個起點，五年差多少 | 定稿 |
 | [EP30](episodes/ep30-one-day-dose/) | 一天修好人生？兩億人讀過，只有三樣有效（知行筆記 1/2） | 定稿 |
 | [EP31](episodes/ep31-knowing-is-dear/) | AI 幫你做完了，你知道它做對了嗎？（知行筆記 2/2，上：EP30） | 定稿；Breeze 3.8%（英文人名、成語），Gemini 2.6% |
+| [EP32](episodes/ep32-slotbound-clones/) | 還沒上市，手機版就先被抄了（Slotbound 案卷 1/2） | 定稿 |
+| [EP33](episodes/ep33-one-line-bill/) | 一句話做一個遊戲，帳單五百五十美元（Slotbound 案卷 2/2，上：EP32） | 定稿；錯誤率 3.8%（Saltline、Fable 的拼法） |
 
 - 一集怎麼做：[`docs/recipe.md`](docs/recipe.md)
 - 選題對照：[`docs/report-candidates.md`](docs/report-candidates.md)（imitator 2026 年的報告，標了已做、推薦、可做、不做）

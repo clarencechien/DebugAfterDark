@@ -8,7 +8,7 @@
  "report_slug": "slotbound-case-2",
  "report_version": "2026-11-16",
  "source_url": "https://imitator.ai-apps.work/r/slotbound-case-2",
- "status": "draft",
+ "status": "final",
  "related": [
   "ep32-slotbound-clones",
   "ep01-fifth-move",
@@ -40,12 +40,13 @@
   "breeze_cer_mean": 0.038,
   "gemini_cer_mean": 0.038,
   "jitter_semitones": 0.221,
-  "gates": "錯誤率 3.8%（Breeze、Gemini 相同），比門檻 3.5% 高；音高跳動 0.221 通過",
+  "gates": "錯誤率 3.8%（Breeze、Gemini 相同），比門檻 3.5% 高；音高跳動 0.221 通過；2026-11-18 試聽後同意上架",
   "cer_note": "兩套辨識的錯誤幾乎都在 Saltline、Fable 這兩個英文名稱的拼法；中文內容沒有聽錯",
   "retakes": "第一次混音音高跳動 0.234：s02、s04、s05、s06、s07、s08、s10、s12 各補 3 次後重挑",
   "manual_pick": "s02 take0（六次都偏快一成五以上，數字密；這次最穩）、s06 take2（take1 +7 Hz；這次慢一成二）、s08 take3",
   "consistency": "qa/consistency.json：s02 語速快一成六、s06 慢一成二，其餘在範圍內",
   "twtone": "qa/twtone.md：分號一開始超過基準，拆句後沒有超過的項目",
   "terms": "Ping、pong 判為英文念法"
- }
+ },
+ "published": "2026-11-18T08:37:00+08:00"
 }

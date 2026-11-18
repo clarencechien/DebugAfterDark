@@ -98,8 +98,8 @@
 | EP29 | 同梯不同命？同一個起點，五年差多少 | [`0050-salary-five-years`](https://imitator.ai-apps.work/r/0050-salary-five-years) | 上架 |
 | EP30 | 一天修好人生？兩億人讀過，只有三樣有效 | [`dankoe-one-day`](https://imitator.ai-apps.work/r/dankoe-one-day) | 上架 |
 | EP31 | AI 幫你做完了，你知道它做對了嗎？ | [`knowing-is-dear`](https://imitator.ai-apps.work/r/knowing-is-dear) | 上架 |
-| EP32 | 還沒上市，手機版就先被抄了 | [`slotbound-case`](https://imitator.ai-apps.work/r/slotbound-case) | 試聽中 |
-| EP33 | 一句話做一個遊戲，帳單五百五十美元 | [`slotbound-case-2`](https://imitator.ai-apps.work/r/slotbound-case-2) | 試聽中 |
+| EP32 | 還沒上市，手機版就先被抄了 | [`slotbound-case`](https://imitator.ai-apps.work/r/slotbound-case) | 上架 |
+| EP33 | 一句話做一個遊戲，帳單五百五十美元 | [`slotbound-case-2`](https://imitator.ai-apps.work/r/slotbound-case-2) | 上架 |
 
 另外標已做、但沒有自己一集的：[第五個錯，和漏掉的第六個 — 外送專法篇二校](https://imitator.ai-apps.work/r/second-read)（EP16、EP17 說明欄更正）、[AI 溢酬:一般人版報告 — 論文、分析師與台股實證](https://imitator.ai-apps.work/r/ai-premium)（EP20 的背景資料）。
 
