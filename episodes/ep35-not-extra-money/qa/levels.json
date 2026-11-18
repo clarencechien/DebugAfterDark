@@ -1,0 +1,62 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -21.7,
+  "gain_db": 1.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_recap",
+  "lufs_before": -20.9,
+  "gain_db": 0.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_diverse",
+  "lufs_before": -21.4,
+  "gain_db": 1.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_smartbeta",
+  "lufs_before": -21.2,
+  "gain_db": 1.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_stable",
+  "lufs_before": -20.7,
+  "gain_db": 0.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_pocket",
+  "lufs_before": -21.3,
+  "gain_db": 1.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_accumulate",
+  "lufs_before": -21.5,
+  "gain_db": 1.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_withdraw",
+  "lufs_before": -20.0,
+  "gain_db": 0.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_limits",
+  "lufs_before": -21.4,
+  "gain_db": 1.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_outro",
+  "lufs_before": -22.1,
+  "gain_db": 2.1,
+  "lufs_after": -20.0
+ }
+]

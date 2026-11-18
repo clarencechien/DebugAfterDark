@@ -1,0 +1,144 @@
+{
+ "segment": "s04_stable",
+ "position": "第 5 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "很扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0bd1ff0c9d12cf78f6adf4f415fe1892ee7d5b7e87adb1d3a4ac532b78cd9ed2",
+ "previous_context": "你以為買它是為了安穩領息，對吧？結果你實際買到的，是一套會大起大落的選股策略。",
+ "original": {
+  "text": "第三個迷思，零零五六的股息很穩嗎？判定是：不穩。這份報告做了一個回測：二〇〇八年初拿一千萬買零零五六，一張都不賣，只花配息，生活費第一年五十萬，之後每年隨物價加百分之三。結果十九年裡，有十一年配息不夠付生活費。二〇〇八和二〇一〇年，一毛都沒有配。二〇一一年領到八十五萬，兩年後只剩三十三萬，少了六成。最近三年配息大增，靠的是行情，像今年十月那筆，八成是價差；行情不好的年份，這一塊會消失。",
+  "lint": {
+   "chars": 194,
+   "precise_numbers": [
+    "一千萬",
+    "五十萬",
+    "百分之三",
+    "十九",
+    "十一",
+    "八十五萬",
+    "三十三萬"
+   ],
+   "enumerations": [
+    "第三",
+    "第一"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 26.7,
+   "max_sentence_len": 60,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以零零五六的股息，真的那麼穩嗎？\n答案其實很不穩喔。\n這份報告算給你看。\n假設你拿一千萬買零零五六，\n完全不賣，只靠配息過生活。\n第一年花五十萬，\n之後每年照物價多加百分之三。<short pause>\n那你覺得錢夠用嗎？\n其實根本不夠。\n將近二十年裡面，\n超過一半的年份配息都不夠花。\n甚至還有兩年，一毛錢都沒有配。<sigh>\n最可怕的是，\n有一年領到八十幾萬，\n過兩年直接掉到剩三十幾萬。\n這真的會讓人很焦慮耶。\n最近幾年配息變多，\n其實大部分都是靠行情賺的價差啦。\n遇到不好的年份，這筆錢就沒了。",
+   "lint": {
+    "chars": 216,
+    "precise_numbers": [
+     "一千萬",
+     "五十萬",
+     "百分之三",
+     "二十",
+     "八十",
+     "萬",
+     "三十",
+     "萬"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 28,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "既然是大起大落，那零零五六的股息到底穩不穩？答案其實一點都不穩。<short pause>這份報告算給你看。如果你在十幾年前拿一千萬買零零五六，一張都不賣，全靠領配息過生活。你覺得真的夠用嗎？結果將近二十年裡，居然有十一年不夠花。<sigh>心都涼了一半對吧？甚至還有兩年，是一毛錢都沒有配喔。有一年剛領了八十幾萬，兩年後直接縮水一大半。所以最近配息大爆發，純粹是靠行情好。裡頭大部分其實都是賺到的價差啦。要是市場變差，這一大塊隨時會消失。",
+   "lint": {
+    "chars": 201,
+    "precise_numbers": [
+     "一千萬",
+     "二十",
+     "十一",
+     "八十",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 32,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "所以很多人會問，零零五六的股息到底穩不穩？<short pause>\n答案其實是不穩。\n這份報告做了一個模擬，\n假設你拿一千萬買零零五六，\n第一年生活費抓五十萬，\n每年照物價往上加百分之三。\n一張都不賣，完全只靠領息過生活。\n你覺得夠用嗎？其實完全不夠。\n在十九年的回測裡，\n超過一半的年份付不出生活費。<sigh>\n甚至有兩年一毛錢都沒發。\n最誇張的時候，\n股息兩年內縮水了六成。\n最近這三年看起來配很多對不對？\n那其實是靠行情賺來的價差啦，\n行情只要一變差，\n這一塊就會直接消失喔。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [
+     "一千萬",
+     "五十萬",
+     "百分之三",
+     "十九"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 47,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2
+}

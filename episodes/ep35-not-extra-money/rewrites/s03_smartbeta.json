@@ -1,0 +1,151 @@
+{
+ "segment": "s03_smartbeta",
+ "position": "第 4 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "很扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e1516316540baec872b8c7775b11904d5fc04519dd2f1a74b7b9f96cae18e935",
+ "previous_context": "這份報告說，這只是兩種不同的集中。根本沒有哪一邊代表了市場喔。",
+ "original": {
+  "text": "第二個迷思，零零五六是 smart beta 嗎？判定是：是。smart beta 指的是不照市值，改用別的規則選股和決定權重。零零五六從市值前一百五十大的公司裡，挑預估殖利率最高的五十檔，權重也照殖利率排。這個標籤帶來三個後果。它是一個賭注，賭殖利率高的股票之後表現比較好，有時連贏幾年，有時連輸幾年。它一年換股兩次，總費用率大約百分之零點六，零零五零大約零點二。它也容易換到剛賺大錢的公司，這一點報告作者說是他的推論。很多人買它是為了領息安穩，實際買到的，卻是一套會換股、會大起大落的選股策略。",
+  "lint": {
+   "chars": 244,
+   "precise_numbers": [
+    "一百五十",
+    "五十",
+    "百分之零點六",
+    "零點二"
+   ],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 26.1,
+   "max_sentence_len": 39,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [
+    "beta",
+    "beta"
+   ],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說完集中度，我們來看第二個迷思。<short pause>\n大家常問，零零五六算 smart beta 嗎？\n這份報告說，答案是肯定的喔。\n所謂 smart beta，就是不看市值來挑股票。\n零零五六只挑預估配息率最高的一批公司。\n但你想想，這樣做真的比較穩嗎？\n其實這就像一場賭注。\n你賭的是配息高的股票，以後表現會比較好。\n有時候連贏好幾年，有時候連輸好幾年。\n重點來了，它一年還要換股兩次。\n換股票可都是要成本的。\n零零五六的總費用率，大約是百分之零點六。\n算起來比零零五零貴了整整兩倍耶。<laugh>\n而且它很容易換到剛賺大錢的公司。\n報告作者說，這一點是他的推論啦。\n很多人買它是為了安穩領息，對吧？\n結果你真正買到的，\n卻是一套會大起大落的選股策略。",
+   "lint": {
+    "chars": 290,
+    "precise_numbers": [
+     "百分之零點六"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 23,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [
+     "beta",
+     "beta"
+    ],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實接著看第二個迷思。\n很多人常問，零零五六算 smart beta 嗎？\n答案非常明確，它就是。<short pause>\n什麼是 smart beta 呢？\n就是不照市值，改用自己的規則挑股票。\n零零五六挑的是預估殖利率最高的那群。\n重點來了，這本質上其實是個賭注。\n它賭高殖利率的股票之後表現比較好。\n有時候會連贏，有時候也會連輸好幾年喔。\n然後它一年要換兩次股票，換股成本很高。\n零零五六的總費用率，大約是百分之零點六。\n這算起來大概是零零五零的三倍耶。\n而且它很容易選到剛賺大錢的公司。\n這份報告說，這點算是作者自己的推論啦。\n所以最矛盾的是什麼？\n你買它本來是想追求安穩領息。\n結果買到的，反而是一套大起大落的策略。<sigh>",
+   "lint": {
+    "chars": 279,
+    "precise_numbers": [
+     "百分之零點六"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [
+     "beta",
+     "beta"
+    ],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "說到集中，我們來看第二個迷思。\n零零五六到底算不算 smart beta？\n答案其實是，算喔。\n這指的是不看市值，改用自己的規則選股。\n零零五六就是挑預估殖利率最高的那群。\n但你知道這代表什麼嗎？\n代表它本質上其實是一個賭注耶。<short pause>\n賭高殖利率的股票，表現會比較好。\n它有時候會贏，但也會連輸好幾年。\n然後它一年換兩次股，這都是成本。\n零零五六的總費用率，大約是百分之零點六。\n這差不多是零零五零的三倍了。\n更厲害的是，它很容易挑到剛賺大錢的公司。\n這份報告的作者說，這是他自己的推論啦。\n所以重點來了。\n你以為買它是為了安穩領息，對吧？\n結果你實際買到的，\n是一套會大起大落的選股策略。<sigh>",
+   "lint": {
+    "chars": 273,
+    "precise_numbers": [
+     "百分之零點六"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [
+     "beta"
+    ],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "更厲害的是，它很容易挑到剛賺大錢的公司。",
+   "to": "還有，它很容易換到剛賺大錢的公司。",
+   "reason": "語氣"
+  },
+  {
+   "from": "結果你實際買到的，是一套會大起大落的選股策略。<sigh>",
+   "to": "結果你實際買到的，是一套會換股、會大起大落的選股策略。",
+   "reason": "刪嘆氣、補回會換股"
+  }
+ ]
+}

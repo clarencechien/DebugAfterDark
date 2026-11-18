@@ -1,0 +1,154 @@
+{
+ "segment": "s02_diverse",
+ "position": "第 3 段，共 10 段",
+ "avoid": [
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "091773992bc707e87cff613bfda4d44ecff503df71a6078bc83757577c56c88f",
+ "previous_context": "這完全是飆股的走法吧？ 存股的人當初要的，根本不是這個啊。",
+ "original": {
+  "text": "第一個迷思，零零五六是分散嗎？這份報告的判定是：對一半。它有五十檔，最大的一檔佔百分之八點六，前十大合計四成四；零零五零光台積電就超過一半，照這個標準，零零五六比較分散。可是分散還有第二層意思，就是持有整個市場。這一層它沒做到：它不持有台灣最大的那家公司，金融、電腦周邊和半導體合計佔六成六，名單每半年還換一次。結果是十九年裡，它贏零零五零八年，輸十一年，二〇二三年多贏二十九個百分點，隔年少了四十二個百分點。這份報告說，這比的是兩種不同的集中，沒有哪一邊是整個市場。",
+  "lint": {
+   "chars": 234,
+   "precise_numbers": [
+    "五十",
+    "百分之八點六",
+    "十九",
+    "十一",
+    "二十九",
+    "百",
+    "四十二",
+    "百"
+   ],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 32.4,
+   "max_sentence_len": 56,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那大家常買的零零五六，真的有比較分散嗎？這份報告給的答案很有趣，叫對一半。<short pause>如果只看檔數，它確實有五十檔。最大的一檔只佔百分之八點六。前十名加起來也不到一半。對比零零五零，光台積電就超過五成。但分散還有第二層意思，就是買下整個市場。你猜零零五六有做到嗎？其實沒有啦。<laugh>它直接跳過台灣最大那家，產業還超集中。這十九年下來，它輸給零零五零十一年。前一年大贏快三成，隔年又倒輸四成多。我看到這裡真的傻眼。這份報告說，這只是兩種不同的集中。根本沒有哪一邊代表了市場喔。",
+   "lint": {
+    "chars": 228,
+    "precise_numbers": [
+     "五十",
+     "百分之八點六",
+     "十九",
+     "零零五零十一"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "所以很多人轉去買零零五六，想說比較分散。\n但這份報告說，這種說法其實只對了一半。\n哪裡對了？它買了五十檔股票，\n最大的一檔只有百分之八點六，\n前十大加起來也才四成多。<short pause>\n跟零零五零光台積電就過半比起來，\n它帳面上確實比較分散沒錯。\n那為什麼說只對了一半？<short pause>\n重點來了，真正的分散應該是持有整個市場。\n但零零五六直接略過了台灣最大的那家公司，\n而且三個產業就占了六成多，\n名單每半年還會大換一次。\n我看到數據真的滿傻眼的，<sigh>\n它在十九年裡面，有十一年輸給零零五零，\n有一年甚至一口氣輸了四十二個百分點。\n所以這份報告說，這根本是兩種不同的集中，\n沒有哪一邊真的買下了整個市場啦。",
+   "lint": {
+    "chars": 269,
+    "precise_numbers": [
+     "五十",
+     "百分之八點六",
+     "十九",
+     "十一",
+     "四十二",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 25.9,
+    "max_sentence_len": 48,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   },
+   "round": 0
+  },
+  {
+   "text": "所以大家常問，零零五六真的有分散嗎？\n這份報告給的答案很妙，叫做對一半。<short pause>\n你可能會想，怎麼會是對一半？\n如果只看檔數，它有五十檔股票。\n最大的一檔佔百分之八點六，\n前十名加起來也才四成多。\n對比零零五零光台積電就過半，\n它表面上確實比較分散。\n但是分散還有另一個意思，\n就是買下整個市場。\n這一點零零五六就完全沒做到啦。\n它不買台積電，\n三個特定產業就佔了六成多。\n這份報告說，\n這根本是兩種不同方向的集中。\n我看那個成績差距真的會嚇一跳耶。\n十九年裡面，它輸了十一年，只贏八年。\n前一年多賺快三十個百分點，\n隔年就少賺四十幾個百分點。<short pause>\n所以兩邊其實都在押寶，\n誰都沒有買下整個市場喔。",
+   "lint": {
+    "chars": 273,
+    "precise_numbers": [
+     "五十",
+     "百分之八點六",
+     "一點零零五六",
+     "十九",
+     "十一",
+     "三十",
+     "百",
+     "四十",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 18.5,
+    "max_sentence_len": 25,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "其實沒有啦。<laugh>",
+   "to": "其實沒有。",
+   "reason": "刪笑聲"
+  },
+  {
+   "from": "我看到這裡真的傻眼。",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

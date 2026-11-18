@@ -1,0 +1,117 @@
+{
+ "segment": "s03_streak",
+ "position": "第 4 段，共 9 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "9f2b42a9df773350cebb8f460b767285b4ce59a1fe2b184cd0f99693fb947fb7",
+ "previous_context": "大家都是看它大漲才跳進去嘛。但當股票變成人人叫得出名字，最賺的那一段通常早就結束啦。",
+ "original": {
+  "text": "常聽到的說法是，選股像丟硬幣。這份報告說，逐年的數字並不支持這句話。二〇二四年，VTI 年初的十大持股，有九檔贏過 VTI 自己，硬幣丟不出這種結果。NVIDIA 連續三年贏大盤，台積電也連續三年贏零零五零：贏家會連莊。所以這四年單押 NVIDIA 的人是大贏，沒有哪一種說法能把它講成輸。可是結果好和決定好是兩回事：二〇二二年底，美股整體基金的十大持股裡，NVIDIA 不在名單上。連莊會讓集中持股看起來一直是對的，直到某一年不對，而那一年，往往是部位最大的時候。",
+  "lint": {
+   "chars": 226,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 31.3,
+   "max_sentence_len": 45,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [
+    "部位"
+   ],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "而且大家常說選股像丟硬幣。\n但這份報告說，事情根本不是這樣。\n二〇二四年 VTI 前十大的股票，\n居然有九檔贏過大盤自己。\n這丟硬幣根本丟不出來吧？<laugh>\n對啊，像 NVDA 就連續三年跑贏大盤，\n台積電也連續三年贏過零零五零。\n贏家是真的會連莊耶。\n老實說，這四年單押 NVDA 的人確實大贏。\n但結果好，跟決定做得好是兩回事。\n你回到二〇二二年底看，\nVTI 前十名根本沒有 NVDA 喔。\n當時誰有把握跳過前十名，\n直接去重押名單外的股票？\n根本不可能嘛。\n其實連莊會讓你覺得，\n集中買一檔股票永遠是對的。\n直到哪一年突然翻車。<short pause>\n重點來了，翻車的那一年，\n往往也是你壓最多錢的時候啦。",
+   "lint": {
+    "chars": 264,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 32,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "而且大家常說選股像丟硬幣，對吧？\n其實這份報告說，數字根本不是這樣啦。\n像前幾年的時候，\nVTI 前十大持股竟然有九檔贏過大盤。\n你丟硬幣哪可能丟成醬啊？<laugh>\n也就是說，強的股票真的會連莊喔。\nNVDA 連續贏大盤，\n台積電也連續贏過零零五零。\n所以這幾年單押 NVDA 的人確實大贏，\n這點沒什麼好反駁的。<short pause>\n可是結果好，就等於決定是對的嗎？\n其實完全是兩回事喔。\n幾年前的時候，\nNVDA 根本不在前十大名單上。\n這種連莊最可怕的是，\n它會讓你以為自己永遠是對的，\n直到某一年完全不對。<sigh>\n而且那一年，\n往往是你壓最多錢的時候。",
+   "lint": {
+    "chars": 239,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.9,
+    "max_sentence_len": 33,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 3
+   },
+   "round": 0
+  },
+  {
+   "text": "很多人常說，在市場裡選股就像在丟硬幣。\n但這份報告說，實際看數據根本不是醬。\n有一年 VTI 的前十大持股裡面，\n竟然有九檔跑贏大盤。\n丟硬幣哪可能丟出這種機率啊？<laugh>\n對，贏家其實真的會連莊。\n像 NVDA 就連續好幾年打敗大盤。\n所以這幾年單押 NVDA 的人是真的大賺。\n可是結果好，就代表當初決定很聰明嗎？\n其實前幾年底的時候，\nNVDA 連美股前十大持股都排不上耶。\n你當時根本沒有理由挑中它嘛。\n連莊最可怕的地方就在這裡，\n它會讓集中單押看起來永遠是對的。\n直到突然翻車的那一年，\n而那時候你的錢通常押得最多。<sigh>",
+   "lint": {
+    "chars": 237,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 28,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "很多人常說，在市場裡選股就像在丟硬幣。但這份報告說，實際看數據根本不是醬。有一年 VTI 的前十大持股裡面，竟然有九檔跑贏大盤。丟硬幣哪可能丟出這種機率啊？<laugh>對，贏家其實真的會連莊。像 NVDA 就連續好幾年打敗大盤。所以這幾年單押 NVDA 的人是真的大賺。可是結果好，就代表當初決定很聰明嗎？其實前幾年底的時候，NVDA 連美股前十大持股都排不上耶。你當時根本沒有理由挑中它嘛。連莊最可怕的地方就在這裡，它會讓集中單押看起來永遠是對的。直到突然翻車的那一年，而那時候你的錢通常押得最多。<sigh>",
+   "to": "很多人常說，選股就像丟硬幣。但這份報告說，逐年的數字並不支持這句話。二〇二四年，VTI 年初的十大持股裡，有九檔贏過 VTI 自己，硬幣丟不出這種結果。NVIDIA 連續三年贏大盤，台積電也連續三年贏零零五零：贏家會連莊。<short pause>所以這四年單押 NVIDIA 的人，是真的大贏。可是結果好，不等於決定好。二〇二二年底，美股整體基金的十大持股裡，根本沒有 NVIDIA，當時沒有什麼理由跳過那十檔，去挑名單外的那一檔。連莊會讓集中持股看起來一直是對的，直到某一年不對，而那一年，往往是你部位最大的時候。",
+   "reason": "「有一年」「前幾年底」補回年份；醬；刪笑聲"
+  }
+ ]
+}

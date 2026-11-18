@@ -1,0 +1,130 @@
+{
+ "segment": "s05_pocket",
+ "position": "第 6 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "很扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0b2e125166bf5c03b4711e7d30eaa93531533be51af41255b47304c32814b75e",
+ "previous_context": "最近這三年看起來配很多對不對？那其實是靠行情賺來的價差啦，行情只要一變差，這一塊就會直接消失喔。",
+ "original": {
+  "text": "再往下看一層。配息那天，股價會扣掉同樣的金額，今年十月二十二號除息一塊七毛二，到報告寫的時候，股價還沒有漲回除息前的位置。這份報告的一句話是：配息是把你帳上的錢，換一個口袋交給你。它讓人安心，是因為錢進戶頭的時候，不用自己按下賣出，這個感覺是真的，那筆錢卻沒有多出來。而且配息裡屬於股利的部分，要併入所得課稅，單筆達到兩萬元還要扣補充保費；自己賣股實現的價差，目前不課所得稅。",
+  "lint": {
+   "chars": 188,
+   "precise_numbers": [
+    "二十二",
+    "兩萬"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 36.6,
+   "max_sentence_len": 53,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實配息這件事很有意思。<short pause>\n配息那天，股價會扣掉一樣的金額。\n像今年十月除息之後，\n到現在股價都還沒漲回來耶。\n這份報告說得很白：<short pause>\n配息只是把你帳上的錢，\n換個口袋交給你而已啦。\n那為什麼大家還是很愛領？\n因為錢直接進戶頭，\n你不用自己手動按賣出嘛。<laugh>\n這個安心的感覺是真的，\n但你的資產根本沒有變多。\n重點來了，\n股利要算進所得去課稅，\n單筆滿兩萬元還要扣補充保費喔。\n可是你自己賣股票賺的價差，\n現在完全不用課所得稅耶。",
+   "lint": {
+    "chars": 194,
+    "precise_numbers": [
+     "兩萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 20.6,
+    "max_sentence_len": 30,
+    "sentences_over_20": 5,
+    "particles_per_100": 2.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 3
+   },
+   "round": 0
+  },
+  {
+   "text": "其實我們再往下看一層。<short pause> 你知道除息那天會發生什麼事嗎？股價會直接扣掉發給你的錢耶。像今年十月二十二號除息一點七二元，到這份報告寫的時候都還沒漲回來。所以這份報告說得很傳神，配息就是把帳上的錢換個口袋交給你。大家會覺得安心，是為什麼？因為錢進戶頭時，不用自己按賣出嘛。<laugh> 但我心裡就想，那筆錢根本沒變多啊。而且領股利要報稅，單筆滿兩萬還要扣補充保費；自己賣股票賺價差，目前反而不用繳稅耶。",
+   "lint": {
+    "chars": 190,
+    "precise_numbers": [
+     "二十二",
+     "一點七二",
+     "兩萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 20.1,
+    "max_sentence_len": 40,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "所以我們再往下看一層。<short pause>\n你知道配息那天會發生什麼事嗎？\n其實股價會直接扣掉一樣的金額。\n像今年十月除息一塊七毛二，\n到這份報告寫的時候，股價都還沒漲回來。\n這份報告說得很白，\n配息只是把你帳上的錢換個口袋交給你。\n我每次想通這件事都覺得很妙。\n錢自動進戶頭不用自己按賣出，\n確實讓人很安心啦，\n但那筆錢真的有變多嗎？\n其實完全沒有喔。\n而且重點來了，\n配息裡的股利要繳所得稅，\n單筆金額高一點還要再扣補充保費。\n反過來如果是自己賣股票，\n賺到的價差現在根本不用課稅耶。",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.8,
+    "max_sentence_len": 34,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "我每次想通這件事都覺得很妙。",
+   "to": "",
+   "reason": "刪個人反應"
+  },
+  {
+   "from": "單筆金額高一點還要再扣補充保費。",
+   "to": "單筆達到兩萬元，還要再扣補充保費。",
+   "reason": "補回門檻"
+  }
+ ]
+}

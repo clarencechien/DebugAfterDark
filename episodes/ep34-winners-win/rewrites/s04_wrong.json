@@ -1,0 +1,122 @@
+{
+ "segment": "s04_wrong",
+ "position": "第 5 段，共 9 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "56afd0d72c8a107f997d433ffe324cb017c2968bdbf4aff858d823da906706d6",
+ "previous_context": "連莊最可怕的地方就在這裡，它會讓集中單押看起來永遠是對的。直到突然翻車的那一年，而那時候你的錢通常押得最多。",
+ "original": {
+  "text": "同一段時間，也有人在同樣合理的時點，買了同樣合理的股票。二〇二三年底的廣達，那一年漲了兩倍多，是台股最風光的 AI 伺服器股；在那時買進，到今天只漲兩成三，同期零零五零漲了兩倍。這份報告說，買廣達的人並沒有看錯產業，AI 伺服器後來的需求比當時想的還大，他只是選到了這條供應鏈上，接下來將近三年只漲兩成的那一檔。反方向的例子是南亞：二〇二二年底還在零零五零前十大，接下來兩年跌掉五成八，被擠出名單，再往後不到兩年，股價變成十倍。",
+  "lint": {
+   "chars": 211,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 51.8,
+   "max_sentence_len": 65,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "押對了很爽，那如果選錯呢？\n其實同一段時間，有人做了很合理的決定。\n像二〇二三年底的廣達，當年漲了兩倍多。\n買進的人有看錯產業嗎？完全沒有喔。\nAI 伺服器的需求，後來比大家想的還要大。\n這份報告說，他只是剛好選到跑最慢的那檔。\n接下來將近三年，廣達只漲了兩成多。\n同一時間，零零五零可是翻了兩倍耶。<sigh>\n另一個極端是南亞。<short pause>\n它兩年跌掉快六成，被擠出前十名。\n結果再過不到兩年，股價居然變成十倍。\n你覺得抱得住嗎？根本是完全不同的結局啦。",
+   "lint": {
+    "chars": 205,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 13.6,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "押對了很風光，那押錯了會怎樣？\n其實同一時間，有人在很合理的時點買進喔。\n像二〇二三年底的廣達，當年漲了兩倍多。\n大家都覺得 AI 伺服器很有搞頭，對吧？\n這份報告說，買的人完全沒有看錯產業。\n因為伺服器的需求，後來真的比想像還大。\n重點來了，接下來將近三年它只漲了兩成。\n同期零零五零，可是漲了百分之兩百零三。\n<sigh> 看對趨勢卻選錯股票，真的很悶耶。\n南亞也是，兩年跌掉快六成被擠出名單。\n結果不到兩年，股價又翻了十倍。\n所以抱得住跟抱不住，真的是兩個世界啦。",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [
+     "百分之兩百零三"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "所以，單押到底有多難？\n我們來看選錯票會怎樣。\n二〇二三年底的廣達，當年漲了兩倍多。\n大家那時都覺得它是 AI 代表股。\n結果呢？\n後來將近三年它只漲了兩成三。<short pause>\n同期的零零五零可是翻了兩倍喔。\n這份報告說，買的人根本沒看錯產業。\nAI 伺服器的需求後來其實更巨大。\n但你剛好挑到漲最少的那一檔。\n這光用想的就很悶耶。<sigh>\n反過來看南亞也是這樣。\n先跌掉快六成被踢出前十大。\n不到兩年又直接翻成十倍。\n你覺得自己真的抱得住嗎？\n這種落差真的會讓人心態崩掉啦。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 12.0,
+    "max_sentence_len": 17,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "這光用想的就很悶耶。<sigh>",
+   "to": "<sigh>",
+   "reason": "刪個人反應"
+  },
+  {
+   "from": "你覺得自己真的抱得住嗎？這種落差真的會讓人心態崩掉啦。",
+   "to": "抱得住和抱不住的人，拿到的是兩個完全不同的結果。",
+   "reason": "改回原文的說法"
+  }
+ ]
+}

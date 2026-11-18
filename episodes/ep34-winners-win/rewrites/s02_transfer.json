@@ -1,0 +1,113 @@
+{
+ "segment": "s02_transfer",
+ "position": "第 3 段，共 9 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0c0126b2f21afaa282d011521e7197b7d4a1a88e48fb8d90bab81c3404210d0e",
+ "previous_context": "這份報告說，所以不能說 AI 股今年不好。對啊，單純看你押到哪一檔而已。",
+ "original": {
+  "text": "這份報告用以前實體股票背面的過戶表來比：同一張股票，看你哪一年過戶。二〇二二年底買 NVIDIA 的人，到現在漲了十倍，同期 VTI 漲一倍。二〇二三年底進場的，NVIDIA 漲兩倍三，VTI 六成二。二〇二四年底進場的，NVIDIA 只漲兩成二，反而輸給什麼都不用做的 VTI。二〇二五年底進場的，現在是虧損的。看到漲了才進場是很自然的事，一檔股票變成人人叫得出名字，通常是在它漲完一大段之後；照這個順序進場，拿到的會是表格下半部那兩行。",
+  "lint": {
+   "chars": 212,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 34.3,
+   "max_sentence_len": 62,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "而且重點不只押哪檔，還要看你哪時候進場。這份報告用以前實體股票的過戶表來比喻。同一張股票，看你哪一年過戶。如果你二〇二二年底就買 NVDA，放現在直接翻了十倍，超誇張。<laugh> 那如果你晚兩年才進場呢？抱了快兩年，結果居然輸給大盤 VTI 耶。<short pause> 最慘的是二〇二五年底才買的人，抱到現在甚至是虧損的。你猜為什麼會醬？其實這很正常嘛。一檔股票變成人人叫得出名字，通常都已經漲完一大段了。所以大家看到大漲才衝進去，剛好就買在後面那兩年啦。",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 29,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "而且除了押哪一檔，\n重點其實是你什麼時候進場。\n這份報告用以前的實體股票打比方。\n背面蓋章的過戶日，就是你的成本。\n你猜二〇二二年底買 NVDA 會怎樣？\n抱到現在直接翻了十倍耶。<short pause>\n但如果你是二〇二四年底才進場呢？\n抱了快兩年，反而輸給大盤 VTI 喔。\n到二〇二五年底才買的人，\n現在竟然還是虧損的。<sigh>\n我看到這張表真的很有共鳴。\n大家都是看它大漲才跳進去嘛。\n但當股票變成人人叫得出名字，\n最賺的那一段通常早就結束啦。",
+   "lint": {
+    "chars": 193,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 27,
+    "sentences_over_20": 3,
+    "particles_per_100": 2.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "而且不只看買哪一檔，其實還要看你是哪一年進場的。這份報告拿以前的實體股票來比喻。<short pause> 背面每一行過戶日期，成本都完全不一樣。同一張股票，看你哪一年過戶，最後結局真的差超多。二〇二二年底買 NVDA 的人，到現在直接翻了十倍。你猜晚兩年買會怎樣？二〇二四年底進場的人，抱了快兩年，結果反而輸給什麼都沒做的大盤 VTI。要是二〇二五年底才上車，現在甚至還在虧損。<sigh> 其實這真的很正常啦。一檔股票通常要漲完一大段，大家才開始叫得出名字嘛。所以等大家都注意到的時候，你往往就買在後面最尷尬的段落了。",
+   "lint": {
+    "chars": 237,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.5,
+    "max_sentence_len": 34,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "<sigh>我看到這張表真的很有共鳴。",
+   "to": "<sigh>",
+   "reason": "刪個人反應"
+  }
+ ]
+}

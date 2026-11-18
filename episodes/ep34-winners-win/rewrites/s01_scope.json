@@ -1,0 +1,128 @@
+{
+ "segment": "s01_scope",
+ "position": "第 2 段，共 9 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8948fd6a607430b07f04e523998223848527d6dedbd99cbc3231f26be5a3e2a5",
+ "previous_context": "我看到這邊真的起雞皮疙瘩。所以單押一檔，跟買下整個市場，差別到底在哪裡？",
+ "original": {
+  "text": "先說一句，這集是資料整理，不是投資建議，數字算到十一月十三號收盤。範圍也先講清楚：今年落後的，是美股幾檔大型 AI 股，除了 NVIDIA，還有 Tesla 負百分之十三、Alphabet 負百分之五、Meta 負百分之三。同一條供應鏈上，美光今年漲了一倍七，聯發科漲了將近一倍九，台積電漲了五成二。這份報告說，所以不能說 AI 股今年不好，只能說押到哪一檔，結果差很多。",
+  "lint": {
+   "chars": 177,
+   "precise_numbers": [
+    "十一",
+    "十三",
+    "百分之十三",
+    "百分之五",
+    "百分之三"
+   ],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 43.2,
+   "max_sentence_len": 71,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先說喔，這純粹是資料整理，不是投資建議啦。<short pause>\n數字算到十一月十三號收盤。\n你可能會問，今年 AI 股不是跌很慘嗎？\n其實落後的，只有美股幾檔大型巨頭。\n像 Tesla 跌了一成多，Alphabet 也都在跌。\n但同一條供應鏈上，其他公司根本賺翻耶。\n美光漲超過一倍，台積電也漲了五成。\n最厲害的是聯發科，直接翻快兩倍。\n看到這裡真的很能體會。\n這份報告說，今年不是 AI 不行喔，\n是你到底押到哪一檔，結果差超級多。",
+   "lint": {
+    "chars": 190,
+    "precise_numbers": [
+     "十一",
+     "十三"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 18.0,
+    "max_sentence_len": 32,
+    "sentences_over_20": 2,
+    "particles_per_100": 2.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "先講清楚，這集不是投資建議喔。\n數字都是算到十一月十三號收盤。\n你看今年美股幾檔大型 AI 股，\n其實走勢差非常多。\n像 Tesla 跌了一成多，<short pause>\nAlphabet 跟 Meta 也都在跌。\n你猜同一個供應鏈的硬體廠怎麼樣？\n台積電漲了五成，聯發科甚至翻倍耶。\n這份報告說得很清楚，\n真的不能說 AI 股今年不行啦，\n重點是你押到哪一檔，結果差超多。",
+   "lint": {
+    "chars": 156,
+    "precise_numbers": [
+     "十一",
+     "十三"
+    ],
+    "enumerations": [],
+    "sentences": 7,
+    "avg_sentence_len": 21.3,
+    "max_sentence_len": 39,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "先說好喔，這集不是投資建議。\n數字算到十一月十三號收盤。<short pause>\n其實今年不是所有 AI 股都表現不好。\n你猜落後的是誰？\n主要就是美股那幾檔科技大咖啦。\n像是 NVDA 跟 Tesla 都在跌。\n但同一條供應鏈上的其他公司卻超旺。\n台積電漲了五成，聯發科甚至漲快兩倍耶！\n我看到對比真的覺得差很多。\n這份報告說，所以不能說 AI 股今年不好。\n對啊，單純看你押到哪一檔而已。",
+   "lint": {
+    "chars": 166,
+    "precise_numbers": [
+     "十一",
+     "十三"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 14.1,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "先說好喔，這集不是投資建議。數字算到十一月十三號收盤。<short pause>其實今年不是所有 AI 股都表現不好。你猜落後的是誰？主要就是美股那幾檔科技大咖啦。像是 NVDA 跟 Tesla 都在跌。但同一條供應鏈上的其他公司卻超旺。台積電漲了五成，聯發科甚至漲快兩倍耶！我看到對比真的覺得差很多。這份報告說，所以不能說 AI 股今年不好。對啊，單純看你押到哪一檔而已。",
+   "to": "先說好喔，這集是資料整理，不是投資建議，數字算到十一月十三號收盤。<short pause>其實今年不是所有 AI 股都不好。落後的主要是美股那幾檔大型 AI 股，除了 NVIDIA，還有 Tesla、Alphabet 和 Meta。同一條供應鏈上的其他公司卻很旺：美光今年漲了一倍七，聯發科漲了將近兩倍，台積電也漲了五成二。這份報告說，所以不能說 AI 股今年不好，只能說押到哪一檔，結果差很多。",
+   "reason": "補回美光；刪個人反應"
+  }
+ ]
+}

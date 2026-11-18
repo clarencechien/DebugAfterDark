@@ -1,0 +1,150 @@
+{
+ "segment": "s06_accumulate",
+ "position": "第 7 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這",
+  "很扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "3083511f9544e617d42e28a241e5e82b9eaeef156fdc8cd9b915a493318b3a73",
+ "previous_context": "而且重點來了，配息裡的股利要繳所得稅，單筆金額高一點還要再扣補充保費。反過來如果是自己賣股票，賺到的價差現在根本不用課稅耶。",
+ "original": {
+  "text": "那存錢的時候呢？假設每年年初投入十二萬，配息全部再投入。從二〇〇八年開始存的人，同樣投入兩百二十八萬，放在零零五零變成一千八百二十三萬，放在零零五六是一千零六十萬。二〇〇八到二〇二五年，十八個起點，零零五零全部領先。只看任意連續十年，十個十年區間裡，零零五六只贏一個，而且贏不到百分之五。這份報告說，存錢的人不需要現金，領到的配息還是得買回去，高配息在這個階段帶不來好處，只多一道手續和稅。",
+  "lint": {
+   "chars": 195,
+   "precise_numbers": [
+    "十二萬",
+    "兩百二十八萬",
+    "一千八百二十三萬",
+    "一千零六十萬",
+    "十八",
+    "百分之五"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 31.5,
+   "max_sentence_len": 53,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那如果是在存錢的階段呢？\n其實也是一樣的狀況。\n這份報告算給你看喔。<short pause>\n如果每年存十幾萬，配息都買回去。\n從金融海嘯那年開始存，\n零零五零直接翻到一千八百多萬，\n零零五六就只有一千多萬。\n差了快要整整一倍耶。\n而且不管是哪一年進場，零零五零全贏。\n就算看連續十年，零零五六也才贏過一次，\n而且贏不到百分之五。\n我看到那個差距整個人都醒了。<short pause>\n所以存錢的時候你根本不需要現金嘛。\n拿到了配息，你最後還不是得買回去？\n這樣轉一手，只是多扣手續費跟稅而已啊。",
+   "lint": {
+    "chars": 210,
+    "precise_numbers": [
+     "萬",
+     "一千八百",
+     "萬",
+     "一千",
+     "萬",
+     "百分之五"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 37,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那如果你現在還在存錢階段呢？\n這份報告做了一個很單純的計算。\n假設每年初固定丟十二萬進去，\n拿到配息就馬上全部買回去。\n從二〇〇八年存到現在，\n零零五零最後翻到一千八百多萬，\n零零五六卻只有一千多萬耶。<short pause>\n整整差了快八百萬。\n而且這十幾年來隨便挑一年進場，\n零零五零每一次都是領先的。\n那如果看連續十年的表現呢？\n零零五六只贏過一次，\n而且還贏不到百分之五。<laugh>\n其實存錢的時候你根本不需要現金嘛。\n把配息領出來又買回去，\n只是白白多繳手續費跟稅金而已啦。",
+   "lint": {
+    "chars": 210,
+    "precise_numbers": [
+     "十二萬",
+     "一千八百",
+     "萬",
+     "一千",
+     "萬",
+     "八百萬",
+     "百分之五"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.0,
+    "max_sentence_len": 38,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那如果你現在還在存錢階段呢？\n這份報告直接幫大家跑了模擬。<short pause>\n假設每年年初存十二萬，\n拿到的配息全部買回去。\n從金融海嘯那年開始存，\n本金同樣累積兩百多萬，\n零零五零會滾到一千八百多萬，\n零零五六大概一千多萬。\n兩邊差了七百多萬耶。<short pause>\n而且十幾個不同年份進場，\n零零五零竟然全部都領先。\n就算看任意十年的區間，\n零零五六也只贏過一次，\n而且贏不到百分之五。\n其實這份報告講得很白，\n累積期你根本不需要現金，\n領了配息還是要買回去，\n這樣只會多一道手續跟稅而已啦。",
+   "lint": {
+    "chars": 212,
+    "precise_numbers": [
+     "十二萬",
+     "兩百",
+     "萬",
+     "一千八百",
+     "萬",
+     "一千",
+     "萬",
+     "七百",
+     "萬",
+     "百分之五"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 25.5,
+    "max_sentence_len": 48,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "那如果是在存錢的階段呢？其實也是一樣的狀況。這份報告算給你看喔。<short pause>如果每年存十幾萬，配息都買回去。從金融海嘯那年開始存，零零五零直接翻到一千八百多萬，零零五六就只有一千多萬。差了快要整整一倍耶。而且不管是哪一年進場，零零五零全贏。就算看連續十年，零零五六也才贏過一次，而且贏不到百分之五。我看到那個差距整個人都醒了。<short pause>所以存錢的時候你根本不需要現金嘛。拿到了配息，你最後還不是得買回去？這樣轉一手，只是多扣手續費跟稅而已啊。",
+   "to": "那存錢的階段呢？這份報告假設每年年初投入十二萬，配息全部再買回去。<short pause>從二〇〇八年開始存的人，同樣投入兩百二十八萬，放在零零五零變成一千八百二十三萬，放在零零五六是一千零六十萬，差了七百多萬。二〇〇八到二〇二五年，十八個起點，零零五零全部領先。就算只看任意連續十年，零零五六也只贏過一次，而且贏不到百分之五。這份報告說，存錢的時候你不需要現金，領到的配息還是得買回去，高配息在這個階段帶不來好處，只多一道手續和稅。",
+   "reason": "「每年十幾萬」改回十二萬；「差了快一倍」改回七百多萬；刪個人反應"
+  }
+ ]
+}

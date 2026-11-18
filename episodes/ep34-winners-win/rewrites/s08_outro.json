@@ -1,0 +1,130 @@
+{
+ "segment": "s08_outro",
+ "position": "第 9 段，共 9 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d1bb77ac53ce47c8e01237e85e54cad1991224175892d2cd4c96eb373f666619",
+ "previous_context": "市場大部分的漲幅，全靠最好的百分之四。贏家真的超級少，事前根本看不出來是誰嘛。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，贏家會連莊，所以集中持股看起來一直是對的，直到某一年不對；那一年不會預告，而且往往是你部位最大的時候。第二，單押要答對兩題，選哪一檔、哪一年下車；指數兩題都不答，贏家會自己贏，指數只是從頭到尾都拿著它。第三，零零五零有一半以上是台積電，不用猜，需要一本更厚的名冊。再提醒一次，這集不是投資建議。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 201,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 24.1,
+   "max_sentence_len": 53,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [
+    "部位"
+   ],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，集中押寶看起來很賺，直到某天翻車。\n那通常是買最多的時候，光想就超可怕的。\n第二，你說買大盤圖什麼？\n就是不用猜誰會贏，贏家自己會跑出來嘛。\n然後，零零五零其實有一半以上是台積電。\n想要真正分散風險，你需要更廣的市場名單。\n最後再提醒一次，今天講的不是投資建議喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 182,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，集中押注看似很賺，翻車時根本跑不掉。\n然後，單押要猜進出時機，買整個市場不用猜嘛。\n重點是，零零五零有一半是台積電，不夠分散。\n你聽完想立刻進場嗎？<laugh>\n先說，這集內容完全不是投資建議喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 144,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 15.0,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，集中押注很賺，但翻車真的不會先講。\n第二，指數不用選股，贏家自己會留下來。\n第三，零零五零太集中，你需要更厚的名冊。\n你覺得買下整個市場很無聊嗎？\n我反而覺得這種作法超聰明的。<laugh>\n你不用每天猜答案，晚上才能睡得安穩嘛。\n照例提醒一下，這集不是投資建議喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 176,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 15.0,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>第一，集中押注很賺，但翻車真的不會先講。第二，指數不用選股，贏家自己會留下來。第三，零零五零太集中，你需要更厚的名冊。你覺得買下整個市場很無聊嗎？我反而覺得這種作法超聰明的。<laugh>你不用每天猜答案，晚上才能睡得安穩嘛。照例提醒一下，這集不是投資建議喔。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，贏家會連莊，所以集中持股看起來一直是對的，直到某一年不對；那一年不會預告，而且往往是你部位最大的時候。第二，單押要答對兩題，選哪一檔、哪一年下車；指數兩題都不答，贏家會自己贏，指數只是從頭到尾都拿著它。第三，零零五零有一半以上是台積電，不用猜，需要一本更厚的名冊。再提醒一次，這集不是投資建議喔。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "breakpoint 改回草稿；刪個人反應"
+  }
+ ]
+}

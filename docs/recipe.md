@@ -185,7 +185,7 @@ python3 tools/select_takes.py --script episodes/<ep>/script.json --segments out/
 `--asr breeze-modal` 把轉寫送到 Modal 的 L4 GPU（`tools/modal_breeze.py`）：同一個 Breeze int8 模型、同樣的解碼設定（zh、beam 5、VAD、
 時間戳超出音檔時的重試），只有裝置不同。EP10 的 30 次生成在 GPU 上重挑，10 段選中的版本跟 CPU 完全相同；挑選 79 秒，本機 22 分鐘。
 每批 12 個檔同時送出，每批最多等 600 秒、失敗重試一次，還是失敗就在本機 CPU 轉寫那一批，所以網路斷了也不會丟掉整次執行。
-沒有 Modal 時改用 `--asr breeze`（本機）。
+沒有 Modal 時改用 `--asr breeze`（本機）。Colab T4 也跑得通，但一集慢約 5 分鐘，而且 19 段裡有 3 段會選到不同的生成，只當備案：見 [`docs/colab-vs-modal.md`](colab-vs-modal.md)（2026-11-18）。
 
 **Modal 等開機（2026-11-10）**：EP16 挑選 9 分鐘，第一批在開始後 412 秒才回來，GPU 實際只算了 37 秒，其餘是在排 L4；
 本機的聲紋、抖動、亮度合計約 30–44 秒，不是瓶頸，所以聲紋不搬上 Modal。現在 `gpu=["L4", "A10G", "T4"]`（排不到 L4 就用別的），

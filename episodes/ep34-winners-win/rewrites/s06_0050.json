@@ -1,0 +1,131 @@
+{
+ "segment": "s06_0050",
+ "position": "第 7 段，共 9 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "7d5011d4e8958b5219dd268ba3e91c81ce0d6c11f024e161792e3b1d04e7905f",
+ "previous_context": "這幾年第一名年年換，你得連續猜中四次耶。但買整個市場的人，四次都已經在場了啦。",
+ "original": {
+  "text": "台灣聽眾一定會想到手上的零零五零：它有五十檔，算分散嗎？今年十月中，零零五零有五成六是台積電，五月一度到六成，前十大合計將近七成八。它是老基金，不受單一持股的上限，台積電市值多大，它就買多少。二〇二四年零零五零的前十大裡，只有台積電和鴻海贏過它，差距幾乎全部來自台積電那一年漲的八成一。這份報告說，零零五零這幾年的好成績，主要是押中台積電的成績。假如台積電也像 NVIDIA 那樣，六週跌掉三成，零零五零光這一檔就會被拖下十七個百分點。對照全球股票的 ETF，VT，台積電大約只佔百分之一點六。",
+  "lint": {
+   "chars": 244,
+   "precise_numbers": [
+    "五十",
+    "十七",
+    "百",
+    "百分之一點六"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 33.9,
+   "max_sentence_len": 46,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "講到買整個市場，你一定會想到零零五零。\n先提醒一下，這不是投資建議喔。\n零零五零裡面有五十檔股票，算分散嗎？\n其實不算耶。<short pause>\n這份報告說，它有一半以上全是台積電。\n因為它是老基金，沒有單一持股上限。\n台積電市值衝多大，它就得買多少。\n所以這幾年它績效好，主要是押對台積電。\n<sigh> 但如果反過來呢？\n萬一台積電短時間跌掉三成，\n零零五零光這一檔，就會被拖累十幾趴。\n光用想的就覺得蠻抖的吧。\n重點來了，那真正的分散長怎樣？\n對照全球股票的 ETF，也就是 VT。\n裡面的台積電大約只佔百分之一點六啦。",
+   "lint": {
+    "chars": 229,
+    "precise_numbers": [
+     "五十",
+     "萬一",
+     "百分之一點六"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 30,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "講到買整個市場，大家會想到零零五零。\n它裡面有五十檔股票，算有分散嗎？\n其實根本不算。<short pause>\n零零五零現在有一半以上都是台積電。\n因為它是老基金，持股沒有上限。\n台積電市值多大，它就買多少。\n二〇二四年它的前十大裡面，\n只有台積電跟鴻海兩檔跑贏它。\n這份報告說，這幾年其實全靠押中台積電。\n我想到這個比例就覺得背後涼涼的。<sigh>\n你想想看，要是台積電跌個三成，\n零零五零光這檔就會被拖累快兩成。\n那真正的大盤長怎樣？\n拿全球股票的 ETF 也就是 VT 來看，\n台積電在裡面其實只有百分之一點六啦。",
+   "lint": {
+    "chars": 225,
+    "precise_numbers": [
+     "五十",
+     "百分之一點六"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 34,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "講到買整個市場，你一定會想到零零五零。\n它裡面有五十檔股票，這樣算分散嗎？\n其實沒有你想像的那麼分散喔。\n重點來了，零零五零有一半以上都是台積電。\n因為它是老基金，持股比例完全沒有上限。\n台積電市值多大，它就得買多少進去。\n這份報告說，它這幾年的好成績，\n說白了就是押中台積電的成績啦。\n萬一台積電跌了三成，\n零零五零光是這檔就會被狠狠拖累。\n<short pause>\n我想到這種重押的風險就覺得很毛。\n那真正的全球市場長怎樣？\n像是全球股票的 VT，\n台積電在裡面其實只有百分之一點六。\n這種名冊厚多了，才真的不用每天猜嘛。",
+   "lint": {
+    "chars": 235,
+    "precise_numbers": [
+     "五十",
+     "萬一",
+     "百分之一點六"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.6,
+    "max_sentence_len": 29,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "講到買整個市場，大家會想到零零五零。它裡面有五十檔股票，算有分散嗎？其實根本不算。<short pause>零零五零現在有一半以上都是台積電。因為它是老基金，持股沒有上限。台積電市值多大，它就買多少。二〇二四年它的前十大裡面，只有台積電跟鴻海兩檔跑贏它。這份報告說，這幾年其實全靠押中台積電。我想到這個比例就覺得背後涼涼的。<sigh>你想想看，要是台積電跌個三成，零零五零光這檔就會被拖累快兩成。那真正的大盤長怎樣？拿全球股票的 ETF 也就是 VT 來看，台積電在裡面其實只有百分之一點六啦。",
+   "to": "講到買整個市場，台灣聽眾一定會想到零零五零。它有五十檔，算分散嗎？<short pause>今年十月中，零零五零有五成六是台積電，前十大合計將近七成八。它是老基金，不受單一持股的上限，台積電市值多大，它就買多少。二〇二四年它的前十大裡，只有台積電跟鴻海贏過它。這份報告說，零零五零這幾年的好成績，主要是押中台積電的成績。假如台積電也像 NVIDIA 那樣，六週跌掉三成，零零五零光這一檔，就會被拖下十七個百分點。對照全球股票的 ETF，VT，台積電大約只佔百分之一點六。",
+   "reason": "「拖累快兩成」改回十七個百分點；「根本不算」是改寫下的結論；刪個人反應"
+  }
+ ]
+}

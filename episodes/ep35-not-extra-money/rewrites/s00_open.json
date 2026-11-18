@@ -1,0 +1,117 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 10 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "433dffcb4b19e23236aec936d5e14661709d1943df3bff38575d70a66abb50fc",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "零零五六，台灣最多人存的高股息 ETF，受益人超過一百六十萬。今年它含息漲了六成，比零零五零還多。十月那次配息，一股一塊七毛二，是改成季配以來最高的一次。可是這一塊七毛二裡，成分股發下來的股利只佔一成八，另外八成二，是基金賣股賺到的價差。存股變成飆股的這一年，這份報告把二〇〇八年以來的帳重對一次：股息，到底是不是多出來的錢？",
+  "lint": {
+   "chars": 162,
+   "precise_numbers": [
+    "一百六十萬"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 31.4,
+   "max_sentence_len": 43,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "買高股息 ETF 領到的錢，真的是多賺的嗎？\n先說這不是投資建議喔。<short pause>\n其實零零五六今年含息漲了六成，超誇張的耶。\n它的受益人還超過一百六十萬人。\n更扯的是，十月那次配息創下了新高。\n但你猜那筆錢裡面，有多少是真正的股利？\n答案只有一成八。\n另外八成多，全是基金賣股票賺的價差。\n<sigh> 我看到這份報告真的起雞皮疙瘩。\n原本穩穩存股，結果竟然變成了飆股啦。<short pause>\n所以這份報告把以前的帳全部重算一次，\n來看看股息到底是不是多出來的錢。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [
+     "一百六十萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 33,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   },
+   "round": 0
+  },
+  {
+   "text": "你存高股息，是想穩穩領錢還是看它飆？先說好喔，這集不是投資建議。零零五六今年漲了六成，比零零五零還猛，受益人甚至超過一百六十萬。<short pause>但你有看過它最近的配息明細嗎？其實裡面八成以上，全是賣股票賺的價差，成分股發的股利連兩成都不到。我看到這邊真的有點傻眼。<sigh>所以存股不知不覺變成了玩飆股嘛。這份報告把十幾年來的帳重對一次，你覺得股息真的是多出來的錢嗎？",
+   "lint": {
+    "chars": 171,
+    "precise_numbers": [
+     "一百六十萬"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 20.4,
+    "max_sentence_len": 32,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "先說好，這集不是投資建議喔。<short pause>\n你手上有零零五六嗎？\n它今年含息漲了六成。\n漲得比零零五零還要猛耶。\n但你猜十月那次大配息，是哪裡來的？\n其實公司發的股利，只占不到兩成喔。\n剩下八成多，全都是賣股票賺的價差。\n我看到這邊真的嚇一跳。<laugh>\n本來想安穩存股，怎麼突然變飆股了？\n所以這份報告把十幾年來的帳重算一次。\n股息到底是不是多出來的錢啊？",
+   "lint": {
+    "chars": 157,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 13.3,
+    "max_sentence_len": 17,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "先說好，這集不是投資建議喔。<short pause>你手上有零零五六嗎？它今年含息漲了六成。漲得比零零五零還要猛耶。但你猜十月那次大配息，是哪裡來的？其實公司發的股利，只占不到兩成喔。剩下八成多，全都是賣股票賺的價差。我看到這邊真的嚇一跳。<laugh>本來想安穩存股，怎麼突然變飆股了？所以這份報告把十幾年來的帳重算一次。股息到底是不是多出來的錢啊？",
+   "to": "你手上有零零五六嗎？台灣最多人存的高股息 ETF，受益人超過一百六十萬。今年它含息漲了六成，比零零五零還猛。十月那次配息，一股一塊七毛二，是改成季配以來最高的一次。<short pause>可是你猜，這一塊七毛二是哪裡來的？成分股發下來的股利，只佔一成八；另外八成二，是基金賣股賺到的價差。存股變成飆股的這一年，這份報告把二〇〇八年以來的帳重算一次：股息，到底是不是多出來的錢？",
+   "reason": "鉤子放第一句、免責移到第二段；補回一塊七毛二與一成八；刪個人反應"
+  }
+ ]
+}

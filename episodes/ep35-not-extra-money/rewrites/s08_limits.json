@@ -1,0 +1,127 @@
+{
+ "segment": "s08_limits",
+ "position": "第 9 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這",
+  "很扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4f036eac3460a0bfdc4f85b39f49290a5d1d1e56a83e05c73b463591a6518d57",
+ "previous_context": "全靠後面的飆股年才救回來耶。所以這份報告說，零零五零每年領足，最後剩下的錢，居然比省著花的零零五六還要多啦。",
+ "original": {
+  "text": "這份報告也講了這本帳的限制。零零五零贏，不代表市值型一定贏，這十九年的領先，很大一部分來自台積電。零零五六也沒有失敗：二〇〇八年在金融海嘯前進場，每年領百分之五再加物價，到今天的本金還比當初多，它輸的是比較。樣本只有一個市場、十九年，計算也簡化了，沒算稅和交易成本。還有一件事回測量不到：有人在大跌的時候按不下賣出，卻能安心領配息。對這樣的人，高股息是一種紀律工具，代價就是前面這些數字；知道代價之後還是選它，是講得通的決定。",
+  "lint": {
+   "chars": 213,
+   "precise_numbers": [
+    "十九",
+    "百分之五",
+    "十九"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 34.5,
+   "max_sentence_len": 54,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "不過，這份報告也提醒了這本帳的限制喔。零零五零會贏，很大一部分是靠台積電。那零零五六真的有那麼差嗎？其實沒有。他在金融海嘯前進場，每年領百分之五再加物價，到今天剩下的本金比當初還要多耶。所以他沒有失敗，他只是輸給了比較。<short pause>我讀到這段其實很有共鳴。因為還有一件事，是數字完全算不出來的。大跌的時候，你按得下賣出鍵嗎？很多人根本按不下去，可是他們能安心領配息。高股息對這種人來說，就是一個紀律工具。只是代價就是少賺很多錢。<short pause>你清楚這個代價還是要選，那就講得通啦。當然這完全不是投資建議喔。",
+   "lint": {
+    "chars": 240,
+    "precise_numbers": [
+     "百分之五"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 37,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實這份報告說，這筆帳有限制啦。零零五零會贏，很大一部分是靠台積電在衝。那零零五六算失敗嗎？完全沒有喔。就算在金融海嘯前進場，每年領足百分之五，現在本金還是比當初多耶。它只是輸在互相比較而已。而且回測算不出人性。你在大跌的時候，真的有辦法按得下賣出鍵嗎？很多人辦不到嘛。<short pause>這時候高股息就能幫你穩住心情。我讀到這裡覺得很中肯。高股息的代價，就是少賺前面那些錢。如果你想清楚了還是選它，那就完全講得通啦。",
+   "lint": {
+    "chars": 199,
+    "precise_numbers": [
+     "百分之五"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 31,
+    "sentences_over_20": 1,
+    "particles_per_100": 2.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "不過這份報告也有把話說清楚喔。零零五零會贏，很大一部分是靠台積電啦。那零零五六算失敗嗎？其實完全沒有。就算在金融海嘯前進場，每年領百分之五再加物價，到今天的本金居然還變多了耶。它根本沒有輸，只是輸在比較而已。<short pause>而且有一件事，是數字量不出來的。你遇到市場大跌，真的按得下賣出嗎？很多人下不了手，但拿到配息就會很安心。我讀到這段很能體會這種心情。這時候高股息就像守紀律的工具嘛。只要知道少賺的代價，這樣選也是講得通的決定。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [
+     "百分之五"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 36,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "其實這份報告說，這筆帳有限制啦。零零五零會贏，很大一部分是靠台積電在衝。那零零五六算失敗嗎？完全沒有喔。就算在金融海嘯前進場，每年領足百分之五，現在本金還是比當初多耶。它只是輸在互相比較而已。而且回測算不出人性。你在大跌的時候，真的有辦法按得下賣出鍵嗎？很多人辦不到嘛。<short pause>這時候高股息就能幫你穩住心情。我讀到這裡覺得很中肯。高股息的代價，就是少賺前面那些錢。如果你想清楚了還是選它，那就完全講得通啦。",
+   "to": "這份報告也講了這本帳的限制。零零五零會贏，很大一部分是靠台積電。那零零五六失敗了嗎？沒有。二〇〇八年在金融海嘯前進場，每年領百分之五再加物價，到今天的本金還比當初多，它只是輸在比較。樣本也只有一個市場、十九年，沒算稅和交易成本。<short pause>還有一件事回測量不到：有人在大跌的時候按不下賣出，卻能安心領配息。對這樣的人，高股息是一種紀律工具，代價就是前面這些數字。知道代價之後還是選它，是講得通的決定。",
+   "reason": "補回樣本限制；刪個人反應"
+  }
+ ]
+}

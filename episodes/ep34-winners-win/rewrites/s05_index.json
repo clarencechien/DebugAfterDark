@@ -1,0 +1,143 @@
+{
+ "segment": "s05_index",
+ "position": "第 6 段，共 9 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "824e2f33847858088fb404c50adb741f60d53ec6b72c7d8292fe2620fcf57793",
+ "previous_context": "你覺得自己真的抱得住嗎？這種落差真的會讓人心態崩掉啦。",
+ "original": {
+  "text": "單押一檔的人要答對兩題：選哪一檔，哪一年下車。指數的作法是兩題都不答。VTI 在二〇二二年底就持有 NVIDIA，那時它排在十名以外；之後它每漲一段，比重就跟著大一點，到今年九月底是第一大持股，佔百分之七點一。中間沒有人做決定。這份報告的一句話是：贏家會自己贏，指數只是從頭到尾都拿著它。反過來，今年 NVIDIA 跌了三成，VTI 也照樣承受，只是承受的是百分之七的部位，大約兩個百分點。而這四年，每年最強的那一檔都換人，想單押又年年押對，得連續猜中四次。",
+  "lint": {
+   "chars": 224,
+   "precise_numbers": [
+    "百分之七點一",
+    "百分之七",
+    "百"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 31.0,
+   "max_sentence_len": 67,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [
+    "部位"
+   ],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以說，單押一檔股票到底有多難？\n你得選對哪一檔，還要抓對下車時間。\n那買整個市場的指數呢？\n它乾脆兩題都不答。<short pause>\n像 VTI 兩年多前就抱著 NVDA 了。\n那時候它連前十名都排不進去喔。\n然後它每漲一段，佔比就自己變大。\n到了今年九月，它已經變成第一大持股。\n佔了百分之七點一。\n重點來了，這中間完全沒有人做決定。\n這份報告說得很傳神，贏家會自己贏。\n指數只是從頭到尾都拿著它而已。<laugh>\n就算跌了三成，指數也只傷到兩個百分點。\n其實這四年最強的股票，年年都在換。\n你想年年押對，就得連續猜中四次。\n但買整個市場的人，每一次都在場嘛。",
+   "lint": {
+    "chars": 246,
+    "precise_numbers": [
+     "百分之七點一",
+     "百"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 14.4,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實單押個股的人，每次都要答對兩題。第一題是要買哪一檔，第二題是何時要下車。但買整個市場的人呢？答案是兩題都不用管。<short pause>像 VTI 在幾年前就抱著 NVDA 了。那時候它連前十名都排不進去喔。後來它一路往上衝，比重就跟著自己變大。到九月底它變成第一大持股，比重占了百分之七點一。這中間完全沒有人需要做決定耶。這份報告說得很好，贏家會自己贏。就算它後來跌了三成，指數也只扛了大約兩個百分點。而且這四年最強的股票每年都在換。你真的能連續四次都押對嗎？<short pause>難度真的太高了啦。可是買整個市場的人，每一次都在場。",
+   "lint": {
+    "chars": 243,
+    "precise_numbers": [
+     "百分之七點一",
+     "百"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 23,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "所以啊，單押個股的人，其實得答對兩題。\n哪兩題？\n第一是選哪一檔，第二是哪一年要下車。<short pause>\n但買指數的人呢？兩題都不用答。\n這招其實滿聰明的。\n像美股 VTI，幾年前就抱著 NVDA 了。\n那時候它還排在十名以外喔。\n後來它一路大漲，在指數裡的占比自己變大。\n到九月底變成第一大持股，占了百分之七點一。\n這份報告說，贏家會自己贏。\n指數只是從頭到尾拿著它而已。\n跌的時候也是這樣。\n就算它跌了三成，指數也只受傷兩個百分點。\n想年年押中最強的股票有多難？\n這幾年第一名年年換，你得連續猜中四次耶。<laugh>\n但買整個市場的人，四次都已經在場了啦。",
+   "lint": {
+    "chars": 247,
+    "precise_numbers": [
+     "百分之七點一",
+     "百"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第一",
+     "第一"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 13.5,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "所以啊，單押個股的人，其實得答對兩題。哪兩題？第一是選哪一檔，第二是哪一年要下車。<short pause>但買指數的人呢？兩題都不用答。這招其實滿聰明的。像美股 VTI，幾年前就抱著 NVDA 了。那時候它還排在十名以外喔。後來它一路大漲，在指數裡的占比自己變大。到九月底變成第一大持股，占了百分之七點一。這份報告說，贏家會自己贏。指數只是從頭到尾拿著它而已。跌的時候也是這樣。就算它跌了三成，指數也只受傷兩個百分點。想年年押中最強的股票有多難？這幾年第一名年年換，你得連續猜中四次耶。<laugh>但買整個市場的人，四次都已經在場了啦。",
+   "to": "所以啊，單押一檔的人要答對兩題：第一，選哪一檔；第二，哪一年下車。<short pause>買指數的人呢？兩題都不用答。像 VTI，二〇二二年底就抱著 NVIDIA 了，那時它還排在十名以外。之後它每漲一段，在指數裡的比重就跟著大一點，到今年九月底變成第一大持股，佔百分之七點一，中間沒有人做決定。這份報告的一句話是：贏家會自己贏，指數只是從頭到尾都拿著它。跌的時候也一樣，今年 NVIDIA 跌了三成，VTI 大約只受傷兩個百分點。而這四年，每年最強的那一檔都換人，想單押又年年押對，得連續猜中四次。",
+   "reason": "「幾年前」補回年份；刪個人反應與笑聲"
+  }
+ ]
+}

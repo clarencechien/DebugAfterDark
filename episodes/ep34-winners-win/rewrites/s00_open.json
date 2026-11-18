@@ -1,0 +1,125 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 9 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "6d77cb2f13f3369a8d1597dc291dc61cba4793bb30aa2017bf3413d23ef72455",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "NVIDIA 四年漲了十倍。可是二〇二六年走到十一月中，它今年是負百分之十二點五，美國整體股市的 ETF，VTI，卻是正百分之十一點六。十月六號它今年還賺兩成八，不到六週，從高點跌掉將近三分之一。原因是執行長黃仁勳的個人風波，董事會啟動調查，十一月十二號公司宣布他辭去所有職務。這份報告說，這件事沒有人預料得到，而這正是要看的地方：單押一檔，跟買下整個市場，差別到底在哪裡？",
+  "lint": {
+   "chars": 185,
+   "precise_numbers": [
+    "十一",
+    "百分之十二點五",
+    "百分之十一點六",
+    "十一",
+    "十二"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 36.0,
+   "max_sentence_len": 52,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "四年漲了十倍的神股，今年竟然賠錢？\n先說好這集不是投資建議喔。\n對，我講的就是 NVIDIA。\n二〇二六年走到十一月中，\n它今年居然跌了超過一成。\n同一時間，買下美股大盤的 VTI，\n卻漲了百分之十一點六。<short pause>\n我看到這數字真的很震撼。\n最扯的是，十月初它還賺快三成耶。\n結果不到六週，從高點跌掉三分之一。\n<sigh> 原因是執行長黃仁勳請辭。\n這份報告說，這件事根本沒人預料得到。\n所以你猜問題在哪裡？\n單押一檔跟買下整個市場，差別到底多大？",
+   "lint": {
+    "chars": 199,
+    "precise_numbers": [
+     "十一",
+     "百分之十一點六"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 26,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "NVIDIA 四年漲了十倍，今年居然輸給美股大盤。先說好，這集不是投資建議喔。二〇二六年，美國整體股市漲了一成多，NVDA 卻是負百分之十二點五。<short pause>更扯的是，十月初它原本還在賺，結果不到六週，就跌掉將近三分之一。你猜發生什麼事？執行長黃仁勳因為個人風波，辭去所有職務。<sigh>這份報告說，這件事根本沒人預料得到啦。我看到這邊真的起雞皮疙瘩。所以單押一檔，跟買下整個市場，差別到底在哪裡？",
+   "lint": {
+    "chars": 186,
+    "precise_numbers": [
+     "百分之十二點五"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 19.7,
+    "max_sentence_len": 32,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "NVIDIA 四年漲了十倍，\n今年卻慘輸美股大盤。\n先說好喔，這集都不是投資建議。\n到二〇二六年的十一月中，\n它今年跌了一成多。\n可是代表美股大盤的 VTI，\n反而漲了百分之十一點六。<short pause>\n更扯的是，十月初它還賺兩成多耶。\n結果不到六週，\n就跌掉了將近三分之一。\n執行長黃仁勳因為個人風波，\n董事會調查後直接宣布辭職。\n這份報告說，這根本沒人料得到。\n我看到這邊整個起雞皮疙瘩。<sigh>\n你猜這代表什麼？\n其實就是單押一檔，\n跟買下整個市場的差別啦。",
+   "lint": {
+    "chars": 201,
+    "precise_numbers": [
+     "十一",
+     "百分之十一點六"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.3,
+    "max_sentence_len": 25,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "NVIDIA 四年漲了十倍，今年居然輸給美股大盤。先說好，這集不是投資建議喔。二〇二六年，美國整體股市漲了一成多，NVDA 卻是負百分之十二點五。<short pause>更扯的是，十月初它原本還在賺，結果不到六週，就跌掉將近三分之一。你猜發生什麼事？執行長黃仁勳因為個人風波，辭去所有職務。<sigh>這份報告說，這件事根本沒人預料得到啦。我看到這邊真的起雞皮疙瘩。所以單押一檔，跟買下整個市場，差別到底在哪裡？",
+   "to": "NVIDIA 四年漲了十倍，今年居然輸給美股大盤。二〇二六年走到十一月中，美國整體股市漲了一成多，NVIDIA 卻是負百分之十二點五。<short pause>十月初它今年原本還賺兩成八，結果不到六週，就從高點跌掉將近三分之一。原因是執行長黃仁勳的個人風波，董事會啟動調查，十一月十二號公司宣布他辭去所有職務。這份報告說，這件事沒有人預料得到，而這正是要看的地方：單押一檔，跟買下整個市場，差別到底在哪裡？",
+   "reason": "免責移到第二段；補回兩成八與董事會調查；刪個人反應"
+  }
+ ]
+}

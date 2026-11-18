@@ -1,0 +1,56 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -21.2,
+  "gain_db": 1.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_scope",
+  "lufs_before": -22.4,
+  "gain_db": 2.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_transfer",
+  "lufs_before": -22.4,
+  "gain_db": 2.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_streak",
+  "lufs_before": -21.8,
+  "gain_db": 1.8,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_wrong",
+  "lufs_before": -21.1,
+  "gain_db": 1.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_index",
+  "lufs_before": -20.5,
+  "gain_db": 0.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_0050",
+  "lufs_before": -23.2,
+  "gain_db": 3.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_limits",
+  "lufs_before": -22.0,
+  "gain_db": 2.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_outro",
+  "lufs_before": -22.9,
+  "gain_db": 2.9,
+  "lufs_after": -20.0
+ }
+]

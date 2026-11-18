@@ -1,0 +1,155 @@
+{
+ "segment": "s07_withdraw",
+ "position": "第 8 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這",
+  "很扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "71affa97297ba3b4600e5cdd483bb1976be263fd9bb432ff911c5f02b587dfb5",
+ "previous_context": "拿到了配息，你最後還不是得買回去？這樣轉一手，只是多扣手續費跟稅而已啊。",
+ "original": {
+  "text": "花錢的時候呢？二〇〇八年初各一千萬，第一年提領五十萬，每年加百分之三，配息不夠就賣股補足。兩邊都撐過來了：到今年十一月，零零五零剩三千五百多萬，零零五六剩一千三百多萬。零零五六的過程很驚險，二〇二二年底只剩五百八十四萬，把它救回來的，是二〇二三年和今年兩個飆股年。再把只花配息、一張不賣的那位放進來：十九年有十一年不夠用，手上的股票現在值兩千零五十八萬。這份報告說，每年領足的零零五零，剩下的比省著花的零零五六還多。",
+  "lint": {
+   "chars": 208,
+   "precise_numbers": [
+    "一千萬",
+    "五十萬",
+    "百分之三",
+    "十一",
+    "三千五百",
+    "萬",
+    "一千三百",
+    "萬",
+    "五百八十四萬",
+    "十九",
+    "十一",
+    "兩千零五十八萬"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 33.7,
+   "max_sentence_len": 47,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那換成退休要花錢呢？\n假設你二〇〇八年各放一千萬進去，\n每年都要領生活費，\n配息不夠就賣股票補足。\n結果兩邊其實都有撐過來喔。\n算到今年，零零五零剩下三千五百多萬，\n零零五六剩下一千三百多萬。\n看似都過關，\n但我看到那個過程真的捏一把冷汗。\n零零五六中間一度只剩五百八十四萬。<sigh>\n要不是剛好碰上後面的飆股年，\n本金真的差點撐不住啦。\n那只花配息的人呢？\n十九年裡面，有十一年根本不夠花。\n最神奇的是什麼？<short pause>\n這份報告說，\n每年領好領滿的零零五零，\n最後剩下的錢，\n竟然比省著花的零零五六還要多。",
+   "lint": {
+    "chars": 227,
+    "precise_numbers": [
+     "一千萬",
+     "三千五百",
+     "萬",
+     "一千三百",
+     "萬",
+     "五百八十四萬",
+     "十九",
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 19.6,
+    "max_sentence_len": 39,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "存錢是這樣，那退休要花錢的時候呢？\n假設二〇〇八年各放一千萬。\n每年領生活費，不夠就賣股票補足。<short pause>\n你覺得最後誰剩比較多？\n這份報告說，零零五零剩了三千五百多萬。\n零零五六卻只剩一千三百多萬喔。\n而且零零五六的過程其實超級驚險。\n它在幾年前一度只剩五百八十四萬。\n還好後來靠著兩次大漲救回來。<sigh>\n最不可思議的是什麼你知道嗎？\n每年把錢領好領滿的零零五零，\n最後剩下的本金，\n居然比省著花的零零五六還要多耶。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [
+     "一千萬",
+     "三千五百",
+     "萬",
+     "一千三百",
+     "萬",
+     "五百八十四萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 37,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那如果退休要開始花錢呢？\n先提醒大家，這不是投資建議喔。\n假設二〇〇八年各放一千萬進去。\n每年提領五十萬，不夠就賣股票補。\n結果會怎麼樣？\n其實兩邊最後都撐過來了。<short pause>\n到今年十一月，零零五六剩一千三百多萬。\n零零五零剩下三千五百三十六萬。\n中間過程真的會讓人捏一把冷汗。<sigh>\n因為零零五六有一年差點見底。\n全靠後面的飆股年才救回來耶。\n所以這份報告說，零零五零每年領足，\n最後剩下的錢，\n居然比省著花的零零五六還要多啦。",
+   "lint": {
+    "chars": 194,
+    "precise_numbers": [
+     "一千萬",
+     "五十萬",
+     "十一",
+     "一千三百",
+     "萬",
+     "三千五百三十六萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 39,
+    "sentences_over_20": 1,
+    "particles_per_100": 2.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "那如果退休要開始花錢呢？先提醒大家，這不是投資建議喔。假設二〇〇八年各放一千萬進去。每年提領五十萬，不夠就賣股票補。結果會怎麼樣？其實兩邊最後都撐過來了。<short pause>到今年十一月，零零五六剩一千三百多萬。零零五零剩下三千五百三十六萬。中間過程真的會讓人捏一把冷汗。<sigh>因為零零五六有一年差點見底。全靠後面的飆股年才救回來耶。所以這份報告說，零零五零每年領足，最後剩下的錢，居然比省著花的零零五六還要多啦。",
+   "to": "那退休開始花錢呢？假設二〇〇八年初各放一千萬，第一年提領五十萬，每年加百分之三，配息不夠就賣股票補。<short pause>結果兩邊都撐過來了：到今年十一月，零零五零剩三千五百多萬，零零五六剩一千三百多萬。零零五六的過程比較驚險，二〇二二年底只剩五百八十四萬，把它救回來的，是二〇二三年和今年兩個飆股年。再把只花配息、一張不賣的那位放進來：十九年有十一年不夠用。這份報告說，每年領足的零零五零，最後剩下的，比省著花的零零五六還多。",
+   "reason": "刪重複的免責；補回五百八十四萬；刪個人反應"
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "segment": "s09_outro",
+ "position": "第 10 段，共 10 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這",
+  "很扯",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "c32f25228a6cd2308e5d68eac4ec684bf823370db1044ebc19492748c2303c0f",
+ "previous_context": "高股息的代價，就是少賺前面那些錢。如果你想清楚了還是選它，那就完全講得通啦。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，零零五六不是整個市場，是一套照殖利率選股的規則；今年的六成，是規則替你換進記憶體股換來的。第二，配息是把你帳上的錢換一個口袋交給你，股價會扣掉同樣的金額，十九年裡有十一年不夠付生活費。第三，存錢的時候，零零五零十八個起點全部領先；花錢的時候，每年領足的零零五零，剩下的還比較多。主篇說不用猜誰會贏，這集補上後半句：也不必為了領息的安心感，去買一套替你猜的規則。再提醒一次，這集不是投資建議。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 249,
+   "precise_numbers": [
+    "十九",
+    "十一",
+    "零零五零十八"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 26.7,
+   "max_sentence_len": 47,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n老樣子先提醒，這集不是投資建議喔。\n第一，零零五六不是市場，只是一套選股規則。\n第二，配息只是換口袋，很多年不夠付生活費。\n第三，不管是存錢或提領，零零五零都剩更多。\n<short pause>\n看到這些數字，你覺得這份安心感值得嗎？\n其實你真的不用猜誰會贏，\n更不必為了安心，去買一套替你猜的規則啦。\n高股息不是不能買，想清楚代價就講得通。\n最後再提醒一次，這集不是投資建議喔。<laugh>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 221,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 17.4,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 3
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n第一，零零五六不是整個市場。\n它只是一套照殖利率選股的規則啦。\n\n第二，配息只是把左口袋的錢換到右口袋。\n十九年裡有超過一半根本不夠付生活費。\n\n第三，不管是存錢還是花錢。\n零零五零留下來的資產都更多。\n\n你可能會問，那領息的安心感不重要嗎？\n很重要，但就看你願不願意接受代價囉。\n其實我們根本不用猜誰會贏。\n更不必為了安心，買一套規則替你猜嘛。<laugh>\n\n最後還是要提醒，這集內容不是投資建議喔。\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 234,
+    "precise_numbers": [
+     "十九"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n聽完這整集，要帶走什麼呢？\n其實就三件事。\n第一，零零五六不是大盤，是一套選股規則。\n第二，配息只是把左口袋的錢換到右口袋。\n而且超過一半的年份，根本不夠付生活費。\n第三，不管存錢還是花錢，零零五零都領先。\n算下來十八個起點，它全部都贏喔。\n所以啊，你本來就不用去猜誰會贏。\n也不必為了安心感，買一套替你猜的規則。<laugh>\n照慣例提醒，這集不是投資建議啦。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [
+     "十八"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>老樣子先提醒，這集不是投資建議喔。第一，零零五六不是市場，只是一套選股規則。第二，配息只是換口袋，很多年不夠付生活費。第三，不管是存錢或提領，零零五零都剩更多。<short pause>看到這些數字，你覺得這份安心感值得嗎？其實你真的不用猜誰會贏，更不必為了安心，去買一套替你猜的規則啦。高股息不是不能買，想清楚代價就講得通。最後再提醒一次，這集不是投資建議喔。<laugh>原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，零零五六不是整個市場，是一套照殖利率選股的規則；今年的六成，是規則替你換進記憶體股換來的。第二，配息是把你帳上的錢換一個口袋交給你，股價會扣掉同樣的金額，十九年裡有十一年不夠付生活費。第三，存錢的時候，零零五零十八個起點全部領先；花錢的時候，每年領足的零零五零，剩下的還比較多。上一集說不用猜誰會贏，這集補上後半句：也不必為了領息的安心感，去買一套替你猜的規則。再提醒一次，這集不是投資建議喔。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "breakpoint 改回草稿；免責只留一次；刪笑聲"
+  }
+ ]
+}
