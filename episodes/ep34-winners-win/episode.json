@@ -7,7 +7,7 @@
  "description": "NVIDIA 四年漲了十倍，可是 2026 年走到 11 月中，它今年是 −12.5%，美國整體股市 ETF（VTI）是 +11.6%。這份報告用 2023 到 2026 的逐年數字，看單押一檔和買下整個市場差在哪：贏家會連莊，所以集中持股看起來一直是對的，直到某一年不對；指數不用回答選哪一檔、哪一年下車，贏家會自己贏，指數只是從頭到尾都拿著它。再回頭看手上的零零五零：它有一半以上是台積電。分散筆記上集。\n\n今晚的 breakpoint：\n1. 贏家會連莊，所以集中持股看起來一直是對的，直到某一年不對；那一年不會預告，而且往往是部位最大的時候。\n2. 單押要答對兩題，選哪一檔、哪一年下車；指數兩題都不答，贏家會自己贏，指數只是從頭到尾都拿著它。\n3. 零零五零有一半以上是台積電，「不用猜」需要一本更厚的名冊。\n\n原文：〈不用猜，贏家會自己贏〉分散筆記 https://imitator.ai-apps.work/r/winners-win-themselves\n基準日 2026-11-13 收盤；台股用股價報酬、美股用還原價，口徑與出處列在原文。NVIDIA 人事依原文引用的新聞報導。\n本集是資料整理，不構成投資建議。\n\n延伸收聽：EP28〈AI 來了，股市這次不一樣嗎？〉、EP29〈同梯不同命？同一個起點，五年差多少〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
  "report_slug": "winners-win-themselves",
  "source_url": "https://imitator.ai-apps.work/r/winners-win-themselves",
- "status": "draft",
+ "status": "final",
  "related": [
   "ep35-not-extra-money",
   "ep28-same-ledger",
@@ -47,5 +47,6 @@
   "colab": "同一批 57 個生成另在 Colab T4 轉寫比對，見 docs/colab-vs-modal.md",
   "twtone": "qa/twtone.md：沒有超過基準的項目",
   "terms": "Ping、pong 判為英文念法"
- }
+ },
+ "published": "2026-11-19T08:47:00+08:00"
 }

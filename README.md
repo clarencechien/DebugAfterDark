@@ -39,6 +39,8 @@
 | [EP31](episodes/ep31-knowing-is-dear/) | AI 幫你做完了，你知道它做對了嗎？（知行筆記 2/2，上：EP30） | 定稿；Breeze 3.8%（英文人名、成語），Gemini 2.6% |
 | [EP32](episodes/ep32-slotbound-clones/) | 還沒上市，手機版就先被抄了（Slotbound 案卷 1/2） | 定稿 |
 | [EP33](episodes/ep33-one-line-bill/) | 一句話做一個遊戲，帳單五百五十美元（Slotbound 案卷 2/2，上：EP32） | 定稿；錯誤率 3.8%（Saltline、Fable 的拼法） |
+| [EP34](episodes/ep34-winners-win/) | NVIDIA 四年漲十倍，今年卻輸給大盤（分散筆記 1/2） | 定稿 |
+| [EP35](episodes/ep35-not-extra-money/) | 存股變飆股：0056 今年漲六成，股息是多出來的錢嗎？（分散筆記 2/2，上：EP34） | 定稿 |
 
 - 一集怎麼做：[`docs/recipe.md`](docs/recipe.md)
 - 選題對照：[`docs/report-candidates.md`](docs/report-candidates.md)（imitator 2026 年的報告，標了已做、推薦、可做、不做）

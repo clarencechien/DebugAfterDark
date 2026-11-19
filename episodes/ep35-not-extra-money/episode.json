@@ -7,7 +7,7 @@
  "description": "0056 今年含息漲了六成，十月那次配息一股 1.72 元創下新高，可是其中八成二是基金賣股賺的價差，存股族自己沒換股，是指數規則替他們換的。這份報告把 2008 年以來的帳重對一次：0056 算不算分散、是不是 smart beta、股息穩不穩；存錢的時候和花錢的時候，為了股息而選，各付出了什麼。分散筆記番外。\n\n今晚的 breakpoint：\n1. 0056 不是整個市場，是一套照殖利率選股的規則；今年的六成，是規則替你換進記憶體股換來的。\n2. 配息是把你帳上的錢換一個口袋交給你，股價會扣掉同樣的金額；十九年裡有十一年不夠付生活費。\n3. 存錢的時候，0050 十八個起點全部領先；花錢的時候，每年領足的 0050，剩下的還比較多。\n\n原文：〈股息不是多出來的錢〉分散筆記・番外 https://imitator.ai-apps.work/r/not-extra-money\n資料截至 2026-11-13 收盤，回測未計稅費，出處列在原文。\n本集是資料整理與回測，不構成投資建議；回測是歷史模擬，不代表未來。\n\n上一集：EP34〈NVIDIA 四年漲十倍，今年卻輸給大盤〉\n延伸收聽：EP25〈一千萬夠不夠，先問地板有多硬〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
  "report_slug": "not-extra-money",
  "source_url": "https://imitator.ai-apps.work/r/not-extra-money",
- "status": "draft",
+ "status": "final",
  "related": [
   "ep34-winners-win",
   "ep25-floor-and-dose"
@@ -46,5 +46,6 @@
   "colab": "同一批 57 個生成另在 Colab T4 轉寫比對，見 docs/colab-vs-modal.md",
   "twtone": "qa/twtone.md：沒有超過基準的項目",
   "terms": "Ping、pong 判為英文念法"
- }
+ },
+ "published": "2026-11-19T08:49:00+08:00"
 }
