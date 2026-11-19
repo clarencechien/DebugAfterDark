@@ -1,0 +1,80 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -21.6,
+  "gain_db": 1.6,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_recap",
+  "lufs_before": -20.9,
+  "gain_db": 0.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_craft",
+  "lufs_before": -23.0,
+  "gain_db": 3.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_craft2",
+  "lufs_before": -21.1,
+  "gain_db": 1.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_cost",
+  "lufs_before": -23.1,
+  "gain_db": 3.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_split",
+  "lufs_before": -20.5,
+  "gain_db": 0.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_company",
+  "lufs_before": -23.0,
+  "gain_db": 3.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_buyout",
+  "lufs_before": -20.3,
+  "gain_db": 0.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_parent",
+  "lufs_before": -21.0,
+  "gain_db": 1.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_risk",
+  "lufs_before": -21.8,
+  "gain_db": 1.8,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s10_others",
+  "lufs_before": -21.2,
+  "gain_db": 1.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s11_statement",
+  "lufs_before": -20.8,
+  "gain_db": 0.8,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s12_outro",
+  "lufs_before": -20.8,
+  "gain_db": 0.8,
+  "lufs_after": -20.1
+ }
+]

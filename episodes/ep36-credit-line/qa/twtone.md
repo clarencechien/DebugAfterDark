@@ -1,8 +1,4 @@
-# twtone · ep36-credit-line
-
-輸入：`out/twtone/ep36-credit-line.md`（每段一行，已去掉音效標籤）
-
-# twtone quick · ep36-credit-line.md · 2076 漢字
+# twtone quick · ep36-credit-line.md · 2077 漢字
 
 表層 AI tell：沒有超過台灣基準的項目。
 
@@ -11,3 +7,6 @@
 ## 用詞（zhtw-mcp）
   沒有可自動改的兩岸用詞。
   翻譯腔 warning 3 處（定語堆疊／的的不休），不自動改，--verbose 展開。
+
+report: episodes/ep36-credit-line/qa/twtone.md
+��語堆疊／的的不休），不自動改，--verbose 展開。

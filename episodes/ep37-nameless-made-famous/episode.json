@@ -27,6 +27,22 @@
  "series": "韓劇的中間層 2/2（上：EP36）",
  "report_version": "2026-11-19",
  "audio": {
-  "file": "ep37-nameless-made-famous.mp3"
+  "file": "ep37-nameless-made-famous.mp3",
+  "bytes": 10246159,
+  "sha256": "fbaa7c4b99193095487161c0f8922f1f92d4940277c636b14b4e85b297f16160",
+  "duration_s": 640.3,
+  "duration": "10:40",
+  "lufs": -16.8
+ },
+ "qa": {
+  "breeze_cer_mean": 0.026,
+  "gemini_cer_mean": 0.017,
+  "jitter_semitones": 0.222,
+  "gates": "錯誤率 2.6%、音高跳動 0.222 都通過",
+  "retakes": "s03、s05、s09、s10 各補 3 次，s01、s05、s09 再補 3 次，s10 再補 3 次；s00「但你猜」改「可是」、s09「十三年前」前加「早在」重錄",
+  "manual_pick": "s09 take2（take0 的「林成根」被聽成「凌晨」）、s10 take8（take0 語速 -13%，take5 音高 +6.3）；其餘照 steady_pick",
+  "both_wrong": "韓圜／韓元、聲請／申請（同音或近音），這份／這篇",
+  "twtone": "qa/twtone.md：沒有超過基準的項目",
+  "terms": "韓國人名都用中文念法（Gemini 判 B）；羅暎錫在 Breeze 聽成「羅英喜」；Ping、pong 英文念法"
  }
 }

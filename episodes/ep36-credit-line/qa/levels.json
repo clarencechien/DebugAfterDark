@@ -1,0 +1,68 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -22.6,
+  "gain_db": 2.6,
+  "lufs_after": -20.1
+ },
+ {
+  "id": "s01_press",
+  "lufs_before": -22.0,
+  "gain_db": 2.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_two",
+  "lufs_before": -20.7,
+  "gain_db": 0.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_top",
+  "lufs_before": -23.4,
+  "gain_db": 3.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_contract",
+  "lufs_before": -20.2,
+  "gain_db": 0.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_japan",
+  "lufs_before": -22.3,
+  "gain_db": 2.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_taiwan",
+  "lufs_before": -22.2,
+  "gain_db": 2.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_korea",
+  "lufs_before": -22.7,
+  "gain_db": 2.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_rule",
+  "lufs_before": -21.9,
+  "gain_db": 1.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_taiwan_now",
+  "lufs_before": -21.7,
+  "gain_db": 1.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s10_outro",
+  "lufs_before": -22.3,
+  "gain_db": 2.3,
+  "lufs_after": -20.0
+ }
+]

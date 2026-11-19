@@ -27,6 +27,22 @@
  "series": "韓劇的中間層 1/2",
  "report_version": "2026-11-19",
  "audio": {
-  "file": "ep36-credit-line.mp3"
+  "file": "ep36-credit-line.mp3",
+  "bytes": 9020708,
+  "sha256": "bbb051318616f11603062040f146cf5dffaba35fd499e041ce34c49cfca5a08f",
+  "duration_s": 563.7,
+  "duration": "9:23",
+  "lufs": -16.8
+ },
+ "qa": {
+  "breeze_cer_mean": 0.033,
+  "gemini_cer_mean": 0.017,
+  "jitter_semitones": 0.221,
+  "gates": "錯誤率 3.3%、音高跳動 0.221 都通過",
+  "retakes": "s00、s03、s09 各補 3 次（抖動）；s08 改「三組反例」為「這三個例子」重錄",
+  "manual_pick": "s02 take2（抖動）、s04 take2（take0 的「也沒用」兩邊都聽成「也沒有」）、s08 take1（take2 的「那一兆韓圜」兩邊都聽錯）；其餘照 steady_pick",
+  "both_wrong": "韓圜／韓元（同音），和／跟，結尾「有收到的話回我」",
+  "twtone": "qa/twtone.md：沒有超過基準的項目",
+  "terms": "韓國人名、劇名都用中文念法（Gemini 判 B）；禹英禑的「禑」念成 wú；Ping、pong 英文念法"
  }
 }

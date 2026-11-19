@@ -1,0 +1,29 @@
+{
+ "s05_japan.take1": [],
+ "s06_taiwan.take2": [
+  {
+   "term": "花樣男子",
+   "class": "B",
+   "heard_as": "huā yàng nán zǐ"
+  }
+ ],
+ "s08_rule.take1": [
+  {
+   "term": "禹英禑",
+   "class": "B",
+   "heard_as": "yǔ yīng wú"
+  }
+ ],
+ "s10_outro.take2": [
+  {
+   "term": "Ping",
+   "class": "A",
+   "heard_as": "ping"
+  },
+  {
+   "term": "pong",
+   "class": "A",
+   "heard_as": "pong"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "s01_recap.take3": [
+  {
+   "term": "鄭鍾淵",
+   "class": "B",
+   "heard_as": "zhèng zhōng yuān"
+  },
+  {
+   "term": "金泰浩",
+   "class": "B",
+   "heard_as": "jīn tài hào"
+  }
+ ],
+ "s02_craft.take0": [
+  {
+   "term": "尹賢俊",
+   "class": "B",
+   "heard_as": "yǐn xián jùn"
+  }
+ ],
+ "s03_craft2.take3": [
+  {
+   "term": "崔鉉碩",
+   "class": "B",
+   "heard_as": "cuī xuàn shuò"
+  }
+ ],
+ "s04_cost.take1": [
+  {
+   "term": "鄭智善",
+   "class": "B",
+   "heard_as": "zhèng zhì shàn"
+  }
+ ],
+ "s05_split.take6": [
+  {
+   "term": "崔鉉碩",
+   "class": "B",
+   "heard_as": "cuī xuàn shuò"
+  }
+ ],
+ "s06_company.take1": [
+  {
+   "term": "尹賢俊",
+   "class": "B",
+   "heard_as": "yǐn xián jùn"
+  },
+  {
+   "term": "安成宰",
+   "class": "B",
+   "heard_as": "ān chéng zǎi"
+  }
+ ],
+ "s09_risk.take2": [
+  {
+   "term": "林成根",
+   "class": "B",
+   "heard_as": "lín chéng gēn"
+  },
+  {
+   "term": "崔康祿",
+   "class": "B",
+   "heard_as": "cuī kāng lù"
+  }
+ ],
+ "s10_others.take8": [
+  {
+   "term": "尹賢俊",
+   "class": "B",
+   "heard_as": "yǐn xián jùn"
+  },
+  {
+   "term": "羅暎錫",
+   "class": "B",
+   "heard_as": "luó yīng xí"
+  },
+  {
+   "term": "金泰浩",
+   "class": "B",
+   "heard_as": "jīn tài hào"
+  },
+  {
+   "term": "鄭鍾淵",
+   "class": "B",
+   "heard_as": "zhèng zhōng yuān"
+  }
+ ],
+ "s12_outro.take1": [
+  {
+   "term": "Ping",
+   "class": "A",
+   "heard_as": "ping"
+  },
+  {
+   "term": "pong",
+   "class": "A",
+   "heard_as": "pong"
+  }
+ ]
+}
