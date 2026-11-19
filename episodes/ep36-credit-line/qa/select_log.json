@@ -5,7 +5,7 @@
  "terms": [],
  "jitter_margin": 0.02,
  "pace_margin": 0.1,
- "episode_median_cps": 4.13,
+ "episode_median_cps": 4.16,
  "consistency": true,
  "sim_margin": 0.015,
  "bright_margin": 300,
@@ -66,7 +66,7 @@
        "戲明明還在紅"
       ],
       [
-       26.0,
+       26.04,
        "缺工作的是哪一層人"
       ],
       [
@@ -105,9 +105,9 @@
      "jitter": 0.222,
      "cps": 3.6,
      "terms_ok": true,
-     "sim_to_episode": 0.98,
+     "sim_to_episode": 0.979,
      "centroid": 2359,
-     "bright_gap": 1
+     "bright_gap": 32
     },
     {
      "file": "s00_open.take1.wav",
@@ -182,7 +182,11 @@
       ],
       [
        35.92,
-       "而這一行字三十年來換過好幾次"
+       "而這一行字"
+      ],
+      [
+       37.0,
+       "三十年來換過好幾次"
       ],
       [
        39.36,
@@ -194,7 +198,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.973,
      "centroid": 2360,
-     "bright_gap": 1
+     "bright_gap": 32
     },
     {
      "file": "s00_open.take2.wav",
@@ -260,11 +264,11 @@
        "答案藏在片尾那一行字"
       ],
       [
-       33.52,
+       33.48,
        "製作著作"
       ],
       [
-       34.92,
+       34.88,
        "寫的是誰的名字"
       ],
       [
@@ -281,7 +285,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.971,
      "centroid": 2395,
-     "bright_gap": 37
+     "bright_gap": 67
     },
     {
      "file": "s00_open.take3.wav",
@@ -360,7 +364,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.971,
      "centroid": 2997,
-     "bright_gap": 638
+     "bright_gap": 669
     },
     {
      "file": "s00_open.take4.wav",
@@ -402,7 +406,7 @@
        "兩年少了大約三成"
       ],
       [
-       21.28,
+       21.24,
        "現場還有人說"
       ],
       [
@@ -447,14 +451,14 @@
      "terms_ok": true,
      "sim_to_episode": 0.974,
      "centroid": 2357,
-     "bright_gap": 1
+     "bright_gap": 29
     },
     {
      "file": "s00_open.take5.wav",
-     "cer": 0.019,
+     "cer": 0.013,
      "unclear": 2,
      "long_pauses_per_min": 15.6,
-     "text": "韓劇在全球最紅的這一年韓國的戲劇圈居然向政府要一兆韓元救命你可能會想大家不是都在看韓劇嗎對啊看戲的人沒有變少可是一年開拍的戲兩年少大約三成現場還有人說現在連助理編劇都沒有工作戲明明還在紅缺工作的是哪一層人這份報告說答案常在片尾那一行字製作著作寫的是誰的名字而這一行字三十年來換過好幾次台灣每一次都坐在觀眾席的第一排",
+     "text": "韓劇在全球最紅的這一年韓國的戲劇圈居然向政府要一兆韓元救命你可能會想大家不是都在看韓劇嗎對啊看戲的人沒有變少可是一年開拍的戲兩年少了大約三成現場還有人說現在連助理編劇都沒有工作戲明明還在紅缺工作的是哪一層人這份報告說答案常在片尾那一行字製作著作寫的是誰的名字而這一行字三十年來換過好幾次台灣每一次都坐在觀眾席的第一排",
      "segments": [
       [
        0.02,
@@ -486,7 +490,7 @@
       ],
       [
        16.34,
-       "兩年少大約三成"
+       "兩年少了大約三成"
       ],
       [
        19.26,
@@ -536,9 +540,9 @@
      "jitter": 0.228,
      "cps": 3.74,
      "terms_ok": true,
-     "sim_to_episode": 0.981,
+     "sim_to_episode": 0.982,
      "centroid": 2239,
-     "bright_gap": 119
+     "bright_gap": 89
     }
    ],
    "clear_enough": [
@@ -547,7 +551,8 @@
     "s00_open.take3.wav",
     "s00_open.take4.wav",
     "s00_open.take5.wav"
-   ]
+   ],
+   "manual_override": "音高跳動較低的 take5（0.228，音高 -1.9 Hz）取代 take3（0.229）"
   },
   {
    "id": "s01_press",
@@ -598,18 +603,14 @@
       ],
       [
        23.28,
-       "從 2012 年的 91 部"
-      ],
-      [
-       25.64,
-       "跳到 2023 年的 32 部"
+       "從 2012 年的 91 部跳到 2023 年的 32 部"
       ],
       [
        28.76,
        "所以他們開口要"
       ],
       [
-       29.96,
+       29.68,
        "一兆韓元"
       ],
       [
@@ -625,7 +626,7 @@
        "一年可以多拍 40 部中低預算的戲"
       ],
       [
-       40.48,
+       40.52,
        "這份報告提醒"
       ],
       [
@@ -642,7 +643,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.982,
      "centroid": 2677,
-     "bright_gap": 318
+     "bright_gap": 349
     },
     {
      "file": "s01_press.take1.wav",
@@ -672,11 +673,11 @@
        "製作人協會等 12 個團體一起站出來說"
       ],
       [
-       13.64,
+       13.68,
        "韓劇的製作基礎快要垮了"
       ],
       [
-       16.82,
+       16.84,
        "一年開拍的韓劇從 2022 年的 141 部"
       ],
       [
@@ -700,8 +701,12 @@
        "所以他們開口要一兆韓圜"
       ],
       [
-       34.4,
-       "政府每年出 2000 億連續 5 年"
+       34.36,
+       "政府每年出 2000 億"
+      ],
+      [
+       36.2,
+       "連續 5 年"
       ],
       [
        37.72,
@@ -727,9 +732,9 @@
      "jitter": 0.253,
      "cps": 4.01,
      "terms_ok": true,
-     "sim_to_episode": 0.98,
+     "sim_to_episode": 0.979,
      "centroid": 2798,
-     "bright_gap": 439
+     "bright_gap": 470
     },
     {
      "file": "s01_press.take2.wav",
@@ -820,7 +825,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.98,
      "centroid": 2211,
-     "bright_gap": 147
+     "bright_gap": 117
     }
    ],
    "clear_enough": [
@@ -830,203 +835,190 @@
   },
   {
    "id": "s02_two",
-   "chosen": "s02_two.take2.wav",
+   "chosen": "s02_two.take1.wav",
    "takes": [
     {
      "file": "s02_two.take0.wav",
-     "cer": 0.036,
-     "unclear": 2,
-     "long_pauses_per_min": 12.8,
-     "text": "其實不只補助卡關耶整個市場的數字也很怪大家不是覺得韓劇越來越紅嗎表面上看國際平台上架的韓國內容多了一半以上但你猜怎麼找新開拍的節目居然在變少更扯的是海外最愛看的戲劇類開拍量少得最嚴重耶因為平台上增加的很多其實是早就拍好的舊片啊出口明明年年增加結果影視丟在國內的貿易順差居然少了三成六耶",
-     "segments": [
-      [
-       0.0,
-       "其實不只補助卡關耶"
-      ],
-      [
-       2.84,
-       "整個市場的數字也很怪"
-      ],
-      [
-       5.56,
-       "大家不是覺得韓劇越來越紅嗎"
-      ],
-      [
-       8.96,
-       "表面上看"
-      ],
-      [
-       10.36,
-       "國際平台上架的韓國內容多了一半以上"
-      ],
-      [
-       14.32,
-       "但你猜怎麼找"
-      ],
-      [
-       15.72,
-       "新開拍的節目居然在變少"
-      ],
-      [
-       18.92,
-       "更扯的是"
-      ],
-      [
-       20.16,
-       "海外最愛看的戲劇類開拍量少得最嚴重耶"
-      ],
-      [
-       24.8,
-       "因為平台上增加的很多其實是早就拍好的舊片啊"
-      ],
-      [
-       29.64,
-       "出口明明年年增加"
-      ],
-      [
-       32.14,
-       "結果影視丟在國內的貿易順差居然少了三成六耶"
-      ]
-     ],
-     "jitter": 0.211,
-     "cps": 3.75,
-     "terms_ok": true,
-     "sim_to_episode": 0.968,
-     "centroid": 2664,
-     "bright_gap": 306
-    },
-    {
-     "file": "s02_two.take1.wav",
-     "cer": 0.014,
+     "cer": 0.007,
      "unclear": 0,
-     "long_pauses_per_min": 7.1,
-     "text": "其實不只補助卡關整個市場的數字也很怪大家不是覺得韓劇越來越紅嗎表面上看國際平台上架的韓國內容多了一半以上但你猜怎麼著新開拍的節目居然在變少耶更扯的是海外最愛看的戲劇類開拍量少得最嚴重因為平台上增加的很多其實是早就拍好的舊片出口明明年年增加結果影視留在國內的貿易順差居然少了三成六耶",
+     "long_pauses_per_min": 11.3,
+     "text": "其實不只補助卡關整個市場的數字也很怪大家不是覺得韓劇越來越紅嗎表面上看國際平台上架的韓國內容多了一半以上可是新開拍的節目反而在變少更扯的是海外最愛看的戲劇類開拍量少得最嚴重因為平台上增加的很多其實是早就拍好的舊片出口明明年年增加結果影視留在國內的貿易順差居然少了三成六耶",
      "segments": [
       [
        0.0,
        "其實不只補助卡關"
       ],
       [
-       2.84,
+       2.12,
        "整個市場的數字也很怪"
       ],
       [
-       5.28,
+       4.52,
        "大家不是覺得韓劇越來越紅嗎"
       ],
       [
-       7.88,
+       7.12,
        "表面上看"
       ],
       [
-       9.28,
+       8.16,
        "國際平台上架的韓國內容多了一半以上"
       ],
       [
-       12.72,
-       "但你猜怎麼著"
+       11.48,
+       "可是新開拍的節目反而在變少"
       ],
       [
-       14.32,
-       "新開拍的節目居然在變少耶"
+       15.04,
+       "更扯的是"
       ],
       [
-       17.28,
-       "更扯的是海外最愛看的戲劇類開拍量少得最嚴重"
+       16.16,
+       "海外最愛看的戲劇類"
       ],
       [
-       22.72,
+       18.28,
+       "開拍量少得最嚴重"
+      ],
+      [
+       21.06,
        "因為平台上增加的很多其實是早就拍好的舊片"
+      ],
+      [
+       25.24,
+       "出口明明年年增加"
       ],
       [
        27.2,
-       "出口明明年年增加"
+       "結果影視留在國內的貿易順差"
       ],
       [
-       29.08,
-       "結果"
-      ],
-      [
-       29.44,
-       "影視留在國內的貿易順差居然少了三成六耶"
+       29.84,
+       "居然少了三成六耶"
       ]
      ],
-     "jitter": 0.256,
-     "cps": 4.14,
+     "jitter": 0.251,
+     "cps": 4.26,
      "terms_ok": true,
-     "sim_to_episode": 0.98,
-     "centroid": 2422,
-     "bright_gap": 63
+     "sim_to_episode": 0.97,
+     "centroid": 2182,
+     "bright_gap": 146
     },
     {
-     "file": "s02_two.take2.wav",
-     "cer": 0.014,
-     "unclear": 1,
-     "long_pauses_per_min": 10.3,
-     "text": "其實不只補助卡關整個市場的數字也很怪大家不是覺得韓劇越來越紅嗎表面上看國際平台上架的韓國內容多了一半以上但你猜怎麼找新開拍的節目居然在變少更扯的是海外最愛看的戲劇類開拍量少得最嚴重因為平台上增加的很多其實是早就拍好的舊片出口明明年年增加結果影視留在國內的貿易順差居然少了三成六耶",
+     "file": "s02_two.take1.wav",
+     "cer": 0.007,
+     "unclear": 0,
+     "long_pauses_per_min": 12.3,
+     "text": "其實不只補助卡關整個市場的數字也很怪大家不是覺得韓劇越來越紅嗎表面上看國際平台上架的韓國內容多了一半以上可是新開拍的節目反而在變少更扯的是海外最愛看的戲劇類開拍量少得最嚴重因為平台上增加的很多其實是早就拍好的舊片出口明明年年增加結果影視留在國內的貿易順差居然少了三成六耶",
      "segments": [
       [
        0.0,
        "其實不只補助卡關"
       ],
       [
-       2.5,
+       2.16,
        "整個市場的數字也很怪"
       ],
       [
-       5.4,
+       4.64,
        "大家不是覺得韓劇越來越紅嗎"
       ],
       [
-       8.36,
-       "表面上看"
+       8.16,
+       "表面上看國際平台上架的韓國內容多了一半以上"
       ],
       [
-       9.52,
-       "國際平台上架的韓國內容多了一半以上"
+       13.04,
+       "可是新開拍的節目反而在變少"
       ],
       [
-       13.56,
-       "但你猜怎麼找"
-      ],
-      [
-       14.92,
-       "新開拍的節目居然在變少"
-      ],
-      [
-       17.96,
+       17.16,
        "更扯的是"
       ],
       [
-       18.96,
+       18.44,
        "海外最愛看的戲劇類開拍量少得最嚴重"
       ],
       [
-       23.24,
+       22.92,
        "因為平台上增加的很多其實是早就拍好的舊片"
       ],
       [
-       28.26,
+       27.72,
        "出口明明年年增加"
       ],
       [
-       30.34,
+       29.72,
        "結果影視留在國內的貿易順差居然少了三成六耶"
       ]
      ],
-     "jitter": 0.226,
-     "cps": 4.0,
+     "jitter": 0.215,
+     "cps": 3.99,
      "terms_ok": true,
-     "sim_to_episode": 0.982,
-     "centroid": 2160,
-     "bright_gap": 198
+     "sim_to_episode": 0.981,
+     "centroid": 2229,
+     "bright_gap": 98
+    },
+    {
+     "file": "s02_two.take2.wav",
+     "cer": 0.037,
+     "unclear": 2,
+     "long_pauses_per_min": 13.3,
+     "text": "其實不只補助卡關整個市場的數字也很怪大家不覺得韓劇越來越紅嗎表面上看國際平台上架的韓國內容多了一半以上可是新開拍的節目反而在變少耶更扯的是海外最愛看的戲劇類開拍量少得最嚴重因為平台上增加的很多其實是早就拍好的舊片出口明明年年增加結果隱私留在國內的貿易順差居然少了三成六耶",
+     "segments": [
+      [
+       0.0,
+       "其實不只補助卡關"
+      ],
+      [
+       1.92,
+       "整個市場的數字也很怪"
+      ],
+      [
+       4.2,
+       "大家不覺得韓劇越來越紅嗎"
+      ],
+      [
+       7.16,
+       "表面上看國際平台上架的韓國內容多了一半以上"
+      ],
+      [
+       11.8,
+       "可是新開拍的節目反而在變少耶"
+      ],
+      [
+       15.56,
+       "更扯的是海外最愛看的戲劇類開拍量少得最嚴重"
+      ],
+      [
+       20.12,
+       "因為平台上增加的很多其實是早就拍好的舊片"
+      ],
+      [
+       24.64,
+       "出口明明年年增加"
+      ],
+      [
+       27.16,
+       "結果隱私留在國內的貿易順差"
+      ],
+      [
+       29.76,
+       "居然少了三成六耶"
+      ]
+     ],
+     "jitter": 0.258,
+     "cps": 4.29,
+     "terms_ok": true,
+     "sim_to_episode": 0.967,
+     "centroid": 2117,
+     "bright_gap": 211
     }
    ],
    "clear_enough": [
-    "s02_two.take1.wav",
-    "s02_two.take2.wav"
-   ],
-   "manual_override": "jit 0.226（take1 0.256），音高 +5.3 在 ±6 內"
+    "s02_two.take0.wav",
+    "s02_two.take1.wav"
+   ]
   },
   {
    "id": "s03_top",
@@ -1125,7 +1117,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.982,
      "centroid": 2636,
-     "bright_gap": 278
+     "bright_gap": 309
     },
     {
      "file": "s03_top.take1.wav",
@@ -1218,9 +1210,9 @@
      "jitter": 0.262,
      "cps": 4.4,
      "terms_ok": true,
-     "sim_to_episode": 0.98,
+     "sim_to_episode": 0.979,
      "centroid": 3206,
-     "bright_gap": 848
+     "bright_gap": 879
     },
     {
      "file": "s03_top.take2.wav",
@@ -1327,7 +1319,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.981,
      "centroid": 2958,
-     "bright_gap": 600
+     "bright_gap": 631
     },
     {
      "file": "s03_top.take3.wav",
@@ -1422,7 +1414,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.981,
      "centroid": 2813,
-     "bright_gap": 455
+     "bright_gap": 486
     },
     {
      "file": "s03_top.take4.wav",
@@ -1521,7 +1513,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.983,
      "centroid": 2495,
-     "bright_gap": 137
+     "bright_gap": 167
     },
     {
      "file": "s03_top.take5.wav",
@@ -1628,7 +1620,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.975,
      "centroid": 2841,
-     "bright_gap": 483
+     "bright_gap": 513
     }
    ],
    "clear_enough": [
@@ -1637,7 +1629,7 @@
     "s03_top.take4.wav",
     "s03_top.take5.wav"
    ],
-   "manual_override": "音高跳動較低的 take5（0.219，音高 +0.6 Hz）取代 take2（0.237）"
+   "manual_override": "音高跳動較低的 take5（0.219，音高 +0.3 Hz）取代 take2（0.237）"
   },
   {
    "id": "s04_contract",
@@ -1738,9 +1730,9 @@
      "jitter": 0.232,
      "cps": 4.04,
      "terms_ok": true,
-     "sim_to_episode": 0.98,
+     "sim_to_episode": 0.981,
      "centroid": 2026,
-     "bright_gap": 332
+     "bright_gap": 302
     },
     {
      "file": "s04_contract.take1.wav",
@@ -1825,9 +1817,9 @@
      "jitter": 0.21,
      "cps": 4.58,
      "terms_ok": true,
-     "sim_to_episode": 0.97,
+     "sim_to_episode": 0.969,
      "centroid": 1570,
-     "bright_gap": 788
+     "bright_gap": 758
     },
     {
      "file": "s04_contract.take2.wav",
@@ -1930,18 +1922,18 @@
      "terms_ok": true,
      "sim_to_episode": 0.983,
      "centroid": 2761,
-     "bright_gap": 403
+     "bright_gap": 433
     }
    ],
    "clear_enough": [
     "s04_contract.take1.wav",
     "s04_contract.take2.wav"
    ],
-   "manual_override": "take0 的「也沒用」兩邊都聽成「也沒有」；take2 jit 0.239、音高 +2.9"
+   "manual_override": "take0 的「也沒用」兩邊都聽成「也沒有」；take2 jit 0.239、音高 +2.6"
   },
   {
    "id": "s05_japan",
-   "chosen": "s05_japan.take1.wav",
+   "chosen": "s05_japan.take2.wav",
    "takes": [
     {
      "file": "s05_japan.take0.wav",
@@ -2030,9 +2022,9 @@
      "jitter": 0.246,
      "cps": 4.29,
      "terms_ok": true,
-     "sim_to_episode": 0.985,
+     "sim_to_episode": 0.986,
      "centroid": 2331,
-     "bright_gap": 28
+     "bright_gap": 3
     },
     {
      "file": "s05_japan.take1.wav",
@@ -2113,9 +2105,9 @@
      "jitter": 0.214,
      "cps": 3.73,
      "terms_ok": true,
-     "sim_to_episode": 0.976,
+     "sim_to_episode": 0.975,
      "centroid": 2709,
-     "bright_gap": 351
+     "bright_gap": 381
     },
     {
      "file": "s05_japan.take2.wav",
@@ -2202,14 +2194,14 @@
      "terms_ok": true,
      "sim_to_episode": 0.984,
      "centroid": 2771,
-     "bright_gap": 412
+     "bright_gap": 443
     }
    ],
    "clear_enough": [
     "s05_japan.take0.wav",
     "s05_japan.take2.wav"
    ],
-   "manual_override": "音高跳動較低的 take1（0.214，音高 +0.0 Hz）取代 take0（0.246）"
+   "manual_override": "音高跳動較低的 take2（0.232，音高 +3.8 Hz）取代 take0（0.246）"
   },
   {
    "id": "s06_taiwan",
@@ -2296,7 +2288,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.96,
      "centroid": 1726,
-     "bright_gap": 632
+     "bright_gap": 602
     },
     {
      "file": "s06_taiwan.take1.wav",
@@ -2379,7 +2371,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.983,
      "centroid": 2364,
-     "bright_gap": 6
+     "bright_gap": 36
     },
     {
      "file": "s06_taiwan.take2.wav",
@@ -2466,14 +2458,14 @@
      "terms_ok": true,
      "sim_to_episode": 0.983,
      "centroid": 2275,
-     "bright_gap": 83
+     "bright_gap": 53
     }
    ],
    "clear_enough": [
     "s06_taiwan.take1.wav",
     "s06_taiwan.take2.wav"
    ],
-   "manual_override": "音高跳動較低的 take2（0.200，音高 +4.7 Hz）取代 take1（0.214）"
+   "manual_override": "音高跳動較低的 take2（0.200，音高 +4.4 Hz）取代 take1（0.214）"
   },
   {
    "id": "s07_korea",
@@ -2556,7 +2548,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.979,
      "centroid": 2633,
-     "bright_gap": 275
+     "bright_gap": 306
     },
     {
      "file": "s07_korea.take1.wav",
@@ -2623,7 +2615,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.98,
      "centroid": 2300,
-     "bright_gap": 58
+     "bright_gap": 27
     },
     {
      "file": "s07_korea.take2.wav",
@@ -2698,14 +2690,14 @@
      "terms_ok": true,
      "sim_to_episode": 0.979,
      "centroid": 2766,
-     "bright_gap": 408
+     "bright_gap": 438
     }
    ],
    "clear_enough": [
     "s07_korea.take1.wav",
     "s07_korea.take2.wav"
    ],
-   "manual_override": "音高跳動較低的 take0（0.214，音高 -3.2 Hz）取代 take1（0.247）"
+   "manual_override": "音高跳動較低的 take0（0.214，音高 -3.5 Hz）取代 take1（0.247）"
   },
   {
    "id": "s08_rule",
@@ -2812,7 +2804,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.974,
      "centroid": 2325,
-     "bright_gap": 34
+     "bright_gap": 3
     },
     {
      "file": "s08_rule.take1.wav",
@@ -2913,9 +2905,9 @@
      "jitter": 0.215,
      "cps": 4.04,
      "terms_ok": true,
-     "sim_to_episode": 0.978,
+     "sim_to_episode": 0.977,
      "centroid": 1885,
-     "bright_gap": 474
+     "bright_gap": 443
     },
     {
      "file": "s08_rule.take2.wav",
@@ -3010,14 +3002,14 @@
      "terms_ok": true,
      "sim_to_episode": 0.987,
      "centroid": 2133,
-     "bright_gap": 225
+     "bright_gap": 195
     }
    ],
    "clear_enough": [
     "s08_rule.take1.wav",
     "s08_rule.take2.wav"
    ],
-   "manual_override": "take2 的「那一兆韓圜」兩邊都聽成別的；take1 jit 0.215、音高 -3.8"
+   "manual_override": "take2 的「那一兆韓圜」兩邊都聽成別的；take1 jit 0.215、音高 -4.0"
   },
   {
    "id": "s09_taiwan_now",
@@ -3112,7 +3104,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.977,
      "centroid": 2142,
-     "bright_gap": 217
+     "bright_gap": 186
     },
     {
      "file": "s09_taiwan_now.take1.wav",
@@ -3203,7 +3195,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.983,
      "centroid": 2136,
-     "bright_gap": 223
+     "bright_gap": 192
     },
     {
      "file": "s09_taiwan_now.take2.wav",
@@ -3290,7 +3282,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.984,
      "centroid": 1816,
-     "bright_gap": 542
+     "bright_gap": 511
     },
     {
      "file": "s09_taiwan_now.take3.wav",
@@ -3348,7 +3340,7 @@
        "這根本是包著糖衣的毒藥啊"
       ],
       [
-       30.78,
+       30.82,
        "那台灣有把版權留下來的例子嗎"
       ],
       [
@@ -3356,7 +3348,7 @@
        "其實有"
       ],
       [
-       34.38,
+       34.42,
        "像想見你就賣到 100 多個地方"
       ],
       [
@@ -3372,7 +3364,7 @@
        "早期握著版權賣到全世界的那一段"
       ],
       [
-       47.9,
+       47.94,
        "連韓國自己現在都在想怎麼拿回來耶"
       ]
      ],
@@ -3381,7 +3373,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.986,
      "centroid": 2173,
-     "bright_gap": 185
+     "bright_gap": 155
     },
     {
      "file": "s09_taiwan_now.take4.wav",
@@ -3484,7 +3476,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.97,
      "centroid": 2023,
-     "bright_gap": 335
+     "bright_gap": 305
     },
     {
      "file": "s09_taiwan_now.take5.wav",
@@ -3526,7 +3518,7 @@
        "只能在開拍前找國際平台"
       ],
       [
-       17.96,
+       17.92,
        "平台願意出錢"
       ],
       [
@@ -3587,7 +3579,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.981,
      "centroid": 2132,
-     "bright_gap": 226
+     "bright_gap": 195
     }
    ],
    "clear_enough": [
@@ -3674,7 +3666,7 @@
        "或是用法規改合約"
       ],
       [
-       34.2,
+       34.24,
        "原文連結在節目資訊欄"
       ],
       [
@@ -3689,16 +3681,16 @@
      "jitter": 0.195,
      "cps": 4.35,
      "terms_ok": true,
-     "sim_to_episode": 0.968,
+     "sim_to_episode": 0.967,
      "centroid": 2101,
-     "bright_gap": 257
+     "bright_gap": 226
     },
     {
      "file": "s10_outro.take1.wav",
-     "cer": 0.058,
-     "unclear": 6,
+     "cer": 0.052,
+     "unclear": 5,
      "long_pauses_per_min": 16.8,
-     "text": "今晚的 break point第一韓劇最紅的時候缺工作的是中間層預算先被主角拿走中低預算的戲配角助理編劇和劇組最先消失第二片尾那一行製作著作三十年換過好幾次名字規則是通路大的那一方拿走版權版權跟著出錢的人走第三台灣已經在走替平台拍戲的那一端想把版權留下來要有人出得起錢或是用法規改合約留言連結在節目資訊欄我是 Pink有收到的話會為我一個 pump下次見",
+     "text": "今晚的 break point第一韓劇最紅的時候缺工作的是中間層預算先被主角拿走中低預算的戲配角助理編劇和劇組最先消失第二片尾那一行製作著作三十年換過好幾次名字規則是通路大的那一方拿走版權版權跟著出錢的人走第三台灣已經在走替平台拍戲的那一段想把版權留下來要有人出得起錢或是用法規改合約留言連結在節目資訊欄我是 Pink有收到的話會為我一個 pump下次見",
      "segments": [
       [
        0.27,
@@ -3750,7 +3742,7 @@
       ],
       [
        30.55,
-       "台灣已經在走替平台拍戲的那一端"
+       "台灣已經在走替平台拍戲的那一段"
       ],
       [
        34.15,
@@ -3784,9 +3776,9 @@
      "jitter": 0.215,
      "cps": 3.72,
      "terms_ok": true,
-     "sim_to_episode": 0.968,
+     "sim_to_episode": 0.969,
      "centroid": 2178,
-     "bright_gap": 180
+     "bright_gap": 150
     },
     {
      "file": "s10_outro.take2.wav",
@@ -3877,7 +3869,7 @@
      "terms_ok": true,
      "sim_to_episode": 0.985,
      "centroid": 2728,
-     "bright_gap": 370
+     "bright_gap": 401
     }
    ],
    "clear_enough": [

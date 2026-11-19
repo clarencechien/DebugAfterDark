@@ -29,7 +29,8 @@ GREETING = re.compile(r"^\s*(?:嘿|哈囉|嗨|歡迎|大家好)|還醒著嗎")
 AVOID = {"有感": r"有感(?!觸|情|應|而)"}
 MAINLAND = ["更狠的是", "盲猜", "坑",  # 坑: flagged by a Taiwanese listener on EP01 (ttspoc RESULTS)
              "咱們", "挺", "這事兒", "視頻", "質量", "信息", "軟件", "靠譜", "牛逼", "絕了", "立馬",
-            "整活", "老鐵", "點贊", "回頭再說", "兒", "啥"]
+            "整活", "老鐵", "點贊", "回頭再說", "兒", "啥",
+            "怎麼著"]  # 怎麼著: flagged by the listener on EP36 (2026-11-19)
 
 def lint(text):
     clean = TAG.sub("", text)
