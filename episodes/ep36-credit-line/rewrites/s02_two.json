@@ -1,0 +1,115 @@
+{
+ "segment": "s02_two",
+ "position": "第 3 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d28550b87d4fd1fe74646aa1ffcc2ba2315e0c266fa1ba3c2ac9b073aa6d2d7b",
+ "previous_context": "重點來了，這份報告提醒大家，這只是業界自己開出的清單喔。政府目前根本還沒有核定啦。",
+ "original": {
+  "text": "能見度和產量，是兩個數字，這幾年走的方向相反。國際平台上架的韓國內容，四年多了五成五，這算的是平台上看得到的全部，包含早就拍好的舊片。可是同一段時間，韓國節目的新委製少了兩成，國際串流平台的委製少了四成三，海外最愛看的戲劇類，正好少了將近四成。錢也是兩個數字：韓國內容的出口年年增加，可是今年九月韓國媒體整理的統計，廣電影視這一塊的貿易順差，少了三成六。",
+  "lint": {
+   "chars": 177,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 43.2,
+   "max_sentence_len": 54,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "而且你知道嗎？\n現在韓劇在海外看起來超紅，\n其實新開拍的數量一直在掉。<short pause>\n有研究統計，\n國際串流平台上架的韓國內容，\n這幾年暴增了百分之五十五。\n你猜為什麼？\n因為連以前拍好的舊片都算進去啦。\n所以能見度變高，\n不代表大家有新戲拍喔。\n更扯的是，\n國際平台新找韓國拍的戲劇，\n直接少了將近四成。\n我看到這個落差，\n整個人都愣了一下。\n你看韓國內容出口好像變多，\n但真正留在國內賺到的錢，\n其實少了三成多耶。",
+   "lint": {
+    "chars": 185,
+    "precise_numbers": [
+     "百分之五十五"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 19.6,
+    "max_sentence_len": 33,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "其實現在影視圈的狀況真的很奇妙。你是不是覺得韓劇現在超紅？到處都看得到對吧。<short pause>這幾年國際平台上架的韓國內容，足足暴增了百分之五十五喔。可是重點來了，新開拍的節目有變多嗎？答案是反而變少了。因為平台把早就拍好的舊片也算進去嘛。像是國際串流平台新委託製作的戲，直接少掉四成多耶。更扯的是錢的流向。<laugh>雖然海外賣得很好，但留在韓國國內的順差，其實少掉了三成多。我看到這個反差真的嚇一跳。",
+   "lint": {
+    "chars": 187,
+    "precise_numbers": [
+     "百分之五十五"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.0,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 2.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實不只補助卡關，整個市場的數字也很怪。大家不是覺得韓劇越來越紅嗎？<short pause> 表面上看，國際平台上架的韓國內容多了一半以上。但你猜怎麼著？新開拍的節目居然在變少。更扯的是，海外最愛看的戲劇類開拍量少得最嚴重。因為平台上增加的，很多其實是早就拍好的舊片啦。我看到這邊真的覺得超諷刺。<sigh> 出口明明年年增加，結果影視留在國內的貿易順差，居然少了三成六耶。",
+   "lint": {
+    "chars": 167,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 31,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "我看到這邊真的覺得超諷刺。<sigh> ",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

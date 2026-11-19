@@ -1,0 +1,132 @@
+{
+ "segment": "s09_taiwan_now",
+ "position": "第 10 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "9e6cd89038be1290620d2e090de4567af8ae3295f5096c9a9d8e34ae96730ade",
+ "previous_context": "另一個是讓國內自己有人出得起錢。前面提的那一兆韓圜，走的就是第二條路。",
+ "original": {
+  "text": "那台灣現在站在哪一格？Netflix 在台灣串流市場的佔有率超過八成三，平台上的台劇也越來越多。可是台劇一集的成本，從過去大約三百萬，漲到上千萬，國內的補助和投資撐不起，製作方得在開拍前就找國際平台。平台出錢，同時買走包含台灣在內的全球版權，有製作人形容這是包著糖衣的毒藥。台灣也有把版權留下來的例子，《想見你》的播映權賣到一百多個國家和地區，韓國還買了翻拍權。這份報告的結論是，學韓國要先問學哪一段：電視台握著版權、把節目賣到全世界的那一段，連韓國自己現在都在想怎麼拿回來。",
+  "lint": {
+   "chars": 237,
+   "precise_numbers": [
+    "三百萬",
+    "千萬",
+    "一百"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 38.5,
+   "max_sentence_len": 56,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那換成台灣，我們現在到底站在哪一格？其實滿尷尬的。<short pause>Netflix 在台灣的市占率超過百分之八十三。台劇雖然越拍越多，但現在拍一集就要上千萬，國內的資金根本撐不起。製作方只好找國際平台出錢。代價就是全球版權被買光光。有製作人形容這叫包著糖衣的毒藥。這句話真的形容得太貼切了。<short pause>當然，台灣也有把版權留下來的例子啦。像《想見你》就賣到一百多個國家，連韓國都跑來買翻拍權。所以大家常說要學韓國，問題是，我們要學哪一段？是幫平台拍戲的這一段，還是握著版權賣全世界的那一段？這份報告說，連韓國自己，現在都在想怎麼把版權拿回來耶。",
+   "lint": {
+    "chars": 256,
+    "precise_numbers": [
+     "百分之八十三",
+     "千萬",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 18.7,
+    "max_sentence_len": 31,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "說到出錢，那台灣現在站在哪一格？\n其實 Netflix 在台灣的市佔率，\n已經超過百分之八十三喔。\n平台上的台劇這幾年也越來越多。\n但問題是，現在台劇一集動不動就破千萬。\n國內的錢撐不住，\n只能在開拍前找國際平台。\n平台願意出錢，\n但會把全球版權買走。<sigh>\n有製作人形容，\n這根本是包著糖衣的毒藥。\n聽到這裡，\n你應該也很能體會這種無奈吧？\n那台灣有把版權留下來的例子嗎？\n其實有，\n像《想見你》就賣到一百多個地方，\n連韓國都跑來買翻拍權。\n所以這份報告說，\n學韓國要問是學哪一段。\n早期握著版權、賣到全世界的那一段，\n連韓國自己現在都在想怎麼拿回來耶。",
+   "lint": {
+    "chars": 253,
+    "precise_numbers": [
+     "百分之八十三",
+     "千萬",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 20.1,
+    "max_sentence_len": 33,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "那台灣現在到底站在哪一格？\n其實大家應該都看得出來。<short pause>\nNetflix 在台灣的市佔率超過八成三。\n雖然上面的台劇越來越多，\n但製作成本也跟著水漲船高。\n一集從過去的三百萬，\n直接飆到上千萬。\n國內資金撐不住，只能找國際平台。\n可是平台出錢，\n就會把全球版權整個包走。\n有製作人形容這是包著糖衣的毒藥，<sigh>\n聽起來是不是滿無奈的？\n不過台灣也是有例外啦。\n像《想見你》就把版權留在自己手裡，\n播映權賣到一百多個國家，\n韓國甚至還買了翻拍權。\n所以這份報告提醒了一件事，\n學韓國要先搞清楚是學哪一段。\n那種把版權握在手上賣全世界的模式，\n對，連現在的韓國自己都在想辦法拿回來。",
+   "lint": {
+    "chars": 264,
+    "precise_numbers": [
+     "三百萬",
+     "千萬",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 21.0,
+    "max_sentence_len": 39,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "聽到這裡，你應該也很能體會這種無奈吧？",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

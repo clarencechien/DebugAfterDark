@@ -1,0 +1,134 @@
+{
+ "segment": "s06_company",
+ "position": "第 7 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "550dadfc7182f61b020829a61ef1b926047828a57d8ae400365fab91ade897ae",
+ "previous_context": "最厲害的是，這筆錢完全不用分給平台耶。製作公司一毛也抽不到啦。",
+ "original": {
+  "text": "第三個是製作公司。Netflix 的原創節目通常是平台出全部製作費，製作公司拿製作費加一筆固定利潤，版權歸平台，《黑白大廚》的實際條件沒有公開。製作公司留得住的，是人：它替評審安成宰經營 YouTube 頻道，今年一月訂閱數一百一十一萬；又在自己的頻道推出《料理爺爺們》，找節目裡的廚師出國旅行，第一站拍的就是台灣。第四個是股東，第一季爆紅的時候，中央集團的製作公司只持有百分之二十三，集團的人對記者說，持股還不到子公司的程度，確實有點可惜。",
+  "lint": {
+   "chars": 218,
+   "precise_numbers": [
+    "一百一十一萬",
+    "百分之二十三"
+   ],
+   "enumerations": [
+    "第三",
+    "第一",
+    "第四",
+    "第一"
+   ],
+   "sentences": 4,
+   "avg_sentence_len": 53.5,
+   "max_sentence_len": 83,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那製作公司到底賺什麼？\n其實 Netflix 原創節目，版權全歸平台。\n製作公司只拿製作費，加一點固定利潤。\n《黑白大廚》具體賺多少，根本沒公開啦。\n重點來了，製作公司留得住的是人。\n你覺得他們怎麼延續熱度？\n尹賢俊的公司幫評審安成宰經營 YouTube。\n今年一月訂閱就衝破百萬了耶。<short pause>\n然後他們還找廚師出國錄節目。\n靠網路節目的業配，自己賺更補。\n最嘔的其實是背後的大股東。\n中央集團的製作公司持股很少。\n當時持股只有百分之二十三。<sigh>\n看著節目大紅卻分不太到，真的很酸齁。",
+   "lint": {
+    "chars": 220,
+    "precise_numbers": [
+     "百萬",
+     "百分之二十三"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那製作公司到底賺什麼呢？通常 Netflix 會出全部製作費，再給一筆固定利潤，但是版權全部歸平台喔。《黑白大廚》實際拿多少，其實沒有公開。<short pause>所以製作公司真正留下來的，其實是人。他們幫評審安成宰經營 YouTube，訂閱直接衝破百萬。然後找節目裡的廚師出國拍片。網路節目成本低很多，接個業配就賺回來了，這算盤打得真的很精耶。不過背後的股東就分不太到了。第一季爆紅的時候，中央集團的製作公司，只持有百分之二十三。連他們自己人都跟記者說，沒辦法當成子公司確實有點可惜啦。<laugh>",
+   "lint": {
+    "chars": 229,
+    "precise_numbers": [
+     "百萬",
+     "百分之二十三"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 21.9,
+    "max_sentence_len": 36,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那做節目的製作公司呢？<short pause>\n其實也沒那麼好賺喔。\nNetflix 原創通常是平台出全額。\n製作公司只拿固定利潤，版權歸平台。\n黑白大廚的實際合約沒有公開。\n那製作公司到底賺什麼？\n最厲害的是，他們把人留下來了。\n尹賢俊的公司幫安成宰做 YouTube。\n訂閱直接衝破百萬啦。\n然後自己做網路節目，找廚師出國旅行。\n一支業配就能賺回好幾集成本。\n重點來了，背後的股東當時分不到什麼肉。\n中央集團的製作公司持股很少。\n實際只有百分之二十三點零八。\n連子公司都算不上，確實有點可惜耶。<laugh>",
+   "lint": {
+    "chars": 221,
+    "precise_numbers": [
+     "百萬",
+     "百分之二十三點零八"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 13.7,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "那做節目的製作公司呢？<short pause>其實也沒那麼好賺喔。Netflix 原創通常是平台出全額。製作公司只拿固定利潤，版權歸平台。黑白大廚的實際合約沒有公開。那製作公司到底賺什麼？最厲害的是，他們把人留下來了。尹賢俊的公司幫安成宰做 YouTube。訂閱直接衝破百萬啦。然後自己做網路節目，找廚師出國旅行。一支業配就能賺回好幾集成本。重點來了，背後的股東當時分不到什麼肉。中央集團的製作公司持股很少。實際只有百分之二十三點零八。連子公司都算不上，確實有點可惜耶。<laugh>",
+   "to": "第三個，是做節目的製作公司。<short pause>Netflix 的原創節目，通常是平台出全部製作費，製作公司拿製作費加一筆固定利潤，版權歸平台，《黑白大廚》的實際合約沒有公開。那製作公司留得住什麼？是人。尹賢俊的公司幫評審安成宰經營 YouTube 頻道，今年一月訂閱數一百一十一萬；又在自己的頻道推出《料理爺爺們》，找節目裡的廚師出國旅行，第一站拍的就是台灣。第四個是股東：第一季爆紅的時候，中央集團的製作公司只持有百分之二十三，集團的人對記者說，持股還不到子公司的程度，確實有點可惜。",
+   "reason": "「其實也沒那麼好賺」是改寫加的；補回台灣；刪笑聲"
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "segment": "s04_contract",
+ "position": "第 5 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "7ea158e4aea8e5785000d2fe2e38e971ea11b6ca7be1bcb42c0a885ae9f23812",
+ "previous_context": "還有靠這些戲吃飯的配角跟劇組。對，這些人就是這份報告說的中間層啦。",
+ "original": {
+  "text": "再看片尾那一行字。韓劇很早就交給外面的製作公司拍，到二〇一四年，戲劇的外包比例接近七成，可是著作權還是在電視台手上。韓國的振興院早年有一篇評論寫得很直接：製作公司只是耍把戲的熊。二〇一六年 Netflix 進入韓國，帶來新的合約：平台出全部製作費，製作公司拿製作費加一筆固定利潤，版權歸平台。《魷魚遊戲》估計創造超過一兆韓圜的經濟價值，製作公司拿到的，是製作費和一筆不多的管理費。電視台也被韓國媒體形容成 Netflix 的高級外包商。而且客戶只剩一個：去年上半年國際平台的韓國委製，Netflix 一家佔了八成八。",
+  "lint": {
+   "chars": 253,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 35.1,
+   "max_sentence_len": 54,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說到中間層，你有看過韓劇片尾那行字嗎？\n其實以前寫電視台，現在全變成串流平台了。\n以前韓劇雖然都外包，但版權全歸電視台。\n韓國早年有篇評論甚至說得很直接。\n製作公司就像在台上耍把戲的熊。\n後來 Netflix 進來，平台出全部製作費。\n製作公司拿固定利潤，版權一樣全歸平台。\n像《魷魚遊戲》估計創造超過一兆韓圜。\n結果製作公司拿到的，只是一筆微薄管理費。\n<sigh> 這聽起來真的很心酸耶。\n連以前風光的電視台，都被說成高級外包商。\n而且去年上半年，Netflix 一家就占八成八。\n那中間層能怎麼辦？換了老闆也沒用。\n他們從頭到尾，都分不到片尾那行字啦。",
+   "lint": {
+    "chars": 256,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "我們接著看片尾那一行字。\n其實韓劇很早就交給外面的公司拍了。\n但你有沒有注意過版權歸誰？\n以前戲再紅，全都是電視台拿走。\n韓國官方評論甚至寫得很直接。\n說製作公司只是耍把戲的熊。<sigh>\n這句話聽起來真的很辛酸耶。\n然後二〇一六年 Netflix 進了韓國。\n他們帶來一種全新的合約方式。\n平台出全部製作費，再給一筆固定利潤。\n聽起來很棒對不對？\n可是代價是版權全部歸平台。\n像《魷魚遊戲》估計產值超過一兆韓圜。\n製作公司拿到的，只是一筆不多的管理費。\n連電視台現在都被笑說是高級外包商。\n重點是現在國際平台的案子，\nNetflix 一家就佔了將近九成。\n這些中間層忙了半天，\n片尾那行字始終輪不到他們啦。",
+   "lint": {
+    "chars": 278,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 29,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "你去看片尾那行字就知道了。\n韓劇其實很早就交給外包拍。\n外包比例甚至早就接近七成。\n可是節目的版權，全都在電視台手上。\n官方評論甚至說，製作公司就像耍把戲的熊。\n這句話真的有夠酸耶。<short pause>\n後來 Netflix 帶著新合約跑進來。\n他們出全部製作費，再給一筆固定利潤。\n聽起來很棒對吧？\n其實代價是版權歸平台。\n像《魷魚遊戲》創造超過一兆韓圜的產值。\n結果製作公司，只拿到一點點管理費。<sigh>\n連電視台都被形容成高級外包商。\n重點來了，現在買家幾乎只剩這一家。\n去年國際平台在韓國委製的案子。\n光 Netflix 一家，就佔了百分之八十八喔。",
+   "lint": {
+    "chars": 246,
+    "precise_numbers": [
+     "百分之八十八"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 14.4,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "<sigh> 這聽起來真的很心酸耶。",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

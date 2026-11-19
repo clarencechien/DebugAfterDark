@@ -1,0 +1,134 @@
+{
+ "segment": "s10_outro",
+ "position": "第 11 段，共 11 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "dc8375c90f53b6ff9c64ac4bc6e5615394628fde04317b83d96a1c8367406662",
+ "previous_context": "所以這份報告說，學韓國要問是學哪一段。早期握著版權、賣到全世界的那一段，連韓國自己現在都在想怎麼拿回來耶。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，韓劇最紅的時候，缺工作的是中間層：預算先被主角拿走，中低預算的戲、配角、助理編劇和劇組最先消失。第二，片尾那一行製作著作，三十年換過好幾次名字，規則是通路大的那一方拿走版權，版權跟著出錢的人走。第三，台灣已經在走替平台拍戲的那一段；想把版權留下來，要有人出得起錢，或是用法規改合約。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 195,
+   "precise_numbers": [
+    "三十"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 26.9,
+   "max_sentence_len": 50,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n第一個，韓劇越紅，基層劇組反而越難生存。預算都被大咖拿走，小製作直接消失嘛。\n\n第二個，片尾的版權到底歸誰？其實很殘酷，出錢跟通路大的人說了算。\n\n第三個，台灣正走在替平台打工的路上。想把版權留在手上，得看有沒有人出得起錢。\n\n看完你問我怎麼想？<short pause>我真的很有共鳴，學韓國不能只看表面啦。\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n聊了這麼多，你問台灣到底該怎麼走？\n其實我們得先看清楚遊戲規則啦。\n第一，預算被主角拿走，基層劇組就先消失。\n第二，版權很現實，永遠跟著出大錢的人走。\n第三，台灣想留下版權，得先有人出得起錢。\n說真的，看到後面這一段，我很有共鳴耶。<sigh>\n到底誰能出這筆錢？\n答案是現在連韓國電視台都在想辦法喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 191,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n聊了這麼多，我們能帶走什麼？\n其實就三件事啦。\n第一，韓劇最風光時，基層反而沒工作。\n因為大部分預算都被主角拿走了。\n第二，影視圈規則向來是誰出錢版權就歸誰。\n第三，台灣現在也在走替國際平台打工的路。\n你想把版權留在手裡？\n那得有人出得起錢，或是用法規改合約。<sigh>\n這種替人作嫁的狀況，你應該也能體會吧。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 195,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 14.0,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>聊了這麼多，我們能帶走什麼？其實就三件事啦。第一，韓劇最風光時，基層反而沒工作。因為大部分預算都被主角拿走了。第二，影視圈規則向來是誰出錢版權就歸誰。第三，台灣現在也在走替國際平台打工的路。你想把版權留在手裡？那得有人出得起錢，或是用法規改合約。<sigh>這種替人作嫁的狀況，你應該也能體會吧。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，韓劇最紅的時候，缺工作的是中間層：預算先被主角拿走，中低預算的戲、配角、助理編劇和劇組最先消失。第二，片尾那一行製作著作，三十年換過好幾次名字，規則是通路大的那一方拿走版權，版權跟著出錢的人走。第三，台灣已經在走替平台拍戲的那一段；想把版權留下來，要有人出得起錢，或是用法規改合約。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "breakpoint 改回草稿；刪「替人作嫁」等添加的話"
+  }
+ ]
+}

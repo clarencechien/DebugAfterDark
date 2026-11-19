@@ -1,0 +1,124 @@
+{
+ "segment": "s02_craft",
+ "position": "第 3 段，共 13 段",
+ "avoid": [
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2c57139cb6cc1c13c609f0df72c9570f6bc943dfb548b5323e02ae513894d4d5",
+ "previous_context": "從爆紅到母集團重整，它每一步都很驚險。我看到這段過程，真的整個起雞皮疙瘩。",
+ "original": {
+  "text": "這家公司的老闆尹賢俊，一九九七年進韓國的無線台，後來到中央集團的電視台，做了《孝利家民宿》這些節目，二〇二〇年自己成立製作公司。他的作品有一條很清楚的線：把沒名氣的人放到台上。二〇一五年，他做了一個節目，把只紅過一首歌就消失的歌手找回來；二〇二〇年的選秀，參賽者不報名字、只掛號碼，副標就叫無名歌手戰。《黑白大廚》把同一招搬到廚房：一百位廚師裡，八十位黑湯匙只有綽號，打進決賽才公開本名。韓國的評論家形容，這是無名，再加上階級。",
+  "lint": {
+   "chars": 214,
+   "precise_numbers": [
+    "一百",
+    "八十"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 41.8,
+   "max_sentence_len": 63,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這家公司的老闆尹賢俊，其實超有意思。\n他很早就進韓國無線台，後來去中央集團。\n做出了很紅的《孝利家民宿》。\n你有發現他的作品有一條清楚的線嗎？\n答案就是，專門把沒名氣的人推上舞台。\n像他以前找過短暫爆紅又消失的歌手。<short pause>\n你猜他後來怎麼做？\n他乾脆把這些人找來辦選秀，只掛號碼。\n連副標題都叫做無名歌手戰。\n最厲害的是，他把同一招搬到了廚房。\n也就是大家都在聊的《黑白大廚》啦。\n一百位廚師裡，黑湯匙通通只有綽號。\n只有一路打進決賽，才能公開本名。\n韓國評論家說，這就是無名加上階級。\n光是這個設定，就讓人覺得超佩服耶。<laugh>",
+   "lint": {
+    "chars": 244,
+    "precise_numbers": [
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "說到這家製作公司，<short pause>\n靈魂人物就是老闆尹賢俊。\n其實他以前在中央集團的電視台，\n做過《孝利家民宿》這些超紅的節目。\n重點來了，你猜他的招牌是什麼？\n對，就是把沒名氣的人推上大舞台嘛。\n他之前做過一個選秀節目，\n參賽者完全不報名字，身上只有號碼牌喔。\n<laugh> 到了《黑白大廚》，他又把這招搬進廚房。\n在所有參賽廚師裡面，\n八十位黑湯匙一開始只能用綽號。\n一直要打進決賽，才能公開本名。\n我覺得這個設定真的很有意思。\n所以韓國評論家就說，\n這招就是把無名再加上階級啦。",
+   "lint": {
+    "chars": 213,
+    "precise_numbers": [
+     "八十"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.3,
+    "max_sentence_len": 31,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "說到這家製作公司的老闆尹賢俊，其實很神。他二十幾年前進韓國的無線台。後來他去中央集團的電視台，做過很多爆紅節目，像是《孝利家民宿》。幾年前他出來自己開製作公司。<short pause>重點來了，他的作品一直有一條很清楚的線。你猜是什麼？就是把沒名氣的人推上大舞台啦。他先是找回只紅過一首歌就消失的歌手。接著乾脆辦選秀，參賽者只掛號碼，不能報名字。更厲害的是，《黑白大廚》把同一招搬到了廚房。一百位廚師裡面，大部分黑湯匙都只有綽號。對，你要一路打進決賽，才能公開自己的本名喔。這就是韓國評論家說的，無名再加上階級嘛。",
+   "lint": {
+    "chars": 245,
+    "precise_numbers": [
+     "二十",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 31,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "光是這個設定，就讓人覺得超佩服耶。<laugh>",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

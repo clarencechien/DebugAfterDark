@@ -1,0 +1,140 @@
+{
+ "segment": "s03_top",
+ "position": "第 4 段，共 11 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "5aa31f1c62205a8a29f437bf3114e9e22fc7300602b089d728b007b44c7aa65a",
+ "previous_context": "我看到這邊真的覺得超諷刺。 出口明明年年增加，結果影視留在國內的貿易順差，居然少了三成六耶。",
+ "original": {
+  "text": "那錢去了哪裡？這份報告說，往最上面那一層集中。頂級演員一集的片酬，二〇二〇年是三億五千萬韓圜，二〇二四年到了十億；二〇〇〇年前後，演員酬勞只佔一部戲預算的一成左右。連 Netflix 都嫌貴，去年把主角片酬的上限訂在一集四億，今年傳出再降到三億。往下一層是另一個世界：主角和配角的片酬大約差二十倍，配角一集可能只拿到三百美元左右；二〇二三年劇組通報的欠薪案，是往年平均的二點六倍。預算先被主角拿走一大塊，電視台就拍不起，消失的是中低預算的戲，和靠這些戲吃飯的配角、助理編劇和劇組。這一層，就是這份報告說的中間層。",
+  "lint": {
+   "chars": 254,
+   "precise_numbers": [
+    "五千萬",
+    "二十",
+    "三百",
+    "二點六"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 35.3,
+   "max_sentence_len": 66,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那錢到底都跑去哪裡了？其實這份報告說，全部往最上面集中了。頂級演員一集拿十億韓圜，已經不奇怪。<short pause> 誇張到連 Netflix 都嫌太貴耶。你猜平台怎麼做？直接訂片酬上限，硬生生往下砍。然後往下一看，根本是另一個世界。<sigh> 主角跟配角拿的錢，差了整整二十倍。配角沒有重播分潤，一集可能只拿三百美元。劇組欠薪的通報，是往年平均的二點六倍。錢都被主角拿走，電視台根本拍不起戲嘛。所以中型製作消失，受害的全是中間層的人。光想就覺得壓力超大的。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [
+     "二十",
+     "三百",
+     "二點六"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那錢到底跑去哪裡了？\n其實都往最上面那一層集中了。\n這份報告說，製作費暴漲是有原因的。\n裡面最大的一塊，主要就是主角片酬。\n頂級演員拍一集，可以拿到十億韓圜耶。\n連 Netflix 都嫌貴，後來還設了片酬上限。\n那底層的人過得怎麼樣？\n你猜猜看，完全是另一個世界。<short pause>\n主角跟配角的片酬，差了大約二十倍。\n配角拍一集，可能只拿得到幾百塊美金。\n而且 Netflix 還不給韓劇演員重播分潤。\n去年劇組的欠薪案，是往年平均的二點六倍。<sigh>\n看到這裡，我真的覺得很心酸。\n預算全被主角分走，電視台就拍不起戲了嘛。\n所以中低預算的戲，就這樣一部部消失。\n跟著沒飯吃的是助理編劇、劇組和小配角。\n這些人，就是這份報告說的中間層。",
+   "lint": {
+    "chars": 286,
+    "precise_numbers": [
+     "二十",
+     "百",
+     "二點六"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "那錢到底跑去哪了？<short pause>\n這份報告說，其實全往金字塔頂端集中。\n頂級演員的片酬，幾年內翻了快三倍耶。\n以前演員費，其實只佔製作費的一小角。\n連 Netflix 都嫌太貴，自己訂了片酬上限。\n主角拿走大把鈔票，你猜配角能拿多少？\n主角跟配角的片酬，大約差了整整二十倍喔。\n配角一集可能只拿幾百美元。\n而且完全沒有重播分潤。\n劇組的欠薪通報案件，直接暴增了兩倍多。<sigh>\n預算都被主角吸光，電視台哪拍得起？\n所以最後消失的，就是中低預算的戲。\n還有靠這些戲吃飯的配角跟劇組。\n對，這些人就是這份報告說的中間層啦。",
+   "lint": {
+    "chars": 233,
+    "precise_numbers": [
+     "二十",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "劇組的欠薪通報案件，直接暴增了兩倍多。",
+   "to": "二〇二三年劇組的欠薪通報案件，是往年平均的二點六倍。",
+   "reason": "改回原文數字"
+  },
+  {
+   "from": "那錢到底跑去哪了？<short pause>這份報告說，其實全往金字塔頂端集中。頂級演員的片酬，幾年內翻了快三倍耶。以前演員費，其實只佔製作費的一小角。連 Netflix 都嫌太貴，自己訂了片酬上限。主角拿走大把鈔票，你猜配角能拿多少？主角跟配角的片酬，大約差了整整二十倍喔。配角一集可能只拿幾百美元。而且完全沒有重播分潤。二〇二三年劇組的欠薪通報案件，是往年平均的二點六倍。<sigh>預算都被主角吸光，電視台哪拍得起？所以最後消失的，就是中低預算的戲。還有靠這些戲吃飯的配角跟劇組。對，這些人就是這份報告說的中間層啦。",
+   "to": "那錢去了哪裡？這份報告說，往最上面那一層集中。頂級演員一集的片酬，二〇二〇年是三億五千萬韓圜，二〇二四年到了十億；二〇〇〇年前後，演員酬勞只佔一部戲預算的一成左右。連 Netflix 都嫌貴，去年把主角一集的片酬上限訂在四億，今年傳出再降到三億。<short pause>往下一層是另一個世界。主角和配角的片酬大約差二十倍，配角一集可能只拿到三百美元左右；二〇二三年劇組通報的欠薪案，是往年平均的二點六倍。預算先被主角拿走一大塊，電視台就拍不起，消失的是中低預算的戲，和靠這些戲吃飯的配角、助理編劇和劇組。這一層，就是這份報告說的中間層。",
+   "reason": "照草稿重寫：改寫把原文數字改成模糊說法、加了口頭禪"
+  },
+  {
+   "from": "三百美元左右；二〇二三年",
+   "to": "三百美元左右。二〇二三年",
+   "reason": "分號太多，拆句"
+  }
+ ]
+}

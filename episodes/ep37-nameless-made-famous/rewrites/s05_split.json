@@ -1,0 +1,141 @@
+{
+ "segment": "s05_split",
+ "position": "第 6 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "cd115dc8ab9808452ac35b7fcebf3c375707249bb6babbb55b176d82b2ef2eb1",
+ "previous_context": "重點來了，這份報告特別強調這是推論。但方向很清楚，錢都花在舞台跟設備上，明星片酬那一塊，基本上根本不存在嘛。",
+ "original": {
+  "text": "節目紅了，好處分到四個地方。第一個是平台：《黑白大廚》的版權在 Netflix 手上，中國後來出現很像的節目，出面抗議的也是 Netflix，要不要做下一季、模式能不能授權給別國翻拍，都由平台決定。第二個是廚師：韓國的訂位平台統計，節目上線後，參賽廚師餐廳的搜尋量是前一週的七十四倍，訂位平均增加將近一倍半；崔鉉碩說營業額變成三倍，自家的料理包多賣了六十倍。這份報告的一句話是：節目付給廚師的錢很少，廚師從節目得到的卻最多，而且這筆錢不經過平台，也不經過製作公司。",
+  "lint": {
+   "chars": 229,
+   "precise_numbers": [
+    "七十四",
+    "六十"
+   ],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 4,
+   "avg_sentence_len": 56.2,
+   "max_sentence_len": 81,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那錢到底被誰賺走了？\n其實節目爆紅之後，好處主要分到不同地方。\n第一個是平台。\nNetflix 緊緊抓著《黑白大廚》的版權。\n要不要拍下一季，全由平台決定。\n能不能授權給別國翻拍，也是他們說了算。\n然後呢？最大贏家其實是廚師。\n韓國的訂位平台統計，\n廚師餐廳的搜尋量直接暴增七十四倍。<short pause>\n訂位也整個翻倍在跳。\n這數字是不是很誇張？\n崔鉉碩的餐廳營業額翻倍，料理包也賣到翻掉。\n這份報告有一句話說得超傳神。\n節目付給廚師的錢很少，廚師拿到的卻最多。\n最厲害的是，這筆錢完全不用分給平台耶。\n製作公司一毛也抽不到啦。",
+   "lint": {
+    "chars": 239,
+    "precise_numbers": [
+     "七十四"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 13.9,
+    "max_sentence_len": 26,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "既然明星沒拿多少錢，那好處到底被誰拿走了？\n這份報告說，好處其實分到了四個地方。\n第一個拿到好處的，當然是平台。\n黑白大廚的版權，完全在 Netflix 手上。\n中國出現抄襲節目，也是 Netflix 出面抗議。\n要不要授權給別國翻拍，全由他們說了算。\n然後，第二個拿到好處的是廚師。\n他們拿到的是實體生意。\n韓國訂位平台統計，節目播完之後，\n餐廳訂位平均多了一點五倍。<short pause>\n崔鉉碩說，他的營業額直接翻了三倍。\n自家的料理包更是賣到翻掉。\n你知道最妙的是什麼嗎？\n其實節目付給廚師的錢很少耶。\n但廚師賺到的實體生意，反而是最多的。\n最厲害的是，這筆錢完全不用分給平台喔。",
+   "lint": {
+    "chars": 264,
+    "precise_numbers": [
+     "一點五"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 28,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "那節目大紅之後，好處到底分給誰？其實主要分到幾個地方喔。第一個拿到好處的是平台。《黑白大廚》的版權在 Netflix 手上。中國出現很像的節目，也是他們出面抗議。要不要授權給別國翻拍，也由平台決定。<short pause>第二個賺翻的，就是廚師。你知道廚師賺到什麼嗎？是直接灌進餐廳的生意。當地的訂位平台說，節目上線後廚師餐廳搜尋量暴增七十多倍。崔鉉碩甚至說自家的料理包多賣了六十倍。<laugh> 這點我真的覺得太神了。廚師在節目拿到的錢很少，但從節目得到的生意卻最多。最厲害的是，這筆錢完全不用分給平台啦。",
+   "lint": {
+    "chars": 233,
+    "precise_numbers": [
+     "七十",
+     "六十"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 27,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "那錢到底被誰賺走了？其實節目爆紅之後，好處主要分到不同地方。第一個是平台。Netflix 緊緊抓著《黑白大廚》的版權。要不要拍下一季，全由平台決定。能不能授權給別國翻拍，也是他們說了算。然後呢？最大贏家其實是廚師。韓國的訂位平台統計，廚師餐廳的搜尋量直接暴增七十四倍。<short pause>訂位也整個翻倍在跳。這數字是不是很誇張？崔鉉碩的餐廳營業額翻倍，料理包也賣到翻掉。這份報告有一句話說得超傳神。節目付給廚師的錢很少，廚師拿到的卻最多。最厲害的是，這筆錢完全不用分給平台耶。製作公司一毛也抽不到啦。",
+   "to": "那好處到底分到誰手上？節目紅了之後，分到四個地方。第一個是平台：《黑白大廚》的版權在 Netflix 手上，要不要拍下一季、能不能授權給別國翻拍，都由平台決定。第二個，是廚師。韓國的訂位平台統計，節目上線後，參賽廚師餐廳的搜尋量是前一週的七十四倍，訂位平均增加將近一倍半。<short pause>崔鉉碩說，營業額變成三倍，自家的料理包多賣了六十倍。這份報告有一句話說得很傳神：節目付給廚師的錢很少，廚師從節目得到的卻最多，而且這筆錢，不經過平台，也不經過製作公司。",
+   "reason": "「營業額翻倍」改回三倍、「料理包賣到翻掉」改回六十倍；刪口頭禪"
+  },
+  {
+   "from": "這份報告有一句話說得很傳神：",
+   "to": "這份報告這樣說，",
+   "reason": "減少結論提示冒號"
+  }
+ ]
+}

@@ -1,0 +1,159 @@
+{
+ "segment": "s09_risk",
+ "position": "第 10 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "92bf97169aa09c00f61cdac23b02cd78a6ad7ea131beb184397ce98574ffea78",
+ "previous_context": "公司的過半股份在母公司。而母公司現在正在被賣。",
+ "original": {
+  "text": "這份報告也講了無名者的兩個問題：查不清，會用完。第一季的拌飯大王，節目紅了之後自己承認違法營業，把店收掉；第二季的林成根，爆紅後被查出酒駕四次等六件前科，宣布停止所有節目活動，Netflix 說事前只確認到其中一件。明星的過去早就被媒體翻過很多遍，無名者沒有，酬勞低和查核難，是同一個特性的兩面。會用完也看得到：第二季的冠軍崔康祿，十三年前就拿過韓國版廚神當道的冠軍；這一季的黑湯匙，多半已經開著有名的店。第三季改成同一家餐廳四人組隊，報告作者的解讀是：主廚有名了，他廚房裡的人還沒有。",
+  "lint": {
+   "chars": 242,
+   "precise_numbers": [
+    "十三"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第二",
+    "第三"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 47.4,
+   "max_sentence_len": 82,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "其中"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "除了母公司的問題，這份報告還點出素人選手的兩個大麻煩。一個是底細查不清，另一個是人選會用完。像第一季的拌飯大王，紅了之後自己承認違法營業，把店收掉。第二季的林成根更誇張，爆紅後被挖出一堆前科，直接全面停工。<sigh> Netflix 也很無奈，說一般人的犯罪紀錄真的很難查。你看，素人便宜是便宜，但背景調查真的難很多啦。那人選會用完又是怎麼回事？第二季冠軍崔康祿，十三年前就拿過廚神當道的冠軍了耶。很多黑湯匙其實本來就是名店老闆，素人翻身的故事變弱了。所以第三季乾脆改成同餐廳四人組隊。<short pause> 這份報告作者就解讀，製作團隊就是在找新的素人。主廚有名了，他廚房裡的人總還沒紅吧。",
+   "lint": {
+    "chars": 277,
+    "precise_numbers": [
+     "十三"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 22.1,
+    "max_sentence_len": 28,
+    "sentences_over_20": 8,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實節目本身還有個大麻煩。\n\n這份報告說，找素人有兩個問題。第一是查不清，第二是會用完。\n\n像第一季的拌飯大王，紅了才承認違法收店。第二季的林成根，爆紅後被查出六件前科。Netflix 說事前只確認到一件。\n\n`<sigh>` 明星的過去早就被媒體翻爛了。但一般人的底細根本查不清楚嘛。酬勞便宜跟查核困難，根本是一體兩面。\n\n那素人真的會用完嗎？答案是會的。<short pause> 像第二季的冠軍崔康祿。他十幾年前就拿過料理冠軍了耶。連很多黑湯匙，本來就開著排隊名店了。\n\n所以第三季要怎麼辦？他們改成讓餐廳整間組隊參賽。這份報告的解讀很有意思。主廚有名了，廚房裡的人還沒有嘛。",
+   "lint": {
+    "chars": 259,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第一",
+     "第二",
+     "第二",
+     "第三"
+    ],
+    "sentences": 18,
+    "avg_sentence_len": 13.4,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 2,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "除了公司被賣，這份報告還點出素人的麻煩。簡單說就是兩個問題：查不清，還有會用完。先說查不清好了。第一季的拌飯大王紅了之後，自己承認違法營業，直接把店收了。<sigh>第二季的林成根更誇張，爆紅後被查出六件前科，只能全面停工。Netflix 說事前只掌握到一小部分。便宜的人選，背後其實就是大風險嘛。那無名者會用完又是怎麼回事？因為厲害的人就這麼多啊。第二季冠軍崔康祿，十多年前就拿過冠軍了耶。很多黑湯匙其實早就開了名店。所以第三季要怎麼辦？製作單位改成同一家餐廳揪團組隊。這份報告推論，主廚有名了，廚房裡的員工總還沒紅吧。<laugh>",
+   "lint": {
+    "chars": 254,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第二",
+     "第三"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 17.1,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "只能全面停工。Netflix 說事前只掌握到一小部分。",
+   "to": "宣布停止所有節目活動，Netflix 說事前只確認到其中一件。",
+   "reason": "改回原文"
+  },
+  {
+   "from": "十多年前就拿過冠軍了耶。",
+   "to": "十三年前就拿過韓國版廚神當道的冠軍了。",
+   "reason": "補回原文"
+  },
+  {
+   "from": "廚房裡的員工總還沒紅吧。<laugh>",
+   "to": "廚房裡的人還沒有。",
+   "reason": "刪笑聲"
+  },
+  {
+   "from": "簡單說就是兩個問題：查不清，還有會用完",
+   "to": "簡單說有兩個問題，查不清，還有會用完",
+   "reason": "減少結論提示冒號"
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "segment": "s11_statement",
+ "position": "第 12 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "aa4ca56990f6a2ad494b9c0a5f7910a7a23211cd672d9437e68f6b761d45a1d2",
+ "previous_context": "你看他們拼成醬，最後到底剩下什麼？ 其實真正能留下的，只有自己的名字、做法，還有願意跟著你走的人而已。",
+ "original": {
+  "text": "把戶頭排在一起：版權寫在平台名下，公司的股權寫在母公司名下，名氣換來的生意留在廚師自己的店裡。找到無名者、把他們做紅，這件事從頭到尾在製作人和團隊身上。這份報告說，製作人帶得走的有兩樣：一樣是下一個節目的做法，另一樣是被他做紅的那些人，願意繼續合作的關係。上一集的規則在這裡也適用，版權跟著出錢的人走。頂級製作人一再出走、一再開公司，是因為有了公司才有立場談版權和股份；這個例子多說了一步：談到了股份，還要看買下股份的那一方，撐不撐得住。",
+  "lint": {
+   "chars": 219,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 42.8,
+   "max_sentence_len": 67,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "把這些戶頭排開來看，對比真的滿殘酷的。\n節目的版權在 Netflix 名下。\n製作公司的股權，在母公司手裡。\n廚師賺到的生意，留在廚師自己的店裡。\n那製作人最後到底帶走了什麼？\n這份報告說，其實就只有兩樣東西。\n第一樣是手藝，也就是做下個節目的做法。\n第二樣是關係，被他捧紅的人願意繼續合作。\n其實市場的規則很簡單。\n版權永遠跟著出錢的人走。<short pause>\n所以頂級製作人一直出走開公司，\n就是因為有了公司，才能去談版權跟股份嘛。\n可是更現實的是什麼？\n就算你真的談到了股份，\n還得看買股份的母公司，到底撐不撐得住啊。",
+   "lint": {
+    "chars": 236,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 34,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "對，把這些戶頭全部攤開來看。\n節目的版權在平台名下。\n公司的股權在母公司名下。\n名氣換來的生意，留在廚師自己的店裡。\n那製作人忙了半天，到底帶得走什麼？\n這份報告說，其實就兩樣東西啦。\n一個是做出下一個節目的手藝。\n另一個是被他做紅的人，願意繼續合作。\n<short pause>\n說到底，版權永遠跟著出錢的人走。\n頂級製作人為什麼一直出走開公司？\n因為開了公司，才有立場去談版權跟股份。\n我覺得這真的很現實，也很有共鳴。\n而且最厲害的是，這個例子還多說了一步。\n就算你談到了股份，\n還要看買你股份的那家公司撐不撐得住喔。",
+   "lint": {
+    "chars": 233,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 27,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "對啊，把大家的戶頭排開來看。\n節目的版權在平台名下。\n製作公司的股權，屬於母公司。\n名氣帶來的生意，留在廚師店裡。\n那製作人忙了半天，到底剩下什麼？\n這份報告說，製作人能帶走的只有兩樣。\n一樣是做下一個節目的手藝。\n另一樣是被他做紅的人，願意繼續合作。\n<short pause>\n說穿了，版權永遠跟著出錢的人走。\n所以頂級製作人為什麼一再出走開公司？\n因為有了公司，你才有立場談版權跟股份嘛。\n但做《黑白大廚》的公司，多提醒了一件事。<sigh>\n你就算真的談到了股份，\n還要看買股份的母公司，到底撐不撐得住啊。",
+   "lint": {
+    "chars": 224,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 30,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "我覺得這真的很現實，也很有共鳴。而且最厲害的是，這個例子還多說了一步。",
+   "to": "這個例子還多說了一步。",
+   "reason": "刪個人反應"
+  }
+ ]
+}

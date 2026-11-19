@@ -1,0 +1,117 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 13 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "3026df0cf3a0ba2e22d4ebbbb4ef8c36d61a724443008ba7e88b5f28b61a35da",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "《黑白大廚》連兩季拿下 Netflix 非英語節目的全球第一，一批沒名氣的廚師，紅到店裡訂不到位。可是做出這個節目的製作公司，母集團今年六月聲請重整。節目紅了以後，好處到底落在誰手上？這份報告把它當成一張結算單，一個戶頭一個戶頭對過去。對完會發現，做節目的人，只帶得走兩樣東西：手藝，和人。",
+  "lint": {
+   "chars": 143,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 27.6,
+   "max_sentence_len": 46,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "《黑白大廚》連兩季拿 Netflix 第一名。\n那些沒名氣的廚師，店裡全被訂滿。\n但你猜做節目的製作公司，下場是什麼？\n他們的母集團，竟然在六月聲請重整耶。<sigh>\n我看到這邊真的覺得超扯。\n節目紅成這樣，好處到底進了誰的口袋？\n這份報告把每個戶頭都對過一遍。\n對，其實算到最後你會發現，\n做節目的人，最後只帶得走手藝跟人啦。",
+   "lint": {
+    "chars": 149,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 8,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 30,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "《黑白大廚》拿下 Netflix 全球第一，沒名氣的廚師紅到店裡訂不到位。可是做出節目的製作公司，母集團竟然在六月聲請重整。很扯齁？節目紅成這樣，好處到底落在誰手上？我看到這邊真的覺得超級諷刺。<sigh>所以這份報告就像一張結算單，把這些好處，一個戶頭一個戶頭對過去。對完才發現，做節目的人其實只帶得走兩樣。就是手藝，還有身邊的人啦。",
+   "lint": {
+    "chars": 160,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 8,
+    "avg_sentence_len": 19.0,
+    "max_sentence_len": 34,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "《黑白大廚》紅成這樣。很多沒名氣的廚師，店裡直接訂不到位。可是做出這個節目的製作公司，母集團六月竟然聲請重整。<short pause>很扯吧？節目大紅，好處到底都落在誰手上？其實這份報告就像一張結算單。把全部帳目一個一個對過去。我看到結論真的很有共鳴。<short pause>對啊，做節目的人忙到最後，版權帶不走，只帶得走手藝跟人啦。",
+   "lint": {
+    "chars": 143,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 28,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "<sigh>我看到這邊真的覺得超扯。",
+   "to": "<sigh>",
+   "reason": "刪個人反應"
+  }
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "segment": "s12_outro",
+ "position": "第 13 段，共 13 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "63eb4e091001070dd90e2f64222866b47883c694a74f894ed31eb7c8a50b4d15",
+ "previous_context": "而且最厲害的是，這個例子還多說了一步。就算你談到了股份，還要看買你股份的那家公司撐不撐得住喔。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，節目紅了，好處分到四個地方：版權在平台，生意在廚師，人在製作公司，股份在母公司；廚師拿的酬勞最少，得到的卻最多。第二，無名者是這門手藝的核心，也有兩個問題：查不清，會用完。第三，製作人帶得走的只有手藝和人；版權跟著出錢的人走，股份還要看買的人撐不撐得住。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 181,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 24.9,
+   "max_sentence_len": 58,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，節目大紅之後，好處其實全部分開了。\n版權在平台，賺到生意的反而是廚師。\n然後第二，素人是核心，但名單總會用完嘛。\n而且背景查不清楚，也很容易翻車。\n最後，製作人到底能帶走什麼？\n其實只有做節目的手藝，還有合作關係。\n畢竟版權跟著出錢的人走。\n想賣股份，還要看買家撐不撐得住喔。\n整套看下來，我真的替大家捏一把冷汗耶。<short pause>\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 206,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n整集聽下來，你覺得誰才是真正的贏家呢？\n對，其實手藝跟資本，從頭到尾都是分開的。\n第一，版權在平台名下，生意留在廚師身上。\n第二，找素人是核心手藝，但查不清又會用完。\n第三，製作人帶得走的，只有技術跟合作關係。\n所以就算拿到股份，也要看買家撐不撐得住。\n這點真的讓我很能體會啦。<short pause>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 186,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n第一，節目大紅，好處其實分給四個地方。版權歸平台，店裡生意歸廚師。然後製作人留在製作公司，股份算母公司的。\n\n第二，素人是這門手藝的核心。但素人有兩個麻煩，查不清而且會用完。\n\n第三，所以製作人最後能帶走什麼？說真的，就只有自己的手藝跟人脈啦。<short pause>出錢的人拿走版權。就算換到股份，還要看買家撐不撐得住喔。\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 199,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>第一，節目大紅，好處其實分給四個地方。版權歸平台，店裡生意歸廚師。然後製作人留在製作公司，股份算母公司的。第二，素人是這門手藝的核心。但素人有兩個麻煩，查不清而且會用完。第三，所以製作人最後能帶走什麼？說真的，就只有自己的手藝跟人脈啦。<short pause>出錢的人拿走版權。就算換到股份，還要看買家撐不撐得住喔。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，節目紅了，好處分到四個地方：版權在平台，生意在廚師，人在製作公司，股份在母公司；廚師拿的酬勞最少，得到的卻最多。第二，無名者是這門手藝的核心，也有兩個問題：查不清，會用完。第三，製作人帶得走的只有手藝和人；版權跟著出錢的人走，股份還要看買的人撐不撐得住。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "breakpoint 改回草稿"
+  }
+ ]
+}

@@ -1,0 +1,129 @@
+{
+ "segment": "s01_press",
+ "position": "第 2 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "695f8d37c8ed83e0db510710579e901ac023231f15b548079a31ab4e55e72ba9",
+ "previous_context": "去看片尾那一行製作著作，到底寫著誰的名字。這份報告想聊的，就是這行字背後，錢到底流去哪裡啦。",
+ "original": {
+  "text": "先看那場記者會。十一月四號，韓國的電視劇製作公司協會、作家協會、製作人協會等十二個團體，在首爾開了聯合記者會。一年開拍的韓劇，從二〇二二年的一百四十一部，兩年少了大約三成；三家無線台排進節目表的戲劇，從二〇一二年的九十一部，掉到二〇二三年的三十二部。他們要的一兆韓圜，是政府每年出兩千億、連續五年，另一半由電視台和串流平台出，一年可以多拍四十部中低預算的戲。這份報告提醒，這是業界的提案，還沒有任何一筆是政府核定的預算。",
+  "lint": {
+   "chars": 210,
+   "precise_numbers": [
+    "十一",
+    "十二",
+    "一百四十一",
+    "九十一",
+    "三十二",
+    "兩千",
+    "四十"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 41.0,
+   "max_sentence_len": 69,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "我們先看首爾這場記者會。\n十一月的時候，十幾個影視團體聯合站出來。\n他們說韓劇的基礎快要垮了。<short pause>\n你猜現場哪一句話最嚇人？\n是現在連助理編劇都找不到工作。\n原來開拍的戲，兩年內少了將近三分之一欸。\n韓國的無線台，戲劇時段也砍了大半。\n所以他們直接開口，要了一兆韓圜來救市。\n想叫政府每年出錢，跟串流平台一起分攤。\n我看到這邊其實滿震撼的。\n韓劇不是在全世界大紅嗎？\n重點來了，這份報告提醒大家，\n這只是業界自己開出的清單喔。\n政府目前根本還沒有核定啦。",
+   "lint": {
+    "chars": 212,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 27,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "先來看十一月初的那場記者會。\n韓國有十二個影視團體一起站出來。\n現場直接喊說韓劇要垮了。<short pause>\n你猜有多誇張？\n一年開拍的戲，兩年少了大約三成。\n以前一年還有一百四十一部耶。\n現在韓國的無線台，有的平日乾脆不排戲了。\n我看到這邊真的有點嚇到。\n現場甚至說，連助理編劇都快沒工作了。\n所以他們開口要一兆韓圜的救命錢。\n希望政府跟平台各出一半。\n不過重點來了喔。\n這份報告特別提醒，這只是業界的提案。\n政府到底給不給錢，其實根本還沒核定啦。",
+   "lint": {
+    "chars": 202,
+    "precise_numbers": [
+     "十一",
+     "十二",
+     "一百四十一"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 13.4,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "先來看十一月初那場大陣仗的記者會。\n十二個韓國影視團體，一起在首爾開記者會。\n他們直接說，韓劇的製作基礎正在垮掉。\n<short pause>\n誇張到什麼程度？\n像兩年前，一年還有一百四十一部在拍耶。\n結果短短兩年內，開拍量直接蒸發了大約三成。\n更扯的是韓國的無線台。\n電視節目表上的連續劇，少掉超過一半。\n現場甚至有標題說，連助理編劇都沒工作了。\n<sigh>\n你猜他們希望怎麼救？\n重點來了，他們開口要了一兆韓圜。\n其實就是希望政府出資，多拍幾十部小戲。\n不過這份報告特別提醒。\n這目前只是業界提案，政府根本還沒答應喔。",
+   "lint": {
+    "chars": 228,
+    "precise_numbers": [
+     "十一",
+     "十二",
+     "一百四十一"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "我們先看首爾這場記者會。十一月的時候，十幾個影視團體聯合站出來。他們說韓劇的基礎快要垮了。<short pause>你猜現場哪一句話最嚇人？是現在連助理編劇都找不到工作。原來開拍的戲，兩年內少了將近三分之一欸。韓國的無線台，戲劇時段也砍了大半。所以他們直接開口，要了一兆韓圜來救市。想叫政府每年出錢，跟串流平台一起分攤。我看到這邊其實滿震撼的。韓劇不是在全世界大紅嗎？重點來了，這份報告提醒大家，這只是業界自己開出的清單喔。政府目前根本還沒有核定啦。",
+   "to": "我們先看首爾那場記者會。十一月四號，韓國的電視劇製作公司協會、作家協會、製作人協會等十二個團體，一起站出來說，韓劇的製作基礎快要垮了。一年開拍的韓劇，從二〇二二年的一百四十一部，兩年少了將近三成；三家無線台排進節目表的戲劇，從二〇一二年的九十一部，掉到二〇二三年的三十二部。<short pause>所以他們開口要一兆韓圜：政府每年出兩千億、連續五年，另一半由電視台和串流平台分攤，一年可以多拍四十部中低預算的戲。這份報告提醒，這是業界的提案，政府還沒有核定任何一筆。",
+   "reason": "「十幾個」改回十二個；補回數字；刪個人反應"
+  }
+ ]
+}

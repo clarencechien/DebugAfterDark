@@ -1,0 +1,123 @@
+{
+ "segment": "s03_craft2",
+ "position": "第 4 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "08f04e700ef937f0aec194200f102c61ed78f73fcc87d01f58eb713a0587243d",
+ "previous_context": "韓國評論家說，這就是無名加上階級。光是這個設定，就讓人覺得超佩服耶。",
+ "original": {
+  "text": "這份報告也提醒，說他們是素人不太準。黑湯匙多半是有店、有手藝的職業廚師，只是沒上過電視；開拍前，製作團隊見了五、六百位廚師才挑出人選。名廚也要一位一位去說服：崔鉉碩原本拒絕以參賽者的身分上節目，製作人跟他說，你會是《體能之巔》裡秋成勳那個角色，他才答應。這份報告說，這門手藝有兩半：找到值得被看見的無名者，再找到願意和他們同台的名人。",
+  "lint": {
+   "chars": 167,
+   "precise_numbers": [
+    "六百"
+   ],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 40.8,
+   "max_sentence_len": 59,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "不過這份報告有特別提醒喔。大家常叫他們素人，其實不太準。黑湯匙多半是有店、有手藝的職業廚師。他們只是沒上過電視而已啦。<short pause>光是開拍前，團隊就見了五六百位廚師。那名廚就好找了嗎？完全沒有。崔鉉碩原本根本不願意當參賽者。製作人怎麼說服他的？製作人對他說，你會是《體能之巔》裡的秋成勳。聽完他才答應耶。我覺得製作人這招真的太厲害了。所以報告裡說，這門手藝其實有兩半。一半是找到值得被看見的無名者。另一半是找到願意同台的名人。",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [
+     "五六百"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 12.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "不過，說他們是素人，其實不太準喔。\n黑湯匙多半是有開店、有手藝的職業廚師。\n他們只是之前沒有上過電視。\n製作團隊在開拍前，到底見了多少人？\n答案是五、六百位廚師耶。<short pause>\n然後，大牌名廚也是要一個一個去說服。\n像是崔鉉碩，一開始根本不想當參賽者。\n製作人怎麼說服他的？\n製作人對他說，你會像體能之巔的秋成勳。\n他聽了才答應接下挑戰。<short pause>\n所以這份報告說得很貼切。\n這門手藝其實有兩半。\n一半是找到值得被看見的無名者。\n另一半，是找到願意跟他們同台的名人。\n光想就覺得難度很高耶。",
+   "lint": {
+    "chars": 220,
+    "precise_numbers": [
+     "六百"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 13.7,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實這份報告有特別提醒喔。說黑湯匙是素人，其實不太準。他們大多是有開店、有手藝的職業廚師啦，只是之前沒上過電視而已。製作團隊在開拍前，見了五、六百位廚師才挑出人選。<short pause>那成名的名廚要怎麼找？製作人也是一個一個去說服。像崔鉉碩原本根本不想當參賽者耶。製作人就跟他說，你會是體能之巔裡面的秋成勳喔，他才點頭答應。<short pause>這份報告說，這門手藝其實有兩半：先找出值得被看見的無名高手，再找到願意跟他們同台的名人。光想就覺得溝通難度超高。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [
+     "六百"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.8,
+    "max_sentence_len": 43,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "光想就覺得難度很高耶。",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}

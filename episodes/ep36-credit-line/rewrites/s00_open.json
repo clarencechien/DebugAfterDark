@@ -1,0 +1,123 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 11 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "218f7f0d18b09e2276d4588069f8fa2603f6c9176b4e190bf77de97639cc4a57",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "韓劇在全球最紅的這一年，韓國的戲劇圈卻開了記者會，要政府拿出一兆韓圜救命。看戲的人沒有變少，一年開拍的韓劇，兩年卻少了大約三成，現場還有人說，現在連助理編劇都沒有工作。這份報告想問：戲明明還在紅，缺工作的是哪一層人？答案藏在每一部戲片尾的一行字：製作著作，寫的是誰的名字。而這一行字，三十年來換過好幾次，台灣每一次，都坐在觀眾席的第一排。",
+  "lint": {
+   "chars": 169,
+   "precise_numbers": [
+    "三十"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 32.8,
+   "max_sentence_len": 46,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "韓劇在全世界最紅的時候，<short pause> 韓國戲劇圈居然集體喊救命。你猜他們跟政府要多少錢？一兆韓圜耶。這件事超扯的吧？看戲的人其實完全沒有變少喔。但是開拍的韓劇兩年少了三成，現場甚至說連助理編劇都沒工作。戲明明還在紅，到底缺工作的是哪一層人？其實答案就藏在片尾最後那一行字。製作著作到底寫誰的名字。這行字三十年來換過好幾次，而我們每一次，都坐在觀眾席第一排看著。",
+   "lint": {
+    "chars": 173,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 31,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "韓劇明明紅遍全世界，<short pause>\n結果韓國戲劇圈卻跑去開記者會，\n求政府拿出一兆韓圜來救命。\n我看到這個消息真的嚇一跳。\n看戲的人明明就沒有變少啊，\n但是開拍的戲兩年少了大約三成，\n甚至連助理編劇都快沒工作了。\n戲明明這麼紅，到底是誰沒拿到錢？\n其實答案就藏在片尾那一排字，\n也就是製作著作到底寫誰的名字。\n過去三十年這行字換了好幾次，\n台灣每一次都坐在觀眾席第一排喔。",
+   "lint": {
+    "chars": 168,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 6,
+    "avg_sentence_len": 27.0,
+    "max_sentence_len": 41,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "韓劇在全球最紅的這一年，\n韓國戲劇圈居然向政府要一兆韓圜救命。<short pause>\n你可能會想，大家不是都在看韓劇嗎？\n對啊，看戲的人根本沒有變少。\n但開拍的戲，兩年內少了大約三成。\n現場甚至有人說，\n現在連助理編劇都找不到工作。\n<sigh> 戲明明超紅，到底是哪一層的人缺錢？\n其實答案就藏在片尾。\n去看片尾那一行製作著作，\n到底寫著誰的名字。\n這份報告想聊的，\n就是這行字背後，錢到底流去哪裡啦。",
+   "lint": {
+    "chars": 172,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 18.1,
+    "max_sentence_len": 29,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "韓劇在全球最紅的這一年，韓國戲劇圈居然向政府要一兆韓圜救命。<short pause>你可能會想，大家不是都在看韓劇嗎？對啊，看戲的人根本沒有變少。但開拍的戲，兩年內少了大約三成。現場甚至有人說，現在連助理編劇都找不到工作。<sigh> 戲明明超紅，到底是哪一層的人缺錢？其實答案就藏在片尾。去看片尾那一行製作著作，到底寫著誰的名字。這份報告想聊的，就是這行字背後，錢到底流去哪裡啦。",
+   "to": "韓劇在全球最紅的這一年，韓國的戲劇圈，居然向政府要一兆韓圜救命。<short pause>你可能會想，大家不是都在看韓劇嗎？對啊，看戲的人沒有變少，可是一年開拍的戲，兩年少了大約三成，現場還有人說，現在連助理編劇都沒有工作。戲明明還在紅，缺工作的是哪一層人？這份報告說，答案藏在片尾那一行字：製作著作，寫的是誰的名字。而這一行字，三十年來換過好幾次，台灣每一次，都坐在觀眾席的第一排。",
+   "reason": "補回三十年與台灣的懸念；「缺錢」改回缺工作"
+  }
+ ]
+}

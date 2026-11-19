@@ -1,0 +1,143 @@
+{
+ "segment": "s08_parent",
+ "position": "第 9 段，共 13 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "79ff33b01821a42588aac561fea6ddead270a6646ae6d494d3472e541329dce5",
+ "previous_context": "這份報告說，子公司的現金正在往母公司流。不過作者也註明這只是二手資料，他其實沒有核對過原始帳本喔。",
+ "original": {
+  "text": "第二季在二〇二五年十二月上線，第一週又回到非英語節目第一，第三季也已經確定。五個月後，今年六月，中央集團的電視台和集團裡幾家公司向法院聲請重整，壓垮它們的，是合計大約五億美元的奧運和世界盃轉播權。那家製作子公司沒有被列入重整，但進入出售程序，估值從二〇二一年的一兆多韓圜，掉到今年的四千億左右。做《黑白大廚》的公司本身沒出事，節目照做，出事的是它上面兩層。這份報告的一句話是：節目的版權在平台，公司的過半股份在母公司，母公司正在被賣。",
+  "lint": {
+   "chars": 217,
+   "precise_numbers": [
+    "十二",
+    "四千"
+   ],
+   "enumerations": [
+    "第二",
+    "第一",
+    "第一",
+    "第三"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 42.4,
+   "max_sentence_len": 59,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "然後到了隔年底，第二季一上線又拿了第一名，連第三季都已經敲定了。結果才過五個月，上面整個大爆炸。<sigh>中央集團的電視台直接向法院聲請重整。壓垮他們的，是合計大約五億美元的轉播權。那中央集團的製作公司呢？他們雖然沒被重整，但也進入了出售程序，身價直接縮水一大半耶。更荒謬的是，做《黑白大廚》的公司根本沒做錯事，節目照樣做，出事的是上面兩層。這份報告有一句話講得超貼切。節目的版權在 Netflix，公司的過半股份在母公司，然後母公司現在正在被賣掉。<short pause>你聽了是不是也覺得很諷刺？",
+   "lint": {
+    "chars": 232,
+    "precise_numbers": [],
+    "enumerations": [
+     "第二",
+     "第一",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 22.2,
+    "max_sentence_len": 38,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "然後時間來到第二季。\n二〇二五年年底第二季上線，\n第一週又拿到非英語節目第一名。\n甚至連第三季都已經確定了。\n結果你敢相信嗎？\n才過五個月，上面整個大爆炸啦。<sigh>\n中央集團的電視台向法院聲請重整。\n把他們壓垮的是大約五億美元的轉播權。\n中央集團的製作公司雖然沒重整，\n但身價大縮水，直接被掛牌出售。\n最荒謬的是什麼？\n做《黑白大廚》的公司本身根本沒事耶。\n節目一樣很紅，照常在做。\n出事的其實是它上面兩層母公司。\n這份報告有一句話真的很貼切。\n節目的版權在平台手上，\n公司的過半股份在母公司手裡，\n然後母公司現在正在被賣喔。<short pause>",
+   "lint": {
+    "chars": 243,
+    "precise_numbers": [],
+    "enumerations": [
+     "第二",
+     "第二",
+     "第一",
+     "第一",
+     "第三"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 37,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實第二季上線後，又拿了第一名。\n而且第三季也早就確定了。\n結果幾個月後，母集團那邊直接爆掉。\n中央集團的電視台，跑去向法院聲請重整。\n你知道壓垮他們的是什麼嗎？\n是奧運跟世界盃的轉播權。\n<short pause> 合計虧了大約五億美元。\n然後中央集團的製作公司也要被賣掉。\n身價直接跌到只剩原本的三分之一。\n最諷刺的是什麼？\n做《黑白大廚》的公司明明好好的。\n節目照做，出事的都是上面兩層。\n這真的會替他們捏一把冷汗耶。<sigh>\n節目的版權在 Netflix 手上。\n公司的過半股份在母公司。\n而母公司現在正在被賣。",
+   "lint": {
+    "chars": 225,
+    "precise_numbers": [],
+    "enumerations": [
+     "第二",
+     "第一",
+     "第三"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 13.1,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "合計虧了大約五億美元。",
+   "to": "合計大約五億美元的轉播權。",
+   "reason": "「虧了」是改寫加的，原文是轉播權的金額"
+  },
+  {
+   "from": "這真的會替他們捏一把冷汗耶。<sigh>",
+   "to": "<sigh>",
+   "reason": "刪個人反應"
+  }
+ ]
+}

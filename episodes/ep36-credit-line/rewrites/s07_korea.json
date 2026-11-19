@@ -1,0 +1,138 @@
+{
+ "segment": "s07_korea",
+ "position": "第 8 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "5113b22598ec7a52122aba81b59c0a1cd5ad881bce1b7114d943e24e2087cc14",
+ "previous_context": "每個月不到六百塊，就能看一百多台。頻道變多把廣告切碎，製作費也就越縮越小了。",
+ "original": {
+  "text": "第三次，是韓流。亞洲金融風暴之前，韓國對自家影視的保護是亞洲最嚴的，風暴之後被迫開放，反而逼出了競爭力。韓流這兩個字，最早是台灣媒體在一九九八年底造出來的。《大長今》一集的製作費，大約是當時台劇的四到五倍，二〇〇四年在台灣創下韓劇最高的收視；同一年，台灣還有人主張禁止韓劇在黃金時段播出。那時候，片尾寫的是韓國的電視台，像《蒙面歌王》的節目模式，就從韓國的無線台賣到五十多個國家。",
+  "lint": {
+   "chars": 190,
+   "precise_numbers": [
+    "五十"
+   ],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 37.0,
+   "max_sentence_len": 65,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "台灣製作費縮小之後，第三波衝擊就來了。\n對，就是大家熟到不行的韓流啦。\n你知道韓流這兩個字哪裡來的嗎？\n其實最早是台灣媒體發明的喔。\n金融風暴之後，韓國被迫打開市場，<short pause>\n結果反而把他們的競爭力給逼出來了。\n像當年的《大長今》，\n一集製作費就是當時台劇的四到五倍。\n收視率在台灣甚至衝到了百分之五點三。\n<laugh> 誇張到有人主張黃金時段要禁播韓劇耶。\n當時像《蒙面歌王》這種節目版權，\n韓國的無線台一口氣賣到了五十多個國家。",
+   "lint": {
+    "chars": 194,
+    "precise_numbers": [
+     "百分之五點三",
+     "五十"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 20.6,
+    "max_sentence_len": 34,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "製作費縮小之後，接著登場的就是韓流。\n其實在金融風暴前，韓國保護自家影視超嚴格。\n後來被迫開放，反而逼出了超強的競爭力。\n你知道韓流這兩個字哪裡來的嗎？\n其實是台灣媒體最早造出來的喔。\n像大長今一集的製作費，\n就已經是當時台劇的四到五倍。\n還在台灣創下百分之五點三的收視紀錄。\n誇張到當時甚至有人主張，\n黃金時段應該禁播韓劇。<sigh>\n現在回頭看真的蠻諷刺的啦。\n對，那時候片尾掛名的都是韓國的無線台。\n像蒙面歌王的節目模式，\n就一口氣賣到了五十多個國家。",
+   "lint": {
+    "chars": 211,
+    "precise_numbers": [
+     "百分之五點三",
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 24,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "第三次衝擊，其實就是韓流。\n你知道韓流這兩個字哪裡來的嗎？\n最早是台灣媒體造出來的喔。\n以前韓國保護自家影視超嚴格。\n金融風暴之後被迫開放，反而逼出競爭力。\n像《大長今》一集的製作費，\n大約是當時台劇的五倍。<short pause>\n二〇〇四年它在台灣拿下韓劇最高收視，\n數字飆到百分之五點三。\n同一年台灣還有人主張，黃金時段禁播韓劇。\n這聽起來真的蠻諷刺的。<sigh>\n但擋也擋不住啦。\n那時候韓國的無線台，靠著版權賣到全亞洲。\n像《蒙面歌王》的節目模式，\n就賣到五十多個國家去。",
+   "lint": {
+    "chars": 210,
+    "precise_numbers": [
+     "百分之五點三",
+     "五十"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "大約是當時台劇的五倍。",
+   "to": "大約是當時台劇的四到五倍。",
+   "reason": "改回原文"
+  },
+  {
+   "from": "這聽起來真的蠻諷刺的。<sigh>",
+   "to": "",
+   "reason": "刪個人反應"
+  }
+ ]
+}
