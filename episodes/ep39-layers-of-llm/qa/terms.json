@@ -1,0 +1,88 @@
+{
+ "s00_open.take1": [
+  {
+   "term": "ASML",
+   "class": "A",
+   "heard_as": "ASML"
+  },
+  {
+   "term": "DUV",
+   "class": "A",
+   "heard_as": "DUV"
+  }
+ ],
+ "s01_recap.take1": [
+  {
+   "term": "HBM",
+   "class": "A",
+   "heard_as": "HBM"
+  }
+ ],
+ "s02_duv.take0": [
+  {
+   "term": "DUV",
+   "class": "A",
+   "heard_as": "D-U-V"
+  }
+ ],
+ "s03_hbm.take0": [
+  {
+   "term": "HBM",
+   "class": "A",
+   "heard_as": "HBM"
+  },
+  {
+   "term": "HBM",
+   "class": "A",
+   "heard_as": "HBM"
+  },
+  {
+   "term": "HBM",
+   "class": "A",
+   "heard_as": "HBM"
+  }
+ ],
+ "s04_active.take2": [
+  {
+   "term": "MoE",
+   "class": "A",
+   "heard_as": "M-O-E"
+  }
+ ],
+ "s08_months.take0": [
+  {
+   "term": "CAISI",
+   "class": "A",
+   "heard_as": "C-A-I-S-I"
+  }
+ ],
+ "s09_signals.take1": [
+  {
+   "term": "HBM",
+   "class": "A",
+   "heard_as": "HBM"
+  },
+  {
+   "term": "HBM",
+   "class": "A",
+   "heard_as": "HBM"
+  },
+  {
+   "term": "EUV",
+   "class": "A",
+   "heard_as": "EUV"
+  }
+ ],
+ "s10_outro.take0": [
+  {
+   "term": "Ping",
+   "class": "A",
+   "heard_as": "Ping"
+  },
+  {
+   "term": "pong",
+   "class": "B",
+   "heard_as": "pòng"
+  }
+ ]
+}

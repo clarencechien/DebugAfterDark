@@ -1,0 +1,140 @@
+{
+ "s00_open.take2": [
+  {
+   "term": "H200",
+   "class": "B",
+   "heard_as": "H liǎng bǎi"
+  },
+  {
+   "term": "H200",
+   "class": "B",
+   "heard_as": "H liǎng bǎi"
+  }
+ ],
+ "s02_customs.take1": [
+  {
+   "term": "BIS",
+   "class": "A",
+   "heard_as": "B-I-S"
+  },
+  {
+   "term": "H200",
+   "class": "A",
+   "heard_as": "H兩百"
+  },
+  {
+   "term": "H200",
+   "class": "A",
+   "heard_as": "H兩百"
+  },
+  {
+   "term": "H200",
+   "class": "A",
+   "heard_as": "H兩百"
+  }
+ ],
+ "s04_revenue.take2": [
+  {
+   "term": "H200",
+   "class": "A",
+   "heard_as": "H200"
+  },
+  {
+   "term": "H200",
+   "class": "A",
+   "heard_as": "H200"
+  }
+ ],
+ "s05_rent.take1": [
+  {
+   "term": "Oracle",
+   "class": "A",
+   "heard_as": "Oracle"
+  },
+  {
+   "term": "Nscale",
+   "class": "A",
+   "heard_as": "Nscale"
+  }
+ ],
+ "s07_rule.take3": [
+  {
+   "term": "BIS",
+   "class": "A",
+   "heard_as": "B-I-S"
+  },
+  {
+   "term": "TPP",
+   "class": "A",
+   "heard_as": "T-P-P"
+  },
+  {
+   "term": "TPP",
+   "class": "A",
+   "heard_as": "T-P-P"
+  },
+  {
+   "term": "H200",
+   "class": "A",
+   "heard_as": "H èrbǎi"
+  }
+ ],
+ "s09_model.take4": [
+  {
+   "term": "Anthropic",
+   "class": "A",
+   "heard_as": "Anthropic"
+  },
+  {
+   "term": "Anthropic",
+   "class": "A",
+   "heard_as": "Anthropic"
+  },
+  {
+   "term": "distillation",
+   "class": "A",
+   "heard_as": "distillation"
+  },
+  {
+   "term": "Anthropic",
+   "class": "A",
+   "heard_as": "Anthropic"
+  }
+ ],
+ "s10_door.take0": [
+  {
+   "term": "Anthropic",
+   "class": "A",
+   "heard_as": "Anthropic"
+  },
+  {
+   "term": "Anthropic",
+   "class": "A",
+   "heard_as": "Anthropic"
+  }
+ ],
+ "s12_watch.take4": [
+  {
+   "term": "H200",
+   "class": "A",
+   "heard_as": "H"
+  }
+ ],
+ "s13_outro.take0": [
+  {
+   "term": "H200",
+   "class": "A",
+   "heard_as": "H two hundred"
+  },
+  {
+   "term": "Ping",
+   "class": "A",
+   "heard_as": "Ping"
+  },
+  {
+   "term": "pong",
+   "class": "A",
+   "heard_as": "pong"
+  }
+ ]
+}

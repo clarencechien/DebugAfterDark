@@ -1,0 +1,68 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -22.0,
+  "gain_db": 2.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_recap",
+  "lufs_before": -22.2,
+  "gain_db": 2.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_duv",
+  "lufs_before": -23.2,
+  "gain_db": 3.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_hbm",
+  "lufs_before": -23.2,
+  "gain_db": 3.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_active",
+  "lufs_before": -21.6,
+  "gain_db": 1.6,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_moe",
+  "lufs_before": -21.2,
+  "gain_db": 1.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_turn",
+  "lufs_before": -22.2,
+  "gain_db": 2.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_price",
+  "lufs_before": -22.6,
+  "gain_db": 2.6,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_months",
+  "lufs_before": -22.0,
+  "gain_db": 2.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_signals",
+  "lufs_before": -21.7,
+  "gain_db": 1.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s10_outro",
+  "lufs_before": -21.4,
+  "gain_db": 1.4,
+  "lufs_after": -20.0
+ }
+]

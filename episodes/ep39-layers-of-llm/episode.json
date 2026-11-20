@@ -27,6 +27,23 @@
  "series": "分層讀法 2/2（上：EP38）",
  "report_version": "2026-11-13",
  "audio": {
-  "file": "ep39-layers-of-llm.mp3"
+  "file": "ep39-layers-of-llm.mp3",
+  "bytes": 8706809,
+  "sha256": "97fb4b073f6fec2da5d35d22d6d5b060a49ec7a958cf4c903e71b4501cf6044f",
+  "duration_s": 544.1,
+  "duration": "9:04",
+  "lufs": -16.8
+ },
+ "qa": {
+  "breeze_cer_mean": 0.032,
+  "gemini_cer_mean": 0.016,
+  "jitter_semitones": 0.207,
+  "gates": "錯誤率 3.2%、音高跳動 0.207 都通過；s06 語速 +12%（九次都偏快，英文與數字多）",
+  "retakes": "s03、s06 各補 3 次，s06 再補 3 次；s03「八層堆疊、三成五」兩邊都聽成「三層五」，改成百分比，「投片」改「晶圓」、「攤提」改「分攤成本」重錄；s08「DeepSeek V4 Pro」三次都被聽成 V3，改成「DeepSeek 的第四代模型 V4 Pro」重錄",
+  "manual_pick": "s06 take5；其餘照 steady_pick",
+  "both_wrong": "深紫外光／極紫外光的「光微影」，結尾 pong（這次念成中文的「碰」）",
+  "retention": "開頭承諾「最後給你一招」在 s09 收；s02、s03、s05、s06 段尾留小鉤子",
+  "twtone": "qa/twtone.md：沒有超過基準的項目",
+  "terms": "ASML、DUV、HBM、MoE、EUV、CAISI 判英文念法，第一次出現都配中文"
  }
 }

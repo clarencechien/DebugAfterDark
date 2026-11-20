@@ -1,0 +1,212 @@
+{
+ "limits": {
+  "neighbour_sim": 0.93,
+  "pitch_hz": 6.0,
+  "centroid_hz": 350.0,
+  "lufs_db": 1.0,
+  "seam_hz": 400.0,
+  "pace": 0.1
+ },
+ "segments": [
+  {
+   "id": "s00_open",
+   "start": "0:03",
+   "pitch_hz": 95.6,
+   "centroid_hz": 2419,
+   "lufs": -20.0,
+   "sim_prev": null,
+   "sim_next": 0.955,
+   "sim_episode": 0.989,
+   "seam_hz": null,
+   "chars_per_s": 3.73,
+   "issues": []
+  },
+  {
+   "id": "s01_road",
+   "start": "0:55",
+   "pitch_hz": 98.4,
+   "centroid_hz": 2445,
+   "lufs": -20.0,
+   "sim_prev": 0.955,
+   "sim_next": 0.935,
+   "sim_episode": 0.962,
+   "seam_hz": 382,
+   "chars_per_s": 4.02,
+   "issues": []
+  },
+  {
+   "id": "s02_customs",
+   "start": "1:26",
+   "pitch_hz": 95.2,
+   "centroid_hz": 2494,
+   "lufs": -20.0,
+   "sim_prev": 0.935,
+   "sim_next": 0.969,
+   "sim_episode": 0.985,
+   "seam_hz": -974,
+   "chars_per_s": 4.13,
+   "issues": [
+    "接縫亮度跳 -974 Hz"
+   ]
+  },
+  {
+   "id": "s03_address",
+   "start": "2:18",
+   "pitch_hz": 96.8,
+   "centroid_hz": 2320,
+   "lufs": -20.0,
+   "sim_prev": 0.969,
+   "sim_next": 0.971,
+   "sim_episode": 0.985,
+   "seam_hz": -43,
+   "chars_per_s": 4.04,
+   "issues": []
+  },
+  {
+   "id": "s04_revenue",
+   "start": "2:58",
+   "pitch_hz": 98.8,
+   "centroid_hz": 2365,
+   "lufs": -20.0,
+   "sim_prev": 0.971,
+   "sim_next": 0.972,
+   "sim_episode": 0.988,
+   "seam_hz": -540,
+   "chars_per_s": 4.37,
+   "issues": [
+    "接縫亮度跳 -540 Hz"
+   ]
+  },
+  {
+   "id": "s05_rent",
+   "start": "3:47",
+   "pitch_hz": 94.1,
+   "centroid_hz": 2241,
+   "lufs": -20.0,
+   "sim_prev": 0.972,
+   "sim_next": 0.964,
+   "sim_episode": 0.988,
+   "seam_hz": -13,
+   "chars_per_s": 3.93,
+   "issues": []
+  },
+  {
+   "id": "s06_count",
+   "start": "4:43",
+   "pitch_hz": 100.8,
+   "centroid_hz": 2490,
+   "lufs": -20.0,
+   "sim_prev": 0.964,
+   "sim_next": 0.963,
+   "sim_episode": 0.981,
+   "seam_hz": 41,
+   "chars_per_s": 3.64,
+   "issues": [
+    "語速偏 -11%"
+   ]
+  },
+  {
+   "id": "s07_rule",
+   "start": "5:31",
+   "pitch_hz": 93.8,
+   "centroid_hz": 2293,
+   "lufs": -20.0,
+   "sim_prev": 0.963,
+   "sim_next": 0.979,
+   "sim_episode": 0.991,
+   "seam_hz": 580,
+   "chars_per_s": 3.7,
+   "issues": [
+    "接縫亮度跳 +580 Hz"
+   ]
+  },
+  {
+   "id": "s08_seller",
+   "start": "6:28",
+   "pitch_hz": 96.4,
+   "centroid_hz": 2315,
+   "lufs": -20.0,
+   "sim_prev": 0.979,
+   "sim_next": 0.971,
+   "sim_episode": 0.988,
+   "seam_hz": 757,
+   "chars_per_s": 4.1,
+   "issues": [
+    "接縫亮度跳 +757 Hz"
+   ]
+  },
+  {
+   "id": "s09_model",
+   "start": "7:24",
+   "pitch_hz": 90.2,
+   "centroid_hz": 2526,
+   "lufs": -20.0,
+   "sim_prev": 0.971,
+   "sim_next": 0.961,
+   "sim_episode": 0.984,
+   "seam_hz": -574,
+   "chars_per_s": 4.47,
+   "issues": [
+    "接縫亮度跳 -574 Hz"
+   ]
+  },
+  {
+   "id": "s10_door",
+   "start": "8:20",
+   "pitch_hz": 99.2,
+   "centroid_hz": 2642,
+   "lufs": -20.0,
+   "sim_prev": 0.961,
+   "sim_next": 0.951,
+   "sim_episode": 0.979,
+   "seam_hz": 339,
+   "chars_per_s": 4.23,
+   "issues": []
+  },
+  {
+   "id": "s11_answer",
+   "start": "9:09",
+   "pitch_hz": 94.1,
+   "centroid_hz": 2534,
+   "lufs": -20.0,
+   "sim_prev": 0.951,
+   "sim_next": 0.955,
+   "sim_episode": 0.984,
+   "seam_hz": -975,
+   "chars_per_s": 3.81,
+   "issues": [
+    "接縫亮度跳 -975 Hz"
+   ]
+  },
+  {
+   "id": "s12_watch",
+   "start": "10:02",
+   "pitch_hz": 95.6,
+   "centroid_hz": 2088,
+   "lufs": -20.0,
+   "sim_prev": 0.955,
+   "sim_next": 0.936,
+   "sim_episode": 0.971,
+   "seam_hz": -1296,
+   "chars_per_s": 4.27,
+   "issues": [
+    "接縫亮度跳 -1296 Hz"
+   ]
+  },
+  {
+   "id": "s13_outro",
+   "start": "10:21",
+   "pitch_hz": 89.9,
+   "centroid_hz": 2475,
+   "lufs": -20.0,
+   "sim_prev": 0.936,
+   "sim_next": null,
+   "sim_episode": 0.977,
+   "seam_hz": -1409,
+   "chars_per_s": 4.21,
+   "issues": [
+    "接縫亮度跳 -1409 Hz"
+   ]
+  }
+ ]
+}

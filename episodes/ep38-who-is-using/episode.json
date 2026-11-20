@@ -27,6 +27,23 @@
  "series": "分層讀法 1/2",
  "report_version": "2026-11-19",
  "audio": {
-  "file": "ep38-who-is-using.mp3"
+  "file": "ep38-who-is-using.mp3",
+  "bytes": 10803291,
+  "sha256": "7d1468a3b004ab738a79e5df5f49fd0284a3c18bda95827bda2ffee2e0d8b9b0",
+  "duration_s": 675.2,
+  "duration": "11:15",
+  "lufs": -16.8
+ },
+ "qa": {
+  "breeze_cer_mean": 0.029,
+  "gemini_cer_mean": 0.017,
+  "jitter_semitones": 0.215,
+  "gates": "錯誤率 2.9%、音高跳動 0.215 都通過；s06 語速 -11%（take0，錯誤率最低）",
+  "retakes": "s06、s07、s08、s09、s12 各補 3 次（抖動）",
+  "manual_pick": "s06 take0（steady_pick 留的 take4 音高 +7.0）、s08 take5（抖動）；其餘照 steady_pick",
+  "both_wrong": "和／跟、格／個、項／樣、回／會，都是一個字",
+  "retention": "照 docs/hooks.md 的留存寫法：開頭丟出「六成以上在境外」到 s11 才收；s02、s03、s06、s08 段尾留小鉤子",
+  "twtone": "qa/twtone.md：沒有超過基準的項目",
+  "terms": "技術名詞第一次英文加中文；H200 念「H 兩百」；Anthropic 那兩段只排事件"
  }
 }
