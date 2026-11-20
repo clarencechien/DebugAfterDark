@@ -45,7 +45,7 @@
 | [EP37](episodes/ep37-nameless-made-famous/) | 《黑白大廚》全球第一，做節目的公司卻重整了（韓劇的中間層 2/2，上：EP36） | 定稿 |
 
 - 一集怎麼做：[`docs/recipe.md`](docs/recipe.md)
-- 選題對照：[`docs/report-candidates.md`](docs/report-candidates.md)（imitator 2026 年的報告，標了已做、推薦、可做、不做）
+- 選題與待製作清單：[`docs/report-candidates.md`](docs/report-candidates.md)（製作中的集數做到哪一步；imitator 2026 年的報告，標了已做、推薦、可做、不做）
 - 一集要多久：從定稿的草稿到 mp3 約 9 分鐘，以前約 50 分鐘（2026-11-07，EP11 第一次照新做法跑）。
   - 改寫的候選、語音的 30 次生成都同時送出，網路斷線各自重試。
   - 挑選用的 Breeze-ASR-25 改在 Modal 的 L4 GPU 跑（`--asr breeze-modal`，`tools/modal_breeze.py`）。EP10 用 GPU 重挑，10 段選中的跟 CPU 完全一樣。Modal 失敗會退回本機 CPU。
