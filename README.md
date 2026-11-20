@@ -41,6 +41,8 @@
 | [EP33](episodes/ep33-one-line-bill/) | 一句話做一個遊戲，帳單五百五十美元（Slotbound 案卷 2/2，上：EP32） | 定稿；錯誤率 3.8%（Saltline、Fable 的拼法） |
 | [EP34](episodes/ep34-winners-win/) | NVIDIA 四年漲十倍，今年卻輸給大盤（分散筆記 1/2） | 定稿 |
 | [EP35](episodes/ep35-not-extra-money/) | 存股變飆股：0056 今年漲六成，股息是多出來的錢嗎？（分散筆記 2/2，上：EP34） | 定稿 |
+| [EP36](episodes/ep36-credit-line/) | 韓劇最紅的這一年，為什麼要政府拿一兆韓圜救命？（韓劇的中間層 1/2） | 定稿 |
+| [EP37](episodes/ep37-nameless-made-famous/) | 《黑白大廚》全球第一，做節目的公司卻重整了（韓劇的中間層 2/2，上：EP36） | 定稿 |
 
 - 一集怎麼做：[`docs/recipe.md`](docs/recipe.md)
 - 選題對照：[`docs/report-candidates.md`](docs/report-candidates.md)（imitator 2026 年的報告，標了已做、推薦、可做、不做）
