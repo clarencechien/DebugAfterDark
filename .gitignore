@@ -4,3 +4,6 @@ __pycache__/
 show/art/*.png
 site/
 yt-report-data/
+episodes/*/video/out/
+episodes/*/video/*.mp4
+episodes/*/video/preview/
