@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 show/art/*.png
 site/
+yt-report-data/
