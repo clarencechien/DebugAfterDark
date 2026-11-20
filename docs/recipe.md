@@ -20,6 +20,7 @@
 | 6. 後製 | ffmpeg | `tools/make_podcast.py master` | `<ep>.mp3` |
 | 7. 驗收 | Breeze、Resemblyzer、Gemini | `stt_check.py`、`consistency_check.py`、`measures.py`、`gemini_check.py` | `qa/`，不合格回第 4 或第 3 步 |
 | 8. 交付 | — | `tools/package_episode.py` | `episode.json` 補上長度、bytes、sha256 |
+| 10. Short | agent 做、使用者手動上傳 | `tools/make_short.py` | `short.json`；成品在專案檔案 `shorts/<ep>/` |
 
 YouTube 影片版（第 9 步，規劃中）見 [`docs/video.md`](video.md)。
 
@@ -282,6 +283,16 @@ python3 tools/package_episode.py episodes/<ep>
 ```
 
 補上 `episode.json` 的長度、bytes、sha256、響度（RSS 的 `<enclosure length>` 要跟檔案完全一致）。開 PR 給人審：稿子（關卡 A）與成品（關卡 B）。
+
+## 10. Short（長片公開後）
+
+細節見 [`docs/video.md`](video.md)「Shorts」。
+
+1. `python3 tools/make_short.py episodes/<ep> --align` 拿 cold open 的逐字時間，寫 `episodes/<ep>/short.json`（範例 EP24–27）。字幕照 `script.json`；母帶念的跟稿子不一樣時照母帶寫，並請使用者確認（EP24「租一間」）。
+2. `--previews` 出預覽，給使用者看預覽總表；確認後出 mp4，再用 `--cover` 出封面。
+3. 在專案檔案 `shorts/<ep>/` 放 mp4、srt、封面、`<ep>-short.md` 上架清單：三個標題選項、說明欄（第一行放長片網址）、「變造或合成內容」勾是、「相關影片」選長片、排程時間。
+4. 使用者手動上傳，排程**每天一支、台北時間 20:00**（API 稽核通過前）。上傳後用 API 檢查標題、說明欄、`status.publishAt`（20:00 台北 = 12:00Z）、沒進 podcast 播放清單；相關影片、合成內容標示和封面 API 看不到，請使用者在工作室確認。
+5. 約 7 天後看成效，只看自然流量。
 
 ## 不要做的事
 
