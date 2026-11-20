@@ -1,0 +1,450 @@
+{
+ "_note": "EP36 畫面設定（docs/video.md）。anchor 是 script.json 裡的一句，畫面從那句開始。source 寫 report 會換成 report_label；數字是報告引用別人的，寫原始來源。改完重跑 tools/make_video.py。",
+ "report_label": "〈片尾那一行製作著作換了名字〉",
+ "background": "show/art/banner-v2-0-2400.jpg",
+ "figures_note": "2026-11-20 從 imitator.ai-apps.work/r/credit-line-changed 用 Playwright 擷取；報告只有一張表（rundown），放在第 6 段開頭和第 9 段開頭。",
+ "preview_times": [
+  0.0,
+  15.5,
+  52.9,
+  147.0,
+  259.0,
+  535.0
+ ],
+ "segments": [
+  {
+   "id": "s00_open",
+   "chapter": "韓劇最紅的一年，業界要 1 兆韓圜救命",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "",
+     "top": "韓劇全球最紅的一年",
+     "value": "要政府拿 1 兆韓圜救命",
+     "label": "韓國戲劇圈的提案",
+     "source": "韓國經濟新聞"
+    },
+    {
+     "type": "number",
+     "anchor": "可是一年開拍的戲",
+     "top": "一年開拍的韓劇",
+     "value": "2 年少了約 3 成",
+     "label": "看戲的人沒有變少",
+     "source": "韓國經濟新聞"
+    },
+    {
+     "type": "number",
+     "anchor": "這份報告說，答案藏在片尾那一行字",
+     "top": "答案在片尾那一行",
+     "value": "製作著作",
+     "label": "寫的是誰的名字？",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "而這一行字，三十年來換過好幾次",
+     "top": "這一行字",
+     "value": "30 年換過好幾次",
+     "label": "台灣每一次都坐在第一排",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s01_press",
+   "chapter": "12 個團體的記者會：一年開拍少了三成",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "十一月四號",
+     "top": "11 月 4 日・首爾記者會",
+     "value": "12 個團體",
+     "label": "製作公司協會、作家協會、製作人協會…",
+     "source": "韓國經濟新聞"
+    },
+    {
+     "type": "number",
+     "anchor": "一年開拍的韓劇，從二〇二二年",
+     "top": "一年開拍的韓劇",
+     "value": "2022 年 141 部",
+     "label": "兩年少了將近 3 成",
+     "source": "韓國經濟新聞"
+    },
+    {
+     "type": "number",
+     "anchor": "三家無線台排進節目表的戲劇",
+     "top": "無線三台排進節目表的戲劇",
+     "value": "91 → 32 部",
+     "label": "2012 年 → 2023 年",
+     "source": "韓國經濟新聞"
+    },
+    {
+     "type": "number",
+     "anchor": "所以他們開口要一兆韓圜",
+     "top": "業界的提案",
+     "value": "1 兆韓圜",
+     "label": "政府每年 2,000 億、連續 5 年，另一半由電視台和平台分攤",
+     "source": "韓國經濟新聞"
+    },
+    {
+     "type": "number",
+     "anchor": "一年可以多拍四十部",
+     "top": "目標",
+     "value": "一年多拍 40 部",
+     "label": "中低預算的戲",
+     "source": "韓國經濟新聞"
+    },
+    {
+     "type": "number",
+     "anchor": "這份報告提醒",
+     "top": "注意",
+     "value": "政府還沒核定任何一筆",
+     "label": "這是業界的提案",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s02_two",
+   "chapter": "看的人變多，開拍的變少",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "表面上看",
+     "top": "國際平台上架的韓國內容",
+     "value": "多了一半以上",
+     "label": "包含早就拍好的舊片",
+     "source": "Ampere Analysis"
+    },
+    {
+     "type": "number",
+     "anchor": "可是，新開拍的節目反而在變少",
+     "top": "新開拍的節目",
+     "value": "反而在變少",
+     "label": "海外最愛看的戲劇類，少得最多",
+     "source": "Ampere Analysis"
+    },
+    {
+     "type": "number",
+     "anchor": "出口明明年年增加",
+     "top": "影視留在國內的貿易順差",
+     "value": "少了 36%",
+     "label": "出口明明年年增加",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s03_top",
+   "chapter": "錢往最上面集中：主角片酬一集 3.5 億到 10 億韓圜",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "頂級演員一集的片酬",
+     "top": "頂級演員一集的片酬",
+     "value": "3.5 億 → 10 億韓圜",
+     "label": "2020 年 → 2024 年",
+     "source": "Financial News（韓）"
+    },
+    {
+     "type": "number",
+     "anchor": "連 Netflix 都嫌貴",
+     "top": "Netflix 主角片酬上限（一集）",
+     "value": "4 億 → 傳 3 億韓圜",
+     "label": "「傳出」，出自轉述報導",
+     "source": "Financial News（韓）"
+    },
+    {
+     "type": "number",
+     "anchor": "主角和配角的片酬大約差二十倍",
+     "top": "主角和配角的片酬",
+     "value": "差約 20 倍",
+     "label": "配角一集約 300 美元（媒體報導的行情）",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "二〇二三年劇組通報的欠薪案",
+     "top": "2023 年劇組通報的欠薪案",
+     "value": "往年平均的 2.6 倍",
+     "label": "",
+     "source": "Korea Times"
+    },
+    {
+     "type": "number",
+     "anchor": "這一層，就是這份報告說的中間層",
+     "top": "消失的是",
+     "value": "中間層",
+     "label": "中低預算的戲、配角、助理編劇、劇組",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s04_contract",
+   "chapter": "片尾那一行：從電視台換成平台",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "其實以前寫電視台",
+     "top": "片尾那一行「製作著作」",
+     "value": "電視台 → 串流平台",
+     "label": "",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "後來 Netflix 進來",
+     "top": "Netflix 的合約",
+     "value": "平台出全部製作費",
+     "label": "製作公司拿固定利潤，版權歸平台",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "像《魷魚遊戲》",
+     "top": "《魷魚遊戲》估計創造",
+     "value": "超過 1 兆韓圜",
+     "label": "製作公司拿到的是一筆不多的管理費",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "而且去年上半年",
+     "top": "國際平台的韓國委製（去年上半年）",
+     "value": "Netflix 一家占 88%",
+     "label": "",
+     "source": "Ampere Analysis"
+    }
+   ]
+  },
+  {
+   "id": "s05_japan",
+   "chapter": "日劇：《東京愛情故事》與留在日本的版權",
+   "items": [
+    {
+     "type": "figure",
+     "anchor": "往回看三十年",
+     "image": "visuals/fig01.png",
+     "caption": "三十年，東亞的中心換過三次",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "一九九一年",
+     "top": "1991 年・衛視中文台",
+     "value": "《東京愛情故事》",
+     "label": "台灣第一部日本偶像劇",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "日本的電視市場大約是韓國的十倍",
+     "top": "日本的電視市場約是韓國的 10 倍",
+     "value": "出口額只有約 1/3",
+     "label": "",
+     "source": "日本總務省"
+    }
+   ]
+  },
+  {
+   "id": "s06_taiwan",
+   "chapter": "台灣偶像劇：《流星花園》",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "二〇〇一年，《流星花園》",
+     "top": "2001 年《流星花園》",
+     "value": "平均收視 6.99",
+     "label": "頭 5 年賣到 16 個國家和地區",
+     "source": "中央社"
+    },
+    {
+     "type": "number",
+     "anchor": "它的原作是日本漫畫",
+     "top": "原作",
+     "value": "日本漫畫《花樣男子》",
+     "label": "版權在別人手上的故事",
+     "source": "中央社"
+    },
+    {
+     "type": "number",
+     "anchor": "二〇〇二年，中國官方下令停播",
+     "top": "2002 年",
+     "value": "中國下令停播",
+     "label": "才播到第 6 集",
+     "source": "中央社"
+    },
+    {
+     "type": "number",
+     "anchor": "台灣自己的市場則被切碎",
+     "top": "台灣的有線電視",
+     "value": "每月不到 600 元看 100 多台",
+     "label": "廣告越分散，製作費越低",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s07_korea",
+   "chapter": "韓流：《大長今》與金融風暴後的開放",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "你知道韓流這兩個字",
+     "top": "「韓流」這兩個字",
+     "value": "台灣媒體造出來的",
+     "label": "",
+     "source": "政大研究報告"
+    },
+    {
+     "type": "number",
+     "anchor": "像《大長今》一集的製作費",
+     "top": "《大長今》一集的製作費",
+     "value": "當時台劇的 4 到 5 倍",
+     "label": "",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "二〇〇四年它在台灣",
+     "top": "2004 年・台灣",
+     "value": "收視 5.3%",
+     "label": "韓劇最高收視",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "像《蒙面歌王》",
+     "top": "《蒙面歌王》的節目模式",
+     "value": "賣到 50 多個國家",
+     "label": "版權在韓國的電視台手上",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s08_rule",
+   "chapter": "規則：版權跟著出錢的人走",
+   "items": [
+    {
+     "type": "figure",
+     "anchor": "把三十年排在一起",
+     "image": "visuals/fig01.png",
+     "caption": "誰的通路大，版權就落到誰手上",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "《非常律師禹英禑》",
+     "top": "《非常律師禹英禑》",
+     "value": "版權留在自己手上",
+     "label": "拒絕 Netflix 原創，只賣播映權",
+     "source": "首爾新聞"
+    },
+    {
+     "type": "number",
+     "anchor": "這三個例子說的是同一件事",
+     "top": "三個例子，同一件事",
+     "value": "版權跟著出錢的人走",
+     "label": "",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "要改變它",
+     "top": "要改變它，有兩條路",
+     "value": "改法規，或國內出得起錢",
+     "label": "那 1 兆韓圜走的是第二條",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s09_taiwan_now",
+   "chapter": "台灣現在站在哪一格",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "其實 Netflix 在台灣的市佔率",
+     "top": "Netflix 在台灣的市佔率",
+     "value": "超過 83%",
+     "label": "",
+     "source": "科技新報（轉載今周刊）"
+    },
+    {
+     "type": "number",
+     "anchor": "但問題是",
+     "top": "台劇一集的製作費",
+     "value": "動不動就破 1,000 萬",
+     "label": "國內的錢撐不住，開拍前就找國際平台",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "平台願意出錢",
+     "top": "平台出錢的代價",
+     "value": "全球版權被買走",
+     "label": "製作人：「包著糖衣的毒藥」",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "那台灣有把版權留下來的例子嗎",
+     "top": "《想見你》",
+     "value": "賣到 100 多個地方",
+     "label": "韓國還買了翻拍權",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "所以這份報告說，學韓國",
+     "top": "學韓國，要問學哪一段",
+     "value": "握著版權賣到全世界",
+     "label": "連韓國自己都在想怎麼拿回來",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s10_outro",
+   "chapter": "今晚的 breakpoint",
+   "items": [
+    {
+     "type": "title",
+     "anchor": "第一，韓劇最紅的時候",
+     "top": "breakpoint 1",
+     "value": "缺工作的是中間層",
+     "label": "預算先被主角拿走"
+    },
+    {
+     "type": "title",
+     "anchor": "第二，片尾那一行製作著作",
+     "top": "breakpoint 2",
+     "value": "版權跟著出錢的人走",
+     "label": "通路大的那一方拿走版權"
+    },
+    {
+     "type": "title",
+     "anchor": "第三，台灣已經在走",
+     "top": "breakpoint 3",
+     "value": "要有人出得起錢，或改合約",
+     "label": "台灣已經在走替平台拍戲的那一段"
+    },
+    {
+     "type": "title",
+     "anchor": "原文連結在節目資訊欄",
+     "top": "原文和 56 筆來源",
+     "value": "都在說明欄",
+     "label": "我是 Ping，有收到的話，回我一個 pong"
+    }
+   ]
+  }
+ ],
+ "end_card": [
+  "深夜 Debug",
+  "下一集：EP37",
+  "《黑白大廚》全球第一，做節目的公司卻聲請重整",
+  "訂閱頻道，每集十分鐘"
+ ]
+}

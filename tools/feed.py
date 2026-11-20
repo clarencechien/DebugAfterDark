@@ -2,8 +2,9 @@
 
   python3 tools/feed.py [--out site/feed.xml]
 
-Only episodes with "status": "final" and a "published" timestamp go in, newest first. The output is deterministic:
-the same inputs give a byte-identical feed (lastBuildDate is the newest pubDate, not the build time).
+Only episodes with "status": "final" and a "published" timestamp that has already passed go in, newest first. An episode
+whose "published" is still in the future is left out until a later build (the daily scheduled run in pages.yml), so a
+merged episode can wait for its release time. The output is deterministic: the same inputs at the same time give a byte-identical feed (lastBuildDate is the newest pubDate, not the build time).
 Audio URLs carry the first 8 hex digits of the file's sha256 (<id>-<sha8>.mp3), so a re-cut episode gets a new URL and
 podcast apps never keep a stale cached copy; the episode guid never changes (PIPELINE.md section 5.2).
 show.json "enclosure_prefix" (optional) is prepended to every enclosure URL for download analytics (SoundOn Prefix).
@@ -26,12 +27,25 @@ def load(p):
     return json.loads(Path(p).read_text(encoding="utf-8"))
 
 
-def final_episodes():
+def scheduled_episodes(now=None):
+    """Final episodes whose "published" is still in the future: merged, waiting for a later build."""
+    now = now or datetime.now().astimezone()
+    return [e for e in _final(now) if datetime.fromisoformat(e["published"]) > now]
+
+
+def _final(now):
     eps = []
     for p in sorted((ROOT / "episodes").glob("*/episode.json")):
         e = load(p)
         if e.get("status") == "final" and e.get("published"):
             e["_dir"] = p.parent; eps.append(e)
+    return eps
+
+
+def final_episodes(now=None):
+    """Final episodes already released (published <= now), newest first."""
+    now = now or datetime.now().astimezone()
+    eps = [e for e in _final(now) if datetime.fromisoformat(e["published"]) <= now]
     return sorted(eps, key=lambda e: e["published"], reverse=True)
 
 
@@ -130,10 +144,7 @@ def warnings(show, eps):
         w.append("show.owner_email is empty: no itunes:owner (Spotify sends its claim code there) and no podcast:locked")
     if not eps:
         w.append("no final episodes with a published timestamp")
-    now = datetime.now().astimezone()
     for e in eps:
-        if datetime.fromisoformat(e["published"]) > now:   # apps treat future pubDates as scheduled and may hide the episode
-            w.append(f"{e['id']}: published {e['published']} is in the future")
         desc = e.get("description", "")
         need = ["回 Ping 一個 pong", "AI 語音合成"] + ([] if e.get("type") == "trailer" else ["今晚的 breakpoint", "原文："])
         for n in need:   # show-notes template: episodes/ep00-intro/script.md (EP01's POC-era notes lacked these, 2026-11-04)
@@ -153,3 +164,5 @@ if __name__ == "__main__":
     for m in warnings(show, eps):
         print("warning:", m, file=sys.stderr)
     print(f"{a.out}: {len(eps)} episodes")
+    for e in scheduled_episodes():
+        print(f"scheduled (not in the feed yet): {e['id']} at {e['published']}")

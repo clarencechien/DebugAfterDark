@@ -1,0 +1,109 @@
+{
+ "_說明": "tools/yt_report.py 讀這個檔，在報表最上面畫「實驗總覽」。共同規則：一次只改一個變數；只看自然流量（排除廣告）。改了 YouTube 上的東西就在這裡填 change_date，狀態跟下次檢查日也在這裡更新。",
+ "experiments": [
+  {
+   "id": "ep07-ab",
+   "kind": "ab_single",
+   "name": "EP07 標題＋縮圖 A/B",
+   "tests": "Studio「測試與比較」三組標題與縮圖（A/B/C）",
+   "baseline": "換之前自然點閱率 1.23%（1,627 曝光）",
+   "ep": 7,
+   "baseline_ctr": 1.23,
+   "change_date": "2026-11-20",
+   "status": "running",
+   "next_review": "2026-12-04"
+  },
+  {
+   "id": "title-rewrite-batch1",
+   "kind": "title_batch",
+   "name": "舊集改標題（第 1 批，5 集）",
+   "tests": "照 hooks.md 改寫舊集標題與說明欄，改 episode.json 經 RSS 同步到 YouTube（PR #6，2026-11-20 14:53 合併）；一批 5 集",
+   "baseline": "每集改之前的曝光與點閱率",
+   "eps": [
+    15,
+    6,
+    9,
+    8,
+    13
+   ],
+   "change_date": "2026-11-20",
+   "status": "running",
+   "next_review": "2026-12-04"
+  },
+  {
+   "id": "title-rewrite-batch2",
+   "kind": "title_batch",
+   "name": "舊集改標題（第 2 批，5 集）",
+   "tests": "照 hooks.md 改寫舊集標題與說明欄，改 episode.json 經 RSS 同步到 YouTube；一批 5 集",
+   "baseline": "每集改之前的曝光與點閱率",
+   "eps": [
+    14,
+    18,
+    16,
+    5,
+    4
+   ],
+   "change_date": "2026-11-20",
+   "status": "running",
+   "next_review": "2026-12-04"
+  },
+  {
+   "id": "shorts-ep37",
+   "kind": "shorts",
+   "name": "Shorts：EP37 第一支",
+   "tests": "從 cold open 剪的 Short 能不能帶人去看長片",
+   "baseline": "第一支，沒有基準；先看絕對數字",
+   "video": "K6RKggrOqVo",
+   "long_ep": 37,
+   "change_date": "2026-11-20",
+   "status": "running",
+   "next_review": "2026-11-27",
+   "studio_only": "只在 Studio 看得到（觀看 vs 滑走）"
+  },
+  {
+   "id": "video-version-ep36",
+   "kind": "video_version",
+   "name": "影片版（docs/video.md）",
+   "tests": "EP36 做成有畫面的影片版直接上傳；RSS 同步的 EP36 改成私人",
+   "baseline": "EP28–EP39 的 RSS 版（不含 EP36），只看自然流量",
+   "ep": 36,
+   "baseline_eps": [
+    28,
+    39
+   ],
+   "change_date": "2026-11-20",
+   "status": "running",
+   "next_review": null,
+   "video": null,
+   "exclude": [
+    36
+   ],
+   "_video": "影片版的 videoId，上傳後填；沒填就用標題或說明欄對到 EP36 的公開影片"
+  },
+  {
+   "id": "release-time",
+   "kind": "release_time",
+   "name": "上架時間：早上 8 點 vs 晚上 8 點",
+   "tests": "每天上架的時間（台北），其他照舊",
+   "baseline": "兩組各跑一週，比每集上架後前 3 天的自然觀看（中位數）；Studio 可另看「前 24 小時」",
+   "arms": [
+    {
+     "label": "早上 8:00",
+     "hour": 8,
+     "from": "2026-11-21",
+     "to": "2026-11-27"
+    },
+    {
+     "label": "晚上 20:00",
+     "hour": 20,
+     "from": "2026-11-28",
+     "to": "2026-12-04"
+    }
+   ],
+   "change_date": "2026-11-21",
+   "status": "running",
+   "next_review": "2026-12-10",
+   "note": "Analytics 只有日資料、晚 2–3 天，所以用前 3 天；題材差異會干擾，每組至少 5 集才判讀"
+  }
+ ]
+}

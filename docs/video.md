@@ -86,6 +86,7 @@ EP38 起已經有 `title`、`thumbnail`、`synthetic_content`（`recipe.md` 第 
 
 - 段落起點：照上面的母帶順序算，固定開場的長度從 `ident.flac` 讀；再用 mp3 的 silencedetect 驗證，每個交界誤差 ≤ 0.15 秒，對不上就停下來，不要硬套。
 - `levels.json` 只有響度沒有長度，正規化後的段落 wav 在 `out/`（不進 git），所以長度要從 mp3 量，或在第 6 步把各段長度寫進 `qa/levels.json`（建議順手加上）。
+- 已實作（`tools/make_video.py`，2026-11-20，EP36 第一集）：雲端沒有 `out/` 的段落 wav，所以固定開場用 `ident.flac` 對 mp3 做互相關（精確到取樣），之後每段用選中 take 的句子起點去對 mp3 的語音起點，再夾進段落前 0.6 秒的靜音裡。各段起點和檢查結果寫在 `render_log.json` 的 `boundaries`。
 - 句子的時間戳：EP10 以後在 `qa/select_log.json` 選中那次 take 的 `segments`；EP01 到 EP09 沒有，改用 `qa/stt_check.json` 的 `whisper_segments`。
   兩者都只有每句的**起點**（`[start, text]`），終點用下一句的起點；段落最後一句的終點用段落終點。
 
@@ -154,7 +155,7 @@ EP38 起已經有 `title`、`thumbnail`、`synthetic_content`（`recipe.md` 第 
 
 ## 9d：GitHub Action 上傳
 
-`.github/workflows/youtube.yml`（還沒寫），觸發：push 到預設分支且 `episodes/*/episode.json` 有變動，或手動。
+上傳本身由 `tools/yt_upload.py` 做（標準函式庫、可續傳、重試；`--dry-run` 看會送出什麼，`--check` 確認憑證綁的頻道）。`.github/workflows/youtube.yml`（還沒寫）呼叫它，觸發：push 到預設分支且 `episodes/*/episode.json` 有變動，或手動。
 
 1. 找出有 `youtube.publish_at`、但不在 `youtube/uploads.json` 裡的集數。
 2. 從 Release `video-<ep>` 下載 mp4，比對 sha256。
@@ -171,7 +172,7 @@ EP38 起已經有 `title`、`thumbnail`、`synthetic_content`（`recipe.md` 第 
 
 ### 要先處理的事（使用者，一次性）
 
-- **API 稽核**：新建的 Google Cloud 專案沒有通過稽核前，用 API 上傳的影片會被**鎖成私人**。稽核要幾天到幾週，**最先開始**。
+- **API 稽核**：網站的 `/privacy/`、`/terms/` 與頁尾的 YouTube 標示是稽核要的（文字在 `tools/legal_pages.py`，工具的用途或存的資料變了要一起改）。新建的 Google Cloud 專案沒有通過稽核前，用 API 上傳的影片會被**鎖成私人**。稽核要幾天到幾週，**最先開始**。
 - **額度**：預設每天 10,000 單位。上傳的單位數以官方的 quota 計算器為準（以往一支約 1,600），加上縮圖、字幕、播放清單，保守估一天 5 到 6 支。每天長片一支加 Shorts 一支沒問題，庫存的 Shorts 不要一次全傳。
 - **測試與比較**（縮圖 A/B）沒有 API，只能在工作室手動設定。
 

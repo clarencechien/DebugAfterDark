@@ -4,9 +4,10 @@
 # 網站由 tools/build_site.py 組出來（只用 Python 標準函式庫，runner 內建 Python，不 pip install），
 # 它會先核對每個 mp3 跟 episode.json 的 bytes／sha256 一致，不一致就失敗、不部署。
 #
-# 觸發：push 到 main（episodes/、show/、組站工具有變動時），或在 Actions 頁手動 Run workflow。
-# 目前 repo 只有 claude/... 一個分支（也是預設分支），所以現在先用手動觸發；有了 main 之後，
-# merge 一集的 PR 就是上架。
+# 觸發：push 到 main（episodes/、show/、組站工具有變動時）、每天定時一次，或在 Actions 頁手動 Run workflow。
+# 排程上架：episode.json 的 "published" 還沒到的集數，merge 之後也不會出現（tools/feed.py 的 final_episodes），
+# 等到 "published" 之後的下一次建置才上架。所以一集可以提早 merge，"published" 填上架時間，
+# 每天的定時建置會把它放出來。cron 是 UTC；GitHub 的排程可能晚幾分鐘到半小時，"published" 要早於 cron 的時間。
 #
 # 安全：
 # - 不用 pull_request_target，fork 來的 PR 碰不到部署權限。
@@ -22,7 +23,13 @@ on:
       - 'show/**'
       - 'tools/feed.py'
       - 'tools/build_site.py'
+      - 'tools/legal_pages.py'
       - '.github/workflows/pages.yml'
+  schedule:
+    # 每天兩次：08:07 和 20:07（台北）。上架時間在實驗中（早上或晚上），選哪個只要把 "published" 填在
+    # 那次之前（例如 08:00 或 20:00），不用改這裡。
+    - cron: '7 0 * * *'    # 08:07 台北
+    - cron: '7 12 * * *'   # 20:07 台北
   workflow_dispatch:
 
 permissions:
