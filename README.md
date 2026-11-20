@@ -47,6 +47,7 @@
 | [EP39](episodes/ep39-layers-of-llm/) | 中國 AI 追上美國了嗎？差十五年，也只差四個月（分層讀法 2/2，上：EP38） | 定稿 |
 
 - 一集怎麼做：[`docs/recipe.md`](docs/recipe.md)
+- 聲音的保存、監測與停用時怎麼重現：[`docs/voice.md`](docs/voice.md)
 - 選題與待製作清單：[`docs/report-candidates.md`](docs/report-candidates.md)（製作中的集數做到哪一步；imitator 2026 年的報告，標了已做、推薦、可做、不做）
 - 一集要多久：從定稿的草稿到 mp3 約 9 分鐘，以前約 50 分鐘（2026-11-07，EP11 第一次照新做法跑）。
   - 改寫的候選、語音的 30 次生成都同時送出，網路斷線各自重試。

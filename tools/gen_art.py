@@ -44,7 +44,7 @@ def generate(prompt, aspect, name, size="4K"):
     img = Image.open(io.BytesIO(part.inline_data.data)).convert("RGB")
     ART.mkdir(parents=True, exist_ok=True)
     raw = ART / f"{name}.png"; img.save(raw)
-    meta = {"model": MODEL, "aspect_ratio": aspect, "image_size": size, "prompt": prompt,
+    meta = {"model": MODEL, "model_version": r.model_version, "aspect_ratio": aspect, "image_size": size, "prompt": prompt,
             "prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest(), "pixels": img.size}
     (ART / f"{name}.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
     return img, raw
