@@ -1,0 +1,129 @@
+{
+ "segment": "s03_address",
+ "position": "第 4 段，共 14 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b1b456b65a595de1595899fbb0f97bb23c0e45b38e7318b0c7a5a19e3cb6624e",
+ "previous_context": "那中國公司的算力要從哪裡來？答案根本不在中國。",
+ "original": {
+  "text": "要看懂境外這件事，先看這份報告借來的一張單據：海運提單。提單左上角並排三格：貨送到哪裡、帳單開給誰、到貨通知誰。換成晶片，就是貨到哪、票開給誰、誰在用，三格可以填三個不同的地方。最好的例子是輝達自己。二〇二五年七月那一季，新加坡佔輝達總營收的百分之二十二。前一季的財報附註說得很直接：客戶在新加坡集中開票，貨幾乎都送到別的地方。後來輝達換了算法，中國的營收數字就變了。",
+  "lint": {
+   "chars": 184,
+   "precise_numbers": [
+    "百分之二十二"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 25.3,
+   "max_sentence_len": 35,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實要看懂這件事，這份報告用了一個比喻，海運提單。\n\n單子上面有三個地址。貨送去哪、帳單開給誰、還有誰在用。\n\n你猜這三格會寫一樣嗎？答案是可以填三個不同的地方喔。\n\n最好的例子就是輝達。二〇二五年七月那一季，新加坡就佔了總營收的百分之二十二。\n\n財報附註講得很白，客戶只是集中在新加坡開票，貨其實幾乎都送到別的地方。<short pause>\n\n然後輝達後來自己換了一次算法，中國的營收數字就完全變了。",
+   "lint": {
+    "chars": 179,
+    "precise_numbers": [
+     "百分之二十二"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 18.9,
+    "max_sentence_len": 34,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "要看懂境外這件事，\n這份報告借了一張海運提單。\n上面有三個地址。\n就是貨送到哪、票開給誰、還有誰在用。\n換成晶片，這三個地方可以完全不同喔。<short pause>\n最經典的例子就是輝達。\n二〇二五年七月那一季，\n新加坡佔了輝達總營收的百分之二十二。\n為什麼會這樣？\n財報附註其實寫得很白，\n客戶在新加坡集中開票，\n貨其實都送到別的地方去了啦。\n所以後來輝達換了算法，\n中國的營收數字立刻就變了。\n那換完之後，到底差了多少？",
+   "lint": {
+    "chars": 186,
+    "precise_numbers": [
+     "百分之二十二"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 35,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "其實要搞懂這件事，看海運提單最清楚。上面有三個地址欄位，也就是貨送到哪、帳單開給誰，還有最後誰在用。<short pause>同一批晶片，這三格可以填完全不同的地方喔。最經典的例子就是輝達。二〇二五年七月那一季，新加坡居然佔了總營收的百分之二十二。很誇張對吧？其實客戶只是在新加坡集中開票，貨幾乎都送到別的地方了啦。所以輝達後來換了一次算法。換了之後呢？中國的營收數字完全變了。",
+   "lint": {
+    "chars": 176,
+    "precise_numbers": [
+     "百分之二十二"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 31,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "所以輝達後來換了一次算法。",
+   "to": "後來輝達換了一次算法。",
+   "reason": "原文沒說因果"
+  },
+  {
+   "from": "換了一次算法",
+   "to": "換了一次計算方式",
+   "reason": "「算法」容易聽成演算法"
+  },
+  {
+   "from": "地址欄位",
+   "to": "地址的欄位",
+   "reason": "用詞"
+  }
+ ]
+}

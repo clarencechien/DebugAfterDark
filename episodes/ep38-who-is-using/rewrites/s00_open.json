@@ -1,0 +1,126 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 14 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "82618a3c49616d7326924f24ffac8c1a6207506b5abb5c5a7f2e3b33681a4ef4",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "六十萬顆輝達的 H200 晶片，現在停在香港。美國已經放行了，不讓它們進去的，是中國。在中國內地，一台裝八張 H200 的伺服器報價超過六百萬人民幣，大約是一年前的三倍。照理說中國的 AI 公司應該很缺算力，可是它們的模型還是一個接一個發表。算力從哪裡來？網路上流傳一個答案：中國相關的輝達晶片，六成以上在境外。這個數字對不對，這集最後回來看。這份報告查下去，發現同一顆晶片，可以有三個地址：貨到哪、票開給誰、誰在用。",
+  "lint": {
+   "chars": 203,
+   "precise_numbers": [
+    "六十萬",
+    "200",
+    "200",
+    "六百萬"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 24.4,
+   "max_sentence_len": 39,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "六十萬顆輝達的 H200 晶片，現在卡在香港。\n你以為又是美國在擋嗎？<short pause> 不是喔。\n美國早就放行了，真正不准進去的，是中國海關。\n在內地，一台八卡伺服器的報價，\n已經衝到好幾百萬人民幣，翻了整整三倍。\n奇怪的是，中國的模型還是一個接一個發表。\n那算力到底是從哪裡來的？\n網路上有人說，六成以上的晶片都在境外。\n這個說法到底對不對，我們後面再來看。\n這份報告查下去，發現同一顆晶片有三個地址。\n貨送到哪、發票開給誰，最後到底是誰在用？",
+   "lint": {
+    "chars": 202,
+    "precise_numbers": [
+     "六十萬",
+     "200",
+     "百萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.4,
+    "max_sentence_len": 33,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "約六十萬顆輝達的 H200 晶片，現在正卡在香港進不去啦。美國那邊早就放行了，真正卡關的，居然是中國海關。<short pause>當地裝這款晶片的伺服器，現在價格已經翻了好幾倍。照理說那裡的 AI 公司應該很缺算力，但為什麼新模型還是一個接一個出？算力到底是從哪裡來的？網路上有人傳說，大部分晶片其實都放在境外。這個說法到底對不對，我們後面再來驗算。<short pause>這份報告追下去才發現，同一顆晶片，竟然可以填出三個完全不同的地址喔：貨送到哪裡、發票開給誰，還有最後到底是誰在用。",
+   "lint": {
+    "chars": 216,
+    "precise_numbers": [
+     "六十萬",
+     "200"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 26.0,
+    "max_sentence_len": 56,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "約六十萬顆輝達的 H200 晶片，現在卡在香港。<short pause>美國其實早就放行了。真正不讓晶片進去的，是中國海關。現在內地一台伺服器的報價，已經翻了三倍。照理說當地的 AI 公司應該很缺算力，對吧？可是他們的新模型還是一個接一個發表。那算力到底從哪裡來？網路上流傳一個說法，中國相關的輝達晶片，大半都在境外。這個說法到底準不準，我們這集最後回來看。其實這份報告查下去，同一顆晶片，竟然可以有三個地址喔。也就是貨送到哪、發票開給誰，還有最後到底是誰在用。",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [
+     "六十萬",
+     "200"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 18.5,
+    "max_sentence_len": 26,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "約六十萬顆輝達的 H200 晶片，現在卡在香港。<short pause>美國其實早就放行了。真正不讓晶片進去的，是中國海關。現在內地一台伺服器的報價，已經翻了三倍。照理說當地的 AI 公司應該很缺算力，對吧？可是他們的新模型還是一個接一個發表。那算力到底從哪裡來？網路上流傳一個說法，中國相關的輝達晶片，大半都在境外。這個說法到底準不準，我們這集最後回來看。其實這份報告查下去，同一顆晶片，竟然可以有三個地址喔。也就是貨送到哪、發票開給誰，還有最後到底是誰在用。",
+   "to": "六十萬顆輝達的 H200 晶片，現在卡在香港。<short pause>美國已經放行了，不讓它們進去的，是中國。在中國內地，一台裝八張 H200 的伺服器，報價超過六百萬人民幣，大約是一年前的三倍。照理說，中國的 AI 公司應該很缺算力，可是它們的新模型，還是一個接一個發表。那算力到底從哪裡來？網路上流傳一個說法：中國相關的輝達晶片，六成以上在境外。這個數字準不準，我們這集最後回來看。這份報告查下去，發現同一顆晶片，可以有三個地址：貨送到哪、票開給誰、最後是誰在用。",
+   "reason": "照草稿重寫：改寫把原文數字改模糊或加了原文沒有的因果、結論；「大半」改回六成以上，補八張卡、六百萬人民幣"
+  }
+ ]
+}

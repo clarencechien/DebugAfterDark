@@ -1,0 +1,131 @@
+{
+ "segment": "s05_moe",
+ "position": "第 6 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "7253d7dfe0661c79725638f86034a69c7d9e2dfd29a7150d2227ac3e1a877b43",
+ "previous_context": "所以 K3 根本不是反例，反而是證據。那既然模型能縮小，算力又是怎麼省的？",
+ "original": {
+  "text": "為什麼中國實驗室愛用混合專家？因為它把模型的容量，和每次要算的量拆開；算力被卡死的時候，這是用有限的算力，買到大模型容量的路。梁文鋒把帳算得很白：要訓練同等規模的模型，應該需要五萬張 GB300，或是華為的卡二十萬張，這還只是訓練。可是代價，是把成本推到記憶體上。這份報告說，這是從一個拿不到的瓶頸，搬到另一個也拿不到的瓶頸；K3 這個架構本身，就是制裁留下的指紋。那中國模型便宜，是真的嗎？",
+  "lint": {
+   "chars": 194,
+   "precise_numbers": [
+    "五萬",
+    "300",
+    "二十萬",
+    "3"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 31.3,
+   "max_sentence_len": 51,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "算力怎麼省？答案是 MoE 混合專家架構。\n其實 MoE 不是中國發明的。\n西方大廠早就公開發表過了。\n它的本質，就是把參數量跟每次計算拆開。\n在算力被卡死的時候，這是唯一的路。\n也就是用有限的算力，換到大模型容量。\n梁文鋒就算過這筆帳。<short pause>\n同等規模需要五萬張輝達的高階晶片。\n如果換成華為，更需要好幾十萬張。\n但天下沒有白吃的午餐喔。\n代價是全壓到 HBM 高頻寬記憶體上。\n這份報告說，這只是把瓶頸搬家而已嘛。\n從一個拿不到的瓶頸，\n搬到另一個同樣拿不到的瓶頸。\nK3 這個架構選擇，就是制裁留下的指紋啦。\n<short pause>\n那中國模型便宜，是真的嗎？",
+   "lint": {
+    "chars": 246,
+    "precise_numbers": [
+     "五萬",
+     "十萬",
+     "3"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 14.4,
+    "max_sentence_len": 23,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "這就要聊到 MoE 混合專家架構了。其實它不是中國發明的，但他們把它推到了極致。\n\n為什麼非得這樣做？因為它把模型容量跟運算量拆開。算力被卡死的時候，這是唯一能做出大模型的路。<short pause>梁文鋒就算得很明白，要訓練同等規模，華為晶片可能要用到二十萬張。\n\n但代價是什麼呢？重點來了，它把成本全推給 HBM 高頻寬記憶體。這份報告說得很傳神，這是從一個拿不到的瓶頸，搬到另一個也拿不到的瓶頸。<short pause>K3 這個架構本身，根本就是制裁留下的指紋啦。\n\n那中國模型這麼便宜，是真的嗎？",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [
+     "二十萬",
+     "3"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 34,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "答案就是 MoE 混合專家架構。\n它把模型容量，跟每次要算的量拆開來。\n算力被卡死的時候，只能用這招換空間。\n華為的晶片可能要二十萬張才能練出來。\n<short pause>\n但天下沒有白吃的午餐齁。\n算力省下來，代價全推給記憶體。\n也就是 HBM 高頻寬記憶體。\n這份報告說得很傳神耶。\n這是從拿不到的瓶頸，搬到另一個瓶頸嘛。\nK3 這個架構，就是制裁留下的指紋。\n<short pause>\n那大家都在傳的中國模型很便宜，是真的嗎？",
+   "lint": {
+    "chars": 175,
+    "precise_numbers": [
+     "二十萬",
+     "3"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "答案就是 MoE 混合專家架構。它把模型容量，跟每次要算的量拆開來。算力被卡死的時候，只能用這招換空間。華為的晶片可能要二十萬張才能練出來。<short pause>但天下沒有白吃的午餐齁。算力省下來，代價全推給記憶體。也就是 HBM 高頻寬記憶體。這份報告說得很傳神耶。這是從拿不到的瓶頸，搬到另一個瓶頸嘛。K3 這個架構，就是制裁留下的指紋。<short pause>那大家都在傳的中國模型很便宜，是真的嗎？",
+   "to": "為什麼要用混合專家？因為它把模型的容量，跟每次要算的量拆開；算力被卡死的時候，這是用有限的算力，買到大模型容量的路。梁文鋒把帳算得很白：要訓練同等規模的模型，應該需要五萬張輝達的 GB300，或是華為的卡二十萬張，這還只是訓練。<short pause>可是天下沒有白吃的午餐，算力省下來，成本推到了記憶體上。這份報告說，這是從一個拿不到的瓶頸，搬到另一個也拿不到的瓶頸；K3 這個架構，就是制裁留下的指紋。那中國模型很便宜，是真的嗎？",
+   "reason": "照草稿重寫：改寫把原文數字改模糊或加了原文沒有的因果、結論"
+  },
+  {
+   "from": "為什麼要用混合專家？因為它把模型的容量，跟每次要算的量拆開；算力被卡死的時候，這是用有限的算力，買到大模型容量的路。梁文鋒把帳算得很白：要訓練同等規模的模型，應該需要五萬張輝達的 GB300，或是華為的卡二十萬張，這還只是訓練。<short pause>可是天下沒有白吃的午餐，算力省下來，成本推到了記憶體上。這份報告說，這是從一個拿不到的瓶頸，搬到另一個也拿不到的瓶頸；K3 這個架構，就是制裁留下的指紋。那中國模型很便宜，是真的嗎？",
+   "to": "為什麼要用混合專家？因為它把模型的容量，跟每次要算的量拆開。算力被卡死的時候，這是用有限的算力，買到大模型容量的路。梁文鋒把帳算得很白：要訓練同等規模的模型，應該需要五萬張輝達的 GB300，或是華為的卡二十萬張，這還只是訓練。<short pause>可是天下沒有白吃的午餐，算力省下來，成本推到了記憶體上。這份報告說，這是從一個拿不到的瓶頸，搬到另一個也拿不到的瓶頸。K3 這個架構，就是制裁留下的指紋。那中國模型很便宜，是真的嗎？",
+   "reason": "分號太多，拆句"
+  }
+ ]
+}

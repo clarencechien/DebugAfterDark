@@ -1,0 +1,120 @@
+{
+ "segment": "s03_hbm",
+ "position": "第 4 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a3730c43628ff761b098b76a6c41a50966571d648360ca25ee41dde7caeddb68",
+ "previous_context": "良率爬坡是統計問題，不是努力問題。可是這份報告說，真正的瓶頸不在微影，在隔壁。",
+ "original": {
+  "text": "隔壁是記憶體。AI 晶片旁邊要貼一疊 HBM 高頻寬記憶體，這是這一輪真正的瓶頸，卻最少人談。研究機構的模型估計，長鑫分給 HBM 的投片，二〇二五年大約每月五千片，二〇二六年大約三萬片。良率呢？HBM3 八層堆疊，前段約三成五，後段約七成，乘起來只有兩成五左右。這份報告說，東西做得出來，但成本結構永遠吃虧：全球分工的價值，是做一次賣全世界來攤提；中國這條線，是做一次只賣自己。",
+  "lint": {
+   "chars": 184,
+   "precise_numbers": [
+    "五千",
+    "三萬",
+    "3"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 29.7,
+   "max_sentence_len": 57,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "隔壁其實就是記憶體啦。\n\n現在 AI 晶片旁邊，都要貼一疊記憶體，也就是 HBM 高頻寬記憶體。\n\n這是真正的瓶頸，卻很少人拿出來講。\n\n這份報告推算，長鑫分給它的產能很少。<short pause>\n\n那良率呢？\n\n八層堆疊算下來，待查的綜合良率大概只有兩成五。\n\n所以這份報告說，成本結構永遠會吃虧。\n\n全球分工是做一次，賣給全世界去攤提。\n\n但中國這條線，做一次卻只能賣給自己喔。\n\n這樣成本要怎麼跟人家競爭？",
+   "lint": {
+    "chars": 173,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 30,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "隔壁是誰？就是記憶體。\n\nAI 晶片旁邊都要貼一疊東西。\n那就是 HBM 高頻寬記憶體。<short pause>\n這才是真正的瓶頸，大家卻很少聊。\n對，長鑫現在也跳下來做這塊。\n那良率呢？\n這份報告待查的資料顯示，\n綜合良率其實只有兩成五左右。\n也就是大部分做出來都是壞的啦。\n\n更麻煩的其實是成本。<short pause>\n全球大廠研發一次，是賣給全世界攤提。\n但中國這條線，做一次卻只能賣給自己。\n所以就算做得出來，成本結構永遠吃虧。\n那他們要怎麼撐下去？",
+   "lint": {
+    "chars": 188,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 12.4,
+    "max_sentence_len": 25,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "對，隔壁指的就是 HBM 高頻寬記憶體。大家都在看先進微影，卻很少人聊記憶體。這份報告估算，長鑫目前的產能非常少。那良率到底行不行？待查的資料顯示，綜合良率大概只有兩成五。<short pause>而且出廠價比國外貴很多，買到的其實比較像是昂貴的保險啦。所以真正的問題在哪裡？其實不是做不出來，而是全球分工可以賣給全世界攤提，中國做出來，卻只能自己吸收。這樣算不算是便宜的替代品呢？",
+   "lint": {
+    "chars": 176,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 18.6,
+    "max_sentence_len": 38,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "隔壁是誰？就是記憶體。AI 晶片旁邊都要貼一疊東西。那就是 HBM 高頻寬記憶體。<short pause>這才是真正的瓶頸，大家卻很少聊。對，長鑫現在也跳下來做這塊。那良率呢？這份報告待查的資料顯示，綜合良率其實只有兩成五左右。也就是大部分做出來都是壞的啦。更麻煩的其實是成本。<short pause>全球大廠研發一次，是賣給全世界攤提。但中國這條線，做一次卻只能賣給自己。所以就算做得出來，成本結構永遠吃虧。那他們要怎麼撐下去？",
+   "to": "隔壁是記憶體。AI 晶片旁邊，要貼一疊 HBM 高頻寬記憶體，這份報告說這是這一輪真正的瓶頸，卻最少人談。研究機構的模型估計，長鑫分給 HBM 的投片，二〇二五年大約每個月五千片，二〇二六年大約三萬片。良率呢？HBM3 八層堆疊，前段大約三成五，後段大約七成，乘起來只有兩成五左右。所以東西做得出來，成本結構卻永遠吃虧：全球分工，是做一次賣全世界來攤提；中國這條線，是做一次只賣自己。那模型這一層呢？",
+   "reason": "照草稿重寫：改寫把原文數字改模糊或加了原文沒有的因果、結論"
+  },
+  {
+   "from": "隔壁是記憶體。AI 晶片旁邊，要貼一疊 HBM 高頻寬記憶體，這份報告說這是這一輪真正的瓶頸，卻最少人談。研究機構的模型估計，長鑫分給 HBM 的投片，二〇二五年大約每個月五千片，二〇二六年大約三萬片。良率呢？HBM3 八層堆疊，前段大約三成五，後段大約七成，乘起來只有兩成五左右。所以東西做得出來，成本結構卻永遠吃虧：全球分工，是做一次賣全世界來攤提；中國這條線，是做一次只賣自己。那模型這一層呢？",
+   "to": "隔壁是記憶體。AI 晶片旁邊，要貼一疊 HBM 高頻寬記憶體，這份報告說這是這一輪真正的瓶頸，卻最少人談。研究機構的模型估計，長鑫分給 HBM 的投片，二〇二五年大約每個月五千片，二〇二六年大約三萬片。良率呢？HBM3 八層堆疊，前段大約三成五，後段大約七成，乘起來只有兩成五左右。所以東西做得出來，成本結構卻永遠吃虧：全球分工，是做一次賣全世界來攤提。中國這條線，是做一次只賣自己。那模型這一層呢？",
+   "reason": "分號太多，拆句"
+  }
+ ]
+}

@@ -1,0 +1,159 @@
+{
+ "segment": "s06_turn",
+ "position": "第 7 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "abd699da2976257ae26bc8450155286491f66b67fd03655b97effcf6a0c75e77",
+ "previous_context": "K3 這個架構，就是制裁留下的指紋。那大家都在傳的中國模型很便宜，是真的嗎？",
+ "original": {
+  "text": "要看你拿它做什麼。研究機構 Artificial Analysis 實測：一般的題目，K3 每個任務大約零點九四美元，同一套題目 Claude Opus 4.8 是一點八美元。可是換成要一步一步自己做事的 agent 知識工作，K3 每個任務要十點五七美元，比 Opus 4.8 貴。差在回合數：K3 一個任務用掉十二萬個輸出 token、八十三個回合，上一代只用四萬兩千個 token、五十四個回合。這份報告的說法是：K3 便宜的是 token，貴的是 turn，也就是回合。架構省下來的，會被不知道何時該停吃回去。",
+  "lint": {
+   "chars": 239,
+   "precise_numbers": [
+    "3",
+    "零點九四",
+    "4.8",
+    "一點八",
+    "3",
+    "十點五七",
+    "4.8",
+    "3",
+    "十二萬",
+    "八十三",
+    "四萬兩千",
+    "五十四",
+    "3"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 38.8,
+   "max_sentence_len": 70,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "答案是，其實要看你拿它做什麼。<short pause>\n研究機構 Artificial Analysis 做了實測。\n解一般題目，K3 每個任務不到一美元。\n同一套題目 Claude Opus 4.8 要將近兩美元。\n這樣看真的很便宜，對吧？\n但換成自己動手的 agent 代理任務呢？\nK3 每個任務飆到十點五七美元，反而更貴。\n你猜差在哪裡？\n差在 turn，也就是回合數。\nK3 一個任務跑了八十幾回合。\n光是輸出就用掉十二萬個 token。\n上一代明明五十幾回合就結束了。\n這份報告說，K3 便宜的是單價。\n貴的是回合，也就是 turn。<short pause>\n底層省下來的，全被不知道何時該停吃回去了。\n所以到底是什麼決定了 AI 的帳單？",
+   "lint": {
+    "chars": 269,
+    "precise_numbers": [
+     "3",
+     "4.8",
+     "3",
+     "十點五七",
+     "3",
+     "八十",
+     "十二萬",
+     "五十",
+     "3"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 26,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "這其實要看你拿它做什麼。\n是真的比較便宜嗎？<short pause>\n答案其實是不一定喔。\n研究機構 Artificial Analysis 做過實測。\n跑一般題目，K3 每個任務不到一美元。\n同樣的題目，Opus 4.8 大約兩美元。\n可是換成要自己動手的 agent 任務，\nK3 每個任務飆到十點五七美元。\n這份報告說，這比 Opus 4.8 還要貴。\n問題到底出在哪裡？\n關鍵就在 turn，也就是回合數。\nK3 一個任務跑了八十幾回合，\n吐出了十幾萬個輸出 token 標記。\n上一代 K2.6 才跑五十幾回合而已。\n所以這份報告說，K3 便宜的是 token，\n貴的反而是 turn 回合數。<short pause>\n架構省下來的優勢，\n全被不知道何時該停的模型吃回去了。",
+   "lint": {
+    "chars": 279,
+    "precise_numbers": [
+     "3",
+     "4.8",
+     "3",
+     "十點五七",
+     "4.8",
+     "3",
+     "八十",
+     "萬",
+     "2.6",
+     "五十",
+     "3"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 18.9,
+    "max_sentence_len": 32,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "這其實要看你拿它來做什麼。大家都覺得中國模型比較便宜，對吧？其實這完全要看任務型態。<short pause> 這份報告拿一般題目來測，K3 每個任務只要大約一美元，Claude 差不多要兩美元。可是換成 agent 代理人任務呢？K3 每個任務直接飆到十點五七美元，反而比對手還貴！為什麼會這樣？差在 turn，也就是思考的回合數。K3 要跑八十幾個回合才肯罷休。所以這份報告說，K3 便宜的是 token，真正貴的，其實是 turn 啦。<short pause> 架構省下來的錢，全被停不下來吃回去了。那到底是什麼決定了最後的帳單？",
+   "lint": {
+    "chars": 230,
+    "precise_numbers": [
+     "3",
+     "3",
+     "十點五七",
+     "3",
+     "八十",
+     "3"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 39,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "這其實要看你拿它來做什麼。大家都覺得中國模型比較便宜，對吧？其實這完全要看任務型態。<short pause> 這份報告拿一般題目來測，K3 每個任務只要大約一美元，Claude 差不多要兩美元。可是換成 agent 代理人任務呢？K3 每個任務直接飆到十點五七美元，反而比對手還貴！為什麼會這樣？差在 turn，也就是思考的回合數。K3 要跑八十幾個回合才肯罷休。所以這份報告說，K3 便宜的是 token，真正貴的，其實是 turn 啦。<short pause> 架構省下來的錢，全被停不下來吃回去了。那到底是什麼決定了最後的帳單？",
+   "to": "要看你拿它做什麼。研究機構 Artificial Analysis 實測：一般的題目，K3 每個任務大約零點九四美元，同一套題目 Claude Opus 4.8 是一點八美元。可是換成要自己一步一步做事的 agent，代理人任務，K3 每個任務要十點五七美元，反而比 Opus 4.8 貴。差在哪？差在回合數：K3 一個任務用掉十二萬個輸出 token、八十三個回合；上一代只用四萬兩千個 token、五十四個回合。所以這份報告說，K3 便宜的是 token，貴的是 turn，也就是回合。那最後決定帳單的是什麼？",
+   "reason": "照草稿重寫：改寫把原文數字改模糊或加了原文沒有的因果、結論"
+  },
+  {
+   "from": "要看你拿它做什麼。研究機構 Artificial Analysis 實測：一般的題目，K3 每個任務大約零點九四美元，同一套題目 Claude Opus 4.8 是一點八美元。可是換成要自己一步一步做事的 agent，代理人任務，K3 每個任務要十點五七美元，反而比 Opus 4.8 貴。差在哪？差在回合數：K3 一個任務用掉十二萬個輸出 token、八十三個回合；上一代只用四萬兩千個 token、五十四個回合。所以這份報告說，K3 便宜的是 token，貴的是 turn，也就是回合。那最後決定帳單的是什麼？",
+   "to": "要看你拿它做什麼。研究機構 Artificial Analysis 實測：一般的題目，K3 每個任務大約零點九四美元，同一套題目 Claude Opus 4.8 是一點八美元。可是換成要自己一步一步做事的 agent，代理人任務，K3 每個任務要十點五七美元，反而比 Opus 4.8 貴。差在哪？差在回合數：K3 一個任務用掉十二萬個輸出 token、八十三個回合。上一代只用四萬兩千個 token、五十四個回合。所以這份報告說，K3 便宜的是 token，貴的是 turn，也就是回合。那最後決定帳單的是什麼？",
+   "reason": "分號太多，拆句"
+  }
+ ]
+}

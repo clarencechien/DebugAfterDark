@@ -1,0 +1,139 @@
+{
+ "segment": "s02_customs",
+ "position": "第 3 段，共 14 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "604fe3aeb09df94fff5e4409371079fbcb6ef2a01d8c6c34d5287c99a08a1f04",
+ "previous_context": "第三站，看 AI 模型這扇門怎麼先關了。那晶片到底卡在哪裡？",
+ "original": {
+  "text": "第一站。今年一月中，美國商務部的工業與安全局，也就是 BIS，把 H200 晶片賣到中國的審查，從原則上拒絕改成個案審查，附帶關稅和數量條件。可是差不多同一時間，路透社報導，中國海關通知報關行：H200 不准入境。一月底又傳出中國有條件放行首批，報導說涵蓋數十萬顆。結果呢？輝達到八月下旬才確認首批出貨，量不到資料中心營收的百分之一；十一月初，還有大約六十萬顆停在香港。所以這份報告說，今年卡住 H200 的，主要是買方的政府。那中國公司的算力從哪裡來？答案不在中國。",
+  "lint": {
+   "chars": 228,
+   "precise_numbers": [
+    "200",
+    "200",
+    "十萬",
+    "百分之一",
+    "十一",
+    "六十萬",
+    "200"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 24.3,
+   "max_sentence_len": 63,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先來看第一站齁。<short pause>\n今年一月中，美國那邊先放行了。\nBIS 美國商務部工業與安全局，\n把 H200 晶片改成了個案審查。\n美國放行了，那晶片順利進去了嗎？\n結果完全沒有啦。\n中國海關同一時間通知報關行，不准入境。\n後來一月底雖然傳出有條件放行，\n但輝達到八月才確認出貨第一批。\n量甚至不到資料中心營收的百分之一。\n重點來了，到了十一月，\n還有幾十萬顆晶片停在香港等放行。<short pause>\n所以這份報告說，卡住晶片的其實是買方。\n那中國公司的算力從哪裡來？\n答案其實不在中國境內。",
+   "lint": {
+    "chars": 213,
+    "precise_numbers": [
+     "200",
+     "百分之一",
+     "十一",
+     "十萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 29,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "先來回答晶片到底卡在哪裡。\n今年一月中，美國其實放寬了限制。\nBIS 美國商務部工業與安全局，\n把 H200 晶片改成了個案審查。\n美國都放行了，但結果呢？\n中國海關轉頭就通知報關行不准入境。<short pause>\n雖然一月底傳出有條件放行，\n輝達到八月才終於出貨第一批，\n數量少到幾乎可以忽略啦。\n到了十一月，\n還有大約六十萬顆晶片卡在香港等放行。\n這整件事看起來真的很妙。<laugh>\n所以這份報告說，\n今年卡住晶片的，其實是買方的政府。\n那中國公司的算力從哪裡來？\n答案其實不在中國喔。",
+   "lint": {
+    "chars": 211,
+    "precise_numbers": [
+     "200",
+     "十一",
+     "六十萬"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 38,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "答案可能跟你想的不太一樣喔。<short pause>\n今年一月中，美國那邊其實放行了。\nBIS 美國商務部工業與安全局放寬審查，\n把 H200 晶片改成了個案審查。\n美國放手了，那到底是卡在哪？<short pause>\n結果中國海關通知報關行，直接不准進口。\n雖然一月底傳出有條件放行，\n輝達卻拖到八月才確認首批出貨，\n量甚至不到資料中心營收的百分之一。\n到了十一月，還有大批晶片卡在香港等著。\n所以這份報告說，\n卡住晶片的，主要是買方自己的政府啦。\n那中國公司的算力要從哪裡來？\n答案根本不在中國。",
+   "lint": {
+    "chars": 210,
+    "precise_numbers": [
+     "200",
+     "百分之一",
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.0,
+    "max_sentence_len": 44,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "答案可能跟你想的不太一樣喔。<short pause>今年一月中，美國那邊其實放行了。BIS 美國商務部工業與安全局放寬審查，把 H200 晶片改成了個案審查。美國放手了，那到底是卡在哪？<short pause>結果中國海關通知報關行，直接不准進口。雖然一月底傳出有條件放行，輝達卻拖到八月才確認首批出貨，量甚至不到資料中心營收的百分之一。到了十一月，還有大批晶片卡在香港等著。所以這份報告說，卡住晶片的，主要是買方自己的政府啦。那中國公司的算力要從哪裡來？答案根本不在中國。",
+   "to": "答案可能跟你想的不一樣。<short pause>今年一月中，BIS，美國商務部工業與安全局，把 H200 晶片賣到中國的審查，從原則上拒絕，改成個案審查，附帶關稅和數量條件。美國放手了，結果呢？差不多同一時間，路透社報導，中國海關通知報關行：H200 不准入境。一月底又傳出有條件放行首批，報導說涵蓋數十萬顆；可是輝達到八月下旬才確認首批出貨，量不到資料中心營收的百分之一。到了十一月初，還有大約六十萬顆停在香港。所以這份報告說，今年卡住 H200 的，主要是買方的政府。那中國公司的算力從哪來？答案不在中國。",
+   "reason": "照草稿重寫：改寫把原文數字改模糊或加了原文沒有的因果、結論"
+  }
+ ]
+}

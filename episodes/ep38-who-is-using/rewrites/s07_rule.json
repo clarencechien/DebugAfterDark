@@ -1,0 +1,147 @@
+{
+ "segment": "s07_rule",
+ "position": "第 8 段，共 14 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "294774bade35e864220bb953377d90bd8d3a461a795d363954616403ccc1f179",
+ "previous_context": "那傳聞說境外佔了六成以上呢？先記著喔，我們最後再回來看。",
+ "original": {
+  "text": "回到可能合法這件事。十一月十六號，BIS 發布一條臨時最終規則：一座資料中心，如果給總部在中國的客戶超過一千兩百萬 TPP，也就是總處理效能的算力，要供貨給它就得申請許可，逐案審查。一千兩百萬 TPP 大約等於七百五十八顆 H100 或 H200，這是這份報告自己換算的。訓練和推論都算，只有純推薦系統能豁免。印尼、馬來西亞、新加坡、泰國、巴西，先進晶片出口過去都要許可證；已經在提供算力的資料中心，生效後九十天內要拿到許可。規則公布那天，輝達收跌超過百分之二，費城半導體指數跌超過百分之五。",
+  "lint": {
+   "chars": 239,
+   "precise_numbers": [
+    "十一",
+    "十六",
+    "一千兩百萬",
+    "一千兩百萬",
+    "七百五十八",
+    "100",
+    "200",
+    "九十",
+    "百分之二",
+    "百分之五"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 38.8,
+   "max_sentence_len": 78,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實美國在十一月中就出手補漏洞。BIS 美國商務部工業與安全局，發布了一條新的管制規則。只要一座資料中心，給中國客戶的算力超標，廠商要賣先進晶片過去就得申請許可。那門檻到底是多少？答案是一千兩百萬 TPP 總處理效能。這份報告自己換算，大概等於七百多顆 H200 晶片。<short pause>而且不管是訓練還是推論都算喔，只有做純推薦系統能申請豁免。然後像新加坡、馬來西亞等五個國家，現在先進晶片出口過去都要許可證。已經在提供算力的，生效後三個月內得拿到許可。這影響有多大呢？規則公布當天，輝達收盤跌了百分之二點多，費半指數更是跌超過百分之五。",
+   "lint": {
+    "chars": 256,
+    "precise_numbers": [
+     "十一",
+     "一千兩百萬",
+     "七百",
+     "200",
+     "百分之二點",
+     "百分之五"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 22.3,
+    "max_sentence_len": 36,
+    "sentences_over_20": 7,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "回到合法這件事。<short pause>\n十一月中，BIS 美國商務部工業與安全局，\n發布了一條臨時新規則。\n只要資料中心給受管制客戶的算力，\n超過一千兩百萬 TPP 總處理效能，\n供貨就得逐案審查，完全沒有例外。\n一千兩百萬 TPP 是多少？\n這份報告自算，\n大概等於七百多顆 H200 晶片。\n其實訓練和推論都算在內喔，\n只有純推薦系統可以豁免。\n而且先進晶片出口到新加坡等五國，\n現在通通都要許可證。\n那已經在跑的資料中心呢？\n生效後大概三個月內，也得補拿到許可。\n規則一出來，輝達跌了兩趴多，\n費城半導體指數也跌了超過五趴。",
+   "lint": {
+    "chars": 231,
+    "precise_numbers": [
+     "十一",
+     "一千兩百萬",
+     "一千兩百萬",
+     "七百",
+     "200"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 22.1,
+    "max_sentence_len": 47,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "我們回頭來看合法這件事。十一月中，BIS 美國商務部工業與安全局，公布了一條新的臨時規則。只要資料中心給中國客戶的算力，超過一千兩百萬 TPP 總處理效能，想賣晶片過去就得逐案審查。一千兩百萬 TPP 是什麼概念？<short pause> 這份報告自算，大概七百多顆 H200 晶片啦。而且不管是訓練還是推論，通通都要管，只有純推薦系統可以豁免。重點來了，連新加坡、馬來西亞等五個國家，先進晶片出口過去也通通要許可證喔。原本已經在做的，要在三個月內拿到許可。規則一公布，輝達跌了兩趴多，費城半導體指數更是跌超過百分之五。",
+   "lint": {
+    "chars": 240,
+    "precise_numbers": [
+     "十一",
+     "一千兩百萬",
+     "一千兩百萬",
+     "七百",
+     "200",
+     "百分之五"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 25.7,
+    "max_sentence_len": 43,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "給受管制客戶的算力，超過一千兩百萬 TPP 總處理效能，供貨就得逐案審查，完全沒有例外。",
+   "to": "給總部在中國的客戶超過一千兩百萬 TPP，也就是總處理效能的算力，供貨就得申請許可，逐案審查。",
+   "reason": "改回原文；「完全沒有例外」跟後面的豁免矛盾"
+  },
+  {
+   "from": "生效後大概三個月內",
+   "to": "生效後九十天內",
+   "reason": "改回原文"
+  }
+ ]
+}

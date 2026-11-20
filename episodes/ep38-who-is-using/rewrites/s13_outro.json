@@ -1,0 +1,146 @@
+{
+ "segment": "s13_outro",
+ "position": "第 14 段，共 14 段（最後一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "181e057247a5817aa56394b97fff9d7d2e27490c62530816ecd375cf56db2f8d",
+ "previous_context": "對，還有輝達下一季財報會怎麼寫 H200 晶片。這些訊號出來，局勢應該就清楚了吧。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，同一顆晶片有三個地址：貨到哪、票開給誰、誰在用；輝達換一次算法，中國營收就從百分之十三變成百分之十九。第二，今年卡住 H200 的是中國海關；美國十一月十六號的規則，第一次開始查資料中心客戶的總部。第三，中國用了多少輝達算力，沒有人公布總量，凡是幾成在境外的數字都是推算。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 188,
+   "precise_numbers": [
+    "百分之十三",
+    "百分之十九",
+    "200",
+    "十一",
+    "十六"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第一",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 25.9,
+   "max_sentence_len": 53,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n局勢這麼亂要怎麼看？\n其實抓三個重點就好。\n第一，晶片送到哪，跟誰在用完全不同喔。\n輝達換個算法，中國營收就跳到百分之十九。\n第二，卡住 H200 的其實是中國海關。\n美國的新規定，才第一次開始查客戶的總部。\n第三，中國在境外用了多少算力？\n根本沒有人公布總量，數字全都是推算啦。<short pause>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 184,
+    "precise_numbers": [
+     "百分之十九",
+     "200"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第一",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n這集聊了這麼多，重點要怎麼抓？\n第一，同一顆晶片其實有三個地址。\n貨送到哪、發票開給誰，跟最後誰在用。\n輝達換個算法，中國營收就差了百分之六。\n第二，今年卡住 H200 晶片的是中國海關。\n然後美國新規則，第一次開始查客戶總部。\n最後，中國在境外用了多少輝達算力？\n其實根本沒有官方公布的總量喔。\n大家看到的幾成境外算力，全部都只是推算。\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 212,
+    "precise_numbers": [
+     "百分之六",
+     "200"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n第一，晶片送到哪跟誰在用，其實是兩回事。輝達換個計算方式，營收佔比就差很多。\n\n第二，美國新規則開始查算力客戶的總部。管制範圍已經一路延伸到境外了喔。\n\n第三，中國到底用了多少算力？根本沒有官方總量。外面那些境外的比例，其實全部都是推算啦。\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 169,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 14.4,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>第一，晶片送到哪跟誰在用，其實是兩回事。輝達換個計算方式，營收佔比就差很多。第二，美國新規則開始查算力客戶的總部。管制範圍已經一路延伸到境外了喔。第三，中國到底用了多少算力？根本沒有官方總量。外面那些境外的比例，其實全部都是推算啦。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，同一顆晶片有三個地址：貨到哪、票開給誰、誰在用；輝達換一次算法，中國營收就從百分之十三變成百分之十九。第二，今年卡住 H200 的是中國海關；美國十一月十六號的規則，第一次開始查資料中心客戶的總部。第三，中國用了多少輝達算力，沒有人公布總量，凡是幾成在境外的數字，都是推算。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "breakpoint 改回草稿"
+  },
+  {
+   "from": "換一次算法",
+   "to": "換一次計算方式",
+   "reason": "「算法」容易聽成演算法"
+  }
+ ]
+}

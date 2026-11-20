@@ -1,0 +1,141 @@
+{
+ "segment": "s05_rent",
+ "position": "第 6 段，共 14 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ab78a081e3180a07c20e71cbffba7590789c00b5b7a3f7da03275647d98abebc",
+ "previous_context": "你想拿財報推算中國有多少算力？根本推不出來嘛。",
+ "original": {
+  "text": "第二站，境外。CNBC 八月報導，字節跳動、阿里巴巴、騰訊和月之暗面這些公司，透過泰國、馬來西亞、日本的資料中心，遠端使用受管制的輝達晶片；受訪的研究員說，現行管制管的是實體晶片，這種安排可能合法。報導裡數得出顆數的只有五筆。最大的一筆，是騰訊跟 Oracle 簽了五年、大約十萬顆、大約七十億美元的租約，路透說無法查證。最意外的一筆在挪威：英國的算力公司 Nscale 上市文件寫著，單一客戶貢獻它二〇二五年營收的百分之七十三，金融時報從文件附件指認，這個客戶是字節跳動的新加坡子公司。",
+  "lint": {
+   "chars": 239,
+   "precise_numbers": [
+    "十萬",
+    "七十",
+    "百分之七十三"
+   ],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 46.8,
+   "max_sentence_len": 90,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "透過"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那我們來看境外租用的部分。\nCNBC 的報導說，字節跳動跟阿里巴巴，\n還有騰訊跟月之暗面，都會去境外租晶片。\n他們透過泰國或日本的資料中心，遠端連線。\n你可能會問，這樣不算違規嗎？\n其實目前的規定只管實體晶片，\n所以醬遠端連線，法律上可能完全合法喔。\n<short pause>\n不過各家報導裡數得出數量的，其實只有五筆。\n最大的一筆，是騰訊向 Oracle 租晶片，\n數量大概十萬顆，不過路透說無法查證。\n然後最意外的一筆竟然跑到了挪威。\n英國算力公司 Nscale 的上市文件寫著，\n單一客戶就佔了他們營收的百分之七十三。\n金融時報一查才發現，就是字節跳動的子公司。\n但境外能拿到的算力，真的有傳聞那麼多嗎？",
+   "lint": {
+    "chars": 273,
+    "precise_numbers": [
+     "十萬",
+     "百分之七十三"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 23.8,
+    "max_sentence_len": 38,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.4,
+    "written_words": [
+     "透過"
+    ],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "推不出來沒關係，那我們把鏡頭轉到境外呢？\n\n其實很多中國公司，直接跑到海外租算力。CNBC 就報導過，字節跳動、阿里巴巴、騰訊還有月之暗面，都會連到泰國或日本的資料中心。因為現行管制只管實體晶片，所以人在中國遠端連線，可能完全合法喔。\n\n<short pause>\n\n不過真正數得出數量的公開報導，其實只有五筆。最大的一筆，是騰訊傳出找 Oracle 租了十萬顆。但是路透社說，這筆消息沒辦法查證。\n\n那最特別的是哪一筆？竟然遠在挪威。英國算力公司 Nscale 的上市文件寫著，單一客戶就貢獻了營收的百分之七十三。<short pause> 金融時報去翻附件，才發現買家就是字節跳動的新加坡子公司啦。",
+   "lint": {
+    "chars": 261,
+    "precise_numbers": [
+     "十萬",
+     "百分之七十三"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 22.7,
+    "max_sentence_len": 42,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "既然境內算不出來，那境外呢？\n\nCNBC 八月有一篇報導。<short pause>\n字節跳動、阿里巴巴、騰訊跟月之暗面，\n跑到泰國、馬來西亞還有日本租資料中心，\n直接在遠端用受管制的輝達晶片。\n這樣算不算違規？\n這份報導裡的研究員說，\n現行法規管的是實體晶片，\n所以這種安排其實可能合法喔。\n\n然後，公開報導數得出數量的，\n算一算其實只有五筆。<short pause>\n最大的一筆是騰訊找上 Oracle，\n五年租了大約十萬顆，\n金額大概七十億美元，\n不過路透說這件事沒辦法查證。\n\n最意外的一筆其實跑到挪威去了。\n英國算力公司 Nscale，\n它的上市文件裡面寫著，\n單一客戶就貢獻了百分之七十三的營收。\n金融時報去查文件附件，\n指認這個客戶就是字節跳動的新加坡子公司。\n那這幾筆境外加起來，到底有多少算力？",
+   "lint": {
+    "chars": 304,
+    "precise_numbers": [
+     "十萬",
+     "七十",
+     "百分之七十三"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 26.6,
+    "max_sentence_len": 51,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "那我們來看境外租用的部分。CNBC 的報導說，字節跳動跟阿里巴巴，還有騰訊跟月之暗面，都會去境外租晶片。他們透過泰國或日本的資料中心，遠端連線。你可能會問，這樣不算違規嗎？其實目前的規定只管實體晶片，所以醬遠端連線，法律上可能完全合法喔。<short pause>不過各家報導裡數得出數量的，其實只有五筆。最大的一筆，是騰訊向 Oracle 租晶片，數量大概十萬顆，不過路透說無法查證。然後最意外的一筆竟然跑到了挪威。英國算力公司 Nscale 的上市文件寫著，單一客戶就佔了他們營收的百分之七十三。金融時報一查才發現，就是字節跳動的子公司。但境外能拿到的算力，真的有傳聞那麼多嗎？",
+   "to": "第二站，境外。CNBC 八月報導，字節跳動、阿里巴巴、騰訊和月之暗面這些公司，透過泰國、馬來西亞、日本的資料中心，遠端使用受管制的輝達晶片。這樣不算違規嗎？受訪的研究員說，現行管制管的是實體晶片，這種安排可能合法。<short pause>報導裡數得出顆數的，只有五筆。最大的一筆，是騰訊跟 Oracle 簽了五年、大約十萬顆、大約七十億美元的租約，路透說無法查證。最意外的一筆在挪威：英國的算力公司 Nscale，上市文件寫著單一客戶佔了它去年營收的百分之七十三，金融時報從附件指認，這個客戶是字節跳動的新加坡子公司。",
+   "reason": "照草稿重寫：改寫把原文數字改模糊或加了原文沒有的因果、結論；刪「醬」"
+  },
+  {
+   "from": "透過泰國、馬來西亞、日本的資料中心",
+   "to": "透過東南亞和日本的資料中心",
+   "reason": "頓號連排太多，拆開"
+  },
+  {
+   "from": "簽了五年、大約十萬顆、大約七十億美元的租約",
+   "to": "簽了五年的租約，大約十萬顆，金額大約七十億美元",
+   "reason": "頓號連排太多，拆開"
+  }
+ ]
+}

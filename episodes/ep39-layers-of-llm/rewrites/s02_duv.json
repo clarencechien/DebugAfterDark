@@ -1,0 +1,119 @@
+{
+ "segment": "s02_duv",
+ "position": "第 3 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2c6849c335c63556a63307b32b6ad3aebc3da6e03fe08448b14d22ccd70668b3",
+ "previous_context": "所以今晚我們先挑三層來看。看看微影、記憶體跟模型，到底卡在哪裡。",
+ "original": {
+  "text": "先看最底層。那台國產機台，多數零件是中國製，部分關鍵零件還是從日本來，目標製程是二十八奈米，報導自己也說效能和製造品質仍落後，進產線前還要幾個月測試。這份報告說，從做出來到可用，還有五道關：疊對精度、每小時產出幾片、稼動率、機台之間一不一致、製程整合，每一道的驗證週期都是以年計，良率爬坡是統計問題，不是努力問題。可是這份報告說，真正的瓶頸不在微影，在隔壁。",
+  "lint": {
+   "chars": 179,
+   "precise_numbers": [
+    "二十八"
+   ],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 43.8,
+   "max_sentence_len": 81,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "我們先從最底層的微影看起。那台國產的 DUV 深紫外光微影機，雖然多數零件是中國製，但關鍵零件其實還是從日本來。機台的目標製程是二十八奈米。<short pause>那現在能直接上線跑嗎？其實不行。報導自己也說效能跟品質還落後，進產線前還要測試好幾個月。這份報告說，從做出來到可用，中間至少卡了五道關卡。像是疊對精度、稼動率跟產出速度，每一項的驗證週期都是以年來算耶。良率爬坡是統計問題，不是努力問題。<short pause>可是這份報告說，真正的瓶頸不在微影，在隔壁。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [
+     "二十八"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.8,
+    "max_sentence_len": 40,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "先從微影這層開始看。\n那台國產的 DUV 深紫外光微影機，\n其實多數零件是中國製沒錯，\n但關鍵零件還是得從日本買。<short pause>\n它的目標製程是二十八奈米。\n報導裡自己也承認，\n這台機器的品質目前還是落後，\n進產線前還要測好幾個月。\n你覺得做出來就能直接用嗎？\n其實沒那麼簡單啦。\n這份報告說，\n從做出來到真正能用，\n中間要跨過五道關卡。\n像是穩定度和產線整合，\n每一項都要驗證好幾年。\n良率要拉高，\n本質上是統計問題，\n不是光靠努力就能解決的。\n不過這份報告說，\n真正的瓶頸其實不在微影，\n而在隔壁。",
+   "lint": {
+    "chars": 222,
+    "precise_numbers": [
+     "二十八"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 21.2,
+    "max_sentence_len": 41,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "我們就先看最底層的微影。那台新聞上的 DUV 深紫外光微影機，大部分零件是中國製，但關鍵零件還是得從日本進口。它的目標製程是二十八奈米，報導自己也說效能跟品質仍舊落後，進產線前還要測試好幾個月喔。你覺得做出來就等於能用嗎？其實完全不是這回事。<short pause>這份報告說，從做出來到真正能用，後面還有五道大關卡要過。像每小時產量、機台間的一致性，每一關的驗證週期都是用年來算。良率爬坡是統計問題，不是努力問題啦。可是這份報告說，真正的瓶頸不在微影，在隔壁。",
+   "lint": {
+    "chars": 217,
+    "precise_numbers": [
+     "二十八"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 23.1,
+    "max_sentence_len": 42,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "關鍵零件其實還是從日本來",
+   "to": "部分關鍵零件還是從日本來",
+   "reason": "改回原文"
+  }
+ ]
+}

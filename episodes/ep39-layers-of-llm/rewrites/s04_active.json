@@ -1,0 +1,146 @@
+{
+ "segment": "s04_active",
+ "position": "第 5 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "cea95f6866bd02fc97df06450f2f7ff96bf6cacf22662a26843962a83d838411",
+ "previous_context": "所以就算做得出來，成本結構永遠吃虧。那他們要怎麼撐下去？",
+ "original": {
+  "text": "再往上，到模型。DeepSeek 創辦人梁文鋒說，中國最大的模型只有幾十 B；可是月之暗面的 Kimi K3，有兩點八兆個參數。B 是十億參數，幾十 B 就是幾百億。兩句話怎麼對得起來？差在轉述時被砍掉的兩個字：激活。他的原話是，全球最大的模型激活大概八百 B，國內最大的可能就幾十 B 激活，這段話出自流出的投資人會議紀要，DeepSeek 沒有認證過。K3 是 MoE，混合專家模型，八百九十六個專家，每次只叫醒十六個；它公布的激活參數是一百零四 B，大約是八百 B 的八分之一。所以 K3 是那句話的例證，不是反例。",
+  "lint": {
+   "chars": 243,
+   "precise_numbers": [
+    "3",
+    "兩點八",
+    "百",
+    "八百",
+    "3",
+    "八百九十六",
+    "十六",
+    "一百零四",
+    "八百",
+    "3"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 29.4,
+   "max_sentence_len": 64,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "答案之一是從模型架構想辦法。<short pause>\nDeepSeek 創辦人梁文鋒說過一句話。\n他說中國最大的模型只有幾十 B 參數。\n可是月之暗面的 Kimi K3 號稱有兩兆多耶。\n這兩個數字怎麼對得起來？\n其實差在轉述的時候漏掉了激活這兩個字。\n也就是 MoE 混合專家模型。\n每處理一個字真正被叫醒的參數。\n梁文鋒這段話出自流出的會議紀錄。\nDeepSeek 官方並沒有認證過喔。\n他說全球最大的模型大約叫醒八百 B。\n國內最大的可能就叫醒幾十 B。\n那 K3 呢？\n它有幾百個專家，每次只叫醒十幾個。\n官方資料寫真正叫醒的是一百零四 B。<short pause>\n大概只有全球大模型的八分之一啦。\n所以 K3 根本不是反例，反而是個證明。\n但如果叫醒的參數這麼少，要怎麼維持聰明度？",
+   "lint": {
+    "chars": 290,
+    "precise_numbers": [
+     "3",
+     "八百",
+     "3",
+     "百",
+     "一百零四",
+     "3"
+    ],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實模型層面也有解法。<short pause>\nDeepSeek 創辦人說過，\n中國最大的模型只有幾十 B 啟用參數。\n但月之暗面的 Kimi K3，\n號稱有兩兆多參數，\n這兩句話怎麼對得起來？\n重點在轉述時被漏掉的字：激活。\n這段話來自流出的投資人會議紀要，\nDeepSeek 官方沒有認證過喔。\n他講的是 MoE 混合專家模型，\n也就是每處理一個 token，\n實際被叫醒去算的那部分。\n幾百個專家裡，\n每次其實只叫醒十幾個。\nK3 官方公布是一百零四 B，\n大概只有全球頂尖模型的八分之一。\n所以 K3 剛好是這句話的例證，\n根本不是反例嘛。\n不過算力縮水成這樣，\n實際跑起來真的夠快嗎？",
+   "lint": {
+    "chars": 253,
+    "precise_numbers": [
+     "3",
+     "百",
+     "3",
+     "一百零四",
+     "3"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 24.3,
+    "max_sentence_len": 39,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "其實可以往模型看。\nDeepSeek 創辦人梁文鋒之前傳出一句話。\n他說中國最大的模型只有幾十 B 參數。\n可是月之暗面的 Kimi K3 號稱有兩點多兆耶。<short pause>\n兩邊怎麼會差這麼多？\n其實是大家轉述的時候，\n少講了激活這兩個字。\n這段話出自流出的投資人會議紀錄。\nDeepSeek 官方並沒有認證過喔。\n他講的其實是啟用參數，也就是激活。\nK3 屬於 MoE 混合專家模型。\n裡面幾百個專家，每次只叫醒十幾個。\n官方 model card 寫得很清楚，\n啟用參數其實是一百零四 B 啦。\n大約只有全球最大模型的八分之一。<short pause>\n所以 K3 根本不是反例，反而是證據。\n那既然模型能縮小，算力又是怎麼省的？",
+   "lint": {
+    "chars": 265,
+    "precise_numbers": [
+     "3",
+     "3",
+     "百",
+     "一百零四",
+     "3"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 16.7,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "其實可以往模型看。DeepSeek 創辦人梁文鋒之前傳出一句話。他說中國最大的模型只有幾十 B 參數。可是月之暗面的 Kimi K3 號稱有兩點多兆耶。<short pause>兩邊怎麼會差這麼多？其實是大家轉述的時候，少講了激活這兩個字。這段話出自流出的投資人會議紀錄。DeepSeek 官方並沒有認證過喔。他講的其實是啟用參數，也就是激活。K3 屬於 MoE 混合專家模型。裡面幾百個專家，每次只叫醒十幾個。官方 model card 寫得很清楚，啟用參數其實是一百零四 B 啦。大約只有全球最大模型的八分之一。<short pause>所以 K3 根本不是反例，反而是證據。那既然模型能縮小，算力又是怎麼省的？",
+   "to": "再往上，到模型。DeepSeek 創辦人梁文鋒說，中國最大的模型只有幾十 B；可是月之暗面的 Kimi K3，有兩點八兆個參數。B 是十億參數。兩句話怎麼對得起來？差在轉述時被砍掉的兩個字：激活。他的原話是，國內最大的模型可能就幾十 B 激活，這段話出自流出的投資人會議紀要，DeepSeek 沒有認證過。K3 是 MoE，混合專家模型，八百九十六個專家，每次只叫醒十六個；它公布的激活參數是一百零四 B，大約是全球最大模型的八分之一。所以 K3 不是反例，是例證。",
+   "reason": "照草稿重寫：改寫把原文數字改模糊或加了原文沒有的因果、結論；308 字太長"
+  },
+  {
+   "from": "再往上，到模型。DeepSeek 創辦人梁文鋒說，中國最大的模型只有幾十 B；可是月之暗面的 Kimi K3，有兩點八兆個參數。B 是十億參數。兩句話怎麼對得起來？差在轉述時被砍掉的兩個字：激活。他的原話是，國內最大的模型可能就幾十 B 激活，這段話出自流出的投資人會議紀要，DeepSeek 沒有認證過。K3 是 MoE，混合專家模型，八百九十六個專家，每次只叫醒十六個；它公布的激活參數是一百零四 B，大約是全球最大模型的八分之一。所以 K3 不是反例，是例證。",
+   "to": "再往上，到模型。DeepSeek 創辦人梁文鋒說，中國最大的模型只有幾十 B。可是月之暗面的 Kimi K3，有兩點八兆個參數。B 是十億參數。兩句話怎麼對得起來？差在轉述時被砍掉的兩個字：激活。他的原話是，國內最大的模型可能就幾十 B 激活，這段話出自流出的投資人會議紀要，DeepSeek 沒有認證過。K3 是 MoE，混合專家模型，八百九十六個專家，每次只叫醒十六個。它公布的激活參數是一百零四 B，大約是全球最大模型的八分之一。所以 K3 不是反例，是例證。",
+   "reason": "分號太多，拆句"
+  }
+ ]
+}

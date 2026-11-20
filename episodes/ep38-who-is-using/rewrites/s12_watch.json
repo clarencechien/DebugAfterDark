@@ -1,0 +1,124 @@
+{
+ "segment": "s12_watch",
+ "position": "第 13 段，共 14 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "101a66d3a1fa76fe80801bbe2c7c176fcc93fb7ddfa907393cd2890152ae50fb",
+ "previous_context": "答案是完全沒有。凡是寫成幾成在境外的，現在全都是用猜的。",
+ "original": {
+  "text": "那接下來看什麼？這份報告列了幾個會改變判斷的訊號，挑三個：香港那六十萬顆有沒有放行；新規則刊登之後，六十天意見期裡業者和國會怎麼說；還有輝達下一季財報裡，中國那一列和講到 H200 的用語。",
+  "lint": {
+   "chars": 93,
+   "precise_numbers": [
+    "六十萬",
+    "六十",
+    "200"
+   ],
+   "enumerations": [],
+   "sentences": 2,
+   "avg_sentence_len": 45.5,
+   "max_sentence_len": 84,
+   "sentences_over_20": 1,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以接下來該盯哪裡呢？\n這份報告列了幾個關鍵訊號。<short pause>\n你可以看香港那六十萬顆晶片有沒有放行。\n然後是新規定的意見期，業者會怎麼說。\n還有輝達下一季財報，\n看他們怎麼寫中國營收和 H200 晶片。\n風向會不會變，就看這幾個指標囉。",
+   "lint": {
+    "chars": 105,
+    "precise_numbers": [
+     "六十萬",
+     "200"
+    ],
+    "enumerations": [],
+    "sentences": 6,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 27,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "那接下來要看什麼呢？\n其實這份報告列了幾個觀察訊號。<short pause>\n像香港那六十萬顆晶片到底會不會放行。\n然後新規則刊登後，兩個月意見期業者怎麼說。\n對，還有輝達下一季財報會怎麼寫 H200 晶片。\n這些訊號出來，局勢應該就清楚了吧。",
+   "lint": {
+    "chars": 103,
+    "precise_numbers": [
+     "六十萬",
+     "200"
+    ],
+    "enumerations": [],
+    "sentences": 6,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "那接下來要觀察什麼？\n其實這份報告列了幾個關鍵訊號。<short pause>\n像是香港那六十萬顆晶片放行了沒，\n還有新規刊登後兩個月的意見期，\n業者跟國會會怎麼表態。\n然後是輝達下一季財報裡，\n怎麼寫中國跟 H200 晶片。啦\n局勢真的會照這樣走嗎？",
+   "lint": {
+    "chars": 104,
+    "precise_numbers": [
+     "六十萬",
+     "200"
+    ],
+    "enumerations": [],
+    "sentences": 5,
+    "avg_sentence_len": 19.8,
+    "max_sentence_len": 41,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "這些訊號出來，局勢應該就清楚了吧。",
+   "to": "",
+   "reason": "改寫加的結論"
+  }
+ ]
+}

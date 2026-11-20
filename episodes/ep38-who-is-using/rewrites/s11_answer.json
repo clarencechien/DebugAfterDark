@@ -1,0 +1,134 @@
+{
+ "segment": "s11_answer",
+ "position": "第 12 段，共 14 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a04d7c1d441fe85b59d176658e25babb81b0586813406f49228cea973e0446c0",
+ "previous_context": "至於實際擋掉了多少使用？這份報告說，目前根本沒有公開數字。",
+ "original": {
+  "text": "好，回到開頭那個數字：中國相關的輝達晶片，六成以上在境外。它出自網路上流傳的一篇中文分析，沒有署名，也找不到原始出處。它說境外為中國所用的有三十到四十五萬顆，算法是拿東南亞幾個園區的電力增量，乘上七成；園區名單、電力數字、七成這個係數，都沒有出處。查得到的是：馬來西亞、印尼、泰國規劃中的大型資料中心有三十一座，營運中的只有兩座。規劃中的電力，和已經在跑的晶片是兩回事。所以這份報告的答案是：沒有任何一方公布總量，凡是寫成幾成在境外的數字，現在都是推算。",
+  "lint": {
+   "chars": 227,
+   "precise_numbers": [
+    "三十",
+    "四十五萬",
+    "三十一"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 36.8,
+   "max_sentence_len": 64,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "講到公開數字，那開頭那個說法呢？\n也就是中國相關的輝達晶片，六成在境外。\n其實這是一個未經證實的推算啦。\n那篇流傳的文章說，境外有幾十萬顆晶片。\n但它的算法到底怎麼來的？\n它直接抓東南亞園區的電力增量，\n再乘上一個完全沒有出處的比例。\n連園區名單跟電量，通通找不到來源。\n真正能查到的公開資料，\n是當地大型資料中心規劃了三十幾座，\n但營運中的其實只有兩座。\n<short pause> 規劃中的電，跟真正跑起來的晶片，\n根本就是兩回事嘛。\n所以這份報告說，目前沒有人公布過總量。\n只要看到寫著幾成在境外的數字，\n現在全都是推算喔。",
+   "lint": {
+    "chars": 236,
+    "precise_numbers": [
+     "十萬",
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.5,
+    "max_sentence_len": 39,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "不只使用量沒有公開數字。\n其實連開頭傳得很兇的那個說法，\n說中國相關的輝達晶片大半都在境外，\n也是未經查證的推算。\n你猜這個數字是怎麼算出來的？\n它是拿東南亞園區的電力增量，\n直接乘上一個不知道哪來的數字，\n就估出境外有幾十萬顆晶片。\n<short pause>\n但園區名單跟電力數據，\n其實根本沒有出處啦。\n公開資料能查到的，\n是東南亞規劃中的大型資料中心，\n雖然有三十幾座，\n但真正營運中的只有兩座。\n規劃中的電力跟已經在跑的晶片，\n完全是兩回事嘛。\n所以這份報告說，\n官方根本沒有公布過總量。\n凡是寫成幾成在境外的說法，\n現在其實都只是推算喔。",
+   "lint": {
+    "chars": 242,
+    "precise_numbers": [
+     "十萬",
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 25.9,
+    "max_sentence_len": 43,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "那網路上流傳的那個說法呢？<short pause>\n也就是說輝達晶片，大半都在境外。\n這篇分析其實沒有署名，也找不到出處。\n它說境外有幾十萬顆晶片在替中國跑。\n你猜它是怎麼算出來的？\n它拿東南亞園區增加的電，直接算進去。\n但不管是園區名單還是電力，通通沒有來源。\n這份報告查到的公開資料，\n規劃中的大型資料中心有三十多座。\n但真正有在營運的，其實只有兩座。<short pause>\n規劃中的電，跟真的在跑的晶片是兩回事。\n那到底有沒有公開總量？\n答案是完全沒有。\n凡是寫成幾成在境外的，現在全都是用猜的。",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [
+     "十萬",
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 27,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "那網路上流傳的那個說法呢？<short pause>也就是說輝達晶片，大半都在境外。這篇分析其實沒有署名，也找不到出處。它說境外有幾十萬顆晶片在替中國跑。你猜它是怎麼算出來的？它拿東南亞園區增加的電，直接算進去。但不管是園區名單還是電力，通通沒有來源。這份報告查到的公開資料，規劃中的大型資料中心有三十多座。但真正有在營運的，其實只有兩座。<short pause>規劃中的電，跟真的在跑的晶片是兩回事。那到底有沒有公開總量？答案是完全沒有。凡是寫成幾成在境外的，現在全都是用猜的。",
+   "to": "好，回到開頭那個數字：中國相關的輝達晶片，六成以上在境外。<short pause>它出自網路上流傳的一篇中文分析，沒有署名，也找不到原始出處。它說境外替中國跑的有三十到四十五萬顆。怎麼算的？拿東南亞幾個園區增加的用電，乘上七成。可是園區名單、電力數字、七成這個係數，通通沒有出處。這份報告查得到的是：馬來西亞、印尼、泰國規劃中的大型資料中心有三十一座，在營運的只有兩座。規劃中的電，跟已經在跑的晶片，是兩回事。所以答案是：沒有任何一方公布總量，凡是寫成幾成在境外的數字，現在都是推算。",
+   "reason": "照草稿重寫：改寫把原文數字改模糊或加了原文沒有的因果、結論；「用猜的」改回推算"
+  },
+  {
+   "from": "可是園區名單、電力數字、七成這個係數，通通沒有出處",
+   "to": "可是這幾個數字從哪裡來，通通沒有出處",
+   "reason": "頓號連排太多，拆開"
+  },
+  {
+   "from": "馬來西亞、印尼、泰國規劃中的大型資料中心",
+   "to": "東南亞三個國家規劃中的大型資料中心",
+   "reason": "頓號連排太多，拆開"
+  }
+ ]
+}

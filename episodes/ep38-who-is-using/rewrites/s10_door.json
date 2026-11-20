@@ -1,0 +1,129 @@
+{
+ "segment": "s10_door",
+ "position": "第 11 段，共 14 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8c9feefdb3bbea6f798941f1ee5263bd8afa8ade629784d01ef0bd04c7b94e2c",
+ "previous_context": "不過這份報告說，兩邊的說法都還沒辦法驗證。那這道門關上之後，實際上擋掉了多少人？",
+ "original": {
+  "text": "同一扇新加坡的門，兩邊做了相反的選擇。金融時報報導，OpenAI 和 Google 證實，供應阿里巴巴、百度、騰訊的新加坡子公司；OpenAI 擋的是中國境內的直接存取。Anthropic 十一月十二號生效的新規定是：人在哪裡、公司註冊或總部在哪裡、誰持股或控制，三個裡面任何一個落在不支援的地區，就不能用，範圍包括 Claude Code、API 和經銷商。三個地址又出現了：OpenAI 和 Google 看人在哪，Anthropic 三個都看。這項政策實際擋掉多少使用，沒有公開數字。",
+  "lint": {
+   "chars": 233,
+   "precise_numbers": [
+    "百",
+    "十一",
+    "十二"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 45.6,
+   "max_sentence_len": 90,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "答案是，其實根本沒有公開數字喔。<short pause>\n同一扇新加坡的大門，兩邊的選擇完全相反。\n像金融時報就報導過，\nOpenAI 和 Google 都有證實，\n他們有賣給阿里巴巴、百度還有騰訊，\n而且是給他們的新加坡子公司喔。\nOpenAI 擋的，只有中國境內的直接連線。\n那 Anthropic 呢？\n他們十一月十二號生效的新規定就很嚴格啦。\n人在哪裡、總部在哪裡、背後是誰持股，\n只要有一個踩到紅線，就完全不能用。\n連 Claude Code 跟 API 都在範圍內。\n所以你看，OpenAI 和 Google 只看人在哪。\n但 Anthropic 是三個地址全部都抓。<short pause>\n至於實際擋掉了多少使用？\n這份報告說，目前根本沒有公開數字。",
+   "lint": {
+    "chars": 278,
+    "precise_numbers": [
+     "百",
+     "十一",
+     "十二"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 22.2,
+    "max_sentence_len": 59,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實，面對同一扇新加坡的大門，各家公司的選擇完全相反。金融時報的報導就提到，OpenAI 跟 Google 證實有賣給阿里巴巴、百度還有騰訊的新加坡子公司喔。OpenAI 擋的是中國境內的直接存取。但 Anthropic 的做法就很不一樣了。他們在十一月十二號生效的新規定，抓得非常嚴格。<short pause>你猜他們怎麼規範？人的位置、總部註冊地、還有背後誰控股，只要其中一個踩線，就完全不能用。範圍包括了 API 還有 Claude Code。所以其實 OpenAI 跟 Google 只看人在哪，Anthropic 則是三個地址統統都要看。<short pause>那這樣到底擋掉了多少人用？這份報告說，目前根本沒有任何公開數字啦。",
+   "lint": {
+    "chars": 280,
+    "precise_numbers": [
+     "百",
+     "十一",
+     "十二"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 24.5,
+    "max_sentence_len": 48,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.7,
+    "written_words": [
+     "其中"
+    ],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "同一扇新加坡的門，兩邊做法完全相反。\n金融時報報導，OpenAI 跟 Google 證實，\n客戶包括阿里巴巴跟騰訊，\n還有百度的新加坡子公司喔。\nOpenAI 擋的只有中國境內的直接存取。\n那 Anthropic 呢？\n他們在十一月十二號生效了新規定。\n人在哪、總部在哪，或是誰在持股控制，\n只要有一個落在不支援地區，就不能用。\n範圍還包含了 API 跟 Claude Code。\n<short pause>你看，三個地址的題目又來了。\nOpenAI 跟 Google 只看人在哪裡，\n但 Anthropic 是三個全部都要看。\n那這項政策到底擋掉了多少使用？\n這份報告說，官方根本沒有公開數字啦。",
+   "lint": {
+    "chars": 257,
+    "precise_numbers": [
+     "百",
+     "十一",
+     "十二"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 22.4,
+    "max_sentence_len": 47,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "答案是，其實根本沒有公開數字喔。<short pause>同一扇新加坡的大門，兩邊的選擇完全相反。像金融時報就報導過，OpenAI 和 Google 都有證實，他們有賣給阿里巴巴、百度還有騰訊，而且是給他們的新加坡子公司喔。OpenAI 擋的，只有中國境內的直接連線。那 Anthropic 呢？他們十一月十二號生效的新規定就很嚴格啦。人在哪裡、總部在哪裡、背後是誰持股，只要有一個踩到紅線，就完全不能用。連 Claude Code 跟 API 都在範圍內。所以你看，OpenAI 和 Google 只看人在哪。但 Anthropic 是三個地址全部都抓。<short pause>至於實際擋掉了多少使用？這份報告說，目前根本沒有公開數字。",
+   "to": "同一扇新加坡的門，兩邊做了相反的選擇。<short pause>金融時報報導，OpenAI 和 Google 證實，有供應阿里巴巴、百度、騰訊的新加坡子公司；OpenAI 擋的，是中國境內的直接連線。Anthropic 十一月十二號生效的新規定，是人在哪裡、公司註冊或總部在哪裡、誰持股或控制，三個只要有一個落在不支援的地區，就不能用，Claude Code 和 API 都在範圍內。三個地址又出現了：OpenAI 和 Google 看人在哪，Anthropic 三個都看。至於實際擋掉多少使用，沒有公開數字。",
+   "reason": "只講事件；320 字太長、「沒有公開數字」講了兩次"
+  }
+ ]
+}

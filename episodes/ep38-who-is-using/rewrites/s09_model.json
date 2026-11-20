@@ -1,0 +1,128 @@
+{
+ "segment": "s09_model",
+ "position": "第 10 段，共 14 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8dafbc21e545c7dfd0eea4391bb656cf724465043ef08f54cded5811addc6837",
+ "previous_context": "那 AI 模型那邊呢？其實早就先關門了。",
+ "original": {
+  "text": "第三站，模型。二〇二五年九月，Anthropic 禁止由中國實體持有多數股權的公司使用 Claude，不論公司設在哪裡。今年二月，Anthropic 公布三家中國實驗室做蒸餾，也就是 distillation，拿別家模型的回答來訓練自己的模型：大約兩萬四千個假帳號，超過一千六百萬次交流。七月，金融時報報導，螞蟻集團用新加坡實體的企業帳號給員工用。同一個月，阿里巴巴禁止員工在工作中用 Claude Code，列為高風險軟體，改用自家的工具。中國國家漏洞庫的通報說相關版本有後門漏洞，Anthropic 否認是後門，兩邊的說法這份報告都無法獨立驗證。",
+  "lint": {
+   "chars": 268,
+   "precise_numbers": [
+    "兩萬四千",
+    "一千六百萬"
+   ],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 43.7,
+   "max_sentence_len": 81,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "對，模型這邊關門關得更早。<short pause>\n\n二〇二五年九月，Anthropic 出手了。只要中資持股過半，公司設在哪裡都一樣，全部都不准使用 Claude。\n\n為什麼要防得這麼緊？因為今年二月，Anthropic 點名了中國的實驗室，說對方在做蒸餾 distillation，也就是拿別家模型的回答，來訓練自己的模型。光是假帳號，他們就抓了兩萬四千個。\n\n那大家要怎麼用？七月的時候，金融時報報導了一件事。螞蟻集團透過新加坡子公司，把帳號給員工用。同一時間，阿里巴巴禁止員工用 Claude Code。他們把它列為高風險軟體，改用自家的工具。中國官方的通報甚至說，裡面有後門漏洞。\n\nAnthropic 當然否認那是後門啦。<short pause>不過這份報告說，兩邊的說法都還沒辦法驗證。\n\n那這道門關上之後，實際上擋掉了多少人？",
+   "lint": {
+    "chars": 330,
+    "precise_numbers": [
+     "兩萬四千"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 21.0,
+    "max_sentence_len": 66,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.3,
+    "written_words": [
+     "透過"
+    ],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "對，我們先看 Anthropic 的動作。\n二〇二五年九月，他們宣布了新規定。\n只要中資持股過半，設在哪裡都不行。\n連海外子公司，也照樣不能用 Claude 喔。\n到了隔年二月，他們抓到有人違規。\n中國三家實驗室，被控做蒸餾 distillation。<short pause>\n也就是拿別家回答，訓練自己的模型。\n對方開了兩萬多個假帳號。\n交流次數甚至超過一千六百萬次。\n你可能會好奇，那繞道海外有用嗎？\n金融時報報導，螞蟻集團用新加坡公司買帳號。\n然後再透過內網，轉給員工使用。\n其實阿里巴巴在七月，突然大轉彎。\n他們禁止員工工作時，用 Claude Code。\n還列為高風險軟體，改用自家工具。\n中國官方通報說，裡面藏有後門漏洞。<short pause>\nAnthropic 當然否認那是後門。\n那到底誰說的才對？\n這份報告說，兩邊說法都還無法獨立驗證喔。",
+   "lint": {
+    "chars": 330,
+    "precise_numbers": [
+     "兩萬",
+     "一千六百萬"
+    ],
+    "enumerations": [],
+    "sentences": 19,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 25,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.6,
+    "written_words": [
+     "透過"
+    ],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實模型這邊動作更早。二〇二五年九月，Anthropic 就宣布禁令。只要中資持有多數股權，公司設在哪裡，都不能用 Claude。<short pause>那他們抓到了什麼？這份報告說，Anthropic 抓到了蒸餾 distillation。也就是拿別人的回答，去訓練自己的模型。對方用了兩萬多個假帳號，跑了上千萬次交流。然後在七月，外媒報導螞蟻集團用新加坡帳號連進去。同一個月，阿里巴巴禁止員工用 Claude Code。他們把這款工具列為高風險軟體。中國官方通報甚至說，裡面有安全後門。Anthropic 當然否認那是後門啦。<short pause>不過兩邊的說法，這份報告都說無法獨立驗證。究竟這道門擋下了多少使用量？其實目前完全沒有公開數字喔。",
+   "lint": {
+    "chars": 295,
+    "precise_numbers": [
+     "兩萬",
+     "千萬"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 18.7,
+    "max_sentence_len": 32,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "對，模型這邊關門關得更早。<short pause>二〇二五年九月，Anthropic 出手了。只要中資持股過半，公司設在哪裡都一樣，全部都不准使用 Claude。為什麼要防得這麼緊？因為今年二月，Anthropic 點名了中國的實驗室，說對方在做蒸餾 distillation，也就是拿別家模型的回答，來訓練自己的模型。光是假帳號，他們就抓了兩萬四千個。那大家要怎麼用？七月的時候，金融時報報導了一件事。螞蟻集團透過新加坡子公司，把帳號給員工用。同一時間，阿里巴巴禁止員工用 Claude Code。他們把它列為高風險軟體，改用自家的工具。中國官方的通報甚至說，裡面有後門漏洞。Anthropic 當然否認那是後門啦。<short pause>不過這份報告說，兩邊的說法都還沒辦法驗證。那這道門關上之後，實際上擋掉了多少人？",
+   "to": "對，模型這邊，門關得更早。<short pause>二〇二五年九月，Anthropic 規定：中國實體持股過半的公司，不管設在哪裡，都不能用 Claude。今年二月，Anthropic 公布三家中國實驗室做蒸餾，distillation，也就是拿別家模型的回答，來訓練自己的模型：大約兩萬四千個假帳號，超過一千六百萬次交流。七月，金融時報報導，螞蟻集團用新加坡實體的企業帳號給員工用。同一個月，阿里巴巴禁止員工在工作中用 Claude Code，列為高風險軟體，改用自家的工具；中國國家漏洞庫的通報說相關版本有後門漏洞，Anthropic 否認。兩邊的說法，這份報告都沒辦法獨立驗證。",
+   "reason": "只講事件：改寫把 2025 年的禁令說成「因為」2026 年的蒸餾（時間倒置）、加了「當然否認」；363 字太長"
+  }
+ ]
+}

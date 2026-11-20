@@ -1,0 +1,143 @@
+{
+ "segment": "s09_signals",
+ "position": "第 10 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d3acd0e66377b0c497bdac1b1ad8773e92fb6d27dd9d66ef56f56717c059a7aa",
+ "previous_context": "對，領先的人只能照著商業節奏走。這樣量出來的差距，會不會其實偏小了呢？",
+ "original": {
+  "text": "這份報告還拆了帳本層和政治層，例如 DeepSeek 那個著名的五百五十七萬美元，只算最後一次訓練；輝達發起的開放權重連署信，二十四小時內從二十五家變五十家，細節在原文。它不做預測，只列會改變判斷的訊號：中芯有沒有公布用國產機台生產的良率；長鑫的 HBM3 良率有沒有超過六成；有沒有出現完全在華為昇騰上預訓練的兆級參數前沿模型。開頭說的那一招在這裡：看到超車論或崩盤論，找出它假設沒有摩擦力的那一環。中國彎道超車那條鏈，牆是 HBM 和 EUV，極紫外光微影；開源讓技術民主化那條鏈，牆是兩百萬美元的入場費。",
+  "lint": {
+   "chars": 248,
+   "precise_numbers": [
+    "五百五十七萬",
+    "二十四",
+    "二十五",
+    "五十",
+    "3",
+    "兩百萬"
+   ],
+   "enumerations": [],
+   "sentences": 4,
+   "avg_sentence_len": 61.0,
+   "max_sentence_len": 82,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實這份報告不只看技術。<short pause>\n它連帳本跟政治層都拆開算。\n像 DeepSeek 著名的五百五十七萬美元，\n就只算最後一次訓練而已喔。\n研發跟失敗的成本其實都沒算進去。\n這份報告說，與其預測，\n不如盯緊幾個會改變判斷的訊號。\n比如長鑫的 HBM 高頻寬記憶體，\n良率有沒有跨過六成？\n華為昇騰有沒有跑出兆級前沿模型？\n那你看到超車論或崩盤論該怎麼辦？\n很簡單，去找假設沒有摩擦力的那一環。<short pause>\n像是彎道超車那條鏈，\n真正的牆是 HBM 跟 EUV 極紫外光微影機。\n號稱開源讓技術民主化，\n前面也卡著幾百萬美元的入場費吧。\n把有阻力的系統當成自由落體，\n這樣的推論真的站得住腳嗎？",
+   "lint": {
+    "chars": 260,
+    "precise_numbers": [
+     "五百五十七萬",
+     "百萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 20.7,
+    "max_sentence_len": 33,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實與其猜測差距，不如看關鍵訊號。<short pause>\n這份報告列出幾件會改變局面的事。\n像是中芯有沒有公布國產機台的良率？\n長鑫的 HBM 高頻寬記憶體良率有沒有過六成？\n還有華為昇騰有沒有跑出兆級參數的大模型？\n最傳神的是看摩擦力這個比喻。\n你只要問自己一句話：\n這條推論是不是偷偷假設現實沒有阻力？\n比方說中國彎道超車，\n牆就是 HBM 跟 EUV 極紫外光微影機。\n號稱開源讓技術民主化，\n牆就是兩百萬美元的入場費。<short pause>\n把有阻尼的系統當成自由落體，\n結論當然會失真嘛。\n那，如果大家都在硬碰硬，\n最後真正的裁判會是誰呢？",
+   "lint": {
+    "chars": 232,
+    "precise_numbers": [
+     "兩百萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.1,
+    "max_sentence_len": 27,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實這份報告後面還拆了帳本層跟政治層。\n像是 DeepSeek 五百多萬美元的成本，\n其實只算了最後一次訓練。\n還有輝達發起的開放權重連署信，\n一天之內簽署家數就直接翻倍啦。\n重點來了，這份報告完全不做預測。\n它只列出會改變判斷的真實訊號。\n比方說中芯有沒有公布國產機台良率？\n還有長鑫的 HBM 高頻寬記憶體，\n良率有沒有衝過百分之六十？<short pause>\n華為昇騰有沒有跑出兆級參數的前沿模型？\n那看到市場上的超車論或崩盤論，\n我們該怎麼看呢？\n其實就是找出它假設沒有摩擦力的地方。\n講中國彎道超車，\n面前的牆是 HBM 跟 EUV 極紫外光微影機。\n講開源讓技術民主化，\n那道牆就是幾百萬美元的入場費。<short pause>\n很多故事聽起來很順，\n往往只是把有摩擦力的系統，\n直接當成了自由落體在看而已。",
+   "lint": {
+    "chars": 307,
+    "precise_numbers": [
+     "五百",
+     "萬",
+     "百分之六十",
+     "百萬"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 22.6,
+    "max_sentence_len": 36,
+    "sentences_over_20": 7,
+    "particles_per_100": 0.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "最傳神的是看摩擦力這個比喻。你只要問自己一句話",
+   "to": "開頭說的那一招就在這裡。你只要問自己一句話",
+   "reason": "收回開頭的迴圈"
+  },
+  {
+   "from": "還有華為昇騰有沒有跑出兆級參數的大模型？",
+   "to": "還有，有沒有出現完全在華為昇騰上預訓練的兆級參數前沿模型？",
+   "reason": "改回原文"
+  },
+  {
+   "from": "那，如果大家都在硬碰硬，最後真正的裁判會是誰呢？",
+   "to": "",
+   "reason": "留了一個節目不回答的問題"
+  },
+  {
+   "from": "你只要問自己一句話：",
+   "to": "你只要問自己一句話，",
+   "reason": "結論提示冒號"
+  }
+ ]
+}

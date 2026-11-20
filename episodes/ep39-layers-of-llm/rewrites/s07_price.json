@@ -1,0 +1,140 @@
+{
+ "segment": "s07_price",
+ "position": "第 8 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "00313c0fd7466a0aae8151bec874d5149518759d7242188627948097ae1b9491",
+ "previous_context": " 架構省下來的錢，全被停不下來吃回去了。那到底是什麼決定了最後的帳單？",
+ "original": {
+  "text": "這個系列的另一篇報告〈沒有匯率〉，九月十號又量了一次價格。分數最高的中國模型，智譜的 GLM-5.3 拿四十五分，離最前面的 GPT-6 Astra 五十三分還差八分；它的輸出單價是 Astra 的十一分之一，可是跑同一套題目，用掉三點五倍的輸出 token，所以總花費只便宜二點一倍。按每一分算，中國模型只便宜一點二到三點二倍。再放進要跑很多步的 agent 任務，加上失敗時要人工重做，差距幾乎歸零：人工重做一題只要超過大約一百九十到兩百三十美元，完成率高的貴模型反而便宜。最後決定帳單的，是完成率。",
+  "lint": {
+   "chars": 242,
+   "precise_numbers": [
+    "5.3",
+    "四十五",
+    "6",
+    "五十三",
+    "十一",
+    "三點五",
+    "二點一",
+    "一點二",
+    "三點二",
+    "一百九十",
+    "兩百三十"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 47.4,
+   "max_sentence_len": 105,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "答案其實很現實，就是完成率。\n這份報告在九月又測了一次模型價格。\n智譜的 GLM-5.3 單價看似便宜十幾倍。\n可是跑同一套題目，它話很多。\n用掉的 token 竟然是別人的三點五倍。<short pause>\n所以總花費算下來，只便宜兩倍多一點。\n要是放進要跑很久的 agent 任務呢？\n你猜會發生什麼事？\n有些模型完成率太低，得靠人工兜底。\n也就是失敗要真人重做，一題大概兩百多美元。\n這筆人工成本一加進去，價差全被吃光了。\n算到最後，完成率高的貴模型反而更省錢喔。\n所以到底誰比較便宜？\n關鍵從來不是標價，而是能不能一次做對。",
+   "lint": {
+    "chars": 235,
+    "precise_numbers": [
+     "5.3",
+     "三點五",
+     "兩百"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "答案很簡單，就是任務完成率。<short pause>\n這份報告比較了各家模型的花費。\n智譜的 GLM-5.3，單價便宜了十幾倍。\n但跑同一套題，用量是別人的三點五倍。\n算下來，總花費其實只省了一半左右啦。\n如果按跑出來的分數算，只便宜一到三倍。\n那要是放進長時程的 agent 任務呢？\n重點來了，模型失敗誰來收尾？\n答案還是得靠人工兜底重做。<short pause>\n只要人工重做一次超過兩百美元，\n完成率較高的高價模型反而比較省喔。\n價差先被輸出用量吃掉一大半，\n剩下的又被人工補救給吃光了。\n所以最後決定帳單的，根本不是單價吧？",
+   "lint": {
+    "chars": 227,
+    "precise_numbers": [
+     "5.3",
+     "三點五",
+     "兩百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "這份報告說，答案其實是完成率。\n智譜的 GLM-5.3，單價便宜了快十倍。\n跑同一套題目，吐出的字數多了三點五倍。\n算下來，總花費其實只便宜兩倍多。\n如果放進長步驟的 agent 代理人任務呢？<short pause>\n模型要是跑錯了，就得找真人重做啦。\n真人重做一次，只要超過大約兩百美元，\n完成率高的貴模型，反而更省錢。\n價差先被 token 用量吃掉，再被人工吃掉。\n所以決定最後帳單的，從來不是單價，對吧？\n換了不同的分母，結論就完全不一樣。\n那如果是底層的晶片硬體，差距到底多大？",
+   "lint": {
+    "chars": 217,
+    "precise_numbers": [
+     "5.3",
+     "三點五",
+     "兩百"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 18.7,
+    "max_sentence_len": 32,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "答案其實很現實，就是完成率。這份報告在九月又測了一次模型價格。智譜的 GLM-5.3 單價看似便宜十幾倍。可是跑同一套題目，它話很多。用掉的 token 竟然是別人的三點五倍。<short pause>所以總花費算下來，只便宜兩倍多一點。要是放進要跑很久的 agent 任務呢？你猜會發生什麼事？有些模型完成率太低，得靠人工兜底。也就是失敗要真人重做，一題大概兩百多美元。這筆人工成本一加進去，價差全被吃光了。算到最後，完成率高的貴模型反而更省錢喔。所以到底誰比較便宜？關鍵從來不是標價，而是能不能一次做對。",
+   "to": "答案很現實：完成率。這個系列的另一份報告〈沒有匯率〉，九月十號又量了一次價格。分數最高的中國模型，智譜的 GLM-5.3 拿四十五分，最前面的 GPT-6 Astra 是五十三分。GLM 的輸出單價只有 Astra 的十一分之一，可是跑同一套題目，用掉三點五倍的輸出 token，總花費只便宜兩倍多一點；按每一分算，中國模型只便宜一點二到三點二倍。放進要跑很多步的 agent 任務，失敗了要人工重做：人工重做一題只要超過大約一百九十到兩百三十美元，完成率高的貴模型反而比較省。",
+   "reason": "照草稿重寫：改寫把原文數字改模糊或加了原文沒有的因果、結論"
+  },
+  {
+   "from": "答案很現實：完成率。這個系列的另一份報告〈沒有匯率〉，九月十號又量了一次價格。分數最高的中國模型，智譜的 GLM-5.3 拿四十五分，最前面的 GPT-6 Astra 是五十三分。GLM 的輸出單價只有 Astra 的十一分之一，可是跑同一套題目，用掉三點五倍的輸出 token，總花費只便宜兩倍多一點；按每一分算，中國模型只便宜一點二到三點二倍。放進要跑很多步的 agent 任務，失敗了要人工重做：人工重做一題只要超過大約一百九十到兩百三十美元，完成率高的貴模型反而比較省。",
+   "to": "答案很現實：完成率。這個系列的另一份報告〈沒有匯率〉，九月十號又量了一次價格。分數最高的中國模型，智譜的 GLM-5.3 拿四十五分，最前面的 GPT-6 Astra 是五十三分。GLM 的輸出單價只有 Astra 的十一分之一，可是跑同一套題目，用掉三點五倍的輸出 token，總花費只便宜兩倍多一點。按每一分算，中國模型只便宜一點二到三點二倍。放進要跑很多步的 agent 任務，失敗了要人工重做：人工重做一題只要超過大約一百九十到兩百三十美元，完成率高的貴模型反而比較省。",
+   "reason": "分號太多，拆句"
+  }
+ ]
+}

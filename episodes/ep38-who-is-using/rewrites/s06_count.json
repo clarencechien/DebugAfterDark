@@ -1,0 +1,126 @@
+{
+ "segment": "s06_count",
+ "position": "第 7 段，共 14 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b78217368ba684836c3583327894db7051c859cec38fc19315cdb7620c3c779e",
+ "previous_context": "金融時報一查才發現，就是字節跳動的子公司。但境外能拿到的算力，真的有傳聞那麼多嗎？",
+ "original": {
+  "text": "五筆的顆數上限加起來，大約十五萬六千顆。這是這份報告自己加的，它也說這個合計有毛病：晶片世代不同，規劃中的和已經上線的混在一起。所以只能當量級：有名有姓的報導，目前數到十五萬顆上下。走私也有人估，三家研究機構，有的算一年、有的算累計，區間從一萬到一百六十萬，期間、單位、方法都不同，不能相加。那開頭那個六成以上在境外呢？先記著，我們最後回來。",
+  "lint": {
+   "chars": 171,
+   "precise_numbers": [
+    "十五萬六千",
+    "十五萬",
+    "一萬",
+    "一百六十萬"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 27.5,
+   "max_sentence_len": 54,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實五筆公開報導加起來，大約是十五萬六千顆。<short pause>不過這份報告自己算完也說，這個數字其實有問題啦。因為晶片世代不同，規劃中跟已上線的又混在一起。所以只能說明，目前有名有姓的報導，大概十五萬顆上下。那走私的數量呢？其實有三家機構估算過，但有的算單年，有的算累計，範圍從一萬到一百六十萬顆都有。重點是單位跟方法都不同，不能隨便相加。那傳聞說境外佔了六成以上呢？先記著喔，我們最後再回來看。<short pause>",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [
+     "十五萬六千",
+     "十五萬",
+     "一萬",
+     "一百六十萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 20.0,
+    "max_sentence_len": 38,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實這份報告自己算了一下。五筆加起來大約十五萬六千顆。<short pause>不過報告裡也說，這個數字有毛病喔。因為晶片世代不同，規劃中跟已經上線的混在一起。所以頂多只能說明一件事。有名有姓的報導，大概數到十五萬顆上下。那走私呢？三家機構推算的數字差很多，從一萬到一百多萬都有。但計算期間跟單位完全不同，根本不能拿來相加嘛。<short pause>那開頭說的六成以上在境外呢？先記著，我們最後再回來看。",
+   "lint": {
+    "chars": 177,
+    "precise_numbers": [
+     "十五萬六千",
+     "十五萬",
+     "一萬",
+     "一百",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 23,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "其實把五筆公開報導加起來，\n上限大約是十五萬六千顆。\n這是這份報告自算的，\n但他自己也說這個合計有毛病喔。\n因為晶片世代不同，\n而且規劃中跟上線的混在一起。\n所以這只能當個參考的量級啦，\n有名有姓的報導，目前就數到十五萬顆。\n那走私的數字呢？\n這份報告看了三家研究機構，\n有的算一年，有的算累計，\n從一萬到一百多萬都有。<short pause>\n他們的單位跟方法都不同，根本不能相加。\n那開頭說的六成以上在境外呢？\n先記著，我們最後再回來解。",
+   "lint": {
+    "chars": 195,
+    "precise_numbers": [
+     "十五萬六千",
+     "十五萬",
+     "一萬",
+     "一百",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 20.7,
+    "max_sentence_len": 35,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0
+}

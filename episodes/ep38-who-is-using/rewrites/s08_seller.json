@@ -1,0 +1,135 @@
+{
+ "segment": "s08_seller",
+ "position": "第 9 段，共 14 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "7e9b5a6bade26ba4959b96fd051d8af75aaaabd00002cf8690c48c537e71f05d",
+ "previous_context": "生效後大概三個月內，也得補拿到許可。規則一出來，輝達跌了兩趴多，費城半導體指數也跌了超過五趴。",
+ "original": {
+  "text": "這份報告點出兩件事。第一，規則出來前兩週，賣方先動了：金融時報報導，輝達要求雲端業者的客戶過半數不是中國客戶，只適用新合約，輝達沒有證實也沒有否認。第二，美國的法規第一次開始看誰在用：不只看貨有沒有過國境，資料中心還要查客戶的總部和最終母公司。法源還有爭議，律師事務所直說，出口管制的法律沒有授權管遠端存取，這條規則是把在當地改變用途，當成一次移轉來管，站不站得住，要看六十天的意見期。晶片這邊十一月才開始看誰在用；AI 模型那邊，早就先關門了。",
+  "lint": {
+   "chars": 222,
+   "precise_numbers": [
+    "六十",
+    "十一"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第一"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 43.4,
+   "max_sentence_len": 70,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "市場反應這麼大，其實這份報告點出兩件事。\n規則出來前兩週，賣方其實就先動了。<short pause>\n金融時報報導，輝達要求雲端業者一件事。\n新合約的客戶，必須過半數不是中國客戶。\n面對這項報導，輝達沒有證實也沒有否認啦。\n然後第二件事，美國法規第一次開始看誰在用。\n現在資料中心得去查客戶的總部在哪裡。\n你可能會問，這樣管合法嗎？\n這在法律上其實很有爭議喔。<short pause>\n有律師事務所指出，法律沒授權管遠端存取。\n官方只是把在當地改變用途，當成一次移轉。\n這招能不能站得住，還要看後續意見。\n不過，晶片是十一月才開始查誰在用。\n那 AI 模型那邊呢？其實早就先關門了。",
+   "lint": {
+    "chars": 252,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [
+     "第二",
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "這份報告點出兩件大事。\n在規則公布前兩週，賣方就先動了。\n金融時報報導說，輝達開始要求雲端業者，\n新合約的非中國客戶，\n門檻至少要達到百分之五十一。<short pause>\n輝達對這件事沒有證實，但也沒否認。\n然後第二點，\n美國法規第一次開始查是誰在用。\n以前只管硬體有沒有過國境，\n現在資料中心還得查客戶的總部跟母公司。\n你猜這樣管合不合法？\n其實法源爭議還很大。\n律師事務所就直接說，\n出口管制的法律，根本沒授權管遠端存取。\n政府是把在當地改變用途，\n硬當成一次移轉來管。\n這到底站不站得住，要看意見期的反應了。\n晶片是十一月才開始看誰在用，\n但 AI 模型那邊，其實早就先關門了吧。",
+   "lint": {
+    "chars": 262,
+    "precise_numbers": [
+     "百分之五十一",
+     "十一"
+    ],
+    "enumerations": [
+     "第二",
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 20.8,
+    "max_sentence_len": 42,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "這份報告其實點出兩件事。<short pause>\n第一件事是，賣方早就先動了。\n金融時報報導說，輝達開出新合約。\n要求雲端業者的客戶，\n至少百分之五十一不能是中資。\n輝達對這件事沒有證實，但也沒否認。\n然後第二件事，是美國法規管得更細了。\n現在不只看晶片有沒有運出國境喔。\n資料中心連客戶的母公司在哪，都要清查。\n你可能會問，這樣規定真的站得住腳嗎？\n其實法律界還有爭議耶。<short pause>\n有律師就直接指出，\n現行法根本沒授權管遠端連線。\n官方等於是把改變用途，當成一次移轉來管。\n站不站得住，還要看意見期的反應。\n不過，晶片是十一月才開始看誰在用。\n至於 AI 模型那邊呢？\n他們其實早就先關門了。",
+   "lint": {
+    "chars": 262,
+    "precise_numbers": [
+     "百分之五十一",
+     "十一"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 23,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "這招能不能站得住，還要看後續意見。",
+   "to": "站不站得住，要看六十天的意見期。",
+   "reason": "改回原文"
+  }
+ ]
+}

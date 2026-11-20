@@ -1,0 +1,117 @@
+{
+ "segment": "s08_months",
+ "position": "第 9 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ba3e19b73ab6bcf5c7b73bc2346e14bf999cef821671bc98484a7b81ddbb0a2b",
+ "previous_context": "所以到底誰比較便宜？關鍵從來不是標價，而是能不能一次做對。",
+ "original": {
+  "text": "那能力差多少？研究機構 Epoch AI 的能力指數，二〇二三年以來中國模型平均落後美國前沿七個月，最少四個月，最多十四個月；美國政府的 CAISI 五月評估 DeepSeek V4 Pro，說落後大約八個月，引用的時候要記得它是美國政府機構。可是最少人講的是：月份這個單位在通膨。這個指數每年進步的幅度，從二〇二四年前的大約八點，變成今年五月的大約十五點五。同樣落後六個月，今年的六個月，能力差得比兩年前多。還有一個偏誤：追趕的一方可以挑發表時機，領先的不行，所以量到的差距會偏小。",
+  "lint": {
+   "chars": 234,
+   "precise_numbers": [
+    "十四",
+    "4",
+    "十五點五"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 38.0,
+   "max_sentence_len": 106,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "講完價格，那能力到底差多少？\n\n研究機構 Epoch AI 的資料顯示，\n平均落後美國大概七個月。\n美國官方機構 CAISI 也說，\nDeepSeek 大約落後八個月，\n不過引用時要記得他們的官方立場喔。\n\n可是單看落後幾個月，真的準嗎？\n<short pause>\n其實月份這個單位一直在通膨。\n現在一年跑出來的進度，比兩年前翻了一倍。\n同樣是落後半年，\n現在代表的能力差距大得多啦。\n更關鍵的是，追趕的人能挑時機發表，\n領先的受商業節奏影響沒辦法挑。\n這樣一來，量出來的差距是不是又偏小了？",
+   "lint": {
+    "chars": 212,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 22.6,
+    "max_sentence_len": 46,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  },
+  {
+   "text": "那能力到底差多少？\n這份報告裡的 Epoch AI 能力指數顯示，\n中國模型平均落後美國大約七個月。\n美國政府轄下的 CAISI，\n也就是人工智慧安全研究所，\n評估 DeepSeek 也是落後大約八個月。\n不過引用時要記得，\n他們是美國官方機構喔。<short pause>\n但最關鍵的事情是什麼？\n其實是月份這個單位正在通膨啦。\n現在模型進步速度，\n比兩年前快了一倍。\n所以同樣是落後六個月，\n現在落後的實力差距，\n早就比兩年前大得多。\n然後追趕的人可以挑時機發表，\n等自己能贏的時候才端出來。<short pause>\n對，領先的人只能照著商業節奏走。\n這樣量出來的差距，\n會不會其實偏小了呢？",
+   "lint": {
+    "chars": 248,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 21.5,
+    "max_sentence_len": 45,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0
+  },
+  {
+   "text": "講完價格，大家最想知道的，就是能力到底差多少。\nEpoch AI 的能力指數說，中國平均落後美國七個月。\n美國官方機構 CAISI 五月評估，也說落後大概八個月。\n不過重點來了，你有沒有想過，月份這個單位會通膨？\n這個指數每年進步的幅度，最近已經衝到十五點五。\n也就是說，現在的半年，差距比兩年前大很多喔。<short pause>\n然後還有一個偏誤，追趕的人可以挑時間發表。\n他們能等到能贏了才端出來，領先的反而不行。\n這樣量出來的差距，其實都被低估了對吧？那真正的差距到底有多大？",
+   "lint": {
+    "chars": 217,
+    "precise_numbers": [
+     "十五點五"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.7,
+    "max_sentence_len": 25,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "那能力到底差多少？這份報告裡的 Epoch AI 能力指數顯示，中國模型平均落後美國大約七個月。美國政府轄下的 CAISI，也就是人工智慧安全研究所，評估 DeepSeek 也是落後大約八個月。不過引用時要記得，他們是美國官方機構喔。<short pause>但最關鍵的事情是什麼？其實是月份這個單位正在通膨啦。現在模型進步速度，比兩年前快了一倍。所以同樣是落後六個月，現在落後的實力差距，早就比兩年前大得多。然後追趕的人可以挑時機發表，等自己能贏的時候才端出來。<short pause>對，領先的人只能照著商業節奏走。這樣量出來的差距，會不會其實偏小了呢？",
+   "to": "那能力差多少？研究機構 Epoch AI 的能力指數，二〇二三年以來中國模型平均落後美國前沿七個月，最少四個月、最多十四個月。美國政府的 CAISI，五月評估 DeepSeek V4 Pro，說落後大約八個月，引用時要記得它是美國官方機構。<short pause>可是最少人講的是：月份這個單位在通膨。這個指數每年進步的幅度，從二〇二四年以前的大約八點，變成今年五月的大約十五點五。同樣落後六個月，今年的六個月，差的能力比兩年前多。還有，追趕的一方可以挑發表時機，領先的不行，所以量到的差距會偏小。",
+   "reason": "照草稿重寫：改寫把原文數字改模糊或加了原文沒有的因果、結論；CAISI 的中文名是改寫編的"
+  }
+ ]
+}
