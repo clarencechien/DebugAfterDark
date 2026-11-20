@@ -1,0 +1,14 @@
+{
+ "_說明": "tools/yt_report.py 讀這個檔，在報表最上面畫「待辦」。做完把 status 改成 done（會顯示在已完成，留 14 天）；due 是 YYYY-MM-DD 或 null。owner：Clarence 或 Claude。",
+ "todo": [
+  {"text": "確認第 1 批改標題（EP15、06、09、08、13）的 RSS 同步與 AI 標示有出現在 YouTube", "owner": "Claude", "due": null, "status": "open", "experiment": "title-rewrite-batch1"},
+  {"text": "下一批改標題，一批 5 集，照 EP28–39 的順序", "owner": "Claude", "due": null, "status": "open"},
+  {"text": "舊集的章節時間跟著改標題的批次一起修正（ident 少算約 9.7 秒）", "owner": "Claude", "due": null, "status": "open"},
+  {"text": "上傳 EP36 影片版，再把 RSS 同步的 EP36（3babsAxEIbo）改成私人", "owner": "Claude", "due": null, "status": "open", "experiment": "video-version-ep36"},
+  {"text": "看 EP37 Short 的成績（觀看、滑走率、帶去長片）", "owner": "Clarence", "due": "2026-11-27", "status": "open", "experiment": "shorts-ep37"},
+  {"text": "EP07 標題＋縮圖 A/B 判讀", "owner": "Clarence", "due": "2026-12-04", "status": "open", "experiment": "ep07-ab"},
+  {"text": "A/B 結果出來後，把贏的縮圖版型套到其他集", "owner": "Claude", "due": null, "status": "open"},
+  {"text": "make_short.py 改成可以一次做多集", "owner": "Claude", "due": null, "status": "open"},
+  {"text": "YouTube API 稽核（11/20 送出，等 Google 回覆）", "owner": "Clarence", "due": null, "status": "waiting"}
+ ]
+}

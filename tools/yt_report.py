@@ -385,6 +385,41 @@ def experiments_section(exps, snap, A, reach):
     return card("實驗總覽", "共同規則：一次只改一個變數；只看自然流量。設定在 <code>youtube/experiments.json</code>，改了 YouTube 上的東西就更新那裡的日期與狀態。", body), summ
 
 
+# ───────────────────────────── 待辦 ─────────────────────────────
+
+def load_todo():
+    path = os.path.join(ROOT, "youtube", "todo.json")
+    if not os.path.exists(path):
+        return []
+    return json.load(open(path, encoding="utf-8")).get("todo", [])
+
+
+def todo_section(items, today):
+    if not items:
+        return "", []
+    open_ = [t for t in items if t.get("status") != "done"]
+    done = [t for t in items if t.get("status") == "done"
+            and (not t.get("done_on") or (today - d(t["done_on"])).days <= 14)]
+    open_.sort(key=lambda t: (t.get("due") is None, t.get("due") or "", t.get("status") == "waiting"))
+    lis = []
+    for t in open_:
+        due = t.get("due")
+        tag = ""
+        if due:
+            left = (d(due) - today).days
+            tag = (f"<span class='pill late'>⚠ 過期 {-left} 天（{due[5:].replace('-', '/')}）</span>" if left < 0 else
+                   f"<span class='pill'>{'今天' if left == 0 else f'{left} 天後'}（{due[5:].replace('-', '/')}）</span>")
+        if t.get("status") == "waiting":
+            tag += "<span class='pill'>⏳ 等回覆</span>"
+        lis.append(f"<li><span class='who'>{E(t.get('owner', ''))}</span><span class='tx'>{E(t['text'])}</span>{tag}</li>")
+    dl = "".join(f"<li class='done'><span class='who'>{E(t.get('owner', ''))}</span><span class='tx'>✓ {E(t['text'])}</span></li>" for t in done)
+    body = f"<ul class='todo'>{''.join(lis)}{dl}</ul>"
+    n_late = sum(1 for t in open_ if t.get("due") and d(t["due"]) < today)
+    sub = f"{len(open_)} 項待辦" + (f"，{n_late} 項過期" if n_late else "") + "。有日期的排前面。清單在 <code>youtube/todo.json</code>，做完把 status 改成 done。"
+    summ = [dict(text=t["text"], owner=t.get("owner"), due=t.get("due"), status=t.get("status")) for t in open_]
+    return card("待辦", sub, body), summ
+
+
 # ───────────────────────────── 繪圖 ─────────────────────────────
 
 E = html.escape
@@ -580,7 +615,7 @@ def pct_change(a, b):
     return (a - b) / b * 100 if b else None
 
 
-def render(snap, A, reach, acts, xsec=""):
+def render(snap, A, reach, acts, xsec="", tsec=""):
     rows, days, last = A["rows"], A["days"], A["last_data"]
     wk, prev = window(days, last, 7), window(days, (d(last) - dt.timedelta(days=7)).isoformat(), 7)
     org_avd = wk["org_min"] * 60 / wk["org"] if wk["org"] else None
@@ -710,7 +745,7 @@ def render(snap, A, reach, acts, xsec=""):
              + (f"到 {reach_days[-1]}，共 {len(reach_days)} 天" if reach_days else "還沒有報表（工作 11/20 建立，約 11/21 下午出第一份）"))
     return TEMPLATE.replace("%TITLE%", E(snap["channel"]["title"])).replace("%GEN%", E(snap["generated"])) \
         .replace("%FRESH%", E(fresh)).replace("%TILES%", tiles).replace("%ACTIONS%", act_html) \
-        .replace("%BODY%", c1 + c2 + c3 + c4 + c5 + c6 + c7).replace("%EXPERIMENTS%", xsec)
+        .replace("%BODY%", c1 + c2 + c3 + c4 + c5 + c6 + c7).replace("%EXPERIMENTS%", tsec + xsec)
 
 
 TEMPLATE = """<!doctype html>
@@ -742,7 +777,7 @@ box-shadow:0 4px 16px rgba(0,0,0,.15);display:none;max-width:280px;z-index:9;whi
 .tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:6px 8px;border-bottom:1px solid var(--grid);text-align:right;white-space:nowrap}
 th:first-child,td:first-child,td:nth-child(2),th:nth-child(2){text-align:left}td:nth-child(2){white-space:normal;min-width:200px}
 td{font-variant-numeric:tabular-nums}.sortable th{cursor:pointer;user-select:none}a{color:var(--s1)}
-.xps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:12px}.xp{border:1px solid var(--border);border-radius:10px;padding:14px}.xh{display:flex;justify-content:space-between;align-items:baseline;gap:8px}.xh h3{margin:0;color:var(--ink);font-size:15px}.pill{font-size:12px;color:var(--ink2);border:1px solid var(--border);border-radius:999px;padding:1px 8px;white-space:nowrap}.xm{display:flex;justify-content:space-between;gap:12px;font-size:13px;padding:4px 0;border-bottom:1px solid var(--grid)}.xm span{color:var(--ink2)}.xm b{font-weight:600;text-align:right}code{font-size:12px}details.tv{margin-top:8px;font-size:13px;color:var(--ink2)}details.tv summary{cursor:pointer}.empty{color:var(--muted);font-size:13px;padding:24px 0;text-align:center}
+.xps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:12px}.xp{border:1px solid var(--border);border-radius:10px;padding:14px}.xh{display:flex;justify-content:space-between;align-items:baseline;gap:8px}.xh h3{margin:0;color:var(--ink);font-size:15px}.pill{font-size:12px;color:var(--ink2);border:1px solid var(--border);border-radius:999px;padding:1px 8px;white-space:nowrap}.xm{display:flex;justify-content:space-between;gap:12px;font-size:13px;padding:4px 0;border-bottom:1px solid var(--grid)}.xm span{color:var(--ink2)}.xm b{font-weight:600;text-align:right}code{font-size:12px}.todo{list-style:none;margin:0;padding:0}.todo li{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;padding:8px 0;border-bottom:1px solid var(--grid);font-size:14px}.todo .who{font-size:12px;color:var(--muted);min-width:64px}.todo .tx{flex:1 1 300px}.todo li.done{color:var(--muted)}.pill.late{color:var(--bad);border-color:var(--bad)}details.tv{margin-top:8px;font-size:13px;color:var(--ink2)}details.tv summary{cursor:pointer}.empty{color:var(--muted);font-size:13px;padding:24px 0;text-align:center}
 </style></head><body><main>
 <h1>%TITLE% 成效報表</h1>
 <p class="meta">產生於 %GEN%（台北）。%FRESH%。所有比較只看自然流量，廣告另列。</p>
@@ -782,11 +817,12 @@ def main():
     A = analyse(snap, reach)
     acts = actions(A, reach)
     xsec, xsum = experiments_section(load_experiments(), snap, A, reach)
+    tsec, tsum = todo_section(load_todo(), dt.datetime.now(TZ).date())
     out = a.out or os.path.join(a.data_dir, "report.html")
-    open(out, "w", encoding="utf-8").write(render(snap, A, reach, acts, xsec))
+    open(out, "w", encoding="utf-8").write(render(snap, A, reach, acts, xsec, tsec))
     wk = window(A["days"], A["last_data"], 7)
     summary = dict(generated=snap["generated"], analytics_to=A["last_data"], reach_days=len({k[1] for k in reach}),
-                   organic_views_7d=wk["org"], ad_views_7d=wk["ad"], organic_minutes_7d=wk["org_min"], actions=acts, experiments=xsum,
+                   organic_views_7d=wk["org"], ad_views_7d=wk["ad"], organic_minutes_7d=wk["org_min"], actions=acts, experiments=xsum, todo=tsum,
                    episodes=[{k: r[k] for k in ("ep", "id", "title", "style", "org_views", "first7", "org_avp", "ret30", "impressions", "ctr")}
                              for r in A["rows"]])
     for name in ("summary.json", f"summary-{snap['generated'][:10]}.json"):  # 帶日期的那份給下週比較用
