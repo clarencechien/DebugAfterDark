@@ -1,0 +1,32 @@
+{
+ "id": "ep39-layers-of-llm",
+ "number": 39,
+ "type": "full",
+ "guid": "debug-after-dark:ep39",
+ "title": "EP39 中國 AI 追上美國了嗎？差十五年，也只差四個月",
+ "description": "七月底，中國開始小批量生產國產的 DUV 微影機，艾司摩爾股價盤中一度跌了 6.5%。可是這台機器今年的目標是五台，艾司摩爾去年交了 131 台。中國的 AI 追上美國了嗎？這份報告說，答案可能是差十五年，也可能只差四個月，要看問的是哪一層。微影、HBM 記憶體、模型三層各有各的單位，再加上同系列〈沒有匯率〉九月量的價格：便宜的是 token，貴的是 turn。分層讀法上篇。\n\n今晚的 breakpoint：\n1. 中國追上了沒有，沒有單一答案：微影差約十五年，記憶體卡在良率，模型差四到七個月，單位不能換算。\n2.「幾十 B」和「2.8 兆」不矛盾，差在「激活」兩個字；中國模型便宜的是 token，貴的是 turn，最後決定帳單的是完成率。\n3. 看到超車論或崩盤論，找出它假設沒有摩擦力的那一環。\n\n原文：〈不是誰追上誰，而是哪一層〉https://imitator.ai-apps.work/r/layers-of-llm\n價格與完成率那段取自同系列〈沒有匯率〉https://imitator.ai-apps.work/r/no-exchange-rate\n數字停在 2026-07-28（價格是 09-10 的快照），2026-11-13 補查出處；原文標「待查」的數字，節目照說是待查。提到股價的地方不構成投資建議。\n\n上一集：EP38〈美國放行了，六十萬顆晶片為什麼還卡在香港？〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "layers-of-llm",
+ "source_url": "https://imitator.ai-apps.work/r/layers-of-llm",
+ "status": "draft",
+ "related": [
+  "ep38-who-is-using"
+ ],
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "series": "分層讀法 2/2（上：EP38）",
+ "report_version": "2026-11-13",
+ "audio": {
+  "file": "ep39-layers-of-llm.mp3"
+ }
+}

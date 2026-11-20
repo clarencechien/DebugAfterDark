@@ -1,0 +1,31 @@
+（注意：使用者 2026-11-20 的要求：技術名詞第一次出現時英文和中文一起說（例：H200 晶片、TPP 總處理效能、BIS 美國商務部工業與安全局、HBM 高頻寬記憶體、DUV 深紫外光微影機、MoE 混合專家、蒸餾 distillation），之後擇一。公司有通用中文名的用中文（輝達、字節跳動、騰訊、阿里巴巴、螞蟻集團、月之暗面、艾司摩爾、華為、中芯、長鑫、百度），其餘保留英文（Anthropic、OpenAI、Google、Oracle、Nscale、Claude、Claude Code、DeepSeek、Kimi K3）。這組題材比較硬，要顧留存：草稿每段結尾的那個小問題或轉折要保留，不要刪；開頭留下的問題要在後面回答。不要用「你猜怎麼著」（大陸說法），「你猜」「你知道嗎」全集最多兩三次。數字以原文為準；原文標推算、自算、未驗、待查的要照說。說「這份報告說」，不要只說「報告」。Ping 沒有個人經歷，不加個人反應（「我覺得」「超扯」「起雞皮疙瘩」「捏一把冷汗」）。不要用「打平」「近似」這些容易聽錯的詞。）
+
+[h3] 價格：單價便宜十倍，按分數算只便宜一到三倍
+Artificial Analysis 會把每個模型拿去跑同一套智慧指數，並公布跑完的總花費與 token 用量。九月十日的快照：
+模型實驗室指數單價 入／出輸出 token總花費每分花費
+GPT-6 Astra（max）[87]OpenAI53$10／$506,000 萬$5,324$100
+Claude Fable 5.1（max）[88]Anthropic53$10／$501.9 億$13,129$248
+Claude Opus 4.8（max）[89]Anthropic42$5／$251.7 億$6,874$164
+GLM-5.3（max）[90]智譜45$1.40／$4.402.1 億$2,503$56
+Kimi K3（max）[91]Moonshot44$3／$151.6 億$3,658$83
+DeepSeek V4 Pro 0813（max）[92]DeepSeek36$1.32／$3.961.6 億$1,122$31
+查於 2026-09-10，max 推理設定。單價為每百萬 token；輸出 token 與總花費是跑完整套智慧指數的用量。指數會改版重標，只能比同一天的快照；「每一分花費」＝總花費 ÷ 指數，假設指數線性，只看量級。
+表中分數最高的中國模型 GLM-5.3 拿 45 分，已經超過五月發布的 Claude Opus 4.8（42 分），離九月初的 GPT-6 Astra 與 Claude Fable 5.1（53 分）還差 8 分。它的輸出單價是 GPT-6 Astra 的十一分之一，但跑同一套指數用了 2.1 億個輸出 token，是 Astra 的 3.5 倍，所以總花費只便宜 2.1 倍。token 效率也不按國別分：Claude Fable 5.1 與 Opus 4.8 的輸出 token 用量，和中國模型同一級。
+換一個對手，「中國便宜」也不一定成立。CAISI 拿能力相當的 GPT-5.4 mini 比成本：「DeepSeek V4 costs less than GPT-5.4 mini on 5 out of 7 CAISI benchmarks. On those 7 benchmarks, DeepSeek V4 ranged from 53% less expensive to 41% more expensive.」[84]
+[h3] 放進 agent 任務：價差被兜底人工吃掉
+OSWorld 2.0 測了三個中國模型（MiniMax M3、Kimi 2.6、Qwen 3.7-Plus），都只有 single 模式，也都早於 Kimi K3、GLM-5.3 這一代。[52]
+模型（模式）完成率每任務成本每次成功成本成功一次的步數兜底總成本兩平完成率
+MiniMax M3（single）4.6%~$2.4$527,102$2311.0%
+Kimi 2.6（single）4.6%~$6.6$1433,898$2362.8%
+Qwen 3.7-Plus（single）2.8%~$3.8$1366,196$2371.6%
+Sonnet 4.6（single）8.3%~$22.3$2693,052$2429.3%
+Opus 4.7（single）13.9%~$35.8$2582,291$24214.9%
+Opus 4.8（single）18.5%~$76.1$4111,030$27231.7%
+Opus 4.7（batched）18.2%~$33.6$185883$23014.0%
+GPT-5.5（batched）13.0%~$25.5$196732$23410.6%
+Opus 4.8（batched）20.6%~$72.4$351500$26330.2%
+本篇推算，資料來源 OSWorld 2.0 Table 3。兜底總成本假設人工重做一題 $240；成功一次的步數＝每任務步數 ÷ 完成率。
+每次成功的成本，三個中國模型是 52 到 143 美元，美國組合是 185 到 411 美元。但完成率低，成功一次要走 3,900 到 7,100 步，美國組合是 500 到 3,050 步。加上人工兜底之後，只比 single 模式，三個中國模型的總成本最低（231 到 237 美元，美國 242 到 272 美元）。美國模型開了批次工具呼叫，Opus 4.7 以 230 美元反超。算交叉點：人工重做一題的成本只要超過約 190 到 230 美元，完成率較高的 Opus 4.7（batched）就比三個中國模型便宜。本篇假設的 240 美元，已經在線的另一側。
+HAL 的結果方向一致：九個模型裡，DeepSeek R1 是唯一在九個 benchmark 上從未落在成本與準確率 Pareto 前緣的模型。HAL 也記下一件和分母有關的小事：「Together AI changed their DeepSeek R1 endpoint to serve DeepSeek R1 0528 on release day, keeping the same API endpoint name.」[49]。同一個名字底下，模型換了。
+使用面上，中國開放模型在 OpenRouter 上一年平均約佔 13% 的 token 用量，某些週接近三成。同一份研究發現需求對價格不敏感：「a 10% decrease in price corresponds to only about a 0.5–0.7% increase in usage」。[93]
+「追上多少」要先問用哪一把尺。能力落後五到八個月。單價便宜三到十幾倍。按指數每一分算，只比 GPT-6 Astra 便宜 1.2 到 3.2 倍。放進長時程的 agent 任務、加上人工兜底，差距幾乎歸零，交叉點就落在人工一題兩百美元上下。價差先被 token 用量吃掉一大半，剩下的再被兜底人工吃掉，最後決定帳單的是完成率。這裡沒有替哪一邊說話，只是同一件事又換了一次分母。

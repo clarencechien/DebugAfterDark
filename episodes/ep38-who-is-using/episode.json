@@ -1,0 +1,32 @@
+{
+ "id": "ep38-who-is-using",
+ "number": 38,
+ "type": "full",
+ "guid": "debug-after-dark:ep38",
+ "title": "EP38 美國放行了，六十萬顆晶片為什麼還卡在香港？",
+ "description": "六十萬顆輝達的 H200 晶片停在香港。美國已經放行了，不讓它們進去的，是中國。照理說中國的 AI 公司很缺算力，模型卻一個接一個發表，算力從哪裡來？這份報告發現，同一顆晶片可以有三個地址：貨到哪、票開給誰、誰在用。從輝達自己換過一次的營收算法、中國公司在東南亞和挪威租用的算力、美國十一月十六日的新規則，到 AI 模型這邊先關上的那扇新加坡的門，一欄一欄對。分層讀法番外。\n\n今晚的 breakpoint：\n1. 同一顆晶片有三個地址：貨到哪、票開給誰、誰在用；輝達換一次算法，中國營收就從 13.1% 變成 19.2%。\n2. 今年卡住 H200 的是中國海關；美國 11 月 16 日的規則，第一次開始查資料中心客戶的總部。\n3. 中國用了多少輝達算力，沒有人公布總量，凡是「幾成在境外」的數字都是推算。\n\n原文：〈貨到哪，票開給誰，誰在用〉分層讀法番外 v0.3 https://imitator.ai-apps.work/r/who-is-using\n資料截至 2026-11-19；多數原始報導在付費牆後，原文讀到的是轉述，各數字的來源等級與推算、未驗的標記見原文。原文由 Claude 撰寫，講 Anthropic 政策的那一段，節目只排事件。提到股價的地方不構成投資建議。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "who-is-using",
+ "source_url": "https://imitator.ai-apps.work/r/who-is-using",
+ "status": "draft",
+ "related": [
+  "ep39-layers-of-llm"
+ ],
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "series": "分層讀法 1/2",
+ "report_version": "2026-11-19",
+ "audio": {
+  "file": "ep38-who-is-using.mp3"
+ }
+}
