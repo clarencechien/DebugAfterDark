@@ -111,6 +111,9 @@ ct2-transformers-converter --model MediaTek-Research/Breeze-ASR-25 \
 先寫好 `id`、`number`、`type`（`full`）、`guid`（`debug-after-dark:ep02`，永遠不變）、`title`、`description`（show notes 格板見
 `episodes/ep00-intro/script.md`）、`report_slug`、`source_url`、`voice`、`audio.file`。其餘第 8 步補。
 
+說明欄照 [`docs/hooks.md`](hooks.md)「YouTube：說明欄」的順序寫：鉤子、章節（`00:00` 起，時間取 `qa/consistency.json` 各段的 `start`，母帶做完再填）、數字的出處與但書、原文與主要來源、breakpoint 與延伸收聽、AI 揭露。
+另加 `youtube`：`title`（YouTube 標題，可以跟 podcast 標題不同）、`thumbnail`（兩組縮圖字，各是［白字主題, 紅底結論］）、`synthetic_content: true`（上傳時「變造或合成內容」勾是）。範例：`episodes/ep38-who-is-using/`。
+
 範例：`episodes/ep02-harness-probe/`。
 
 ## 2. 台灣口語改寫
