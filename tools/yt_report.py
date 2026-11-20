@@ -279,6 +279,112 @@ def actions(A, reach):
     return out[:3]
 
 
+# ───────────────────────────── 實驗總覽 ─────────────────────────────
+
+STATUS_ZH = {"running": ("●", "進行中"), "pending": ("○", "待開始"), "not_started": ("○", "未開始"),
+             "done": ("✓", "已結束"), "stopped": ("✕", "停止")}
+
+
+def load_experiments():
+    path = os.path.join(ROOT, "youtube", "experiments.json")
+    if not os.path.exists(path):
+        return []
+    return json.load(open(path, encoding="utf-8")).get("experiments", [])
+
+
+def reach_window(reach, vid, start=None, end=None):
+    """(曝光, 點閱率%)，日期區間 [start, end)，None 表示不限。"""
+    i = c = 0.0
+    for (v, day), (n, k) in reach.items():
+        if v != vid or (start and day < start) or (end and day >= end):
+            continue
+        i += n; c += k
+    return (i, c / i * 100) if i else (0, None)
+
+
+def organic_per_day(snap, vid, start=None, end=None):
+    per = {}
+    for r in snap["video_daily_sources"].get(vid, []):
+        if r["insightTrafficSourceType"] == "ADVERTISING": continue
+        if (start and r["day"] < start) or (end and r["day"] >= end): continue
+        per[r["day"]] = per.get(r["day"], 0) + r["views"]
+    return (sum(per.values()) / len(per), len(per)) if per else (None, 0)
+
+
+def ctr_txt(imp, ctr):
+    return f"{ctr:.2f}%（{imp:,.0f} 曝光）" if ctr is not None else "—"
+
+
+def experiment_metrics(x, snap, A, reach):
+    """回傳 [(標籤, 值)] 與可選的表格 HTML。"""
+    by_ep = {r["ep"]: r for r in A["rows"] if r["ep"] is not None and r["style"] != "short"}
+    by_id = {r["id"]: r for r in A["rows"]}
+    ch = x.get("change_date")
+    m, extra = [], ""
+    if x["kind"] == "ab_single":
+        r = by_ep.get(x["ep"])
+        if r:
+            m.append(("基準點閱率", f"{x['baseline_ctr']:.2f}%"))
+            m.append(("改後點閱率", ctr_txt(*reach_window(reach, r["id"], ch)) if ch else "—"))
+            b, nb = organic_per_day(snap, r["id"], (d(ch) - dt.timedelta(days=14)).isoformat() if ch else None, ch)
+            a, na = organic_per_day(snap, r["id"], ch) if ch else (None, 0)
+            m.append(("每天自然觀看 改前 14 天", fmt(b, 1)))
+            m.append(("每天自然觀看 改後", f"{a:.1f}（{na} 天）" if a is not None else "還沒有資料"))
+    elif x["kind"] == "title_batch":
+        trs = []
+        for ep in x["eps"]:
+            r = by_ep.get(ep)
+            if not r: continue
+            before = reach_window(reach, r["id"], None, ch) if ch else reach_window(reach, r["id"])
+            after = reach_window(reach, r["id"], ch) if ch else (0, None)
+            trs.append([f"EP{ep:02d}", E(r["title"]), ctr_txt(*before), ctr_txt(*after), fmt(r["org_views"])])
+        m.append(("集數", "、".join(f"EP{e:02d}" for e in x["eps"])))
+        m.append(("改標題日期", ch or "還沒改"))
+        extra = table(["集", "目前標題", "改前點閱率", "改後點閱率", "自然觀看（累計）"], trs)
+    elif x["kind"] == "shorts":
+        r = by_id.get(x["video"])
+        lr = by_ep.get(x.get("long_ep"))
+        if r:
+            m.append(("Short 自然觀看", fmt(r["org_views"])))
+            m.append(("平均觀看比例", f"{r['org_avp']:.0f}%" if r["org_avp"] else "—"))
+        else:
+            m.append(("Short 自然觀看", "還沒有資料（上架後約 2–3 天才進 Analytics）"))
+        if lr:
+            m.append((f"EP{x['long_ep']:02d} 長片從 Shorts 來的觀看", fmt(lr["sources"].get("SHORTS", 0))))
+        if x.get("studio_only"):
+            m.append(("滑走率", x["studio_only"]))
+    elif x["kind"] == "video_version":
+        lo, hi = x["baseline_eps"]
+        base = [by_ep[e] for e in range(lo, hi + 1) if e in by_ep and e not in x.get("exclude", [])]
+        med30 = median([r["ret30"] for r in base])
+        medp = median([r["org_avp"] for r in base if r["org_views"] >= 10])
+        ex = "".join(f"，不含 EP{e}" for e in x.get("exclude", []))
+        lo_hi = f"EP{lo}–EP{hi}{ex}"
+        m.append((f"基準 {lo_hi} 30 秒留存（中位數）", f"{med30*100:.0f}%" if med30 is not None else "樣本不足"))
+        m.append((f"基準 {lo_hi} 平均觀看比例（中位數）", f"{medp:.0f}%" if medp is not None else "樣本不足"))
+        t = by_id.get(x.get("video")) or by_ep.get(x["ep"])
+        m.append((f"EP{x['ep']} 影片版", (f"30 秒 {t['ret30']*100:.0f}%、觀看比例 {t['org_avp']:.0f}%"
+                                       if t and t["ret30"] is not None and t["org_avp"] else "還沒上架")))
+    return m, extra
+
+
+def experiments_section(exps, snap, A, reach):
+    if not exps:
+        return "", []
+    blocks, summ = [], []
+    for x in exps:
+        icon, label = STATUS_ZH.get(x.get("status"), ("○", x.get("status", "")))
+        m, extra = experiment_metrics(x, snap, A, reach)
+        dl = "".join(f"<div class='xm'><span>{E(k)}</span><b>{E(str(v))}</b></div>" for k, v in m)
+        nxt = x.get("next_review") or "—"
+        blocks.append(f"<div class='xp'><div class='xh'><h3>{E(x['name'])}</h3><span class='pill'>{icon} {E(label)}</span></div>"
+                      f"<p class='sub'>測：{E(x['tests'])}<br>比：{E(x['baseline'])}<br>下次檢查：{E(nxt)}</p>{dl}{extra}</div>")
+        summ.append(dict(id=x["id"], name=x["name"], status=x.get("status"), next_review=x.get("next_review"),
+                         metrics=[[k, str(v)] for k, v in m]))
+    body = "<div class='xps'>" + "".join(blocks) + "</div>"
+    return card("實驗總覽", "共同規則：一次只改一個變數；只看自然流量。設定在 <code>youtube/experiments.json</code>，改了 YouTube 上的東西就更新那裡的日期與狀態。", body), summ
+
+
 # ───────────────────────────── 繪圖 ─────────────────────────────
 
 E = html.escape
@@ -474,7 +580,7 @@ def pct_change(a, b):
     return (a - b) / b * 100 if b else None
 
 
-def render(snap, A, reach, acts):
+def render(snap, A, reach, acts, xsec=""):
     rows, days, last = A["rows"], A["days"], A["last_data"]
     wk, prev = window(days, last, 7), window(days, (d(last) - dt.timedelta(days=7)).isoformat(), 7)
     org_avd = wk["org_min"] * 60 / wk["org"] if wk["org"] else None
@@ -604,7 +710,7 @@ def render(snap, A, reach, acts):
              + (f"到 {reach_days[-1]}，共 {len(reach_days)} 天" if reach_days else "還沒有報表（工作 11/20 建立，約 11/21 下午出第一份）"))
     return TEMPLATE.replace("%TITLE%", E(snap["channel"]["title"])).replace("%GEN%", E(snap["generated"])) \
         .replace("%FRESH%", E(fresh)).replace("%TILES%", tiles).replace("%ACTIONS%", act_html) \
-        .replace("%BODY%", c1 + c2 + c3 + c4 + c5 + c6 + c7)
+        .replace("%BODY%", c1 + c2 + c3 + c4 + c5 + c6 + c7).replace("%EXPERIMENTS%", xsec)
 
 
 TEMPLATE = """<!doctype html>
@@ -636,11 +742,12 @@ box-shadow:0 4px 16px rgba(0,0,0,.15);display:none;max-width:280px;z-index:9;whi
 .tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:6px 8px;border-bottom:1px solid var(--grid);text-align:right;white-space:nowrap}
 th:first-child,td:first-child,td:nth-child(2),th:nth-child(2){text-align:left}td:nth-child(2){white-space:normal;min-width:200px}
 td{font-variant-numeric:tabular-nums}.sortable th{cursor:pointer;user-select:none}a{color:var(--s1)}
-details.tv{margin-top:8px;font-size:13px;color:var(--ink2)}details.tv summary{cursor:pointer}.empty{color:var(--muted);font-size:13px;padding:24px 0;text-align:center}
+.xps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:12px}.xp{border:1px solid var(--border);border-radius:10px;padding:14px}.xh{display:flex;justify-content:space-between;align-items:baseline;gap:8px}.xh h3{margin:0;color:var(--ink);font-size:15px}.pill{font-size:12px;color:var(--ink2);border:1px solid var(--border);border-radius:999px;padding:1px 8px;white-space:nowrap}.xm{display:flex;justify-content:space-between;gap:12px;font-size:13px;padding:4px 0;border-bottom:1px solid var(--grid)}.xm span{color:var(--ink2)}.xm b{font-weight:600;text-align:right}code{font-size:12px}details.tv{margin-top:8px;font-size:13px;color:var(--ink2)}details.tv summary{cursor:pointer}.empty{color:var(--muted);font-size:13px;padding:24px 0;text-align:center}
 </style></head><body><main>
 <h1>%TITLE% 成效報表</h1>
 <p class="meta">產生於 %GEN%（台北）。%FRESH%。所有比較只看自然流量，廣告另列。</p>
 <div class="tiles">%TILES%</div>
+%EXPERIMENTS%
 <section class="card actions"><h2>本週建議動作</h2><p class="sub">由規則挑出的候選，每週摘要再判斷要不要做。</p><ol>%ACTIONS%</ol></section>
 %BODY%
 </main><div id="tip"></div>
@@ -674,11 +781,12 @@ def main():
     reach = load_reach(a.data_dir)
     A = analyse(snap, reach)
     acts = actions(A, reach)
+    xsec, xsum = experiments_section(load_experiments(), snap, A, reach)
     out = a.out or os.path.join(a.data_dir, "report.html")
-    open(out, "w", encoding="utf-8").write(render(snap, A, reach, acts))
+    open(out, "w", encoding="utf-8").write(render(snap, A, reach, acts, xsec))
     wk = window(A["days"], A["last_data"], 7)
     summary = dict(generated=snap["generated"], analytics_to=A["last_data"], reach_days=len({k[1] for k in reach}),
-                   organic_views_7d=wk["org"], ad_views_7d=wk["ad"], organic_minutes_7d=wk["org_min"], actions=acts,
+                   organic_views_7d=wk["org"], ad_views_7d=wk["ad"], organic_minutes_7d=wk["org_min"], actions=acts, experiments=xsum,
                    episodes=[{k: r[k] for k in ("ep", "id", "title", "style", "org_views", "first7", "org_avp", "ret30", "impressions", "ctr")}
                              for r in A["rows"]])
     for name in ("summary.json", f"summary-{snap['generated'][:10]}.json"):  # 帶日期的那份給下週比較用
