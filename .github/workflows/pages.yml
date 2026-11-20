@@ -22,6 +22,7 @@ on:
       - 'show/**'
       - 'tools/feed.py'
       - 'tools/build_site.py'
+      - 'tools/legal_pages.py'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 

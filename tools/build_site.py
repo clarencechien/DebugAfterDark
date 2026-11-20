@@ -12,6 +12,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import feed
+import legal_pages
 
 ROOT = feed.ROOT
 
@@ -104,7 +105,7 @@ footer { margin-top:40px; padding-top:16px; border-top:1px solid var(--line); co
 .single .sub-box { margin-top:36px; }
 .inapp-hint { margin:10px 0 6px; padding:10px 12px; border:1px dashed var(--lamp); border-radius:8px; background:rgba(240,180,92,.08); font-size:14.5px; line-height:1.7; }
 .inapp-hint a { font-weight:700; margin-left:6px; white-space:nowrap; }
-"""
+""" + legal_pages.LEGAL_STYLE
 
 
 def para(s):
@@ -292,7 +293,7 @@ def page(show, eps):
 <div class="list-head"><h2>每一集</h2><button type="button" id="toggle-all" aria-pressed="false">全部展開</button></div>
 {''.join(items)}
 <section class="about"><h2>關於節目</h2>{para(about)}</section>
-<footer>{f'<p><a href="{html.escape(show["support_url"])}">{html.escape(show["support_text"])}</a></p>' if show.get("support_url") else ""}<p>本節目的聲音由 AI 語音合成，不模仿任何真人；內容改寫自 <a href="https://imitator.ai-apps.work/">imitator</a> 上的文章，每一集都經過真人審稿與試聽。</p></footer>
+<footer>{f'<p><a href="{html.escape(show["support_url"])}">{html.escape(show["support_text"])}</a></p>' if show.get("support_url") else ""}<p>本節目的聲音由 AI 語音合成，不模仿任何真人；內容改寫自 <a href="https://imitator.ai-apps.work/">imitator</a> 上的文章，每一集都經過真人審稿與試聽。</p>{legal_pages.footer_links("", show)}</footer>
 </main>
 {SCRIPT}
 {beacon(show)}
@@ -351,7 +352,7 @@ def episode_page(show, e):
 <div class="sub-box"><span class="label">訂閱</span><code id="feed-url">{site}/feed.xml</code><button type="button" id="copy-feed">複製網址</button></div>
 {listen_html(show)}
 {support}
-<footer><p>本節目的聲音由 AI 語音合成，不模仿任何真人；內容改寫自 <a href="https://imitator.ai-apps.work/">imitator</a> 上的文章，每一集都經過真人審稿與試聽。</p></footer>
+<footer><p>本節目的聲音由 AI 語音合成，不模仿任何真人；內容改寫自 <a href="https://imitator.ai-apps.work/">imitator</a> 上的文章，每一集都經過真人審稿與試聽。</p>{legal_pages.footer_links("../", show)}</footer>
 </main>
 {SCRIPT}
 {beacon(show)}
@@ -384,6 +385,10 @@ def main(out):
     for e in eps:   # one page per episode, so a shared link previews that episode (2026-11-05)
         (out / slug(e)).mkdir()
         (out / slug(e) / "index.html").write_text(episode_page(show, e), encoding="utf-8")
+    for kind in ("privacy", "terms"):   # YouTube API Services audit (2026-11-20), text in tools/legal_pages.py
+        (out / kind).mkdir()
+        (out / kind / "index.html").write_text(
+            legal_pages.legal_page(show, STYLE.replace("url(banner.jpg)", "url(../banner.jpg)"), kind, beacon(show)), encoding="utf-8")
     (out / ".nojekyll").write_text("")
     if show.get("custom_domain"):
         (out / "CNAME").write_text(show["custom_domain"] + "\n")
