@@ -1,0 +1,43 @@
+{
+ "note": "Short time = master mp3 time - audio.start. Cue text = script.json s00 (markers and sentence-final 。 removed); times from make_short.py --align (faster-whisper small) checked against silencedetect.",
+ "label": "EP24",
+ "audio": {"start": 3.6, "end": 45.2},
+ "endcard_s": 2.0,
+ "cue_end": 41.2,
+ "cues": [
+  [0.00, "月租六萬\n租一間六千萬的房子"],
+  [4.68, "你覺得是佔便宜\n還是被坑？"],
+  [8.78, "在台灣，被坑的人\n有個說法，叫做盤子"],
+  [13.04, "好玩的是，這份報告\n也用盤子這個詞"],
+  [16.42, "意思卻完全不一樣"],
+  [18.16, "它把一個家庭的全部資產\n連房子也算進去"],
+  [21.40, "叫做盤子"],
+  [23.12, "所以這集要問的是"],
+  [25.12, "租屋退休\n是你的盤子不夠大？"],
+  [28.86, "還是你其實就是盤子？"],
+  [31.68, "很多人說\n退休前一定要買房"],
+  [34.14, "老了租屋很危險"],
+  [35.80, "同一個研究的另一份報告卻說"],
+  [38.16, "能租就租\n房價越貴越是如此"]
+ ],
+ "cards": [
+  {"at": 0.0, "type": "number", "top": "月租 6 萬", "box": "租 6000 萬的房子", "label": "是佔便宜，還是被坑？",
+   "source": "引用：〈月租 6 萬住 6000 萬的房子，是佔便宜還是被坑？〉"},
+  {"at": 8.78, "type": "number", "top": "台灣人說的「盤子」", "box": "被坑的人", "label": ""},
+  {"at": 13.04, "type": "number", "top": "這份報告也說「盤子」", "box": "意思不一樣", "label": "",
+   "source": "引用：〈租屋沒有比較差，差的是盤子〉"},
+  {"at": 18.16, "type": "number", "top": "報告說的「盤子」", "box": "全部資產＋房子", "label": "一個家庭的全部資產，房子也算進去",
+   "source": "引用：〈租屋沒有比較差，差的是盤子〉"},
+  {"at": 23.12, "group": "q", "type": "choice", "title": "租屋退休", "options": ["你的盤子不夠大？", "還是你就是盤子？"], "shown": 0},
+  {"at": 25.12, "group": "q", "type": "choice", "title": "租屋退休", "options": ["你的盤子不夠大？", "還是你就是盤子？"], "shown": 1},
+  {"at": 28.86, "group": "q", "type": "choice", "title": "租屋退休", "options": ["你的盤子不夠大？", "還是你就是盤子？"], "shown": 2},
+  {"at": 31.68, "group": "c", "type": "contrast", "a_label": "很多人說", "a_lines": ["退休前一定要買房", "老了租屋很危險"],
+   "b_label": "同一個研究的另一份報告", "b_lines": ["能租就租", "房價越貴越是如此"], "show_b": false},
+  {"at": 38.16, "group": "c", "type": "contrast", "a_label": "很多人說", "a_lines": ["退休前一定要買房", "老了租屋很危險"],
+   "b_label": "同一個研究的另一份報告", "b_lines": ["能租就租", "房價越貴越是如此"], "show_b": true,
+   "source": "引用：〈月租 6 萬住 6000 萬的房子，是佔便宜還是被坑？〉"}
+ ],
+ "end": {"title": "答案在完整版", "box": "EP24・11 分鐘", "lines": ["月租 6 萬住 6000 萬", "你是盤子嗎？"], "cta": "頻道首頁 ▶ 深夜 Debug"},
+ "previews": {"2.0": "01-rent", "10.5": "02-plate-taiwan", "15.0": "03-plate-report", "20.0": "04-plate-assets",
+              "27.0": "05-question", "30.0": "06-question-2", "34.0": "07-common-belief", "40.0": "08-report-says"}
+}
