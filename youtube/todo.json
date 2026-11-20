@@ -9,6 +9,9 @@
   {"text": "EP07 標題＋縮圖 A/B 判讀", "owner": "Clarence", "due": "2026-12-04", "status": "open", "experiment": "ep07-ab"},
   {"text": "A/B 結果出來後，把贏的縮圖版型套到其他集", "owner": "Claude", "due": null, "status": "open"},
   {"text": "make_short.py 改成可以一次做多集", "owner": "Claude", "due": null, "status": "open"},
-  {"text": "YouTube API 稽核（11/20 送出，等 Google 回覆）", "owner": "Clarence", "due": null, "status": "waiting"}
+  {"text": "YouTube API 稽核（11/20 送出，等 Google 回覆）", "owner": "Clarence", "due": null, "status": "waiting"},
+  {"text": "11/21–11/27 每天早上 8:00 上架（上架時間實驗 A 組）", "owner": "Claude", "due": "2026-11-21", "status": "open", "experiment": "release-time"},
+  {"text": "11/28 起改成晚上 20:00 上架，跑到 12/4（B 組）", "owner": "Claude", "due": "2026-11-28", "status": "open", "experiment": "release-time"},
+  {"text": "上架時間實驗判讀（早上 vs 晚上，前 3 天自然觀看）", "owner": "Clarence", "due": "2026-12-10", "status": "open", "experiment": "release-time"}
  ]
 }

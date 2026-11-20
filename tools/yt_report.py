@@ -80,7 +80,8 @@ def repo_episodes():
     for f in sorted(glob.glob(os.path.join(ROOT, "episodes/*/episode.json"))):
         e = json.load(open(f, encoding="utf-8"))
         eps.append(dict(number=e["number"], id=e["id"], title=e["title"], type=e.get("type"),
-                        source_url=e.get("source_url") or "", yt_title=(e.get("youtube") or {}).get("title")))
+                        source_url=e.get("source_url") or "", yt_title=(e.get("youtube") or {}).get("title"),
+                        published=e.get("published")))
     return eps
 
 
@@ -353,6 +354,24 @@ def experiment_metrics(x, snap, A, reach):
             m.append((f"EP{x['long_ep']:02d} 長片從 Shorts 來的觀看", fmt(lr["sources"].get("SHORTS", 0))))
         if x.get("studio_only"):
             m.append(("滑走率", x["studio_only"]))
+    elif x["kind"] == "release_time":
+        pubs = {e["number"]: e["published"] for e in repo_episodes() if e.get("published")}
+        trs = []
+        for arm in x["arms"]:
+            eps = sorted(n for n, p in pubs.items()
+                         if arm["from"] <= p[:10] <= arm["to"] and int(p[11:13]) == arm["hour"])
+            vals = [by_ep[n]["first7"] for n in eps if n in by_ep and by_ep[n]["first7"] is not None]
+            med = median(vals)
+            m.append((f"{arm['label']}（{arm['from'][5:].replace('-', '/')}–{arm['to'][5:].replace('-', '/')}）",
+                      f"前 {FIRST_DAYS} 天中位數 {med:.0f}（{len(vals)}/{len(eps)} 集有資料）" if vals else f"{len(eps)} 集，還沒有資料"))
+            for n in eps:
+                r = by_ep.get(n)
+                trs.append([f"EP{n:02d}", E(arm["label"]), pubs[n][:16].replace("T", " "),
+                            fmt(r["first7"]) if r and r["first7"] is not None else "—"])
+        if x.get("note"):
+            m.append(("注意", x["note"]))
+        if trs:
+            extra = table(["集", "組", "上架（台北）", f"前 {FIRST_DAYS} 天自然觀看"], trs)
     elif x["kind"] == "video_version":
         lo, hi = x["baseline_eps"]
         base = [by_ep[e] for e in range(lo, hi + 1) if e in by_ep and e not in x.get("exclude", [])]
@@ -418,6 +437,70 @@ def todo_section(items, today):
     sub = f"{len(open_)} 項待辦" + (f"，{n_late} 項過期" if n_late else "") + "。有日期的排前面。清單在 <code>youtube/todo.json</code>，做完把 status 改成 done。"
     summ = [dict(text=t["text"], owner=t.get("owner"), due=t.get("due"), status=t.get("status")) for t in open_]
     return card("待辦", sub, body), summ
+
+
+# ───────────────────────────── 待製作（docs/report-candidates.md） ─────────────────────────────
+
+def md_section_table(md, heading):
+    """取 `## heading` 底下第一張表（到下一個 ## 為止），回傳 (表頭, 列)。"""
+    m = re.search(rf"^## {re.escape(heading)}\s*$(.*?)(?=^## |\Z)", md, re.M | re.S)
+    if not m:
+        return [], [], ""
+    body = m.group(1)
+    lines = []
+    for l in body.splitlines():  # 只取第一張連續的表
+        if l.startswith("|"):
+            lines.append(l)
+        elif lines:
+            break
+    rows = [[c.strip() for c in l.strip().strip("|").split("|")] for l in lines]
+    rows = [r for r in rows if not all(re.fullmatch(r":?-+:?", c) for c in r)]
+    return (rows[0] if rows else []), rows[1:], body
+
+
+def md_inline(s):
+    """表格儲存格的 Markdown → 安全的 HTML（只處理連結與 code）。"""
+    out, pos = [], 0
+    for m in re.finditer(r"\[([^\]]+)\]\((https?://[^)\s]+)\)|`([^`]+)`", s):
+        out.append(E(s[pos:m.start()]))
+        if m.group(1):
+            label = m.group(1).strip("`")
+            out.append(f'<a href="{E(m.group(2))}">{E(label)}</a>')
+        else:
+            out.append(f"<code>{E(m.group(3))}</code>")
+        pos = m.end()
+    out.append(E(s[pos:]))
+    return "".join(out)
+
+
+def production_section():
+    path = os.path.join(ROOT, "docs", "report-candidates.md")
+    if not os.path.exists(path):
+        return "", {}
+    md = open(path, encoding="utf-8").read()
+    upd = re.search(r"更新：(\d{4}-\d{2}-\d{2})", md)
+    head, rows, _ = md_section_table(md, "製作中")
+    keep = [i for i, h in enumerate(head) if h != "報告"] if head else []
+    t1 = table([head[i] for i in keep], [[md_inline(r[i]) if i < len(r) else "" for i in keep] for r in rows], "lt") if rows else ""
+    rh, rr, body = md_section_table(md, "推薦的下一批")
+    plan = {}
+    for a, b, e1, e2 in re.findall(r"#(\d+)(?:–(\d+))?\s*→\s*EP(\d+)(?:–EP(\d+))?", body):
+        a, b, e1 = int(a), int(b or a), int(e1)
+        for k, n in enumerate(range(a, b + 1)):
+            plan[n] = e1 + k
+    nxt = []
+    for r in rr:
+        if not r or not r[0].isdigit(): continue
+        n = int(r[0])
+        if n in plan or len(nxt) < 4 and not plan:
+            col = dict(zip(rh, r))
+            nxt.append([f"EP{plan[n]}" if n in plan else f"#{n}", md_inline(col.get("報告", "")), E(col.get("標題方向", "")),
+                        E(col.get("製作時間（估）", ""))])
+    t2 = ("<h3>下一批（預排）</h3>" + table(["集", "報告", "標題方向", "製作時間（估）"], nxt, "lt")) if nxt else ""
+    sub = ("從 <code>docs/report-candidates.md</code> 讀出來（" + (f"更新 {upd.group(1)}" if upd else "") +
+           "），改那份檔就會反映在這裡。✅ 完成、🔶 進行中、⬜ 還沒做。")
+    summ = dict(in_production=[dict(zip(head, r)) for r in rows], next=[{"ep": x[0]} for x in nxt])
+    return card("待製作", sub, t1 + t2), summ
 
 
 # ───────────────────────────── 繪圖 ─────────────────────────────
@@ -615,7 +698,7 @@ def pct_change(a, b):
     return (a - b) / b * 100 if b else None
 
 
-def render(snap, A, reach, acts, xsec="", tsec=""):
+def render(snap, A, reach, acts, xsec="", tsec="", psec=""):
     rows, days, last = A["rows"], A["days"], A["last_data"]
     wk, prev = window(days, last, 7), window(days, (d(last) - dt.timedelta(days=7)).isoformat(), 7)
     org_avd = wk["org_min"] * 60 / wk["org"] if wk["org"] else None
@@ -745,7 +828,7 @@ def render(snap, A, reach, acts, xsec="", tsec=""):
              + (f"到 {reach_days[-1]}，共 {len(reach_days)} 天" if reach_days else "還沒有報表（工作 11/20 建立，約 11/21 下午出第一份）"))
     return TEMPLATE.replace("%TITLE%", E(snap["channel"]["title"])).replace("%GEN%", E(snap["generated"])) \
         .replace("%FRESH%", E(fresh)).replace("%TILES%", tiles).replace("%ACTIONS%", act_html) \
-        .replace("%BODY%", c1 + c2 + c3 + c4 + c5 + c6 + c7).replace("%EXPERIMENTS%", tsec + xsec)
+        .replace("%BODY%", c1 + c2 + c3 + c4 + c5 + c6 + c7).replace("%EXPERIMENTS%", tsec + psec + xsec)
 
 
 TEMPLATE = """<!doctype html>
@@ -777,7 +860,7 @@ box-shadow:0 4px 16px rgba(0,0,0,.15);display:none;max-width:280px;z-index:9;whi
 .tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:6px 8px;border-bottom:1px solid var(--grid);text-align:right;white-space:nowrap}
 th:first-child,td:first-child,td:nth-child(2),th:nth-child(2){text-align:left}td:nth-child(2){white-space:normal;min-width:200px}
 td{font-variant-numeric:tabular-nums}.sortable th{cursor:pointer;user-select:none}a{color:var(--s1)}
-.xps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:12px}.xp{border:1px solid var(--border);border-radius:10px;padding:14px}.xh{display:flex;justify-content:space-between;align-items:baseline;gap:8px}.xh h3{margin:0;color:var(--ink);font-size:15px}.pill{font-size:12px;color:var(--ink2);border:1px solid var(--border);border-radius:999px;padding:1px 8px;white-space:nowrap}.xm{display:flex;justify-content:space-between;gap:12px;font-size:13px;padding:4px 0;border-bottom:1px solid var(--grid)}.xm span{color:var(--ink2)}.xm b{font-weight:600;text-align:right}code{font-size:12px}.todo{list-style:none;margin:0;padding:0}.todo li{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;padding:8px 0;border-bottom:1px solid var(--grid);font-size:14px}.todo .who{font-size:12px;color:var(--muted);min-width:64px}.todo .tx{flex:1 1 300px}.todo li.done{color:var(--muted)}.pill.late{color:var(--bad);border-color:var(--bad)}details.tv{margin-top:8px;font-size:13px;color:var(--ink2)}details.tv summary{cursor:pointer}.empty{color:var(--muted);font-size:13px;padding:24px 0;text-align:center}
+.xps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:12px}.xp{border:1px solid var(--border);border-radius:10px;padding:14px}.xh{display:flex;justify-content:space-between;align-items:baseline;gap:8px}.xh h3{margin:0;color:var(--ink);font-size:15px}.pill{font-size:12px;color:var(--ink2);border:1px solid var(--border);border-radius:999px;padding:1px 8px;white-space:nowrap}.xm{display:flex;justify-content:space-between;gap:12px;font-size:13px;padding:4px 0;border-bottom:1px solid var(--grid)}.xm span{color:var(--ink2)}.xm b{font-weight:600;text-align:right}code{font-size:12px}.todo{list-style:none;margin:0;padding:0}.todo li{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;padding:8px 0;border-bottom:1px solid var(--grid);font-size:14px}.todo .who{font-size:12px;color:var(--muted);min-width:64px}.todo .tx{flex:1 1 300px}.todo li.done{color:var(--muted)}.pill.late{color:var(--bad);border-color:var(--bad)}table.lt th,table.lt td{text-align:left;white-space:normal;vertical-align:top;min-width:0}table.lt td:first-child{white-space:nowrap}details.tv{margin-top:8px;font-size:13px;color:var(--ink2)}details.tv summary{cursor:pointer}.empty{color:var(--muted);font-size:13px;padding:24px 0;text-align:center}
 </style></head><body><main>
 <h1>%TITLE% 成效報表</h1>
 <p class="meta">產生於 %GEN%（台北）。%FRESH%。所有比較只看自然流量，廣告另列。</p>
@@ -818,11 +901,12 @@ def main():
     acts = actions(A, reach)
     xsec, xsum = experiments_section(load_experiments(), snap, A, reach)
     tsec, tsum = todo_section(load_todo(), dt.datetime.now(TZ).date())
+    psec, psum = production_section()
     out = a.out or os.path.join(a.data_dir, "report.html")
-    open(out, "w", encoding="utf-8").write(render(snap, A, reach, acts, xsec, tsec))
+    open(out, "w", encoding="utf-8").write(render(snap, A, reach, acts, xsec, tsec, psec))
     wk = window(A["days"], A["last_data"], 7)
     summary = dict(generated=snap["generated"], analytics_to=A["last_data"], reach_days=len({k[1] for k in reach}),
-                   organic_views_7d=wk["org"], ad_views_7d=wk["ad"], organic_minutes_7d=wk["org_min"], actions=acts, experiments=xsum, todo=tsum,
+                   organic_views_7d=wk["org"], ad_views_7d=wk["ad"], organic_minutes_7d=wk["org_min"], actions=acts, experiments=xsum, todo=tsum, production=psum,
                    episodes=[{k: r[k] for k in ("ep", "id", "title", "style", "org_views", "first7", "org_avp", "ret30", "impressions", "ctr")}
                              for r in A["rows"]])
     for name in ("summary.json", f"summary-{snap['generated'][:10]}.json"):  # 帶日期的那份給下週比較用
