@@ -4,7 +4,7 @@
 這份只寫**順序、現況和下一個檢查點**，細節在各自的文件：
 
 - 標題、縮圖、說明欄、開場鉤子：[`hooks.md`](hooks.md)
-- 影片版、Shorts、上傳流程：[`video.md`](video.md)
+- 影片版、Shorts：[`video.md`](video.md)；半自動上片（審核單、API 上傳、還要人工的項目）：[`publish.md`](publish.md)
 - 每集 podcast 怎麼做（第 0 到 8 步、第 10 步 Short）：[`recipe.md`](recipe.md)
 - 正在跑的實驗與待辦：[`youtube/experiments.json`](../youtube/experiments.json)、[`youtube/todo.json`](../youtube/todo.json)（週報會畫出來）
 
@@ -79,9 +79,9 @@ YouTube 工作室 2026-11-04 到 11-18（全頻道）：
 
 | 缺口 | 現況 |
 |---|---|
-| 上傳 | API 稽核 11/20 送出，等 Google；通過後由 GitHub Action 用 `tools/yt_upload.py` 上傳，Short 改自動排程 |
-| 影片版的 AI 背景圖 | 目前沒有可自動跑的工具 |
-| Short 字幕對齊、工作室設定 | 字幕要人看；相關影片、封面、合成內容標示 API 看不到，要在工作室確認 |
+| 上傳 | ✅ 11/20 稽核結案，API 上傳＋排程實測可用。11/27 決定日更後，照 `publish.md` 改成「Clarence 審核單 → commit → Action 上傳排程」 |
+| 影片版的 AI 背景圖 | 目前沒有可自動跑的工具；規劃 `gen_art.py background` |
+| Short 字幕對齊、工作室設定 | 字幕對齊改成自動比對、超標才給人看；合成內容標示上傳時 API 設定；封面用第一格；只剩「相關影片」API 沒有，要在工作室選（可選）；字幕檔上傳要重新授權加 `youtube.force-ssl` |
 | RSS 匯入 | 影片版證實有效後才關掉，不然同一集會有兩支 |
 
 ## 怎麼量
@@ -98,4 +98,4 @@ YouTube 工作室 2026-11-04 到 11-18（全頻道）：
 | 11/27 | EP37 Short、EP36 影片版 vs EP28–39 | Short 和影片版要不要日更、用哪些集 |
 | 12/4 | EP07 A/B、舊集改標題第 1、2 批、來源庫存 | 縮圖版型、下一批改標題、一天兩集撐不撐得住 |
 | 12/10 | 上架時間（早上 vs 晚上） | 固定上架時間 |
-| 稽核通過時 | | 開始寫上傳 Action |
+| 11/27 之後 | | 若決定日更：照 `publish.md` 的實作順序做上傳 Action |
