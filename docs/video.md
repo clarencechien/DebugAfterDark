@@ -86,6 +86,7 @@ EP38 起已經有 `title`、`thumbnail`、`synthetic_content`（`recipe.md` 第 
 
 - 段落起點：照上面的母帶順序算，固定開場的長度從 `ident.flac` 讀；再用 mp3 的 silencedetect 驗證，每個交界誤差 ≤ 0.15 秒，對不上就停下來，不要硬套。
 - `levels.json` 只有響度沒有長度，正規化後的段落 wav 在 `out/`（不進 git），所以長度要從 mp3 量，或在第 6 步把各段長度寫進 `qa/levels.json`（建議順手加上）。
+- 已實作（`tools/make_video.py`，2026-11-20，EP36 第一集）：雲端沒有 `out/` 的段落 wav，所以固定開場用 `ident.flac` 對 mp3 做互相關（精確到取樣），之後每段用選中 take 的句子起點去對 mp3 的語音起點，再夾進段落前 0.6 秒的靜音裡。各段起點和檢查結果寫在 `render_log.json` 的 `boundaries`。
 - 句子的時間戳：EP10 以後在 `qa/select_log.json` 選中那次 take 的 `segments`；EP01 到 EP09 沒有，改用 `qa/stt_check.json` 的 `whisper_segments`。
   兩者都只有每句的**起點**（`[start, text]`），終點用下一句的起點；段落最後一句的終點用段落終點。
 

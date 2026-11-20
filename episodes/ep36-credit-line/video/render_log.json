@@ -1,0 +1,585 @@
+{
+ "episode": "ep36-credit-line",
+ "trim_start_s": 3.6,
+ "trim_note": "sting 3.2 s + lead 0.4 s removed with atrim; rest of the audio untouched",
+ "boundaries": [
+  {
+   "id": "s00_open",
+   "start": 3.6,
+   "fit": 3.6,
+   "end": 45.9,
+   "gap_silence": [
+    3.12,
+    3.63
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "ident",
+   "start": 46.5,
+   "end": 55.62,
+   "method": "cross-correlation, peak ratio 11.6",
+   "error_s": 0.0
+  },
+  {
+   "id": "s01_press",
+   "start": 56.22,
+   "fit": 56.22,
+   "end": 107.06,
+   "gap_silence": [
+    55.26,
+    56.44
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s02_two",
+   "start": 107.66,
+   "fit": 107.66,
+   "end": 141.77,
+   "gap_silence": [
+    106.73,
+    107.74
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s03_top",
+   "start": 142.37,
+   "fit": 142.38,
+   "end": 203.2,
+   "gap_silence": [
+    141.52,
+    142.37
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s04_contract",
+   "start": 203.8,
+   "fit": 203.8,
+   "end": 255.29,
+   "gap_silence": [
+    202.88,
+    203.92
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s05_japan",
+   "start": 255.89,
+   "fit": 256.02,
+   "end": 307.87,
+   "gap_silence": [
+    255.07,
+    256.19
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s06_taiwan",
+   "start": 308.47,
+   "fit": 308.5,
+   "end": 357.91,
+   "gap_silence": [
+    307.65,
+    308.47
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s07_korea",
+   "start": 358.51,
+   "fit": 358.51,
+   "end": 401.95,
+   "gap_silence": [
+    357.52,
+    358.66
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s08_rule",
+   "start": 402.55,
+   "fit": 402.57,
+   "end": 459.26,
+   "gap_silence": [
+    401.73,
+    402.55
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s09_taiwan_now",
+   "start": 459.86,
+   "fit": 459.86,
+   "end": 510.49,
+   "gap_silence": [
+    459.06,
+    460.1
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s10_outro",
+   "start": 511.09,
+   "fit": 511.09,
+   "end": 554.98,
+   "gap_silence": [
+    510.14,
+    511.24
+   ],
+   "error_s": 0.0
+  }
+ ],
+ "checks": {
+  "boundaries": {
+   "pass": true,
+   "max_error_s": 0.0,
+   "rule": "each segment start sits at the end of a >= 0.6 s silence (gap) within 0.15 s; ident by cross-correlation"
+  },
+  "subtitle_sync": {
+   "pass": true,
+   "points": [
+    {
+     "point": "開頭",
+     "cue": "韓劇在全球最紅的這一年／韓國的戲劇圈",
+     "video_t": 0.02,
+     "speech_onset_video_t": 0.03,
+     "error_s": 0.01
+    },
+    {
+     "point": "結尾",
+     "cue": "下次見",
+     "video_t": 550.81,
+     "speech_onset_video_t": 550.52,
+     "error_s": 0.29
+    },
+    {
+     "point": "數字句",
+     "cue": "而這一行字／三十年來換過好幾次",
+     "video_t": 35.38,
+     "speech_onset_video_t": 35.41,
+     "error_s": 0.03
+    },
+    {
+     "point": "固定開場後第一句",
+     "cue": "我們先看首爾那場記者會",
+     "video_t": 52.62,
+     "speech_onset_video_t": 52.85,
+     "error_s": 0.23
+    },
+    {
+     "point": "最後一段中間",
+     "cue": "第三／台灣已經在走替平台拍戲的那一段",
+     "video_t": 534.57,
+     "speech_onset_video_t": 534.56,
+     "error_s": 0.01
+    }
+   ]
+  },
+  "subtitle_text": {
+   "pass": true,
+   "identical_to_script": true,
+   "cues": 142,
+   "too_long": []
+  },
+  "length": {
+   "pass": true,
+   "video_s": 554.98,
+   "mp3_minus_trim_s": 554.98
+  },
+  "loudness": {
+   "pass": true,
+   "mp3_lufs": -16.8,
+   "video_lufs": -16.8
+  },
+  "picture": {
+   "pass": true,
+   "black_over_1s": [],
+   "first_frame": "s00_open:0",
+   "first_frame_is_cover": false
+  },
+  "chapters": {
+   "pass": true,
+   "count": 11,
+   "shortest_s": 34.7,
+   "ident": "merged into chapter 2 (starts at the ident)"
+  },
+  "number_cards": {
+   "pass": true,
+   "count": 40,
+   "problems": []
+  },
+  "figures": {
+   "count": 2,
+   "rows": [
+    {
+     "seg": "s05_japan",
+     "figure": "visuals/fig01.png",
+     "t": 256.79,
+     "source": "〈片尾那一行製作著作換了名字〉",
+     "scale": 0.883
+    },
+    {
+     "seg": "s08_rule",
+     "figure": "visuals/fig01.png",
+     "t": 400.45,
+     "source": "〈片尾那一行製作著作換了名字〉",
+     "scale": 0.883
+    }
+   ],
+   "note": "2026-11-20 從 imitator.ai-apps.work/r/credit-line-changed 用 Playwright 擷取；報告只有一張表（rundown），放在第 6 段開頭和第 9 段開頭。"
+  }
+ },
+ "mp4": {
+  "file": "ep36-credit-line.mp4",
+  "bytes": 41244743,
+  "sha256": "d4dea9bd43958ed7c15fa45127fbbc928ec05f92962fa55415b96d1ef259535e",
+  "frames": 16649,
+  "fps": 30,
+  "size": "1920x1080"
+ },
+ "cards": [
+  {
+   "seg": "s00_open",
+   "value": "要政府拿 1 兆韓圜救命",
+   "t": 0.0,
+   "source": "韓國經濟新聞",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s00_open",
+   "value": "2 年少了約 3 成",
+   "t": 14.62,
+   "source": "韓國經濟新聞",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s00_open",
+   "value": "製作著作",
+   "t": 28.02,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s00_open",
+   "value": "30 年換過好幾次",
+   "t": 35.38,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s01_press",
+   "value": "12 個團體",
+   "t": 55.58,
+   "source": "韓國經濟新聞",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s01_press",
+   "value": "2022 年 141 部",
+   "t": 68.26,
+   "source": "韓國經濟新聞",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s01_press",
+   "value": "91 → 32 部",
+   "t": 76.58,
+   "source": "韓國經濟新聞",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s01_press",
+   "value": "1 兆韓圜",
+   "t": 85.18,
+   "source": "韓國經濟新聞",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s01_press",
+   "value": "一年多拍 40 部",
+   "t": 94.06,
+   "source": "韓國經濟新聞",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s01_press",
+   "value": "政府還沒核定任何一筆",
+   "t": 98.3,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s02_two",
+   "value": "多了一半以上",
+   "t": 112.22,
+   "source": "Ampere Analysis",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s02_two",
+   "value": "反而在變少",
+   "t": 117.1,
+   "source": "Ampere Analysis",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s02_two",
+   "value": "少了 36%",
+   "t": 131.78,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s03_top",
+   "value": "3.5 億 → 10 億韓圜",
+   "t": 145.25,
+   "source": "Financial News（韓）",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s03_top",
+   "value": "4 億 → 傳 3 億韓圜",
+   "t": 159.89,
+   "source": "Financial News（韓）",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s03_top",
+   "value": "差約 20 倍",
+   "t": 170.93,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s03_top",
+   "value": "往年平均的 2.6 倍",
+   "t": 178.49,
+   "source": "Korea Times",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s03_top",
+   "value": "中間層",
+   "t": 196.21,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s04_contract",
+   "value": "電視台 → 串流平台",
+   "t": 204.88,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s04_contract",
+   "value": "平台出全部製作費",
+   "t": 220.24,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s04_contract",
+   "value": "超過 1 兆韓圜",
+   "t": 228.08,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s04_contract",
+   "value": "Netflix 一家占 88%",
+   "t": 240.96,
+   "source": "Ampere Analysis",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s05_japan",
+   "figure": "visuals/fig01.png",
+   "t": 256.79,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "scale": 0.883
+  },
+  {
+   "seg": "s05_japan",
+   "value": "《東京愛情故事》",
+   "t": 265.67,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s05_japan",
+   "value": "出口額只有約 1/3",
+   "t": 279.27,
+   "source": "日本總務省",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s06_taiwan",
+   "value": "平均收視 6.99",
+   "t": 307.99,
+   "source": "中央社",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s06_taiwan",
+   "value": "日本漫畫《花樣男子》",
+   "t": 325.47,
+   "source": "中央社",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s06_taiwan",
+   "value": "中國下令停播",
+   "t": 337.43,
+   "source": "中央社",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s06_taiwan",
+   "value": "每月不到 600 元看 100 多台",
+   "t": 347.47,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s07_korea",
+   "value": "台灣媒體造出來的",
+   "t": 358.15,
+   "source": "政大研究報告",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s07_korea",
+   "value": "當時台劇的 4 到 5 倍",
+   "t": 371.63,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s07_korea",
+   "value": "收視 5.3%",
+   "t": 376.99,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s07_korea",
+   "value": "賣到 50 多個國家",
+   "t": 394.31,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s08_rule",
+   "figure": "visuals/fig01.png",
+   "t": 400.45,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "scale": 0.883
+  },
+  {
+   "seg": "s08_rule",
+   "value": "版權留在自己手上",
+   "t": 421.75,
+   "source": "首爾新聞",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s08_rule",
+   "value": "版權跟著出錢的人走",
+   "t": 438.15,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s08_rule",
+   "value": "改法規，或國內出得起錢",
+   "t": 443.47,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s09_taiwan_now",
+   "value": "超過 83%",
+   "t": 460.84,
+   "source": "科技新報（轉載今周刊）",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s09_taiwan_now",
+   "value": "動不動就破 1,000 萬",
+   "t": 468.92,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s09_taiwan_now",
+   "value": "全球版權被買走",
+   "t": 478.08,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s09_taiwan_now",
+   "value": "賣到 100 多個地方",
+   "t": 487.08,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s09_taiwan_now",
+   "value": "握著版權賣到全世界",
+   "t": 496.76,
+   "source": "〈片尾那一行製作著作換了名字〉",
+   "numbers_not_in_script": []
+  }
+ ],
+ "chapters": [
+  {
+   "t": 0.0,
+   "name": "韓劇最紅的一年，業界要 1 兆韓圜救命"
+  },
+  {
+   "t": 42.9,
+   "name": "12 個團體的記者會：一年開拍少了三成"
+  },
+  {
+   "t": 104.06,
+   "name": "看的人變多，開拍的變少"
+  },
+  {
+   "t": 138.77,
+   "name": "錢往最上面集中：主角片酬一集 3.5 億到 10 億韓圜"
+  },
+  {
+   "t": 200.2,
+   "name": "片尾那一行：從電視台換成平台"
+  },
+  {
+   "t": 252.29,
+   "name": "日劇：《東京愛情故事》與留在日本的版權"
+  },
+  {
+   "t": 304.87,
+   "name": "台灣偶像劇：《流星花園》"
+  },
+  {
+   "t": 354.91,
+   "name": "韓流：《大長今》與金融風暴後的開放"
+  },
+  {
+   "t": 398.95,
+   "name": "規則：版權跟著出錢的人走"
+  },
+  {
+   "t": 456.26,
+   "name": "台灣現在站在哪一格"
+  },
+  {
+   "t": 507.49,
+   "name": "今晚的 breakpoint"
+  }
+ ]
+}
