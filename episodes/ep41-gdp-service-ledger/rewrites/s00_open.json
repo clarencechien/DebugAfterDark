@@ -1,0 +1,135 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 12 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "9b50338e8927593f204bec928f8dc8f98f460b8972dee6d98103d11b77b5ac8b",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "今年你身邊，是不是很多人在聊台股？第二季，上市櫃股票的成交值，比去年同期大增大約二點六倍。熱到什麼程度？證券和基金的交易手續費，在國民所得帳上算成消費。主計總處八月把今年的經濟成長率，上修到百分之十一點零五，三十九年來最高。可是巷口的便當店、飲料店老闆說，今年很慘。如果你沒買到 AI 股，也不在科技廠上班，你可能也覺得，這一成跟你沒什麼關係。這份報告把兩本帳攤開來對：主計總處的帳沒記錯，老闆的帳也沒記錯。兩本都沒錯，那差在哪裡？這集最後回答。",
+  "lint": {
+   "chars": 221,
+   "precise_numbers": [
+    "二點六",
+    "百分之十一點零五",
+    "三十九"
+   ],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 10,
+   "avg_sentence_len": 21.1,
+   "max_sentence_len": 36,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 3,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "今年你身邊是不是很多人在聊股票？\n第二季台股成交值比去年多了兩倍半。\n手續費居然也算在消費裡面喔。\n八月官方把全年 G D P 成長率，\n上修到百分之十一點零五。<short pause>\n這可是快四十年來的新高紀錄耶。\n可是巷口開便當店、飲料店的老闆，\n大家體感卻很慘。\n如果你沒買 AI 股，也沒有在科技業，\n你應該很能體會這種落差。\n其實這份報告把兩本帳攤開來看，\n官方的帳跟老闆的帳都沒記錯。\n對，兩本都沒錯。<short pause>\n那到底差在哪裡？\n這集最後回答你。",
+   "lint": {
+    "chars": 194,
+    "precise_numbers": [
+     "百分之十一點零五",
+     "四十"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 28,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "今年你身邊，是不是每個人都在聊股票？\n第二季股市成交量，比去年同期大增兩倍半。\n證券手續費甚至多到，直接算進消費裡耶。\n主計總處八月把今年的 G D P，\n上修到百分之十一點零五。\n這是快四十年來最高紀錄。\n可是很多餐飲店老闆，卻說今年很慘。<sigh>\n所以如果你不在科技業，也沒買到 AI 股，\n應該很能體會這種平行世界的感覺吧？\n其實這份報告說，官方的帳沒算錯，\n店家的帳也沒有記錯。<short pause>\n兩邊都沒錯，那到底是差在哪裡？\n這個問題，我們這集最後來回答。",
+   "lint": {
+    "chars": 204,
+    "precise_numbers": [
+     "百分之十一點零五",
+     "四十"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 19.4,
+    "max_sentence_len": 35,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "今年你身邊是不是大家都在聊股票？\n第二季股票成交金額比去年多出兩倍多。\n連證券交易手續費，在官方帳上都算消費喔。\n主計總處八月把全年經濟成長率，\n上修到百分之十一點零五。\n這是快四十年來的新高。\n我看到這個數字其實蠻震撼的。<short pause>\n可是走進巷口的便當店，\n老闆卻說今年生意慘兮兮。<sigh>\n這份報告說兩邊的帳都沒記錯。\n只是成長留在廠房和證券戶，成本留在店面。\n如果你沒買到 AI 股，\n應該也很能體會這種落差吧？\n那兩本帳到底差在哪裡？<short pause>\n我們這集最後來回答。",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [
+     "百分之十一點零五",
+     "四十"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 26,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "今年你身邊是不是大家都在聊股票？第二季股票成交金額比去年多出兩倍多。連證券交易手續費，在官方帳上都算消費喔。主計總處八月把全年經濟成長率，上修到百分之十一點零五。這是快四十年來的新高。我看到這個數字其實蠻震撼的。<short pause>可是走進巷口的便當店，老闆卻說今年生意慘兮兮。<sigh>這份報告說兩邊的帳都沒記錯。只是成長留在廠房和證券戶，成本留在店面。如果你沒買到 AI 股，應該也很能體會這種落差吧？那兩本帳到底差在哪裡？<short pause>我們這集最後來回答。",
+   "to": "今年你身邊，是不是大家都在聊股票？第二季，上市櫃股票的成交金額，比去年同期大增大約二點六倍。連證券交易的手續費，在官方的帳上都算成消費喔。主計總處八月把全年經濟成長率，上修到百分之十一點零五，將近四十年來最高。<short pause>可是走進巷口的便當店，老闆卻說，今年生意慘兮兮。如果你沒買到 AI 股，也不在科技廠上班，應該很能體會這種落差吧？這份報告把兩本帳攤開來對：主計總處的帳沒記錯，老闆的帳也沒記錯。那兩本帳到底差在哪裡？<short pause>我們這集最後來回答。",
+   "reason": "照草稿改回：「多出兩倍多」改回原文的大增約二點六倍；「快四十年」改回三十九年；拿掉 Ping 的個人反應（蠻震撼的）；結論（成長在廠房、成本在店面）留到 s10 才說，開頭只丟問題；補回「不在科技廠上班」；長句拆短（寫稿規則第 18 條）"
+  }
+ ]
+}

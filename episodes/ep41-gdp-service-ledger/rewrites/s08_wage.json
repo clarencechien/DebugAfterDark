@@ -1,0 +1,139 @@
+{
+ "segment": "s08_wage",
+ "position": "第 9 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "真的假的"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "aff2e25de71357ce442ed0b98d0e43adfbd4638d44b334aed03fa4135af48441",
+ "previous_context": "那這三樣裡面，最近哪一項跳得最高？答案是人。",
+ "original": {
+  "text": "經濟部的調查裡，說人事成本過高的餐飲業者，一年多了七個多百分點，是那張表裡跳最多的一項。為什麼？最低工資明年一月調到三萬零九百元，時薪兩百零五元，月薪調升的金額是近十年最大。基層的職位貼著這條地板，地板一動，整排兼職跟著動。老闆還要另外付勞保、健保和勞退，大約再加兩成：月薪三萬的人，店裡實際的成本接近三萬六。那你可能會問，住宿餐飲的平均薪水明明沒漲，人事怎麼會更重？",
+  "lint": {
+   "chars": 184,
+   "precise_numbers": [
+    "百",
+    "三萬零九百",
+    "兩百零五",
+    "三萬",
+    "三萬六"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 29.7,
+   "max_sentence_len": 43,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "經濟部這份調查裡就有說，餐飲業覺得人事成本太高的比例，一年就多了七個百分點，是整張表裡跳最多的一項。\n\n為什麼會這樣？其實是因為基本工資又要調了，月薪直接調到三萬零九百元，調升的金額還是近十年最大喔。很多兼職的薪水都貼著最低標準，所以地板一動，大家就得跟著動。\n\n而且老闆還要負擔勞保跟健保，算下來成本大概要再加兩成。<short pause>等於請一個月薪三萬的人，每個月實際要掏出快三萬六。我看到這數字都替店家捏一把冷汗。<sigh>\n\n那你可能會問，餐飲業平均薪水明明沒漲，人事成本怎麼反而變更重啊？",
+   "lint": {
+    "chars": 228,
+    "precise_numbers": [
+     "百",
+     "三萬零九百",
+     "三萬",
+     "三萬六"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 27.5,
+    "max_sentence_len": 49,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "經濟部這份調查裡面，<short pause> 喊人事成本太高的餐飲店家，一年就多了七個百分點，是整張表跳最兇的一項。\n\n為什麼會這樣？其實就是基本工資調升，時薪直接來到兩百零五元。\n\n這條地板只要一往上移，整排兼職的時薪就得跟著動。而且老闆還要負擔勞健保跟勞退，算一算大約要再加兩成。等於請一個月薪三萬的人，店家每個月實際要掏快三萬六。我看到這邊，其實蠻能體會那個壓力的。\n\n那你可能會問，既然平均薪水沒什麼漲，人事成本怎麼反而變更重？",
+   "lint": {
+    "chars": 199,
+    "precise_numbers": [
+     "百",
+     "兩百零五",
+     "三萬",
+     "三萬六"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 23.9,
+    "max_sentence_len": 44,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "經濟部這份報告裡，\n說人事成本過高的餐飲店家，\n一年就多出七個多百分點，跳得最凶。<short pause>\n為什麼會這樣？\n因為最低工資調到三萬零九百元，\n月薪調升的金額是近十年最大。\n很多基層職位都是貼著地板走嘛，\n地板一往上動，整排兼職就跟著動。\n然後老闆還要付勞保健保跟退休金，\n算一算大概又要再加兩成上去。\n月薪三萬的人，店裡實際要扛快三萬六。\n這負擔光看都覺得壓力很大耶。<short pause>\n那你可能會問，\n平均薪水明明沒大漲，\n人事成本怎麼會變這麼重？",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [
+     "百",
+     "三萬零九百",
+     "三萬",
+     "三萬六"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 23.6,
+    "max_sentence_len": 38,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "經濟部這份報告裡，說人事成本過高的餐飲店家，一年就多出七個多百分點，跳得最凶。<short pause>為什麼會這樣？因為最低工資調到三萬零九百元，月薪調升的金額是近十年最大。很多基層職位都是貼著地板走嘛，地板一往上動，整排兼職就跟著動。然後老闆還要付勞保健保跟退休金，算一算大概又要再加兩成上去。月薪三萬的人，店裡實際要扛快三萬六。這負擔光看都覺得壓力很大耶。<short pause>那你可能會問，平均薪水明明沒大漲，人事成本怎麼會變這麼重？",
+   "to": "經濟部的調查裡，說人事成本太高的餐飲業者，一年多了七個多百分點。這是那張表裡跳最多的一項。<short pause>為什麼會這樣？最低工資明年一月調到三萬零九百元，月薪調升的金額，是近十年最大。很多基層職位都是貼著這條地板走。地板一往上動，整排兼職就跟著動。老闆還要另外付勞保、健保跟勞退。算一算，大概再加兩成。月薪三萬的人，店裡實際要付的成本，接近三萬六。<short pause>那你可能會問，住宿餐飲的平均薪水明明沒漲，人事成本怎麼會更重？",
+   "reason": "「經濟部這份報告」改成經濟部的調查（不是本報告）；補回明年一月；拿掉個人反應「光看都覺得壓力很大」；退休金改回勞退；長句拆短（寫稿規則第 18 條）"
+  }
+ ]
+}

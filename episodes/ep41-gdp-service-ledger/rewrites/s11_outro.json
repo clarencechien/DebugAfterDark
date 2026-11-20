@@ -1,0 +1,140 @@
+{
+ "segment": "s11_outro",
+ "position": "第 12 段，共 12 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這",
+  "真的假的"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "1ebf4a679e67810b40b171369f7d4efbe0a6369dfe1f763466f1e4c541252443",
+ "previous_context": "外送抽成也還在繼續往上談。這兩筆數字，早就清清楚楚寫在明年的帳上了。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，百分之十一是真的，長在廠房、港口和證券戶裡；直接受惠 AI 的產業，只僱用一成的人。第二，大家沒有不花錢，錢去了買車、股市手續費和出國；餐飲扣掉漲價，只長一個百分點上下。第三，店裡的壓力在成本和留不住人：最低工資明年再調，餐飲的人進來得快，走得更快。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 177,
+   "precise_numbers": [
+    "百分之十一",
+    "百"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 24.3,
+   "max_sentence_len": 42,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，直接受惠 AI 的產業，只僱用一成的人。\n其他大部分的人，其實都在科技業外面啦。\n第二，大家不是不消費，錢都拿去買車跟出國。\n餐飲扣掉漲價，實際上只成長一個百分點。\n第三，開店的壓力，主要在成本高又留不住人。\n員工進來得快走得更快，最低工資明年還要再調。\n所以你是不是也覺得，這種落差真的很明顯？\n<short pause>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [
+     "百"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n大家這波到底有沒有賺到？\n其實直接吃到 AI 紅利的產業，\n只佔了全體受僱的一成左右啦。\n然後大家也不是真的不花錢，\n只是都跑去買車、股票手續費跟機票。\n餐飲扣掉漲價，\n實際上只成長一個百分點上下喔。\n最後，店裡最大的壓力，\n不是招不到人，而是根本留不住，\n加上明年的工資成本還要繼續往上調。<short pause>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 188,
+    "precise_numbers": [
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 19.9,
+    "max_sentence_len": 42,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n今天聊了這麼多，你最該帶走什麼？\n第一，受惠 AI 的產業，只僱用一成人。\n九成的人，本來就沒吃到這波紅利。\n第二，大家真的沒有不花錢喔。\n錢都跑去出國、買車跟股市手續費了。\n餐飲扣掉漲價，只多一個百分點上下。\n第三，店家的壓力在成本跟留不住人。\n找人其實不慢，但是大家走得更快啦。\n最低工資繼續調，店裡的負擔只會更重。\n<short pause>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 203,
+    "precise_numbers": [
+     "百"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>今天聊了這麼多，你最該帶走什麼？第一，受惠 AI 的產業，只僱用一成人。九成的人，本來就沒吃到這波紅利。第二，大家真的沒有不花錢喔。錢都跑去出國、買車跟股市手續費了。餐飲扣掉漲價，只多一個百分點上下。第三，店家的壓力在成本跟留不住人。找人其實不慢，但是大家走得更快啦。最低工資繼續調，店裡的負擔只會更重。<short pause>原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，百分之十一是真的，長在廠房、港口和證券戶裡。直接受惠 AI 的產業，只僱用一成的人。第二，大家沒有不花錢。錢跑去買車、出國，還有股票手續費。餐飲扣掉漲價，只多一個百分點上下。第三，店裡的壓力在成本，跟留不住人。最低工資明年再調，餐飲的人進來得快，走得更快。<short pause>原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "「九成的人本來就沒吃到紅利」原文沒有，改回 breakpoint 草稿；「負擔只會更重」是預測，拿掉；「找人其實不慢」併入「進來得快」；長句拆短（寫稿規則第 18 條）"
+  }
+ ]
+}

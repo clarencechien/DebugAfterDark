@@ -1,0 +1,139 @@
+{
+ "segment": "s02_total",
+ "position": "第 3 段，共 12 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e19e09b3fbe669819634faf347fe58b1a628907d3af442826f015dd758b00ccd",
+ "previous_context": "然後，大家的消費都花去哪裡？最後就是店裡的成本，怎麼被吃掉的。",
+ "original": {
+  "text": "第一本，總帳。百分之十一是真的，而且已經不只。主計總處八月預測的時候，假設第三季成長百分之十一點四二，十月底的概估跑出百分之十四點三六，連續四季雙位數。除非第四季大幅低於預期，全年數字還會再往上修。成長從哪來？年中換過一次手。第一季主要是淨出口在拉，也就是港口；第二季起換內需，光是蓋廠、買設備就占了一大塊。上半場是港口，下半場是廠房。所以這份報告說，百分之十一沒有錯，錯在把它當成大多數店家的營收成長率。那這一成，長在誰身上？",
+  "lint": {
+   "chars": 214,
+   "precise_numbers": [
+    "百分之十一",
+    "百分之十一點四二",
+    "百分之十四點三六",
+    "百分之十一"
+   ],
+   "enumerations": [
+    "第一",
+    "第三",
+    "第四",
+    "第一",
+    "第二"
+   ],
+   "sentences": 10,
+   "avg_sentence_len": 20.4,
+   "max_sentence_len": 52,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "我們先來看最上面的總帳。台灣的 G D P 成長超過一成，是真的。十月底概估出來，是百分之十四點三六。我看到這個數字也愣了一下。<short pause>已經連續四季都是雙位數成長耶。如果第四季沒有意外，全年數字還會往上調。但這些成長到底從哪裡來的？其實年中換過一次手喔。年初主要是靠外銷，靠港口在拉。到了下半年，換成科技業蓋新廠、買設備。上半場是港口，下半場是廠房。所以這份報告說，百分之十一真的沒算錯。錯在把它當成大多數店家的營收成長啦。那這一成多的成長，到底長在誰身上？",
+   "lint": {
+    "chars": 221,
+    "precise_numbers": [
+     "百分之十四點三六",
+     "百分之十一"
+    ],
+    "enumerations": [
+     "第四"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "我們從第一本總帳開始看。\n也就是台灣整體的 G D P。\n新聞說成長超過一成，這不是騙人的。\n十月底最新數字跑出來，有百分之十四點三六。\n而且已經連續四季，都衝出雙位數了喔。<short pause>\n那這些成長到底從哪裡來？\n其實年中換過一次手。\n上半年主要是出口在拉，靠的是港口。\n下半年換廠房接棒。\n光是蓋新工廠、買設備，就占了一大塊。\n所以這份報告說，官方數字沒有錯。\n錯在把它當成普通店家的營收成長啦。\n我看到這句話真的很有共鳴。\n那這一成多的成長，到底長在誰身上？",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [
+     "百分之十四點三六"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 13.9,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先來看第一本總帳。\n電視上說的經濟成長到底真的假的？\n是真的，而且數字還更誇張喔。<short pause>\n第三季的最新概估衝到百分之十四點三六。\n這已經是連續四季雙位數成長了。\n所以整年的數字大概還會再往上修。\n那成長到底從哪裡來？\n其實年中換過一次手。\n上半年主要靠出口在拉，也就是港口。\n下半年換成內需在衝。\n光是蓋廠房買設備就占了大半。\n上半場是港口，下半場是廠房。\n所以這份報告說，原本的一成真的沒有錯。\n錯在大家把它當成一般店家的營收啦。<short pause>\n那這一成，到底長在誰身上？",
+   "lint": {
+    "chars": 213,
+    "precise_numbers": [
+     "百分之十四點三六"
+    ],
+    "enumerations": [
+     "第一",
+     "第三"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 13.2,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "先來看第一本總帳。電視上說的經濟成長到底真的假的？是真的，而且數字還更誇張喔。<short pause>第三季的最新概估衝到百分之十四點三六。這已經是連續四季雙位數成長了。所以整年的數字大概還會再往上修。那成長到底從哪裡來？其實年中換過一次手。上半年主要靠出口在拉，也就是港口。下半年換成內需在衝。光是蓋廠房買設備就占了大半。上半場是港口，下半場是廠房。所以這份報告說，原本的一成真的沒有錯。錯在大家把它當成一般店家的營收啦。<short pause>那這一成，到底長在誰身上？",
+   "to": "先來看第一本，總帳。百分之十一，到底是不是真的？是真的，而且已經不只喔。<short pause>十月底，第三季的概估衝到百分之十四點三六，連續四季雙位數成長。除非第四季大幅低於預期，整年的數字還會再往上修。那成長從哪裡來？其實年中換過一次手。第一季主要靠出口在拉，也就是港口。第二季起換成內需，光是蓋廠房、買設備，就占了一大塊。上半場是港口，下半場是廠房。所以這份報告說，百分之十一沒有錯，錯在大家把它當成一般店家的營收成長率。<short pause>那這一成，到底長在誰身上？",
+   "reason": "「電視上說的…真的假的」是原文沒有的說法且超出口頭禪額度；「上半年靠出口」改回第一季、第二季起換內需；「占了大半」改回一大塊；補回「除非第四季大幅低於預期」的但書；營收改成營收成長率"
+  }
+ ]
+}

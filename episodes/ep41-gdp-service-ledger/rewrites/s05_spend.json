@@ -1,0 +1,140 @@
+{
+ "segment": "s05_spend",
+ "position": "第 6 段，共 12 段",
+ "avoid": [
+  "重點來了",
+  "真的假的"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "9553770aad9d7900a7805920fbc2187afd31be6982ec5127ce7717942f6cf171",
+ "previous_context": "所以你如果覺得那一成跟你無關，其實在數字上，你才是大多數人嘛。那大家是不是就不花錢了？",
+ "original": {
+  "text": "常見的解釋是內需不振，大家不消費。這份報告查下去，不是這樣。扣掉物價，民間消費連續兩季成長超過百分之五。全國的人明明在花錢，老闆真正想問的是：為什麼沒花在我這裡？看第二季：餐飲營業額沒扣物價，長了不到百分之五；扣掉外食大約百分之三的漲價，實際只長一個多百分點。整體消費長了將近六趴，餐飲連平均都沒跟上。錢去哪了？主計總處點名幾個地方：買車、股市的手續費，還有資通訊產品、休閒娛樂和出國。出國這一筆，特別大。",
+  "lint": {
+   "chars": 203,
+   "precise_numbers": [
+    "百分之五",
+    "百分之五",
+    "百分之三",
+    "百"
+   ],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 21.6,
+   "max_sentence_len": 48,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "常見的解釋是內需不振。<short pause>\n但這份報告裡說，帳面上根本不是這樣喔。\n扣掉物價以後，\n民間消費連續兩季成長超過百分之五。\n所以大家明明有在花錢嘛。\n很多老闆真正想問的其實是：\n錢為什麼沒花在我這裡？\n你看第二季，外食漲價扣一扣，\n餐飲業實質只長了一個多百分點。\n可是同一季的整體消費，長了將近百分之六。\n餐飲連平均都沒跟上，\n看到這個落差真的會愣一下。\n那錢都跑去哪了？\n主計總處點名了幾個地方，\n像是買車、股票手續費，\n還有買手機電腦、休閒娛樂跟出國。\n然後出國這一筆，特別大。",
+   "lint": {
+    "chars": 221,
+    "precise_numbers": [
+     "百分之五",
+     "百",
+     "百分之六"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 19.1,
+    "max_sentence_len": 38,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實沒有喔。\n大家常聽到的解釋是內需不振。\n可是看帳上的數字，根本不是這樣。\n這份報告裡說，扣掉物價之後，\n民間消費連續兩季成長超過百分之五。\n大家明明都有在花錢啊。\n那開店的老闆最想問的是：\n大家明明在花錢，為什麼沒花在我這裡？\n看第二季就知道。<short pause>\n餐飲業扣掉外食漲價，\n實質只長了一個多百分點。\n可是同一季整體消費長了將近六趴耶。\n餐飲連平均都沒跟上，\n你看到這個對比，真的很替老闆著急。\n那錢都跑去哪了？\n主計總處點名了買車、股市手續費，\n還有買電子產品、休閒娛樂跟出國。\n而且出國這一筆，特別大。",
+   "lint": {
+    "chars": 234,
+    "precise_numbers": [
+     "百分之五",
+     "百"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 17.0,
+    "max_sentence_len": 31,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "很多人直覺會覺得，一定是大家不花錢嘛。\n\n但這份報告裡算出來，完全不是這樣喔。<short pause>\n\n扣掉物價後，大家的消費其實一直在成長。第二季實質成長甚至達到百分之五點九一。\n\n全國的人明明在花錢，那錢都跑去哪了？這讓很多開店的老闆心裡更悶。\n\n你看餐飲業就知道。扣掉外食漲價，第二季餐飲實質只長了一點點。連整體平均都沒跟上。<sigh>\n\n那大家的錢到底花去哪了？\n\n主計總處其實有點出幾個地方啦。像是買新車、股票手續費，還有休閒娛樂。然後最關鍵的，就是出國。出國這一筆，金額真的特別大。",
+   "lint": {
+    "chars": 219,
+    "precise_numbers": [
+     "百分之五點九一"
+    ],
+    "enumerations": [
+     "第二",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "很多人直覺會覺得，一定是大家不花錢嘛。但這份報告裡算出來，完全不是這樣喔。<short pause>扣掉物價後，大家的消費其實一直在成長。第二季實質成長甚至達到百分之五點九一。全國的人明明在花錢，那錢都跑去哪了？這讓很多開店的老闆心裡更悶。你看餐飲業就知道。扣掉外食漲價，第二季餐飲實質只長了一點點。連整體平均都沒跟上。<sigh>那大家的錢到底花去哪了？主計總處其實有點出幾個地方啦。像是買新車、股票手續費，還有休閒娛樂。然後最關鍵的，就是出國。出國這一筆，金額真的特別大。",
+   "to": "很多人直覺會覺得，一定是大家不花錢嘛。可是這份報告算出來，不是這樣喔。<short pause>扣掉物價，民間消費連續兩季成長超過百分之五。全國的人明明在花錢，開店的老闆真正想問的是：為什麼沒花在我這裡？看第二季的餐飲業就知道。扣掉外食大約三趴的漲價，餐飲實際只長了一個多百分點，連整體消費的平均都沒跟上。那錢到底花去哪了？主計總處點出幾個地方：買車、股票的手續費，還有資通訊產品、休閒娛樂。再來就是出國。出國這一筆，金額特別大。",
+   "reason": "連兩季超過百分之五照原文（不只講第二季的單一數字）；補回外食漲價三趴與一個多百分點；「最關鍵的就是出國」是原文沒有的排序，改成「再來就是出國」；補回資通訊產品"
+  }
+ ]
+}

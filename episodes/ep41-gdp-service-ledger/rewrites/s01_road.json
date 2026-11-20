@@ -1,0 +1,139 @@
+{
+ "segment": "s01_road",
+ "position": "第 2 段，共 12 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "7c91dbbdfd9f66ebe82f67b016f7feb9dc1dbc748d4e8971235d81e55e4ceb4c",
+ "previous_context": "那兩本帳到底差在哪裡？我們這集最後來回答。",
+ "original": {
+  "text": "先說好，這集講的是經濟統計，提到股市的地方，都不是投資建議。這份報告的資料，更新到十一月二十號。它的起點是關鍵評論網的一篇文章，作者是商研院的朱浩。那篇文章方向沒錯：點名零售、餐飲跟生活服務業，同時被物價、租金和缺工擠壓。可是它沒有往下拆帳，這份報告就補這一塊。今晚對三本帳：第一本，這一成長在哪些行業、哪些人身上；第二本，大家的錢花去哪裡；第三本，店裡的成本。",
+  "lint": {
+   "chars": 181,
+   "precise_numbers": [
+    "十一",
+    "二十"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 29.2,
+   "max_sentence_len": 49,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先說好，這集聊經濟，不是投資建議啦。\n這份報告的資料，更新到十一月二十號。\n其實起點是商研院朱浩寫的一篇文章。\n他提到生活服務業，正被物價租金跟缺工擠壓。\n文章方向很對，但沒有把帳細細拆開。<short pause>\n所以這份報告，就是要幫大家補上這一塊。\n你好奇這些帳要怎麼對嗎？\n重點來了，今晚我們就看三本帳。\n第一本，多出來的錢到底長在誰身上？\n然後，大家的消費都花去哪裡？\n最後就是店裡的成本，怎麼被吃掉的。",
+   "lint": {
+    "chars": 185,
+    "precise_numbers": [
+     "十一",
+     "二十"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先講清楚，這集聊經濟統計，不是投資建議喔。這份報告的資料，更新到十一月二十號。它的起點，其實是商研院朱浩寫的一篇文章。那篇文章方向沒錯，大家也很有共鳴。它點名生活服務業，被物價租金跟缺工擠壓。所以勸老闆別盯 G D P，回頭看客人就好嘛。講得很有道理，但缺了什麼？<short pause> 它沒有往下拆帳。所以這份報告，就是要補那一塊。今晚我們來對三本帳。第一本，那一成到底長在誰身上；第二本，大家的錢花去哪裡；最後，店裡的成本到底被吃掉多少。",
+   "lint": {
+    "chars": 206,
+    "precise_numbers": [
+     "十一",
+     "二十"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 17.7,
+    "max_sentence_len": 43,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先說好，這集聊經濟統計。提到股市的地方，都不是投資建議喔。這份報告的資料，更新到十一月二十號。它的起點是關鍵評論網的一篇文章，作者是商研院的朱浩。文章點名零售餐飲被租金跟缺工夾殺。在服務業工作應該也很能體會吧？<short pause>不過他沒往下拆帳，這份報告就來補齊。所以我們今晚要對三本帳。第一本看這一成長在誰身上，第二本看大家的錢花去哪裡，第三本看店裡的成本。那消費的錢到底跑去哪了？",
+   "lint": {
+    "chars": 183,
+    "precise_numbers": [
+     "十一",
+     "二十"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 17.3,
+    "max_sentence_len": 35,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "先說好，這集聊經濟，不是投資建議啦。這份報告的資料，更新到十一月二十號。其實起點是商研院朱浩寫的一篇文章。他提到生活服務業，正被物價租金跟缺工擠壓。文章方向很對，但沒有把帳細細拆開。<short pause>所以這份報告，就是要幫大家補上這一塊。你好奇這些帳要怎麼對嗎？重點來了，今晚我們就看三本帳。第一本，多出來的錢到底長在誰身上？然後，大家的消費都花去哪裡？最後就是店裡的成本，怎麼被吃掉的。",
+   "to": "先說好，這集聊的是經濟統計，提到股市的地方，都不是投資建議。這份報告的資料，更新到十一月二十號。它的起點，是關鍵評論網上，商研院朱浩寫的一篇文章。他點名零售、餐飲跟生活服務業，正同時被物價、租金跟缺工擠壓。文章方向很對，可是沒有把帳拆開。<short pause>這份報告，就是補上這一塊。今晚我們看三本帳。第一本，多出來的這一成，長在誰身上？第二本，大家的錢都花去哪裡？第三本，店裡的成本，是怎麼被吃掉的。",
+   "reason": "補回零售、餐飲與關鍵評論網出處；拿掉「重點來了」（口頭禪額度）與多餘的反問"
+  }
+ ]
+}

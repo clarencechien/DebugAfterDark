@@ -1,0 +1,135 @@
+{
+ "segment": "s06_abroad",
+ "position": "第 7 段，共 12 段",
+ "avoid": [
+  "重點來了",
+  "真的假的"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e97d29636cc7fb619a6843823af171a78a7c840285e2e952d182c4d97ed8dea8",
+ "previous_context": "然後最關鍵的，就是出國。出國這一筆，金額真的特別大。",
+ "original": {
+  "text": "去年，國人出國一千八百九十四萬人次，在國外的總花費第一次破兆，是一兆四百七十四億元。同一年，全台灣餐飲業的營業額，是一兆六百七十四億元。兩個數字幾乎一樣大。今年上半年，出國的人次還比去年同期更多。有趣的是，在 GDP 的算法裡，國外消費一邊記進民間消費，一邊記成進口的服務，兩邊抵掉，不影響成長率。可是對店家來說，那就是沒進門的客人。消費沒有不見，它去買車、付手續費、買機票。那留在店裡的那一點營收，夠不夠付帳？",
+  "lint": {
+   "chars": 204,
+   "precise_numbers": [
+    "一千八百九十四萬",
+    "四百七十四",
+    "六百七十四"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 24.5,
+   "max_sentence_len": 48,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這筆錢到底有多大？\n去年大家在國外的總花費第一次破兆，\n有一兆四百七十四億元。<short pause>\n同一年全台灣餐飲業的營業額，\n其實也就是一兆多一點而已喔。\n你看，這兩個數字根本差不多大嘛。\n而且今年上半年，出國的人又更多了。\n有趣的是，在 G D P 的計算裡面，\n出國消費是一邊加進去、一邊扣掉，\n兩邊抵銷，完全不影響經濟成長率。<sigh>\n可是對開店的人來說，\n那些都是沒走進門的客人耶。\n消費沒有不見，\n只是跑去買車、付手續費、買機票了。\n那留在店裡的那一點營收，\n到底還夠不夠付帳？",
+   "lint": {
+    "chars": 213,
+    "precise_numbers": [
+     "四百七十四"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 22.7,
+    "max_sentence_len": 46,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "我們直接來看去年的花費。<short pause>\n大家在國外花了一兆四百七十四億元。\n這是歷史上第一次破兆。\n這到底有多大？\n其實剛好等於全台灣餐飲業一整年的收入。\n看到這個對比真的會愣一下。\n到了今年上半年，出國的人又更多了。\n在 G D P 的算法裡，出國消費兩邊相抵，\n完全不會影響經濟成長率。\n但對店家來說，那都是沒走進門的客人。<sigh>\n消費其實沒有不見。\n它被拿去買車、付手續費、還有買機票。\n那留在店裡的營收，到底還夠不夠付帳？",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [
+     "四百七十四"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 29,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "出國這一筆到底有多大？<short pause>\n去年大家在國外的總花費，是一兆四百七十四億元。\n這可是第一次破兆喔。\n你知道全台灣餐飲業整年做多少嗎？\n也是一兆多，兩個數字幾乎一樣大。\n今年上半年出國的人，比去年同期還要多。\n而且在 G D P 的算法裡很微妙。\n國外消費算進民間消費，又算進進口服務。\n兩邊抵掉之後，完全不影響成長率耶。\n可是對店家來說呢？\n那就是沒有走進門的客人啊。<sigh>\n其實消費沒有不見，\n只是跑去買車、付手續費、還有買機票。\n那留在店裡的那一點營收，夠不夠付帳？",
+   "lint": {
+    "chars": 212,
+    "precise_numbers": [
+     "四百七十四"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 26,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "我們直接來看去年的花費。<short pause>大家在國外花了一兆四百七十四億元。這是歷史上第一次破兆。這到底有多大？其實剛好等於全台灣餐飲業一整年的收入。看到這個對比真的會愣一下。到了今年上半年，出國的人又更多了。在 G D P 的算法裡，出國消費兩邊相抵，完全不會影響經濟成長率。但對店家來說，那都是沒走進門的客人。<sigh>消費其實沒有不見。它被拿去買車、付手續費、還有買機票。那留在店裡的營收，到底還夠不夠付帳？",
+   "to": "我們直接看去年。國人出國一千八百九十四萬人次，在國外的總花費，第一次破兆。<short pause>這有多大？同一年，全台灣餐飲業一整年的營業額，跟它幾乎一樣大。到了今年上半年，出國的人次又比去年同期更多。在 G D P 的算法裡，國外消費一邊記成消費，一邊記成進口的服務，兩邊抵掉，不會影響經濟成長率。可是對店家來說，那都是沒走進門的客人。<short pause>消費其實沒有不見。它被拿去買車、付手續費、買機票。那留在店裡的營收，到底夠不夠付帳？",
+   "reason": "「剛好等於」改回幾乎一樣大（一兆四百七十四億對一兆六百七十四億，原文說幾乎一樣大）；補回是國人出國；拿掉個人反應「會愣一下」；兩邊相抵補上怎麼抵"
+  }
+ ]
+}

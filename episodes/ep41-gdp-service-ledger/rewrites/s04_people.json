@@ -1,0 +1,137 @@
+{
+ "segment": "s04_people",
+ "position": "第 5 段，共 12 段",
+ "avoid": [
+  "重點來了",
+  "真的假的"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "81f8d43abaf420dbdb80d1f67becde67bb9d8e0cac207a760c887e345ca62180",
+ "previous_context": "所以大家說 G D P 很高但服務業很無感，真的要說清楚是哪一種服務業啦。長得最快的產業有了，那人在哪裡？",
+ "original": {
+  "text": "這是這集最反直覺的一段：人數的分布，正好反過來。經濟日報社論算過，直接受惠 AI 的產業，合計僱用大約九十萬人，只占全體受僱者的一成。服務業超過五百萬人，占六成以上。薪水也看得出來。全體受僱員工今年前九個月的平均經常性薪資，年增不到百分之三；住宿餐飲的平均大約三萬五，今年沒有漲。所以如果你覺得這一成跟你沒關係，在數字上，你是多數。那大家是不是就不花錢了？",
+  "lint": {
+   "chars": 176,
+   "precise_numbers": [
+    "九十萬",
+    "五百萬",
+    "百分之三",
+    "三萬五"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 24.1,
+   "max_sentence_len": 48,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實人數的分布正好反過來。\n經濟日報社論算過一組數字。\n直接吃到 AI 紅利的產業，大約九十萬人。\n這只占全體上班族的一成左右。\n那大部分人在哪裡？\n服務業超過五百萬人，占了六成以上喔。\n看到這兩個數字，落差真的很明顯。<short pause>\n薪水的部分也是這樣。\n全體員工前九個月薪水，年增百分之二點九三。\n可是住宿跟餐飲業平均才三萬五上下，\n今年根本沒有漲。<short pause>\n所以如果你覺得自己沒分到紅利，很正常嘛。\n你在數字上本來就是大多數人。\n那大家是不是就不花錢了？",
+   "lint": {
+    "chars": 204,
+    "precise_numbers": [
+     "九十萬",
+     "五百萬",
+     "百分之二點九三",
+     "三萬五"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 24,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "答案其實剛好倒過來。\n這份經濟日報社論算過，\n直接吃到 AI 紅利的產業，大概九十萬人，\n算下來只占受僱員工的一成。\n那服務業呢？\n超過五百萬人，占了六成以上喔。<short pause>\n薪水的落差大家應該很有共鳴。\n全體平均薪資年增百分之二點九三，\n但住宿餐飲平均大約三萬五，今年完全沒漲。\n所以你如果覺得那一成跟你無關，\n在數字上，你其實才是大多數啦。\n那大家賺這樣，是不是就不花錢了？",
+   "lint": {
+    "chars": 170,
+    "precise_numbers": [
+     "九十萬",
+     "五百萬",
+     "百分之二點九三",
+     "三萬五"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 20.2,
+    "max_sentence_len": 42,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實人數的分布正好反過來喔。\n經濟日報社論有算過。\n直接受惠 A I 的產業，大概僱用九十萬人。<short pause>\n你猜占全體受僱員工多少？\n答案只有一成啦。\n然後服務業超過五百萬人，占了六成以上。\n這對比看下來真的很強烈。\n薪水的部分也是這樣。\n全體員工今年平均薪資，年增不到百分之三。\n住宿餐飲業平均大約三萬五，今年完全沒漲。\n所以你如果覺得那一成跟你無關，\n其實在數字上，你才是大多數人嘛。<short pause>\n那大家是不是就不花錢了？",
+   "lint": {
+    "chars": 187,
+    "precise_numbers": [
+     "九十萬",
+     "五百萬",
+     "百分之三",
+     "三萬五"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 30,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "其實人數的分布正好反過來喔。經濟日報社論有算過。直接受惠 A I 的產業，大概僱用九十萬人。<short pause>你猜占全體受僱員工多少？答案只有一成啦。然後服務業超過五百萬人，占了六成以上。這對比看下來真的很強烈。薪水的部分也是這樣。全體員工今年平均薪資，年增不到百分之三。住宿餐飲業平均大約三萬五，今年完全沒漲。所以你如果覺得那一成跟你無關，其實在數字上，你才是大多數人嘛。<short pause>那大家是不是就不花錢了？",
+   "to": "這是這集最反直覺的一段：人數的分布，正好反過來。經濟日報社論有算過。直接受惠 AI 的產業，大概僱用九十萬人。<short pause>你猜占全體受僱員工多少？答案只有一成。服務業呢，超過五百萬人，占了六成以上。薪水也看得出來。全體受僱員工今年前九個月的平均經常性薪資，年增不到百分之三；住宿餐飲業平均大約三萬五，今年沒有漲。所以如果你覺得那一成跟你無關，在數字上，你才是大多數。<short pause>那大家是不是就不花錢了？",
+   "reason": "補回「最反直覺」的中段提示（hooks.md 留存寫法）；拿掉個人反應「對比真的很強烈」；平均薪資補上口徑（受僱員工、前九個月、經常性薪資）；「完全沒漲」改回沒有漲；A I 改成 AI 與全集一致"
+  }
+ ]
+}

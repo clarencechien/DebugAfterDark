@@ -1,0 +1,124 @@
+{
+ "segment": "s10_answer",
+ "position": "第 11 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "真的假的"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d67fc7debbe97335e2a07261f1884ac58b8e739b8013329b7aad214bec3d656c",
+ "previous_context": "水一直倒進去，卻根本留不住。人一直換，重新找人的成本就一直往上疊。",
+ "original": {
+  "text": "回到開頭：兩本帳都沒錯，那差在哪？差在它們記的不是同一件事。G D P 看的是附加價值；店裡看的是，食材、人事、租金有沒有先把發票吃光。這份報告的結論是，台灣現在像一個 K 字型：往上那一端是 AI、半導體、出口批發和金融；就業最多、也最常喊苦的那一端，是餐飲、小型零售、住宿和生活服務。成長在廠房、港口和證券戶裡，成本在店面。如果你也沒吃到這波紅利，全國的平均數，本來就不是在講你。明年最低工資再調，外送抽成還在往上談，這兩筆已經寫在明年的帳上。",
+  "lint": {
+   "chars": 218,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 30.1,
+   "max_sentence_len": 72,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以兩本帳到底差在哪？\n其實它們算的根本不是同一件事喔。<short pause>\nG D P 算的是附加價值。\n店裡看的是，食材和租金有沒有把發票吃光。\n這份報告說，台灣現在就是一個 K 字型啦。\n往上跑的是 A I、半導體和金融。\n但就業人數最多的，卻是餐飲和生活服務。\n看到這份分析真的很感慨。<sigh>\n成長在廠房和證券戶裡，成本全落在店面。\n全國平均數字再好看，也救不了單店現金流。\n明年最低工資還要調百分之四點七四五。\n抽成還在談，明年的負擔已經先寫在帳上啦。",
+   "lint": {
+    "chars": 200,
+    "precise_numbers": [
+     "百分之四點七四五"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.7,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以回到開頭的問題：<short pause>\n為什麼經濟數字很漂亮，大家卻覺得很辛苦？\n因為這兩本帳記的，根本不是同一件事。\nG D P 看的是附加價值。\n但店裡看的，\n是房租和薪水有沒有把發票吃光。\n這份報告說得很白，\n台灣現在就像一個大大的 K 字型。\n往上飆的那一端，是 AI、半導體跟金融。\n但就業人口最多的餐飲和零售，\n卻全都在往下的那一端。<sigh>\n我看到這裡其實蠻感慨的。\n成長都在廠房跟證券戶裡，\n但成本，卻全都在店面。\n要是你也沒吃到這波紅利，\n那全國的平均數，本來就不是在講你啦。\n而且明年的最低工資，\n還要再調百分之四點七四五，\n外送抽成也還在往上談。\n這兩筆開銷，早就已經寫在明年的帳上了。",
+   "lint": {
+    "chars": 266,
+    "precise_numbers": [
+     "百分之四點七四五"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 21.2,
+    "max_sentence_len": 33,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以回過頭來看，兩邊的帳其實都沒算錯。\n那到底差在哪裡？\n差在記的東西根本不一樣。\nG D P 看的是附加價值。\n但店裡看的，是食材、薪水跟租金。\n看這些開銷，有沒有把發票吃光。\n這份報告說，台灣現在就像字母 K。\n往上跑的那一端，是 AI、半導體跟金融。\n人最多的那一端，是餐飲跟生活服務。\n<short pause>\n我看到這段整理真的很有共鳴。\n成長留在廠房跟證券戶，成本全留在店面。\n全國平均再高，也救不了單店的現金流啊。\n明年最低工資還要調百分之四點七四五。\n外送抽成也還在繼續往上談。\n這兩筆數字，早就清清楚楚寫在明年的帳上了。",
+   "lint": {
+    "chars": 237,
+    "precise_numbers": [
+     "百分之四點七四五"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "所以回過頭來看，兩邊的帳其實都沒算錯。那到底差在哪裡？差在記的東西根本不一樣。G D P 看的是附加價值。但店裡看的，是食材、薪水跟租金。看這些開銷，有沒有把發票吃光。這份報告說，台灣現在就像字母 K。往上跑的那一端，是 AI、半導體跟金融。人最多的那一端，是餐飲跟生活服務。<short pause>我看到這段整理真的很有共鳴。成長留在廠房跟證券戶，成本全留在店面。全國平均再高，也救不了單店的現金流啊。明年最低工資還要調百分之四點七四五。外送抽成也還在繼續往上談。這兩筆數字，早就清清楚楚寫在明年的帳上了。",
+   "to": "所以回到開頭，兩本帳都沒算錯，那到底差在哪裡？差在它們記的根本不是同一件事。G D P 看的是附加價值。店裡看的，是食材、人事跟租金，有沒有先把發票吃光。這份報告說，台灣現在像一個英文字母 K。往上的那一端，是 AI、半導體、出口批發跟金融。就業最多、也最常喊苦的那一端，是餐飲、小型零售、住宿跟生活服務。<short pause>成長在廠房、港口和證券戶裡，成本在店面。如果你也沒吃到這波紅利，全國的平均數，本來就不是在講你。明年最低工資再調，外送抽成也還在往上談。這兩筆，已經寫在明年的帳上了。",
+   "reason": "拿掉個人反應「很有共鳴」；K 型兩端補回出口批發、小型零售、住宿；補回草稿對目標聽眾的一句；百分之四點七四五在 s08 講過調升金額，這裡不再念精確數字；長句拆短（寫稿規則第 18 條）"
+  }
+ ]
+}

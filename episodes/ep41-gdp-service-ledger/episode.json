@@ -1,0 +1,62 @@
+{
+ "id": "ep41-gdp-service-ledger",
+ "number": 41,
+ "type": "full",
+ "guid": "debug-after-dark:ep41",
+ "title": "EP41 台股熱、GDP 破一成，巷口的店為什麼說很慘？",
+ "description": "今年你身邊是不是很多人在聊台股？第二季上市櫃股票成交值比去年同期大增約 2.6 倍，連證券手續費都在國民所得帳上算成消費。GDP 成長上修到 11.05%，39 年新高。可是巷口的店說今年很慘。主計總處的帳沒記錯，老闆的帳也沒記錯，差在哪裡？\n\n00:00 第二季台股成交值大增 2.6 倍，GDP 破 11%\n01:02 兩本帳都沒記錯：今晚對三本帳\n01:48 總帳：第三季 14.36%，成長從港口換到廠房\n02:43 分帳：製造業貢獻六成多，住宿餐飲墊底\n03:33 受惠 AI 的產業，只僱用一成的人\n04:21 大家沒有不花錢，錢去了哪裡\n05:09 出國花費破兆，跟全台餐飲營業額幾乎一樣大\n05:56 店帳：扣掉漲價，只長一個百分點上下\n06:53 最低工資明年 30,900 元，雇主再加兩成\n07:38 缺工：補得進來，留不住\n08:31 兩本帳差在哪：K 型的兩端\n09:28 今晚的 breakpoint\n\n數字的出處與但書：\n・資料截至 2026-11-20（原文 v0.2）。全年 11.05% 是主計總處 8 月的預測，10 月底第三季概估已高於當時假設，11 月底的新預測還沒公布。\n・行業拆解用主計總處第一季初步統計（扣掉物價的實質值）；營業額用經濟部月報（名目，沒扣物價）。\n・「受惠 AI 的產業僱用約 90 萬人」是經濟日報社論的算法。\n・「既有門市成長更低」是原文的推論，台灣沒有官方同店統計。\n・食材、人事、租金占營收七成到七成五，是業界工作區間，不是普查的全國平均。\n\n原文：〈平均數幫不了單店：11% 成長底下的服務業對帳〉v0.2 https://imitator.ai-apps.work/r/gdp-service-ledger\n主要來源：行政院主計總處國民所得統計與預測、薪資與生產力統計；經濟部統計處批發零售及餐飲業營業額統計、經營實況調查；勞動部職位空缺概況、2027 年最低工資審議結果；交通部觀光署出入境與旅遊支出統計；《外送員權益保障及外送平臺管理法》。\n\n今晚的 breakpoint：\n1. 11% 是真的，長在廠房、港口和證券戶裡；直接受惠 AI 的產業只僱用一成的人。\n2. 大家沒有不花錢，錢去了買車、股市手續費和出國；餐飲扣掉漲價只長一個百分點上下。\n3. 店裡的壓力在成本和留不住人：最低工資明年再調，餐飲的人進來得快，走得更快。\n\n提到股市的地方不構成投資建議。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "gdp-service-ledger",
+ "source_url": "https://imitator.ai-apps.work/r/gdp-service-ledger",
+ "status": "final",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5",
+  "model_served": "gemini-3.8-flash-tts"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "report_version": "2026-11-20",
+ "audio": {
+  "file": "ep41-gdp-service-ledger.mp3",
+  "bytes": 9830286,
+  "sha256": "8d7903f3dbaa8b3eb018388ff043f202dad503b2af3ce947faf31f0afad9446a",
+  "duration_s": 614.3,
+  "duration": "10:14",
+  "lufs": -16.9
+ },
+ "youtube": {
+  "title": "台灣 GDP 成長 11%，只有 1 成的人在 AI 產業：巷口的店為什麼說很慘",
+  "thumbnail": [
+   [
+    "GDP 破 11%",
+    "店裡沒感覺"
+   ],
+   [
+    "台股很熱",
+    "錢沒進店裡"
+   ]
+  ],
+  "synthetic_content": true
+ },
+ "qa": {
+  "breeze_cer_mean": 0.03,
+  "gemini_cer_mean": 0.02,
+  "jitter_semitones": 0.223,
+  "gates": "錯誤率 3.0%、音高跳動 0.223 都通過；consistency 標 s00 音色偏亮 +474 Hz、5 處接縫亮度跳 650–900 Hz（響度、音高、聲紋都在範圍內），試聽確認",
+  "retakes": "第一版母帶跳動 0.241：s00、s02、s03、s05、s06、s07、s09、s10 各補 3 次，steady_pick 後 0.226；s00 自動選的 take1 音高 -9 Hz、語速 +17%，再補 4 次（Modal 額度用完，挑選改本機 CPU）",
+  "manual_pick": "s00 take8（音高 -1.4 Hz、跳動 0.215）；其餘照 steady_pick",
+  "both_wrong": "s07「跳最多」兩邊都聽成「跳最高」（意思相同）；s08 句尾「那」；結尾 pong",
+  "retention": "開頭丟出「兩本帳都沒錯，那差在哪」到 s10 才收；s04 標明最反直覺的一段；s02–s08 段尾留小鉤子",
+  "twtone": "qa/twtone.md：沒有超過基準的項目",
+  "terms": "GDP 寫成 G D P 逐字母念；AI 英文念法；Ping／pong 英文念法（gemini_check）",
+  "voice_drift": 0.887
+ },
+ "published": "2026-11-22T08:01:00+08:00"
+}
