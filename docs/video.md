@@ -154,6 +154,12 @@ EP38 起已經有 `title`、`thumbnail`、`synthetic_content`（`recipe.md` 第 
 - 1080×1920，字幕更大（約 72px）、放在中間偏下；第一格是大數字卡。
 - 標題用 `youtube.short.title`，說明欄第一行放長片連結（上傳長片後 Action 才知道網址，所以 Shorts 要排在長片之後）。
 - 庫存：EP01 到 EP37 都有 cold open，可以先批次產出，`publish_at` 每天排一支。
+- 工具：`tools/make_short.py`，每集的內容寫在 `episodes/<ep>/short.json`（聲音起訖、字幕、卡片、片尾卡；範例 EP24）。
+  1. `python3 tools/make_short.py episodes/<ep> --align` 印出 cold open 的逐字時間和停頓（faster-whisper small，`pip install faster-whisper`），照它寫 `cues`。
+  2. 寫 `cards`：`number`（大字＋紅底）、`choice`（問句、選項逐一出現）、`contrast`（「很多人說」對「報告說」）、`list`（逐列打勾）。同一張卡的逐步顯示用同一個 `group`，不淡入。
+  3. `--previews` 只出預覽圖給使用者看，確認後再出 mp4；`--cover` 出 1080×1920 封面（第一張卡）。
+  4. 結尾句子太像系列說明（「這集是……三部曲」）就切掉，停在懸念上，Short 控制在 35 到 45 秒。
+  5. 字體要 `fonts-noto-cjk` 加 `fonts-noto-cjk-extra`（Black、Medium）。
 
 ## 9d：GitHub Action 上傳
 
