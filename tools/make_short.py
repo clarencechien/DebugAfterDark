@@ -6,6 +6,7 @@ All times in short.json are Short time = master mp3 time - audio.start.
 
   python3 tools/make_short.py <ep-dir> <out-dir>            # render mp4 + srt + preview/
   python3 tools/make_short.py <ep-dir> <out-dir> --previews # only preview jpgs (fast)
+  python3 tools/make_short.py <ep-dir> <out-dir> --cover    # only the 1080x1920 cover png (first card)
   python3 tools/make_short.py <ep-dir> --align [--end 60]   # print word timings of the cold open
                                                             # (faster-whisper, to write cues)
 Needs: ffmpeg, Pillow, numpy, fonts-noto-cjk + fonts-noto-cjk-extra (Black/Medium weights).
@@ -216,17 +217,18 @@ def background(total, art):
 
 def align(ep_dir, end):
     """Print word timings of the master mp3 from 0 to `end` s (master time), to write cues."""
-    import wave
+    import tempfile, wave
     from faster_whisper import WhisperModel
     mp3 = mp3_of(ep_dir)
-    tmp = "/tmp/_short_align.wav"
+    tmp = tempfile.NamedTemporaryFile(suffix=".wav", delete=False).name  # unique: runs can go in parallel
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-t", str(end), "-i", mp3, "-ar", "16000", "-ac", "1", tmp], check=True)
     w = wave.open(tmp)
     a = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(np.float32) / 32768
     script = json.load(open(f"{ep_dir}/script.json"))
     first = script["segments"][0]["text"][:40]
     segs, _ = WhisperModel("small", device="cpu", compute_type="int8").transcribe(
-        a, language="zh", word_timestamps=True, initial_prompt=first)
+        a, language="zh", word_timestamps=True, initial_prompt=first, condition_on_previous_text=False)
+    os.remove(tmp)
     print("master-mp3 time; Short time = master - audio.start")
     for s in segs:
         print(f"[{s.start:6.2f}-{s.end:6.2f}] " + " ".join(f"{x.word}@{x.start:.2f}" for x in s.words))
@@ -291,6 +293,16 @@ def main():
                     im = Image.alpha_composite(im, L)
             ImageDraw.Draw(im).rectangle((0, H - 8, int(W * t / speech), H), fill=RED)
         return im.convert("RGB")
+
+    if "--cover" in sys.argv:
+        first = dict(cfg["cards"][0])
+        first.pop("source", None)
+        im = Image.alpha_composite(bg_at(total * 0.3), hdr)
+        im.alpha_composite(CARD[first["type"]](first), (0, 260))  # middle third: the feed crops top and bottom
+        centered(ImageDraw.Draw(im), 1500, "完整版在頻道 ▶ 深夜 Debug", font("Bold", 50), GREY)
+        im.convert("RGB").save(f"{out}/{name}-cover.png")
+        print(f"{out}/{name}-cover.png")
+        return
 
     pdir = f"{out}/preview"
     os.makedirs(pdir, exist_ok=True)
