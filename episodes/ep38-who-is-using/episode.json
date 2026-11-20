@@ -7,7 +7,7 @@
  "description": "六十萬顆輝達的 H200 晶片卡在香港。美國已經放行了，不讓它們進去的，是中國。照理說中國的 AI 公司很缺算力，模型卻一個接一個發表，算力從哪裡來？網路上流傳「六成以上在境外」，這集查它對不對。\n\n00:00 60 萬顆 H200 卡在香港\n01:34 美國放行了，中國海關不放\n02:29 同一顆晶片三個地址：輝達中國營收 13.1% 還是 19.2%\n03:58 境外租算力：騰訊、字節跳動在東南亞與挪威\n05:41 美國 11/16 新規則：資料中心要查客戶總部\n07:32 模型這邊先關門：Anthropic、OpenAI、Google\n09:17 「六成以上在境外」對不對？\n10:29 今晚的 breakpoint\n\n數字的出處與但書：\n・資料截至 2026-11-19。多數原始報導在付費牆後，原文讀到的是其他媒體的轉述；每個數字在原文都標了來源等級。\n・13.1% 對 19.2% 是一份部落格依輝達年報重算的，原文沒有回頭核對年報。\n・境外租用五筆合計約 15.6 萬顆，是原文把報導的顆數上限相加，晶片世代不同，只能當量級；1,200 萬 TPP 約等於 758 顆 H100／H200，是原文自算。\n・「六成以上在境外」「30 到 45 萬顆」出自一篇沒有署名、找不到出處的流傳稿，原文標為未驗。\n・11 月 16 日的規則以聯邦公報刊登為準，門檻怎麼算還有待 BIS 釐清。\n・原文由 Claude 撰寫；講 Anthropic 政策的那一段，節目只排事件與各方說法。\n\n原文：〈貨到哪，票開給誰，誰在用〉分層讀法番外 v0.3 https://imitator.ai-apps.work/r/who-is-using\n主要來源（原文共列 58 筆）：\n・輝達 10-Q，分區營收附註（2025-08）https://www.sec.gov/Archives/edgar/data/1045810/000104581025000209/nvda-20250727.htm\n・Reuters：近 60 萬顆 H200 滯留香港（經 Data Center Dynamics）https://www.datacenterdynamics.com/en/news/almost-600000-nvidia-h200s-stranded-in-hong-kong-as-chinese-govt-stalls-on-import-approvals-report/\n・CNBC：中國 AI 公司經東南亞資料中心使用受管制晶片（經科技新報）https://technews.tw/2026/08/20/chinese-ai-firms-are-tapping-banned-nvidia-chips-through-southeast-asian-data-centers/\n・FT：騰訊與 Oracle 的五年租約（經 TrendForce）https://www.trendforce.com/news/2026/10/01/news-tencent-reportedly-signs-7b-deal-to-lease-100000-ai-chips-from-oracle-in-southeast-asia/\n・FT：Nscale 2025 年營收七成來自字節跳動（經 The Next Web）https://thenextweb.com/news/nscale-bytedance-biggest-customer-nvidia-b200-norway\n・BIS 規則全文，RIN 0694-AK50（2026-11-16）https://www.bis.gov/media/documents/rin-0694-ak50.pdf\n・FT：OpenAI 與 Google 供應中國公司的新加坡子公司（經 The Next Web）https://thenextweb.com/news/openai-google-ai-china-singapore-export-controls\n・Anthropic 支援地區政策 11 月 12 日生效（經 INSIDE）https://www.inside.com.tw/article/42880-anthropic-supported-regions-policy-nov-12-location-incorporation-ownership-control\n\n今晚的 breakpoint：\n1. 同一顆晶片有三個地址：貨到哪、票開給誰、誰在用；輝達換一次算法，中國營收就從 13.1% 變成 19.2%。\n2. 今年卡住 H200 的是中國海關；美國 11 月 16 日的規則，第一次開始查資料中心客戶的總部。\n3. 中國用了多少輝達算力，沒有人公布總量，凡是「幾成在境外」的數字都是推算。\n\n分層讀法番外。提到股價的地方不構成投資建議。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
  "report_slug": "who-is-using",
  "source_url": "https://imitator.ai-apps.work/r/who-is-using",
- "status": "draft",
+ "status": "final",
  "related": [
   "ep39-layers-of-llm"
  ],
@@ -59,5 +59,6 @@
    ]
   ],
   "synthetic_content": true
- }
+ },
+ "published": "2026-11-21T08:00:00+08:00"
 }
