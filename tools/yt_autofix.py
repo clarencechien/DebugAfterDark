@@ -8,7 +8,7 @@ tools/yt_upload.py instead.
   python3 tools/yt_autofix.py --dry-run     # list what it would change, no writes
   python3 tools/yt_autofix.py               # change it
 
-It looks at the channel's 50 newest videos and changes only the private ones whose title carries an episode number
+It looks at the channel's 50 newest videos and changes only the private ones, uploaded in the last 48 hours, whose title carries an episode number
 (EP40, ｜EP40) whose episodes/*/episode.json is status "final" with a "published" time in the past. For each of those,
 one videos.update sets status.containsSyntheticMedia = true and privacyStatus = public. Once a video is public the
 next run leaves it alone, so each episode costs one update. Never touched: public or unlisted videos, scheduled
@@ -21,14 +21,17 @@ videos.update replaces the whole status part, so every other status field is sen
 Quota: about 3 units per run to list, 50 per update; hourly runs stay far under the 10,000 daily units. Standard library only. Credentials as tools/yt_upload.py.
 """
 import argparse, json, re, sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from yt_upload import API, ROOT, access_token, request, with_retries, my_channel, load_uploads  # noqa: E402
 
 CHANNEL = "UCet7D-lLR3LKQY0NeMjYxoA"      # 深夜 Debug
-KEEP_PRIVATE = set()                        # video ids that must never be made public
+KEEP_PRIVATE = {                            # video ids that must never be made public
+    "3babsAxEIbo",   # EP36 RSS import, made private on purpose: replaced by the uploaded video version (2026-11-20)
+}
+MAX_AGE = timedelta(hours=48)               # only fresh RSS imports; an older private video was made private on purpose
 KEEP_FIELDS = ("privacyStatus", "publishAt", "embeddable", "license", "publicStatsViewable")
 
 
@@ -71,6 +74,9 @@ def main():
         if st.get("privacyStatus") != "private":
             continue
         m = re.search(r"EP(\d+)", vt)
+        age = now - datetime.fromisoformat(v["snippet"]["publishedAt"].replace("Z", "+00:00"))
+        if age > MAX_AGE:
+            continue
         if "publishAt" in st or v["id"] in KEEP_PRIVATE or v["id"] in ours or m is None or int(m.group(1)) not in eps:
             print(f"left private: {v['id']} {vt}")
             continue
