@@ -234,8 +234,8 @@
  },
  "mp4": {
   "file": "ep36-credit-line.mp4",
-  "bytes": 41244743,
-  "sha256": "d4dea9bd43958ed7c15fa45127fbbc928ec05f92962fa55415b96d1ef259535e",
+  "bytes": 156923728,
+  "sha256": "9f4d64b2b3c42b72ea6e6d7f8ff31150bd9bb020abd1af5d6162cbef39e84fd4",
   "frames": 16649,
   "fps": 30,
   "size": "1920x1080"

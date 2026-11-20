@@ -48,7 +48,9 @@
      "label": "台灣每一次都坐在第一排",
      "source": "report"
     }
-   ]
+   ],
+   "background": "visuals/bg-s00.jpg",
+   "background_label": "示意圖：AI 生成"
   },
   {
    "id": "s01_press",
@@ -102,7 +104,9 @@
      "label": "這是業界的提案",
      "source": "report"
     }
-   ]
+   ],
+   "background": "visuals/bg-s01.jpg",
+   "background_label": "示意圖：AI 生成"
   },
   {
    "id": "s02_two",
@@ -132,7 +136,9 @@
      "label": "出口明明年年增加",
      "source": "report"
     }
-   ]
+   ],
+   "background": "visuals/bg-s02.jpg",
+   "background_label": "示意圖：AI 生成"
   },
   {
    "id": "s03_top",
@@ -178,7 +184,9 @@
      "label": "中低預算的戲、配角、助理編劇、劇組",
      "source": "report"
     }
-   ]
+   ],
+   "background": "visuals/bg-s03.jpg",
+   "background_label": "示意圖：AI 生成"
   },
   {
    "id": "s04_contract",
@@ -216,7 +224,9 @@
      "label": "",
      "source": "Ampere Analysis"
     }
-   ]
+   ],
+   "background": "visuals/bg-s04.jpg",
+   "background_label": "示意圖：AI 生成"
   },
   {
    "id": "s05_japan",
@@ -245,7 +255,9 @@
      "label": "",
      "source": "日本總務省"
     }
-   ]
+   ],
+   "background": "visuals/bg-s05.jpg",
+   "background_label": "示意圖：AI 生成"
   },
   {
    "id": "s06_taiwan",
@@ -283,7 +295,9 @@
      "label": "廣告越分散，製作費越低",
      "source": "report"
     }
-   ]
+   ],
+   "background": "visuals/bg-s06.jpg",
+   "background_label": "示意圖：AI 生成"
   },
   {
    "id": "s07_korea",
@@ -321,7 +335,9 @@
      "label": "版權在韓國的電視台手上",
      "source": "report"
     }
-   ]
+   ],
+   "background": "visuals/bg-s07.jpg",
+   "background_label": "示意圖：AI 生成"
   },
   {
    "id": "s08_rule",
@@ -358,7 +374,9 @@
      "label": "那 1 兆韓圜走的是第二條",
      "source": "report"
     }
-   ]
+   ],
+   "background": "visuals/bg-s08.jpg",
+   "background_label": "示意圖：AI 生成"
   },
   {
    "id": "s09_taiwan_now",
@@ -404,7 +422,9 @@
      "label": "連韓國自己都在想怎麼拿回來",
      "source": "report"
     }
-   ]
+   ],
+   "background": "visuals/bg-s09.jpg",
+   "background_label": "示意圖：AI 生成"
   },
   {
    "id": "s10_outro",
@@ -446,5 +466,6 @@
   "下一集：EP37",
   "《黑白大廚》全球第一，做節目的公司卻聲請重整",
   "訂閱頻道，每集十分鐘"
- ]
+ ],
+ "backgrounds_note": "2026-11-20 用 Gemini（gemini-3-pro-image）生成，提示詞在 visuals/bg-*.prompt.txt；不畫人、字、商標。第 11 段和固定開場用節目 banner。"
 }

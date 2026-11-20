@@ -561,7 +561,7 @@ def render(ep_dir, out_dir, args):
         chap.append((t, vseg.get(sid, {}).get("chapter", sid)))
 
     # ---- visual events (video time): (t, key)
-    layers, events = {}, []
+    layers, events, items = {}, [], {}
     report = vis.get("report_label", "")
     card_rows = []
     for k, s in enumerate(segs):
@@ -580,7 +580,7 @@ def render(ep_dir, out_dir, args):
             key = f"{sid}:{j}"
             if it["type"] == "number":
                 if it.get("source") == "report": it = {**it, "source": report}
-                layers[key] = number_card(it)
+                layers[key] = number_card(it); items[key] = it
                 bad = check_card(it, clean(s["text"]))
                 card_rows.append({"seg": sid, "value": it["value"], "t": round(t, 2), "source": it.get("source", ""),
                                   "numbers_not_in_script": bad})
@@ -634,7 +634,69 @@ def render(ep_dir, out_dir, args):
         return (cur, prev if a < 1 else None, a, sub, hname)
 
     cache_key, cache_bytes = None, None
-    lay_cache = {}
+
+    # ---- motion (--motion), kept quiet on purpose (late-night channel): cards fade in with a small rise,
+    # the background drifts slowly (4 % zoom over a segment), a thin progress bar with chapter ticks.
+    # A segment can set its own "background" image in visuals.json (e.g. an AI illustration, labelled on screen).
+    motion = args.motion; kb = motion and not args.no_kenburns
+    ENTER, OUT, BGX = 0.5, 0.3, 0.8
+    ease = lambda x: 1 - (1 - min(max(x, 0.0), 1.0)) ** 3
+    BW, BH = (int(W * 1.06), int(H * 1.06)) if kb else (W, H)
+    default_bg = ROOT / vis.get("background", "show/art/banner-v2-0-2400.jpg")
+    seg_t = np.array([0.0, info["ident_at"] - TRIM] + [S[sid] - TRIM for sid in ids[1:]] + [vid_len])
+    seg_of = [ids[0], None] + ids[1:]                          # slot 1 is the ident
+    bg_imgs, bg_label = {}, {}
+    for i, sid in enumerate(seg_of):
+        v = vseg.get(sid, {}) if sid else {}
+        path = vdir / v["background"] if v.get("background") else default_bg
+        if path not in bg_imgs: bg_imgs[path] = cover_bg(path, BW, BH, blur=0 if v.get("background") else 4,
+                                                         dark=0.58 if v.get("background") else 0.62)
+        bg_label[i] = (path, v.get("background_label", ""))
+
+    def bg_slot(i, t):
+        path, _ = bg_label[i]; B = bg_imgs[path]
+        if not kb: return B.copy()
+        p = (t - seg_t[i]) / max(seg_t[i + 1] - seg_t[i], 1e-3)
+        z = 1 + 0.04 * (p if i % 2 == 0 else 1 - p)
+        vw = BW / z; vh = vw * H / W
+        cx = BW / 2 + (1 if i % 3 == 0 else -1) * (BW - vw) / 2 * (2 * p - 1) * 0.5
+        a = vw / W
+        return B.transform((W, H), Image.AFFINE, (a, 0, cx - vw / 2, 0, a, BH / 2 - vh / 2), Image.BILINEAR)
+
+    def bg_at(t):
+        i = min(int(np.searchsorted(seg_t, t, side="right")) - 1, len(seg_t) - 2)
+        im = bg_slot(i, t)
+        if i > 0 and t - seg_t[i] < BGX and bg_label[i - 1][0] != bg_label[i][0]:
+            im = Image.blend(bg_slot(i - 1, t), im, ease((t - seg_t[i]) / BGX))
+        lab = bg_label[i][1]
+        if lab:
+            d = ImageDraw.Draw(im); f = noto("Medium", 24); d.text((80, H - 52), lab, font=f, fill=DIM)
+        return im
+
+    tick_x = [int(c[0] / vid_len * W) for c in chap]
+
+    def compose_motion(t):
+        cur, prev, dt = card_at(t)
+        im = bg_at(t)
+        fresh = prev is not None and prev != cur and t > 0.05
+        if fresh and dt < OUT: im.alpha_composite(Image.blend(blank, layers[prev], 1 - dt / OUT))
+        e = ease(dt / ENTER) if fresh else 1.0
+        if e < 1:
+            dy = int(12 * (1 - e)); L = Image.blend(blank, layers[cur], e)
+            im.alpha_composite(L.crop((0, 0, W, H - dy)), dest=(0, dy))
+        else:
+            im.alpha_composite(layers[cur])
+        hi = int(np.searchsorted(chap_t, t, side="right")) - 1
+        if cur != "end": im.alpha_composite(headers[chap[max(hi, 0)][1]])
+        ci = int(np.searchsorted(cue_t, t, side="right")) - 1
+        if ci >= 0 and t < cues[ci]["vend"]:
+            if ci not in subs: subs[ci] = sub_layer(cues[ci]["lines"])
+            im.alpha_composite(subs[ci])
+        d = ImageDraw.Draw(im)
+        d.rectangle((0, H - 4, W, H), fill=(40, 42, 56, 255))
+        d.rectangle((0, H - 4, int(W * t / vid_len), H), fill=(170, 40, 46, 255))
+        for x in tick_x[1:]: d.rectangle((x - 1, H - 4, x, H), fill=(120, 124, 140, 255))
+        return im.convert("RGB")
 
     def compose(key):
         cur, prev, a, sub, hname = key
@@ -653,12 +715,24 @@ def render(ep_dir, out_dir, args):
     out_dir.mkdir(parents=True, exist_ok=True)
     mp4 = out_dir / f"{name}.mp4"
     n = int(round(vid_len * FPS))
+    if args.range:
+        a0, a1 = (float(x) for x in args.range.split(","))
+        clip = out_dir / f"{name}-{args.clip_name or 'clip'}.mp4"
+        cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
+               "-i", "-", "-i", str(mp3), "-filter_complex", f"[1:a]atrim=start={TRIM + a0}:end={TRIM + a1},asetpts=PTS-STARTPTS[a]",
+               "-map", "0:v", "-map", "[a]", "-c:v", "libx264", "-preset", args.preset, "-crf", "20",
+               "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(clip)]
+        ff = subprocess.Popen(cmd, stdin=subprocess.PIPE)
+        for i in range(int(round(a0 * FPS)), int(round(a1 * FPS))):
+            t = i / FPS
+            ff.stdin.write((compose_motion(t) if motion else compose(frame(t))).tobytes())
+        ff.stdin.close(); ff.wait(); print(clip); return None
     preview_t = vis.get("preview_times") or [0.0]
     pdir = out_dir / "preview"; pdir.mkdir(exist_ok=True)
     want = {int(round(t * FPS)): f"{i + 1:02d}-{t:06.1f}s" for i, t in enumerate(preview_t)}
     blackish = 0; max_black = 0
     if args.no_video:
-        for fi, nm in want.items(): compose(frame(fi / FPS)).save(pdir / f"{nm}.jpg", quality=88)
+        for fi, nm in want.items(): (compose_motion(fi / FPS) if motion else compose(frame(fi / FPS))).save(pdir / f"{nm}.jpg", quality=88)
     else:
         cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                "-i", "-", "-i", str(mp3), "-filter_complex", f"[1:a]atrim=start={TRIM},asetpts=PTS-STARTPTS[a]",
@@ -666,6 +740,13 @@ def render(ep_dir, out_dir, args):
                "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-movflags", "+faststart", str(mp4)]
         ff = subprocess.Popen(cmd, stdin=subprocess.PIPE)
         for i in range(n):
+            if motion:
+                img = compose_motion(i / FPS); cache_bytes = img.tobytes()
+                blackish = blackish + 1 if float(np.asarray(img.convert("L").reduce(8), dtype=np.float32).std()) < 4 else 0
+                max_black = max(max_black, blackish); ff.stdin.write(cache_bytes)
+                if i in want: img.save(pdir / f"{want[i]}.jpg", quality=88)
+                if i % (FPS * 60) == 0: print(f"  {i / FPS / 60:.0f} min", flush=True)
+                continue
             key = frame(i / FPS)
             if key != cache_key:
                 img = compose(key); cache_key, cache_bytes = key, img.tobytes()
@@ -754,6 +835,10 @@ def main():
     ap.add_argument("--thumbnail-only", action="store_true")
     ap.add_argument("--no-video", action="store_true", help="everything except the mp4 (fast check of subtitles and cards)")
     ap.add_argument("--preset", default="medium")
+    ap.add_argument("--motion", action="store_true", help="quiet motion: cards fade in, slow background drift, thin progress bar")
+    ap.add_argument("--no-kenburns", action="store_true", help="with --motion: keep the background still")
+    ap.add_argument("--range", help="START,END in video seconds: render only this clip (no checks, no text outputs)")
+    ap.add_argument("--clip-name", default="")
     a = ap.parse_args()
     ep_dir = Path(a.ep_dir).resolve(); vdir = ep_dir / "video"; vdir.mkdir(exist_ok=True)
     ep = json.loads((ep_dir / "episode.json").read_text(encoding="utf-8"))
