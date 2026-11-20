@@ -14,7 +14,8 @@ Standard library only, like the rest of tools/ (runs on the GitHub Actions runne
 
 Credentials (OAuth 2.0, installed-app client, authorized once by the channel owner; see
 /mnt/project-files/youtube-api/get_refresh_token.py): environment variables YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN.
-Scopes: youtube.upload (videos.insert), youtube (thumbnails, captions, playlists, channels.list).
+Scopes: youtube.upload (videos.insert), youtube (thumbnails, playlists, channels.list), youtube.force-ssl (captions;
+the 2026-11-20 token lacks it, so --captions fails with 403 until the owner re-authorizes with it).
 
 Steps, each one an API call:
   1. videos.insert, resumable upload in chunks, retried on 5xx and network errors. snippet: title, description, tags,
@@ -28,8 +29,9 @@ Steps, each one an API call:
 Quota (default 10,000 units/day): videos.insert is the expensive call; thumbnails.set, captions.insert and
 playlistItems.insert are about 50 each. Check the official quota calculator before batch runs.
 
-Videos uploaded through an unverified API project are locked private until the project passes the YouTube API
-Services audit; that is why the default is --privacy private.
+Scheduling: --privacy private plus --publish-at makes YouTube publish the video at that time. Verified 2026-11-20 after
+the API Services review closed: a test upload kept privacyStatus private and its publishAt after processing, with no
+rejection or failure reason (API uploads are no longer forced private). Plan for automated Shorts and video versions: docs/publish.md.
 """
 import argparse, hashlib, json, mimetypes, os, sys, time, urllib.error, urllib.parse, urllib.request, uuid
 from pathlib import Path

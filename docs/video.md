@@ -163,6 +163,8 @@ EP38 起已經有 `title`、`thumbnail`、`synthetic_content`（`recipe.md` 第 
 
 ## 9d：GitHub Action 上傳
 
+整體的審核與自動化規劃（審核單、哪些還要人工、額度）在 [`publish.md`](publish.md)。
+
 上傳本身由 `tools/yt_upload.py` 做（標準函式庫、可續傳、重試；`--dry-run` 看會送出什麼，`--check` 確認憑證綁的頻道）。`.github/workflows/youtube.yml`（還沒寫）呼叫它，觸發：push 到預設分支且 `episodes/*/episode.json` 有變動，或手動。
 
 1. 找出有 `youtube.publish_at`、但不在 `youtube/uploads.json` 裡的集數。
@@ -180,8 +182,9 @@ EP38 起已經有 `title`、`thumbnail`、`synthetic_content`（`recipe.md` 第 
 
 ### 要先處理的事（使用者，一次性）
 
-- **API 稽核**：網站的 `/privacy/`、`/terms/` 與頁尾的 YouTube 標示是稽核要的（文字在 `tools/legal_pages.py`，工具的用途或存的資料變了要一起改）。新建的 Google Cloud 專案沒有通過稽核前，用 API 上傳的影片會被**鎖成私人**。稽核要幾天到幾週，**最先開始**。
-- **額度**：預設每天 10,000 單位。上傳的單位數以官方的 quota 計算器為準（以往一支約 1,600），加上縮圖、字幕、播放清單，保守估一天 5 到 6 支。每天長片一支加 Shorts 一支沒問題，庫存的 Shorts 不要一次全傳。
+- **API 稽核**：✅ 2026-11-20 Google 結案，API 上傳的影片不會再被鎖成私人；同天實測 `private` + `publishAt` 處理完仍保持排程（見 [`publish.md`](publish.md)）。網站的 `/privacy/`、`/terms/` 與頁尾的 YouTube 標示仍要留著（文字在 `tools/legal_pages.py`，工具的用途或存的資料變了要一起改）。
+- **字幕權限**：`captions.insert` 要 `youtube.force-ssl`，11/20 的 token 沒有（`captions.list` 回 403）。要上傳 `.srt` 前，使用者用 `get_refresh_token.py` 加這個 scope 重新授權一次。
+- **額度**：預設每天 10,000 單位。上傳的單位數以官方的 quota 計算器為準（以往一支約 1,600），加上縮圖、字幕（400）、播放清單，保守估一天 4 到 5 支（算法見 `publish.md`「額度」）。庫存的 Shorts 不要一次全傳；要更多就填 YouTube API Quota Request Form。
 - **測試與比較**（縮圖 A/B）沒有 API，只能在工作室手動設定。
 
 ## 跟 RSS 的關係
@@ -221,7 +224,7 @@ EP38 起已經有 `title`、`thumbnail`、`synthetic_content`（`recipe.md` 第 
 | M0' | 開 Google Cloud 專案、送 API 稽核（跟其他步驟並行） | 使用者 |
 | M1 | `make_video.py`，用 EP07 做出長片、Shorts、縮圖，給使用者看 | agent |
 | M2 | 下一集新集數：產出、確認，**手動上傳**，開始比較 | agent + 使用者 |
-| M3 | `youtube.yml` 上傳 Action（稽核通過後） | agent |
+| M3 | 上傳 Action（稽核 11/20 已結案；11/27 決定日更後做，規劃見 `publish.md`） | agent |
 | M4 | 庫存 Shorts 批次產出，每天排一支 | agent |
 | M5 | 連續三集有效之後：關掉 YouTube 的 RSS 匯入，第 9 步寫進 `recipe.md` | 使用者決定 |
 
