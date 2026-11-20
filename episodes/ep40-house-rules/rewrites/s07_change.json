@@ -1,0 +1,138 @@
+{
+ "segment": "s07_change",
+ "position": "第 8 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d16d198f18f3c2022f13f7d7fb11a8ca14a9e8b2e134d0b081c8833b499873a5",
+ "previous_context": "他在遊戲裡敢衝敢講，是贏下比賽的優勢。可是走到鏡頭外，反而就變成負擔啦。",
+ "original": {
+  "text": "還有一件事：規則會改，而且有些改法，早就寫在規則裡。韓國的國民年金去年三月修法，保費率二十七年來第一次調，從百分之九每年加一點，到二〇三三年變成百分之十三。報告也拿台灣來比：勞保老年年金的請領年齡，從今年，二〇二六年起是六十五歲，這一條在年金制度上路的時候就寫進去了，讀到那一條的人，很多年前就知道自己幾歲能領。連張東民當年考進去的那個招考，後來也跟著節目停了好幾年。報告的建議很實際：讀規則的時候，多讀兩條，誰有權改，改的時候，舊帳怎麼算。",
+  "lint": {
+   "chars": 221,
+   "precise_numbers": [
+    "二十七",
+    "百分之九",
+    "百分之十三",
+    "六十五"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 43.2,
+   "max_sentence_len": 77,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實不只人會變，連規則本身都會改。<short pause>\n最厲害的是，很多改法早就寫在裡面了。\n你平常看合約會翻到最後幾頁嗎？\n大家通常都不會看嘛。<laugh>\n報告裡拿台灣的勞保年金來比。\n滿六十五歲才能領，其實制度一上路就寫進去了。\n也就是說，很多人很多年前就知道自己幾歲能領啦。\n像張東民當年考進去的藝人招考，後來也跟著節目停了好幾年。\n所以看規則到底要看什麼？\n其實就看兩件事。\n第一是誰有權力改，第二是改的時候舊帳怎麼算。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [
+     "六十五"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 27,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "不只是鏡頭外會變，其實遊戲規則本身也會改。重點來了，有些改法早就白紙黑字寫在裡面了。像台灣勞保把請領年齡調到六十五歲，其實在制度剛上路的時候就寫好啦。很多年前有認真看的人，早就知道自己幾歲才能退休。<short pause> 連張東民當年考進電視台的招考，後來也跟著節目停辦了三年多。那你讀新規則的時候，最該注意什麼？報告裡說得很實在喔，只要多看兩件事就好：<short pause> 到底誰有權力改規則，然後改版的時候，舊帳要怎麼算。這點我真的很有共鳴，看規則真的要看仔細一點欸。",
+   "lint": {
+    "chars": 213,
+    "precise_numbers": [
+     "六十五"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 25.6,
+    "max_sentence_len": 44,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實這跟規則的變動很有關係。<short pause>你有沒有發現，遊戲規則其實隨時都在改？最厲害的是，有些改法早就寫在裡面了。像韓國國民年金，前陣子終於調整了。那是他們二十幾年來第一次改耶。這份報告也拿台灣勞保來比。退休請領延到六十五歲這件事，其實制度剛上路的時候，早就寫在裡面了。早看懂的人，很多年前就知道自己幾歲能領。連張東民當年考進去的藝人招考，後來也跟著節目停擺了好幾年。<sigh>那你說，看規則到底要看什麼？很簡單，其實只要多看兩件事。第一是誰有權力改規則。再來就是改版的時候，舊帳到底要怎麼算啦。",
+   "lint": {
+    "chars": 237,
+    "precise_numbers": [
+     "二十",
+     "六十五"
+    ],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 32,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "大家通常都不會看嘛。<laugh>報告裡拿台灣的勞保年金來比。滿六十五歲才能領，其實制度一上路就寫進去了。",
+   "to": "大家通常都不會看嘛。報告裡拿台灣的勞保年金來比。今年起，勞保老年年金的請領年齡是六十五歲，這一條其實在制度一上路就寫進去了。",
+   "reason": "補「今年起」與「請領年齡」，原句像是所有人都要滿 65 才能領；刪笑聲"
+  }
+ ]
+}
