@@ -1,0 +1,39 @@
+# 每小時檢查一次 YouTube：RSS 匯入的新集數一進來都是私人、沒勾「變造或合成內容」，
+# 這裡把對得上已上架集數的私人影片改成公開並勾 AI 標示（tools/yt_autofix.py 有完整規則）。
+#
+# 需要 repo secrets（Settings > Secrets and variables > Actions）：YT_CLIENT_ID、YT_CLIENT_SECRET、YT_REFRESH_TOKEN，
+# 值跟雲端環境裡的同名變數一樣。沒設的話這個 workflow 會失敗、不會改任何東西。
+#
+# 安全：只用 GitHub 官方的 actions，釘在 commit SHA；不用 pull_request_target；只有排程和手動觸發。
+name: YouTube autofix
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: '只列出會改什麼，不寫入'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: yt-autofix
+  cancel-in-progress: false
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - name: Label and publish RSS-imported episodes
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: python3 tools/yt_autofix.py $([ "$DRY_RUN" = true ] && echo --dry-run)
