@@ -31,6 +31,23 @@
    "next_review": "2026-12-04"
   },
   {
+   "id": "title-rewrite-batch2",
+   "kind": "title_batch",
+   "name": "舊集改標題（第 2 批，5 集）",
+   "tests": "照 hooks.md 改寫舊集標題與說明欄，改 episode.json 經 RSS 同步到 YouTube；一批 5 集",
+   "baseline": "每集改之前的曝光與點閱率",
+   "eps": [
+    14,
+    18,
+    16,
+    5,
+    4
+   ],
+   "change_date": "2026-11-20",
+   "status": "running",
+   "next_review": "2026-12-04"
+  },
+  {
    "id": "shorts-ep37",
    "kind": "shorts",
    "name": "Shorts：EP37 第一支",
