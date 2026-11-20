@@ -17,7 +17,7 @@
    "id": "title-rewrite-batch1",
    "kind": "title_batch",
    "name": "舊集改標題（第 1 批，5 集）",
-   "tests": "照 hooks.md 改寫舊集標題，經 rss.xml 同步到 YouTube；一批 5 集",
+   "tests": "照 hooks.md 改寫舊集標題與說明欄，改 episode.json 經 RSS 同步到 YouTube（PR #6，2026-11-20 14:53 合併）；一批 5 集",
    "baseline": "每集改之前的曝光與點閱率",
    "eps": [
     15,
@@ -26,9 +26,9 @@
     8,
     13
    ],
-   "change_date": null,
-   "status": "pending",
-   "next_review": null
+   "change_date": "2026-11-20",
+   "status": "running",
+   "next_review": "2026-12-04"
   },
   {
    "id": "shorts-ep37",

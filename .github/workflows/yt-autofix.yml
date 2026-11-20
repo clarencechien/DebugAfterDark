@@ -30,6 +30,13 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:   # 只拿腳本要的檔案，不下載 mp3（整個 repo 400 MB 以上）
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            tools/
+            youtube/
+            episodes/*/episode.json
       - name: Label and publish RSS-imported episodes
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
