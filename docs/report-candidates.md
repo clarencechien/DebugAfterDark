@@ -1,6 +1,6 @@
 # imitator 2026 報告對照表與待製作清單
 
-更新：2026-11-20。共 147 份 2026 年的報告：已做 43、製作中 2、推薦 10、可做 42、不做 50。
+更新：2026-11-20。共 147 份 2026 年的報告：已做 45、推薦 10、可做 42、不做 50。
 
 這份是 podcast 唯一的選題與待製作清單：哪幾集做到哪一步、下一批做哪些報告。YouTube 頻道上的待辦（舊片改標題、補 AI 標示、縮圖、上傳 Action）在 `youtube/todo.json`，整體順序在 [`strategy.md`](strategy.md)，這裡不重複。
 
@@ -19,8 +19,8 @@
 |---|---|---|---|---|---|---|---|
 | EP36 | [`credit-line-changed`](https://imitator.ai-apps.work/r/credit-line-changed) | ✅ | ✅ | ✅ 11/20 | 🔶 第一支影片版，做完手動上傳；RSS 匯入的那支已改私人 | ⬜ | 影片版實驗，見 `youtube/experiments.json` |
 | EP37 | [`nameless-made-famous`](https://imitator.ai-apps.work/r/nameless-made-famous) | ✅ | ✅ | ✅ 11/20 | ⬜（YouTube 用 RSS 版） | ✅ 11/20 `K6RKggrOqVo` | 11/27 看 Short 成效 |
-| EP38 | [`who-is-using`](https://imitator.ai-apps.work/r/who-is-using) | ✅ QA 通過 | ⬜ 等 Clarence 試聽 | ⬜ 還是 `draft` | ⬜ | ⬜ | 分層讀法 1/2；章節時間已用 `tools/chapters.py` 修正；`youtube` 標題與縮圖字已寫 |
-| EP39 | [`layers-of-llm`](https://imitator.ai-apps.work/r/layers-of-llm) | ✅ QA 通過 | ⬜ 等 Clarence 試聽 | ⬜ 還是 `draft` | ⬜ | ⬜ | 分層讀法 2/2（上：EP38）；同上 |
+| EP38 | [`who-is-using`](https://imitator.ai-apps.work/r/who-is-using) | ✅ | ✅ 11/20 | ⏰ 11/21 08:00 排程 | ⬜ | ⬜ | 分層讀法 1/2；章節時間已用 `tools/chapters.py` 修正；`youtube` 標題與縮圖字已寫 |
+| EP39 | [`layers-of-llm`](https://imitator.ai-apps.work/r/layers-of-llm) | ✅ | ✅ 11/20 | ⏰ 11/21 08:01 排程 | ⬜ | ⬜ | 分層讀法 2/2（上：EP38）；同上 |
 
 「進 feed」是 `episode.json` 設成 `status: final` 並填 `published`，merge 到 main 就會發佈（先給 Clarence 看再 commit）。EP36、EP37 的影片版和 Short 做完就搬到「已做」。
 
@@ -47,7 +47,7 @@
 
 ## 推薦的下一批
 
-依建議順序（11-20：韓劇上下篇已做成 EP36、EP37，分層讀法的兩篇正在做成 EP38、EP39，不讀之後三篇排第一）。預排集數：#1–3 → EP40–EP42，#4 → EP43，之後開工時再定。標題是方向，不是定稿。製作時間是從開工到試聽版的估計，算法見下一節。
+依建議順序（11-20：韓劇上下篇已做成 EP36、EP37，分層讀法的兩篇已做成 EP38、EP39，不讀之後三篇排第一）。預排集數：#1–3 → EP40–EP42，#4 → EP43，之後開工時再定。標題是方向，不是定稿。製作時間是從開工到試聽版的估計，算法見下一節。
 
 | # | 報告 | 標題方向 | 鉤子 | 製作時間（估） | 估法 |
 |---|---|---|---|---|---|
@@ -98,7 +98,7 @@
 | 不讀之後 | `no-read-1`、`no-read-2`、`no-read-3` | 預排 EP40–EP42，三集：Uncle Bob 改讀規格、Lauren Tan 改看證據、檢查本身要校正（Claude Code 團隊的做法）；取代前版 `uncle-bob` |
 | 知行筆記 | `dankoe-one-day`、`knowing-is-dear`、`practice-on-purpose` | 前兩篇已做（EP30、EP31）；實作篇可以當第三集，開頭用「上一集」接回 EP31 |
 | Slotbound 案卷 | `slotbound-case`、`slotbound-case-2` | 已做：EP32、EP33 |
-| 分層讀法 | `who-is-using`、`layers-of-llm`、`no-exchange-rate` | 製作中：EP38、EP39（番外的時事當開場接上篇，下篇的三本帳併進第二集） |
+| 分層讀法 | `who-is-using`、`layers-of-llm`、`no-exchange-rate` | 已做：EP38、EP39（番外的時事當開場接上篇，下篇的三本帳併進第二集） |
 | jevlike | `jevlike-tw-script`、`jevlike-primer`、`jevlike-audio` | 只做繁簡那篇；另外兩篇是自家實驗，偏技術 |
 | 架構系列 | `agent-arch` 到 `agent-arch-6`、`test-agent-arch` | 可做，工程師向；挑一兩篇合成一集 |
 
@@ -144,6 +144,8 @@
 | EP35 | 存股變飆股：0056 今年漲六成，股息是多出來的錢嗎？ | [`not-extra-money`](https://imitator.ai-apps.work/r/not-extra-money) | 上架 |
 | EP36 | 韓劇最紅的這一年，為什麼要政府拿一兆韓圜救命？ | [`credit-line-changed`](https://imitator.ai-apps.work/r/credit-line-changed) | 上架 |
 | EP37 | 《黑白大廚》全球第一，做節目的公司卻重整了 | [`nameless-made-famous`](https://imitator.ai-apps.work/r/nameless-made-famous) | 上架 |
+| EP38 | 美國放行了，六十萬顆晶片為什麼還卡在香港？ | [`who-is-using`](https://imitator.ai-apps.work/r/who-is-using) | 排程 11/21 |
+| EP39 | 中國 AI 追上美國了嗎？差十五年，也只差四個月 | [`layers-of-llm`](https://imitator.ai-apps.work/r/layers-of-llm) | 排程 11/21 |
 
 另外標已做、但沒有自己一集的：[第五個錯，和漏掉的第六個 — 外送專法篇二校](https://imitator.ai-apps.work/r/second-read)（EP16、EP17 說明欄更正）、[AI 溢酬:一般人版報告 — 論文、分析師與台股實證](https://imitator.ai-apps.work/r/ai-premium)（EP20 的背景資料）。
 

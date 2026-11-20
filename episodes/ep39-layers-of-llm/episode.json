@@ -7,7 +7,7 @@
  "description": "七月底，中國開始小批量生產國產的浸潤式 DUV 曝光機，ASML 股價盤中一度跌 6.5%。可是這台機器今年的目標是 5 台，ASML 去年交了 131 台。中國的 AI 追上美國了嗎？這份報告說，可能差 15 年，也可能只差 4 個月，要看問的是哪一層。\n\n00:00 中國 DUV 曝光機量產，ASML 盤中跌 6.5%\n00:59 美中 AI 分五層，每層落差的單位不同\n01:44 黃光：國產 5 台對 ASML 131 台\n02:32 真正的瓶頸：HBM 綜合良率約 25%\n03:21 幾十 B 還是 2.8T？差在「激活」兩個字\n04:15 MoE：制裁留下的指紋\n05:01 Kimi K3 便宜的是 token，貴的是 turn\n05:49 按分數算，中國模型只便宜 1.2 到 3.2 倍\n06:39 能力差 4 到 14 個月，而月份在通膨\n07:28 一招檢查超車論和崩盤論\n08:17 今晚的 breakpoint\n\n數字的出處與但書：\n・原文的數字停在 2026-07-28，2026-11-13 補查出處；價格與完成率那段取自同系列〈沒有匯率〉2026-09-10 的快照。引用時要帶日期。\n・HBM 良率、長鑫的產能是研究機構的估計，原文部分標「待查」。\n・梁文鋒「幾十 B 激活」出自流出的投資人會議紀要，DeepSeek 沒有認證過。\n・CAISI 是美國政府機構，任務包括評估對手國家的 AI 系統，引用時要記得這個立場。\n・「每一分花費」假設指數線性，只看量級；人工重做一題的交叉點 190 到 230 美元是〈沒有匯率〉的推算。\n\n原文：〈不是誰追上誰，而是哪一層〉https://imitator.ai-apps.work/r/layers-of-llm\n同系列：〈沒有匯率〉https://imitator.ai-apps.work/r/no-exchange-rate\n主要來源：\n・Reuters：中國開始生產國產浸潤式 DUV（經 Business Day）https://www.businessday.co.za/world/international-companies/2026-07-28-china-starts-production-of-home-grown-immersion-duv-lithography-tools-source/\n・The Korea Herald：ASML 去年 131 台，中國今年約 5 台 https://mbiz.heraldcorp.com/article/10822959\n・Artificial Analysis：Kimi K3 在 AA-Briefcase 的成本 https://artificialanalysis.ai/articles/kimi-k3-agentic-knowledge-benchmark\n・Epoch AI：中國模型平均落後美國前沿 7 個月 https://epoch.ai/data-insights/us-vs-china-eci\n・Epoch AI：前沿能力的進展加速 https://epochai.substack.com/p/frontier-ai-capabilities-accelerated\n・NIST CAISI：DeepSeek V4 Pro 評估 https://www.nist.gov/news-events/news/2026/05/caisi-evaluation-deepseek-v4-pro\n・Artificial Analysis 模型頁：GLM-5.3 https://artificialanalysis.ai/models/glm-5-3 、GPT-6 Astra https://artificialanalysis.ai/models/gpt-6-astra\n\n今晚的 breakpoint：\n1. 中國追上了沒有，沒有單一答案：曝光機差約 15 年，記憶體卡在良率，模型差 4 到 7 個月，單位不能換算。\n2.「幾十 B」和「2.8T」不矛盾，差在「激活」兩個字；中國模型便宜的是 token，貴的是 turn，最後決定帳單的是完成率。\n3. 看到超車論或崩盤論，找出它假設沒有摩擦力的那一環。\n\n上一集：EP38〈美國放行了，六十萬顆晶片為什麼還卡在香港？〉\n分層讀法上篇。提到股價的地方不構成投資建議。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
  "report_slug": "layers-of-llm",
  "source_url": "https://imitator.ai-apps.work/r/layers-of-llm",
- "status": "draft",
+ "status": "final",
  "related": [
   "ep38-who-is-using"
  ],
@@ -59,5 +59,6 @@
    ]
   ],
   "synthetic_content": true
- }
+ },
+ "published": "2026-11-21T08:01:00+08:00"
 }
