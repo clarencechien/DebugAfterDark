@@ -4,7 +4,7 @@
  "type": "full",
  "guid": "debug-after-dark:ep39",
  "title": "EP39 中國 AI 追上美國了嗎？差十五年，也只差四個月",
- "description": "七月底，中國開始小批量生產國產的 DUV 微影機，艾司摩爾股價盤中一度跌了 6.5%。可是這台機器今年的目標是五台，艾司摩爾去年交了 131 台。中國的 AI 追上美國了嗎？這份報告說，答案可能是差十五年，也可能只差四個月，要看問的是哪一層。微影、HBM 記憶體、模型三層各有各的單位，再加上同系列〈沒有匯率〉九月量的價格：便宜的是 token，貴的是 turn。分層讀法上篇。\n\n今晚的 breakpoint：\n1. 中國追上了沒有，沒有單一答案：微影差約十五年，記憶體卡在良率，模型差四到七個月，單位不能換算。\n2.「幾十 B」和「2.8 兆」不矛盾，差在「激活」兩個字；中國模型便宜的是 token，貴的是 turn，最後決定帳單的是完成率。\n3. 看到超車論或崩盤論，找出它假設沒有摩擦力的那一環。\n\n原文：〈不是誰追上誰，而是哪一層〉https://imitator.ai-apps.work/r/layers-of-llm\n價格與完成率那段取自同系列〈沒有匯率〉https://imitator.ai-apps.work/r/no-exchange-rate\n數字停在 2026-07-28（價格是 09-10 的快照），2026-11-13 補查出處；原文標「待查」的數字，節目照說是待查。提到股價的地方不構成投資建議。\n\n上一集：EP38〈美國放行了，六十萬顆晶片為什麼還卡在香港？〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "description": "七月底，中國開始小批量生產國產的浸潤式 DUV 曝光機，艾司摩爾股價盤中一度跌了 6.5%。可是這台機器今年的目標是五台，艾司摩爾去年交了 131 台。中國的 AI 追上美國了嗎？這份報告說，答案可能是差十五年，也可能只差四個月，要看問的是哪一層。曝光機、HBM、模型三層各有各的單位，再加上同系列〈沒有匯率〉九月量的價格：便宜的是 token，貴的是 turn。分層讀法上篇。\n\n今晚的 breakpoint：\n1. 中國追上了沒有，沒有單一答案：曝光機差約十五年，記憶體卡在良率，模型差四到七個月，單位不能換算。\n2.「幾十 B」和「2.8T」不矛盾，差在「激活」兩個字；中國模型便宜的是 token，貴的是 turn，最後決定帳單的是完成率。\n3. 看到超車論或崩盤論，找出它假設沒有摩擦力的那一環。\n\n原文：〈不是誰追上誰，而是哪一層〉https://imitator.ai-apps.work/r/layers-of-llm\n價格與完成率那段取自同系列〈沒有匯率〉https://imitator.ai-apps.work/r/no-exchange-rate\n數字停在 2026-07-28（價格是 09-10 的快照），2026-11-13 補查出處；原文標「待查」的數字，節目照說是待查。提到股價的地方不構成投資建議。\n\n上一集：EP38〈美國放行了，六十萬顆晶片為什麼還卡在香港？〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
  "report_slug": "layers-of-llm",
  "source_url": "https://imitator.ai-apps.work/r/layers-of-llm",
  "status": "draft",
@@ -28,22 +28,22 @@
  "report_version": "2026-11-13",
  "audio": {
   "file": "ep39-layers-of-llm.mp3",
-  "bytes": 8706809,
-  "sha256": "97fb4b073f6fec2da5d35d22d6d5b060a49ec7a958cf4c903e71b4501cf6044f",
-  "duration_s": 544.1,
-  "duration": "9:04",
+  "bytes": 8730633,
+  "sha256": "28c52b75f7780ad267a8dad67311e27b54f3932ead72c0b0c5fed371f7ba05b2",
+  "duration_s": 545.6,
+  "duration": "9:05",
   "lufs": -16.8
  },
  "qa": {
-  "breeze_cer_mean": 0.032,
-  "gemini_cer_mean": 0.016,
-  "jitter_semitones": 0.207,
-  "gates": "錯誤率 3.2%、音高跳動 0.207 都通過；s06 語速 +12%（九次都偏快，英文與數字多）",
-  "retakes": "s03、s06 各補 3 次，s06 再補 3 次；s03「八層堆疊、三成五」兩邊都聽成「三層五」，改成百分比，「投片」改「晶圓」、「攤提」改「分攤成本」重錄；s08「DeepSeek V4 Pro」三次都被聽成 V3，改成「DeepSeek 的第四代模型 V4 Pro」重錄",
-  "manual_pick": "s06 take5；其餘照 steady_pick",
-  "both_wrong": "深紫外光／極紫外光的「光微影」，結尾 pong（這次念成中文的「碰」）",
+  "breeze_cer_mean": 0.029,
+  "gemini_cer_mean": 0.019,
+  "jitter_semitones": 0.214,
+  "gates": "錯誤率 2.9%、音高跳動 0.214 都通過；s06 語速 +13%（九次都偏快，英文與數字多）",
+  "retakes": "s03、s06 各補 3 次，s06 再補 3 次；s03「八層堆疊、三成五」兩邊都聽成「三層五」，改成百分比，「投片」改「晶圓」、「攤提」改「分攤成本」重錄；s08「DeepSeek V4 Pro」三次都被聽成 V3，改成「DeepSeek 的第四代模型 V4 Pro」重錄；型號數字改用中文寫（K三、GB三百、GLM 五點三、GPT 六、V四），V4 原本念成 V four；用語改成台灣業界說法：DUV、EUV、HBM 不加中文，曝光機、黃光取代微影機，參數說幾十 B、兩點八 T 並補「一 T 等於一千 B」，s00–s05、s07–s10 重錄；「十億個參數」被聽成「十一個」，改成「也就是十億」（使用者 2026-11-20）",
+  "manual_pick": "s00 take2、s05 take2（take0 的梁文鋒兩邊都聽錯）、s06 take5、s08 take0；其餘照 steady_pick",
+  "both_wrong": "CAISI 的 I，同一套／道，結尾 pong",
   "retention": "開頭承諾「最後給你一招」在 s09 收；s02、s03、s05、s06 段尾留小鉤子",
   "twtone": "qa/twtone.md：沒有超過基準的項目",
-  "terms": "ASML、DUV、HBM、MoE、EUV、CAISI 判英文念法，第一次出現都配中文"
+  "terms": "ASML、DUV、EUV、HBM、MoE、CAISI 英文念法；DUV、EUV、HBM 不加中文（台灣業界說法）；MoE 第一次配中文"
  }
 }

@@ -1,20 +1,20 @@
 [
  {
   "id": "s00_open",
-  "lufs_before": -20.5,
-  "gain_db": 0.5,
+  "lufs_before": -22.0,
+  "gain_db": 2.0,
   "lufs_after": -20.0
  },
  {
   "id": "s01_road",
-  "lufs_before": -20.1,
-  "gain_db": 0.1,
+  "lufs_before": -22.2,
+  "gain_db": 2.2,
   "lufs_after": -20.0
  },
  {
   "id": "s02_customs",
-  "lufs_before": -20.3,
-  "gain_db": 0.3,
+  "lufs_before": -22.9,
+  "gain_db": 2.9,
   "lufs_after": -20.0
  },
  {
@@ -25,8 +25,8 @@
  },
  {
   "id": "s04_revenue",
-  "lufs_before": -21.2,
-  "gain_db": 1.2,
+  "lufs_before": -21.5,
+  "gain_db": 1.5,
   "lufs_after": -20.0
  },
  {
@@ -43,8 +43,8 @@
  },
  {
   "id": "s07_rule",
-  "lufs_before": -22.9,
-  "gain_db": 2.9,
+  "lufs_before": -22.3,
+  "gain_db": 2.3,
   "lufs_after": -20.0
  },
  {
@@ -73,14 +73,14 @@
  },
  {
   "id": "s12_watch",
-  "lufs_before": -22.8,
-  "gain_db": 2.8,
+  "lufs_before": -21.6,
+  "gain_db": 1.6,
   "lufs_after": -20.0
  },
  {
   "id": "s13_outro",
-  "lufs_before": -21.4,
-  "gain_db": 1.4,
+  "lufs_before": -21.7,
+  "gain_db": 1.7,
   "lufs_after": -20.0
  }
 ]

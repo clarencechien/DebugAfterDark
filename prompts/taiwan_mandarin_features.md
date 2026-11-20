@@ -30,3 +30,4 @@
 - A study of neutral-tone syllables in Taiwan Mandarin：https://scholarspace.manoa.hawaii.edu/server/api/core/bitstreams/f3af0788-f9dd-45dd-9fd3-e05553d1becd/content
 - Production and Perception of Taiwan Mandarin Syllable Contraction（Grace Kuo）：https://escholarship.org/content/qt6kj264nh/qt6kj264nh_noSplash_89141fb42d8051d8af0fb1e1539d1f44.pdf
 - Lexical Effects in Phonemic Neutralization in Taiwan Mandarin：https://escholarship.org/content/qt8fq9s0hs/qt8fq9s0hs_noSplash_997efe2f0151d82f4eedcbbc77c17bb2.pdf
+- 半導體與 AI 用語照台灣業界的說法（2026-11-20）：DUV、EUV、HBM 直接講英文，不加中文解釋；機台說「曝光機」（「光刻機」是中國用語），製程區說「黃光」；模型參數說「幾十 B」「2.8T」，第一次出現時補一句「B 是十億、一 T 等於一千 B」，不說「兩點八兆個參數」。
