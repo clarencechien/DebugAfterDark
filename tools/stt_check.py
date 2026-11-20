@@ -140,13 +140,13 @@ def gemini_transcribe(paths):
     from google.genai import types
     c = genai.Client(api_key=os.environ.get("GEMINI_API_KEY") or os.environ["gemini_key"])
     def one(p):
-        text = None
+        text, mv = None, None
         for attempt in range(3):   # an empty reply (r.text is None) crashed EP10's check on 2026-11-07; retry, then record it
             try:
                 r = c.models.generate_content(model="gemini-3.8-flash",
                       contents=[types.Part.from_bytes(data=p.read_bytes(), mime_type="audio/wav"), GEMINI_PROMPT],
                       config=types.GenerateContentConfig(temperature=0))
-                text = r.text
+                text, mv = r.text, r.model_version
             except Exception as e:   # network resets through the proxy happen; one bad call should not lose the report
                 print(f"  gemini  {p.stem}: attempt {attempt + 1} failed: {type(e).__name__}")
             if text:
@@ -154,7 +154,7 @@ def gemini_transcribe(paths):
         if not text:
             print(f"  gemini  {p.stem}: no transcript after 3 attempts, comparing against Breeze only")
             text = ""
-        r_ = {"text": text.strip(), "unclear_marks": text.count("［?］") + text.count("[?]"), "empty": not text}
+        r_ = {"text": text.strip(), "unclear_marks": text.count("［?］") + text.count("[?]"), "empty": not text, "model_version": mv}
         print(f"  gemini  {p.stem}: {r_['text'][:40]}…")
         return p.stem, r_
     from concurrent.futures import ThreadPoolExecutor   # independent calls; run them at once (2026-11-07)
@@ -172,7 +172,7 @@ def main(a):
     if a.reuse and Path(a.reuse).exists():
         old = {r["id"]: r for r in json.loads(Path(a.reuse).read_text(encoding="utf-8"))["segments"]}
         W = {k: {"text": v["whisper_text"], "segments": [tuple(x) for x in v["whisper_segments"]]} for k, v in old.items()}
-        G = {k: {"text": v["gemini_text"], "unclear_marks": v["gemini_unclear_marks"]} for k, v in old.items()}
+        G = {k: {"text": v["gemini_text"], "unclear_marks": v["gemini_unclear_marks"], "model_version": v.get("gemini_model_version")} for k, v in old.items()}
         print("reusing transcripts from", a.reuse)
     else:
         sel = d / "select_log.json"
@@ -210,7 +210,8 @@ def main(a):
             dur = w.getnframes() / w.getframerate()
         report["segments"].append({"id": s["id"], "cer_whisper": round(cer(ref, wh), 3), "cer_gemini": round(cer(ref, ge), 3),
                                    "gemini_unclear_marks": G[p.stem]["unclear_marks"], "flagged": flagged,
-                                   "whisper_text": W[p.stem]["text"], "whisper_segments": W[p.stem]["segments"], "gemini_text": G[p.stem]["text"]})
+                                   "whisper_text": W[p.stem]["text"], "whisper_segments": W[p.stem]["segments"], "gemini_text": G[p.stem]["text"],
+                                   "gemini_model_version": G[p.stem].get("model_version")})
         t += dur + 0.6
     if a.out:
         Path(a.out).parent.mkdir(parents=True, exist_ok=True); Path(a.out).write_text(json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")

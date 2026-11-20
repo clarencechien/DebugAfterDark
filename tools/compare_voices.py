@@ -66,7 +66,7 @@ def main(files):
                                       config=types.GenerateContentConfig(response_mime_type="application/json", temperature=0))
         j = json.loads(r.text); m = dict(zip(labels, [Path(f).name for f in order]))
         ranked = [m[l] for l in j["ranking"] if l in m]
-        rankings.append({"ranking": ranked, "winner_reason": j.get("winner_reason"),
+        rankings.append({"ranking": ranked, "model_version": r.model_version, "winner_reason": j.get("winner_reason"),
                          "per_clip": {m.get(k, k): v for k, v in (j.get("per_clip") or {}).items()}})
         print(f"\ntrial {trial}: " + " > ".join(x.split('.')[0] for x in ranked) + f"\n  winner: {j.get('winner_reason')}")
     score = {r["file"]: 0 for r in rows}

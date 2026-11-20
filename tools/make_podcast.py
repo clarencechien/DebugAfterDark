@@ -4,6 +4,7 @@
   python3 tools/make_podcast.py master  --voice D1 --script episodes/<ep>/script.json --tag <ep> --match-eq \
           [--ident show/ident/ident.flac] [--out episodes/<ep>/<ep>.mp3]
   python3 tools/make_podcast.py design | audition | judge ...   # voice design and auditions (POC; voices are in voices/registry.json)
+  python3 tools/make_podcast.py voices                          # refresh expire_time of the designed voices (docs/voice.md)
 
 Text is spoken verbatim by 3.8 TTS; delivery goes in speech_metadata.style.
 Every segment is checked against the duration the text implies, because 3.8 TTS can
@@ -39,7 +40,10 @@ STUDIO = {"S1": "Algieba", "S2": "Charon", "S3": "Enceladus", "S4": "Umbriel"}
 
 
 def client():
-    return genai.Client(api_key=os.environ.get("GEMINI_API_KEY") or os.environ["gemini_key"])
+    # 3.8 TTS and the voices endpoint exist only on v1beta. google-genai 3.x defaults to v1, where the TTS call
+    # fails with 404 "model not found" (2026-11-20, google-genai 3.6.1), so ask for v1beta explicitly.
+    return genai.Client(api_key=os.environ.get("GEMINI_API_KEY") or os.environ["gemini_key"],
+                        http_options={"api_version": "v1beta"})
 
 
 def load_script(path=None):
@@ -103,7 +107,33 @@ def tts(c, text, style, voice, path):
         generation_config={"speech_config": [{"voice": voice}]})
     d = r.model_dump()
     path.write_bytes(base64.b64decode(d["output_audio"]["data"]))
+    # The model that actually answered, next to the audio: if Google reroutes TTS_MODEL, the log shows it (2026-11-20).
+    path.with_suffix(".meta.json").write_text(json.dumps({"model_requested": TTS_MODEL, "model_served": (d.get("model") or "").removeprefix("models/") or None,
+        "interaction_id": d.get("id"), "voice": voice, "style": style, "text": text,
+        "created": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}, ensure_ascii=False, indent=1), encoding="utf-8")
     return time.perf_counter() - t0, (d.get("usage") or {}).get("total_output_tokens")
+
+
+def served_model(wav):
+    """model_served from the sidecar tts() wrote next to a take; None for takes made before 2026-11-20."""
+    m = Path(wav).with_suffix(".meta.json")
+    return json.loads(m.read_text(encoding="utf-8")).get("model_served") if m.exists() else None
+
+
+def cmd_voices(a):
+    """Refresh expire_time and model of every designed voice in voices/registry.json (read-only API call, no audio).
+
+    Stored voices expire after a year without use; synthesis with the voice pushes expire_time back."""
+    c = client(); p = ROOT / "voices" / "registry.json"; reg = json.loads(p.read_text(encoding="utf-8"))
+    for key, v in reg.items():
+        try:
+            g = c.voices.get(v["id"]).model_dump(mode="json")
+        except Exception as e:
+            print(f"{key:5s} {v['id']}  NOT FOUND ({type(e).__name__}: {e})"); continue
+        v["expire_time"] = str(g.get("expire_time")); v["model"] = g.get("model"); v["checked"] = time.strftime("%Y-%m-%d")
+        print(f"{key:5s} {v['id']}  expires {v['expire_time']}  model {v['model']}")
+    if not a.dry_run:
+        p.write_text(json.dumps(reg, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
 def cmd_design(a):
@@ -146,9 +176,10 @@ def judge(c, path, text):
                   JUDGE_PROMPT.replace("{text}", text)],
         config=types.GenerateContentConfig(response_mime_type="application/json", temperature=0))
     try:
-        return json.loads(r.text)
+        j = json.loads(r.text)
     except Exception:
-        return {"raw": r.text}
+        j = {"raw": r.text}
+    return {**j, "model_version": r.model_version} if isinstance(j, dict) else {"result": j, "model_version": r.model_version}
 
 
 def cmd_judge(a):
@@ -215,7 +246,8 @@ def cmd_episode(a):
             if ok:
                 break
             force = True  # cached file failed the check; regenerate
-        return (s["id"], k), {"path": tp, "ok": ok, "dur": dur, "ratio": ratio, "pauses": lp, "wall": wall, "tok": tok, "attempt": attempt}
+        return (s["id"], k), {"path": tp, "ok": ok, "dur": dur, "ratio": ratio, "pauses": lp, "wall": wall, "tok": tok, "attempt": attempt,
+                              "model_served": served_model(tp)}
 
     from concurrent.futures import ThreadPoolExecutor
     with ThreadPoolExecutor(max_workers=max(1, a.parallel)) as pool:
@@ -232,10 +264,13 @@ def cmd_episode(a):
         dur, ratio, ok, wall, tok, attempt = best["dur"], best["ratio"], best["ok"], best["wall"], best["tok"], best["attempt"]
         log.append({"id": s["id"], "attempts": attempt, "audio_s": round(dur, 2), "expected_s": round(expected, 1),
                     "ratio": round(ratio, 2), "ok": ok, "wall_s": round(wall, 1), "tokens": tok,
-                    "takes": [{"file": t["path"].name, "audio_s": round(t["dur"], 1), "pauses_ge_0_6s": t["pauses"], "ok": t["ok"]} for t in takes],
-                    "chosen": best["path"].name})
+                    "takes": [{"file": t["path"].name, "audio_s": round(t["dur"], 1), "pauses_ge_0_6s": t["pauses"], "ok": t["ok"],
+                               "model_served": t["model_served"]} for t in takes],
+                    "chosen": best["path"].name, "model_requested": TTS_MODEL, "model_served": best["model_served"], "voice": vid})
     (d / "log.json").write_text(json.dumps(log, ensure_ascii=False, indent=1))
     bad = [r["id"] for r in log if not r["ok"]]
+    served = sorted({str(r.get("model_served")) for r in log})
+    print(f"TTS model served: {', '.join(served)}" + ("" if served == [TTS_MODEL] else f"  <-- requested {TTS_MODEL}; check before mastering"))
     print("all segments OK" if not bad else f"FAILED after retries: {bad}")
 
 
@@ -368,6 +403,7 @@ def cmd_master(a):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("design")
+    p = sub.add_parser("voices", help="refresh expire_time/model of designed voices in voices/registry.json"); p.add_argument("--dry-run", action="store_true")
     p = sub.add_parser("audition"); p.add_argument("--voices", default="")
     p = sub.add_parser("judge"); p.add_argument("files", nargs="+"); p.add_argument("--text"); p.add_argument("--out")
     p = sub.add_parser("episode"); p.add_argument("--voice", required=True); p.add_argument("--retries", type=int, default=2); p.add_argument("--force", action="store_true"); p.add_argument("--only", default="", help="comma-separated segment ids to regenerate"); p.add_argument("--script", required=True, help="episodes/<ep>/script.json"); p.add_argument("--tag", default="", help="suffix for the segments folder and output, e.g. tw"); p.add_argument("--takes", type=int, default=1, help="takes per segment; keeps the one with fewest long pauses"); p.add_argument("--parallel", type=int, default=6, help="TTS calls in flight at once"); p.add_argument("--add-takes", type=int, default=0, help="with --only: render N more takes after the existing ones, leaving them untouched"); p.add_argument("--style", choices=["v1", "v2", "v3", "v4", "v5"], default="v5", help="v5 (default) = Taiwan Mandarin traits, amateur feel, clear tones; v2 = confident and rhythmic but drifts toward a broadcast accent; v3 = rhythmic and Taiwanese-leaning; v4 = v3 plus explicit Taiwan Mandarin phonetic traits and an amateur feel; v5 = v4 plus clear tones (in ep01_tw.json)")
@@ -378,4 +414,4 @@ if __name__ == "__main__":
     p.add_argument("--match-eq", action="store_true", help="tonal matching: EQ each segment toward the episode's median spectrum")
     p.add_argument("--match-strength", type=float, default=0.8); p.add_argument("--match-max-db", type=float, default=6.0)
     a = ap.parse_args()
-    {"design": cmd_design, "audition": cmd_audition, "judge": cmd_judge, "episode": cmd_episode, "master": cmd_master}[a.cmd](a)
+    {"design": cmd_design, "voices": cmd_voices, "audition": cmd_audition, "judge": cmd_judge, "episode": cmd_episode, "master": cmd_master}[a.cmd](a)

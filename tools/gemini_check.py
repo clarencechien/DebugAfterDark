@@ -33,18 +33,19 @@ def cmd_clarity(a):
     ref = {s["id"]: s["text"] for s in json.loads(Path(a.script).read_text(encoding="utf-8"))["segments"]}; out = {}
     for p in sorted(Path(a.segments).glob("*.take*.wav")):
         seg = p.name.split(".")[0]
-        hyp = c.models.generate_content(model="gemini-3.8-flash", contents=[audio(p), BLIND], config=types.GenerateContentConfig(temperature=0)).text.strip()
+        r = c.models.generate_content(model="gemini-3.8-flash", contents=[audio(p), BLIND], config=types.GenerateContentConfig(temperature=0))
+        hyp = r.text.strip()
         x, y = norm(ref[seg]), norm(hyp); sm = difflib.SequenceMatcher(None, x, y, autojunk=False)
         ops = [o for o in sm.get_opcodes() if o[0] != "equal"]
         out[p.stem] = {"cer": round(sum(max(i2 - i1, j2 - j1) for _, i1, i2, j1, j2 in ops) / len(x), 3),
-                       "diffs": [(x[i1:i2], y[j1:j2]) for _, i1, i2, j1, j2 in ops], "hyp": hyp}
+                       "diffs": [(x[i1:i2], y[j1:j2]) for _, i1, i2, j1, j2 in ops], "hyp": hyp, "model_version": r.model_version}
         print(f"{p.stem:20s} cer={out[p.stem]['cer']:.3f}  " + "  ".join(f"{u}→{v}" for u, v in out[p.stem]["diffs"]))
     if a.out: Path(a.out).write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
 def cmd_terms(a):
     from google.genai import types
-    c = client(); terms = a.terms.split(","); out = {}
+    c = client(); terms = a.terms.split(","); out = {}; served = set()
     script = json.loads(Path(a.script).read_text(encoding="utf-8")) if a.script else None
     texts = {s["id"]: s["text"] for s in script["segments"]} if script else {}
     for p in sorted(Path(a.segments).glob("*.take*.wav")):
@@ -57,7 +58,9 @@ def cmd_terms(a):
         r = c.models.generate_content(model="gemini-3.8-flash", contents=[audio(p), prompt],
                                       config=types.GenerateContentConfig(temperature=0, response_mime_type="application/json"))
         occ = json.loads(r.text).get("occurrences", []); out[p.stem] = occ
+        served.add(r.model_version)
         print(f"{p.stem:20s} " + " ".join(f"{o.get('term')}={o.get('class')}({o.get('heard_as')})" for o in occ))
+    print("model served:", ", ".join(sorted(map(str, served))))
     if a.out: Path(a.out).write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
 
 

@@ -97,8 +97,9 @@ def main(a):
         def one(_):   # the n candidates are independent, so ask for them at once (2026-11-07: ~70 s -> ~25 s a segment)
             for attempt in range(3):   # proxy resets happen; retry a candidate instead of losing the run
                 try:
-                    return c.models.generate_content(model=a.model, contents=prompt,
-                                                     config=types.GenerateContentConfig(temperature=a.temperature)).text.strip()
+                    r = c.models.generate_content(model=a.model, contents=prompt,
+                                                  config=types.GenerateContentConfig(temperature=a.temperature))
+                    return r.text.strip(), r.model_version   # the model that answered, in case a.model gets rerouted
                 except Exception as e:
                     if attempt == 2:
                         raise
@@ -113,7 +114,7 @@ def main(a):
         cands = []
         for rnd in range(1 + a.extra_rounds):
             with ThreadPoolExecutor(max_workers=a.n) as pool:
-                cands += [{"text": t, "lint": lint(t), "round": rnd} for t in pool.map(one, range(a.n))]
+                cands += [{"text": t, "lint": lint(t), "round": rnd, "model_version": mv} for t, mv in pool.map(one, range(a.n))]
             if min(flaws(c) for c in cands) == 0:
                 break
             print(f"  {seg['id']}: every candidate so far has a self-correction or greeting; asking for {a.n} more")

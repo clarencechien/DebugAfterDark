@@ -276,13 +276,14 @@ python3 tools/select_takes.py --script episodes/<ep>/script.json --segments out/
 
 ## 8. 交付
 
-把 `select_log.json`、`out/master/norm_D1_<ep>/levels.json`、`match_eq.json` 複製到 `episodes/<ep>/qa/`，然後：
+把 `select_log.json`、`out/master/norm_D1_<ep>/levels.json`、`match_eq.json` 複製到 `episodes/<ep>/qa/`，`out/segments/D1_<ep>/log.json` 複製成 `episodes/<ep>/qa/tts_log.json`，然後：
 
 ```bash
 python3 tools/package_episode.py episodes/<ep>
+python3 tools/match_voice.py track episodes/<ep>   # 聲紋跟參考錄音比，更新 voices/drift.json
 ```
 
-補上 `episode.json` 的長度、bytes、sha256、響度（RSS 的 `<enclosure length>` 要跟檔案完全一致）。開 PR 給人審：稿子（關卡 A）與成品（關卡 B）。
+補上 `episode.json` 的長度、bytes、sha256、響度（RSS 的 `<enclosure length>` 要跟檔案完全一致），以及實際回應的 TTS 模型（`voice.model_served`）。如果 package_episode 警告模型不一樣，或 track 標出「voice changed?」，先照 [`docs/voice.md`](voice.md) 處理，再交付。開 PR 給人審：稿子（關卡 A）與成品（關卡 B）。
 
 ## 10. Short（長片公開後）
 
