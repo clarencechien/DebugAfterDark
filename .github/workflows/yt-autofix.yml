@@ -8,6 +8,7 @@
 name: YouTube autofix
 
 on:
+  # 準時觸發靠 cron-worker/（Cloudflare Worker 每小時 :17 呼叫 workflow_dispatch），這裡的 schedule 只當備援。
   schedule:
     - cron: '17 * * * *'
   workflow_dispatch:

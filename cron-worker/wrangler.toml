@@ -1,0 +1,14 @@
+# 用 wrangler 部署時的設定（npx wrangler deploy）。用 Cloudflare 後台貼程式碼的話，這個檔只當紀錄，
+# 但後台的 Trigger events 要跟這裡的 crons 一致。
+name = "debugafterdark-cron"
+main = "worker.js"
+compatibility_date = "2026-11-01"
+workers_dev = false
+
+[triggers]
+crons = ["2 0 * * *", "2 12 * * *", "17 * * * *"]
+
+[observability]
+enabled = true
+
+# secret 不寫在這裡：npx wrangler secret put GH_TOKEN
