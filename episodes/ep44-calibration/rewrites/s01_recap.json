@@ -1,0 +1,140 @@
+{
+ "segment": "s01_recap",
+ "position": "第 2 段，共 12 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": "EP43〈一個人一個月三千個 PR，她還看程式碼嗎？〉：上一集：Lauren Tan 把每次糾正 agent 變成機器會擋的檢查，人工審查壓到金字塔最底，改看影片和截圖；再前一集 Uncle Bob 改讀規格和分數。兩個人都把逐行閱讀讓給了檢查。這集問：檢查本身準不準。",
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "bf6805b9ac222de4e36a95a7124c17d959f0a832f988d1a3d36bee1800a3aff3",
+ "previous_context": "那如果檢查本身錯了，誰會知道？這集最後會回答這件事。",
+ "original": {
+  "text": "上一集講 Lauren Tan，她一個月上線三千個 PR，把人工審查放到金字塔最底下，改看 agent 交出來的影片和截圖。再前一集的 Uncle Bob，不讀實作，改讀規格和工具量出來的分數。這份報告說，兩個人停在同一層：人把逐行閱讀讓給了檢查。這一集是不讀之後的第三篇，只問一題：檢查本身準不準？今晚講三件事：第一，Claude Code 團隊怎麼校正他們的 AI 審查；第二，他們自己承認的偏差，和還缺的讀數；第三，別家拿什麼來對，還有人自己也會偏。",
+  "lint": {
+   "chars": 217,
+   "precise_numbers": [
+    "三千"
+   ],
+   "enumerations": [
+    "第三",
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 42.4,
+   "max_sentence_len": 73,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上一集講 Lauren Tan。\n她一個月上線三千個 PR，也就是合併請求。\n人工審查壓到最底，改看影片和截圖。\n再前一集的 Uncle Bob，改看規格和分數。\n這份報告說，他們其實都停在同一層。\n大家把逐行看 code 的力氣，讓給了檢查。\n可是把關交給機器，欸你猜最貴的錯是什麼？\n就是檢查說過了，其實根本沒過。<short pause>\n因為報表就是檢查印的嘛，完全看不出來。\n我看到這張圖很有共鳴，這真的太痛了。\n所以這集只問一題喔：檢查本身到底準不準？\n今晚主要講三件事。<short pause>\n第一，Claude Code 怎麼校正 AI 審查。\n第二，他們承認的偏差，和還缺的讀數。\n最後，別家拿什麼來對照，還有人自己會偏。",
+   "lint": {
+    "chars": 271,
+    "precise_numbers": [
+     "三千"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 17.1,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集提到 Lauren Tan，\n把每次抓到的錯都變成自動檢查。\n她把人工審查壓到金字塔最底，\n改看影片跟截圖。\n再前一集 Uncle Bob 改看規格和分數。\n兩個人都退到了檢查這一層，\n把逐行讀程式碼讓給了機器。\n對，那檢查本身到底準不準？\n這份報告說，最貴的錯是檢查說過了，\n但其實根本沒過。\n你猜報表看得到嗎？\n完全看不到，\n因為報表就是那個檢查印出來的嘛！\n我看到這段真的倒抽一口氣。<short pause>\n所以這集我們要來看，\nClaude Code 團隊怎麼校正 AI 審查，\n他們自己承認了哪些偏差，\n還有別家到底拿什麼來對照。",
+   "lint": {
+    "chars": 236,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 22.6,
+    "max_sentence_len": 55,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集聊到 Lauren Tan，她一個月送三千個 PR，也就是合併請求。她改看 agent 給的影片跟截圖。再前一集的 Uncle Bob，也是改讀規格跟工具打的分數。這份報告說，兩個人其實都退到同一層。大家把逐行看程式碼，讓給了檢查。但最可怕的是什麼？就是檢查說過了，其實根本沒過。<short pause>這種錯完全不會出現在報表上，因為報表就是檢查印出來的嘛！我看到這段真的倒抽一口氣。所以這集要問：檢查本身到底準不準？今天會聊 Claude Code 怎麼校正 AI、他們自己承認的偏差，還有別家拿什麼對照組來抓漏囉。",
+   "lint": {
+    "chars": 240,
+    "precise_numbers": [
+     "三千"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.8,
+    "max_sentence_len": 45,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "上一集提到 Lauren Tan，把每次抓到的錯都變成自動檢查。她把人工審查壓到金字塔最底，改看影片跟截圖。再前一集 Uncle Bob 改看規格和分數。兩個人都退到了檢查這一層，把逐行讀程式碼讓給了機器。對，那檢查本身到底準不準？這份報告說，最貴的錯是檢查說過了，但其實根本沒過。你猜報表看得到嗎？完全看不到，因為報表就是那個檢查印出來的嘛！我看到這段真的倒抽一口氣。<short pause>所以這集我們要來看，Claude Code 團隊怎麼校正 AI 審查，他們自己承認了哪些偏差，還有別家到底拿什麼來對照。",
+   "to": "上一集講 Lauren Tan。她把每次糾正 agent，都變成機器會擋的檢查，人工審查壓到金字塔最底，改看影片跟截圖。再前一集的 Uncle Bob，不讀實作，改讀規格和工具量出來的分數。這份報告說，兩個人都停在同一層：把逐行讀程式碼，讓給了檢查。<short pause>這一集是不讀之後的第三篇，只問一題：檢查本身準不準？今晚講三件事。第一，Claude Code 團隊怎麼校正他們的 AI 審查。第二，他們自己承認的偏差，和還缺的讀數。第三，別家拿什麼來對，還有，人自己也會偏。",
+   "reason": "改寫版重複了 cold open 的「報表就是檢查印的」，並加了個人反應「倒抽一口氣」、用掉一次「你猜」；改回草稿的路線圖（今晚三件事），並說明是系列第三篇"
+  },
+  {
+   "from": "她把每次糾正 agent，都變成機器會擋的檢查，人工審查壓到金字塔最底，改看影片跟截圖。",
+   "to": "她把每次糾正 agent，都變成機器會擋的檢查。人工審查壓到金字塔最底，改看影片跟截圖。",
+   "reason": "句子太長切短（寫稿規則第 18 條）"
+  },
+  {
+   "from": "還有，人自己也會偏。",
+   "to": "還有，人自己的判斷，也會偏掉。",
+   "reason": "兩套辨識都把「也會偏」聽成「也會騙」"
+  }
+ ]
+}

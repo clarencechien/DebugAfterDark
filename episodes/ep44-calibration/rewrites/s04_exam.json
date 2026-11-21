@@ -1,0 +1,122 @@
+{
+ "segment": "s04_exam",
+ "position": "第 5 段，共 12 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b9f0999e077e7fc8705ad269bfd98df6939403aab68629e1a39507e04c04650e",
+ "previous_context": "還有，調 prompt 的題目跟考題要分開。不然自己出題自己考，根本沒意義嘛。",
+ "original": {
+  "text": "再來是考，拿標準件來對。題庫是過去出過事的 PR，由熟那段程式碼的工程師確認 bug 是什麼、在哪裡。每一題把程式庫還原到當時審查的樣子，配一句話的答案，AI 審查要說中那個 bug 才算分。每出一次事故，題庫就多一題；改了 prompt、工具或模型，每天都考一次，分數有上升才留。可是光考漏掉的不夠，一個什麼都報的審查者也能考高分。所以他們另外拿合併後一直沒出事的變更給它審，看它會不會亂報。平常也統計作者怎麼回應每一則意見：修了、說它錯、說是故意的，還是說不重要。",
+  "lint": {
+   "chars": 227,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 31.4,
+   "max_sentence_len": 43,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那題庫要從哪裡來？\n其實是拿過去出過事的 PR，也就是合併請求。\n熟那段程式碼的人，會先確認 bug 在哪裡。\n每一題把 repo 還原到審查當時的樣子。\nAI 審查要說中那個 bug 才算分喔。\n線上只要多一次事故，題庫就多一題。\n只要改了 prompt 或模型，每天都要重考。\n分數有上升就留，沒有就丟掉。\n<short pause>\n可是，光考它有沒有抓到 bug 就夠了嗎？\n不夠嘛。<laugh>\n如果它什麼都亂報，分數搞不好超高耶。\n所以他們另外拿沒出事的正常變更給它審。\n看看它會不會疑神疑鬼亂叫。\n然後，他們平常也會統計工程師怎麼回應。\n是乖乖修掉了，還是罵它說它根本搞錯。",
+   "lint": {
+    "chars": 248,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以考題到底哪裡來？\n其實就是拿過去出過事的 PR。\nPR 就是合併請求啦。\n請熟那段程式碼的人，確認 bug 在哪裡。\nrepo 會還原到當時審查的狀態喔。\nreviewer 要真的說中問題才算得分。\n只要出一次事故，題庫就多一題。\n改了 prompt 每天都考，分數有變高才留。\n但光考有沒有漏抓夠嗎？\n其實不夠。<laugh>\n你想想看，\n什麼都抓的 reviewer，分數也會很高嘛。\n所以他們另外拿沒出事的變更去測，\n看 AI 會不會在那邊亂報。\n平常還會統計作者的反應，\n看是真的修了，還是回說你根本講錯。",
+   "lint": {
+    "chars": 226,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 28,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那題庫要怎麼來？<short pause>\n答案是拿過去出過事的 PR，也就是合併請求。\n工程師會先確認 bug 是什麼、在哪裡。\n接著把整份程式庫還原回當時的樣子。\nAI 必須講中那個問題才算得分。\n每次線上出一次事，題庫就多一題。\n只要動到審查的 prompt 或模型，\n系統每天都會重新考一次。\n分數有進步才保留，沒有就丟掉。\n不過，光看抓漏其實不夠喔。\n你想想看，如果它看什麼都說有問題呢？\n那分數肯定超高嘛。<laugh>\n所以他們會拿沒出事的變更去測它，\n看 AI 會不會在那邊無中生有、隨便亂報。\n平常也會統計大家對審查意見的反應，\n看工程師是修掉了，還是覺得它在胡扯。",
+   "lint": {
+    "chars": 249,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 34,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "那題庫要從哪裡來？其實是拿過去出過事的 PR，也就是合併請求。熟那段程式碼的人，會先確認 bug 在哪裡。每一題把 repo 還原到審查當時的樣子。AI 審查要說中那個 bug 才算分喔。線上只要多一次事故，題庫就多一題。只要改了 prompt 或模型，每天都要重考。分數有上升就留，沒有就丟掉。<short pause>可是，光考它有沒有抓到 bug 就夠了嗎？不夠嘛。<laugh>如果它什麼都亂報，分數搞不好超高耶。所以他們另外拿沒出事的正常變更給它審。看看它會不會疑神疑鬼亂叫。然後，他們平常也會統計工程師怎麼回應。是乖乖修掉了，還是罵它說它根本搞錯。",
+   "to": "那題庫從哪裡來？是過去出過事的 PR。熟那段程式碼的工程師，先確認 bug 是什麼、在哪裡。每一題把程式庫還原到審查當時的樣子，配一句話的答案。AI 審查要說中那個 bug，才算分。每出一次事故，題庫就多一題。改了 prompt、工具或模型，每天都考一次，分數有上升就留，沒有就丟。<short pause>可是，光考它有沒有抓到 bug，夠嗎？不夠。一個什麼都報的審查者，也能考高分。所以他們另外拿合併後一直沒出事的變更給它審，看它會不會亂報。平常也統計作者怎麼回應每一則意見：修了、說它錯、說是故意的，還是說不重要。",
+   "reason": "「罵它說它根本搞錯」誇大，改回原文的四種回應；「疑神疑鬼亂叫」「分數搞不好超高耶」改回原文說法；「線上只要多一次事故」改成每出一次事故；repo 改成程式庫；PR 不再重複解釋；拿掉<laugh>"
+  },
+  {
+   "from": "一個什麼都報的審查者，也能考高分。",
+   "to": "一個什麼都報的審查者，也能拿高分。",
+   "reason": "兩套辨識都把「考高分」聽成「高高分」"
+  }
+ ]
+}

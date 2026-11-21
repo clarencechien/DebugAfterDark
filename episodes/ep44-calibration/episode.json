@@ -1,0 +1,61 @@
+{
+ "id": "ep44-calibration",
+ "number": 44,
+ "type": "full",
+ "guid": "debug-after-dark:ep44",
+ "title": "EP44 檢查交給機器，檢查錯了誰知道？",
+ "description": "工廠裡量產品的卡尺，自己也會磨損、會偏，所以每一把量具都要定期拿標準件來對。Claude Code 團隊說，他們的程式碼大約九成是 Claude 寫的，也是 Claude 審的。檢查交給機器以後，最貴的錯是檢查說過了，其實沒過。那檢查本身錯了，誰會知道？\n\n00:00 量具會偏：檢查本身錯了，誰會知道？\n00:56 上兩集：Uncle Bob 改讀規格、Lauren Tan 改看證據；今晚三件事\n01:45 Claude Code 團隊：九步裡只有一步由人決定\n02:58 校正一：隔開，量具不能自己調刻度\n03:42 校正二：拿出過事的 PR 當考題\n04:30 校正三、四：漏掉的記下來，壞掉的報廢\n05:30 他們自己承認的四個偏差\n06:27 還缺的三個讀數，和「三分之一」\n07:29 別家拿什麼當標準件\n08:30 人也會偏：你沒有審，你只是蓋章\n09:28 能照做的事，和不要照搬的數字\n10:29 今晚的 breakpoint\n\n數字的出處與但書：\n・「約九成由 Claude 撰寫」「每天超過 30,000 個變更」「合併的 PR 增加超過一倍、退回比例下降超過四成」「有實質意見的 PR 16% → 54%」「約 59% 是舊程式碼」「可靠性清單 39 項」都來自 Claude Code 團隊 2026-10-15、2026-11-16 兩篇文章，是廠商寫自己的產品、內部自報。四成是相對降幅，文章沒有給原本的退回率。\n・「事故背後的 bug 約三分之一會在上線前被抓到」是 Addy Osmani 2026-09 電子報的回頭分析；他在 Claude Code 團隊工作，自己寫了不中立。\n・「AI 給錯答案時 73% 照收」來自華頓商學院 Shaw 與 Nave 的研究（1,372 位受試者），經 Osmani〈Cognitive Surrender〉轉引。\n・「隔開、考、記、修」與各家的位置是原文作者的整理與判讀。原文初稿是用 Claude 寫的，作者已在原文揭露。\n\n原文：〈檢查交給機器，他們校正量具 — 不讀之後 第三篇〉v0.3 https://imitator.ai-apps.work/r/no-read-3\n主要來源：〈How the Claude Code team does code review〉（2026-10-15）、〈How the Claude Code team thinks about verification〉（2026-11-16）；Addy Osmani〈The Code Nobody Reads〉〈Cognitive Surrender〉；Datadog〈Closing the verification loop〉；Qwen Team〈The Verification Horizon〉；Matt Pocock 與 Pi 作者的直播（2026-11-16）。\n\n今晚的 breakpoint：\n1. 檢查交給機器以後，檢查本身也要有標準件：每次出事留一題，拿來考你的 AI 審查。\n2. 檢查的設定要放在被檢查的變更碰不到的地方；退回率和事故率當護欄，不當成績。\n3. 做法寫得很細，可是抓到率、退回率和事故數還沒給：做法可以參考，讀數等他們給。\n\n上一集：EP43〈一個人一個月三千個 PR，她還看程式碼嗎？〉\n延伸收聽：EP42〈Clean Code 的作者不讀 AI 的程式碼，那他讀什麼？〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "no-read-3",
+ "source_url": "https://imitator.ai-apps.work/r/no-read-3",
+ "status": "final",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5",
+  "model_served": "gemini-3.8-flash-tts"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze --consistency --neighbour（Modal 額度用完，本機 CPU）",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "report_version": "2026-11-18",
+ "audio": {
+  "file": "ep44-calibration.mp3",
+  "bytes": 10872233,
+  "sha256": "0748dd5b3b727560a1c12a46742725254c48b99bfc7a9e241305f2ba78cf7bd7",
+  "duration_s": 679.5,
+  "duration": "11:19",
+  "lufs": -17.0
+ },
+ "youtube": {
+  "title": "AI 寫 9 成程式碼、也由 AI 審：Claude Code 團隊怎麼知道檢查本身沒出錯？",
+  "thumbnail": [
+   [
+    "AI 審 AI 的程式碼",
+    "誰來校正？"
+   ],
+   [
+    "檢查說過了",
+    "其實沒過"
+   ]
+  ],
+  "synthetic_content": true
+ },
+ "qa": {
+  "breeze_cer_mean": 0.053,
+  "gemini_cer_mean": 0.025,
+  "jitter_semitones": 0.232,
+  "gates": "音高跳動 0.232（門檻 0.23，補錄三輪後最低；Clarence 試聽通過（2026-11-21））；Breeze 錯誤率 5.3% 超過 3.5%，多數是英文名（Claude、Lauren Tan、Osmani、Pi）和同音字（量具→良劇、自報→自爆）；Gemini 2.5%；consistency 標 s08 語速 +21%（這段五次重錄都偏快）、幾處接縫亮度跳，音高、響度在範圍內",
+  "retakes": "s09 改稿重錄（量具、Qwen）；s01、s04、s06、s08、s10、s11 因兩套辨識都聽錯改稿重錄；s08 再改「最粗的錯」重錄；跳動偏高的段各補 3–6 次",
+  "manual_pick": "見 select_log 的 manual_override（12 段都有寫原因）",
+  "both_wrong": "剩下：s01「上一集」→上一期、「最底」→最低（同音）；英文名 Claude、Lauren Tan、Pi；s06「餵」→喂",
+  "twtone": "qa/twtone.md：沒有超過基準的項目",
+  "terms": "Ping／pong 英文念法（gemini_check）",
+  "voice_drift": 0.885
+ },
+ "published": "2026-11-24T08:00:00+08:00"
+}

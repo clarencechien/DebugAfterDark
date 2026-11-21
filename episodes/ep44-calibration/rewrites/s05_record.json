@@ -1,0 +1,144 @@
+{
+ "segment": "s05_record",
+ "position": "第 6 段，共 12 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2eef47e638dff9da3ef0eb9166e4b118c0619e34bf16bef9ccc727ab0c2ab82b",
+ "previous_context": "然後，他們平常也會統計工程師怎麼回應。是乖乖修掉了，還是罵它說它根本搞錯。",
+ "original": {
+  "text": "第三是記，漏掉的寫下來。每個 commit 都蓋上它是怎麼驗的，沒驗就寫 none，之後查得到。同一種漏網的問題，至少在兩個 PR 出現過，而且從 diff 看得出來，才列成候選規則；先讓三個 agent 試著推翻它，最後由人在 PR 裡核准。他們的可靠性清單有三十九項，每一項都記著背後的事故。最後是修，壞掉的量具要報廢：不穩的測試不准跳過、不准加等待，也不准重跑到過，找不到根本原因就刪掉，並寫下理由。測試和規則檔也要定期清，不清就只會一直長。這份報告說，四個動作講的是同一件事：每一道檢查，都要有它自己的標準件。",
+  "lint": {
+   "chars": 248,
+   "precise_numbers": [
+    "三十九"
+   ],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 34.4,
+   "max_sentence_len": 65,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "再來是把漏掉的記下來。\n每個 commit，也就是一次提交，都要寫怎麼驗。\n沒驗就老實寫 none，之後才查得到。\n那要是漏抓了怎麼辦？<short pause>\n同個問題要在兩個 PR，合併請求裡面出現，\n而且 diff 看得出來，才能列成候選。\n接著派三個 agent 去推翻它，\n最後才由真人核准，光用想的就覺得很嚴格耶。\n他們的清單有三十九項，\n每一項背後都是一次事故。<short pause>\n最後是把壞掉的工具報廢。\n不穩的測試不准加 sleep，也不准重跑到過。\n找不到根本原因就直接刪掉，寫下理由。\n規則檔也要定期清，不然只會一直變大。\n其實這份報告說得很白，\n檢查寫完不算數，\n每道檢查都要有自己的標準件啦。",
+   "lint": {
+    "chars": 264,
+    "precise_numbers": [
+     "三十九"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 21.0,
+    "max_sentence_len": 37,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "接著是記錄。<short pause>\n只要有漏掉的問題，他們就會寫下來。\n每一次 commit，也就是一次提交，\n都要標記它是怎麼驗證的。\n沒驗就寫 none，之後才查得到。\n那怎樣才會列成新規則？\n如果同一個漏網問題，\n在兩個 PR，也就是合併請求出現過，\n而且 diff 看得出來，才會列成候選規則。\n他們會先找三個 agent 試著推翻，\n最後由人在 PR 裡核准，\n這種嚴謹度真的讓人很佩服。<short pause>\n這份報告說，他們的清單有三十九項，\n每一項背後都是一次事故喔。\n然後壞掉的量具一定要報廢。\n不穩的測試不准跳過，\n也不准加 sleep 等待，\n找不到根本原因就直接刪掉，並寫下理由。\n測試跟規則檔都要定期清理。\nrecall，也就是抓到率，調到不再死背就好。\n其實這四個動作講的是同一件事，\n檢查寫完不算數，\n每一道檢查都要有自己的標準件啦。",
+   "lint": {
+    "chars": 327,
+    "precise_numbers": [
+     "三十九"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 24.2,
+    "max_sentence_len": 46,
+    "sentences_over_20": 7,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "除了看回應，第三個動作是把漏掉的記下來。每個 commit，也就是一次提交，都要寫怎麼驗。要是沒驗，就老實填 none 留底。要是同一個問題又漏掉，才會列成候選規則。他們會先放幾個 agent 試著推翻它。<short pause>最後才由人在 PR，也就是合併請求裡點頭。這份報告說，他們的清單有三十九項。每一項背後，可都是真實的事故喔。光看就覺得這團隊標準真的很嚴格。最後是修，壞掉的量具直接報廢。遇到測試不穩，你猜他們怎麼處理？不准按重跑，也不准偷加等待時間。找不到原因就直接刪掉，寫下理由。規則要是不定期清，只會越長越多啦。<short pause>這份報告說，每道檢查都要有自己的標準件。",
+   "lint": {
+    "chars": 267,
+    "precise_numbers": [
+     "三十九"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 23,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "除了看回應，第三個動作是把漏掉的記下來。每個 commit，也就是一次提交，都要寫怎麼驗。要是沒驗，就老實填 none 留底。要是同一個問題又漏掉，才會列成候選規則。他們會先放幾個 agent 試著推翻它。<short pause>最後才由人在 PR，也就是合併請求裡點頭。這份報告說，他們的清單有三十九項。每一項背後，可都是真實的事故喔。光看就覺得這團隊標準真的很嚴格。最後是修，壞掉的量具直接報廢。遇到測試不穩，你猜他們怎麼處理？不准按重跑，也不准偷加等待時間。找不到原因就直接刪掉，寫下理由。規則要是不定期清，只會越長越多啦。<short pause>這份報告說，每道檢查都要有自己的標準件。",
+   "to": "第三個動作，是把漏掉的記下來。每個 commit 都要寫它是怎麼驗的，沒驗就老實寫 none，之後查得到。同一種漏網的問題，至少在兩個 PR 出現過，而且從改動看得出來，才列成候選規則。他們會先讓三個 agent 試著推翻它，最後才由人在 PR 裡核准。<short pause>這份報告說，他們的可靠性清單有三十九項，每一項背後都記著一次事故。最後是修，壞掉的量具要報廢。測試不穩的時候，不准跳過，不准加等待，也不准一直重跑到過。找不到根本原因，就刪掉，並寫下理由。測試和規則檔也要定期清，不清就只會一直長。這份報告說，四個動作講的是同一件事：每一道檢查，都要有它自己的標準件。",
+   "reason": "補回候選規則的條件（至少兩個 PR、從改動看得出來）和「三個 agent」；刪掉個人反應「光看就覺得標準真的很嚴格」和「你猜他們怎麼處理」；「不准按重跑」改回不准重跑到過；commit、PR 不再重複解釋"
+  },
+  {
+   "from": "同一種漏網的問題，至少在兩個 PR 出現過，而且從改動看得出來，才列成候選規則。",
+   "to": "同一種漏網的問題，至少在兩個 PR 出現過，而且從改動看得出來。這樣才列成候選規則。",
+   "reason": "句子太長切短（寫稿規則第 18 條）"
+  },
+  {
+   "from": "這份報告說，他們的可靠性清單有三十九項，每一項背後都記著一次事故。",
+   "to": "這份報告說，他們的可靠性清單有三十九項。每一項背後，都記著一次事故。",
+   "reason": "句子太長切短（寫稿規則第 18 條）"
+  },
+  {
+   "from": "找不到根本原因，就刪掉，並寫下理由。測試和規則檔也要定期清，不清就只會一直長。",
+   "to": "找不到根本原因，就刪掉，並寫下理由。測試和規則檔也要定期清。不清，就只會一直長。",
+   "reason": "句子太長切短（寫稿規則第 18 條）"
+  }
+ ]
+}

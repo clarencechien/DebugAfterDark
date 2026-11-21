@@ -25,6 +25,7 @@
 | EP41 | [`gdp-service-ledger`](https://imitator.ai-apps.work/r/gdp-service-ledger) | ✅ | ✅ 11/20 | ⏰ 11/22 08:01 排程 | ⬜ | ⬜ | 原推薦 #5，插隊；用台股開場，目標聽眾是沒吃到 AI 紅利的人；報告 v0.2 資料到 11/20 |
 | EP42 | [`no-read-1`](https://imitator.ai-apps.work/r/no-read-1) | ✅ | ✅ 11/21 | ⏰ 11/23 08:00 排程 | ⬜ | ⬜ | 不讀之後 上篇；標題「Clean Code 的作者不讀 AI 的程式碼，那他讀什麼？」；Gemini 月上限，Gemini 那一半的驗收經 Clarence 同意跳過 |
 | EP43 | [`no-read-2`](https://imitator.ai-apps.work/r/no-read-2) | ✅ | ✅ 11/21 | ⏰ 11/23 08:01 排程 | ⬜ | ⬜ | 不讀之後 下篇（上：EP42）；標題「一個人一個月三千個 PR，她還看程式碼嗎？」；Gemini 月上限，Gemini 那一半的驗收經 Clarence 同意跳過 |
+| EP44 | [`no-read-3`](https://imitator.ai-apps.work/r/no-read-3) | ✅ | ✅ 11/21 | ⏰ 11/24 08:00 排程 | ⬜ | ⬜ | 不讀之後 第三篇（上：EP42、EP43）；標題「檢查交給機器，檢查錯了誰知道？」；兩篇來源是廠商寫自己的產品，節目有說；Modal 額度用完，挑選在本機 CPU |
 | EP45 | [`no-stock-in-farebox`](https://imitator.ai-apps.work/r/no-stock-in-farebox) | ✅ | ✅ 11/21 | ⏰ 11/24 08:01 排程 | ⬜ | ⬜ | 核票 v0.1（資料至 11/20）；標題「台股跌了快三成，機票飯店會變便宜嗎？」；Modal 額度用完，挑選在本機 CPU；12 月新數字出來後原文會出 v0.2，可考慮補一集 |
 
 「進 feed」是 `episode.json` 設成 `status: final` 並填 `published`，merge 到 main 就會發佈（先給 Clarence 看再 commit）。EP36、EP37 的影片版和 Short 做完就搬到「已做」。

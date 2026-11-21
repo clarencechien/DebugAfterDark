@@ -1,0 +1,127 @@
+{
+ "segment": "s03_isolate",
+ "position": "第 4 段，共 12 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "5654a09ddfef53afaee03718d8cf7f0d9c464c3b8f1e4bee081f86660bb1cbc3",
+ "previous_context": "不過這只是相對降幅，沒給原本的數字。那負責審查的 AI，自己到底準不準？",
+ "original": {
+  "text": "十一月那篇最後把做法收成四件事：檢查要放在被檢查的變更碰不到的地方；拿真正出過事的 bug 來考它；漏掉的要寫下來；寫下來的要修剪。這份報告把它整理成四個動作：隔開、考、記、修。先講隔開，意思是量具不能自己調刻度。審查的設定檔叫 REVIEW.md，只從要合併進去的那條基礎分支讀，PR 改不到它。審查結果綁在某一個 commit 上，有人在審的時候又推新的程式碼上來，那次審查就不算。還有，調 prompt 用的題目，和最後考試的題目，要分開放。",
+  "lint": {
+   "chars": 216,
+   "precise_numbers": [
+    "十一"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 35.0,
+   "max_sentence_len": 63,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "要回答準不準，關鍵就在怎麼校正。\n\n這份報告把做法整理成四個動作。就是隔開、考、記、還有修。\n\n今天先來看第一個動作，隔開。\n\n什麼意思呢？<short pause>其實就是量尺不能自己調刻度啦。\n\n比方說審查設定檔，只從原本的主分支讀。送進來的 PR，也就是合併請求，改不到它。\n\n然後審查結果會綁在特定的 commit 上。這個 commit 就是某一次提交。要是有人審到一半又 push 程式碼怎麼辦？那次審查就直接作廢喔。\n\n還有，調 prompt 的題目跟考題要分開。不然自己出題自己考，根本沒意義嘛。",
+   "lint": {
+    "chars": 222,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "這份報告說，十一月那篇整理出四個動作。\n也就是隔開、考、記、修。\n我們先看第一個動作：隔開。<short pause>\n什麼叫隔開？\n簡單講，量尺不能自己偷偷調刻度嘛。\n像是審查設定 REVIEW.md，\n它只會從 base branch 讀取。\nPR，也就是合併請求，完全改不到它。\n那審查到一半，有人 push 怎麼辦？\n審查結果會綁在某個 commit 上，\n也就是某一次提交。\n這時候有人 push，那次審查就算作廢。\n重點來了，連調 prompt 用的題目，\n跟最後考試的題目，也要分開放喔。",
+   "lint": {
+    "chars": 214,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 18.5,
+    "max_sentence_len": 33,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "報告裡說，想要讓它準，就得校正。<short pause>\n十一月那篇把做法收成四個動作。\n其實就是隔開、考、記、還有修。\n先看隔開。\n這概念很直覺，量尺不能自己調刻度嘛。\n那要怎麼隔開？\n規則檔 REVIEW.md 只從主分支讀。\n送來的 PR，也就是合併請求，動不到它。\n審查結果綁在特定 commit，也就是提交。\n審到一半有人 push，那次審查直接不算。<laugh>\n還有，調 prompt 用的題目，\n跟最後考試的題庫，一定要分開放。\n不然它早就把答案背光光啦。",
+   "lint": {
+    "chars": 199,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 30,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "要回答準不準，關鍵就在怎麼校正。這份報告把做法整理成四個動作。就是隔開、考、記、還有修。今天先來看第一個動作，隔開。什麼意思呢？<short pause>其實就是量尺不能自己調刻度啦。比方說審查設定檔，只從原本的主分支讀。送進來的 PR，也就是合併請求，改不到它。然後審查結果會綁在特定的 commit 上。這個 commit 就是某一次提交。要是有人審到一半又 push 程式碼怎麼辦？那次審查就直接作廢喔。還有，調 prompt 的題目跟考題要分開。不然自己出題自己考，根本沒意義嘛。",
+   "to": "要回答準不準，就要看怎麼校正。十一月那篇把做法收成四件事，這份報告整理成四個動作：隔開、考、記、修。先看第一個，隔開。什麼意思呢？<short pause>就是量具不能自己調刻度。比方說，審查的設定檔，只從要合併進去的那條主幹讀，送進來的 PR 改不到它。審查結果也綁在某一個 commit 上。要是有人審到一半，又推了新的程式碼上來，那次審查就不算。還有，調 prompt 用的題目，跟最後考試的題目，要分開放。不然自己出題自己考，就沒意義了。",
+   "reason": "「量尺」改回量具；「主分支」改成要合併進去的那條主幹（原文 base branch）；PR、commit 已解釋過，不重複；「直接作廢」改回「不算」；補上「十一月那篇收成四件事」的歸屬"
+  }
+ ]
+}

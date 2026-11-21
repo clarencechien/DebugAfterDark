@@ -1,0 +1,148 @@
+{
+ "segment": "s10_label",
+ "position": "第 11 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "3651c0acf7039ef3bdc1a4cca1e98f5bc00f791f13376f3214780c1dc174d5e1",
+ "previous_context": "那根本不是審查，只是在幫它蓋章。這份報告說得超好，量具有履歷卡，可是人沒有啊。",
+ "original": {
+  "text": "回到開頭的問題：檢查本身錯了，誰會知道？這份報告的答案是，不能靠檢查自己說，要拿另一個獨立的東西來對。它也列了一般團隊能搬的事：每次出事留一題，出事的那個 PR 加一句話寫清楚 bug，有十題就能開始考你的 AI 審查；檢查的設定，放在被檢查的變更碰不到的地方；退回率和事故率當護欄，不當成績，它們變高，代表人的時間只是從審查搬到善後。不要搬的是九成和四成這兩個數字，它們沒有基準線，而且那個團隊做的產品就是 agent 自己。另外，這份報告的初稿是用 Claude 寫的，跟受檢的是同一家公司的模型，作者自己也寫明了。報告最後給他們貼的標籤是：做法可以參考，讀數等他們給。",
+  "lint": {
+   "chars": 278,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 45.3,
+   "max_sentence_len": 111,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那檢查本身要是錯了，誰會知道？\n答案其實很簡單。<short pause>\n你不能只聽檢查自己說。\n你得拿另一個獨立的東西來對。\n這份報告說，一般團隊有幾件事能直接搬。\n最划算的是每次出事就留一題。\n把壞掉的 PR 找出來，寫清楚 bug 在哪。\n大概累積個十題，就能拿來考 reviewer 了。\n然後，檢查的設定要放好。\n不能讓被檢查的 PR 自己改到。\n退回率跟事故率要當護欄，不能當業績衝喔。\n這兩個數字變高，代表時間都拿去善後了啦。\n至於報告提到的九成跟四成，先不要照抄。\n那些數字沒有基準線。\n而且人家本來就是做 agent 的嘛。\n最誠實的是，報告作者自己承認，\n這份報告的初稿也是用 Claude 寫的。\n所以報告最後貼上的標籤是什麼？<short pause>\n做法可以參考，讀數等他們給吧。",
+   "lint": {
+    "chars": 299,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 33,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以回到最根本的問題。<short pause>\n檢查本身如果錯了，誰會知道？\n答案很簡單，你不能問檢查自己。\n一定要拿另一個獨立的東西來對。\n這份報告整理了幾個我們能學的做法。\n首先，每次線上出事就留一題。\n把出事的 PR 留著，寫清楚 bug 是什麼。\n只要存個十題，就能拿來考 reviewer 了。\n然後，檢查的設定要鎖好。\n放在被檢查的變更碰不到的地方。\n還有，退回率跟事故率要當護欄，不當成績。\n數字變高，代表人的時間只是搬去善後而已。\n那什麼東西不要照搬？\n報告裡說，千萬別去抄九成跟四成這種數字。\n人家本來就是做 agent 的，條件完全不同。\n很有意思的是，作者自己也很坦白。\n這份報告初稿，其實也是用 Claude 寫的。<laugh>\n報告最後貼的標籤我覺得超中肯：\n做法可以參考，讀數等他們給吧。",
+   "lint": {
+    "chars": 312,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 29,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以回頭看最根本的問題。<short pause>\n檢查本身錯了，誰會知道？\n你覺得可以靠檢查自己說嗎？\n當然不行嘛。\n這份報告說，一定要拿獨立的東西來對。\n其實一般團隊有幾件事可以直接學。\n最簡單的就是，每次線上出事就留一題。\n把出事的 PR 留著，一句話講清楚 bug。\n湊個十題，就能拿來考你的 reviewer 囉。\n然後，退回率跟事故率只能當護欄。\n它們變高，代表時間只是被搬去善後而已。\n那什麼東西不要學？\n就是那些退回率大跌的漂亮數字啦。\n那些數字沒有基準線，條件根本不一樣。\n很有趣的是，報告作者自己也很老實。\n他說這份報告初稿，也是 Claude 寫的。<laugh>\n所以他最後貼的標籤超中肯。\n做法可以參考，讀數等他們給。",
+   "lint": {
+    "chars": 278,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 14.4,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "所以回頭看最根本的問題。<short pause>檢查本身錯了，誰會知道？你覺得可以靠檢查自己說嗎？當然不行嘛。這份報告說，一定要拿獨立的東西來對。其實一般團隊有幾件事可以直接學。最簡單的就是，每次線上出事就留一題。把出事的 PR 留著，一句話講清楚 bug。湊個十題，就能拿來考你的 reviewer 囉。然後，退回率跟事故率只能當護欄。它們變高，代表時間只是被搬去善後而已。那什麼東西不要學？就是那些退回率大跌的漂亮數字啦。那些數字沒有基準線，條件根本不一樣。很有趣的是，報告作者自己也很老實。他說這份報告初稿，也是 Claude 寫的。<laugh>所以他最後貼的標籤超中肯。做法可以參考，讀數等他們給。",
+   "to": "所以，回到開頭的問題：檢查本身錯了，誰會知道？不能靠檢查自己說。這份報告說，要拿另一個獨立的東西來對。它也列了幾件一般團隊能搬的事。最簡單的，是每次出事就留一題：出事的那個 PR，加一句話寫清楚 bug，有十題，就能開始考你的 AI 審查。檢查的設定，放在被檢查的變更碰不到的地方。<short pause>退回率跟事故率當護欄，不當成績。它們變高，代表人的時間只是從審查，搬到了善後。不要搬的，是九成和四成這兩個數字，它們沒有基準線，而且那個團隊做的產品，就是 agent 自己。報告作者也寫明了，這份報告的初稿是用 Claude 寫的，跟受檢的是同一家公司的模型。所以他最後貼的標籤是：做法可以參考，讀數等他們給。",
+   "reason": "「你覺得可以靠檢查自己說嗎？當然不行嘛」改成直述；reviewer 改成 AI 審查；補回「檢查的設定放在碰不到的地方」（breakpoint 會用到）；「退回率大跌的漂亮數字」改回原文的九成和四成，並補理由；補回「同一家公司的模型」；刪掉<laugh>"
+  },
+  {
+   "from": "最簡單的，是每次出事就留一題：出事的那個 PR，加一句話寫清楚 bug，有十題，就能開始考你的 AI 審查。",
+   "to": "最簡單的，是每次出事就留一題。出事的那個 PR，加一句話寫清楚 bug。有十題，就能開始考你的 AI 審查。",
+   "reason": "句子太長切短（寫稿規則第 18 條）"
+  },
+  {
+   "from": "不要搬的，是九成和四成這兩個數字，它們沒有基準線，而且那個團隊做的產品，就是 agent 自己。",
+   "to": "不要搬的，是九成和四成這兩個數字。它們沒有基準線，而且那個團隊做的產品，就是 agent 自己。",
+   "reason": "句子太長切短（寫稿規則第 18 條）"
+  },
+  {
+   "from": "報告作者也寫明了，這份報告的初稿是用 Claude 寫的，跟受檢的是同一家公司的模型。",
+   "to": "這份報告的作者也寫明了，初稿是用 Claude 寫的，跟受檢的是同一家公司的模型。",
+   "reason": "句首「報告」容易聽成「包括」（bare_report）"
+  },
+  {
+   "from": "它也列了幾件一般團隊能搬的事。",
+   "to": "它也列了幾件一般團隊可以直接學的事。",
+   "reason": "兩套辨識都把「搬」聽成「辦」"
+  },
+  {
+   "from": "不要搬的，是九成和四成這兩個數字。",
+   "to": "不要學的，是九成和四成這兩個數字。",
+   "reason": "同上，「搬」聽成「辦／盼」"
+  },
+  {
+   "from": "做法可以參考，讀數等他們給。",
+   "to": "做法可以參考，數字要等他們給。",
+   "reason": "s11 同一句的「讀數」兩套辨識都漏掉「讀」，兩段一起改"
+  }
+ ]
+}
