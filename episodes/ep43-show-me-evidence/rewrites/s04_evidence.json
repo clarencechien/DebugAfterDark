@@ -1,0 +1,121 @@
+{
+ "segment": "s04_evidence",
+ "position": "第 5 段，共 11 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f86f2542944e3efdc9049373d393ad92c436a800ab2a1c06c852232d81e72d53",
+ "previous_context": "同一個問題第二次出現，就該寫成自動檢查。交給機器去擋，大家就不用靠腦袋硬記啦。",
+ "original": {
+  "text": "每一次糾正都變成一條機器會跑的檢查，審查要看的東西就越來越少。那剩下要看什麼？她說，程式審查已經縮成看驗證的產出：app 跑起來的影片、截圖，還有形式化驗證的結果，像用 TLA+、用 Lean 去證明某個流程不會出錯。她在 X 上看到一位叫 Cindy 的人貼文說，自己每天七成的 token 花在驗證上，她說她也差不多。這些技術都不新，以前是寫起來、維護起來都太貴。上一集 Uncle Bob 的 mutation testing 也是一樣：agent 不怕慢，舊工具才變得能用。",
+  "lint": {
+   "chars": 224,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 36.3,
+   "max_sentence_len": 65,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以當檢查越來越多，人要審查的東西就變少了。<short pause>那你猜審查剩下要看什麼？答案是只看驗證的產出。像是畫面截圖，還有 app 跑起來的錄影，甚至用數學方法，證明程式流程完全不會出錯。光用聽的就覺得超狂的吧。<laugh>報告裡提到有人在 X 上發文，說自己每天七成的 token 都花在驗證上。這份報告的作者也說，她自己差不多也是醬。其實這些技術本來就有了啦。以前寫起來太貴，根本沒什麼人想碰。現在交給 agent，這些厲害的老工具才終於能派上用場。",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.7,
+    "max_sentence_len": 39,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以當每次糾正都變成自動檢查，\n人要審查的東西其實就越來越少。<short pause>\n那工程師最後到底在審什麼？\n這份報告說，\n他們現在主要只看驗證的產出。\n像是 app 跑起來的螢幕錄影跟截圖，\n還有用數學去證明的形式化驗證。\n例如用 TLA+ 去證明，\n跨裝置的通知流程不會出錯。\n這份報告的作者提到，\n她在 X 上看到工程師 Cindy 發文，\n說自己每天百分之七十的 token，\n竟然全都花在驗證上面。\n作者說她自己的狀況也差不多。<laugh>\n你看，這比例真的很誇張欸。\n其實這些驗證技術早就有了，\n只是以前寫跟維護實在太貴啦。\n現在交給 agent 來跑，\n這些老工具反而全都活過來了。",
+   "lint": {
+    "chars": 254,
+    "precise_numbers": [
+     "百分之七十"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 24.4,
+    "max_sentence_len": 54,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "對，所以當檢查越寫越多，人工審查就越省事。那工程師最後到底要看什麼？這份報告說，審查縮到只看驗證的產出。像是 app 跑起來的螢幕錄影或截圖。重點來了，他們還會用數學工具做驗證喔。比如用 TLA+ 去證明跨裝置流程不會卡死。老實說，這聽起來超像外星科技對吧？<laugh> 其實這些技術很早就有了啦。只是以前寫起來太貴，沒什麼人想用。這份報告提到，網路上有位工程師發文說，她每天有百分之七十的 token 花在驗證。報告作者也說自己差不多是醬。反正 agent 不怕累，舊工具也能變好用耶。",
+   "lint": {
+    "chars": 229,
+    "precise_numbers": [
+     "百分之七十"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.1,
+    "max_sentence_len": 38,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "所以當檢查越來越多，人要審查的東西就變少了。<short pause>那你猜審查剩下要看什麼？答案是只看驗證的產出。像是畫面截圖，還有 app 跑起來的錄影，甚至用數學方法，證明程式流程完全不會出錯。光用聽的就覺得超狂的吧。<laugh>報告裡提到有人在 X 上發文，說自己每天七成的 token 都花在驗證上。這份報告的作者也說，她自己差不多也是醬。其實這些技術本來就有了啦。以前寫起來太貴，根本沒什麼人想碰。現在交給 agent，這些厲害的老工具才終於能派上用場。",
+   "to": "每一次糾正都變成一條機器會跑的檢查，審查要看的東西就越來越少。那剩下要看什麼？她說，程式審查已經縮成看驗證的產出。app 跑起來的影片、截圖，還有形式化驗證，也就是用數學去證明某個流程不會出錯。<short pause>她提到，有一位叫 Cindy 的人在 X 上說，自己每天七成的 token 花在驗證上。她說她自己也差不多。這些技術都不新，以前是寫起來、維護起來都太貴。上一集 Uncle Bob 的 mutation testing 也是這樣。agent 不怕慢，這些老工具才變得能用。",
+   "reason": "歸屬錯：「差不多」是 Lauren Tan 說的，不是報告作者；Cindy 的名字補回；刪掉「超狂」和 laugh；補回接上一集的 mutation testing"
+  }
+ ]
+}

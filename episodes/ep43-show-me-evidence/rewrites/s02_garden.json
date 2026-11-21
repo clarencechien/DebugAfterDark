@@ -1,0 +1,128 @@
+{
+ "segment": "s02_garden",
+ "position": "第 3 段，共 11 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "91fe11c94babd154d759efaa092eebd712fb98863f39143bee3789bb02529081",
+ "previous_context": "今晚我們就聊三件事。第一，她怎麼把糾正變成機器會擋的檢查；然後，她的金字塔在這兩個月換了哪幾層；最後，那些漂亮的數字到底要怎麼讀啦。",
+ "original": {
+  "text": "先從她十一月那場演講講起，題目叫〈All Code Is Slop (Except Mine)〉，slop 就是大家罵的爛程式碼。她說工程師的核心工作，是在產量暴增的時候守住品質，有人叫這個軟體工廠，她叫它信任。她用的比喻是花園：agent 的產出取決於輸入，而程式庫是最大的輸入之一。二〇二四年她要審三個同事的 PR，現在大約是三百個。限制和護欄是水泥地基，新的程式繞著它長；權宜的寫法和過時的技術是害蟲，下一個 agent 會把它們當慣例照抄，很快就爬滿整片。那蟲要怎麼除？",
+  "lint": {
+   "chars": 229,
+   "precise_numbers": [
+    "十一",
+    "三百"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 37.2,
+   "max_sentence_len": 60,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先從她十一月那場演講聊起。\n題目很有趣，叫做別人的 code 都是爛貨。\n爛程式碼英文叫 slop。\n其實工程師的核心工作，\n是在產量暴增的時候守住品質。\n有人叫這個軟體工廠，她說這叫信任。\n那信任要怎麼建？\n重點就在 agent 的環境啦。<short pause>\n她把整個程式庫比喻成一座花園。\nagent 寫出什麼，完全看你給它吃什麼。\n你以前審三個同事的 PR，也就是合併請求。\n那現在呢？大約要審三百個。\n如果裡面留了爛寫法，就像花園長了害蟲。\n下一個 agent 會當成慣例照抄。\n整座花園很快就會爬滿蟲耶。\n我看到這邊真的起雞皮疙瘩。<short pause>\n那問題來了，這些蟲要怎麼除？",
+   "lint": {
+    "chars": 252,
+    "precise_numbers": [
+     "十一",
+     "三百"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 13.8,
+    "max_sentence_len": 24,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "我們先從她十一月那場演講聊起。題目叫 All Code Is Slop，其實就是大家寫的都是爛 code 啦。她說工程師現在最重要的工作，是在產量暴增的時候把品質守住。有人把這叫做軟體工廠，但她說這其實叫做信任。<short pause>她用花園打了一個比方，超貼切的喔。agent 的產出，完全看你給它什麼輸入。程式庫就是它最大的參考來源。以前審幾個同事的 PR，也就是合併請求，現在一個人要審差不多三百個。如果程式庫裡留著偷懶的權宜寫法，那些東西就像花園裡的害蟲一樣。你猜下一個 agent 會怎樣？它會當成標準慣例照抄耶，很快整座花園就會爬滿蟲。我看到這段真的很有共鳴。那這些蟲到底要怎麼除？",
+   "lint": {
+    "chars": 276,
+    "precise_numbers": [
+     "十一",
+     "三百"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 20.2,
+    "max_sentence_len": 33,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先從她十一月的演講講起。\n她說工程師的核心工作，就是守住品質。\n最厲害的是，她上個月上線了三千個 PR。\nPR 就是大家平常說的合併請求啦。\n重點來了，你猜很多程式是什麼時候進去的？\n居然是她睡覺的時候耶。<short pause>\n她把自己的程式庫比喻成一座花園。\n其實 agent 的產出，全看你餵給它什麼。\n程式庫裡的水泥地基，就是嚴格的限制。\n新寫的程式碼，會繞著地基慢慢長。\n但如果裡面有偷吃步的寫法，那就是害蟲。\n下一個 agent 看到，就會當成慣例照抄。\n沒多久害蟲就會爬滿整片。\n我看到這個比喻，覺得真的太貼切了。\n那這些害蟲，到底要怎麼除？",
+   "lint": {
+    "chars": 247,
+    "precise_numbers": [
+     "十一",
+     "三千"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "先從她十一月的演講講起。她說工程師的核心工作，就是守住品質。最厲害的是，她上個月上線了三千個 PR。PR 就是大家平常說的合併請求啦。重點來了，你猜很多程式是什麼時候進去的？居然是她睡覺的時候耶。<short pause>她把自己的程式庫比喻成一座花園。其實 agent 的產出，全看你餵給它什麼。程式庫裡的水泥地基，就是嚴格的限制。新寫的程式碼，會繞著地基慢慢長。但如果裡面有偷吃步的寫法，那就是害蟲。下一個 agent 看到，就會當成慣例照抄。沒多久害蟲就會爬滿整片。我看到這個比喻，覺得真的太貼切了。那這些害蟲，到底要怎麼除？",
+   "to": "先從她十一月那場演講講起。題目叫 All Code Is Slop，slop 就是大家罵的爛程式碼。她說，工程師的核心工作，是在產量暴增的時候守住品質。她用的比喻是花園。agent 的產出取決於輸入，而程式庫是最大的輸入之一。二〇二四年，她要審三個同事的 PR，現在大約是三百個。<short pause>限制和護欄是水泥地基，新的程式繞著它長。偷吃步的寫法、過時的技術，就是害蟲。下一個 agent 會把它們當成慣例照抄，很快就爬滿整片。那蟲要怎麼除？",
+   "reason": "刪掉跟開頭重複的三千個 PR 和睡覺時合併；補回演講題目、三個到三百個；刪掉「重點來了」「你猜」「我看到這個比喻」個人反應"
+  }
+ ]
+}

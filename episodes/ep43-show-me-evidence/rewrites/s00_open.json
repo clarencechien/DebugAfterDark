@@ -1,0 +1,126 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 11 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "028bc99c7f3e77b6f7b87869d6c6b3815786e908ff912b2dde6388316d7d0837",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "上個月，一個工程師一個人上線了三千個 PR，也就是合併請求，很多是在她睡覺的時候合進去的。她叫 Lauren Tan，她的團隊在做 Grok Bot 這個 app。網路上有一篇整理寫得不差，說她的祕訣是不再逐行看程式碼，改看 agent 交出來的影片和截圖。可是這份報告拿她十一月的投影片去對，發現那篇整理把她的金字塔少畫了一層，而且是最底下那一層。少掉的是哪一層？她為什麼還留著它？這集最後會回答。",
+  "lint": {
+   "chars": 191,
+   "precise_numbers": [
+    "三千",
+    "十一"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 26.3,
+   "max_sentence_len": 45,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "如果有人說她單月上線三千個 PR，你信嗎？這裡說的 PR，也就是合併請求啦。而且很多，還是趁她睡覺的時候合進去的。這位工程師，是做 Grok Bot 的 Lauren Tan。我看到這個數字整個傻眼。<short pause>網路上都說，她的祕訣是不用肉眼審 code，而是改看 agent 交出來的影片跟截圖。聽起來很神對不對？其實這份報告比對她十一月的演講，發現網路上的整理，居然少畫了一層。<short pause>而且被漏掉的，偏偏是最底下那一層。到底是哪一層被漏掉了？她為什麼到了現在，還留著那一層？這集最後會給你答案。",
+   "lint": {
+    "chars": 229,
+    "precise_numbers": [
+     "三千",
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.1,
+    "max_sentence_len": 39,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "如果有人跟你說，她一個月自己上線了三千個 PR，也就是合併請求，你相信嗎？<short pause>更扯的是，很多還是趁她睡覺時合進去的耶。她是開發 Grok Bot 的工程師 Lauren Tan。我看到這個數字整個看傻了。<laugh>網路上有人說，她的祕訣其實是不再一行一行看 code 啦。直接改看 agent 交出來的影片跟截圖。可是這份報告去比對她十一月的演講，發現大家少畫了金字塔的最底層。少掉的究竟是哪一層？她又為什麼還留著它？這集最後我們就來解答。",
+   "lint": {
+    "chars": 203,
+    "precise_numbers": [
+     "三千",
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.3,
+    "max_sentence_len": 35,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上個月有個工程師，自己上線了三千個 PR。<short pause>PR 就是合併請求啦。更扯的是，很多還是趁她在睡覺時合進去的。她叫 Lauren Tan，在做 Grok Bot 這個 app。你可能會好奇，她到底怎麼審的？網路上有人說，她早就不逐行讀程式碼了。她改看 agent 交出來的影片跟截圖。不過這份報告去對了她十一月的投影片，發現網路上的整理，少畫了一層金字塔耶。<short pause>而且少掉的，剛好是最底下的那一層。到底少掉哪一層？她為什麼還要留著？這集最後我們就會揭曉。",
+   "lint": {
+    "chars": 211,
+    "precise_numbers": [
+     "三千",
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 36,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "上個月有個工程師，自己上線了三千個 PR。<short pause>PR 就是合併請求啦。更扯的是，很多還是趁她在睡覺時合進去的。她叫 Lauren Tan，在做 Grok Bot 這個 app。你可能會好奇，她到底怎麼審的？網路上有人說，她早就不逐行讀程式碼了。她改看 agent 交出來的影片跟截圖。不過這份報告去對了她十一月的投影片，發現網路上的整理，少畫了一層金字塔耶。<short pause>而且少掉的，剛好是最底下的那一層。到底少掉哪一層？她為什麼還要留著？這集最後我們就會揭曉。",
+   "to": "上個月，有個工程師一個人上線了三千個 PR。<short pause>PR 就是合併請求。很多還是在她睡覺的時候合進去的。她叫 Lauren Tan，她的團隊在做 Grok Bot 這個 app。網路上有一篇整理說，她早就不逐行讀程式碼了，改看 agent 交出來的影片跟截圖。可是這份報告拿她十一月的投影片去對，發現那篇整理，把她的金字塔少畫了一層。<short pause>而且少掉的，剛好是最底下那一層。少掉的是哪一層？她為什麼還留著它？這集最後會回答。",
+   "reason": "「更扯的是」「你可能會好奇」是原文沒有的口氣；「我們就會揭曉」改回「會回答」；「Grok Bot 這個 app」補回是她的團隊在做"
+  }
+ ]
+}

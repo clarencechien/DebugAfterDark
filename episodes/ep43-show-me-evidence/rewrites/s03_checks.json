@@ -1,0 +1,144 @@
+{
+ "segment": "s03_checks",
+ "position": "第 4 段，共 11 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2a29ab72349becd1e73f733241a2a81b0078fcefb13623fbca89a47450602cc9",
+ "previous_context": "我看到這個比喻，覺得真的太貼切了。那這些害蟲，到底要怎麼除？",
+ "original": {
+  "text": "她舉了三個例子。第一個，React 的 useEffect 在產品程式碼裡直接禁用，她的理由是，任何要拿捏分寸才用得好的東西，最後常常變成 slop。第二個，最上層切成主程序和畫面兩個目錄，用工具擋住互相引用，因為 agent 很愛把主程序的程式拉進畫面那邊，造成卡頓。第三個，她們乾脆禁掉大約九成九的註解，因為註解會過時，也沒辦法強制，改成 lint 規則，錯誤訊息直接叫 agent 去修根本原因。這招不是她一個人在講：Addy Osmani 寫舊系統的文章也說，同一句審查意見第二次出現，就該寫成 lint 或測試。",
+  "lint": {
+   "chars": 247,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三",
+    "第二"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 48.4,
+   "max_sentence_len": 62,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.4,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這份報告的作者直接給了三個做法。\n第一個是禁用 React 的 useEffect。\n你猜為什麼？\n因為要拿捏分寸的東西，最後常常變 slop。\n然後第二個，他們把主程序跟畫面切開，\n用工具擋住互相匯入。\n不然 agent 很愛亂抓，把畫面搞到很卡。\n最厲害的是，他們乾脆禁掉九成九的註解。<laugh>\n這招真的很狂耶。\n因為註解會過時，又沒辦法強制，\n所以換成 lint，就是自動檢查寫法的工具，\n叫 agent 直接去修根本原因。\n其實這不是只有她在講喔。\n專家 Addy Osmani 寫舊系統也說，\n同一句審查意見只要出現第二次，\n就該寫成機器檢查，別再靠模型去記啦。",
+   "lint": {
+    "chars": 255,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第二"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 22.2,
+    "max_sentence_len": 51,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "這份報告的作者舉了三個例子。\n第一個是 React 的 useEffect，\n在產品程式碼裡直接禁用。<short pause>\n為什麼？\n因為只要需要拿捏分寸的東西，\nagent 寫出來通常都會變成爛 code 啦。\n對，所以乾脆不准用。\n然後第二個，\n她把主程序跟畫面的目錄完全切開，\n用自動檢查工具 lint 擋住互相匯入。\n因為 agent 很愛把底層程式拉到畫面，\n搞到整個 app 變超卡。\n那第三個你猜是什麼？\n她們禁掉了大約九成九的註解！<laugh>\n因為註解沒辦法強制執行，\n放久了只會誤導 AI 嘛。\n所以改成 lint 規則，\n叫 agent 直接去修根本原因。\n這種做法我超認同的。<short pause>\n而且其實不是只有她這樣做喔。\n像 Addy Osmani 也有提到，\n同樣的審查意見只要出現第二次，\n就該寫成機器檢查或自動測試，\n不要再用人腦去記了啦。",
+   "lint": {
+    "chars": 318,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 21.7,
+    "max_sentence_len": 55,
+    "sentences_over_20": 7,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "這份報告的作者直接立了三條超硬的規矩。\n第一，useEffect 在產品程式碼裡直接禁用。\n你猜為什麼？\n因為要拿捏技巧的東西，最後常會變成 slop。\n乾脆禁掉，審查就不用抓啦。\n然後，她們把主程序跟畫面的目錄徹底切開。\n用檢查工具擋住，不讓它們互相匯入。\n省得 agent 亂拉，造成畫面卡頓。<short pause>\n最厲害的是，她們甚至禁掉了九成九的註解。\n這做法真的讓我眼睛一亮。\n因為註解會過時，agent 根本不會遵守。\n不如改成檢查規則，叫它去修根本問題。\n其實這招不是只有她在講喔。\n知名工程師 Addy Osmani 也說過類似的話。\n同一個問題第二次出現，就該寫成自動檢查。\n交給機器去擋，大家就不用靠腦袋硬記啦。",
+   "lint": {
+    "chars": 283,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 16.7,
+    "max_sentence_len": 23,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "這份報告的作者直接立了三條超硬的規矩。第一，useEffect 在產品程式碼裡直接禁用。你猜為什麼？因為要拿捏技巧的東西，最後常會變成 slop。乾脆禁掉，審查就不用抓啦。然後，她們把主程序跟畫面的目錄徹底切開。用檢查工具擋住，不讓它們互相匯入。省得 agent 亂拉，造成畫面卡頓。<short pause>最厲害的是，她們甚至禁掉了九成九的註解。這做法真的讓我眼睛一亮。因為註解會過時，agent 根本不會遵守。不如改成檢查規則，叫它去修根本問題。其實這招不是只有她在講喔。知名工程師 Addy Osmani 也說過類似的話。同一個問題第二次出現，就該寫成自動檢查。交給機器去擋，大家就不用靠腦袋硬記啦。",
+   "to": "她舉了三個例子。第一個，React 的 useEffect，在產品程式碼裡直接禁用。她的理由是，要拿捏分寸才用得好的東西，最後常常變成 slop。乾脆禁掉，這一類錯就不會再出現。第二個，主程序和畫面切成兩個目錄，用工具擋住互相引用。因為 agent 很愛把主程序的程式拉進畫面那邊，造成卡頓。<short pause>第三個，她們乾脆禁掉大約九成九的註解。註解會過時，也沒辦法強制，所以改成 lint 規則，也就是自動檢查程式寫法的工具，錯誤訊息直接叫 agent 去修根本原因。這招不是她一個人在講。Addy Osmani 寫舊系統的文章也說，同一句審查意見第二次出現，就該寫成 lint 或測試。",
+   "reason": "歸屬錯：規矩是 Lauren Tan 定的，不是「這份報告的作者」；「agent 根本不會遵守」改回原文「沒辦法強制」；刪掉「讓我眼睛一亮」；Addy Osmani 改回原話（同一句審查意見、lint 或測試）；lint 第一次出現補解釋"
+  },
+  {
+   "from": "所以改成 lint 規則，也就是自動檢查程式寫法的工具，錯誤訊息直接叫 agent 去修根本原因。",
+   "to": "所以改成 lint 規則。lint 就是自動檢查程式寫法的工具。錯誤訊息會直接叫 agent，去修根本原因。",
+   "reason": "句子太長切短"
+  },
+  {
+   "from": "第二個，主程序和畫面切成兩個目錄，用工具擋住互相引用。",
+   "to": "第二個，主程序和畫面切成兩個目錄。再用工具擋住，不讓它們互相引用。",
+   "reason": "句子太長切短"
+  }
+ ]
+}

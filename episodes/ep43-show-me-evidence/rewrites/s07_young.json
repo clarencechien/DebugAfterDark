@@ -1,0 +1,126 @@
+{
+ "segment": "s07_young",
+ "position": "第 8 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4ceb449fdff1b151e8602012e525dba431a56553cd6dab9820ea1dad2f6cf07a",
+ "previous_context": "根本是她本人在當高級園丁嘛。換成沒有她的團隊，同一套規則能撐多久？",
+ "original": {
+  "text": "還有一個她沒講的前提：這座花園很年輕。她八月寫說，大約兩個月前才開始做；這份報告推算，十一月演講的時候，這個程式庫大約才四、五個月大，框架是她們自己寫的，每一條慣例都找得到人問。舊系統是另一回事。Addy Osmani 說，舊的程式庫已經不是系統行為的完整描述，有些限制只存在人的記憶裡。他建議先寫測試把現有的行為鎖住，連醜的部分一起，再把授權、計費這種出事最痛的地方標成紅區，每一步都有人陪著。所以這份報告的結論是：她的順序可以搬到舊系統，她的速度不行。",
+  "lint": {
+   "chars": 226,
+   "precise_numbers": [
+    "十一"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 36.7,
+   "max_sentence_len": 69,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "而且她還有一個前提沒明講。那就是這座花園其實超年輕的。這份報告推算，她演講時那個專案才四個多月大。裡面的技術債最多也才幾個月嘛。框架是自己人寫的，隨時找得到人問。但如果是維護好幾年的舊系統呢？那完全是另外一回事了齁。<short pause>專家 Addy Osmani 就提醒，舊系統很多規則只活在人的記憶裡。你得先寫測試把現有的醜行為鎖住，再把計費這種危險地方標成紅區。每一步都要有人盯著。我讀到這一段真的很有共鳴，她的順序可以學，但速度根本搬不過去。畢竟在舊系統裡面，你想清掉的醜東西，搞不好是承重牆耶。",
+   "lint": {
+    "chars": 239,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.9,
+    "max_sentence_len": 31,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "而且其實還有一個大前提。<short pause>\n她這座花園真的太年輕了啦。\n這份報告推算，演講那時候，\n她的程式庫大約才四五個月大。\n框架是自己人寫的，\n有問題隨時找得到人問。\n但你接手過好幾年的舊系統嗎？\n那完全是另一回事喔。\n很多規則根本沒寫在 code 裡，\n只活在資深同事的記憶裡。\n專家 Addy Osmani 就提醒，\n舊系統要先寫測試把現況鎖住，\n連寫得醜的地方也要鎖。\n像計費這種出事最痛的紅區，\n每一步都必須有人盯著。\n這真的讓人很有共鳴耶。<short pause>\n所以這份報告說，\n她的整理順序可以搬到舊系統，\n可是她的開發速度絕對不行。\n畢竟在拆掉醜東西之前，\n你得先搞清楚哪一面是承重牆嘛。",
+   "lint": {
+    "chars": 260,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 20.7,
+    "max_sentence_len": 40,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實還有一個大前提喔。\n她這座花園其實非常年輕。\n報告裡推算，\n那個程式庫當時才四個多月大。\n而且框架是自己人寫的，\n有問題隨時找得到人問。\n但如果換成累積好幾年的舊系統呢？\n那完全是另一回事了。<short pause>\n這份報告提到 Addy Osmani 的提醒。\n舊系統很多限制，只活在老前輩的記憶裡。\n他建議先寫測試把現有行為鎖死，\n就算寫得很醜也要一起鎖住。\n然後把計費跟授權標成紅區，\n每一步都要有人在旁邊盯著。\n這段話工程師聽了一定很有共鳴吧？\n所以這份報告給了一個結論。\n她的整理步驟確實可以搬去舊系統，\n可是她的開發速度絕對不行。\n因為清垃圾之前你得先搞清楚，\n哪些很醜的程式碼，其實是承重牆啊。",
+   "lint": {
+    "chars": 273,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 18.5,
+    "max_sentence_len": 30,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "其實還有一個大前提喔。她這座花園其實非常年輕。報告裡推算，那個程式庫當時才四個多月大。而且框架是自己人寫的，有問題隨時找得到人問。但如果換成累積好幾年的舊系統呢？那完全是另一回事了。<short pause>這份報告提到 Addy Osmani 的提醒。舊系統很多限制，只活在老前輩的記憶裡。他建議先寫測試把現有行為鎖死，就算寫得很醜也要一起鎖住。然後把計費跟授權標成紅區，每一步都要有人在旁邊盯著。這段話工程師聽了一定很有共鳴吧？所以這份報告給了一個結論。她的整理步驟確實可以搬去舊系統，可是她的開發速度絕對不行。因為清垃圾之前你得先搞清楚，哪些很醜的程式碼，其實是承重牆啊。",
+   "to": "還有一個她沒講的前提。這座花園很年輕。她八月寫說，大約兩個月前才開始做；這份報告推算，十一月演講的時候，這個程式庫大約才四、五個月大。框架是自己人寫的，每一條慣例都找得到人問。<short pause>舊系統是另一回事。Addy Osmani 說，舊的程式庫已經不是系統行為的完整描述，有些限制只存在人的記憶裡。他建議先寫測試，把現有的行為鎖住，連醜的部分一起。再把授權、計費這種地方標成紅區，每一步都有人陪著。所以這份報告說，她的順序可以搬到舊系統，她的速度不行。",
+   "reason": "「四個多月」改回原文推算的四、五個月並說明推算依據；「老前輩」改回人的記憶；刪掉「工程師聽了一定很有共鳴吧」；結尾承重牆那句段落過長，刪掉"
+  },
+  {
+   "from": "她八月寫說，大約兩個月前才開始做；這份報告推算，十一月演講的時候，這個程式庫大約才四、五個月大。",
+   "to": "她八月寫說，大約兩個月前才開始做。這份報告推算，到十一月演講的時候，這個程式庫大約才四、五個月大。",
+   "reason": "句子太長切短"
+  }
+ ]
+}

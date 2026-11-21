@@ -1,0 +1,122 @@
+{
+ "segment": "s09_two",
+ "position": "第 10 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "醬",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "5914ff3a17e456814edb54df39e2f65195cbb99e2f38341905c87e3d3b8e3457",
+ "previous_context": "報告裡說，作者自己的整理是，審查不再是每個 PR 都看，而是只看自動驗證蓋不到的地方。我覺得這個做法超聰明的，最貴的人力本來就該留給盲點嘛。",
+ "original": {
+  "text": "把上下兩集放在一起。Uncle Bob 和 Lauren Tan 沒有互相引用過，可是有四件事一樣：逐行人審跟不上產量；寫給 agent 看的文字靠不住，規矩要變成機器會擋的檢查；架構留在人手上；人沒有離開。不一樣的是看什麼。他主要看結構，看分數和架構圖；她主要看行為，看 app 跑起來的影片和截圖。想照做的團隊，這份報告說能搬的是順序：每次糾正 agent，先問能不能往上推一層，能改架構就不寫 lint，能寫 lint 就不寫進給 agent 看的規則檔。",
+  "lint": {
+   "chars": 216,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 42.2,
+   "max_sentence_len": 86,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實把兩個人放在一起看，會發現超妙的。Uncle Bob 跟 Lauren Tan 完全沒互相引用過。可是他們抓到的核心，有四件事完全一樣。<short pause>一行行審 code 根本追不上產量。規矩要變成機器自動擋的檢查。然後架構要留在人手上，而且人其實沒退場。那他們到底哪裡不一樣？其實差在人要看什麼。<short pause>他主要看結構，看分數跟架構圖。她主要看行為，看 app 跑起來的截圖跟影片。所以如果你的團隊想照著做，能學什麼？這份報告說，真正能搬的是順序。每次想糾正 agent，先問能不能往上推一層。能改架構就不寫 lint。能寫 lint，就不寫進規則檔啦。",
+   "lint": {
+    "chars": 255,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 16.0,
+    "max_sentence_len": 26,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "我們現在把這兩個人放在一起看。\n其實他們兩個從來沒有互相引用過。\n可是你仔細比對，會發現有四件事一模一樣。\n逐行看程式碼絕對跟不上產量。\n寫給 agent 看的文字靠不住，要換成機器檢查。\n然後架構要留在人手上，而且人其實沒有離開。\n那他們哪裡不一樣？\n差在人最後到底在看什麼。\nUncle Bob 看結構，看分數跟架構圖。\nLauren 主要是看行為，看跑起來的影片跟截圖。\n<short pause>\n如果你的團隊也想學，這份報告說能搬的是順序。\n每次要糾正 agent，先問能不能往上推一層。\n能改架構就不寫 lint，能寫 lint 就不寫進規則檔。\n我覺得這樣一層一層擋下來，超聰明的耶。",
+   "lint": {
+    "chars": 263,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 25,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實把這兩位神人的做法放在一起看，報告裡說他們私底下完全沒互相引用過。<short pause>可是他們得出的結論，居然有四點一模一樣。像是人工一行一行看 code，早就跟不上了。寫給 agent 看的文字靠不住，要靠工具擋。架構要留給人決定，而且人始終沒有完全離開。那他們到底差在哪？其實差在看成果的角度。一個主要看架構分數，另一個看 app 畫面。聽起來很合理對吧？所以如果團隊想學，最該照抄的是什麼？這份報告說，能搬走的是處理順序。每次要糾正 agent，先問能不能改架構。能寫進 lint 自動檢查，就不寫進規則檔。把規矩鎖進環境裡，agent 才不會亂跑嘛。",
+   "lint": {
+    "chars": 262,
+    "precise_numbers": [
+     "四點一"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 17.7,
+    "max_sentence_len": 34,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "其實把兩個人放在一起看，會發現超妙的。Uncle Bob 跟 Lauren Tan 完全沒互相引用過。可是他們抓到的核心，有四件事完全一樣。<short pause>一行行審 code 根本追不上產量。規矩要變成機器自動擋的檢查。然後架構要留在人手上，而且人其實沒退場。那他們到底哪裡不一樣？其實差在人要看什麼。<short pause>他主要看結構，看分數跟架構圖。她主要看行為，看 app 跑起來的截圖跟影片。所以如果你的團隊想照著做，能學什麼？這份報告說，真正能搬的是順序。每次想糾正 agent，先問能不能往上推一層。能改架構就不寫 lint。能寫 lint，就不寫進規則檔啦。",
+   "to": "把上下兩集放在一起看。Uncle Bob 和 Lauren Tan 沒有互相引用過，可是有四件事一樣。逐行人審跟不上產量。寫給 agent 看的文字靠不住，規矩要變成機器會擋的檢查。架構留在人手上。還有，人沒有離開。<short pause>不一樣的是看什麼。他主要看結構，看分數和架構圖。她主要看行為，看 app 跑起來的影片和截圖。那想照著做的團隊，能搬什麼？這份報告說，能搬的是順序。每次糾正 agent，先問能不能往上推一層。能改架構，就不寫 lint；能寫 lint，就不寫進給 agent 看的規則檔。",
+   "reason": "「完全沒互相引用」原文有保留（至少作者沒找到），改成「沒有互相引用過」；補回「寫給 agent 看的文字靠不住」；刪掉「超妙的」「啦」"
+  }
+ ]
+}
