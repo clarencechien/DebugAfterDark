@@ -1,0 +1,141 @@
+{
+ "segment": "s02_price",
+ "position": "第 3 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "58057ee46e79036d9ecda3afa6129ca187adae0f225a59f8f1bcd7bf6025252f",
+ "previous_context": "所以今晚我們就來對答案。看那些很難搶的位子，是不是真的變好訂了。",
+ "original": {
+  "text": "第一件，牌價。主計總處十一月初公布的十月物價，是目前最新的官方數字。機票比去年同月貴了一成多，國外旅遊團費貴了快七趴，外食貴了三趴。只有旅館住宿是跌的，跌了五趴多，主計總處說，是因為平日國旅的優惠措施。不過這裡要先認一件事：股市的高點在十月六號，十月底的收盤，只比九月底低六趴左右，真正的跌勢發生在十一月。所以十月的牌價，還看不到這次下跌。可是還有一個數字，比較少人注意。",
+  "lint": {
+   "chars": 186,
+   "precise_numbers": [
+    "十一",
+    "十一"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 25.6,
+   "max_sentence_len": 51,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先來看官方的牌價。主計總處十一月公布的物價，是最新數字。機票比去年同月貴了百分之十二點五三。<short pause>國外團費貴了快七趴，外食也漲了三趴。只有旅館住宿是跌的，跌了大約五趴。主計總處說，是因為平日國旅有優惠。我看到這份數字其實蠻好奇的。你看這個數字，大家是不是照樣在花錢？其實股市的高點在十月六號。十月底收盤只比九月底低了六趴。真正的跌勢是在十一月才發生。<short pause>所以十月的牌價，根本還看不到下跌啦。可是還有另一個數字，比較少人注意喔。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [
+     "十一",
+     "百分之十二點五三",
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.0,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "我們先來看官方公布的牌價。\n主計總處十一月公布的數據，是目前最新的。\n機票比去年同期貴了百分之十二點五三喔。\n國外團費漲了快七趴，外食也貴了三趴。\n那有東西跌價嗎？\n<short pause>只有旅館住宿跌了五趴多。\n這份報告裡說，是因為平日國旅有優惠啦。\n你可能會想，股市大跌怎麼沒反應在牌價上？\n其實時間點有落差。\n十月股市收盤才跌六趴，大跌是在十一月。\n所以十月的牌價，當然還看不到這次下跌嘛。\n不過，還有另一個數字大家比較少注意。",
+   "lint": {
+    "chars": 195,
+    "precise_numbers": [
+     "十一",
+     "百分之十二點五三",
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先來看大家最常查的牌價。\n主計總處十一月初公布的數字，\n是目前最新的官方物價。\n機票比去年同月貴了百分之十二點五三。<short pause>\n國外團費貴了快七趴，\n外食也漲了三趴左右。\n只有旅館住宿費跌了五趴多，\n主計總處說是因為平日國旅有優惠啦。\n不過，你覺得十月牌價看得出股市下跌嗎？\n其實完全看不出來。<short pause>\n因為股市高點在十月六號，\n十月底只比九月底低了六趴左右，\n真正的跌勢是在十一月。\n所以十月的牌價根本還沒反應。\n重點來了，還有另一個數字，你注意到了嗎？",
+   "lint": {
+    "chars": 205,
+    "precise_numbers": [
+     "十一",
+     "百分之十二點五三",
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.5,
+    "max_sentence_len": 37,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "主計總處十一月公布的物價，是最新數字。機票比去年同月貴了百分之十二點五三。",
+   "to": "主計總處十一月初公布的十月物價，是最新的官方數字。機票比去年同月，貴了一成多。",
+   "reason": "說清楚是十月物價；精確數字改成念得順的說法"
+  },
+  {
+   "from": "我看到這份數字其實蠻好奇的。你看這個數字，大家是不是照樣在花錢？",
+   "to": "",
+   "reason": "Ping 沒有個人反應；後一句原文沒有"
+  },
+  {
+   "from": "所以十月的牌價，根本還看不到下跌啦。",
+   "to": "所以十月的牌價，還看不到這次下跌。",
+   "reason": "照原文語氣"
+  }
+ ]
+}

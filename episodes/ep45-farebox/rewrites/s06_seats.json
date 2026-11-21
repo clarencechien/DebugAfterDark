@@ -1,0 +1,149 @@
+{
+ "segment": "s06_seats",
+ "position": "第 7 段，共 11 段",
+ "avoid": [
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4465ee343701a1094a64820d41de74a1882bdc42499dc90fff0c6db0864a873e",
+ "previous_context": "因為換個時間切，關聯就消失啦。牌價看完了，那位子呢？",
+ "original": {
+  "text": "第二件，位子。一位難求沒有公開的統計，這份報告用八家公司的月營收當替身：高價餐飲是王品、瓦城、漢來美食，旅行社是雄獅和鳳凰，飯店是晶華和雲品，再放一家八方雲集當平價的對照。營收混著漲價和展店，只能當粗略的參考。結果是，四組的營收，沒有一組跟著股市一起動。股市在跌的月份，雄獅和晶華有一點訊號，可是樣本只有兩段小跌。最新的數字也還沒降溫：九、十月合起來，漢來美食年增兩成多，王品一成多。那直覺全錯了嗎？也不是。有一群人的帳，不是這樣算的。",
+  "lint": {
+   "chars": 218,
+   "precise_numbers": [],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 23.2,
+   "max_sentence_len": 78,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說到訂位，一位難求其實沒有公開數據。\n這份報告只好拿八家公司的月營收當替身。\n像是高檔的王品瓦城，旅行社找了雄獅，\n飯店有晶華，還找八方雲集當對照喔。\n不過營收混著展店，只能當粗略參考啦。\n結果放在一起比，\n這四組營收完全沒跟著股市動。<short pause>\n你猜下跌的時候有差嗎？\n股市跌的月份，\n晶華營收少了一點零六個百分點，\n雄獅也掉了一點，可是樣本只有兩次小跌。\n最新數字也沒降溫，漢來美食年增兩成多，\n王品也有成長一成多耶。\n那大家的直覺難道全錯了嗎？<short pause>\n其實也不是，有一群人的帳不是這樣算的。",
+   "lint": {
+    "chars": 226,
+    "precise_numbers": [
+     "一點零六",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 21.6,
+    "max_sentence_len": 40,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "聊到位子，到底有沒有一位難求啊？其實這沒有公開統計能查。<short pause>所以這份報告裡，找了八家公司的月營收來當替身。像是王品、晶華，還有雄獅跟鳳凰，另外放一家八方雲集當平價對照。不過營收混著展店跟漲價，只能當個粗略參考啦。那放在一起比的結果呢？居然完全連不起來。這四組的營收，沒有一組跟著股市一起動。只有大盤在跌的月份，雄獅跟晶華稍微少了一點點。可是那個樣本真的太少了。<short pause>你看最新九月十月合起來，漢來美食成長兩成多，王品也有一成多，根本還沒降溫嘛。我看到這邊也是滿頭問號。難道大家的直覺全錯了嗎？其實也不是喔。有一群人的帳，不是這樣算的。",
+   "lint": {
+    "chars": 261,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 37,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "對，那位子到底有沒有變難搶？\n其實一位難求很難直接統計啦。<short pause>\n這份報告裡找了八家公司的月營收來代替。\n像是王品、瓦城，還有雄獅跟晶華，\n甚至連八方雲集都放進來當對照。\n結果四組的營收，根本沒跟著台股走。\n只有股市下跌的月份，\n晶華的營收稍微少了一點零六個百分點。\n不過那種月份加起來也才兩次而已。\n你看最新的數字，完全沒有降溫耶。\n九月跟十月加起來，漢來美食年增兩成多。\n那大家的直覺全錯了嗎？\n其實也不是喔。\n有一群人的帳，真的不是這樣算的。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [
+     "一點零六",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 30,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "居然完全連不起來。",
+   "to": "沒有連起來。",
+   "reason": "照原文語氣"
+  },
+  {
+   "from": "只有大盤在跌的月份，雄獅跟晶華稍微少了一點點。可是那個樣本真的太少了。",
+   "to": "只有在股市跌的月份，雄獅跟晶華有一點訊號。可是樣本只有兩段小跌。",
+   "reason": "照原文"
+  },
+  {
+   "from": "漢來美食成長兩成多",
+   "to": "漢來美食年增兩成多",
+   "reason": "照原文用詞"
+  },
+  {
+   "from": "我看到這邊也是滿頭問號。",
+   "to": "",
+   "reason": "Ping 沒有個人反應"
+  },
+  {
+   "from": "像是王品、晶華，還有雄獅跟鳳凰，另外放一家八方雲集當平價對照。",
+   "to": "像是王品、晶華酒店，還有雄獅旅遊跟鳳凰旅遊，另外放一家八方雲集，當平價的對照組。",
+   "reason": "聽寫把雄獅聽成熊市、晶華聽成金華、平價聽成評價；補上行業讓聽眾分得出來"
+  },
+  {
+   "from": "雄獅跟晶華有一點訊號",
+   "to": "雄獅跟晶華的營收有一點訊號",
+   "reason": "同上"
+  }
+ ]
+}

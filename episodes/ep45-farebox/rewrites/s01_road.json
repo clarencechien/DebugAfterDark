@@ -1,0 +1,142 @@
+{
+ "segment": "s01_road",
+ "position": "第 2 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "fe10cf7c4c33fb925c36cc50f5ac64100fef1a19ee8d57b9be3cf31a4110bdf5",
+ "previous_context": "如果真的有東西會先變鬆，到底會是哪裡？這集最後來回答。",
+ "original": {
+  "text": "先說好，這集提到股市的地方，都不是投資建議。這份報告叫「核票」，整份做成一張紙本機票的樣子，資料更新到十一月二十號。直覺背後，其實有一個經濟學名詞撐著，叫財富效應：帳面上變有錢的人，會多花錢。有人量過。美國一份研究估計，股票財富每多一美元，一年多花大約三美分。台灣央行委託的研究也說，股票財富對消費有影響，但幅度不大。這份報告的說法是：方向有文獻支持，大小很可疑。今晚核三件事：第一，現在的牌價；第二，位子有沒有變好訂；第三，借錢買股票的人。",
+  "lint": {
+   "chars": 221,
+   "precise_numbers": [
+    "十一",
+    "二十"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 26.6,
+   "max_sentence_len": 38,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先說好喔，這集提到股市的地方，都不是投資建議啦。\n\n我們今晚看的這份報告叫核票，整份做成紙本機票的樣子，資料算到十一月二十號。\n\n大家常覺得股市大漲，出國跟吃大餐就會變難訂，對吧？這在經濟學上有個詞，叫做財富效應。<short pause> 講白了，就是帳面上變有錢，手頭就跟著變鬆。\n\n這真的有差嗎？美國的研究算過，股票每多賺一塊錢，一年大概只多花三美分。台灣央行委託的研究也說，對消費確實有影響，但幅度其實不大。所以這份報告說，方向沒錯，但影響有多大，很可疑。\n\n今晚我們就來對三件事。第一是現在的牌價，第二是位子有沒有變好訂，然後第三個，是借錢買股票的人。",
+   "lint": {
+    "chars": 259,
+    "precise_numbers": [
+     "十一",
+     "二十"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 22.5,
+    "max_sentence_len": 36,
+    "sentences_over_20": 7,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先說好，這集聊到的股市都不是投資建議喔。\n今天看的這份報告叫核票。\n整份做成紙本機票的樣子。\n資料更新到十一月二十號。<short pause>\n大家常聽到的直覺，背後其實有經濟學撐著。\n也就是所謂的財富效應啦。\n簡單說，帳面上變有錢，你就會多花錢。\n但這個效應真的有這麼神嗎？\n美國有份研究算過喔。\n股票每多賺一美元，一年大約只多花三美分。\n連台灣央行做的研究也說，影響其實不大。\n這份報告說，方向沒錯，但大小很可疑。\n所以今晚我們就來對答案。\n看那些很難搶的位子，是不是真的變好訂了。",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [
+     "十一",
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先說好，這集講到股市都不是投資建議喔。\n這份報告的名字叫核票。\n它整份做成一張紙本機票的樣子。\n資料算到十一月二十號。\n大家常說股市好消費就熱，背後有個名詞。\n經濟學上叫做財富效應。\n也就是帳面上變有錢，你就會多花錢啦。\n<short pause>\n但這個效應真的有這麼厲害嗎？\n美國研究估計，股票每多一美元，\n一年其實只多花大約三美分。\n台灣央行委託的研究也說，影響其實不大。\n所以這份報告說，方向沒錯，但大小很可疑。\n今天我們就來核對三件事。\n第一是現在的牌價，第二是位子好不好訂。\n最後是借錢買股票的人，消費真的有縮手嗎？",
+   "lint": {
+    "chars": 236,
+    "precise_numbers": [
+     "十一",
+     "二十"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 27,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "股票每多賺一美元，一年大約只多花三美分。連台灣央行做的研究也說，影響其實不大。",
+   "to": "股票財富每多一美元，一年大約多花三美分。台灣央行委託的研究也說，有影響，但幅度不大。",
+   "reason": "歸屬與內容：央行委託的研究，結論是有顯著影響、幅度不大"
+  },
+  {
+   "from": "所以今晚我們就來對答案。看那些很難搶的位子，是不是真的變好訂了。",
+   "to": "今晚核三件事。第一，現在的牌價。第二，位子有沒有變好訂。第三，借錢買股票的人。",
+   "reason": "第二段要早講路線圖（hooks.md 留存）"
+  }
+ ]
+}

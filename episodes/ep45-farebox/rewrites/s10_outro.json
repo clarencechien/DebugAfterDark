@@ -1,0 +1,152 @@
+{
+ "segment": "s10_outro",
+ "position": "第 11 段，共 11 段（最後一段）",
+ "avoid": [
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "15e74d68ae9ed28e32a6647d94e098d9010b18032d5e6fbb1f527e4bf5dfdb0f",
+ "previous_context": "接下來機票如果變便宜，你猜第一步要看什麼？對，先去查燃油附加費有沒有調降啦。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，指數從高點跌了快三成，卻還比一年前高三成；對抱滿一年、沒借錢的人來說，帳面還是多的。第二，到十月為止，牌價沒有跟著股市走；今年機票貴在稅金那一格，跟著油價，不是跟著股市。第三，先痛的是借錢買股票的人，可能先鬆的是熱門吃到飽和長程團的尾單；十二月的數字出來，就知道這次是不是。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 191,
+   "precise_numbers": [
+    "十二"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 26.3,
+   "max_sentence_len": 51,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，大盤從高點掉了快三成。\n你猜誰最沒事？\n其實是抱滿一年、而且沒借錢的人啦。\n算起來比起一年前，帳面還是賺的。\n然後，機票其實沒有跟著股市變便宜喔。\n重點來了，今年機票主要是貴在稅金。\n它只跟著油價走，跟股市完全無關。\n這真的跟我原本想的完全不一樣耶。\n最後，最快鬆動的會是什麼？\n很有可能是熱門吃到飽，還有長程團尾單。\n等十二月數字出來，答案就揭曉了。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 222,
+    "precise_numbers": [
+     "十二"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 13.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，指數雖然跌了二十七點七趴。\n但這只對沒借錢、抱滿一年的人算數喔。\n你應該也很難想像吧？\n然後呢，機票變貴其實不是因為股市。\n照主計總處說的，主要貴在油價和稅金啦。\n最後，借錢買股票的人會最先感到壓力。\n你猜哪裡會先鬆動？\n吃到飽的訂位，還有長程團的尾單動最快。<short pause>\n等十二月的數字出來，答案就清楚了。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [
+     "二十七點七",
+     "十二"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 14.1,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n聊了這麼多，今天到底要帶走什麼？\n其實主要就三件事啦。\n第一，大盤雖然跌了百分之二十七點七，\n但只要沒借錢抱滿一年，帳面還是賺的。\n再來，機票變貴真的跟股市有關係嗎？\n其實沒有，主要是貴在油價跟稅金喔。\n重點來了，借錢買股票的人壓力最大，\n熱門吃到飽跟長程團尾單，可能會最先鬆動。<short pause>\n等十二月數字公布，就知道是不是醬了。\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 204,
+    "precise_numbers": [
+     "百分之二十七點七",
+     "十二"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 36,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "第一，大盤從高點掉了快三成。你猜誰最沒事？其實是抱滿一年、而且沒借錢的人啦。算起來比起一年前，帳面還是賺的。然後，機票其實沒有跟著股市變便宜喔。重點來了，今年機票主要是貴在稅金。它只跟著油價走，跟股市完全無關。這真的跟我原本想的完全不一樣耶。最後，最快鬆動的會是什麼？很有可能是熱門吃到飽，還有長程團尾單。等十二月數字出來，答案就揭曉了。",
+   "to": "第一，大盤從高點掉了快三成，卻還比一年前高三成。抱滿一年、沒借錢的人，帳面還是多的。第二，到十月為止，牌價沒有跟著股市走。今年機票貴在稅金那一格，主要跟著油價，不是跟著股市。第三，先痛的是借錢買股票的人。可能先鬆的，是熱門吃到飽和長程團的尾單。等十二月的數字出來，就知道這次是不是。",
+   "reason": "breakpoint 三點各一句、照前面講過的；刪個人反應與「完全無關」的誇大"
+  },
+  {
+   "from": "抱滿一年、沒借錢的人",
+   "to": "持有滿一年、沒借錢的人",
+   "reason": "聽寫（兩套三次）把「抱滿」聽成「爆滿」「爆買」"
+  },
+  {
+   "from": "今年機票貴在稅金那一格",
+   "to": "今年的機票，貴在稅金那一格",
+   "reason": "聽寫把「機票貴」聽成「季票櫃」，加停頓"
+  },
+  {
+   "from": "是熱門吃到飽和長程團的尾單",
+   "to": "是熱門吃到飽，和長途旅行團最後剩下的位子",
+   "reason": "聽寫把「長程團」聽成「長城團」、「尾單」聽成「尾蛋」"
+  }
+ ]
+}

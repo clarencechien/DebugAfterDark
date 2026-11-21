@@ -1,0 +1,121 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 11 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "c77ca72467010d2bc7f909434ea9276304c6266362afe84e538e61e18e37d998",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "加權指數從十月六號的高點，六個多星期跌掉快三成。很多人的直覺是：股市都跌成這樣了，機票、飯店、吃到飽，應該會跟著便宜吧？位子也會比較好訂吧？這份報告把這個直覺，寫成四句可以被推翻的話，拿主計總處一九九九年以來的物價，和八家公司的月營收，核了一遍。到十月為止，資料沒有站在直覺這一邊。為什麼不站？如果真的有東西會先鬆，會是哪裡？這集最後回答。",
+  "lint": {
+   "chars": 170,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 20.2,
+   "max_sentence_len": 52,
+   "sentences_over_20": 3,
+   "particles_per_100": 1.2,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 4,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "台股六個多星期跌掉快三成。\n很多人直覺會想，機票飯店該變便宜了吧？\n那些很難訂的吃到飽，位子會變好訂嗎？\n<short pause>\n其實這份報告把大家的直覺，寫成四個假設。\n然後拿主計總處一九九九年以來的物價，\n配上八家公司的月營收，整個核對了一遍。\n到十月為止，資料完全沒站在直覺這邊喔。\n為什麼不站？\n如果真的有東西會先變鬆，到底會是哪裡？\n這集最後來回答。",
+   "lint": {
+    "chars": 159,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 16.7,
+    "max_sentence_len": 36,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "大盤在六個多星期裡，跌掉快三成。<short pause>你身邊是不是也有人覺得，股市跌成這樣，機票、飯店跟吃到飽，應該會變便宜吧？熱門的位子，是不是也該變好訂了？其實這份報告，把這個直覺寫成四個可以推翻的假設。然後拿主計總處一九九九年以來的物價，跟八家公司的月營收核了一遍。重點是，到十月為止，資料完全沒有站在直覺這一邊喔。<short pause>為什麼不站？如果真的有東西會先鬆動，會是哪裡？這集最後來回答。",
+   "lint": {
+    "chars": 181,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 19.1,
+    "max_sentence_len": 36,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "台股六個多星期跌掉快三成。<short pause>\n你應該也想過吧？\n股市跌成醬，\n機票和吃到飽總該變便宜了吧？\n飯店位子也該變好訂了吧？\n其實這份報告，\n把大家的直覺寫成四個假設。\n然後拿主計總處二十幾年來的物價，\n和八家公司的月營收核了一遍。\n結果到十月為止，\n資料沒有站在直覺這一邊。\n為什麼不站？\n如果真的有東西會先鬆，\n到底會是哪裡？\n這集最後來回答。",
+   "lint": {
+    "chars": 155,
+    "precise_numbers": [
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 14.5,
+    "max_sentence_len": 29,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "資料完全沒站在直覺這邊喔",
+   "to": "資料沒有站在直覺這邊喔",
+   "reason": "誇大：原文是「沒有站在直覺這一邊」"
+  },
+  {
+   "from": "寫成四個假設",
+   "to": "寫成四個可以被推翻的假設",
+   "reason": "保留原文的「可以被推翻」"
+  }
+ ]
+}

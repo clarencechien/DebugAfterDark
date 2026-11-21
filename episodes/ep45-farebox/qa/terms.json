@@ -1,0 +1,38 @@
+{
+ "s10_outro.take0": [
+  {
+   "term": "Ping",
+   "class": "A",
+   "heard_as": "Ping"
+  },
+  {
+   "term": "pong",
+   "class": "A",
+   "heard_as": "pong"
+  }
+ ],
+ "s10_outro.take1": [
+  {
+   "term": "Ping",
+   "class": "A",
+   "heard_as": "Ping"
+  },
+  {
+   "term": "pong",
+   "class": "A",
+   "heard_as": "pong"
+  }
+ ],
+ "s10_outro.take2": [
+  {
+   "term": "Ping",
+   "class": "A",
+   "heard_as": "Ping"
+  },
+  {
+   "term": "pong",
+   "class": "A",
+   "heard_as": "pong"
+  }
+ ]
+}

@@ -1,0 +1,142 @@
+{
+ "segment": "s03_plus30",
+ "position": "第 4 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0adfaf265ad7157de9cfb6d7754a0f71ab54a60de1cad917bd29dc82c01952b1",
+ "previous_context": "所以十月的牌價，根本還看不到下跌啦。可是還有另一個數字，比較少人注意喔。",
+ "original": {
+  "text": "這是這集最反直覺的一段：指數從高點掉了快三成，卻還比一年前高三成。去年十一月底，加權指數大約兩萬七千六；十一月二十號收盤，是三萬六千多。財富效應如果存在，看的是你比以前有錢多少。跟去年這個時候比，有在持股的人，帳面上還是多了一大截。這份報告推算，指數就算一路停在三萬六千點，跟一年前比的漲幅，也要到二〇二七年四月才會變成負的。這種跌很深、卻還比去年高的情況，一九九九年以來很少見。不過這個算法，只適用於抱滿一年、沒有借錢的人。另外那群人，最後再講。",
+  "lint": {
+   "chars": 224,
+   "precise_numbers": [
+    "十一",
+    "兩萬七千六",
+    "十一",
+    "二十",
+    "三萬六千",
+    "三萬六千"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 27.0,
+   "max_sentence_len": 46,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這聽起來其實超反直覺的喔。<short pause>\n加權指數從高點跌了百分之二十七點七，\n結果跟一年前比，居然還高出三成。\n我看到這個對比也愣了一下。\n你可能會想，跌這麼慘大家哪有錢？\n關鍵在於，帳面是跟去年比的嘛。\n只要你抱滿一年、沒有借錢，\n現在手上的錢，其實還是比去年多一大截。\n這份報告推算，就算大盤停在三萬六千點，\n帳面數字也要到二〇二七年四月才會轉負。\n跌這麼深卻比去年高，歷史上真的很罕見。<short pause>\n但是，那些有借錢的人呢？\n這個我們等一下再聊啦。",
+   "lint": {
+    "chars": 203,
+    "precise_numbers": [
+     "百分之二十七點七",
+     "三萬六千"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.3,
+    "max_sentence_len": 37,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "這個數字其實超反直覺的。指數從最高點跌掉了快兩成八。但你知道嗎？它居然還比一年前高出了三成喔。十一月二十號收盤，在三萬六千零三十三點。大家常在講財富效應嘛。關鍵其實是你比以前有錢多少。只要股票抱滿一年，而且完全沒有借錢，你的帳面其實還是多了一大截。<short pause>這份報告推算，就算指數一直停在三萬六千點，也要到後年四月才會轉成負的。這種跌很深卻比去年高的狀況，二十幾年來其實超級少見。重點來了，那借錢買股票的人呢？這群人完全是另一回事，我們等一下再講。",
+   "lint": {
+    "chars": 219,
+    "precise_numbers": [
+     "十一",
+     "二十",
+     "三萬六千零三十三",
+     "三萬六千",
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 34,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "這其實超級反直覺。<short pause>\n加權指數雖然從高點掉了快三成，\n但跟一年前比，居然還高出三成耶。\n你可能會想，跌成這樣大家不是在賠錢嗎？\n其實如果看財富效應，\n關鍵是看你比以前有錢多少嘛。\n只要你抱滿一年，而且完全沒有借錢，\n帳面上跟去年這時候比，還是多了一大截。\n這份報告推算，\n指數就算一直停在三萬六千點，\n也要等到二〇二七年四月，\n年增率才會轉成負的。<short pause>\n跌這麼深卻還比去年高，歷史上非常少見。\n不過，另外那群有借錢的人呢？\n我們留到後面再來聊。",
+   "lint": {
+    "chars": 205,
+    "precise_numbers": [
+     "三萬六千"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 21.8,
+    "max_sentence_len": 42,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "跌這麼深卻還比去年高，歷史上非常少見。",
+   "to": "跌這麼深卻還比去年高，一九九九年以來很少見。",
+   "reason": "照原文的範圍"
+  },
+  {
+   "from": "只要你抱滿一年，而且完全沒有借錢，帳面上跟去年這時候比，還是多了一大截。",
+   "to": "只要你抱滿一年，而且沒有借錢。跟去年這時候比，帳面上還是多了一大截。",
+   "reason": "句子太長"
+  },
+  {
+   "from": "只要你抱滿一年",
+   "to": "只要你持有滿一年",
+   "reason": "聽寫（兩套三次）把「抱滿」聽成「爆滿」「爆買」"
+  }
+ ]
+}
