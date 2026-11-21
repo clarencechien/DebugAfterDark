@@ -1,0 +1,122 @@
+{
+ "segment": "s09_leak",
+ "position": "第 10 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "真的假的"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "bf612f966f6d7bf6494ebddc62632ffedd3c909bd4ad195d055574593627a4d9",
+ "previous_context": "這負擔光看都覺得壓力很大耶。那你可能會問，平均薪水明明沒大漲，人事成本怎麼會變這麼重？",
+ "original": {
+  "text": "因為那是兩個不同的數字。平均薪水是員工領到的錢，兼職和移工變多，平均就被拉低；店裡的人事成本是老闆付出的全部，還包括勞健保、加班、訓練，和有人離職之後重新找人。還有缺工。餐飲的職缺率是各行業最高，可是找人的時間，其實比平均還短。每個月進來的人很多，走的人更多。勞動部的判讀是，留不住，可能才是主因。這份報告說，餐飲缺的比較像一個在漏的桶子：補得進來，留不住。",
+  "lint": {
+   "chars": 179,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 24.6,
+   "max_sentence_len": 67,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實這是兩個完全不同的數字啦。<short pause>\n員工平均薪水沒漲，是因為兼職變多了。\n但老闆付的，是全部加起來的成本喔。\n除了加班費，還有勞健保跟訓練費用。\n然後餐飲業的職缺率，是各行業最高的。\n大概是百分之四點五。\n可是奇怪的是，找人的時間反而比平均短。\n為什麼會這樣？\n因為走的人比進來的還多啊。\n這份報告裡說，這就像一個漏水的桶子。\n水補得進來，可是根本留不住。<short pause>\n看到這個形容，真的讓人很有共鳴耶。\n那除了人事，還有什麼在吃掉毛利呢？",
+   "lint": {
+    "chars": 200,
+    "precise_numbers": [
+     "百分之四點五"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.4,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實這兩個數字完全不一樣。員工領到的平均薪水沒漲，是因為兼職和移工變多，把平均數字拉低了。可是老闆付出的全部成本，還算進了勞健保跟加班費，還有新人訓練跟找人的開銷。<short pause>更妙的是缺工這件事。你可能會以為餐飲業很難找人對吧？但他們找人的時間反而比較短。六月底的職缺率高達百分之四點五，是所有行業裡最高的。結果進來的人多，走的人更多。勞動部的判讀是，留不住才是主因。這份報告的比喻很貼切，就像一個會漏水的桶子，水一直補得進來，卻完全留不住啊。",
+   "lint": {
+    "chars": 216,
+    "precise_numbers": [
+     "百分之四點五"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 20.6,
+    "max_sentence_len": 37,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實這兩個數字完全不一樣。員工領的薪水算的是平均，兼職和移工變多，平均就被拉低了。可是老闆付的成本，算的是全部。除了加班，還要加上勞健保跟訓練費。<short pause>而且餐飲業的職缺率，是各行業最高耶。但奇怪的是，他們招人其實比平均還快。那到底為什麼還一直缺？因為走的人比進來的人更多。這份報告就說，這就像一個在漏水的水桶。<sigh>水一直倒進去，卻根本留不住。人一直換，重新找人的成本就一直往上疊。",
+   "lint": {
+    "chars": 185,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 27,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "其實這兩個數字完全不一樣。員工領的薪水算的是平均，兼職和移工變多，平均就被拉低了。可是老闆付的成本，算的是全部。除了加班，還要加上勞健保跟訓練費。<short pause>而且餐飲業的職缺率，是各行業最高耶。但奇怪的是，他們招人其實比平均還快。那到底為什麼還一直缺？因為走的人比進來的人更多。這份報告就說，這就像一個在漏水的水桶。<sigh>水一直倒進去，卻根本留不住。人一直換，重新找人的成本就一直往上疊。",
+   "to": "因為這兩個數字，算的是不一樣的東西。員工領的薪水是平均，兼職和移工變多，平均就被拉低了。可是老闆付的人事成本，是全部：薪水和加班，勞健保和勞退，還有訓練，跟有人離職之後重新找人。<short pause>再來是缺工。餐飲業的職缺率，是各行業最高。可是奇怪的是，他們找人的時間，其實比平均還短。那為什麼還一直缺？因為每個月走的人，比進來的人還多。勞動部的判讀是，留不住，可能才是主因。這份報告說，這就像一個在漏水的水桶：補得進來，留不住。",
+   "reason": "補回勞動部的判讀（留不住可能才是主因，是判讀不是定論）；人事成本補回勞退與流動重置；結尾照原文「補得進來，留不住」"
+  }
+ ]
+}

@@ -21,6 +21,8 @@
 | EP37 | [`nameless-made-famous`](https://imitator.ai-apps.work/r/nameless-made-famous) | ✅ | ✅ | ✅ 11/20 | ⬜（YouTube 用 RSS 版） | ✅ 11/20 `K6RKggrOqVo` | 11/27 看 Short 成效 |
 | EP38 | [`who-is-using`](https://imitator.ai-apps.work/r/who-is-using) | ✅ | ✅ 11/20 | ⏰ 11/21 08:00 排程 | ⬜ | ⬜ | 分層讀法 1/2；章節時間已用 `tools/chapters.py` 修正；`youtube` 標題與縮圖字已寫 |
 | EP39 | [`layers-of-llm`](https://imitator.ai-apps.work/r/layers-of-llm) | ✅ | ✅ 11/20 | ⏰ 11/21 08:01 排程 | ⬜ | ⬜ | 分層讀法 2/2（上：EP38）；同上 |
+| EP40 | [`house-rules`](https://imitator.ai-apps.work/r/house-rules) | ✅ | ✅ 11/20 | ⏰ 11/22 08:00 排程 | ⬜ | ⬜ | 韓劇的中間層番外（上：EP37）；插隊在不讀之後之前 |
+| EP41 | [`gdp-service-ledger`](https://imitator.ai-apps.work/r/gdp-service-ledger) | ✅ | ✅ 11/20 | ⏰ 11/22 08:01 排程 | ⬜ | ⬜ | 原推薦 #5，插隊；用台股開場，目標聽眾是沒吃到 AI 紅利的人；報告 v0.2 資料到 11/20 |
 
 「進 feed」是 `episode.json` 設成 `status: final` 並填 `published`，merge 到 main 就會發佈（先給 Clarence 看再 commit）。EP36、EP37 的影片版和 Short 做完就搬到「已做」。
 
@@ -47,7 +49,7 @@
 
 ## 推薦的下一批
 
-依建議順序（11-20：韓劇上下篇已做成 EP36、EP37，分層讀法的兩篇已做成 EP38、EP39，不讀之後三篇排第一）。預排集數：#1–3 → EP40–EP42，#4 → EP43，之後開工時再定。標題是方向，不是定稿。製作時間是從開工到試聽版的估計，算法見下一節。
+依建議順序（11-20：韓劇上下篇已做成 EP36、EP37，分層讀法的兩篇已做成 EP38、EP39，不讀之後三篇排第一）。11-20 Clarence 讓 `house-rules`（EP40）和原推薦 #5 `gdp-service-ledger`（EP41，已移出這張表）插隊，預排集數順延：#1–3 → EP42–EP44，#4 → EP45，之後開工時再定。標題是方向，不是定稿。製作時間是從開工到試聽版的估計，算法見下一節。
 
 | # | 報告 | 標題方向 | 鉤子 | 製作時間（估） | 估法 |
 |---|---|---|---|---|---|
@@ -55,12 +57,11 @@
 | 2 | [審查壓到最底，她改看證據 — 不讀之後 下篇](https://imitator.ai-apps.work/r/no-read-2)（11-17） | 不看程式碼，那要看什麼？ | 接上篇；Lauren Tan 看 agent 交出來的影片和截圖。可以接回 EP09 寫過的她 9 月那場 | （同上，跟上篇一起做） | 英文講題名稱多，鉤子要用中文講；11-18 有更新 |
 | 3 | [檢查交給機器，他們校正量具 — 不讀之後 第三篇](https://imitator.ai-apps.work/r/no-read-3)（11-18） | 檢查交給機器，那檢查錯了誰知道？ | 接上下篇：人退到檢查那一層之後，檢查本身要像量具一樣定期校正；拿 Claude Code 團隊 10、11 月兩篇做法來對，讀數還缺 | 三篇一起約 75–100 分鐘 | 約四千一百字、近三百個英文詞；兩篇來源是廠商寫自己的產品，節目要說出來 |
 | 4 | [順便學會的，現在要另外練 — 知行筆記 · 實作篇](https://imitator.ai-apps.work/r/practice-on-purpose)（11-17） | 《超速學習》真的超速嗎？有了 AI，基本功還要不要練 | 流行說法對上資料：書名把「強度」譯成了「速度」；讀程式和除錯這類基本功要另外排時間練。接回 EP30、EP31 | 40–50 分鐘 | 約五千一百字、兩百多個英文詞（書名、人名）；提到的〈人人都是建築師〉在可做清單，可以順便帶一句 |
-| 5 | [平均數幫不了單店：11% 成長底下的服務業對帳](https://imitator.ai-apps.work/r/gdp-service-ledger)（10-02） | GDP 破一成一，巷口的店為什麼說很慘？ | 流行說法對上資料：成長在廠房和港口，成本和缺工在店面 | 30–40 分鐘 | 約三千四百字、幾乎沒有英文，數字中等；資料到 9 月，要確認還新 |
-| 6 | [Meta 詐騙廣告醜聞完整解析 ／ 聖塔克拉拉郡 vs Meta 訴訟 2026.5.11](https://imitator.ai-apps.work/r/meta-lawsuit)（05-20） | 你每天滑到的詐騙廣告，一年替 Meta 賺七十億美元 | 聽眾自己的處境＋具體數字；訴訟還沒開庭，講法要中性 | 25–35 分鐘 | 只有約一千字，撐不滿十分鐘；可以做成短集，或先查訴訟進度補一段 |
-| 7 | [同一句話，換成簡體，答案就翻面](https://imitator.ai-apps.work/r/jevlike-tw-script)（10-12） | 同一句台灣是一個國家，繁體說對，簡體說錯 | 反差＋你已經在用了；八十四題裡三十五題翻面。題材敏感，只講測到的事 | 45–60 分鐘 | 約五千三百字、近八百個數字，改寫最容易出錯；敏感題材要逐句核對措辭 |
-| 8 | [國家給保險公司補錢，等於要爆炸嗎？](https://imitator.ai-apps.work/r/japan-insurer-bailout-report-1)（09-08） | 國家給保險公司補錢，是要爆炸了嗎？ | 時事問句，答案是「不是，墊子變薄了先加厚」 | 25–35 分鐘 | 約兩千九百字、白話稿、幾乎沒有英文，最好做；要先確認注資新聞還新 |
-| 9 | [一個指標個案，和一條隔離線 — Qwen3.8 沙箱事件查核報告](https://imitator.ai-apps.work/r/qwen-index-case)（10-27） | AI 在沙箱裡，做了一件它說不會做的事 | 真實個案＋懸念；通報者是競爭對手，網路摘要少講了幾件事 | 35–45 分鐘 | 約四千四百字、四百多個英文詞（模型名、公司名） |
-| 10 | [熄燈的窗 · 台灣少子化與房價](https://imitator.ai-apps.work/r/birthrate-vs-housing)（08-17） | 生的人變少了，房價為什麼還在漲？ | 流行說法對上資料 | 先評估 | 原文是用程式畫的八頁投影片，網頁文字抓不出內容（只有幾十個字），要先把每頁的數字取出來才知道夠不夠一集 |
+| 5 | [Meta 詐騙廣告醜聞完整解析 ／ 聖塔克拉拉郡 vs Meta 訴訟 2026.5.11](https://imitator.ai-apps.work/r/meta-lawsuit)（05-20） | 你每天滑到的詐騙廣告，一年替 Meta 賺七十億美元 | 聽眾自己的處境＋具體數字；訴訟還沒開庭，講法要中性 | 25–35 分鐘 | 只有約一千字，撐不滿十分鐘；可以做成短集，或先查訴訟進度補一段 |
+| 6 | [同一句話，換成簡體，答案就翻面](https://imitator.ai-apps.work/r/jevlike-tw-script)（10-12） | 同一句台灣是一個國家，繁體說對，簡體說錯 | 反差＋你已經在用了；八十四題裡三十五題翻面。題材敏感，只講測到的事 | 45–60 分鐘 | 約五千三百字、近八百個數字，改寫最容易出錯；敏感題材要逐句核對措辭 |
+| 7 | [國家給保險公司補錢，等於要爆炸嗎？](https://imitator.ai-apps.work/r/japan-insurer-bailout-report-1)（09-08） | 國家給保險公司補錢，是要爆炸了嗎？ | 時事問句，答案是「不是，墊子變薄了先加厚」 | 25–35 分鐘 | 約兩千九百字、白話稿、幾乎沒有英文，最好做；要先確認注資新聞還新 |
+| 8 | [一個指標個案，和一條隔離線 — Qwen3.8 沙箱事件查核報告](https://imitator.ai-apps.work/r/qwen-index-case)（10-27） | AI 在沙箱裡，做了一件它說不會做的事 | 真實個案＋懸念；通報者是競爭對手，網路摘要少講了幾件事 | 35–45 分鐘 | 約四千四百字、四百多個英文詞（模型名、公司名） |
+| 9 | [熄燈的窗 · 台灣少子化與房價](https://imitator.ai-apps.work/r/birthrate-vs-housing)（08-17） | 生的人變少了，房價為什麼還在漲？ | 流行說法對上資料 | 先評估 | 原文是用程式畫的八頁投影片，網頁文字抓不出內容（只有幾十個字），要先把每頁的數字取出來才知道夠不夠一集 |
 
 ## 製作時間怎麼估
 
@@ -95,7 +96,7 @@
 |---|---|---|
 | 韓劇的中間層 | `credit-line-changed`、`nameless-made-famous` | 已做：EP36、EP37 |
 | 分散筆記 | `winners-win-themselves`、`not-extra-money` | 已做：EP34、EP35 |
-| 不讀之後 | `no-read-1`、`no-read-2`、`no-read-3` | 預排 EP40–EP42，三集：Uncle Bob 改讀規格、Lauren Tan 改看證據、檢查本身要校正（Claude Code 團隊的做法）；取代前版 `uncle-bob` |
+| 不讀之後 | `no-read-1`、`no-read-2`、`no-read-3` | 預排 EP42–EP44，三集：Uncle Bob 改讀規格、Lauren Tan 改看證據、檢查本身要校正（Claude Code 團隊的做法）；取代前版 `uncle-bob` |
 | 知行筆記 | `dankoe-one-day`、`knowing-is-dear`、`practice-on-purpose` | 前兩篇已做（EP30、EP31）；實作篇可以當第三集，開頭用「上一集」接回 EP31 |
 | Slotbound 案卷 | `slotbound-case`、`slotbound-case-2` | 已做：EP32、EP33 |
 | 分層讀法 | `who-is-using`、`layers-of-llm`、`no-exchange-rate` | 已做：EP38、EP39（番外的時事當開場接上篇，下篇的三本帳併進第二集） |

@@ -1,0 +1,138 @@
+{
+ "segment": "s07_store",
+ "position": "第 8 段，共 12 段",
+ "avoid": [
+  "重點來了",
+  "真的假的"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b171ce02aaa0569fa2d972939f2e1aa3e55761e14ac72ff5c819656fcbbe5c7b",
+ "previous_context": "它被拿去買車、付手續費、還有買機票。那留在店裡的營收，到底還夠不夠付帳？",
+ "original": {
+  "text": "第三本，店帳。今年前九個月，餐飲業營業額年增大約百分之四，可是外食價格也漲了三趴，扣掉剩一個百分點上下。而且這是整個產業的總額，包含新開的店。經濟部自己也說，業者展店是成長的原因之一。扣掉新門市，原本那些店的平均只會更低；台灣沒有官方的同店統計，這一步是這份報告的推論。成本這邊，業界常說食材、人事、租金三塊加起來，要壓在營收的七成到七成五以內，超過，淨利就只剩個位數。這是業界的工作區間，不是普查。三塊裡，最近跳最多的是人。",
+  "lint": {
+   "chars": 213,
+   "precise_numbers": [
+    "百分之四",
+    "百"
+   ],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 25.6,
+   "max_sentence_len": 49,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "我們來看第三本，也就是店裡的帳。前九個月餐飲業營收年增百分之四點一。可是外食價格也漲了大約三趴耶。你猜扣掉漲價還剩多少？其實只剩一個百分點上下。<short pause>而且這個總額，還包含新開的店喔。如果把新門市拿掉，老店的數字只會更低。這份報告說這是推論。因為台灣根本沒有官方的同店統計。營收沒怎麼長，那成本呢？業界通常把食材、人事跟租金加在一起。體質好的店，加總要壓在營收的七成五以內。超過的話，淨利只剩個位數，甚至沒賺。<sigh>那這三樣裡面，最近哪一項跳得最高？答案是人。",
+   "lint": {
+    "chars": 223,
+    "precise_numbers": [
+     "百分之四點一",
+     "百"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 13.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "這就要看第三本帳，也就是店裡的帳。\n前九個月餐飲業營業額成長百分之四點一。\n看起來好像有賺齁？\n其實外食價格也漲了大約百分之三。\n扣掉漲價，成長只剩一個百分點上下。\n而且這還把新開的店都算進去了喔。<short pause>\n經濟部自己都說，展店是成長原因之一。\n那原本就開著的舊店呢？\n扣完之後平均只會更低。\n台灣沒有官方的舊店統計。\n但這份報告推算的方向不會錯。\n業界常把食材、人事跟租金加在一起看。\n體質好的店，這三項要壓在營收的七成多。\n只要超過，淨利往往只剩個位數。\n這不是普查，是業界天天在算的工作區間啦。\n這三塊裡面，最近跳最多的其實是人事。",
+   "lint": {
+    "chars": 250,
+    "precise_numbers": [
+     "百分之四點一",
+     "百分之三",
+     "百"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "這就要來看店裡的第三本帳啦。<short pause>\n前九個月餐飲業營業額年增百分之四點一。\n看起來好像有成長對不對？\n可是外食價格也漲了三趴。\n兩邊一扣，其實只剩一個百分點上下。\n更何況，這數字還算進了新開的店喔。\n如果扣掉新店，原本那些店平均只會更低。\n這份報告提到，這一步是推論。\n因為台灣沒有官方的同店統計。\n然後店裡的成本更硬。\n食材、人事加租金，業界通常要壓在七成五。\n超過的話，淨利就只剩個位數了。<sigh>\n光看數字就替開店的人捏一把冷汗。\n你猜這三項成本裡面，哪一個最近跳最多？\n答案是人事。",
+   "lint": {
+    "chars": 224,
+    "precise_numbers": [
+     "百分之四點一",
+     "百"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 13.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "我們來看第三本，也就是店裡的帳。前九個月餐飲業營收年增百分之四點一。可是外食價格也漲了大約三趴耶。你猜扣掉漲價還剩多少？其實只剩一個百分點上下。<short pause>而且這個總額，還包含新開的店喔。如果把新門市拿掉，老店的數字只會更低。這份報告說這是推論。因為台灣根本沒有官方的同店統計。營收沒怎麼長，那成本呢？業界通常把食材、人事跟租金加在一起。體質好的店，加總要壓在營收的七成五以內。超過的話，淨利只剩個位數，甚至沒賺。<sigh>那這三樣裡面，最近哪一項跳得最高？答案是人。",
+   "to": "我們來看第三本，店裡的帳。前九個月，餐飲業營業額年增百分之四點一。可是外食價格也漲了大約三趴耶。扣掉漲價，只剩一個百分點上下。<short pause>而且這個總額，還包含新開的店喔。把新門市拿掉，原本那些店的數字只會更低。這一步是這份報告的推論，因為台灣沒有官方的同店統計。營收沒怎麼長，那成本呢？業界常把食材、人事跟租金加在一起看，體質好的店，三樣加總壓在營收的七成到七成五以內。超過的話，淨利只剩個位數，甚至沒賺。這是業界的工作區間，不是普查。那這三樣裡面，最近跳最多的是哪一項？答案是人。",
+   "reason": "補回七成到七成五的區間與「業界工作區間，不是普查」的但書；拿掉「你猜」（全集額度）；營收改成營業額"
+  }
+ ]
+}

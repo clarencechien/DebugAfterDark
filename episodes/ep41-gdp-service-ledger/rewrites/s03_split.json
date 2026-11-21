@@ -1,0 +1,143 @@
+{
+ "segment": "s03_split",
+ "position": "第 4 段，共 12 段",
+ "avoid": [
+  "真的假的"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "9b6221b157586c2c51d75edffac47829927a2b3947c0165f455b06f7b66c16c8",
+ "previous_context": "錯在大家把它當成一般店家的營收啦。那這一成，到底長在誰身上？",
+ "original": {
+  "text": "用同一把尺拆開來看。今年第一季，整體成長十四點五五個百分點，製造業一個行業，就貢獻了九點二五個。住宿和餐飲業呢？扣掉物價，只長了不到百分之一，在主要行業裡墊底。第二季，服務業整體追上來了，可是拉動服務業的，是金融保險業，扣掉物價還成長了將近三成，靠的是利息、手續費和股市成交；另一根是批發，主要是 AI 和高效能運算供應鏈的出貨。所以「服務業無感」這句話，要說清楚是哪一種服務業。長得最快的產業有了，那人在哪裡？",
+  "lint": {
+   "chars": 204,
+   "precise_numbers": [
+    "十四點五五",
+    "百",
+    "九點二五",
+    "百分之一"
+   ],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 28.1,
+   "max_sentence_len": 82,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "主計總處有把各行業拆開來看。今年第一季的 G D P 成長，光是製造業，就貢獻了九點二五個百分點。<short pause>那住宿和餐飲業呢？扣掉物價後，成長還不到百分之一，在主要行業裡面直接墊底。這數字看下來真的滿現實的齁。重點來了，第二季服務業雖然追上來了，但拉動它的，其實是金融保險跟批發業。金融業靠手續費跟股市成交，扣掉物價，實質成長了將近三成；批發也是靠 AI 供應鏈在出貨。所以說服務業沒分到好處，真的要講清楚是哪一種服務業嘛。長得最快的產業有了，那人在哪裡？",
+   "lint": {
+    "chars": 217,
+    "precise_numbers": [
+     "九點二五",
+     "百",
+     "百分之一"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 23.1,
+    "max_sentence_len": 41,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實主計總處有把行業拆開算過喔。今年第一季整體成長了百分之十四點五五。光是製造業一個，就貢獻了超過大半。那你猜，照顧大家吃喝的餐飲和飯店呢？扣掉物價以後，成長連百分之一都不到。直接在各大行業裡面墊底。<sigh> 重點來了，第二季服務業雖然追上來了，但真正大賺的，其實是金融保險跟批發業。靠的是股市手續費，還有 AI 供應鏈出貨。所以大家說 G D P 很高但服務業很無感，真的要說清楚是哪一種服務業啦。長得最快的產業有了，那人在哪裡？",
+   "lint": {
+    "chars": 205,
+    "precise_numbers": [
+     "百分之十四點五五",
+     "百分之一"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 19.5,
+    "max_sentence_len": 36,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "官方其實有把行業拆開來看。像今年第一季整體成長了百分之十四點五五。光是製造業一個行業，就包辦了一大半。那住宿跟餐飲業呢？<short pause>扣掉物價以後，成長根本不到百分之一，直接在所有主要行業裡墊底。這數字看下來真的很殘酷。<sigh>到了第二季，服務業好像追上來了齁？但拉動成長的，其實是金融保險跟批發業。金融業扣掉物價，成長了將近三成，靠的是股市成交手續費跟利息。批發業也是靠 AI 供應鏈出貨在撐。所以說服務業沒分到好處，真的要分清楚是哪一種服務業啦。長得最快的產業有了，那人在哪裡？",
+   "lint": {
+    "chars": 228,
+    "precise_numbers": [
+     "百分之十四點五五",
+     "百分之一"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 18.0,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "其實主計總處有把行業拆開算過喔。今年第一季整體成長了百分之十四點五五。光是製造業一個，就貢獻了超過大半。那你猜，照顧大家吃喝的餐飲和飯店呢？扣掉物價以後，成長連百分之一都不到。直接在各大行業裡面墊底。<sigh> 重點來了，第二季服務業雖然追上來了，但真正大賺的，其實是金融保險跟批發業。靠的是股市手續費，還有 AI 供應鏈出貨。所以大家說 G D P 很高但服務業很無感，真的要說清楚是哪一種服務業啦。長得最快的產業有了，那人在哪裡？",
+   "to": "主計總處有用同一把尺，把行業拆開算過。今年第一季，整體成長了百分之十四點五五。光是製造業一個行業，就貢獻了超過六成。那照顧大家吃喝的餐飲和住宿呢？扣掉物價以後，成長連百分之一都不到。在主要行業裡墊底。<short pause>第二季，服務業整體追上來了。可是拉動服務業的，是金融保險跟批發。金融保險靠的是利息、手續費跟股市成交。批發靠的是 AI 供應鏈的出貨。所以大家說 G D P 很高、服務業很無感。真的要說清楚，是哪一種服務業。長得最快的產業有了，那人在哪裡？",
+   "reason": "「貢獻了超過大半」改成超過六成（九點二五除以十四點五五）；「真正大賺的」改成拉動服務業的；補回金融保險靠利息、手續費、股市成交；拿掉「你猜」「重點來了」與音效；長句拆短（寫稿規則第 18 條）"
+  }
+ ]
+}
