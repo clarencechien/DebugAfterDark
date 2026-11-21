@@ -1,0 +1,135 @@
+{
+ "segment": "s09_answer",
+ "position": "第 10 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "3a9fb0658a1eaf321a6d66e3efdf1908a76106b5bb92d401cee49f3d3582f04f",
+ "previous_context": "張東民也只是從第一層走到第二層。最後握有牌桌的，依然是 Netflix 啦。",
+ "original": {
+  "text": "回到開頭的問題：最會讀規則的人，坐的是誰的牌桌？答案是，還是別人的。他設計的節目還沒播，一個最會找縫隙的人寫出來的規則，縫隙會比較少，還是留更多空間給跟他同一型的玩家，現在沒人知道。他說過，只要還活著，就不會從生存節目退休，所以接下來，他會同時坐兩個位置：一邊讀別人的規則，一邊替別人寫。我們大多數人一輩子坐在第一層，面對的是考試簡章、保單條款、貸款契約。如果真要說聰明很性感，他示範的其實只有一件事：同樣坐在第一層，有人會把規則讀完。",
+  "lint": {
+   "chars": 218,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第一"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 35.3,
+   "max_sentence_len": 56,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以，最會讀規則的人，到底坐在誰的牌桌？\n答案很現實，依然是別人的喔。\n重點來了，他設計的新節目還沒播。<short pause>\n一個最會找縫隙的人，寫出來的規則會怎樣？\n縫隙會變更少，還是會留更多空間給同類？\n老實說，現在根本沒有人知道。\n他之前說過，只要還活著就不會退休。\n所以他接下來，會同時站在兩個位置。\n一邊讀別人的規則，一邊替別人寫。\n我們大部分人一輩子都在第一層啦。\n每天要面對考試簡章、保單條款跟貸款契約。\n大家常說這種聰明很性感。\n這真的會讓人起雞皮疙瘩。\n他示範的事情其實只有一件。\n同樣坐在第一層，有人真的會把規則讀完。",
+   "lint": {
+    "chars": 245,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以最會讀規則的人，坐的是誰的牌桌？\n答案是，依然是別人的。<short pause>\n重點來了，他設計的新節目其實還沒播。\n一個最會找縫隙的人，自己寫規則會怎樣？\n縫隙會變少，還是留給同類人鑽？\n現在根本沒人知道，光想就讓人很期待。\n他曾說過，只要活著就不會退休。\n所以他會一邊讀別人的規則，一邊替別人寫。\n那這跟我們有什麼關係？\n其實我們一輩子都坐在第一層啦。\n每天看考試簡章、保單條款跟貸款契約。\n大家常說聰明很性感，對吧？\n他示範的其實只有一件事。\n就算坐在第一層，也有人會認真把規則讀完。",
+   "lint": {
+    "chars": 223,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實，他自己設計的節目現在還沒播。一個最會找縫隙的人，寫的規則長怎樣？縫隙會變少，還是留給同類更多空間？這點現在真的沒人知道。<short pause>不過他自己講過喔，只要他還活著，就絕不從生存節目退休。所以接下來，他會同時坐在兩個位置上。一邊讀別人的規則，一邊替別人寫規則。我們大多數人，一輩子其實都坐在第一層啦。每天面對考試簡章、保單條款還有貸款契約。大家常說什麼聰明很性感。<short pause>但我每次想到他，都覺得很佩服。因為他示範的事情只有一件，同樣坐在第一層，有人真的會把規則讀完。",
+   "lint": {
+    "chars": 225,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "<short pause>重點來了，他設計的新節目其實還沒播。",
+   "to": "<short pause>他設計的新節目還沒播。",
+   "reason": "刪「重點來了」"
+  },
+  {
+   "from": "現在根本沒人知道，光想就讓人很期待。",
+   "to": "現在沒人知道。",
+   "reason": "刪 Ping 的評論，這集不是要誇他"
+  }
+ ]
+}

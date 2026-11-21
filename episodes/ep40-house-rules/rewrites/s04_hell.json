@@ -1,0 +1,123 @@
+{
+ "segment": "s04_hell",
+ "position": "第 5 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "116c8155af0bb4a2025f686f11d5cd9f3c9e67c910033f93e1a7907d9ab4cab6",
+ "previous_context": " 我看到這邊真的覺得壓力好大。你在日常裡已經被一堆別人寫的規則追著跑，下了班，為什麼還要看別人玩生存遊戲？",
+ "original": {
+  "text": "二〇一五年前後，韓國網路上流行一個詞，地獄朝鮮。同一年還有金湯匙、土湯匙，說出身決定起跑點。這是十年前的詞，但它描述的處境現在還查得到：韓國官方二〇二五年的社會調查，接近六成的成年人覺得自己往上爬的機會不大。在這樣的地方，很紅的一種節目，就是把人淘汰掉的節目。人生裡的淘汰很慢，多半也看不見，沒人會當眾唸出你的名字；節目把這件事壓縮成幾天，而且當場宣布。韓國的評論者給過幾種解釋：一位說，競爭強度高，看別人撐到最後拿走大獎，是一種代替的滿足；另一位看得更暗，他認為推動這類節目的，已經不是往上爬的慾望，而是怕被擠出去的恐懼。",
+  "lint": {
+   "chars": 262,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 42.7,
+   "max_sentence_len": 84,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實韓國人十年前就給過答案了，那時候網路上最紅的詞叫做地獄朝鮮。對，同一年流行的還有金湯匙跟土湯匙，意思就是出身決定了起跑點啦。這可不是以前的事喔。<short pause>韓國官方調查裡，有接近六成的人覺得自己很難往上爬。你在現實裡被淘汰，多半是看不見的，沒錄取也不會有人當眾唸出你的名字，對吧？但節目把這件事壓縮成幾天，而且當場宣布誰出局。為什麼大家還要看？一位評論者說，看別人撐到最後拿大獎，觀眾拿到的是一種代替的滿足。然後另一位評論者看得更沉重一點。<sigh>他說現在推動大家的，早就不是想往上爬，而是害怕自己被擠出去的恐懼啦。",
+   "lint": {
+    "chars": 250,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 24.0,
+    "max_sentence_len": 36,
+    "sentences_over_20": 7,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實這要從十年前的一個詞講起。<short pause>\n二〇一五年，韓國流行一個詞，叫做地獄朝鮮。\n那時候大家還常講金湯匙跟土湯匙，\n意思就是出身早就決定了起跑點啦。\n你可能會想，這都十年前的事了吧？\n但現在的情況其實根本沒變。\n韓國官方二〇二五年的調查，\n接近六成的成年人，覺得自己不可能往上爬。\n在這種地方，最紅的居然是淘汰別人的節目。\n<sigh> 你知道為什麼大家愛看嗎？\n因為現實裡的淘汰都很慢，而且通常看不見。\n沒錄取也不會有人當面唸出你的名字。\n但節目把這件事縮短成幾天，而且當面宣布。\n我看到評論者的分析真的覺得很扎心。\n一位評論者說，看別人撐到最後拿大獎，\n能得到一種代替的滿足。\n但另一位說得更直接，\n大家會看，早就不是因為想往上爬了，\n而是害怕自己被擠掉的恐懼。",
+   "lint": {
+    "chars": 305,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 20.8,
+    "max_sentence_len": 39,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實這個問題，韓國人自己也在問。十年前他們網路上流行一個詞，叫地獄朝鮮。同時間大家也在講金湯匙跟土湯匙。意思就是你的出身，直接決定了你的起跑點啦。你以為這只是以前的抱怨嗎？不是喔。韓國官方的調查裡，有接近六成的人，覺得自己這輩子很難再往上爬了。<short pause>所以在這種地方，淘汰人的生存節目超紅。你想嘛，人生裡的淘汰其實很慢。職缺沒上，也不會有人當眾大聲唸出你的名字。但節目把這件事壓成幾天，而且當場宣布。為什麼大家下了班還想看這個？有一位評論者說，看別人撐到最後拿大獎，是一種代替的滿足。不過另一位評論者看得更沉重。他覺得觀眾現在的動力，早就不是想往上爬。大家真正害怕的，是自己哪天也被擠出線外。",
+   "lint": {
+    "chars": 292,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "十年前他們網路上流行一個詞",
+   "to": "二〇一五年前後，他們網路上流行一個詞",
+   "reason": "照素材給年份"
+  },
+  {
+   "from": "韓國官方的調查裡",
+   "to": "韓國官方去年的調查裡",
+   "reason": "補時間：2025 年社會調查"
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "id": "ep40-house-rules",
+ "number": 40,
+ "type": "full",
+ "guid": "debug-after-dark:ep40",
+ "title": "EP40 大家叫他 God東民，規則卻沒有一條是他寫的",
+ "description": "有人說聰明本身就很性感。張東民參加五個韓國生存節目、拿了五次冠軍，網友叫他 God東民。可是這集不是要誇他：他贏的每一場比賽，規則沒有一條是他寫的。最會讀規則的人，坐的是誰的牌桌？這集不爆雷，一局都不講。\n\n00:00 God東民：五個生存節目、五次冠軍\n00:44 這集不爆雷，今晚只講三件事\n01:24 他的本事：讀懂別人寫的規則\n02:10 韓國把人生辦成考試：修能重考生 23 年最多\n02:53 地獄朝鮮：下了班為什麼還看生存節目\n03:57 規則公開，不保證有人照著走：Produce 101\n04:57 栽在沒寫下來的那一條\n06:00 規則會改：台灣勞保 65 歲早就寫好了\n06:44 他要去寫規則了：21 點牌桌的三層\n07:52 最會讀規則的人，坐的是誰的牌桌？\n08:41 今晚的 breakpoint\n\n數字的出處與但書：\n・資料截至 2026-11-20，多數來源是韓國媒體報導，原文作者讀到的是報導與官方公告。\n・「他的本事是讀規則」「敢講在場外成了負債」是原文作者的讀法；「Produce 101 讓觀眾對公平更敏感」是推論，沒有直接的調查資料。\n・修能數字是報名人數；重考生（含同等學力）佔 35.6%。\n・「地獄朝鮮」是 2015 年的流行語，原文沒有查它現在還有多少人在用；接近六成（57.7%）出自韓國 2025 年社會調查。\n・21 點牌桌的印字各家賭場不同，是示意。\n・《魔鬼的計謀》第三季 11 月 24 日播完；原文標了「含劇透」的來源，點之前想一下。\n\n原文：〈規則都是別人寫的：張東民、韓國的考場，和一張不是你的牌桌〉番外 v0.2 https://imitator.ai-apps.work/r/house-rules\n主要來源（原文共列 59 筆）：\n・세계일보：KBS 第 19 期公開招考 https://www.segye.com/newsView/20250724517317\n・YTN：KBS 第 34 期，450 人報名、錄取 14 人 https://www.ytn.co.kr/_ln/0117_202503101716241959\n・인사이트：修能重考生與同等學力佔 35.6% https://www.insight.co.kr/news/572457\n・세계일보：2025 年社會調查，57.7% 認為階層上升可能性低 https://www.segye.com/newsView/20251111517028\n・마이데일리：為什麼偏偏是生存節目 https://www.mydaily.co.kr/page/view/2024091117422471383\n・법률신문：《Produce 101》大法院判決確定 https://www.lawtimes.co.kr/news/168549\n・뉴데일리：二審准許 100 韓元求償 https://www.newdaily.co.kr/site/data/html/2020/11/18/2020111800183.html\n・텐아시아：短劇被單親家庭團體提告 https://www.tenasia.co.kr/article/2016040763374\n・뉴시스：韓國國民年金法修正案通過 https://www.newsis.com/view/NISX20250320_0003106817\n・勞動部：2026 年起勞保老年年金請領年齡 65 歲 https://www.mol.gov.tw/1607/1632/1633/88127/\n・twig24：張東民設計的 Netflix 新節目 https://twig24.com/news/entertainments/broadcasting/2026/04/08/20260408500143\n\n今晚的 breakpoint：\n1. 張東民的本事是把別人寫的規則讀透；可是規則公開，不保證有人照著走，韓國觀眾用《Produce 101》學到這一課。\n2. 規則會改，讀的時候多讀兩條：誰有權改，改的時候舊帳怎麼算。台灣勞保的 65 歲，很多年前就寫好了。\n3. 牌桌有三層：玩家、寫規則的人、莊家。張東民走到了第二層，牌桌還是 Netflix 的。\n\n上一集：EP37〈《黑白大廚》全球第一，做節目的公司卻重整了〉\n延伸收聽：EP36〈韓劇最紅的這一年，為什麼要政府拿一兆韓圜救命？〉\n韓劇的中間層番外。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "house-rules",
+ "source_url": "https://imitator.ai-apps.work/r/house-rules",
+ "status": "final",
+ "related": [
+  "ep37-nameless-made-famous",
+  "ep36-credit-line"
+ ],
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5",
+  "model_served": "gemini-3.8-flash-tts"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-modal --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "series": "韓劇的中間層 番外（上：EP36、EP37）",
+ "report_version": "2026-11-20",
+ "audio": {
+  "file": "ep40-house-rules.mp3",
+  "bytes": 8978475,
+  "sha256": "41a71959c6c0baf150cc54d3e9ae3abd6e0f9c5d459921e904b6d7498e1d932a",
+  "duration_s": 561.1,
+  "duration": "9:21",
+  "lufs": -16.8
+ },
+ "youtube": {
+  "title": "張東民 5 個生存節目 5 次冠軍：God東民最會讀規則，但牌桌是誰的？",
+  "thumbnail": [
+   [
+    "God東民",
+    "規則不是他寫的"
+   ],
+   [
+    "5 戰 5 勝",
+    "牌桌是別人的"
+   ]
+  ],
+  "synthetic_content": true
+ },
+ "qa": {
+  "breeze_cer_mean": 0.022,
+  "gemini_cer_mean": 0.018,
+  "jitter_semitones": 0.228,
+  "gates": "錯誤率 2.2%、音高跳動 0.228 通過；s06 跟上段聲紋 0.929（門檻 0.93）、s09 語速 -11%，差一點",
+  "retakes": "s00、s06（音高偏 -6 Hz）、s07（語速 +15%）各補 3 次，steady_pick 重挑後音高都在 ±3 Hz 內",
+  "manual_pick": "照 steady_pick",
+  "both_wrong": "s06「這份報告」的「份」（篇／本），一個字",
+  "asr_note": "Modal 達花費上限（2026-11-20），Breeze 改在本機 CPU 跑，模型與設定相同",
+  "retention": "cold open 丟出「最會讀規則的人，坐的是誰的牌桌」到 s09 才收；s01 給三件事路線圖；s02、s03、s08 段尾留小鉤子",
+  "twtone": "qa/twtone.md：沒有超過基準的項目",
+  "hook": "Clarence 指定：用網友的 God東民、智性戀切入，但這集不是誇他，換成規則握在誰手上的視角；不寫任何一局（第三季 11/24 才播完）"
+ },
+ "published": "2026-11-22T08:00:00+08:00"
+}

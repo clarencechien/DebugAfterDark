@@ -1,0 +1,140 @@
+{
+ "segment": "s01_recap",
+ "position": "第 2 段，共 11 段",
+ "avoid": [
+  "超扯"
+ ],
+ "recap": "EP37〈《黑白大廚》全球第一，做節目的公司卻重整了〉：上一集：《黑白大廚》紅了以後，版權在平台，生意在廚師，製作公司留得住的只有手藝和人。這集是同一系列的番外，看螢幕上最會玩的那個人，和規則握在誰手上。",
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e4276d974ccf16c3bb16371467beba0fd511752a99e9c23297d5a08263f69d37",
+ "previous_context": "所以這個最會讀規則的人，到底坐在誰的牌桌上？這集最後會回答你喔。",
+ "original": {
+  "text": "上一集我們看《黑白大廚》的結算單：節目紅了，版權在平台，生意在廚師，製作公司留得住的只有手藝和人。這份報告是那兩篇的番外，把鏡頭轉到螢幕上那個最會玩的人身上。先講清楚，這集不爆雷：《魔鬼的計謀》第三季還在 Netflix 上線，最後四集十一月二十四號才公開，哪一局怎麼解、誰被淘汰，一律不講。今晚只講三件事：他的本事到底是什麼，韓國為什麼這麼愛看生存節目，還有規則握在誰手上。",
+  "lint": {
+   "chars": 186,
+   "precise_numbers": [
+    "十一",
+    "二十四"
+   ],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 4,
+   "avg_sentence_len": 45.5,
+   "max_sentence_len": 64,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上一集我們聊到《黑白大廚》。\n節目紅了以後，版權都在平台。\n生意是廚師的。\n製作公司留得住的，只有手藝跟人。\n對，這集算是一個番外篇。\n我們要來看螢幕上最會玩的那個玩家。\n你猜他有多厲害？\n他完整參加過五個生存節目。\n五個全都是冠軍。\n我看到這個戰績真的起雞皮疙瘩。<short pause>\n不過先講好，這集絕對不爆雷喔。\n像《魔鬼的計謀》第三季還在播，\n最後四集十一月二十四號才公開。\n所以誰被淘汰、哪一局怎麼解，\n這集一律不提啦。\n今天只看那些規則到底握在誰手上。",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [
+     "十一",
+     "二十四"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 13.8,
+    "max_sentence_len": 29,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集我們聊《黑白大廚》，版權在平台，生意在廚師，製作公司留下的只有手藝跟人。這集是同一系列的番外篇。我們要看螢幕上最會玩的那個人。張東民參加五個生存節目，五個全部都是冠軍耶。<short pause>我看到這邊真的起雞皮疙瘩。不過你猜這集會講他怎麼贏嗎？先說好，完全不爆雷喔。《魔鬼的計謀》第三季還在 Netflix 上線嘛，最後四集十一月二十四號才公開，哪一局怎麼解、誰被淘汰，一律不講。其實今晚我們只看三件事。他的本事到底是什麼？韓國為什麼下了班還要看比賽？然後，那些規則到底握在誰手上？",
+   "lint": {
+    "chars": 232,
+    "precise_numbers": [
+     "十一",
+     "二十四"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 18.3,
+    "max_sentence_len": 54,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集我們聊《黑白大廚》。\n版權在平台，生意在廚師，\n製作公司最後只留得住手藝跟人。\n這集是同一個系列的番外篇。<short pause>\n我們要看螢幕上最會玩的那個人。\n他叫張東民。\n你猜他有多厲害？\n他參加過五個生存節目，\n五次全部都是冠軍耶。\n<laugh> 重點來了，這集完全不爆雷喔。\n因為《魔鬼的計謀》第三季還在播，\n最後幾集十一月下旬才看得到，\n哪一局怎麼解、誰被淘汰我都不講。\n其實這份報告要看的是場外的事。\n韓國為什麼這麼愛看比賽？\n然後，那些規則到底握在誰手上？",
+   "lint": {
+    "chars": 205,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 45,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "<short pause>我們要看螢幕上最會玩的那個人。他叫張東民。你猜他有多厲害？他參加過五個生存節目，五次全部都是冠軍耶。<laugh> 重點來了，這集完全不爆雷喔。",
+   "to": "<short pause>這次看的是螢幕上最會玩的那個人。先講清楚，這集不爆雷。",
+   "reason": "跟 cold open 重複五戰五勝；刪「你猜」「重點來了」和笑聲"
+  },
+  {
+   "from": "其實這份報告要看的是場外的事。韓國為什麼這麼愛看比賽？然後，那些規則到底握在誰手上？",
+   "to": "這份報告看的是場外的事。今晚只講三件事：他的本事到底是什麼，韓國為什麼這麼愛看生存節目，還有那些規則握在誰手上。",
+   "reason": "照 hooks.md 留存寫法補回路線圖"
+  }
+ ]
+}

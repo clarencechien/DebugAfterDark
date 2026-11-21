@@ -1,0 +1,119 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 11 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "477b2b7f64a790f4d0086fb1ab568a3da48130019266ec62a1ce099f85782194",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "在韓國綜藝圈，張東民參加過五個生存節目，五個都拿了冠軍。網友叫他 God東民，有人說這就是智性戀：聰明本身就很性感。可是這一集不是要誇他。這份報告把他五次奪冠當成前提，一局都不寫，反過來問另一件事：他贏的每一場比賽，規則沒有一條是他寫的。最會讀規則的人，坐的是誰的牌桌？這一集最後會回答。",
+  "lint": {
+   "chars": 143,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 22.8,
+   "max_sentence_len": 49,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你有聽過智性戀這個詞嗎？\n就是看到別人很聰明，會覺得對方超級性感。\n韓國網友叫張東民 God東民，\n因為他參加過五個生存節目，每一次都拿冠軍。\n這真的超扯對不對？<short pause>\n不過其實這集不是要誇他啦。\n我想聊的是另一件事：\n他贏了那麼多次，規則有哪一條是他寫的？\n答案是一條都沒有。\n所以這個最會讀規則的人，\n到底坐在誰的牌桌上？\n這集最後會回答你喔。",
+   "lint": {
+    "chars": 159,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 16.7,
+    "max_sentence_len": 34,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "你看過那種聰明到讓人心動的人嗎？\n韓國生存節目裡有個傳奇叫張東民。\n他參加過好幾次生存節目，\n居然一口氣拿了五次冠軍，超扯的。\n大家都叫他 God東民，\n甚至有人說這就是智性戀，\n也就是被一個人的聰明深深吸引啦。\n<short pause>\n不過今天其實不是要誇他有多厲害。\n重點來了，\n你猜他贏的那些比賽，\n規則到底是誰寫的？\n對，沒有一條是他寫的喔。\n最會玩遊戲的人，\n坐的到底會是誰的牌桌？",
+   "lint": {
+    "chars": 170,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 20.2,
+    "max_sentence_len": 38,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "你聽過智性戀嗎？\n也就是覺得一個人聰明到超性感。\n韓國藝人張東民參加五個生存節目，\n結果全拿冠軍，大家都叫他 God東民。\n我看到這個戰績也覺得很扯，<short pause>\n但我今天不是要誇他多厲害啦。\n其實重點是，\n他贏的每一場比賽，\n規則沒有一條是他寫的。\n你猜這代表什麼？\n就算你把規則摸到最透，<short pause>\n牌桌終究是別人開的嘛。\n那這張桌子到底是誰的？\n這集我們就來拆解看看吧。",
+   "lint": {
+    "chars": 163,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 17.1,
+    "max_sentence_len": 33,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "這真的超扯對不對？<short pause>不過其實這集不是要誇他啦。",
+   "to": "<short pause>不過這集不是要誇他。",
+   "reason": "刪口頭禪「超扯」，語氣收一點"
+  },
+  {
+   "from": "這集最後會回答你喔。",
+   "to": "這集最後會回答。",
+   "reason": "語尾簡化"
+  }
+ ]
+}

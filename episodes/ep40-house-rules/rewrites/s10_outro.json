@@ -1,0 +1,149 @@
+{
+ "segment": "s10_outro",
+ "position": "第 11 段，共 11 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8ffe59bbbe5168dfa757d9a67c8c40874ffac73ddb9369b89ea617da3d2a2b91",
+ "previous_context": "他示範的其實只有一件事。就算坐在第一層，也有人會認真把規則讀完。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，張東民的本事是把別人寫的規則讀透；可是規則公開，不保證有人照著走，韓國觀眾用《Produce 101》學到這一課。第二，規則會改，讀的時候多讀兩條：誰有權改，改的時候舊帳怎麼算，台灣勞保的六十五歲，很多年前就寫好了。第三，牌桌有三層：玩家、寫規則的人、莊家。張東民走到了第二層，牌桌還是 Netflix 的。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 205,
+   "precise_numbers": [
+    "101",
+    "六十五"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三",
+    "第二"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 24.6,
+   "max_sentence_len": 58,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一個，張東民很強，他把別人的規則讀透。\n但規則公開就代表公平嗎？\nProduce 101 造假就是個血淋淋的例子。\n第二個，規則其實隨時會改。\n記得看清楚誰能改，還有舊帳怎麼算。\n台灣勞保的六十五歲，很多年前就寫好了。\n第三個，牌桌分成了玩家、出題者跟莊家。\n張東民走到第二層，牌桌還是 Netflix 的。\n這段真的讓我徹底清醒過來耶。<short pause>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 211,
+    "precise_numbers": [
+     "101",
+     "六十五"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三",
+     "第二"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一個，張東民很會讀規則，但選秀造假告訴我們，規則公開不保證有人照著走。\n第二個，記得看誰有權改規則、舊帳怎麼算，台灣勞保六十五歲早就寫在那了。\n第三個，你以為跳去寫規則就變莊家了嗎？張東民走到第二層，牌桌終究還是 Netflix 的。<sigh>\n搞懂自己在哪一層，我真的很有共鳴啦。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 185,
+    "precise_numbers": [
+     "六十五"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三",
+     "第二"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 19.6,
+    "max_sentence_len": 35,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n聊到這裡，你是不是也很有共鳴？\n第一，你可以把規則讀到最透。\n但公開不保證公平。\n《Produce 101》就是血淋淋的教訓。\n第二，規則其實隨時會改。\n要看誰有權改，還有舊帳怎麼算。\n像台灣勞保的六十五歲。\n其實早就白紙黑字寫好了嘛。\n第三，牌桌永遠有三層。\n就算從玩家升級成出題的人。\n桌子的主人是誰？\n對，牌桌終究還是 Netflix 的。<short pause>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 212,
+    "precise_numbers": [
+     "101",
+     "六十五"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 12.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "<sigh>搞懂自己在哪一層，我真的很有共鳴啦。原文連結",
+   "to": "原文連結",
+   "reason": "breakpoint 後不加個人反應，直接接片尾"
+  }
+ ]
+}
