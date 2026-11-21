@@ -1,0 +1,15 @@
+8 月以後，他把每一個 story 交給一串很窄的 agent。每一站只做一件事，做完就結束，下一站從乾淨的 context 開始。
+
+1Specifier把人寫的需求轉成 Gherkin 驗收條件和 QA 程序人審
+
+2Coder寫單元測試和實作不看
+
+3Cleaner跑 CRAP，把超標的函式整理掉看分數
+
+4Hardener跑 mutation testing，補測試直到 mutant 活不下來看分數
+
+5QA把 QA 程序變成可以執行的腳本看結果
+
+任務切窄的理由是 context。任務小，context 就短，寫在 prompt 最前面的那幾條規矩才留得住。
+
+（注意：英文詞用台灣工程師的念法帶過：Uncle Bob、Clean Code、agent、prompt、context、Gherkin、CRAP、mutation testing、TDD、QA、story 保留英文；技術名詞第一次出現時配一句中文解釋，之後擇一。人名只留 Uncle Bob、Robert Martin、Greg Wilson，其他人名不要加進來。說「這份報告說」，不要只說「報告」。誰說的要照素材：分工、做法、說法是 Uncle Bob 的；比喻和判讀是這份報告作者的。Ping 沒有個人經歷，不加個人反應。草稿段尾的小問題或轉折要保留。不要用「你猜怎麼著」。不要預告下一集，也不要提其他人的做法。）

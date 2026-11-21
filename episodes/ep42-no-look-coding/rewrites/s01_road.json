@@ -1,0 +1,121 @@
+{
+ "segment": "s01_road",
+ "position": "第 2 段，共 11 段",
+ "avoid": [
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "c7c3f03059450161bc498d5b71a5d2823476da8089afc4c20ec46f6228e82674",
+ "previous_context": "那他現在到底在讀什麼？這集最後，你就會知道他把眼睛放在哪裡。",
+ "original": {
+  "text": "先講這份報告用的比喻：電子廠的隨批流程卡。卡跟著一批貨走，每過一站蓋一個章。主管不會把每片板子拿起來看，他看卡上的章齊不齊，再抽幾片。這份報告說，Uncle Bob 做的事很像：他不看板子，他看卡。這篇是作者自己改版的，前一版的資料停在七月底，那則貼文才發出來兩天，之後他又公開講了三場，做法也改了。今晚講三件事：他到底不讀哪幾樣、卡上的五個章、還有這張卡缺了哪幾格。",
+  "lint": {
+   "chars": 182,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 29.3,
+   "max_sentence_len": 50,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這份報告用了一個比喻，我覺得很傳神。<short pause>\n它說這就像電子廠的隨批流程卡。\n卡片跟著一批貨走，每過一站就蓋章。\n主管不會把每片板子都拿起來看。\n那他看什麼？\n對，他看章有沒有齊，再抽檢幾片。\n這份報告說，Uncle Bob 也是醬。\n他根本不看板子，他只看卡。\n其實這篇文章是作者後來的改版喔。\n因為 Uncle Bob 又講了三場，做法也改了啦。\n所以今晚我們就來看三件事。<short pause>\n他到底不讀哪幾樣、卡上有哪五個章。\n還有這張卡到底缺了哪幾格。",
+   "lint": {
+    "chars": 200,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.4,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "這份報告用了一個比喻，很有意思。\n就像電子廠的隨批流程卡。\n卡跟著整批貨走，每過一站蓋一個章。\n主管哪會把每片板子拿起來看？\n他只看卡上的章有沒有齊，再抽檢幾片。\n這份報告說，Uncle Bob 就是醬做。\n他不看程式碼板子，他只看那張卡。\n這個形容我看到真的很有共鳴。<laugh>\n其實這篇是作者的改版內容喔。\n前一版的資料停在七月底，貼文才發兩天。\n後來 Uncle Bob 又公開講了三場，做法也改了。\n所以今晚講三件事：\n他到底不讀哪幾樣、卡上有哪些章、\n還有這張卡最後缺了哪幾格。",
+   "lint": {
+    "chars": 221,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.4,
+    "max_sentence_len": 37,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "這份報告給了一個很傳神的比喻。<short pause> 就像電子廠裡的流程卡一樣。卡片跟著整批貨走，每過一站就蓋一個章。對，主管會把每片板子拿起來看嗎？當然不會嘛。他只看卡上的章有沒有蓋齊，然後再抽幾片出來看。這份報告說，Uncle Bob 也是醬。他根本不看每塊板子，他只看卡。其實這篇文章是作者自己改版的啦。前一版才剛發出來沒多久，後來他又公開講了好幾場，做法也變了。所以今晚我們就來看，他到底不讀哪幾樣、卡上有哪五個章，還有這張卡到底缺了哪幾格喔。",
+   "lint": {
+    "chars": 212,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 18.3,
+    "max_sentence_len": 40,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "這份報告用了一個比喻，我覺得很傳神。<short pause>它說這就像電子廠的隨批流程卡。卡片跟著一批貨走，每過一站就蓋章。主管不會把每片板子都拿起來看。那他看什麼？對，他看章有沒有齊，再抽檢幾片。這份報告說，Uncle Bob 也是醬。他根本不看板子，他只看卡。其實這篇文章是作者後來的改版喔。因為 Uncle Bob 又講了三場，做法也改了啦。所以今晚我們就來看三件事。<short pause>他到底不讀哪幾樣、卡上有哪五個章。還有這張卡到底缺了哪幾格。",
+   "to": "這份報告用了一個比喻：電子廠的隨批流程卡。卡片跟著一批貨走，每過一站就蓋一個章。主管不會把每片板子都拿起來看。那他看什麼？他看卡上的章齊不齊，再抽幾片。這份報告說，Uncle Bob 做的事很像，他不看板子，他看卡。這篇其實是作者自己的改版。前一版的資料停在七月底，之後 Uncle Bob 又公開講了三場，做法也改了。所以今晚講三件事：他到底不讀哪幾樣，卡上有哪五個章，還有這張卡缺了哪幾格。",
+   "reason": "刪掉「我覺得很傳神」（Ping 沒有個人反應）、「醬」「根本」；補回前一版資料停在七月底"
+  },
+  {
+   "from": "這份報告用了一個比喻：電子廠的隨批流程卡。卡片跟著一批貨走，每過一站就蓋一個章。主管不會把每片板子都拿起來看。那他看什麼？他看卡上的章齊不齊，再抽幾片。這份報告說，Uncle Bob 做的事很像，他不看板子，他看卡。這篇其實是作者自己的改版。前一版的資料停在七月底，之後 Uncle Bob 又公開講了三場，做法也改了。所以今晚講三件事：他到底不讀哪幾樣，卡上有哪五個章，還有這張卡缺了哪幾格。",
+   "to": "這份報告用了一個比喻：電子廠的隨批流程卡。卡片跟著一批貨走，每過一站就蓋一個章。主管不會把每片板子都拿起來看。那他看什麼？他看卡上的章齊不齊，再抽幾片。這份報告說，Uncle Bob 做的事很像，他不看板子，他看卡。這篇其實是作者自己的改版。前一版的資料停在七月底，之後 Uncle Bob 又公開講了三場，做法也改了。所以今晚講三件事：他到底不讀哪幾樣，卡上有哪五個章，還有這張卡缺了什麼。",
+   "reason": "「幾格」兩套辨識都聽成「幾個」"
+  }
+ ]
+}

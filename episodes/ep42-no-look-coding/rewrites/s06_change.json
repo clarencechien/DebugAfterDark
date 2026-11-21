@@ -1,0 +1,133 @@
+{
+ "segment": "s06_change",
+ "position": "第 7 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "醬",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f5974be9b4d1e88c8714c3c0d12c6967d06024d5ad9db8280506f2b382d001d4",
+ "previous_context": "這份報告說，agent 本來幾分鐘能做完的事，走完這五站大約要一小時。但要是人自己做，可是要花上大半天耶。",
+ "original": {
+  "text": "這張卡不是一開始就長這樣，報告數出他至少改了五個地方，挑兩個講。第一是門檻。給人用的時候，他把 CRAP 壓在四以下；給 agent 他放寬到六，還在想要不要推到八，理由是 agent 的短期記憶比人大，也比人準。嚴格的測試先行他也不硬套。他的說法是：人的紀律不必加在 agent 身上，人的價值要。第二是規劃。事前把規格寫滿，他說是個老誘惑，瀑布式開發就是這樣來的。他又試了一次，結果一樣：agent 跑到一半，人才發現計畫沒想到的地方。所以他改回一次做一兩個 story，回頭看架構，規格用完就丟。",
+  "lint": {
+   "chars": 241,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 25.8,
+   "max_sentence_len": 62,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這套流程其實不是一開始就長這樣喔。\n這份報告說，他前前後後改了五個地方。\n我們挑兩個最重要的來看。\n第一是程式碼的門檻。\nCRAP 是一種看程式碼有多難維護的指標。\n給人寫的時候，他把數字壓在四以下。\n但給 agent 寫，標準就放得比較寬。\n為什麼呢？\n因為 agent 的短期記憶比人又大又準嘛。\n他甚至也不硬套先寫測試的 TDD 規矩。\n這句話我覺得真的很中肯：\n人的紀律不用硬塞給 agent，人的價值才要。\n然後第二個改變是事前規劃。\n把規格一次寫到滿，真的很誘人齁。\n可是 agent 跑一半，你還是會發現漏想細節。\n最後只能停下來重寫，超浪費時間。<laugh>\n所以他改回一次只做一兩個小 story。\n做完再看架構，規格用完就丟，完全不留。",
+   "lint": {
+    "chars": 294,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 33,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "不過這張流程卡，其實改過好幾次喔。\n這份報告說，Uncle Bob 改過好幾個地方。\n第一個是門檻。<short pause>\n他用 CRAP 這個指標，看程式有多難改。\n給人寫的時候，他把數字壓在四以下。\n給 agent 用的時候，他就放寬很多。\n因為 agent 的短期記憶比人類好很多嘛。\n嚴格的 TDD 他也不硬套了。\n他說人的紀律，不必硬塞給 agent。\n第二個改動是規劃。<short pause>\n你是不是也覺得，先把規格寫滿比較保險？\n其實這就是以前瀑布式的老毛病啦。\nUncle Bob 自己試了一次，發現根本行不通。\nagent 跑一半，才發現漏東漏西只能重來。\n那他後來怎麼辦？\n他改回一次只做一兩張 story。\n做完看架構，再做下一批，規格用完就丟。\n這招真的很有彈性耶。",
+   "lint": {
+    "chars": 292,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 18,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 22,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "這套流程不是一開始就長這樣喔。\n\n這份報告說，Uncle Bob 其實改了好幾個地方。我們挑兩個重點來看。\n\n首先是檢查的門檻放寬了。像 CRAP 這個看程式碼難不難改的指標，給人寫的時候，標準要壓在四以下。給 agent 的話他就放得比較寬。連嚴格的 TDD 測試先行也不硬套了，因為 agent 習慣先寫程式再補測試。他的說法真的很妙，人的紀律不必加在 agent 身上，人的價值才要。<short pause> 這句話是不是很有道理？\n\n再來是規格到底要寫多少。事前把規格寫滿，是大家很容易犯的毛病。他最近才試過一次，結果 agent 跑一半，才發現漏東漏西。所以他改回敏捷的步調，一次只做一兩個小需求，也就是 story，做完再回頭看架構，規格用完就丟啦。",
+   "lint": {
+    "chars": 297,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 21.8,
+    "max_sentence_len": 47,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "不過這張流程卡，其實改過好幾次喔。這份報告說，Uncle Bob 改過好幾個地方。第一個是門檻。<short pause>他用 CRAP 這個指標，看程式有多難改。給人寫的時候，他把數字壓在四以下。給 agent 用的時候，他就放寬很多。因為 agent 的短期記憶比人類好很多嘛。嚴格的 TDD 他也不硬套了。他說人的紀律，不必硬塞給 agent。第二個改動是規劃。<short pause>你是不是也覺得，先把規格寫滿比較保險？其實這就是以前瀑布式的老毛病啦。Uncle Bob 自己試了一次，發現根本行不通。agent 跑一半，才發現漏東漏西只能重來。那他後來怎麼辦？他改回一次只做一兩張 story。做完看架構，再做下一批，規格用完就丟。這招真的很有彈性耶。",
+   "to": "不過這張卡，不是一開始就長這樣。這份報告數出他至少改了五個地方，挑兩個來講。第一個是門檻。給人用的時候，他把 CRAP 壓在四以下。給 agent，他放寬到六，還在想要不要推到八。理由是 agent 的短期記憶比人大，也比人準。嚴格的測試先行，他也不硬套。他的說法是：人的紀律不必加在 agent 身上，人的價值要。第二個是規劃。事前把規格寫滿，他說是個老誘惑，以前的瀑布式開發就是這樣來的。他又試了一次，結果一樣：agent 跑到一半，人才發現計畫沒想到的地方。所以他改回一次只做一兩個 story，回頭看架構，規格用完就丟。",
+   "reason": "補回 CRAP 六、八與「人的價值要」；刪掉「你是不是也覺得」「這招真的很有彈性」；「行不通」改回原文"
+  },
+  {
+   "from": "不過這張卡，不是一開始就長這樣。這份報告數出他至少改了五個地方，挑兩個來講。第一個是門檻。給人用的時候，他把 CRAP 壓在四以下。給 agent，他放寬到六，還在想要不要推到八。理由是 agent 的短期記憶比人大，也比人準。嚴格的測試先行，他也不硬套。他的說法是：人的紀律不必加在 agent 身上，人的價值要。第二個是規劃。事前把規格寫滿，他說是個老誘惑，以前的瀑布式開發就是這樣來的。他又試了一次，結果一樣：agent 跑到一半，人才發現計畫沒想到的地方。所以他改回一次只做一兩個 story，回頭看架構，規格用完就丟。",
+   "to": "不過這張卡，不是一開始就長這樣。這份報告說，他至少改了五個地方，挑兩個來講。第一個是門檻。給人用的時候，他把 CRAP 壓在四以下。給 agent，他放寬到六，還在想要不要推到八。理由是 agent 的短期記憶比人大，也比人準。嚴格的測試先行，他也不硬套。他的說法是：人的紀律不必加在 agent 身上，人的價值要。第二個是規劃。事前把規格寫滿，他說是個老誘惑，以前的瀑布式開發就是這樣來的。他又試了一次，結果一樣：agent 跑到一半，人才發現計畫沒想到的地方。所以他改回一次只做一兩個 story，回頭看架構，規格用完就丟。",
+   "reason": "「數出」兩套辨識都聽成「書說」"
+  }
+ ]
+}

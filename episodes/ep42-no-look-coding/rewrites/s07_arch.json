@@ -1,0 +1,119 @@
+{
+ "segment": "s07_arch",
+ "position": "第 8 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "醬",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4d213bd3a23b4d975bac2e54233d3d30f9ae16c92debc1706384995305c4e120",
+ "previous_context": "做完看架構，再做下一批，規格用完就丟。這招真的很有彈性耶。",
+ "original": {
+  "text": "那架構誰管？六月他還有一個負責架構的 agent。到了八月，他說這一塊都是他手動做：他先問 agent 模組怎麼切，聽到的答案把他嚇壞，就自己設計模組結構，交給 agent 照著改。他還讓 agent 替他做了一個架構檢視器，畫面上是一張模組圖，看得到誰依賴誰，點一個模組往下看，再點就跳出程式碼。所以他看的東西，從兩份文件，變成規格、分數、架構圖，再加上抽查。報告說，這幾項改動是同一個方向：寫給 agent 看的文字變少，agent 過不去的工具變多，人看的東西往上游移。",
+  "lint": {
+   "chars": 228,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 37.0,
+   "max_sentence_len": 61,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那最重要的架構到底誰來管？\n原本他有一個負責架構的 agent。\n後來他問 agent 模組要怎麼切，\n結果聽到的答案直接把他嚇壞。<laugh>\n真的蠻有畫面的。\n所以架構乾脆自己設計，\n再叫 agent 照著改。\n他甚至叫 agent 寫了一個架構檢視器喔。\n畫面上能看到模組誰依賴誰，\n點進去還能直接跳出程式碼。\n他這樣看得更輕鬆了嗎？\n其實對，因為工具會幫忙把關。\n這份報告說，這些改動方向都一樣。\n寫給 agent 的文字變少，\n擋住 agent 的工具變多，\n人看東西的視角，就往上游移了嘛。",
+   "lint": {
+    "chars": 219,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 18.9,
+    "max_sentence_len": 41,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那架構到底誰在管？\n六月的時候，\n他原本配了一個負責架構的 agent。\n到了八月呢？\n他在訪談說，這塊變成他自己手動做。\n因為他先問 agent 模組怎麼切，\n聽到的答案直接把他給嚇壞了。<laugh>\n最後還是自己把結構畫好，\n再交給 agent 照著改。\n更厲害的是，\n他還讓 agent 做了一個架構檢視器喔。\n畫面上是一張模組圖，\n點進去就能一路追到程式碼。\n加上看分數跟不定時抽查，\n你是不是也覺得很聰明？\n這份報告說，\n這些改動其實都是同一個方向：<short pause>\n寫給 agent 的字變少，\n擋住它的工具變多，\n人要看的東西，就整個往上游移了。",
+   "lint": {
+    "chars": 238,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 22.8,
+    "max_sentence_len": 56,
+    "sentences_over_20": 7,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那架構到底誰來管？\n你可能會想，交給專門的 agent 嘛。\n其實他一開始也是這樣想。\n六月的時候，他真的放了一個架構 agent。\n結果到了八月，他說全都自己手動做。\n為什麼？\n因為他先問 agent 模組要怎麼切。\n聽到的答案直接把他嚇壞。<laugh>\n重點來了，他決定自己設計模組結構。\n然後再交給 agent 照著改。\n他還讓 agent 做了一個架構檢視工具。\n畫面上是一張模組圖，看得到誰依賴誰。\n點進去能看子模組，再點就直接跳出程式碼。\n這份報告說，這幾項改動都是同一個方向喔。\n寫給 agent 看的文字變少了。\nagent 過不去的檢查工具變多了。\n人看的東西，也跟著往更上游移動啦。",
+   "lint": {
+    "chars": 267,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "那架構到底誰來管？你可能會想，交給專門的 agent 嘛。其實他一開始也是這樣想。六月的時候，他真的放了一個架構 agent。結果到了八月，他說全都自己手動做。為什麼？因為他先問 agent 模組要怎麼切。聽到的答案直接把他嚇壞。<laugh>重點來了，他決定自己設計模組結構。然後再交給 agent 照著改。他還讓 agent 做了一個架構檢視工具。畫面上是一張模組圖，看得到誰依賴誰。點進去能看子模組，再點就直接跳出程式碼。這份報告說，這幾項改動都是同一個方向喔。寫給 agent 看的文字變少了。agent 過不去的檢查工具變多了。人看的東西，也跟著往更上游移動啦。",
+   "to": "那架構誰來管？六月的時候，他還放了一個負責架構的 agent。到了八月，他說這一塊都是他自己手動做。因為他先問 agent，模組要怎麼切，聽到的答案把他嚇壞了。所以他自己設計模組結構，再交給 agent 照著改。他還讓 agent 替他做了一個架構檢視器。畫面上是一張模組圖，看得到誰依賴誰。點進去能看子模組，再點，就直接跳出程式碼。所以他看的東西，從兩份文件，變成規格、分數、架構圖，再加上抽查。這份報告說，這幾項改動是同一個方向：寫給 agent 看的文字變少，agent 過不去的工具變多，人看的東西往上游移。",
+   "reason": "刪掉「你可能會想」「重點來了」與笑聲；補回他看的東西從兩份文件變成一組"
+  }
+ ]
+}

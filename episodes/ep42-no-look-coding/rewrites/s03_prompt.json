@@ -1,0 +1,119 @@
+{
+ "segment": "s03_prompt",
+ "position": "第 4 段，共 11 段",
+ "avoid": [
+  "醬",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a1fc3b9c1d5a6a5b16c493eb74f159d75a4cb67c9b39a5ef2100f9fa39236b1a",
+ "previous_context": "所以說他不讀 code 了，其實不太準確啦。比較準的說法是，他改讀規格了。",
+ "original": {
+  "text": "他怎麼走到這一步的？去年十二月，他用早期的 Grok agent，程式寫得很快，留下來的東西很亂，亂到 agent 自己都被拖慢。他先試長 prompt，把 TDD，也就是測試先行，和 clean code 的規矩寫成五到十頁。結果模型把它當參考看，不當規定守。原因是 context 一長，寫在中間的字會被忽略。Greg Wilson 轉述他在 podcast 裡的說法：agent 大約守十分鐘，context 滿了規矩就掉。所以他把規矩搬到事後才跑的工具上。工具不會被說服。那是哪些工具？",
+  "lint": {
+   "chars": 230,
+   "precise_numbers": [
+    "十二"
+   ],
+   "enumerations": [],
+   "sentences": 9,
+   "avg_sentence_len": 24.6,
+   "max_sentence_len": 51,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那他到底怎麼走到這一步的？\n其實去年底，他用早期的 Grok agent。\n寫是寫得很快，留下來的 code 卻超亂。\n更慘的是，亂到 agent 自己都被拖慢了。\n你猜他一開始怎麼做？\n他先試著寫了很長的 prompt。\n把測試先行的 TDD 和好幾頁規矩全塞進去。\n結果模型只把它當參考，根本不當規定守。\n我看到這裡真的覺得很傳神。<laugh>\n因為 context 一長，中間的字就會被忽略。\nGreg Wilson 轉述他在 podcast 的說法。\nagent 大約只能乖乖守十分鐘。\n只要 context 一滿，規矩就全部掉光。\n所以他把規矩搬到事後才跑的工具上。\n<short pause>\n畢竟工具很死板，完全不會被說服嘛。\n那到底是哪些工具？",
+   "lint": {
+    "chars": 277,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 24,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那他是怎麼走到這一步的？\n其實在去年底，他用早期的 Grok agent。\n程式寫得很快，可是留下來的 code 超亂。\n更扯的是，連 agent 自己都被拖慢了。<laugh>\n你猜他一開始怎麼做？\n他去寫了超長的 prompt。\n把測試先行的 TDD 規矩寫了好幾頁。\n結果模型只當參考，根本不當規定守。\n因為 context 一長，中間的字就會被忽略。\nGreg Wilson 轉述他在 podcast 講的內容。\nagent 大概只能守規矩十分鐘。\n只要 context 一滿，規矩就全掉了。\n我看到這邊真的很有共鳴。<short pause>\n所以他乾脆把規矩搬到事後跑的工具上。\n畢竟工具絕對不會被說服嘛。\n那到底是哪些工具？",
+   "lint": {
+    "chars": 266,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 25,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那他到底怎麼走到這一步的？其實去年底的時候，他用早期的 Grok agent 寫程式。<short pause> 寫得很快沒錯，但留下來的程式很亂，亂到連 agent 自己都被拖慢了。所以他先試著寫很長的 prompt。他把 TDD，也就是先寫測試的方法，還有 clean code 寫成好幾頁塞進去。結果你猜模型怎麼反應？模型直接把它當參考，根本沒有要照著守的意思。<laugh> 因為 context 一變長，寫在中間的字就會被忽略。Greg Wilson 轉述說，agent 大約只能守十分鐘。只要 context 一滿，那些規矩就直接掉了。我看到這裡真的很有共鳴。所以他把規矩搬到事後跑的工具上。畢竟工具是不會被說服的嘛。那到底用了哪些工具？",
+   "lint": {
+    "chars": 286,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 19.4,
+    "max_sentence_len": 36,
+    "sentences_over_20": 7,
+    "particles_per_100": 0.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "那他到底怎麼走到這一步的？其實去年底，他用早期的 Grok agent。寫是寫得很快，留下來的 code 卻超亂。更慘的是，亂到 agent 自己都被拖慢了。你猜他一開始怎麼做？他先試著寫了很長的 prompt。把測試先行的 TDD 和好幾頁規矩全塞進去。結果模型只把它當參考，根本不當規定守。我看到這裡真的覺得很傳神。<laugh>因為 context 一長，中間的字就會被忽略。Greg Wilson 轉述他在 podcast 的說法。agent 大約只能乖乖守十分鐘。只要 context 一滿，規矩就全部掉光。所以他把規矩搬到事後才跑的工具上。<short pause>畢竟工具很死板，完全不會被說服嘛。那到底是哪些工具？",
+   "to": "那他是怎麼走到這一步的？去年十二月，他用早期的 Grok agent。寫是寫得很快，留下來的東西卻很亂，亂到 agent 自己都被拖慢。他先試了很長的 prompt，把 TDD，也就是測試先行，還有 clean code 的規矩，寫成五到十頁。結果模型只把它當參考看，不當規定守。原因是 context 一長，寫在中間的字就會被忽略。Greg Wilson 轉述他在 podcast 裡的說法：agent 大約守十分鐘，context 滿了，規矩就掉了。所以他把規矩搬到事後才跑的工具上。工具不會被說服。那是哪些工具？",
+   "reason": "刪掉「你猜」與 Ping 的個人反應、笑聲；補回五到十頁與十二月"
+  }
+ ]
+}
