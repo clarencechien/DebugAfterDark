@@ -1,0 +1,136 @@
+{
+ "segment": "s02_player",
+ "position": "第 3 段，共 11 段",
+ "avoid": [
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "459fe13f097847a1b62a0b41775981cfa81a504a4d0ec1fad8d7b2a42153eaff",
+ "previous_context": "韓國為什麼這麼愛看比賽？然後，那些規則到底握在誰手上？",
+ "original": {
+  "text": "先看他的本事。那五個節目分屬兩個平台，玩法從個人賽、兩個村子對抗，一路到分辨新聞真假，每一套規則都是製作單位設計的。報告作者的讀法是：張東民在裡面只做一件事，把別人寫好的規則讀懂，而且讀得比同場的人透。作者也標明，這是他自己的讀法，沒有哪個來源這樣定義張東民。做節目的人評價很高，《魔鬼的計謀》的製作人鄭鍾淵說他是腦力生存史上最強的玩家，還拿喬丹來比。張東民自己在記者會上說：惡魔的計畫，請來了惡魔。不過他進這一行的方式，本身就是一場考試。",
+  "lint": {
+   "chars": 220,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 30.4,
+   "max_sentence_len": 50,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "規則在製作單位手上。<short pause>但有人就是專門來破台的。像張東民就是這樣。他上的那五個節目，每一套玩法都不一樣。從個人賽、村子對抗，一路到分辨假新聞。其實他在裡面只做一件事。你猜是什麼？就是把別人寫好的規則讀透。而且讀得比同場所有人都要透啦。製作人鄭鍾淵甚至拿喬丹來比喻他。說他是腦力生存史上最強的玩家。張東民自己在記者會上講得很狂。他說：惡魔的計畫，請來了惡魔。<laugh>我看到這句真的起雞皮疙瘩。不過你知道嗎？他連進演藝圈的方式，本身也是一場考試喔。",
+   "lint": {
+    "chars": 216,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 12.5,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "說到規則，先來看這個玩家張東民。\n他參加過好幾個生存節目。\n玩法從個人賽、村子對抗，到分辨假新聞。\n這些規則全都是製作單位寫的。\n那他的本事是什麼？\n其實就是把別人寫好的規則讀懂，\n而且讀得比同場的所有人都透。\n我看到這個分析真的很有共鳴。<short pause>\n連《魔鬼的計謀》製作人鄭鍾淵都說，\n他是腦力生存史上最強的玩家，\n甚至還拿喬丹來跟他比。\n你猜張東民自己怎麼說？\n他在記者會說，惡魔的計畫請來了惡魔。<laugh>\n這回答真的有夠狂啦。\n其實他進這一行，本身也就是一場考試喔。",
+   "lint": {
+    "chars": 213,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 41,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先來看最會玩規則的人是誰。\n就是張東民。\n他上了五個生存節目，\n玩法每一套都不一樣，\n全都是製作單位設計的局。\n那你猜他到底強在哪裡？\n其實他就只做一件事。\n就是把別人寫的規則讀到最透。\n我看到這段真的很有共鳴。\n《魔鬼的計謀》製作人鄭鍾淵，\n對他的評價高到不可思議。<short pause>\n說他是腦力生存史上最強的玩家，\n還直接拿喬丹來跟他比耶。\n張東民自己在記者會上更嗆，\n他說：惡魔的計畫，請來了惡魔。<laugh>\n所以他真的很會抓規則漏洞齁。\n更妙的是，他連入行都是考進來的。\n他是考上電視台公開招考，\n才順利當上搞笑藝人的喔。",
+   "lint": {
+    "chars": 233,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.9,
+    "max_sentence_len": 31,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "規則在製作單位手上。<short pause>但有人就是專門來破台的。像張東民就是這樣。他上的那五個節目，每一套玩法都不一樣。",
+   "to": "先看他的本事。他上的那五個節目，每一套玩法都不一樣。",
+   "reason": "開頭「破台」素材沒有，改回草稿的開場"
+  },
+  {
+   "from": "從個人賽、村子對抗，一路到分辨假新聞。其實他在裡面只做一件事。你猜是什麼？就是把別人寫好的規則讀透。而且讀得比同場所有人都要透啦。",
+   "to": "從個人賽、兩個村子對抗，一路到分辨新聞真假，每一套規則都是製作單位設計的。報告作者的讀法是，他在裡面只做一件事：把別人寫好的規則讀懂，而且讀得比同場的人透。作者也說，這是他自己的讀法。",
+   "reason": "歸屬：「只做一件事」是作者的讀法，素材有標明；刪「你猜」"
+  },
+  {
+   "from": "<laugh>我看到這句真的起雞皮疙瘩。不過你知道嗎？",
+   "to": "不過，",
+   "reason": "Ping 不講自己的反應"
+  },
+  {
+   "from": "報告作者的讀法是",
+   "to": "這份報告的作者，讀法是",
+   "reason": "句首「報告」易聽成「包括」（bare_report）"
+  },
+  {
+   "from": "這份報告的作者，讀法是，他在裡面只做一件事：",
+   "to": "這份報告的作者是這樣讀的：他在裡面只做一件事，",
+   "reason": "句子不順"
+  }
+ ]
+}

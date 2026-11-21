@@ -1,0 +1,138 @@
+{
+ "segment": "s06_unwritten",
+ "position": "第 7 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ab8980efad5718b2bfd24d4a51a274bc16a8fe6bd9f78e0dfb36466a5d533745",
+ "previous_context": "連張東民每次拿冠軍，都有人跳出來質疑。大家都在問，製作單位是不是早就偏心他啦。",
+ "original": {
+  "text": "接下來這段，報告寫得很小心，我們也照它的框架講。最會讀規則的人，栽在沒人寫下來的那一條。二〇一四年，張東民和搭檔主持的 Podcast 裡有貶低女性的發言，他當時道歉，節目也停了。隔年他成為《無限挑戰》新成員的熱門人選，同一批錄音被翻出來，他退出了候選。二〇一六年，他演的一齣短劇被批評嘲弄單親家庭的孩子，被團體提告，電視台道歉、停掉單元，團體五天後撤告，他退出了幾個節目。報告不替他開脫，也不重審。作者的看法是：遊戲的規則有人開場唸給你聽，什麼話能拿來當笑點，沒有人唸，而且舞台越大，罰得越重。",
+  "lint": {
+   "chars": 246,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 34.1,
+   "max_sentence_len": 59,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "但其實這個最懂規則的人，\n最後卻栽在另一套規則上。<short pause>\n也就是那些從來沒被寫下來的規則嘛。\n他在 Podcast 講過貶低女性的話，\n當時道歉了，節目也收掉。\n結果隔年他有機會加入《無限挑戰》，\n同一批錄音又被大家翻出來。\n你覺得他能順利加入嗎？\n當然不行，他只能退出候選喔。<short pause>\n後來他演短劇被罵嘲弄單親家庭，\n電視台道歉，他也退出了好幾個節目。\n這點讓我特別有共鳴。<sigh>\n遊戲規則開場有人念給你聽，\n但什麼話能拿來開玩笑，根本沒人寫。\n而且重點來了，\n你站的舞台越大，代價就越高。\n他在生存遊戲裡敢衝撞，\n到了沒寫的規則底下，直接就變成負債啦。",
+   "lint": {
+    "chars": 249,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 21.6,
+    "max_sentence_len": 31,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實啊，最會抓規則漏洞的人，反而栽在沒寫出來的規則上。他之前在 Podcast 裡失言，當時道了歉，節目也收了。結果隔年他要加入《無限挑戰》，舊錄音又被大家翻出來，他最後只能退出候選。後來他在另一個節目演短劇，又因為開單親家庭玩笑挨告。雖然五天後對方撤告，他還是退出了好幾個節目。你有沒有發現哪裡很妙？在遊戲裡，規則開場就會念給你聽。但現實社會裡，什麼玩笑不能開，根本沒有人會先提醒你嘛。<sigh> 重點是，當你站的舞台越大，代價就變得越高。我覺得這真的很諷刺。他在遊戲裡敢衝敢講是優勢，換到沒寫規則的世界，就全變成負債啦。",
+   "lint": {
+    "chars": 254,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 22.1,
+    "max_sentence_len": 35,
+    "sentences_over_20": 7,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "但其實最諷刺的是什麼？\n最懂規則的人，反而栽在沒寫下來的規則上。\n十幾年前，他在 Podcast 講了貶低女性的話。\n當時他道歉了，節目也收掉了。\n隔年他本來有機會加入《無限挑戰》喔。\n結果舊錄音又被翻出來，他只能退出候選。\n過了兩年，他在短劇的發言又被團體提告。\n對方五天後撤告，但他還是推掉好幾個節目。<short pause>\n我讀到這一段其實很有共鳴。\n你發現關鍵在哪裡了嗎？\n舞台越大，代價就越高。\n遊戲的規則，會有人在開場一條一條唸給你聽。\n但什麼話能拿來開玩笑，根本沒人會提醒你。\n他在遊戲裡敢衝敢講，是贏下比賽的優勢。\n可是走到鏡頭外，反而就變成負擔啦。",
+   "lint": {
+    "chars": 256,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "但其實最諷刺的是什麼？最懂規則的人",
+   "to": "接下來這段，報告寫得很小心，我們照它的框架講。最懂規則的人",
+   "reason": "對真實人物語氣：照素材框架，不當笑話講"
+  },
+  {
+   "from": "過了兩年，他在短劇的發言又被團體提告。對方五天後撤告，但他還是推掉好幾個節目。<short pause>我讀到這一段其實很有共鳴。你發現關鍵在哪裡了嗎？舞台越大，代價就越高。",
+   "to": "二〇一六年，他演的一齣短劇被批評嘲弄單親家庭的孩子，被團體提告，對方五天後撤告，他退出了幾個節目。<short pause>報告不替他開脫，也不重審。作者看到的共同點是，舞台越大，代價就越高。",
+   "reason": "補短劇的內容；刪 Ping 的反應；歸屬給作者"
+  },
+  {
+   "from": "他在遊戲裡敢衝敢講，是贏下比賽的優勢。可是走到鏡頭外，反而就變成負擔啦。",
+   "to": "作者的看法是，他在遊戲裡敢衝敢講，是贏下比賽的優勢，到了另一套沒寫出來的規則底下，就變成負擔。",
+   "reason": "歸屬：素材標明是作者的讀法"
+  },
+  {
+   "from": "接下來這段，報告寫得很小心",
+   "to": "接下來這段，這份報告寫得很小心",
+   "reason": "bare_report"
+  },
+  {
+   "from": "<short pause>報告不替他開脫",
+   "to": "<short pause>這份報告不替他開脫",
+   "reason": "bare_report"
+  }
+ ]
+}

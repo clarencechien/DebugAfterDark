@@ -1,0 +1,140 @@
+{
+ "segment": "s05_fair",
+ "position": "第 6 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "1b6ceece5d3788f22bef76699cbad2967800b42cd1350cc7214a3c28814700e7",
+ "previous_context": "他覺得觀眾現在的動力，早就不是想往上爬。大家真正害怕的，是自己哪天也被擠出線外。",
+ "original": {
+  "text": "生存節目賣的，是一場規則公開、當場開票的考試。可是規則公開，不保證有人照著走。韓國觀眾在這件事上繳過很貴的學費：選秀節目《Produce 101》的核心規則，是觀眾投票決定出道名單，後來查出四季全部動過手腳。二〇二一年韓國大法院判決確定，兩位製作人都被判了刑。二審的時候，法院還准了一位觀眾求償，金額只有一則投票簡訊的費用，一百韓圜，法院說，意義在於確認這是對觀眾的詐欺。報告作者推論，這讓韓國觀眾對局是不是斜的特別敏感，他也承認沒找到直接的調查資料。看得到的是：張東民每贏一次，就有人問，這局是不是一開始就偏他。",
+  "lint": {
+   "chars": 256,
+   "precise_numbers": [
+    "101",
+    "一百"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 35.6,
+   "max_sentence_len": 63,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以生存節目賣的，其實是一場公開的考試。<short pause>\n可是規則公開，真的代表大家會照著走嗎？\n答案是完全沒有喔。\n韓國觀眾在這件事上，繳過很貴的學費。\n像紅極一時的選秀節目《Produce 101》。\n他們主打出道名單全部由觀眾投票。\n結果後來查出來，整整四季全部動過手腳。<sigh>\n兩位製作人最後都被法院判刑。\n最諷刺的是，法官還准了一位觀眾的求償。\n你想知道賠多少嗎？\n剛好就是一則投票簡訊的錢，一百韓元。\n法院說，這是為了確認整件事就是一場詐欺。\n這份報告說，這讓大家懷疑局是不是歪的。\n雖然作者也承認，目前沒有直接的調查資料。\n但看看後面的現象，我真的覺得很合理。\n連張東民每次拿冠軍，都有人跳出來質疑。\n大家都在問，製作單位是不是早就偏心他啦。",
+   "lint": {
+    "chars": 300,
+    "precise_numbers": [
+     "101",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以生存節目賣的，其實是一場公開考試。\n但規則公開，真的就代表公平嗎？\n完全沒有這回事。\n韓國觀眾在這件事上，繳過很貴的學費。\n你應該也聽過《Produce 101》吧？\n節目說出道名單全看觀眾投票，\n結果後來查出來，四季全部動過手腳。\n兩位製作人最後都被判刑。\n更誇張的是二審的時候，\n法院准了一位觀眾求償，\n金額只有一百韓元。\n就是一封簡訊投票的錢。<short pause>\n法院說，\n這代表整個節目就是對觀眾的詐欺。\n看到這種判決真的會心酸耶。<short pause>\n這份報告的作者覺得，\n這讓大家對偏心的局變得超敏感，\n雖然他也說沒有直接的調查數據啦。\n但張東民每贏一次比賽，\n就真的會有人問，製作組是不是偏心他。",
+   "lint": {
+    "chars": 268,
+    "precise_numbers": [
+     "101",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 19.6,
+    "max_sentence_len": 40,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以大家想看的，其實是一場公開的考試。\n可是規則公開，真的代表沒人動手腳嗎？<short pause>\n完全沒有這回事。\n韓國觀眾在這件事上，繳過很貴的學費。\n像選秀節目《Produce 101》，\n名單號稱全由觀眾投票決定。\n結果後來被查出，整整四季全部動過手腳。\n兩位製作人後來都被判刑。\n更扯的是，二審還准了一位觀眾求償。\n賠多少呢？\n剛好是一則簡訊的錢，一百韓元。\n法院說，這是要證明這就是一場詐欺。\n<sigh> 你能想像那種被背叛的感覺嗎？\n所以這份報告裡說，韓國觀眾現在特別敏感。\n只要張東民一贏，馬上就有人懷疑，\n這局是不是一開始就故意偏袒他啦。",
+   "lint": {
+    "chars": 245,
+    "precise_numbers": [
+     "101",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "答案是完全沒有喔。",
+   "to": "不一定。",
+   "reason": "誇大：素材只說不保證"
+  },
+  {
+   "from": "這份報告說，這讓大家懷疑局是不是歪的。雖然作者也承認，目前沒有直接的調查資料。但看看後面的現象，我真的覺得很合理。連張東民每次拿冠軍，都有人跳出來質疑。大家都在問，製作單位是不是早就偏心他啦。",
+   "to": "報告作者推論，這讓韓國觀眾對局是不是歪的特別敏感，他也承認，沒找到直接的調查資料。看得到的是後來的現象：張東民每贏一次，就有人問，這局是不是一開始就偏他。",
+   "reason": "歸屬：是作者的推論；刪 Ping 的評論"
+  },
+  {
+   "from": "報告作者推論",
+   "to": "這份報告的作者推論",
+   "reason": "bare_report"
+  }
+ ]
+}

@@ -1,0 +1,151 @@
+{
+ "segment": "s08_house",
+ "position": "第 9 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b9d9f100c917aba8495210595b77d471e1d4ae2654e8048e3a69e964427cd90b",
+ "previous_context": "其實就看兩件事。第一是誰有權力改，第二是改的時候舊帳怎麼算。",
+ "original": {
+  "text": "那最會讀規則的人，下一步呢？今年四月，Netflix 一個新的腦力生存節目開始招募參賽者，規則由張東民設計。他的理由是，製作團隊有自己看不到的死角，要靠真的贏過的人來補。看起來像玩家變成了莊家，報告說，中間其實還隔一層，拿二十一點的牌桌來看最清楚。發牌員每天站在桌子後面，看起來像主持人，可是桌布上印著，十六點以下要補牌，他沒有選擇，照做就是了。印字的是賭場。所以有三層：玩家讀規則，設計遊戲的人寫規則，莊家決定要不要用、要不要改、桌子收不收。張東民從第一層走到第二層，第三層沒有動，節目是 Netflix 的。",
+  "lint": {
+   "chars": 253,
+   "precise_numbers": [
+    "二十一",
+    "十六"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 30.6,
+   "max_sentence_len": 48,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那最會讀規則的人，下一步會去哪？\n\nNetflix 有個新的腦力節目，找張東民來設計規則。他的理由是，製作團隊有死角，要真正贏過的人才能補得起來。\n\n這樣算不算玩家變成了莊家？<short pause> 其實沒有喔。\n\n你想想看二十一點的牌桌。發牌員站在桌子後面，看起來好像是他在掌控全場對吧？結果他根本沒有選擇，桌布上面印什麼，他就得照著做。因為桌子跟規則都是賭場的啦。\n\n所以這裡其實分了三層。玩家負責讀規則，設計的人負責寫，可是要不要採用、桌子收不收，決定權永遠在莊家手裡。張東民只是從第一層走到第二層，牌桌依然是 Netflix 的。<short pause> 讀規則讀到頂點的人，下一步也是替別人的牌桌寫規則。",
+   "lint": {
+    "chars": 271,
+    "precise_numbers": [
+     "二十一"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 19.8,
+    "max_sentence_len": 40,
+    "sentences_over_20": 7,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那把規則讀到最厲害的人，\n下一步會去哪？\n其實就是去替別人寫規則。<short pause>\nNetflix 有個新的腦力節目，\n找了張東民來設計規則。\n他的理由很直白，\n製作團隊有看不到的死角，\n要靠真正贏過的人來補。\n這聽起來像玩家變成莊家了吧？\n但真的有這麼簡單嗎？\n其實沒有啦。\n中間其實還隔了一層。\n這個發牌員的比喻真的很傳神。\n就像二十一點的牌桌，\n發牌員看起來像在主持，\n可是他補不補牌，\n完全只能照著桌布上的字做。\n因為把字印上去的，是後面的賭場。\n所以你看，這裡面其實有三層。<short pause>\n玩家負責讀規則，\n出題的人負責寫，\n但規則要不要採納、桌子收不收，\n最後還是莊家說了算。\n張東民只是走到第二層，\n最上面的牌桌，依然是 Netflix 的喔。",
+   "lint": {
+    "chars": 287,
+    "precise_numbers": [
+     "二十一"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 19.5,
+    "max_sentence_len": 41,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那最會讀規則的人，下一步會去哪？\n答案是替別人的牌桌寫規則。<short pause>\nNetflix 有個新的腦力生存節目，\n找了張東民來設計遊戲。\n他說製作團隊有死角，\n那些縫隙要靠真正贏過的人來補。\n這看起來好像是玩家變成了莊家，對吧？\n其實中間還隔了一層。\n這個比喻真的超級傳神。\n就像二十一點的牌桌一樣。<short pause>\n發牌員站在桌子後面，看似在主持牌局，\n可是桌布上早就印好規定了。\n幾點要補牌，幾點要停牌，他沒有選擇。\n因為桌子是賭場的，字也是賭場印的。\n所以其實分成了三層。\n第一層是玩家，只能讀規則。\n第二層是出題的人，負責寫規則。\n最上層才是莊家，決定要不要收桌子。\n張東民也只是從第一層走到第二層。\n最後握有牌桌的，依然是 Netflix 啦。",
+   "lint": {
+    "chars": 291,
+    "precise_numbers": [
+     "二十一"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第一",
+     "第二"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "這看起來好像是玩家變成了莊家，對吧？其實中間還隔了一層。這個比喻真的超級傳神。就像二十一點的牌桌一樣。",
+   "to": "這看起來好像是玩家變成了莊家，對吧？報告說，中間其實還隔了一層，拿二十一點的牌桌來看最清楚。",
+   "reason": "刪 Ping 的評論；歸屬給報告"
+  },
+  {
+   "from": "最上層才是莊家，決定要不要收桌子。",
+   "to": "最上層才是莊家，決定要不要用、要不要改、桌子收不收。",
+   "reason": "照素材補全莊家的權力"
+  },
+  {
+   "from": "對吧？報告說，中間其實還隔了一層",
+   "to": "對吧？這份報告說，中間其實還隔了一層",
+   "reason": "bare_report"
+  }
+ ]
+}
