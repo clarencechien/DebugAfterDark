@@ -1,0 +1,124 @@
+{
+ "segment": "s02_table",
+ "position": "第 3 段，共 11 段",
+ "avoid": [
+  "醬",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8097146d174994922bf4ba75fff2e649fece238ff7161d066448cc4770f937b5",
+ "previous_context": "他到底不讀哪幾樣、卡上有哪五個章。還有這張卡到底缺了哪幾格。",
+ "original": {
+  "text": "第一件事：他說不讀的，是哪幾樣。在同一串回覆裡，他把分工講得很細。實作程式碼和單元測試，agent 寫，他不看。驗收測試和 QA 程序，agent 起草，他會看，重要的細讀，其餘抽查。產品實際跑起來的樣子，他定期自己手動測一次。他的驗收測試用一種叫 Gherkin 的格式寫，每一條長成「在什麼情況下，做了什麼，應該看到什麼」，寫給人讀，也能被工具轉成可以執行的測試。所以照這張分工，比較準的說法是：他不讀實作，改讀規格。",
+  "lint": {
+   "chars": 205,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 28.3,
+   "max_sentence_len": 67,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先來看他到底不讀什麼。\n\n他在回覆裡，把分工切得超細。\n實作跟單元測試，agent 寫，他都不看。\n<short pause>\n那他到底看什麼？\n他看驗收測試跟 QA 程序。\nagent 負責起草，重要的細讀，其餘抽查。\n驗收測試是用 Gherkin 的格式寫，\n每一條長成在什麼情況下，\n做了什麼，應該看到什麼。\n人看得懂，工具也能轉成可執行的測試。\n產品跑起來的樣子，他定期自己手動測。\n\n其實我看到這邊蠻意外的。<short pause>\n大家傳說 Clean Code 作者不讀 code 了，\n但比較準的說法是，\n他不讀實作，改讀規格了啦。",
+   "lint": {
+    "chars": 221,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 19.1,
+    "max_sentence_len": 44,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "我們就先來看他到底不看什麼。<short pause>在那一串回覆裡，他把分工講得超細喔。實作程式碼跟單元測試，都是 agent 寫。這兩樣他完全不看。你可能會想，那他到底看什麼？答案是驗收測試跟 QA 程序。這部分雖然也是 agent 起草，但他會看。重要的細讀，剩下的就抽查。<short pause>他的驗收測試是用 Gherkin 寫的。這是一種寫驗收條件的格式。像是某個情況下，做了什麼，會看到什麼。人讀得懂，工具也能轉成測試來跑。最後產品跑起來的樣子，他會定期手動測。所以說他不讀 code 了，其實不太準確啦。比較準的說法是，他改讀規格了。",
+   "lint": {
+    "chars": 241,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "我們先來看，他到底不讀哪幾樣。<short pause>\n其實 Uncle Bob 在回覆裡，\n把分工切得很細。\n實作程式碼跟單元測試，\nagent 寫，他完全不看。\n那你猜他看什麼？\n驗收測試跟 QA 程序，他會看喔。\nagent 負責起草，\n重要的他細讀，其餘抽查。\n然後產品實際跑起來的樣子，\n他會定期自己手動測一次。\n他看驗收測試是用 Gherkin 寫的。\n這是一種寫給人讀的格式，\n也能被工具轉成可以執行的測試。\n每一條就是寫在什麼情況下，\n做了什麼，應該看到什麼。\n我看到這邊覺得很有意思。<short pause>\n大家傳成他都不讀 code 了，\n但照這張分工來看，\n比較準的說法是，\n他不讀實作和單元測試，改讀規格啦。",
+   "lint": {
+    "chars": 262,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 20.8,
+    "max_sentence_len": 47,
+    "sentences_over_20": 7,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "我們就先來看他到底不看什麼。<short pause>在那一串回覆裡，他把分工講得超細喔。實作程式碼跟單元測試，都是 agent 寫。這兩樣他完全不看。你可能會想，那他到底看什麼？答案是驗收測試跟 QA 程序。這部分雖然也是 agent 起草，但他會看。重要的細讀，剩下的就抽查。<short pause>他的驗收測試是用 Gherkin 寫的。這是一種寫驗收條件的格式。像是某個情況下，做了什麼，會看到什麼。人讀得懂，工具也能轉成測試來跑。最後產品跑起來的樣子，他會定期手動測。所以說他不讀 code 了，其實不太準確啦。比較準的說法是，他改讀規格了。",
+   "to": "先看第一件事：他說不讀的，是哪幾樣。在同一串回覆裡，他把分工講得很細。實作程式碼跟單元測試，都是 agent 寫，這兩樣他不看。驗收測試跟 QA 程序，也是 agent 起草，可是他會看。重要的細讀，剩下的抽查。他的驗收測試用一種叫 Gherkin 的格式寫。每一條長成，在什麼情況下，做了什麼，應該看到什麼。人讀得懂，工具也能把它轉成測試來跑。最後，產品實際跑起來的樣子，他會定期自己手動測一次。所以說他不讀 code 了，其實不太準。比較準的說法是：他不讀實作，改讀規格。",
+   "reason": "「超細」「完全不看」語氣過頭；調整順序，Gherkin 的格式照原文"
+  },
+  {
+   "from": "先看第一件事：他說不讀的，是哪幾樣。在同一串回覆裡，他把分工講得很細。實作程式碼跟單元測試，都是 agent 寫，這兩樣他不看。驗收測試跟 QA 程序，也是 agent 起草，可是他會看。重要的細讀，剩下的抽查。他的驗收測試用一種叫 Gherkin 的格式寫。每一條長成，在什麼情況下，做了什麼，應該看到什麼。人讀得懂，工具也能把它轉成測試來跑。最後，產品實際跑起來的樣子，他會定期自己手動測一次。所以說他不讀 code 了，其實不太準。比較準的說法是：他不讀實作，改讀規格。",
+   "to": "先看第一件事：他說不讀的，是哪幾樣。在同一串回覆裡，他把分工講得很細。實作程式碼跟單元測試，都是 agent 寫，這兩樣他不看。驗收測試跟 QA 程序，也是 agent 起草，可是他會看。重要的細讀，剩下的抽查。他的驗收測試用一種叫 Gherkin 的格式寫。每一條都寫成，在什麼情況下，做了什麼，應該看到什麼。人讀得懂，工具也能把它轉成測試來跑。最後，產品實際跑起來的樣子，他會定期自己手動測一次。所以說他不讀 code 了，其實不太準。比較準的說法是：他不讀實作，改讀規格。",
+   "reason": "「長成」被聽成「章程」"
+  }
+ ]
+}

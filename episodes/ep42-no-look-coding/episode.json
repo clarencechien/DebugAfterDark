@@ -1,0 +1,61 @@
+{
+ "id": "ep42-no-look-coding",
+ "number": 42,
+ "type": "full",
+ "guid": "debug-after-dark:ep42",
+ "title": "EP42 Clean Code 的作者不讀 AI 的程式碼，那他讀什麼？",
+ "description": "今年七月，寫《Clean Code》的 Uncle Bob 說，他不讀任何一行 agent 寫的程式碼，工程師吵了一整個夏天。可是照他自己公開的分工，他讀的東西沒有變少，是換了一批，而且十個月裡換了不只一次。那他現在到底在讀什麼？\n\n00:00 Clean Code 作者說：不讀 agent 寫的任何一行程式碼\n00:56 電子廠的流程卡：不看板子，看卡上的章\n01:37 他不讀的是實作和單元測試，改讀規格\n02:23 五到十頁的 prompt，agent 只守十分鐘\n03:13 五站流水線：哪一站他自己審\n03:59 CRAP 和 mutation testing：二十年前不划算，現在三十分鐘\n04:50 門檻放寬、規格用完就丟\n05:42 架構他自己畫，再加一個架構檢視器\n06:34 編譯器的類比，和它的極限\n07:25 研究支持到哪裡，這張卡缺了什麼\n08:19 今晚的 breakpoint\n\n數字的出處與但書：\n・原文是〈不讀之後〉上篇 v0.2（2026-11-17），前一版〈Uncle Bob 為何不讀 AI 寫的程式碼？〉資料截到 2026-07-25。\n・「不讀」那則是 X 上的回覆（2026-07-23），分工細節取自第三方的逐句整理；X 上的貼文可能被編輯或刪除。\n・八月訪談依 YouTube 自動字幕的逐字稿，自動字幕有辨識錯誤；九月訪談原文只讀了節目說明和章節表。\n・「agent 守十分鐘」是 Greg Wilson 轉述的 podcast 內容；「五分鐘變一小時」出自 Alex Rusin 的整理。\n・四篇研究原文都只讀了摘要頁；441 個 repo 那篇，作者說是假說，不是因果。\n・五站的「他看什麼」是原文依八月訪談整理的判讀。\n\n原文：〈不讀程式碼，他改讀規格〉不讀之後 上篇 https://imitator.ai-apps.work/r/no-read-1\n主要來源：\n・Uncle Bob 的 X 回覆（2026-07-23）https://x.com/unclebobmartin/status/2080257779395154409\n・Matt Pocock 訪談〈Uncle Bob on Software Fundamentals in the Age of AI〉（2026-08-19）https://www.youtube.com/watch?v=zcLPGC-tvgk\n・HangarDX〈Uncle Bob: Humans Are Too Slow for AI-Generated Code〉https://youtu.be/5kCISBJwoZo\n・Greg Wilson〈You do not have to trust the agent to use it〉https://imawilson.com/posts/you-do-not-have-to-trust-the-agent/\n・Alex Rusin 的整理 https://blog.alexrusin.com/uncle-bob-ai-coding-agents/\n・Acceptance Pipeline 規格 https://github.com/unclebob/Acceptance-Pipeline-Specification\n・研究：Trivedi 與 Schmitt https://arxiv.org/abs/2605.20049 、Monperrus https://arxiv.org/abs/2606.13175 、Agarwal 等 https://arxiv.org/abs/2607.07980 、Denisov-Blanch 等 https://arxiv.org/abs/2608.25241\n\n今晚的 breakpoint：\n1. Uncle Bob 沒有不讀：他不讀實作和單元測試，改讀規格，再看分數和架構圖。\n2. 很長的 prompt 守不住規矩，他把規矩搬進事後跑的工具，因為工具不會被說服。\n3. 流程卡只能證明每一站都蓋了章；章蓋得對不對，要看第一站的規格有沒有人認真讀。\n\n延伸收聽：EP08〈Cisco 給工程師無限 token 重構 98% 程式碼：真正有限的是驗收〉\n不讀之後上篇。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "no-read-1",
+ "source_url": "https://imitator.ai-apps.work/r/no-read-1",
+ "status": "final",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5",
+  "model_served": "gemini-3.8-flash-tts"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "series": "不讀之後 1/2",
+ "report_version": "2026-11-17",
+ "audio": {
+  "file": "ep42-no-look-coding.mp3",
+  "bytes": 8576819,
+  "sha256": "d066c5c29e8c8177195b3b1facc300b14333a64be807030a20ed63bb60a0d566",
+  "duration_s": 536.0,
+  "duration": "8:56",
+  "lufs": -16.8
+ },
+ "youtube": {
+  "title": "Clean Code 作者說不讀 AI 寫的程式碼？他改讀規格，再用 5 站工具把關",
+  "thumbnail": [
+   [
+    "Uncle Bob",
+    "不讀程式碼？"
+   ],
+   [
+    "不讀 code",
+    "改讀規格"
+   ]
+  ],
+  "synthetic_content": true
+ },
+ "qa": {
+  "breeze_cer_mean": 0.011,
+  "jitter_semitones": 0.226,
+  "gates": "Breeze 錯誤率 1.1%、音高跳動 0.226 通過；s05 語速 +12%；s10 片尾音高 -6.7 Hz（六次都偏低）；接縫亮度跟前幾集一樣有標",
+  "retakes": "第一次混音跳動 0.242：s03、s04、s07 各補 3 次；s01「幾格」、s02「長成」、s05「爛函式」「突變測試」「二〇〇〇年」、s06「數出」、s09「四篇今年的」「逐行」「幾格」、s10「長 prompt」改說法，各重錄 6 次；steady_pick 重挑",
+  "manual_pick": "s10 take0（見 select_log 的 manual_override）；其餘照 steady_pick",
+  "asr_note": "Modal 達花費上限，Breeze 在本機 CPU 跑；Gemini API 2026-11-21 達月花費上限，stt_check 的 Gemini 那一半和 gemini_check terms 沒跑，Clarence 試聽審過後說跳過（2026-11-21）",
+  "retention": "cold open 問「那他到底在讀什麼」，s02 先答一半、s07 收齊、breakpoint 第一點再收；s01 給三件事路線圖；s03 段尾留「那是哪些工具？」",
+  "twtone": "qa/twtone.md：結論提示冒號一處已改，沒有超過基準的項目",
+  "terms": "Uncle Bob、Clean Code、agent、prompt、context、Gherkin、CRAP、mutation testing、story 保留英文；TDD、Gherkin、CRAP、mutation testing、story 第一次出現配中文解釋"
+ },
+ "published": "2026-11-23T08:00:00+08:00"
+}
