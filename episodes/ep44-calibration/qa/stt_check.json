@@ -1,0 +1,2304 @@
+{
+ "script": "episodes/ep44-calibration/script.json",
+ "asr": "breeze",
+ "asr_model": "/home/user/models/breeze-asr-25-ct2-int8",
+ "method": "blind STT (breeze + Gemini 3.8 Flash), tone-aware pinyin filter drops exact homophones",
+ "segments": [
+  {
+   "id": "s00_open",
+   "cer_whisper": 0.051,
+   "cer_gemini": 0.005,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 82,
+     "ref_end": 83,
+     "script": "a",
+     "heard": "o",
+     "context": "這一步了cl【a】udecod",
+     "hyp_pos": 82,
+     "by": "whisper",
+     "whisper_heard": "o",
+     "gemini_heard": "—",
+     "episode_time": "0:22"
+    },
+    {
+     "ref_start": 85,
+     "ref_end": 86,
+     "script": "e",
+     "heard": "",
+     "context": "了claud【e】code團隊",
+     "hyp_pos": 85,
+     "by": "whisper",
+     "whisper_heard": "",
+     "gemini_heard": "—",
+     "episode_time": "0:22"
+    },
+    {
+     "ref_start": 106,
+     "ref_end": 107,
+     "script": "a",
+     "heard": "o",
+     "context": "程式碼是cl【a】ude寫的也",
+     "hyp_pos": 105,
+     "by": "whisper",
+     "whisper_heard": "o",
+     "gemini_heard": "—",
+     "episode_time": "0:24"
+    },
+    {
+     "ref_start": 109,
+     "ref_end": 110,
+     "script": "e",
+     "heard": "",
+     "context": "是claud【e】寫的也是cl",
+     "hyp_pos": 108,
+     "by": "whisper",
+     "whisper_heard": "",
+     "gemini_heard": "—",
+     "episode_time": "0:24"
+    },
+    {
+     "ref_start": 116,
+     "ref_end": 117,
+     "script": "a",
+     "heard": "o",
+     "context": "寫的也是cl【a】ude審的這",
+     "hyp_pos": 114,
+     "by": "whisper",
+     "whisper_heard": "o",
+     "gemini_heard": "—",
+     "episode_time": "0:27"
+    },
+    {
+     "ref_start": 119,
+     "ref_end": 121,
+     "script": "e審",
+     "heard": "省",
+     "context": "是claud【e審】的這份報告說",
+     "hyp_pos": 117,
+     "by": "whisper",
+     "whisper_heard": "省",
+     "gemini_heard": "—",
+     "episode_time": "0:27"
+    },
+    {
+     "ref_start": 176,
+     "ref_end": 177,
+     "script": "印",
+     "heard": "硬",
+     "context": "就是那個檢查【印】的那如果檢查",
+     "hyp_pos": 173,
+     "by": "whisper",
+     "whisper_heard": "硬",
+     "gemini_heard": "—",
+     "episode_time": "0:39"
+    },
+    {
+     "ref_start": 191,
+     "ref_end": 193,
+     "script": "這集",
+     "heard": "自己",
+     "context": "錯了誰會知道【這集】最後會回答",
+     "hyp_pos": 188,
+     "by": "whisper",
+     "whisper_heard": "自己",
+     "gemini_heard": "—",
+     "episode_time": "0:44"
+    }
+   ],
+   "whisper_text": "工廠裡量尺寸的卡尺自己其實也會磨損會偏所以每一把量具都有一張履歷卡定期拿標準件來對對完貼上標籤沒有人會只因為工廠有量具就相信量出來的數字現在寫程式也走到這一步了CloudCode 團隊說他們大約九成的程式碼是 Cloud 寫的也是 Cloud 省的這份報告說檢查交給機器之後最貴的錯是檢查說過了但其實沒過而且這種錯不會出現在報表上為什麼因為報表就是那個檢查硬的那如果檢查本身錯了誰會知道自己最後會回答",
+   "whisper_segments": [
+    [
+     0.0,
+     "工廠裡量尺寸的卡尺"
+    ],
+    [
+     2.6,
+     "自己其實也會磨損會偏"
+    ],
+    [
+     4.84,
+     "所以每一把量具都有一張履歷卡"
+    ],
+    [
+     7.6,
+     "定期拿標準件來對"
+    ],
+    [
+     9.48,
+     "對完貼上標籤"
+    ],
+    [
+     11.44,
+     "沒有人會只因為工廠有量具就相信量出來的數字"
+    ],
+    [
+     16.24,
+     "現在寫程式也走到這一步了"
+    ],
+    [
+     18.96,
+     "CloudCode 團隊說"
+    ],
+    [
+     20.44,
+     "他們大約九成的程式碼是 Cloud 寫的"
+    ],
+    [
+     23.64,
+     "也是 Cloud 省的"
+    ],
+    [
+     25.6,
+     "這份報告說"
+    ],
+    [
+     26.84,
+     "檢查交給機器之後"
+    ],
+    [
+     28.64,
+     "最貴的錯"
+    ],
+    [
+     29.88,
+     "是檢查說過了"
+    ],
+    [
+     31.16,
+     "但其實沒過"
+    ],
+    [
+     32.72,
+     "而且這種錯不會出現在報表上"
+    ],
+    [
+     35.08,
+     "為什麼"
+    ],
+    [
+     35.88,
+     "因為報表就是那個檢查硬的"
+    ],
+    [
+     38.44,
+     "那如果檢查本身錯了"
+    ],
+    [
+     40.16,
+     "誰會知道"
+    ],
+    [
+     41.36,
+     "自己最後會回答"
+    ]
+   ],
+   "gemini_text": "工廠裡量尺寸的卡尺，自己其實也會磨損、會偏，所以每一把量具都有一張履歷卡，定期拿標準件來對，對完貼上標籤。沒有人會只因為工廠有量具就相信量出來的數字。現在寫程式也走到這一步了。Claude Code團隊說，他們大約九成的程式碼是Claude寫的，也是Claude審的。這份報告說，檢查交給機器之後，最貴的錯是檢查說過了，但其實沒過，而且這種錯不會出現在報表上。為什麼？因為報表就是那個檢查印的，那如果檢查本身錯了，誰會知道？這集最後我會回答。",
+   "gemini_model_version": "gemini-3.8-flash"
+  },
+  {
+   "id": "s01_recap",
+   "cer_whisper": 0.06,
+   "cer_gemini": 0.145,
+   "gemini_unclear_marks": 1,
+   "flagged": [
+    {
+     "ref_start": 2,
+     "ref_end": 3,
+     "script": "集",
+     "heard": "期",
+     "context": "上一【集】講laure",
+     "hyp_pos": 2,
+     "by": "both",
+     "whisper_heard": "期",
+     "gemini_heard": "期",
+     "episode_time": "0:46"
+    },
+    {
+     "ref_start": 12,
+     "ref_end": 13,
+     "script": "n",
+     "heard": "m",
+     "context": "urenta【n】她把每次糾正",
+     "hyp_pos": 12,
+     "by": "both",
+     "whisper_heard": "m",
+     "gemini_heard": "羅仁坦他",
+     "episode_time": "0:46"
+    },
+    {
+     "ref_start": 44,
+     "ref_end": 45,
+     "script": "底",
+     "heard": "低",
+     "context": "壓到金字塔最【底】改看影片跟截",
+     "hyp_pos": 44,
+     "by": "both",
+     "whisper_heard": "低",
+     "gemini_heard": "低",
+     "episode_time": "0:53"
+    },
+    {
+     "ref_start": 97,
+     "ref_end": 98,
+     "script": "逐",
+     "heard": "主",
+     "context": "停在同一層把【逐】行讀程式碼讓",
+     "hyp_pos": 97,
+     "by": "whisper",
+     "whisper_heard": "主",
+     "gemini_heard": "—",
+     "episode_time": "1:07"
+    },
+    {
+     "ref_start": 139,
+     "ref_end": 145,
+     "script": "claude",
+     "heard": "qr",
+     "context": "講三件事第一【claude】code團隊",
+     "hyp_pos": 139,
+     "by": "both",
+     "whisper_heard": "qr",
+     "gemini_heard": "",
+     "episode_time": "1:21"
+    },
+    {
+     "ref_start": 177,
+     "ref_end": 178,
+     "script": "讀",
+     "heard": "賭",
+     "context": "偏差和還缺的【讀】數第三別家拿",
+     "hyp_pos": 173,
+     "by": "whisper",
+     "whisper_heard": "賭",
+     "gemini_heard": "—",
+     "episode_time": "1:25"
+    },
+    {
+     "ref_start": 55,
+     "ref_end": 57,
+     "script": "集的",
+     "heard": "期",
+     "context": "跟截圖再前一【集的】uncleb",
+     "hyp_pos": 49,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "期",
+     "episode_time": "?"
+    },
+    {
+     "ref_start": 131,
+     "ref_end": 134,
+     "script": "今晚講",
+     "heard": "聽完想",
+     "context": "查本身準不準【今晚講】三件事第一c",
+     "hyp_pos": 125,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "聽完想",
+     "episode_time": "?"
+    }
+   ],
+   "whisper_text": "上一期講 Lauren Tam她把每次糾正 agent 都變成機器會擋的檢查人工審查壓到金字塔最低改看影片跟截圖在前一集的 uncle Bob不讀實作改讀規格和工具量出來的分數這份報告說兩個人都停在同一層把主行讀程式碼讓給了檢查這一集是不讀之後的第三篇只問一題檢查本身準不準今晚講三件事第一QR code 團隊怎麼校正他們的 AI 審查第二他們自己承認的偏差和還缺的賭數第三別家拿什麼來對還有人自己的判斷也會偏掉",
+   "whisper_segments": [
+    [
+     0.0,
+     "上一期講 Lauren Tam"
+    ],
+    [
+     2.2,
+     "她把每次糾正 agent 都變成機器會擋的檢查"
+    ],
+    [
+     6.88,
+     "人工審查壓到金字塔最低"
+    ],
+    [
+     8.92,
+     "改看影片跟截圖"
+    ],
+    [
+     11.72,
+     "在前一集的 uncle Bob"
+    ],
+    [
+     13.28,
+     "不讀實作"
+    ],
+    [
+     14.48,
+     "改讀規格和工具量出來的分數"
+    ],
+    [
+     17.6,
+     "這份報告說"
+    ],
+    [
+     18.8,
+     "兩個人都停在同一層"
+    ],
+    [
+     20.64,
+     "把主行讀程式碼讓給了檢查"
+    ],
+    [
+     24.32,
+     "這一集是不讀之後的第三篇"
+    ],
+    [
+     28.08,
+     "只問一題"
+    ],
+    [
+     29.28,
+     "檢查本身準不準"
+    ],
+    [
+     31.48,
+     "今晚講三件事"
+    ],
+    [
+     33.2,
+     "第一"
+    ],
+    [
+     34.12,
+     "QR code 團隊怎麼校正他們的 AI 審查"
+    ],
+    [
+     37.52,
+     "第二"
+    ],
+    [
+     38.24,
+     "他們自己承認的偏差和還缺的賭數"
+    ],
+    [
+     41.98,
+     "第三"
+    ],
+    [
+     42.84,
+     "別家拿什麼來對"
+    ],
+    [
+     44.62,
+     "還有人自己的判斷也會偏掉"
+    ]
+   ],
+   "gemini_text": "上一期講羅仁坦，他把每次糾正agent，都變成機器會擋的檢查。人工審查壓到金字塔最低，改看影片跟截圖。在前一期Uncle Bob，不讀實作，改讀規格和工具量出來的分數。這份報告說，兩個人都停在同一層，把逐行讀程式碼讓給了檢查。欸，這一集是不讀之後的第三篇。只問一題，檢查本身準不準？聽完想三件事：第一，［?］團隊怎麼校正他們的AI審查？第二，他們自己承認的偏差和還缺的讀數。第三，別家拿什麼來對？還有，人自己的判斷也會偏掉。",
+   "gemini_model_version": "gemini-3.8-flash"
+  },
+  {
+   "id": "s02_path",
+   "cer_whisper": 0.025,
+   "cer_gemini": 0.009,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 14,
+     "ref_end": 15,
+     "script": "a",
+     "heard": "o",
+     "context": "主要根據cl【a】udecod",
+     "hyp_pos": 14,
+     "by": "whisper",
+     "whisper_heard": "o",
+     "gemini_heard": "—",
+     "episode_time": "1:37"
+    },
+    {
+     "ref_start": 17,
+     "ref_end": 18,
+     "script": "e",
+     "heard": "",
+     "context": "據claud【e】code團隊",
+     "hyp_pos": 17,
+     "by": "whisper",
+     "whisper_heard": "",
+     "gemini_heard": "—",
+     "episode_time": "1:37"
+    },
+    {
+     "ref_start": 86,
+     "ref_end": 88,
+     "script": "逐行",
+     "heard": "租航",
+     "context": "變更要工程師【逐行】審查根本做不",
+     "hyp_pos": 85,
+     "by": "whisper",
+     "whisper_heard": "租航",
+     "gemini_heard": "—",
+     "episode_time": "1:54"
+    }
+   ],
+   "whisper_text": "先說清楚來源這集主要根據 cloud code 團隊 10 月和 11 月的兩篇文章這是廠商寫自己的產品數字都是他們自爆的文章說到了 9 月他們公司的大型程式庫每天進來超過 3 萬個變更要工程師租航審查根本做不到所以他們的目標很明確多數 PR 也就是合併請求最多只經過一個人而且退回和事故不能變多一個變更從開 PR 到上線大約走 9 步照他們原圖的分法由人決定的只有一步就是照風險分級決定不用人一個人還是兩個人核准規矩也很清楚只看變更本身不看作者是誰agent 的核准不算人的核准核准只對某一個 community 有效也就是某一次提交程式碼一動就要重新核准他們說幾個月之內合併的 PR 多了一倍以上被退回的比例降了 4 成多不過這是相對降幅文章沒給原本的退回率那負責審查的 AI 自己準不準",
+   "whisper_segments": [
+    [
+     0.0,
+     "先說清楚來源"
+    ],
+    [
+     2.04,
+     "這集主要根據 cloud code 團隊 10 月和 11 月的兩篇文章"
+    ],
+    [
+     7.28,
+     "這是廠商寫自己的產品"
+    ],
+    [
+     9.4,
+     "數字都是他們自爆的"
+    ],
+    [
+     11.68,
+     "文章說到了 9 月"
+    ],
+    [
+     13.64,
+     "他們公司的大型程式庫每天進來超過 3 萬個變更"
+    ],
+    [
+     18.8,
+     "要工程師租航審查根本做不到"
+    ],
+    [
+     21.36,
+     "所以他們的目標很明確"
+    ],
+    [
+     23.4,
+     "多數 PR 也就是合併請求"
+    ],
+    [
+     26.32,
+     "最多只經過一個人"
+    ],
+    [
+     28.04,
+     "而且退回和事故不能變多"
+    ],
+    [
+     31.64,
+     "一個變更從開 PR 到上線大約走 9 步"
+    ],
+    [
+     35.24,
+     "照他們原圖的分法"
+    ],
+    [
+     36.8,
+     "由人決定的只有一步"
+    ],
+    [
+     38.84,
+     "就是照風險分級"
+    ],
+    [
+     40.48,
+     "決定不用人"
+    ],
+    [
+     41.76,
+     "一個人還是兩個人核准"
+    ],
+    [
+     44.08,
+     "規矩也很清楚"
+    ],
+    [
+     45.88,
+     "只看變更本身"
+    ],
+    [
+     47.24,
+     "不看作者是誰"
+    ],
+    [
+     48.92,
+     "agent 的核准不算人的核准"
+    ],
+    [
+     51.4,
+     "核准只對某一個 community 有效"
+    ],
+    [
+     53.72,
+     "也就是某一次提交"
+    ],
+    [
+     55.56,
+     "程式碼一動就要重新核准"
+    ],
+    [
+     57.52,
+     "他們說幾個月之內"
+    ],
+    [
+     59.88,
+     "合併的 PR 多了一倍以上"
+    ],
+    [
+     62.2,
+     "被退回的比例降了 4 成多"
+    ],
+    [
+     65.28,
+     "不過這是相對降幅"
+    ],
+    [
+     67.56,
+     "文章沒給原本的退回率"
+    ],
+    [
+     69.96,
+     "那負責審查的 AI 自己準不準"
+    ]
+   ],
+   "gemini_text": "先說清楚來源哦，這集主要根據 Claude Code 團隊十月和十一月的兩篇文章。這是廠商寫自己的產品，數字都是他們自報的。文章說，到了九月，他們公司的大型程式庫，每天進來超過三萬個變更。你要工程師逐行審查根本做不到。所以他們的目標很明確，多數 PR，也就是合併請求，最多只經過一個人，而且退回和事故不能變多。一個變更從開 PR 到上線，大約走九步，照他們原圖的分法，由人決定的只有一步，就是照風險分級，決定不用人、一個人、還是兩個人核准。規矩也很清楚，只看變更本身，不看作者是誰。Agent 的核准不算人的核准。核准只對某一個 commit 有效，也就是某一次提交，程式碼一動，就要重新核准。他們說幾個月之內，合併的 PR 多了一倍以上，被退回的比例降了四成多。那不過這是相對降幅，文章沒給原本的退回率。那負責審查的 AI，自己準不準？",
+   "gemini_model_version": "gemini-3.8-flash"
+  },
+  {
+   "id": "s03_isolate",
+   "cer_whisper": 0.034,
+   "cer_gemini": 0.011,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 56,
+     "ref_end": 58,
+     "script": "量具",
+     "heard": "二句",
+     "context": "麼意思呢就是【量具】不能自己調刻",
+     "hyp_pos": 56,
+     "by": "whisper",
+     "whisper_heard": "二句",
+     "gemini_heard": "—",
+     "episode_time": "3:04"
+    },
+    {
+     "ref_start": 86,
+     "ref_end": 87,
+     "script": "讀",
+     "heard": "部",
+     "context": "去的那條主幹【讀】送進來的pr",
+     "hyp_pos": 86,
+     "by": "whisper",
+     "whisper_heard": "部",
+     "gemini_heard": "—",
+     "episode_time": "3:09"
+    },
+    {
+     "ref_start": 141,
+     "ref_end": 142,
+     "script": "調",
+     "heard": "挑",
+     "context": "查就不算還有【調】prompt",
+     "hyp_pos": 141,
+     "by": "whisper",
+     "whisper_heard": "挑",
+     "gemini_heard": "—",
+     "episode_time": "3:23"
+    },
+    {
+     "ref_start": 21,
+     "ref_end": 22,
+     "script": "收",
+     "heard": "縮",
+     "context": "月那篇把做法【收】成四件事這份",
+     "hyp_pos": 21,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "縮",
+     "episode_time": "?"
+    }
+   ],
+   "whisper_text": "要回答準不準就要看怎麼校正十一月那篇把做法收成四件事這份報告整理成四個動作隔開考計修先看第一個隔開什麼意思呢就是兩句不能自己調刻度比方說審查的設定檔只從要合併進去的那條主幹部送進來的 PR 改不到它審查結果也綁在某一個 commit 上要是有人審到一半又推了新的程式碼上來那次審查就不算還有挑 prompt 用的題目跟最後考試的題目要分開放不然自己出題自己考就沒意義啦",
+   "whisper_segments": [
+    [
+     0.0,
+     "要回答準不準"
+    ],
+    [
+     1.56,
+     "就要看怎麼校正"
+    ],
+    [
+     3.2,
+     "十一月那篇把做法收成四件事"
+    ],
+    [
+     6.04,
+     "這份報告整理成四個動作"
+    ],
+    [
+     8.6,
+     "隔開"
+    ],
+    [
+     9.6,
+     "考"
+    ],
+    [
+     10.4,
+     "計"
+    ],
+    [
+     11.2,
+     "修"
+    ],
+    [
+     12.48,
+     "先看第一個"
+    ],
+    [
+     13.36,
+     "隔開"
+    ],
+    [
+     14.48,
+     "什麼意思呢"
+    ],
+    [
+     16.12,
+     "就是兩句不能自己調刻度"
+    ],
+    [
+     18.72,
+     "比方說審查的設定檔"
+    ],
+    [
+     21.0,
+     "只從要合併進去的那條主幹部"
+    ],
+    [
+     23.88,
+     "送進來的 PR 改不到它"
+    ],
+    [
+     26.32,
+     "審查結果也綁在某一個 commit 上"
+    ],
+    [
+     29.04,
+     "要是有人審到一半"
+    ],
+    [
+     30.68,
+     "又推了新的程式碼上來"
+    ],
+    [
+     33.04,
+     "那次審查就不算"
+    ],
+    [
+     35.0,
+     "還有挑 prompt 用的題目"
+    ],
+    [
+     37.24,
+     "跟最後考試的題目要分開放"
+    ],
+    [
+     40.32,
+     "不然自己出題自己考"
+    ],
+    [
+     42.08,
+     "就沒意義啦"
+    ]
+   ],
+   "gemini_text": "要回答準不準，就要看怎麼校正。十一月那篇把做法縮成四件事，這份報告整理成四個動作：隔開、考、記、修。先看第一個，隔開。什麼意思呢？就是量具不能自己調刻度。比方說審查的設定檔只從要合併進去的那條主幹讀，送進來的 PR 改不到它。審查結果也綁在某一個 commit 上。要是有人審到一半，又推了新的程式碼上來，那次審查就不算。還有，調 prompt 用的題目跟最後考試的題目要分開放。不然，自己出題自己考就沒意義啦。",
+   "gemini_model_version": "gemini-3.8-flash"
+  },
+  {
+   "id": "s04_exam",
+   "cer_whisper": 0.047,
+   "cer_gemini": 0.028,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 75,
+     "ref_end": 76,
+     "script": "算",
+     "heard": "賺",
+     "context": "那個bug才【算】分每出一次事",
+     "hyp_pos": 75,
+     "by": "whisper",
+     "whisper_heard": "賺",
+     "gemini_heard": "—",
+     "episode_time": "3:47"
+    },
+    {
+     "ref_start": 17,
+     "ref_end": 18,
+     "script": "那",
+     "heard": "練這",
+     "context": "過事的pr熟【那】段程式碼的工",
+     "hyp_pos": 17,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "練這",
+     "episode_time": "?"
+    }
+   ],
+   "whisper_text": "那提庫從哪裡來是過去出過市的 PR熟那段程式碼的工程師先確認 bug 是什麼在哪裡每一題把程式庫還原到審查當時的樣子配一句話的答案AI 審查要說中那個 bug 才賺分每出一次事故提庫就多一題改了 prompt 工具或模型每天都考一次分數有上升就留沒有就丟可是光考他有沒有抓到 bug 夠嗎不夠一個什麼都爆的審查者也能拿高分所以他們另外拿合併後一直沒出事的變更給他審看他會不會亂爆平常也統計作者怎麼回應每一則意見修了說他錯說是故意的還是說不重要",
+   "whisper_segments": [
+    [
+     0.0,
+     "那提庫從哪裡來"
+    ],
+    [
+     2.28,
+     "是過去出過市的 PR"
+    ],
+    [
+     4.96,
+     "熟那段程式碼的工程師先確認 bug 是什麼"
+    ],
+    [
+     8.32,
+     "在哪裡"
+    ],
+    [
+     9.4,
+     "每一題把程式庫還原到審查當時的樣子"
+    ],
+    [
+     12.64,
+     "配一句話的答案"
+    ],
+    [
+     14.48,
+     "AI 審查要說中那個 bug 才賺分"
+    ],
+    [
+     17.76,
+     "每出一次事故"
+    ],
+    [
+     19.0,
+     "提庫就多一題"
+    ],
+    [
+     20.8,
+     "改了 prompt 工具或模型"
+    ],
+    [
+     23.04,
+     "每天都考一次"
+    ],
+    [
+     24.32,
+     "分數有上升就留"
+    ],
+    [
+     25.88,
+     "沒有就丟"
+    ],
+    [
+     27.64,
+     "可是"
+    ],
+    [
+     28.12,
+     "光考他有沒有抓到 bug 夠嗎"
+    ],
+    [
+     31.08,
+     "不夠"
+    ],
+    [
+     32.08,
+     "一個什麼都爆的審查者也能拿高分"
+    ],
+    [
+     35.88,
+     "所以他們另外拿合併後一直沒出事的變更給他審"
+    ],
+    [
+     39.72,
+     "看他會不會亂爆"
+    ],
+    [
+     41.16,
+     "平常也統計作者怎麼回應每一則意見"
+    ],
+    [
+     44.24,
+     "修了"
+    ],
+    [
+     44.96,
+     "說他錯"
+    ],
+    [
+     45.84,
+     "說是故意的"
+    ],
+    [
+     46.76,
+     "還是說不重要"
+    ]
+   ],
+   "gemini_text": "那題庫從哪裡來？是過去出過事的 PR。熟練這段程式碼的工程師先確認 bug 是什麼、在哪裡，每一題把程式庫還原到審查當時的樣子，配一句話的答案。AI 審查要說中那個 bug 才算分，每出一次事故題庫就多一題。改了 prompt 工具或模型，每天都考一次，分數有上升就留，沒有就丟。可是光考他有沒有抓到 bug 夠嗎？不夠。一個什麼都報的審查者也能拿高分，所以他們另外拿合併後一直沒出事的變更給他審，看他會不會亂報。平常也統計作者怎麼回應每一則意見：修了、說他錯、說是故意的，還是說不重要。",
+   "gemini_model_version": "gemini-3.8-flash"
+  },
+  {
+   "id": "s05_record",
+   "cer_whisper": 0.033,
+   "cer_gemini": 0.008,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 35,
+     "ref_end": 40,
+     "script": "寫none",
+     "heard": "先弄",
+     "context": "的沒驗就老實【寫none】之後查得到同",
+     "hyp_pos": 35,
+     "by": "whisper",
+     "whisper_heard": "先弄",
+     "gemini_heard": "—",
+     "episode_time": "4:27"
+    },
+    {
+     "ref_start": 101,
+     "ref_end": 102,
+     "script": "由",
+     "heard": "有",
+     "context": "推翻它最後才【由】人在pr裡核",
+     "hyp_pos": 101,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "有",
+     "episode_time": "?"
+    }
+   ],
+   "whisper_text": "第三個動作是把漏掉的記下來每個 commit 都要寫它是怎麼驗的沒驗就老實先弄之後查得到同一種漏網的問題至少在兩個 PR 出現過而且從改動看得出來這樣才列成候選規則他們會先讓三個 agent 試著推翻它最後才由人在 PR 裡核准這份報告說他們的可靠性清單有 39 項每一項背後都記著一次事故最後是修壞掉的良句要報廢測試不穩的時候不准跳過不准加等待也不准一直重跑到過找不到根本原因就刪掉並寫下理由測試和規則檔也要定期清不清就只會一直漲這份報告說四個動作講的是同一件事每一道檢查都要有它自己的標準件",
+   "whisper_segments": [
+    [
+     0.0,
+     "第三個動作是把漏掉的記下來"
+    ],
+    [
+     3.2,
+     "每個 commit 都要寫它是怎麼驗的"
+    ],
+    [
+     5.88,
+     "沒驗就老實先弄"
+    ],
+    [
+     7.72,
+     "之後查得到"
+    ],
+    [
+     9.16,
+     "同一種漏網的問題至少在兩個 PR 出現過"
+    ],
+    [
+     13.32,
+     "而且從改動看得出來"
+    ],
+    [
+     15.64,
+     "這樣才列成候選規則"
+    ],
+    [
+     17.88,
+     "他們會先讓三個 agent 試著推翻它"
+    ],
+    [
+     21.52,
+     "最後才由人在 PR 裡核准"
+    ],
+    [
+     24.36,
+     "這份報告說"
+    ],
+    [
+     26.72,
+     "他們的可靠性清單有 39 項"
+    ],
+    [
+     29.8,
+     "每一項背後都記著一次事故"
+    ],
+    [
+     32.96,
+     "最後是修"
+    ],
+    [
+     34.48,
+     "壞掉的良句要報廢"
+    ],
+    [
+     36.6,
+     "測試不穩的時候"
+    ],
+    [
+     38.24,
+     "不准跳過"
+    ],
+    [
+     39.44,
+     "不准加等待"
+    ],
+    [
+     40.68,
+     "也不准一直重跑到過"
+    ],
+    [
+     42.76,
+     "找不到根本原因就刪掉"
+    ],
+    [
+     45.36,
+     "並寫下理由"
+    ],
+    [
+     47.0,
+     "測試和規則檔也要定期清"
+    ],
+    [
+     49.68,
+     "不清就只會一直漲"
+    ],
+    [
+     52.0,
+     "這份報告說"
+    ],
+    [
+     53.24,
+     "四個動作講的是同一件事"
+    ],
+    [
+     55.76,
+     "每一道檢查都要有它自己的標準件"
+    ]
+   ],
+   "gemini_text": "第三個動作是把漏掉的記下來，每個 commit 都要寫它是怎麼驗的，沒驗就老實寫 none，之後查得到。同一種漏網的問題，至少在兩個 PR 出現過，而且從改動看得出來，這樣才列成候選規則。他們會先讓三個 agent 試著推翻它，最後才有人在 PR 裡核准。嗯，這份報告說，他們的可靠性清單有三十九項，每一項背後都記著一次事故。最後是修，壞掉的量具要報廢，測試不穩的時候，不准跳過，不准加等待，也不准一直重跑到過，找不到根本原因就刪掉，並寫下理由。測試和規則檔也要定期清，不清就只會一直長。這份報告說，四個動作講的是同一件事，每一道檢查都要有它自己的標準件。",
+   "gemini_model_version": "gemini-3.8-flash"
+  },
+  {
+   "id": "s06_flaws",
+   "cer_whisper": 0.104,
+   "cer_gemini": 0.014,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 16,
+     "ref_end": 18,
+     "script": "實質",
+     "heard": "十之",
+     "context": "讀數像審查有【實質】意見的pr從",
+     "hyp_pos": 16,
+     "by": "whisper",
+     "whisper_heard": "十之",
+     "gemini_heard": "—",
+     "episode_time": "5:24"
+    },
+    {
+     "ref_start": 73,
+     "ref_end": 76,
+     "script": "git",
+     "heard": "keep",
+     "context": "找舊bug拿【git】blame去",
+     "hyp_pos": 73,
+     "by": "whisper",
+     "whisper_heard": "keep",
+     "gemini_heard": "—",
+     "episode_time": "5:40"
+    },
+    {
+     "ref_start": 123,
+     "ref_end": 125,
+     "script": "餵有",
+     "heard": "喂",
+     "context": "ent會互相【餵有】一個pr一個",
+     "hyp_pos": 124,
+     "by": "both",
+     "whisper_heard": "喂",
+     "gemini_heard": "這邊",
+     "episode_time": "5:49"
+    },
+    {
+     "ref_start": 133,
+     "ref_end": 134,
+     "script": "審",
+     "heard": "省",
+     "context": "pr一個晚上【審】了又修五十多",
+     "hyp_pos": 133,
+     "by": "whisper",
+     "whisper_heard": "省",
+     "gemini_heard": "—",
+     "episode_time": "5:51"
+    },
+    {
+     "ref_start": 135,
+     "ref_end": 137,
+     "script": "又修",
+     "heard": "優秀",
+     "context": "一個晚上審了【又修】五十多輪作者",
+     "hyp_pos": 135,
+     "by": "whisper",
+     "whisper_heard": "優秀",
+     "gemini_heard": "—",
+     "episode_time": "5:51"
+    },
+    {
+     "ref_start": 159,
+     "ref_end": 160,
+     "script": "糟",
+     "heard": "造",
+     "context": "是我們自己弄【糟】的人習慣每個",
+     "hyp_pos": 160,
+     "by": "whisper",
+     "whisper_heard": "造",
+     "gemini_heard": "—",
+     "episode_time": "5:58"
+    },
+    {
+     "ref_start": 169,
+     "ref_end": 170,
+     "script": "審",
+     "heard": "省",
+     "context": "慣每個pr多【審】幾輪後來加了",
+     "hyp_pos": 170,
+     "by": "whisper",
+     "whisper_heard": "省",
+     "gemini_heard": "—",
+     "episode_time": "6:02"
+    },
+    {
+     "ref_start": 178,
+     "ref_end": 179,
+     "script": "審",
+     "heard": "省",
+     "context": "後來加了上限【審】滿三輪就請作",
+     "hyp_pos": 179,
+     "by": "whisper",
+     "whisper_heard": "省",
+     "gemini_heard": "—",
+     "episode_time": "6:06"
+    },
+    {
+     "ref_start": 197,
+     "ref_end": 199,
+     "script": "斷路",
+     "heard": "段落",
+     "context": "法第四還沒有【斷路】器退回或事故",
+     "hyp_pos": 198,
+     "by": "whisper",
+     "whisper_heard": "段落",
+     "gemini_heard": "—",
+     "episode_time": "6:11"
+    }
+   ],
+   "whisper_text": "那成效呢他們給了幾個讀數像審查有十之意見的 PR從不到兩成變成超過一半都是內部自爆這份報告覺得更有用的是他們自己寫出來的偏差第一他一直在找舊 bug拿 keep blame 去查他反覆爆的問題大約六成是他第一輪審的時候就已經載的程式碼第二兩個 agent 會互相喂一個 PR 一個晚上省了優秀 50 多輪作者才喊停第三他們寫的問題是我們自己弄造的人習慣每個 PR 多省幾輪後來加了上限省滿三輪就請作者退一步想做法第四還沒有段落器退回或事故變多的時候沒有東西會自動把核准收緊",
+   "whisper_segments": [
+    [
+     0.0,
+     "那成效呢"
+    ],
+    [
+     2.0,
+     "他們給了幾個讀數"
+    ],
+    [
+     3.68,
+     "像審查有十之意見的 PR"
+    ],
+    [
+     7.08,
+     "從不到兩成變成超過一半"
+    ],
+    [
+     10.12,
+     "都是內部自爆"
+    ],
+    [
+     12.4,
+     "這份報告覺得更有用的是他們自己寫出來的偏差"
+    ],
+    [
+     17.16,
+     "第一"
+    ],
+    [
+     18.08,
+     "他一直在找舊 bug"
+    ],
+    [
+     20.2,
+     "拿 keep blame 去查他反覆爆的問題"
+    ],
+    [
+     23.32,
+     "大約六成是他第一輪審的時候就已經載的程式碼"
+    ],
+    [
+     27.8,
+     "第二"
+    ],
+    [
+     28.68,
+     "兩個 agent 會互相喂"
+    ],
+    [
+     30.68,
+     "一個 PR 一個晚上省了優秀 50 多輪"
+    ],
+    [
+     34.4,
+     "作者才喊停"
+    ],
+    [
+     37.2,
+     "第三"
+    ],
+    [
+     38.04,
+     "他們寫的問題是我們自己弄造的"
+    ],
+    [
+     41.64,
+     "人習慣每個 PR 多省幾輪"
+    ],
+    [
+     44.12,
+     "後來加了上限"
+    ],
+    [
+     45.56,
+     "省滿三輪就請作者退一步想做法"
+    ],
+    [
+     49.94,
+     "第四"
+    ],
+    [
+     50.68,
+     "還沒有段落器"
+    ],
+    [
+     52.32,
+     "退回或事故變多的時候"
+    ],
+    [
+     54.56,
+     "沒有東西會自動把核准收緊"
+    ]
+   ],
+   "gemini_text": "那成效呢，他們給了幾個讀數，像審查有實質意見的 PR，從不到兩成變成超過一半都是內部自爆。這份報告覺得更有用的是他們自己寫出來的偏差。第一，它一直在找舊 bug。拿 git blame 去查它反覆報的問題，大約六成是它第一輪審的時候就已經在的程式碼。第二，兩個 agent 會互相餵，這邊一個 PR，一個晚上審了又修五十多輪，作者才喊停。第三，他們寫問題是我們自己弄糟的，人習慣每個 PR 多審幾輪，後來加了上限，審滿三輪就請作者退一步想做法。第四，還沒有斷路器，退回或事故變多的時候，沒有東西會自動把核准收緊。",
+   "gemini_model_version": "gemini-3.8-flash"
+  },
+  {
+   "id": "s07_missing",
+   "cer_whisper": 0.049,
+   "cer_gemini": 0.007,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 34,
+     "ref_end": 35,
+     "script": "擋",
+     "heard": "當",
+     "context": "ssion裡【擋】了二次第三次",
+     "hyp_pos": 34,
+     "by": "whisper",
+     "whisper_heard": "當",
+     "gemini_heard": "—",
+     "episode_time": "6:20"
+    },
+    {
+     "ref_start": 48,
+     "ref_end": 49,
+     "script": "a",
+     "heard": "o",
+     "context": "放行免得cl【a】ude卡死文",
+     "hyp_pos": 48,
+     "by": "whisper",
+     "whisper_heard": "o",
+     "gemini_heard": "—",
+     "episode_time": "6:26"
+    },
+    {
+     "ref_start": 51,
+     "ref_end": 52,
+     "script": "e",
+     "heard": "",
+     "context": "得claud【e】卡死文章給的",
+     "hyp_pos": 51,
+     "by": "whisper",
+     "whisper_heard": "",
+     "gemini_heard": "—",
+     "episode_time": "6:26"
+    },
+    {
+     "ref_start": 65,
+     "ref_end": 66,
+     "script": "a",
+     "heard": "o",
+     "context": "由很坦白cl【a】udecod",
+     "hyp_pos": 64,
+     "by": "whisper",
+     "whisper_heard": "o",
+     "gemini_heard": "—",
+     "episode_time": "6:30"
+    },
+    {
+     "ref_start": 68,
+     "ref_end": 69,
+     "script": "e",
+     "heard": "",
+     "context": "白claud【e】code並不",
+     "hyp_pos": 67,
+     "by": "whisper",
+     "whisper_heard": "",
+     "gemini_heard": "—",
+     "episode_time": "6:30"
+    },
+    {
+     "ref_start": 102,
+     "ref_end": 103,
+     "script": "數",
+     "heard": "出",
+     "context": "要緊的三個讀【數】沒有給第一個",
+     "hyp_pos": 100,
+     "by": "whisper",
+     "whisper_heard": "出",
+     "gemini_heard": "—",
+     "episode_time": "6:36"
+    },
+    {
+     "ref_start": 157,
+     "ref_end": 159,
+     "script": "dy",
+     "heard": "i",
+     "context": "篇的作者ad【dy】osmani",
+     "hyp_pos": 155,
+     "by": "whisper",
+     "whisper_heard": "i",
+     "gemini_heard": "—",
+     "episode_time": "6:50"
+    },
+    {
+     "ref_start": 162,
+     "ref_end": 163,
+     "script": "a",
+     "heard": "o",
+     "context": "ddyosm【a】ni就在cl",
+     "hyp_pos": 159,
+     "by": "whisper",
+     "whisper_heard": "o",
+     "gemini_heard": "—",
+     "episode_time": "6:50"
+    },
+    {
+     "ref_start": 164,
+     "ref_end": 165,
+     "script": "i",
+     "heard": "ey",
+     "context": "yosman【i】就在clau",
+     "hyp_pos": 161,
+     "by": "whisper",
+     "whisper_heard": "ey",
+     "gemini_heard": "—",
+     "episode_time": "6:50"
+    },
+    {
+     "ref_start": 169,
+     "ref_end": 170,
+     "script": "a",
+     "heard": "o",
+     "context": "ni就在cl【a】udecod",
+     "hyp_pos": 167,
+     "by": "whisper",
+     "whisper_heard": "o",
+     "gemini_heard": "—",
+     "episode_time": "6:50"
+    },
+    {
+     "ref_start": 172,
+     "ref_end": 173,
+     "script": "e",
+     "heard": "",
+     "context": "在claud【e】code團隊",
+     "hyp_pos": 170,
+     "by": "whisper",
+     "whisper_heard": "",
+     "gemini_heard": "—",
+     "episode_time": "6:50"
+    },
+    {
+     "ref_start": 144,
+     "ref_end": 146,
+     "script": "事故",
+     "heard": "試圖",
+     "context": "實際數字還有【事故】的次數這二篇",
+     "hyp_pos": 144,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "試圖",
+     "episode_time": "?"
+    }
+   ],
+   "whisper_text": "11 月那篇也留了一個口子commit 前的檢查在同一個 session 裡當了兩次第三次就放行免得 cloud 卡死文章給的理由很坦白cloud code 並不完美所以這份報告說兩篇的作法寫得很細可是最要緊的三個讀出沒有給第一個是 AI 審查最後的 recall也就是抓到率另外兩個是退回率的實際數字還有事故的次數這兩篇的作者 Adios money 就在 cloud code 團隊工作他 9 月在自己的電子報補過一個回頭分析如果每個變更都過自動審查過去那些事故背後的 bug大約三分之一會在上線前被抓到這些 bug 當初多半過了仔細的人審所以三分之一算多可是反過來說剩下大約三分之二自動審查一樣抓不到",
+   "whisper_segments": [
+    [
+     0.0,
+     "11 月那篇也留了一個口子"
+    ],
+    [
+     2.92,
+     "commit 前的檢查在同一個 session 裡當了兩次"
+    ],
+    [
+     6.92,
+     "第三次就放行"
+    ],
+    [
+     8.32,
+     "免得 cloud 卡死"
+    ],
+    [
+     10.4,
+     "文章給的理由很坦白"
+    ],
+    [
+     12.32,
+     "cloud code 並不完美"
+    ],
+    [
+     14.64,
+     "所以這份報告說"
+    ],
+    [
+     16.16,
+     "兩篇的作法寫得很細"
+    ],
+    [
+     18.6,
+     "可是最要緊的三個讀出沒有給"
+    ],
+    [
+     21.88,
+     "第一個是 AI 審查最後的 recall"
+    ],
+    [
+     24.96,
+     "也就是抓到率"
+    ],
+    [
+     26.76,
+     "另外兩個是退回率的實際數字"
+    ],
+    [
+     29.88,
+     "還有事故的次數"
+    ],
+    [
+     32.6,
+     "這兩篇的作者 Adios money 就在 cloud code 團隊工作"
+    ],
+    [
+     37.64,
+     "他 9 月在自己的電子報補過一個回頭分析"
+    ],
+    [
+     41.8,
+     "如果每個變更都過自動審查"
+    ],
+    [
+     44.92,
+     "過去那些事故背後的 bug"
+    ],
+    [
+     47.32,
+     "大約三分之一會在上線前被抓到"
+    ],
+    [
+     50.36,
+     "這些 bug 當初多半過了仔細的人審"
+    ],
+    [
+     53.76,
+     "所以三分之一算多"
+    ],
+    [
+     56.04,
+     "可是反過來說"
+    ],
+    [
+     57.28,
+     "剩下大約三分之二"
+    ],
+    [
+     59.16,
+     "自動審查一樣抓不到"
+    ]
+   ],
+   "gemini_text": "十一月那篇也留了一個口子，commit前的檢查在同一個session裡擋了兩次，第三次就放行，免得Claude卡死。文章給的理由很坦白，Claude Code並不完美。所以這份報告說，兩篇的做法寫得很細，可是最要緊的三個讀數沒有給。第一個是AI審查最後的recall，也就是抓到率。另外兩個是退回率的實際數字，還有試圖的次數。這兩篇的作者Addy Osmani就在Claude Code團隊工作，他九月在自己的電子報補過一個回頭分析，如果每個變更都過自動審查，過去那些事故背後的bug，大約三分之一會在上線前被抓到。這些bug當初多半過了仔細的人審，所以三分之一算多，可是反過來說，剩下大約三分之二，自動審查一樣抓不到。",
+   "gemini_model_version": "gemini-3.8-flash"
+  },
+  {
+   "id": "s08_others",
+   "cer_whisper": 0.061,
+   "cer_gemini": 0.013,
+   "gemini_unclear_marks": 1,
+   "flagged": [
+    {
+     "ref_start": 16,
+     "ref_end": 18,
+     "script": "九月",
+     "heard": "酒店",
+     "context": "osmani【九月】那篇有一段話",
+     "hyp_pos": 16,
+     "by": "whisper",
+     "whisper_heard": "酒店",
+     "gemini_heard": "—",
+     "episode_time": "7:22"
+    },
+    {
+     "ref_start": 29,
+     "ref_end": 30,
+     "script": "尺",
+     "heard": "詞",
+     "context": "話剛好可以當【尺】有人問他測試",
+     "hyp_pos": 29,
+     "by": "whisper",
+     "whisper_heard": "詞",
+     "gemini_heard": "—",
+     "episode_time": "7:22"
+    },
+    {
+     "ref_start": 63,
+     "ref_end": 64,
+     "script": "a",
+     "heard": "o",
+     "context": "他說一個cl【a】ude寫測試",
+     "hyp_pos": 63,
+     "by": "whisper",
+     "whisper_heard": "o",
+     "gemini_heard": "—",
+     "episode_time": "7:32"
+    },
+    {
+     "ref_start": 66,
+     "ref_end": 67,
+     "script": "e",
+     "heard": "",
+     "context": "個claud【e】寫測試另一個",
+     "hyp_pos": 66,
+     "by": "whisper",
+     "whisper_heard": "",
+     "gemini_heard": "—",
+     "episode_time": "7:32"
+    },
+    {
+     "ref_start": 75,
+     "ref_end": 76,
+     "script": "a",
+     "heard": "o",
+     "context": "試另一個cl【a】ude寫程式",
+     "hyp_pos": 74,
+     "by": "whisper",
+     "whisper_heard": "o",
+     "gemini_heard": "—",
+     "episode_time": "7:33"
+    },
+    {
+     "ref_start": 78,
+     "ref_end": 79,
+     "script": "e",
+     "heard": "",
+     "context": "個claud【e】寫程式擋得住",
+     "hyp_pos": 77,
+     "by": "whisper",
+     "whisper_heard": "",
+     "gemini_heard": "—",
+     "episode_time": "7:33"
+    },
+    {
+     "ref_start": 140,
+     "ref_end": 141,
+     "script": "這",
+     "heard": "著",
+     "context": "明這份報告拿【這】把尺去量了幾",
+     "hyp_pos": 138,
+     "by": "whisper",
+     "whisper_heard": "著",
+     "gemini_heard": "—",
+     "episode_time": "7:48"
+    },
+    {
+     "ref_start": 237,
+     "ref_end": 239,
+     "script": "pi",
+     "heard": "派",
+     "context": "gagent【pi】的作者只在b",
+     "hyp_pos": 235,
+     "by": "both",
+     "whisper_heard": "派",
+     "gemini_heard": "",
+     "episode_time": "8:04"
+    },
+    {
+     "ref_start": 249,
+     "ref_end": 250,
+     "script": "得",
+     "heard": "了",
+     "context": "在bug重現【得】出來的時候放",
+     "hyp_pos": 246,
+     "by": "whisper",
+     "whisper_heard": "了",
+     "gemini_heard": "—",
+     "episode_time": "8:06"
+    },
+    {
+     "ref_start": 262,
+     "ref_end": 263,
+     "script": "修",
+     "heard": "show",
+     "context": "手還要有一支【修】之前失敗修之",
+     "hyp_pos": 259,
+     "by": "whisper",
+     "whisper_heard": "show",
+     "gemini_heard": "—",
+     "episode_time": "8:08"
+    },
+    {
+     "ref_start": 267,
+     "ref_end": 268,
+     "script": "修",
+     "heard": "show",
+     "context": "支修之前失敗【修】之後透過的測",
+     "hyp_pos": 267,
+     "by": "whisper",
+     "whisper_heard": "show",
+     "gemini_heard": "—",
+     "episode_time": "8:08"
+    },
+    {
+     "ref_start": 1,
+     "ref_end": 3,
+     "script": "別家",
+     "heard": "比起",
+     "context": "那【別家】拿什麼當標準",
+     "hyp_pos": 1,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "比起",
+     "episode_time": "?"
+    }
+   ],
+   "whisper_text": "那別家拿什麼當標準件Osmani 酒店那篇有一段話剛好可以當詞有人問他測試如果也是你不信任的那個東西寫的測了有什麼用他說一個 cloud 寫測試另一個 cloud 寫程式擋得住最明顯的錯可是同一個模型複製成兩份盲點還是同一組真正的獨立要靠另一個來源人寫的規格參考實作或一個證明這份報告拿著把尺去量了幾家Uncle Bob 用 mutation testing 故意把程式改壞看測試會不會叫DataDog 拿跟正式環境一樣的流量回頭對不過 DataDog 自己就是賣監控的開源 coding agent 派的作者只在 bug 重現了出來的時候放手還要有一支 show 之前失敗 show 之後通過的測試他才放心讓機器人自動合併有回答這一題的幾家答案都一樣拿另一個獨立的東西來對",
+   "whisper_segments": [
+    [
+     0.0,
+     "那別家拿什麼當標準件"
+    ],
+    [
+     2.68,
+     "Osmani 酒店那篇有一段話剛好可以當詞"
+    ],
+    [
+     6.28,
+     "有人問他"
+    ],
+    [
+     7.36,
+     "測試如果也是你不信任的那個東西寫的"
+    ],
+    [
+     10.4,
+     "測了有什麼用"
+    ],
+    [
+     11.64,
+     "他說"
+    ],
+    [
+     12.76,
+     "一個 cloud 寫測試"
+    ],
+    [
+     14.36,
+     "另一個 cloud 寫程式"
+    ],
+    [
+     16.28,
+     "擋得住最明顯的錯"
+    ],
+    [
+     18.44,
+     "可是同一個模型複製成兩份"
+    ],
+    [
+     21.12,
+     "盲點還是同一組"
+    ],
+    [
+     23.2,
+     "真正的獨立要靠另一個來源"
+    ],
+    [
+     26.08,
+     "人寫的規格"
+    ],
+    [
+     27.28,
+     "參考實作或一個證明"
+    ],
+    [
+     29.26,
+     "這份報告拿著把尺去量了幾家"
+    ],
+    [
+     32.7,
+     "Uncle Bob 用 mutation testing 故意把程式改壞"
+    ],
+    [
+     36.54,
+     "看測試會不會叫"
+    ],
+    [
+     38.38,
+     "DataDog 拿跟正式環境一樣的流量回頭對"
+    ],
+    [
+     41.82,
+     "不過 DataDog 自己就是賣監控的"
+    ],
+    [
+     44.78,
+     "開源 coding agent 派的作者"
+    ],
+    [
+     46.98,
+     "只在 bug 重現了出來的時候放手"
+    ],
+    [
+     49.5,
+     "還要有一支 show 之前失敗 show 之後通過的測試"
+    ],
+    [
+     53.06,
+     "他才放心讓機器人自動合併"
+    ],
+    [
+     55.7,
+     "有回答這一題的幾家"
+    ],
+    [
+     57.46,
+     "答案都一樣"
+    ],
+    [
+     58.7,
+     "拿另一個獨立的東西來對"
+    ]
+   ],
+   "gemini_text": "那比起拿什麼當標準件，Osmani 九月那篇有一段話，剛好可以當尺。有人問他，測試如果也是你不信任的那個東西寫的，測了有什麼用？他說，一個 Claude 寫測試，另一個 Claude 寫程式，擋得住最明顯的錯，可是同一個模型複製成兩份，盲點還是同一組。真正的獨立，要靠另一個來源，人寫的規格、參考實作或一個證明。這份報告拿這把尺去量了幾家。Uncle Bob 用 mutation testing，故意把程式改壞，看測試會不會叫。Datadog 拿跟正式環境一樣的流量回頭對。不過 Datadog 自己就是賣監控的。開源 coding agent ［?］ 的作者，只在 bug 重現得出來的時候放手，還要有一支修之前失敗、修之後通過的測試，他才放心讓機器人自動合併。有回答這一題的幾家，答案都一樣，拿另一個獨立的東西來對。",
+   "gemini_model_version": "gemini-3.8-flash"
+  },
+  {
+   "id": "s09_human",
+   "cer_whisper": 0.084,
+   "cer_gemini": 0.009,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 42,
+     "ref_end": 44,
+     "script": "淺層",
+     "heard": "前程",
+     "context": "元測試只測到【淺層】人工審查呢又",
+     "hyp_pos": 42,
+     "by": "whisper",
+     "whisper_heard": "前程",
+     "gemini_heard": "—",
+     "episode_time": "8:30"
+    },
+    {
+     "ref_start": 98,
+     "ref_end": 99,
+     "script": "審",
+     "heard": "省",
+     "context": "底中間給機器【審】最貴的人留到",
+     "hyp_pos": 97,
+     "by": "whisper",
+     "whisper_heard": "省",
+     "gemini_heard": "—",
+     "episode_time": "8:45"
+    },
+    {
+     "ref_start": 127,
+     "ref_end": 128,
+     "script": "份",
+     "heard": "番",
+     "context": "頓商學院的一【份】研究ai給錯",
+     "hyp_pos": 126,
+     "by": "whisper",
+     "whisper_heard": "番",
+     "gemini_heard": "—",
+     "episode_time": "8:51"
+    },
+    {
+     "ref_start": 133,
+     "ref_end": 134,
+     "script": "錯",
+     "heard": "出的",
+     "context": "份研究ai給【錯】答案的時候七",
+     "hyp_pos": 132,
+     "by": "whisper",
+     "whisper_heard": "出的",
+     "gemini_heard": "—",
+     "episode_time": "8:54"
+    },
+    {
+     "ref_start": 172,
+     "ref_end": 173,
+     "script": "掃",
+     "heard": "少",
+     "context": "高他形容自己【掃】過一個六百行",
+     "hyp_pos": 172,
+     "by": "whisper",
+     "whisper_heard": "少",
+     "gemini_heard": "—",
+     "episode_time": "9:03"
+    },
+    {
+     "ref_start": 205,
+     "ref_end": 206,
+     "script": "校",
+     "heard": "較",
+     "context": "告說量具會偏【校】正量具的人也",
+     "hyp_pos": 205,
+     "by": "whisper",
+     "whisper_heard": "較",
+     "gemini_heard": "—",
+     "episode_time": "9:12"
+    },
+    {
+     "ref_start": 77,
+     "ref_end": 79,
+     "script": "三集",
+     "heard": "升級",
+     "context": "以解釋為什麼【三集】的案例最後都",
+     "hyp_pos": 77,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "升級",
+     "episode_time": "?"
+    }
+   ],
+   "whisper_text": "可是每一種良句都會偏阿里巴巴做模型的團隊有一篇論文說AI 評審會被鑽漏洞單元測試只測到前程人工審查又放不大三樣好處都有的還沒出現這份報告說這可以解釋為什麼三級的案例最後都漲成三層測試打底中間給機器省最貴的人留到最後而人也會偏Osmani 引了華頓商學院的一番研究AI 給出的答案的時候七成多的情況下人照樣收下而且有 AI 在旁邊人的信心反而變高他形容自己少過一個 600 行的 PR 就按了核准那不是審查只是蓋章這份報告說良句會偏較正良句的人也會差別在良句有履歷卡人沒有",
+   "whisper_segments": [
+    [
+     0.0,
+     "可是每一種良句都會偏阿里巴巴做模型的團隊有一篇論文說"
+    ],
+    [
+     7.72,
+     "AI 評審會被鑽漏洞"
+    ],
+    [
+     9.76,
+     "單元測試只測到前程"
+    ],
+    [
+     11.92,
+     "人工審查又放不大"
+    ],
+    [
+     14.56,
+     "三樣好處都有的還沒出現"
+    ],
+    [
+     17.76,
+     "這份報告說"
+    ],
+    [
+     19.0,
+     "這可以解釋為什麼三級的案例最後都漲成三層"
+    ],
+    [
+     23.48,
+     "測試打底"
+    ],
+    [
+     24.64,
+     "中間給機器省"
+    ],
+    [
+     26.28,
+     "最貴的人留到最後"
+    ],
+    [
+     28.88,
+     "而"
+    ],
+    [
+     29.16,
+     "人也會偏"
+    ],
+    [
+     30.96,
+     "Osmani 引了華頓商學院的一番研究"
+    ],
+    [
+     34.12,
+     "AI 給出的答案的時候"
+    ],
+    [
+     35.56,
+     "七成多的情況下"
+    ],
+    [
+     37.04,
+     "人照樣收下"
+    ],
+    [
+     38.6,
+     "而且有 AI 在旁邊"
+    ],
+    [
+     40.28,
+     "人的信心反而變高"
+    ],
+    [
+     42.68,
+     "他形容自己少過一個 600 行的 PR 就按了核准"
+    ],
+    [
+     47.0,
+     "那不是審查"
+    ],
+    [
+     48.24,
+     "只是蓋章"
+    ],
+    [
+     49.8,
+     "這份報告說"
+    ],
+    [
+     50.96,
+     "良句會偏"
+    ],
+    [
+     52.16,
+     "較正良句的人也會"
+    ],
+    [
+     54.04,
+     "差別在良句有履歷卡"
+    ],
+    [
+     56.68,
+     "人沒有"
+    ]
+   ],
+   "gemini_text": "可是每一種量具都會偏。阿里巴巴做模型的團隊有一篇論文說，AI評審會被鑽漏洞，單元測試只測到淺層，人工審查呢又放不大。三樣好處都有的還沒出現。這份報告說，這可以解釋為什麼升級的案例最後都長成三層，測試打底，中間給機器審，最貴的人留到最後。而人也會偏。Osmani引了華頓商學院的一份研究，AI給錯答案的時候，七成多的情況下，人照樣收下，而且有AI在旁邊，人的信心反而變高。他形容自己掃過一個六百行的PR就按了核准，那不是審查，只是蓋章。這份報告說，量具會偏，校正量具的人也會。差別在，量具有履歷卡，人沒有。",
+   "gemini_model_version": "gemini-3.8-flash"
+  },
+  {
+   "id": "s10_label",
+   "cer_whisper": 0.027,
+   "cer_gemini": 0.019,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 136,
+     "ref_end": 138,
+     "script": "成績",
+     "heard": "層級",
+     "context": "率當護欄不當【成績】它們變高代表",
+     "hyp_pos": 136,
+     "by": "whisper",
+     "whisper_heard": "層級",
+     "gemini_heard": "—",
+     "episode_time": "9:48"
+    },
+    {
+     "ref_start": 153,
+     "ref_end": 154,
+     "script": "搬",
+     "heard": "辦",
+     "context": "間只是從審查【搬】到了善後不要",
+     "hyp_pos": 153,
+     "by": "whisper",
+     "whisper_heard": "辦",
+     "gemini_heard": "—",
+     "episode_time": "9:53"
+    },
+    {
+     "ref_start": 164,
+     "ref_end": 165,
+     "script": "成",
+     "heard": "層",
+     "context": "不要學的是九【成】和四成這二個",
+     "hyp_pos": 164,
+     "by": "whisper",
+     "whisper_heard": "層",
+     "gemini_heard": "—",
+     "episode_time": "9:57"
+    },
+    {
+     "ref_start": 167,
+     "ref_end": 168,
+     "script": "成",
+     "heard": "層",
+     "context": "的是九成和四【成】這二個數字它",
+     "hyp_pos": 167,
+     "by": "whisper",
+     "whisper_heard": "層",
+     "gemini_heard": "—",
+     "episode_time": "9:57"
+    },
+    {
+     "ref_start": 216,
+     "ref_end": 217,
+     "script": "a",
+     "heard": "o",
+     "context": "初稿是用cl【a】ude寫的跟",
+     "hyp_pos": 216,
+     "by": "whisper",
+     "whisper_heard": "o",
+     "gemini_heard": "—",
+     "episode_time": "10:08"
+    },
+    {
+     "ref_start": 219,
+     "ref_end": 220,
+     "script": "e",
+     "heard": "",
+     "context": "用claud【e】寫的跟受檢的",
+     "hyp_pos": 219,
+     "by": "whisper",
+     "whisper_heard": "",
+     "gemini_heard": "—",
+     "episode_time": "10:08"
+    },
+    {
+     "ref_start": 170,
+     "ref_end": 171,
+     "script": "個",
+     "heard": "",
+     "context": "成和四成這二【個】數字它們沒有",
+     "hyp_pos": 170,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "",
+     "episode_time": "?"
+    },
+    {
+     "ref_start": 257,
+     "ref_end": 258,
+     "script": "給",
+     "heard": "改",
+     "context": "數字要等他們【給】",
+     "hyp_pos": 256,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "改",
+     "episode_time": "?"
+    }
+   ],
+   "whisper_text": "所以回到開頭的問題檢查本身錯了誰會知道不能靠檢查自己說這份報告說要拿另一個獨立的東西來對它也列了幾件一般團隊可以直接學的事最簡單的是每次出事就留一題出事的那個 PR加一句話寫清楚 bug有十題就能開始考你的 AI 審查檢查的設定放在被檢查的變更碰不到的地方退回率跟事故率當護欄不當層級它們變高代表人的時間只是從審查辦到了善後不要學的是 9 層和 4 層這兩個數字它們沒有基準線而且那個團隊做的產品就是 agent 自己這份報告的作者也寫明了初稿是用 cloud 寫的跟受檢的是同一家公司的模型所以他最後貼的標籤是做法可以參考數字要等他們給",
+   "whisper_segments": [
+    [
+     0.0,
+     "所以回到開頭的問題"
+    ],
+    [
+     2.44,
+     "檢查本身錯了誰會知道"
+    ],
+    [
+     5.24,
+     "不能靠檢查自己說"
+    ],
+    [
+     7.4,
+     "這份報告說要拿另一個獨立的東西來對"
+    ],
+    [
+     11.58,
+     "它也列了幾件一般團隊可以直接學的事"
+    ],
+    [
+     15.04,
+     "最簡單的是每次出事就留一題"
+    ],
+    [
+     18.48,
+     "出事的那個 PR"
+    ],
+    [
+     19.96,
+     "加一句話寫清楚 bug"
+    ],
+    [
+     21.92,
+     "有十題就能開始考你的 AI 審查"
+    ],
+    [
+     25.22,
+     "檢查的設定放在被檢查的變更碰不到的地方"
+    ],
+    [
+     29.88,
+     "退回率跟事故率當護欄不當層級"
+    ],
+    [
+     33.56,
+     "它們變高"
+    ],
+    [
+     34.92,
+     "代表人的時間只是從審查辦到了善後"
+    ],
+    [
+     39.38,
+     "不要學的是 9 層和 4 層這兩個數字"
+    ],
+    [
+     42.84,
+     "它們沒有基準線"
+    ],
+    [
+     44.24,
+     "而且那個團隊做的產品就是 agent 自己"
+    ],
+    [
+     47.92,
+     "這份報告的作者也寫明了"
+    ],
+    [
+     50.16,
+     "初稿是用 cloud 寫的"
+    ],
+    [
+     52.06,
+     "跟受檢的是同一家公司的模型"
+    ],
+    [
+     54.8,
+     "所以他最後貼的標籤是做法可以參考"
+    ],
+    [
+     58.16,
+     "數字要等他們給"
+    ]
+   ],
+   "gemini_text": "所以回到開頭的問題，檢查本身錯了，誰會知道？不能靠檢查自己說。這份報告說，要拿另一個獨立的東西來對。他也列了幾件一般團隊可以直接學的事。最簡單的是每次出事就留一題。出事的那個PR加一句話寫清楚bug，有十題就能開始考你的AI審查。檢查的設定放在被檢查的變更碰不到的地方。退回率跟事故率當護欄，不當成績。他們變高，代表人的時間只是從審查搬到了善後。不要學的是九成和四成這兩數字，他們沒有基準線，而且那個團隊做的產品就是agent自己。這份報告的作者也寫明了，初稿是用Claude寫的，跟受檢的是同一家公司的模型。所以他最後貼的標籤是做法可以參考，數字要等他們改。",
+   "gemini_model_version": "gemini-3.8-flash"
+  },
+  {
+   "id": "s11_outro",
+   "cer_whisper": 0.057,
+   "cer_gemini": 0.026,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 63,
+     "ref_end": 65,
+     "script": "變更",
+     "heard": "邊根",
+     "context": "放在被檢查的【變更】碰不到的地方",
+     "hyp_pos": 63,
+     "by": "whisper",
+     "whisper_heard": "邊根",
+     "gemini_heard": "—",
+     "episode_time": "10:31"
+    },
+    {
+     "ref_start": 83,
+     "ref_end": 85,
+     "script": "成績",
+     "heard": "層級",
+     "context": "率當護欄不當【成績】第三clau",
+     "hyp_pos": 83,
+     "by": "whisper",
+     "whisper_heard": "層級",
+     "gemini_heard": "—",
+     "episode_time": "10:38"
+    },
+    {
+     "ref_start": 89,
+     "ref_end": 90,
+     "script": "a",
+     "heard": "o",
+     "context": "成績第三cl【a】udecod",
+     "hyp_pos": 89,
+     "by": "whisper",
+     "whisper_heard": "o",
+     "gemini_heard": "—",
+     "episode_time": "10:41"
+    },
+    {
+     "ref_start": 92,
+     "ref_end": 93,
+     "script": "e",
+     "heard": "",
+     "context": "三claud【e】code團隊",
+     "hyp_pos": 92,
+     "by": "whisper",
+     "whisper_heard": "",
+     "gemini_heard": "—",
+     "episode_time": "10:41"
+    },
+    {
+     "ref_start": 177,
+     "ref_end": 178,
+     "script": "g",
+     "heard": "k",
+     "context": "欄我是pin【g】有收到的話回",
+     "hyp_pos": 176,
+     "by": "whisper",
+     "whisper_heard": "k",
+     "gemini_heard": "—",
+     "episode_time": "11:02"
+    },
+    {
+     "ref_start": 183,
+     "ref_end": 184,
+     "script": "回",
+     "heard": "會有",
+     "context": "g有收到的話【回】我一個pon",
+     "hyp_pos": 182,
+     "by": "whisper",
+     "whisper_heard": "會有",
+     "gemini_heard": "—",
+     "episode_time": "11:03"
+    },
+    {
+     "ref_start": 4,
+     "ref_end": 5,
+     "script": "r",
+     "heard": "ull",
+     "context": "今晚的b【r】eakpoi",
+     "hyp_pos": 4,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "ull",
+     "episode_time": "?"
+    },
+    {
+     "ref_start": 6,
+     "ref_end": 8,
+     "script": "ak",
+     "heard": "t",
+     "context": "今晚的bre【ak】point第",
+     "hyp_pos": 8,
+     "by": "gemini",
+     "whisper_heard": "—",
+     "gemini_heard": "t",
+     "episode_time": "?"
+    }
+   ],
+   "whisper_text": "今晚的 break point第一檢查交給機器之後檢查本身也要有標準件每次出事留一題拿來考你的 AI 審查第二檢查的設定要放在被檢查的邊根碰不到的地方退回率和事故率當護欄不當層級第三Cloud Code 團隊的做法寫得很細可是抓到率退回率和事故數還沒給作法可以參考數字要等他們給三級走下來人沒有離開只是從讀程式碼退到了校正檢查的那一層原文連結在節目資訊欄我是 Pink有收到的話會有我一個 Pong下次見",
+   "whisper_segments": [
+    [
+     0.0,
+     "今晚的 break point"
+    ],
+    [
+     1.92,
+     "第一"
+    ],
+    [
+     2.68,
+     "檢查交給機器之後"
+    ],
+    [
+     4.56,
+     "檢查本身也要有標準件"
+    ],
+    [
+     7.04,
+     "每次出事留一題拿來考你的 AI 審查"
+    ],
+    [
+     11.52,
+     "第二"
+    ],
+    [
+     12.36,
+     "檢查的設定要放在被檢查的邊根"
+    ],
+    [
+     15.52,
+     "碰不到的地方"
+    ],
+    [
+     17.16,
+     "退回率和事故率當護欄"
+    ],
+    [
+     19.4,
+     "不當層級"
+    ],
+    [
+     21.52,
+     "第三"
+    ],
+    [
+     22.52,
+     "Cloud Code 團隊的做法寫得很細"
+    ],
+    [
+     25.12,
+     "可是抓到率"
+    ],
+    [
+     26.84,
+     "退回率和事故數還沒給"
+    ],
+    [
+     29.28,
+     "作法可以參考"
+    ],
+    [
+     31.08,
+     "數字要等他們給"
+    ],
+    [
+     33.24,
+     "三級走下來"
+    ],
+    [
+     34.68,
+     "人沒有離開"
+    ],
+    [
+     35.96,
+     "只是從讀程式碼退到了校正檢查的那一層"
+    ],
+    [
+     40.68,
+     "原文連結在節目資訊欄"
+    ],
+    [
+     43.08,
+     "我是 Pink"
+    ],
+    [
+     43.92,
+     "有收到的話會有我一個 Pong"
+    ],
+    [
+     46.04,
+     "下次見"
+    ]
+   ],
+   "gemini_text": "今晚的 bullet point。\n\n第一，檢查交給機器之後，檢查本身也要有標準件，每次出事，留一題，拿來考你的 AI 審查。\n\n第二，檢查的設定，要放在被檢查的變更碰不到的地方，退回率和事故率當護欄，不當成績。\n\n第三，Claude Code 團隊的做法寫得很細，可是抓到率、退回率和事故數還沒給，做法可以參考，數字要等他們給。\n\n三集走下來，人沒有離開，只是從讀程式碼退到了校正檢查的那一層。\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "gemini_model_version": "gemini-3.8-flash"
+  }
+ ]
+}

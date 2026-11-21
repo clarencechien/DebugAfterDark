@@ -1,0 +1,148 @@
+{
+ "segment": "s08_others",
+ "position": "第 9 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "7d80ab83e33e9b1078a4250a050977e4ee004da1c6d6645f0ecd85bccef06164",
+ "previous_context": "可是反過來想，剩下的三分之二呢？對啊，自動審查一樣抓不到啦。",
+ "original": {
+  "text": "那別家拿什麼當標準件？Osmani 九月那篇有一段話剛好可以當尺。有人問他，測試如果也是你不信任的那個東西寫的，測了有什麼用？他說，讓一個 Claude 寫測試、另一個 Claude 寫程式，擋得住最粗的錯，可是同一個模型複製成兩份，盲點還是同一組。真正的獨立要靠另一個來源：人寫的規格、參考實作，或一個證明。拿這把尺量：Uncle Bob 用 mutation testing，故意把程式改壞，看測試會不會叫；Datadog 拿跟正式環境一樣的流量回頭對，不過 Datadog 賣的就是監控；開源 coding agent Pi 的作者，只在 bug 重現得出來、有一支修之前失敗、修之後通過的測試時，才放手讓 bot 合併。有回答這一題的幾家，答案都一樣：拿另一個獨立的東西來對。",
+  "lint": {
+   "chars": 322,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 45.0,
+   "max_sentence_len": 143,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以大家都在想，那別家到底拿什麼當標準？\n\n專家 Osmani 在九月講過一句話，剛好可以拿來當一把尺。有人問他，如果測試也是你不信任的 AI 寫的，測了有用嗎？<short pause>\n\n答案其實很骨感。同一個模型就算複製成兩份，盲點還是一模一樣嘛。這種情況你一定也很熟悉。所以真正的獨立，必須來自另一個來源。\n\n這份報告比對了幾家作法。Uncle Bob 故意把程式改壞，看測試會不會叫。Datadog 拿線上真實流量回頭對，不過報告裡也提醒，人家本來就是賣監控的啦。<laugh>\n\n然後開源工具 Pi 的作者也很謹慎。只有 bug 可以重現，而且測試修之前失敗、修之後通過，他才敢放手合併程式碼。\n\n你說這些人到底差在哪？其實大家的邏輯都一樣。重點來了，你得拿另一個獨立的東西來對照啦。",
+   "lint": {
+    "chars": 307,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 19.5,
+    "max_sentence_len": 38,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以大家都在想，別家到底拿什麼當標準？\n專家 Osmani 在九月提出一個很棒的角度。\n有人問他，如果測試也是 AI 寫的呢？\n這樣測到底有沒有用？\n我覺得他回答得超好。<short pause>\n他說讓同一個模型寫扣又寫測試，\n盲點根本一模一樣嘛。\n那真正的獨立到底要靠什麼？\n重點是要靠另一個來源，像是人寫的規格。\n這份報告就拿這把尺去量了幾家做法。\n像是 Uncle Bob，他故意把程式碼改壞，\n用 mutation testing 看測試會不會叫。\n然後 Datadog 呢？\n他們拿正式環境的真實流量回頭對。\n不過他們自己就是賣監控的啦。<laugh>\n還有開源工具 Pi 的作者，\n只有在 bug 重現得出來，\n而且修之前失敗、修之後通過的時候，\n他才敢放心讓 bot 合併。\n所以你看，有回答的幾家答案都一樣。\n想信任它，就得找獨立的東西來對啦。",
+   "lint": {
+    "chars": 324,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 19.2,
+    "max_sentence_len": 52,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "自動審查抓不到，那別家是怎麼找標準的？\n這份報告提到 Osmani 九月寫的一段話。\n這句話拿來當尺剛剛好。\n有人問他，測試如果也是 AI 寫的，\n那測了到底有什麼用？\n<short pause>\n他的回答很一針見血。\n你叫一個模型寫程式，另一個寫測試，\n兩邊的盲點根本同一組嘛。\n真正的獨立，一定要靠另一個來源。\n像是人寫的規格，或是參考實作。\n那大家後來都找什麼來對？\n其實有回答的幾家，想法完全一樣。\n就是拿另一個獨立的東西來驗證。\n像 Uncle Bob 會故意把程式改壞，\n這叫 mutation testing，看測試會不會叫。\n然後 Datadog 是拿線上的真實流量回頭對。\n不過這份報告也說，人家本來就賣監控的啦。\n<laugh>\n還有開源 coding agent Pi 的作者。\n只有在 bug 重現得出來，\n測試修之前失敗、修之後通過，\n他才放心讓 bot 合併。\n這點你應該也很有共鳴吧。\n信任本來就是一塊一塊給的，\n沒有獨立標準能對，誰敢隨便放手啊？",
+   "lint": {
+    "chars": 375,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 19.8,
+    "max_sentence_len": 43,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "所以大家都在想，別家到底拿什麼當標準？專家 Osmani 在九月提出一個很棒的角度。有人問他，如果測試也是 AI 寫的呢？這樣測到底有沒有用？我覺得他回答得超好。<short pause>他說讓同一個模型寫扣又寫測試，盲點根本一模一樣嘛。那真正的獨立到底要靠什麼？重點是要靠另一個來源，像是人寫的規格。這份報告就拿這把尺去量了幾家做法。像是 Uncle Bob，他故意把程式碼改壞，用 mutation testing 看測試會不會叫。然後 Datadog 呢？他們拿正式環境的真實流量回頭對。不過他們自己就是賣監控的啦。<laugh>還有開源工具 Pi 的作者，只有在 bug 重現得出來，而且修之前失敗、修之後通過的時候，他才敢放心讓 bot 合併。所以你看，有回答的幾家答案都一樣。想信任它，就得找獨立的東西來對啦。",
+   "to": "那別家拿什麼當標準件？Osmani 九月那篇有一段話，剛好可以當尺。有人問他：測試如果也是你不信任的那個東西寫的，測了有什麼用？他說，讓一個 Claude 寫測試，另一個 Claude 寫程式，擋得住最粗的錯。可是同一個模型複製成兩份，盲點還是同一組。<short pause>真正的獨立，要靠另一個來源：人寫的規格、參考實作，或一個證明。這份報告拿這把尺去量了幾家。Uncle Bob 用 mutation testing，故意把程式改壞，看測試會不會叫。Datadog 拿跟正式環境一樣的流量回頭對，不過 Datadog 自己就是賣監控的。開源 coding agent Pi 的作者，只在 bug 重現得出來，又有一支修之前失敗、修之後通過的測試時，才放心讓 bot 合併。有回答這一題的幾家，答案都一樣：拿另一個獨立的東西來對。",
+   "reason": "刪掉個人反應「我覺得他回答得超好」和<laugh>；「寫扣」改成寫程式；補回參考實作、證明；「專家 Osmani」改回 Osmani（前段已介紹）"
+  },
+  {
+   "from": "他說，讓一個 Claude 寫測試，另一個 Claude 寫程式，擋得住最粗的錯。",
+   "to": "他說，一個 Claude 寫測試，另一個 Claude 寫程式，擋得住最粗的錯。",
+   "reason": "句子太長切短（寫稿規則第 18 條）"
+  },
+  {
+   "from": "Datadog 拿跟正式環境一樣的流量回頭對，不過 Datadog 自己就是賣監控的。",
+   "to": "Datadog 拿跟正式環境一樣的流量回頭對。不過，Datadog 自己就是賣監控的。",
+   "reason": "句子太長切短（寫稿規則第 18 條）"
+  },
+  {
+   "from": "開源 coding agent Pi 的作者，只在 bug 重現得出來，又有一支修之前失敗、修之後通過的測試時，才放心讓 bot 合併。",
+   "to": "開源 coding agent Pi 的作者，只在 bug 重現得出來的時候放手。還要有一支修之前失敗、修之後通過的測試，他才放心讓 bot 合併。",
+   "reason": "句子太長切短（寫稿規則第 18 條）"
+  },
+  {
+   "from": "有回答這一題的幾家，答案都一樣：拿另一個獨立的東西來對。",
+   "to": "有回答這一題的幾家，答案都一樣。拿另一個獨立的東西來對。",
+   "reason": "句子太長切短（寫稿規則第 18 條）"
+  },
+  {
+   "from": "他才放心讓 bot 合併。",
+   "to": "他才放心讓機器人自動合併。",
+   "reason": "兩套辨識都沒聽出 bot（Breeze 聽成 bug）"
+  },
+  {
+   "from": "擋得住最粗的錯。",
+   "to": "擋得住最明顯的錯。",
+   "reason": "兩套辨識都把「最粗的錯」聽成「最初的錯」"
+  }
+ ]
+}

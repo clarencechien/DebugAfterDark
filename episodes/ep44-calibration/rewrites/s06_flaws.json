@@ -1,0 +1,141 @@
+{
+ "segment": "s06_flaws",
+ "position": "第 7 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "5f35ad1a2bc696bc4ade371cfc641a6a2a0a9df47c61d663e780c298e965e5b8",
+ "previous_context": "規則要是不定期清，只會越長越多啦。這份報告說，每道檢查都要有自己的標準件。",
+ "original": {
+  "text": "那成效呢？他們給了幾格讀數，像審查有實質意見的 PR，從不到兩成變成超過一半，都是內部自報。這份報告覺得更有用的，是他們自己寫出來的偏差。第一，它一直在找舊 bug：拿 git blame 去查它反覆報的問題，大約六成是它第一輪審的時候就在的程式碼。第二，兩個 agent 會互相餵，有一個 PR 一個晚上審了又修五十多輪，作者才喊停。第三，原文寫「We made it worse ourselves」，人自己習慣每個 PR 多審幾輪，後來加了上限，審滿三輪就請作者退一步想做法。第四，還沒有斷路器：退回或事故變多的時候，沒有東西會自動把核准收緊。",
+  "lint": {
+   "chars": 260,
+   "precise_numbers": [
+    "五十"
+   ],
+   "enumerations": [
+    "第一",
+    "第一",
+    "第二",
+    "第三",
+    "第四"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 36.1,
+   "max_sentence_len": 66,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那上線之後的成效呢？\n這份報告自報的讀數，\n像是有實質意見的 PR，也就是合併請求，\n比例從一成多跳到一半以上。\n不過更有意思的，是他們承認的偏差。\n它會一直回頭抓舊 bug。\n用 git blame 查它反覆報的問題，\n大約百分之五十九，是本來就有的舊程式。\n重點來了，兩個 agent 還會互相餵喔。<laugh>\n有個改動一個晚上審了又修五十多輪，\n作者受不了才人工喊停。<short pause>\n你覺得人類有比較好嗎？\n他們自己坦承，工程師也習慣多審幾輪。\n後來規定審滿三輪就先停下來，退一步想。\n而且現在其實還沒有斷路器，\n事故變多的時候，審查不會自動收緊。\n沒有這個機制，誰敢放心讓 AI 自動合併啦。",
+   "lint": {
+    "chars": 263,
+    "precise_numbers": [
+     "百分之五十九",
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 20.9,
+    "max_sentence_len": 41,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "講完檢查，那實際跑起來的成效呢？\n這份報告給了幾格讀數，都是內部自報的。\n像是有實質意見的 PR，合併請求，\n比例從不到兩成，變成超過一半。\n其實更有意思的，\n是他們自己承認的偏差齁。\n像是它會反覆抓著舊 bug 不放。\n拿 git blame 去查，\n大約六成都是原本就有的程式碼。\n然後兩個 agent 還會互相餵。\n如果放著不管會怎樣？\n有個 PR 一個晚上審了又修五十多輪，\n最後是作者自己看不下去才喊停。<laugh>\n光聽就覺得心好累喔。\n他們甚至承認，人自己也把狀況弄糟了。\n大家習慣多審幾輪，反而更拖時間。\n所以後來加了上限，滿三輪就請作者換個做法。\n重點來了，系統現在還沒有斷路器。\n要是線上事故變多，沒辦法自動收緊核准啦。",
+   "lint": {
+    "chars": 286,
+    "precise_numbers": [
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 18.1,
+    "max_sentence_len": 31,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那系統上線後到底有沒有用？\n這份報告列了一些內部自報的數字。\n像是有實質意見的 PR，也就是合併請求，\n從不到兩成跳到了超過一半。\n不過這份報告覺得，更值得看的是偏差。\n第一點，它一直在抓舊 bug。\n去查它反覆報的問題，\n大概六成根本是第一輪就有的舊程式碼。\n再來，兩個 agent 還會互相餵。\n你知道有多誇張嗎？\n一個 PR 竟然一晚審了又修五十幾輪，\n最後是作者看不下去才喊停。<laugh>\n這真的讓人很傻眼耶。\n然後，人自己也會把事情搞砸。\n因為大家習慣多審幾輪，\n後來規定審滿三輪就得暫停，\n請作者退一步想做法。\n重點來了，他們目前其實還沒有斷路器。<short pause>\n事故變多的時候，沒辦法自動把核准收緊。\n沒有這種機制，你敢放手讓它自動合併嗎？",
+   "lint": {
+    "chars": 290,
+    "precise_numbers": [
+     "五十"
+    ],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 18.3,
+    "max_sentence_len": 33,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "講完檢查，那實際跑起來的成效呢？這份報告給了幾格讀數，都是內部自報的。像是有實質意見的 PR，合併請求，比例從不到兩成，變成超過一半。其實更有意思的，是他們自己承認的偏差齁。像是它會反覆抓著舊 bug 不放。拿 git blame 去查，大約六成都是原本就有的程式碼。然後兩個 agent 還會互相餵。如果放著不管會怎樣？有個 PR 一個晚上審了又修五十多輪，最後是作者自己看不下去才喊停。<laugh>光聽就覺得心好累喔。他們甚至承認，人自己也把狀況弄糟了。大家習慣多審幾輪，反而更拖時間。所以後來加了上限，滿三輪就請作者換個做法。重點來了，系統現在還沒有斷路器。要是線上事故變多，沒辦法自動收緊核准啦。",
+   "to": "那成效呢？他們給了幾格讀數，像審查有實質意見的 PR，從不到兩成，變成超過一半，都是內部自報。這份報告覺得更有用的，是他們自己寫出來的偏差。第一，它一直在找舊 bug。拿 git blame 去查它反覆報的問題，大約六成是它第一輪審的時候，就已經在的程式碼。第二，兩個 agent 會互相餵。有一個 PR，一個晚上審了又修五十多輪，作者才喊停。<short pause>第三，他們寫：問題是我們自己弄糟的。人習慣每個 PR 多審幾輪，後來加了上限，審滿三輪，就請作者退一步想做法。第四，還沒有斷路器。退回或事故變多的時候，沒有東西會自動把核准收緊。",
+   "reason": "刪掉個人反應「光聽就覺得心好累」、<laugh>、「重點來了」；「線上事故」改回退回或事故；「反而更拖時間」原文沒有，刪掉；照草稿用第一到第四排列；PR 不再重複解釋"
+  },
+  {
+   "from": "他們給了幾格讀數",
+   "to": "他們給了幾個讀數",
+   "reason": "兩套辨識都把「幾格」聽成「幾個」，直接用「幾個」"
+  }
+ ]
+}

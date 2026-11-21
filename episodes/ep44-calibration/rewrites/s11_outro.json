@@ -1,0 +1,144 @@
+{
+ "segment": "s11_outro",
+ "position": "第 12 段，共 12 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a1f71577ece190eddac498a5acb68d42f05b71f1c62e85c1c7b1806db34687cc",
+ "previous_context": "所以他最後貼的標籤超中肯。做法可以參考，讀數等他們給。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，檢查交給機器以後，檢查本身也要有標準件：每次出事留一題，拿來考你的 AI 審查。第二，檢查的設定要放在被檢查的變更碰不到的地方；退回率和事故率當護欄，不當成績。第三，Claude Code 團隊的做法寫得很細，可是抓到率、退回率和事故數還沒給：做法可以參考，讀數等他們給。三集走下來，人沒有離開，只是從讀程式碼，退到校正檢查的那一層。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 217,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 26.1,
+   "max_sentence_len": 53,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。第一個重點，檢查交給機器之後，你要用真實事故當標準件考它。第二，審查設定要跟變更隔開，退回率當護欄，千萬別當成績看。第三，Claude Code 的做法能參考，但關鍵讀數還沒給，數字先等等。那工程師到底退到哪裡了？其實就是退到校正檢查的那一層啦。<short pause>原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 174,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 18.3,
+    "max_sentence_len": 34,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。\n第一，把檢查交給機器，它自己也要被考啊。每次出事就留一題，拿來考你的 reviewer。\n第二，退回率是護欄，不是拿來衝業績的啦。檢查設定要隔開，不能讓 PR 自己偷改。\n第三，大廠做法很值得學，但關鍵讀數還沒給。做法可以參考，數字就等他們公佈吧。\n你說人退到哪去了？\n我們其實退到後面，專心校正量具而已。<laugh>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 199,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 22,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。\n第一，檢查交給機器，量具自己也要校正嗎？\n答案是要，過去出事的 bug 就是最好的考題。<short pause>\n第二，檢查設定要跟變更隔開。\n退回率跟事故率要當護欄，千萬不要當成績衝。\n第三，人其實沒有離開。\n我們只是不用逐行看 code，改去校正量具。\n那工程師會失業嗎？\n想太多，我們的責任反而變更重了啦。<laugh>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 187,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。第一，檢查交給機器，量具自己也要校正嗎？答案是要，過去出事的 bug 就是最好的考題。<short pause>第二，檢查設定要跟變更隔開。退回率跟事故率要當護欄，千萬不要當成績衝。第三，人其實沒有離開。我們只是不用逐行看 code，改去校正量具。那工程師會失業嗎？想太多，我們的責任反而變更重了啦。<laugh>原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "to": "今晚的 breakpoint。第一，檢查交給機器之後，檢查本身也要有標準件：每次出事留一題，拿來考你的 AI 審查。第二，檢查的設定，要放在被檢查的變更碰不到的地方。退回率和事故率當護欄，不當成績。<short pause>第三，Claude Code 團隊的做法寫得很細，可是抓到率、退回率和事故數還沒給。做法可以參考，讀數等他們給。三集走下來，人沒有離開，只是從讀程式碼，退到了校正檢查的那一層。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "改寫版的第三點換成「人沒有離開」，還加了前面沒講的「工程師會失業嗎？想太多，責任更重」；改回草稿的三點（都在前面講過），「人沒有離開」只當收尾一句；刪掉<laugh>"
+  },
+  {
+   "from": "第三，Claude Code 團隊的做法寫得很細，可是抓到率、退回率和事故數還沒給。",
+   "to": "第三，Claude Code 團隊的做法寫得很細。可是抓到率、退回率和事故數，還沒給。",
+   "reason": "句子太長切短（寫稿規則第 18 條）"
+  },
+  {
+   "from": "做法可以參考，讀數等他們給。",
+   "to": "做法可以參考，數字要等他們給。",
+   "reason": "兩套辨識都漏掉「讀數」的「讀」"
+  }
+ ]
+}

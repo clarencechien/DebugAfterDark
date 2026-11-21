@@ -1,0 +1,144 @@
+{
+ "segment": "s07_missing",
+ "position": "第 8 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ff8778a197d3c1734d4e3ecd48da9eb9c4f9d80ef0cb9acd33fbe3e1b33c5886",
+ "previous_context": "重點來了，系統現在還沒有斷路器。要是線上事故變多，沒辦法自動收緊核准啦。",
+ "original": {
+  "text": "十一月那篇也留了一個口子：commit 前的檢查在同一個 session 裡擋了兩次，第三次就放行，免得 Claude 卡死，文章給的理由是「Claude Code isn't perfect」。所以這份報告說，兩篇的做法寫得很細，可是最要緊的三個讀數沒有給：AI 審查最後的抓到率、退回率的絕對值、事故的次數。這兩篇的作者 Addy Osmani 在 Claude Code 團隊工作，他九月在自己的電子報補過一個回頭分析：如果每個變更都過自動審查，過去 claude.ai 那些事故背後的 bug，大約三分之一會在上線前被抓到。這些 bug 當初多半過了仔細的人審，所以三分之一算多。可是反過來說，剩下大約三分之二，自動審查一樣抓不到。",
+  "lint": {
+   "chars": 300,
+   "precise_numbers": [
+    "十一"
+   ],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 59.0,
+   "max_sentence_len": 100,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "而且十一月那篇其實還留了一個後門喔。\ncommit 也就是一次提交。\n如果在同一個 session 裡擋了兩次，\n第三次系統就直接放行了。\n為什麼呢？\n因為怕 Claude 會卡死嘛。\n文章給的理由超坦白，\n說 Claude Code 並不完美。<laugh>\n所以這份報告說，\n做法雖然寫得很細，\n可是最要緊的三個讀數完全沒給。\n像是審查最後的 recall，\n也就是抓到率，\n還有退回率的數字，\n跟事故發生的次數。\n不過作者後來在電子報補了一個回頭分析。\n如果把過去線上事故的 bug 拿來測，\n你覺得能提前抓出多少？\n答案是大約三分之一。\n當初這些問題可都經過仔細的人審耶。\n這樣能抓到三分之一，算蠻厲害了。\n可是反過來想，剩下的三分之二呢？\n對啊，自動審查一樣抓不到啦。",
+   "lint": {
+    "chars": 299,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 18.9,
+    "max_sentence_len": 38,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "不只沒有斷路器喔。\n十一月那篇其實還留了一個後門。\n在同一個 session 裡，\n只要擋了兩次，第三次就會直接放行。\n為什麼要醬做？\n文章給的理由是，怕 Claude Code 卡死。<laugh>\n所以這份報告說，做法寫得很細，\n但關鍵的讀數都沒給。\n像是審查最後的抓到率、退回率，\n還有線上事故的次數。\n那效果到底好不好？\n作者自己在九月的電子報補了一個分析。\n過去那些線上事故，\n大約三分之一可以在上線前被抓到。\n這算蠻多的，因為當初連人都沒看出來。\n可是反過來想，\n剩下大約三分之二，AI 審查一樣抓不到耶。<short pause>",
+   "lint": {
+    "chars": 230,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 29,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "斷路器沒做就算了。\n十一月那篇其實還留了一個後門。<short pause>\n每一次提交，也就是 commit 的關卡。\n在同一個 session 擋了兩次之後，\n第三次竟然就直接放行耶。<laugh>\n文章給的理由很誠實，\n說 Claude Code isn't perfect，\n怕把模型卡死啦。\n可是你仔細看就會發現，\n最關鍵的三個數字他們完全沒寫。\nAI 審查的抓到率，也就是 recall，\n還有退回率跟事故次數，全都沒有。\n這份報告說，\n作者後來只有在電子報補過一個分析。\n要是以前的事故都跑自動審查，\n大概三分之一的 bug 能先被抓到。\n你可能會想，三分之一很多嗎？\n其實算多喔。\n因為那些原本都經過人工仔細檢查過。\n但我讀到這裡只覺得心裡毛毛的。\n這代表剩下大約三分之二的問題，\nAI 自動審查一樣完全抓不到嘛。",
+   "lint": {
+    "chars": 311,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 21.2,
+    "max_sentence_len": 41,
+    "sentences_over_20": 7,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "而且十一月那篇其實還留了一個後門喔。commit 也就是一次提交。如果在同一個 session 裡擋了兩次，第三次系統就直接放行了。為什麼呢？因為怕 Claude 會卡死嘛。文章給的理由超坦白，說 Claude Code 並不完美。<laugh>所以這份報告說，做法雖然寫得很細，可是最要緊的三個讀數完全沒給。像是審查最後的 recall，也就是抓到率，還有退回率的數字，跟事故發生的次數。不過作者後來在電子報補了一個回頭分析。如果把過去線上事故的 bug 拿來測，你覺得能提前抓出多少？答案是大約三分之一。當初這些問題可都經過仔細的人審耶。這樣能抓到三分之一，算蠻厲害了。可是反過來想，剩下的三分之二呢？對啊，自動審查一樣抓不到啦。",
+   "to": "十一月那篇也留了一個口子。commit 前的檢查，在同一個 session 裡擋了兩次，第三次就放行，免得 Claude 卡死。文章給的理由很坦白：Claude Code 並不完美。所以這份報告說，兩篇的做法寫得很細，可是最要緊的三個讀數沒有給。AI 審查最後的 recall，也就是抓到率，退回率的實際數字，還有事故的次數。<short pause>這兩篇的作者 Addy Osmani，就在 Claude Code 團隊工作。他九月在自己的電子報，補過一個回頭分析：如果每個變更都過自動審查，過去那些事故背後的 bug，大約三分之一，會在上線前被抓到。這些 bug 當初多半過了仔細的人審，所以三分之一算多。可是反過來說，剩下大約三分之二，自動審查一樣抓不到。",
+   "reason": "「後門」改回口子；「作者後來在電子報補了」時序錯（電子報是九月，早於十月那篇），改回九月，並補上作者在 Claude Code 團隊工作（利害揭露）；「你覺得能提前抓出多少」刪掉；「算蠻厲害了」改回原文「算多」；刪掉<laugh>"
+  },
+  {
+   "from": "所以這份報告說，兩篇的做法寫得很細，可是最要緊的三個讀數沒有給。AI 審查最後的 recall，也就是抓到率，退回率的實際數字，還有事故的次數。",
+   "to": "所以這份報告說，兩篇的做法寫得很細。可是最要緊的三個讀數，沒有給。第一個是 AI 審查最後的 recall，也就是抓到率。另外兩個，是退回率的實際數字，還有事故的次數。",
+   "reason": "句子太長切短（寫稿規則第 18 條）"
+  },
+  {
+   "from": "他九月在自己的電子報，補過一個回頭分析：如果每個變更都過自動審查，過去那些事故背後的 bug，大約三分之一，會在上線前被抓到。",
+   "to": "他九月在自己的電子報，補過一個回頭分析。如果每個變更都過自動審查，過去那些事故背後的 bug，大約三分之一會在上線前被抓到。",
+   "reason": "句子太長切短（寫稿規則第 18 條）"
+  }
+ ]
+}
