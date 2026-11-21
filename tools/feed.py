@@ -3,7 +3,7 @@
   python3 tools/feed.py [--out site/feed.xml]
 
 Only episodes with "status": "final" and a "published" timestamp that has already passed go in, newest first. An episode
-whose "published" is still in the future is left out until a later build (the daily scheduled run in pages.yml), so a
+whose "published" is still in the future is left out until a later build (pages.yml runs at 08:02 and 20:02 Taipei, dispatched by cron-worker/), so a
 merged episode can wait for its release time. The output is deterministic: the same inputs at the same time give a byte-identical feed (lastBuildDate is the newest pubDate, not the build time).
 Audio URLs carry the first 8 hex digits of the file's sha256 (<id>-<sha8>.mp3), so a re-cut episode gets a new URL and
 podcast apps never keep a stale cached copy; the episode guid never changes (PIPELINE.md section 5.2).

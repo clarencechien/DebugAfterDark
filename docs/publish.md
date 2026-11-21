@@ -54,7 +54,7 @@ Clarence 回「好」或指定標題，agent 把選定的內容寫進 `episode.j
 
 ## Action 怎麼跑
 
-沿用 `yt-autofix.yml`（每小時 :17），多一個步驟，或另開 `youtube.yml`：
+沿用 `yt-autofix.yml`（每小時 :17，由 `cron-worker/` 準時觸發），多一個步驟，或另開 `youtube.yml`：
 
 1. 找 `episode.json` 有 `youtube.short.publish_at`（或影片版的 `youtube.publish_at`）、但不在 `youtube/uploads.json` 的集數。
 2. Short：先確認長片已經在頻道上且公開，沒有就等下一輪。
