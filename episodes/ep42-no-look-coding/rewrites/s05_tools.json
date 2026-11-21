@@ -1,0 +1,145 @@
+{
+ "segment": "s05_tools",
+ "position": "第 6 段，共 11 段",
+ "avoid": [
+  "醬",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "9d6fcc673a892eea667e09ea5f6ee6e3411575d591f90f35a9f44c930b9dba73",
+ "previous_context": "任務越小，context 就越短。寫在 prompt 最前面的規矩才留得住嘛。",
+ "original": {
+  "text": "第三、第四站用的兩個工具，都是老東西。CRAP 是二〇〇〇年代的指標，把程式的複雜度和測試覆蓋率合成一個分數，又複雜又沒被測到的函式，分數最高。mutation testing，突變測試，是把原始碼裡的運算子偷偷改掉，再跑測試；測試還是全過，代表那段測試其實沒在測東西。這兩樣他在二〇〇〇年前後都試過，都不划算：爛函式一個一個修太久，突變測試要跑一整晚。agent 不怕無聊也不怕慢，同一件事現在大約三十分鐘，才變得能用。代價也有：有人整理過，agent 五分鐘做完的事，走完五站大約一小時。",
+  "lint": {
+   "chars": 242,
+   "precise_numbers": [
+    "三十"
+   ],
+   "enumerations": [
+    "第三",
+    "第四"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 39.3,
+   "max_sentence_len": 61,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "然後後面兩站用的工具，其實都是二十幾年前的老東西了。像是 CRAP，它把程式複雜度和測試覆蓋率，合在一起打成一個分數。越複雜又越沒被測到的函式，分數就會最高。\n\n另一個是 mutation testing。它會偷偷把原始碼的運算子改掉，然後再跑測試。測試要是全過了，代表那些測試根本沒在測東西嘛。<short pause>\n\n你猜 Uncle Bob 當年為什麼不用？因為手動修太久，以前跑突變測試甚至要等一整晚。但 agent 不怕無聊也不怕慢，現在同一件事大約三十分鐘就跑完了，這才讓它們變得能用。<short pause>\n\n不過這也是有代價的喔。這份報告說，agent 幾分鐘做完的事，走完五站大約要花一小時，人類自己做甚至要半天耶。",
+   "lint": {
+    "chars": 280,
+    "precise_numbers": [
+     "二十",
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 24.5,
+    "max_sentence_len": 42,
+    "sentences_over_20": 7,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "接著看第三跟第四站。\n這兩站用的工具其實都是老古董。\n第一個是 CRAP。\n它把程式複雜度跟測試覆蓋率算在一起。\n越複雜又沒被測到的函式，分數就越高。\n另一個是 mutation testing。\n也就是突變測試。\n你猜它是怎麼測的？\n它會偷偷改掉程式裡的運算子，再跑測試。\n測試要是全過了，\n就代表這段測試根本沒在測東西嘛。\nUncle Bob 在千禧年前後就試過這兩招。\n但那時候根本不划算啊。<sigh>\n爛函式修不完，突變測試又要跑一整晚。\n可是 agent 不怕無聊也不怕慢。\n現在只要三十分鐘，老工具才變得能用。\n不過這樣做有沒有代價？\n當然有。<short pause>\n這份報告說，\nagent 本來幾分鐘能做完的事，\n走完這五站大約要一小時。\n但要是人自己做，可是要花上大半天耶。",
+   "lint": {
+    "chars": 301,
+    "precise_numbers": [
+     "千",
+     "三十"
+    ],
+    "enumerations": [
+     "第三",
+     "第四",
+     "第一"
+    ],
+    "sentences": 19,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 33,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "然後第三、第四站用的工具，其實都是二十幾年前的老骨董。<short pause>第一個指標叫 CRAP。它把複雜度和測試覆蓋率合成一個分數。又複雜又沒測到的程式碼，分數最高。另一個是 mutation testing。就是偷偷改掉程式碼再跑測試。如果測試全過，代表那個測試根本沒在測東西嘛。<laugh>你猜以前為什麼流行不起來？爛程式修不完，跑一次又要等一整晚。但現在丟給 agent，同一件事大約三十分鐘就跑完了。agent 不怕無聊也不怕慢，這些老工具才變得真正能用。不過這樣做也是有代價的喔。這份報告說，agent 本來幾分鐘就能做完的事，走完流程要差不多一小時。雖然很久，但人自己做要花半天耶。",
+   "lint": {
+    "chars": 276,
+    "precise_numbers": [
+     "二十",
+     "三十"
+    ],
+    "enumerations": [
+     "第三",
+     "第四",
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 18.7,
+    "max_sentence_len": 34,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "接著看第三跟第四站。這兩站用的工具其實都是老古董。第一個是 CRAP。它把程式複雜度跟測試覆蓋率算在一起。越複雜又沒被測到的函式，分數就越高。另一個是 mutation testing。也就是突變測試。你猜它是怎麼測的？它會偷偷改掉程式裡的運算子，再跑測試。測試要是全過了，就代表這段測試根本沒在測東西嘛。Uncle Bob 在千禧年前後就試過這兩招。但那時候根本不划算啊。<sigh>爛函式修不完，突變測試又要跑一整晚。可是 agent 不怕無聊也不怕慢。現在只要三十分鐘，老工具才變得能用。不過這樣做有沒有代價？當然有。<short pause>這份報告說，agent 本來幾分鐘能做完的事，走完這五站大約要一小時。但要是人自己做，可是要花上大半天耶。",
+   "to": "第三、第四站用的兩個工具，其實都是老東西。第一個是 CRAP，二〇〇〇年代的指標。它把程式的複雜度跟測試覆蓋率，合成一個分數。又複雜、又沒被測到的函式，分數最高。另一個是 mutation testing，突變測試。它會偷偷改掉原始碼裡的運算子，再跑測試。測試要是還是全過，就代表那段測試，其實沒在測東西。這兩樣，Uncle Bob 在二〇〇〇年前後都試過，都不划算。爛函式一個一個修太久，突變測試要跑一整晚。可是 agent 不怕無聊，也不怕慢。同一件事現在大約三十分鐘，才變得能用。代價也有。有人整理過：agent 五分鐘做完的事，走完五站大約要一小時。",
+   "reason": "刪掉「你猜」與嘆氣；「老古董」「千禧年」改回原文說法；「大半天」誇大，刪掉人工對比以減少數字"
+  },
+  {
+   "from": "第三、第四站用的兩個工具，其實都是老東西。第一個是 CRAP，二〇〇〇年代的指標。它把程式的複雜度跟測試覆蓋率，合成一個分數。又複雜、又沒被測到的函式，分數最高。另一個是 mutation testing，突變測試。它會偷偷改掉原始碼裡的運算子，再跑測試。測試要是還是全過，就代表那段測試，其實沒在測東西。這兩樣，Uncle Bob 在二〇〇〇年前後都試過，都不划算。爛函式一個一個修太久，突變測試要跑一整晚。可是 agent 不怕無聊，也不怕慢。同一件事現在大約三十分鐘，才變得能用。代價也有。有人整理過：agent 五分鐘做完的事，走完五站大約要一小時。",
+   "to": "第三、第四站用的兩個工具，其實都是老東西。第一個是 CRAP，兩千年代的指標。它把程式的複雜度跟測試覆蓋率，合成一個分數。又複雜、又沒被測到的函式，分數最高。另一個是 mutation testing，突變測試。它會偷偷改掉原始碼裡的運算子，再跑測試。測試要是還是全過，就代表那段測試，其實沒在測東西。這兩樣，Uncle Bob 在兩千年前後都試過，都不划算。有問題的函式一個一個修太久，mutation testing 要跑一整晚。可是 agent 不怕無聊，也不怕慢。同一件事現在大約三十分鐘，才變得能用。代價也有。有人整理過：agent 五分鐘做完的事，走完五站大概要一小時。",
+   "reason": "年份照念法寫；「爛函式」三次都被聽成「讓」；「突變測試」被聽成「圖片測試」，第二次改用英文"
+  }
+ ]
+}

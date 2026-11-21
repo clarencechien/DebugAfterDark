@@ -1,0 +1,116 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 11 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8be90a2e9c2b329890ad49a5e846b6ce18bebacd55de0cea6feedebe9570351f",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "今年七月，寫《Clean Code》那本書的 Robert Martin，大家叫他 Uncle Bob，在 X 上回了一句話：他現在不讀任何一行他的 agent 寫的程式碼，因為這是用得上 agent 產能的唯一辦法。工程師吵了一整個夏天，這句話也被轉成「Clean Code 的作者不讀 code 了」。可是這份報告把他從去年十二月到今年九月的做法排成一條線，發現他讀的東西沒有變少，是換了一批，而且換了不只一次。那他現在到底在讀什麼？這集最後，你會知道他把眼睛放在哪一格。",
+  "lint": {
+   "chars": 223,
+   "precise_numbers": [
+    "十二"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 43.6,
+   "max_sentence_len": 97,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "如果寫 Clean Code 的作者，說他再也不讀 AI 寫的 code，你敢跟著做嗎？大家熟知的 Uncle Bob，七月在 X 上丟了一顆震撼彈。他說自己完全不讀 agent 寫的程式碼。因為只有這樣，才能跟上 agent 的產能。<short pause> 這句話讓工程師吵了一整個夏天啦。大家都以為他真的不看 code 了。但這份報告排完時間線發現，他讀的東西根本沒有變少，只是換了一批，而且還換了不只一次喔。<short pause> 那他現在到底在讀什麼？這集我們就來看他把眼睛放在哪裡。",
+   "lint": {
+    "chars": 206,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 21.9,
+    "max_sentence_len": 42,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "寫過 Clean Code 的 Uncle Bob，居然說他不看程式碼了？<short pause>今年七月，他在 X 上講了一句話。他說自己完全不讀 agent 寫的 code，因為只有醬，才能用上 AI 的產能。這句話直接讓工程師吵了一整個夏天。你可能也會想，連大師都直接棄守了嗎？其實完全不是喔。<short pause>這份報告把他的做法排成一條線，發現他讀的東西根本沒有變少。他只是換了一批，而且換了不只一次。比較準的說法是，他不讀實作，改讀規格。那他現在到底在讀什麼？這集我們就來看他把眼睛放在哪裡。",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 35,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "寫 Clean Code 的 Uncle Bob，\n竟然公開說他不讀 code 了。<short pause>\n我看到這句話也覺得超扯的。\n他在 X 上說，\n他不讀任何一行 agent 寫的程式碼。\n因為他說，這是用上產能的唯一辦法。\n然後這件事在七月，吵了一整個夏天。\n大家都在問，大師真的都不審 code 嗎？\n其實完全不是醬。\n這份報告把他的做法排成一條線，\n發現他讀的東西根本沒有變少啦。\n他是換了一批，而且還換了不只一次。\n那他現在到底在讀什麼？\n這集最後，你就會知道他把眼睛放在哪裡。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 18.0,
+    "max_sentence_len": 33,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "寫 Clean Code 的 Uncle Bob，竟然公開說他不讀 code 了。<short pause>我看到這句話也覺得超扯的。他在 X 上說，他不讀任何一行 agent 寫的程式碼。因為他說，這是用上產能的唯一辦法。然後這件事在七月，吵了一整個夏天。大家都在問，大師真的都不審 code 嗎？其實完全不是醬。這份報告把他的做法排成一條線，發現他讀的東西根本沒有變少啦。他是換了一批，而且還換了不只一次。那他現在到底在讀什麼？這集最後，你就會知道他把眼睛放在哪裡。",
+   "to": "寫《Clean Code》的 Uncle Bob，今年七月在 X 上回了一句話。他說，他不讀任何一行 agent 寫的程式碼。因為這是用得上 agent 產能的唯一辦法。工程師為了這句話，吵了一整個夏天。後來它還被轉成，Clean Code 的作者不讀 code 了。可是這份報告把他十個月來的做法排成一條線，發現他讀的東西沒有變少。他是換了一批，而且還換了不只一次。那他現在到底在讀什麼？這集最後，你就會知道他把眼睛放在哪裡。",
+   "reason": "刪掉 Ping 的個人反應（超扯）、「竟然」「大師」與原文沒有的問句；補回時間點與原話的理由；去掉「醬」"
+  }
+ ]
+}

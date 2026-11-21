@@ -1,0 +1,140 @@
+{
+ "segment": "s08_compiler",
+ "position": "第 9 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "醬",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4ed6b4fcc561da7746dbdf3541c8418b4e7aaf27141436551969ee6619096378",
+ "previous_context": "agent 過不去的檢查工具變多了。人看的東西，也跟著往更上游移動啦。",
+ "original": {
+  "text": "被罵了之後，他在一個 podcast 裡拿編譯器來比。他寫了大約十五年的組合語言，以前說過編譯器是給軟腳蝦用的。後來改用 C，回頭讀編譯器吐出來的組合語言，覺得很糟，可是他還是繼續用，另外寫程式去修正。Greg Wilson 替這個類比下的結論是：你不需要信任產生器，你需要擁有那道檢查。不過報告也說，這個類比有極限：編譯器同樣的輸入給同樣的輸出，錯也錯得一樣；agent 不是。所以他要的檢查比編譯器時代多出好幾站，而且第一站還是得有人看。",
+  "lint": {
+   "chars": 215,
+   "precise_numbers": [
+    "十五"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 34.8,
+   "max_sentence_len": 44,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說到檢查，他在 podcast 裡拿編譯器來比。\n他寫了大約十五年的組合語言。\n以前甚至笑說，編譯器是給軟腳蝦用的。\n後來改用 C，看編譯器吐出來的碼覺得很糟。\n但他還是繼續用，另外寫程式去修補。<short pause>\nGreg Wilson 替這個比喻下了一個結論。\n你不需要信任產生器，你需要擁有那道檢查。\n這句話聽起來很有共鳴耶。\n不過這份報告也說，這個比喻其實有極限。\n編譯器很確定，同樣輸入，錯也錯得一樣。\nagent 也是這樣嗎？完全不是。\n所以他要的檢查，比以前多出了好幾關。\n而且第一關，還是得先由人來看過一遍啦。",
+   "lint": {
+    "chars": 236,
+    "precise_numbers": [
+     "十五"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "被大家罵了之後，他上了 podcast 解釋。\n他拿以前的編譯器來當比喻。\n其實他寫了大約十五年的組合語言。\n以前他甚至說過，編譯器是給軟腳蝦用的。<laugh>\n後來改用 C 語言，發現編譯器吐的碼很糟。\n但他還是繼續用，另外寫程式去修正。\n重點在哪裡？\nGreg Wilson 替他做了一個總結。\n你不需要信任產生器，你需要擁有那道檢查。\n這句話聽起來很有共鳴吧？\n不過這份報告說，這個比喻其實有極限。\n編譯器給同樣的輸入，每次錯都錯得一樣。\n但 agent 可不是這樣耶。\n所以他要的檢查，比以前多出了好幾關。\n而且第一關，還是得要真人看過才行啦。",
+   "lint": {
+    "chars": 248,
+    "precise_numbers": [
+     "十五"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "被大家罵了之後，他拿編譯器來比。\n他說自己寫了大約十五年的組合語言。\n當時還笑過編譯器是給軟腳蝦用的。<laugh>\n後來他改用 C 語言。\n回頭看編譯器吐出來的碼，覺得很爛。\n那他有放棄嗎？完全沒有喔。\n他一邊用，一邊寫程式去修正輸出。\nGreg Wilson 替他總結了一句話：\n你不用信任產生器，你需要擁有檢查。\n這句話真的很精準齁？\n不過這份報告說，這個類比其實有極限啦。\n編譯器給一樣的輸入，錯都錯得一樣。\n可是 agent 完全不是這樣欸。<short pause>\n所以他要的檢查，比以前多出好幾站。\n重點是，第一站還是得有人看。",
+   "lint": {
+    "chars": 232,
+    "precise_numbers": [
+     "十五"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 14.5,
+    "max_sentence_len": 35,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "被大家罵了之後，他上了 podcast 解釋。他拿以前的編譯器來當比喻。其實他寫了大約十五年的組合語言。以前他甚至說過，編譯器是給軟腳蝦用的。<laugh>後來改用 C 語言，發現編譯器吐的碼很糟。但他還是繼續用，另外寫程式去修正。重點在哪裡？Greg Wilson 替他做了一個總結。你不需要信任產生器，你需要擁有那道檢查。這句話聽起來很有共鳴吧？不過這份報告說，這個比喻其實有極限。編譯器給同樣的輸入，每次錯都錯得一樣。但 agent 可不是這樣耶。所以他要的檢查，比以前多出了好幾關。而且第一關，還是得要真人看過才行啦。",
+   "to": "被罵了之後，他在一個 podcast 裡，拿編譯器來比。他寫了大約十五年的組合語言，以前還說過，編譯器是給軟腳蝦用的。後來他改用 C，回頭讀編譯器吐出來的組合語言，覺得很糟。可是他還是繼續用，另外寫程式去修正。Greg Wilson 替這個類比下了一個結論：你不需要信任產生器，你需要擁有那道檢查。不過這份報告說，這個類比有它的極限。編譯器同樣的輸入，給同樣的輸出，錯也錯得一樣。agent 不是。所以他要的檢查，比編譯器時代多出好幾站，而且第一站，還是得有人看。",
+   "reason": "刪掉笑聲與「很有共鳴吧」；「真人看過」改回「有人看」"
+  },
+  {
+   "from": "被罵了之後，他在一個 podcast 裡，拿編譯器來比。他寫了大約十五年的組合語言，以前還說過，編譯器是給軟腳蝦用的。後來他改用 C，回頭讀編譯器吐出來的組合語言，覺得很糟。可是他還是繼續用，另外寫程式去修正。Greg Wilson 替這個類比下了一個結論：你不需要信任產生器，你需要擁有那道檢查。不過這份報告說，這個類比有它的極限。編譯器同樣的輸入，給同樣的輸出，錯也錯得一樣。agent 不是。所以他要的檢查，比編譯器時代多出好幾站，而且第一站，還是得有人看。",
+   "to": "被罵了之後，他在一個 podcast 裡，拿編譯器來比。他寫了大約十五年的組合語言，以前還說過，編譯器是給軟腳蝦用的。後來他改用 C，回頭讀編譯器吐出來的組合語言，覺得很糟。可是他還是繼續用，另外寫程式去修正。Greg Wilson 替這個類比下的結論是，你不需要信任產生器，你需要擁有那道檢查。不過這份報告說，這個類比有它的極限。編譯器同樣的輸入，給同樣的輸出，錯也錯得一樣。agent 不是。所以他要的檢查，比編譯器時代多出好幾站，而且第一站，還是得有人看。",
+   "reason": "twtone：結論提示冒號超過基準"
+  }
+ ]
+}

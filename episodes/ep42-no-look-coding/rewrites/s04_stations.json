@@ -1,0 +1,132 @@
+{
+ "segment": "s04_stations",
+ "position": "第 5 段，共 11 段",
+ "avoid": [
+  "醬",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "1dd52bd8ffe2b391dbe7f70529f6e6154f24acf064a2915a5f7926dbf9a471f2",
+ "previous_context": "畢竟工具很死板，完全不會被說服嘛。那到底是哪些工具？",
+ "original": {
+  "text": "這就是卡上的五個章。八月以後，他把每一個 story，也就是一小塊需求，交給一串很窄的 agent，每一站只做一件事，做完就結束，下一站從乾淨的 context 開始。第一站 Specifier，把人寫的需求轉成驗收條件和 QA 程序，這一站他自己審。第二站 Coder，寫單元測試和實作，他不看。第三站 Cleaner，第四站 Hardener，他只看分數。第五站 QA，把 QA 程序變成能執行的腳本，他看結果。為什麼切這麼窄？任務小，context 就短，寫在 prompt 最前面的那幾條規矩才留得住。",
+  "lint": {
+   "chars": 239,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三",
+    "第四",
+    "第五"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 28.9,
+   "max_sentence_len": 69,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實就是卡片上的那五個關卡啦。八月之後，Uncle Bob 把每個 story 切開。story 就是一小塊具體的需求。他把需求丟給一串任務很窄的 agent。每一站只做一件事，做完就結束。下一站直接從乾淨的 context 重新開始。像是第一站 Specifier，把需求轉成驗收條件。這一站他會親自審查。然後第二站 Coder 寫測試跟程式碼，他完全不看。接下來 Cleaner 整理函式，Hardener 補測試。這兩站他只看跑出來的分數。<short pause>最後 QA 把驗收流程變腳本，他只看結果。你一定會好奇，為什麼要切得這麼窄？答案就是 context。任務夠小，給的內容就短。寫在 prompt 最前面的規矩才留得住。",
+   "lint": {
+    "chars": 288,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 17.0,
+    "max_sentence_len": 26,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實他在八月以後，把每個 story 交給一連串很窄的 agent。<short pause>\n\nstory 就是一小塊功能需求。每一站只做一件事，下一站就從乾淨的 context 開始。\n\n第一站 Specifier 把需求轉成驗收條件，這一站他會自己審。然後第二站 Coder 負責寫單元測試跟實作，他反而完全不看喔。<laugh>\n\n接下來兩站專門修程式碼跟補測試，他也只看分數。最後 QA 把驗收程序變成能執行的腳本，他只看結果。\n\n你可能會想，為什麼要切得這麼細？重點就在 context 啦。任務越小，context 就越短，寫在 prompt 最前面的那些規矩才留得住嘛。",
+   "lint": {
+    "chars": 248,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 23.8,
+    "max_sentence_len": 37,
+    "sentences_over_20": 7,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "答案是一整串流水線。<short pause>\n\n八月以後，Uncle Bob 換了做法。他把每個 story 交給一排很窄的 agent。story 其實就是一小塊需求啦。每一站只做一件事，做完就結束。下一站再從乾淨的 context 開始。\n\n第一站 Specifier 把需求轉成驗收條件。這一步他會親自審。然後 Coder 負責寫程式，他完全不看喔。接下來的 Cleaner 跟 Hardener，他只看分數。最後一站 QA 把流程變腳本，他只看結果。\n\n這種分工方式真的很聰明。你猜他為什麼要切這麼細？<short pause>答案就是 context。任務越小，context 就越短。寫在 prompt 最前面的規矩才留得住嘛。",
+   "lint": {
+    "chars": 268,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 26,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "答案是一整串流水線。<short pause>八月以後，Uncle Bob 換了做法。他把每個 story 交給一排很窄的 agent。story 其實就是一小塊需求啦。每一站只做一件事，做完就結束。下一站再從乾淨的 context 開始。第一站 Specifier 把需求轉成驗收條件。這一步他會親自審。然後 Coder 負責寫程式，他完全不看喔。接下來的 Cleaner 跟 Hardener，他只看分數。最後一站 QA 把流程變腳本，他只看結果。這種分工方式真的很聰明。你猜他為什麼要切這麼細？<short pause>答案就是 context。任務越小，context 就越短。寫在 prompt 最前面的規矩才留得住嘛。",
+   "to": "答案就是卡上的五個章。八月以後，他把每一個 story，也就是一小塊需求，交給一串很窄的 agent。每一站只做一件事，做完就結束。下一站，再從乾淨的 context 開始。第一站 Specifier，把人寫的需求轉成驗收條件和 QA 程序，這一站他自己審。第二站 Coder，寫單元測試和實作，他不看。第三站 Cleaner、第四站 Hardener，他只看分數。第五站 QA，把 QA 程序變成能執行的腳本，他看結果。為什麼要切這麼窄？任務小，context 就短，寫在 prompt 最前面的那幾條規矩，才留得住。",
+   "reason": "刪掉「你猜」「真的很聰明」（個人評語）；Coder 也寫單元測試，照原文"
+  }
+ ]
+}
