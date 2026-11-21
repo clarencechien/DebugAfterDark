@@ -1,0 +1,62 @@
+{
+ "id": "ep43-show-me-evidence",
+ "number": 43,
+ "type": "full",
+ "guid": "debug-after-dark:ep43",
+ "title": "EP43 一個人一個月三千個 PR，她還看程式碼嗎？",
+ "description": "上個月，一個工程師一個人上線了三千個 PR，很多是在她睡覺的時候合進去的。網路上的整理說，她的祕訣是不再逐行看程式碼，改看 agent 交出來的影片和截圖。可是對照她十一月的投影片，那篇整理把她的金字塔少畫了一層，而且是最底下那一層。\n\n00:00 一個人一個月上線三千個 PR，她還看程式碼嗎？\n00:56 上一集 Uncle Bob 改讀規格；今晚三件事\n01:37 程式庫是花園：權宜寫法是害蟲\n02:24 三條規矩：禁 useEffect、切目錄、禁註解\n03:28 審查縮成看證據：影片、截圖、形式化驗證\n04:13 金字塔換了層：人工審查掉到最底、標成最貴\n05:01 退回率 0.5% 量的是什麼\n05:47 這座花園才四、五個月大\n06:39 她到底還看不看程式碼\n07:22 Uncle Bob 和 Lauren Tan 放在一起：能搬的是順序\n08:12 今晚的 breakpoint\n\n數字的出處與但書：\n・3,000 個 PR（她個人一個月）、約 11,000 個 PR、約 227 位貢獻者、退回率約 0.5%，都是 Lauren Tan 在演講中自己報的數字，不是對照研究。\n・「0.5% 比較接近整個撤回的變更比例，不是上線後出問題的比例」是原文作者的推論；她沒有公開漏到線上的缺陷數。\n・「程式庫大約四、五個月大」是原文作者依她 8 月 31 日的文章推算。\n・9 月那場的金字塔順序取自兩份第三方整理（原文作者沒有看原片）；11 月那場依投影片截圖。\n・「人工審查改成只看驗證蓋不到的地方」是原文作者的整理，不是她的原話。\n\n原文：〈審查壓到最底，她改看證據 — 不讀之後 下篇〉v0.4 https://imitator.ai-apps.work/r/no-read-2\n主要來源：Lauren Tan〈All Code Is Slop (Except Mine)〉（AI Engineer Code Summit，2026-11）與逐字稿；她 2026-09-21 在 X 貼的錄影；Addy Osmani〈Brownfield Agentic Engineering〉；Barnaby Robson〈On pstack〉。\n\n今晚的 breakpoint：\n1. 每一次糾正 agent，先想能不能變成一條機器會擋的檢查。\n2. 她的金字塔沒有拆掉人工審查，只是把它放到最底下，標成最貴的一層。\n3. 一萬一千個 PR 和 0.5%，是一座四、五個月大、她親自照顧的花園量出來的；能搬的是順序，不是數字。\n\n上一集：EP42〈Clean Code 的作者不讀 AI 的程式碼，那他讀什麼？〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "no-read-2",
+ "source_url": "https://imitator.ai-apps.work/r/no-read-2",
+ "status": "final",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5",
+  "model_served": "gemini-3.8-flash-tts"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze --consistency --neighbour（Modal 額度用完，本機 CPU）",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "report_version": "2026-11-18",
+ "audio": {
+  "file": "ep43-show-me-evidence.mp3",
+  "bytes": 8548810,
+  "sha256": "b53b28a881a4185f4f4db64fe5989e37fce3a554fd201737df516e4e62b7d64e",
+  "duration_s": 534.3,
+  "duration": "8:54",
+  "lufs": -17.0
+ },
+ "youtube": {
+  "title": "一個月上線 3,000 個 PR、退回率 0.5%：Lauren Tan 不逐行審程式碼，她改看什麼？",
+  "thumbnail": [
+   [
+    "AI 寫的程式碼",
+    "改看證據"
+   ],
+   [
+    "人工審查",
+    "還在最底層"
+   ]
+  ],
+  "synthetic_content": true
+ },
+ "qa": {
+  "breeze_cer_mean": 0.044,
+  "breeze_cer_mean_ta_he_merged": 0.028,
+  "jitter_semitones": 0.229,
+  "gates": "音高跳動 0.229 通過；Breeze 錯誤率 4.4%，其中「她」全被聽成「他」，排除這個同音字後 2.8%；consistency 標 s05 音色偏暗 -482 Hz、s08 語速 +11%、5 處接縫亮度跳 490–1230 Hz（音高、響度、聲紋都在範圍內），Clarence 試聽通過（2026-11-21）",
+  "retakes": "第一輪跳動偏高：s00、s02、s05、s06、s07、s08、s09 各補 3 次，steady_pick；s08 改稿後重錄 5 次",
+  "manual_pick": "s05 take5、s07 take3、s08 take3（見 select_log 的 manual_override）",
+  "both_wrong": "s08「commit 歷史」→ 改成「commit 紀錄」重錄；其餘是虛詞（和→跟）、英文名（Lauren、Addy Osmani）和 pong",
+  "gemini": "Gemini API 2026-11-21 12:20 起達到每月花費上限：stt_check 第一輪（s08 改稿前）Gemini 錯誤率 1.2–6.2%，改稿後 Gemini 那一半沒跑；Clarence 說可跳過",
+  "twtone": "qa/twtone.md：沒有超過基準的項目",
+  "terms": "Ping／pong 英文念法（gemini_check，s10 未改稿）",
+  "voice_drift": 0.887
+ },
+ "published": "2026-11-23T08:01:00+08:00"
+}

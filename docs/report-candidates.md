@@ -24,7 +24,7 @@
 | EP40 | [`house-rules`](https://imitator.ai-apps.work/r/house-rules) | ✅ | ✅ 11/20 | ⏰ 11/22 08:00 排程 | ⬜ | ⬜ | 韓劇的中間層番外（上：EP37）；插隊在不讀之後之前 |
 | EP41 | [`gdp-service-ledger`](https://imitator.ai-apps.work/r/gdp-service-ledger) | ✅ | ✅ 11/20 | ⏰ 11/22 08:01 排程 | ⬜ | ⬜ | 原推薦 #5，插隊；用台股開場，目標聽眾是沒吃到 AI 紅利的人；報告 v0.2 資料到 11/20 |
 | EP42 | [`no-read-1`](https://imitator.ai-apps.work/r/no-read-1) | 🔶 | ⬜ | ⏰ 11/23 08:00 排程 | ⬜ | ⬜ | 不讀之後 上篇 |
-| EP43 | [`no-read-2`](https://imitator.ai-apps.work/r/no-read-2) | 🔶 | ⬜ | ⏰ 11/23 08:01 排程 | ⬜ | ⬜ | 不讀之後 下篇（上：EP42） |
+| EP43 | [`no-read-2`](https://imitator.ai-apps.work/r/no-read-2) | ✅ | ✅ 11/21 | ⏰ 11/23 08:01 排程 | ⬜ | ⬜ | 不讀之後 下篇（上：EP42）〈一個人一個月三千個 PR，她還看程式碼嗎？〉；Gemini 額度 11/21 用完，Gemini 驗收跳過（Clarence 同意）；`youtube` 標題與縮圖字已寫 |
 
 「進 feed」是 `episode.json` 設成 `status: final` 並填 `published`，merge 到 main 就會發佈（先給 Clarence 看再 commit）。EP36、EP37 的影片版和 Short 做完就搬到「已做」。
 

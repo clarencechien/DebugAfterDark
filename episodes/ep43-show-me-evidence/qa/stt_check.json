@@ -1,0 +1,1419 @@
+{
+ "script": "episodes/ep43-show-me-evidence/script.json",
+ "asr": "breeze",
+ "asr_model": "/home/user/models/breeze-asr-25-ct2-int8",
+ "method": "blind STT (breeze + Gemini 3.8 Flash), tone-aware pinyin filter drops exact homophones",
+ "segments": [
+  {
+   "id": "s00_open",
+   "cer_whisper": 0.062,
+   "cer_gemini": 1.0,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 38,
+     "ref_end": 39,
+     "script": "合",
+     "heard": "喝",
+     "context": "她睡覺的時候【合】進去的她叫l",
+     "hyp_pos": 38,
+     "by": "both",
+     "whisper_heard": "喝",
+     "gemini_heard": "",
+     "episode_time": "0:11"
+    },
+    {
+     "ref_start": 48,
+     "ref_end": 50,
+     "script": "en",
+     "heard": "a",
+     "context": "她叫laur【en】tan她的團",
+     "hyp_pos": 48,
+     "by": "both",
+     "whisper_heard": "a",
+     "gemini_heard": "",
+     "episode_time": "0:15"
+    },
+    {
+     "ref_start": 62,
+     "ref_end": 63,
+     "script": "k",
+     "heard": "g",
+     "context": "隊在做gro【k】bot這個a",
+     "hyp_pos": 61,
+     "by": "both",
+     "whisper_heard": "g",
+     "gemini_heard": "",
+     "episode_time": "0:17"
+    },
+    {
+     "ref_start": 84,
+     "ref_end": 85,
+     "script": "逐",
+     "heard": "主",
+     "context": "理說她早就不【逐】行讀程式碼了",
+     "hyp_pos": 83,
+     "by": "both",
+     "whisper_heard": "主",
+     "gemini_heard": "",
+     "episode_time": "0:22"
+    },
+    {
+     "ref_start": 136,
+     "ref_end": 137,
+     "script": "少",
+     "heard": "掃",
+     "context": "把她的金字塔【少】畫了一層而且",
+     "hyp_pos": 135,
+     "by": "both",
+     "whisper_heard": "掃",
+     "gemini_heard": "",
+     "episode_time": "0:33"
+    },
+    {
+     "ref_start": 143,
+     "ref_end": 144,
+     "script": "少",
+     "heard": "掃",
+     "context": "畫了一層而且【少】掉的剛好是最",
+     "hyp_pos": 142,
+     "by": "both",
+     "whisper_heard": "掃",
+     "gemini_heard": "",
+     "episode_time": "0:36"
+    },
+    {
+     "ref_start": 155,
+     "ref_end": 156,
+     "script": "少",
+     "heard": "掃",
+     "context": "最底下那一層【少】掉的是哪一層",
+     "hyp_pos": 154,
+     "by": "both",
+     "whisper_heard": "掃",
+     "gemini_heard": "",
+     "episode_time": "0:40"
+    }
+   ],
+   "whisper_text": "上個月有個工程師一個人上線了三千個 PRPR 就是合併請求很多還是在他睡覺的時候喝進去的她叫 Laura Tan她的團隊在做 Grog Bot 這個 app網路上有一篇整理說她早就不主行讀程式碼了改看 agent 交出來的影片跟截圖可是這份報告拿她 11 月的投影片去對發現那篇整理把他的金字塔掃畫了一層而且掃掉的剛好是最底下那一層掃掉的是哪一層他為什麼還留著它這集最後會回答",
+   "whisper_segments": [
+    [
+     0.0,
+     "上個月"
+    ],
+    [
+     1.4,
+     "有個工程師一個人上線了三千個 PR"
+    ],
+    [
+     6.08,
+     "PR 就是合併請求"
+    ],
+    [
+     8.36,
+     "很多還是在他睡覺的時候喝進去的"
+    ],
+    [
+     11.96,
+     "她叫 Laura Tan"
+    ],
+    [
+     13.72,
+     "她的團隊在做 Grog Bot 這個 app"
+    ],
+    [
+     17.36,
+     "網路上有一篇整理說"
+    ],
+    [
+     19.24,
+     "她早就不主行讀程式碼了"
+    ],
+    [
+     21.86,
+     "改看 agent 交出來的影片跟截圖"
+    ],
+    [
+     25.24,
+     "可是這份報告拿她 11 月的投影片去對"
+    ],
+    [
+     28.5,
+     "發現那篇整理"
+    ],
+    [
+     29.68,
+     "把他的金字塔掃畫了一層"
+    ],
+    [
+     32.92,
+     "而且掃掉的剛好是最底下那一層"
+    ],
+    [
+     36.8,
+     "掃掉的是哪一層"
+    ],
+    [
+     38.68,
+     "他為什麼還留著它"
+    ],
+    [
+     40.88,
+     "這集最後會回答"
+    ]
+   ],
+   "gemini_text": "",
+   "gemini_model_version": null
+  },
+  {
+   "id": "s01_recap",
+   "cer_whisper": 0.029,
+   "cer_gemini": 1.0,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 75,
+     "ref_end": 76,
+     "script": "篇",
+     "heard": "片",
+     "context": "圖這一集是下【篇】主角換成la",
+     "hyp_pos": 75,
+     "by": "both",
+     "whisper_heard": "片",
+     "gemini_heard": "",
+     "episode_time": "1:02"
+    },
+    {
+     "ref_start": 132,
+     "ref_end": 133,
+     "script": "擋",
+     "heard": "檔",
+     "context": "t變成機器會【擋】的檢查第二她",
+     "hyp_pos": 132,
+     "by": "both",
+     "whisper_heard": "檔",
+     "gemini_heard": "",
+     "episode_time": "1:15"
+    }
+   ],
+   "whisper_text": "上一集我們聊 Uncle Bob他說他不讀 agent 寫的程式碼可是照他自己的分工表他不讀的是實作和單元測試他改讀規格再看工具量出來的分數和架構圖這一集是下片主角換成 Lauren Tan他往同一個方向走看的東西不一樣今晚只講三件事第一他怎麼把每一次糾正 agent變成機器會檔的檢查第二他的金字塔在 9 月和 11 月之間換了哪幾層第三那些漂亮的數字要怎麼讀",
+   "whisper_segments": [
+    [
+     0.0,
+     "上一集我們聊 Uncle Bob"
+    ],
+    [
+     2.72,
+     "他說他不讀 agent 寫的程式碼"
+    ],
+    [
+     5.44,
+     "可是照他自己的分工表"
+    ],
+    [
+     7.6,
+     "他不讀的是實作和單元測試"
+    ],
+    [
+     10.48,
+     "他改讀規格"
+    ],
+    [
+     11.64,
+     "再看工具量出來的分數和架構圖"
+    ],
+    [
+     15.64,
+     "這一集是下片"
+    ],
+    [
+     17.16,
+     "主角換成 Lauren Tan"
+    ],
+    [
+     19.4,
+     "他往同一個方向走"
+    ],
+    [
+     21.36,
+     "看的東西不一樣"
+    ],
+    [
+     23.72,
+     "今晚只講三件事"
+    ],
+    [
+     26.08,
+     "第一"
+    ],
+    [
+     26.88,
+     "他怎麼把每一次糾正 agent"
+    ],
+    [
+     29.48,
+     "變成機器會檔的檢查"
+    ],
+    [
+     32.16,
+     "第二"
+    ],
+    [
+     32.8,
+     "他的金字塔在 9 月和 11 月之間換了哪幾層"
+    ],
+    [
+     37.84,
+     "第三"
+    ],
+    [
+     38.56,
+     "那些漂亮的數字要怎麼讀"
+    ]
+   ],
+   "gemini_text": "",
+   "gemini_model_version": null
+  },
+  {
+   "id": "s02_garden",
+   "cer_whisper": 0.07,
+   "cer_gemini": 1.0,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 41,
+     "ref_end": 43,
+     "script": "碼她",
+     "heard": "嘛他",
+     "context": "家罵的爛程式【碼她】說工程師的核",
+     "hyp_pos": 41,
+     "by": "both",
+     "whisper_heard": "嘛他",
+     "gemini_heard": "",
+     "episode_time": "1:33"
+    },
+    {
+     "ref_start": 105,
+     "ref_end": 106,
+     "script": "審",
+     "heard": "省",
+     "context": "〇二四年她要【審】三個同事的p",
+     "hyp_pos": 105,
+     "by": "both",
+     "whisper_heard": "省",
+     "gemini_heard": "",
+     "episode_time": "1:51"
+    },
+    {
+     "ref_start": 123,
+     "ref_end": 124,
+     "script": "和",
+     "heard": "",
+     "context": "是三百個限制【和】護欄是水泥地",
+     "hyp_pos": 123,
+     "by": "both",
+     "whisper_heard": "",
+     "gemini_heard": "",
+     "episode_time": "1:56"
+    },
+    {
+     "ref_start": 129,
+     "ref_end": 131,
+     "script": "地基",
+     "heard": "滴劑",
+     "context": "和護欄是水泥【地基】新的程式繞著",
+     "hyp_pos": 128,
+     "by": "both",
+     "whisper_heard": "滴劑",
+     "gemini_heard": "",
+     "episode_time": "1:56"
+    },
+    {
+     "ref_start": 184,
+     "ref_end": 185,
+     "script": "除",
+     "heard": "處",
+     "context": "片那蟲要怎麼【除】",
+     "hyp_pos": 183,
+     "by": "both",
+     "whisper_heard": "處",
+     "gemini_heard": "",
+     "episode_time": "2:12"
+    }
+   ],
+   "whisper_text": "先從他 11 月那場演講講起題目叫 All Code is Slopslop 就是大家罵的爛程式嘛他說工程師的核心工作是在產量暴增的時候守住品質他用的比喻是花園 agent 的產出取決於輸入而程式庫是最大的輸入之一2024 年他要省三個同事的 PR現在大約是 300 個限制護欄是水泥滴劑新的程式繞著它漲偷吃步的寫法過時的技術就是害蟲下一個 agent 會把他們當成慣例照抄很快就爬滿整片那蟲要怎麼處",
+   "whisper_segments": [
+    [
+     0.0,
+     "先從他 11 月那場演講講起"
+    ],
+    [
+     3.5,
+     "題目叫 All Code is Slop"
+    ],
+    [
+     6.24,
+     "slop 就是大家罵的爛程式嘛"
+    ],
+    [
+     9.4,
+     "他說"
+    ],
+    [
+     10.52,
+     "工程師的核心工作是在產量暴增的時候守住品質"
+    ],
+    [
+     15.8,
+     "他用的比喻是花園 agent 的產出取決於輸入"
+    ],
+    [
+     20.36,
+     "而程式庫是最大的輸入之一"
+    ],
+    [
+     23.76,
+     "2024 年他要省三個同事的 PR"
+    ],
+    [
+     27.08,
+     "現在大約是 300 個"
+    ],
+    [
+     29.04,
+     "限制護欄是水泥滴劑"
+    ],
+    [
+     34.36,
+     "新的程式繞著它漲"
+    ],
+    [
+     36.88,
+     "偷吃步的寫法過時的技術就是害蟲"
+    ],
+    [
+     40.16,
+     "下一個 agent 會把他們當成慣例照抄"
+    ],
+    [
+     43.04,
+     "很快就爬滿整片"
+    ],
+    [
+     45.24,
+     "那蟲要怎麼處"
+    ]
+   ],
+   "gemini_text": "",
+   "gemini_model_version": null
+  },
+  {
+   "id": "s03_checks",
+   "cer_whisper": 0.043,
+   "cer_gemini": 1.0,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 48,
+     "ref_end": 49,
+     "script": "得",
+     "heard": "的",
+     "context": "拿捏分寸才用【得】好的東西最後",
+     "hyp_pos": 48,
+     "by": "both",
+     "whisper_heard": "的",
+     "gemini_heard": "",
+     "episode_time": "2:23"
+    },
+    {
+     "ref_start": 144,
+     "ref_end": 145,
+     "script": "成",
+     "heard": "",
+     "context": "脆禁掉大約九【成】九的註解註解",
+     "hyp_pos": 144,
+     "by": "both",
+     "whisper_heard": "",
+     "gemini_heard": "",
+     "episode_time": "2:51"
+    },
+    {
+     "ref_start": 201,
+     "ref_end": 202,
+     "script": "修",
+     "heard": "show",
+     "context": "agent去【修】根本原因這招",
+     "hyp_pos": 200,
+     "by": "both",
+     "whisper_heard": "show",
+     "gemini_heard": "",
+     "episode_time": "3:03"
+    }
+   ],
+   "whisper_text": "他舉了三個例子第一個 react 的 use effect 在產品程式碼裡直接禁用他的理由是要拿捏分寸才用的好的東西最後常常變成 slop乾脆禁掉這一類錯就不會再出現第二個主程式和畫面切成兩個目錄再用工具擋住不讓它們互相引用因為 agent 很愛把主程式的程式拉進畫面那邊造成卡頓第三個他們乾脆禁掉大約 9 × 9 的註解註解會過時也沒辦法強制所以改成 lint 規則lint 就是自動檢查程式寫法的工具錯誤訊息會直接叫 agent 去 show 根本原因這招不是他一個人在講耶Addy Osmani 寫舊系統的文章也說同一句審查意見第二次出現就該寫成 lint 或測試",
+   "whisper_segments": [
+    [
+     0.0,
+     "他舉了三個例子"
+    ],
+    [
+     1.68,
+     "第一個 react 的 use effect 在產品程式碼裡直接禁用"
+    ],
+    [
+     8.88,
+     "他的理由是要拿捏分寸才用的好的東西"
+    ],
+    [
+     13.08,
+     "最後常常變成 slop"
+    ],
+    [
+     15.56,
+     "乾脆禁掉"
+    ],
+    [
+     16.96,
+     "這一類錯就不會再出現"
+    ],
+    [
+     20.08,
+     "第二個"
+    ],
+    [
+     21.24,
+     "主程式和畫面切成兩個目錄"
+    ],
+    [
+     24.68,
+     "再用工具擋住"
+    ],
+    [
+     26.12,
+     "不讓它們互相引用"
+    ],
+    [
+     28.4,
+     "因為 agent 很愛把主程式的程式拉進畫面那邊"
+    ],
+    [
+     32.88,
+     "造成卡頓"
+    ],
+    [
+     35.84,
+     "第三個"
+    ],
+    [
+     37.04,
+     "他們乾脆禁掉大約 9 × 9 的註解"
+    ],
+    [
+     40.92,
+     "註解會過時也沒辦法強制"
+    ],
+    [
+     43.4,
+     "所以改成 lint 規則"
+    ],
+    [
+     45.6,
+     "lint 就是自動檢查程式寫法的工具"
+    ],
+    [
+     49.0,
+     "錯誤訊息會直接叫 agent 去 show 根本原因"
+    ],
+    [
+     53.16,
+     "這招不是他一個人在講耶"
+    ],
+    [
+     55.12,
+     "Addy Osmani 寫舊系統的文章也說"
+    ],
+    [
+     58.32,
+     "同一句審查意見"
+    ],
+    [
+     59.68,
+     "第二次出現"
+    ],
+    [
+     61.12,
+     "就該寫成 lint 或測試"
+    ]
+   ],
+   "gemini_text": "",
+   "gemini_model_version": null
+  },
+  {
+   "id": "s04_evidence",
+   "cer_whisper": 0.025,
+   "cer_gemini": 1.0,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 137,
+     "ref_end": 138,
+     "script": "新",
+     "heard": "行",
+     "context": "這些技術都不【新】以前是寫起來",
+     "hyp_pos": 137,
+     "by": "both",
+     "whisper_heard": "行",
+     "gemini_heard": "",
+     "episode_time": "3:50"
+    }
+   ],
+   "whisper_text": "每一次糾正都變成一條機器會跑的檢查審查要看的東西就越來越少那剩下要看什麼他說程式審查已經縮成看驗證的產出app 跑起來的影片截圖還有形式化驗證也就是用數學去證明某個流程不會出錯他提到有一位叫 Cindy 的人在 x 上說自己每天七成的 token 花在驗證上他說他自己也差不多這些技術都不行以前是寫起來維護起來都太貴上一集 Uncle Bob 的 mutation testing 也是這樣agent 不怕慢這些老工具才變得能用",
+   "whisper_segments": [
+    [
+     0.0,
+     "每一次糾正都變成一條機器會跑的檢查"
+    ],
+    [
+     4.2,
+     "審查要看的東西就越來越少"
+    ],
+    [
+     6.76,
+     "那剩下要看什麼"
+    ],
+    [
+     8.76,
+     "他說"
+    ],
+    [
+     9.24,
+     "程式審查已經縮成看驗證的產出"
+    ],
+    [
+     13.04,
+     "app 跑起來的影片"
+    ],
+    [
+     14.48,
+     "截圖"
+    ],
+    [
+     15.48,
+     "還有形式化驗證"
+    ],
+    [
+     17.28,
+     "也就是用數學去證明某個流程不會出錯"
+    ],
+    [
+     22.2,
+     "他提到"
+    ],
+    [
+     23.2,
+     "有一位叫 Cindy 的人在 x 上說"
+    ],
+    [
+     26.36,
+     "自己每天七成的 token 花在驗證上"
+    ],
+    [
+     29.36,
+     "他說他自己也差不多"
+    ],
+    [
+     32.32,
+     "這些技術都不行"
+    ],
+    [
+     33.8,
+     "以前是寫起來"
+    ],
+    [
+     35.52,
+     "維護起來都太貴"
+    ],
+    [
+     37.36,
+     "上一集 Uncle Bob 的 mutation testing 也是這樣"
+    ],
+    [
+     40.6,
+     "agent 不怕慢"
+    ],
+    [
+     41.92,
+     "這些老工具才變得能用"
+    ]
+   ],
+   "gemini_text": "",
+   "gemini_model_version": null
+  },
+  {
+   "id": "s05_pyramid",
+   "cer_whisper": 0.011,
+   "cer_gemini": 1.0,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 30,
+     "ref_end": 31,
+     "script": "由",
+     "heard": "又",
+     "context": "五層的金字塔【由】上到下是程式",
+     "hyp_pos": 30,
+     "by": "both",
+     "whisper_heard": "又",
+     "gemini_heard": "",
+     "episode_time": "4:10"
+    }
+   ],
+   "whisper_text": "接下來是這集最關鍵的一張圖他十一月的投影片是一座五層的金字塔又上到下是程式庫和架構靜態檢查驗證再來是寫給 agent 看的文字規則最底下是人工審查旁邊有一支往下的箭頭寫著成本越往下越貴這份報告拿它跟九月那場比九月也是五層可是驗證排在最後人工審查在第四層兩個月裡驗證往上爬了兩層人工審查掉到最底還多了成本箭頭審查沒有被拿掉它被標成最貴的一層網路上那篇整理只寫了四層少掉的就是這一層",
+   "whisper_segments": [
+    [
+     0.0,
+     "接下來是這集最關鍵的一張圖"
+    ],
+    [
+     2.96,
+     "他十一月的投影片"
+    ],
+    [
+     4.56,
+     "是一座五層的金字塔"
+    ],
+    [
+     7.0,
+     "又上到下是程式庫和架構靜態檢查驗證"
+    ],
+    [
+     12.52,
+     "再來是寫給 agent 看的文字規則"
+    ],
+    [
+     15.84,
+     "最底下是人工審查"
+    ],
+    [
+     18.64,
+     "旁邊有一支往下的箭頭"
+    ],
+    [
+     20.32,
+     "寫著成本越往下越貴"
+    ],
+    [
+     24.92,
+     "這份報告拿它跟九月那場比"
+    ],
+    [
+     27.5,
+     "九月也是五層"
+    ],
+    [
+     28.76,
+     "可是驗證排在最後"
+    ],
+    [
+     30.52,
+     "人工審查在第四層"
+    ],
+    [
+     33.12,
+     "兩個月裡驗證往上爬了兩層"
+    ],
+    [
+     35.8,
+     "人工審查掉到最底"
+    ],
+    [
+     37.6,
+     "還多了成本箭頭"
+    ],
+    [
+     39.96,
+     "審查沒有被拿掉"
+    ],
+    [
+     41.4,
+     "它被標成最貴的一層"
+    ],
+    [
+     43.56,
+     "網路上那篇整理只寫了四層"
+    ],
+    [
+     46.0,
+     "少掉的就是這一層"
+    ]
+   ],
+   "gemini_text": "",
+   "gemini_model_version": null
+  },
+  {
+   "id": "s06_numbers",
+   "cer_whisper": 0.045,
+   "cer_gemini": 1.0,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 4,
+     "ref_end": 6,
+     "script": "字她",
+     "heard": "值他",
+     "context": "再來看數【字她】的團隊上個月",
+     "hyp_pos": 4,
+     "by": "both",
+     "whisper_heard": "值他",
+     "gemini_heard": "",
+     "episode_time": "4:52"
+    },
+    {
+     "ref_start": 182,
+     "ref_end": 183,
+     "script": "t",
+     "heard": "ked",
+     "context": "隨時補lin【t】換一個沒有她",
+     "hyp_pos": 182,
+     "by": "both",
+     "whisper_heard": "ked",
+     "gemini_heard": "",
+     "episode_time": "5:31"
+    }
+   ],
+   "whisper_text": "再來看數值他的團隊上個月上線 1 萬多個 PR退回率大約 0.5％聽起來出錯很少對吧這份報告提醒了三件事第一這是團隊自己報的不是對照研究第二退回是整個 PR 撤回他每次發版後會自動找 bug開一個修正的 PR再自動合併這種往前修掉的 bug 不算退回所以這個比例比較接近整個撤回的變更有多少這是作者的推論第三產量很集中他一個人就佔了全隊將近三成他也說自己一直在盯程式碼隨時補 linked換一個沒有他的團隊同一套規則能撐多久",
+   "whisper_segments": [
+    [
+     0.0,
+     "再來看數值"
+    ],
+    [
+     1.6,
+     "他的團隊上個月上線 1 萬多個 PR"
+    ],
+    [
+     4.8,
+     "退回率大約 0.5％"
+    ],
+    [
+     7.44,
+     "聽起來出錯很少對吧"
+    ],
+    [
+     9.64,
+     "這份報告提醒了三件事"
+    ],
+    [
+     12.2,
+     "第一"
+    ],
+    [
+     12.84,
+     "這是團隊自己報的"
+    ],
+    [
+     14.36,
+     "不是對照研究"
+    ],
+    [
+     16.12,
+     "第二"
+    ],
+    [
+     16.84,
+     "退回是整個 PR 撤回"
+    ],
+    [
+     19.36,
+     "他每次發版後會自動找 bug"
+    ],
+    [
+     21.4,
+     "開一個修正的 PR"
+    ],
+    [
+     22.72,
+     "再自動合併"
+    ],
+    [
+     24.12,
+     "這種往前修掉的 bug 不算退回"
+    ],
+    [
+     27.28,
+     "所以這個比例"
+    ],
+    [
+     28.16,
+     "比較接近整個撤回的變更有多少"
+    ],
+    [
+     30.92,
+     "這是作者的推論"
+    ],
+    [
+     32.6,
+     "第三"
+    ],
+    [
+     33.6,
+     "產量很集中"
+    ],
+    [
+     35.16,
+     "他一個人就佔了全隊將近三成"
+    ],
+    [
+     37.76,
+     "他也說自己一直在盯程式碼"
+    ],
+    [
+     39.6,
+     "隨時補 linked"
+    ],
+    [
+     41.24,
+     "換一個沒有他的團隊"
+    ],
+    [
+     43.2,
+     "同一套規則能撐多久"
+    ]
+   ],
+   "gemini_text": "",
+   "gemini_model_version": null
+  },
+  {
+   "id": "s07_young",
+   "cer_whisper": 0.041,
+   "cer_gemini": 1.0,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 89,
+     "ref_end": 91,
+     "script": "dy",
+     "heard": "",
+     "context": "另一回事ad【dy】osmani",
+     "hyp_pos": 89,
+     "by": "both",
+     "whisper_heard": "",
+     "gemini_heard": "",
+     "episode_time": "6:01"
+    },
+    {
+     "ref_start": 94,
+     "ref_end": 95,
+     "script": "a",
+     "heard": "o",
+     "context": "ddyosm【a】ni說舊的程",
+     "hyp_pos": 92,
+     "by": "both",
+     "whisper_heard": "o",
+     "gemini_heard": "",
+     "episode_time": "6:01"
+    },
+    {
+     "ref_start": 96,
+     "ref_end": 97,
+     "script": "i",
+     "heard": "d",
+     "context": "yosman【i】說舊的程式庫",
+     "hyp_pos": 94,
+     "by": "both",
+     "whisper_heard": "d",
+     "gemini_heard": "",
+     "episode_time": "6:01"
+    }
+   ],
+   "whisper_text": "還有一個他沒講的前提這座花園很年輕他八月寫說大約兩個月前才開始做這份報告推算到十一月演講的時候這個程式庫大約才四五個月大框架是自己人寫的每一條慣例都找得到人問舊系統是另一回事A. D. Osmond 說舊的程式庫已經不是系統行為的完整描述有些限制只存在人的記憶裡他建議先寫測試把現有的行為鎖住連醜的部分一起再把授權計費這種地方標成紅區每一步都有人陪著所以這份報告說它的順序可以搬到舊系統它的速度不行",
+   "whisper_segments": [
+    [
+     0.0,
+     "還有一個他沒講的前提"
+    ],
+    [
+     3.0,
+     "這座花園很年輕"
+    ],
+    [
+     5.32,
+     "他八月寫說大約兩個月前才開始做"
+    ],
+    [
+     9.28,
+     "這份報告推算"
+    ],
+    [
+     10.68,
+     "到十一月演講的時候"
+    ],
+    [
+     12.52,
+     "這個程式庫大約才四五個月大"
+    ],
+    [
+     15.96,
+     "框架是自己人寫的"
+    ],
+    [
+     18.0,
+     "每一條慣例都找得到人問"
+    ],
+    [
+     21.88,
+     "舊系統是另一回事"
+    ],
+    [
+     24.2,
+     "A. D. Osmond 說"
+    ],
+    [
+     25.8,
+     "舊的程式庫已經不是系統行為的完整描述"
+    ],
+    [
+     29.6,
+     "有些限制只存在人的記憶裡"
+    ],
+    [
+     32.96,
+     "他建議先寫測試"
+    ],
+    [
+     34.84,
+     "把現有的行為鎖住"
+    ],
+    [
+     36.88,
+     "連醜的部分一起"
+    ],
+    [
+     39.0,
+     "再把授權"
+    ],
+    [
+     40.32,
+     "計費這種地方標成紅區"
+    ],
+    [
+     43.12,
+     "每一步都有人陪著"
+    ],
+    [
+     45.24,
+     "所以這份報告說"
+    ],
+    [
+     46.88,
+     "它的順序可以搬到舊系統"
+    ],
+    [
+     49.56,
+     "它的速度不行"
+    ]
+   ],
+   "gemini_text": "",
+   "gemini_model_version": null
+  },
+  {
+   "id": "s08_bottom",
+   "cer_whisper": 0.062,
+   "cer_gemini": 1.0,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 43,
+     "ref_end": 44,
+     "script": "審",
+     "heard": "省",
+     "context": "後就沒什麼好【審】的agent",
+     "hyp_pos": 43,
+     "by": "both",
+     "whisper_heard": "省",
+     "gemini_heard": "",
+     "episode_time": "6:37"
+    },
+    {
+     "ref_start": 73,
+     "ref_end": 74,
+     "script": "審",
+     "heard": "省",
+     "context": "被轉述成不用【審】了可是她自己",
+     "hyp_pos": 73,
+     "by": "both",
+     "whisper_heard": "省",
+     "gemini_heard": "",
+     "episode_time": "6:42"
+    },
+    {
+     "ref_start": 144,
+     "ref_end": 148,
+     "script": "lint",
+     "heard": "",
+     "context": "該退的退該補【lint】的補這份報告",
+     "hyp_pos": 144,
+     "by": "both",
+     "whisper_heard": "",
+     "gemini_heard": "",
+     "episode_time": "6:59"
+    }
+   ],
+   "whisper_text": "回到開頭那個問題他到底還看不看程式碼他在演講裡說糾正一條一條變成檢查之後最後就沒什麼好省的agent 可以自己合併大部分的 PR這句很容易被轉述成不用省了可是他自己的投影片上人工審查還在最底層一份他的訪談整理也寫到他每天抽看合併進去的 PR早上再把前一天的 commit 紀錄從頭讀一遍該退的退該補的補這份報告的讀法是人工審查從每個 PR 都看改成只看驗證蓋不到的地方這是作者的整理不是他的原話",
+   "whisper_segments": [
+    [
+     0.0,
+     "回到開頭那個問題"
+    ],
+    [
+     1.64,
+     "他到底還看不看程式碼"
+    ],
+    [
+     4.04,
+     "他在演講裡說"
+    ],
+    [
+     5.64,
+     "糾正一條一條變成檢查之後"
+    ],
+    [
+     8.28,
+     "最後就沒什麼好省的"
+    ],
+    [
+     9.88,
+     "agent 可以自己合併大部分的 PR"
+    ],
+    [
+     12.72,
+     "這句很容易被轉述成不用省了"
+    ],
+    [
+     16.12,
+     "可是他自己的投影片上"
+    ],
+    [
+     18.2,
+     "人工審查還在最底層"
+    ],
+    [
+     20.48,
+     "一份他的訪談整理也寫到"
+    ],
+    [
+     22.64,
+     "他每天抽看合併進去的 PR"
+    ],
+    [
+     25.32,
+     "早上再把前一天的 commit 紀錄從頭讀一遍"
+    ],
+    [
+     29.24,
+     "該退的退"
+    ],
+    [
+     30.42,
+     "該補的補"
+    ],
+    [
+     32.32,
+     "這份報告的讀法是人工審查從每個 PR 都看"
+    ],
+    [
+     36.88,
+     "改成只看驗證蓋不到的地方"
+    ],
+    [
+     39.68,
+     "這是作者的整理"
+    ],
+    [
+     40.92,
+     "不是他的原話"
+    ]
+   ],
+   "gemini_text": "",
+   "gemini_model_version": null
+  },
+  {
+   "id": "s09_two",
+   "cer_whisper": 0.034,
+   "cer_gemini": 1.0,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 18,
+     "ref_end": 19,
+     "script": "和",
+     "heard": "跟",
+     "context": "clebob【和】lauren",
+     "hyp_pos": 18,
+     "by": "both",
+     "whisper_heard": "跟",
+     "gemini_heard": "",
+     "episode_time": "7:14"
+    },
+    {
+     "ref_start": 46,
+     "ref_end": 47,
+     "script": "審",
+     "heard": "省",
+     "context": "事一樣逐行人【審】跟不上產量寫",
+     "hyp_pos": 46,
+     "by": "both",
+     "whisper_heard": "省",
+     "gemini_heard": "",
+     "episode_time": "7:21"
+    },
+    {
+     "ref_start": 74,
+     "ref_end": 75,
+     "script": "擋",
+     "heard": "當",
+     "context": "要變成機器會【擋】的檢查架構留",
+     "hyp_pos": 74,
+     "by": "both",
+     "whisper_heard": "當",
+     "gemini_heard": "",
+     "episode_time": "7:26"
+    },
+    {
+     "ref_start": 123,
+     "ref_end": 124,
+     "script": "跑",
+     "heard": "拋",
+     "context": "行為看app【跑】起來的影片和",
+     "hyp_pos": 123,
+     "by": "both",
+     "whisper_heard": "拋",
+     "gemini_heard": "",
+     "episode_time": "7:41"
+    }
+   ],
+   "whisper_text": "把上下兩集放在一起看Uncle Bob 跟 Lauren Tan 沒有互相引用過可是有四件事一樣竹行人省跟不上產量寫給 agent 看的文字靠不住規矩要變成機器會當的檢查架構留在人手上還有人沒有離開不一樣的是看什麼它主要看結構看分數和架構圖它主要看行為看 app 拋起來的影片和截圖那想照著做的團隊能搬什麼這份報告說能搬的是順序每次糾正 agent 先問能不能往上推一層能改架構就不寫 lint能寫 lint 就不寫進給 agent 看的規則檔",
+   "whisper_segments": [
+    [
+     0.0,
+     "把上下兩集放在一起看"
+    ],
+    [
+     2.8,
+     "Uncle Bob 跟 Lauren Tan 沒有互相引用過"
+    ],
+    [
+     6.76,
+     "可是有四件事一樣"
+    ],
+    [
+     8.92,
+     "竹行人省跟不上產量"
+    ],
+    [
+     11.84,
+     "寫給 agent 看的文字靠不住"
+    ],
+    [
+     14.36,
+     "規矩要變成機器會當的檢查"
+    ],
+    [
+     17.2,
+     "架構留在人手上"
+    ],
+    [
+     19.4,
+     "還有人沒有離開"
+    ],
+    [
+     21.52,
+     "不一樣的是看什麼"
+    ],
+    [
+     23.72,
+     "它主要看結構"
+    ],
+    [
+     25.6,
+     "看分數和架構圖"
+    ],
+    [
+     27.64,
+     "它主要看行為"
+    ],
+    [
+     29.36,
+     "看 app 拋起來的影片和截圖"
+    ],
+    [
+     33.24,
+     "那想照著做的團隊能搬什麼"
+    ],
+    [
+     36.52,
+     "這份報告說能搬的是順序"
+    ],
+    [
+     39.48,
+     "每次糾正 agent 先問能不能往上推一層"
+    ],
+    [
+     44.08,
+     "能改架構就不寫 lint"
+    ],
+    [
+     46.36,
+     "能寫 lint 就不寫進給 agent 看的規則檔"
+    ]
+   ],
+   "gemini_text": "",
+   "gemini_model_version": null
+  },
+  {
+   "id": "s10_outro",
+   "cer_whisper": 0.048,
+   "cer_gemini": 1.0,
+   "gemini_unclear_marks": 0,
+   "flagged": [
+    {
+     "ref_start": 126,
+     "ref_end": 127,
+     "script": "讀",
+     "heard": "賭",
+     "context": "二個人都還在【讀】只是換了東西",
+     "hyp_pos": 126,
+     "by": "both",
+     "whisper_heard": "賭",
+     "gemini_heard": "",
+     "episode_time": "8:30"
+    },
+    {
+     "ref_start": 149,
+     "ref_end": 150,
+     "script": "g",
+     "heard": "",
+     "context": "欄我是pin【g】有收到的話回",
+     "hyp_pos": 149,
+     "by": "both",
+     "whisper_heard": "",
+     "gemini_heard": "",
+     "episode_time": "8:37"
+    },
+    {
+     "ref_start": 155,
+     "ref_end": 157,
+     "script": "回我",
+     "heard": "會有",
+     "context": "g有收到的話【回我】一個pong",
+     "hyp_pos": 154,
+     "by": "both",
+     "whisper_heard": "會有",
+     "gemini_heard": "",
+     "episode_time": "8:37"
+    },
+    {
+     "ref_start": 161,
+     "ref_end": 163,
+     "script": "ng",
+     "heard": "m",
+     "context": "回我一個po【ng】下次見",
+     "hyp_pos": 160,
+     "by": "both",
+     "whisper_heard": "m",
+     "gemini_heard": "",
+     "episode_time": "8:37"
+    }
+   ],
+   "whisper_text": "今晚的 break point第一每一次糾正 agent先想能不能變成一條機器會擋的檢查第二他的金字塔沒有拆掉人工審查只是把它放到最底下標成最貴的一層第三一萬多個 PR 0.5％ 的退回率是一座四五個月大他親自照顧的花園量出來的能搬的是順序不是數字兩個人都還在賭只是換了東西讀原文連結在節目資訊欄我是 pin有收到的話會有一個 pom下次見",
+   "whisper_segments": [
+    [
+     0.0,
+     "今晚的 break point"
+    ],
+    [
+     1.8,
+     "第一"
+    ],
+    [
+     2.68,
+     "每一次糾正 agent"
+    ],
+    [
+     4.16,
+     "先想能不能變成一條機器會擋的檢查"
+    ],
+    [
+     7.6,
+     "第二"
+    ],
+    [
+     8.48,
+     "他的金字塔沒有拆掉人工審查"
+    ],
+    [
+     11.16,
+     "只是把它放到最底下"
+    ],
+    [
+     12.88,
+     "標成最貴的一層"
+    ],
+    [
+     14.76,
+     "第三"
+    ],
+    [
+     15.96,
+     "一萬多個 PR"
+    ],
+    [
+     17.6,
+     " 0.5％ 的退回率"
+    ],
+    [
+     19.4,
+     "是一座四五個月大"
+    ],
+    [
+     21.12,
+     "他親自照顧的花園量出來的"
+    ],
+    [
+     24.24,
+     "能搬的是順序"
+    ],
+    [
+     25.84,
+     "不是數字"
+    ],
+    [
+     28.12,
+     "兩個人都還在賭"
+    ],
+    [
+     29.6,
+     "只是換了東西讀"
+    ],
+    [
+     31.6,
+     "原文連結在節目資訊欄"
+    ],
+    [
+     33.84,
+     "我是 pin"
+    ],
+    [
+     34.92,
+     "有收到的話會有一個 pom"
+    ],
+    [
+     37.76,
+     "下次見"
+    ]
+   ],
+   "gemini_text": "",
+   "gemini_model_version": null
+  }
+ ]
+}

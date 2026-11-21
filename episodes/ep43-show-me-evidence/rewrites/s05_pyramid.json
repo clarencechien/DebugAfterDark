@@ -1,0 +1,131 @@
+{
+ "segment": "s05_pyramid",
+ "position": "第 6 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2f87ce5116fa83d33a40b5973646a675c2909a74c7bf3aaf13abb00c0ab3c851",
+ "previous_context": "以前寫起來太貴，根本沒什麼人想碰。現在交給 agent，這些厲害的老工具才終於能派上用場。",
+ "original": {
+  "text": "接下來是這集最關鍵的一張圖。她十一月的投影片是一座五層的金字塔，由上到下是：程式庫和架構、靜態檢查、驗證、文字規則，最底下是人工審查。左邊有一支往下的箭頭，寫著成本，越往下越貴。這份報告把它跟她九月那場比，九月也是五層，可是驗證排在最後一層，人工審查在第四層。兩個月裡，驗證往上爬了兩層，人工審查掉到最底，旁邊多了成本箭頭。審查沒有被拿掉，它被標成整座金字塔裡最貴的一層。網路上那篇整理只寫了四層，少掉的就是這一層。",
+  "lint": {
+   "chars": 208,
+   "precise_numbers": [
+    "十一"
+   ],
+   "enumerations": [
+    "第四"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 28.7,
+   "max_sentence_len": 52,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "然後，重點來了。這份報告翻出她十一月的一張投影片。其實那是一座金字塔，分成五層。越上面越寬，代表問題要先擋下來。最上面是架構，接著是靜態分析。第三層是驗證，再來是文字規則。那最底下放什麼？居然是人工審查。旁邊還畫了一個箭頭，寫著成本。所以越往下抓蟲，代價就越貴啦。報告裡把這張圖拿去跟九月比。才短短兩個月，整座金字塔大洗牌。<short pause>驗證一路往上跳，人工審查掉到最底下。審查沒有被拿掉喔。只是它被標成了整座金字塔裡，最貴的一層。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 12.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "然後，重點來了。\n這份報告整理出一張五層的金字塔圖。\n最上面是架構，接著是靜態檢查和驗證。\n再來是寫給 agent 看的規則。\n那最底下排什麼？\n答案是人工審查。\n圖旁邊特別標示，越往下成本越貴喔。\n其實幾個月前的舊版本很不一樣。\n驗證本來被排在最後面。\n到了新版，驗證直接往上衝。\n人工審查反而掉到最底。\n<short pause>\n這個調整超有意思的對吧？\n你應該也注意到了。\n人工審查根本沒有被拿掉。\n它只是被標成成本最高的一層啦。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 11.6,
+    "max_sentence_len": 17,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以工具到位之後，要怎麼排順序？\n這份報告列出一張超關鍵的金字塔圖。\n投影片裡把它分成五層，越往下成本越貴。\n對比九月那一版，其實變動超大。<short pause>\n最大的差別在哪裡？\n原本排在最後的驗證，往上跳了兩層。\n反而人工審查一路往下掉，掉到最底層。\n旁邊還特別標了一支箭頭，寫著成本。\n讓人審查並沒有被拿掉喔，\n但它被標成整座金字塔最貴的一層。<short pause>\n兩個月裡，她把機器證明往前移，\n讓人看的順序往後壓。\n整個防線的重心完全不一樣了啦。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 27,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "然後，重點來了。這份報告整理出一張五層的金字塔圖。最上面是架構，接著是靜態檢查和驗證。再來是寫給 agent 看的規則。那最底下排什麼？答案是人工審查。圖旁邊特別標示，越往下成本越貴喔。其實幾個月前的舊版本很不一樣。驗證本來被排在最後面。到了新版，驗證直接往上衝。人工審查反而掉到最底。<short pause>這個調整超有意思的對吧？你應該也注意到了。人工審查根本沒有被拿掉。它只是被標成成本最高的一層啦。",
+   "to": "接下來是這集最關鍵的一張圖。她十一月的投影片，是一座五層的金字塔。由上到下是：程式庫和架構、靜態檢查、驗證、寫給 agent 看的文字規則，最底下是人工審查。旁邊有一支往下的箭頭，寫著成本，越往下越貴。<short pause>這份報告拿它跟九月那場比。九月也是五層，可是驗證排在最後，人工審查在第四層。兩個月裡，驗證往上爬了兩層，人工審查掉到最底，還多了成本箭頭。審查沒有被拿掉，它被標成最貴的一層。網路上那篇整理只寫了四層，少掉的，就是這一層。",
+   "reason": "歸屬錯：金字塔是她的投影片，不是報告整理的；補回九月、十一月和「網路上那篇整理只寫了四層」（收回開頭的懸念）；刪掉「重點來了」「超有意思的對吧」"
+  },
+  {
+   "from": "由上到下是：程式庫和架構、靜態檢查、驗證、寫給 agent 看的文字規則，最底下是人工審查。",
+   "to": "由上到下是程式庫和架構、靜態檢查、驗證，再來是寫給 agent 看的文字規則。最底下，是人工審查。",
+   "reason": "句子太長切短"
+  }
+ ]
+}

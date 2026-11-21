@@ -1,0 +1,138 @@
+{
+ "segment": "s01_recap",
+ "position": "第 2 段，共 11 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": "EP42〈Clean Code 的作者不讀 AI 的程式碼，那他讀什麼？〉：上一集：Uncle Bob 七月說他不讀 agent 寫的程式碼，可是照他自己的分工表，他不讀實作和單元測試，改讀規格，再看工具量出來的分數和架構圖。這集換 Lauren Tan，同一個方向，看的東西不一樣。",
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f9c9c661ff1360248310946608c16023e9984260658d47c3c777642266bb2158",
+ "previous_context": "她為什麼還要留著？這集最後我們就會揭曉。",
+ "original": {
+  "text": "上一集講 Uncle Bob。他七月說不讀 agent 寫的程式碼，可是照他自己的分工表，他是不讀實作和單元測試，改讀規格，再看工具量出來的分數和架構圖。這一集是不讀之後的下篇，主角換成 Lauren Tan，她往同一個方向走，看的東西不一樣。今晚只講三件事：第一，她怎麼把每一次糾正 agent，變成機器會擋的檢查；第二，她的金字塔在九月和十一月之間換了哪幾層；第三，那些漂亮的數字要怎麼讀。",
+  "lint": {
+   "chars": 190,
+   "precise_numbers": [
+    "十一"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 4,
+   "avg_sentence_len": 46.5,
+   "max_sentence_len": 73,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上一集我們聊到 Uncle Bob。<short pause>\n他七月說不讀 agent 寫的程式碼，\n其實只讀規格、工具量出的分數跟架構圖。\n這集換成 Lauren Tan。\n走同一個方向，但她看的東西完全不同。\n你猜她改看什麼？\n她看的是跑起來的證據，超有意思的。\n今天我們只看三件事喔。\n第一，糾正 agent 怎麼變成機器自動擋；\n第二，她的金字塔在年底前換了哪幾層；\n最後，那些漂亮的數字到底該怎麼讀啦。",
+   "lint": {
+    "chars": 176,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 8,
+    "avg_sentence_len": 21.0,
+    "max_sentence_len": 55,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集我們聊到 Uncle Bob。\n他說他不讀 agent 寫的程式碼，\n改看小規格、分數跟架構圖。\n這集的主角換成 Lauren Tan 喔。\n她走同一個方向，\n但看的東西完全不同。\n你一定很好奇，不看程式碼要看什麼？\n答案是 agent 交出來的影片跟截圖。\n<short pause> 我看到這裡真的覺得很有意思。\n今晚我們就聊三件事。\n第一，她怎麼把糾正變成機器會擋的檢查；\n然後，她的金字塔在這兩個月換了哪幾層；\n最後，那些漂亮的數字到底要怎麼讀啦。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 20.8,
+    "max_sentence_len": 55,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集我們聊到 Uncle Bob。<short pause> 他七月說不讀 agent 寫的程式碼。其實他是改讀規格，看分數跟架構圖。這集換成 Lauren Tan，方向一樣。不過她看的東西完全不同喔。你猜她看什麼？就是跑起來的影片跟截圖。<short pause> 今晚我們只聊三件事啦。第一，她怎麼把糾正變成機器會擋的檢查。第二，她的金字塔在九月跟十一月換了哪幾層。第三，那些很漂亮的數字要怎麼讀。光看這兩人的對比，我就覺得很有共鳴。",
+   "lint": {
+    "chars": 186,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 14.5,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "上一集我們聊到 Uncle Bob。他說他不讀 agent 寫的程式碼，改看小規格、分數跟架構圖。這集的主角換成 Lauren Tan 喔。她走同一個方向，但看的東西完全不同。你一定很好奇，不看程式碼要看什麼？答案是 agent 交出來的影片跟截圖。<short pause> 我看到這裡真的覺得很有意思。今晚我們就聊三件事。第一，她怎麼把糾正變成機器會擋的檢查；然後，她的金字塔在這兩個月換了哪幾層；最後，那些漂亮的數字到底要怎麼讀啦。",
+   "to": "上一集我們聊 Uncle Bob。他說他不讀 agent 寫的程式碼，可是照他自己的分工表，他是不讀實作和單元測試，改讀規格，再看工具量出來的分數和架構圖。這一集是下篇，主角換成 Lauren Tan。她往同一個方向走，看的東西不一樣。<short pause>今晚只講三件事。第一，她怎麼把每一次糾正 agent，變成機器會擋的檢查。第二，她的金字塔在九月和十一月之間，換了哪幾層。第三，那些漂亮的數字要怎麼讀。",
+   "reason": "刪掉 Ping 的個人反應「我看到這裡真的覺得很有意思」；先講答案（影片跟截圖）會提早用掉開頭的懸念，刪掉；補回「不讀實作和單元測試，改讀規格」；「這兩個月」改回九月和十一月"
+  },
+  {
+   "from": "可是照他自己的分工表，他是不讀實作和單元測試，改讀規格，再看工具量出來的分數和架構圖。",
+   "to": "可是照他自己的分工表，他不讀的是實作和單元測試。他改讀規格，再看工具量出來的分數，和架構圖。",
+   "reason": "句子太長切短"
+  }
+ ]
+}
