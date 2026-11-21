@@ -1,6 +1,6 @@
 # imitator 2026 報告對照表與待製作清單
 
-更新：2026-11-21。共 150 份 2026 年的報告：已做 47、製作中 2、推薦 9、可做 42、不做 50。
+更新：2026-11-21。共 154 份 2026 年的報告：已做 47、製作中 4、推薦 17、可做 35、不做 51。
 
 這份是 podcast 唯一的選題與待製作清單：哪幾集做到哪一步、下一批做哪些報告。YouTube 頻道上的待辦（舊片改標題、補 AI 標示、縮圖、上傳 Action）在 `youtube/todo.json`，整體順序在 [`strategy.md`](strategy.md)，這裡不重複。
 
@@ -53,19 +53,30 @@
 
 ## 推薦的下一批
 
-依建議順序（11-20：韓劇上下篇已做成 EP36、EP37，分層讀法的兩篇已做成 EP38、EP39，不讀之後三篇排第一）。11-20 Clarence 讓 `house-rules`（EP40）和原推薦 #5 `gdp-service-ledger`（EP41，已移出這張表）插隊，不讀之後上、下篇已開工（EP42、EP43）。11-21 新增分層讀法番外二 `who-is-using-micro` 和核票 `no-stock-in-farebox`。預排：#1 → EP44（接 EP43），#2 → EP45，之後開工時再定。標題是方向，不是定稿。製作時間是從開工到試聽版的估計，算法見下一節。
+依建議順序排。**排法：錢的題目每四集至少一集，兩集錢中間至少隔兩集 AI 或比較難的題目**（理由和數據在 [`strategy.md`](strategy.md)「選題比例」）。同一天兩集照順序放，系列的上下篇盡量同一天；保險課三篇和 Meta 兩篇是錢的主力，拆開放在不同天。
 
-| # | 報告 | 標題方向 | 鉤子 | 製作時間（估） | 估法 |
-|---|---|---|---|---|---|
-| 1 | [檢查交給機器，他們校正量具 — 不讀之後 第三篇](https://imitator.ai-apps.work/r/no-read-3)（11-18） | 檢查交給機器，那檢查錯了誰知道？ | 接上下篇：人退到檢查那一層之後，檢查本身要像量具一樣定期校正；拿 Claude Code 團隊 10、11 月兩篇做法來對，讀數還缺 | 三篇一起約 75–100 分鐘 | 約四千一百字、近三百個英文詞；兩篇來源是廠商寫自己的產品，節目要說出來 |
-| 2 | [票價欄裡，沒有股市這一格｜核票 v0.1](https://imitator.ai-apps.work/r/no-stock-in-farebox)（11-20） | 台股跌了快三成，機票飯店吃到飽會變便宜嗎？ | 時事＋流行說法對上資料：把「財富效應」寫成四條可以被推翻的假設，拿 1999 年以來的物價和八家公司月營收核，到 10 月資料不站在直覺這邊 | 30–40 分鐘 | 約四千六百字、幾乎沒有英文、數字約五百個；財經加台灣生活，聽的人多；資料到 11/20，要趁新做 |
-| 3 | [順便學會的，現在要另外練 — 知行筆記 · 實作篇](https://imitator.ai-apps.work/r/practice-on-purpose)（11-17） | 《超速學習》真的超速嗎？有了 AI，基本功還要不要練 | 流行說法對上資料：書名把「強度」譯成了「速度」；讀程式和除錯這類基本功要另外排時間練。接回 EP30、EP31 | 40–50 分鐘 | 約五千一百字、兩百多個英文詞（書名、人名）；提到的〈人人都是建築師〉在可做清單，可以順便帶一句 |
-| 4 | [月租沒變，單價在改 — 分層讀法番外二](https://imitator.ai-apps.work/r/who-is-using-micro)（11-21） | 月費一百美元，到底買到多少？ | 反差：同一個 100 美元方案，用滿可抵 4,640 到 5,725 美元的量，額度沒公布而且一直在改；接 EP38、EP39 | 60–75 分鐘 | 約九千一百字、一千六百個英文詞（方案、模型名），Breeze 錯誤率很可能過線，要多補錄；報告自己寫明作者是 Claude、比較的廠商包括 Anthropic，節目要講出來；v0.3 |
-| 5 | [Meta 詐騙廣告醜聞完整解析 ／ 聖塔克拉拉郡 vs Meta 訴訟 2026.5.11](https://imitator.ai-apps.work/r/meta-lawsuit)（05-20） | 你每天滑到的詐騙廣告，一年替 Meta 賺七十億美元 | 聽眾自己的處境＋具體數字；訴訟還沒開庭，講法要中性 | 25–35 分鐘 | 只有約一千字，撐不滿十分鐘；可以做成短集，或先查訴訟進度補一段 |
-| 6 | [同一句話，換成簡體，答案就翻面](https://imitator.ai-apps.work/r/jevlike-tw-script)（10-12） | 同一句台灣是一個國家，繁體說對，簡體說錯 | 反差＋你已經在用了；八十四題裡三十五題翻面。題材敏感，只講測到的事 | 45–60 分鐘 | 約五千三百字、近八百個數字，改寫最容易出錯；敏感題材要逐句核對措辭 |
-| 7 | [國家給保險公司補錢，等於要爆炸嗎？](https://imitator.ai-apps.work/r/japan-insurer-bailout-report-1)（09-08） | 國家給保險公司補錢，是要爆炸了嗎？ | 時事問句，答案是「不是，墊子變薄了先加厚」 | 25–35 分鐘 | 約兩千九百字、白話稿、幾乎沒有英文，最好做；要先確認注資新聞還新 |
-| 8 | [一個指標個案，和一條隔離線 — Qwen3.8 沙箱事件查核報告](https://imitator.ai-apps.work/r/qwen-index-case)（10-27） | AI 在沙箱裡，做了一件它說不會做的事 | 真實個案＋懸念；通報者是競爭對手，網路摘要少講了幾件事 | 35–45 分鐘 | 約四千四百字、四百多個英文詞（模型名、公司名） |
-| 9 | [熄燈的窗 · 台灣少子化與房價](https://imitator.ai-apps.work/r/birthrate-vs-housing)（08-17） | 生的人變少了，房價為什麼還在漲？ | 流行說法對上資料 | 先評估 | 原文是用程式畫的八頁投影片，網頁文字抓不出內容（只有幾十個字），要先把每頁的數字取出來才知道夠不夠一集 |
+11-21：EP44（不讀之後 第三篇）、EP45（核票）已排程；新增保險課下篇、番外和 Meta 詐騙上下篇（取代 5 月版 `meta-lawsuit`），並從可做移上來 5 篇 AI 題目當錢與錢之間的間隔、2 篇退休題當錢的後備。預排：#1–12 → EP46–EP57（11/25–11/30，錢在 EP49、EP53、EP57），#13 → EP61（12/2），#14 → EP65（12/4）；EP58–60、EP62–64 從可做挑 AI 或比較難的題目，開工時再定。標題是方向，不是定稿。製作時間是從開工到試聽版的估計，算法見下一節。
+
+| # | 類別 | 報告 | 標題方向 | 鉤子 | 製作時間（估） | 估法 |
+|---|---|---|---|---|---|---|
+| 1 | 其他 | [順便學會的，現在要另外練 — 知行筆記 · 實作篇](https://imitator.ai-apps.work/r/practice-on-purpose)（11-17） | 《超速學習》真的超速嗎？有了 AI，基本功還要不要練 | 流行說法對上資料：書名把「強度」譯成了「速度」；讀程式和除錯這類基本功要另外排時間練。接回 EP30、EP31 | 40–50 分鐘 | 約五千一百字、兩百多個英文詞（書名、人名）；提到的〈人人都是建築師〉在可做清單，可以順便帶一句 |
+| 2 | AI | [月租沒變，單價在改 — 分層讀法番外二](https://imitator.ai-apps.work/r/who-is-using-micro)（11-21） | 月費一百美元，到底買到多少？ | 反差：同一個 100 美元方案，用滿可抵 4,640 到 5,725 美元的量，額度沒公布而且一直在改；接 EP38、EP39 | 60–75 分鐘 | 約九千一百字、一千六百個英文詞（方案、模型名），Breeze 錯誤率很可能過線，要多補錄；報告自己寫明作者是 Claude、比較的廠商包括 Anthropic，節目要講出來；v0.3 |
+| 3 | AI | [一個指標個案，和一條隔離線 — Qwen3.8 沙箱事件查核報告](https://imitator.ai-apps.work/r/qwen-index-case)（10-27） | AI 在沙箱裡，做了一件它說不會做的事 | 真實個案＋懸念；通報者是競爭對手，網路摘要少講了幾件事 | 35–45 分鐘 | 約四千四百字、四百多個英文詞（模型名、公司名） |
+| 4 | **錢** | [中國政府給保險公司補錢，等於要爆炸嗎？ — 保險課 上篇](https://imitator.ai-apps.work/r/japan-insurer-bailout-report-1)（11-21 二校 v0.2） | 國家給保險公司補錢，是要爆炸了嗎？ | 時事問句，答案是「不是，墊子變薄了先加厚」；這版補了數字和出處，訂正三處。先講清楚是中國的事、金額是人民幣 | 35–45 分鐘 | 約五千五百字、白話稿、幾乎沒有英文，最好做；保險課三篇（上、下、番外）隔幾天各一集，撐起錢的那幾格 |
+| 5 | AI | [同一句話，換成簡體，答案就翻面](https://imitator.ai-apps.work/r/jevlike-tw-script)（10-12） | 同一句台灣是一個國家，繁體說對，簡體說錯 | 反差＋你已經在用了；八十四題裡三十五題翻面。題材敏感，只講測到的事 | 45–60 分鐘 | 約五千三百字、近八百個數字，改寫最容易出錯；敏感題材要逐句核對措辭 |
+| 6 | AI | [人人都是建築師，那誰來簽證 — AI 時代的程式設計師](https://imitator.ai-apps.work/r/everyone-an-architect)（10-05） | AI 寫程式之後，誰來替設計簽名？ | 流行說法對上比喻：「程式設計師會變成建築師」，三隻小豬也都是建築師；實作篇提過這篇，可以接著做 | 50–60 分鐘 | 約六千四百字、九百多個英文詞（人名、工具名），Breeze 錯誤率要注意 |
+| 7 | AI | [你連的是什麼線 — 從一百萬則通知的假議題，到 AI 時代的架構師](https://imitator.ai-apps.work/r/which-wire)（09-22） | 面試題「送一百萬則通知」，一百萬是假的 | 反差：一篇面試文被追問六輪，題目本身先站不住；跟上一集同一條「AI 時代的架構師」線 | 45–55 分鐘 | 約七千字、三百多個英文詞；技術詞要換成白話 |
+| 8 | **錢** | [保險公司倒了，帳單寄給誰？ — 保險課 下篇](https://imitator.ai-apps.work/r/japan-insurer-bailout-report-2)（11-21） | 保險公司倒了，你的保單誰來賠？ | 聽眾自己的處境：洞不會自己消失，保戶、同業、接手公司、納稅人四種分攤，日韓台中各挑一種；台灣那一格聽眾最在意 | 40–50 分鐘 | 約六千字、幾乎沒有英文；四國幣別不互換，改寫時盯數字和幣別 |
+| 9 | AI | [每一層，都要能說不 — Zeabur 之後的 AI 平台地形](https://imitator.ai-apps.work/r/ai-platform-2026-10)（10-17） | Zeabur 要關了，你的服務搬去哪？ | 時事＋具體案例：台灣平台年底關閉當切點，問核心資產在哪一層；上下篇同一天 | 40–50 分鐘 | 約三千六百字、九百個英文詞（平台名） |
+| 10 | AI | [帳單上印著誰的名字 — AI 平台地形 下篇](https://imitator.ai-apps.work/r/ai-platform-2026-11)（11-05） | AI 幫你按下購買，帳單上寫的是誰？ | 接上篇：agent 替你比價、下單之後，Booking、Amazon、DoorDash 這些平台還剩什麼 | 55–70 分鐘 | 約六千二百字、一千二百個英文詞，偏難；跟上篇一起做最划算 |
+| 11 | AI | [劍客、小孩，與一面歪掉的鏡子 — 2026H2 Agent 生存指南](https://imitator.ai-apps.work/r/agent-survival-2026h2)（10-04） | 同一個 AI，為什麼有人越用越強、有人越用越糟？ | 反差：同樣的工具、同樣的模型，結果差很多；跟 EP11 主題接近，要用新的角度開場 | 75–90 分鐘 | 一萬二千字、近兩千個英文詞，最長；要大幅刪減成一集，或拆上下 |
+| 12 | **錢** | [活太久這件事，誰來保？ — 保險課 番外](https://imitator.ai-apps.work/r/japan-insurer-bailout-report-extra)（11-21） | 退休最怕的不是股市，是活太久 | 聽眾自己的處境：錢比命先用完、一場大病打穿存款；國家開的保險不會倒、只會改數字。接回退休三部曲（EP24–26） | 40–50 分鐘 | 約六千二百字、少量英文；開頭可以用「上兩集」接回保險課 |
+| 13 | **錢** | [一筆被騙的錢，經過幾隻手 — Meta 詐騙 上篇](https://imitator.ai-apps.work/r/meta-lawsuit-1)（11-21 v0.4） | 你被騙的錢，Meta 收了幾手？ | 聽眾自己的處境＋具體數字：跟著一筆被騙的錢走過 Meta 三個 app、LINE 和銀行；取代 5 月版 `meta-lawsuit`。訴訟還沒判，講法要中性 | 45–55 分鐘 | 約六千八百字、近兩百個英文詞；公司名多，事實要逐句核對 |
+| 14 | **錢** | [知道這一批有假的，算不算知道 — Meta 詐騙 下篇](https://imitator.ai-apps.work/r/meta-lawsuit-2)（11-21 v0.1） | 平台知道有詐騙廣告，算不算幫兇？ | 接上篇留下的那一題：各國法院和立法者蓋了四種章；台灣的做法可以當結尾 | 35–45 分鐘 | 約四千四百字；法律用語要換成白話，不要下判決式的結論 |
+| 15 | **錢** | [持有 VT 幾歲能退休](https://imitator.ai-apps.work/r/bysq-report-twvt)（09）＋[40 歲開始，退休金該怎麼算？](https://imitator.ai-apps.work/r/forties)（08-18） | 手上一千萬全買 VT，幾歲可以退休？ | 流行說法對上試算；兩篇都短，合成一集 | 30–40 分鐘 | 兩篇加起來約四千字；跟 EP25（退休地板）重疊，要先講清楚差在哪；錢的後備 |
+| 16 | **錢** | [熄燈的窗 · 台灣少子化與房價](https://imitator.ai-apps.work/r/birthrate-vs-housing)（08-17） | 生的人變少了，房價為什麼還在漲？ | 流行說法對上資料 | 先評估 | 原文是用程式畫的八頁投影片，網頁文字抓不出內容（只有幾十個字），要先把每頁的數字取出來才知道夠不夠一集 |
+
+**錢的題目會先用完**：照這個排法，錢的報告排到 12/4（EP65）；之後只剩 #15、#16 兩個後備。一天兩集、四集一錢，每週要用掉 3 到 4 篇錢的報告，需要 imitator 每週補 3 篇以上財經或台灣生活的報告。
 
 ## 製作時間怎麼估
 
@@ -166,15 +177,10 @@
 | 2026-11-09 | [8 成不會錯，1 成真的省 — 選 Cloudflare 的實戰帳](https://imitator.ai-apps.work/r/ai-platform-2026-11-cf) | 選 Cloudflare 的帳，工程師向 |
 | 2026-11-09 | [動詞沒變，受詞換了 — Steenberg 的架構課，給帶 agent 的人重上一次](https://imitator.ai-apps.work/r/agent-arch-5) | 架構系列 5 |
 | 2026-11-09 | [演員登台：從 Actor 模型到 Durable Objects 的五十年](https://imitator.ai-apps.work/r/actor-to-durable-objects-v2) | 同上，最新版 |
-| 2026-11-05 | [帳單上印著誰的名字 — AI 平台地形 下篇](https://imitator.ai-apps.work/r/ai-platform-2026-11) | AI 平台地形 下篇 |
 | 2026-10-30 | [Eric Elliott：從年薪五十萬到住車](https://imitator.ai-apps.work/r/eric-elliott-report) | 真人故事（AI 讓我無家可歸），要小心處理 |
-| 2026-10-17 | [每一層，都要能說不 — Zeabur 之後的 AI 平台地形](https://imitator.ai-apps.work/r/ai-platform-2026-10) | AI 平台地形 上篇 |
 | 2026-10-16 | [jevlike 懶人包 — 不寫一個字，只讀一個字母](https://imitator.ai-apps.work/r/jevlike-primer) | 自家實驗：只讀一個字母的決策 API，偏技術 |
 | 2026-10-06 | [它很會分，但它不會想 — Jev 在 agent workflow 裡的位置](https://imitator.ai-apps.work/r/agent-arch-4) | 架構系列 4 |
-| 2026-10-05 | [人人都是建築師，那誰來簽證 — AI 時代的程式設計師](https://imitator.ai-apps.work/r/everyone-an-architect) | AI 時代的程式設計師 |
-| 2026-10-04 | [劍客、小孩，與一面歪掉的鏡子 — 2026H2 Agent 生存指南](https://imitator.ai-apps.work/r/agent-survival-2026h2) | 與 EP11 主題接近 |
 | 2026-10-02 | [一天一萬顆神經元能買到什麼 — Workers AI 番外](https://imitator.ai-apps.work/r/workers-ai-appendix) | Workers AI 番外，小眾 |
-| 2026-10-02 | [你連的是什麼線 — 從一百萬則通知的假議題，到 AI 時代的架構師](https://imitator.ai-apps.work/r/which-wire) | AI 時代的架構師 |
 | 2026-10-02 | [帽子可以借，印章借不走：一人公司裡的 AI-native SDLC](https://imitator.ai-apps.work/r/sdlc-seal) | 一人公司的 AI-native SDLC |
 | 2026-10-02 | [62% 同意，是兩個答案 — 拆解 Pocket Polis](https://imitator.ai-apps.work/r/pocket-polis-case-study) | 公民審議工具，小眾 |
 | 2026-10-02 | [同事換了職業：從定理、pattern 到數位同事的九十年](https://imitator.ai-apps.work/r/pattern-story) | 從定理、pattern 到數位同事的九十年 |
@@ -182,14 +188,12 @@
 | 2026-10-02 | [分層融化：四個詞、兩根軸、一個迴圈](https://imitator.ai-apps.work/r/layers-melting) | 分層融化 |
 | 2026-10-02 | [工作比紀錄大：Incumbent 往上爬的一年](https://imitator.ai-apps.work/r/incumbents-are-coming) | Incumbent 往上爬 |
 | 2026-10-02 | [Mod 到底是什麼 · Claude Code 改裝手冊](https://imitator.ai-apps.work/r/claude-code-mods) | Claude Code 改裝手冊，小眾 |
-| 2026-10-02 | [持有 VT 幾歲能退休](https://imitator.ai-apps.work/r/bysq-report-twvt) | 持有 VT 幾歲能退休，財經 |
 | 2026-10-02 | [你早就在用 harness 了 — 買哪一層、刻哪一層](https://imitator.ai-apps.work/r/agent-arch-3) | 架構系列 3 |
 | 2026-10-02 | [演員登台:從 Actor 模型到 Durable Objects 的五十年](https://imitator.ai-apps.work/r/actor-to-durable-objects-public) | 同上 |
 | 2026-09-03 | [先看有沒有 Ultra：2026 Intel 筆電處理器對照](https://imitator.ai-apps.work/r/intel-core-ultra-2026-guide) | 筆電處理器對照，購物指南 |
 | 2026-08-22 | [演員登台:從 Actor 模型到 Durable Objects 的五十年](https://imitator.ai-apps.work/r/actor) | Actor 模型到 Durable Objects（有三個版本） |
 | 2026-08-20 | [迴圈工程](https://imitator.ai-apps.work/r/loop-engineering) | 迴圈工程，EP22 提過 |
 | 2026-08-20 | [第一百次,要比第一次聰明 — Agent 系統的演進設計](https://imitator.ai-apps.work/r/agent-arch-2) | 架構系列 2 |
-| 2026-08-18 | [40 歲開始，退休金該怎麼算？｜個人財務逆向工程](https://imitator.ai-apps.work/r/forties) | 40 歲退休金怎麼算，財經 |
 | 2026-08-11 | [一個 agent loop,還是一條有界的流程?](https://imitator.ai-apps.work/r/test-agent-arch) | 架構 |
 | 2026-08-11 | [它們不會報錯,它們會成功 — 兩個 AI 系統的架構選型](https://imitator.ai-apps.work/r/agent-arch) | 架構系列 1 |
 | 2026-07-26 | [Elon Musk 深度訪談解析：近乎無限的經濟與星際文明](https://imitator.ai-apps.work/r/elon-interview) | 與 EP19 重疊 |
@@ -207,6 +211,7 @@
 
 | 日期 | 報告 | 備註 |
 |---|---|---|
+| 2026-05-20 | [Meta 詐騙廣告醜聞完整解析 ／ 聖塔克拉拉郡 vs Meta 訴訟 2026.5.11](https://imitator.ai-apps.work/r/meta-lawsuit) | 被同作者改寫成 meta-lawsuit-1、meta-lawsuit-2（2026-11-21），做那兩篇 |
 | 2026-07-25 | [Uncle Bob 為何不讀 AI 寫的程式碼？｜完整研究](https://imitator.ai-apps.work/r/uncle-bob) | 被同作者改寫成 no-read-1、no-read-2（2026-11-17），做那兩篇 |
 | 2026-11-06 | [Jev 式決策，值得，而且不用買 — 給長官的判定備忘](https://imitator.ai-apps.work/r/gb10-typed-decisions) | 內部判定備忘 |
 | 2026-10-15 | [像不像，不是是不是 — EmbeddingGemma 2 能當哪一種 Jev](https://imitator.ai-apps.work/r/eg2-which-jev) | 自家專案 |
