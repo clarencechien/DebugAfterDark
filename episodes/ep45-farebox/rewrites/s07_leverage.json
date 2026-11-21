@@ -1,0 +1,158 @@
+{
+ "segment": "s07_leverage",
+ "position": "第 8 段，共 11 段",
+ "avoid": [
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0ec8f9a6e7d625b56e0f4c5205bd51475be923f41f96de72f5cf921f899907fc",
+ "previous_context": "其實也不是喔。有一群人的帳，不是這樣算的。",
+ "original": {
+  "text": "第三件，借錢買股票的人。航空公司賣出去的位子，常常比實際的多，這叫超賣。平常沒事，旅客全到齊那天，就有人被請下飛機。融資，就是股市裡的超賣。前面那個「還比去年高三成」，是替抱滿一年、沒借錢的人算的。開槓桿的人不一樣：上市股票融資，自備四成，跌兩成二左右就碰到追繳線。在高點附近借錢買、沒有補錢的人，損失已經是真的了。另一種是靠預期花錢的人，他花的是以為會賺到的錢，跟去年比，對他沒有意義。這次的融資，有一大半是今年才進場的：十月中衝到六千五百多億，十一月十九號剩四千八百多億，五個多星期少了四分之一。",
+  "lint": {
+   "chars": 250,
+   "precise_numbers": [
+    "六千五百",
+    "十一",
+    "十九",
+    "四千八百"
+   ],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 26.8,
+   "max_sentence_len": 55,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "像是借錢買股票的人。\n你應該知道航空公司很常超賣機票吧？\n平常都沒事。\n旅客全到那天，就有人要被請下飛機。\n融資其實就是股市裡的超賣。\n光是用想的，就讓人壓力超大。<short pause>\n前面說賺三成，只算給沒借錢的人看。\n開槓桿的人呢？\n上市股票融資自備四成，槓桿兩倍多。\n只要跌百分之二十二，就會碰到追繳線喔。\n在高點借錢又沒補錢的人，虧損已經成真了。\n另一種是靠預期花錢的人。\n他花的是以為會賺到的錢。\n高點才是基準，拿來跟去年比根本沒意義嘛。\n重點是，這次很多融資都是今年才進場的。\n短短五個多星期，融資就少了四分之一。\n那這些被追繳的人，後來都怎麼處理了？",
+   "lint": {
+    "chars": 256,
+    "precise_numbers": [
+     "百分之二十二"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 14.1,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "航空公司常常超賣機票，你應該聽過吧？\n旅客要是全到齊，就有人得被請下飛機。\n融資其實就是股市裡的超賣。`<short pause>`\n前面說比去年高三成，只算給沒借錢的人聽。\n如果是借錢買股票，狀況完全不同喔。\n自備四成進場，跌個兩成多就碰到追繳線了。\n重點來了，高點借錢的人，現在損失都是真的。\n這光是用想的就壓力超大。`<short pause>`\n你猜另一種人是怎麼算帳的？\n他們是靠預期在花錢，花的是以為會賺到的錢。\n這時候跟去年比賺多少，對他有意義嗎？\n完全沒有嘛。\n這波借錢進場的資金，大半是今年才來的。\n短短五個多星期，就少了整整四分之一。\n那這些退場的資金，到底都跑去哪裡了？",
+   "lint": {
+    "chars": 256,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 4,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "對，那就是借錢買股票的人。\n你有遇過航空公司機位超賣吧？\n平常都沒事。<short pause>\n旅客全到齊那天，就有人要被請下飛機了。\n融資其實就是股市裡的超賣。\n前面說賺三成，是給沒借錢的人算的啦。\n開槓桿的人完全不一樣。\n只要跌百分之二十二，就會碰到追繳線喔。\n在高點借錢又沒補錢的人，損失已經是真的了。\n然後，還有一種人是靠預期在花錢。\n他花的是以為會賺到的錢，跟去年比沒意義。\n重點來了，借錢的人一大半是今年進場的。\n融資金額短短五個多星期，就少了四分之一。\n你猜大家都是被券商斷頭嗎？\n其實多數人，都是自己先認賠賣掉的。<sigh>",
+   "lint": {
+    "chars": 239,
+    "precise_numbers": [
+     "百分之二十二"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "光是用想的，就讓人壓力超大。",
+   "to": "",
+   "reason": "Ping 沒有個人反應"
+  },
+  {
+   "from": "前面說賺三成，只算給沒借錢的人看。",
+   "to": "前面說的還比去年高三成，是替抱滿一年、沒借錢的人算的。",
+   "reason": "照原文"
+  },
+  {
+   "from": "只要跌百分之二十二，就會碰到追繳線喔。",
+   "to": "跌兩成二左右，就會碰到追繳線。",
+   "reason": "念得順"
+  },
+  {
+   "from": "短短五個多星期，融資就少了四分之一。那這些被追繳的人，後來都怎麼處理了？",
+   "to": "融資餘額十月中衝到最高，到十一月十九號，五個多星期少了四分之一。十一月六號那天，被追繳的有三千多戶，多數人是自己先賣掉。那這群人，會讓吃到飽變好訂嗎？",
+   "reason": "補原文事實並回答；結尾的小鉤子改成下一段會回答的問題"
+  },
+  {
+   "from": "這次很多融資都是今年才進場的",
+   "to": "這次的融資，有一大半是今年才進場的",
+   "reason": "照原文"
+  },
+  {
+   "from": "是替抱滿一年、沒借錢的人算的",
+   "to": "是替持有滿一年、沒借錢的人算的",
+   "reason": "聽寫（兩套三次）把「抱滿」聽成「爆滿」「爆買」"
+  },
+  {
+   "from": "就會碰到追繳線",
+   "to": "就會被券商追繳保證金",
+   "reason": "聽寫把「追繳線」聽成「最佳線」"
+  }
+ ]
+}

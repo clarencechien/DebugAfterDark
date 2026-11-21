@@ -1,0 +1,155 @@
+{
+ "segment": "s09_open",
+ "position": "第 10 段，共 11 段",
+ "avoid": [
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b407b26d50b96e7bc4b41f8e11cafd17262cab8f6779d8d7cf2ec0d9253c2696",
+ "previous_context": "對，方向雖然吻合，可是變化還落在平常的起伏裡。光靠四次樣本，老實說還撐不起結論啦。",
+ "original": {
+  "text": "回到開頭：股市跌了快三成，機票飯店會變便宜嗎？到十月為止，牌價沒有跟著股市走，機票貴在稅金。真的會先鬆的，比較可能是熱門吃到飽的訂位和長程團的尾單，因為那是少數借錢的人說了算。紙本機票上沒訂位的航段，日期欄會印 OPEN，這份報告的最後一聯也是。十一月的物價，十二月上旬公布；十一月的營收，十二月十號前公布。這份報告先把預測寫下來：牌價不會動，高價餐飲的營收，會往下大約四個百分點，剛好落在門檻邊上。還有一個干擾：十一月油價也在跌。接下來機票如果變便宜，先查燃油附加費有沒有調降。",
+  "lint": {
+   "chars": 239,
+   "precise_numbers": [
+    "十一",
+    "十二",
+    "十一",
+    "十二",
+    "百",
+    "十一"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 28.9,
+   "max_sentence_len": 45,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以回到最開始的問題。股市跌了快三成，機票飯店會變便宜嗎？其實到十月為止，牌價根本沒跟著股市走。機票現在會貴，主要貴在稅金啦。比較可能先變好訂的，是熱門的吃到飽，還有長程旅行團最後清出來的名額。因為這主要是借錢投資的人在買單。<short pause>紙本機票沒訂位的話，上面會印 OPEN。這份報告的最後，也先印上 OPEN。因為十一月的數字，要等十二月才看得到。這份報告先把預測寫下來。一般牌價不會動。但高價餐飲的營收，會掉大約百分之四，剛好卡在判斷的門檻邊緣。不過重點來了，十一月國際油價也在跌喔。那如果機票變便宜，你要先看什麼？記得先查燃油附加費有沒有調降。可別一下子就以為，全是因為股市下跌喔。",
+   "lint": {
+    "chars": 287,
+    "precise_numbers": [
+     "十一",
+     "十二",
+     "百分之四",
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 16.9,
+    "max_sentence_len": 33,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以回到最前面的問題，股市跌了，機票飯店會變便宜嗎？到十月為止，牌價其實根本沒動。機票會貴，主要還是貴在稅金啦。真正比較快鬆動的，大概只有熱門吃到飽的位子，還有長程旅行團最後清出的尾單。<short pause> 那接下來呢？紙本機票沒劃位會印 OPEN，這份報告的最後一聯也是這樣。因為十一月的數字，十二月上旬才會公布嘛。這份報告在開獎前先把預測寫下來：牌價不會動，高價餐飲的營收，會掉大約四個百分點。剛好落在門檻的邊邊。然後還有一個干擾要先講，十一月油價其實也在跌喔。如果接下來機票真的變便宜，你猜該先查什麼？先去查燃油附加費有沒有調降啦。",
+   "lint": {
+    "chars": 257,
+    "precise_numbers": [
+     "十一",
+     "十二",
+     "百",
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 20.4,
+    "max_sentence_len": 39,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以接下來要怎麼看？\n紙本機票如果還沒劃位，上面會印 OPEN。\n這份報告最後也是醬。\n十一月的數字還沒公布嘛。\n不過在數字出來前，這份報告先把預測寫下來。\n寫在這裡，到時候直接對答案。\n牌價基本上不會動。\n高價餐飲營收，預估往下大約四個百分點。\n這個數字剛好踩在門檻邊上。<short pause>\n真正會先鬆的，可能只有熱門吃到飽跟長程團。\n可是中間其實還有一個大干擾喔。\n十一月的油價跌滿多的。\n接下來機票如果變便宜，你猜第一步要看什麼？\n對，先去查燃油附加費有沒有調降啦。",
+   "lint": {
+    "chars": 213,
+    "precise_numbers": [
+     "十一",
+     "百",
+     "十一"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "所以接下來要怎麼看？紙本機票如果還沒劃位，上面會印 OPEN。這份報告最後也是醬。十一月的數字還沒公布嘛。",
+   "to": "回到開頭：機票飯店會變便宜嗎？到十月為止，牌價沒有跟著股市走。紙本機票上沒訂位的航段，日期欄會印 OPEN。這份報告的最後一聯也是，因為十一月的數字還沒公布。",
+   "reason": "收回開頭的迴圈；刪「醬」；照原文是沒訂位的航段"
+  },
+  {
+   "from": "牌價基本上不會動。高價餐飲營收，預估往下大約四個百分點。",
+   "to": "牌價不會動，高價餐飲的營收，會往下大約四個百分點。",
+   "reason": "照原文的預測"
+  },
+  {
+   "from": "真正會先鬆的，可能只有熱門吃到飽跟長程團。",
+   "to": "比較可能先鬆的，是熱門吃到飽的訂位跟長程團的尾單，因為那是少數借錢的人說了算。",
+   "reason": "「只有」誇大；回答開頭「會是哪裡」"
+  },
+  {
+   "from": "跟長程團的尾單",
+   "to": "跟長途旅行團最後剩下的位子",
+   "reason": "跟 s08、s10 一致"
+  }
+ ]
+}

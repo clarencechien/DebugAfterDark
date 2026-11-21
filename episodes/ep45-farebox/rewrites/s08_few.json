@@ -1,0 +1,149 @@
+{
+ "segment": "s08_few",
+ "position": "第 9 段，共 11 段",
+ "avoid": [
+  "我看到這",
+  "很扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "cd01733e98fb8c23b5a998c5763b59372155712c97874573523915522d627d80",
+ "previous_context": "短短五個多星期，融資就少了四分之一。那這些被追繳的人，後來都怎麼處理了？",
+ "original": {
+  "text": "不過放進整個市場看，這筆錢不算大。證交所算過，融資占上市總市值的比重，二〇〇〇年四月將近百分之五，今年七月初還不到百分之零點五。這份報告說，兩件事可以同時成立。整體物價和營收不動，因為這群人占比小。可是由少數人決定鬆緊的東西，卻可能動得很快，例如熱門吃到飽的訂位，和長程團的尾單。物價指數和公司的總營收，剛好看不到這一塊。過去有沒有發生過？這份報告找了四次融資一個月大減的時候，接下來三個月，高價餐飲的營收，四次裡有三次往下，八方雲集沒有動。方向對，可是幅度落在平常的起伏裡，四次撐不起結論。",
+  "lint": {
+   "chars": 246,
+   "precise_numbers": [
+    "百分之五",
+    "百分之零點五"
+   ],
+   "enumerations": [],
+   "sentences": 9,
+   "avg_sentence_len": 26.3,
+   "max_sentence_len": 50,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實放進整個台股來看，這筆錢真的不算大。\n\n二十年前融資占了將近百分之五，現在呢？連百分之一都不到喔。\n\n所以整體物價跟總營收，幾乎看不出變化。但是少數人決定的消費，可能動得非常快，像是熱門吃到飽的訂位，還有長程團的尾單。\n\n你應該也能體會那種微妙的落差吧。<short pause>\n\n那過去有沒有發生過類似的事？這份報告去翻歷史，只找到四次類似狀況。結果高價餐飲的營收，四次裡有三次往下掉，賣鍋貼的八方雲集，就完全沒有動。\n\n方向雖然一致，但起伏都在平常範圍裡。光靠這四次樣本，其實還沒辦法證實它啦。",
+   "lint": {
+    "chars": 229,
+    "precise_numbers": [
+     "二十",
+     "百分之五",
+     "百分之一"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 19.8,
+    "max_sentence_len": 38,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "放進整個市場看，其實這筆錢不算大。\n證交所算過，融資占市值的比重，現在不到百分之零點五。\n那為什麼大家感覺很明顯？<short pause>\n這份報告說，兩件事其實可以同時成立。\n整體物價不動，是因為這群人占比很小。\n可是由少數人決定的消費，縮手速度非常快。\n像是熱門吃到飽訂位，還有長程旅行團。\n一般的物價數據，剛好抓不到這一塊啦。\n那過去有沒有發生過類似的事？\n這份報告找了四次融資單月大減的紀錄。\n接下來三個月，高價餐飲四次裡有三次下滑。\n但賣鍋貼水餃的八方雲集，完全沒有動。\n對，方向雖然吻合，可是變化還落在平常的起伏裡。\n光靠四次樣本，老實說還撐不起結論啦。",
+   "lint": {
+    "chars": 258,
+    "precise_numbers": [
+     "百分之零點五"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 17.4,
+    "max_sentence_len": 25,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "對，放進整個市場來看，這筆錢不算大。證交所算過，融資占上市市值快百分之五。到了今年七月，連百分之一都不到。那這樣會影響到大家的生活嗎？其實兩件事可以同時成立喔。因為這群人占比小，整體物價根本看不出來。可是少數人消費的東西，可能動得非常快。像是熱門吃到飽的訂位，還有長程團的尾單。<short pause>那以前到底有沒有發生過類似的事？這份報告找了四次融資一個月大減的時間。接下來三個月，高價餐飲有三次營收往下，八方雲集就完全沒有動靜。方向看起來好像對了，對吧？可是幅度落在平常的波動裡，只有四次資料，現在根本還不能下結論耶。",
+   "lint": {
+    "chars": 250,
+    "precise_numbers": [
+     "百分之五",
+     "百分之一"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "融資占市值的比重，現在不到百分之零點五。那為什麼大家感覺很明顯？",
+   "to": "融資占上市總市值的比重，二〇〇〇年將近百分之五，今年七月初不到百分之零點五。",
+   "reason": "時間點照原文；刪掉原文沒有的說法"
+  },
+  {
+   "from": "可是由少數人決定的消費，縮手速度非常快。像是熱門吃到飽訂位，還有長程旅行團。一般的物價數據，剛好抓不到這一塊啦。",
+   "to": "可是由少數人決定鬆緊的東西，卻可能動得很快。像是熱門吃到飽的訂位，還有長程團的尾單。物價指數和公司的總營收，剛好看不到這一塊。",
+   "reason": "原文是「可能」，對象是尾單"
+  },
+  {
+   "from": "融資占上市總市值的比重，二〇〇〇年將近百分之五，今年七月初不到百分之零點五。",
+   "to": "融資占上市總市值的比重，今年七月初，還不到二〇〇〇年那時候的十分之一。",
+   "reason": "一段兩個精確數字，改成比例（0.41% 對 4.69%）"
+  },
+  {
+   "from": "八方雲集，完全沒有動",
+   "to": "八方雲集，沒有動",
+   "reason": "照原文語氣"
+  },
+  {
+   "from": "還有長程團的尾單",
+   "to": "還有長途旅行團最後剩下的位子",
+   "reason": "聽寫把「長程團」聽成「長城團」、「尾單」聽成「尾蛋」"
+  }
+ ]
+}

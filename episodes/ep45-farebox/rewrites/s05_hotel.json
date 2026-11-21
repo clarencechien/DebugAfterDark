@@ -1,0 +1,129 @@
+{
+ "segment": "s05_hotel",
+ "position": "第 6 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "064a5f22ecf11bf45840c83bda0db215a3238ad65bca4eeed0831b908ea09b2a",
+ "previous_context": "旅行社也說，日本線稅金從兩千多變五千多塊。所以照官方說法，機票其實是貴在稅金那一格。",
+ "original": {
+  "text": "飯店呢？旅館住宿是唯一看起來跟股市有關的項目：股市的漲幅少二十個百分點，房價的漲幅大約少三個百分點。可是這個結果，換個角度就不見了。拿掉油價和匯率，只留春節，兩條線幾乎沒有關係。直接分段看更清楚：二〇一六年下半到二〇一八年，股市在漲，旅館房價卻跌得最多。外食也一樣，二〇一四年以後看起來有關，往前拉到一九九九年，方向反而顛倒。這份報告把這幾項都歸成「候補」：有的時間切法會過，換個切法就不見。牌價看完了，那位子呢？",
+  "lint": {
+   "chars": 207,
+   "precise_numbers": [
+    "二十",
+    "百",
+    "百"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 24.9,
+   "max_sentence_len": 45,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "機票講完，那飯店呢？\n旅館住宿，是唯一看起來跟股市連得上的項目。\n股市少漲兩成，房價大概只少三個百分點。\n但這個結果經得起考驗嗎？\n其實換個角度看，關聯就不見了。<short pause>\n扣掉油價跟匯率，兩邊根本各走各的。\n二〇一六年到一八年，股市明明在漲。\n旅館房價卻跌得最多，很扯吧？\n外食也是，往前拉十幾年看，方向完全相反。\n所以這份報告裡，把旅館跟外食都列成候補。\n因為換個時間切，關聯就消失啦。\n牌價看完了，那位子呢？",
+   "lint": {
+    "chars": 191,
+    "precise_numbers": [
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那飯店呢？\n其實旅館住宿，是唯一看起來跟股市有連動的。\n當股市跌了兩成，房價大約少漲三個百分點。<short pause>\n聽起來蠻合理的對吧？\n但重點來了，換個角度看就破功啦。\n扣掉油價和匯率的影響，兩邊幾乎沒有關聯。\n二〇一六年下半年到二〇一八年，\n股市明明在大漲，飯店房價卻跌得最兇。\n外食其實也是這樣喔。\n近幾年看起來有關，時間往前拉卻完全反過來。\n所以這份報告裡，把這些都當成候補名單。\n也就是換了一種切法，關聯性就不見了。\n牌價看完了，那位子呢？",
+   "lint": {
+    "chars": 204,
+    "precise_numbers": [
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.0,
+    "max_sentence_len": 32,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "機票聊完了，那出國住飯店呢？\n旅館住宿，其實是唯一看起來跟股市有關的。\n如果股市少兩成，房價漲幅大概少百分之三。\n聽起來很合理對不對？\n但重點來了，這個現象換個角度就破功啦。\n扣掉油價和匯率的影響，兩者根本沒關係。\n然後分段來看更清楚。<short pause>\n二〇一六年到二〇一八年，股市其實一直在漲。\n結果你猜房價怎麼了？\n旅館房價反而跌得最厲害。\n外食費也是，時間往前拉，方向就完全顛倒。\n所以這份報告裡，把飯店和外食都歸成候補。\n也就是換個切法，關聯就不見了。\n好，牌價看完了，那位子呢？",
+   "lint": {
+    "chars": 223,
+    "precise_numbers": [
+     "百分之三"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "股市少漲兩成，房價大概只少三個百分點。",
+   "to": "股市的漲幅少二十個百分點，房價的漲幅大約少三個百分點。",
+   "reason": "原文是年增率差幾個百分點，不是少漲兩成"
+  },
+  {
+   "from": "扣掉油價跟匯率，兩邊根本各走各的。二〇一六年到一八年，股市明明在漲。旅館房價卻跌得最多，很扯吧？外食也是，往前拉十幾年看，方向完全相反。",
+   "to": "不扣油價跟匯率、只扣春節，兩邊就幾乎各走各的。二〇一六年下半到二〇一八年，股市明明在漲，旅館房價卻跌得最多。外食也是，往前拉到一九九九年看，方向反而顛倒。",
+   "reason": "講反了：是拿掉油價匯率的控制才歸零；期間照原文；刪「很扯」"
+  }
+ ]
+}

@@ -1,0 +1,142 @@
+{
+ "segment": "s04_fare",
+ "position": "第 5 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "20bd61e9fc4229c91137e3db028698191e0ca1bcb28fa1bb21a68c1d87e7a3ef",
+ "previous_context": "不過，另外那群有借錢的人呢？我們留到後面再來聊。",
+ "original": {
+  "text": "那機票為什麼這麼貴？紙本機票上有一個票價欄，分成票價、稅金和總價三格。你付的是總價，錢怎麼來的，要看前兩格。這份報告把每一項價格跟股市放在一起比，同時扣掉油價、匯率，還有春節落在哪個月的影響。二〇一四到二〇二五年，機票跟股市幾乎沒關係，真正跟著走的是油價。把今年放進來，機票才跟股市扯上關係，因為今年五月以後，機票漲得比油價和匯率能解釋的還多。主計總處說，是燃油附加費和機場服務費調漲。十一月的旅展上，旅行社也說，日本線的機票稅金，從去年的兩千多元變成五千多元。照主計總處的說法，今年機票貴在稅金那一格。",
+  "lint": {
+   "chars": 252,
+   "precise_numbers": [
+    "十一",
+    "兩千",
+    "五千"
+   ],
+   "enumerations": [],
+   "sentences": 9,
+   "avg_sentence_len": 27.0,
+   "max_sentence_len": 43,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那我們先來聊聊機票為什麼這麼貴吧。你有看過實體機票嗎？上面通常分成票價、稅金跟總價三格。<short pause>你付的是總價。但錢怎麼變多的，要看前面兩格。這份報告把機票價格跟台股放在一起比。同時扣掉油價、匯率還有過年的影響。結果過去十幾年，機票跟股市根本沒關係。真正影響機票的其實是油價。那為什麼大家今年覺得機票貴到離譜？對，因為今年五月之後，機票突然暴漲。偏偏那時候股市剛好也在大漲。不過這份報告說，其實是稅金在變貴。燃油附加費跟機場服務費都調漲了。旅展上的旅行社也說，日本線稅金從兩千多漲到五千多。<short pause>所以今年機票，其實只是貴在稅金那一格啦。",
+   "lint": {
+    "chars": 260,
+    "precise_numbers": [
+     "兩千",
+     "五千"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 24,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那大家常聊的出國機票，為什麼這麼貴啊？\n對，你看紙本機票，會分成票價、稅金跟總價。\n你付的是總價，但錢怎麼來的要看前兩格。\n這份報告把物價跟股市放在一起比。<short pause>\n然後扣掉了油價、匯率還有春節的影響。\n結果在過去十幾年，機票跟股市根本沒關聯。\n真正影響機票的，其實是油價啦。\n這點跟很多人的直覺真的很不一樣。\n你猜為什麼大家覺得股市漲、機票就跟著貴？\n因為到了今年年中，機票才跟股市扯上關係喔。\n這時候機票漲幅，比油價能解釋的還要高。\n但這份報告裡說，主計總處認為是附加費調漲。\n旅行社也說，日本線稅金從兩千多變五千多塊。\n所以照官方說法，機票其實是貴在稅金那一格。",
+   "lint": {
+    "chars": 267,
+    "precise_numbers": [
+     "兩千",
+     "五千"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 18.1,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先來看大家出國最在意的機票。\n你最近買機票，有沒有覺得貴到想哭？\n其實機票分成了票價、稅金跟總價。\n你付的是總價，\n但錢貴在哪裡要看前兩格。\n這份報告把機票跟股市放在一起比，\n同時扣掉了油價和匯率的影響。\n然後在過去十幾年間，\n機票跟股市根本沒關聯，\n真正影響機票的其實是油價。\n那今年機票為什麼看起來跟股市一起大漲？\n<short pause>\n問題其實出在稅金那一格啦。\n這份報告裡說，\n主計總處跟旅行社都提到，\n日本線機票的稅金，\n從去年的兩千多直接跳到五千多元耶。<sigh>\n主要是燃油附加費和機場服務費調漲。\n所以機票變貴，說穿了跟股市沒關係。\n那出國團費呢？很可惜，也是作廢。",
+   "lint": {
+    "chars": 257,
+    "precise_numbers": [
+     "兩千",
+     "五千"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 44,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "結果在過去十幾年，機票跟股市根本沒關聯。",
+   "to": "結果二〇一四到二〇二五年，機票跟股市幾乎沒關係。",
+   "reason": "照原文的期間與程度"
+  },
+  {
+   "from": "這點跟很多人的直覺真的很不一樣。你猜為什麼大家覺得股市漲、機票就跟著貴？因為到了今年年中，機票才跟股市扯上關係喔。這時候機票漲幅，比油價能解釋的還要高。",
+   "to": "可是把今年放進來，機票就跟股市扯上關係了。因為今年五月以後，機票漲得比油價和匯率能解釋的還多，這段時間股市剛好在大漲。",
+   "reason": "原句把因果講反；照原文：今年五月後漲幅超出油價匯率，同期股市大漲"
+  },
+  {
+   "from": "主計總處認為是附加費調漲。旅行社也說，日本線稅金從兩千多變五千多塊。",
+   "to": "主計總處說，是燃油附加費和機場服務費調漲。十一月的旅展上，旅行社也說，日本線的機票稅金，從去年的兩千多元變成五千多元。",
+   "reason": "補完整：哪種附加費、旅展、去年"
+  },
+  {
+   "from": "但這份報告裡說，主計總處說，",
+   "to": "主計總處說，",
+   "reason": "重複的「說」"
+  }
+ ]
+}
