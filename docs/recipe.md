@@ -287,6 +287,8 @@ python3 tools/match_voice.py track episodes/<ep>   # 聲紋跟參考錄音比，
 
 **每集的 PR 只動 `episodes/<ep>/`**。兩集常常同時做，兩個 PR 只要改到同一個共用檔（以前是 `docs/report-candidates.md` 的製作中表和 `voices/drift.json`），後合的那個一定衝突。所以進度、聲紋、QA 都寫在那一集自己的資料夾，彙整的表用腳本現算。`git diff --name-only origin/main` 出現 `episodes/<ep>/` 以外的檔案，就拆成另一個 PR。
 
+**更新工廠儀表板**：開了 PR、或知道 PR 合併了之後，跑一次 `python3 tools/factory_status.py`（讀 origin/main 和開著的 PR，寫 `/mnt/project-files/factory/repo.json`，幾秒、不花 token）。儀表板是專案裡的 Artifact，讀不到 GitHub，這是它知道排程和 PR 的唯一來源。
+
 ## 10. Short（長片公開後）
 
 細節見 [`docs/video.md`](video.md)「Shorts」。
