@@ -1,0 +1,152 @@
+{
+ "segment": "s09_homework",
+ "position": "第 10 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "6ad346ca16279469b29860da9f0af5d8966baf15122d246a594c86bfb45b5a9c",
+ "previous_context": "至於先自己試半小時再求助，目前只是推論。那這兩條具體到底要怎麼做？",
+ "original": {
+  "text": "這份報告留了三件帶得走的事。第一，學新東西的第一個小時，把 AI 設成教練：先問你怎麼想、只給提示，同一個地方卡三次才給下一步，最後出三題考你，你不看筆記作答。原文有一段可以直接貼的設定，作者說是他寫的簡化版，不是論文用的那份。第二，每週拿掉 AI 做一題找錯：拿這週交給 AI 做過的一段程式，請它埋三個錯進去，然後關掉它，自己找三十分鐘；找不到的那一類錯，就是下週要練的。第三，交出去的每件事，留一行預測：你覺得它會怎麼做、最可能錯在哪，時間到了回來對答案。最後這條，練的是另一樣東西。",
+  "lint": {
+   "chars": 239,
+   "precise_numbers": [
+    "三十"
+   ],
+   "enumerations": [
+    "第一",
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 38.8,
+   "max_sentence_len": 69,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "作者整理出三件帶得走的事。<short pause>\n但先說在前頭，這三件目前還沒有實測紀錄喔。\n第一，學新東西的頭一個小時，把 AI 當教練。\n叫它只給提示、不給答案，卡好幾次才給下一步。\n結束前還要出三題考你，完全不能看筆記。\n這段設定是作者自己寫的簡化版 prompt 啦。\n第二，每週拿掉 AI，自己做一題抓 bug。\n請 AI 在程式裡埋幾個錯，然後把它關掉。\n你花半小時找出來，這招我覺得超實用。<laugh>\n找不到的那種錯，剛好就是下週要練的。\n最後，交給 AI 的每件事，留一行你的預測。\n寫下你覺得它會怎麼做、最可能錯在哪。\n那做這個預測要幹嘛？其實練的是另一樣東西。",
+   "lint": {
+    "chars": 252,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 17.0,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實作者整理了幾件帶得走的事。\n不過先說清楚喔，\n這些做法目前都還沒有實測紀錄。\n第一，剛開始學新東西的時候，\n先把 AI 設成教練。\n規定它只給提示、不給完整答案。\n你同一個地方卡了好幾次，\n它才能給下一步。\n這段 prompt 是作者自己寫的簡化版，\n跟論文用的不是同一份喔。\n然後呢，\n每週拿掉 AI 做一次找錯練習。\n叫它在寫好的程式裡故意埋幾個錯，\n接著把它關掉，\n自己找三十分鐘。<short pause>\n那找不到的錯代表什麼？\n對，那其實就是你下週該練的地方啦。\n還有，交出去之前留一行預測。\n寫下你覺得它會怎麼做、最可能錯在哪。\n時間到了再回來對答案。\n很有意思的是，\n最後這條練的其實是另一樣東西。",
+   "lint": {
+    "chars": 269,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 30,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "這份報告整理了三件事，可以帶走試試看。\n先說個但書，這三件事還沒有實測紀錄喔。\n第一是剛學新東西時，把 AI 設成教練。\n要它只給提示，卡了三次才准給下一步。<short pause>\n結束時出題考你，不能看筆記作答。\n作者有附一段 prompt，是他寫的簡化版。\n再來是每週拿掉 AI，做一次抓蟲練習。\n叫它在程式裡埋幾個錯，關掉自己找三十分鐘。\n抓不出來的，就是你下週要練的範圍嘛。\n最後是交出去的任務，都要留一行預測。\n你覺得它會怎麼做？最可能錯在哪？\n時間到了，再回頭對答案。<short pause>\n聽起來很簡單對不對？\n其實最後這一條，練的是完全不一樣的東西。",
+   "lint": {
+    "chars": 244,
+    "precise_numbers": [
+     "三十"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "作者整理出三件帶得走的事。<short pause>但先說在前頭，這三件目前還沒有實測紀錄喔。第一，學新東西的頭一個小時，把 AI 當教練。叫它只給提示、不給答案，卡好幾次才給下一步。結束前還要出三題考你，完全不能看筆記。這段設定是作者自己寫的簡化版 prompt 啦。第二，每週拿掉 AI，自己做一題抓 bug。請 AI 在程式裡埋幾個錯，然後把它關掉。你花半小時找出來，這招我覺得超實用。<laugh>找不到的那種錯，剛好就是下週要練的。最後，交給 AI 的每件事，留一行你的預測。寫下你覺得它會怎麼做、最可能錯在哪。那做這個預測要幹嘛？其實練的是另一樣東西。",
+   "to": "這份報告留了三件帶得走的事。先說在前頭，這三件還沒有實測紀錄。第一，學新東西的第一個小時，把 AI 設成教練。叫它先問你怎麼想，只給提示，同一個地方卡三次，才給下一步。最後出三題考你，你不看筆記作答。原文有一段可以直接貼的設定，作者說，是他寫的簡化版，不是論文用的那份。<short pause>第二，每週拿掉 AI，做一題找錯。拿這週交給 AI 做過的一段程式，請它埋三個錯進去，然後關掉它，自己找三十分鐘。找不到的那一類錯，就是下週要練的。第三，交出去的每件事，留一行預測。你覺得它會怎麼做、最可能錯在哪，時間到了，回來對答案。最後這條，練的是另一樣東西。",
+   "reason": "刪「這招我覺得超實用」和笑聲；「卡好幾次」「埋幾個錯」「半小時」改回原文的三次、三個、三十分鐘"
+  },
+  {
+   "from": "叫它先問你怎麼想，只給提示，同一個地方卡三次，才給下一步。",
+   "to": "叫它先問你怎麼想，只給提示。同一個地方卡三次，才給下一步。",
+   "reason": "句子太長"
+  },
+  {
+   "from": "拿這週交給 AI 做過的一段程式，請它埋三個錯進去，然後關掉它，自己找三十分鐘。",
+   "to": "拿這週交給 AI 做過的一段程式，請它埋三個錯進去。然後關掉它，自己找三十分鐘。",
+   "reason": "句子太長"
+  },
+  {
+   "from": "你覺得它會怎麼做、最可能錯在哪，時間到了，回來對答案。",
+   "to": "寫下你覺得它會怎麼做、最可能錯在哪。時間到了，回來對答案。",
+   "reason": "句子太長"
+  }
+ ]
+}

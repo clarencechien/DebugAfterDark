@@ -1,0 +1,142 @@
+{
+ "segment": "s04_field",
+ "position": "第 5 段，共 12 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "a474aa3e337fbb2cf953e2a8ce6a26b4343d04058fc06c58a5dd5e6f6fd4ecbd",
+ "previous_context": "大家先記住這個詞喔。因為 AI 最擅長的事情，就是把難度完全拿掉。",
+ "original": {
+  "text": "可是這些方法，在不同領域的效果差很多。二〇一四年有一份研究，把八十八篇研究放在一起算：刻意練習能解釋多少表現的差異？棋類大約四分之一，到了職場專業，不到百分之一。規則越穩定、結果越量得出來，練習越有用。心理學家 Kahneman 和 Klein 也說，直覺要靠得住，環境得有規律，回饋要又快又明確。這份報告把它濃縮成一句判準：做對做錯，多快會知道。單字、解題、程式能不能跑，回饋快，書上的方法好用。架構取捨、帶人、產品方向，回饋慢，就幫不上太多忙。問題來了：寫程式原本在快的那一邊，AI 接走之後，留給人的工作，往慢的那一邊移。",
+  "lint": {
+   "chars": 259,
+   "precise_numbers": [
+    "八十八",
+    "百分之一"
+   ],
+   "enumerations": [],
+   "sentences": 9,
+   "avg_sentence_len": 27.8,
+   "max_sentence_len": 43,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實刻意練習在不同領域，效果差很多。\n那在職場上有用嗎？\n答案可能會讓你意外喔。\n有一份研究把幾十篇論文放在一起算。\n刻意練習在棋類，可以解釋四分之一。\n但到了職場專業，\n竟然不到百分之一。<short pause>\n說穿了，規則越穩定，練習才越有用。\n學者 Kahneman 和 Klein 也說過，\n環境要有規律，而且回饋要又快又明確。\n作者自己的整理是醬：做對做錯多快知道？\n程式能不能跑，回饋很快，書上的招有用。\n但架構取捨或帶人，回饋很慢，就幫不上忙。\n重點來了，寫程式原本是回饋快的事，對吧？\n當 AI 把快的都接走，留給你的會是什麼？",
+   "lint": {
+    "chars": 241,
+    "precise_numbers": [
+     "百分之一"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 37,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "而且你仔細看，刻意練習在不同領域，效果其實差超多的。\n\n二〇一四年有一份研究，把八十幾篇研究放在一起算。想知道刻意練習能解釋多少差異？結果棋類大概有四分之一，職場專業呢？竟然不到百分之一。<sigh>\n\n為什麼會差這麼多？答案是，規則越穩定，結果越容易量出來，練習才越有用。心理學家 Kahneman 和 Klein 也說過，直覺要靠得住，環境得有規律，而且回饋要又快又明確。\n\n作者自己整理了一個判準喔：做對做錯，多快會知道。像寫程式能不能跑，回饋超快，書上的方法就很好用。但如果是架構取捨或帶新人，回饋非常慢，書上的招數就幫不上忙了。\n\n重點來了，AI 接走回饋快的工作之後，留給我們的，都是回饋慢的事情，那我們到底該怎麼辦呢？",
+   "lint": {
+    "chars": 297,
+    "precise_numbers": [
+     "八十",
+     "百分之一"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 23.8,
+    "max_sentence_len": 46,
+    "sentences_over_20": 8,
+    "particles_per_100": 0.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "不過，這些學習方法換到別的領域，效果其實差很多喔。<short pause>有一份研究把八十幾篇論文放在一起算，想看刻意練習到底能解釋多少差異。你猜職場專業能解釋多少？答案是不到百分之一。棋類還有大約四分之一耶。所以規則越固定，練習才越有用。心理學家 Kahneman 跟 Klein 也說，環境要有規律，回饋要又快又明確，直覺才靠得住。作者自己整理出一個很棒的判準：做對做錯，多快會知道？程式能不能跑，回饋很快嘛。可是架構取捨、帶新人，回饋就很慢。<short pause>重點來了。寫程式原本是回饋快的事，AI 超擅長。那 AI 接走之後呢？留給你的工作，全都往回饋慢的那邊跑了。",
+   "lint": {
+    "chars": 259,
+    "precise_numbers": [
+     "八十",
+     "百分之一"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 43,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "其實刻意練習在不同領域，效果差很多。那在職場上有用嗎？答案可能會讓你意外喔。有一份研究把幾十篇論文放在一起算。刻意練習在棋類，可以解釋四分之一。但到了職場專業，竟然不到百分之一。<short pause>說穿了，規則越穩定，練習才越有用。學者 Kahneman 和 Klein 也說過，環境要有規律，而且回饋要又快又明確。作者自己的整理是醬：做對做錯多快知道？程式能不能跑，回饋很快，書上的招有用。但架構取捨或帶人，回饋很慢，就幫不上忙。重點來了，寫程式原本是回饋快的事，對吧？當 AI 把快的都接走，留給你的會是什麼？",
+   "to": "可是這些方法，在不同領域效果差很多。有一份研究，把八十幾篇研究放在一起算：刻意練習，能解釋多少表現的差異？在棋類，大約四分之一。到了職場專業，不到百分之一。<short pause>規則越穩定、結果越量得出來，練習越有用。Kahneman 和 Klein 兩位學者也說，直覺要靠得住，環境要有規律，回饋要又快又明確。這份報告把它濃縮成一句：做對做錯，多快會知道？程式能不能跑，回饋很快，書上的方法好用。架構取捨、帶人，回饋很慢，就幫不上太多忙。重點來了：寫程式原本在回饋快的那一邊。AI 接走之後，留給人的工作，就往慢的那一邊移。而那一邊，正好是這些書最弱的地方。",
+   "reason": "「幾十篇論文」改回八十幾篇研究；刪「醬」；判準與分欄照原文；「留給你的會是什麼」改成原文的結論，避免下一段答非所問"
+  },
+  {
+   "from": "有一份研究，把八十幾篇研究放在一起算",
+   "to": "有一份研究，把好幾十篇研究放在一起算",
+   "reason": "一段只留一個精確數字"
+  },
+  {
+   "from": "Kahneman 和 Klein 兩位學者也說，直覺要靠得住，環境要有規律，回饋要又快又明確。",
+   "to": "Kahneman 和 Klein 兩位學者也說過。直覺要靠得住，環境要有規律，回饋要又快又明確。",
+   "reason": "句子太長"
+  },
+  {
+   "from": "程式能不能跑，回饋很快，書上的方法好用。架構取捨、帶人，回饋很慢，就幫不上太多忙。",
+   "to": "程式能不能跑，回饋很快。這時書上的方法好用。架構取捨、帶人，回饋很慢。書上的方法，就幫不上太多忙。",
+   "reason": "句子太長"
+  }
+ ]
+}
