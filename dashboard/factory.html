@@ -66,10 +66,25 @@ th{color:var(--ink2);font-weight:600;border-top:0}
 td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
 .scroll{overflow-x:auto}
 button:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.opens{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.opens button{font-size:13px;padding:4px 10px;min-height:32px;color:var(--accent)}
+#viewer{position:fixed;inset:0;z-index:20;background:var(--bg);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px)}
+#viewer .vh{display:flex;align-items:center;gap:8px;padding-block:10px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));border-bottom:1px solid var(--line);background:var(--card)}
+#viewer .vh h2{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#viewer .vb{flex:1;overflow:auto;padding-block:12px 40px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+#viewer .md{max-width:760px;margin:0 auto;line-height:1.75}
+#viewer .md h1{font-size:20px}#viewer .md h2{font-size:18px;margin-top:20px}#viewer .md h3{font-size:16px;color:var(--ink)}
+#viewer .md table{display:block;overflow-x:auto}
+#viewer .md blockquote{margin:8px 0;padding-left:12px;border-left:3px solid var(--line);color:var(--ink2)}
+#viewer .md code{background:var(--chip);padding:0 4px;border-radius:4px;font-size:.92em}
+#viewer iframe{flex:1;width:100%;min-height:0;border:0;background:#fff;display:block}
+#viewer .vb.frame{padding:0;display:flex;flex-direction:column;overflow:hidden}
+#viewer[hidden]{display:none}
 </style>
 <main>
 <header><h1>深夜 Debug 工廠</h1><span class="muted" id="loaded"></span><button id="reload" type="button">重新整理</button></header>
 <div id="app"><p class="muted">讀取中…</p></div>
+<div id="viewer" hidden><div class="vh"><h2 id="vtitle"></h2><button type="button" id="vdl">存到裝置</button><button type="button" id="vclose">關閉</button></div><div class="vb" id="vbody"></div></div>
 </main>
 <script>
 
@@ -214,6 +229,13 @@ function render(d){
   else {
     var qname = {}, qstat = {}; (rs.questions||[]).forEach(function(q){qname[q.id] = q.q; qstat[q.id] = q.status;});
     // 「審過」只認 Clarence 自己說的：題庫狀態欄寫了「Clarence 審過」才算；AI 審稿（Fable）不算
+    var openButtons = function(it){
+      var f = it.files || {}, b = "";
+      [["draft","打開初稿"],["review","打開 AI 審稿"],["report","打開報告"]].forEach(function(x){
+        if(f[x[0]]) b += '<button type="button" class="open" data-path="'+esc(f[x[0]])+'" data-title="'+esc(it.id+" "+x[1].replace("打開",""))+'">'+esc(x[1])+'</button>';
+      });
+      return b ? '<div class="opens">'+b+'</div>' : "";
+    };
     var human = function(id, st){ return /Clarence 審過/.test(qstat[id]||"") ? chip("✓ 你審過","good") : st.length ? chip("等你審","warn") : ""; };
     var run = (rs.runs||[])[0];
     if(run){
@@ -222,7 +244,7 @@ function render(d){
         var v = it.verdict, vk = /建議做/.test(v) ? "good" : /補|擱置/.test(v) ? "warn" : /不做/.test(v) ? "bad" : "";
         return '<li><div class="when">'+esc(it.id)+'</div><div class="body"><div class="t">'+esc(qname[it.id] || it.title)+'</div>'+
           stepChip("AI 初稿", st.indexOf("draft")>=0 ? "✅" : "⬜")+stepChip("AI 審稿", st.indexOf("review")>=0 ? "✅" : "⬜")+
-          stepChip("報告稿", st.indexOf("report")>=0 ? "✅" : "⬜")+human(it.id, st)+(v ? chip("AI 判定："+v,vk) : "")+
+          stepChip("報告稿", st.indexOf("report")>=0 ? "✅" : "⬜")+human(it.id, st)+(v ? chip("AI 判定："+v,vk) : "")+openButtons(it)+
           (it.answer ? '<div class="sub">'+esc(it.answer)+'</div>' : "")+'</div></li>';
       }).join("")+'</ul>';
     }
@@ -368,13 +390,13 @@ function loadResearch(){
     var wk = weeks[0];
     return listAll("research/runs/"+wk, true).then(function(all){
       var items = {}, order = [];
-      function item(id){ if(!items[id]){ items[id] = {id: id, title: id, verdict: "", answer: "", stages: []}; order.push(id);} return items[id]; }
+      function item(id){ if(!items[id]){ items[id] = {id: id, title: id, verdict: "", answer: "", stages: [], files: {}}; order.push(id);} return items[id]; }
       all.forEach(function(e){
         if(e.createdAt) newest = Math.max(newest, new Date(e.createdAt).getTime());
         var name = e.path.split("/").pop(), m = name.match(/^(Q\d+)/);
         if(e.isDirectory || !m) return;
         var st = /report\.html$/.test(name) ? "report" : /review/.test(name) ? "review" : (/\.md$/.test(name) && !/twtone/.test(name)) ? "draft" : null;
-        var it = item(m[1]); if(st && it.stages.indexOf(st) < 0) it.stages.push(st);
+        var it = item(m[1]); if(st && it.stages.indexOf(st) < 0) it.stages.push(st); if(st) it.files[st] = e.path;
       });
       var hasSummary = all.some(function(e){return /00-summary\.md$/.test(e.path);});
       var p = hasSummary ? readText("research/runs/"+wk+"/00-summary.md").then(function(md){
@@ -436,6 +458,48 @@ function load(){
     app.innerHTML = '<div class="err">讀不到資料：'+esc(msg)+'</div>';
   }).then(function(){ btn.disabled = false; });
 }
+// ── 在頁面內打開研究稿：.md 轉成簡單的 HTML，報告 .html 放在沒有腳本權限的 iframe ──
+function inline(t){
+  return esc(t).replace(/`([^`]+)`/g,"<code>$1</code>").replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>")
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,function(_,a,u){return '<a href="'+u+'" target="_blank" rel="noopener">'+a+'</a>';})
+    .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g,"$1");
+}
+function mdToHtml(md){
+  var out = [], lines = md.replace(/\r/g,"").split("\n"), i = 0, para = [];
+  function flush(){ if(para.length){ out.push("<p>"+inline(para.join(" "))+"</p>"); para = []; } }
+  while(i < lines.length){
+    var l = lines[i], m;
+    if(/^\s*$/.test(l)){ flush(); i++; continue; }
+    if((m = l.match(/^(#{1,6})\s+(.*)/))){ flush(); var n = Math.min(m[1].length+1,4); out.push("<h"+n+">"+inline(m[2])+"</h"+n+">"); i++; continue; }
+    if(/^\|/.test(l)){ flush(); var rows = []; while(i < lines.length && /^\|/.test(lines[i])){ var c = cells(lines[i]); if(!isSep(c)) rows.push(c); i++; }
+      out.push('<table><thead><tr>'+rows[0].map(function(x){return "<th>"+inline(x)+"</th>";}).join("")+'</tr></thead><tbody>'+rows.slice(1).map(function(r){return "<tr>"+r.map(function(x){return "<td>"+inline(x)+"</td>";}).join("")+"</tr>";}).join("")+'</tbody></table>'); continue; }
+    if(/^\s*([-*]|\d+\.)\s+/.test(l)){ flush(); var ol = /^\s*\d+\./.test(l), items = []; while(i < lines.length && /^\s*([-*]|\d+\.)\s+/.test(lines[i])){ items.push("<li>"+inline(lines[i].replace(/^\s*([-*]|\d+\.)\s+/,""))+"</li>"); i++; }
+      out.push((ol?"<ol>":"<ul>")+items.join("")+(ol?"</ol>":"</ul>")); continue; }
+    if(/^>/.test(l)){ flush(); var q = []; while(i < lines.length && /^>/.test(lines[i])){ q.push(lines[i].replace(/^>\s?/,"")); i++; } out.push("<blockquote>"+inline(q.join(" "))+"</blockquote>"); continue; }
+    if(/^```/.test(l)){ flush(); var code = []; i++; while(i < lines.length && !/^```/.test(lines[i])){ code.push(lines[i]); i++; } i++; out.push("<pre><code>"+esc(code.join("\n"))+"</code></pre>"); continue; }
+    if(/^(-{3,}|\*{3,})$/.test(l.trim())){ flush(); out.push("<hr>"); i++; continue; }
+    para.push(l.trim()); i++;
+  }
+  flush();
+  return out.join("\n");
+}
+var viewer = document.getElementById("viewer"), vbody = document.getElementById("vbody"), vpath = null;
+function openDoc(p, title){
+  vpath = p; document.getElementById("vtitle").textContent = title;
+  vbody.className = "vb"; vbody.innerHTML = '<p class="muted">讀取中…</p>'; viewer.hidden = false;
+  call(function(){return files.read(p);}).then(function(r){
+    var text = dec.decode(r.bytes);
+    if(/\.html?$/.test(p)){
+      vbody.className = "vb frame"; vbody.innerHTML = "";
+      var f = document.createElement("iframe"); f.setAttribute("sandbox","allow-scripts"); /* 報告自己的圖表腳本可以跑，但拿不到這個頁面和專案檔案（沒有 allow-same-origin） */ f.setAttribute("title", title); f.srcdoc = text; vbody.appendChild(f);
+    } else vbody.innerHTML = '<div class="md">'+mdToHtml(text)+'</div>';
+    vbody.scrollTop = 0;
+  }).catch(function(e){ vbody.innerHTML = '<div class="err">打不開：'+esc((e && (e.code||e.message)) || e)+'</div>'; });
+}
+app.addEventListener("click",function(ev){ var b = ev.target.closest && ev.target.closest("button.open"); if(b) openDoc(b.getAttribute("data-path"), b.getAttribute("data-title")); });
+document.getElementById("vclose").addEventListener("click",function(){ viewer.hidden = true; vbody.innerHTML = ""; });
+document.getElementById("vdl").addEventListener("click",function(){ if(vpath && files) files.download(vpath).catch(function(){}); });
+document.addEventListener("keydown",function(e){ if(e.key === "Escape" && !viewer.hidden) document.getElementById("vclose").click(); });
 document.getElementById("reload").addEventListener("click",load);
 document.addEventListener("visibilitychange",function(){if(document.visibilityState === "visible" && files) load();});
 if(window.claude && window.claude.use) load();
