@@ -122,7 +122,25 @@ function stepChip(label,v){
 function sectionHead(title,sec,maxHours,extra){return '<div class="sh"><h2>'+esc(title)+'</h2>'+(extra||"")+fresh(sec,maxHours)+'</div>';}
 function tile(k,v,n){return '<div class="tile"><div class="k">'+esc(k)+'</div><div class="v">'+v+'</div><div class="n">'+(n||"")+'</div></div>';}
 
+// 重畫時保留畫面：哪些區塊展開著、捲到哪裡。資料沒變就不重畫。
+var lastSig = null, lastLoad = 0;
+function detailsKey(el){
+  var sec = el.closest("section"), h = sec && sec.querySelector("h2");
+  var sum = el.querySelector("summary");
+  return (h ? h.textContent : "") + "|" + (sum ? sum.textContent.replace(/[0-9０-９]+/g,"#") : "");
+}
 function render(d){
+  var sig = JSON.stringify(d);
+  if(sig === lastSig){ document.getElementById("loaded").textContent = fmtTime.format(new Date())+" 載入（沒變）"; return; }
+  lastSig = sig;
+  function keys(){ var seen = {}; return Array.prototype.map.call(app.querySelectorAll("details"),function(el){ var k = detailsKey(el); seen[k] = (seen[k]||0)+1; return [k+"#"+seen[k], el]; }); }
+  var state = {}, y = window.scrollY;
+  keys().forEach(function(x){ state[x[0]] = x[1].open; });
+  _render(d);
+  keys().forEach(function(x){ if(x[0] in state) x[1].open = state[x[0]]; });
+  window.scrollTo(0, y);
+}
+function _render(d){
   var repo = d.repo, rs = d.research, tr = d.traffic, now = Date.now(), html = "";
   var eps = (repo && repo.episodes) || [];
   var future = eps.filter(function(e){return e.published && new Date(e.published).getTime() > now;})
@@ -513,6 +531,7 @@ function loadTraffic(){
 function soft(p){return p.catch(function(e){ console.warn(e); return null; });}
 
 function load(){
+  lastLoad = Date.now();
   var btn = document.getElementById("reload"); btn.disabled = true;
   var start = files ? Promise.resolve() : window.claude.use("files").then(function(f){
     if(!f) throw {code: "unavailable", message: "這個畫面讀不到專案檔案（要在 Claude 裡、用專案成員的帳號打開）。"};
@@ -525,6 +544,7 @@ function load(){
   }).catch(function(e){
     var msg = e && e.code === "not_granted" ? "你沒有允許這個頁面讀專案檔案。到頁面右上角的權限設定打開，再按重新整理。" : (e && e.message) || String(e);
     app.innerHTML = '<div class="err">讀不到資料：'+esc(msg)+'</div>';
+    lastSig = null;
   }).then(function(){ btn.disabled = false; });
 }
 // ── 在頁面內打開研究稿：.md 轉成簡單的 HTML，報告 .html 放在沒有腳本權限的 iframe ──
@@ -569,8 +589,9 @@ app.addEventListener("click",function(ev){ var b = ev.target.closest && ev.targe
 document.getElementById("vclose").addEventListener("click",function(){ viewer.hidden = true; vbody.innerHTML = ""; });
 document.getElementById("vdl").addEventListener("click",function(){ if(vpath && files) files.download(vpath).catch(function(){}); });
 document.addEventListener("keydown",function(e){ if(e.key === "Escape" && !viewer.hidden) document.getElementById("vclose").click(); });
-document.getElementById("reload").addEventListener("click",load);
-document.addEventListener("visibilitychange",function(){if(document.visibilityState === "visible" && files) load();});
+document.getElementById("reload").addEventListener("click",function(){ lastSig = null; load(); });  /* 按鈕一定重畫（狀態照樣保留） */
+// 切回這個分頁時更新，但打開稿件時不動、上次更新不到 1 分鐘也不動
+document.addEventListener("visibilitychange",function(){if(document.visibilityState === "visible" && files && viewer.hidden && Date.now() - lastLoad > 60000) load();});
 if(window.claude && window.claude.use) load();
 else app.innerHTML = '<div class="err">這個頁面要在 Claude 裡打開，才讀得到專案資料夾。</div>';
 })();
