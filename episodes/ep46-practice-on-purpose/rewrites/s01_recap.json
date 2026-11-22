@@ -1,0 +1,141 @@
+{
+ "segment": "s01_recap",
+ "position": "第 2 段，共 12 段",
+ "avoid": [],
+ "recap": "EP31〈AI 幫你做完了，你知道它做對了嗎？〉：上一集說交給 agent 之後，做變便宜了，瓶頸從做移到看；帶走的最後一件事是留一塊自己動手，因為委託的代價是能力可能停止發展。這集接著問那一塊要怎麼練。",
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "51c1fd58e511568f35f63b4ed55184980f103921c7609a3e537a225712f8ebbf",
+ "previous_context": "這集把五本書跟幾份實驗拿來好好對帳。新手能不能真的超速，我們留到最後回答。",
+ "original": {
+  "text": "上一集，知行筆記的第二篇說：交給 agent 之後，做變便宜了，瓶頸從做移到看；帶走的三件事裡，最後一件是留一塊自己動手，因為委託的代價，是自己的能力可能停止發展。這集是第三篇，也是實作篇，接著問：那一塊要怎麼練？這份報告把它排成一張駕訓班的上課卡，一共八堂。今晚挑三件事講：第一，書上的學習法在哪裡有效；第二，為什麼有 AI 時的練習分數會騙人；第三，基本功該留什麼、怎麼練。先從那個超速的案例開始。",
+  "lint": {
+   "chars": 197,
+   "precise_numbers": [],
+   "enumerations": [
+    "第二",
+    "第三",
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 5,
+   "avg_sentence_len": 38.4,
+   "max_sentence_len": 79,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上一集我們聊到，把事情交給 agent 之後，動手變便宜了。瓶頸從動手做，移到了看不看得懂。委託的代價，就是能力可能停止發展，所以留了一塊要自己動手嘛。那到底要留哪一塊？又該怎麼練？這集是知行筆記的實作篇喔，作者把它排成一張駕訓班的上課卡，裡面一共排了八堂課。<short pause> 今晚我們挑幾件重要的事聊。像是書上的學習法到底哪裡有效，還有為什麼有 AI 時的練習分數會騙人，重點是，基本功到底該留什麼、怎麼練。我們就先從那個超速的案例開始看吧。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 22.2,
+    "max_sentence_len": 50,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集我們聊到，事情交給 agent 之後，做變便宜了，瓶頸反而跑到看這件事上。那時候最後提醒要留一塊自己動手，不然你的能力可能就停止成長了。那留下來的那一塊到底要怎麼練？<short pause>其實這份報告把它排成駕訓班的上課卡，總共排了八堂課，超酷的。<laugh> 今晚主要挑三件事來講。第一，書上的學習法到底在哪裡有效；第二，為什麼有了 AI，練習分數會騙人；然後是基本功該留什麼、怎麼練。我們先從那個超速的案例開始看吧。",
+   "lint": {
+    "chars": 192,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 7,
+    "avg_sentence_len": 26.4,
+    "max_sentence_len": 50,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集我們聊到一個重點。把事情交給 agent 之後，做變便宜了。真正的瓶頸，變成你看得懂多少。委託的代價，是自己的能力可能停止發展。所以你必須留一塊給自己動手。\n\n問題來了，那一塊到底要怎麼練？這篇筆記很有意思喔。<short pause> 作者把它排成一張駕訓班上課卡。裡面一共排了八堂課，超酷的。\n\n今晚我們先挑三個重點來看。第一，書上的學習法在哪裡有效；第二，為什麼有 AI 時練習分數會騙人；然後，基本功到底該留什麼、怎麼練。準備好了嗎？我們就先從超速的案例開始。",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 49,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "上一集我們聊到一個重點。把事情交給 agent 之後，做變便宜了。真正的瓶頸，變成你看得懂多少。委託的代價，是自己的能力可能停止發展。所以你必須留一塊給自己動手。問題來了，那一塊到底要怎麼練？這篇筆記很有意思喔。<short pause> 作者把它排成一張駕訓班上課卡。裡面一共排了八堂課，超酷的。今晚我們先挑三個重點來看。第一，書上的學習法在哪裡有效；第二，為什麼有 AI 時練習分數會騙人；然後，基本功到底該留什麼、怎麼練。準備好了嗎？我們就先從超速的案例開始。",
+   "to": "上一集，知行筆記的第二篇說：把事情交給 agent 之後，做變便宜了，瓶頸從做移到看。帶走的最後一件事，是留一塊給自己動手。因為委託的代價，是自己的能力可能停止發展。問題來了，那一塊到底要怎麼練？這集是知行筆記的第三篇，實作篇。<short pause>這份報告把它排成一張駕訓班的上課卡，一共八堂。今晚先挑三件事來講。第一，書上的學習法在哪裡有效。第二，為什麼有 AI 的時候，練習分數會騙人。第三，基本功該留什麼、怎麼練。我們先從那個超速的案例開始。",
+   "reason": "瓶頸照上一集是「從做移到看」；刪「超酷的」「很有意思喔」這類個人反應；報告的格式不是作者個人，改「這份報告」"
+  },
+  {
+   "from": "瓶頸從做移到看",
+   "to": "卡住的地方，從做移到看",
+   "reason": "聽寫三次把「瓶頸」聽成拼勁、平靜、憑僅"
+  },
+  {
+   "from": "上一集，知行筆記的第二篇說：",
+   "to": "上一集是這個系列的第二篇，它說：",
+   "reason": "兩套辨識都把「知行筆記」聽成知心、知新筆記"
+  },
+  {
+   "from": "這集是知行筆記的第三篇，實作篇。",
+   "to": "這集是第三篇，實作篇。這個系列叫知行筆記，知道的知，行動的行。",
+   "reason": "同上；系列名只念一次並說明是哪兩個字"
+  }
+ ]
+}

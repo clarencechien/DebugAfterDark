@@ -1,0 +1,142 @@
+{
+ "segment": "s08_practice",
+ "position": "第 9 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "36b69616c80e818a282cf6aaeb64d1e6595f2f33e7934e889bc23a072c65c34f",
+ "previous_context": "不過這份實驗沒有隨機分派，是研究者事後看錄影歸類的啦。所以作者自己整理出一個方向：語法細節可以少背一點，但量變大十倍哪裡先垮、出錯要怎麼回復，這些抓問題的底子，反而要多學喔。",
+ "original": {
+  "text": "以前，讀程式和除錯是寫程式順便練出來的：自己寫、自己除錯，做久了就知道哪裡會壞。這一段，正好是 AI 最先接走的。所以這份報告說，以前不用排時間也會長出來的基本功，現在要排進行事曆。它把幾種常見的練法放回前面的研究裡對，證據最硬的只有兩條，都有隨機實驗測過。第一，把 AI 設成教練，只給提示、不給答案。第二，定期把 AI 拿掉，自己考一次，考的是找錯和讀程式，不是默寫，因為以後工作時 AI 都在。其他像先自己試半小時再求助，原理站得住，搬到寫程式上，是推論。那這兩條，具體怎麼做？",
+  "lint": {
+   "chars": 234,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 28.2,
+   "max_sentence_len": 43,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "進行"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實以前讀程式跟 debug，都是寫 code 順手練出來的嘛。自己寫、自己修，做久了就知道哪裡容易壞。但你有沒有發現？<short pause>這段親手做的過程，剛好是 AI 最先接走的。這句話我聽了很有共鳴。所以報告裡說，這種基本功現在得排進行事曆了。作者整理了幾種練法，但真正有隨機實驗支持的，只有兩條喔。第一條，把 AI 設成教練，只給提示不給答案。第二條，定期完全不用 AI，考自己找錯跟讀程式。因為工作時 AI 都在，要考的是監督能力，不是默寫啦。其他像先自己試半小時再求助，原理站得住，但算是推論。那這兩條被證實的方法，具體該怎麼做？",
+   "lint": {
+    "chars": 251,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 19.9,
+    "max_sentence_len": 28,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.2,
+    "written_words": [
+     "進行"
+    ],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "這件事其實蠻微妙的齁。\n以前讀程式和除錯，\n都是寫程式順便練出來的。\n但現在這一段，\n正好被 AI 最先接走了。\n所以這份報告裡說，\n以前自然長出來的基本功，\n現在得特地排進你的行事曆喔。<short pause>\n那到底要怎麼練？\n作者把常見的方法拿去對研究，\n發現證據最硬的只有兩條，\n都是真的做過隨機實驗的。\n第一，把 AI 當成教練，\n只讓它給提示，不直接給答案。\n第二，定期把 AI 拿掉自己考一次。\n考什麼呢？\n考找錯跟讀程式，不是默寫喔。\n其他像卡住先自己試半小時，\n原理站得住，但搬過來算作者的推論。\n那這兩條硬道理，具體要怎麼做？",
+   "lint": {
+    "chars": 236,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 18.7,
+    "max_sentence_len": 37,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "對，那這些底子以前是怎麼來的？\n其實就是自己寫、自己除錯順便練出來的。\n你親手弄壞過，才知道哪裡容易出事嘛。\n偏偏這一段，剛好是 AI 最先幫你接走的。\n想起來真的蠻讓人擔心的。<short pause>\n所以這份報告說，基本功現在要排進行事曆了。\n作者整理了幾種練法去對研究。\n有隨機實驗支持的，其實只有兩條喔。\n第一條，把 AI 當成教練，只給提示不給答案。\n第二條，定期拿掉 AI，考自己找錯和讀程式。\n這不是考默寫，畢竟以後工作 AI 都在。\n該考的是你的監督能力啦。\n至於先自己試半小時再求助，目前只是推論。\n那這兩條具體到底要怎麼做？",
+   "lint": {
+    "chars": 240,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.2,
+    "written_words": [
+     "進行"
+    ],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "對，那這些底子以前是怎麼來的？其實就是自己寫、自己除錯順便練出來的。你親手弄壞過，才知道哪裡容易出事嘛。偏偏這一段，剛好是 AI 最先幫你接走的。想起來真的蠻讓人擔心的。<short pause>所以這份報告說，基本功現在要排進行事曆了。作者整理了幾種練法去對研究。有隨機實驗支持的，其實只有兩條喔。第一條，把 AI 當成教練，只給提示不給答案。第二條，定期拿掉 AI，考自己找錯和讀程式。這不是考默寫，畢竟以後工作 AI 都在。該考的是你的監督能力啦。至於先自己試半小時再求助，目前只是推論。那這兩條具體到底要怎麼做？",
+   "to": "以前，讀程式和除錯，是寫程式順便練出來的。自己寫、自己除錯，做久了，就知道哪裡會壞。偏偏這一段，正好是 AI 最先接走的。<short pause>所以這份報告說，以前不用排時間也會長出來的基本功，現在要排進行事曆。它把幾種常見的練法，放回前面的研究裡對。證據最硬的只有兩條，都有隨機實驗測過。第一，把 AI 設成教練，只給提示、不給答案。第二，定期把 AI 拿掉，自己考一次。考的是找錯和讀程式，不是默寫，因為以後工作時 AI 都在。其他像先自己試半小時再求助，原理站得住，搬到寫程式上，是推論。那這兩條，具體要怎麼做？",
+   "reason": "刪「蠻讓人擔心的」；「只是推論」改回原文「原理站得住，搬到寫程式上是推論」"
+  },
+  {
+   "from": "現在要排進行事曆",
+   "to": "現在要另外排時間練",
+   "reason": "聽寫三次把「行事曆」聽成「形式裡」"
+  }
+ ]
+}

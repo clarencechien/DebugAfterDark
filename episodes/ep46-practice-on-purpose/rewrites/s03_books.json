@@ -1,0 +1,133 @@
+{
+ "segment": "s03_books",
+ "position": "第 4 段，共 12 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "1ec7f5087ff1a2c586e28e11fa1b37081659d41f4476671189cd8af8c1cedb71",
+ "previous_context": "方法是真的，超速有一半只是書名啦。那這些方法，研究到底怎麼說？",
+ "original": {
+  "text": "書架上賣得最好的學習法，像《刻意練習》、一萬小時、費曼學習法，還有一本叫 Make It Stick，底下引的研究大致是同一批。二〇一三年，五位心理學家評了十種學生最常用的讀書法。評等最高的只有兩種：自己考自己，還有把練習分散到不同時間。畫重點和重讀，最多人用，評等都是低。Make It Stick 把它寫成一句不討喜的話：畫線和重讀會讓你覺得自己懂了，這種感覺很快就退。練習裡加一點難度，效果反而比較久，研究上叫必要難度。記住這個詞。因為 AI 最擅長的，就是把難度拿掉。",
+  "lint": {
+   "chars": 230,
+   "precise_numbers": [
+    "一萬"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 27.8,
+   "max_sentence_len": 60,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實市面上賣最好的幾本學習書，底下引用的研究大多是同一批。`<short pause>`像《刻意練習》、費曼學習法，還有一本叫 Make It Stick。二〇一三年有份研究評估了十種讀書法。評等最高的其實只有兩種喔。你猜是哪兩種？就是自己考自己，還有把練習分散在不同時間。大家最愛用的畫重點跟重讀，評等居然都是最低的。<laugh>因為畫線只會讓你以為自己懂了，那種感覺退得超快。真正留得住的學習，得在練習裡刻意留一點挑戰。研究把這種阻力叫做必要難度。我看到這個詞真的很有共鳴。你一定要先記住它喔。因為 AI 最擅長的事情，就是把難度通通拿掉。",
+   "lint": {
+    "chars": 248,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 18.1,
+    "max_sentence_len": 32,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 2,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實書架上那些暢銷書，背後引的研究大致是同一批喔。像《刻意練習》、費曼學習法，還有一本叫 Make It Stick。二〇一三年，有五位心理學家評估了十種讀書法。你猜結果怎麼樣？評等最高的其實只有兩種。也就是自己考自己，還有把練習分散在不同時間。大家最常做、最愛用的畫重點跟重讀，評等居然都是最低的。<short pause>Make It Stick 裡面講得很直白啦。畫線跟重讀只會讓你覺得自己懂了，這種感覺很快就退了。在練習裡故意加一點難度，效果反而比較持久。研究上把這個叫做必要難度。先記住這個詞喔。因為 AI 最擅長的事，就是幫你把難度全部拿掉。",
+   "lint": {
+    "chars": 257,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 30,
+    "sentences_over_20": 7,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實市面上賣最好的幾本學習書，底下的研究大致都是同一批喔。像刻意練習、費曼學習法，還有一本英文書 Make It Stick。二〇一三年有五位心理學家，評估了大家常用的十種讀書法。你猜評等最高的有幾種？<short pause> 居然只有兩種。一個是自己考自己，另一個是把練習分散到不同時間。大家最愛用的畫重點跟重讀，評等竟然都是低。<sigh> 我看到這邊真的很有共鳴。Make It Stick 講得很直接，畫線跟重讀只會讓你覺得自己懂了，這種感覺其實退得超快。在練習裡刻意加一點難度，等有點忘了再去複習，效果反而最持久。研究把這種阻礙叫做必要難度。大家先記住這個詞喔。因為 AI 最擅長的事情，就是把難度完全拿掉。",
+   "lint": {
+    "chars": 281,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 20.6,
+    "max_sentence_len": 43,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "其實市面上賣最好的幾本學習書，底下的研究大致都是同一批喔。像刻意練習、費曼學習法，還有一本英文書 Make It Stick。二〇一三年有五位心理學家，評估了大家常用的十種讀書法。你猜評等最高的有幾種？<short pause> 居然只有兩種。一個是自己考自己，另一個是把練習分散到不同時間。大家最愛用的畫重點跟重讀，評等竟然都是低。<sigh> 我看到這邊真的很有共鳴。Make It Stick 講得很直接，畫線跟重讀只會讓你覺得自己懂了，這種感覺其實退得超快。在練習裡刻意加一點難度，等有點忘了再去複習，效果反而最持久。研究把這種阻礙叫做必要難度。大家先記住這個詞喔。因為 AI 最擅長的事情，就是把難度完全拿掉。",
+   "to": "市面上賣最好的幾本學習書，像《刻意練習》、費曼學習法，還有一本英文書叫 Make It Stick，底下的研究大致是同一批。二〇一三年，有五位心理學家，評了學生最常用的十種讀書法。評等最高的，只有兩種。一個是自己考自己，另一個是把練習分散到不同時間。大家最愛用的畫重點跟重讀，評等都是低。<short pause>Make It Stick 講得很直接：畫線跟重讀，只會讓你覺得自己懂了，這種感覺退得很快。在練習裡加一點難度，等有點忘了再複習，效果反而比較持久。研究把這種有幫助的難度，叫做必要難度。先記住這個詞。因為 AI 最擅長的事，就是把難度拿掉。",
+   "reason": "刪「我看到這邊真的很有共鳴」和嘆氣（Ping 沒有個人反應）；「你猜幾種」刪掉省額度；「阻礙」改回原文「有幫助的難度」；「最持久」改「比較持久」"
+  },
+  {
+   "from": "市面上賣最好的幾本學習書，像《刻意練習》、費曼學習法，還有一本英文書叫 Make It Stick，底下的研究大致是同一批。",
+   "to": "市面上賣最好的幾本學習書，像《刻意練習》、費曼學習法。還有一本英文書，叫 Make It Stick。它們底下的研究，大致是同一批。",
+   "reason": "句子太長"
+  },
+  {
+   "from": "Make It Stick 講得很直接：畫線跟重讀，只會讓你覺得自己懂了，這種感覺退得很快。",
+   "to": "Make It Stick 講得很直接。畫線跟重讀，只會讓你覺得自己懂了。這種感覺，退得很快。",
+   "reason": "句子太長"
+  },
+  {
+   "from": "在練習裡加一點難度，等有點忘了再複習，效果反而比較持久。",
+   "to": "在練習裡加一點難度，等有點忘了再複習。這樣效果反而比較持久。",
+   "reason": "句子太長"
+  }
+ ]
+}

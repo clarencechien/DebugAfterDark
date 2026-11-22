@@ -1,0 +1,119 @@
+{
+ "segment": "s10_answer",
+ "position": "第 11 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "7141ecce494c1e24359158d229b8540a1dc1f0daaee7a0189b1f34e00e94a466",
+ "previous_context": "那做這個預測要幹嘛？其實練的是另一樣東西。",
+ "original": {
+  "text": "回到開頭的問題：有了 AI，新手能不能超速追上老手？這份報告分三塊回答。知識這一塊可以。哈佛物理系的實驗裡，老師照教學目標做的 AI 家教，學習成效是課堂的兩倍以上，花的時間還比較少；不過只測了一所學校的兩個單元。基本功這一塊，要另外排時間練。判斷力這一塊，沒有人考過。老手的判斷力來自事故、來自維護自己三年前寫的東西，回饋本來就慢，作者找不到任何研究追蹤新手練了幾年之後追不追得上。反過來也可能：指揮 agent 的人看到的設計決策多得多，判斷力說不定長得更快，前提是先寫下自己的預測再看答案。作者說，這是他的推論。這份報告全是文獻，沒有自己跑實驗，不少研究只讀了摘要。",
+  "lint": {
+   "chars": 281,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 10,
+   "avg_sentence_len": 27.1,
+   "max_sentence_len": 60,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "練的就是判斷力。\n所以回到最初那個大問題：<short pause>\n有了 AI，新手到底能不能超速追上老手？\n答案其實要拆成三塊來看。\n知識這一塊，完全可以。\n像哈佛物理系做過實驗，\nAI 家教的學習成效是課堂的兩倍以上，\n花的時間反而更少喔。\n不過這只測了一所學校的兩個單元啦。\n那基本功呢？\n抱歉，基本功必須另外花時間苦練。\n至於最關鍵的判斷力，答案是還沒有人考過。\n老手的判斷力往往來自踩過的事故，\n還有維護三年前舊 code 的痛苦，\n這種回饋本來就很慢。<sigh>\n不過作者也給了一個很有意思的推論，\n你在指揮 agent 的時候，\n要是先寫下預測再看答案，\n搞不好判斷力真的會長得更快喔！<laugh>\n只是這份整理全是文獻，很多只看摘要，\n到底行不行，就留給你自己去驗證啦。",
+   "lint": {
+    "chars": 294,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 23.5,
+    "max_sentence_len": 56,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "練的其實就是判斷力。所以回到一開始的問題，新手到底能不能靠 AI 追上老手？答案算是一半一半吧。知識這一塊，真的可以超速。這份報告裡提到哈佛物理系的實驗。老師自己做的 AI 家教，成效是課堂的兩倍以上。<short pause> 而且花的時間還比較少。不過這只測了一所學校的兩個單元。那基本功呢？你還是得自己另外排時間練。最關鍵的判斷力追得上嗎？目前根本沒有證據。老手的判斷力來自經歷過的事故，或是維護自己三年前寫的東西。<laugh> 這種回饋本來就慢。不過作者提出一個推論。如果你指揮 agent 時先寫下預測，看到的設計決策變多了，判斷力說不定長得更快。但最後還是要講個但書喔。這份報告全是文獻整理，作者自己沒有跑實驗。到底能不能追上，真的還沒有人考過啦。",
+   "lint": {
+    "chars": 303,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 19,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 38,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "練的就是判斷力。<short pause>所以回到開頭的問題，新手真的能超速追上老手嗎？答案是，知識可以，判斷力還不知道喔。像哈佛物理系做過實驗，老師自己做的 AI 家教，成效是實體課的兩倍以上，而且花的時間還比較少。不過這只測了一所學校的兩個單元啦。至於基本功，還是得另外找時間練。那判斷力呢？作者找了一堆研究，根本沒有人追蹤過這件事。畢竟老手的判斷力，是從一次次事故累積出來的，或是維護自己三年前寫的程式磨出來的。這種經驗的回饋本來就超慢。<sigh>不過作者有個推論我覺得很有意思。如果你天天指揮 agent，看過很多設計決策，判斷力說不定長得更快。但前提是，你要先寫下預測再看答案。最後也要提一下這份報告的限制啦。這份報告整理的全是文獻，作者沒有自己跑實驗，有些研究他也只看了摘要喔。",
+   "lint": {
+    "chars": 324,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 20.6,
+    "max_sentence_len": 44,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "練的其實就是判斷力。所以回到一開始的問題，新手到底能不能靠 AI 追上老手？答案算是一半一半吧。知識這一塊，真的可以超速。這份報告裡提到哈佛物理系的實驗。老師自己做的 AI 家教，成效是課堂的兩倍以上。<short pause> 而且花的時間還比較少。不過這只測了一所學校的兩個單元。那基本功呢？你還是得自己另外排時間練。最關鍵的判斷力追得上嗎？目前根本沒有證據。老手的判斷力來自經歷過的事故，或是維護自己三年前寫的東西。<laugh> 這種回饋本來就慢。不過作者提出一個推論。如果你指揮 agent 時先寫下預測，看到的設計決策變多了，判斷力說不定長得更快。但最後還是要講個但書喔。這份報告全是文獻整理，作者自己沒有跑實驗。到底能不能追上，真的還沒有人考過啦。",
+   "to": "練的是判斷力。回到開頭的問題：有了 AI，新手能不能超速追上老手？這份報告分三塊回答。知識這一塊，可以。哈佛物理系的實驗裡，老師自己做的 AI 家教，學習成效是課堂的兩倍以上，花的時間還比較少。不過只測了一所學校的兩個單元。基本功這一塊，要另外排時間練。判斷力這一塊，沒有人考過。老手的判斷力，來自事故，來自維護自己三年前寫的東西，回饋本來就慢。<short pause>反過來也有可能：指揮 agent 的人，看到的設計決策多得多，判斷力說不定長得更快。前提是先寫下自己的預測，再看答案。作者說，這是他的推論。這份報告全是文獻，沒有自己跑實驗。",
+   "reason": "超過 300 字，刪減；「一半一半吧」改回原文三塊；刪笑聲；推論的條件照原文重寫"
+  }
+ ]
+}

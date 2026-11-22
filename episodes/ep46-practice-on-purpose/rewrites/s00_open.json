@@ -1,0 +1,127 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 12 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "76fe2a1ac88454405724d7faef5ddbb4d7a16988328cbfb6f1577c96816db70e",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "《超速學習》這本書很多人聽過。可是英文書名叫 Ultralearning，作者 Scott Young 的定義是自主、高強度的學習，裡面沒有快這個字；是中文書名把強度譯成了速度。那有了 AI 之後呢？新手是不是終於可以真的超速，直接追上老手？有一個實驗先給了一個不太舒服的答案：讓高中生用 AI 練數學，練習時分數高了將近一半，收起筆電考試，反而輸給從頭沒用 AI 的人。這份報告把五本學習書、幾份實驗對了一次帳。新手能不能超速，這集最後回答。",
+  "lint": {
+   "chars": 212,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 29.3,
+   "max_sentence_len": 69,
+   "sentences_over_20": 2,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你應該聽過《超速學習》這本書吧？\n原文書名是 Ultralearning。\n作者 Scott Young 的定義是自主加高強度。\n裡面根本沒有快這個字喔。\n中文把它翻成超速，重點就變成速度了。\n那有了 AI，新手能直接超速追上老手嗎？\n<short pause>\n賓州大學在土耳其一所高中做過實驗。\n他們找了將近一千個學生練數學。\n有一組學生用類似 ChatGPT 的工具練習。\n練習時分數超猛，比沒用 AI 的高了快五成。\n你猜筆電收起來閉卷考會怎樣？\n成績反而倒輸百分之十七。<sigh>\n竟然輸給從頭沒用 AI 的人。\n我看到這邊整個愣了一下。\n有了 AI，那些經典練法還要不要學？\n這份報告把五本書跟實驗對了一次帳。\n新手能不能超速，我們最後再來回答。",
+   "lint": {
+    "chars": 282,
+    "precise_numbers": [
+     "一千",
+     "百分之十七"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "大家應該都聽過《超速學習》這本書吧。\n不過原文書名其實是 Ultralearning。\n作者 Scott Young 給的定義，\n是自主而且高強度的學習策略。\n裡面根本沒有快這個字喔。\n是中文書名把重點從強度換成了速度。<short pause>\n那有了 AI 之後，新手真的能超速追上老手嗎？\n賓州大學做過一個很有意思的實驗。\n他們找了土耳其近千名高中生練數學。\n有 AI 幫忙的時候，成績高了快一半。\n結果筆電一收起來閉卷考試，你猜怎樣？\n表現反而輸給完全沒用 AI 的人。<short pause>\n暢銷書教的練法，現在到底還要不要學？\n這集把五本書跟幾份實驗拿來好好對帳。\n新手能不能真的超速，我們留到最後回答。",
+   "lint": {
+    "chars": 260,
+    "precise_numbers": [
+     "千"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 30,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "你應該也聽過《超速學習》這本書吧。\n不過原文書名其實是 Ultralearning。\n作者 Scott Young 說，這是自主而且高強度。\n裡面根本沒有快這個字喔。\n是中文翻譯把它改成了超速。\n那有了 AI，新手真的能超速追上老手嗎？\n我看到賓州大學做的一個實驗，整個愣了一下。\n他們讓將近一千個高中生用 AI 練數學。\n練習時，分數比沒用 AI 的人高了快一半。\n結果一收起筆電考試，你猜怎樣？\n用了 AI 的學生，成績反而輸了百分之十七。\n直接輸給從頭到尾沒碰 AI 的人。<short pause>\n這集把五本學習書跟幾份實驗拿來對帳。\n到底有了 AI 能不能超速？\n我們最後再來回答。",
+   "lint": {
+    "chars": 255,
+    "precise_numbers": [
+     "一千",
+     "百分之十七"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 16.0,
+    "max_sentence_len": 23,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "大家應該都聽過《超速學習》這本書吧。不過原文書名其實是 Ultralearning。作者 Scott Young 給的定義，是自主而且高強度的學習策略。裡面根本沒有快這個字喔。是中文書名把重點從強度換成了速度。<short pause>那有了 AI 之後，新手真的能超速追上老手嗎？賓州大學做過一個很有意思的實驗。他們找了土耳其近千名高中生練數學。有 AI 幫忙的時候，成績高了快一半。結果筆電一收起來閉卷考試，你猜怎樣？表現反而輸給完全沒用 AI 的人。<short pause>暢銷書教的練法，現在到底還要不要學？這集把五本書跟幾份實驗拿來好好對帳。新手能不能真的超速，我們留到最後回答。",
+   "to": "大家應該都聽過《超速學習》這本書吧。不過原文書名是 Ultralearning。作者 Scott Young 給的定義，是自主而且高強度的學習。裡面根本沒有快這個字。是中文書名，把重點從強度換成了速度。<short pause>那有了 AI 之後，新手真的能超速，追上老手嗎？賓州大學做過一個實驗。他們讓土耳其近千名高中生練數學。有 AI 幫忙的時候，成績高了快一半。結果筆電一收，閉卷考試，你猜怎樣？反而輸給完全沒用 AI 的人。<short pause>這份報告把五本學習書和幾份實驗，好好對了一次帳。新手能不能真的超速，這集最後回答。",
+   "reason": "刪「喔」、改「這集把…對帳」為「這份報告」，句子拆短"
+  },
+  {
+   "from": "土耳其近千名高中生",
+   "to": "土耳其將近一千個高中生",
+   "reason": "聽寫兩次把「近千名」聽成「進簽名」"
+  }
+ ]
+}

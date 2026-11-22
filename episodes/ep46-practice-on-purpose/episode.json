@@ -1,0 +1,63 @@
+{
+ "id": "ep46-practice-on-purpose",
+ "number": 46,
+ "type": "full",
+ "guid": "debug-after-dark:ep46",
+ "title": "EP46 有了 AI，新手能超速追上老手嗎？",
+ "description": "大家應該都聽過《超速學習》，可是英文書名叫 Ultralearning，作者的定義是自主、高強度，裡面沒有「快」這個字。有了 AI 之後，新手是不是終於能真的超速，追上老手？一個實驗先給了不太舒服的答案：讓高中生用 AI 練數學，練習時分數高了快一半，收起筆電閉卷考，反而輸給從頭沒用 AI 的人。知行筆記第三篇，實作篇：五本學習書、幾份實驗，對一次帳。\n\n00:00 《超速學習》真的超速嗎？用 AI 練習，考試反而輸\n01:02 上一集：交給 agent 之後，那一塊自己動手要怎麼練\n01:57 MIT 挑戰：被壓縮的是日曆\n02:57 五本學習書，證據最硬的兩招\n03:55 方法有效的地方，都是回饋快的地方\n04:53 練習分數會騙人：賓大的高中數學實驗\n05:53 自排、計算機和機師：哪一層可以放手\n06:58 基礎還要學，用途換了：看出哪裡會壞\n07:57 以前順便練的基本功，現在要另外排時間\n08:55 帶得走的三件事\n09:53 新手能不能超速：知識、基本功、判斷力\n10:48 今晚的 breakpoint\n\n數字的出處與但書：\n・《超速學習》原文書名 Ultralearning，作者 Scott Young 的定義是「自主而且高強度」的學習策略。MIT 挑戰的質疑來自部落格文章，原文沒有對過作者本人的回應。\n・十種讀書法的評等：Dunlosky 等（2013）。刻意練習能解釋的表現差異（棋類 26%、職場專業不到 1%）：Macnamara、Hambrick 與 Oswald（2014），彙整 88 篇研究；Ericsson 那一派重算出較高的比例，兩邊吵的是大小。\n・賓大實驗：Bastani 等（2025，PNAS），土耳其一所高中、近千名學生；直接給答案的 GPT Base 練習時 +48%、閉卷考 −17%，只給提示的 GPT Tutor 練習時 +127%、閉卷考跟對照組差不多。\n・哈佛實驗：Kestin 等（2025），194 位學生、兩個物理單元，AI 家教的學習成效是主動學習課堂的兩倍以上。Anthropic（2026）：52 位工程師，用 AI 的那組事後測驗 50 分、手寫組 67 分；「問觀念 vs. 整段外包」是事後歸類，沒有隨機分派。\n・機師研究：Casner 等（2014），16 位民航機師，是類比，不能當寫程式的證據。Veracode 的 45% 是轉引。\n・「可以少學／要多學」兩欄、練法對照表、帶得走的三件事是原文作者的整理，還沒有實測紀錄。原文全是文獻，不少研究只讀了摘要或二手整理。\n\n原文：〈順便學會的，現在要另外練〉知行筆記 · 實作篇 v0.2 https://imitator.ai-apps.work/r/practice-on-purpose\n主要來源：Dunlosky 等（2013）；Macnamara、Hambrick 與 Oswald（2014）；Kahneman 與 Klein（2009）；Ellington（2003）；Casner 等（2014）；Bastani 等（2025）；Kestin 等（2025）；Anthropic（2026-01-29）How AI assistance impacts the formation of coding skills；完整清單在原文。\n\n今晚的 breakpoint：\n1. 有 AI 時的練習分數，不能當成學會的證據；能直接拿答案的那組，閉卷考反而輸給沒用 AI 的人。\n2. 基礎還要學，只是用途換了：從寫得出來，換成看得出哪裡會壞。\n3. 以前順便練出來的基本功，現在要另外排時間練：讓 AI 只給提示，定期拿掉它考一次找錯。知識可以超速，判斷力能不能，還沒有人考過。\n\n上一集：EP31〈AI 幫你做完了，你知道它做對了嗎？〉\n延伸收聽：EP30〈一天修好人生？兩億人讀過，只有三樣有效〉、EP42–44 不讀之後\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "practice-on-purpose",
+ "source_url": "https://imitator.ai-apps.work/r/practice-on-purpose",
+ "status": "final",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5",
+  "model_served": "gemini-3.8-flash-tts"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "report_version": "2026-11-17",
+ "audio": {
+  "file": "ep46-practice-on-purpose.mp3",
+  "bytes": 11120511,
+  "sha256": "94358a9363e44f765fce47884b75be7201d10798db620d7ec6349c6f9c029d64",
+  "duration_s": 695.0,
+  "duration": "11:34",
+  "lufs": -17.0
+ },
+ "youtube": {
+  "title": "《超速學習》真的超速嗎？用 AI 練數學分數 +48%，閉卷考反輸 17%：有了 AI，基本功還要不要練",
+  "thumbnail": [
+   [
+    "AI 陪你練習",
+    "考試反輸 17%"
+   ],
+   [
+    "超速學習",
+    "有一半是書名"
+   ]
+  ],
+  "synthetic_content": true
+ },
+ "series": "知行筆記 3/3（上：EP30、EP31）",
+ "published": "2026-11-25T08:00:00+08:00",
+ "qa": {
+  "breeze_cer_mean": 0.025,
+  "gemini_cer_mean": 0.015,
+  "jitter_semitones": 0.226,
+  "gates": "錯誤率 2.5%、音高跳動 0.226 都通過；consistency 標 s00 語速 +11%、s06 −11%、6 處接縫亮度跳 450–1100 Hz（響度、音高、聲紋在範圍內），試聽確認",
+  "retakes": "第一版：瓶頸聽成拼勁／平靜、行事曆聽成形式裡、近千名聽成進簽名、知行筆記兩套都聽成知心筆記：s00、s01、s08、s11 改詞重錄（s01 兩輪）；音高跳動 0.232：s00、s02、s03–s08、s10 各補 3 次後 steady_pick。Modal 額度已恢復，第二輪起挑選在 GPU",
+  "manual_pick": "照 steady_pick；s00 沒有任何一次在語速範圍內，留跳動最低的 take3",
+  "both_wrong": "只有虛字：s01「那一塊」的一、s06「這是」的是",
+  "retention": "開頭丟出「新手能不能超速」到 s10 才回答；s05（最反直覺的實驗）放中段；s02–s09 段尾留小鉤子",
+  "twtone": "qa/twtone.md：沒有超過基準的項目（計算機→電腦的建議不採用，這裡是 calculator）",
+  "terms": "Ping／pong 英文念法（gemini_check，qa/terms.json）",
+  "voice_drift": 0.885
+ }
+}
