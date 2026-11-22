@@ -1,0 +1,445 @@
+<title>深夜 Debug 工廠</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* 版面：手機直式一欄，寬螢幕兩欄；上面四格數字，下面依「多常變」排區塊 */
+:root{
+  --bg:#f5f5f1;--card:#fff;--ink:#1d1d1b;--ink2:#55544f;--ink3:#7c7b75;--line:#e4e2dc;
+  --accent:#2f5fd0;--good:#1f7a4d;--good-bg:#e5f3ea;--warn:#8a5200;--warn-bg:#fbf0dc;--bad:#b3261e;--bad-bg:#fbe6e4;
+  --chip:#efeee9;--bar:#2f5fd0;--bar-bg:#e8e7e1;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141413;--card:#1e1e1c;--ink:#ecebe6;--ink2:#b5b3ac;--ink3:#86847d;--line:#33322f;
+  --accent:#8fb0ff;--good:#6fd09a;--good-bg:#1c3326;--warn:#f0b65a;--warn-bg:#3a2d16;--bad:#ff8a80;--bad-bg:#3d1f1c;
+  --chip:#2a2a27;--bar:#8fb0ff;--bar-bg:#2e2e2b;color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#141413;--card:#1e1e1c;--ink:#ecebe6;--ink2:#b5b3ac;--ink3:#86847d;--line:#33322f;
+  --accent:#8fb0ff;--good:#6fd09a;--good-bg:#1c3326;--warn:#f0b65a;--warn-bg:#3a2d16;--bad:#ff8a80;--bad-bg:#3d1f1c;
+  --chip:#2a2a27;--bar:#8fb0ff;--bar-bg:#2e2e2b;color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Noto Sans TC","PingFang TC",sans-serif;-webkit-text-size-adjust:100%}
+main{max-width:960px;margin:0 auto;padding-block:12px 48px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+header{display:flex;align-items:center;gap:8px;padding:8px 0 12px}
+h1{font-size:20px;margin:0;flex:1}
+h2{font-size:16px;margin:0}
+h3{font-size:13px;margin:14px 0 6px;color:var(--ink2);font-weight:600}
+a{color:var(--accent);text-decoration:none}
+button{font:inherit;min-height:36px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:6px 12px;cursor:pointer}
+.muted{color:var(--ink3);font-size:13px}
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:12px}
+@media(min-width:720px){.tiles{grid-template-columns:repeat(4,1fr)}}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;min-width:0}
+.tile .k{font-size:12px;color:var(--ink2)}
+.tile .v{font-size:22px;font-weight:650;line-height:1.25;margin-top:2px;overflow-wrap:anywhere}
+.tile .n{font-size:12px;color:var(--ink3);margin-top:2px}
+section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:12px}
+.sh{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.sh .muted{margin-left:auto}
+.cols{display:grid;gap:12px}
+@media(min-width:900px){.cols{grid-template-columns:1fr 1fr}.cols section{margin-bottom:0}}
+ul.rows{list-style:none;margin:0;padding:0}
+ul.rows>li{padding:8px 0;border-top:1px solid var(--line);display:flex;gap:10px;align-items:flex-start}
+ul.rows>li:first-child{border-top:0}
+.when{flex:0 0 74px;font-variant-numeric:tabular-nums;color:var(--ink2);font-size:13px;padding-top:1px}
+.body{flex:1;min-width:0}
+.t{overflow-wrap:anywhere}
+.sub{font-size:13px;color:var(--ink2);overflow-wrap:anywhere}
+.ep{font-weight:650;font-variant-numeric:tabular-nums}
+.chip{display:inline-block;font-size:12px;line-height:1.4;padding:1px 8px;border-radius:999px;background:var(--chip);color:var(--ink2);margin:2px 4px 0 0;white-space:nowrap}
+.chip.good{background:var(--good-bg);color:var(--good)}
+.chip.warn{background:var(--warn-bg);color:var(--warn)}
+.chip.bad{background:var(--bad-bg);color:var(--bad)}
+.day{font-size:12px;font-weight:600;color:var(--ink3);margin:10px 0 0;letter-spacing:.02em}
+.day.today{color:var(--accent)}
+.meter{height:8px;background:var(--bar-bg);border-radius:4px;overflow:hidden;margin:6px 0 2px}
+.meter>i{display:block;height:100%;background:var(--bar);border-radius:4px}
+.meter.warn>i{background:var(--warn)}
+details{margin-top:8px}
+summary{cursor:pointer;color:var(--accent);font-size:14px}
+.stale{color:var(--warn)}
+.empty{color:var(--ink3);font-size:14px;padding:6px 0}
+.err{background:var(--bad-bg);color:var(--bad);border-radius:8px;padding:10px 12px;margin-bottom:12px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{text-align:left;padding:5px 6px;border-top:1px solid var(--line);vertical-align:top}
+th{color:var(--ink2);font-weight:600;border-top:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+button:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+<main>
+<header><h1>深夜 Debug 工廠</h1><span class="muted" id="loaded"></span><button id="reload" type="button">重新整理</button></header>
+<div id="app"><p class="muted">讀取中…</p></div>
+</main>
+<script>
+
+(function(){
+"use strict";
+var TZ = "Asia/Taipei";
+var app = document.getElementById("app");
+function esc(s){return String(s == null ? "" : s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+function safeUrl(u){return /^https:\/\//.test(u||"") ? esc(u) : "#";}
+function link(text,url){return '<a href="'+safeUrl(url)+'" target="_blank" rel="noopener">'+esc(text)+'</a>';}
+function chip(text,kind){return '<span class="chip'+(kind?" "+kind:"")+'">'+esc(text)+'</span>';}
+var fmtDay = new Intl.DateTimeFormat("zh-TW",{timeZone:TZ,month:"numeric",day:"numeric",weekday:"short"});
+var fmtTime = new Intl.DateTimeFormat("zh-TW",{timeZone:TZ,hour:"2-digit",minute:"2-digit",hour12:false});
+var fmtKey = new Intl.DateTimeFormat("en-CA",{timeZone:TZ,year:"numeric",month:"2-digit",day:"2-digit"});
+function dayKey(d){return fmtKey.format(d);}
+function ago(iso){
+  if(!iso) return "沒有資料";
+  var m = Math.round((Date.now()-new Date(iso).getTime())/60000);
+  if(m < 1) return "剛剛";
+  if(m < 60) return m+" 分鐘前";
+  var h = Math.round(m/60); if(h < 48) return h+" 小時前";
+  return Math.round(h/24)+" 天前";
+}
+function fresh(sec,maxHours){
+  var iso = sec && (sec.generated || sec._pushed);
+  var old = !iso || (Date.now()-new Date(iso).getTime()) > maxHours*3600000;
+  return '<span class="muted'+(old?" stale":"")+'">'+(old?"⚠ ":"")+"更新於 "+esc(ago(iso))+'</span>';
+}
+function stepChip(label,v){
+  v = String(v||"");
+  var kind = v.indexOf("✅")>=0 ? "good" : v.indexOf("🔶")>=0 || v.indexOf("⏰")>=0 ? "warn" : "";
+  var mark = v.indexOf("✅")>=0 ? "✓ " : v.indexOf("🔶")>=0 ? "… " : v.indexOf("⏰")>=0 ? "⏰ " : "○ ";
+  return chip(mark+label,kind);
+}
+function sectionHead(title,sec,maxHours,extra){return '<div class="sh"><h2>'+esc(title)+'</h2>'+(extra||"")+fresh(sec,maxHours)+'</div>';}
+function tile(k,v,n){return '<div class="tile"><div class="k">'+esc(k)+'</div><div class="v">'+v+'</div><div class="n">'+(n||"")+'</div></div>';}
+
+function render(d){
+  var repo = d.repo, rs = d.research, tr = d.traffic, now = Date.now(), html = "";
+  var eps = (repo && repo.episodes) || [];
+  var future = eps.filter(function(e){return e.published && new Date(e.published).getTime() > now;})
+                  .sort(function(a,b){return a.published < b.published ? -1 : 1;});
+  var next = (repo && repo.next) || [];
+
+  // ── 頂部數字 ──
+  var t = "";
+  if(future.length){
+    var f = future[0], fd = new Date(f.published);
+    var same = future.filter(function(e){return dayKey(new Date(e.published)) === dayKey(fd);}).map(function(e){return e.ep;});
+    t += tile("下一次上架", esc(same.join("、")), esc(fmtDay.format(fd)+" "+fmtTime.format(fd)));
+  } else t += tile("下一次上架", "—", '<span class="stale">沒有排程中的集數</span>');
+  t += tile("做好未上架", esc(future.length)+" 集", future.length >= 4 ? "目標 ≥4，✓ 夠" : '<span class="stale">⚠ 目標 ≥4，不夠</span>');
+  t += tile("推薦還沒開工", esc(next.length)+" 份", next.length >= 4 ? "目標 ≥4，✓ 夠" : '<span class="stale">⚠ 目標 ≥4，不夠</span>');
+  if(rs && rs.cost){
+    var c = rs.cost;
+    t += tile("研究花費", "US$"+esc(c.total.toFixed(2)), "預算 US$"+esc(c.budget)+(c.total > c.budget*0.8 ? ' <span class="stale">⚠ 超過 80%</span>' : ""));
+  } else t += tile("研究花費","—","還沒有資料");
+  if(tr && !tr.error) t += tile("7 天自然觀看", esc(tr.organic_views_7d), "資料到 "+esc((tr.analytics_to||"").slice(5).replace("-","/"))+"，每週一更新");
+  else t += tile("7 天自然觀看", "—", '<span class="stale">⚠ 讀不到流量資料</span>');
+  var mine = ((repo && repo.todo) || []).filter(function(i){return i.owner === "Clarence" && i.status === "open";}).length;
+  var toReview = 0; if(rs && rs.runs && rs.runs[0]) rs.runs[0].items.forEach(function(it){ var q = (rs.questions||[]).filter(function(x){return x.id === it.id;})[0]; if((it.stages||[]).length && !(q && /Clarence 審過/.test(q.status))) toReview++; });
+  t += tile("等你處理", esc(mine + toReview)+" 項", "待辦 "+esc(mine)+"、研究等你審 "+esc(toReview));
+  html += '<div class="tiles">'+t+'</div>';
+
+  // ── 上架排程 ──
+  var s = "";
+  if(!repo) s = '<p class="empty">還沒有 repo 資料：請 Claude 跑一次 tools/factory_status.py。</p>';
+  else {
+    var sched = eps.filter(function(e){return e.published;}).sort(function(a,b){return a.published < b.published ? -1 : 1;});
+    var lastDay = "", today = dayKey(new Date());
+    var past = sched.filter(function(e){return dayKey(new Date(e.published)) < today;});
+    if(past.length) s += '<details><summary>前幾天已上架（'+esc(past.length)+' 集）</summary><ul class="rows">'+past.map(function(e){
+      var pd = new Date(e.published);
+      return '<li><div class="when">'+esc(fmtDay.format(pd))+'<br>'+esc(fmtTime.format(pd))+'</div><div class="body"><div class="t"><span class="ep">'+esc(e.ep)+'</span> '+esc(e.title)+'</div></div></li>';
+    }).join("")+'</ul></details>';
+    sched = sched.filter(function(e){return dayKey(new Date(e.published)) >= today;});
+    sched.forEach(function(e){
+      var pd = new Date(e.published), k = dayKey(pd), live = pd.getTime() <= now;
+      if(k !== lastDay){
+        s += (lastDay ? "</ul>" : "") + '<div class="day'+(k===today?" today":"")+'">'+esc(fmtDay.format(pd))+(k===today?"（今天）":"")+'</div><ul class="rows">';
+        lastDay = k;
+      }
+      s += '<li><div class="when">'+esc(fmtTime.format(pd))+'</div><div class="body"><div class="t"><span class="ep">'+esc(e.ep)+'</span> '+esc(e.title)+'</div>'+
+           (live ? chip("已上架","good") : chip("已排程","warn"))+'</div></li>';
+    });
+    if(lastDay) s += "</ul>";
+    var unsched = eps.filter(function(e){return !e.published;});
+    if(unsched.length){
+      s += '<div class="day">還沒排</div><ul class="rows">';
+      unsched.forEach(function(e){s += '<li><div class="when">—</div><div class="body"><div class="t"><span class="ep">'+esc(e.ep)+'</span> '+esc(e.title)+'</div>'+chip(e.status||"草稿")+'</div></li>';});
+      s += "</ul>";
+    }
+    if(!sched.length && !unsched.length) s = '<p class="empty">沒有排程。</p>';
+  }
+  html += '<div class="cols"><section>'+sectionHead("上架排程",repo,36)+s+'</section>';
+
+  // ── 製作中 ──
+  var a = eps.filter(function(e){return e.active;});
+  var isLive = function(e){return e.published && new Date(e.published).getTime() <= now;};
+  var prodRow = function(e){
+    return '<li><div class="body"><div class="t"><span class="ep">'+esc(e.ep)+'</span> '+esc(e.title)+'</div>'+
+      stepChip("音檔", e.audio ? "✅" : "🔶")+stepChip("試聽", e.review)+
+      stepChip("上架", e.published ? (new Date(e.published).getTime() <= now ? "✅" : "⏰") : "⬜")+
+      stepChip("影片版", e.video)+stepChip("Short", e.short)+
+      (e.note ? '<details><summary>備註</summary><div class="sub">'+esc(e.note)+'</div></details>' : "")+
+      '</div></li>';
+  };
+  var notLive = a.filter(function(e){return !isLive(e);}), liveA = a.filter(isLive);
+  var p = (notLive.length ? '<ul class="rows">'+notLive.map(prodRow).join("")+'</ul>' : '<p class="empty">上架前的集數都做完了。</p>') +
+    (liveA.length ? '<details><summary>已上架，還差影片版或 Short（'+esc(liveA.length)+' 集）</summary><ul class="rows">'+liveA.map(prodRow).join("")+'</ul></details>' : "");
+  html += '<section>'+sectionHead("製作中",repo,36,'<span class="muted">'+esc(a.length)+' 集</span>')+p+'</section></div>';
+
+  // ── PR ──
+  var prs = repo && repo.prs;
+  var pr = prs == null ? '<p class="empty">這次沒抓到 PR 清單。</p>' : !prs.length ? '<p class="empty">沒有開著的 PR。</p>' :
+    '<ul class="rows">'+prs.map(function(x){
+      return '<li><div class="when">#'+esc(x.n)+'</div><div class="body"><div class="t">'+link(x.title,x.url)+'</div>'+
+        (x.draft ? chip("草稿") : chip("等你看","warn"))+'<span class="muted">'+esc(ago(x.updated))+'更新</span></div></li>';
+    }).join("")+'</ul>';
+  html += '<section>'+sectionHead("開著的 PR",repo,36)+pr+'</section>';
+
+  // ── 待製作 ──
+  var nx = function(list){return '<ul class="rows">'+list.map(function(x){
+    return '<li><div class="when">'+esc(x.ep || ("#"+x.n))+'</div><div class="body"><div class="t">'+esc(x.angle)+'</div>'+
+      '<div class="sub">'+(x.report ? link(x.report.text,x.report.url) : "")+'</div>'+
+      chip(x.kind, x.kind === "錢" ? "warn" : "")+(x.time ? '<span class="muted">'+esc(x.time)+'</span>' : "")+'</div></li>';
+  }).join("")+'</ul>';};
+  var w = !repo ? '<p class="empty">還沒有資料。</p>' : !next.length ? '<p class="empty">推薦表空了。</p>' :
+    nx(next.slice(0,6)) + (next.length > 6 ? '<details><summary>其餘 '+esc(next.length-6)+' 份</summary>'+nx(next.slice(6))+'</details>' : "");
+  var rm = (repo && repo.remake) || [];
+  if(rm.length){
+    w += '<details><summary>重製池（2025 報告首選 '+esc(rm.length)+' 組）</summary><ul class="rows">'+rm.map(function(x){
+      return '<li><div class="when">#'+esc(x.n)+'</div><div class="body"><div class="t">'+esc(x.angle)+'</div><div class="sub">'+
+        (x.sources||[]).map(function(s){return link(s.text,s.url);}).join("<br>")+'</div>'+chip(x.kind, x.kind === "錢" ? "warn" : "")+'</div></li>';
+    }).join("")+'</ul></details>';
+  }
+  html += '<section>'+sectionHead("待製作",repo,36,'<span class="muted">推薦表 '+esc(next.length)+' 份</span>')+w+'</section>';
+
+  // ── 自動研究 ──
+  var r = "";
+  if(!rs) r = '<p class="empty">讀不到 research/ 資料夾。</p>';
+  else {
+    var qname = {}, qstat = {}; (rs.questions||[]).forEach(function(q){qname[q.id] = q.q; qstat[q.id] = q.status;});
+    // 「審過」只認 Clarence 自己說的：題庫狀態欄寫了「Clarence 審過」才算；AI 審稿（Fable）不算
+    var human = function(id, st){ return /Clarence 審過/.test(qstat[id]||"") ? chip("✓ 你審過","good") : st.length ? chip("等你審","warn") : ""; };
+    var run = (rs.runs||[])[0];
+    if(run){
+      r += '<h3>'+esc(run.week)+'</h3><ul class="rows">'+run.items.map(function(it){
+        var st = it.stages || [];
+        var v = it.verdict, vk = /建議做/.test(v) ? "good" : /補|擱置/.test(v) ? "warn" : /不做/.test(v) ? "bad" : "";
+        return '<li><div class="when">'+esc(it.id)+'</div><div class="body"><div class="t">'+esc(qname[it.id] || it.title)+'</div>'+
+          stepChip("AI 初稿", st.indexOf("draft")>=0 ? "✅" : "⬜")+stepChip("AI 審稿", st.indexOf("review")>=0 ? "✅" : "⬜")+
+          stepChip("報告稿", st.indexOf("report")>=0 ? "✅" : "⬜")+human(it.id, st)+(v ? chip("AI 判定："+v,vk) : "")+
+          (it.answer ? '<div class="sub">'+esc(it.answer)+'</div>' : "")+'</div></li>';
+      }).join("")+'</ul>';
+    }
+    var waiting = (rs.questions||[]).filter(function(q){return /待研究/.test(q.status);});
+    r += '<h3>題庫：待研究 '+esc(waiting.length)+' 題，共 '+esc((rs.questions||[]).length)+' 題</h3>';
+    r += '<details><summary>看題目</summary><ul class="rows">'+(rs.questions||[]).map(function(q){
+      return '<li><div class="when">'+esc(q.id)+'</div><div class="body"><div class="t">'+esc(q.q)+'</div>'+chip(q.group)+chip(q.status, /待研究/.test(q.status) ? "" : "good")+'</div></li>';
+    }).join("")+'</ul></details>';
+    var led = (rs.ledger||[]).filter(function(x){return !/已對帳/.test(x.status);}).sort(function(a,b){return a.due < b.due ? -1 : 1;});
+    if(led.length){
+      r += '<h3>對帳簿：下一個 '+esc(led[0].due)+'</h3><details><summary>'+esc(led.length)+' 個對帳點</summary><ul class="rows">'+led.map(function(x){
+        return '<li><div class="when">'+esc(x.due)+'</div><div class="body"><div class="t">'+esc(x.from)+' · '+esc(x.what)+'</div><div class="sub">當時：'+esc(x.value)+'</div></div></li>';
+      }).join("")+'</ul></details>';
+    }
+    var c2 = rs.cost;
+    if(c2){
+      var pct = Math.min(100, c2.total / c2.budget * 100);
+      r += '<h3>花費</h3><div class="meter'+(pct>80?" warn":"")+'" role="img" aria-label="已用 '+esc(pct.toFixed(0))+'%"><i style="width:'+pct.toFixed(1)+'%"></i></div>'+
+        '<div class="sub">US$'+esc(c2.total.toFixed(2))+' ／ US$'+esc(c2.budget)+'，剩 US$'+esc((c2.budget-c2.total).toFixed(2))+
+        Object.keys(c2.weeks||{}).sort().reverse().slice(0,4).map(function(k){return '；'+esc(k)+' US$'+esc(c2.weeks[k]);}).join("")+'</div>'+
+        (c2.last ? '<div class="muted">最近一次：'+esc(c2.last.kind)+' '+esc(c2.last.target)+' US$'+esc(c2.last.usd)+'（'+esc(ago(c2.last.time))+'）</div>' : "");
+    }
+  }
+  html += '<section>'+sectionHead("自動研究",rs,24*8)+r+'</section>';
+
+  // ── 實驗、待辦 ──
+  var x = "";
+  if(repo){
+    var exps = (repo.experiments||[]).filter(function(e){return e.status !== "done";}).sort(function(a,b){return (a.next_review||"9") < (b.next_review||"9") ? -1 : 1;});
+    x += '<h3>實驗</h3><ul class="rows">'+exps.map(function(e){
+      var due = e.next_review, late = due && due <= dayKey(new Date());
+      return '<li><div class="when">'+esc(due ? due.slice(5).replace("-","/") : "—")+'</div><div class="body"><div class="t">'+esc(e.name)+'</div>'+
+        (late ? chip("該判讀了","bad") : chip({running:"進行中",planned:"準備中",paused:"暫停"}[e.status] || e.status))+'</div></li>';
+    }).join("")+'</ul>';
+    var todo = (repo.todo||[]).filter(function(i){return i.status !== "done";}).sort(function(a,b){return (a.due||"9") < (b.due||"9") ? -1 : 1;});
+    var todoRow = function(i){
+      var late = i.due && i.due < dayKey(new Date());
+      return '<li><div class="when">'+esc(i.due ? i.due.slice(5).replace("-","/") : "—")+'</div><div class="body"><div class="t">'+esc(i.text)+'</div>'+
+        chip(i.owner, i.owner === "Clarence" ? "warn" : "")+(i.status === "waiting" ? chip("等回覆") : "")+(late ? chip("過期","bad") : "")+'</div></li>';
+    };
+    x += '<h3>待辦（'+esc(todo.length)+'）</h3><ul class="rows">'+todo.slice(0,6).map(todoRow).join("")+'</ul>'+
+      (todo.length > 6 ? '<details><summary>其餘 '+esc(todo.length-6)+' 項</summary><ul class="rows">'+todo.slice(6).map(todoRow).join("")+'</ul></details>' : "");
+  } else x = '<p class="empty">還沒有資料。</p>';
+  html += '<div class="cols"><section>'+sectionHead("實驗與待辦",repo,36)+x+'</section>';
+
+  // ── 流量（只有自然流量）──
+  var g = "";
+  if(!tr || tr.error) g = '<p class="empty">讀不到 yt-report/summary.json（每週一 yt_report 產生）。'+(tr && tr.error ? '錯誤：'+esc(tr.error) : '')+'</p>';
+  else {
+    var pv = tr.prev || {};
+    var delta = function(cur,old){if(cur == null || old == null || !old) return ""; var p = (cur-old)/old*100; return (p>=0?"▲ ":"▼ ")+Math.abs(p).toFixed(0)+"% 比上週";};
+    g += '<div class="tiles" style="grid-template-columns:repeat(2,1fr)">'+
+      tile("7 天自然觀看", esc(tr.organic_views_7d), esc(delta(tr.organic_views_7d,pv.organic_views_7d)))+
+      tile("7 天自然觀看分鐘", esc(Math.round(tr.organic_minutes_7d||0)), esc(delta(tr.organic_minutes_7d,pv.organic_minutes_7d)))+'</div>';
+    g += '<div class="muted">Analytics 資料到 '+esc(tr.analytics_to)+'；報表產生於 '+esc((tr.report_generated||"").slice(0,16).replace("T"," "))+'。已排除廣告。</div>';
+    if((tr.actions||[]).length) g += '<h3>建議動作</h3><ul class="rows">'+tr.actions.map(function(a){return '<li><div class="body">'+chip(a.kind)+'<div class="sub">'+esc(a.text)+'</div></div></li>';}).join("")+'</ul>';
+    var te = (tr.episodes||[]).slice().sort(function(a,b){return (b.org_views||0)-(a.org_views||0);}).slice(0,10);
+    if(te.length) g += '<details><summary>自然觀看前 10 集</summary><div class="scroll"><table><thead><tr><th>集</th><th class="num">自然觀看</th><th class="num">前 3 天</th><th class="num">點閱率</th></tr></thead><tbody>'+
+      te.map(function(e){var n = typeof e.ep === "number" ? "EP"+(e.ep<10?"0":"")+e.ep : e.ep; return '<tr><td>'+esc(n)+(e.style === "short" ? " Short" : "")+'</td><td class="num">'+esc(e.org_views)+'</td><td class="num">'+esc(e.first7 == null ? "—" : e.first7)+'</td><td class="num">'+esc(e.ctr == null ? "—" : Number(e.ctr).toFixed(2)+"%")+'</td></tr>';}).join("")+'</tbody></table></div></details>';
+  }
+  html += '<section>'+sectionHead("流量（只看自然流量）",tr,24*8)+g+'</section></div>';
+
+  app.innerHTML = html;
+  document.getElementById("loaded").textContent = fmtTime.format(new Date())+" 載入";
+}
+
+// ── 讀專案資料夾 ──
+// repo：factory/repo.json（tools/factory_status.py 寫）；研究、流量：直接讀原始檔，打開就是最新的。
+var files = null, base = null;
+var dec = new TextDecoder();
+function plainMd(s){return String(s||"").replace(/\[([^\]]+)\]\([^)]+\)/g,"$1").replace(/<br\s*\/?>/g,"；").replace(/[`*]/g,"").trim();}
+function cells(line){return line.trim().replace(/^\||\|$/g,"").split("|").map(function(c){return c.trim();});}
+function isSep(c){return c.every(function(x){return /^:?-+:?$/.test(x);});}
+function path(rel){return base + rel;}
+// 專案檔案一次只發一個請求；被限流（rate_limited）就等 retryAfterMs 再試，最多 6 次
+var queue = Promise.resolve();
+function call(fn){
+  var p = queue.then(function(){
+    var tries = 0;
+    function go(){
+      return fn().catch(function(e){
+        if(e && e.code === "rate_limited" && tries++ < 6){
+          var wait = Math.max(500, e.retryAfterMs || 0) * (tries > 3 ? 2 : 1);
+          return new Promise(function(ok){setTimeout(ok, wait);}).then(go);
+        }
+        throw e;
+      });
+    }
+    return go();
+  });
+  queue = p.catch(function(){});
+  return p;
+}
+function readText(rel){return call(function(){return files.read(path(rel));}).then(function(r){return dec.decode(r.bytes);});}
+function readJson(rel){return readText(rel).then(function(t){return JSON.parse(t);});}
+function listAll(rel, recursive){
+  var out = [];
+  function page(cursor){
+    var o = {path: path(rel), recursive: !!recursive}; if(cursor) o.cursor = cursor;
+    return call(function(){return files.list(o);}).then(function(r){out = out.concat(r.entries); return r.cursor ? page(r.cursor) : out;});
+  }
+  return page();
+}
+function findBase(){
+  // 專案檔案的路徑寫法由平台決定（可能有前綴），從最上層找 research 資料夾推出前綴
+  return call(function(){return files.list({});}).then(function(r){
+    var hit = r.entries.filter(function(e){return e.isDirectory && /(^|\/)(research|factory)\/?$/.test(e.path);})[0];
+    base = hit ? hit.path.replace(/(research|factory)\/?$/,"") : "";
+  });
+}
+function firstTable(md, headRe){
+  var lines = md.split("\n"), i = 0;
+  if(headRe){ while(i < lines.length && !headRe.test(lines[i])) i++; }
+  while(i < lines.length && lines[i].indexOf("|") !== 0) i++;
+  var rows = [];
+  while(i < lines.length && lines[i].indexOf("|") === 0){ var c = cells(lines[i]); if(!isSep(c)) rows.push(c); i++; }
+  return rows.slice(1);
+}
+function isoWeek(d){
+  var t = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()));
+  var day = t.getUTCDay() || 7; t.setUTCDate(t.getUTCDate() + 4 - day);
+  var y = t.getUTCFullYear(), w = Math.ceil(((t - Date.UTC(y,0,1)) / 86400000 + 1) / 7);
+  return y + "-W" + (w < 10 ? "0" : "") + w;
+}
+
+function loadResearch(){
+  var res = {questions: [], ledger: [], runs: [], cost: {total: 0, budget: 100, weeks: {}, last: null}, generated: null};
+  var newest = 0;
+  var q = readText("research/questions.md").then(function(md){
+    var group = "";
+    md.split("\n").forEach(function(line){
+      var h = line.match(/^## (.+)/); if(h){ group = h[1].trim(); return; }
+      if(line.indexOf("|") !== 0) return;
+      var c = cells(line); if(isSep(c)) return;
+      if(group === "對帳簿"){ if(c.length >= 5 && /^Q\d+/.test(plainMd(c[0]))) res.ledger.push({from: plainMd(c[0]), what: plainMd(c[1]), value: plainMd(c[2]), due: plainMd(c[3]), status: plainMd(c[4])}); }
+      else if(/^Q\d+$/.test(c[0])) res.questions.push({id: c[0], q: plainMd(c[1]), group: group, status: plainMd(c[c.length-1])});
+    });
+  });
+  var runs = listAll("research/runs").then(function(ents){
+    var weeks = ents.filter(function(e){return e.isDirectory && /20\d\d-W\d\d\/?$/.test(e.path);})
+                    .map(function(e){return e.path.replace(/\/$/,"").split("/").pop();}).sort().reverse();
+    if(!weeks.length) return;
+    var wk = weeks[0];
+    return listAll("research/runs/"+wk, true).then(function(all){
+      var items = {}, order = [];
+      function item(id){ if(!items[id]){ items[id] = {id: id, title: id, verdict: "", answer: "", stages: []}; order.push(id);} return items[id]; }
+      all.forEach(function(e){
+        if(e.createdAt) newest = Math.max(newest, new Date(e.createdAt).getTime());
+        var name = e.path.split("/").pop(), m = name.match(/^(Q\d+)/);
+        if(e.isDirectory || !m) return;
+        var st = /report\.html$/.test(name) ? "report" : /review/.test(name) ? "review" : (/\.md$/.test(name) && !/twtone/.test(name)) ? "draft" : null;
+        var it = item(m[1]); if(st && it.stages.indexOf(st) < 0) it.stages.push(st);
+      });
+      var hasSummary = all.some(function(e){return /00-summary\.md$/.test(e.path);});
+      var p = hasSummary ? readText("research/runs/"+wk+"/00-summary.md").then(function(md){
+        firstTable(md).forEach(function(c){
+          var m = c[0].match(/Q\d+/); if(!m) return;
+          var it = item(m[0]); it.title = plainMd(c[0]); it.verdict = plainMd(c[1]||""); it.answer = plainMd(c[2]||"");
+        });
+      }) : Promise.resolve();
+      return p.then(function(){ res.runs = [{week: wk, has_summary: hasSummary, items: order.map(function(k){return items[k];})}]; });
+    });
+  });
+  var cost = readText("research/runs/cost.log").then(function(t){
+    t.split("\n").forEach(function(line){
+      if(!line.trim()) return;
+      var e; try{ e = JSON.parse(line); }catch(_){ return; }
+      var usd = Number(e.usd) || 0, d = new Date(e.time), wk = isoWeek(new Date(d.getTime() + 8*3600000));
+      res.cost.total += usd;
+      res.cost.weeks[wk] = Math.round(((res.cost.weeks[wk] || 0) + usd) * 100) / 100;
+      res.cost.last = {time: e.time, kind: e.kind, target: e.target, usd: Math.round(usd*100)/100};
+      newest = Math.max(newest, d.getTime());
+    });
+    res.cost.total = Math.round(res.cost.total * 100) / 100;
+  }).catch(function(){});
+  return Promise.all([q, runs, cost]).then(function(){
+    res.generated = newest ? new Date(newest).toISOString() : new Date().toISOString();
+    return res;
+  });
+}
+
+function loadTraffic(){
+  return readJson("yt-report/summary.json").then(function(s){
+    // 專案規則：只看自然流量。廣告觀看（ad_views_7d）不讀進來。
+    var t = {generated: s.generated ? s.generated.replace(" ","T") : null, report_generated: s.generated, analytics_to: s.analytics_to,
+             organic_views_7d: s.organic_views_7d, organic_minutes_7d: s.organic_minutes_7d, actions: s.actions || [],
+             episodes: (s.episodes || []).map(function(e){return {ep: e.ep, style: e.style, org_views: e.org_views, first7: e.first7, ctr: e.ctr};}), prev: null};
+    return listAll("yt-report").then(function(ents){
+      var day = (s.generated || "").slice(0,10);
+      var olds = ents.map(function(e){return e.path.split("/").pop();}).filter(function(n){return /^summary-\d{4}-\d\d-\d\d\.json$/.test(n) && n.slice(8,18) < day;}).sort();
+      if(!olds.length) return t;
+      return readJson("yt-report/"+olds[olds.length-1]).then(function(p){t.prev = {organic_views_7d: p.organic_views_7d, organic_minutes_7d: p.organic_minutes_7d}; return t;});
+    }).catch(function(){return t;});
+  });
+}
+
+function soft(p){return p.catch(function(e){ console.warn(e); return null; });}
+
+function load(){
+  var btn = document.getElementById("reload"); btn.disabled = true;
+  var start = files ? Promise.resolve() : window.claude.use("files").then(function(f){
+    if(!f) throw {code: "unavailable", message: "這個畫面讀不到專案檔案（要在 Claude 裡、用專案成員的帳號打開）。"};
+    files = f; return findBase();
+  });
+  start.then(function(){
+    return Promise.all([soft(readJson("factory/repo.json")), soft(loadResearch()), loadTraffic().catch(function(e){ return {error: (e && (e.code || e.message)) || String(e)}; })]);
+  }).then(function(r){
+    render({repo: r[0], research: r[1], traffic: r[2]});
+  }).catch(function(e){
+    var msg = e && e.code === "not_granted" ? "你沒有允許這個頁面讀專案檔案。到頁面右上角的權限設定打開，再按重新整理。" : (e && e.message) || String(e);
+    app.innerHTML = '<div class="err">讀不到資料：'+esc(msg)+'</div>';
+  }).then(function(){ btn.disabled = false; });
+}
+document.getElementById("reload").addEventListener("click",load);
+document.addEventListener("visibilitychange",function(){if(document.visibilityState === "visible" && files) load();});
+if(window.claude && window.claude.use) load();
+else app.innerHTML = '<div class="err">這個頁面要在 Claude 裡打開，才讀得到專案資料夾。</div>';
+})();
+
+</script>
