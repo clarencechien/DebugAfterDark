@@ -1,0 +1,151 @@
+{
+ "segment": "s11_outro",
+ "position": "第 12 段，共 12 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "525e8f947446cd622262092efe9a2f4000d69fce621a0f22e1f5a49c5478a9b2",
+ "previous_context": "這份報告全是文獻整理，作者自己沒有跑實驗。到底能不能追上，真的還沒有人考過啦。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，有 AI 時的練習分數，不能當成學會的證據；能直接拿答案的那組，閉卷考反而輸給沒用 AI 的人。第二，基礎還要學，用途換了：從寫得出來，換成看得出哪裡會壞。第三，以前順便練出來的基本功，現在要排進行事曆：讓 AI 只給提示，定期拿掉它考一次找錯；知識可以超速，判斷力能不能，還沒有人考過。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 192,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 26.4,
+   "max_sentence_len": 63,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "進行"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。\n\n第一，靠 AI 拿的高分，不能當成學會的證據。\n把 AI 拿掉自己考一次，才知道到底會不會。\n\n第二，基礎知識還是要學，只是用途換了。\n從自己寫得出來，換成看得出哪裡會壞。\n\n第三，順手練的基本功，現在得排進行事曆。\n讓 AI 只給提示，定期拿掉它來考找錯。\n\n畢竟知識可以超速學習。\n但判斷力能不能，現在還沒有人考過嘛。<short pause>\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 198,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.5,
+    "written_words": [
+     "進行"
+    ],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 0,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n第一，有 AI 幫忙的分數，不能當成真的學會。\n要確定自己會不會，得把 AI 拿掉再考一次。\n第二，基礎知識還要學，只是用途換了喔。\n現在不是要自己寫出來，是要看出哪裡會壞。\n第三，以前順便長出的基本功，現在要另外練。\n別讓 AI 直接給答案，定期把工具拿掉考自己。\n知識能超速，但判斷力行不行，還沒人考過啦。\n\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 0,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n聽完這些研究，你應該也在想吧？\n我們到底要怎麼學東西？\n第一，有 AI 幫忙的分數，不能算學會。\n把工具拿掉再考一次，才是你真正的實力啦。\n第二，基礎不是不用學，而是用途換了。\n要從自己寫得出來，變成看得出哪裡會壞。\n第三，基本功現在不會順便長出來了。\n你得把它排進行事曆，定期拿掉 AI 找錯。\n畢竟知識可以超速，但判斷力還沒有人考過。\n<sigh>作者這個推論，真的讓我很有共鳴耶。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 227,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [
+     "進行"
+    ],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>聽完這些研究，你應該也在想吧？我們到底要怎麼學東西？第一，有 AI 幫忙的分數，不能算學會。把工具拿掉再考一次，才是你真正的實力啦。第二，基礎不是不用學，而是用途換了。要從自己寫得出來，變成看得出哪裡會壞。第三，基本功現在不會順便長出來了。你得把它排進行事曆，定期拿掉 AI 找錯。畢竟知識可以超速，但判斷力還沒有人考過。<sigh>作者這個推論，真的讓我很有共鳴耶。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "to": "今晚的 breakpoint。第一，有 AI 時的練習分數，不能當成學會的證據。能直接拿答案的那組，閉卷考反而輸給沒用 AI 的人。第二，基礎還要學，只是用途換了：從寫得出來，換成看得出哪裡會壞。第三，以前順便練出來的基本功，現在要排進行事曆：讓 AI 只給提示，定期拿掉它，考一次找錯。知識可以超速，判斷力能不能，還沒有人考過。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "刪「很有共鳴耶」和嘆氣；刪開頭的反問；三點照前面講過的內容"
+  },
+  {
+   "from": "第三，以前順便練出來的基本功，現在要排進行事曆：讓 AI 只給提示，定期拿掉它，考一次找錯。",
+   "to": "第三，以前順便練出來的基本功，現在要排進行事曆。讓 AI 只給提示，定期拿掉它，考一次找錯。",
+   "reason": "句子太長"
+  },
+  {
+   "from": "現在要排進行事曆",
+   "to": "現在要另外排時間練",
+   "reason": "聽寫三次把「行事曆」聽成「形式裡、心思裡」"
+  }
+ ]
+}
