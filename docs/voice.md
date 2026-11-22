@@ -22,7 +22,7 @@
 | 每一集的成品 | `episodes/*/*.mp3`，40 集約 6.5 小時 | 最完整的「原本的聲音」，比參考錄音長得多 |
 | 每一集用的模型 | `episode.json` 的 `voice.model`，以及新增的 `voice.model_served`（實際回應的模型） | 事後查是哪一集開始變的 |
 | 每個 take 的請求與回應 | `out/segments/<voice>_<ep>/*.meta.json`（不進 git），交付時 `log.json` 複製成 `qa/tts_log.json` | 實際回應的模型、interaction id、文字、語氣 |
-| 聲紋走勢 | `voices/drift.json` | 每集跟參考錄音的相似度 |
+| 聲紋走勢 | 每集的 `episodes/<ep>/qa/voice_drift.json`，`match_voice.py drift` 印出全部 | 每集跟參考錄音的相似度 |
 
 `voices/references/` 和各集的 mp3 不能遺失。
 
@@ -30,7 +30,7 @@
 
 1. **合成時**：`make_podcast.py episode` 最後會印 `TTS model served`。如果跟 `gemini-3.8-flash-tts` 不一樣，先不要做母帶。
 2. **交付時**：`package_episode.py` 把 `qa/tts_log.json` 裡實際回應的模型寫進 `episode.json`，跟 `voice.model` 不一樣就警告。
-3. **交付後**：跑 `python3 tools/match_voice.py track episodes/<ep>`。它會量這集 mp3 跟參考錄音的聲紋相似度，寫進 `voices/drift.json`。如果比前 10 集的中位數低 0.03 以上，就會標出來。
+3. **交付後**：跑 `python3 tools/match_voice.py track episodes/<ep>`。它會量這集 mp3 跟參考錄音的聲紋相似度，寫進 `episodes/<ep>/qa/voice_drift.json`（每集一個檔，兩集平行做不會衝突；`python3 tools/match_voice.py drift` 看全部的走勢）。如果比前 10 集的中位數低 0.03 以上，就會標出來。
    - 基準線（2026-11-20 量 EP00–EP39）：0.885 到 0.910，中位數 0.894。EP00 是試作期，0.874。
    - 當時的量測尺度：同模型同聲線約 0.93，同聲線但隔一代模型約 0.87–0.90，不同聲線約 0.79–0.81（`match_voice.py` 開頭）。所以跟參考錄音比，0.03 的落差就值得去聽。這是排名用的訊號，最後還是要人耳判斷。
 4. **每季**：跑 `python3 tools/make_podcast.py voices`，更新 `registry.json` 裡的效期和模型。
@@ -44,6 +44,6 @@
 3. **不夠像的話，用舊聲線當底，在新模型上衍生新聲線**：建立新的 prompted voice，把 `base_voice` 設成舊的 D1。D1M1、D1M2 就是這樣做出來的。提示詞寫「保持同一個人、同樣的台灣口音」，多做幾個候選，用 `match_voice.py` 排名。
 4. **再不行**：用 `registry.json` 裡的原提示詞重新設計，或試內建聲線，一樣用 `match_voice.py` 排名，最後由人耳決定。
 5. **最後手段是聲音複製**：API 有 replicated voice，用一段錄音複製聲線，需要附同意錄音。2026-11 已經決定不走聲音複製（PIPELINE.md §9），如果要用，要節目擁有者重新決定。
-6. **換聲之後**：舊集不重錄，因為 mp3 和 sha256 已經在 RSS 裡。把新聲線的參考錄音加進 `voices/references/`，在 `voices/drift.json` 註明從哪一集開始換。
+6. **換聲之後**：舊集不重錄，因為 mp3 和 sha256 已經在 RSS 裡。把新聲線的參考錄音加進 `voices/references/`，在這份文件註明從哪一集開始換（`voice_drift.json` 的 `voice_id` 會跟著變，前 10 集的中位數只比同一個聲線）。
 
 自動評審判斷口音不可靠（recipe 第 7 步），所以最後要不要換、換成哪個，都由台灣母語者用耳朵聽了再決定。

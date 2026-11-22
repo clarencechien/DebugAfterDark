@@ -1,0 +1,11 @@
+{
+ "number": 45,
+ "voice_id": "voice_b3c8x0jsntqc",
+ "model": "gemini-3.8-flash-tts",
+ "model_served": "gemini-3.8-flash-tts",
+ "style": "v5",
+ "reference": "gemini-3.8-flash_d1-magnetic-night.flac",
+ "sim_reference": 0.8908,
+ "audio_sha256": "3f39149a5b1fc77971cd691d484c5085a886a6adca9684ed63722dc3d0628e32",
+ "flag": false
+}

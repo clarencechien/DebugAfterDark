@@ -1,10 +1,10 @@
 # imitator 2026 報告對照表與待製作清單
 
-更新：2026-11-21。共 154 份 2026 年的報告：已做 47、製作中 4、推薦 20、可做 32、不做 51。
+更新：2026-11-22。共 154 份 2026 年的報告，分成推薦、可做、不做；已做和製作中的集數用 `tools/progress.py` 看。
 
-這份是 podcast 唯一的選題與待製作清單：哪幾集做到哪一步、下一批做哪些報告。YouTube 頻道上的待辦（舊片改標題、補 AI 標示、縮圖、上傳 Action）在 `youtube/todo.json`，整體順序在 [`strategy.md`](strategy.md)，這裡不重複。
+這份是 podcast 唯一的選題清單：下一批做哪些報告。哪幾集做到哪一步用 `tools/progress.py` 看。YouTube 頻道上的待辦（舊片改標題、補 AI 標示、縮圖、上傳 Action）在 `youtube/todo.json`，整體順序在 [`strategy.md`](strategy.md)，這裡不重複。
 
-**什麼時候更新**：每集開工、定稿上架、影片版或 Short 上傳時改「製作中」；上架後搬到「已做」，再從「推薦的下一批」補上來。
+**什麼時候更新**：只在調整選題時改這份（推薦的順序、新報告、系列）。每集做到哪一步記在那一集的 `progress.json`，不寫在這裡；推薦表裡已經開工的報告，報表會自動跳過，不用從表上刪。
 
 - **來源**：imitator 的 `archive/report/`，加上只用 curl 推、不在 archive 的公開報告（`GET /v1/a` 列出，要 `IMITATOR_TOKEN`）。日期是報告的發佈或最後更新日；10-02 那一批是搬家日。
 - **狀態**：已做（集數）、製作中（集數）、推薦（下一批）、可做、不做（工具、mockup、旅遊、私人、自家產品、轉載、內部筆記、教材）。
@@ -13,24 +13,20 @@
 
 ## 製作中
 
-狀態：✅ 完成、🔶 進行中、⬜ 還沒做。EP38、EP39 在 Clarence 原本的 session 收尾；EP40 起每集在專案裡開一個 thread 做。
+**這張表不再手寫**，從每集自己的檔案現算，兩集平行做也不會在這份檔案衝突：
 
-| 集數 | 報告 | 音檔（第 1–8 步） | 試聽、定稿 | 進 feed | 影片版（第 9 步） | Short | 備註 |
-|---|---|---|---|---|---|---|---|
-| EP36 | [`credit-line-changed`](https://imitator.ai-apps.work/r/credit-line-changed) | ✅ | ✅ | ✅ 11/20 | 🔶 第一支影片版，做完手動上傳；RSS 匯入的那支已改私人 | ⬜ | 影片版實驗，見 `youtube/experiments.json` |
-| EP37 | [`nameless-made-famous`](https://imitator.ai-apps.work/r/nameless-made-famous) | ✅ | ✅ | ✅ 11/20 | ⬜（YouTube 用 RSS 版） | ✅ 11/20 `K6RKggrOqVo` | 11/27 看 Short 成效 |
-| EP38 | [`who-is-using`](https://imitator.ai-apps.work/r/who-is-using) | ✅ | ✅ 11/20 | ✅ 11/21 | ⬜ | ⬜ | 分層讀法番外一（報告 11/21 改名「番外一」並更新，節目用的是 11/19 版）；章節時間已用 `tools/chapters.py` 修正；`youtube` 標題與縮圖字已寫 |
-| EP39 | [`layers-of-llm`](https://imitator.ai-apps.work/r/layers-of-llm) | ✅ | ✅ 11/20 | ✅ 11/21 | ⬜ | ⬜ | 分層讀法上篇（上：EP38）；同上 |
-| EP40 | [`house-rules`](https://imitator.ai-apps.work/r/house-rules) | ✅ | ✅ 11/20 | ⏰ 11/22 08:00 排程 | ⬜ | ⬜ | 韓劇的中間層番外（上：EP37）；插隊在不讀之後之前 |
-| EP41 | [`gdp-service-ledger`](https://imitator.ai-apps.work/r/gdp-service-ledger) | ✅ | ✅ 11/20 | ⏰ 11/22 08:01 排程 | ⬜ | ⬜ | 原推薦 #5，插隊；用台股開場，目標聽眾是沒吃到 AI 紅利的人；報告 v0.2 資料到 11/20 |
-| EP42 | [`no-read-1`](https://imitator.ai-apps.work/r/no-read-1) | ✅ | ✅ 11/21 | ⏰ 11/23 08:00 排程 | ⬜ | ⬜ | 不讀之後 上篇；標題「Clean Code 的作者不讀 AI 的程式碼，那他讀什麼？」；Gemini 月上限，Gemini 那一半的驗收經 Clarence 同意跳過 |
-| EP43 | [`no-read-2`](https://imitator.ai-apps.work/r/no-read-2) | ✅ | ✅ 11/21 | ⏰ 11/23 08:01 排程 | ⬜ | ⬜ | 不讀之後 下篇（上：EP42）；標題「一個人一個月三千個 PR，她還看程式碼嗎？」；Gemini 月上限，Gemini 那一半的驗收經 Clarence 同意跳過 |
-| EP44 | [`no-read-3`](https://imitator.ai-apps.work/r/no-read-3) | ✅ | ✅ 11/21 | ⏰ 11/24 08:00 排程 | ⬜ | ⬜ | 不讀之後 第三篇（上：EP42、EP43）；標題「檢查交給機器，檢查錯了誰知道？」；兩篇來源是廠商寫自己的產品，節目有說；Modal 額度用完，挑選在本機 CPU |
-| EP45 | [`no-stock-in-farebox`](https://imitator.ai-apps.work/r/no-stock-in-farebox) | ✅ | ✅ 11/21 | ⏰ 11/24 08:01 排程 | ⬜ | ⬜ | 核票 v0.1（資料至 11/20）；標題「台股跌了快三成，機票飯店會變便宜嗎？」；Modal 額度用完，挑選在本機 CPU；12 月新數字出來後原文會出 v0.2，可考慮補一集 |
-| EP46 | [`practice-on-purpose`](https://imitator.ai-apps.work/r/practice-on-purpose) | ✅ | ✅ 11/22 | ⏰ 11/25 08:00 排程 | ⬜ | ⬜ | 知行筆記 實作篇（上：EP30、EP31）；標題「有了 AI，新手能超速追上老手嗎？」；原推薦 #1；「知行筆記」兩套辨識都聽成知心筆記，節目裡改說「知道的知，行動的行」 |
-| EP47 | [`who-is-using-micro`](https://imitator.ai-apps.work/r/who-is-using-micro) | ✅ | ✅ 11/22 | ⏰ 11/25 08:01 排程 | ⬜ | ⬜ | 分層讀法番外二（上：EP38、EP39）；標題「AI 月費一百美元，到底買到多少？」；原文作者是 Claude、比較的廠商包括 Anthropic，節目有說；v0.3 資料至 11/20；Modal 額度用完，挑選在本機 CPU |
+```bash
+python3 tools/progress.py          # 製作中
+python3 tools/progress.py --done   # 已做（依集數）
+```
 
-「進 feed」是 `episode.json` 設成 `status: final` 並填 `published`，merge 到 main 就會發佈（先給 Clarence 看再 commit）。EP36、EP37 的影片版和 Short 做完就搬到「已做」。
+- 集數、報告、音檔、進 feed 從 `episodes/<ep>/episode.json` 推（`status: final`＋`published`：未來是 ⏰ 排程，過了是 ✅）。
+- 試聽、影片版、Short、備註寫在那一集的 `episodes/<ep>/progress.json`；影片版和 Short 都做完就設 `"done": true`，那集就不再列在製作中。欄位說明在 `tools/progress.py` 開頭。
+- 每週的 YouTube 報表（`yt_report.py`）「待製作」區塊也是讀同一份資料。
+
+**每集的 PR 不改這份檔案**（也不改其他共用檔），只動 `episodes/<ep>/` 底下。這份檔案只在調整選題（推薦、可做、不做、系列）時另外改。
+
+狀態：✅ 完成、🔶 進行中、⬜ 還沒做、⏰ 已排程。EP40 起每集在專案裡開一個 thread 做。
 
 ### 每集的步驟
 
@@ -41,7 +37,7 @@
 | 1. 選題、草稿、素材、`episode.json`（含 `youtube` 欄位，照 [`hooks.md`](hooks.md)） | agent | `draft.json`、`sources/` |
 | 2–3. 改寫、逐段核對 | agent | `script.json`，修正記在 `manual_edits` |
 | 4–7. 語音、挑選、母帶、驗收 | agent | `<ep>.mp3`、`qa/` 全部通過 |
-| 8. 交付：`package_episode.py`，章節時間用 `tools/chapters.py` | agent | `episode.json` 有長度、bytes、sha256、章節 |
+| 8. 交付：`package_episode.py`，章節時間用 `tools/chapters.py` | agent | `episode.json` 有長度、bytes、sha256、章節；`progress.json` 記試聽與備註 |
 | 試聽 | **Clarence** | 說可以，或指出要重錄的段落 |
 | 上架：`status: final`、填 `published` | agent，Clarence 同意後 commit | 網站與 feed 出現這一集；YouTube 約一天內用 RSS 匯入 |
 | 9. 影片版（`make_video.py`，還在用 EP36 開發） | agent | `video/` 產出，Clarence 看過預覽與縮圖 |
@@ -129,50 +125,7 @@
 
 ## 已做（依集數）
 
-| 集數 | 節目標題 | 報告 | 狀態 |
-|---|---|---|---|
-| EP00 | 嘿，還醒著嗎？ | — | 上架 |
-| EP01 | 記住了第一招，漏掉了第五招 | [`fifth-move`](https://imitator.ai-apps.work/r/fifth-move) | 上架 |
-| EP02 | 第五招的實驗：跑從來不是問題，看才是 | [`harness-probe-report`](https://imitator.ai-apps.work/r/harness-probe-report) | 上架 |
-| EP03 | 每加一分，就扣一分 | [`funclass-cost-case-study`](https://imitator.ai-apps.work/r/funclass-cost-case-study) | 上架 |
-| EP04 | 帳單響了之後，你手上有沒有地圖 | [`bill-to-code-map`](https://imitator.ai-apps.work/r/bill-to-code-map) | 上架 |
-| EP05 | 撞礁是遲早的，會不會沉才是問題 | [`reef-chart`](https://imitator.ai-apps.work/r/reef-chart) | 上架 |
-| EP06 | 同一隻鬼，換了五張臉 | [`ghost-story-five-faces`](https://imitator.ai-apps.work/r/ghost-story-five-faces) | 上架 |
-| EP07 | 台灣錢淹腳目，這次淹在別人腳下 | [`taiwan-money-again`](https://imitator.ai-apps.work/r/taiwan-money-again) | 上架 |
-| EP08 | 無限的是 token，有限的是驗收 | [`unlimited-token-report`](https://imitator.ai-apps.work/r/unlimited-token-report) | 上架 |
-| EP09 | 一百萬顆 CPU，是用來驗的 | [`million-cores-report`](https://imitator.ai-apps.work/r/million-cores-report) | 上架 |
-| EP10 | 還剩幾天：Huntley 的賭注 | [`huntley-18-months`](https://imitator.ai-apps.work/r/huntley-18-months) | 上架 |
-| EP11 | 八成要刪掉：回頭看 2026 | [`agent-guide-2026h2`](https://imitator.ai-apps.work/r/agent-guide-2026h2) | 上架 |
-| EP12 | 你聽過的台股必勝法 | [`tw-stock-winner`](https://imitator.ai-apps.work/r/tw-stock-winner) | 上架 |
-| EP13 | 公司發可轉債，是利多還是警訊？ | [`cb-story`](https://imitator.ai-apps.work/r/cb-story) | 上架 |
-| EP14 | 門沒換，只是敲門的變多了 | [`91app-breach-findings`](https://imitator.ai-apps.work/r/91app-breach-findings) | 上架 |
-| EP15 | 不是被打敗，是被賣掉的 | [`japan-white-goods-transfer`](https://imitator.ai-apps.work/r/japan-white-goods-transfer) | 上架 |
-| EP16 | 加薪留不住 | [`delivery-pay-floor`](https://imitator.ai-apps.work/r/delivery-pay-floor) | 上架 |
-| EP17 | 野心的單位變小了 | [`ambition-unit`](https://imitator.ai-apps.work/r/ambition-unit) | 上架 |
-| EP18 | 「自研」是一個光譜 | [`ziyan-guangpu`](https://imitator.ai-apps.work/r/ziyan-guangpu) | 上架 |
-| EP19 | 錢不重要之後，誰握著產能 | [`ownership-token`](https://imitator.ai-apps.work/r/ownership-token) | 上架 |
-| EP20 | AI 熄火了嗎？四個月後的複檢 | [`ai-premium-tw-report-2026-11`](https://imitator.ai-apps.work/r/ai-premium-tw-report-2026-11) | 上架 |
-| EP21 | 抓得到的，都不是人味 | [`catchable-not-human`](https://imitator.ai-apps.work/r/catchable-not-human) | 上架 |
-| EP22 | 催你學的，已經內建了 | [`fomo-flyer`](https://imitator.ai-apps.work/r/fomo-flyer) | 上架 |
-| EP23 | 門牌寫著內部的門 | [`91app-inner-doors`](https://imitator.ai-apps.work/r/91app-inner-doors) | 上架 |
-| EP24 | 月租六萬住六千萬，你是盤子嗎？ | [`rent-ratio-or-scale`](https://imitator.ai-apps.work/r/rent-ratio-or-scale)、[`bysq-report-rent-vs-buy`](https://imitator.ai-apps.work/r/bysq-report-rent-vs-buy) | 上架 |
-| EP25 | 一千萬夠不夠，先問地板有多硬 | [`retire-floor-basics`](https://imitator.ai-apps.work/r/retire-floor-basics)、[`retire-floor-playbook`](https://imitator.ai-apps.work/r/retire-floor-playbook)、[`bysq-report-tw-case`](https://imitator.ai-apps.work/r/bysq-report-tw-case) | 上架 |
-| EP26 | 繳了二十八年，家人只領到九萬八 | [`three-pensions-plain`](https://imitator.ai-apps.work/r/three-pensions-plain)、[`labor-insurance`](https://imitator.ai-apps.work/r/labor-insurance) | 上架 |
-| EP27 | 我不告訴你，但你會相信 | [`zkp-report`](https://imitator.ai-apps.work/r/zkp-report) | 上架 |
-| EP28 | AI 來了，股市這次不一樣嗎？ | [`same-ledger`](https://imitator.ai-apps.work/r/same-ledger) | 上架 |
-| EP29 | 同梯不同命？同一個起點，五年差多少 | [`0050-salary-five-years`](https://imitator.ai-apps.work/r/0050-salary-five-years) | 上架 |
-| EP30 | 一天修好人生？兩億人讀過，只有三樣有效 | [`dankoe-one-day`](https://imitator.ai-apps.work/r/dankoe-one-day) | 上架 |
-| EP31 | AI 幫你做完了，你知道它做對了嗎？ | [`knowing-is-dear`](https://imitator.ai-apps.work/r/knowing-is-dear) | 上架 |
-| EP32 | 還沒上市，手機版就先被抄了 | [`slotbound-case`](https://imitator.ai-apps.work/r/slotbound-case) | 上架 |
-| EP33 | 一句話做一個遊戲，帳單五百五十美元 | [`slotbound-case-2`](https://imitator.ai-apps.work/r/slotbound-case-2) | 上架 |
-| EP34 | NVIDIA 四年漲十倍，今年卻輸給大盤 | [`winners-win-themselves`](https://imitator.ai-apps.work/r/winners-win-themselves) | 上架 |
-| EP35 | 存股變飆股：0056 今年漲六成，股息是多出來的錢嗎？ | [`not-extra-money`](https://imitator.ai-apps.work/r/not-extra-money) | 上架 |
-| EP36 | 韓劇最紅的這一年，為什麼要政府拿一兆韓圜救命？ | [`credit-line-changed`](https://imitator.ai-apps.work/r/credit-line-changed) | 上架 |
-| EP37 | 《黑白大廚》全球第一，做節目的公司卻重整了 | [`nameless-made-famous`](https://imitator.ai-apps.work/r/nameless-made-famous) | 上架 |
-| EP38 | 美國放行了，六十萬顆晶片為什麼還卡在香港？ | [`who-is-using`](https://imitator.ai-apps.work/r/who-is-using) | 上架 |
-| EP39 | 中國 AI 追上美國了嗎？差十五年，也只差四個月 | [`layers-of-llm`](https://imitator.ai-apps.work/r/layers-of-llm) | 上架 |
-| EP40 | 大家叫他 God東民，規則卻沒有一條是他寫的 | [`house-rules`](https://imitator.ai-apps.work/r/house-rules) | 排程 11/22 |
-| EP41 | 台股熱、GDP 破一成，巷口的店為什麼說很慘？ | [`gdp-service-ledger`](https://imitator.ai-apps.work/r/gdp-service-ledger) | 排程 11/22 |
+由 `python3 tools/progress.py --done` 從各集 `episode.json` 產生（標題是 feed 上現在的標題；一集用了多份報告時寫在 `progress.json` 的 `also_reports`）。
 
 另外標已做、但沒有自己一集的：[第五個錯，和漏掉的第六個 — 外送專法篇二校](https://imitator.ai-apps.work/r/second-read)（EP16、EP17 說明欄更正）、[AI 溢酬:一般人版報告 — 論文、分析師與台股實證](https://imitator.ai-apps.work/r/ai-premium)（EP20 的背景資料）。
 
