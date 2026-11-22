@@ -103,12 +103,41 @@ ASR_MODELS = {
     "breeze": os.environ.get("BREEZE_CT2", "/home/user/models/breeze-asr-25-ct2-int8"),
     "whisper": "large-v3-turbo",
     "breeze-modal": "modal",   # same Breeze model on a Modal GPU, tools/modal_breeze.py
+    "breeze-cloud": "colab",   # Colab GPU first (tools/colab_remote.py), then Modal, then the local CPU (2026-11-22)
 }
 ASR = "whisper"
 
 BEAM = 5   # beam search width; 1 = greedy, several times faster on CPU (see docs/recipe.md step 5)
 
+def cloud_transcribe(paths):
+    """--asr breeze-cloud: Colab L4 (Modal's spend limit kept running out, 2026-11-20/22), then Modal, then this CPU.
+    Same Breeze int8 model and decoding everywhere; only the device differs."""
+    global ASR
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    try:
+        from colab_remote import transcribe_remote as colab
+        return colab(paths, beam=BEAM)
+    except Exception as e:   # ColabError, CLI or network trouble: never lose the run
+        print(f"  breeze-cloud: Colab failed ({type(e).__name__}: {str(e)[:200]}), trying Modal")
+    if os.environ.get("modal"):
+        try:
+            from modal_breeze import transcribe_remote as modal   # retries each batch, then falls back to the CPU itself
+            try:
+                return modal(paths, beam=BEAM)
+            finally:
+                ASR = "breeze-cloud"   # its CPU fallback sets ASR to "breeze"; keep later calls on Colab first
+        except Exception as e:   # e.g. ResourceExhaustedError: workspace billing cycle spend limit reached
+            print(f"  breeze-cloud: Modal failed ({type(e).__name__}: {str(e)[:200]}), using the local CPU")
+    ASR = "breeze"
+    try:
+        return whisper_transcribe(paths)
+    finally:
+        ASR = "breeze-cloud"
+
+
 def whisper_transcribe(paths):
+    if ASR == "breeze-cloud":
+        return cloud_transcribe(paths)
     if ASR == "breeze-modal":   # the slow step on a cloud GPU (tools/modal_breeze.py), same model and decoding
         sys.path.insert(0, str(Path(__file__).resolve().parent))
         from modal_breeze import transcribe_remote

@@ -23,7 +23,7 @@ within --sim-margin of the best candidate, and spectral centroid must be within 
 candidate to the episode median (brightness jumps were the most audible drift).
 The winner is copied to <segment>.wav and the choice recorded in select_log.json.
 
-  python3 tools/select_takes.py --script episodes/<ep>/script.json --segments out/segments/D1_<ep> --asr breeze \
+  python3 tools/select_takes.py --script episodes/<ep>/script.json --segments out/segments/D1_<ep> --asr breeze-cloud \
           --terms Ping,pong --consistency --neighbour
 """
 import argparse, json, shutil, sys
@@ -118,7 +118,8 @@ def main(a):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); ap.add_argument("--script", required=True); ap.add_argument("--segments", required=True)
-    ap.add_argument("--asr", default="breeze", choices=["breeze", "whisper", "breeze-modal"])
+    ap.add_argument("--asr", default="breeze-cloud", choices=["breeze", "whisper", "breeze-modal", "breeze-cloud"],
+                    help="breeze-cloud: Colab GPU, then Modal, then local CPU (2026-11-22)")
     ap.add_argument("--tolerance", type=float, default=0.012, help="CER margin within which takes count as equally clear")
     ap.add_argument("--reuse", action="store_true", help="reuse transcripts from an earlier select_log.json")
     ap.add_argument("--consistency", action="store_true", help="also require similar voice and brightness across segments")

@@ -185,13 +185,20 @@ python3 tools/make_podcast.py episode --voice D1 --script episodes/<ep>/script.j
 
 ```bash
 python3 tools/select_takes.py --script episodes/<ep>/script.json --segments out/segments/D1_<ep> \
-  --asr breeze-modal --consistency --neighbour
+  --asr breeze-cloud --consistency --neighbour
 ```
+
+`--asr breeze-cloud`（2026-11-22 起，也是預設）依序試：**Colab L4 → Modal → 本機 CPU**，前一個失敗才換下一個，同一個模型和解碼設定。
+Colab 那段是 `tools/colab_remote.py`：開一台 L4（沒貨就 A100）、上傳生成檔、在 VM 上轉好模型、3 條執行緒轉寫、下載結果，最後一定關機。
+EP46 切 32 段（11.7 分鐘音檔）整套 2 分 28 秒（開機 8 秒、上傳 22 秒、裝套件加轉模型 57 秒、轉寫 30 秒），約 0.1 運算單元；
+3 條執行緒和 1 條的轉寫文字 32/32 相同。帳號餘額看 `colab --auth=adc usage`（11/22 為 200 單元，L4 每小時 1.94）。
+憑證是環境變數 `COLAB_ADC_JSON`，CLI 缺的話會自己 `uv tool install google-colab-cli`。
+只想用 Modal 時用 `--asr breeze-modal`，以下是 Modal 的說明。
 
 `--asr breeze-modal` 把轉寫送到 Modal 的 L4 GPU（`tools/modal_breeze.py`）：同一個 Breeze int8 模型、同樣的解碼設定（zh、beam 5、VAD、
 時間戳超出音檔時的重試），只有裝置不同。EP10 的 30 次生成在 GPU 上重挑，10 段選中的版本跟 CPU 完全相同；挑選 79 秒，本機 22 分鐘。
 每批 12 個檔同時送出，每批最多等 600 秒、失敗重試一次，還是失敗就在本機 CPU 轉寫那一批，所以網路斷了也不會丟掉整次執行。
-沒有 Modal 時改用 `--asr breeze`（本機）。Colab T4 也跑得通，但一集慢約 5 分鐘，而且 19 段裡有 3 段會選到不同的生成，只當備案：見 [`docs/colab-vs-modal.md`](colab-vs-modal.md)（2026-11-18）。
+只用本機時改 `--asr breeze`。Colab 不用 T4：11/18 那次 T4 有 3/19 段選到跟 Modal 不同的生成，見 [`docs/colab-vs-modal.md`](colab-vs-modal.md)。
 
 **Modal 等開機（2026-11-10）**：EP16 挑選 9 分鐘，第一批在開始後 412 秒才回來，GPU 實際只算了 37 秒，其餘是在排 L4；
 本機的聲紋、抖動、亮度合計約 30–44 秒，不是瓶頸，所以聲紋不搬上 Modal。現在 `gpu=["L4", "A10G", "T4"]`（排不到 L4 就用別的），
@@ -239,7 +246,7 @@ python3 tools/make_podcast.py master --voice D1 --tag <ep> --script episodes/<ep
 ## 7. 驗收
 
 ```bash
-python3 tools/stt_check.py --asr breeze-modal --from-select --script episodes/<ep>/script.json \
+python3 tools/stt_check.py --asr breeze-cloud --from-select --script episodes/<ep>/script.json \
   --segments out/segments/D1_<ep> --out episodes/<ep>/qa/stt_check.json
 python3 tools/consistency_check.py --script episodes/<ep>/script.json \
   --segments out/master/norm_D1_<ep> --out episodes/<ep>/qa/consistency.json
@@ -269,7 +276,7 @@ python3 tools/gemini_check.py terms --segments out/segments/D1_<ep> --script epi
 
 ```bash
 python3 tools/make_podcast.py episode --voice D1 --script episodes/<ep>/script.json --tag <ep> --only <段> --add-takes 3
-python3 tools/select_takes.py --script episodes/<ep>/script.json --segments out/segments/D1_<ep> --asr breeze-modal --consistency --neighbour --reuse
+python3 tools/select_takes.py --script episodes/<ep>/script.json --segments out/segments/D1_<ep> --asr breeze-cloud --consistency --neighbour --reuse
 ```
 
 **自動檢查都不能判斷口音**：Gemini 評審判斷台灣腔與大陸腔跟台灣母語者相反。口音、磁性、整體感覺只能人耳。
