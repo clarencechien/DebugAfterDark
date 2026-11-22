@@ -2,7 +2,9 @@
 
 Runs ON the Colab VM (uploaded with `colab upload`, started with `colab exec`):
   python colab_breeze.py --setup                      # pip install + convert Breeze to CTranslate2 int8 (same as the Modal image)
-  python colab_breeze.py --in /content/takes --out /content/colab_breeze.json
+  python colab_breeze.py --in /content/takes --out /content/colab_breeze.json [--workers 3]
+
+Since 2026-11-22 tools/colab_remote.py drives this from select_takes.py / stt_check.py (--asr breeze-cloud).
 
 Same model, conversion and decoding as modal_breeze.Breeze.transcribe: language zh, beam 5, VAD on, no prompt, and the
 same retry when timestamps run past the end of the audio; compute_type int8_float16. Only the GPU (Colab T4) and the
@@ -44,16 +46,19 @@ def cuda12_libs():
     os.execve(sys.executable, [sys.executable] + sys.argv, env)
 
 
-def transcribe(indir, out, beam=5):
+def transcribe(indir, out, beam=5, workers=1):
     cuda12_libs()
+    from concurrent.futures import ThreadPoolExecutor
     from faster_whisper import WhisperModel
     t0 = time.time()
-    m = WhisperModel(MODEL_DIR, device="cuda", compute_type="int8_float16")
+    # num_workers lets several threads decode at once on one GPU (Modal gets the same effect from three parallel batches)
+    m = WhisperModel(MODEL_DIR, device="cuda", compute_type="int8_float16", num_workers=workers)
     load_s = round(time.time() - t0, 1)
     gpu = subprocess.run(["nvidia-smi", "--query-gpu=name", "--format=csv,noheader"], capture_output=True, text=True).stdout.strip()
     res, t1 = {}, time.perf_counter()
     files = sorted(glob.glob(os.path.join(indir, "**", "*.wav"), recursive=True))
-    for path in files:
+
+    def one(path):
         name = os.path.splitext(os.path.relpath(path, indir))[0]   # keep the episode folder: s00_open.take0 is in every episode
         with wave.open(path) as w:
             dur = w.getnframes() / w.getframerate()
@@ -64,7 +69,10 @@ def transcribe(indir, out, beam=5):
             segs = list(m.transcribe(path, condition_on_previous_text=False, temperature=0.0, **kw)[0])
         res[name] = {"text": "".join(s.text for s in segs), "segments": [(round(s.start, 2), s.text) for s in segs],
                      "dur_s": round(dur, 2), "proc_s": round(time.perf_counter() - ts, 2)}
-    meta = {"gpu": gpu, "load_s": load_s, "files": len(files), "gpu_s": round(time.perf_counter() - t1, 1)}
+
+    with ThreadPoolExecutor(workers) as ex:
+        list(ex.map(one, files))
+    meta = {"gpu": gpu, "load_s": load_s, "files": len(files), "workers": workers, "gpu_s": round(time.perf_counter() - t1, 1)}
     if os.path.exists("/content/colab_setup.json"):
         meta.update(json.load(open("/content/colab_setup.json")))
     json.dump({"meta": meta, "results": res}, open(out, "w"), ensure_ascii=False)
@@ -75,4 +83,5 @@ if __name__ == "__main__":
     if "--setup" in sys.argv:
         setup()
     else:
-        transcribe(sys.argv[sys.argv.index("--in") + 1], sys.argv[sys.argv.index("--out") + 1])
+        workers = int(sys.argv[sys.argv.index("--workers") + 1]) if "--workers" in sys.argv else 1
+        transcribe(sys.argv[sys.argv.index("--in") + 1], sys.argv[sys.argv.index("--out") + 1], workers=workers)

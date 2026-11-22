@@ -198,7 +198,9 @@ def cmd_judge(a):
 def cmd_episode(a):
     c = client(); sc = load_script(a.script); d = seg_dir(a); d.mkdir(parents=True, exist_ok=True)
     vid = voice_id(a.voice); log = []
-    if os.environ.get("modal"):   # selection runs Breeze on Modal next; start its container now (2026-11-10)
+    # Selection runs Breeze on Modal next; start its container now (2026-11-10). Since 2026-11-22 Colab goes first
+    # (--asr breeze-cloud) and Modal is only the fallback, so don't pay for an idle Modal container when Colab is set up.
+    if os.environ.get("modal") and not os.environ.get("COLAB_ADC_JSON"):
         try:
             from modal_breeze import warm_remote
             warm_remote()
