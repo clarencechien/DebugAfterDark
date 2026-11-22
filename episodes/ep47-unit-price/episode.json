@@ -1,0 +1,65 @@
+{
+ "id": "ep47-unit-price",
+ "number": 47,
+ "type": "full",
+ "guid": "debug-after-dark:ep47",
+ "title": "EP47 AI 月費一百美元，到底買到多少？",
+ "description": "十一月二十號網路上流傳一張圖：Claude 每月一百美元的方案，額度用滿，照 API 公開牌價算可以抵 4,640 美元的量；十月有人量到 5,725 美元。月費一直是一百美元，可是一百美元買到多少，價目表上沒有寫。這集回答兩個問題：月費到底買到多少，為什麼事前算不出來。\n\n00:00 Claude 月費 100 美元，用滿可抵 4,640 美元\n00:53 分層讀法番外二：作者是 Claude，中立性要打折\n01:41 倍數怎麼量：把額度表從零打到滿\n02:42 同一個方案，量出 34 到 59 倍\n03:30 同一個工具，三種賣法：Max、Team、Enterprise\n04:28 按量付費的人，一個月實際花多少\n05:19 廠商為什麼一直調：證據最弱的一段\n06:15 公平使用：四家一年半改了 26 次\n07:07 四家都有的規則只有兩條\n07:52 接回番外一：兩篇接得上的地方都在帳號\n08:56 今晚的 breakpoint\n\n數字的出處與但書：\n・資料截至 2026-11-20（原文 v0.3）。額度每幾週就動一次，任何倍數過一個月都可能不成立。\n・原文由 Claude（Anthropic 開發的 AI）撰寫，比較的四家廠商包括 Anthropic，而且它的倍數最高；原文自己說中立性應打折。本集也由 AI 改寫與合成。\n・4,640 美元（46.4 倍）是 Paweł Huryn 11/19 的單次量測，假設整週額度都用得到、不含方案附的 API credits；5,725 美元是 SemiAnalysis 10/5 的估計，原文付費，讀的是其他媒體的轉述。\n・「34 到 59 倍」是幾組量測放在一起，量測日、cache 比例、方案都不同；倍數用 API 牌價計，牌價不是廠商的成本。\n・企業平均每月 150 到 250 美元出自 Anthropic 文件；「九成不到 660 美元」「超過約 80 美元 Max 較便宜」是原文的推算（假設每月 22 個活躍日），只適用按量付費者現在的用量。\n・Team 席的每週額度官方沒有公布，原文找不到任何人量過。\n・「26 個動作，收 8、放 9」的方向是原文自己判的；SemiAnalysis「訂閱約一成營收、四成以上算力」是單一機構的估計。\n・提到價格與方案的地方都不是推薦哪一家。\n\n原文：〈月租沒變，單價在改〉分層讀法番外二 https://imitator.ai-apps.work/r/who-is-using-micro\n同系列：番外一〈貨到哪，票開給誰，誰在用〉https://imitator.ai-apps.work/r/who-is-using\n主要來源：\n・Paweł Huryn：subscription-multipliers 量測方法 https://github.com/phuryn/experiments/tree/main/subscription-multipliers\n・Anthropic：Claude 價目頁 https://claude.com/pricing\n・Anthropic：Claude Code 成本文件 https://code.claude.com/docs/en/costs\n・SemiAnalysis：Anthropic Subscriptions Offer 5x+ More Value Than OpenAI https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x\n・TechCrunch：Anthropic 加每週上限（2025-07-28）https://techcrunch.com/2025/07/28/anthropic-unveils-new-rate-limits-to-curb-claude-code-power-users/\n\n今晚的 breakpoint：\n1. 訂閱用滿，換算成 API 價格是月費的幾十倍，但那是某一天量到的天花板。\n2. 同一個工具，個人、Team、Enterprise 是三種單價，只有 Enterprise 事前算得出來。\n3. 月費沒變，變的是月費買到的量；看到價目頁上的幾倍，先問基準是多少。\n\n上一集（同系列）：EP38〈美國放行了，六十萬顆晶片為什麼還卡在香港？〉、EP39〈中國 AI 追上美國了嗎？差十五年，也只差四個月〉\n分層讀法番外二。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "who-is-using-micro",
+ "source_url": "https://imitator.ai-apps.work/r/who-is-using-micro",
+ "status": "final",
+ "related": [
+  "ep38-who-is-using",
+  "ep39-layers-of-llm"
+ ],
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5",
+  "model_served": "gemini-3.8-flash-tts"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "series": "分層讀法番外二（上：EP38、EP39）",
+ "report_version": "2026-11-21 v0.3",
+ "audio": {
+  "file": "ep47-unit-price.mp3",
+  "bytes": 9482110,
+  "sha256": "1a81802c9918b89eccc2daa42d498fdd861d09d42cd63e506a70b685ff3c964f",
+  "duration_s": 592.6,
+  "duration": "9:52",
+  "lufs": -16.9
+ },
+ "youtube": {
+  "title": "Claude 月費 100 美元，用滿可抵 4,640 美元：AI 訂閱的額度為什麼一直在改",
+  "thumbnail": [
+   [
+    "Claude 月費 $100",
+    "用滿抵 $4,640"
+   ],
+   [
+    "AI 吃到飽",
+    "額度不公布"
+   ]
+  ],
+  "synthetic_content": true
+ },
+ "published": "2026-11-25T08:01:00+08:00",
+ "qa": {
+  "breeze_cer_mean": 0.031,
+  "gemini_cer_mean": 0.013,
+  "jitter_semitones": 0.223,
+  "gates": "錯誤率 3.1%、音高跳動 0.223 都通過；聲紋漂移 0.889（前 10 集中位數 0.891）；s00、s03 語速 +12%，s09 慢約一成",
+  "retakes": "「帳單抬頭」「一格」兩套辨識都聽成「態度」「一個」，改成「三種賣法」「一種」，s01、s04、s05、s09 重錄；「照牌價」兩套都聽成「招牌價」，s10 改成「換算成 API 的價格」重錄；s02、s03、s06、s08、s09 各補 3 次壓音高跳動",
+  "manual_pick": "s03 take1、s09 take1、s10 take0（音高或句尾截斷，見 select_log 的 manual_override）；其餘照 steady_pick",
+  "both_wrong": "s02「那張圖」念成「這張圖」、Paweł 念成 Pavel；s06「這是一家」念成「這只有一家」；s09「沒有公開說法」念成「公開做法」；s10 Ping 被聽成 bing（Gemini terms 判英文念法）",
+  "twtone": "qa/twtone.md：沒有超過基準的項目",
+  "terms": "Claude、Claude Code、API、Max、Pro、Team、Enterprise、SemiAnalysis、OpenAI、xAI 照英文念；API 在 cold open 解釋一次"
+ }
+}

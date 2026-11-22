@@ -1,0 +1,140 @@
+{
+ "segment": "s08_common",
+ "position": "第 9 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "60eb50f80c9a29214823df2cf41ca1bddb338c30065965e6e40f923caf56b60c",
+ "previous_context": "所以你發現了嗎？大家每個月繳的月費其實都沒變，但你買到的算力，一直在默默縮水或膨脹。",
+ "original": {
+  "text": "那四家有沒有共同的規則？報告數下來，只有兩條：都設每週上限，都不公布它有多大。價目頁上寫的，都是「Pro 的五倍」「Plus 的二十倍」這種相對的倍數，基準是多少，沒有人講。所以外面才需要有人拿額度表去量。還有一件事：倍數的分子是 API 牌價，牌價也是廠商自己訂的。月費、額度、牌價，三個數字都是廠商定的，只有額度不公布。跨廠商比倍數，比到的有一大塊，其實是各家的定價方式。這也是為什麼這份報告不說哪一家的一百美元比較划算。",
+  "lint": {
+   "chars": 209,
+   "precise_numbers": [
+    "二十",
+    "一百"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 25.1,
+   "max_sentence_len": 45,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說到算力，那這四家到底有沒有共同規則？\n這份報告比對下來，其實只有兩條喔。\n第一，全部都設了每週上限。\n第二，全部都不公布這個上限有多大。<laugh>\n你去看官網價目頁，上面都只寫幾倍。\n像是某個方案的五倍，還是幾十倍。\n可是最基本的基準是多少？根本沒人講。\n<short pause>\n而且算倍數的分子，是 API 牌價。\nAPI 就是按用量計費的介面。\n牌價也是廠商自己訂的。\n所以月費、額度跟牌價，只有額度被藏起來。\n跨廠商比倍數，比的其實只是定價方式啦。\n這也是為什麼這份報告，不直接說哪家划算。",
+   "lint": {
+    "chars": 217,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 14.5,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那這四大家有沒有共通的規則？\n其實這份報告數下來，只有兩條耶。<short pause>\n第一是都設了每週上限。\n第二是都不公布上限有多大。\n官網價目頁上，只寫著幾倍幾倍。\n但基準是多少？根本沒有人講嘛。<sigh>\n所以外面才需要有人去實測。\n算倍數要用的 API，是按用量計費的介面。\n連它的牌價，也是廠商自己開的。\n月費、額度跟牌價，全是廠商說了算。\n偏偏最關鍵的額度，大家就是看不到。\n遇到這種定價方式，我真的只能苦笑。<laugh>\n所以跨廠商比倍數，其實比的是各家的算盤。\n這份報告才沒辦法告訴你，\n哪一家的一百美元比較划算啦。",
+   "lint": {
+    "chars": 229,
+    "precise_numbers": [
+     "一百"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 25,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那這四大廠商到底有沒有共同的規則？\n報告裡說，比對下來其實只有兩條。\n大家都設每週上限。\n而且大家都不公布上限有多大。<short pause>\n這不是很幽默嗎？\n你在價目表上看到的，永遠只寫著幾倍幾倍。\n可是底層的基準是多少，根本沒人講。\n算倍數用的 API 牌價，也是廠商自己訂的。\nAPI 就是按用量計費的介面啦。\n你想想看，月費、額度跟牌價，\n全部由廠商說了算，偏偏只有額度不公布。\n所以跨廠商去比划不划算，\n你比到的其實只是各家的定價方式嘛。",
+   "lint": {
+    "chars": 198,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.0,
+    "max_sentence_len": 32,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "說到算力，那這四家到底有沒有共同規則？",
+   "to": "那這四家有沒有共同的規則？",
+   "reason": "照原文、精簡"
+  },
+  {
+   "from": "<laugh>你去看官網價目頁，上面都只寫幾倍。像是某個方案的五倍，還是幾十倍。可是最基本的基準是多少？根本沒人講。<short pause>",
+   "to": "價目頁上寫的，都是「Pro 的五倍」這種倍數。可是基準是多少，沒有人講。<short pause>所以外面才需要有人拿額度表去量。",
+   "reason": "照原文；拿掉笑聲"
+  },
+  {
+   "from": "而且算倍數的分子，是 API 牌價。API 就是按用量計費的介面。牌價也是廠商自己訂的。所以月費、額度跟牌價，只有額度被藏起來。跨廠商比倍數，比的其實只是定價方式啦。",
+   "to": "還有，算倍數用的 API 牌價，也是廠商自己訂的。月費、額度、牌價，三個都是廠商定的，只有額度不公布。跨廠商比倍數，比到的有一大塊，其實是各家的定價方式。",
+   "reason": "原文是「有一大塊」，不是「只是」"
+  }
+ ]
+}

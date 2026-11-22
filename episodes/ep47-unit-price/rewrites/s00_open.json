@@ -1,0 +1,158 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 11 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "fc44a8b8c54f8febf7581f44c5dfbfeda8888395a1d37290b26cf96df22377cc",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "十一月二十號，網路上流傳一張圖：Claude 每個月一百美元的方案，額度用滿，照 API 的公開牌價算，可以抵四千六百四十美元的量。同一個方案，十月有人量到五千七百多美元。這段時間月費一直是一百美元，沒有動過。月費印在價目表上，可是一百美元到底買到多少，價目表上沒有寫。這份報告的標題是：月租沒變，單價在改。這集要回答兩個問題：一百美元的月費到底買到多少，還有，為什麼這個答案事前算不出來。",
+  "lint": {
+   "chars": 192,
+   "precise_numbers": [
+    "十一",
+    "二十",
+    "一百",
+    "四千六百四十",
+    "五千七百",
+    "一百",
+    "一百",
+    "一百"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 31.0,
+   "max_sentence_len": 62,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你有想過你的 AI 訂閱到底買到了什麼嗎？十一月下旬網路上流傳了一張圖。Claude 一個月一百美元的方案，如果把額度全部用滿，換算成 API，也就是按用量計費的介面，竟然可以抵四千六百四十美元的量。<short pause>重點來了，上個月有人量到五千多美元耶。其實月費一直都是一百美元，完全沒動過。可是你每個月到底買到了多少額度？價目表上根本沒寫，而且一直在改。這份報告說得很傳神喔。月租沒變，單價在改。所以這一百美元到底買到了多少？為什麼你事前完全算不出來？",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [
+     "十一",
+     "一百",
+     "四千六百四十",
+     "五千",
+     "一百",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 18.5,
+    "max_sentence_len": 61,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "你有看過那張在社群上流傳的截圖嗎？<short pause>Claude 每個月一百美元的方案，額度用滿，可以抵四千六百四十美元的量。對，這是換算成 API 的牌價，也就是按用量計費的介面。十月的時候，甚至有人量出五千七百多美元耶。更扯的是，這段時間月費明明完全沒變。價目表印了一百美元，但你買到的額度多大，上面根本沒寫。這份報告說得很白：月租沒變，單價在改。所以這一百美元到底買到了多少？<short pause>為什麼這個答案，你事前永遠算不出來？",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [
+     "一百",
+     "四千六百四十",
+     "五千七百",
+     "一百",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 20.9,
+    "max_sentence_len": 35,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "十一月二十號網路上流傳一張很扯的圖。<short pause>\n你訂閱 Claude 每個月一百美元的方案，\n如果額度全部用滿，\n換算成 API，也就是按用量計費的介面，\n居然可以抵四千六百四十美元的量！\n其實上個月有人量到五千七百多美元耶。\n重點來了，月費明明一直都是一百美元，\n可是價目表上完全沒寫額度有多大喔。\n這份報告就說，月租沒變，單價在改。\n所以你每個月到底買到了多少？\n更奇怪的是，為什麼這件事事前根本算不出來？",
+   "lint": {
+    "chars": 187,
+    "precise_numbers": [
+     "十一",
+     "二十",
+     "一百",
+     "四千六百四十",
+     "五千七百",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 7,
+    "avg_sentence_len": 25.7,
+    "max_sentence_len": 63,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "你有看過那張在社群上流傳的截圖嗎？<short pause>",
+   "to": "十一月二十號，網路上流傳一張圖。",
+   "reason": "照原文的日期開場，鉤子更具體"
+  },
+  {
+   "from": "可以抵四千六百四十美元的量。對，這是換算成 API 的牌價，也就是按用量計費的介面。十月的時候，甚至有人量出五千七百多美元耶。更扯的是，這段時間月費明明完全沒變。",
+   "to": "照 API 的公開牌價算，可以抵四千六百四十美元的量。API，就是按用量計費的那種用法。十月的時候，同一個方案，有人量到五千七百多美元。可是這段時間，月費一直是一百美元，沒有動過。",
+   "reason": "照原文語氣；口頭禪「更扯的是」挪掉"
+  },
+  {
+   "from": "但你買到的額度多大，上面根本沒寫。",
+   "to": "可是一百美元買到多少，上面沒有寫。",
+   "reason": "照原文語氣"
+  },
+  {
+   "from": "這份報告說得很白：月租沒變，單價在改。所以這一百美元到底買到了多少？<short pause>為什麼這個答案，你事前永遠算不出來？",
+   "to": "這份報告的標題就是：月租沒變，單價在改。這集要回答兩個問題。一百美元到底買到多少？<short pause>還有，為什麼這個答案，事前算不出來？",
+   "reason": "開出要到最後收的問題；「永遠」原文沒有"
+  }
+ ]
+}

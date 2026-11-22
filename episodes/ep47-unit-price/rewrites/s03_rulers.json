@@ -1,0 +1,172 @@
+{
+ "segment": "s03_rulers",
+ "position": "第 4 段，共 11 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "56a7f2bec327092d9dbc43ecd692838364e17886ea5e34fe82fecc5afd4ccdcc",
+ "previous_context": "而且前提是你真的把整週額度都吃滿。那如果換成別人來量，結果會一樣嗎？",
+ "original": {
+  "text": "不一樣。做過同一件事的不只他一個。把查得到的量測排開，Claude 的個人方案用滿，落在三十四倍到五十九倍之間。差這麼多，報告找到三個原因。第一是快取的比例：同樣是 Claude，短的平行工作量到四十五倍上下，長的、大量讀取快取的工作量到六十二倍上下。第二是日期：額度一直在動，六月、十月初、十月底量到的，其實是三個不同的東西。第三是名字：兩百美元方案以前叫 Max 20x，那個二十倍指的是五小時的額度，每週的額度其實是 Pro 的十倍。這段時間月費都沒動，倍數會動，是因為額度在動。那如果是公司幫你付錢，又是另一回事。",
+  "lint": {
+   "chars": 255,
+   "precise_numbers": [
+    "三十四",
+    "五十九",
+    "四十五",
+    "六十二",
+    "兩百",
+    "20",
+    "二十"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 27.3,
+   "max_sentence_len": 54,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "答案是不一樣。<short pause>\n其實量過這件事的人還真的不少。\n把大家的結果排開來看，\nClaude 的個人方案用滿，\n換算出來的落差可以高達幾十倍耶。\n為什麼差這麼多？你猜原因是什麼？\n這份報告裡整理了幾個關鍵。\n重點就在快取的比例。\n如果工作內容大量讀取快取，\n算出來的價值就會被拉得非常高。\n然後是量測的日期。\n額度這陣子一直在變，\n夏天量跟秋天量，根本是不同的東西嘛。\n最妙的是方案名字。\n像以前叫 Max 20x 的方案，\n大家以為整週都給那麼多，\n但那個數字其實只算幾小時的短時間。\n整週算下來，\n每週額度其實只有 Pro 的十倍啦。<laugh>\n月費明明都沒變，\n倍數會一直跳，完全是因為額度在動。\n那如果換成公司幫你買單的方案，\n結果又會變怎樣？",
+   "lint": {
+    "chars": 289,
+    "precise_numbers": [
+     "20"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 18.3,
+    "max_sentence_len": 42,
+    "sentences_over_20": 7,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "答案是完全不一樣。<short pause>\n其實做過量測的人不少喔。\n但大家算出來的數字差超多的。\nClaude 個人方案如果全部吃滿，\n倍數落在三十四倍到將近六十倍之間。\n為什麼會差這麼多？\n報告裡整理出三個原因。\n第一個是快取的比例，\n快取讀越多，算出來的倍數就越高。\n然後是量測的時間點，\n官方額度一直在變，\n十月初跟十月底量到的根本不一樣。\n更妙的是，方案的名字還會騙人。\n以前那個寫二十倍的方案，\n其實指的只是短期五小時的額度，\n整週算下來差不多只有十倍啦。\n我看到這裡真的看傻了。<laugh>\n月費雖然沒變，額度卻一直偷偷在動。\n那如果是公司幫你出錢呢？\n情況又是完全另一回事了。",
+   "lint": {
+    "chars": 258,
+    "precise_numbers": [
+     "三十四",
+     "六十",
+     "二十"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 17.4,
+    "max_sentence_len": 40,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "答案是，完全不一樣喔。<short pause>\n網路上其實不只一個人量過 Claude。\n大家算出來的數字，從三十四倍到將近六十倍都有。\n落差大到我都看傻了。\n你猜為什麼差這麼多？\n這份報告整理出三個原因。\n第一是快取讀取的比例，\n快取用得越多，算出來的倍數就越高。\n然後是量測的時間點，\n額度一直在變，不同月份量出來根本不能比。\n最後是方案名字很妙，\n以前寫二十倍，其實指的是五小時窗口啦，\n如果看整週，大概只有十倍左右。\n這段時間月費都沒變喔，一直在動的其實都是額度。\n那如果是公司幫你付錢，又會是怎樣呢？",
+   "lint": {
+    "chars": 228,
+    "precise_numbers": [
+     "三十四",
+     "六十",
+     "二十"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 19.7,
+    "max_sentence_len": 43,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "把大家的結果排開來看，Claude 的個人方案用滿，換算出來的落差可以高達幾十倍耶。",
+   "to": "把查得到的量測排開來看，Claude 的個人方案用滿，從三十幾倍到快六十倍都有。",
+   "reason": "原文是 34 到 59 倍，不是落差幾十倍"
+  },
+  {
+   "from": "為什麼差這麼多？你猜原因是什麼？這份報告裡整理了幾個關鍵。重點就在快取的比例。如果工作內容大量讀取快取，算出來的價值就會被拉得非常高。",
+   "to": "為什麼差這麼多？這份報告找到三個原因。第一個是快取的比例。同一個方案，工作內容大量讀取快取的，算出來的倍數就比較高。",
+   "reason": "拿掉口頭禪；照原文"
+  },
+  {
+   "from": "然後是量測的日期。額度這陣子一直在變，夏天量跟秋天量，根本是不同的東西嘛。最妙的是方案名字。",
+   "to": "第二個是日期。額度一直在變，六月、十月初、十月底量到的，其實是三個不同的東西。第三個是方案的名字。",
+   "reason": "原文是六月、十月初、十月底"
+  },
+  {
+   "from": "但那個數字其實只算幾小時的短時間。整週算下來，每週額度其實只有 Pro 的十倍啦。<laugh>",
+   "to": "但那個二十倍，指的是五小時的額度。每週的額度，其實是 Pro 的十倍。",
+   "reason": "照原文；拿掉笑聲"
+  },
+  {
+   "from": "那如果換成公司幫你買單的方案，結果又會變怎樣？",
+   "to": "那如果是公司幫你付錢，又是另一回事。",
+   "reason": "段尾小鉤子照草稿"
+  },
+  {
+   "from": "大家以為整週都給那麼多，但那個二十倍",
+   "to": "那個二十倍",
+   "reason": "原文沒有「大家以為」"
+  },
+  {
+   "from": "完全是因為額度在動",
+   "to": "是因為額度在動",
+   "reason": "精簡"
+  }
+ ]
+}
