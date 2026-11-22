@@ -48,7 +48,7 @@
 
 - 一集怎麼做：[`docs/recipe.md`](docs/recipe.md)
 - 聲音的保存、監測與停用時怎麼重現：[`docs/voice.md`](docs/voice.md)
-- 選題與待製作清單：[`docs/report-candidates.md`](docs/report-candidates.md)（製作中的集數做到哪一步；imitator 2026 年的報告，標了已做、推薦、可做、不做）
+- 選題清單：[`docs/report-candidates.md`](docs/report-candidates.md)（imitator 2026 年的報告，標了推薦、可做、不做）；製作進度：`python3 tools/progress.py`（從各集的 `episode.json`、`progress.json` 現算）
 - 一集要多久：從定稿的草稿到 mp3 約 9 分鐘，以前約 50 分鐘（2026-11-07，EP11 第一次照新做法跑）。
   - 改寫的候選、語音的 30 次生成都同時送出，網路斷線各自重試。
   - 挑選用的 Breeze-ASR-25 改在 Modal 的 L4 GPU 跑（`--asr breeze-modal`，`tools/modal_breeze.py`）。EP10 用 GPU 重挑，10 段選中的跟 CPU 完全一樣。Modal 失敗會退回本機 CPU。

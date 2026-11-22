@@ -474,14 +474,15 @@ def md_inline(s):
 
 
 def production_section():
+    """製作中：tools/progress.py 從每集的 episode.json＋progress.json 現算；下一批：docs/report-candidates.md 的推薦表。"""
+    sys.path.insert(0, os.path.join(ROOT, "tools"))
+    import progress
+    head, rows = progress.tables()["active"]
+    keep = [i for i, h in enumerate(head) if h != "報告"]
+    t1 = table([head[i] for i in keep], [[md_inline(r[i]) for i in keep] for r in rows], "lt") if rows else ""
     path = os.path.join(ROOT, "docs", "report-candidates.md")
-    if not os.path.exists(path):
-        return "", {}
-    md = open(path, encoding="utf-8").read()
-    upd = re.search(r"更新：(\d{4}-\d{2}-\d{2})", md)
-    head, rows, _ = md_section_table(md, "製作中")
-    keep = [i for i, h in enumerate(head) if h != "報告"] if head else []
-    t1 = table([head[i] for i in keep], [[md_inline(r[i]) if i < len(r) else "" for i in keep] for r in rows], "lt") if rows else ""
+    md = open(path, encoding="utf-8").read() if os.path.exists(path) else ""
+    made = {(m.get("report_slug") or "").replace("_", "-") for _, m, _ in progress.load()}
     rh, rr, body = md_section_table(md, "推薦的下一批")
     plan = {}
     for a, b, e1, e2 in re.findall(r"#(\d+)(?:–(\d+))?\s*→\s*EP(\d+)(?:–EP(\d+))?", body):
@@ -492,13 +493,15 @@ def production_section():
     for r in rr:
         if not r or not r[0].isdigit(): continue
         n = int(r[0])
+        col = dict(zip(rh, r))
+        slug = re.search(r"/r/([\w-]+)", col.get("報告", ""))
+        if slug and slug.group(1) in made: continue   # 已經開工或做完的推薦
         if n in plan or len(nxt) < 4 and not plan:
-            col = dict(zip(rh, r))
             nxt.append([f"EP{plan[n]}" if n in plan else f"#{n}", md_inline(col.get("報告", "")), E(col.get("標題方向", "")),
                         E(col.get("製作時間（估）", ""))])
     t2 = ("<h3>下一批（預排）</h3>" + table(["集", "報告", "標題方向", "製作時間（估）"], nxt, "lt")) if nxt else ""
-    sub = ("從 <code>docs/report-candidates.md</code> 讀出來（" + (f"更新 {upd.group(1)}" if upd else "") +
-           "），改那份檔就會反映在這裡。✅ 完成、🔶 進行中、⬜ 還沒做。")
+    sub = ("製作中從各集的 <code>episode.json</code> 與 <code>progress.json</code> 現算（<code>tools/progress.py</code>），"
+           "下一批從 <code>docs/report-candidates.md</code> 的推薦表讀。✅ 完成、🔶 進行中、⬜ 還沒做、⏰ 已排程。")
     summ = dict(in_production=[dict(zip(head, r)) for r in rows], next=[{"ep": x[0]} for x in nxt])
     return card("待製作", sub, t1 + t2), summ
 
