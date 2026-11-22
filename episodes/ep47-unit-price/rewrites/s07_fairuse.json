@@ -1,0 +1,156 @@
+{
+ "segment": "s07_fairuse",
+ "position": "第 8 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "69ed2ed894c23a65d8c611d015b417ce7e05ee03b5d6f47cb295ed048a8798fd",
+ "previous_context": "其實完全沒有。能確定的是，這目前只算合理的猜測啦。",
+ "original": {
+  "text": "第三站。手機吃到飽的合約，最後一頁有一條公平使用，用超過某個量就降速。AI 訂閱的那一條，不在合約裡，在更新紀錄、說明頁和主管的貼文裡，而且一直在改。報告把四家廠商一年半裡查得到日期和出處的動作排出來，一共二十六個：收緊八次、放寬九次、改規則七次。例子很多。OpenAI 九月說兩百美元的方案十月底要降額度，被罵之後，十月二十九號取消調降，還把其他方案加倍。xAI 十月把幾個產品併成一個池子，不到三週就砍，Musk 公開說成本相對營收太高。同一段時間，月費幾乎沒動。變的，都是月費買到的量。",
+  "lint": {
+   "chars": 242,
+   "precise_numbers": [
+    "二十六",
+    "兩百",
+    "二十九"
+   ],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 25.9,
+   "max_sentence_len": 48,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "但有一件事不是猜測，而是天天在發生。你應該也知道手機吃到飽吧？合約最後都有一條公平使用原則，用超過某個量就會降速。那 AI 訂閱呢？<short pause> 它的規則根本不在合約裡，都藏在說明頁跟主管的推文裡，而且一直在變。我看完整理真的覺得心很累。<sigh> 這份報告整理四家廠商一年半的動作，一共改了二十六次。有時候放寬，有時候又縮水。像 OpenAI 之前本來要調降額度，被大家罵翻之後，不但取消調降，還順手幫額度加倍。xAI 也很扯，額度合併不到三週就直接大砍，Musk 還公開說成本太高撐不住。<laugh> 其實大家的月費幾乎都沒動對吧？真正一直在變的，都是你花同樣的錢能買到多少量啦。",
+   "lint": {
+    "chars": 266,
+    "precise_numbers": [
+     "二十六"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 21.2,
+    "max_sentence_len": 40,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "你應該知道手機吃到飽吧？<short pause>\n合約最後通常有一條公平使用原則，\n用超過某個量就會被降速。\n但 AI 訂閱的這一條，根本不在合約裡喔。\n它藏在更新紀錄，或是主管的貼文裡。\n而且最神奇的是，它一直在變。\n這份報告統計了一年半裡面的動作，\n總共改了二十六次之多。<short pause>\n有時候縮水，有時候又突然很大方。\n廠商到底在幹嘛？\n其實很多時候就是被罵了，才急著改回去嘛。<laugh>\n像 OpenAI 本來要砍額度，\n結果大家罵翻，最後不但取消調降，\n還把部分方案的額度直接加倍。\n所以你發現了嗎？\n大家每個月繳的月費其實都沒變，\n但你買到的算力，一直在默默縮水或膨脹。",
+   "lint": {
+    "chars": 247,
+    "precise_numbers": [
+     "二十六"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 19.6,
+    "max_sentence_len": 43,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "說到猜測，你平常有用手機吃到飽吧？合約最後一頁通常會寫，用太兇會降速。但 AI 訂閱的這條規則，藏在哪裡？答案都在更新公告，還有主管的貼文裡。而且他們動不動就在改耶。這份報告統計四家主流廠商，<short pause>一年半裡面，額度就動了二十六次。收緊跟放寬次數差不多，規則一直在變。像 OpenAI 之前本來想調降額度，結果被大家罵爆，最後不只收回還加倍送。<laugh> xAI 也把額度合併，三週不到就砍掉，Musk 還公開說成本太高撐不下去。所以你看，每個月付的月費其實沒變，真正天天在變動的，是我們買到的量啦。",
+   "lint": {
+    "chars": 234,
+    "precise_numbers": [
+     "二十六"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 22.4,
+    "max_sentence_len": 35,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "你應該知道手機吃到飽吧？<short pause>合約最後通常有一條公平使用原則，用超過某個量就會被降速。",
+   "to": "第三站。手機吃到飽的合約，最後一頁通常有一條公平使用，用超過某個量就降速。",
+   "reason": "路線圖標站"
+  },
+  {
+   "from": "它藏在更新紀錄，或是主管的貼文裡。而且最神奇的是，它一直在變。這份報告統計了一年半裡面的動作，總共改了二十六次之多。<short pause>有時候縮水，有時候又突然很大方。廠商到底在幹嘛？其實很多時候就是被罵了，才急著改回去嘛。<laugh>像 OpenAI 本來要砍額度，結果大家罵翻，最後不但取消調降，還把部分方案的額度直接加倍。",
+   "to": "它在更新紀錄、說明頁和主管的貼文裡，而且一直在改。這份報告把四家廠商一年半裡的動作排出來，一共二十六個。<short pause>收緊八次，放寬九次，其他是改規則，兩個方向差不多。像 OpenAI 九月說要降兩百美元方案的額度，被罵之後，十月底取消調降，還把另外幾個方案加倍。xAI 把幾個產品併成一個池子，不到三週就砍，Musk 公開說是成本太高。",
+   "reason": "「被罵才改回去」原文只有 OpenAI 一家；補上收放次數與 xAI"
+  },
+  {
+   "from": "所以你發現了嗎？大家每個月繳的月費其實都沒變，但你買到的算力，一直在默默縮水或膨脹。",
+   "to": "同一段時間，月費幾乎沒動。變的，都是月費買到的量。",
+   "reason": "Google 動過一次月費，改成「幾乎」"
+  },
+  {
+   "from": "其他是改規則",
+   "to": "其他多半是改規則",
+   "reason": "另有一次新方案、一次方向不明"
+  },
+  {
+   "from": "Musk 公開說是成本太高",
+   "to": "Musk 公開說是成本相對營收太高",
+   "reason": "照原文"
+  },
+  {
+   "from": "像 OpenAI 九月說要降兩百美元方案的額度，被罵之後，十月底取消調降，還把另外幾個方案加倍。",
+   "to": "像 OpenAI，九月說要降一個方案的額度。被罵之後，十月底取消調降，還把另外幾個方案加倍。",
+   "reason": "拆句；少一個數字"
+  }
+ ]
+}

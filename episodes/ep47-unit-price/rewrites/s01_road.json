@@ -1,0 +1,150 @@
+{
+ "segment": "s01_road",
+ "position": "第 2 段，共 11 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": "EP38〈美國放行了，六十萬顆晶片為什麼還卡在香港？〉：上一集的番外一：同一顆晶片有三個地址，貨到哪、票開給誰、誰在用。這集是番外二，從晶片換到每個月付的 AI 訂閱：帳單上的月費沒變，月費買到的量一直在改。",
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "3710d7586384526407a7c89d5709122058e9f685bed85ee0d25b9ab3eabb98b3",
+ "previous_context": "所以這一百美元到底買到了多少？為什麼這個答案，你事前永遠算不出來？",
+ "original": {
+  "text": "上一集的分層讀法番外一，我們看了同一顆晶片的三個地址：貨到哪、票開給誰、誰在用。這一篇是番外二，從晶片換到你每個月付的 AI 訂閱。先講清楚兩件事。第一，這集講方案和價格的規則，不是推薦你買哪一家。第二，這份報告自己寫明，作者是 Claude，也就是 Anthropic 開發的 AI；報告比較了四家廠商，Anthropic 是其中一家，倍數還是最高的，所以中立性要打折聽。今晚走三站：倍數是怎麼量出來的；同一個工具，三種帳單抬頭；最後是一年半裡，額度被改了幾次。",
+  "lint": {
+   "chars": 225,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 36.5,
+   "max_sentence_len": 82,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "其中"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上一集我們聊到同一顆晶片的三個地址。<short pause> 這集接著看每個月付的 AI 訂閱。帳單月費沒變，但買到的量一直在改。開始前先講清楚兩件事喔。第一，我們純粹看規則，不推薦任何一家。第二，這份報告的作者，其實就是 Claude。也就是 Anthropic 家的 AI 啦。<laugh> 它比了四家廠商，偏偏自己家的倍數最高，所以中立性大家要打折聽。那你一定會好奇，我們今晚要看什麼？其實很單純。<short pause> 倍數是怎麼算出來的？同一個工具，到底有哪三種帳單？還有這段時間裡，額度到底被改了幾次。",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 30,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集番外一，我們看了晶片的三個地址。\n貨送到哪裡、發票開給誰、誰在用。\n這集是番外二。\n我們換來看每個月付的 AI 訂閱。\n你應該也有發現吧？\n帳單月費沒變，買到的額度卻一直在改。\n先講清楚兩件事喔。\n第一，這集只講計費規則，不推薦買哪家。\n第二，這份報告的作者是 Claude。\n也就是 Anthropic 開發的 AI 啦。\n這份報告比了四家廠商。\n結果 Anthropic 自己的倍數排最高。\n我看到這邊，覺得中立性真的要打折聽。\n<short pause>\n那重點來了，這個倍數到底怎麼量出來的？\n同一個工具，為什麼會有三種帳單抬頭？\n這一年半裡面，額度到底被改了幾次？",
+   "lint": {
+    "chars": 252,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集我們看同一顆晶片的三個地址。<short pause>\n貨到哪、票開給誰、還有誰在用。\n這集是番外二，來看每個月付的 AI 訂閱。\n你的月費其實沒變，買到的量卻一直在改。\n開始之前，有兩件事要先講清楚喔。\n第一，這集只講計費規則，不推薦買哪家。\n第二，這份報告的作者，其實就是 Claude。\n也就是 Anthropic 開發的 AI 啦。\n它比了四家，結果自己的倍數算出來最高。\n這中立性聽起來要打點折扣吧？對。<laugh>\n那今晚我們要聊什麼？\n先看倍數到底怎麼量出來的。\n然後看同一個工具，為什麼有三種帳單抬頭。\n最後看一年半裡，額度到底被改了幾次。",
+   "lint": {
+    "chars": 242,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "上一集番外一，我們看了晶片的三個地址。貨送到哪裡、發票開給誰、誰在用。",
+   "to": "上一集的分層讀法番外一，我們看了同一顆晶片的三個地址：貨到哪、票開給誰、誰在用。",
+   "reason": "照 EP38 的說法"
+  },
+  {
+   "from": "你應該也有發現吧？帳單月費沒變，買到的額度卻一直在改。",
+   "to": "",
+   "reason": "跟 cold open 重複"
+  },
+  {
+   "from": "這份報告的作者是 Claude。也就是 Anthropic 開發的 AI 啦。這份報告比了四家廠商。結果 Anthropic 自己的倍數排最高。我看到這邊，覺得中立性真的要打折聽。<short pause>那重點來了，這個倍數到底怎麼量出來的？同一個工具，為什麼會有三種帳單抬頭？這一年半裡面，額度到底被改了幾次？",
+   "to": "這份報告自己寫明，作者是 Claude，也就是 Anthropic 開發的 AI。報告比較了四家廠商，Anthropic 是其中一家，倍數還是最高的。所以報告自己說，中立性要打折看。<short pause>今晚走三站。第一，倍數是怎麼量出來的。第二，同一個工具，三種帳單抬頭。第三，這一年半，額度被改了幾次。",
+   "reason": "打折是報告自己說的，不是 Ping 的反應；路線圖改成直述；拿掉口頭禪"
+  },
+  {
+   "from": "報告比較了四家廠商",
+   "to": "它比較了四家廠商",
+   "reason": "bare_report：句首「報告」會被聽成「包括」"
+  },
+  {
+   "from": "第二，同一個工具，三種帳單抬頭。",
+   "to": "第二，同一個工具，三種賣法。",
+   "reason": "「抬頭」兩套辨識都聽成「態度」或 title"
+  }
+ ]
+}

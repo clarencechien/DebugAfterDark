@@ -1,0 +1,170 @@
+{
+ "segment": "s02_measure",
+ "position": "第 3 段，共 11 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "bdc0a0981a790d3957eea7e3d73a062d83f4126a02d35f8e1acff9f53e209ed1",
+ "previous_context": "同一個工具，為什麼會有三種帳單抬頭？這一年半裡面，額度到底被改了幾次？",
+ "original": {
+  "text": "第一站，那張圖怎麼來的。做圖的是 Paweł Huryn，他把方法公開在 GitHub 上。訂閱的額度有多大，廠商沒有公布，只在工具裡顯示一個百分比，告訴你這週用掉了幾成。他的做法是：讓 Claude Code 一直工作，把這段時間每一次模型呼叫從紀錄裡撈出來，照 API 的公開牌價算錢，看額度表每走百分之一值多少美元，再換算成一整個月，除以月費。所以四十六倍的意思是：一百美元方案一個月的額度全部用完，同樣的工作改走 API，帳單是四千六百四十美元。他自己也寫了限制：這假設整週的額度都用得到，而且量的是某一天的天花板。那別人量，會一樣嗎？",
+  "lint": {
+   "chars": 262,
+   "precise_numbers": [
+    "百",
+    "百分之一",
+    "四十六",
+    "一百",
+    "四千六百四十"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 36.4,
+   "max_sentence_len": 83,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "要搞清楚額度，我們先看那張圖怎麼來的。\n做這張圖的人叫 Paweł Huryn。\n他把測試方法都公開在 GitHub 上了。\n因為官方從來不講額度有多大嘛。\n工具裡通常只會顯示一個百分比。\n告訴你這週已經用掉了幾成。\n那他到底怎麼算的？\n其實就是讓 Claude Code 一直跑。\n然後把紀錄裡的模型呼叫全都撈出來。<short pause>\n改照 API 的公開牌價去算錢。\n這裡說的 API，就是按用量計費的介面啦。\n他算出額度每走一趴值多少錢。\n再換算成一整個月，除以方案的月費。\n所以圖上寫的四十六點四倍是什麼意思？\n就是一百美元的月租如果全部用滿。\n改走 API 竟然要四千多美元。\n這數字真的滿嚇人的。\n不過作者自己也有說喔。\n這個倍數算的是某一天測到的天花板。\n而且前提是你真的把整週額度都吃滿。\n那如果換成別人來量，結果會一樣嗎？",
+   "lint": {
+    "chars": 329,
+    "precise_numbers": [
+     "百",
+     "四十六點四",
+     "一百",
+     "四千"
+    ],
+    "enumerations": [],
+    "sentences": 21,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先來聊聊那張圖是怎麼來的。\n其實是 Paweł Huryn 做的。\n他把整個測試方法公開在 GitHub 上。\n因為官方根本沒有公布額度有多大。\n工具裡只會顯示百分比，說這週用掉幾成。\n那你猜他怎麼算的？\n他就讓 Claude Code 一直連續工作。\n然後從紀錄裡，把每次模型呼叫撈出來。\n照著 API 的公開牌價去算錢。\nAPI 也就是按用量計費的介面。\n看額度每走百分之一，到底值多少美元。\n最後換算成整個月，再除以月費。\n這種暴力測試真的超狂的耶。<laugh>\n算出來足足有四十六點四倍！<short pause>\n一百美元的方案，改走 API 要四千多塊。\n不過他也提醒，這只是某一天的天花板啦。\n那如果換成別人來量，結果會一樣嗎？",
+   "lint": {
+    "chars": 273,
+    "precise_numbers": [
+     "百",
+     "百分之一",
+     "四十六點四",
+     "一百",
+     "四千"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先來看網路上那張圖，到底怎麼來的。\n做這張圖的人叫 Paweł Huryn。\n他把測試方法，整套公開在 GitHub 上。\n其實廠商根本沒有公布真正的額度。\n你在工具裡，只看得到這週用掉幾成。\n你猜他是怎麼算出來的？\n他就讓 Claude Code 一直接任務狂跑。\n然後把每一次呼叫，從紀錄裡撈出來。\n這裡說的 API，就是按用量計費的介面。\n他用 API 的公開牌價，去算這些用量。\n看額度表每走百分之一，到底值多少錢。\n算出來最驚人的是四十六點四倍。\n一百美元的月費方案，只要全部用完。\n改走 API 算錢，就要四千六百多美元耶。\n這數字光用看的就覺得很誇張。<laugh>\n不過作者有說，這只是某一天的天花板。\n而且還得假設，你整週都剛好能用滿喔。\n那如果換成別人來量，結果會一樣嗎？",
+   "lint": {
+    "chars": 310,
+    "precise_numbers": [
+     "百分之一",
+     "四十六點四",
+     "一百",
+     "四千六百"
+    ],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "要搞清楚額度，我們先看那張圖怎麼來的。",
+   "to": "第一站，先看那張圖怎麼來的。",
+   "reason": "路線圖標站"
+  },
+  {
+   "from": "因為官方從來不講額度有多大嘛。工具裡通常只會顯示一個百分比。",
+   "to": "因為額度有多大，廠商沒有公布。工具裡只會顯示一個百分比，",
+   "reason": "照原文語氣"
+  },
+  {
+   "from": "告訴你這週已經用掉了幾成。",
+   "to": "告訴你這週用掉了幾成。",
+   "reason": "照原文、精簡"
+  },
+  {
+   "from": "<short pause>改照 API 的公開牌價去算錢。這裡說的 API，就是按用量計費的介面啦。他算出額度每走一趴值多少錢。",
+   "to": "照 API 的公開牌價算錢。<short pause>看額度每走百分之一，值多少美元。",
+   "reason": "API 解釋只在 cold open 講一次；「一趴」換成好辨識的說法"
+  },
+  {
+   "from": "改走 API 竟然要四千多美元。這數字真的滿嚇人的。不過作者自己也有說喔。這個倍數算的是某一天測到的天花板。",
+   "to": "同樣的工作改走 API，帳單是四千六百多美元。不過作者自己也寫了限制。這個倍數，量的是某一天的天花板。",
+   "reason": "Ping 沒有個人反應；數字照原文"
+  },
+  {
+   "from": "那他到底怎麼算的？其實就是讓 Claude Code 一直跑。然後把紀錄裡的模型呼叫全都撈出來。",
+   "to": "他的做法是讓 Claude Code 一直工作，把紀錄裡每一次模型呼叫撈出來，",
+   "reason": "精簡，段落太長"
+  },
+  {
+   "from": "而且前提是你真的把整週額度都吃滿。",
+   "to": "而且假設整週的額度都用得到。",
+   "reason": "照原文"
+  }
+ ]
+}

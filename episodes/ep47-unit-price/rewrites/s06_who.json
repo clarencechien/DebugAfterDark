@@ -1,0 +1,162 @@
+{
+ "segment": "s06_who",
+ "position": "第 7 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "eecd224d18e41e8a503ef66c1b48de1a4669145be8005cabcbc1f1fa80d9af16",
+ "previous_context": "換成吃到飽之後，大家的用量肯定會變。所以這只能算出現階段選哪邊比較便宜，不能拿來猜訂閱的人實際到底用了多少。",
+ "original": {
+  "text": "那廠商為什麼要一直調額度？最直接的解釋是：用量集中在少數人身上。報告說，這是全篇證據最弱的一段。Anthropic 自己講過，二零二五年加每週上限的時候，估計受影響的訂閱者不到百分之五，理由是帳號共用、轉售，還有人讓 Claude 在背景二十四小時一直跑；它還舉過一個例子，有人訂兩百美元的方案，用掉好幾萬美元的量。分析機構 SemiAnalysis 估計，訂閱只占 Anthropic 營收大約一成，卻可能吃掉四成以上的推論算力。可是這是一家的估計，細節在付費牆後面。報告的結論是：重度使用者是少數、卻占掉不少算力，是合理的猜測，但沒有證明。",
+  "lint": {
+   "chars": 265,
+   "precise_numbers": [
+    "百分之五",
+    "二十四",
+    "兩百",
+    "萬"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 36.9,
+   "max_sentence_len": 106,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "既然猜不到實際用量，那廠商為什麼要一直調額度？難道大家真的用這麼兇嗎？其實最直接的解釋，就是用量全集中在少數人身上齁。不過這份報告說，這個推測的證據其實最弱啦。像是 Anthropic 自己講過，加每週上限的時候，受影響的訂閱者不到百分之五。<short pause> 他們甚至舉過例子，有人訂兩百美元的方案，卻讓程式在背景整天跑，用掉好幾萬美元的量。<laugh> 這聽起來真的蠻誇張的。然後，分析機構 SemiAnalysis 也估過，訂閱只占大約一成營收，卻吃掉四成以上的算力喔。但這只是單家機構的估算，細節都在付費牆後面。所以嚴格來說，少數重度用戶吃掉大量算力這件事，現在就只是一個合理的猜測而已。",
+   "lint": {
+    "chars": 277,
+    "precise_numbers": [
+     "百分之五",
+     "兩百",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 26.7,
+    "max_sentence_len": 45,
+    "sentences_over_20": 7,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那廠商為什麼還要一直改額度？\n\n最直接的解釋，就是用量集中在少數人身上。\n\n不過老實說，這是全篇證據最弱的一段。\n\nAnthropic 自己講過，受影響的訂閱者不到百分之五。<short pause>\n\n理由包括有人共用帳號，還有人讓 Claude 在背景二十四小時一直跑。\n\n甚至有人訂兩百美元方案，結果跑出好幾萬美元的量。\n\n光想像那個數字就覺得很誇張。\n\n然後分析機構 SemiAnalysis 估計，訂閱只占 Anthropic 大約一成營收，卻可能吃掉四成以上的推論算力。<laugh>\n\n那這件事真的被證實了嗎？其實沒有。\n\n因為細節都在付費牆後面。\n\n這份報告說，重度用戶吃掉大批算力，目前只算合理的猜測，還沒有被證實喔。",
+   "lint": {
+    "chars": 271,
+    "precise_numbers": [
+     "百分之五",
+     "二十四",
+     "兩百",
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 21.6,
+    "max_sentence_len": 55,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "既然不知道用量，廠商幹嘛一直改額度？\n最直接的解釋，是用量集中在少數人身上。\n這份報告說，這部分的證據其實偏弱。<short pause>\nAnthropic 自己提過一個很誇張的例子。\n有人買兩百美元方案，用掉好幾萬美元的量。\n他們加每週上限時，影響的人不到百分之五。\n主要是防帳號共用，或是放著背景整天跑。\n然後分析機構 SemiAnalysis 也估過。\n訂閱占營收約一成，卻吃掉四成以上算力。\n這比例聽起來真的很嚇人耶。\n但這只有一家之言，細節還鎖在付費牆後。\n所以這件事有鐵證嗎？其實完全沒有。\n能確定的是，這目前只算合理的猜測啦。",
+   "lint": {
+    "chars": 243,
+    "precise_numbers": [
+     "兩百",
+     "萬",
+     "百分之五"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "既然不知道用量，廠商幹嘛一直改額度？",
+   "to": "那廠商為什麼要一直改額度？",
+   "reason": "照原文、精簡"
+  },
+  {
+   "from": "這份報告說，這部分的證據其實偏弱。",
+   "to": "這份報告說，這是全篇證據最弱的一段。",
+   "reason": "照原文、精簡"
+  },
+  {
+   "from": "Anthropic 自己提過一個很誇張的例子。有人買兩百美元方案，用掉好幾萬美元的量。他們加每週上限時，影響的人不到百分之五。主要是防帳號共用，或是放著背景整天跑。",
+   "to": "Anthropic 自己講過。去年加每週上限的時候，它估計受影響的訂閱者不到百分之五，理由是帳號共用、轉售，還有人讓 Claude 在背景整天跑。它也舉過一個例子：有人訂兩百美元的方案，用掉好幾萬美元的量。",
+   "reason": "「估計」要保留；照原文順序"
+  },
+  {
+   "from": "這比例聽起來真的很嚇人耶。但這只有一家之言，細節還鎖在付費牆後。所以這件事有鐵證嗎？其實完全沒有。能確定的是，這目前只算合理的猜測啦。",
+   "to": "可是這是一家的估計，細節在付費牆後面。所以報告的結論是：重度使用者是少數、卻占掉不少算力，是合理的猜測，但沒有證明。",
+   "reason": "個人反應拿掉；結論照原文"
+  },
+  {
+   "from": "卻吃掉四成以上算力",
+   "to": "卻可能吃掉四成以上的算力",
+   "reason": "原文是「可能」"
+  },
+  {
+   "from": "它估計受影響的訂閱者不到百分之五，理由是帳號共用、轉售，還有人讓 Claude 在背景整天跑。",
+   "to": "它估計受影響的訂閱者不到百分之五。理由是帳號共用、轉售，還有人讓 Claude 在背景整天跑。",
+   "reason": "拆句"
+  }
+ ]
+}

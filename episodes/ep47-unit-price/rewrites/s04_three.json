@@ -1,0 +1,159 @@
+{
+ "segment": "s04_three",
+ "position": "第 5 段，共 11 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2e4d39fc4de7ee98961dea5c4bfd4381bd4af24f9c6a8e57471da5afab45522a",
+ "previous_context": "月費明明都沒變，倍數會一直跳，完全是因為額度在動。那如果換成公司幫你買單的方案，結果又會變怎樣？",
+ "original": {
+  "text": "第二站，帳單抬頭。同一個 Claude Code、同一個模型，Anthropic 有三種賣法。個人的 Max，每月一百美元，額度是 Pro 的五倍，另外附一百美元的 API 額度，單價要看你用掉額度的幾成，事前算不出來。團隊的 Team 方案，加強版的席位每人每月一百二十五美元，額度是標準席的五倍，可是每週的上限官方沒有公布，報告也找不到任何人量過。企業的 Enterprise，每個座位二十美元，用量另外照 API 牌價算，沒有上限，也沒有附送，花一百美元就是一百美元的量。報告說，一百五十人以內的公司，真正要選的是 Team 和 Enterprise，而 Team 這一格沒有人量過。帳單上最該有數字的地方，是空的。",
+  "lint": {
+   "chars": 293,
+   "precise_numbers": [
+    "一百",
+    "一百",
+    "一百二十五",
+    "二十",
+    "一百",
+    "一百",
+    "一百五十"
+   ],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 40.9,
+   "max_sentence_len": 63,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實 Anthropic 賣 Claude Code 有三種方案。像是個人的 Max，額度給得大方，而且另外附送 API 額度。API 就是按用量計費的介面啦。單價看你用掉多少，事前算不出來。\n\n那換成公司的方案呢？你猜有比較好算嗎？完全沒有喔。<short pause>\n\n然後是團隊的 Team 方案。加強版每席每個月一百多塊美金。雖然額度號稱五倍，每週上限官方卻沒寫。這份報告裡提到，根本沒有人量過。\n\n另外還有企業的 Enterprise。座位費加上用量照牌價算，算得清清楚楚。\n\n重點來了。一百五十席以內的公司，要在這兩個裡面選。我看到這邊真的滿頭問號。<short pause>因為 Team 這一格，完全沒有人量過。帳單上最該有數字的地方，居然是空的。那這兩種方案，到底會差多少錢？",
+   "lint": {
+    "chars": 300,
+    "precise_numbers": [
+     "一百",
+     "一百五十"
+    ],
+    "enumerations": [],
+    "sentences": 19,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 27,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "如果是公司出錢，算盤可就完全不一樣了啦。\n同一個 Claude Code，官方其實有三種賣法。\n第一種是個人的 Max，每月大約一百美元。\n它的額度高很多，還附送 API。\nAPI 就是按用量計費的介面。\n但這能抵多少用量，事前根本算不出來。\n那團隊方案呢？\nTeam 方案的高級席，每人每月一百多美元。\n官方說額度比較高，但上限完全沒公開喔。<short pause>\n然後是 Enterprise 企業方案。\n除了座位費，用量完全照牌價算。\n你花多少就是多少，清清楚楚。\n所以如果你要幫公司挑，問題就來了嘛。\n一百五十人以內的公司，到底要怎麼選？\n這份報告說，Team 的額度根本沒人量過。<sigh>\n我看到這邊真的覺得很不可思議。\n這張帳單上最該有數字的地方，居然是空的。\n那這樣到底該怎麼買啊？",
+   "lint": {
+    "chars": 307,
+    "precise_numbers": [
+     "一百",
+     "一百",
+     "一百五十"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 18,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 23,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先來看 Anthropic 怎麼賣。<short pause>\n同一個 Claude Code 欸，竟然有三種單價。\n先看個人的 Max，每個月一百美元。\n它會另外送 API 額度。\nAPI 就是按用量計費的介面。\n但每個月能抵多少，事前根本算不出來。\n那公司買的方案呢？\n其實團隊用的 Team 方案更妙。\n每個人每個月要一百多美元喔。\n官方說額度高好幾倍，卻沒公布每週上限。\n你猜有人測出上限嗎？\n完全沒有，大家都只能用猜的啦。<laugh>\n然後是企業的 Enterprise。\n這就很乾脆，每個月收固定座位費。\n剩下的用量照 API 牌價算，花多少扣多少。\n重點來了。\n一百多人的公司，通常要在這兩個方案選。\n這份報告裡說，Team 的額度根本沒人量過。\n我看到這邊真的滿傻眼的。<short pause>\n帳單上大家最在意的數字，居然是空的耶。",
+   "lint": {
+    "chars": 310,
+    "precise_numbers": [
+     "一百",
+     "一百",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 20,
+    "avg_sentence_len": 14.5,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "其實 Anthropic 賣 Claude Code 有三種方案。像是個人的 Max，額度給得大方，而且另外附送 API 額度。API 就是按用量計費的介面啦。單價看你用掉多少，事前算不出來。那換成公司的方案呢？你猜有比較好算嗎？完全沒有喔。<short pause>",
+   "to": "第二站，帳單抬頭。同一個 Claude Code、同一個模型，Anthropic 有三種賣法。個人的 Max，每月一百美元，另外附一百美元的 API 額度。單價要看你用掉額度的幾成，事前算不出來。<short pause>",
+   "reason": "「額度給得大方」原文沒有；拿掉口頭禪；API 不再解釋"
+  },
+  {
+   "from": "雖然額度號稱五倍，每週上限官方卻沒寫。這份報告裡提到，根本沒有人量過。另外還有企業的 Enterprise。座位費加上用量照牌價算，算得清清楚楚。重點來了。一百五十席以內的公司，要在這兩個裡面選。我看到這邊真的滿頭問號。<short pause>因為 Team 這一格，完全沒有人量過。",
+   "to": "額度是標準席的五倍，可是每週上限官方沒有公布。最後是企業的 Enterprise，每個座位二十美元，用量另外照牌價算，花一百美元就是一百美元的量。這份報告說，一百五十人以內的公司，真正要選的是 Team 和 Enterprise。<short pause>可是 Team 這一格，報告找不到任何人量過。",
+   "reason": "照原文；拿掉口頭禪與個人反應"
+  },
+  {
+   "from": "那這兩種方案，到底會差多少錢？",
+   "to": "",
+   "reason": "照原文、精簡"
+  },
+  {
+   "from": "報告找不到任何人量過",
+   "to": "這份報告找不到任何人量過",
+   "reason": "bare_report"
+  },
+  {
+   "from": "第二站，帳單抬頭。同一個 Claude Code",
+   "to": "第二站，三種賣法。同一個 Claude Code",
+   "reason": "同上"
+  }
+ ]
+}

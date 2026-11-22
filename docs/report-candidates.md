@@ -28,6 +28,7 @@
 | EP44 | [`no-read-3`](https://imitator.ai-apps.work/r/no-read-3) | ✅ | ✅ 11/21 | ⏰ 11/24 08:00 排程 | ⬜ | ⬜ | 不讀之後 第三篇（上：EP42、EP43）；標題「檢查交給機器，檢查錯了誰知道？」；兩篇來源是廠商寫自己的產品，節目有說；Modal 額度用完，挑選在本機 CPU |
 | EP45 | [`no-stock-in-farebox`](https://imitator.ai-apps.work/r/no-stock-in-farebox) | ✅ | ✅ 11/21 | ⏰ 11/24 08:01 排程 | ⬜ | ⬜ | 核票 v0.1（資料至 11/20）；標題「台股跌了快三成，機票飯店會變便宜嗎？」；Modal 額度用完，挑選在本機 CPU；12 月新數字出來後原文會出 v0.2，可考慮補一集 |
 | EP46 | [`practice-on-purpose`](https://imitator.ai-apps.work/r/practice-on-purpose) | ✅ | ✅ 11/22 | ⏰ 11/25 08:00 排程 | ⬜ | ⬜ | 知行筆記 實作篇（上：EP30、EP31）；標題「有了 AI，新手能超速追上老手嗎？」；原推薦 #1；「知行筆記」兩套辨識都聽成知心筆記，節目裡改說「知道的知，行動的行」 |
+| EP47 | [`who-is-using-micro`](https://imitator.ai-apps.work/r/who-is-using-micro) | ✅ | ✅ 11/22 | ⏰ 11/25 08:01 排程 | ⬜ | ⬜ | 分層讀法番外二（上：EP38、EP39）；標題「AI 月費一百美元，到底買到多少？」；原文作者是 Claude、比較的廠商包括 Anthropic，節目有說；v0.3 資料至 11/20；Modal 額度用完，挑選在本機 CPU |
 
 「進 feed」是 `episode.json` 設成 `status: final` 並填 `published`，merge 到 main 就會發佈（先給 Clarence 看再 commit）。EP36、EP37 的影片版和 Short 做完就搬到「已做」。
 

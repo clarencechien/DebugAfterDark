@@ -1,0 +1,139 @@
+{
+ "segment": "s09_account",
+ "position": "第 10 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f01ab3e574d78c4554d3dcd08de9f07e51713aa10222e2c5e8a9a469704e2925",
+ "previous_context": "跨廠商比倍數，比的其實只是定價方式啦。這也是為什麼這份報告，不直接說哪家划算。",
+ "original": {
+  "text": "最後接回番外一。番外一提過一則報導：字節跳動讓工程師報帳個人訂閱，再用 VPN 連線。那一篇把它當成繞過門檻的路。照這一篇的算法，個人訂閱剛好也是三種抬頭裡單價最低的一格。同一個做法，一邊繞資格，一邊省錢；帳單印的是個人，用的是公司。兩篇接得上的地方，都在帳號：額度是一個帳號一份，十月底 Anthropic 最貴的方案，只對系統驗證過的帳號拿掉五小時限制，OpenAI 同一個月對付費帳號加了卡片和裝置數的上限。不過報告也說，這些驗證是為了成本還是為了資格，沒有公開說法，它不把這些寫成同一套政策。",
+  "lint": {
+   "chars": 245,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 34.0,
+   "max_sentence_len": 86,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實聊到最後，這些事全都跟帳號有關。你聽過字節跳動那則報導嗎？他們讓工程師報帳個人訂閱，再掛 VPN 連線。這招真的很聰明。<laugh>因為照算下來，個人訂閱單價剛好最低嘛。這樣做一邊能繞過資格，一邊還替公司省錢。帳單印的是個人，但真正是公司在用。然後你看，廠商現在算額度也是抓帳號。像 Anthropic 只對驗證過的帳號放寬限制。同一個月 OpenAI 也限制了卡片和裝置數量。那廠商拚命驗證，是為了省成本，還是管資格？<short pause>這份報告裡說，官方從來沒有公開說過。所以兩邊是不是同一套政策，目前還說不準啦。",
+   "lint": {
+    "chars": 239,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 17.4,
+    "max_sentence_len": 22,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實兩邊真正卡最緊的地方，都在帳號上。像番外一提過字節跳動的報導，公司讓工程師報帳個人訂閱，再掛 VPN。這樣做算什麼？<short pause> 算是一邊繞過使用資格，一邊順便省錢。因為個人訂閱單價剛好最便宜嘛。帳單印的是個人，真正在用的卻是公司。所以各大廠商現在全都在盯帳號。像十月底 Anthropic 只對驗證過的帳號放寬限制，OpenAI 也在同一個月，限制卡片和裝置數量。那廠商嚴查帳號到底是為了什麼？是為了省成本，還是為了審查資格？報告裡說，官方根本沒有公開說法喔。我們沒辦法直接把它們畫上等號啦。",
+   "lint": {
+    "chars": 238,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 48,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實講到定價跟方案，最後還是會收斂到帳號這件事。之前有報導提過字節跳動的做法，你覺得他們怎麼做？他們讓工程師報帳個人訂閱，然後掛 VPN 連線。這招其實蠻聰明的耶。<laugh> 帳單是個人名義，實際上是公司在用。這樣一邊能繞過限制，一邊還能省錢。所以廠商後來管得越來越嚴。像 Anthropic 到了十月底，只對驗證過的帳號拿掉五小時限制。OpenAI 也限制了付費帳號的卡片跟裝置數。但廠商大動作抓這些帳號，到底是為了省成本，還是為了查資格？這份報告裡說，目前根本沒有公開說法喔。",
+   "lint": {
+    "chars": 229,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 19.8,
+    "max_sentence_len": 31,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "其實聊到最後，這些事全都跟帳號有關。你聽過字節跳動那則報導嗎？他們讓工程師報帳個人訂閱，再掛 VPN 連線。這招真的很聰明。<laugh>因為照算下來，個人訂閱單價剛好最低嘛。這樣做一邊能繞過資格，一邊還替公司省錢。帳單印的是個人，但真正是公司在用。",
+   "to": "最後接回番外一。番外一提過一則報導：字節跳動讓工程師報帳個人訂閱，再用 VPN 連線。那一集把它當成繞過門檻的路。照這一篇的算法，個人訂閱剛好也是三種抬頭裡，單價最低的一格。同一個做法，一邊繞資格，一邊省錢。帳單印的是個人，用的是公司。不過字節是為了哪一個，報導沒有說。",
+   "reason": "不評價當事公司；動機照原文說報導沒寫"
+  },
+  {
+   "from": "然後你看，廠商現在算額度也是抓帳號。像 Anthropic 只對驗證過的帳號放寬限制。同一個月 OpenAI 也限制了卡片和裝置數量。那廠商拚命驗證，是為了省成本，還是管資格？<short pause>這份報告裡說，官方從來沒有公開說過。所以兩邊是不是同一套政策，目前還說不準啦。",
+   "to": "兩集接得上的地方，都在帳號。額度是一個帳號一份。十月底，Anthropic 最貴的方案，只對系統驗證過的帳號拿掉五小時限制；同一個月，OpenAI 對付費帳號加了卡片和裝置數的上限。這些驗證是為了成本，還是為了資格？<short pause>這份報告說，沒有公開說法，所以它不把這些寫成同一套政策。",
+   "reason": "照原文"
+  },
+  {
+   "from": "最後接回番外一。番外一提過一則報導：字節跳動讓工程師報帳個人訂閱，再用 VPN 連線。那一集把它當成繞過門檻的路。",
+   "to": "最後接回番外一。番外一的原文引過一則報導：字節跳動讓工程師報帳個人訂閱，再用 VPN 連線。那一篇把它當成繞過門檻的路。",
+   "reason": "EP38 節目沒講這則報導，是原文有"
+  },
+  {
+   "from": "兩集接得上的地方",
+   "to": "兩篇接得上的地方",
+   "reason": "精簡"
+  },
+  {
+   "from": "個人訂閱剛好也是三種抬頭裡，單價最低的一格。",
+   "to": "個人訂閱剛好也是三種賣法裡，單價最低的一種。",
+   "reason": "同上；「一格」兩套都聽成「一個」"
+  }
+ ]
+}

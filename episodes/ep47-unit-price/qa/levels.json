@@ -1,0 +1,68 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -19.7,
+  "gain_db": -0.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_road",
+  "lufs_before": -23.5,
+  "gain_db": 3.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_measure",
+  "lufs_before": -22.0,
+  "gain_db": 2.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_rulers",
+  "lufs_before": -19.9,
+  "gain_db": -0.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_three",
+  "lufs_before": -22.6,
+  "gain_db": 2.6,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_average",
+  "lufs_before": -21.8,
+  "gain_db": 1.8,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_who",
+  "lufs_before": -20.7,
+  "gain_db": 0.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_fairuse",
+  "lufs_before": -21.4,
+  "gain_db": 1.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_common",
+  "lufs_before": -24.0,
+  "gain_db": 4.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_account",
+  "lufs_before": -21.9,
+  "gain_db": 1.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s10_outro",
+  "lufs_before": -21.6,
+  "gain_db": 1.6,
+  "lufs_after": -20.0
+ }
+]

@@ -1,0 +1,161 @@
+{
+ "segment": "s10_outro",
+ "position": "第 11 段，共 11 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b34bd190ddc220426d1266fafacfefa514230cebab16a48b9ef3eb4a449c9ab2",
+ "previous_context": "這份報告裡說，官方從來沒有公開說過。所以兩邊是不是同一套政策，目前還說不準啦。",
+ "original": {
+  "text": "所以，一百美元到底買到多少？用滿的話，照牌價是月費的幾十倍；可是額度多大不公布，一年半改了二十六次，單價是廠商單方面決定的，你事前算不出來。今晚的 breakpoint。第一，訂閱用滿照牌價是月費的幾十倍，但那是某一天量到的天花板。第二，同一個工具，個人、Team、Enterprise 是三種單價，只有 Enterprise 事前算得出來。第三，月費沒變，變的是月費買到的量；看到價目頁上的幾倍，先問基準是多少。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 240,
+   "precise_numbers": [
+    "一百",
+    "二十六"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 25.7,
+   "max_sentence_len": 55,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以，一百美元到底買到多少東西？\n其實你事前根本算不出來啦。\n這份報告說，一年半就改了二十六次額度，\n而且每週上限多大，官方從來不公開。\n算下來單價多少，其實全看廠商心情耶。\n你應該也覺得這水很深吧？\n<short pause>\n好，今晚的 breakpoint。\n第一，訂閱再賺，也只是某天量到的天花板。\n第二，方案不同，只有 Enterprise 算得出單價。\n第三，月費沒變，變的其實是你買到的額度。\n<short pause>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 214,
+    "precise_numbers": [
+     "一百",
+     "二十六"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 35,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以，一百美元到底買到多少？\n答案是，你事前根本算不出來。\n如果你真的全部用滿，\n照牌價算是月費的幾十倍喔。\n但額度上限從來沒公開過，\n一年半裡面就改了二十六次。<short pause>\n單價基本上都是廠商單方面決定的啦。\n說實話這真的蠻讓人頭痛的。\n好，今晚的 breakpoint。\n第一，訂閱看似划算，但只是當天的天花板。\n第二，個人、Team 跟 Enterprise 單價完全不同。\n第三，月費沒變，變的其實是買到的使用量。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 227,
+    "precise_numbers": [
+     "一百",
+     "二十六"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 27,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以，每個月花這筆錢到底買到多少？\n如果額度全部用滿，照牌價確實賺很多。\n可是每週上限多大，廠商根本不公開。\n一年半內，規則就改了二十六次之多。\n其實單價完全由廠商決定，\n你在買之前根本算不出來啦。<short pause>\n好，今晚的 breakpoint。\n第一，用滿照牌價看雖然很賺，\n但那只是某一天量到的天花板。\n第二，個人、Team 還有 Enterprise，\n算下來其實是三種單價。\n第三，月費就算沒變，買到的量也會變，\n看到幾倍先問基準是多少喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 240,
+    "precise_numbers": [
+     "二十六"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 19.0,
+    "max_sentence_len": 33,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "所以，每個月花這筆錢到底買到多少？如果額度全部用滿，照牌價確實賺很多。可是每週上限多大，廠商根本不公開。一年半內，規則就改了二十六次之多。其實單價完全由廠商決定，你在買之前根本算不出來啦。",
+   "to": "所以，一百美元到底買到多少？用滿的話，照牌價是月費的幾十倍。可是額度多大不公布，一年半改了二十六次。單價是廠商單方面決定的，所以事前算不出來。",
+   "reason": "收回開頭的兩個問題；「賺很多」原文沒有"
+  },
+  {
+   "from": "第一，用滿照牌價看雖然很賺，但那只是某一天量到的天花板。第二，個人、Team 還有 Enterprise，算下來其實是三種單價。第三，月費就算沒變，買到的量也會變，看到幾倍先問基準是多少喔。",
+   "to": "第一，訂閱用滿，照牌價是月費的幾十倍，但那是某一天量到的天花板。第二，同一個工具，個人、Team、Enterprise 是三種單價，只有 Enterprise 事前算得出來。第三，月費沒變，變的是月費買到的量；看到價目頁上的幾倍，先問基準是多少。",
+   "reason": "照草稿的三個重點"
+  },
+  {
+   "from": "用滿的話，照牌價是月費的幾十倍。",
+   "to": "用滿的話，換算成 API 的價格，是月費的幾十倍。",
+   "reason": "「照牌價」兩套都聽成「招牌價」"
+  },
+  {
+   "from": "第一，訂閱用滿，照牌價是月費的幾十倍，",
+   "to": "第一，訂閱用滿，換算成 API 價格是月費的幾十倍，",
+   "reason": "同上"
+  }
+ ]
+}
