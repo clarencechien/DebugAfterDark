@@ -265,7 +265,7 @@ def experiment_eps(exps):
 
 
 def actions(A, reach, exps=()):
-    """規則產生的候選動作，最多三個；每週摘要以這裡為起點再判斷。"""
+    """規則產生的候選動作，最多三個。只寫進 summary.json（每週摘要的起點、工廠儀表板的「建議動作」），報表頁面不顯示。"""
     busy = experiment_eps(exps) | {7}
     out, rows = [], [r for r in A["rows"] if r["style"] in ("hook", "poetic") and r["ep"] not in busy]
     with_imp = [r for r in rows if r["impressions"] and r["impressions"] >= 100]
@@ -784,11 +784,10 @@ def render(snap, A, reach, acts, xsec="", tsec=""):
     c7 = card("逐集", "除了「廣告觀看」那欄，數字都是自然流量。曝光與點閱率從 Reporting API 開始的那天（11/20）起算。點欄位標題可排序。",
               table(["集", "標題", "標題風格", "上架", "曝光", "點閱率", "自然觀看", f"前 {FIRST_DAYS} 天", "平均秒數", "觀看比例", "30 秒留存", "廣告觀看", "新訂閱"], trs, "sortable"))
 
-    act_html = "".join(f'<li><b>{E(a["kind"])}</b>　{E(a["text"])}</li>' for a in acts) or "<li>這週沒有規則觸發的動作。</li>"
     fresh = (f"Analytics 資料到 {last}；Reporting（曝光、點閱率）"
              + (f"到 {reach_days[-1]}，共 {len(reach_days)} 天" if reach_days else "還沒有報表（工作 11/20 建立，約 11/21 下午出第一份）"))
     return TEMPLATE.replace("%TITLE%", E(snap["channel"]["title"])).replace("%GEN%", E(snap["generated"])) \
-        .replace("%FRESH%", E(fresh)).replace("%TILES%", tiles).replace("%ACTIONS%", act_html) \
+        .replace("%FRESH%", E(fresh)).replace("%TILES%", tiles) \
         .replace("%BODY%", c1 + c2 + c3 + c4 + c5 + c6 + c7).replace("%EXPERIMENTS%", tsec + xsec)
 
 
@@ -808,7 +807,6 @@ main{max-width:960px;margin:0 auto;padding:24px 16px 64px}h1{font-size:24px;marg
 .sub{color:var(--ink2);font-size:13px;margin:0 0 12px}.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
 .tile{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px}.tl{color:var(--ink2);font-size:13px}.tv2{font-size:26px;font-weight:600}
 .tn{color:var(--muted);font-size:12px}.delta{font-size:13px;font-weight:600}.delta span{font-weight:400;color:var(--muted)}.delta.up{color:var(--good)}.delta.down{color:var(--bad)}
-.actions ol{margin:0;padding-left:20px}.actions li{margin:8px 0}
 .chart{width:100%;height:auto;display:block}.grid{stroke:var(--grid);stroke-width:1}.axis{stroke:var(--axis);stroke-width:1}
 .tick{fill:var(--muted);font-size:11px;font-variant-numeric:tabular-nums}.lab{fill:var(--ink2);font-size:12px}.val{fill:var(--ink);font-size:12px;font-variant-numeric:tabular-nums}
 .hit{outline:none;cursor:default}.hit:hover>*:not(rect[fill=transparent]),.hit:focus>*:not(rect[fill=transparent]){opacity:.8}
@@ -827,7 +825,6 @@ td{font-variant-numeric:tabular-nums}.sortable th{cursor:pointer;user-select:non
 <p class="meta">產生於 %GEN%（台北）。%FRESH%。所有比較只看自然流量，廣告另列。</p>
 <div class="tiles">%TILES%</div>
 %EXPERIMENTS%
-<section class="card actions"><h2>本週建議動作</h2><p class="sub">由規則挑出的候選，每週摘要再判斷要不要做。</p><ol>%ACTIONS%</ol></section>
 %BODY%
 </main><div id="tip"></div>
 <script>
