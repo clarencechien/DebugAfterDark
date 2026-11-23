@@ -1,0 +1,137 @@
+{
+ "segment": "s08_prompts",
+ "position": "第 9 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "f0cb36c663f5237cb6c0eba44979c173c163553962e33faf6c5da6ffff87cf2e",
+ "previous_context": "這聽起來超像模型在胡說八道，對吧？可是上傳北京的那一次連線，這個理由就完全說不通了。",
+ "original": {
+  "text": "報告十一月二十二號又補了一件相鄰的事，跟 Qwen 無關。轉接服務 OpenRouter 寄信給部分使用者，說送往 MiniMax 模型的 prompt 可能被第三方讀過。背後是資安公司 Dragos 的研究長 HD Moore 做的實驗：五個月送出將近兩百萬則 prompt，每一則都埋了一個只用一次的網址和假的帳號金鑰，誰去碰，就代表誰看過。結果有一家中國 AI 實驗室的系統，兩三天後會回頭抓 prompt 裡的網址，連標了不保存資料的請求也被抓。報告推斷很可能就是 MiniMax，但 Dragos 沒有點名。同一份實驗也記到兩家美國大業者有爬蟲，還有幾家代管業者自己被入侵，prompt 外流，那跟模型是哪國出的無關。",
+  "lint": {
+   "chars": 292,
+   "precise_numbers": [
+    "十一",
+    "二十二",
+    "兩百萬"
+   ],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 47.7,
+   "max_sentence_len": 80,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說到連線，其實還有另一種外洩方式。這份報告後來又補了一筆追蹤。這次跟 Qwen 沒關係喔。而是 prompt 在路上被看光了。<short pause> 轉接服務 OpenRouter 之前寄信通知大家。說送去 MiniMax 的請求可能被讀過。這是怎麼發現的？資安公司 Dragos 做了一個超狂的實驗。五個月內送了將近兩百萬則 prompt。每一則都偷偷塞了只用一次的測試網址。只要有人打開網址，就代表有人看過內容。結果有抓到嗎？有，而且很誇張。一家中國業者的系統，兩三天後真的跑來抓網址。連標記零資料留存的請求，照樣被爬蟲抓走。報告分析說，這家很可能就是 MiniMax 啦。我讀到這段真的覺得毛骨悚然。<sigh> 不過，這也不只是中國模型的問題喔。實驗發現兩家美國大廠同樣有爬蟲在抓。還有代管業者是伺服器沒鎖好，直接被駭客入侵。所以這件事，跟模型是哪國出的完全無關吧。",
+   "lint": {
+    "chars": 355,
+    "precise_numbers": [
+     "兩百萬"
+    ],
+    "enumerations": [],
+    "sentences": 21,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 22,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "這份報告在十一月下旬，又追蹤了一件事。\n這件事跟 Qwen 沒關係喔。\n它是發生在 prompt 送出去之後的路上。\n轉接服務 OpenRouter 寄信給使用者，\n說送去 MiniMax 的請求可能被別人看過。\n你好奇研究員怎麼抓到的嗎？\n資安公司 Dragos 做了一個很大的實驗。\n他們在將近兩百萬個 prompt 裡面，\n都偷埋了測試網址跟假的帳號金鑰。\n只要有人去點那個網址，就代表被偷看了嘛。\n結果真的有一家中國實驗室的系統，\n過兩三天就回頭來抓那些網址。\n連標了不留存資料的請求，也照抓不誤。\n報告推論這家很可能就是 MiniMax。\n不過 Dragos 當初其實沒有指名道姓啦。\n這種手法真的讓人毛骨悚然。<sigh>\n那其他公司就沒事嗎？\n其實實驗裡有兩家美國大公司，也會派爬蟲。\n而且還有幾家代管業者，自己被駭客入侵，\n導致使用者的 prompt 整包流出去。\n所以資料會不會外洩，\n很多時候跟模型是哪一國出的，根本沒關係。",
+   "lint": {
+    "chars": 378,
+    "precise_numbers": [
+     "十一",
+     "兩百萬"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 21.2,
+    "max_sentence_len": 41,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "講到連線，其實還有另一種外洩方式。報告裡提到，OpenRouter 寄信給使用者。信裡說，送給 MiniMax 的 prompt 被看過。這到底是怎麼抓到的？其實是一家資安公司做的誘餌實驗。研究員花了幾個月測試，送出將近兩百萬則 prompt。每一則裡面，都塞了只用一次的網址。只要有人點開，就代表資料被看過了。結果真的很扯。<short pause>有一家中國實驗室，兩三天後會回頭抓網址。就算你標註不保存資料，照樣被點開。雖然沒點名，但大家都猜是 MiniMax 啦。那這只是中國模型的問題嗎？其實也不是喔。實驗也抓到兩家美國大公司有爬蟲在抓。甚至有代管業者沒鎖好伺服器，讓資料外洩。所以 prompt 送出的路上，到處都是風險耶。",
+   "lint": {
+    "chars": 295,
+    "precise_numbers": [
+     "兩百萬"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 25,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "說到連線，其實還有另一種外洩方式。這份報告後來又補了一筆追蹤。這次跟 Qwen 沒關係喔。而是 prompt 在路上被看光了。<short pause> 轉接服務 OpenRouter 之前寄信通知大家。說送去 MiniMax 的請求可能被讀過。這是怎麼發現的？資安公司 Dragos 做了一個超狂的實驗。五個月內送了將近兩百萬則 prompt。每一則都偷偷塞了只用一次的測試網址。只要有人打開網址，就代表有人看過內容。結果有抓到嗎？有，而且很誇張。一家中國業者的系統，兩三天後真的跑來抓網址。連標記零資料留存的請求，照樣被爬蟲抓走。報告分析說，這家很可能就是 MiniMax 啦。我讀到這段真的覺得毛骨悚然。<sigh> 不過，這也不只是中國模型的問題喔。實驗發現兩家美國大廠同樣有爬蟲在抓。還有代管業者是伺服器沒鎖好，直接被駭客入侵。所以這件事，跟模型是哪國出的完全無關吧。",
+   "to": "報告十一月二十二號又補了一件相鄰的事，跟 Qwen 無關，是 prompt 在路上被人讀到。<short pause>轉接服務 OpenRouter 寄信通知使用者，說送去 MiniMax 模型的請求，可能被第三方讀過。這是怎麼發現的？資安公司 Dragos 做了一個實驗。五個月送出將近兩百萬則 prompt，每一則都塞了只用一次的網址和假的金鑰。只要有人打開網址，就代表有人看過內容。結果，一家中國業者的系統，兩三天後真的回頭來抓網址，連標了不保存資料的請求也有不少被抓。報告推斷很可能就是 MiniMax，不過 Dragos 沒有點名。<short pause>而且不只中國。兩家美國大業者也有爬蟲回頭抓。另外還有幾家代管業者自己被入侵，prompt 跟著外流，這就跟模型是哪國出的無關了。",
+   "reason": "「被看光」「超狂」「毛骨悚然」拿掉；「零資料留存」改成不保存資料；「照樣被抓走」改成原文的「也有不少」；「跟哪國完全無關」只限被入侵那一層"
+  },
+  {
+   "from": "報告十一月二十二號又補了一件相鄰的事，跟 Qwen 無關，是 prompt 在路上被人讀到。<short pause>轉接服務 OpenRouter 寄信通知使用者，說送去 MiniMax 模型的請求，可能被第三方讀過。這是怎麼發現的？資安公司 Dragos 做了一個實驗。五個月送出將近兩百萬則 prompt，每一則都塞了只用一次的網址和假的金鑰。只要有人打開網址，就代表有人看過內容。結果，一家中國業者的系統，兩三天後真的回頭來抓網址，連標了不保存資料的請求也有不少被抓。報告推斷很可能就是 MiniMax，不過 Dragos 沒有點名。<short pause>而且不只中國。兩家美國大業者也有爬蟲回頭抓。另外還有幾家代管業者自己被入侵，prompt 跟著外流，這就跟模型是哪國出的無關了。",
+   "to": "這份報告後來又補了一件相鄰的事，跟 Qwen 無關，是 prompt 在路上被人讀到。<short pause>轉接服務 OpenRouter 寄信通知使用者，說送去 MiniMax 模型的請求，可能被第三方讀過。這是怎麼發現的？資安公司 Dragos 做了一個實驗。五個月送出將近兩百萬則 prompt，每一則都塞了只用一次的網址和假的金鑰。只要有人打開網址，就代表有人看過內容。結果，一家中國業者的系統，兩三天後真的回頭來抓網址，連標了不保存資料的請求也有不少被抓。這份報告推斷很可能就是 MiniMax，不過 Dragos 沒有點名。<short pause>而且不只中國。兩家美國大業者也有爬蟲回頭抓。另外還有幾家代管業者自己被入侵，prompt 跟著外流，這就跟模型是哪國出的無關了。",
+   "reason": "句首「報告」改「這份報告」（bare_report，會聽成包括）；s08 拿掉日期少一個數字"
+  }
+ ]
+}

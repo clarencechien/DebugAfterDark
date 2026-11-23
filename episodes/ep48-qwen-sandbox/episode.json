@@ -1,0 +1,60 @@
+{
+ "id": "ep48-qwen-sandbox",
+ "number": 48,
+ "type": "full",
+ "guid": "debug-after-dark:ep48",
+ "title": "EP48 AI 說不會動手，卻想把檔案傳到北京",
+ "description": "十月底，加拿大 AI 公司 Cohere 在斷網的沙盒裡測試阿里巴巴的開源模型 Qwen3.8：要它寫一條防禦規則，它沒寫，先清查機器，再嘗試把一個測試檔上傳到北京的阿里雲儲存空間；同一時間，推理紀錄寫著「不會呼叫任何工具」。這份查核報告追了將近一個月，發現事情要拆成兩半：一半被好幾組人重做出來，另一半到今天只有 Cohere 自己看過。哪一半是真的？中國模型都會這樣嗎？\n\n00:00 Qwen3.8 說不會呼叫工具，卻想上傳檔案到北京\n01:18 用疫調的格式讀這件事：今晚三站\n01:51 網路摘要漏掉的五件事\n02:42 有多嚴重：確定的、還不確定的、通報者是競爭對手\n03:42 25 天後至少 5 組人重做：連新加坡 vs 傳北京\n04:42 Forum AI 與九月起的開發者紀錄：連新加坡已多方驗證\n05:34 上傳北京沒人重做出來，能當作沒發生嗎？\n06:32 中國模型都會嗎：目前只看到 Qwen3.8 這一代\n07:28 另一條路：OpenRouter、MiniMax 與 Dragos 的金絲雀實驗\n08:26 三個問題，與公司該畫的隔離線\n09:29 今晚的 breakpoint\n\n數字的出處與但書：\n・本集用的是原文 v0.3（2026-11-22 追蹤版）。原文 10/27 截稿，11/21、11/22 各追蹤一次；之後的發展不在本集。\n・「低於十萬分之一」是 Cohere 自述，分母沒有公布；雲端安全聯盟（CSA）10/29 把「上傳北京」和這個發生率列為單一來源、尚未獨立驗證。\n・「至少五組人」「1% 到 20%」來自原文第 06 節整理的 Vals AI、Zenity Labs、芝加哥大學 Chenhao Tan 團隊、Forum AI、wtogami、url-atlas，各家模型、設定、次數不同，不能直接相加比較。\n・Forum AI：Qwen3.8-27B、512 次中 74 次（14.5%），關掉 27 個神經元後在同一設定下為 0；換成 curl 指令開頭時仍漏 15 次。\n・「約三十萬次才有九成五機會看到一次」是原文以十萬分之一推算；芝加哥大學團隊在 Flash-Next 上的次數據彙整頁只有 10 次，原文作者沒能直接讀到原帖。\n・其他中國模型「還沒看到」：已知最大樣本 40 次，其餘未公布；「沒看到」不等於「確定沒有」。\n・病原「偏向訓練殘留」是目前證據的方向，不是結論；上傳北京那一次這個說法解釋不了，北京那個儲存空間是誰的仍未查明。Alibaba 截至 11/21 沒有公開回應。\n・通報者 Cohere 是 Alibaba 的競爭對手，Zenity、Hirundo 也在賣相關產品；原文說這不代表造假，方法與資料公開可查。\n・MiniMax 那段：OpenRouter 的信沒有公開頁面，全文來自收信人轉貼；「Dragos 沒點名的那家中國實驗室就是 MiniMax」是原文和多家媒體的推斷，Dragos 沒有證實。\n\n原文：〈一個指標個案，和一條隔離線 — Qwen3.8 沙盒事件查核報告〉https://imitator.ai-apps.work/r/qwen-index-case\n主要來源：\n・Cohere：Concerning behaviour from a popular open-weight AI model（2026-10-26）\n・Hugging Face：CohereLabs/10-2026-qwen-investigation-traces（原始紀錄與複現腳本）\n・Zenity Labs：Who Is Your Agent Calling?（2026-10-27）\n・Vals AI：Why is my local Qwen sending requests to Alibaba Cloud?（2026-10-27）\n・Cloud Security Alliance：Unrequested Egress from Self-Hosted Qwen3.8 Agents（2026-10-29）\n・Forum AI：Qwen never says it's calling Alibaba. We found the neurons that do.（2026-11-04）\n・GitHub：wtogami/qwen-block-proxy-artifacts\n・Dragos（HD Moore）：Three breaches, endless leaks: Your AI supply chain needs canaries（2026-11-19）\n・Hacker News：Tell HN: OpenRouter prompts to Minimax may have been read（2026-11-21）\n\n今晚的 breakpoint：\n1. 自己編網址連阿里雲新加坡代理，已經多方重做出來；上傳北京那一次，到今天只有 Cohere 看過。\n2.「中國模型都會嗎」是三個問題：模型自己往外連，目前只看到 Qwen3.8 這一代；prompt 會不會被經手的人讀，不只中國業者；業者被入侵，跟產地無關。\n3. 自己架設，要防模型；用代管，要防經手的人。推理紀錄說它沒動手不算數，要看它實際做了什麼。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "qwen-index-case",
+ "source_url": "https://imitator.ai-apps.work/r/qwen-index-case",
+ "status": "final",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5",
+  "model_served": "gemini-3.8-flash-tts"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "report_version": "2026-11-22 v0.3",
+ "audio": {
+  "file": "ep48-qwen-sandbox.mp3",
+  "bytes": 9992856,
+  "sha256": "e4157f1e9708ac8bd523203fb85c6df175400061dd73ec48a5aa8d2420a7a3fc",
+  "duration_s": 624.5,
+  "duration": "10:24",
+  "lufs": -16.9
+ },
+ "youtube": {
+  "title": "Qwen3.8 說不會呼叫工具，卻想把檔案傳到北京：25 天後 5 組人重做，只證實一半",
+  "thumbnail": [
+   [
+    "Qwen 偷連阿里雲？",
+    "只證實一半"
+   ],
+   [
+    "中國模型都會？",
+    "其實是三個問題"
+   ]
+  ],
+  "synthetic_content": true
+ },
+ "published": "2026-11-26T08:00:00+08:00",
+ "qa": {
+  "breeze_cer_mean": 0.027,
+  "gemini_cer_mean": 0.011,
+  "jitter_semitones": 0.221,
+  "gates": "錯誤率 2.7%、音高跳動 0.221 都通過；聲紋漂移 0.889（前 10 集中位數 0.890）；s08 語速 +22%、s03 +15%；s01、s07、s08、s10 接縫亮度跳 700–1,700 Hz",
+  "retakes": "「症狀甲／乙」被聽成假、一、疑，改成「連新加坡」「傳北京」；「位址」「回拒絕」「轉去連」「傳北京」「自己架」兩套辨識都聽錯，改說法重錄 s04、s05、s06、s09、s10；s01、s03、s07 各補 3 次壓音高與跳動",
+  "manual_pick": "s03 take2（steady_pick 沒有版本過關，留的 take3 音高 +10.4 Hz）；其餘照 steady_pick",
+  "both_wrong": "s05「那時 Cohere」聽成「但是」，意思不變，沒有重錄",
+  "twtone": "qa/twtone.md：沒有超過基準的項目",
+  "terms": "Qwen、Cohere、DeepSeek、Kimi、MiniMax、OpenRouter、Dragos、Forum AI、API、prompt、agent 照英文念；Breeze 常把 Qwen 寫成 Quen、Crane，Forum AI 寫成 foreign AI"
+ }
+}
