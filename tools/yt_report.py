@@ -197,7 +197,7 @@ def analyse(snap, reach):
     # 每日（頻道）
     days = {}
     for r in snap["daily_sources"]:
-        a = days.setdefault(r["day"], dict(org=0, ad=0, org_min=0, ad_min=0))
+        a = days.setdefault(r["day"], dict(org=0, ad=0, org_min=0, ad_min=0, short=0, short_min=0))
         k = "ad" if r["insightTrafficSourceType"] == "ADVERTISING" else "org"
         a[k] += r["views"]; a[k + "_min"] += r["views"] * r["averageViewDuration"] / 60
     last_data = max(days) if days else snap["end"]
@@ -232,6 +232,14 @@ def analyse(snap, reach):
             subs=totals.get(vid, {}).get("subscribersGained", 0),
             impressions=imp or None, ctr=(clk / imp * 100) if imp else None, retention=ret))
     rows.sort(key=lambda r: (r["ep"] is None, -(r["ep"] or 0)))
+    # Shorts 的觀看另外算：頻道每日的「自然」只留長片，不然 Short 一紅就會蓋掉長片在掉
+    for r in rows:
+        if r["style"] != "short": continue
+        for x in snap["video_daily_sources"].get(r["id"], []):
+            if x["insightTrafficSourceType"] == "ADVERTISING" or x["day"] not in days: continue
+            m = x["views"] * x["averageViewDuration"] / 60
+            a = days[x["day"]]
+            a["org"] -= x["views"]; a["org_min"] -= m; a["short"] += x["views"]; a["short_min"] += m
     return dict(days=days, last_data=last_data, rows=rows)
 
 
@@ -243,40 +251,54 @@ def median(xs):
 def window(days, end, n):
     e = d(end); s = e - dt.timedelta(days=n - 1)
     sel = [v for k, v in days.items() if s <= d(k) <= e]
-    return {k: sum(x[k] for x in sel) for k in ("org", "ad", "org_min", "ad_min")}
+    return {k: sum(x.get(k, 0) for x in sel) for k in ("org", "ad", "org_min", "ad_min", "short", "short_min")}
 
 
-def actions(A, reach):
+def experiment_eps(exps):
+    """正在實驗（已經改了、還沒結束）的集數；建議改標題時跳過，一次只改一個變數。"""
+    out = set()
+    for x in exps:
+        if not x.get("change_date") or x.get("status") in ("done", "stopped"): continue
+        if x["kind"] in ("ab_single", "video_version"): out.add(x["ep"])
+        if x["kind"] == "title_batch": out.update(x["eps"])
+    return out
+
+
+def actions(A, reach, exps=()):
     """規則產生的候選動作，最多三個；每週摘要以這裡為起點再判斷。"""
-    out, rows = [], [r for r in A["rows"] if r["style"] in ("hook", "poetic")]
+    busy = experiment_eps(exps) | {7}
+    out, rows = [], [r for r in A["rows"] if r["style"] in ("hook", "poetic") and r["ep"] not in busy]
     with_imp = [r for r in rows if r["impressions"] and r["impressions"] >= 100]
     if with_imp:
         tot_i = sum(r["impressions"] for r in with_imp)
         tot_c = sum(r["impressions"] * r["ctr"] / 100 for r in with_imp)
         avg = tot_c / tot_i * 100
-        lost = sorted(((r["impressions"] * (avg - r["ctr"]) / 100, r) for r in with_imp if r["ctr"] < avg and r["ep"] != 7),
+        lost = sorted(((r["impressions"] * (avg - r["ctr"]) / 100, r) for r in with_imp if r["ctr"] < avg),
                       key=lambda t: -t[0])[:3]
         if lost:
             out.append(dict(kind="包裝", text="改標題與縮圖（照 hooks.md）：曝光多、點閱率低於頻道平均 "
                             f"{avg:.2f}% 的影片 " + "、".join(f"EP{r['ep']:02d}（{r['impressions']:,.0f} 曝光，{r['ctr']:.2f}%）" for _, r in lost)
-                            + "。一次改一支，記下改的日期，兩週後看點閱率。"))
+                            + "。一次改一支，記下改的日期，兩週後看點閱率。（已排除正在實驗的集數："
+                            + "、".join(f"EP{e:02d}" for e in sorted(busy)) + "）"))
     else:
-        cand = sorted((r for r in rows if r["style"] == "poetic" and r["ep"] != 7),
+        cand = sorted((r for r in rows if r["style"] == "poetic"),
                       key=lambda r: -r["sources"].get("RELATED_VIDEO", 0))[:3]
         if cand:
             out.append(dict(kind="包裝", text="還沒有逐支的曝光數（Reporting API 第一份報表約 11/21 下午）。先用推薦影片帶來最多觀看的舊標題影片當候選："
                             + "、".join(f"EP{r['ep']:02d}" for r in cand) + "。Studio 上 EP00–23 的舊標題點閱率 0.64%，新標題 1.71%。"))
-    recent = [r for r in rows if r["ret30"] is not None and r["org_views"] >= 20]
-    if recent:
-        worst = min(recent, key=lambda r: r["ret30"])
-        med = median([r["ret30"] for r in recent])
+    # 開場留存跟標題實驗無關，所以這裡看全部長片
+    recent = [r for r in A["rows"] if r["style"] in ("hook", "poetic") and r["ret30"] is not None and r["org_views"] >= 20]
+    worst = min(recent, key=lambda r: r["ret30"]) if recent else None
+    med = median([r["ret30"] for r in recent]) if recent else None
+    if worst and worst["ret30"] < med * 0.85:
         out.append(dict(kind="開場", text=f"EP{worst['ep']:02d} 的自然流量在 30 秒還留著 {worst['ret30']*100:.0f}%（中位數 {med*100:.0f}%），"
                         "是開場最弱的一支。下一集寫 cold open 時對照 hooks.md 的三拍，並在影片版拿掉開頭 3.6 秒。"))
     if not any(r["style"] == "short" for r in A["rows"]):
         out.append(dict(kind="Shorts", text="頻道還沒有 Shorts。EP37 的 Short 已經做好（project files 的 shorts/ep37/），上傳後這份報表會自動多一節。"))
     wk = window(A["days"], A["last_data"], 7)
-    if wk["org"] + wk["ad"] and wk["ad"] / (wk["org"] + wk["ad"]) > 0.3:
-        out.append(dict(kind="資料", text=f"最近 7 天有 {wk['ad']/(wk['org']+wk['ad'])*100:.0f}% 的觀看來自廣告。報表的比較都已排除廣告，但頻道總數會被拉高，看 Studio 時記得篩掉。"))
+    tot = wk["org"] + wk["short"] + wk["ad"]
+    if tot and wk["ad"] / tot > 0.3:
+        out.append(dict(kind="資料", text=f"最近 7 天有 {wk['ad']/tot*100:.0f}% 的觀看來自廣告。報表的比較都已排除廣告，但頻道總數會被拉高，看 Studio 時記得篩掉。"))
     return out[:3]
 
 
@@ -718,9 +740,10 @@ def render(snap, A, reach, acts, xsec="", tsec="", psec=""):
     ctr_prev = clk_prev / imp_prev * 100 if imp_prev else None
 
     tiles = "".join([
-        tile("自然觀看（7 天）", fmt(wk["org"]), pct_change(wk["org"], prev["org"])),
-        tile("自然觀看時間（分鐘）", fmt(wk["org_min"]), pct_change(wk["org_min"], prev["org_min"])),
-        tile("自然平均觀看時長", f"{org_avd:.0f} 秒" if org_avd else "—", pct_change(org_avd or 0, prev_avd or 0) if prev_avd else None),
+        tile("長片自然觀看（7 天）", fmt(wk["org"]), pct_change(wk["org"], prev["org"]), note="不含 Shorts"),
+        tile("Shorts 自然觀看（7 天）", fmt(wk["short"]), pct_change(wk["short"], prev["short"]) if prev["short"] else None),
+        tile("長片自然觀看時間（分鐘）", fmt(wk["org_min"]), pct_change(wk["org_min"], prev["org_min"])),
+        tile("長片平均觀看時長", f"{org_avd:.0f} 秒" if org_avd else "—", pct_change(org_avd or 0, prev_avd or 0) if prev_avd else None),
         tile("縮圖曝光（7 天）", fmt(imp7) if imp7 else "—", pct_change(imp7, imp_prev) if imp_prev else None,
              note="" if imp7 else "等 Reporting API 第一份報表"),
         tile("點閱率（7 天）", f"{ctr7:.2f}%" if ctr7 is not None else "—",
@@ -730,9 +753,11 @@ def render(snap, A, reach, acts, xsec="", tsec="", psec=""):
 
     # 1. 每日自然 vs 廣告
     recent_days = {k: v for k, v in days.items() if d(k) >= d(last) - dt.timedelta(days=59)}
-    c1 = card("每日觀看：自然流量與廣告分開", f"最近 60 天，資料到 {last}（Analytics 延遲約 2–3 天）。下面所有比較都只用自然流量。",
-              legend([("自然流量", "--s1"), ("廣告", "--s2")]) + stacked_columns(recent_days, ["org", "ad"], ["自然", "廣告"], ["--s1", "--s2"]),
-              table(["日期", "自然觀看", "廣告觀看", "自然分鐘"], [[k, fmt(v["org"]), fmt(v["ad"]), fmt(v["org_min"])] for k, v in sorted(recent_days.items(), reverse=True)]))
+    c1 = card("每日觀看：長片、Shorts、廣告分開", f"最近 60 天，資料到 {last}（Analytics 延遲約 2–3 天）。下面所有比較都只用自然流量。",
+              legend([("長片自然", "--s1"), ("Shorts 自然", "--s3"), ("廣告", "--s2")]) +
+              stacked_columns(recent_days, ["org", "short", "ad"], ["長片自然", "Shorts", "廣告"], ["--s1", "--s3", "--s2"]),
+              table(["日期", "長片自然觀看", "Shorts 自然觀看", "廣告觀看", "長片自然分鐘"],
+                    [[k, fmt(v["org"]), fmt(v.get("short", 0)), fmt(v["ad"]), fmt(v["org_min"])] for k, v in sorted(recent_days.items(), reverse=True)]))
 
     # 2. 自然流量來源（28 天）
     s28 = {}
@@ -839,11 +864,11 @@ TEMPLATE = """<!doctype html>
 <title>深夜 Debug 成效報表</title>
 <style>
 :root{color-scheme:light;--page:#f9f9f7;--surface:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--muted:#898781;--grid:#e1e0d9;--axis:#c3c2b7;
---border:rgba(11,11,11,.10);--s1:#2a78d6;--s2:#eb6834;--good:#006300;--bad:#d03b3b}
+--border:rgba(11,11,11,.10);--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--good:#006300;--bad:#d03b3b}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--page:#0d0d0d;--surface:#1a1a19;--ink:#f0efec;--ink2:#c3c2b7;
---grid:#2c2c2a;--axis:#383835;--border:rgba(255,255,255,.10);--s1:#3987e5;--s2:#d95926;--good:#0ca30c;--bad:#e66767}}
+--grid:#2c2c2a;--axis:#383835;--border:rgba(255,255,255,.10);--s1:#3987e5;--s2:#d95926;--s3:#199e70;--good:#0ca30c;--bad:#e66767}}
 :root[data-theme="dark"]{color-scheme:dark;--page:#0d0d0d;--surface:#1a1a19;--ink:#f0efec;--ink2:#c3c2b7;
---grid:#2c2c2a;--axis:#383835;--border:rgba(255,255,255,.10);--s1:#3987e5;--s2:#d95926;--good:#0ca30c;--bad:#e66767}
+--grid:#2c2c2a;--axis:#383835;--border:rgba(255,255,255,.10);--s1:#3987e5;--s2:#d95926;--s3:#199e70;--good:#0ca30c;--bad:#e66767}
 *{box-sizing:border-box}body{margin:0;background:var(--page);color:var(--ink);font:15px/1.6 system-ui,-apple-system,"Segoe UI","Noto Sans TC",sans-serif}
 main{max-width:960px;margin:0 auto;padding:24px 16px 64px}h1{font-size:24px;margin:0 0 4px}h2{font-size:17px;margin:0 0 4px}h3{font-size:14px;color:var(--ink2);margin:16px 0 4px}
 .meta{color:var(--ink2);font-size:13px;margin:0 0 20px}.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin:16px 0}
@@ -901,15 +926,16 @@ def main():
         json.dump(snap, open(snap_path, "w", encoding="utf-8"), ensure_ascii=False)
     reach = load_reach(a.data_dir)
     A = analyse(snap, reach)
-    acts = actions(A, reach)
-    xsec, xsum = experiments_section(load_experiments(), snap, A, reach)
+    exps = load_experiments()
+    acts = actions(A, reach, exps)
+    xsec, xsum = experiments_section(exps, snap, A, reach)
     tsec, tsum = todo_section(load_todo(), dt.datetime.now(TZ).date())
     psec, psum = production_section()
     out = a.out or os.path.join(a.data_dir, "report.html")
     open(out, "w", encoding="utf-8").write(render(snap, A, reach, acts, xsec, tsec, psec))
     wk = window(A["days"], A["last_data"], 7)
     summary = dict(generated=snap["generated"], analytics_to=A["last_data"], reach_days=len({k[1] for k in reach}),
-                   organic_views_7d=wk["org"], ad_views_7d=wk["ad"], organic_minutes_7d=wk["org_min"], actions=acts, experiments=xsum, todo=tsum, production=psum,
+                   organic_views_7d=wk["org"], shorts_views_7d=wk["short"], ad_views_7d=wk["ad"], organic_minutes_7d=wk["org_min"], actions=acts, experiments=xsum, todo=tsum, production=psum,
                    episodes=[{k: r[k] for k in ("ep", "id", "title", "style", "org_views", "first7", "org_avp", "ret30", "impressions", "ctr")}
                              for r in A["rows"]])
     for name in ("summary.json", f"summary-{snap['generated'][:10]}.json"):  # 帶日期的那份給下週比較用
