@@ -1,0 +1,136 @@
+{
+ "segment": "s05_notblind",
+ "position": "第 6 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "c6cb8b80d1320bd4336527b6ff7b2dd5d78ebeac1901746e4928b09faced69d8",
+ "previous_context": "作者測了幾種大小，二十六B落差最大。比較小的模型，落差反而沒那麼大。",
+ "original": {
+  "text": "那會不會只是簡體讀得差？如果是，所有簡體題都該亂掉。論文準備了對照題，作者照跑。日本是一個國家、法國由法國政府統治，這種沒爭議的事，看簡體一樣答對。科索沃、克里米亞這些跟中國無關的主權爭議，六四、新疆這些跟台灣無關的題目，也幾乎沒差。同一件事換成兩岸各自的用詞，例如總統和地區領導人，它也都判對。只有台灣算不算國家這一類，字形一換，它就換答案。這份報告裡有一句話：它不是看不懂簡體，它看懂了，然後換了一邊站。",
+  "lint": {
+   "chars": 204,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 24.5,
+   "max_sentence_len": 42,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那會不會只是二十六B看不懂簡體？\n你可能會這樣想對吧？\n其實作者也想到了。<short pause>\n他們跑了四組跟台灣無關的對照題。\n像是日本是不是國家，\n或是其他地區的主權爭議。\n結果繁簡落差都在零點零七以內。\n那個差距小到肉眼看不出來嘛。\n重點來了，\n就算把用詞換成兩邊各自的講法，\n模型也全都判對喔。\n所以問題根本不在簡體字。\n這份報告裡有一句話講得超貼切：<short pause>\n它不是看不懂簡體，\n它是看懂了，然後換了一邊站。",
+   "lint": {
+    "chars": 181,
+    "precise_numbers": [
+     "二十六",
+     "零點零七"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.1,
+    "max_sentence_len": 37,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那會不會是模型單純看不懂簡體？如果真的是醬，所有簡體題目都該答錯嘛。所以作者準備了其他題目來對照。像是日本是不是國家這種沒爭議的事，還有六四跟新疆這些題目。結果落差都在零點零七以內。<short pause>其實幾乎沒有差別。連總統跟領導人這種兩岸用詞，它也都判對喔。重點來了，只有台灣算不算國家這種題目會變。真的很有意思。這份報告裡有一句話總結得很精闢：它不是看不懂簡體。<short pause>它是看懂了，然後換了一邊站。",
+   "lint": {
+    "chars": 188,
+    "precise_numbers": [
+     "零點零七"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 28,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那會不會純粹是模型看不懂簡體字？\n其實作者也想到了這點。\n如果只是看不懂，所有簡體題都該爆掉吧。\n所以這份報告準備了好幾組對照題。\n像是日本是不是國家這種沒爭議的事實。\n或是六四、新疆這種跟台灣無關的題目。\n結果四組題目的落差，都在零點零七以內。\n也就是說，繁體跟簡體幾乎沒差喔。\n最厲害的是，換成兩邊的用詞，它一樣判對。\n只有碰到台灣算不算國家，它才突然換答案。\n這份報告最後講了一句話。\n我聽完真的起雞皮疙瘩。<short pause>\n它不是看不懂簡體。\n它看懂了，然後換了一邊站。",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [
+     "零點零七"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "所以這份報告準備了好幾組對照題。",
+   "to": "所以論文準備了四組對照題，作者照跑。",
+   "reason": "歸屬錯：對照題是論文的"
+  },
+  {
+   "from": "最厲害的是，換成兩邊的用詞，它一樣判對。",
+   "to": "還有，同一件事換成兩岸各自的用詞，它一樣判對。",
+   "reason": "語氣收斂、照素材"
+  },
+  {
+   "from": "這份報告最後講了一句話。我聽完真的起雞皮疙瘩。<short pause>",
+   "to": "這份報告裡有一句話。<short pause>",
+   "reason": "Ping 沒有個人反應；那句不在最後"
+  }
+ ]
+}

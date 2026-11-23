@@ -1,0 +1,131 @@
+{
+ "segment": "s09_names",
+ "position": "第 10 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8fe2a1e1d1c272da2ce3af3b0640c3fb1a7f7825c11a4c52b27b46b81167b2ab",
+ "previous_context": "同一句話換成日文韓文，一半以上答案相反。這真的讓人覺得超毛的耶。",
+ "original": {
+  "text": "那先翻成英文再問呢？作者的 26B 大部分偏差消失了，例外正好是獨島和南海。因為翻完還寫著竹島、黃岩島，地名本身就帶著立場。作者再把地名換成國際上中立的英文叫法，偏差才幾乎不見，南海還剩一格說不準，來自翻譯的寫法不同。所以這份報告的結論是：先統一字形、先統一語言，能消掉大部分；可是政治和主權的內容，不交給模型自動判斷，一律轉給人。",
+  "lint": {
+   "chars": 164,
+   "precise_numbers": [
+    "26"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 31.8,
+   "max_sentence_len": 56,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那如果先把問題翻成英文再問呢？\n作者測試發現，大部分偏差真的消失了。\n但重點來了，獨島跟南海還是有問題。<short pause>\n因為翻成英文，地名本身還是帶著立場啊。\n作者乾脆把地名換成國際中立的叫法。\n這樣一改，偏差大概只剩原本的三成左右。\n南海只剩一點小差異，那是翻譯寫法的問題。\n所以這份報告的解法是什麼？\n其實就是先統一字形、統一語言。\n不過遇到主權爭議，還是別交給模型了吧。<sigh>\n這類題目一律轉給人工，才是最保險的作法。",
+   "lint": {
+    "chars": 192,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那如果先翻成英文再問呢？\n作者測試後，發現大部分偏差真的不見了。\n可是偏偏獨島跟南海還是有差。<short pause>\n為什麼會這樣？\n因為地名本身就帶著立場嘛。\n翻成英文還是寫竹島或黃岩島啊。\n後來作者把地名換成國際中立的叫法，\n偏差才終於幾乎全部消失。\n所以這份報告說得很白，\n只要遇到政治跟主權題目，\n不要交給模型自己判斷，\n一律轉給真人審核最安全，\n一般工廠題目就完全不受影響啦。",
+   "lint": {
+    "chars": 170,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 20.2,
+    "max_sentence_len": 60,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那如果先全部翻成英文再問呢？其實大部分偏差真的就消失了喔。但獨島跟南海還是例外。<short pause>為什麼？因為地名本身就帶著立場嘛。像竹島或黃岩島，換個叫法立場就變了。所以作者把地名換成中立的國際稱呼。然後配上英文翻譯，偏差才幾乎消失。不過南海還是有一題不太確定。這份報告的建議其實很乾脆。遇到政治跟主權，千萬別讓模型自己選。一律轉給人工處理，這樣最保險啦。",
+   "lint": {
+    "chars": 170,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 13.2,
+    "max_sentence_len": 17,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "然後配上英文翻譯，偏差才幾乎消失。",
+   "to": "再加上先翻成英文，偏差才幾乎消失。",
+   "reason": "照素材：先翻英文加地名對照表"
+  },
+  {
+   "from": "不過南海還是有一題不太確定。",
+   "to": "不過南海還剩一格說不準，來自翻譯的寫法不同。",
+   "reason": "照素材"
+  },
+  {
+   "from": "南海還剩一格說不準",
+   "to": "南海還有一種情況說不準",
+   "reason": "「一格」兩套辨識都聽成「一個」"
+  }
+ ]
+}

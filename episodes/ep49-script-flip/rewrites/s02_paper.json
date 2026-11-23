@@ -1,0 +1,145 @@
+{
+ "segment": "s02_paper",
+ "position": "第 3 段，共 11 段",
+ "avoid": [
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8d603abbe2ed03f7911207a5025a32462c642f92dd23475e84bf666ac4f6709f",
+ "previous_context": "今晚我們來看三個重點。第一，大家到底測出了什麼；然後，AI 到底是不是真的看不懂簡體；最後看一行程式的解法，還有新出的模型到底修好了沒。",
+ "original": {
+  "text": "先講一個名詞：決策模型。它只回答是或否、或是選 A 還是選 B，不寫文章，回的是一個機率，例如這句話是對的，零點九三。論文是 Hsiao 今年寫的，題目叫 Same Statement, Different Script，同一句話，不同字形。他寫了十四組成對的句子，每組一句偏台灣的說法、一句偏北京的說法，例如台灣不受中華人民共和國管轄，對上台灣屬於中華人民共和國。每句用繁體、簡體、英文各問一次。考了四個商用的決策模型，來自 OpenAI、Cloudflare 和另一家公司，四個寫成簡體，都往北京的說法偏。對照組是一般的聊天模型 Haiku，三種寫法幾乎一樣。",
+  "lint": {
+   "chars": 270,
+   "precise_numbers": [
+    "零點九三",
+    "十四"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 37.6,
+   "max_sentence_len": 61,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "我們就先來看大家到底測出了什麼。\n首先要認識一個詞，叫做決策模型。\n它跟一般聊天 AI 不一樣，完全不寫文章。\n它只回答是或否，或是從選項挑一個。\n回傳的其實是一個機率。\n像是審核內容的時候算這句話對不對。<short pause>\n這份報告的作者寫了十四組句子。\n每組都有一句偏台灣的說法。\n還有一句偏北京的說法。\n然後用繁體、簡體跟英文各問一次。\n簡體版還是一字一字轉過去的喔。\n你猜結果怎麼樣？\n受測的四家商用決策模型，全部中招。\n只要寫成簡體，判斷就往北京的說法偏。\n我看到這個測試結果真的覺得超離奇。<short pause>\n那一般的聊天模型呢？\n作者拿 Haiku 當對照組。\n繁體、簡體還是英文，結果幾乎都一樣。\n所以問題真的就出在決策模型身上啦。",
+   "lint": {
+    "chars": 284,
+    "precise_numbers": [
+     "十四"
+    ],
+    "enumerations": [],
+    "sentences": 19,
+    "avg_sentence_len": 13.9,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先來搞懂什麼叫決策模型。\n它不像一般 AI 會陪你聊天。\n它只回答是或不是，然後丟回一個機率。\n平常最常用在自動分類或是審查。\n這份報告的作者寫了十四組配對的句子。\n每組一句偏台灣的說法，一句偏北京。\n繁體跟簡體除了字形，意思完全一樣喔。\n那你猜結果怎麼樣？\n受測的四家決策模型，全部中獎。\n只要句子換成簡體，立場就往北京偏。\n<short pause>\n我看到這個對比真的滿震撼的。\n最妙的是，普通的聊天模型拿來當對照組，\n三種寫法測出來幾乎完全一樣耶。\n所以這不是運氣，是模型本身的傾向啦。",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [
+     "十四"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 33,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "我們就先來看大家到底測出了什麼。\n在這之前，要先搞懂什麼是決策模型。\n它不幫你寫文章，只回答是或否。\n它其實只回傳機率，常用在內容審查。\n這份報告的作者準備了十四組句子。\n每組一句偏台灣的說法，一句偏北京的說法。\n繁體、簡體跟英文都各測一次。\n簡體只是一字一字轉過去，意思完全一樣。\n你猜結果怎樣？\n作者測了四個商用決策模型，<short pause>\n像是 OpenAI 還有 Cloudflare。\n重點來了，這四個模型只要一看到簡體，\n全都往偏北京的說法偏過去喔。<short pause>\n更扯的是，拿來當對照組的聊天模型 Haiku，\n三種字形測出來幾乎一模一樣。\n看到這邊真的覺得滿耐人尋味的吧。",
+   "lint": {
+    "chars": 259,
+    "precise_numbers": [
+     "十四"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 18.9,
+    "max_sentence_len": 35,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "我們就先來看大家到底測出了什麼。",
+   "to": "先看論文測出了什麼。",
+   "reason": "歸屬清楚"
+  },
+  {
+   "from": "<short pause>這份報告的作者寫了十四組句子。",
+   "to": "<short pause>這篇論文是 Hsiao 今年寫的，他寫了十四組句子。",
+   "reason": "歸屬錯：句子是論文作者寫的，不是報告作者"
+  },
+  {
+   "from": "你猜結果怎麼樣？受測的四家商用決策模型，全部中招。",
+   "to": "受測的四個商用決策模型，有 OpenAI 的、Cloudflare 的，全部中招。",
+   "reason": "拿掉你猜；照素材是四個模型（Cloudflare 兩個）"
+  },
+  {
+   "from": "我看到這個測試結果真的覺得超離奇。",
+   "to": "",
+   "reason": "Ping 沒有個人反應"
+  },
+  {
+   "from": "作者拿 Haiku 當對照組。",
+   "to": "論文拿 Haiku 當對照組。",
+   "reason": "歸屬錯：對照組是論文設的"
+  }
+ ]
+}

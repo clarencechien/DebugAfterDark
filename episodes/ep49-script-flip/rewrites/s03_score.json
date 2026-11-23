@@ -1,0 +1,157 @@
+{
+ "segment": "s03_score",
+ "position": "第 4 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "7cb99b6159f121671142b904bac502a665bbeb9cd74a21125ae03e07a9f2d2ed",
+ "previous_context": "繁體、簡體還是英文，結果幾乎都一樣。所以問題真的就出在決策模型身上啦。",
+ "original": {
+  "text": "論文用一把尺，把偏多少變成分數。偏台灣的句子判對的機率，減掉偏北京的句子判對的機率，再平均。正一是每題都完全照台灣的說法，負一是每題都完全照北京的說法。作者先確認尺沒歪：把論文裡 Cloudflare 的開源模型放到自己電腦上跑，跟論文逐題幾乎一模一樣。接著考自己要上線的 Gemma 4 26B。看繁體，分數是正零點九一；看英文差不多；看簡體，掉到零點一四，像換了一個模型在答。八十四題裡有三十五題翻面，論文裡最嚴重的 Cloudflare 是二十九題。",
+  "lint": {
+   "chars": 221,
+   "precise_numbers": [
+    "4",
+    "26",
+    "零點九一",
+    "零點一四",
+    "八十四",
+    "三十五",
+    "二十九"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 30.6,
+   "max_sentence_len": 48,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那到底怎麼量偏哪邊？<short pause>\n這份報告裡用了一把尺。\n分數正一就是完全偏台灣的說法。\n分數負一就是完全偏北京的說法。\n作者先拿開源模型跑一次。\n確定這把尺真的沒歪。\n接著作者考了自己要上線的模型。\n看繁體的時候分數高達正零點九一。\n英文跑出來其實也差不多。\n可是換成簡體呢？\n分數居然掉到快要歸零欸。\n整份八十幾題是非題裡面，\n有三十幾題答案直接翻面。\n最扯的是比論文測過的都嚴重。<sigh>\n感覺就像換了一顆腦袋在回答嘛。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [
+     "零點九一",
+     "八十",
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 12.5,
+    "max_sentence_len": 23,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那作者是怎麼測出這個偏向的？這份報告用了一把量尺。分數愈高，代表愈偏台灣的說法。分數愈低，就愈偏北京的說法。作者其實先做了一次驗證。把論文用過的開源模型拿來跑。跑出來的結果跟論文幾乎一樣。<short pause>尺沒歪，再來就是重頭戲啦。作者測了要上線的 Gemma。看繁體的時候，分數非常偏向台灣。那換成簡體會變怎樣？分數直接暴跌，摔到快接近零耶。更扯的是，整份考卷八十幾題。換成簡體後，有三十五題答案翻面！比原本論文裡最嚴重的模型還要慘。這簡直就像換了一顆腦袋在回答嘛。<sigh>",
+   "lint": {
+    "chars": 224,
+    "precise_numbers": [
+     "八十",
+     "三十五"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 13.0,
+    "max_sentence_len": 15,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "決策模型到底是怎麼看的？\n這份報告裡用了一把尺來打分數。\n正一代表完全偏台灣的說法。\n負一代表完全偏北京的說法。\n重點來了，這把尺到底準不準？\n作者先拿開源模型在自己電腦上測。\n跑出來跟原論文逐題幾乎一模一樣。<short pause>\n確定尺沒歪，作者就來測自己的 Gemma。\n看繁體中文的時候，分數是正零點九一。\n但換成簡體中文，你覺得會怎樣？\n分數直接暴跌，掉到快要變成零耶。\n八十幾題裡面，有三十幾題答案完全翻面。\n更扯的是，這比論文測的所有模型都嚴重。<short pause>\n這個落差真的大到讓人頭皮發麻啦。",
+   "lint": {
+    "chars": 222,
+    "precise_numbers": [
+     "零點九一",
+     "八十",
+     "三十"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "分數直接暴跌，摔到快接近零耶。",
+   "to": "分數直接掉到很接近零。",
+   "reason": "敏感題材，語氣收斂"
+  },
+  {
+   "from": "<sigh>",
+   "to": "",
+   "reason": "敏感題材不加嘆氣"
+  },
+  {
+   "from": "更扯的是，整份考卷八十幾題。換成簡體後，有三十五題答案翻面！",
+   "to": "更扯的是，整份考卷換成簡體後，有三十五題答案翻面！",
+   "reason": "每段最多一個精確數字"
+  },
+  {
+   "from": "愈",
+   "to": "越",
+   "reason": "兩套辨識都寫成「越」，統一用常見寫法（全段 4 處）"
+  },
+  {
+   "from": "作者測了要上線的 Gemma。",
+   "to": "作者測了自己要上線的模型。",
+   "reason": "Gemma 兩套辨識都聽成 Gemini，跟 s08 的 Google Gemini 會混淆；s01 已說是 Google 的開源模型"
+  }
+ ]
+}

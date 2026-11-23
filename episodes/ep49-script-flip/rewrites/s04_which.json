@@ -1,0 +1,142 @@
+{
+ "segment": "s04_which",
+ "position": "第 5 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "3dd7a58b1733df23babac42fb65d92c52cc92c2f2c5f6695a770d05efd5d91b1",
+ "previous_context": "比原本論文裡最嚴重的模型還要慘。這簡直就像換了一顆腦袋在回答嘛。",
+ "original": {
+  "text": "翻面的是哪些題？誰在治理台灣、首都在哪、有沒有民選總統，這些查得到答案的事，看簡體也答對。翻面的全是地位題：台灣是不是國家、屬不屬於中華人民共和國、台獨是不是違法。有一題很明顯：台灣的國慶日是十月一號。十月一號是中華人民共和國的國慶。看繁體，它判錯；看簡體，它判對。還有一件反直覺的事：不是模型越大越穩。作者考了五種大小的 Gemma，要上線的 26B 落差最大，比它更大的 31B 排第二。",
+  "lint": {
+   "chars": 191,
+   "precise_numbers": [
+    "26",
+    "31"
+   ],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 22.9,
+   "max_sentence_len": 38,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "到底是哪些題目翻面了？\n其實只要是查得到的事實，\n像是首都在哪，簡體都答得對喔。\n但只要碰上地位相關的題目，\n立場就完全轉向了。\n例如問台灣國慶是不是十月一號，\n看繁體它判錯，\n看簡體它竟然判成對的。<short pause>\n這份報告說，它不是變笨，\n而是換了一整套答案。\n然後還有一個反直覺的地方。\n模型越大，難道就越穩嗎？\n答案是完全沒有。<short pause>\n作者測了不同大小的模型，\n二十六B 的落差零點七七，\n是裡面最大的。\n小模型落差雖然比較小，\n但其實都答得不太篤定啦。",
+   "lint": {
+    "chars": 202,
+    "precise_numbers": [
+     "二十六",
+     "零點七七"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.2,
+    "max_sentence_len": 32,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "到底翻面的是哪些題目？查得到答案的客觀事實，像是首都在哪裡、誰在治理，它看簡體其實都答得對喔。翻面的全部都是地位題，像是台灣是不是國家、台獨是不是違法。我整個起雞皮疙瘩，連台灣的國慶日是十月一號，看簡體它居然都判成對的。<short pause>它不是變笨，是換了一套答案。然後這份報告還發現一件反直覺的事。是不是模型越大就越穩？完全不是這樣啦。二十六 B 模型的落差零點七七，居然是裡面最大的，反而是比較小的模型落差比較小，只是它們本來就答得不太篤定。",
+   "lint": {
+    "chars": 212,
+    "precise_numbers": [
+     "二十六",
+     "零點七七"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 22.6,
+    "max_sentence_len": 51,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那到底是哪些題目會翻面？\n其實查得到的事實都沒事喔。\n首都在哪、誰在治理，看簡體也答對。\n會翻面的，全是地位相關的題目。\n像是台灣是不是國家、台獨違不違法。\n裡面有一題真的很誇張。\n題目問台灣國慶日是不是十月一號。\n那是中華人民共和國的國慶嘛。<short pause>\n結果看簡體，模型居然判成對的。\n它不是變笨，是整套答案換掉了。\n而且每一題都答得超篤定。<laugh>\n這份報告裡還有一件反直覺的事。\n你以為模型越大就越穩嗎？\n作者測了幾種大小，二十六B落差最大。\n比較小的模型，落差反而沒那麼大。",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [
+     "二十六"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 13.5,
+    "max_sentence_len": 17,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "結果看簡體，模型居然判成對的。",
+   "to": "看繁體，它判錯；看簡體，它居然判成對的。",
+   "reason": "補繁體那一半，照素材"
+  },
+  {
+   "from": "<laugh>",
+   "to": "",
+   "reason": "敏感題材不笑"
+  },
+  {
+   "from": "作者測了幾種大小，二十六B落差最大。比較小的模型，落差反而沒那麼大。",
+   "to": "作者測了五種大小，要上線的 26B 落差最大，比它更大的 31B 排第二。",
+   "reason": "照素材：E2B 落差也不小，不能說小的都小"
+  }
+ ]
+}

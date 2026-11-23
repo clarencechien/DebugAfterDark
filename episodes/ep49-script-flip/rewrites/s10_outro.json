@@ -1,0 +1,122 @@
+{
+ "segment": "s10_outro",
+ "position": "第 11 段，共 11 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2c3f31e9845d22d0092f1c0a3fd71dbf6546a122ca60e020c3060c7162d41662",
+ "previous_context": "遇到政治跟主權，千萬別讓模型自己選。一律轉給人工處理，這樣最保險啦。",
+ "original": {
+  "text": "所以，AI 是看不懂簡體嗎？不是。它看懂了，然後換了一邊站。今晚的 breakpoint。第一，同一句話，字形一換，決策模型可能給出相反的答案，而且很篤定。第二，問之前先統一字形，一行程式就把翻面從三十五題壓到一題。第三，政治和主權的題目，換語言、換地名都會偏，不要交給模型自動判斷。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 177,
+   "precise_numbers": [
+    "三十五"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 10,
+   "avg_sentence_len": 16.7,
+   "max_sentence_len": 33,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以，AI 到底是看不懂簡體字嗎？\n其實不是喔。\n它看懂了，然後換了一邊站，超誇張的。\n<short pause>\n好，今晚的 breakpoint。\n第一，同一句話換了字形，答案就可能翻面。\n第二，統一轉成繁體，翻面就只剩一題。\n第三，遇到政治主權問題，一律交給真人啦。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 151,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 14.1,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以，AI 到底是不是看不懂簡體？\n不是喔，它其實全都看懂了。\n只是轉身換了一邊站啦。<short pause>\n好，今晚的 breakpoint。\n換了字形，決策模型的立場就可能完全相反。\n統一字形，一行程式就能讓翻面只剩下一題。\n遇到主權爭議，千萬別讓模型自己做決定。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 152,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以，AI 是真的看不懂簡體嗎？不是喔。它其實完全看懂了，只是換了一邊站。好，今晚的 breakpoint。<short pause>同一句話換了字形，答案就可能完全相反。然後，問之前先轉繁體，一行程式就能搞定。遇到政治爭議題目，一律交給真人審核啦。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 147,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 13.7,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2
+}

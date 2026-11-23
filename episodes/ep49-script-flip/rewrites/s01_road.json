@@ -1,0 +1,144 @@
+{
+ "segment": "s01_road",
+ "position": "第 2 段，共 11 段",
+ "avoid": [
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b7add0aab6ffcd430d131208749521b0f4721ff943af906da84d8cc73b709659",
+ "previous_context": "所以這集要來搞清楚，AI 到底是看不懂簡體？還是它其實看懂了，只是換了一邊站？",
+ "original": {
+  "text": "先說清楚這集講什麼。這份報告不是在討論台灣的地位，它是一份測試報告：拿一份考卷考 AI，記錄它怎麼答。這集也一樣，只講測到的事。報告的作者在做一套要上線的判斷系統，底下用的是 Google 開源的 Gemma 4。他們讀到一篇論文，說商用的 AI 有這個毛病，就拿自己要上線的模型考同一份考卷。今晚走三站：第一，別人和作者各考出了什麼；第二，它到底是不是看不懂簡體；第三，一行程式的解法，還有十一月的補考，新出的模型修好了沒有。",
+  "lint": {
+   "chars": 207,
+   "precise_numbers": [
+    "4",
+    "十一"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 33.5,
+   "max_sentence_len": 66,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先說好喔，這集完全不聊政治立場。<short pause>\n這份報告純粹是一份測試報告啦。\n作者只是出了一份考卷，看 AI 怎麼回答。\n那作者為什麼要測這個？\n其實他們當時正準備讓系統上線。\n底層用的是 Google 開源的 Gemma 四。\n看到論文說，商用 AI 繁簡答案會相反，\n作者就拿同一份考卷去考自己的模型。\n我看到這邊超好奇，開源模型扛得住嗎？\n今晚看三個重點。<short pause>\n第一，大家到底考出了什麼。\n然後，AI 真的看不懂簡體嗎？\n最後看一行程式要怎麼解，\n還有十一月的新模型修好了沒。",
+   "lint": {
+    "chars": 211,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 34,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先說清楚喔，我們今天不聊政治立場啦。<short pause>這份報告純粹是測試，只記錄 AI 怎麼回答。其實報告的作者正要讓系統上線，底下用的是 Google 的開源模型。他們看到別人測出問題，也拿同一份考卷考自己的模型。你猜結果怎樣？<short pause>真的有一樣的毛病。今晚我們來看三個重點。第一，大家到底測出了什麼；然後，AI 到底是不是真的看不懂簡體；最後看一行程式的解法，還有新出的模型到底修好了沒。",
+   "lint": {
+    "chars": 178,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 8,
+    "avg_sentence_len": 21.2,
+    "max_sentence_len": 55,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先說清楚喔，這集完全不聊政治立場。\n這份報告純粹是一份測試報告。\n作者原本要上一套判斷系統。\n底層用的是 Google 開源的 Gemma 4。\n結果他們看到論文說，商用 AI 有這個毛病。\n你猜作者怎麼做？\n他們直接拿同一份考卷，考自己的模型啦。<short pause>\n我看到這個實驗真的覺得超好奇。\n所以今晚我們抓三個重點。\n第一，先看大家到底測出了什麼。\n然後，來研究它是不是真的看不懂簡體。\n最後來看一行程式的解法。\n還有十一月新模型的補考結果喔。",
+   "lint": {
+    "chars": 199,
+    "precise_numbers": [
+     "4",
+     "十一"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "他們看到別人測出問題，也拿同一份考卷考自己的模型。你猜結果怎樣？<short pause>真的有一樣的毛病。",
+   "to": "他們讀到一篇論文，說商用的 AI 有這個毛病，就拿同一份考卷考自己的模型。",
+   "reason": "照素材；結果留到後面講，拿掉你猜"
+  },
+  {
+   "from": "第一，大家到底測出了什麼；",
+   "to": "第一，論文和作者各測出了什麼；",
+   "reason": "歸屬清楚"
+  },
+  {
+   "from": "先說清楚喔，我們今天不聊政治立場啦。<short pause>這份報告純粹是測試，只記錄 AI 怎麼回答。其實報告的作者正要讓系統上線，底下用的是 Google 的開源模型。他們讀到一篇論文，說商用的 AI 有這個毛病，就拿同一份考卷考自己的模型。",
+   "to": "你有沒有想過，AI 幫你做的決定、幫你下的判斷，要不要打個問號？<short pause>這份報告的作者，看到台灣一位知名的 KOL 跑過這樣的題目，他本人也歡迎網友自己測試。作者就拿同一份考卷，考自己正要上線的系統，底下用的是 Google 的開源模型，把 AI 怎麼回答，一題一題記下來。",
+   "reason": "Clarence 11/23：不用那麼中立，改成先問聽眾 AI 的判斷要不要打問號，帶出 KOL 跑過題目、歡迎網友自己測，作者也拿這題記錄"
+  }
+ ]
+}
