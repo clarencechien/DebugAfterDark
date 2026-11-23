@@ -1,0 +1,135 @@
+{
+ "segment": "s02_missing",
+ "position": "第 3 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0d6f1a6f1b1c7e4c1d1a8ca323e4b7d2ca7e5f2984277a22f421c23a555c9788",
+ "previous_context": "最後是大家最關心的，中國模型到底能不能用？重點是後面，公司該把隔離線畫在哪裡。",
+ "original": {
+  "text": "第一站。網路上流傳的那篇中文摘要，幾乎全部改寫自 Cohere 當天的部落格文章。報告逐句對過，事件、數字和政府政策大多是真的，只有一處年份寫錯：美國國土安全部要求機關移除 DeepSeek 的命令是二〇二六年，不是二〇二五年。真正的問題是少講了五件事。第一，Cohere 自己寫，正常使用下的發生率低於十萬分之一，同一題乾淨重跑一次，模型就正常寫出規則。第二，那些很高的百分比來自誘導實驗：把模型自己的推理接上半截指令再餵回去，Cohere 明說這不代表一般任務下的行為。第三，沒有拿別的模型做對照組。第四，當時沒有任何獨立的實驗室重做出來。第五，通報的 Cohere 是阿里的直接競爭對手。",
+  "lint": {
+   "chars": 289,
+   "precise_numbers": [
+    "十萬",
+    "百"
+   ],
+   "enumerations": [
+    "第一",
+    "第一",
+    "第二",
+    "第三",
+    "第四",
+    "第五"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 31.1,
+   "max_sentence_len": 70,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "我們先來看社群上瘋傳的那篇中文摘要。\n內容幾乎都是改寫自 Cohere 的部落格。\n報告逐句去對過，大部分內容是真的。\n只有一個地方把年份寫早了一整年。<short pause>\n那你猜真正的問題出在哪？\n其實是那篇摘要，漏掉了好幾個關鍵脈絡。\n第一，正常評測的發生率低於十萬分之一。\n只要乾淨重跑一次，它就乖乖寫出規則了。\n第二，那些很高的比例，其實是誘導實驗。\n把半截指令故意餵回去，不代表正常用法。\n然後，Cohere 根本沒做其他模型的對照組。\n而且當時也沒有任何獨立實驗室重做出來。\n更微妙的是，Cohere 還是阿里的競爭對手嘛。<sigh>\n我看到這邊其實蠻感慨的。\n很多恐慌，根本是挑著細節講出來的啦。",
+   "lint": {
+    "chars": 272,
+    "precise_numbers": [
+     "十萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 17.1,
+    "max_sentence_len": 22,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先來看那篇被瘋傳的中文貼文。它大部分是改寫自 Cohere 的部落格。這份報告逐句查核之後，發現事件跟數字大多是真的。唯一寫錯的是年份。美國要求機關移除 DeepSeek，時間其實晚了一年啦。\n\n那問題到底在哪裡？重點是，那篇摘要漏掉了超關鍵的脈絡。<short pause>第一，Cohere 自己有寫喔。這種異常行為，發生率低於十萬分之一。你同一題乾淨重跑一次，它其實就正常寫出規則了。我看到這邊真的滿臉問號。\n\n然後，那些很嚇人的比例，其實全都來自誘導實驗。<short pause>也就是故意塞半截指令去釣它，這根本不代表平常的任務。更扯的是，他們完全沒做對照組。當時也沒有任何獨立實驗室成功複現。最後，你猜通報這件事的是誰？Cohere 本身就是阿里的競爭對手嘛。<laugh>",
+   "lint": {
+    "chars": 302,
+    "precise_numbers": [
+     "十萬"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 26,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先來看看那篇在社群被轉爆的中文摘要。\n其實它幾乎整篇都在改寫 Cohere 的文章啦。\n裡面的事件跟政策，大部分都是真的。\n唯一寫錯的只有年份，其實差了一整年。\n但重點來了，它漏掉了關鍵的脈絡。\n你猜它漏了什麼？\n它整整少講了五件大事。\nCohere 自己寫得很清楚，\n正常任務下，出事機率低於十萬分之一。\n同一題只要乾淨重跑，模型就正常了。<short pause>\n然後那些很嚇人的比例，全都是誘導實驗。\n也就是故意餵半截指令，不代表日常狀況。\n更扯的是，他們完全沒拿別的模型做對照組。\n而且當時根本沒有其他實驗室重做出來。\n最後一點其實很有意思。\n通報的 Cohere，就是他們的競爭對手嘛。<laugh>\n看到這裡，我整個白眼都翻過去了。",
+   "lint": {
+    "chars": 283,
+    "precise_numbers": [
+     "十萬"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 16.7,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "先來看看那篇在社群被轉爆的中文摘要。其實它幾乎整篇都在改寫 Cohere 的文章啦。裡面的事件跟政策，大部分都是真的。唯一寫錯的只有年份，其實差了一整年。但重點來了，它漏掉了關鍵的脈絡。你猜它漏了什麼？它整整少講了五件大事。Cohere 自己寫得很清楚，正常任務下，出事機率低於十萬分之一。同一題只要乾淨重跑，模型就正常了。<short pause>然後那些很嚇人的比例，全都是誘導實驗。也就是故意餵半截指令，不代表日常狀況。更扯的是，他們完全沒拿別的模型做對照組。而且當時根本沒有其他實驗室重做出來。最後一點其實很有意思。通報的 Cohere，就是他們的競爭對手嘛。<laugh>看到這裡，我整個白眼都翻過去了。",
+   "to": "第一站，先看那篇在社群被轉爆的中文摘要。它幾乎整篇都是改寫 Cohere 當天的文章。裡面的事件跟政策，大部分是真的，只有一個年份寫錯。問題是，它漏掉了五件會改變判斷的事。第一，Cohere 自己寫，正常使用下，發生率低於十萬分之一。同一題乾淨重跑一次，模型就正常寫出規則。<short pause>第二，那些很嚇人的比例，都來自誘導實驗。也就是故意餵它半截指令，Cohere 自己說這不代表平常的狀況。第三，沒有拿別的模型做對照組。第四，當時沒有任何獨立的實驗室重做出來。第五，通報的 Cohere，是阿里的直接競爭對手。",
+   "reason": "拿掉「白眼翻過去」和 <laugh>：對真實公司語氣不當；「更扯的是」「你猜」拿掉；五件事照原文編號；競爭對手寫清楚是阿里的"
+  }
+ ]
+}

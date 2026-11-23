@@ -1,0 +1,142 @@
+{
+ "segment": "s01_road",
+ "position": "第 2 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "7bd994e4631e040d0757a3789c0381f12457c7f881c68eb4666da17ce6b67ef2",
+ "previous_context": "中國模型真的都會這樣嗎？這集我們就來把事實弄清楚。",
+ "original": {
+  "text": "這份報告寫得像一份傳染病的疫調報告：指標個案是哪一次、發生率多高、接觸者有誰、病原確定了沒、隔離線畫在哪。它十月二十七號截稿，十一月二十一號和二十二號又各追蹤了一次，這集用的是十一月二十二號的版本。今晚走三站。第一站，網路上流傳的那篇摘要，少講了哪幾件事。第二站，二十五天後，到底有沒有人重做出來。第三站，「中國模型都會嗎」這個問題，其實是三個不同的問題，以及公司該畫的那條隔離線。",
+  "lint": {
+   "chars": 191,
+   "precise_numbers": [
+    "二十七",
+    "十一",
+    "二十一",
+    "二十二",
+    "十一",
+    "二十二",
+    "二十五"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 30.8,
+   "max_sentence_len": 52,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "以及"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實網路上這份報告寫法超特別。它把自己當成傳染病的疫調報告在寫。它問誰是第一個案例，也問隔離線該畫在哪裡。我看到這個架構覺得真的滿聰明的。這集我們用十一月二十二號的追蹤版。內容主要分成三個部分。第一站，網路上傳的摘要到底漏了什麼？然後，過了二十幾天，有人重做出來嗎？你猜結果怎麼樣？<short pause>其實滿微妙的喔。最後，我們再看中國模型是不是都有問題，還有大家在公司裡到底該怎麼防守啦。",
+   "lint": {
+    "chars": 185,
+    "precise_numbers": [
+     "十一",
+     "二十二",
+     "二十"
+    ],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 35,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實這份報告很有意思。它直接把這件事當成傳染病在做疫調。你想想看，疫調會問什麼？就是誰先中鏢、發生率多高。然後隔離線要畫在哪裡嘛。<short pause>今天這集用的是十一月下旬的最新版本。看到的時候我覺得這個比喻超厲害。所以今晚我們主要看三個重點。先看網路上瘋傳的摘要，到底少講了什麼？再來，過了二十幾天，到底有沒有人重做出來？最後聊聊大家最擔心的事。公司的隔離線該怎麼畫。",
+   "lint": {
+    "chars": 176,
+    "precise_numbers": [
+     "十一",
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 13.7,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "這份報告很有意思喔。它直接把整件事，當成傳染病疫調來寫。像是問誰先發病、機率多高、隔離線怎麼畫。我看到這個切入角度，覺得超聰明的。<short pause>那今晚我們要看什麼呢？其實就三件事啦。第一，先看網路上瘋傳的摘要漏了什麼。然後看過了二十幾天，到底有沒有人重做出來。最後是大家最關心的，中國模型到底能不能用？重點是後面，公司該把隔離線畫在哪裡。",
+   "lint": {
+    "chars": 162,
+    "precise_numbers": [
+     "二十"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "這份報告很有意思喔。它直接把整件事，當成傳染病疫調來寫。像是問誰先發病、機率多高、隔離線怎麼畫。我看到這個切入角度，覺得超聰明的。<short pause>那今晚我們要看什麼呢？其實就三件事啦。第一，先看網路上瘋傳的摘要漏了什麼。然後看過了二十幾天，到底有沒有人重做出來。最後是大家最關心的，中國模型到底能不能用？重點是後面，公司該把隔離線畫在哪裡。",
+   "to": "這份報告很有意思。它把整件事，當成傳染病的疫調來寫。誰是第一個個案、發生率多高、隔離線畫在哪。<short pause>今晚就走三站。第一站，網路上瘋傳的那篇摘要，漏了什麼。第二站，過了二十幾天，到底有沒有人重做出來。第三站，「中國模型都會嗎」這個問題，其實是三個不同的問題。最後再看，公司該把隔離線畫在哪裡。",
+   "reason": "「中國模型到底能不能用」改回原文的三個問題；拿掉「我看到這個切入角度」"
+  }
+ ]
+}
