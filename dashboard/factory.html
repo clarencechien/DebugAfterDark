@@ -222,6 +222,9 @@ function _render(d){
     todo.push({k: "接著審", t: r0.id+" "+qText(r0.id, r0), s: "報告已產出，等你說審過"+(toReview.length > 1 ? "；後面還有 "+(toReview.length-1)+" 份" : ""), open: r0.files.report ? [r0.files.report, r0.id+" 報告", "打開報告"] : null, tag: "研究"});
   }
   if(pending.length) todo.push({k: "點頭", t: pending.length+" 個候選題等你決定收不收", s: pending.slice(0,2).map(function(x){return x.q;}).join("；"), jump: "rline-0", tag: "研究"});
+  // 成效報表的建議動作（每週一 yt_report 寫進 summary.json）：「資料」類只是說明，不算要你動手的事
+  var acts = (tr && !tr.error ? (tr.actions || []) : []).filter(function(a){ return a.kind !== "資料"; });
+  if(acts.length) todo.push({k: "成效建議", t: acts[0].text.split(/[：:]/)[0], s: acts[0].text.split(/[：:]/).slice(1).join("：").split("。")[0]+"。"+(acts.length > 1 ? "；還有 "+(acts.length-1)+" 條在成效那格" : ""), jump: "pline-4", tag: "成效"});
   var today = dayKey(new Date());
   ((repo && repo.todo) || []).filter(function(i){ return i.owner === "Clarence" && i.status === "open"; })
     .sort(function(a,b){ return (a.due||"9") < (b.due||"9") ? -1 : 1; }).slice(0,2).forEach(function(i){
@@ -267,6 +270,7 @@ function _render(d){
     {label: "成效", count: results.length, hint: tr && tr.analytics_to ? "資料到 "+tr.analytics_to.slice(5).replace("-","/") : "",
      body: (tr && tr.error ? '<p class="empty">讀不到成效摘要：'+esc(tr.error)+'</p>' : "")+
        (tr && !tr.error ? '<div class="sub">7 天自然觀看 <b>'+esc(tr.organic_views_7d)+'</b>（已排除廣告）。每週一更新。</div>' : "")+
+       ((tr && !tr.error && (tr.actions||[]).length) ? '<h3>本週建議動作</h3>'+rowsOf(tr.actions, function(a){ return '<li><div class="when">'+chip(a.kind, a.kind === "資料" ? "" : "warn")+'</div><div class="body"><div class="sub">'+esc(a.text)+'</div></div></li>'; })+'<h3>各集成效</h3>' : "")+
        rowsOf(results.slice(0,8), resRow)+'<div class="opens"><a class="btn" href="'+REPORT_URL+'" target="_blank" rel="noopener">看完整成效報表</a></div>'}
   ]);
   html += '<section id="podcast">'+sectionHead("Podcast 線",repo,36)+pl+'</section>';
