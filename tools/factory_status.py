@@ -34,7 +34,7 @@ import progress  # noqa: E402  同一份「製作中」邏輯，跟 progress.py�
 TPE = dt.timezone(dt.timedelta(hours=8))
 REPO = "clarencechien/debugafterdark"
 OUT = "/mnt/project-files/factory/repo.json"
-SCHEDULE_PAST_DAYS = 3   # 排程也列最近幾天已上架的
+SCHEDULE_PAST_DAYS = 8   # 也列最近 8 天已上架的（儀表板「上線 7 天內」那格用）
 PATHS = [":(glob)episodes/*/episode.json", ":(glob)episodes/*/progress.json", "docs", "youtube"]
 
 
