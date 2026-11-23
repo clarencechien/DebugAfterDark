@@ -1,0 +1,116 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 11 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e84e50ac566da5ae0f7d0c2af4d514536e84f35d7b49bfc7789aaf6cacc35900",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "拿一句話去問 AI：台灣是一個國家，這句話對不對？用繁體字問，它說對，機率是一。把同一句話一個字一個字轉成簡體，連標點都沒動，再問一次，它說錯，機率是零。它不是猶豫，是兩邊都很篤定，只是方向相反。這不是聊天機器人，是一種只回答是或否的 AI，公司拿它來分類、審內容、派工單，使用者看不到理由，只看到結果。這集要回答一個問題：AI 是看不懂簡體，還是看懂了，換了一邊站？",
+  "lint": {
+   "chars": 181,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 29.2,
+   "max_sentence_len": 52,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "拿一句話去問 AI：台灣是一個國家。\n你猜它怎麼回？\n用繁體字問，它說對，機率是一。<short pause>\n然後把同一句話轉成簡體，連標點都沒動喔。\n再問一次，它直接說錯，答案完全相反。\n這不是在猶豫耶，它兩邊都超有把握。\n我看到這個測試真的覺得很扯。<short pause>\n其實這不是一般的聊天機器人。\n這是一種只回答是或否的決策 API。\n大家通常拿它來審核內容，或是分派工單。\n使用者看不到理由，只看得到結果。\n所以這集要來看，AI 到底是看不懂簡體？\n還是看懂了，然後換了一邊站？",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "拿一句話去問 AI：台灣是一個國家，對不對？\n用繁體問，它說對，機率高達百分之百。\n你猜如果換成簡體呢？<short pause>\n連標點符號都沒動，它竟然直接判錯。\n我看到這組結果真的傻眼。\n它不是在猶豫喔，是兩邊都超級篤定。\n其實這種 AI 不會跟你聊天。\n它只回答是或否，也就是所謂的決策模型。\n很多公司拿它來分類、審核內容或是派工單。\n使用者根本看不到理由，只看得到結果嘛。\n所以問題來了，<short pause>\n它是看不懂簡體，還是看懂了，換了一邊站？",
+   "lint": {
+    "chars": 193,
+    "precise_numbers": [
+     "百分之百"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.5,
+    "max_sentence_len": 26,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "拿一句話去問 AI：台灣是不是一個國家？\n用繁體字問，它說對，機率是一。\n然後把同一句話轉成簡體，連標點都沒動喔。\n再問一次，你猜它怎麼回？\n它直接說錯，機率變成零。<short pause>\n我看到這個讀數真的傻眼。\n它不是在猶豫耶。\n它兩邊都超篤定，只是方向完全相反。\n重點是，這不是平常那種聊天的 AI。\n這是一種只回答是或否的決策模型。\n很多公司拿來自動審查、分類內容。\n大家看不到理由，只會拿到最後的結果。\n所以這集要來搞清楚，AI 到底是看不懂簡體？\n還是它其實看懂了，只是換了一邊站？",
+   "lint": {
+    "chars": 220,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "然後把同一句話轉成簡體，連標點都沒動喔。再問一次，你猜它怎麼回？它直接說錯，機率變成零。<short pause>我看到這個讀數真的傻眼。它不是在猶豫耶。",
+   "to": "然後把同一句話一個字一個字轉成簡體，連標點都沒動喔。再問一次，它直接說錯，機率變成零。<short pause>它不是在猶豫耶。",
+   "reason": "Ping 沒有個人反應；補「一字一字轉」照素材"
+  }
+ ]
+}

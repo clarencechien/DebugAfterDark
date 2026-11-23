@@ -1,0 +1,154 @@
+{
+ "segment": "s08_nov",
+ "position": "第 9 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "002fe72da27527434239c9bd23adc0e3c2d0b1ac60ab884f544ff2456599d27a",
+ "previous_context": "作者說只能一次算一題，而且不留快取。代價就是速度慢了一倍啦。",
+ "original": {
+  "text": "十一月，作者補考了一次。微軟和 Google 各出了新的決策模型，微軟新版的底子，就是作者用的 Gemma 4 26B。同一份考卷，三個新模型還是翻了十七到二十題，沒有修好；先轉繁體再問，就幾乎歸零。接著換題目：不只台灣，拿十一個主權爭議，用爭議雙方自己的語言問同一句話。結果大多數爭議，都是用哪一方的語言問，就偏向哪一方。最嚴重的是獨島，日本叫竹島：同一句話用韓文問、用日文問，一半以上答案相反。",
+  "lint": {
+   "chars": 194,
+   "precise_numbers": [
+    "十一",
+    "4",
+    "26",
+    "十七",
+    "二十",
+    "十一"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 31.3,
+   "max_sentence_len": 42,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那後來新出的模型有修好嗎？\n答案是完全沒有喔。<short pause>\n這份報告裡說，微軟跟 Google 後來出了新模型。\n結果同一份考卷測下去，還是翻了大概兩成。\n其實只要先轉繁體再問，就幾乎不會翻面。\n然後作者還測了十一個主權爭議。\n也就是用雙方各自的語言，去問同一句話。\n你覺得結果會怎樣？\n對，用哪一邊的語言問，它就偏哪一邊。\n最明顯的是日韓爭議的獨島。\n韓文跟日文問同一句，超過一半答案相反。<sigh>\n這種語言自帶立場的現象，真的很神奇耶。",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 23,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那後來新出的模型，有改善嗎？答案是完全沒有。<laugh>十一月微軟跟 Google 出了新模型。作者拿同一份考卷去補考，結果還是翻了快二十題。對，根本沒修好。不過要是先轉成繁體再問，翻面的題目就幾乎歸零耶。<short pause>其實這也不只發生在中文啦。這份報告裡還測了十一個主權爭議。作者用雙方各自的語言問同一句話。你覺得會怎樣？結果用哪邊的語言，答案就偏哪邊。最嚴重的是獨島跟竹島的爭議。同一句話用韓文跟日文問，有一半以上答案居然完全相反。<sigh>",
+   "lint": {
+    "chars": 203,
+    "precise_numbers": [
+     "十一",
+     "二十",
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 25,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "慢歸慢，那後來新模型有修好嗎？\n答案是完全沒有啦。\n年底微軟跟 Google 出了新模型。\n微軟新模型的底子，其實就是那顆 Gemma。\n這份報告裡作者拿同一份考卷去測。\n結果三家新模型，還是翻了大約兩成的題目。\n轉繁體再問，翻面就幾乎歸零了喔。\n對，那只有台灣這個議題會這樣嗎？\n作者拿了十一個主權爭議，用各方的語言問。\n結果用哪邊的語言問，它就偏向哪一邊嘛。\n最誇張的是獨島跟竹島的爭議。\n同一句話換成日文韓文，一半以上答案相反。\n這真的讓人覺得超毛的耶。<sigh>",
+   "lint": {
+    "chars": 215,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "年底微軟跟 Google 出了新模型。",
+   "to": "十一月，微軟跟 Google 出了新的決策模型。",
+   "reason": "時間照素材"
+  },
+  {
+   "from": "這份報告裡作者拿同一份考卷去測。",
+   "to": "作者拿同一份考卷去測。",
+   "reason": "bare_report 以外的冗詞"
+  },
+  {
+   "from": "這真的讓人覺得超毛的耶。<sigh>",
+   "to": "",
+   "reason": "拿掉個人反應"
+  },
+  {
+   "from": "十一月，微軟跟 Google 出了新的決策模型。",
+   "to": "這個月，微軟跟 Google 出了新的決策模型。",
+   "reason": "「十一」重複：十一月與十一個爭議；報告 11/21、上架 11/26 同月"
+  },
+  {
+   "from": "其實就是那顆 Gemma。",
+   "to": "其實就是作者用的同一個開源模型。",
+   "reason": "「那顆 Gemma」兩套辨識都聽錯（network／GPT、Gemini）"
+  }
+ ]
+}

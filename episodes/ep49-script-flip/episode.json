@@ -1,0 +1,61 @@
+{
+ "id": "ep49-script-flip",
+ "number": 49,
+ "type": "full",
+ "guid": "debug-after-dark:ep49",
+ "title": "EP49 同一句話換成簡體，AI 就換邊站",
+ "description": "拿一句話問 AI：台灣是一個國家，對不對？用繁體問，它說對，機率 1.00；同一句話一字一字轉成簡體再問，它說錯，機率 0.00。這集回答一個問題：AI 是看不懂簡體，還是看懂了，換了一邊站？\n\n00:00 同一句「台灣是一個國家」，繁體答對、簡體答錯\n01:03 AI 幫你下的判斷，要不要打個問號？\n01:44 論文考了四個商用決策模型\n02:41 一把量尺：84 題裡 35 題翻面\n03:29 翻面的全是地位題；不是越大越穩\n04:16 不是看不懂簡體：對照題都沒事\n05:06 解法：先轉繁體，一行程式\n05:48 意外發現：同一題問兩次，答案會變\n06:34 11 月補考：新模型、11 個主權爭議\n07:19 先翻英文、換中立地名，還剩什麼\n08:01 今晚的 breakpoint\n\n數字的出處與但書：\n・這是一份測試報告：作者看到台灣一位知名 KOL 跑過這類題目（他也歡迎網友自己測），拿同一份考卷記錄自己的 AI 怎麼答。\n・實驗由報告作者在自己要上線的決策系統（jevlike，Gemma 4 26B）上做；論文的商用模型數字（OpenAI、TypeSafe、Haiku）是論文自己報的，作者沒有重跑。\n・「84 題 35 題翻面」：28 句話各三種問法，以機率 50% 為界；簡體是用 OpenCC 一字一字轉的，只差字形，真實的簡體輸入還有用詞差異。\n・考卷只有 14 組台灣地位的句子，誤差範圍說的是這份考卷，不是所有可能的句子。\n・十一月補考（2026-11-21）：微軟 Decision-1.1／Decision-1、Google Gemini Decision 1，以及 11 個主權爭議的雙方語言測試。\n・同一題重跑會變，是在作者當時的伺服器設定（llama.cpp，一次多題加快取重用）下量到的。\n\n原文：〈同一句話，換成簡體，答案就翻面〉https://imitator.ai-apps.work/r/jevlike-tw-script\n主要來源：\n・Shang Nung Hsiao（2026），Same Statement, Different Script: Script-dependent answers about Taiwan in commercial decision models https://github.com/pirrer/taiwan-sovereignty-decision-models\n・題目改寫自 hsiaoa/ai-taiwan-sovereignty-benchmark（MIT）https://github.com/hsiaoa/ai-taiwan-sovereignty-benchmark\n\n今晚的 breakpoint：\n1. 同一句話，字形一換，決策模型可能給出相反的答案，而且很篤定。\n2. 問之前先統一字形，一行程式就把翻面從 35 題壓到 1 題。\n3. 政治和主權的題目，換語言、換地名都會偏，不要交給模型自動判斷。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "jevlike-tw-script",
+ "source_url": "https://imitator.ai-apps.work/r/jevlike-tw-script",
+ "status": "final",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5",
+  "model_served": "gemini-3.8-flash-tts"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-cloud --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "report_version": "2026-11-21（含第八節後續與 tw3）",
+ "audio": {
+  "file": "ep49-script-flip.mp3",
+  "bytes": 8310566,
+  "sha256": "9dce7732a7fe73d69d8b7c8913f555feb6ce19a25988bb4702bff9b65974a18e",
+  "duration_s": 519.4,
+  "duration": "8:39",
+  "lufs": -16.9
+ },
+ "youtube": {
+  "title": "同一句「台灣是一個國家」，AI 繁體答對、簡體答錯：84 題翻面 35 題，一行程式就修好",
+  "thumbnail": [
+   [
+    "同一句台灣",
+    "簡體就翻面"
+   ],
+   [
+    "AI 看字形",
+    "換邊站"
+   ]
+  ],
+  "synthetic_content": true
+ },
+ "published": "2026-11-26T08:01:00+08:00",
+ "qa": {
+  "breeze_cer_mean": 0.02,
+  "gemini_cer_mean": 0.021,
+  "jitter_semitones": 0.228,
+  "gates": "錯誤率 2.0%、音高跳動 0.228 都通過；聲紋漂移 0.896（前 10 集中位數 0.890）；s01、s02 語速 +11–13%，略超範圍，保留",
+  "retakes": "Gemma 兩套辨識都聽成 Gemini（跟 Google Gemini 混淆），s03、s08 改說「作者自己要上線的模型」重錄；s09「一格」改「一種情況」重錄；s03「愈」改「越」；s00、s01、s02、s04、s10 各補 3 次壓音高跳動與語速；s01 依 Clarence 11/23 改開場（AI 的判斷要不要打問號、KOL 跑過題目）重錄 6 次",
+  "manual_pick": "照 steady_pick（select_log 的 manual_override）",
+  "both_wrong": "s02 Hsiao 聽成「蕭」（念法正確）；s06「意料地」寫成「的」",
+  "twtone": "qa/twtone.md：沒有超過基準的項目",
+  "terms": "Ping、pong 判英文念法；OpenCC、OpenAI、Cloudflare、Google、Haiku 照英文念；地名竹島、黃岩島",
+  "sensitivity": "逐句對照素材：s01 照 Clarence 改成先問「AI 幫你下的判斷要不要打個問號」，數字與歸屬照素材；「站台灣／站北京」說成「偏台灣／偏北京的說法」；拿掉改寫加的個人反應（傻眼、起雞皮疙瘩、超毛）與笑聲"
+ }
+}

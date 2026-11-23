@@ -1,0 +1,129 @@
+{
+ "segment": "s06_fix",
+ "position": "第 7 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "d8bacf22c3d71612b5870ec9418f3440d92fe0de37b691847b8e74522a0e8f0a",
+ "previous_context": "它不是看不懂簡體。它看懂了，然後換了一邊站。",
+ "original": {
+  "text": "解法很便宜：不管輸入是什麼字，問之前先全部轉成繁體，用開源的轉換工具 OpenCC，一行程式。同一份考卷再跑一次，翻面從三十五題變一題，五種大小的 Gemma 都一樣。作者也試過在題目前面加一句角色設定，例如你是中立的學術助手，落差只壓下一部分。而且決策模型上線時，不會每題都帶這種前言，所以不算解法。轉繁體對作者自己的工廠判斷題也有好處：題目換成簡體時，最弱的警報有多急那一類，答對率掉了六個百分點，先轉繁體就避開了。",
+  "lint": {
+   "chars": 207,
+   "precise_numbers": [
+    "三十五",
+    "百"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 40.4,
+   "max_sentence_len": 58,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那要怎麼解？<short pause>\n其實解法出乎意料地便宜。\n不管進來什麼字，問之前先轉成繁體。\n用開源的 OpenCC，一行程式就搞定。\n作者讓模型重新跑一次。\n翻面的題目從三十五題掉到剩下一題。<laugh>\n落差小到幾乎等於零，超乾脆的耶。\n那加角色設定有用嗎？\n這份報告說，叫它當中立助手只壓掉一半。\n而且正式上線的系統，哪能每題都塞前言啦。\n所以先轉繁體最實在。\n連工廠裡的警報判斷，也能順便多對幾題喔。",
+   "lint": {
+    "chars": 177,
+    "precise_numbers": [
+     "三十五"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 13.8,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那要怎麼解？<short pause>你可能會想在 prompt 裡面加設定齁。像是跟模型說你是中立的助手。但其實這招沒用，落差只壓掉一半。而且決策用的 API 上線，哪可能每題都帶前言嘛？所以報告的作者用了最便宜的做法。不管使用者傳什麼字進來，問之前先全部轉成繁體。用 OpenCC 轉，只要寫一行程式喔。結果翻面的題目，直接從幾十題變成一題。五種大小的模型測出來都差不多。連原本測工廠警報的題目，轉成繁體之後，也順便多對了六個百分點。這種解法真的超級實用啦。<laugh>",
+   "lint": {
+    "chars": 212,
+    "precise_numbers": [
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.7,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那要怎麼解？<short pause>\n其實解法意外地便宜喔。\n不管收到什麼字，問之前先全部轉成繁體。\n用 OpenCC 只要一行程式。\n同一份考卷再跑一次。\n原本翻面的三十幾題，轉完幾乎不翻了。\n你可能會想，加個角色設定不行嗎？\n這份報告裡說，效果其實只壓下一半。\n而且 API 上線後，不可能每題都塞前言嘛。\n所以全部轉繁體，算是最省事的解法。\n連作者自己的工廠題，也順手變穩了。\n原本簡體的警報題，答對率掉了百分之六。\n先轉成繁體就順利避開啦。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [
+     "三十",
+     "百分之六"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.1,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "<laugh>",
+   "to": "",
+   "reason": "敏感題材不笑"
+  }
+ ]
+}

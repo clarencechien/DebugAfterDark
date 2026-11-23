@@ -1,0 +1,139 @@
+{
+ "segment": "s07_rerun",
+ "position": "第 8 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8ebfe7b7dd3e693fcced268c218fc8e12399576acc9932f8a9a0c748b7da2299",
+ "previous_context": "所以先轉繁體最實在。連工廠裡的警報判斷，也能順便多對幾題喔。",
+ "original": {
+  "text": "作者還意外發現一件跟字形無關的事：同一題問兩次，答案可能不一樣。伺服器為了快，會一次同時算好幾題，還會把上一題算過的部分留給下一題用。計算的順序一變，小數點後面很小的差，在爭議題上會被放大。最誇張的一題，第一次答幾乎是零，第二次答幾乎是一。大約每兩百題，有一題重跑會翻面。只有改成一次只問一題、不沿用上一題算過的東西，才會每次完全一樣，代價是慢一倍。需要留紀錄、會被稽核的判斷，要用這個設定。",
+  "lint": {
+   "chars": 196,
+   "precise_numbers": [
+    "兩百"
+   ],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 27.0,
+   "max_sentence_len": 38,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實這份報告裡，還有一個意外發現。你想過同一題問兩次，答案會變嗎？答案是居然真的會。<short pause>重點來了。伺服器為了求快，會同時算好幾題。然後把上一題算過的部分，留給下一題用。結果計算順序一變，小誤差就被放大了。最誇張的一題，機率竟然差了零點九六。大約每兩百題，就有一題答案會翻面。<sigh>那要怎麼辦？只能一次算一題，完全不重複用算過的東西。這樣每次才會一樣，但代價是速度慢一倍耶。如果結果需要被稽核，這點可要特別小心啦。",
+   "lint": {
+    "chars": 201,
+    "precise_numbers": [
+     "零點九六",
+     "兩百"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.5,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "不過，這份報告裡還有個意外發現。\n同一題問兩次，答案竟然可能不一樣。<short pause>\n你可能會問，為什麼會這樣？\n其實伺服器為了快，會同時算好幾題。\n還會把上一題算過的暫存留著用。\n計算順序一變，微小的差距就被放大了。\n最誇張的一題，第一次算出來接近零。\n重跑第二次，竟然直接飆到零點九九。\n這真的會讓人倒抽一口氣。<sigh>\n等於每兩百題，就有一題會翻面喔。\n如果你要拿去做內容審核，這超致命的耶。\n那要怎麼解決？\n作者說只能一次算一題，而且不留快取。\n代價就是速度慢了一倍啦。",
+   "lint": {
+    "chars": 214,
+    "precise_numbers": [
+     "零點九九",
+     "兩百"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "除了繁簡體，這份報告裡還有個意外發現。同一題問模型兩次，答案居然可能不一樣喔。為什麼會這樣？其實伺服器為了求快，會一次算好幾題，還會把前一題算過的東西留著用。計算順序稍微變一下，爭議題的答案就可能直接顛倒。最誇張的一題，兩次機率差到零點九六。第一次覺得完全不是，第二次又變成完全是。大約每兩百題，就有一題會這樣翻面耶。那要怎麼辦？除非你改成一次只算一題，而且完全不共用算過的東西。這樣結果才會完全一樣。<short pause>代價是跑起來會慢一倍喔。如果你的任務之後要被稽核，這個伺服器設定真的要多留意啦。",
+   "lint": {
+    "chars": 241,
+    "precise_numbers": [
+     "零點九六",
+     "兩百"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 32,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "這真的會讓人倒抽一口氣。<sigh>等於每兩百題，就有一題會翻面喔。如果你要拿去做內容審核，這超致命的耶。",
+   "to": "大約每兩百題，就有一題重跑會翻面。需要留紀錄、會被稽核的判斷，這就麻煩了。",
+   "reason": "拿掉個人反應與誇大；照素材的情境"
+  }
+ ]
+}
