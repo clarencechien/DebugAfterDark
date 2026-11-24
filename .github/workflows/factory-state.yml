@@ -1,0 +1,68 @@
+# 工廠儀表板的 repo 狀態：每次合併到 main、PR 開關、每 4 小時，重算一次，推到 dashboard-data 分支的 repo.json。
+# 儀表板（claude.ai 上的 Artifact）打開時經 Clarence 的 GitHub 連接器讀這個檔，所以不用靠人記得跑腳本，
+# 也不花 Claude 的 token。腳本只用 Python 標準函式庫（tools/factory_status.py）。
+#
+# dashboard-data 是只放 repo.json 的獨立分支（orphan），每次強制覆寫成一個 commit，不會越長越大，
+# 也不會觸發其他 workflow（pages.yml 只看 main）。
+#
+# 安全：只用 GitHub 官方的 actions，釘在 commit SHA；不用 pull_request_target，PR 事件也只讀 main，
+# 不跑 PR 分支上的程式碼。
+name: Factory state
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'episodes/*/episode.json'
+      - 'episodes/*/progress.json'
+      - 'docs/**'
+      - 'youtube/**'
+      - 'tools/factory_status.py'
+      - 'tools/progress.py'
+      - '.github/workflows/factory-state.yml'
+  pull_request:
+    types: [opened, closed, reopened, ready_for_review, converted_to_draft]
+  schedule:
+    - cron: '5 0-23/4 * * *'   # 每 4 小時（台北 0、4、8、12、16、20 點 05 分；08:00／20:00 上架的集數幾分鐘內就會變「已上線」）
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: factory-state
+  cancel-in-progress: true
+
+jobs:
+  state:
+    # fork 來的 PR 沒有寫入權限，跳過
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:   # 一律讀 main；只拿腳本要的檔案，不下載 mp3（整個 repo 400 MB 以上）
+          ref: main
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            tools/
+            docs/
+            youtube/
+            episodes/*/episode.json
+            episodes/*/progress.json
+      - name: Compute state
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # 只用來讀開著的 PR（免得撞到未登入的限流）
+        run: python3 tools/factory_status.py --worktree --out "$RUNNER_TEMP/repo.json"
+      - name: Push to dashboard-data
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir "$RUNNER_TEMP/out" && cd "$RUNNER_TEMP/out"
+          cp "$RUNNER_TEMP/repo.json" repo.json
+          git init -q -b dashboard-data
+          git add repo.json
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -q -m "factory state $(date -u +%FT%TZ)"
+          git push -q -f "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" dashboard-data

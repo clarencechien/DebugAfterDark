@@ -13,6 +13,18 @@ Artifact 讀不到 GitHub，所以 repo 的現況要有人寫進來：每集 thr
   python3 tools/factory_status.py --print      # 只印出，不寫
   python3 tools/factory_status.py --worktree   # 讀目前的工作目錄（測試用；分支上還沒合併的集數也會算進去）
 
+GitHub Action（.github/workflows/factory-state.yml）在每次合併到 main、PR 開關和每 4 小時跑 --worktree，
+把結果推到 dashboard-data 分支的 repo.json；儀表板經 Clarence 的 GitHub 連接器讀它，所以不用靠人記得跑。
+這支腳本照樣可以手動跑，寫進專案資料夾的 repo.json 是讀不到 GitHub 時的備援。
+
+每集的 stage（Podcast 線的狀態機，全部由檔案推出來，不手填）：
+  製作中 → 等試聽 → 已排程 → 已上線（7 天內）→ 成效（上線滿 7 天）
+  製作中：還沒有音檔（episode.json 沒有 audio.sha256）
+  等試聽：有音檔，status 還不是 final
+  已排程：final，published 還沒到
+  已上線／成效：published 已過，以 7 天為界
+「待製作」是 docs/report-candidates.md 推薦表裡還沒開工的報告（next）。
+
 預設先 `git fetch origin main` 再讀 origin/main，所以在哪個分支上跑都一樣，還沒合併的集數不會被當成已排程。
 """
 import argparse
@@ -69,6 +81,16 @@ def plain(cell):
     return re.sub(r"[`*]", "", s).strip()
 
 
+def stage(m, now):
+    """Podcast 線的狀態機（見檔頭）。"""
+    pub = progress._published(m)
+    if m.get("status") == "final":
+        if pub and pub <= now:
+            return "已上線" if now - pub < dt.timedelta(days=7) else "成效"
+        return "已排程" if pub else "等試聽"
+    return "等試聽" if (m.get("audio") or {}).get("sha256") else "製作中"
+
+
 def episodes(root, now):
     eps = progress.load(root)
     active = {r[0] for r in progress.active_rows(eps, now)}
@@ -92,7 +114,7 @@ def episodes(root, now):
             "audio": bool((m.get("audio") or {}).get("sha256")),
             "review": prog.get("review") or ("✅" if m.get("status") == "final" else "⬜"),
             "video": prog.get("video", "⬜"), "short": prog.get("short", "⬜"),
-            "note": prog.get("note", ""), "active": ep in active,
+            "note": prog.get("note", ""), "active": ep in active, "stage": stage(m, now),
         })
     return out
 
@@ -140,7 +162,8 @@ def remake_pool(root):
 def open_prs():
     """公開 repo，不用 token；抓不到就回 None（儀表板顯示「這次沒抓到」），不讓整支失敗。"""
     req = urllib.request.Request(f"https://api.github.com/repos/{REPO}/pulls?state=open&per_page=50",
-                                 headers={"Accept": "application/vnd.github+json", "User-Agent": "factory-status"})
+                                 headers={"Accept": "application/vnd.github+json", "User-Agent": "factory-status",
+                                          **({"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}"} if os.environ.get("GITHUB_TOKEN") else {})})
     try:
         with urllib.request.urlopen(req, timeout=20) as r:
             prs = json.load(r)
@@ -190,7 +213,8 @@ def main():
     with tempfile.TemporaryDirectory() as tmp:
         if a.worktree:
             branch = subprocess.run(["git", "-C", str(ROOT), "branch", "--show-current"], capture_output=True, text=True).stdout.strip()
-            root, source = ROOT, f"worktree {branch}"
+            sha = subprocess.run(["git", "-C", str(ROOT), "rev-parse", "--short", "HEAD"], capture_output=True, text=True).stdout.strip()
+            root, source = ROOT, f"{branch or 'HEAD'}@{sha}"
         else:
             root, source = main_snapshot(tmp)
         data = repo_section(root, source, with_prs=not a.no_prs)

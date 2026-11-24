@@ -76,6 +76,9 @@ button:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var
 .flow .l{font-size:13px;color:var(--ink2)}
 .flow .h{font-size:11px;color:var(--ink3)}
 section.next{border-color:var(--accent)}
+.dots{display:inline-flex;gap:3px;margin:0 6px 0 2px;vertical-align:middle}
+.dots i{width:7px;height:7px;border-radius:50%;background:var(--bar-bg);border:1px solid var(--line)}
+.dots i.on{background:var(--good);border-color:var(--good)}
 a.btn{display:inline-flex;align-items:center;font-size:13px;padding:4px 10px;min-height:32px;border:1px solid var(--line);border-radius:8px;background:var(--card)}
 #viewer{position:fixed;inset:0;z-index:20;background:var(--bg);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px)}
 #viewer .vh{display:flex;align-items:center;gap:8px;padding-block:10px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));border-bottom:1px solid var(--line);background:var(--card)}
@@ -187,19 +190,35 @@ function _render(d){
   var runs = ((rs && rs.runs) || []).map(function(it){ if(/^R/.test(it.id) && !it.files.draft && remakeFile[it.id]){ it.files.draft = remakeFile[it.id]; if(it.stages.indexOf("draft") < 0) it.stages.unshift("draft"); } return it; });
   var stOf = function(id){ return (qinfo[id] && qinfo[id].status) || ""; };
   var qText = function(id, it){ return (qinfo[id] && qinfo[id].q) || (it && it.title) || id; };
-  var approved = function(id){ return /Clarence 審過/.test(stOf(id)); };
-  var redo = function(id){ return /^待研究/.test(stOf(id)); };          // 狀態退回待研究＝要重做，不算等你審
-  var hasReport = function(it){ return (it.stages||[]).indexOf("report") >= 0; };
-  var toReview = runs.filter(function(it){ return hasReport(it) && !approved(it.id) && !redo(it.id); }).sort(function(a,b){ return a.at - b.at; });
-  var inMill = runs.filter(function(it){ return !hasReport(it) && !approved(it.id) && !redo(it.id); });
-  var doneR = runs.filter(function(it){ return approved(it.id); });
-  var queued = ((rs && rs.questions) || []).concat((rs && rs.remakes) || []).filter(function(x){ return /^待研究/.test(x.status||""); });
+  // 報告的狀態機（題庫「狀態」欄開頭的詞，research/questions.md 第 5 行）：
+  //   候選 → 排隊（・優先 N）→ 研究中 → 等你看 → 已上線；不收的不顯示
+  // 狀態欄沒照這六個詞寫的舊列，用研究產出檔推：有報告＝等你看，有初稿＝研究中，都沒有＝排隊
+  var runById = {}; runs.forEach(function(it){ runById[it.id] = it; });
+  var RSTATES = ["候選","排隊","研究中","等你看","已上線","不收"];
+  var rstate = function(x){
+    var st = (x.status||"").trim(), hit = RSTATES.filter(function(w){ return st.indexOf(w) === 0; })[0];
+    if(hit) return hit;
+    if(/^待研究/.test(st)) return "排隊";
+    if(/Clarence 審過|已上線/.test(st)) return "已上線";
+    var it = runById[x.id]; if(!it) return "排隊";
+    return (it.stages||[]).indexOf("report") >= 0 ? "等你看" : "研究中";
+  };
+  var allQ = ((rs && rs.questions) || []).concat((rs && rs.remakes) || []);
+  var byState = {}; RSTATES.forEach(function(w){ byState[w] = []; });
+  allQ.forEach(function(x){ x.rstate = rstate(x); byState[x.rstate].push(x); });
   var prio = function(x){ var m = /優先\s*(\d+)/.exec(x.status||""); return m ? Number(m[1]) : 999; };
-  queued.sort(function(a,b){ return prio(a) - prio(b); });
+  var queued = byState["排隊"].sort(function(a,b){ return prio(a) - prio(b); });
+  var lastAt = function(x){ var it = runById[x.id]; return it ? it.at : 0; };
+  var toReview = byState["等你看"].sort(function(a,b){ return lastAt(a) - lastAt(b); });   // 最早做好的先審
+  var inMill = byState["研究中"], doneR = byState["已上線"].sort(function(a,b){ return lastAt(b) - lastAt(a); });
   var pending = ((rs && rs.candidates) || []).filter(function(x){ return !/不收|已收/.test(x.status||""); });
 
   // ── Podcast：每集在哪一格 ──
-  var making = eps.filter(function(e){ return e.active && !e.published; });
+  // Podcast 線的狀態機：每集的 stage 由 tools/factory_status.py 從檔案算（製作中 → 等試聽 → 已排程 → 已上線 → 成效）
+  var stg = function(e){ if(e.stage) return e.stage; var t = pubT(e);
+    return t && t <= now ? (now - t < 7*DAY ? "已上線" : "成效") : e.status === "final" ? "已排程" : e.audio ? "等試聽" : "製作中"; };
+  var making = eps.filter(function(e){ return stg(e) === "製作中"; });
+  var listening = eps.filter(function(e){ return stg(e) === "等試聽"; });
   var queuedEp = eps.filter(function(e){ var t = pubT(e); return t && t > now; });
   var upcoming = queuedEp.concat(shorts.filter(function(s){ return pubT(s) > now; })).sort(function(a,b){ return pubT(a) - pubT(b); });
   var fresh7 = eps.filter(function(e){ var t = pubT(e); return t && t <= now && now - t < 7*DAY; })
@@ -210,7 +229,10 @@ function _render(d){
 
   // ── 1. 你下一步 ──
   var todo = [];
-  if(making.length){
+  if(listening.length){
+    var l0 = listening[0];
+    todo.push({k: "接著試聽", t: l0.ep+" "+l0.title, s: "音檔做好了，等你試聽定稿", tag: "podcast"});
+  } else if(making.length){
     var m0 = making[0];
     todo.push({k: "接著做", t: m0.ep+" "+m0.title, s: "製作中，還沒上架", tag: "podcast"});
   } else if(next.length){
@@ -218,13 +240,14 @@ function _render(d){
     todo.push({k: "接著做", t: (n0.ep ? n0.ep+" " : "推薦 #"+n0.n+" ")+n0.angle, s: (n0.report ? n0.report.text : "")+(n0.time ? "；約 "+n0.time : ""), url: n0.report && n0.report.url, tag: "podcast"});
   }
   if(toReview.length){
-    var r0 = toReview[0];
-    todo.push({k: "接著審", t: r0.id+" "+qText(r0.id, r0), s: "報告已產出，等你說審過"+(toReview.length > 1 ? "；後面還有 "+(toReview.length-1)+" 份" : ""), open: r0.files.report ? [r0.files.report, r0.id+" 報告", "打開報告"] : null, tag: "研究"});
+    var r0 = toReview[0], f0 = (runById[r0.id] || {}).files || {}, of = f0.report || f0.draft || (r0.file || null);
+    todo.push({k: "接著審", t: r0.id+" "+r0.q, s: (f0.report ? "報告做好了，等你看" : "研究稿做好了，等你看")+(toReview.length > 1 ? "；後面還有 "+(toReview.length-1)+" 份" : ""),
+               open: of ? [of, r0.id+(f0.report ? " 報告" : " 研究稿"), f0.report ? "打開報告" : "打開研究稿"] : null, tag: "研究"});
   }
   if(pending.length) todo.push({k: "點頭", t: pending.length+" 個候選題等你決定收不收", s: pending.slice(0,2).map(function(x){return x.q;}).join("；"), jump: "rline-0", tag: "研究"});
   // 成效報表的建議動作（每週一 yt_report 寫進 summary.json）：「資料」類只是說明，不算要你動手的事
   var acts = (tr && !tr.error ? (tr.actions || []) : []).filter(function(a){ return a.kind !== "資料"; });
-  if(acts.length) todo.push({k: "成效建議", t: acts[0].text.split(/[：:]/)[0], s: acts[0].text.split(/[：:]/).slice(1).join("：").split("。")[0]+"。"+(acts.length > 1 ? "；還有 "+(acts.length-1)+" 條在成效那格" : ""), jump: "pline-4", tag: "成效"});
+  if(acts.length) todo.push({k: "成效建議", t: acts[0].text.split(/[：:]/)[0], s: acts[0].text.split(/[：:]/).slice(1).join("：").split("。")[0]+(acts.length > 1 ? "。還有 "+(acts.length-1)+" 條在成效那格。" : "。"), jump: "pline-4", tag: "成效"});
   var today = dayKey(new Date());
   ((repo && repo.todo) || []).filter(function(i){ return i.owner === "Clarence" && i.status === "open"; })
     .sort(function(a,b){ return (a.due||"9") < (b.due||"9") ? -1 : 1; }).slice(0,2).forEach(function(i){
@@ -234,7 +257,7 @@ function _render(d){
     todo.push({k: "判讀", t: e.name, s: "實驗該看結果了（"+e.next_review.slice(5).replace("-","/")+"）", tag: "實驗", late: true});
   });
   var y = todo.slice(0,5).map(function(x){
-    return '<li><div class="when"><span class="chip'+(x.late ? " bad" : x.k === "接著做" || x.k === "接著審" ? " warn" : "")+'">'+esc(x.k)+'</span></div><div class="body"><div class="t">'+(x.url ? link(x.t, x.url) : esc(x.t))+'</div>'+
+    return '<li><div class="when"><span class="chip'+(x.late ? " bad" : /^接著/.test(x.k) ? " warn" : "")+'">'+esc(x.k)+'</span></div><div class="body"><div class="t">'+(x.url ? link(x.t, x.url) : esc(x.t))+'</div>'+
       (x.s ? '<div class="sub">'+esc(x.s)+'</div>' : "")+
       (x.open ? '<div class="opens">'+openBtn(x.open[0], x.open[1], x.open[2])+'</div>' : "")+
       (x.jump ? '<div class="opens"><a class="btn" href="#'+x.jump+'" data-step="'+x.jump+'">看清單</a></div>' : "")+'</div></li>';
@@ -264,16 +287,19 @@ function _render(d){
   var queuedShort = upcoming.filter(function(e){return !e.isShort;}).length;
   var pl = !repo ? '<p class="empty">還沒有 repo 資料：請 Claude 跑一次 tools/factory_status.py。</p>' : flow("pline", [
     {label: "待製作", count: next.length, hint: next.length >= 4 ? "推薦表" : "⚠ 不到 4 份", body: rowsOf(next, nextRow)},
-    {label: "製作中", count: making.length, body: rowsOf(making, prodRow), hot: making.length > 0},
-    {label: "排好待上線", count: queuedShort, hint: (queuedShort >= 4 ? "" : "⚠ 不到 4 集 ")+(upcoming.length > queuedShort ? "＋"+(upcoming.length-queuedShort)+" 支 Short" : ""), body: rowsOf(upcoming, schedRow), open: true},
-    {label: "上線 7 天內", count: fresh7.length, body: rowsOf(fresh7, schedRow)},
+    {label: "製作中", count: making.length, body: rowsOf(making, prodRow)},
+    {label: "等試聽", count: listening.length, body: rowsOf(listening, prodRow), hot: listening.length > 0},
+    {label: "已排程", count: queuedShort, hint: (queuedShort >= 4 ? "" : "⚠ 不到 4 集 ")+(upcoming.length > queuedShort ? "＋"+(upcoming.length-queuedShort)+" 支 Short" : ""), body: rowsOf(upcoming, schedRow), open: true},
+    {label: "已上線", count: fresh7.length, hint: "7 天內", body: rowsOf(fresh7, schedRow)},
     {label: "成效", count: results.length, hint: tr && tr.analytics_to ? "資料到 "+tr.analytics_to.slice(5).replace("-","/") : "",
      body: (tr && tr.error ? '<p class="empty">讀不到成效摘要：'+esc(tr.error)+'</p>' : "")+
        (tr && !tr.error ? '<div class="sub">7 天自然觀看 <b>'+esc(tr.organic_views_7d)+'</b>（已排除廣告）。每週一更新。</div>' : "")+
        ((tr && !tr.error && (tr.actions||[]).length) ? '<h3>本週建議動作</h3>'+rowsOf(tr.actions, function(a){ return '<li><div class="when">'+chip(a.kind, a.kind === "資料" ? "" : "warn")+'</div><div class="body"><div class="sub">'+esc(a.text)+'</div></div></li>'; })+'<h3>各集成效</h3>' : "")+
        rowsOf(results.slice(0,8), resRow)+'<div class="opens"><a class="btn" href="'+REPORT_URL+'" target="_blank" rel="noopener">看完整成效報表</a></div>'}
   ]);
-  html += '<section id="podcast">'+sectionHead("Podcast 線",repo,36)+pl+'</section>';
+  var via = repo && repo._via === "github" ? '<span class="muted">GitHub 自動更新</span>' :
+    repo ? '<span class="muted stale" title="'+esc(repo._why||"")+'">⚠ 讀不到 GitHub，顯示專案資料夾的備份</span>' : "";
+  html += '<section id="podcast">'+sectionHead("Podcast 線",repo,5,via)+pl+'</section>';
 
   // ── 3. 自動研究線 ──
   var openButtons = function(it){
@@ -281,22 +307,27 @@ function _render(d){
     [["draft","初稿"],["review","AI 審稿"],["report","報告"]].forEach(function(x){ if(f[x[0]]) b += openBtn(f[x[0]], it.id+" "+x[1], "打開"+x[1]); });
     return b ? '<div class="opens">'+b+'</div>' : "";
   };
-  var runRow = function(it){
-    var st = it.stages || [], v = it.verdict, vk = /建議做/.test(v) ? "good" : /補|擱置/.test(v) ? "warn" : /不做/.test(v) ? "bad" : "";
-    return '<li><div class="when">'+esc(it.id)+'</div><div class="body"><div class="t">'+esc(qText(it.id, it))+'</div>'+
-      stepChip(/^R/.test(it.id) ? "冷飯研究" : "AI 初稿", st.indexOf("draft")>=0 ? "✅" : "⬜")+stepChip("AI 審稿", st.indexOf("review")>=0 ? "✅" : "⬜")+stepChip("報告", st.indexOf("report")>=0 ? "✅" : "⬜")+
-      (approved(it.id) ? chip("✓ 你審過","good") : "")+(v ? chip("AI 判定："+v,vk) : "")+
-      (it.at ? '<span class="muted">'+esc(ago(new Date(it.at).toISOString()))+'</span>' : "")+openButtons(it)+'</div></li>';
+  // 每題一個狀態標籤；初稿、審稿、報告三步只用一排小點表示進度
+  var RKIND = {"候選":"", "排隊":"", "研究中":"", "等你看":"warn", "已上線":"good"};
+  var dots = function(it){
+    var st = (it && it.stages) || [];
+    return '<span class="dots" title="初稿、審稿、報告">'+["draft","review","report"].map(function(k){ return '<i class="'+(st.indexOf(k) >= 0 ? "on" : "")+'"></i>'; }).join("")+'</span>';
+  };
+  var runRow = function(x){
+    var it = runById[x.id] || {id: x.id, files: x.file ? {draft: x.file} : {}, stages: []}, p = prio(x);
+    var label = x.rstate === "排隊" && p < 999 ? "排隊・優先 "+p : x.rstate;
+    return '<li><div class="when">'+esc(x.id)+'</div><div class="body"><div class="t">'+(x.url ? link(x.q, x.url) : esc(x.q))+'</div>'+
+      chip(label, RKIND[x.rstate])+dots(it)+(it.at ? '<span class="muted">'+esc(ago(new Date(it.at).toISOString()))+'</span>' : "")+openButtons(it)+'</div></li>';
   };
   var qRow = function(x, extra){ return '<li><div class="when">'+esc(x.id)+'</div><div class="body"><div class="t">'+esc(x.q)+'</div>'+(x.group ? chip(x.group, /錢/.test(x.group) ? "warn" : "") : "")+(extra||"")+'</div></li>'; };
   var nr = (function(){ var n = new Date(), t = new Date(Date.UTC(n.getUTCFullYear(), n.getUTCMonth(), n.getUTCDate(), 12, 47)); if(t <= n) t = new Date(t.getTime()+DAY); return t; })();
   var rl = !rs ? '<p class="empty">讀不到 research/ 資料夾。</p>' : flow("rline", [
-    {label: "候選待點頭", count: pending.length, body: rowsOf(pending, function(x){ return qRow(x, x.added ? '<span class="muted">'+esc(x.added)+' 加入</span>' : ""); }), hot: pending.length > 0},
-    {label: "排隊研究", count: queued.length, hint: "每天 20:47 跑一題",
-     body: '<div class="sub">下一次：'+esc(fmtDay.format(nr)+" "+fmtTime.format(nr))+(queued[0] ? "，排第一的是 "+queued[0].id : "")+'</div>'+rowsOf(queued, function(x){ var p = prio(x); return qRow(x, p < 999 ? chip("優先 "+p, p <= 2 ? "warn" : "") : (/^R/.test(x.id) ? chip("冷飯") : "")); })},
-    {label: "還沒成報告", count: inMill.length, body: rowsOf(inMill, runRow)},
-    {label: "報告等你審", count: toReview.length, body: rowsOf(toReview, runRow), hot: toReview.length > 0, open: toReview.length > 0},
-    {label: "你審過", count: doneR.length, body: rowsOf(doneR, runRow)}
+    {label: "候選", count: pending.length, body: rowsOf(pending, function(x){ return qRow(x, x.added ? '<span class="muted">'+esc(x.added)+' 加入</span>' : ""); }), hot: pending.length > 0},
+    {label: "排隊", count: queued.length, hint: "每天 20:47 跑一題",
+     body: '<div class="sub">下一次：'+esc(fmtDay.format(nr)+" "+fmtTime.format(nr))+(queued[0] ? "，排第一的是 "+queued[0].id : "")+'</div>'+rowsOf(queued, runRow)},
+    {label: "研究中", count: inMill.length, body: rowsOf(inMill, runRow)},
+    {label: "等你看", count: toReview.length, body: rowsOf(toReview, runRow), hot: toReview.length > 0, open: toReview.length > 0},
+    {label: "已上線", count: doneR.length, hint: "imitator", body: rowsOf(doneR, runRow)}
   ]);
   if(rs) rl += '<div class="opens">'+openBtn(path("research/pipeline.svg"), "自動研究流程圖", "看流程圖")+'</div>';
   html += '<section id="research">'+sectionHead("自動研究線",rs,24*8)+rl+'</section>';
@@ -422,8 +453,11 @@ function loadResearch(){
         return;
       }
       var isCand = /^C/i.test(id) || /候選/.test(group);
+      var rawSt = ""; if(head) for(var k2 = 0; k2 < head.length; k2++) if(head[k2].indexOf("狀態") >= 0) rawSt = c[k2] || "";
+      if(!head && !isCand) rawSt = c[c.length-1] || "";
+      var lk = rawSt.match(/\((https:\/\/imitator\.ai-apps\.work\/[^)\s]+)\)/);
       var item = {id: id.toUpperCase(), q: col(["問題"],1), group: isCand ? col(["類別"], null) || group : group,
-                  status: col(["狀態"], isCand ? null : c.length-1), added: col(["加入日"], null)};
+                  status: isCand ? "候選" : col(["狀態"], c.length-1), added: col(["加入日"], null), url: lk ? lk[1] : null};
       (isCand ? res.candidates : res.questions).push(item);
     });
   });
@@ -519,6 +553,45 @@ function loadTraffic(){
   });
 }
 
+// repo 狀態：GitHub Action 每次合併到 main、PR 開關、每 4 小時算好推到 dashboard-data 分支的 repo.json，
+// 這裡經看的人的 GitHub 連接器讀（不花 Claude token）；讀不到就退回專案資料夾的 factory/repo.json。
+var GH = {server: "github", owner: "clarencechien", repo: "DebugAfterDark", path: "repo.json", ref: "refs/heads/dashboard-data"};
+var mcpNs;   // undefined：還沒問；null：這個畫面不能用連接器
+function jsonFromToolResult(res){
+  // 連接器回傳的樣子不固定：可能是 payload 物件、文字區塊、resource 區塊，或 GitHub REST 的 base64 content
+  var cands = [];
+  if(res && res.payload && typeof res.payload === "object") cands.push(res.payload);
+  ((res && res.content) || []).forEach(function(b){
+    if(b && typeof b.text === "string") cands.push(b.text);
+    if(b && b.resource && typeof b.resource.text === "string") cands.push(b.resource.text);
+  });
+  if(res && typeof res.payload === "string") cands.push(res.payload);
+  for(var i = 0; i < cands.length; i++){
+    var c = cands[i], o = null;
+    if(typeof c === "object"){
+      if(c.episodes) return c;
+      if(typeof c.content === "string" && c.encoding === "base64"){ try { o = JSON.parse(dec.decode(Uint8Array.from(atob(c.content.replace(/\s/g,"")), function(ch){ return ch.charCodeAt(0); }))); } catch(e) {} }
+      else if(typeof c.text === "string"){ try { o = JSON.parse(c.text); } catch(e) {} }
+    } else {
+      var at = c.indexOf("{"); if(at >= 0){ try { o = JSON.parse(c.slice(at)); } catch(e) {} }
+    }
+    if(o && o.episodes) return o;
+  }
+  return null;
+}
+function loadRepo(){
+  var ns = mcpNs === undefined ? window.claude.use("mcp").catch(function(){ return null; }) : Promise.resolve(mcpNs);
+  var fallback = function(why){ return readJson("factory/repo.json").then(function(r){ r._via = "files"; r._why = why; return r; }); };
+  return ns.then(function(m){
+    mcpNs = m;
+    if(!m) return fallback("unavailable");
+    return m.callTool(GH.server, "get_file_contents", {owner: GH.owner, repo: GH.repo, path: GH.path, ref: GH.ref}, {cache: false}).then(function(res){
+      var j = jsonFromToolResult(res);
+      if(!j) return fallback("parse");
+      j._via = "github"; return j;
+    }, function(e){ console.warn("github connector", e); return fallback((e && e.code) || "error"); });
+  });
+}
 function soft(p){return p.catch(function(e){ console.warn(e); return null; });}
 
 function load(){
@@ -529,7 +602,7 @@ function load(){
     files = f; return findBase();
   });
   start.then(function(){
-    return Promise.all([soft(readJson("factory/repo.json")), soft(loadResearch()), soft(loadShorts()), loadTraffic().catch(function(e){ return {error: (e && (e.code || e.message)) || String(e)}; })]);
+    return Promise.all([soft(loadRepo()), soft(loadResearch()), soft(loadShorts()), loadTraffic().catch(function(e){ return {error: (e && (e.code || e.message)) || String(e)}; })]);
   }).then(function(r){
     render({repo: r[0], research: r[1], shorts: r[2], traffic: r[3]});
   }).catch(function(e){
