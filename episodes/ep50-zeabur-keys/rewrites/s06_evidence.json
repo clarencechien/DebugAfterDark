@@ -1,0 +1,137 @@
+{
+ "segment": "s06_evidence",
+ "position": "第 7 段，共 10 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4f766f9c4f2572fa5f80c1f8ccbfbc10c8bf84e1570cb82cd84a00e87bca568a",
+ "previous_context": "這一年真正跑在前面的贏家，都在做同一件事。就是替失控的 AI 裝上背壓閥啦。",
+ "original": {
+  "text": "這不只是比喻，報告找了研究撐腰。有一份評測叫 IaC-Eval，讓 GPT-4 寫雲端的基礎設施設定檔，一次就寫對的不到兩成；同一個模型寫一般的 Python 程式，對了將近九成。差這麼多，關鍵在回饋。另一份研究量了編譯錯誤率：完全沒有回饋，錯了六成五；等程式寫完才給回饋，降到兩成左右；邊寫邊給回饋，只剩一成三。還有一個小模型，用檢查器的回饋去訓練，在同一份評測上贏過大五十倍的模型。所以重點不是誰的模型比較大，是錯的時候有沒有東西馬上擋下來，告訴它錯在哪。",
+  "lint": {
+   "chars": 225,
+   "precise_numbers": [
+    "4",
+    "五十"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 36.5,
+   "max_sentence_len": 68,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實裝背壓閥這件事，不是隨便講講。\n這份報告裡找了學術研究來背書喔。\n像是有一份評測叫做 IaC-Eval。\n專門測 AI 寫雲端設定檔的功力。\n你猜 GPT-4 考得怎麼樣？\n它寫 Terraform 一次就對的比例。\n其實只有百分之十九點三六。\n對，連兩成都不到耶。<short pause>\n可是同一個模型去寫 Python。\n竟然可以對將近九成。\n為什麼會差這麼多？\n關鍵就是回饋出現的時間啦。\n另一份研究發現，如果完全沒有回饋。\n編譯錯誤率高達六成多。\n但要是邊寫邊給即時回饋。\n錯誤率直接降到只剩一成多。\n最厲害的是，有個用檢查器訓練的小模型。\n在評測裡居然打贏大五十倍的對手。<laugh>\n這真的讓人很佩服。\n所以重點根本不是模型要多大。\n而是出錯的時候，有沒有機制能馬上擋下來。",
+   "lint": {
+    "chars": 300,
+    "precise_numbers": [
+     "4",
+     "百分之十九點三六",
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 21,
+    "avg_sentence_len": 13.3,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "說到背壓閥，其實真的有研究數據撐腰喔。\n報告裡提到一個評測叫 IaC-Eval。\n讓 GPT-4 寫雲端的 Terraform 設定檔。\n你猜一次寫對的機率有多少？\n居然不到兩成欸。<short pause>\n但同一個模型寫 Python，對了將近九成。\n為什麼會差這麼多？\n重點其實就在回饋啦。\n另一份研究就發現，\n完全不給模型回饋時，\n編譯錯誤率高達六成五。\n但要是邊寫邊給即時回饋，\n錯誤率直接降到百分之十三點一。\n最厲害的是，有個特別訓練的小模型，\n表現居然贏過比它大五十倍的對手。<laugh>\n所以真的不是模型大就會贏。\n而是寫錯的時候，有沒有東西立刻把它擋下來。",
+   "lint": {
+    "chars": 246,
+    "precise_numbers": [
+     "4",
+     "百分之十三點一",
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 32,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "裝背壓閥這件事，其實是有研究背書的喔。\n這份報告提到一個評測。\n讓 GPT-4 寫雲端架構的 Terraform，\n一次就寫對的機率，只有百分之十九點三六。\n可是同一個模型去寫 Python，對了將近九成耶。\n為什麼會差這麼多？\n你猜差在哪？<short pause> 其實就是差在回饋。\n有研究發現，寫 code 邊寫邊給即時回饋，\n錯誤率能從原本的六成多，直接掉到一成三。\n最厲害的是，有個靠回饋微調的小模型，\n表現居然能贏過大它五十倍的模型。\n這種差距真的讓人大開眼界。\n重點根本不是誰的模型比較大。\n而是錯的時候，有沒有東西馬上擋下來啦。",
+   "lint": {
+    "chars": 240,
+    "precise_numbers": [
+     "4",
+     "百分之十九點三六",
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 19.0,
+    "max_sentence_len": 41,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "其實只有百分之十九點三六。對，連兩成都不到耶。",
+   "to": "連兩成都不到耶。",
+   "reason": "每段一個精確數字"
+  },
+  {
+   "from": "在評測裡居然打贏大五十倍的對手。<laugh>這真的讓人很佩服。",
+   "to": "在評測裡居然打贏大五十倍的模型。",
+   "reason": "Ping 沒有個人經歷，拿掉個人反應"
+  }
+ ]
+}

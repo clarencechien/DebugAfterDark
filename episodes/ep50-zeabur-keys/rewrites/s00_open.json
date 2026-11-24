@@ -1,0 +1,135 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 10 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "620af30b1fea5501807465a6de70fa7e49ec738dd58991cdecb2e332990f77c0",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "十月十七號，台灣的部署平台 Zeabur 宣布年底關閉。十二月一號起，專用伺服器不再續費，共享叢集暫停；十二月三十一號全面停止。如果你的服務跑在上面，這個月你正在搬家。可是在問搬去哪之前，這份報告想先問一個更前面的問題：這個平台是怎麼走到這一步的？報告查下去，答案不是單純沒錢，而是鑰匙。這集要回答的問題是：搬家的時候，哪一樣東西一定要握在自己手上？",
+  "lint": {
+   "chars": 173,
+   "precise_numbers": [
+    "十七",
+    "十二",
+    "十二",
+    "三十一"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 27.8,
+   "max_sentence_len": 39,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你有服務部署在 Zeabur 上面嗎？\n有的話，這個月應該忙著搬家吧。<short pause>\n十月十七號，官方宣布年底要全面停止營運。\n看到信的時候真的會愣住耶。<sigh>\n不過比起找新家，其實有個更前面的問題。\n在 AI 時代，部署平台的核心資產到底是什麼？\n答案不是算力，也不是管理介面喔。\n而是每一層能不能擋下 agent 的閥門。\n這集就來聊，搬家時哪樣東西一定要握在手裡。",
+   "lint": {
+    "chars": 161,
+    "precise_numbers": [
+     "十七"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 16.9,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "如果你的服務跑在 Zeabur 上，<short pause>你最近應該正在到處找新家吧。十月十七號，Zeabur 突然發信宣布年底就要關閉。專用伺服器停止續費，到了年底全面停機。我看到消息的時候整個愣住。<sigh>但你知道最關鍵的問題是什麼嗎？其實不是大家要搬去哪裡，而是這個平台到底怎麼走到這一步的。大家以為是算力還是錢不夠，對，但答案居然是鑰匙喔。所以這集要問的是，搬家的時候，到底哪樣東西非得握在自己手裡不可？",
+   "lint": {
+    "chars": 188,
+    "precise_numbers": [
+     "十七"
+    ],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 22.5,
+    "max_sentence_len": 31,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "如果你的服務跑在 Zeabur 上，\n這個月你應該超頭痛的吧。<short pause>\n十月十七號，官方宣布年底直接關門。\n伺服器停止續費，年底全面停止營運。\n這時候大家都在問要搬去哪，對吧？\n但其實有個問題比搬家更關鍵。\nAI 時代的平台，核心資產到底是什麼？\n答案不是算力，也不是 dashboard 啦。\n我看到這份分析真的很有共鳴。\n重點是每一層，有沒有擋下 agent 的閥門。",
+   "lint": {
+    "chars": 166,
+    "precise_numbers": [
+     "十七"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 17.4,
+    "max_sentence_len": 27,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "有的話，這個月應該忙著搬家吧。",
+   "to": "有的話，這個月應該正忙著搬家。",
+   "reason": "語氣"
+  },
+  {
+   "from": "十月十七號，官方宣布年底要全面停止營運。看到信的時候真的會愣住耶。<sigh>不過比起找新家，其實有個更前面的問題。在 AI 時代，部署平台的核心資產到底是什麼？答案不是算力，也不是管理介面喔。而是每一層能不能擋下 agent 的閥門。這集就來聊，搬家時哪樣東西一定要握在手裡。",
+   "to": "上個月，Zeabur 宣布年底關閉，十二月三十一號全面停止。不過比起找新家，其實有個更前面的問題。它到底是怎麼走到這一步的？這份報告查下去，答案不是單純沒錢，而是鑰匙。這集就來聊，搬家的時候，哪樣東西一定要握在自己手上。",
+   "reason": "拿掉個人反應（愣住）；開場改成照草稿的「怎麼倒的→鑰匙」懸念，閥門留到中段；補上全面停止日期，關閉宣布說成「上個月」（11/27 播出），一段一個精確數字"
+  },
+  {
+   "from": "上個月，Zeabur 宣布年底關閉，十二月三十一號全面停止。",
+   "to": "上個月，Zeabur 宣布要關了，年底全面停止。",
+   "reason": "每段最多一個精確數字"
+  }
+ ]
+}

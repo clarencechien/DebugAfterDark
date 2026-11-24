@@ -1,0 +1,128 @@
+{
+ "segment": "s01_pivot",
+ "position": "第 2 段，共 10 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0e994673d3f2b0cffabab00662e220ad34a902151f555c9cccc53217d4b477a0",
+ "previous_context": "而是每一層能不能擋下 agent 的閥門。這集就來聊，搬家時哪樣東西一定要握在手裡。",
+ "original": {
+  "text": "今晚只講三件事：Zeabur 怎麼倒的、每一層都要有的一個閥門、還有重力在哪一層。先講第一件。這份報告說，Zeabur 不是突然倒的，它在關門前八個月，就自己寫下了診斷。今年二月，它宣布共享叢集不再接新專案。理由是它自己講的：賣算力，就是在跟 AWS、Google 雲端、Hetzner 這些大廠比價，而它的機器就跑在這些大廠上面，價格永遠不可能比它們低。共享叢集照用量收費，其實低於成本，一直在補貼。所以它轉型，新的定位叫「你的 AI 維運工程師」，英文是 Your AI DevOps Engineer。聽起來很合理，對吧？問題就出在這個定位要的東西。",
+  "lint": {
+   "chars": 267,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 28.7,
+   "max_sentence_len": 70,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.4,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先來看 Zeabur 到底是怎麼倒的。\n報告裡說，它不是突然倒下的喔。<short pause>\n在倒閉前八個月，它就自己寫下了診斷書。\n當時它宣布，共享叢集不再接新專案了。\n為什麼？因為它自己承認了一件事。\n轉賣算力這條路，根本沒有結構優勢嘛。\n機器跑在 AWS、GCP 跟 Hetzner 上。\n你的價格怎麼可能比大廠更便宜？\n而且按量計價低於成本，一直在補貼。\n所以它決定轉型。\n新定位叫 Your AI DevOps Engineer。\n這方向聽起來很合理對吧？\n我看到這裡真的覺得滿滿的無奈。<sigh>\n重點來了，問題偏偏就出在這個定位。",
+   "lint": {
+    "chars": 233,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 14.5,
+    "max_sentence_len": 24,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "我們先來看，Zeabur 是怎麼倒的。\n其實它不是突然倒掉的喔。\n倒閉前八個月，它就自己寫好了診斷書。\n報告裡說，早在年初的時候，\n共享叢集就不再接新專案了。\n為什麼呢？因為他們自己承認，\n轉賣算力根本沒有優勢。\n你想想看嘛，\n機器跑在 AWS 還有 GCP 上面，\n價格怎麼可能比大廠更低？\n而且按量收費低於成本，一直在補貼。<sigh>\n這看在眼裡真的很痛。\n所以他們決定轉型，\n新定位是 AI 維運工程師，\n也就是 Your AI DevOps Engineer 啦。\n聽起來很合理，對吧？\n但轉型之後，真正的問題才要開始。",
+   "lint": {
+    "chars": 231,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 45,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "我們今晚就聊三件事。Zeabur 怎麼倒的。每一層的閥門，還有重力在哪裡。先來聊第一件事。其實 Zeabur 不是突然倒的喔。<short pause> 它在關門前八個月就寫下診斷書。這份報告說，今年二月他們有了動作。他們宣布共享叢集不再接新專案。為什麼呢？因為賣算力是在跟大廠比價嘛。像是 AWS、GCP 還有 Hetzner。可是你的機器就跑在大廠上面耶。價格怎麼可能比人家低？<sigh> 他們自己承認，按量計價低於成本。其實一直都在補貼。轉賣沒有優勢，所以他們決定轉型。新定位叫 Your AI DevOps Engineer。聽起來很合理對吧？但最扯的是，問題就出在這個新定位。",
+   "lint": {
+    "chars": 263,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 19,
+    "avg_sentence_len": 12.8,
+    "max_sentence_len": 24,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "可是你的機器就跑在大廠上面耶。",
+   "to": "可是它的機器就跑在大廠上面耶。",
+   "reason": "歸屬錯：是 Zeabur 的機器"
+  },
+  {
+   "from": "像是 AWS、GCP 還有 Hetzner。",
+   "to": "像是 AWS、Google 雲端還有 Hetzner。",
+   "reason": "GCP 換成聽得懂的說法"
+  },
+  {
+   "from": "但最扯的是，問題就出在這個新定位。",
+   "to": "但問題就出在這個新定位。",
+   "reason": "不讓聽眾看笑話"
+  }
+ ]
+}

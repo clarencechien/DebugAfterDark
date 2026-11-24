@@ -1,0 +1,9 @@
+（注意：Ping 沒有個人經歷，講「這份報告說」「報告裡說」，不要只說「報告」開頭。每段 300 字內、每句平均 18 字內，一段最多一個精確數字，其他數字說成大約、一半、七成這類念得順的說法，但不能改變意思。平台和公司名（Zeabur、Vercel、Lovable、Railway、Render、Supabase、TypeScript、Terraform）照英文念。對 Zeabur 和外洩事件的當事人照事實敘述，不嘲諷、不幸災樂禍；Zeabur 的使用者是受害者。廠商自己報的數字要說是廠商說的。）
+
+SHT 07 施工說明（原文是給內網 IDP 的建議）：
+不要選轉賣層。它們的經濟模型（Zeabur 自己說的）和資安模型（事件證明的）都撐不住。
+第二層自己擁有，runtime 可換。審批加稽核那層是你的：agent 產 PR 和 manifest，人審，Argo CD 同步。審批面板在你手上，不在 SaaS 手上。
+Secrets 不集中在一個 SaaS。Zeabur、Vercel、Lovable 三案外洩的都是平台保管的鑰匙。內網走 Vault 或 External Secrets。
+資料層照開源三件套走。Postgres、S3 相容儲存、DuckDB 或 DuckLake，加一個 catalog。
+Run 層先接唯讀的 AI 根因分析。
+結論八（證據中，偏推論）：下一代平台的 UI 是審批面板，不是設定面板。

@@ -1,0 +1,140 @@
+{
+ "segment": "s08_move",
+ "position": "第 9 段，共 10 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "bc10100e064e038643fd8eba109b225aabbe5912dee9c551815fcd900251ff5f",
+ "previous_context": "寫程式這一層，很快就變成大家都有的。市場上的錢，現在全往資料那一層集中啦。",
+ "original": {
+  "text": "回到開頭的問題：搬家的時候，哪一樣東西一定要握在自己手上？這份報告最後給了幾條建議，原本是寫給要在公司內部自己架平台的人，搬家一樣用得上。第一，不要選只轉賣別人機器的平台，它的經濟模型和資安模型都撐不住。第二，審批和稽核那一層要自己擁有：agent 產出修改，人審過，才同步上去，審批的面板在你手上，不在別人的服務上。第三，密碼和金鑰不要集中放在單一一家服務。第四，資料用開源的那一套，像 Postgres，要換地方隨時帶得走。報告還有一個比較大膽的推論：下一代平台的介面，會是審批面板，而不是設定面板。這條它自己標了，偏推論。",
+  "lint": {
+   "chars": 262,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三",
+    "第四"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 31.8,
+   "max_sentence_len": 55,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "既然錢都往資料跑。如果要搬家，什麼東西一定要抓在手裡？這份報告給了幾個很實際的建議。\n\n重點來了，千萬不要選轉賣別人機器的平台。Zeabur 自己都說，這種經濟模型根本撐不住。資安也是，早就被幾次外洩事件打臉了。\n\n然後，審批跟稽核那層一定要是你的。讓 agent 產出修改，人審過才同步上去。你有沒有想過，未來的平台會長怎樣？這份報告推論，以後的介面其實是審批面板。根本不是以前那種設定面板喔。<short pause>不過這條它自己有標註，目前還偏推論啦。\n\n再來，金鑰千萬不能集中放在單一 SaaS。前面幾起外洩事件，掉的全是平台保管的鑰匙。資料層就選開源的，像是 Postgres。哪天想搬家，你隨時都能整包帶走啦。",
+   "lint": {
+    "chars": 288,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 17.0,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "既然這樣，搬家的時候要握緊什麼？\n報告裡給了幾個很實際的建議喔。\n首先，不要選轉賣別人機器的平台。\n這份報告說，這種商模跟資安都撐不住。\n然後，審查跟放行一定要留在自己手上。\n讓 AI 幫你寫程式碼，你來負責點審核。\n審查按鈕要在你手上，不能交給外面。\n重點來了，密碼千萬別全押在同一家 SaaS。\n這幾次出事，全是平台保管的鑰匙外洩耶。<sigh>\n資料就選開源的 Postgres，隨時能帶走。\n那未來的雲端介面會長怎樣？\n報告裡有個蠻大膽的推論。<short pause>\n以後的畫面不是設定頁，而是審核面板喔。\n不過作者自己也標註，這點目前算推論啦。",
+   "lint": {
+    "chars": 243,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以說，如果今天真的要搬家，\n到底什麼東西一定要抓在自己手上？\n這份報告裡給了幾條很實際的建議。\n第一，不要選只轉賣別人機器的平台。<short pause>\n從資安和商業來看，他們根本撐不住啦。\n再來，審批跟稽核的那一層一定要是你的。\n讓 agent 生出修改，人審過才同步上去。\n審批面板要在你手裡，不在別人的服務上。\n我讀到這邊真的很認同。\n然後，金鑰千萬不要全塞給單一服務。\n資料就選 Postgres 這種開源標準。\n想換地方的時候，隨時都能帶得走。<short pause>\n最有趣的是，報告裡還有個大膽的推論。\n你覺得下一代平台的介面會長怎樣？\n它認為會是審批面板，而不是設定面板喔。",
+   "lint": {
+    "chars": 255,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 29,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "讓 AI 幫你寫程式碼，你來負責點審核。",
+   "to": "讓 AI 產出修改，你審過才上線。",
+   "reason": "照素材：agent 產 PR，人審再同步"
+  },
+  {
+   "from": "報告裡有個蠻大膽的推論。",
+   "to": "這份報告有個蠻大膽的推論。",
+   "reason": "句首「報告」易聽錯"
+  },
+  {
+   "from": "以後的畫面不是設定頁，而是審核面板喔。",
+   "to": "以後的畫面會是審核面板，不再是設定頁喔。",
+   "reason": "twtone：對舉超過基準，s00 的那句是澄清誤讀，留著"
+  },
+  {
+   "from": "這種商模跟資安都撐不住。",
+   "to": "這種商業模式跟資安都撐不住。",
+   "reason": "Clarence 試聽 11/24：台灣不說「商模」"
+  }
+ ]
+}

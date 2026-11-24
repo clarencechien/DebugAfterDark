@@ -1,0 +1,132 @@
+{
+ "segment": "s03_samekeys",
+ "position": "第 4 段，共 10 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "76be3dba92932ec9f32f01999de84980704ecc978dd0357b4c0b39fbcc149e84",
+ "previous_context": "而是轉型把資安，直接變成了活下去的條件。但他們當時根本沒有那個底子嘛。",
+ "original": {
+  "text": "如果只有 Zeabur，你可能會說是它運氣不好。可是同一年，同一種東西外洩了三次。四月，Vercel 出事，起點是員工用的一個第三方 AI 工具被入侵，一路進到公司的 Google 帳號，最後拿到客戶的環境變數。同一個月，Lovable 有個漏洞，任何一個免費帳號，都能讀到前一年十一月以前所有專案的原始碼、資料庫憑證和跟 AI 的對話紀錄。這份報告把三件事擺在一起：三家平台、三種架構，外洩的永遠是平台替你保管的鑰匙。差別只在 Vercel 和 Lovable 撐得住，Zeabur 撐不住。",
+  "lint": {
+   "chars": 233,
+   "precise_numbers": [
+    "十一"
+   ],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 37.8,
+   "max_sentence_len": 61,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "如果只有一家出事，你可能覺得只是運氣差。但更扯的是，同一年內外洩了三次。而且外洩的都是同一種東西喔。四月的時候，Vercel 出事了。起點只是一個員工用的第三方 AI 工具。駭客一路摸進公司的 Google 帳號。最後直接把客戶的環境變數搬走。然後同一個月，Lovable 也爆出漏洞。<short pause>連隨便一個免費帳號，都能看別人的原始碼。甚至連資料庫憑證也全被看光。你猜這幾次外洩的共通點是什麼？全部都是平台替你保管的鑰匙啦。三家架構完全不同，被偷的卻都一樣。我看到這份報告真的覺得超毛的。差別只在 Vercel 跟 Lovable 撐得住。但 Zeabur 就真的撐不住了。<sigh>",
+   "lint": {
+    "chars": 270,
+    "precise_numbers": [],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "如果只有 Zeabur 出事，你可能覺得只是運氣太差。<short pause> 但其實光是同一年，同一種東西就外洩了三次。先是四月的時候，Vercel 出包了。起因只是員工用了一個第三方 AI 工具，結果駭客一路摸進去，拿到了客戶的環境變數。更扯的是同一個月，Lovable 也出事了。你猜隨便一個免費帳號能看到什麼？居然能看到別人的原始碼跟資料庫憑證。這份報告把這幾件事擺在一起，三家平台架構完全不同，外洩的卻永遠是平台幫你保管的鑰匙。差別到底在哪？其實只是另外兩家撐得住，Zeabur 撐不住而已嘛。<sigh>",
+   "lint": {
+    "chars": 232,
+    "precise_numbers": [],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 22.2,
+    "max_sentence_len": 41,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "如果只有 Zeabur 出事，你可能會覺得只是運氣差。<short pause>\n但其實同一年裡面，同一種東西外洩了整整三次。\n四月那時候，Vercel 員工用的 AI 工具被入侵。\n駭客一路摸進 Google 帳號。\n最後拿到客戶的環境變數。\n更扯的是同一個月，Lovable 也爆出漏洞。\n你猜隨便一個免費帳號能看到什麼？\n居然能讀到別人的原始碼跟資料庫憑證。<sigh>\n報告裡說，這三家平台明明是三種架構。\n但外洩的永遠都是平台替你保管的鑰匙。\n差別只在 Lovable 跟 Vercel 撐得住，\nZeabur 根本扛不住而已啦。",
+   "lint": {
+    "chars": 227,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 19.6,
+    "max_sentence_len": 36,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "最後直接把客戶的環境變數搬走。",
+   "to": "最後拿到客戶的環境變數。",
+   "reason": "照素材"
+  },
+  {
+   "from": "甚至連資料庫憑證也全被看光。",
+   "to": "還有資料庫憑證和 AI 對話紀錄。",
+   "reason": "誇大（全被看光）；照素材"
+  },
+  {
+   "from": "我看到這份報告真的覺得超毛的。",
+   "to": "",
+   "reason": "Ping 沒有個人經歷，拿掉個人反應"
+  }
+ ]
+}

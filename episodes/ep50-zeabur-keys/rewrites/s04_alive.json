@@ -1,0 +1,129 @@
+{
+ "segment": "s04_alive",
+ "position": "第 5 段，共 10 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "e45497cb53685cfed820fc83180eac6a91c990407647bf028fa72a260bd29a82",
+ "previous_context": "差別只在 Vercel 跟 Lovable 撐得住。但 Zeabur 就真的撐不住了。",
+ "original": {
+  "text": "那是不是這種幫你部署的小平台，整類都不行了？這份報告特別擺了一組對照，免得一竿子打翻。Railway 今年一月募了一億美元，而且已經賺錢；Render 二月也募到一筆大錢；Fly.io 七月募資，把產品重新定位成「給 agent 用的電腦」。三家都活得好。共同點是什麼？要嘛有自己的基礎設施，要嘛在 agent 時代有很清楚的定位。Zeabur 兩樣都沒有。所以報告的第一條結論是：只轉賣別人的機器，再加一個 AI 口號，這個組合在今年已經沒有生存空間。",
+  "lint": {
+   "chars": 217,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 26.1,
+   "max_sentence_len": 72,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.9,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那是不是這種部署平台，整類都玩完了？\n其實沒有喔。<short pause>\n這份報告拉了三家對照組出來。\nRailway 在一月募了一億美元，\n而且他們已經開始賺錢了。\nRender 跟 Fly.io 也拿到大錢。\nFly.io 還重新定位成給 agent 用的電腦。\n這三家為什麼能活得這麼好？\n答案很簡單。\n他們要嘛自己蓋機房架構，\n要嘛在 agent 時代定位超清楚。\n可是 Zeabur 兩樣都沒有。<short pause>\n說真的，這結論真的很殘酷。\n只轉賣別人的機器，再貼個 AI 口號，\n這種做法在今年，已經沒有生存空間了啦。",
+   "lint": {
+    "chars": 219,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 35,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那是不是這種雲端平台全都撐不下去？<short pause>\n其實不是喔。\n這份報告列了幾個活得很好的對照組。\n像是 Railway 一月募了一億美元，\n而且他們早就開始賺錢了。\n另外像 Render 跟 Fly.io 也都拿到大錢。\nFly.io 還轉型成給 agent 用的電腦。\n你猜他們為什麼活得下來？\n答案很簡單。\n他們要嘛自己搞定底層架構，\n要嘛在 agent 時代找到清楚的位置。\n結果 Zeabur 兩樣都沒有。<sigh>\n我覺得這結論真的很血淋淋。\n如果只轉賣別人的機器，再喊個 AI 口號，\n這種模式現在真的沒有生存空間了啦。",
+   "lint": {
+    "chars": 226,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 35,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那是不是這類小平台，整批都要完蛋了？\n其實也不是喔。<short pause>\n這份報告特別找了別家來對照。\n像是 Railway 一月就募了一億美元，\n重點是人家自建架構，而且已經獲利了。\nRender 跟 Fly.io 最近也拿到不少錢。\nFly.io 還直接定位成給 agent 用的電腦。\n你猜這三家為什麼活得好？\n答案很簡單啦。\n他們要嘛有自己的基礎設施，\n要嘛在 agent 時代有很清楚的定位。\n可是 Zeabur 兩樣都沒有。\n我替他們的用戶覺得蠻無奈的。<sigh>\n所以這份報告說，\n只靠轉賣別人的機器，再喊喊 AI 口號，\n今年真的完全沒有生存空間了。",
+   "lint": {
+    "chars": 239,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.9,
+    "max_sentence_len": 39,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "Render 跟 Fly.io 也拿到大錢。",
+   "to": "Render 跟 Fly.io 也都募到資金。",
+   "reason": "Fly.io 金額小，不說大錢"
+  },
+  {
+   "from": "他們要嘛自己蓋機房架構，",
+   "to": "他們要嘛有自己的基礎設施，",
+   "reason": "照素材：自有基礎設施，不一定是機房"
+  },
+  {
+   "from": "說真的，這結論真的很殘酷。",
+   "to": "這份報告的第一條結論是，",
+   "reason": "語氣：不評論當事人；補歸屬"
+  }
+ ]
+}

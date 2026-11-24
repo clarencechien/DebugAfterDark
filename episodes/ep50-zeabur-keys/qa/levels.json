@@ -1,0 +1,62 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -22.8,
+  "gain_db": 2.8,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_pivot",
+  "lufs_before": -22.2,
+  "gain_db": 2.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_keys",
+  "lufs_before": -22.4,
+  "gain_db": 2.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_samekeys",
+  "lufs_before": -22.8,
+  "gain_db": 2.8,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_alive",
+  "lufs_before": -22.3,
+  "gain_db": 2.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_valve",
+  "lufs_before": -20.9,
+  "gain_db": 0.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_evidence",
+  "lufs_before": -20.9,
+  "gain_db": 0.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_data",
+  "lufs_before": -21.4,
+  "gain_db": 1.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_move",
+  "lufs_before": -20.5,
+  "gain_db": 0.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_outro",
+  "lufs_before": -20.1,
+  "gain_db": 0.1,
+  "lufs_after": -20.0
+ }
+]

@@ -1,0 +1,136 @@
+{
+ "segment": "s07_data",
+ "position": "第 8 段，共 10 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "c8f3d856aae39429c3d1a7ff8767fac43aeaeb6e8b409afe65798ad3dea559c0",
+ "previous_context": "所以重點根本不是模型要多大。而是出錯的時候，有沒有機制能馬上擋下來。",
+ "original": {
+  "text": "第三件事，重力在哪一層。報告說，看估值會被那些幫你生 app 的工具騙，要看的是誰在開資料庫。Supabase 是一個資料庫服務，它說每個月新開大約四百萬個資料庫，其中大約七成是 AI agent 或 AI 寫程式的工具開的。這是廠商自己的數字。再看大公司買了什麼：Databricks 買了 Neon，Snowflake 買了 Crunchy Data，AWS 把 DuckDB 背後的公司收進去。一年內，三大資料陣營買的全是開源的資料底座，沒有一家去買幫你生 app 的工具。生程式這一層，一年內就被開源和大型雲端做成了大家都有的東西；錢和收購，往資料那一層集中。",
+  "lint": {
+   "chars": 266,
+   "precise_numbers": [
+    "四百萬"
+   ],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 37.0,
+   "max_sentence_len": 68,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "其中"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那真正的重心到底在哪裡？\n這份報告說，不要被生 app 的工具騙了。\n真正要看的，是到底誰在開資料庫。\n像 Supabase 這種資料庫服務。\n廠商自己說，每個月新開四百萬個資料庫。\n而且大約七成，都是 AI 工具自己開的。<short pause>\n你猜那些大廠這一年買了什麼？\n他們一家生 app 的工具都沒買。\nDatabricks 買了 Neon。\nSnowflake 買了 Crunchy Data。\nAWS 也買下 DuckDB 背後的公司。\n大家買的全是開源的資料底座耶。\n這方向真的超級明確。<laugh>\n寫程式這一層，很快就變成大家都有的。\n市場上的錢，現在全往資料那一層集中啦。",
+   "lint": {
+    "chars": 250,
+    "precise_numbers": [
+     "四百萬"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 15.7,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "接著來看第三件事，市場的重心在哪裡？\n這份報告裡說，別被做 app 的工具騙了。\n真正的重力其實在資料庫。\n<short pause>\n你看是誰在開資料庫就知道了。\n資料庫平台 Supabase 就給過一個廠商數字。\n他們每個月新開大約四百萬個資料庫。\n重點來了，裡面有七成是 AI 自己建的喔。\n<laugh>\n你猜那些雲端大廠這一年在買什麼？\n答案全都是開源的資料底座。\n像是 Databricks 買了 Neon。\nSnowflake 買了 Crunchy Data。\n連 AWS 都收購了 DuckDB 背後的公司。\n最厲害的是，他們連一間做 app 的都沒買。\n這對比真的很有意思。\n因為生成介面這件事，一下子就變便宜了嘛。\n大家最後還是得乖乖回到資料庫這一層。",
+   "lint": {
+    "chars": 281,
+    "precise_numbers": [
+     "四百萬"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 22,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "擋完錯誤之後，我們來看重心到底在哪裡。\n報告裡說，看生 app 的工具很容易被估值騙。\n真正的趨勢，其實要看誰在開資料庫。\n你猜猜看現在是誰在開？\nSupabase 說，每個月有四百萬個新資料庫。\n裡面大概有七成，都是 AI agent 開的。\n先說喔，這是廠商自己給的數字啦。\n然後你看大公司在買什麼？\nDatabricks 買 Neon。\nSnowflake 買 Crunchy Data。\n連 AWS 也買下 DuckDB 背後的公司。\n結果他們一個生 app 的工具都沒買。<laugh>\n因為幫你寫程式這件事，很快就到處都是了。\n連三大雲自己也做得出來嘛。\n所以併購的資金，全都集中在資料這一層啦。\n這才是真正的重力所在。",
+   "lint": {
+    "chars": 277,
+    "precise_numbers": [
+     "四百萬"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 22,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "每個月新開四百萬個資料庫。",
+   "to": "每個月新開大約四百萬個資料庫。",
+   "reason": "素材是約數"
+  },
+  {
+   "from": "這方向真的超級明確。<laugh>",
+   "to": "",
+   "reason": "Ping 沒有個人經歷，拿掉個人反應"
+  }
+ ]
+}
