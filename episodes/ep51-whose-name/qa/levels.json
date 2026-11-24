@@ -1,0 +1,74 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -24.3,
+  "gain_db": 4.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_recap",
+  "lufs_before": -21.9,
+  "gain_db": 1.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_strong",
+  "lufs_before": -22.0,
+  "gain_db": 2.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_retreat",
+  "lufs_before": -21.8,
+  "gain_db": 1.8,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_layers",
+  "lufs_before": -22.7,
+  "gain_db": 2.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_profit",
+  "lufs_before": -22.2,
+  "gain_db": 2.2,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_mor",
+  "lufs_before": -23.1,
+  "gain_db": 3.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_who",
+  "lufs_before": -22.0,
+  "gain_db": 2.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_valves",
+  "lufs_before": -21.8,
+  "gain_db": 1.8,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_fiverr",
+  "lufs_before": -19.6,
+  "gain_db": -0.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s10_pool",
+  "lufs_before": -23.9,
+  "gain_db": 3.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s11_outro",
+  "lufs_before": -19.4,
+  "gain_db": -0.6,
+  "lufs_after": -20.0
+ }
+]

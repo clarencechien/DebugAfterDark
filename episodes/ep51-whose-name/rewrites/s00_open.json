@@ -1,0 +1,129 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 12 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8d93d6b8eb5f121ccb075ae23285c776c37940db2481ea068b0467c3b4d3b4fe",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "你叫 AI 幫你訂一間飯店。它替你比了價、替你按下購買。結果訂錯日期，或卡片被盜刷，你要打電話給誰？是那個 AI，還是訂房網站，還是飯店？答案不在對話框裡，在你的信用卡帳單上：上面印的是誰的名字。今年 AI 公司真的做了替你結帳的按鈕，六個月就收回去了。這集回答一個問題：AI 幫你按下購買之後，帳單上寫的是誰？",
+  "lint": {
+   "chars": 150,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 20.4,
+   "max_sentence_len": 28,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 3,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "如果今天 AI 幫你訂飯店，\n結果日期訂錯了。<short pause>\n你猜你要打電話找誰客訴？\n找那個 AI，還是找訂房網站？\n其實答案不在對話框裡啦。\n關鍵在你的信用卡帳單上。\n上面印誰的名字，\n出事就找誰負責喔。\nOpenAI 之前真的做過替你結帳的功能。\n我看到這件事真的覺得超妙的。\n因為才過了大約半年，\n他們就默默收掉了。\n所以這集我們就來聊聊，\n當 AI 替你按下購買之後，\n這筆帳最後到底要算在誰頭上？",
+   "lint": {
+    "chars": 177,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 16.7,
+    "max_sentence_len": 36,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "你叫 AI 幫你訂飯店。\n它替你比價，也替你按下購買。\n結果日期訂錯了，你到底要打給誰啊？<short pause>\n找那個 AI 嗎？還是找訂房網站？\n其實答案根本不在對話框裡啦。\n關鍵是你的信用卡帳單上，印了誰的名字。\n錢進誰的帳戶，出了事就找誰負責。\n像 OpenAI 之前推過 Instant Checkout。\n想讓大家直接在對話框裡結帳。\n結果才過六個月，他們就默默撤掉了。<laugh>\n我看到這段公告真的很有共鳴。\n所以 AI 替你按下購買，帳單上到底算誰的？",
+   "lint": {
+    "chars": 197,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 26,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "你叫 AI agent 幫你訂飯店。\n它幫你比好價、直接按購買。\n<short pause>\n結果訂錯日期，你要找誰處理？\n找那個 AI，還是找訂房網站？\n其實答案根本不在對話框裡啦。\n重點是你的信用卡帳單上面，印的名字是誰。\n更扯的是，OpenAI 之前推過一鍵結帳。\n結果才過六個月，就摸摸鼻子縮回去了。<laugh>\n錢到底進了誰的帳戶？\n出事了到底找誰算帳啊？\n這集我們就來搞懂這件事。",
+   "lint": {
+    "chars": 161,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 13.6,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "比好價、直接按購買。",
+   "to": "比好價格、直接按下購買。",
+   "reason": "補完整說法"
+  },
+  {
+   "from": "結果訂錯日期，你要找誰處理？",
+   "to": "結果訂錯日期，或是卡被盜刷，你要找誰處理？",
+   "reason": "照素材補上盜刷情境"
+  },
+  {
+   "from": "更扯的是，OpenAI 之前推過一鍵結帳。結果才過六個月，就摸摸鼻子縮回去了。<laugh>",
+   "to": "而且 OpenAI 之前推過在 ChatGPT 裡直接結帳的按鈕。結果才過六個月，就收回去了。",
+   "reason": "對真實公司語氣中性、拿掉笑聲；「一鍵」換成照素材的說法"
+  },
+  {
+   "from": "這集我們就來搞懂這件事。",
+   "to": "這集就來回答：AI 幫你按下購買之後，帳單上寫的是誰？",
+   "reason": "收回標題的問題（開迴圈）"
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "segment": "s10_pool",
+ "position": "第 11 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "6bf5886e2a41b0e8c8a82977b20b523ca1b3ef53891f2d0a3734cb038fa740a1",
+ "previous_context": "我讀到這裡真的很認同。這份報告把話說得很精準，不是有履約就安全，而是要做到 agent 辦不到的履約，才安全。",
+ "original": {
+  "text": "那 agent 到底想拿走什麼？不是佣金，到今年秋天，還沒有一家訂房或外送平台的抽成被壓縮。它想拿的是平台付給 Google 的那筆錢。Booking 每年的行銷費用大約八十到一百億美元，主要付給 Google 買流量。報告說，這才是 agent 想重新定價的那一池水。agent 把平台推回最初的樣子：握著供給、帳單上印著自己名字的那一層。然後在它頭上，長出一個新的收費站。那個新的會是一個還是很多個，要到明年才有答案。",
+  "lint": {
+   "chars": 201,
+   "precise_numbers": [
+    "八十",
+    "一百"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 24.1,
+   "max_sentence_len": 38,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以 agent 到底想搶走什麼？\n很多人以為是抽成，其實根本不是啦。<short pause>\n到今年秋天，沒有任何平台的佣金被壓縮。\n它真正想搶的，是付給 Google 的過路費。\nBooking 一年花八十到一百億美元買流量。\n這筆錢主要都進了 Google 的口袋。\n這份報告說，這才是 agent 想重分的大水池。\n說真的，我覺得這就像生態系在大洗牌。\nagent 把舊平台打回最初的樣子。\n讓它退回只負責履約、印帳單的底層。\n然後在它頭上，直接長出一個新的收費站。\n那這個新平台會是一個還是很多個？\n報告的作者說，要等到明年才會有答案囉。",
+   "lint": {
+    "chars": 240,
+    "precise_numbers": [
+     "八十",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以 agent 到底想拿走什麼？<short pause>\n答案不是平台的抽成喔。\n到今年第三季，根本沒有平台的抽成縮水。\n其實它真正想動的，是付給 Google 的錢。\n你知道 Booking 一年花多少買流量嗎？\n大概八十到一百億美元耶。<short pause>\n報告裡說，這才是 agent 想重新定價的目標。\n我讀到這裡真的很有共鳴。\nagent 會把舊平台推回最初的樣子。\n讓它們退回只負責履約、印帳單的底層。\n然後在它們頭上，長出全新的收費站。\n那個新的是一家獨大，還是大家一起競爭？\n這份報告說，要到二零二七年才有答案啦。",
+   "lint": {
+    "chars": 223,
+    "precise_numbers": [
+     "八十",
+     "一百"
+    ],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以 agent 到底想搶什麼？\n其實不是要砍平台的抽成喔。\n報告裡說，到今年秋天為止，\n還沒有任何平台的佣金縮水。\n那它到底盯上了什麼？\n答案是平台付給 Google 的行銷費。<short pause>\n像 Booking 光是買流量，\n一年就要花大約八十到一百億美元。\n這筆錢真的大到誇張，\n我讀到這段整個被震撼到。\n這才是 agent 真正想重新定價的池子。\n它會把平台推回最初的樣子，\n也就是老老實實手握合約、專心履約。\n然後在平台頭上，\n再長出一個新的 aggregator 先抽一層。\n至於未來到底會長成什麼樣子，\n大概二零二七年才有答案了吧。",
+   "lint": {
+    "chars": 240,
+    "precise_numbers": [
+     "八十",
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 20.8,
+    "max_sentence_len": 29,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "到今年第三季，根本沒有平台的抽成縮水。",
+   "to": "到今年第三季，還沒有一家訂房或外送這類平台的抽成縮水。",
+   "reason": "照素材的範圍"
+  },
+  {
+   "from": "你知道 Booking 一年花多少買流量嗎？大概八十到一百億美元耶。",
+   "to": "你知道 Booking 一年的行銷費用有多少嗎？大概八十到一百億美元，大部分付給 Google 買流量。",
+   "reason": "照素材：是行銷費用，主要付給 Google"
+  },
+  {
+   "from": "我讀到這裡真的很有共鳴。",
+   "to": "",
+   "reason": "Ping 沒有個人反應"
+  },
+  {
+   "from": "這份報告說，要到二零二七年才有答案啦。",
+   "to": "這份報告說，要到明年才有答案啦。",
+   "reason": "年份容易被聽錯，改說明年"
+  },
+  {
+   "from": "大概八十到一百億美元，大部分付給 Google 買流量。",
+   "to": "將近一百億美元，大部分付給 Google 買流量。",
+   "reason": "一段一個精確數字（素材是八十到一百億）"
+  }
+ ]
+}

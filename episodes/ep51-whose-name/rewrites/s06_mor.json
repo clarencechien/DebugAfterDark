@@ -1,0 +1,125 @@
+{
+ "segment": "s06_mor",
+ "position": "第 7 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "75a083a280b6e05d0d5062a7c78c5971543fc075832273ca55877bc4f54e5282",
+ "previous_context": "但這樣你就懂了吧？難怪只有 Amazon 一直築牆、到處告 AI。",
+ "original": {
+  "text": "回到開頭那張帳單。這份報告最重要的一個詞，叫 merchant of record，記錄在案的賣家。它不是技術名詞，是責任名詞。你的信用卡帳單上印誰的名字、錢進誰的帳戶，它就是誰。要繳稅的是它，客人刷了不認帳、被盜刷、要退款，也都找它。報關有一個對應的詞，叫進口人。代購可以幫你挑、幫你買、幫你寄，可是報單上寫誰的名字，誰就要在海關面前負責。",
+  "lint": {
+   "chars": 168,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 23.0,
+   "max_sentence_len": 37,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [
+    "對應"
+   ],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實這份報告裡，有一個很關鍵的詞。<short pause>\n叫做 Merchant of Record，記錄賣家。\n這不是技術名詞喔，它根本是責任名詞。\n你想想看，信用卡帳單上最後印誰的名字？\n錢進誰的帳戶、銀行出事找誰，它就是誰嘛。\n客人被盜刷、要退款，全都要它出來扛。\n這就很像找代購買東西。<short pause>\n代購可以幫你挑、幫你寄。\n但報單上的進口人寫誰，海關查稅就找誰。\n所以重點根本不是介面，是出事誰要負責啦。",
+   "lint": {
+    "chars": 178,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 23,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實這份報告講了一個超核心的詞。叫 Merchant of Record。也就是記錄在案的賣家。這完全不是技術名詞。根本就是責任名詞啦。<short pause>那這到底是什麼意思呢？簡單講，就是看你信用卡帳單印誰的名字。錢進誰的帳戶，銀行出事就找誰算帳。所以不管你演算法寫得多厲害。只要客人被盜刷、要退款，全都是它扛。這就很像找海外代購嘛。對方可以幫你挑幫你寄。可是海關報單上的進口人寫誰？海關要補稅，就只會抓那個名字負責喔。",
+   "lint": {
+    "chars": 198,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 13.1,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那為什麼會這樣？其實關鍵全在一個詞。<short pause>\n這份報告提到一個概念，叫 Merchant of Record。\n聽起來很像技術名詞齁？\n但它其實是個責任名詞，不得不說這切入點超精準。\n簡單說，你信用卡帳單上印誰的名字，誰就是它。\n不管前面介面誰做的，出事時銀行會找誰？\n銀行就只找它扛責任。\n客人退款、被盜刷、甚至要繳各國的稅，全算它頭上啦。\n這就像找代購幫忙買東西，\n報關時進口人寫誰，海關查稅就抓誰，道理完全一樣。",
+   "lint": {
+    "chars": 193,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 18.3,
+    "max_sentence_len": 35,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "錢進誰的帳戶，銀行出事就找誰算帳。",
+   "to": "錢進誰的帳戶，刷卡出問題，銀行就找誰。",
+   "reason": "照素材"
+  },
+  {
+   "from": "所以不管你演算法寫得多厲害。",
+   "to": "所以不管是誰做了介面、寫了推薦演算法。",
+   "reason": "照素材：身分看誰扛責任"
+  }
+ ]
+}

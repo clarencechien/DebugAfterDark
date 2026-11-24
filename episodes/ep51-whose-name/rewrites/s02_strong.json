@@ -1,0 +1,142 @@
+{
+ "segment": "s02_strong",
+ "position": "第 3 段，共 12 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "1ba58b392ea4ce196ff80cccbf5981b85ae311df26844a2b6b55c4cbcb8e502c",
+ "previous_context": "到底 AI 會拿走平台的哪幾塊？今晚我們就來把它搞清楚。",
+ "original": {
+  "text": "先講最樂觀的說法：agent 根本進不來，平台很安全。數字說不是這樣。Adobe 追蹤美國零售網站超過一兆次造訪，發現從 AI 導過去的客人，到今年七月，買下去的比例反而比一般流量高六成；一年前還低一半。ChatGPT 開賣廣告大約兩百天，一年的廣告營收就上看十億美元，這是 OpenAI 自己說的。所以 AI 變成大家找東西的新入口，已經是事實，不是預測。",
+  "lint": {
+   "chars": 170,
+   "precise_numbers": [
+    "兩百"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 33.0,
+   "max_sentence_len": 63,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先來看最樂觀的一種說法。有人覺得 agent 根本進不來，現在的平台穩得很。但真實數據直接打了這說法一巴掌。<short pause>根據 Adobe 的統計，從 AI 導過去的客人，下單比例比一般流量高出百分之六十！你猜一年前怎麼樣？一年前下單比例還低了一半耶。我看到這組數字真的被嚇到。然後 OpenAI 自己也說，ChatGPT 賣廣告才兩百天左右，一年的營收就衝到十億美元了。<short pause>所以 AI 變成大家買東西的新入口，這早就已經是事實，不是預測啦。",
+   "lint": {
+    "chars": 201,
+    "precise_numbers": [
+     "百分之六十",
+     "兩百"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 21.3,
+    "max_sentence_len": 43,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先來看最樂觀的說法。\n有人覺得 agent 根本進不來，平台很安全。\n真的是這樣嗎？\n其實數字直接打臉。<short pause>\nAdobe 追蹤了美國超多購物網站。\n透過 AI 導過去的客人，買單率比平常高很多。\n重點是一年前還低了一半欸。\n我看到這個反差真的有點吃驚。\n然後 ChatGPT 賣廣告才大約兩百天。\n一年就能賺十億美元。\n這還是 OpenAI 自己講的喔。\n所以 AI 變成大家找東西的新入口。\n這已經是事實，不是預測了啦。",
+   "lint": {
+    "chars": 186,
+    "precise_numbers": [
+     "兩百"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 13.3,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.6,
+    "written_words": [
+     "透過"
+    ],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "有人認為 agent 根本進不來，平台穩得很。\n但真的是這樣嗎？<short pause>\n其實數字早就給出答案了。\n這份報告提到，Adobe 追蹤了上兆次網站造訪。\nAI 導過去的客人，下單比例反而高出六成。\n明明一年前，這比例還低了一半耶。\n然後你看 ChatGPT。\n廣告開賣大約兩百天，年營收就衝到十億美元。\n這還是 OpenAI 自己公布的數字喔。\n我看到這邊真的起雞皮疙瘩。\n所以 AI 成為大家買東西的新入口。\n這早就不是預測，而是事實了啦。",
+   "lint": {
+    "chars": 195,
+    "precise_numbers": [
+     "兩百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "Adobe 追蹤了美國超多購物網站。",
+   "to": "Adobe 追蹤了美國購物網站超過一兆次的造訪。",
+   "reason": "照素材：是造訪次數，不是網站數"
+  },
+  {
+   "from": "買單率比平常高很多。",
+   "to": "到今年七月，買單的比例反而比一般流量還高。",
+   "reason": "照素材補時間，不誇大"
+  },
+  {
+   "from": "我看到這個反差真的有點吃驚。",
+   "to": "",
+   "reason": "Ping 沒有個人反應"
+  },
+  {
+   "from": "然後 ChatGPT 賣廣告才大約兩百天。一年就能賺十億美元。",
+   "to": "然後 ChatGPT 賣廣告才大約兩百天。換算成一年，廣告營收就到十億美元。",
+   "reason": "照素材：是年化數字"
+  }
+ ]
+}

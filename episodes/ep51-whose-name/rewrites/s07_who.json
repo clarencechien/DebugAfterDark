@@ -1,0 +1,149 @@
+{
+ "segment": "s07_who",
+ "position": "第 8 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ea733b4fa02d93ea6605ee8bdc14a8178708551513e11a00587094938150aae9",
+ "previous_context": "可是海關報單上的進口人寫誰？海關要補稅，就只會抓那個名字負責喔。",
+ "original": {
+  "text": "用這個眼光看今年，事情就清楚了。Booking 這兩年把自己收款的訂單，從六成五拉到七成五，錢先進 Booking，匯率、詐騙、退款都它扛。Google 做了十五年旅遊，今年的 AI 訂房還是不碰這個名字，卡照樣是飯店或訂房網站刷。各家 AI 購物的規格也都寫同一句：商家保留這個名字，agent 只拿一次性的付款憑證。報告的一句話是：agent 願意替你做決定，不願意替你負責。",
+  "lint": {
+   "chars": 181,
+   "precise_numbers": [
+    "十五"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 35.2,
+   "max_sentence_len": 51,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "對，所以用這個角度看，事情就很有意思了。你看 Booking 好了。他們把自己收款的比例，拉到了百分之七十五。匯率跟退款全扛，故意當出事找得到的人。那 Google 呢？<short pause> Google 做了十幾年旅遊，完全不碰這件事。卡照樣丟給飯店去刷。其實現在各大 AI 平台全都是這樣寫。你問為什麼？這份報告講得超直白。agent 願意替你做決定，但不願意替你負責嘛。白話就是，我幫你按，但帳單別印我的名字。<laugh>",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [
+     "百分之七十五"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 22,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以誰要出來扛這個責任？\n你看 Booking 嘛。\n它把自己收款的比例，直接拉到百分之七十五。\n錢先進自己口袋，退款跟匯率風險它全扛。\n那 Google 呢？<short pause>\n做了十幾年旅遊，AI 訂房還是死都不碰。\n刷卡出事的責任，照樣留給飯店。\n對啊，其實現在各大 AI 平台都醬子。\n我幫你挑、幫你按，但帳單上千萬別寫我。\n<laugh> 報告裡說得很傳神。\nAI 願意替你做決定，卻不願意替你負責。",
+   "lint": {
+    "chars": 170,
+    "precise_numbers": [
+     "百分之七十五"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 14.5,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以你看今年幾家大廠，做法差超多的。Booking 這兩年很拚，它把親自收款的比例拉到七成五。退款跟匯率問題，全部它自己扛喔。但 Google 完全反過來。就算用最新的 AI 訂房，卡還是丟給飯店刷。其實各大平台也是，AI 只拿一次性的付款憑證。為什麼要這樣？<short pause>因為退款跟法規這些事，AI 根本處理不來嘛。這份報告有一句話我超認同。Agent 願意替你做決定，但可不願意替你負責啦。",
+   "lint": {
+    "chars": 182,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 27,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "它把親自收款的比例拉到七成五。",
+   "to": "它自己收款的訂單，從六成五拉到七成五。",
+   "reason": "照素材補起點"
+  },
+  {
+   "from": "就算用最新的 AI 訂房，卡還是丟給飯店刷。",
+   "to": "就算是今年的 AI 訂房，卡還是由飯店或訂房網站刷。",
+   "reason": "照素材"
+  },
+  {
+   "from": "其實各大平台也是，AI 只拿一次性的付款憑證。",
+   "to": "各家 AI 購物的規格也都寫同一句：商家保留帳單上的名字，AI 只拿一次性的付款憑證。",
+   "reason": "照素材補清楚"
+  },
+  {
+   "from": "因為退款跟法規這些事，AI 根本處理不來嘛。",
+   "to": "Booking 的財務長就說過，取消、客服、付款、稅務跟法規，AI 處理不來。",
+   "reason": "歸屬：是 Booking 財務長的說法"
+  },
+  {
+   "from": "這份報告有一句話我超認同。",
+   "to": "這份報告有一句話說得很到位。",
+   "reason": "Ping 沒有個人立場"
+  },
+  {
+   "from": "各家 AI 購物的規格也都寫同一句：商家保留帳單上的名字，AI 只拿一次性的付款憑證。",
+   "to": "各家 AI 購物的規格也都寫同一句。商家保留帳單上的名字，AI 只拿一次性的付款憑證。",
+   "reason": "句子拆短"
+  }
+ ]
+}

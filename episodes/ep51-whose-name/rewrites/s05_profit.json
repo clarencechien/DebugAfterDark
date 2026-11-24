@@ -1,0 +1,144 @@
+{
+ "segment": "s05_profit",
+ "position": "第 6 段，共 12 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "355af4c4b8ab9767fa622573790480fb3f6fb393ceda99b9cdb44efdd96f55ff",
+ "previous_context": "像是抽成、刷卡，還有把東西送到你家。這些 agent 根本碰不起，目前完全沒事喔。",
+ "original": {
+  "text": "麻煩的是，被打到的那幾層，剛好是最賺錢的。分析師說，廣告這一層的毛利接近百分之百。報告拿 Amazon 自己公布的數字算了一下：扣掉雲端事業，零售那一大塊一年的營業利潤大約三百四十億美元，比廣告收入還少。意思是 Amazon 雲端以外的利潤，可能幾乎都來自廣告。這是自報數字加上分析師的假設，不是公司揭露的。但它解釋了為什麼 Amazon 是唯一一直築牆、告 AI 公司的平台。",
+  "lint": {
+   "chars": 181,
+   "precise_numbers": [
+    "百分之百",
+    "三百四十"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 29.2,
+   "max_sentence_len": 58,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "可是被打到的那一層，剛好是最賺錢的。\n像 Amazon 就超級極端。<short pause>\n分析師估計，廣告毛利其實接近百分之百。\n然後這份報告算了一下。\n扣掉 AWS，零售利潤只有三百四十億美元。\n你猜廣告賺多少？\n光廣告收入就比這個數字還多。<short pause>\n這代表什麼？\n雲端以外賺的錢，可能全靠廣告在撐耶。\n說真的，這推論有夠驚人。\n不過這只是分析師的假設喔。\n官方並沒有公開過廣告利潤。\n但這樣你就懂了吧？\n難怪只有 Amazon 一直築牆、到處告 AI。",
+   "lint": {
+    "chars": 195,
+    "precise_numbers": [
+     "百分之百",
+     "三百四十"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 12.9,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "可是被打到的那一層，剛好最賺錢。\n對，就是廣告。\n有分析師估計，廣告毛利接近百分之百耶。\n這份報告算了一下 Amazon 的公開數字。\n如果扣掉雲端事業 AWS，\n剩下的零售利潤，大約只有三百四十億美元。\n你猜廣告賺多少？\n光是廣告收入，就比這整包利潤還多。\n雖然這只是分析師的假設啦。\n但這完全解釋了一件事。<short pause>\n為什麼只有 Amazon 急著築牆告 AI？\n因為廣告要是被挖走，\n它剩下的利潤就真的不用玩了嘛。<laugh>",
+   "lint": {
+    "chars": 187,
+    "precise_numbers": [
+     "百分之百",
+     "三百四十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.0,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "但麻煩的是，被影響的那一層最賺錢。\n分析師估計，廣告毛利幾乎百分之百喔。\n這份報告拿 Amazon 公布的數字來算。\n扣掉雲端 AWS，零售的獲利其實不多。\n一年大約三百四十億美元。<short pause>\n你猜怎樣？\n這居然比他們的廣告收入還要少耶。<laugh>\n這反差大到讓我倒抽一口氣。\nAmazon 零售賺的錢，可能全靠廣告。\n當然啦，這有包含分析師的假設。\n但這樣就完全說得通嘛。\n難怪只有他們急著築牆，到處告 AI 公司。",
+   "lint": {
+    "chars": 182,
+    "precise_numbers": [
+     "百分之百",
+     "三百四十"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 2.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "分析師估計，廣告毛利其實接近百分之百。",
+   "to": "分析師估計，廣告賺的錢幾乎全是毛利。",
+   "reason": "一段一個精確數字"
+  },
+  {
+   "from": "扣掉 AWS，零售利潤只有三百四十億美元。",
+   "to": "扣掉雲端事業，零售一年的營業利潤大約三百四十億美元。",
+   "reason": "照素材補說法，AWS 改白話"
+  },
+  {
+   "from": "說真的，這推論有夠驚人。不過這只是分析師的假設喔。",
+   "to": "不過這是公司公布的數字，加上分析師的假設。",
+   "reason": "照素材：自報數字加分析師假設；拿掉個人反應"
+  },
+  {
+   "from": "難怪只有 Amazon 一直築牆、到處告 AI。",
+   "to": "難怪只有 Amazon 一直在築牆，還告了 AI 公司。",
+   "reason": "不誇大（告的是 Perplexity 一家）"
+  }
+ ]
+}
