@@ -293,8 +293,14 @@ function _render(d){
   }
   if(pending.length) todo.push({k: "點頭", t: pending.length+" 個候選題等你決定收不收", s: pending.slice(0,2).map(function(x){return x.q;}).join("；"), jump: "rline-0", tag: "研究"});
   // 成效報表的建議動作（每週一 yt_report 寫進 summary.json）：「資料」類只是說明，不算要你動手的事
-  var acts = (tr && !tr.error ? (tr.actions || []) : []).filter(function(a){ return a.kind !== "資料"; });
-  if(acts.length) todo.push({k: "成效建議", t: acts[0].text.split(/[：:]/)[0], s: acts[0].text.split(/[：:]/).slice(1).join("：").split("。")[0]+(acts.length > 1 ? "。還有 "+(acts.length-1)+" 條在成效那格。" : "。"), jump: "pline-6", tag: "成效"});
+  // 「包裝」（改標題、縮圖）要等標題／縮圖實驗檢討完才做，免得干擾實驗：實驗還沒到檢討日就標「M/D 後」，不排進你下一步
+  var packHold = ((repo && repo.experiments) || []).filter(function(e){ return e.status === "running" && /ab_single|title|thumb|ep07-ab/.test((e.kind||"")+" "+(e.id||"")) && e.next_review && e.next_review > dayKey(new Date()); })
+    .map(function(e){ return e.next_review; }).sort().pop() || null;
+  var holdOf = function(a){ return a.kind === "包裝" && packHold ? packHold : null; };
+  var mdOf = function(d){ return Number(d.slice(5,7))+"/"+Number(d.slice(8,10)); };
+  var acts = (tr && !tr.error ? (tr.actions || []) : []).filter(function(a){ return a.kind !== "資料" && a.kind !== "開場" && !holdOf(a); });   // 「開場」是給下一集寫稿用的，集數 thread 照做，不算你要動手的事
+  if(acts.length){ var a0 = acts[0].text, ci = a0.search(/[：:]/), rest = acts.length > 1 ? "還有 "+(acts.length-1)+" 條在成效那格。" : "";
+    todo.push({k: "成效建議", t: ci > 0 ? a0.slice(0, ci) : a0.split("。")[0], s: (ci > 0 ? a0.slice(ci+1).split("。")[0]+"。" : "")+rest, jump: "pline-6", tag: "成效"}); }
   var today = dayKey(new Date());
   ((repo && repo.todo) || []).filter(function(i){ return i.owner === "Clarence" && i.status === "open"; })
     .sort(function(a,b){ return (a.due||"9") < (b.due||"9") ? -1 : 1; }).slice(0,2).forEach(function(i){
@@ -344,7 +350,7 @@ function _render(d){
     {label: "成效", count: results.length, hint: tr && tr.analytics_to ? "資料到 "+tr.analytics_to.slice(5).replace("-","/") : "",
      body: (tr && tr.error ? '<p class="empty">讀不到成效摘要：'+esc(tr.error)+'</p>' : "")+
        (tr && !tr.error ? '<div class="sub">7 天自然觀看 <b>'+esc(tr.organic_views_7d)+'</b>（已排除廣告）。每週一更新。</div>' : "")+
-       ((tr && !tr.error && (tr.actions||[]).length) ? '<h3>本週建議動作</h3>'+rowsOf(tr.actions, function(a){ return '<li><div class="when">'+chip(a.kind, a.kind === "資料" ? "" : "warn")+'</div><div class="body"><div class="sub">'+esc(a.text)+'</div></div></li>'; })+'<h3>各集成效</h3>' : "")+
+       ((tr && !tr.error && (tr.actions||[]).length) ? '<h3>本週建議動作</h3>'+rowsOf(tr.actions, function(a){ var h = holdOf(a); return '<li><div class="when">'+chip(a.kind, a.kind === "資料" || h ? "" : "warn")+'</div><div class="body">'+(h ? chip(mdOf(h)+" 後") : "")+'<div class="sub">'+esc(a.text)+'</div>'+(h ? '<div class="muted">標題、縮圖實驗 '+esc(mdOf(h))+' 才檢討，在那之前先不改，免得干擾實驗。</div>' : "")+'</div></li>'; })+'<h3>各集成效</h3>' : "")+
        rowsOf(results.slice(0,8), resRow)+'<div class="opens"><a class="btn" href="'+REPORT_URL+'" target="_blank" rel="noopener">看完整成效報表</a></div>'}
   ]);
   var via = repo && repo._via === "github" ? '<span class="muted">GitHub 自動更新</span>' :
