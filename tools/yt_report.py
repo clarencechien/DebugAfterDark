@@ -264,9 +264,25 @@ def experiment_eps(exps):
     return out
 
 
+# 建議「改標題」時要跳過的集數（不一定在 experiments.json 的批次裡）：
+# 已改過標題：EP01–23 在 11/20 那批一起改，EP37 在 11/23 改（PR #47）。之後再改標題的集數也加在這裡。
+RETITLED = set(range(1, 24)) | {37}
+# 對照組：EP24–35 11/20 只補章節、標題刻意不動，拿來跟改過的比。
+TITLE_CONTROL = set(range(24, 36))
+
+
+def ep_ranges(eps):
+    """[1,2,3,7] → 'EP01–03、EP07'"""
+    eps, out = sorted(eps), []
+    for e in eps:
+        if out and e == out[-1][1] + 1: out[-1][1] = e
+        else: out.append([e, e])
+    return "、".join(f"EP{a:02d}" if a == b else f"EP{a:02d}–{b:02d}" for a, b in out)
+
+
 def actions(A, reach, exps=()):
     """規則產生的候選動作，最多三個。只寫進 summary.json（每週摘要的起點、工廠儀表板的「建議動作」），報表頁面不顯示。"""
-    busy = experiment_eps(exps) | {7}
+    busy = experiment_eps(exps) | {7} | RETITLED | TITLE_CONTROL
     out, rows = [], [r for r in A["rows"] if r["style"] in ("hook", "poetic") and r["ep"] not in busy]
     with_imp = [r for r in rows if r["impressions"] and r["impressions"] >= 100]
     if with_imp:
@@ -278,8 +294,8 @@ def actions(A, reach, exps=()):
         if lost:
             out.append(dict(kind="包裝", text="改標題與縮圖（照 hooks.md）：曝光多、點閱率低於頻道平均 "
                             f"{avg:.2f}% 的影片 " + "、".join(f"EP{r['ep']:02d}（{r['impressions']:,.0f} 曝光，{r['ctr']:.2f}%）" for _, r in lost)
-                            + "。一次改一支，記下改的日期，兩週後看點閱率。（已排除正在實驗的集數："
-                            + "、".join(f"EP{e:02d}" for e in sorted(busy)) + "）"))
+                            + "。一次改一支，記下改的日期，兩週後看點閱率。（已排除正在實驗、已改過標題或標題對照組的集數："
+                            + ep_ranges(busy) + "）"))
     else:
         cand = sorted((r for r in rows if r["style"] == "poetic"),
                       key=lambda r: -r["sources"].get("RELATED_VIDEO", 0))[:3]
