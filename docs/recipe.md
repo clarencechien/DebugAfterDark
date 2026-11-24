@@ -60,6 +60,12 @@ ct2-transformers-converter --model MediaTek-Research/Breeze-ASR-25 \
 
 ## 1. 選題、草稿與素材（agent 自己寫）
 
+**開工先報到**：一開始就在專案檔案建 `/mnt/project-files/episodes/epNN/`（NN 是集數，例如 `ep52`），放一個 `epNN-review.md`，
+第一行寫 `# EPNN 標題（製作中）`。工廠儀表板看這個資料夾知道有一集在做（沒 mp3＝製作中，有 mp3＝等試聽）；
+做好後同一個檔案改寫成試聽稿，第一行改成 `# EPNN 標題（試聽稿 v1）`，mp3 也放這裡。
+寫好試聽稿後跑 `python3 tools/review_html.py /mnt/project-files/episodes/epNN/epNN-review.md`，套成同版型的 `epNN-review.html`
+（上面有播放器，稿子裡的時間點了就跳過去播；不花 token）。之後改了 .md 就再跑一次。儀表板的「打開試聽稿」開的是這個 HTML。
+
 **選題**：public 的報告，不會很快過時，有故事可講。先讀完全文，只挑 **2 到 3 個重點**（降低門檻：聽眾沒看過原文，
 不追求完整），其他明說「細節在原文」或直接略過。
 
@@ -294,7 +300,7 @@ python3 tools/match_voice.py track episodes/<ep>   # 聲紋跟參考錄音比，
 
 **每集的 PR 只動 `episodes/<ep>/`**。兩集常常同時做，兩個 PR 只要改到同一個共用檔（以前是 `docs/report-candidates.md` 的製作中表和 `voices/drift.json`），後合的那個一定衝突。所以進度、聲紋、QA 都寫在那一集自己的資料夾，彙整的表用腳本現算。`git diff --name-only origin/main` 出現 `episodes/<ep>/` 以外的檔案，就拆成另一個 PR。
 
-**更新工廠儀表板**：開了 PR、或知道 PR 合併了之後，跑一次 `python3 tools/factory_status.py`（讀 origin/main 和開著的 PR，寫 `/mnt/project-files/factory/repo.json`，幾秒、不花 token）。儀表板是專案裡的 Artifact，讀不到 GitHub，這是它知道排程和 PR 的唯一來源。
+**工廠儀表板會自己更新**：PR 開、關、合併到 main 時，GitHub Action（`.github/workflows/factory-state.yml`）會重算 `dashboard-data` 分支的 `repo.json`，每 4 小時也會再算一次，不用手動跑。儀表板讀不到 GitHub 時才用專案檔案的備份 `factory/repo.json`，想更新備份就跑 `python3 tools/factory_status.py`（幾秒、不花 token）。
 
 ## 10. Short（長片公開後）
 
