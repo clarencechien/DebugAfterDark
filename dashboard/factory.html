@@ -231,7 +231,8 @@ function _render(d){
   var todo = [];
   if(listening.length){
     var l0 = listening[0];
-    todo.push({k: "接著試聽", t: l0.ep+" "+l0.title, s: "音檔做好了，等你試聽定稿", tag: "podcast"});
+    todo.push({k: "接著試聽", t: l0.ep+" "+l0.title, s: "音檔做好了，等你試聽定稿"+(listening.length > 1 ? "；還有 "+listening.slice(1).map(function(e){return e.ep;}).join("、") : ""),
+               open: l0.reviewFile ? [l0.reviewFile, l0.ep+" 試聽稿", "打開試聽稿"] : null, tag: "podcast"});
   } else if(making.length){
     var m0 = making[0];
     todo.push({k: "接著做", t: m0.ep+" "+m0.title, s: "製作中，還沒上架", tag: "podcast"});
@@ -273,7 +274,9 @@ function _render(d){
   var prodRow = function(e){
     return '<li><div class="body"><div class="t"><span class="ep">'+esc(e.ep)+'</span> '+esc(e.title)+'</div>'+
       stepChip("音檔", e.audio ? "✅" : "🔶")+stepChip("試聽", e.review)+stepChip("上架", "⬜")+
-      (e.note ? '<div class="sub">'+esc(e.note)+'</div>' : "")+'</div></li>';
+      (e.local ? '<span class="muted">還沒開 PR，成品在專案資料夾</span>' : "")+
+      (e.note ? '<div class="sub">'+esc(e.note)+'</div>' : "")+
+      (e.reviewFile ? '<div class="opens">'+openBtn(e.reviewFile, e.ep+" 試聽稿", "打開試聽稿")+'</div>' : "")+'</div></li>';
   };
   var nextRow = function(x){
     return '<li><div class="when">'+esc(x.ep || ("#"+x.n))+'</div><div class="body"><div class="t">'+esc(x.angle)+'</div>'+
@@ -592,6 +595,29 @@ function loadRepo(){
     }, function(e){ console.warn("github connector", e); return fallback((e && e.code) || "error"); });
   });
 }
+// 還沒進 repo 的集數：集數 thread 在試聽前只把成品放在專案資料夾 episodes/epNN/（mp3＋epNN-review.md），
+// 等 Clarence 試聽同意才開 PR。比 repo 最新一集還新的資料夾：有 mp3＝等試聽，沒有＝製作中。
+function loadLocalEps(maxEp){
+  return listAll("episodes").then(function(es){
+    var dirs = es.filter(function(e){ var m = e.isDirectory && /(^|\/)ep(\d+)\/?$/.exec(e.path); return m && Number(m[2]) > maxEp; });
+    return dirs.reduce(function(p, d){
+      return p.then(function(out){
+        var num = Number(/ep(\d+)\/?$/.exec(d.path)[1]), ep = "EP"+(num < 10 ? "0" : "")+num;
+        return call(function(){ return files.list({path: d.path.replace(/\/$/,"")}); }).then(function(r){
+          var fs = (r.entries || []).filter(function(f){ return !f.isDirectory; });
+          var mp3 = fs.filter(function(f){ return /\.mp3$/.test(f.path); })[0], rev = fs.filter(function(f){ return /-review\.md$/.test(f.path); })[0];
+          var item = {ep: ep, number: num, title: "", stage: mp3 ? "等試聽" : "製作中", audio: !!mp3, review: "⬜", local: true, reviewFile: rev ? rev.path : null,
+                      at: mp3 && mp3.createdAt ? mp3.createdAt : null};
+          if(!rev) return out.concat([item]);
+          return call(function(){ return files.read(rev.path, {length: 600}); }).then(function(x){
+            var h = /^#\s+EP\d+\s+(.+?)(（[^）]*）)?\s*$/m.exec(dec.decode(x.bytes)); if(h) item.title = h[1];
+            return out.concat([item]);
+          }, function(){ return out.concat([item]); });
+        }, function(){ return out; });
+      });
+    }, Promise.resolve([]));
+  });
+}
 function soft(p){return p.catch(function(e){ console.warn(e); return null; });}
 
 function load(){
@@ -603,6 +629,10 @@ function load(){
   });
   start.then(function(){
     return Promise.all([soft(loadRepo()), soft(loadResearch()), soft(loadShorts()), loadTraffic().catch(function(e){ return {error: (e && (e.code || e.message)) || String(e)}; })]);
+  }).then(function(r){
+    var maxEp = ((r[0] && r[0].episodes) || []).reduce(function(m, e){ var n = Number(String(e.ep).replace(/\D/g,"")); return n > m ? n : m; }, 0);
+    if(!maxEp) return r;
+    return soft(loadLocalEps(maxEp)).then(function(loc){ if(loc && loc.length){ r[0].episodes = r[0].episodes.concat(loc); r[0].next = (r[0].next||[]).filter(function(x){ return !loc.some(function(l){ return l.ep === x.ep; }); }); } return r; });
   }).then(function(r){
     render({repo: r[0], research: r[1], shorts: r[2], traffic: r[3]});
   }).catch(function(e){
