@@ -1,0 +1,141 @@
+{
+ "segment": "s08_valves",
+ "position": "第 9 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "edcfc3b50eddd144c8e7a206bcba695a21daa43ab64f6c6d125a422b74e8adfc",
+ "previous_context": "這份報告有一句話我超認同。Agent 願意替你做決定，但可不願意替你負責啦。",
+ "original": {
+  "text": "那平台怎麼面對 agent？今年最完整的樣板是 Walmart。agent 在你的帳號裡有自己的身分，你可以設每筆都要你核准，或給它五十、一百、兩百美元的額度。agent 看不到卡號，也不能改付款方式；它買錯了，退貨照樣適用。Amazon 則要求 agent 表明身分，不表明就封。法院今年也判了：使用者叫 agent 去登入，是使用者在用，不算駭客；但平台還是可以封違規的 agent。重點是，誰能說不，永遠是原本的平台。",
+  "lint": {
+   "chars": 202,
+   "precise_numbers": [
+    "五十",
+    "一百",
+    "兩百"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 27.9,
+   "max_sentence_len": 49,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以平台現在怎麼管 agent？Walmart 算是做了最完整的範本。它讓 agent 在你的帳號有自己的身分。<short pause>你可以設定每筆交易都要人工確認，或是給它兩百美元的扣款上限。最讚的是，agent 完全拿不到卡號，買錯東西的退貨流程也完全一樣喔。那 Amazon 呢？他們要求 agent 一定要自我識別。只要敢裝成真人，就直接封鎖。其實法院今年也有判決，你叫 agent 去買東西不算駭客啦。可是只要違規，平台照樣有權封掉。說到底，誰能說不，永遠是平台決定嘛。",
+   "lint": {
+    "chars": 218,
+    "precise_numbers": [
+     "兩百"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 18.8,
+    "max_sentence_len": 33,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那平台現在要怎麼接招？\n目前做得最完整的樣板是 Walmart。\n它讓 agent 在你帳號裡有獨立身分。<short pause>\n你可以設每筆手動核准，或是給個小額度。\n而且 agent 拿不到卡號，也不能改付款方式。\n萬一 agent 買錯東西怎麼辦？\n別擔心，原本的退貨流程一樣適用啦。\nAmazon 也是類似邏輯。\n它要求 agent 必須主動表明身分。\n抓到偷跑不講的，就直接封鎖。\n連法院最近都說了，找 agent 幫忙不算駭客。\n但只要你違反規定，平台照樣能把你踢出去。<short pause>\n所以你看，關鍵在哪裡？\n從身分檢查到花費上限，每一道關卡，平台隨時都能對你說不。",
+   "lint": {
+    "chars": 246,
+    "precise_numbers": [
+     "萬一"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 16.6,
+    "max_sentence_len": 27,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "既然 agent 不負責，那大平台要怎麼防？\nWalmart 拿出來的作法算是最完整的樣板。\n他們讓 agent 在你的帳號裡有專屬身分。\n你可以設每筆都審核，或是給個幾十美元額度。\n而且它看不到卡號，也不能偷改付款方式喔。\n它要是買錯了怎麼辦？退貨流程照樣能走啦。\nAmazon 也很嚴，要求 agent 必須表明身分。\n你不表明就直接封鎖。<short pause>\n法院今年也認證說，叫 agent 登入不算駭客。\n但平台想封鎖違規的 agent，完全合法。\n其實大家有發現關鍵在哪裡嗎？\n誰能夠說不，永遠都是原本的平台說了算啦。",
+   "lint": {
+    "chars": 233,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.9,
+    "max_sentence_len": 23,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "或是給個幾十美元額度。",
+   "to": "或是給它五十到兩百美元的額度。",
+   "reason": "照素材"
+  },
+  {
+   "from": "法院今年也認證說，叫 agent 登入不算駭客。但平台想封鎖違規的 agent，完全合法。",
+   "to": "法院今年也判了，使用者叫 agent 去登入，是使用者在用，不算駭客。但判決也沒有禁止平台封鎖違規的 agent。",
+   "reason": "照素材，不說「完全合法」"
+  },
+  {
+   "from": "或是給它五十到兩百美元的額度。",
+   "to": "或是先給它一筆額度，最多兩百美元。",
+   "reason": "一段一個精確數字"
+  },
+  {
+   "from": "也不能偷改付款方式喔。",
+   "to": "也不能改付款方式喔。",
+   "reason": "照素材，不加「偷」"
+  }
+ ]
+}

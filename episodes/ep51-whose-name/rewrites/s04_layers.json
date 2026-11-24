@@ -1,0 +1,133 @@
+{
+ "segment": "s04_layers",
+ "position": "第 5 段，共 12 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4ee03f70bbf2858d1b9674363da5bd1274b613e31f6a514d968d2b0e39783395",
+ "previous_context": "我看到這段真的很有共鳴。所以現在能活下來的做法，全都是同一招，也就是發現在外、結帳回家啦。",
+ "original": {
+  "text": "報告的說法在中間：agent 會變成新的入口，但只拿得走平台收入裡「人在看」的那幾層。把平台的收入拆開看。最上面是廣告，Amazon 一年廣告收入大約六百八十億美元。再來是比價導流，像 Tripadvisor 的飯店比價，有 AI 摘要直接給答案之後，今年連續幾季掉了兩成左右。agent 不看廣告，也不用自己比價。下面幾層是抽佣金、收款、真的把東西送到，這幾層到目前完全沒被壓縮。",
+  "lint": {
+   "chars": 184,
+   "precise_numbers": [
+    "六百八十"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 29.7,
+   "max_sentence_len": 51,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實這份報告的分析很有意思。它說 AI agent 確實會變成新的入口。<short pause>但 agent 到底能搶走什麼？答案是，它只搶得走「人在看」的那幾層。像是廣告跟比價，agent 根本不看廣告嘛。Amazon 一年廣告收入六百八十六億美元，還有比價網站業績連續掉了兩成，真的超慘。<laugh>可是重點來了，東西誰來送？出事找誰算帳？牽涉到實體送貨跟收款，agent 根本碰不起。所以平台的抽成，到現在完全沒被壓縮喔。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [
+     "六百八十六"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 40,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實報告裡說的觀點很有意思。agent 雖然會變成新的入口，但它只搶得走給人看的那幾層。比方說廣告跟比價導流。你猜 Amazon 一年廣告賺多少？自報數字大約六百八十億美元耶。<laugh>可是 agent 根本不看廣告嘛。還有比價網站，像 Tripadvisor 就超慘。AI 直接給答案之後，他們的比價收入直接掉了兩成。那 agent 搶不走的是什麼？就是處理金流、出事要找誰，還有真的把東西送來。這些做苦工的環節，到現在抽成完全沒被壓縮到喔。",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [
+     "六百八十"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 28,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "這份報告把平台的收入拆開來看。<short pause>其實 agent 只拿得走給人看的那幾層。最慘的就是廣告跟比價。你猜 agent 會看廣告嗎？當然不會嘛，它根本對廣告免疫。<laugh>像 Tripadvisor 這種比價網站，在 AI 直接給答案之後，營收連幾季掉兩成。但重點來了，底下收錢跟送貨的苦工呢？像是抽成、刷卡，還有把東西送到你家。這些 agent 根本碰不起，目前完全沒事喔。",
+   "lint": {
+    "chars": 169,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 38,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "當然不會嘛，它根本對廣告免疫。<laugh>",
+   "to": "當然不會嘛，有分析師說它對廣告免疫。",
+   "reason": "歸屬（Thompson 的說法）、拿掉笑聲"
+  },
+  {
+   "from": "營收連幾季掉兩成。",
+   "to": "飯店比價那一塊的營收，連續幾季掉了兩成左右。",
+   "reason": "照素材：是飯店比價那一塊，不是整家公司"
+  },
+  {
+   "from": "這些 agent 根本碰不起，目前完全沒事喔。",
+   "to": "這幾層到目前都還沒被壓縮喔。",
+   "reason": "照素材：沒有壓縮，不說「完全沒事」"
+  }
+ ]
+}

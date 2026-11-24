@@ -1,0 +1,61 @@
+{
+ "id": "ep51-whose-name",
+ "number": 51,
+ "type": "full",
+ "guid": "debug-after-dark:ep51",
+ "title": "EP51 AI 幫你按下購買，帳單上寫的是誰？",
+ "description": "你叫 AI 幫你訂飯店，它替你比價、按下購買。結果訂錯日期，或是卡被盜刷，你要找誰？答案不在對話框裡，在你的信用卡帳單上：上面印的是誰的名字。OpenAI 推過在 ChatGPT 裡直接結帳的按鈕，六個月就收回去了。這集回答：AI 幫你按下購買之後，帳單上寫的是誰？\n\n00:00 AI 幫你按下購買，訂錯了找誰？\n00:54 上一集 Zeabur，這集換到幫你買東西的平台\n01:43 AI 導流買單的比例，已經比一般流量高\n02:25 ChatGPT 結帳六個月就收回：五個箱子的擔心\n03:12 平台的收入拆開看：agent 拿得走廣告和比價\n03:49 被打到的那層最賺錢：Amazon 的廣告\n04:31 Merchant of Record：帳單上的那個名字\n05:15 Booking 自己扛、Google 不碰：agent 不願意負責\n06:02 Walmart 的 agent 身分與額度：誰能說不\n06:50 只對一半：Chegg 和 Fiverr\n07:33 agent 想拿的那池水：平台付給 Google 的行銷費\n08:20 今晚的 breakpoint\n\n數字的出處與但書：\n・報告日期 2026-11-05，資料截至 2026 年第三季。金額都是美元。\n・AI 導流買單比例比非 AI 流量高六成：Adobe 2026-08 的第三方量測（美國零售網站，超過一兆次造訪）。\n・ChatGPT 廣告年化 10 億美元：OpenAI 自報（2026-08-31）。\n・ChatGPT 內結帳轉換率比導回官網低三倍、「五個箱子」：Walmart 主管對 WIRED 的陳述（2026-03-18）。OpenAI 對商家收 4% 是 The Information 報導、Shopify 確認。\n・Amazon 廣告 686 億美元（2025，自報）；「廣告幾乎全是毛利」是分析師描述；「Amazon 雲端以外的利潤可能幾乎都來自廣告」是自報數字加上分析師假設，公司沒有揭露廣告層的利潤。\n・Tripadvisor 飯店比價那一塊 2026 年連續幾季掉兩成左右：公司自報。\n・Booking 自己收款（merchant of record）的訂房額占比 65% → 75%（2024 Q4 → 2026 Q3，自報）；行銷費用一年約 80 到 100 億美元，主要付給 Google。\n・Walmart Agent Profiles（2026-10-21）：每筆核准或 50、100、200 美元預授權。\n・第九巡迴上訴法院 2026-08-04 推翻 Amazon 對 Perplexity 的初步禁制令；Amazon 已改以州法重新起訴，待審。\n・Chegg 2026 Q2 營收年減 51%（8-K）；Fiverr 2026 Q2 活躍買家 −21.9%（自報）。\n・不構成投資建議。\n\n原文：〈帳單上印著誰的名字 — AI 平台地形 下篇〉https://imitator.ai-apps.work/r/ai-platform-2026-11\n主要來源：Booking、Expedia、Amazon、DoorDash、Tripadvisor、Chegg、Fiverr 財報；Adobe AI traffic report；WIRED；Ben Thompson（Stratechery）；Benedict Evans；uncoveralpha；Morgan Stanley；Bernstein。完整清單在原文。\n\n上一集：EP50 Zeabur 要關了，你的服務搬去哪？（AI 平台地形 上篇）\n\n今晚的 breakpoint：\n1. agent 拿得走的是廣告和比價這些「人在看」的層，而那剛好是平台最賺錢的地方。\n2. 帳單上印名字、出事要負責的那一層，agent 拿不走，連 AI 公司都把結帳退回給商家。\n3. 有履約還不夠，要有 agent 做不到的履約才安全。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "ai-platform-2026-11",
+ "source_url": "https://imitator.ai-apps.work/r/ai-platform-2026-11",
+ "status": "final",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5",
+  "model_served": "gemini-3.8-flash-tts"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-cloud --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "report_version": "2026-11-05（REV A）",
+ "audio": {
+  "file": "ep51-whose-name.mp3",
+  "bytes": 8596040,
+  "sha256": "005cf7a7c7e448d116544d0fb9750d057e90f5d84acaa15b2f435f7b3a086bb7",
+  "duration_s": 537.2,
+  "duration": "8:57",
+  "lufs": -16.9
+ },
+ "youtube": {
+  "title": "ChatGPT 結帳按鈕六個月就收回、轉換率低 3 倍：AI 幫你買東西，帳單上印誰的名字？",
+  "thumbnail": [
+   [
+    "AI 幫你買",
+    "出事找誰"
+   ],
+   [
+    "帳單上的名字",
+    "AI 不要"
+   ]
+  ],
+  "synthetic_content": true
+ },
+ "published": "2026-11-27T08:01:00+08:00",
+ "qa": {
+  "breeze_cer_mean": 0.03,
+  "gemini_cer_mean": 0.017,
+  "jitter_semitones": 0.218,
+  "gates": "錯誤率 3.0%、音高跳動 0.218 都通過；聲紋漂移 0.893（前 10 集中位數 0.889）；接縫亮度 s01、s03、s07、s11 超 ±400 Hz，保留",
+  "retakes": "第一版音高跳動 0.231：s03、s05、s06、s08、s09、s10、s11 各補 3 次，steady_pick 重挑",
+  "manual_pick": "照 steady_pick（select_log 的 manual_override）",
+  "both_wrong": "Zeabur、Walmart（英文名）、拚／拼（異體）、「那一塊」的一，都不是念錯",
+  "twtone": "qa/twtone.md：沒有超過基準的項目",
+  "terms": "Ping、pong 判英文念法",
+  "fact_check": "逐段對照素材：拿掉改寫加的個人反應與笑聲；Adobe 是造訪次數、ChatGPT 廣告是年化；Tripadvisor 掉的是飯店比價那一塊；Amazon 廣告利潤是自報加分析師假設；Booking 財務長的話補上歸屬"
+ }
+}

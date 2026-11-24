@@ -1,0 +1,126 @@
+{
+ "segment": "s01_recap",
+ "position": "第 2 段，共 12 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": "EP50〈Zeabur 要關了，你的服務搬去哪？〉：上一集從 Zeabur 年底關門講起：它轉型成 AI 維運之後得替客戶保管所有鑰匙，鑰匙兩次外洩就撐不住。報告的結論是每一層都要有能對 agent 說不的閥門，而重力在資料層。這集是同一份報告的下篇，從幫你寫程式的平台換到幫你買東西的平台。",
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "71dca04b85749ca363521c075d927e6f2525ca018b82bcf683494d88ee4ce24f",
+ "previous_context": "出事了到底找誰算帳啊？這集我們就來搞懂這件事。",
+ "original": {
+  "text": "上一集從台灣的 Zeabur 年底關門講起。它轉型成 AI 維運之後，要替客戶保管所有鑰匙，鑰匙兩次外洩就撐不住。那份報告的結論是：每一層都要有能對 agent 說不的閥門，而重力在資料層。這集是同一份報告的下篇，換到另一端：不是幫你寫程式、架網站的平台，而是幫你買東西的平台，像訂房網站、網購、外送。秋天常聽到一句話：AI agent 不會取代這些平台。今晚講三件事：AI 結帳為什麼縮回去、AI 拿得走平台的哪幾塊、拿不走的那一塊叫什麼。",
+  "lint": {
+   "chars": 211,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 34.2,
+   "max_sentence_len": 55,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上一集聊到 Zeabur 年底要關門。它轉型做 AI 維運，得替客戶保管鑰匙。結果外洩兩次就撐不住了。這份報告說，每一層都要有能說不的閥門。而且重力其實在資料層。這集是同一份報告的下篇。<short pause>我們換來看幫大家買東西的平台。像是訂房、網購跟外送，也就是握著大家需求的 aggregator 啦。最近業界很常聽到一句話喔。AI agent 不會取代這些平台。你覺得真的假的？其實這份報告把這句話拆成三種說法。有些說法的證據根本站不住腳耶。今晚我們就來拆解，AI 到底拿得走哪幾塊。",
+   "lint": {
+    "chars": 226,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 32,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集我們聊到 Zeabur 年底關門。它轉型做 AI 維運，得替客戶保管鑰匙。結果鑰匙外洩兩次就撐不住了。上一集的結論是，重力其實在資料層。每一層都要能對 agent 說不。\n\n這集是同一份報告的下篇喔。我們從幫你寫程式，換到幫你買東西。也就是像訂房、網購和外送這些平台啦。業界常說，AI agent 不會取代它們。<short pause>真的是這樣嗎？其實作者把這句話分成了三種說法。證據拿出來對照，結論完全不同耶。我看到那邊真的覺得超精彩。到底 AI 會拿走平台的哪幾塊？今晚我們就來把它搞清楚。",
+   "lint": {
+    "chars": 227,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 14.1,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集我們聊到 Zeabur 年底關門。它轉型做 AI 維運，替大家保管所有鑰匙。結果鑰匙外洩兩次就撐不住了。這份報告說，每一層都要能對 agent 說不。而且真正的重力，其實在資料層。這集是同一份報告的下篇。我們要來看幫你買東西的平台。像是訂房、網購還有叫外送。也就是大家常講的 aggregator。<short pause>你最近是不是也常聽到一句話？很多人說，AI agent 不會取代這些平台啦。真的假的？<laugh>我看到作者列出的證據，整個超驚訝。答案跟很多人想的完全不同。今晚我們就來看，AI 到底拿得走哪幾塊。還有拿不走的那一塊，到底叫什麼。",
+   "lint": {
+    "chars": 251,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "上一集我們聊到",
+   "to": "上一集聊到",
+   "reason": "Ping 不用「我們」"
+  },
+  {
+   "from": "我看到那邊真的覺得超精彩。",
+   "to": "",
+   "reason": "Ping 沒有個人反應"
+  },
+  {
+   "from": "今晚我們就來把它搞清楚。",
+   "to": "今晚講三件事：AI 結帳為什麼縮回去、AI 拿得走平台的哪幾塊，還有拿不走的那一塊叫什麼。",
+   "reason": "早講路線圖（hooks.md 留存）"
+  }
+ ]
+}
