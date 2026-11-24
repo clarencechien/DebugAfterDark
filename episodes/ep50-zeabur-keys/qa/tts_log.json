@@ -1,0 +1,393 @@
+[
+ {
+  "id": "s00_open",
+  "attempts": 1,
+  "audio_s": 25.52,
+  "expected_s": 26.7,
+  "ratio": 0.96,
+  "ok": true,
+  "wall_s": 9.1,
+  "tokens": 638,
+  "takes": [
+   {
+    "file": "s00_open.take3.wav",
+    "audio_s": 30.5,
+    "pauses_ge_0_6s": 9,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s00_open.take4.wav",
+    "audio_s": 30.6,
+    "pauses_ge_0_6s": 7,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s00_open.take5.wav",
+    "audio_s": 25.5,
+    "pauses_ge_0_6s": 2,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   }
+  ],
+  "chosen": "s00_open.take5.wav",
+  "model_requested": "gemini-3.8-flash-tts",
+  "model_served": "gemini-3.8-flash-tts",
+  "voice": "voice_b3c8x0jsntqc"
+ },
+ {
+  "id": "s01_pivot",
+  "attempts": 1,
+  "audio_s": 51.24,
+  "expected_s": 53.1,
+  "ratio": 0.96,
+  "ok": true,
+  "wall_s": 15.3,
+  "tokens": 1281,
+  "takes": [
+   {
+    "file": "s01_pivot.take3.wav",
+    "audio_s": 61.9,
+    "pauses_ge_0_6s": 18,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s01_pivot.take4.wav",
+    "audio_s": 51.2,
+    "pauses_ge_0_6s": 4,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s01_pivot.take5.wav",
+    "audio_s": 59.1,
+    "pauses_ge_0_6s": 20,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   }
+  ],
+  "chosen": "s01_pivot.take4.wav",
+  "model_requested": "gemini-3.8-flash-tts",
+  "model_served": "gemini-3.8-flash-tts",
+  "voice": "voice_b3c8x0jsntqc"
+ },
+ {
+  "id": "s02_keys",
+  "attempts": 1,
+  "audio_s": 57.6,
+  "expected_s": 53.6,
+  "ratio": 1.08,
+  "ok": true,
+  "wall_s": 15.9,
+  "tokens": 1440,
+  "takes": [
+   {
+    "file": "s02_keys.take3.wav",
+    "audio_s": 57.6,
+    "pauses_ge_0_6s": 6,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s02_keys.take4.wav",
+    "audio_s": 62.0,
+    "pauses_ge_0_6s": 14,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s02_keys.take5.wav",
+    "audio_s": 58.2,
+    "pauses_ge_0_6s": 10,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   }
+  ],
+  "chosen": "s02_keys.take3.wav",
+  "model_requested": "gemini-3.8-flash-tts",
+  "model_served": "gemini-3.8-flash-tts",
+  "voice": "voice_b3c8x0jsntqc"
+ },
+ {
+  "id": "s03_samekeys",
+  "attempts": 1,
+  "audio_s": 49.4,
+  "expected_s": 51.6,
+  "ratio": 0.96,
+  "ok": true,
+  "wall_s": 13.5,
+  "tokens": 1235,
+  "takes": [
+   {
+    "file": "s03_samekeys.take0.wav",
+    "audio_s": 55.5,
+    "pauses_ge_0_6s": 14,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s03_samekeys.take1.wav",
+    "audio_s": 52.0,
+    "pauses_ge_0_6s": 14,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s03_samekeys.take2.wav",
+    "audio_s": 49.4,
+    "pauses_ge_0_6s": 7,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   }
+  ],
+  "chosen": "s03_samekeys.take2.wav",
+  "model_requested": "gemini-3.8-flash-tts",
+  "model_served": "gemini-3.8-flash-tts",
+  "voice": "voice_b3c8x0jsntqc"
+ },
+ {
+  "id": "s04_alive",
+  "attempts": 1,
+  "audio_s": 44.12,
+  "expected_s": 44.4,
+  "ratio": 0.99,
+  "ok": true,
+  "wall_s": 12.3,
+  "tokens": 1103,
+  "takes": [
+   {
+    "file": "s04_alive.take0.wav",
+    "audio_s": 42.7,
+    "pauses_ge_0_6s": 7,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s04_alive.take1.wav",
+    "audio_s": 44.1,
+    "pauses_ge_0_6s": 7,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s04_alive.take2.wav",
+    "audio_s": 41.6,
+    "pauses_ge_0_6s": 8,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   }
+  ],
+  "chosen": "s04_alive.take1.wav",
+  "model_requested": "gemini-3.8-flash-tts",
+  "model_served": "gemini-3.8-flash-tts",
+  "voice": "voice_b3c8x0jsntqc"
+ },
+ {
+  "id": "s05_valve",
+  "attempts": 1,
+  "audio_s": 57.96,
+  "expected_s": 57.8,
+  "ratio": 1.0,
+  "ok": true,
+  "wall_s": 15.7,
+  "tokens": 1449,
+  "takes": [
+   {
+    "file": "s05_valve.take0.wav",
+    "audio_s": 58.0,
+    "pauses_ge_0_6s": 12,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s05_valve.take1.wav",
+    "audio_s": 64.9,
+    "pauses_ge_0_6s": 21,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s05_valve.take2.wav",
+    "audio_s": 57.1,
+    "pauses_ge_0_6s": 13,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   }
+  ],
+  "chosen": "s05_valve.take0.wav",
+  "model_requested": "gemini-3.8-flash-tts",
+  "model_served": "gemini-3.8-flash-tts",
+  "voice": "voice_b3c8x0jsntqc"
+ },
+ {
+  "id": "s06_evidence",
+  "attempts": 1,
+  "audio_s": 53.72,
+  "expected_s": 56.2,
+  "ratio": 0.96,
+  "ok": true,
+  "wall_s": 15.6,
+  "tokens": 1343,
+  "takes": [
+   {
+    "file": "s06_evidence.take3.wav",
+    "audio_s": 53.7,
+    "pauses_ge_0_6s": 7,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s06_evidence.take4.wav",
+    "audio_s": 64.6,
+    "pauses_ge_0_6s": 14,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s06_evidence.take5.wav",
+    "audio_s": 58.1,
+    "pauses_ge_0_6s": 12,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   }
+  ],
+  "chosen": "s06_evidence.take3.wav",
+  "model_requested": "gemini-3.8-flash-tts",
+  "model_served": "gemini-3.8-flash-tts",
+  "voice": "voice_b3c8x0jsntqc"
+ },
+ {
+  "id": "s07_data",
+  "attempts": 1,
+  "audio_s": 46.16,
+  "expected_s": 49.3,
+  "ratio": 0.94,
+  "ok": true,
+  "wall_s": 13.9,
+  "tokens": 1154,
+  "takes": [
+   {
+    "file": "s07_data.take3.wav",
+    "audio_s": 46.6,
+    "pauses_ge_0_6s": 11,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s07_data.take4.wav",
+    "audio_s": 46.2,
+    "pauses_ge_0_6s": 10,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s07_data.take5.wav",
+    "audio_s": 47.5,
+    "pauses_ge_0_6s": 11,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   }
+  ],
+  "chosen": "s07_data.take4.wav",
+  "model_requested": "gemini-3.8-flash-tts",
+  "model_served": "gemini-3.8-flash-tts",
+  "voice": "voice_b3c8x0jsntqc"
+ },
+ {
+  "id": "s08_move",
+  "attempts": 1,
+  "audio_s": 56.68,
+  "expected_s": 48.7,
+  "ratio": 1.16,
+  "ok": true,
+  "wall_s": 17.6,
+  "tokens": 1417,
+  "takes": [
+   {
+    "file": "s08_move.take0.wav",
+    "audio_s": 56.7,
+    "pauses_ge_0_6s": 7,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s08_move.take1.wav",
+    "audio_s": 51.9,
+    "pauses_ge_0_6s": 9,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s08_move.take2.wav",
+    "audio_s": 56.2,
+    "pauses_ge_0_6s": 10,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s08_move.take3.wav",
+    "audio_s": 57.5,
+    "pauses_ge_0_6s": 10,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s08_move.take4.wav",
+    "audio_s": 55.3,
+    "pauses_ge_0_6s": 9,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s08_move.take5.wav",
+    "audio_s": 53.9,
+    "pauses_ge_0_6s": 9,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   }
+  ],
+  "chosen": "s08_move.take0.wav",
+  "model_requested": "gemini-3.8-flash-tts",
+  "model_served": "gemini-3.8-flash-tts",
+  "voice": "voice_b3c8x0jsntqc"
+ },
+ {
+  "id": "s09_outro",
+  "attempts": 1,
+  "audio_s": 27.52,
+  "expected_s": 28.7,
+  "ratio": 0.96,
+  "ok": true,
+  "wall_s": 8.8,
+  "tokens": 688,
+  "takes": [
+   {
+    "file": "s09_outro.take0.wav",
+    "audio_s": 27.5,
+    "pauses_ge_0_6s": 4,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s09_outro.take1.wav",
+    "audio_s": 33.9,
+    "pauses_ge_0_6s": 11,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   },
+   {
+    "file": "s09_outro.take2.wav",
+    "audio_s": 30.8,
+    "pauses_ge_0_6s": 14,
+    "ok": true,
+    "model_served": "gemini-3.8-flash-tts"
+   }
+  ],
+  "chosen": "s09_outro.take0.wav",
+  "model_requested": "gemini-3.8-flash-tts",
+  "model_served": "gemini-3.8-flash-tts",
+  "voice": "voice_b3c8x0jsntqc"
+ }
+]

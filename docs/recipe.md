@@ -144,7 +144,7 @@ python3 tools/rewrite_episode.py --episode episodes/<ep> --n 3 --resume
 python3 tools/script_lint.py episodes/<ep>/script.json
 ```
 
-通過條件：每段 `mainland_words` 是空的，`precise_numbers` 最多一個。
+通過條件：每段 `mainland_words` 和 `avoid_words` 都是空的（`avoid_words` 是台灣人少講的說法，例如「有感」「商模」），`precise_numbers` 最多一個。
 
 再跑 twtone（[`clarencechien/twtonepoc`](https://github.com/clarencechien/twtonepoc)，零 token 的繁中檢查：表層 AI 味訊號加上 zhtw-mcp 的台灣用詞與翻譯腔，門檻來自 2015–2022 的台灣同類文章）：
 

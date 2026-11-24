@@ -26,7 +26,8 @@ SELF_FIX = re.compile(r"呃|我是說|啊不對|，不對，|換個說法|應該
 GREETING = re.compile(r"^\s*(?:嘿|哈囉|嗨|歡迎|大家好)|還醒著嗎")
 # Mainland-flavoured words a Taiwanese listener flags (keep in sync with rule 13 of the prompt)
 # Not mainland usage, but Taiwanese listeners say people around them rarely talk like this (2026-11-04: 超有感).
-AVOID = {"有感": r"有感(?!觸|情|應|而)"}
+AVOID = {"有感": r"有感(?!觸|情|應|而)",
+         "商模": r"商模"}  # 商模: 台灣不這樣縮寫，說「商業模式」（Clarence 試聽 EP50, 2026-11-24）
 MAINLAND = ["更狠的是", "盲猜", "坑",  # 坑: flagged by a Taiwanese listener on EP01 (ttspoc RESULTS)
              "咱們", "挺", "這事兒", "視頻", "質量", "信息", "軟件", "靠譜", "牛逼", "絕了", "立馬",
             "整活", "老鐵", "點贊", "回頭再說", "兒", "啥",

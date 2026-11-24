@@ -1,0 +1,8 @@
+（注意：Ping 沒有個人經歷，講「這份報告說」「報告裡說」，不要只說「報告」開頭。每段 300 字內、每句平均 18 字內，一段最多一個精確數字，其他數字說成大約、一半、七成這類念得順的說法，但不能改變意思。平台和公司名（Zeabur、Vercel、Lovable、Railway、Render、Supabase、TypeScript、Terraform）照英文念。對 Zeabur 和外洩事件的當事人照事實敘述，不嘲諷、不幸災樂禍；Zeabur 的使用者是受害者。廠商自己報的數字要說是廠商說的。）
+
+看總量會被 app builder 的估值騙，看斜率要看「誰在開資料庫」。
+Supabase 每月約 400 萬個新資料庫，約七成由 AI agent 或 AI coding 工具建立（廠商數字）。
+Neon：一年內 agent 建立的資料庫比例 30% → 80%（廠商數字）。
+三大資料陣營一年內各買了一個開源資料底座：Databricks 買 Neon、Snowflake 買 Crunchy Data 並開源 pg_lake、AWS 買 DuckLabs（DuckDB 背後的公司；專案留在基金會、MIT 授權不變）。一個 app builder 都沒買。
+Build 在 2025 年就被商品化了，一年內開源版的 Lovable 和三大雲自己的版本都出現；Data 是併購集中的地方。
+結論五（證據強）：資料層是重力所在，企業與非企業在這裡收斂。

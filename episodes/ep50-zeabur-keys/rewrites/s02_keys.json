@@ -1,0 +1,148 @@
+{
+ "segment": "s02_keys",
+ "position": "第 3 段，共 10 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "47f6cce80e4044f953466d523ef269c5c1d2a1ae90a4256d91aa2374dc8aafd1",
+ "previous_context": "聽起來很合理對吧？但最扯的是，問題就出在這個新定位。",
+ "original": {
+  "text": "「AI 維運工程師」這個定位有個前提：平台要拿著客戶正式環境的所有鑰匙。環境變數、資料庫密碼、雲端的 token，全都放在平台那邊。八月，Zeabur 第一次出資安事件，部分帳號資訊和專案的環境變數被讀走，裡面有第三方服務的金鑰和資料庫密碼。九月，它關掉 AI Hub 並退款。十月十四號，第二次入侵，範圍更大，攻擊者拿到平台資料庫的讀取權限，環境變數、帳號、API token 都受影響。三天後，它宣布關閉。這份報告的判斷是：轉型本身不是失敗的原因。轉型讓資安從一個功能，變成活下去的條件，而它沒有那個底子。",
+  "lint": {
+   "chars": 247,
+   "precise_numbers": [
+    "十四"
+   ],
+   "enumerations": [
+    "第一",
+    "第三",
+    "第二"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 29.9,
+   "max_sentence_len": 53,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你想想看，AI 要幫你管服務，需要什麼？<short pause>\n答案就是你 production 的所有鑰匙。\n像是環境變數、資料庫密碼，還有 token 耶。\n結果八月的時候，Zeabur 出事了。\n部分專案的環境變數跟密碼，直接被看光。\n然後九月，他們退款關掉了部分服務。\n到了十月十四號，更嚴重的第二次入侵來了。<sigh>\n對方直接拿到平台資料庫權限，範圍大超多。\n才過三天，官方就發信宣布關閉平台。\n我看到這邊真的很感慨。\n其實轉型本身不是失敗的原因。\n但你把大家的鑰匙拿在手上，\n資安就不只是功能，而是活下去的條件啦。",
+   "lint": {
+    "chars": 230,
+    "precise_numbers": [
+     "十四"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "你要做 AI 維運工程師，前提是什麼？就是平台得拿著客戶正式環境的所有鑰匙。環境變數、資料庫密碼，全都放在它那邊。連雲端 token 也不例外，這責任有多重啊。然後，八月就出事了。第一次被攻擊，部分帳號跟環境變數被看光，裡面甚至包含資料庫密碼。<short pause>九月的時候，他們只好關閉 AI Hub 並退款。你以為結束了嗎？還沒。十月十四號又來第二次，這次範圍更大。攻擊者拿到資料庫權限，部分伺服器也遭殃。結果三天後，創辦人就發信宣布關閉了。<sigh>我看到這裡真的覺得蠻震撼的。這份報告說得很中肯，轉型不是失敗的原因。而是轉型把資安，直接變成了活下去的條件。但他們當時根本沒有那個底子嘛。",
+   "lint": {
+    "chars": 275,
+    "precise_numbers": [
+     "十四"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 31,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "你想想看嘛。\n要它幫你管 production，它手上得拿多少東西？\n環境變數、資料庫密碼，還有各種 token。\n對，全部都要交給它喔。\n結果八月的時候，Zeabur 遭到入侵了。<short pause>\n專案的環境變數被讀走，連密碼都外洩了。\n到了九月，他們評估了資安風險，\n決定把 AI Hub 關掉並且退款。\n然後十月十四號，攻擊者又來了。\n這次範圍更大，連平台資料庫都被看光。\n過沒幾天，創辦人就發信宣布關閉了。<sigh>\n其實我看到這裡，真的覺得蠻沉重的。\n報告裡說，轉型本身不是失敗的原因。\n而是轉型讓資安變成活下去的條件。\n但他們那時候，根本就還沒有那個底子啦。",
+   "lint": {
+    "chars": 252,
+    "precise_numbers": [
+     "十四"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 17.0,
+    "max_sentence_len": 29,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.2,
+    "written_words": [
+     "並且"
+    ],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "部分帳號跟環境變數被看光，裡面甚至包含資料庫密碼。",
+   "to": "部分帳號資訊跟環境變數被讀走，裡面有第三方金鑰和資料庫密碼。",
+   "reason": "誇大（看光）；照素材"
+  },
+  {
+   "from": "攻擊者拿到資料庫權限，部分伺服器也遭殃。",
+   "to": "攻擊者拿到平台資料庫的讀取權限，部分伺服器也被入侵。",
+   "reason": "照素材：讀取權限"
+  },
+  {
+   "from": "<sigh>我看到這裡真的覺得蠻震撼的。",
+   "to": "",
+   "reason": "Ping 沒有個人經歷，拿掉個人反應"
+  },
+  {
+   "from": "但他們當時根本沒有那個底子嘛。",
+   "to": "但他們當時沒有那個底子。",
+   "reason": "對真實的公司語氣收斂"
+  }
+ ]
+}

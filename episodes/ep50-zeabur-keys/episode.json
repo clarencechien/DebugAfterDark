@@ -1,0 +1,61 @@
+{
+ "id": "ep50-zeabur-keys",
+ "number": 50,
+ "type": "full",
+ "guid": "debug-after-dark:ep50",
+ "title": "EP50 Zeabur 要關了，你的服務搬去哪？",
+ "description": "你有服務部署在 Zeabur 上面嗎？上個月 Zeabur 宣布要關了，年底全面停止。比起找新家，有個更前面的問題：它是怎麼走到這一步的？答案不是單純沒錢，而是鑰匙。這集回答：搬家的時候，哪樣東西一定要握在自己手上？\n\n00:00 Zeabur 年底關閉：搬家前先問它怎麼倒的\n00:43 自己寫下的診斷：賣算力永遠比不過大廠\n01:41 轉型 AI 維運，得拿著客戶所有的鑰匙\n02:38 同一年外洩三次：Vercel、Lovable、Zeabur\n03:31 Railway、Render、Fly.io 為什麼活得好\n04:16 背壓閥：每一層都要能對 agent 說不\n05:21 研究怎麼說：回饋來得越早，錯得越少\n06:26 重力在資料層：大廠買的全是開源資料底座\n07:15 搬家時，哪樣東西要握在自己手上\n08:12 今晚的 breakpoint\n\n數字的出處與但書：\n・Zeabur 的時間軸來自它自己的公告與 INSIDE 報導：2026-02-23 共享叢集不再接新專案、轉型「Your AI DevOps Engineer」；08-27 第一次資安事件；09-22 關閉 AI Hub；10-14 第二次入侵；10-17 宣布關閉（12/1 起專用伺服器停止續費、共享叢集暫停，12/31 全面停止）。\n・Vercel、Lovable 都是 2026 年 4 月的事件，細節見原文引用的資安簡報與報導。\n・IaC-Eval（NeurIPS 2024）：GPT-4 寫 AWS Terraform 一次就對 19.36%，寫 Python（EvalPlus）86.6%。編譯錯誤率 65.9% → 13.1% 來自 Generative Compilation（2026）。\n・Supabase 每月約 400 萬個新資料庫、約七成由 AI 工具建立，是廠商自己的數字。\n・「下一代平台的 UI 是審批面板」是報告自己標的推論，證據強度「中」。\n・報告寫於 2026-10-17，搬家建議原本是寫給要在公司內部自架平台的人。\n\n原文：〈每一層，都要能說不 — Zeabur 之後的 AI 平台地形〉https://imitator.ai-apps.work/r/ai-platform-2026-10\n主要來源：\n・INSIDE，〈Zeabur 宣布停止營運〉，2026-10-17\n・Zeabur changelog，〈The Shared Cluster Will No Longer Accept New Projects〉，2026-02-23\n・Kon et al.，IaC-Eval，NeurIPS 2024\n・TerraFormer，ICSE 2026；Generative Compilation，arXiv 2607.13921\n\n今晚的 breakpoint：\n1. 三家平台、三種架構，外洩的都是平台替你保管的鑰匙。\n2. agent 跑得比人快，每一層都要有一個能對它說不的閥門。\n3. 搬家的時候，審批那一層和你的鑰匙，要握在自己手上。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "ai-platform-2026-10",
+ "source_url": "https://imitator.ai-apps.work/r/ai-platform-2026-10",
+ "status": "final",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5",
+  "model_served": "gemini-3.8-flash-tts"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-cloud --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "report_version": "2026-10-17（REV A）",
+ "audio": {
+  "file": "ep50-zeabur-keys.mp3",
+  "bytes": 8430105,
+  "sha256": "2d446f9cf1bc015a4ba621dfe6def71cc0f39794d4b8be494b10b1cf3f9ab2d8",
+  "duration_s": 526.8,
+  "duration": "8:46",
+  "lufs": -16.8
+ },
+ "youtube": {
+  "title": "Zeabur 年底關閉、一年被駭兩次：AI 平台外洩的都是你交給它的鑰匙，每一層都要能說不",
+  "thumbnail": [
+   [
+    "Zeabur 關門",
+    "倒在鑰匙"
+   ],
+   [
+    "AI 平台",
+    "每層要能說不"
+   ]
+  ],
+  "synthetic_content": true
+ },
+ "published": "2026-11-27T08:00:00+08:00",
+ "qa": {
+  "breeze_cer_mean": 0.041,
+  "gemini_cer_mean": 0.026,
+  "jitter_semitones": 0.218,
+  "gates": "音高跳動 0.218 通過；Breeze 錯誤率 4.1% 超過 3.5%，主要是 Zeabur 這個名字兩套辨識都寫不出來（s00、s09 約 7%），其他段 0.8–5.9%；聲紋漂移 0.896（前 10 集中位數 0.889）；s01、s03、s06、s07 接縫亮度跳 540–1,630 Hz、s07 語速 +12%，保留",
+  "retakes": "s00、s01、s02、s06、s08 各補 3 次（s01 音高 +6.6 Hz、接縫亮度）；s07 補 3 次（音高 +6.8 Hz）；s08 依 Clarence 11/24 試聽「商模」改「商業模式」重錄 6 次",
+  "manual_pick": "照 steady_pick（select_log 的 manual_override）",
+  "both_wrong": "Zeabur 兩套都聽不出來（念法要人耳確認）；s03「共通點」聽成「共同點」，意思不變",
+  "twtone": "qa/twtone.md：s00「不是單純沒錢，而是鑰匙」一處對舉超過基準，是澄清誤讀，保留；s08 那處已改",
+  "terms": "Ping、pong 判英文念法；Zeabur、Vercel、Lovable、Railway、Render、Fly.io、Supabase、Databricks、Snowflake、TypeScript、Terraform、Pulumi 照英文念",
+  "fact_check": "逐段對照素材：改掉 Zeabur「你的機器」歸屬錯、「被看光」「搬走」誇大、「自己蓋機房」、Fly.io「拿到大錢」；拿掉改寫加的個人反應（愣住、震撼、超毛、殘酷、捏冷汗）與笑聲；Supabase 數字標明是廠商說的；審批面板標明是報告自己的推論"
+ }
+}

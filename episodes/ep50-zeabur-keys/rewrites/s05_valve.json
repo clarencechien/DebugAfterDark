@@ -1,0 +1,119 @@
+{
+ "segment": "s05_valve",
+ "position": "第 6 段，共 10 段",
+ "avoid": [
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "039c4c1ad9a5ef6fc1139d9e20584bbf8201b8a270dd9d451dc4fd593b18e603",
+ "previous_context": "說真的，這結論真的很殘酷。只轉賣別人的機器，再貼個 AI 口號，這種做法在今年，已經沒有生存空間了啦。",
+ "original": {
+  "text": "第二件事，是這份報告最核心的比喻。化工廠的管線圖上，每一條可能失控的管線，都要裝一個背壓閥：流量太快、壓力不對，閥門自己關。報告說，AI 時代的平台也一樣。agent 做事比人快，所以每一層都要有一個能拒絕它的機制。寫程式這層，型別檢查和編譯器把錯擋在前面。資料這層，資料庫要拒絕格式錯誤的寫入，不是先收下再祈禱。部署這層，Pulumi 的 agent 只開合併請求，不直接改正式環境。維運這層，幾家 AI 查問題的工具都只讀不寫，要動手得走審批。報告的看法是，這一年各層的贏家，做的都是同一件事：讓系統能說不。",
+  "lint": {
+   "chars": 249,
+   "precise_numbers": [],
+   "enumerations": [
+    "第二"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 26.7,
+   "max_sentence_len": 44,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那活下來的平台到底做了什麼？\n這份報告用了一個很妙的比喻喔。\n就像化工廠的管線，隨時都要裝背壓閥。\n流量太衝、壓力不對，閥門就自己關掉。\n你猜這跟 AI 有什麼關係？\n因為現在 agent 跑得比人類快太多了嘛。\n所以從寫程式到維運，每一層都要能拒絕它。\n像資料庫就要直接擋掉錯誤格式。\n真的不能先收進來，再祈禱它沒事。\n改基礎設施也是，agent 只准送 PR。\n絕對不能直接讓它去改 prod。\n連維運工具都堅持唯讀，要動手得走審批。\n重點來了，這一年真正厲害的平台，\n其實都在做這件事，讓系統學會說不。<short pause>\n你應該也很有共鳴吧，擋得住才是真本事啦。",
+   "lint": {
+    "chars": 254,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 17.1,
+    "max_sentence_len": 32,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那什麼樣的平台才能活下來？\n這份報告給了一個很有畫面的比喻。\n你有看過化工廠的管線圖嗎？\n每條可能失控的管線，都要裝一個背壓閥。\n只要壓力不對，閥門就會自己關起來。\n報告裡說，AI 時代的平台也是這樣。\n因為 agent 動作實在比人類快太多了。\n所以系統的每一層，都必須有能力拒絕它。\n像寫程式這層，編譯器會先把錯誤擋下來。\n資料庫這層，格式不對就直接拒絕寫入。\n總不能先收下來，才在那邊祈禱沒事嘛。<short pause>\n部署這層，AI 只能開 PR，不准碰 prod。\n到了維運這層，很多工具甚至只給唯讀。\n真的要動手，還是得乖乖走審批流程。\n這一年活下來的贏家，都在做同一件事，\n就是學會勇敢對 AI 說不啦。<short pause>",
+   "lint": {
+    "chars": 275,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 17.3,
+    "max_sentence_len": 30,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那到底什麼樣的平台才能活下來？\n這份報告給了一個超生動的比喻。\n它借用了化工廠的管線設計喔。<short pause>\n只要管線可能失控，就一定要裝背壓閥。\n流量太快或壓力不對，閥門自己就會關起來。\n報告裡說，AI 時代的架構也是一樣。\n現在 agent 跑得比人快太多了。\n所以每一層，都要有一個能拒絕它的機制。\n你知道這代表什麼嗎？\n其實就是系統要學會說不。\n寫程式這層，TypeScript 在編譯時就把錯擋掉。\n資料這層，後端直接拒絕寫入錯誤格式。\n部署這層，Pulumi 的 AI 只幫你開 PR。\n它絕對不會直接去改 prod 環境。\n連維運工具也是，基本上都做成唯讀。\n這一年真正跑在前面的贏家，都在做同一件事。\n就是替失控的 AI 裝上背壓閥啦。",
+   "lint": {
+    "chars": 290,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 25,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "它絕對不會直接去改 prod 環境。",
+   "to": "它不會直接去改正式環境。",
+   "reason": "照素材，prod 換白話"
+  }
+ ]
+}

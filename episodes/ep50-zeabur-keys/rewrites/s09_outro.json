@@ -1,0 +1,135 @@
+{
+ "segment": "s09_outro",
+ "position": "第 10 段，共 10 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "247fb76f9f44a3b0b7212dd78f04b1cce3b1f480c1c5ba2ef1e7e1f0880f1328",
+ "previous_context": "以後的畫面不是設定頁，而是審核面板喔。不過作者自己也標註，這點目前算推論啦。",
+ "original": {
+  "text": "所以，Zeabur 倒在哪？倒在它替客戶保管的鑰匙。今晚的 breakpoint。第一，三家平台、三種架構，外洩的都是平台替你保管的鑰匙。第二，agent 比人快，每一層都要有一個能對它說不的閥門。第三，搬家的時候，審批那一層和你的鑰匙，要握在自己手上。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 161,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 16.9,
+   "max_sentence_len": 28,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以，Zeabur 這次到底倒在哪？\n其實就倒在替客戶保管的鑰匙啦。<short pause>\n這真的很替那些苦主捏一把冷汗。<sigh>\n好，今晚的 breakpoint。\n第一，外洩的永遠是平台替你保管的鑰匙。\n第二，agent 跑太快，每層都要能拒絕它。\n第三，審批留給自己，secrets 別集中放。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 162,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以，聽完你有沒有覺得背脊發涼？\n其實真的蠻毛的啦。\n對，我整理到這真的起雞皮疙瘩。<short pause>\n好，今晚的 breakpoint。\n第一，外洩的永遠是平台替你保管的鑰匙。\n第二，agent 跑得比人快，每層都要能拒絕它。\n第三，審批稽核是你的，secrets 別放同個 SaaS。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 162,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 26,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n三家平台架構完全不同，外洩的是什麼？\n永遠是平台替你保管的那把鑰匙啦。\n然後，agent 動作跑得比人快，\n每一層都要有能隨時拒絕它的機制。\n最後，審批稽核一定要握在自己手上，\nsecrets 哪能全押在同一家 SaaS 呢？\n這幾點真的讓我很有共鳴。<short pause>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 169,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 37,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "<short pause>這真的很替那些苦主捏一把冷汗。<sigh>",
+   "to": "<short pause>",
+   "reason": "Ping 沒有個人經歷，拿掉個人反應"
+  },
+  {
+   "from": "第三，審批留給自己，secrets 別集中放。",
+   "to": "第三，審批那一層和你的鑰匙，要握在自己手上。",
+   "reason": "收回開頭的問題；照前段"
+  }
+ ]
+}
