@@ -240,6 +240,39 @@ function _render(d){
 
   // ── 1. 你下一步 ──
   var todo = [];
+  // API 用量：research/runs/cost.log（api_draft.py 每跑一次記一列，台北時間）。月花費到 cap 腳本自己停。
+  var apiBlock = "";
+  if(rs && rs.cost){
+    var c2 = rs.cost, tpe = new Date(now + 8*3600000), mk = tpe.toISOString().slice(0,7), dk = tpe.toISOString().slice(0,10);
+    var month = (c2.months||{})[mk] || 0, todayUsd = (c2.days||{})[dk] || 0, weekUsd = (c2.weeks||{})[isoWeek(tpe)] || 0;
+    var left = Math.max(0, c2.cap - month), pct = Math.min(100, month / c2.cap * 100);
+    var dIn = tpe.getUTCDate(), dMonth = new Date(Date.UTC(tpe.getUTCFullYear(), tpe.getUTCMonth()+1, 0)).getUTCDate();
+    // 用最近 7 天的平均推到月底（全走 API 剛開始時，比用整月平均準）
+    var last7 = 0; for(var k = 0; k < 7; k++){ last7 += (c2.days||{})[new Date(now + 8*3600000 - k*DAY).toISOString().slice(0,10)] || 0; }
+    var proj = month + last7 / 7 * (dMonth - dIn);
+    var qs = {}; (c2.runs||[]).forEach(function(r){ if(r.kind !== "scout") qs[r.target] = (qs[r.target]||0) + r.usd; });
+    var qv = Object.keys(qs).map(function(k){ return qs[k]; }), perQ = qv.length ? qv.reduce(function(a,b){return a+b;},0) / qv.length : 0;
+    var u = function(x){ return "US$"+x.toFixed(2); };
+    var warn = proj > c2.cap;
+    apiBlock = '<h3>API 用量（Claude API，研究用）</h3><div class="tiles">'+
+      tile("今天", esc(u(todayUsd)), "")+tile("本週", esc(u(weekUsd)), "")+
+      tile("本月", esc(u(month)), "上限 "+esc(u(c2.cap))+"，剩 "+esc(u(left)))+
+      tile("照最近 7 天推到月底", '<span class="'+(warn ? "stale" : "")+'">'+esc(u(proj))+'</span>', warn ? "會超過上限，腳本到時會自己停" : "在上限內")+'</div>'+
+      '<div class="meter'+(pct>80?" warn":"")+'" role="img" aria-label="本月已用上限的 '+esc(pct.toFixed(0))+'%"><i style="width:'+pct.toFixed(1)+'%"></i></div>'+
+      '<div class="sub">累計 '+esc(u(c2.total))+(qv.length ? "，一題平均 "+esc(u(perQ))+"（"+qv.length+" 題，不含找題）" : "")+'。月預算 US$'+esc(c2.budget)+'，花到 US$'+esc(c2.cap)+' 自動停。訂閱額度（每週上限）頁面讀不到，要在 Claude 設定裡看；Gemini 花費也沒有記在這裡。</div>'+
+      (c2.last ? '<div class="muted">最近一次：'+esc(c2.last.kind)+' '+esc(c2.last.target)+' '+esc(u(c2.last.usd))+'（'+esc(ago(c2.last.time))+'）</div>' : "");
+    // 最近 7 天每天多少、本月各步驟（kind）各花多少
+    var KIND = {draft: "初稿", final: "審稿＋HTML", fix: "修正", scout: "找題", review: "審稿（舊）", report: "報告（舊）"};
+    var days7 = [], maxD = 0;
+    for(var k2 = 6; k2 >= 0; k2--){ var dd = new Date(now + 8*3600000 - k2*DAY).toISOString().slice(0,10), v = (c2.days||{})[dd] || 0; days7.push([dd, v]); maxD = Math.max(maxD, v); }
+    var byKind = {}; (c2.runs||[]).forEach(function(r){ if(r.month === mk){ var kk = r.kind || "?"; byKind[kk] = byKind[kk] || {usd: 0, n: 0}; byKind[kk].usd += r.usd; byKind[kk].n++; } });
+    var kinds = Object.keys(byKind).sort(function(a,b){ return byKind[b].usd - byKind[a].usd; });
+    apiBlock += '<details><summary>最近 7 天和各步驟花費</summary><table><thead><tr><th>日期</th><th class="num">花費</th><th style="width:45%"></th></tr></thead><tbody>'+
+      days7.map(function(x){ return '<tr><td>'+esc(x[0].slice(5).replace("-","/"))+'</td><td class="num">'+esc(u(x[1]))+'</td><td><div class="meter" style="margin:4px 0"><i style="width:'+(maxD ? (x[1]/maxD*100).toFixed(1) : 0)+'%"></i></div></td></tr>'; }).join("")+
+      '</tbody></table><h3>本月各步驟</h3>'+(kinds.length ? '<table><thead><tr><th>步驟</th><th class="num">次數</th><th class="num">花費</th></tr></thead><tbody>'+
+      kinds.map(function(k3){ return '<tr><td>'+esc(KIND[k3] || k3)+'</td><td class="num">'+esc(byKind[k3].n)+'</td><td class="num">'+esc(u(byKind[k3].usd))+'</td></tr>'; }).join("")+'</tbody></table>' : '<p class="empty">本月還沒有。</p>')+'</details>';
+    if(pct >= 80 || warn) todo.unshift({k: "API 額度", t: "研究 API 本月已用 "+u(month)+"／"+u(c2.cap), s: warn ? "照最近 7 天的速度，月底前會碰到上限（推估 "+u(proj)+"），到了腳本會停" : "剩 "+u(left), jump: "research", tag: "研究", late: pct >= 90});
+  }
   merging.forEach(function(e){ var pr = prOf(e);
     todo.push({k: "合併", t: e.ep+" "+e.title, s: "試聽過了，PR #"+pr.n+" 合併後就排程上架", url: pr.url, tag: "podcast"}); });
   if(listening.length){
@@ -347,6 +380,7 @@ function _render(d){
     {label: "已上線", count: doneR.length, hint: "imitator", body: rowsOf(doneR, runRow)}
   ]);
   if(rs) rl += '<div class="opens">'+openBtn(path("research/pipeline.svg"), "自動研究流程圖", "看流程圖")+'</div>';
+  if(apiBlock) rl += apiBlock;
   html += '<section id="research">'+sectionHead("自動研究線",rs,24*8)+rl+'</section>';
 
   // ── 4. Shorts／影片版線 ──
@@ -376,12 +410,6 @@ function _render(d){
   if(led.length) o += '<details><summary>對帳簿（'+esc(led.length)+'，下一個 '+esc(led[0].due)+'）</summary>'+rowsOf(led, function(x){
     return '<li><div class="when">'+esc(x.due)+'</div><div class="body"><div class="t">'+esc(x.from)+' · '+esc(x.what)+'</div><div class="sub">當時：'+esc(x.value)+'</div></div></li>';
   })+'</details>';
-  if(rs && rs.cost){
-    var c2 = rs.cost, mk = new Date(now + 8*3600000).toISOString().slice(0,7), month = (c2.months||{})[mk] || 0, pct = Math.min(100, month / c2.cap * 100);
-    o += '<details><summary>研究花費（本月 US$'+esc(month.toFixed(2))+'）</summary><div class="meter'+(pct>80?" warn":"")+'" role="img" aria-label="本月已用上限的 '+esc(pct.toFixed(0))+'%"><i style="width:'+pct.toFixed(1)+'%"></i></div>'+
-      '<div class="sub">'+esc(mk)+' 花了 US$'+esc(month.toFixed(2))+'，到 US$'+esc(c2.cap)+' 自動停（月預算 US$'+esc(c2.budget)+'）。11/22 起全部走訂閱額度，API 只在額度不夠時當備援，這裡只算備援花的錢。</div>'+
-      (c2.last ? '<div class="muted">最近一次：'+esc(c2.last.kind)+' '+esc(c2.last.target)+' US$'+esc(c2.last.usd)+'（'+esc(ago(c2.last.time))+'）</div>' : "")+'</details>';
-  }
   html += '<section id="more"><div class="sh"><h2>其他</h2></div>'+o+'</section>';
 
   app.innerHTML = html;
@@ -448,7 +476,7 @@ function isoWeek(d){
 }
 
 function loadResearch(){
-  var res = {questions: [], candidates: [], remakes: [], remakeFiles: {}, ledger: [], runs: [], cost: {total: 0, budget: 100, cap: 90, weeks: {}, months: {}, last: null}, generated: null};
+  var res = {questions: [], candidates: [], remakes: [], remakeFiles: {}, ledger: [], runs: [], cost: {total: 0, budget: 100, cap: 90, weeks: {}, months: {}, days: {}, runs: [], last: null}, generated: null};
   var newest = 0;
   // 題庫格式還在調：每張表用自己的表頭對欄位（問題、類別、狀態、加入日），對不到就退回位置；編號 Qnn 是正式題、Cnnn 是候選
   var q = readText("research/questions.md").then(function(md){
@@ -516,6 +544,8 @@ function loadResearch(){
       res.runs = Object.keys(items).map(function(k){return items[k];}).sort(function(a,b){return b.at - a.at;});
     });
   });
+  // 上限以 api_draft.py 的 MONTHLY_CAP_USD 為準（讀不到就用 90）
+  var cap = readText("research/api_draft.py").then(function(t){ var m = /^MONTHLY_CAP_USD\s*=\s*([\d.]+)/m.exec(t); if(m) res.cost.cap = Number(m[1]); }).catch(function(){});
   var cost = readText("research/runs/cost.log").then(function(t){
     t.split("\n").forEach(function(line){
       if(!line.trim()) return;
@@ -525,12 +555,15 @@ function loadResearch(){
       var mk = new Date(d.getTime() + 8*3600000).toISOString().slice(0,7);
       res.cost.months[mk] = Math.round(((res.cost.months[mk] || 0) + usd) * 100) / 100;
       res.cost.weeks[wk] = Math.round(((res.cost.weeks[wk] || 0) + usd) * 100) / 100;
+      var dk = new Date(d.getTime() + 8*3600000).toISOString().slice(0,10);
+      res.cost.days[dk] = Math.round(((res.cost.days[dk] || 0) + usd) * 100) / 100;
+      res.cost.runs.push({time: e.time, kind: e.kind, target: e.target, usd: Math.round(usd*100)/100, month: mk, day: dk});
       res.cost.last = {time: e.time, kind: e.kind, target: e.target, usd: Math.round(usd*100)/100};
       newest = Math.max(newest, d.getTime());
     });
-    res.cost.total = Math.round(res.cost.total * 100) / 100;
+    res.cost.total = Math.round(Object.keys(res.cost.months).reduce(function(a, k){ return a + res.cost.months[k]; }, 0) * 100) / 100;   // 跟月加總一致
   }).catch(function(){});
-  return Promise.all([q, runs, cost, remake]).then(function(){
+  return Promise.all([q, runs, cost, remake, cap]).then(function(){
     res.generated = newest ? new Date(newest).toISOString() : new Date().toISOString();
     return res;
   });
