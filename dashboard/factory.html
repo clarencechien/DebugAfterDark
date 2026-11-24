@@ -92,11 +92,13 @@ a.btn{display:inline-flex;align-items:center;font-size:13px;padding:4px 10px;min
 #viewer iframe{flex:1;width:100%;min-height:0;border:0;background:#fff;display:block}
 #viewer .vb.frame{padding:0;display:flex;flex-direction:column;overflow:hidden}
 #viewer[hidden]{display:none}
+#vaudio{display:block;width:100%;padding:6px max(16px, env(safe-area-inset-right, 0px)) 6px max(16px, env(safe-area-inset-left, 0px));background:var(--card);border-bottom:1px solid var(--line)}
+#vaudio[hidden]{display:none}
 </style>
 <main>
 <header><h1>深夜 Debug 工廠</h1><span class="muted" id="loaded"></span><button id="reload" type="button">重新整理</button></header>
 <div id="app"><p class="muted">讀取中…</p></div>
-<div id="viewer" hidden><div class="vh"><h2 id="vtitle"></h2><button type="button" id="vdl">存到裝置</button><button type="button" id="vclose">關閉</button></div><div class="vb" id="vbody"></div></div>
+<div id="viewer" hidden><div class="vh"><h2 id="vtitle"></h2><button type="button" id="vdl">存到裝置</button><button type="button" id="vclose">關閉</button></div><audio id="vaudio" controls preload="metadata" hidden></audio><div class="vb" id="vbody"></div></div>
 </main>
 <script>
 
@@ -165,7 +167,7 @@ function showCached(){
 var REPORT_URL = "https://claude.ai/artifact/TiWp48ojRAq9K5QRUZk1uJ";   // 成效報表（每週一更新，獨立的成品）
 var DAY = 86400000;
 function epName(n){ return typeof n === "number" ? "EP"+(n<10?"0":"")+n : String(n||""); }
-function openBtn(p, title, label){ return '<button type="button" class="open" data-path="'+esc(p)+'" data-title="'+esc(title)+'">'+esc(label)+'</button>'; }
+function openBtn(p, title, label, mp3){ return '<button type="button" class="open" data-path="'+esc(p)+'" data-title="'+esc(title)+'"'+(mp3 ? ' data-mp3="'+esc(mp3)+'"' : "")+'>'+esc(label)+'</button>'; }
 // 一條線：上面一排步驟（數字），下面每一步一個可展開的清單；點步驟就展開那一格
 function flow(id, steps){
   var bar = '<ol class="flow">'+steps.map(function(s,i){
@@ -215,10 +217,19 @@ function _render(d){
 
   // ── Podcast：每集在哪一格 ──
   // Podcast 線的狀態機：每集的 stage 由 tools/factory_status.py 從檔案算（製作中 → 等試聽 → 已排程 → 已上線 → 成效）
-  var stg = function(e){ if(e.stage) return e.stage; var t = pubT(e);
-    return t && t <= now ? (now - t < 7*DAY ? "已上線" : "成效") : e.status === "final" ? "已排程" : e.audio ? "等試聽" : "製作中"; };
+  // 上線時間一到就在畫面上翻成「已上線」，不等 GitHub 每 4 小時重算
+  var stg = function(e){ var t = pubT(e);
+    if(t && t <= now) return now - t < 7*DAY ? "已上線" : "成效";
+    if(e.stage) return e.stage;
+    return e.status === "final" ? "已排程" : e.audio ? "等試聽" : "製作中"; };
+  // 試聽過、PR 已開但還沒合併：PR 標題或分支有這集的編號
+  var openPrs = (repo && repo.prs) || [];
+  var prOf = function(e){ var n = String(e.ep||"").replace(/\D/g,"").replace(/^0+/,""); if(!n) return null;
+    var re = new RegExp("ep0*"+n+"(?!\\d)", "i");
+    return openPrs.filter(function(x){ return re.test(x.title||"") || re.test(x.branch||""); })[0] || null; };
   var making = eps.filter(function(e){ return stg(e) === "製作中"; });
-  var listening = eps.filter(function(e){ return stg(e) === "等試聽"; });
+  var listening = eps.filter(function(e){ return stg(e) === "等試聽" && !prOf(e); });
+  var merging = eps.filter(function(e){ return stg(e) === "等試聽" && prOf(e); });
   var queuedEp = eps.filter(function(e){ var t = pubT(e); return t && t > now; });
   var upcoming = queuedEp.concat(shorts.filter(function(s){ return pubT(s) > now; })).sort(function(a,b){ return pubT(a) - pubT(b); });
   var fresh7 = eps.filter(function(e){ var t = pubT(e); return t && t <= now && now - t < 7*DAY; })
@@ -229,10 +240,12 @@ function _render(d){
 
   // ── 1. 你下一步 ──
   var todo = [];
+  merging.forEach(function(e){ var pr = prOf(e);
+    todo.push({k: "合併", t: e.ep+" "+e.title, s: "試聽過了，PR #"+pr.n+" 合併後就排程上架", url: pr.url, tag: "podcast"}); });
   if(listening.length){
     var l0 = listening[0];
     todo.push({k: "接著試聽", t: l0.ep+" "+l0.title, s: "音檔做好了，等你試聽定稿"+(listening.length > 1 ? "；還有 "+listening.slice(1).map(function(e){return e.ep;}).join("、") : ""),
-               open: l0.reviewFile ? [l0.reviewFile, l0.ep+" 試聽稿", "打開試聽稿"] : null, tag: "podcast"});
+               open: l0.reviewFile ? [l0.reviewFile, l0.ep+" 試聽稿", "打開試聽稿", l0.mp3] : null, tag: "podcast"});
   } else if(making.length){
     var m0 = making[0];
     todo.push({k: "接著做", t: m0.ep+" "+m0.title, s: "製作中，還沒上架", tag: "podcast"});
@@ -248,7 +261,7 @@ function _render(d){
   if(pending.length) todo.push({k: "點頭", t: pending.length+" 個候選題等你決定收不收", s: pending.slice(0,2).map(function(x){return x.q;}).join("；"), jump: "rline-0", tag: "研究"});
   // 成效報表的建議動作（每週一 yt_report 寫進 summary.json）：「資料」類只是說明，不算要你動手的事
   var acts = (tr && !tr.error ? (tr.actions || []) : []).filter(function(a){ return a.kind !== "資料"; });
-  if(acts.length) todo.push({k: "成效建議", t: acts[0].text.split(/[：:]/)[0], s: acts[0].text.split(/[：:]/).slice(1).join("：").split("。")[0]+(acts.length > 1 ? "。還有 "+(acts.length-1)+" 條在成效那格。" : "。"), jump: "pline-4", tag: "成效"});
+  if(acts.length) todo.push({k: "成效建議", t: acts[0].text.split(/[：:]/)[0], s: acts[0].text.split(/[：:]/).slice(1).join("：").split("。")[0]+(acts.length > 1 ? "。還有 "+(acts.length-1)+" 條在成效那格。" : "。"), jump: "pline-6", tag: "成效"});
   var today = dayKey(new Date());
   ((repo && repo.todo) || []).filter(function(i){ return i.owner === "Clarence" && i.status === "open"; })
     .sort(function(a,b){ return (a.due||"9") < (b.due||"9") ? -1 : 1; }).slice(0,2).forEach(function(i){
@@ -260,7 +273,7 @@ function _render(d){
   var y = todo.slice(0,5).map(function(x){
     return '<li><div class="when"><span class="chip'+(x.late ? " bad" : /^接著/.test(x.k) ? " warn" : "")+'">'+esc(x.k)+'</span></div><div class="body"><div class="t">'+(x.url ? link(x.t, x.url) : esc(x.t))+'</div>'+
       (x.s ? '<div class="sub">'+esc(x.s)+'</div>' : "")+
-      (x.open ? '<div class="opens">'+openBtn(x.open[0], x.open[1], x.open[2])+'</div>' : "")+
+      (x.open ? '<div class="opens">'+openBtn(x.open[0], x.open[1], x.open[2], x.open[3])+'</div>' : "")+
       (x.jump ? '<div class="opens"><a class="btn" href="#'+x.jump+'" data-step="'+x.jump+'">看清單</a></div>' : "")+'</div></li>';
   }).join("");
   html += '<section class="next"><div class="sh"><h2>你下一步</h2></div>'+(y ? '<ul class="rows">'+y+'</ul>' : '<p class="empty">目前沒有等你的事。</p>')+'</section>';
@@ -274,9 +287,9 @@ function _render(d){
   var prodRow = function(e){
     return '<li><div class="body"><div class="t"><span class="ep">'+esc(e.ep)+'</span> '+esc(e.title)+'</div>'+
       stepChip("音檔", e.audio ? "✅" : "🔶")+stepChip("試聽", e.review)+stepChip("上架", "⬜")+
-      (e.local ? '<span class="muted">還沒開 PR，成品在專案資料夾</span>' : "")+
+      (prOf(e) ? chip("PR #"+prOf(e).n+" 等合併","warn")+link("看 PR", prOf(e).url) : e.local ? '<span class="muted">還沒開 PR，成品在專案資料夾</span>' : "")+
       (e.note ? '<div class="sub">'+esc(e.note)+'</div>' : "")+
-      (e.reviewFile ? '<div class="opens">'+openBtn(e.reviewFile, e.ep+" 試聽稿", "打開試聽稿")+'</div>' : "")+'</div></li>';
+      (e.reviewFile ? '<div class="opens">'+openBtn(e.reviewFile, e.ep+" 試聽稿", "打開試聽稿", e.mp3)+'</div>' : "")+'</div></li>';
   };
   var nextRow = function(x){
     return '<li><div class="when">'+esc(x.ep || ("#"+x.n))+'</div><div class="body"><div class="t">'+esc(x.angle)+'</div>'+
@@ -292,6 +305,7 @@ function _render(d){
     {label: "待製作", count: next.length, hint: next.length >= 4 ? "推薦表" : "⚠ 不到 4 份", body: rowsOf(next, nextRow)},
     {label: "製作中", count: making.length, body: rowsOf(making, prodRow)},
     {label: "等試聽", count: listening.length, body: rowsOf(listening, prodRow), hot: listening.length > 0},
+    {label: "等合併", count: merging.length, body: rowsOf(merging, prodRow), hot: merging.length > 0},
     {label: "已排程", count: queuedShort, hint: (queuedShort >= 4 ? "" : "⚠ 不到 4 集 ")+(upcoming.length > queuedShort ? "＋"+(upcoming.length-queuedShort)+" 支 Short" : ""), body: rowsOf(upcoming, schedRow), open: true},
     {label: "已上線", count: fresh7.length, hint: "7 天內", body: rowsOf(fresh7, schedRow)},
     {label: "成效", count: results.length, hint: tr && tr.analytics_to ? "資料到 "+tr.analytics_to.slice(5).replace("-","/") : "",
@@ -605,8 +619,10 @@ function loadLocalEps(maxEp){
         var num = Number(/ep(\d+)\/?$/.exec(d.path)[1]), ep = "EP"+(num < 10 ? "0" : "")+num;
         return call(function(){ return files.list({path: d.path.replace(/\/$/,"")}); }).then(function(r){
           var fs = (r.entries || []).filter(function(f){ return !f.isDirectory; });
+          // 試聽稿：有套版的 epNN-review.html（tools/review_html.py 產的，時間可以點）就開它，沒有才開 .md
           var mp3 = fs.filter(function(f){ return /\.mp3$/.test(f.path); })[0], rev = fs.filter(function(f){ return /-review\.md$/.test(f.path); })[0];
-          var item = {ep: ep, number: num, title: "", stage: mp3 ? "等試聽" : "製作中", audio: !!mp3, review: "⬜", local: true, reviewFile: rev ? rev.path : null,
+          var revHtml = fs.filter(function(f){ return /-review\.html$/.test(f.path); })[0];
+          var item = {ep: ep, number: num, title: "", stage: mp3 ? "等試聽" : "製作中", audio: !!mp3, review: "⬜", local: true, reviewFile: revHtml ? revHtml.path : rev ? rev.path : null, mp3: mp3 ? mp3.path : null,
                       at: mp3 && mp3.createdAt ? mp3.createdAt : null};
           if(!rev) return out.concat([item]);
           return call(function(){ return files.read(rev.path, {length: 600}); }).then(function(x){
@@ -667,20 +683,37 @@ function mdToHtml(md){
   return out.join("\n");
 }
 var viewer = document.getElementById("viewer"), vbody = document.getElementById("vbody"), vpath = null;
-function openDoc(p, title){
+// 試聽稿的播放器：框裡的試聽稿讀不到專案檔案，mp3 由這裡讀進來播；稿子裡的時間被點時，框會送 review-seek 過來
+var vaudio = document.getElementById("vaudio"), audioUrl = null, vframe = null;
+function setAudio(mp3){
+  if(audioUrl){ URL.revokeObjectURL(audioUrl); audioUrl = null; }
+  vaudio.pause(); vaudio.removeAttribute("src"); vaudio.hidden = !mp3;
+  if(!mp3) return;
+  call(function(){ return files.read(mp3); }).then(function(r){
+    if(vpath === null || vaudio.hidden) return;
+    audioUrl = URL.createObjectURL(new Blob([r.bytes], {type: "audio/mpeg"})); vaudio.src = audioUrl;
+  }).catch(function(e){ console.warn("mp3", e); vaudio.hidden = true; });
+}
+window.addEventListener("message", function(ev){
+  var m = ev.data; if(!vframe || ev.source !== vframe.contentWindow || !m || m.type !== "review-seek" || !vaudio.src) return;
+  var t = Number(m.t); if(!(t >= 0)) return;
+  vaudio.currentTime = t; vaudio.play().catch(function(){});
+});
+function openDoc(p, title, mp3){
   vpath = p; document.getElementById("vtitle").textContent = title;
-  vbody.className = "vb"; vbody.innerHTML = '<p class="muted">讀取中…</p>'; viewer.hidden = false;
+  vbody.className = "vb"; vbody.innerHTML = '<p class="muted">讀取中…</p>'; viewer.hidden = false; vframe = null;
+  setAudio(mp3 || null);
   call(function(){return files.read(p);}).then(function(r){
     var text = dec.decode(r.bytes);
     if(/\.(html?|svg)$/.test(p)){
       vbody.className = "vb frame"; vbody.innerHTML = "";
-      var f = document.createElement("iframe"); f.setAttribute("sandbox","allow-scripts"); /* 報告自己的圖表腳本可以跑，但拿不到這個頁面和專案檔案（沒有 allow-same-origin） */ f.setAttribute("title", title); f.srcdoc = /\.svg$/.test(p) ? '<!doctype html><meta name="viewport" content="width=device-width"><style>html,body{margin:0;background:#fff}svg{display:block;width:max(100%,900px);height:auto}</style>'+text : text; vbody.appendChild(f);
+      var f = vframe = document.createElement("iframe"); f.setAttribute("sandbox","allow-scripts"); /* 報告自己的圖表腳本可以跑，但拿不到這個頁面和專案檔案（沒有 allow-same-origin） */ f.setAttribute("title", title); f.srcdoc = /\.svg$/.test(p) ? '<!doctype html><meta name="viewport" content="width=device-width"><style>html,body{margin:0;background:#fff}svg{display:block;width:max(100%,900px);height:auto}</style>'+text : text; vbody.appendChild(f);
     } else vbody.innerHTML = '<div class="md">'+mdToHtml(text)+'</div>';
     vbody.scrollTop = 0;
   }).catch(function(e){ vbody.innerHTML = '<div class="err">打不開：'+esc((e && (e.code||e.message)) || e)+'</div>'; });
 }
-app.addEventListener("click",function(ev){ var j = ev.target.closest && ev.target.closest("[data-step]"); if(j){ ev.preventDefault(); var dd = document.getElementById(j.getAttribute("data-step")); if(dd){ dd.open = true; dd.scrollIntoView({behavior:"smooth", block:"start"}); } return; } var b = ev.target.closest && ev.target.closest("button.open"); if(b) openDoc(b.getAttribute("data-path"), b.getAttribute("data-title")); });
-document.getElementById("vclose").addEventListener("click",function(){ viewer.hidden = true; vbody.innerHTML = ""; });
+app.addEventListener("click",function(ev){ var j = ev.target.closest && ev.target.closest("[data-step]"); if(j){ ev.preventDefault(); var dd = document.getElementById(j.getAttribute("data-step")); if(dd){ dd.open = true; dd.scrollIntoView({behavior:"smooth", block:"start"}); } return; } var b = ev.target.closest && ev.target.closest("button.open"); if(b) openDoc(b.getAttribute("data-path"), b.getAttribute("data-title"), b.getAttribute("data-mp3")); });
+document.getElementById("vclose").addEventListener("click",function(){ viewer.hidden = true; vbody.innerHTML = ""; vframe = null; vpath = null; setAudio(null); });
 document.getElementById("vdl").addEventListener("click",function(){ if(vpath && files) files.download(vpath).catch(function(){}); });
 document.addEventListener("keydown",function(e){ if(e.key === "Escape" && !viewer.hidden) document.getElementById("vclose").click(); });
 document.getElementById("reload").addEventListener("click",function(){ lastSig = null; load(); });  /* 按鈕一定重畫（狀態照樣保留） */
