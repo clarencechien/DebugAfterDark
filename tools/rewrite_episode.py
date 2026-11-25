@@ -20,6 +20,8 @@ import argparse, hashlib, json, os, re, sys
 from pathlib import Path
 from google import genai
 from google.genai import types
+import usage_log   # 用量記錄給工廠儀表板（Gemini 花費估算）
+usage_log.patch_gemini("rewrite_episode")
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))

@@ -167,6 +167,11 @@ GEMINI_PROMPT = ("請逐字聽寫這段台灣華語音檔。只輸出你聽到�
 def gemini_transcribe(paths):
     from google import genai
     from google.genai import types
+    try:   # 用量記錄給工廠儀表板（Gemini 花費估算）
+        import usage_log
+        usage_log.patch_gemini("stt_check")
+    except ImportError:
+        pass
     c = genai.Client(api_key=os.environ.get("GEMINI_API_KEY") or os.environ["gemini_key"])
     def one(p):
         text, mv = None, None

@@ -14,6 +14,11 @@ from pathlib import Path
 
 def client():
     from google import genai
+    try:   # 用量記錄給工廠儀表板（Gemini 花費估算）
+        import usage_log
+        usage_log.patch_gemini("gemini_check")
+    except ImportError:
+        pass
     return genai.Client(api_key=os.environ.get("GEMINI_API_KEY") or os.environ["gemini_key"])
 
 

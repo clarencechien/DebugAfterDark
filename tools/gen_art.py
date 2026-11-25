@@ -11,6 +11,8 @@ import argparse, hashlib, io, json, os
 from pathlib import Path
 from google import genai
 from google.genai import types
+import usage_log   # 用量記錄給工廠儀表板（Gemini 花費估算）
+usage_log.patch_gemini("gen_art")
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent

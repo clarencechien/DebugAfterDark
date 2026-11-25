@@ -15,6 +15,8 @@ from pathlib import Path
 
 from google import genai
 from google.genai import types
+import usage_log   # 用量記錄給工廠儀表板（Gemini 花費估算）
+usage_log.patch_gemini("make_podcast")
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "out"
@@ -111,7 +113,9 @@ def tts(c, text, style, voice, path):
     path.with_suffix(".meta.json").write_text(json.dumps({"model_requested": TTS_MODEL, "model_served": (d.get("model") or "").removeprefix("models/") or None,
         "interaction_id": d.get("id"), "voice": voice, "style": style, "text": text,
         "created": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}, ensure_ascii=False, indent=1), encoding="utf-8")
-    return time.perf_counter() - t0, (d.get("usage") or {}).get("total_output_tokens")
+    u = d.get("usage") or {}
+    usage_log.log_gemini("make_podcast", d.get("model") or TTS_MODEL, u.get("total_input_tokens") or 0, u.get("total_output_tokens") or 0)
+    return time.perf_counter() - t0, u.get("total_output_tokens")
 
 
 def served_model(wav):
