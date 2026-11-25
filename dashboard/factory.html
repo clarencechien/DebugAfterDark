@@ -335,13 +335,61 @@ function _render(d){
       '<div class="sub">'+(x.report ? link(x.report.text,x.report.url) : "")+'</div>'+
       chip(x.kind, x.kind === "錢" ? "warn" : "")+(x.time ? '<span class="muted">'+esc(x.time)+'</span>' : "")+'</div></li>';
   };
+  // 自動研究下一次跑的時間（每天 20:47 台北）
+  var nr = (function(){ var n = new Date(), t = new Date(Date.UTC(n.getUTCFullYear(), n.getUTCMonth(), n.getUTCDate(), 12, 47)); if(t <= n) t = new Date(t.getTime()+DAY); return t; })();
+  // 排程表：已排定（repo 有上架時間）＋製作中＋預排（推薦表「#n → EPxx」）＋暫定排檔（report-candidates 的暫定表），依日期排
+  var plan = (function(){
+    var byEp = {}, num = function(ep){ return Number(String(ep||"").replace(/\D/g,"")); };
+    var dateOf = {}, rows = [];
+    eps.forEach(function(e){ var st = stg(e); if(st === "已上線" || st === "成效") return;
+      var t = pubT(e), d = t ? dayKey(new Date(t)) : null; if(d) dateOf[num(e.ep)] = d;
+      byEp[num(e.ep)] = {n: num(e.ep), date: d, time: t ? fmtTime.format(new Date(t)) : "", title: e.title, kind: prOf(e) ? "等合併" : st === "已排程" ? "已排定" : st}; });
+    ((repo && repo.tentative) || []).forEach(function(t){ t.eps.forEach(function(ep){ if(!dateOf[num(ep)]) dateOf[num(ep)] = t.date; }); });
+    next.forEach(function(x){ if(!x.ep || byEp[num(x.ep)]) return; byEp[num(x.ep)] = {n: num(x.ep), title: x.angle, report: x.report, kind: "預排", tag: x.kind}; });
+    // 沒寫日期的預排：從前面最近一集有日期的推（一天兩集，偶數集開頭）
+    var known = Object.keys(dateOf).map(Number).sort(function(a,b){ return a-b; });
+    var guess = function(n){ var m = known.filter(function(k){ return k <= n; }).pop(); if(m == null) return null;
+      var d = new Date(dateOf[m]+"T12:00:00+08:00"); d = new Date(d.getTime() + (Math.floor(n/2) - Math.floor(m/2))*DAY); return dayKey(d); };
+    Object.keys(byEp).forEach(function(k){ var r = byEp[k]; if(!r.date){ r.date = dateOf[r.n] || guess(r.n); r.approx = !dateOf[r.n]; } rows.push(r); });
+    // 暫定排檔：一天一列（兩集），已經有製作或預排的集數就不重複
+    var rq = {}; allQ.forEach(function(x){ rq[x.id] = x; });
+    ((repo && repo.tentative) || []).forEach(function(t){
+      var left = t.eps.filter(function(ep){ var r = byEp[num(ep)]; return !r || r.kind === "預排"; });
+      if(left.length < t.eps.length || t.eps.every(function(ep){ var r = byEp[num(ep)]; return r && r.kind === "預排"; })) return;
+      rows.push({n: num(t.eps[0]), date: t.date, eps: t.eps, title: t.text, links: t.links, kind: "暫定", tag: t.kind, status: t.status,
+                 qs: t.qids.map(function(id){ var x = rq[id]; if(!x) return id;
+                   if(x.rstate !== "排隊") return id+" "+x.rstate;
+                   // 每天 20:47 跑一題：排第 i 個 ≈ i 天後跑完；上架前至少要留 3 天給你審、做音檔
+                   var i = queued.indexOf(x), run = new Date(nr.getTime() + Math.max(0, i)*DAY), late = run.getTime() > new Date(t.date+"T12:00:00+08:00").getTime() - 3*DAY;
+                   if(late) t._late = true;
+                   return id+" 排第 "+(i+1)+"，約 "+(run.getUTCMonth()+1)+"/"+run.getUTCDate()+" 跑"+(late ? "（⚠ 可能趕不上）" : ""); })});
+    });
+    rows = rows.filter(function(r){ return r.date; }).sort(function(a,b){ return a.date < b.date ? -1 : a.date > b.date ? 1 : a.n - b.n; });
+    var last = rows.length ? Math.max.apply(null, rows.map(function(r){ return r.eps ? num(r.eps[r.eps.length-1]) : r.n; })) : 0;
+    var KCH = {"已排定": "good", "等合併": "warn", "等試聽": "warn", "製作中": "warn", "預排": "", "暫定": ""};
+    var html = "", day = null;
+    rows.forEach(function(r){
+      if(r.date !== day){ day = r.date; html += (html ? '</ul>' : '')+'<div class="day'+(day === dayKey(new Date()) ? " today" : "")+'">'+esc(fmtDay.format(new Date(day+"T12:00:00+08:00")))+(r.approx ? "（推估）" : "")+'</div><ul class="rows">'; }
+      var ep = r.eps ? "EP"+num(r.eps[0])+"–"+num(r.eps[r.eps.length-1]) : "EP"+(r.n < 10 ? "0" : "")+r.n;
+      var title = r.report ? link(r.title || r.report.text, r.report.url) : esc(r.title);
+      if(r.links && r.links.length) title = esc(r.title)+'<div class="opens">'+r.links.slice(0,2).map(function(l){ return '<a class="btn" href="'+safeUrl(l.url)+'" target="_blank" rel="noopener">'+esc(l.text)+'</a>'; }).join("")+'</div>';
+      html += '<li><div class="when">'+esc(ep)+(r.time ? '<br>'+esc(r.time) : "")+'</div><div class="body"><div class="t">'+title+'</div>'+
+        chip(r.kind, KCH[r.kind])+(r.tag === "錢" ? chip("錢","warn") : "")+(r.status ? '<span class="muted">'+esc(r.status)+'</span>' : "")+
+        (r.qs && r.qs.length ? '<div class="sub'+(/⚠/.test(r.qs.join("")) ? " stale" : "")+'">自動研究：'+esc(r.qs.join("、"))+'</div>' : "")+'</div></li>';
+    });
+    if(html) html += '</ul>';
+    var loose = next.filter(function(x){ return !x.ep; });
+    html = '<div class="sub">已排定＝已合併、有上架時間；預排、暫定是推薦表和暫定排檔寫的，隨時會換（開工時以當下的報告為準）。🟢 報告已上線、🟡 自動研究排隊中、🟠 只有研究稿。</div>'+(html || '<p class="empty">沒有。</p>')+
+      (loose.length ? '<h3>還沒排日期（'+loose.length+'）</h3>'+rowsOf(loose, nextRow) : "");
+    return {html: html, last: last ? "EP"+last : null};
+  })();
   var resRow = function(e){
     return '<li><div class="when">'+esc(epName(e.ep))+(e.style === "short" ? "<br>Short" : "")+'</div><div class="body"><div class="t">'+esc((e.title||"").replace(/^EP\d+\s*/,""))+'</div>'+
       '<span class="muted">前 3 天自然觀看 </span><b>'+esc(e.first7)+'</b><span class="muted">　累計 '+esc(e.org_views)+(e.ctr != null ? "　點閱率 "+Number(e.ctr).toFixed(2)+"%" : "")+'</span></div></li>';
   };
   var queuedShort = upcoming.filter(function(e){return !e.isShort;}).length;
   var pl = !repo ? '<p class="empty">還沒有 repo 資料：請 Claude 跑一次 tools/factory_status.py。</p>' : flow("pline", [
-    {label: "待製作", count: next.length, hint: next.length >= 4 ? "推薦表" : "⚠ 不到 4 份", body: rowsOf(next, nextRow)},
+    {label: "排程表", count: plan.last ? "→"+plan.last : next.length, hint: plan.last ? "已排定＋暫定" : "推薦表", body: plan.html, open: true},
     {label: "製作中", count: making.length, body: rowsOf(making, prodRow)},
     {label: "等試聽", count: listening.length, body: rowsOf(listening, prodRow), hot: listening.length > 0},
     {label: "等合併", count: merging.length, body: rowsOf(merging, prodRow), hot: merging.length > 0},
@@ -376,7 +424,6 @@ function _render(d){
       chip(label, RKIND[x.rstate])+dots(it)+(it.at ? '<span class="muted">'+esc(ago(new Date(it.at).toISOString()))+'</span>' : "")+openButtons(it)+'</div></li>';
   };
   var qRow = function(x, extra){ return '<li><div class="when">'+esc(x.id)+'</div><div class="body"><div class="t">'+esc(x.q)+'</div>'+(x.group ? chip(x.group, /錢/.test(x.group) ? "warn" : "") : "")+(extra||"")+'</div></li>'; };
-  var nr = (function(){ var n = new Date(), t = new Date(Date.UTC(n.getUTCFullYear(), n.getUTCMonth(), n.getUTCDate(), 12, 47)); if(t <= n) t = new Date(t.getTime()+DAY); return t; })();
   var rl = !rs ? '<p class="empty">讀不到 research/ 資料夾。</p>' : flow("rline", [
     {label: "候選", count: pending.length, body: rowsOf(pending, function(x){ return qRow(x, x.added ? '<span class="muted">'+esc(x.added)+' 加入</span>' : ""); }), hot: pending.length > 0},
     {label: "排隊", count: queued.length, hint: "每天 20:47 跑一題",
