@@ -77,7 +77,7 @@ python3 tools/progress.py --done   # 已做（依集數）
 | 16 | **錢** | [持有 VT 幾歲能退休](https://imitator.ai-apps.work/r/bysq-report-twvt)（09）＋[40 歲開始，退休金該怎麼算？](https://imitator.ai-apps.work/r/forties)（08-18） | 手上一千萬全買 VT，幾歲可以退休？ | 流行說法對上試算；兩篇都短，合成一集 | 30–40 分鐘 | 兩篇加起來約四千字；跟 EP25（退休地板）重疊，要先講清楚差在哪；錢的後備 |
 | 17 | **錢** | [熄燈的窗 · 台灣少子化與房價](https://imitator.ai-apps.work/r/birthrate-vs-housing)（08-17） | 生的人變少了，房價為什麼還在漲？ | 流行說法對上資料 | 先評估 | **少子化系列上篇**，下篇＝自動研究 Q19（學校和補教業，主軸「時間差」；尚未發佈），做集數時兩篇連續排（上篇先）。原文是用程式畫的八頁投影片，網頁文字抓不出內容（只有幾十個字），要先把每頁的數字取出來才知道夠不夠一集 |
 
-### 暫定排檔：12/2–12/16（11-25）
+### 暫定排檔：12/2–12/16（11-25；同日依自動研究新佇列更新跑的日期，R04 併入 Q41）
 
 **暫定，隨時會變動**：報告可能被重寫或換成新版、自動研究可能晚上線，開工時以當下的報告為準，換掉就直接改這張表。排法照五天一輪（四天 AI、一天錢）。EP48–59、EP68–69、EP78–79 照上表預排，不在這裡重複。
 
@@ -90,16 +90,16 @@ python3 tools/progress.py --done   # 已做（依集數）
 | 12/4 | EP64–65 | AI | [ai-platform-2026-11-cf](https://imitator.ai-apps.work/r/ai-platform-2026-11-cf)（AI 平台地形番外，接 EP50–51）＋[one-word-five-ledgers](https://imitator.ai-apps.work/r/one-word-five-ledgers) | 🟢 |
 | 12/5 | EP66–67 | AI | [layers-melting](https://imitator.ai-apps.work/r/layers-melting)＋[frontier-vs-ecosystem](https://imitator.ai-apps.work/r/frontier-vs-ecosystem) | 🟢 |
 | 12/6 | EP68–69 | **錢** | 推薦 #13–14 Meta 詐騙上下 | 預排 |
-| 12/7 | EP70–71 | AI | Q35 AI 會自己賺錢嗎＋Q36 AI 公司內部模型 | 🟡 約 11/28–29 跑 |
-| 12/8 | EP72–73 | AI | Q23 METR 27 小時＋Q24 不會寫程式的人用 AI 做軟體 | 🟡 約 11/29–30 跑 |
+| 12/7 | EP70–71 | AI | Q35 AI 會自己賺錢嗎＋Q36 AI 公司內部模型 | 🟡 11/27–28 跑 |
+| 12/8 | EP72–73 | AI | Q23 METR 27 小時（併入 Q04 METR 實驗）＋Q24 不會寫程式的人用 AI 做軟體 | 🟡 11/25–26 跑 |
 | 12/9 | EP74–75 | AI | [pattern-story](https://imitator.ai-apps.work/r/pattern-story)＋[sdlc-seal](https://imitator.ai-apps.work/r/sdlc-seal) | 🟢 緩衝日，自動研究晚了可跟前後對調 |
-| 12/10 | EP76–77 | AI | Q32 AI 伺服器台灣分幾成＋Q33 出口創新高、工廠就業反而減少 | 🟡 約 12/3–5 跑 |
+| 12/10 | EP76–77 | AI | Q32 AI 伺服器台灣分幾成＋Q33 出口創新高、工廠就業反而減少（併入 Q21） | 🟡 11/29–30 跑 |
 | 12/11 | EP78–79 | **錢** | 推薦 #15–16 保險課番外＋VT／40 歲 | 預排 |
-| 12/12 | EP80–81 | AI | Q01 AI 讓新人變少了嗎＋Q05 AI 幻覺有變少嗎 | 🟠 W47 研究稿 |
-| 12/13 | EP82–83 | AI | R01 致命三要素對帳＋R04 AI 機房缺電 | 🟠 重製研究稿 |
+| 12/12 | EP80–81 | AI | Q01 AI 讓新人變少了嗎＋Q05 AI 幻覺有變少嗎 | 🟡 12/1–2 跑 |
+| 12/13 | EP82–83 | AI | R01 致命三要素對帳＋Q41 AI 機房最缺的是插頭（台達電；R04 已併入） | 🟡 Q41 11/25 跑、R01 12/3 跑 |
 | 12/14 | EP84–85 | AI | [agent-arch-5](https://imitator.ai-apps.work/r/agent-arch-5)＋[agent-arch-6](https://imitator.ai-apps.work/r/agent-arch-6)（架構系列挑兩篇） | 🟢 工程師向 |
-| 12/15 | EP86–87 | AI | R02 Robotaxi 對帳＋R06 石英錶危機 | 🟠 重製研究稿 |
-| 12/16 | EP88–89 | **錢** | ETF 系列 1 [etf-passive-market-cap](https://imitator.ai-apps.work/r/etf-passive-market-cap)（Q13）＋ETF 系列 2 Q29 主動式 | Q13 🟢、Q29 🟡 約 12/1 跑；趕不上改 [winners-on-the-list](https://imitator.ai-apps.work/r/winners-on-the-list)（🟢）。006208 分割 12/18 表決可當鉤子 |
+| 12/15 | EP86–87 | AI | R02 Robotaxi 對帳＋R06 石英錶危機 | 🟡 12/4–5 跑 |
+| 12/16 | EP88–89 | **錢** | ETF 系列 1 [etf-passive-market-cap](https://imitator.ai-apps.work/r/etf-passive-market-cap)（Q13）＋ETF 系列 2 Q29 主動式 | Q13 🟢、Q29 🟡 12/6 跑；趕不上改 [winners-on-the-list](https://imitator.ai-apps.work/r/winners-on-the-list)（🟢）。006208 分割 12/18 表決可當鉤子 |
 
 - **AI 後備**（🟢）：[loop-engineering](https://imitator.ai-apps.work/r/loop-engineering)、[actor-to-durable-objects-v2](https://imitator.ai-apps.work/r/actor-to-durable-objects-v2)、[ai-economics](https://imitator.ai-apps.work/r/ai-economics)。
 - **新報告**：[winners-on-the-list](https://imitator.ai-apps.work/r/winners-on-the-list)（11-22 v0.2，錢）分散筆記番外，接 EP34、EP35：當年的存股名單補登到今天，對 0050。
