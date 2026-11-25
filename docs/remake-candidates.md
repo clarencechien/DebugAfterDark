@@ -82,8 +82,8 @@
 | [買房 vs. 租房 財務對決模擬器](https://imitator.ai-apps.work/r/rent-or-buy)（10-09） | EP24 租或買 |
 | [互動式報告：新程式碼即規格文件](https://imitator.ai-apps.work/r/the-new-code)（08-04） | EP42–44 不讀之後（規格） |
 | [互動式 Vibe Coding 深度解析](https://imitator.ai-apps.work/r/claude-in-prd)（08-04） | EP42–44 不讀之後 |
-| [AI 時代的極速競賽](https://imitator.ai-apps.work/r/base-in-ai-gen)（09-12） | 推薦 #5 ai-amp-or-mir（放大器） |
-| [互動式報告：AI 時代的生存策略](https://imitator.ai-apps.work/r/time-to-vibe-coding)（08-27） | 推薦 #5 ai-amp-or-mir |
+| [AI 時代的極速競賽](https://imitator.ai-apps.work/r/base-in-ai-gen)（09-12） | 推薦 #5 ai-mirror-1（放大器） |
+| [互動式報告：AI 時代的生存策略](https://imitator.ai-apps.work/r/time-to-vibe-coding)（08-27） | 推薦 #5 ai-mirror-1 |
 | [代理網路趨勢與未來展望 - 互動資訊圖表](https://imitator.ai-apps.work/r/sin)（05-26） | 推薦 #4 ai-platform-2026-11（agent 付款） |
 | [Cursor 收費方案詳解](https://imitator.ai-apps.work/r/cursor-pricing)（05-26） | EP47 AI 月費買到多少 |
 | [AI就業風暴：幕後真相與未來警示](https://imitator.ai-apps.work/r/white-collar)（05-29） | 推薦 #9 everyone-an-architect 已講 22–25 歲 AI 高曝險職業就業 −19%（Brynjolfsson） |
@@ -91,7 +91,7 @@
 | [Claude 創辦人 Dario Amodei AI 未來展望](https://imitator.ai-apps.work/r/anthropic)（05-26） | 同上（Dario 訪談，就業預言是主軸） |
 | [AI 產業趨勢與市場研究資訊圖表 - Dario Amodei 洞察](https://imitator.ai-apps.work/r/anthropic-info)（05-26） | 同上 |
 | [AI 趨勢與市場研究資訊圖表](https://imitator.ai-apps.work/r/claude4)（05-26） | 同上（Anthropic 訪談，內容跟 Dario 篇重疊） |
-| [AI 程式設計助理效益互動式分析報告](https://imitator.ai-apps.work/r/ai-roi)（07-16） | 推薦 #5 ai-amp-or-mir 以 METR「感覺快 20%、實測慢 19%」為主軸；#9 還補了 METR 重測（−18%） |
+| [AI 程式設計助理效益互動式分析報告](https://imitator.ai-apps.work/r/ai-roi)（07-16） | 推薦 #5 ai-mirror-1 以 METR「感覺快 20%、實測慢 19%」為主軸；#9 還補了 METR 重測（−18%） |
 | [互動式報告：Anthropic 團隊如何使用 Claude Code](https://imitator.ai-apps.work/r/anthropic-team)（06-08） | 同上（AI 寫程式的生產力數字） |
 | [互動式報告：Andrej Karpathy - AI 時代的軟體](https://imitator.ai-apps.work/r/andrej-karpathy)（06-19） | 推薦 #9 everyone-an-architect 已講 Karpathy 收回 vibe coding、改叫 agentic engineering；推薦 #8 番外篇講他的四個載體 |
 | [互動式分析：AI對教育的真正威脅](https://imitator.ai-apps.work/r/myth-auto-learning)（06-10） | EP46 practice-on-purpose 已講賓州大學土耳其高中實驗（練習 +48%、閉卷 −17%） |
