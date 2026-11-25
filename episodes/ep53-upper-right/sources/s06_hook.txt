@@ -1,0 +1,4 @@
+（Ping 說「這份報告」「報告的作者」，不說「我們」，Ping 沒有個人經歷。每段 300 字內、每句平均 18 字內，一段最多一個精確數字。報告寫於 2026 年 7 月，11 月重排版面、論點沒改；講到工具指令與功能時說「報告寫的時候」，細節以官方文件現況為準。英文術語第一次出現要用中文解釋：CLAUDE.md 是每次開工都會先讀的那份說明檔；hook 是在特定時間點自動跑的指令；repo 是專案的程式碼庫；skill 是要用時才載入的領域知識包；auto memory 是工具自己記的筆記。）
+
+報告 QA：「hook 就是我的安全機制？」體感：寫了 PreToolUse 擋 rm -rf，安全了。文件：官方講得很直白：hook 的過濾是 best-effort，解析失敗時會 fail open（放行），強制 allow 或 deny 要用 permission 系統，hook 管的是流程紀律。另外還有三個必踩的坑。exit code 1 是 Unix 的失敗慣例，但 Claude Code 把它當成不阻擋的錯誤照做，要擋只有 exit 2。PostToolUse 擋不住任何事，因為工具已經跑完了。Stop hook 連擋 8 次之後會被覆蓋、直接結束，它是強力推一把，算不上絕對的閘門。分工可以這樣記：permission 管安全，hook 管紀律，CLAUDE.md 管建議。
+名詞：hook 是在生命週期特定時點自動執行的 shell 指令。exit 2 會阻擋並把 stderr 餵回模型，exit 1 不會擋（最大的坑）。

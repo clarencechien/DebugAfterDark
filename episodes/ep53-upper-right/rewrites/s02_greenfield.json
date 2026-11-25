@@ -1,0 +1,118 @@
+{
+ "segment": "s02_greenfield",
+ "position": "第 3 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ef57fe48abf4ef810198087bc299499054cad926e0c038d6630be057f28c79a1",
+ "previous_context": "規則檔跟自動檢查各管什麼。還有工具自己記的筆記，到底會怎麼騙你。",
+ "original": {
+  "text": "先回到開頭那個空資料夾。報告說，你測的是全新專案。程式是 AI 當場寫的，規矩也是它當場訂的，根本沒有它猜不到的東西，所以說明檔留白剛好。這份說明檔在 Claude Code 叫 CLAUDE.md，每次開工都會先讀。它要值回票價，有三個條件：專案已經有歷史；你會隔幾個月回來改；還有程式碼裡看不出來的限制，像裝置的資源上限，或不准引入某個套件。報告也承認，它原本幫忙記事情的用途，被工具自己的記憶功能吃掉一部分。縮小是真的，消失沒有。",
+  "lint": {
+   "chars": 212,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 29.3,
+   "max_sentence_len": 63,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "我們先回到一開始那個空資料夾好了。\n這份報告說，因為你測的是全新專案嘛。\n<short pause>\n程式是 AI 當場寫的。\n規矩也是它自己當場訂的。\n根本沒有它猜不到的事情啊。\n所以說明檔留白根本超合理。\n這份檔在 Claude Code 叫 CLAUDE.md。\n也就是每次開工都會先讀的說明檔。\n那它什麼時候才值回票價？\n其實要滿足三個條件啦。\n第一是有歷史的舊專案。\n然後你會隔好幾個月回頭改。\n重點來了，還要有程式碼看不出來的限制。\n像硬體資源上限，或不能亂裝某些套件。\n我看到這邊很有共鳴。<short pause>\n這份報告也承認，\n它原本幫忙記事情的用途，\n確實被工具自己記的筆記吃掉了一點。\n那它會徹底消失嗎？\n縮小是真的，消失可沒有喔。",
+   "lint": {
+    "chars": 277,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 18,
+    "avg_sentence_len": 14.4,
+    "max_sentence_len": 36,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先聊聊 CLAUDE.md 吧。\n它就是每次開工都會先讀的那份說明檔。\n這份報告裡說，很多人都拿全新專案來測。\n程式是模型當場寫的，規矩也是它當場訂的。\n你猜它會不會出包？根本不會嘛。<short pause>\n因為它全都料到了。\n我看到這邊整個被戳中。\n玩具專案留白很合理，真實專案留白就慘了。\n要讓它值回票價，其實需要三個條件。\n第一是專案有歷史，你會隔幾個月回來改。\n然後是程式碼裡看不出來的外部限制。\n像是裝置資源上限，或不能引進特定套件。\n雖然工具自己記筆記，確實吃掉一些用途。\n但這份說明檔只是縮小，根本沒有消失喔。",
+   "lint": {
+    "chars": 236,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先回到一開始那個空資料夾。\n報告裡說，你測的根本是全新專案嘛。<short pause>\n程式是 AI 當場寫的。\n規矩也是它當場訂的。\n那它哪會有猜不到的事？\n所以說明檔留白很合理啦。\n在 Claude Code 裡它叫 CLAUDE.md。\n也就是每次開工都會先讀的說明檔。\n我看到這邊很有共鳴。\n它要值回票價，其實需要三個條件。\n專案本身要有歷史。\n然後是你隔了幾個月才回來改。\n還有程式碼裡看不出來的限制。\n像是裝置資源上限，或是不能裝特定套件。\n那 auto memory 呢？\n也就是工具自己記的筆記。\n報告裡說，它確實吃掉了一部分用途啦。\n但說明檔只是縮小，沒有真的消失喔。",
+   "lint": {
+    "chars": 255,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 13.2,
+    "max_sentence_len": 23,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "先聊聊 CLAUDE.md 吧。它就是每次開工都會先讀的那份說明檔。這份報告裡說，很多人都拿全新專案來測。程式是模型當場寫的，規矩也是它當場訂的。你猜它會不會出包？根本不會嘛。<short pause>因為它全都料到了。我看到這邊整個被戳中。玩具專案留白很合理，真實專案留白就慘了。要讓它值回票價，其實需要三個條件。第一是專案有歷史，你會隔幾個月回來改。然後是程式碼裡看不出來的外部限制。像是裝置資源上限，或不能引進特定套件。雖然工具自己記筆記，確實吃掉一些用途。但這份說明檔只是縮小，根本沒有消失喔。",
+   "to": "先回到開頭那個空資料夾。Claude Code 的說明檔叫 CLAUDE.md，每次開工都會先讀。這份報告說，你測的是全新專案。程式是模型當場寫的，規矩也是它當場訂的，根本沒有它猜不到的東西，說明檔當然可以留白。<short pause>要讓它值回票價，需要三個條件。一是專案已經有歷史。再來，你會隔幾個月回來改。還有，程式碼裡看不出來的限制，像裝置的資源上限，或不能引進某個套件。工具自己記的筆記，確實吃掉它一部分用途。但說明檔只是縮小，沒有消失。",
+   "reason": "「你猜它會不會出包？根本不會，因為它全都料到了」誇大，照素材改回「沒有它猜不到的東西」；三個條件原稿只講兩個，補齊；拿掉「我看到這邊整個被戳中」"
+  }
+ ]
+}

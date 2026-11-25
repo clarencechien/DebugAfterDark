@@ -1,0 +1,139 @@
+{
+ "segment": "s09_check",
+ "position": "第 10 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "c1cce57eb0876d9201ac6249f3934a18e15720d2f5d290f2a29b695e6318176e",
+ "previous_context": "這代表你被鎖住了啦！打分數記得遮住名字，盲評才客觀喔。",
+ "original": {
+  "text": "回到開頭的問題：你的價值放在哪？官方的使用建議，第一條就是給它一個能自己跑的檢查，像測試或建置。報告說，這是「你得盯著」跟「你可以走開」的差別。沒有檢查，看起來做完了就是唯一的訊號，你自己就是那個驗收的人。報告給一週就能做的起點：挑一個你已經有的檢查，規定每個任務結尾都要跑，還要貼出結果當證據。最後，把你的領域知識寫下來：那一百行的部署限制和不能破的規則，是整條鏈上唯一不會被下一版模型吃掉的東西。",
+  "lint": {
+   "chars": 200,
+   "precise_numbers": [
+    "一百"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 32.3,
+   "max_sentence_len": 51,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "盲評完之後，那你的價值到底要放在哪？\n其實官方的第一條建議，就是給它一個檢查。\n像是跑個測試或是 build。\n這份報告說得很白。\n這決定了你得盯著，還是可以轉身走開。\n要是沒有檢查，你整個人就變成驗收迴路。\n只要看起來做完了就算數，超累的啦。<short pause>\n那要怎麼開始？\n挑一個現有的檢查，定成規矩就好。\n每次做完都要跑，還要貼出輸出當證據。\n看證據比自己重跑快很多嘛。\n最後，記得寫下你的領域 skill。\n也就是要用時才載入的知識包。\n那一百行規則，不會被下一版模型吃掉喔。",
+   "lint": {
+    "chars": 219,
+    "precise_numbers": [
+     "一百"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "講到這裡，你的價值到底在哪？\n其實官方最推薦的第一步，\n就是給 Claude 一個它能自己跑的檢查。\n像是跑個 test 或是 build 都算。\n這差在哪裡？\n差在你得在旁邊盯著，\n還是你可以放心走開去泡咖啡啦。<short pause>\n要是沒有檢查，\n你自己就得當那個肉身驗收的人。<sigh>\n這份報告說，\n你有一週就能開始的簡單做法。\n挑一個現有的檢查定成規矩，\n任務結尾都要跑，\n然後把輸出結果貼出來當證據。\n重點來了，最後寫下你的領域 skill，\n也就是要用時才載入的知識包。\n那一百行的部署規則，\n才是唯一不會被下一版模型吃掉的東西喔。",
+   "lint": {
+    "chars": 234,
+    "precise_numbers": [
+     "一百"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 22.4,
+    "max_sentence_len": 34,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那要怎麼真的解脫？\n關鍵其實在於，你能走開多久。<short pause>\n官方建議的第一條，\n就是給 AI 一個能自己跑的檢查。\n不管是測試還是 build 都行。\n為什麼要這樣做？\n因為如果沒有檢查，\n你就是那個肉眼驗收的迴路嘛。\n這份報告建議，\n挑一個你現在就有的檢查，\n規定它每次做完任務，\n一定要把結果貼出來當證據。\n最後，記得寫下你的領域 skill，\n也就是要用的時候才載入的知識包。\n那一百行 markdown 寫的規則，\n才是唯一不會被下一版模型吃掉的東西喔。",
+   "lint": {
+    "chars": 204,
+    "precise_numbers": [
+     "一百"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 21.7,
+    "max_sentence_len": 41,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "盲評完之後，那你的價值到底要放在哪？其實官方的第一條建議，就是給它一個檢查。像是跑個測試或是 build。這份報告說得很白。這決定了你得盯著，還是可以轉身走開。要是沒有檢查，你整個人就變成驗收迴路。只要看起來做完了就算數，超累的啦。<short pause>那要怎麼開始？挑一個現有的檢查，定成規矩就好。每次做完都要跑，還要貼出輸出當證據。看證據比自己重跑快很多嘛。最後，記得寫下你的領域 skill。也就是要用時才載入的知識包。那一百行規則，不會被下一版模型吃掉喔。",
+   "to": "回到開頭的問題：你的價值要放在哪？官方的使用建議，第一條就是給它一個能自己跑的檢查，像是跑測試，或是 build。這份報告說，這決定了你得盯著，還是可以走開。要是沒有檢查，看起來做完了就是唯一的訊號，你自己就是那個驗收的人。<short pause>那要怎麼開始？挑一個你已經有的檢查，定成規矩：每個任務結尾都要跑，還要貼出結果當證據。最後，把你這個領域的知識寫成 skill。那一百行的部署限制和不能破的規則，是整條鏈上唯一不會被下一版模型吃掉的東西。",
+   "reason": "收回開頭的迴圈（「回到開頭的問題」取代「盲評完之後」）；拿掉「超累的啦」；「那一百行規則」補回素材的「部署限制和不能破的規則」"
+  },
+  {
+   "from": "回到開頭的問題：你的價值要放在哪？",
+   "to": "回到開頭的問題，你的價值要放在哪？",
+   "reason": "twtone 結論提示冒號"
+  }
+ ]
+}

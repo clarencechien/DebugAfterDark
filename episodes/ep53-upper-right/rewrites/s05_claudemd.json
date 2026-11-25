@@ -1,0 +1,124 @@
+{
+ "segment": "s05_claudemd",
+ "position": "第 6 段，共 11 段",
+ "avoid": [
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "20f18bc0f97ecfe42462d41fa2c25c03dc0d1292ca75fc082d3bee0d8313bf08",
+ "previous_context": "所以規則到底要放哪？答案很簡單，能寫成檢查，就往右上角搬。",
+ "original": {
+  "text": "那說明檔要怎麼寫？很多人以為越詳細越好，把寫程式的風格、架構流程全塞進去。官方的判準只有一句：拿掉這一行，會不會讓它犯錯？不會，就刪。檔案太長，重要的規則反而淹沒在雜訊裡。報告的分工是這樣：少數到處都適用的規則，留在說明檔；偶爾才用到的領域知識，放進 skill，就是要用時才載入的知識包；每次都一定要發生的事，寫成自動檢查。所以一份好的說明檔，像路標，不像倉庫：大概二十行，告訴模型知識放在哪，本身不裝知識。",
+  "lint": {
+   "chars": 204,
+   "precise_numbers": [
+    "二十"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 28.1,
+   "max_sentence_len": 75,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那每次開工先讀的 CLAUDE.md 呢？\n你猜它是不是寫越詳細越好？\n其實完全相反。<short pause>\n如果把風格跟架構全塞進去，\n規則太多，模型反而會漏掉一半。<laugh>\n這份報告說官方判準只有一句：\n拿掉這一行，Claude 會犯錯嗎？\n不會的話，就直接刪掉啦。\n偶爾才用的領域知識，\n放進 skill，也就是要用才載入的知識包。\n每次都要執行的事，寫成自動跑的 hook。\n所以一份好的說明檔其實像路標，\n大概二十行就好。\n它只負責指路，本身根本不用裝知識嘛。",
+   "lint": {
+    "chars": 202,
+    "precise_numbers": [
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 19.2,
+    "max_sentence_len": 30,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那開工必讀的 CLAUDE.md 該怎麼寫？很多人以為越詳細越好。把風格跟架構全塞進去。<laugh> 其實方向剛好相反喔。你猜官方的標準是什麼？拿掉這一行，會不會讓它犯錯？如果不會，就直接刪掉。寫太長，重要規則反而會漏掉一半。所以這份報告說，它應該像路標。只要大概二十行，告訴模型去哪裡找資料就好。<short pause> 偶爾才用的知識，放進 skill 知識包。每次都要做的事，寫成 hook 自動跑。它本身根本不用裝那些大道理啦。",
+   "lint": {
+    "chars": 192,
+    "precise_numbers": [
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 13.8,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那 CLAUDE.md 到底要怎麼寫？\n它是每次開工都會先讀的說明檔。\n很多人以為寫越詳細越好，\n恨不得把所有規範全塞進去。\n但官方的判準超乾脆，只有一句。\n拿掉這行，Claude 會犯錯嗎？\n不會的話，那就直接刪掉啦。<laugh>\n因為檔案太長，重要規則反而會被漏掉。\n這份報告的比喻超貼切。\n好的說明檔應該像路標，不是倉庫。\n大概二十行就好。\n它只負責指路，本身不裝知識。\n偶爾才用到的領域知識，放進 skill 就好，\n也就是要用時才載入的知識包。\n這樣寫是不是清爽很多？",
+   "lint": {
+    "chars": 214,
+    "precise_numbers": [
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 34,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "那開工必讀的 CLAUDE.md 該怎麼寫？很多人以為越詳細越好。把風格跟架構全塞進去。<laugh> 其實方向剛好相反喔。你猜官方的標準是什麼？拿掉這一行，會不會讓它犯錯？如果不會，就直接刪掉。寫太長，重要規則反而會漏掉一半。所以這份報告說，它應該像路標。只要大概二十行，告訴模型去哪裡找資料就好。<short pause> 偶爾才用的知識，放進 skill 知識包。每次都要做的事，寫成 hook 自動跑。它本身根本不用裝那些大道理啦。",
+   "to": "那開工必讀的 CLAUDE.md 該怎麼寫？很多人以為越詳細越好，把寫程式的風格、架構流程全塞進去。其實方向剛好相反。你猜官方的標準是什麼？拿掉這一行，會不會讓它犯錯？不會，就直接刪掉。寫太長，重要的規則反而會淹沒在雜訊裡。<short pause>這份報告的分工是：少數到處都適用的規則，留在說明檔。偶爾才用的知識，放進 skill，就是要用時才載入的知識包。每次都一定要做的事，寫成 hook 自動跑。所以說明檔像路標，大概二十行，告訴模型知識放在哪，本身不裝知識。",
+   "reason": "拿掉 <laugh>；補「少數到處適用的規則留在說明檔」；「去哪裡找資料」「不用裝大道理」改回素材的「指向知識所在、本身不裝知識」"
+  }
+ ]
+}
