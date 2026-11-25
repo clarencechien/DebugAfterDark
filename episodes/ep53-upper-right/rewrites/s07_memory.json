@@ -1,0 +1,137 @@
+{
+ "segment": "s07_memory",
+ "position": "第 8 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2808757ecebebb7ac34b14de1136ec276565a1988d21cb6be86b0772cc4eef6b",
+ "previous_context": "權限設定管安全，hook 管紀律。說明檔就乖乖拿來放建議就好啦。",
+ "original": {
+  "text": "第三件事，是工具自己記的筆記。Claude Code 預設會幫你記跨對話的東西：怎麼建置、你糾正過它什麼。越用越懂你，聽起來很好。報告說，方便是真的，但有三個代價。第一，你用最久的那個工具，會看起來最好，跟模型強不強無關。像拿共事三個月的同事，去比第一天上班的新人。第二，你某天隨口抱怨一句，它可能默默記成永久的規矩。第三，這份筆記是廠商的格式，換工具帶不走。報告建議定期打開它，看看到底記了什麼。",
+  "lint": {
+   "chars": 197,
+   "precise_numbers": [],
+   "enumerations": [
+    "第三",
+    "第一",
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 20.9,
+   "max_sentence_len": 35,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那除了自己寫說明檔呢？\n其實工具自己也會記筆記喔。\n像是 Claude Code 預設的 auto memory。\n它會跨 session 記住專案，越用越懂你。\n聽起來很棒對吧？<short pause>\n但這份報告說，這其實有代價的。\n第一，它是在位者優勢。\n你覺得它變強，只是因為你們共事比較久。\n這就像拿三個月的老鳥，去比第一天的新人嘛。\n然後，它會把隨口抱怨，默默變成永久規矩。\n真的會讓人哭笑不得耶。<laugh>\n所以報告建議要定期檢查，看它到底記了什麼。\n重點是，這種廠商格式根本搬不走啦。",
+   "lint": {
+    "chars": 214,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 25,
+    "sentences_over_20": 1,
+    "particles_per_100": 2.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "然後，auto memory 又是怎麼回事？\n它就是工具自己記的筆記啦。\n它會跨 session 記住你的專案。\n聽起來超貼心對吧？\n但這份報告提醒，這件事有代價的。\n第一，它會製造在位者優勢。\n你拿合作三個月的同事，去跟新人比。\n表現比較好，跟模型實力其實無關。\n重點來了，你隨口的一句抱怨，\n它可能默默記成永久規矩喔。<sigh>\n而且這是廠商格式，換工具完全帶不走。\n那你要怎麼防？\n報告裡建議，定期去檢查它記了什麼。\n把規則寫進純文字檔，才不會被綁架啦。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 15.0,
+    "max_sentence_len": 26,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "說到設定，你有開 auto memory 嗎？\n它就是工具自己記的筆記。\n跨 session 幫你記住專案的習慣。\n越用越懂你，聽起來超棒對不對？\n其實這份報告說，方便背後有代價喔。\n第一，它是在位者優勢製造機。\n就像拿共事三個月的同事，去跟第一天的新人比。\n表現好只是因為它記得多，跟模型品質沒關係。\n然後，它會把你隨口的抱怨，默默變成永久政策。\n哪天它突然不聽話，就是偷記了怪東西啦。<laugh>\n最麻煩的是，這份筆記是廠商格式，根本搬不走。\n所以記得定期稽核，把資產留在純文字說明檔喔。",
+   "lint": {
+    "chars": 224,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 17.7,
+    "max_sentence_len": 21,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "然後，auto memory 又是怎麼回事？它就是工具自己記的筆記啦。它會跨 session 記住你的專案。聽起來超貼心對吧？但這份報告提醒，這件事有代價的。第一，它會製造在位者優勢。你拿合作三個月的同事，去跟新人比。表現比較好，跟模型實力其實無關。重點來了，你隨口的一句抱怨，它可能默默記成永久規矩喔。<sigh>而且這是廠商格式，換工具完全帶不走。那你要怎麼防？報告裡建議，定期去檢查它記了什麼。把規則寫進純文字檔，才不會被綁架啦。",
+   "to": "第三件事，是 auto memory，就是工具自己記的筆記。它會跨對話記住你的專案，像怎麼建置、你糾正過它什麼。聽起來很貼心對吧？但這份報告提醒，這件事有三個代價。第一，你用最久的那個工具，會看起來最好，跟模型強不強無關。就像拿共事三個月的同事，去比第一天上班的新人。第二，你隨口的一句抱怨，它可能默默記成永久的規矩。<short pause>第三，這是廠商的格式，換工具帶不走。報告建議定期打開它，看看到底記了什麼；要留下來的規則，寫進你自己的純文字檔。",
+   "reason": "三個代價原稿用「重點來了」帶過第二點，改成第一、第二、第三對齊素材；「合作三個月的同事去跟新人比」改回素材；拿掉 <sigh>、「被綁架」"
+  },
+  {
+   "from": "報告建議定期打開它，看看到底記了什麼；要留下來的規則",
+   "to": "這份報告建議定期打開它，看看到底記了什麼。要留下來的規則",
+   "reason": "bare_report；少用分號"
+  }
+ ]
+}

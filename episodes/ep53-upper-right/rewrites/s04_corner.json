@@ -1,0 +1,121 @@
+{
+ "segment": "s04_corner",
+ "position": "第 5 段，共 11 段",
+ "avoid": [
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8f4071b36916cb4696de984a2d5f1017301f56a2f5683ffc82558d44418f2070",
+ "previous_context": "你可以整包搬走，換別家模型繼續用。工具自己記的筆記綁定廠商，根本帶不走啦。",
+ "original": {
+  "text": "兩個軸一交叉，就有四個格子。右上角是一定會發生、而且是你自己的：測試、自動檢查、驗收標準。報告說，這是唯一一格，模型越強，它越值錢。因為模型越能自己跑長任務，你的檢查被執行的次數就越多。反過來，左下角是模型可以不理、又是廠商的，像工具自己記的筆記。它最方便，但那是方便，不是資產。報告還有一句：補模型不足的東西，下一版就被吃掉；寫下你自己的約束，模型越強，槓桿越大。所以每次想「這條規則放哪」，答案幾乎都是：往右上搬。",
+  "lint": {
+   "chars": 209,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 25.1,
+   "max_sentence_len": 42,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以這兩個軸交叉，就分出四個格子。右上角是你完全擁有、而且一定擋得住的。像是測試、還有 hook。<short pause> hook 就是在特定時間點自動跑的指令。這份報告說，右上角越強越值錢。你猜為什麼？模型越能自己跑，你的檢查就越常被執行。對啊，左下角雖然最省力。但那只是方便，根本算不上資產啦。這結論真的超精闢。<short pause> 補模型不足的東西，下一版就被吃掉。寫下你自己的約束，模型越強，槓桿越大。所以規則到底要放哪？答案很簡單，能寫成檢查，就往右上角搬。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 13.9,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以這份報告畫了四個格子。\n一邊看搬不搬得走，一邊看擋不擋得住。\n最值得投資的，其實是右上角那一格喔。\n裡面放測試、驗收標準，還有 hook。\nhook 就是特定時間自動跑的指令啦。\n為什麼要放右上角？<short pause>\n模型越能自己跑任務，你的檢查就跑越多次。\n反過來看左下角，雖然最省力。\n像是工具自己記的筆記，就只是圖個方便。\n那真的算不上資產嘛。\n這份報告有一句話真的超中肯。\n補模型不足的東西，下一版就被吃掉了。\n寫下專案的約束，模型越強槓桿反而越大。\n所以規則到底要放哪？\n答案很清楚。\n能寫成檢查就寫，能進 repo 程式庫就進去。\n總之把東西往右上角搬就對了。",
+   "lint": {
+    "chars": 259,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以這份報告切出了四個格子。\n橫軸看搬不搬得走，縱軸看擋不擋得住。\n<short pause>\n最值得投資的其實是右上角。\n也就是你完全持有、而且絕對擋得住的規則。\n像是測試，或特定時間自動跑的 hook。\n這份報告說，右上角是模型越強越值錢。\n為什麼？\nAI 越會跑長任務，檢查就被執行越多次嘛。\n反過來，工具自己記的筆記在左下角。\n那只是方便，根本算不上資產啦。\n補模型不足的東西，下一版就被吃掉。<sigh>\n但你寫的約束，模型越強，槓桿越大。\n所以規則要放哪？能寫成檢查就寫成檢查。\n能進 repo，也就是程式碼庫，就放進去。\n重點就一句話，全部往右上角搬就對了。",
+   "lint": {
+    "chars": 249,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "所以這兩個軸交叉，就分出四個格子。右上角是你完全擁有、而且一定擋得住的。像是測試、還有 hook。<short pause> hook 就是在特定時間點自動跑的指令。這份報告說，右上角越強越值錢。你猜為什麼？模型越能自己跑，你的檢查就越常被執行。對啊，左下角雖然最省力。但那只是方便，根本算不上資產啦。這結論真的超精闢。<short pause> 補模型不足的東西，下一版就被吃掉。寫下你自己的約束，模型越強，槓桿越大。所以規則到底要放哪？答案很簡單，能寫成檢查，就往右上角搬。",
+   "to": "兩個軸一交叉，就分出四個格子。右上角是一定會發生、又是你自己的，像測試、自動檢查、驗收標準。這份報告說，這是唯一一格，模型越強，它越值錢。為什麼？模型越能自己跑長任務，你的檢查就越常被執行。左下角最省力，像工具自己記的筆記，但那只是方便，算不上資產。<short pause>報告還有一句：補模型不足的東西，下一版就被吃掉；寫下你自己的約束，模型越強，槓桿越大。所以規則要放哪？能寫成檢查，就往右上角搬。",
+   "reason": "「右上角越強越值錢」改成素材的「模型越強，它越值錢」；左下角補例子；拿掉「這結論真的超精闢」"
+  },
+  {
+   "from": "報告還有一句：補模型不足的東西，下一版就被吃掉；寫下",
+   "to": "這份報告還有一句話。補模型不足的東西，下一版就被吃掉。寫下",
+   "reason": "bare_report；少用分號"
+  }
+ ]
+}

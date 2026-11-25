@@ -1,0 +1,130 @@
+{
+ "segment": "s03_axes",
+ "position": "第 4 段，共 11 段",
+ "avoid": [
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ae7093fe6055ea4472288fafb2fceb5989caa713b7be2006df515e2c4333246d",
+ "previous_context": "雖然工具自己記筆記，確實吃掉一些用途。但這份說明檔只是縮小，根本沒有消失喔。",
+ "original": {
+  "text": "報告的核心是一張圖，兩個軸。第一個軸是強制力：這條規則，模型可以不理，還是一定會發生？寫在說明檔裡的，都只是建議。官方文件講得很直白：說明檔和記憶，都只是給模型看的參考，不是強制設定。要一定發生，得交給機器去執行，像測試、自動檢查、權限設定。第二個軸是持有權：這份東西是你的，還是工具廠商的？寫進你專案程式碼庫的純文字，可以整包搬去任何一家。工具自己記的筆記，是廠商的格式，搬不走。",
+  "lint": {
+   "chars": 191,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 22.9,
+   "max_sentence_len": 34,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實這份報告的核心，是一張圖。\n它分成了兩個軸。<short pause>\n第一個軸是強制力。\n你寫在說明檔裡的要求，模型真的會聽嗎？\n答案是不一定喔。\n因為官方說得很白，說明檔只是參考而已。\n要讓規定百分之百執行，還是得靠機器去擋。\n然後，第二個軸是持有權。\n這些規則到底算誰的？\n寫在專案程式碼庫的文字，隨時能整包搬走。\n但工具自己記的筆記，被廠商綁死帶不走啦。\n我讀到這段真的很有共鳴。",
+   "lint": {
+    "chars": 172,
+    "precise_numbers": [
+     "百分之百"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 13.3,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那它現在到底算什麼？\n這份報告畫了一張圖，用兩個方向說清楚。\n第一個是強制力。\n你覺得寫在說明檔裡，AI 就一定會聽嗎？\n其實不會喔。\n官方說得很直白，說明檔只是建議。\n要保證不出錯，得靠 hook。<short pause>\n也就是在特定時間點，讓程式自動擋下來。\n我讀到這段真的很有共鳴。\n第二個方向是持有權。\n寫進專案程式碼庫 repo，東西全都屬於你。\n你可以整包搬走，換別家模型繼續用。\n工具自己記的筆記綁定廠商，根本帶不走啦。",
+   "lint": {
+    "chars": 191,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 13.7,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "這份報告畫了一張圖，分成兩個軸。\n第一個軸是強制力。<short pause>\n這條規則模型真的會聽嗎？\n答案是不一定喔。\n官方文件其實講得很白。\n說明檔跟筆記都只是參考，並不是強制。\n想讓它一定執行，就得交給機器。\n像是用 hook 這種自動跑的指令來擋。\n第二個軸是持有權，這東西到底算誰的？\n寫進 repo 也就是專案程式碼庫的純文字，\n你隨時可以整包搬走。\n但工具自己記的筆記，就被廠商綁死了。<sigh>\n這分法真的很有共鳴，不能只靠模型自覺啊。",
+   "lint": {
+    "chars": 193,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 29,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "那它現在到底算什麼？這份報告畫了一張圖，用兩個方向說清楚。第一個是強制力。你覺得寫在說明檔裡，AI 就一定會聽嗎？其實不會喔。官方說得很直白，說明檔只是建議。要保證不出錯，得靠 hook。<short pause>也就是在特定時間點，讓程式自動擋下來。我讀到這段真的很有共鳴。第二個方向是持有權。寫進專案程式碼庫 repo，東西全都屬於你。你可以整包搬走，換別家模型繼續用。工具自己記的筆記綁定廠商，根本帶不走啦。",
+   "to": "那說明檔到底算什麼？這份報告畫了一張圖，用兩個軸說清楚。第一個軸是強制力。寫在說明檔裡，AI 就一定會照做嗎？不一定。官方文件說得很直白，說明檔和記憶都只是給模型的參考，不是強制設定。要一定擋住某個動作，得交給機器執行，像 hook，也就是在特定時間點自動跑的檢查。<short pause>第二個軸是持有權。寫進你專案的程式碼庫，也就是 repo 的純文字，是你的，可以整包搬去任何一家。工具自己記的筆記綁定廠商，帶不走。",
+   "reason": "「要保證不出錯，得靠 hook」改成素材的「要一定擋住某個動作」；拿掉「我讀到這段真的很有共鳴」；「換別家模型」改成「搬去任何一家」；repo 第一次出現在這段，補解釋"
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "segment": "s06_hook",
+ "position": "第 7 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "166ce5e0399e9510ce1ce7397ac9fa1333610bb5775d999a46bf743ad25f5b84",
+ "previous_context": "每次都要做的事，寫成 hook 自動跑。它本身根本不用裝那些大道理啦。",
+ "original": {
+  "text": "說到自動檢查，Claude Code 有個功能叫 hook，在特定時間點自動跑你寫的指令。很多人寫一個 hook 擋掉刪除整個資料夾的指令，就覺得安全了。官方文件說，hook 的過濾是盡力而為，解析失敗的時候會放行。真的要擋，要用權限設定。報告還點了一個坑：一般程式回傳一，代表失敗，可是在這裡，回傳一不會擋，只有回傳二才擋得住。所以報告的分工是：權限管安全，hook 管紀律，說明檔管建議。",
+  "lint": {
+   "chars": 189,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 30.5,
+   "max_sentence_len": 44,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [
+    "坑"
+   ],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "講到 hook，就是特定時間自動跑的指令。很多人寫它來擋危險指令，就覺得超安全。<short pause>但你覺得這樣就萬無一失了嗎？其實沒有喔。官方文件說得很白，它的檢查只是盡力而為。要是解析失敗，它反而會直接放行。更扯的是它的回傳值。一般系統裡，回傳一代表執行失敗。你想說這下該停了吧？結果完全沒有，Claude Code 照樣繼續跑。要真正擋住它，你必須回傳二才有用。這設計真的很反直覺。<sigh>所以這份報告的分工很清楚。權限設定管安全，hook 管紀律。說明檔就乖乖拿來放建議就好啦。",
+   "lint": {
+    "chars": 225,
+    "precise_numbers": [
+     "萬"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 14.0,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "說到這個 hook，你以為它可以當防火牆嗎？\n很多人寫指令去擋刪除動作，就覺得超安全。\n其實完全不是這樣喔。\n這份報告說官方寫得很直白。\nhook 其實只是盡力而為。\n萬一解析失敗，它會直接放行耶！<sigh>\n更扯的是那個退出代碼。\n平常工具失敗不是都會擋住嗎？\nClaude Code 竟然不管，照樣做下去。\n你一定要回傳二，它才會真正擋下來。\n所以真的要顧安全，得用 permission 權限。\nhook 是管紀律，說明檔管建議啦。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [
+     "萬一"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 23,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "說到 hook，很多人以為它是安全防線。\n比如寫個 hook 擋掉刪除指令，\n就覺得這樣很安全了。\n但官方文件講得很直白喔，\nhook 的過濾只是盡力而為。\n萬一解析失敗，它會直接放行耶！<laugh>\n這根本不能當安全鎖嘛。\n真的要強制阻擋，還是要靠權限設定。\n更扯的是什麼？\n平常習慣用的失敗代碼，\n在這裡居然不會擋喔。\n你一定要回傳二，它才會真的停下來。\n所以這份報告的分工很清楚：\n權限管安全，hook 管紀律，\n說明檔管建議啦。",
+   "lint": {
+    "chars": 193,
+    "precise_numbers": [
+     "萬一"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 18.3,
+    "max_sentence_len": 34,
+    "sentences_over_20": 3,
+    "particles_per_100": 2.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "講到 hook，就是特定時間自動跑的指令。很多人寫它來擋危險指令，就覺得超安全。<short pause>但你覺得這樣就萬無一失了嗎？其實沒有喔。官方文件說得很白，它的檢查只是盡力而為。要是解析失敗，它反而會直接放行。更扯的是它的回傳值。一般系統裡，回傳一代表執行失敗。你想說這下該停了吧？結果完全沒有，Claude Code 照樣繼續跑。要真正擋住它，你必須回傳二才有用。這設計真的很反直覺。<sigh>所以這份報告的分工很清楚。權限設定管安全，hook 管紀律。說明檔就乖乖拿來放建議就好啦。",
+   "to": "講到 hook，它就是在特定時間點自動跑的指令。很多人寫一個 hook 擋掉危險的指令，就覺得安全了。但這樣就萬無一失了嗎？其實沒有。官方文件說得很白，它的過濾只是盡力而為，要是解析失敗，它反而會直接放行。真的要擋，要用權限設定。<short pause>還有一個坑，在回傳值。一般程式回傳一，代表失敗。可是在這裡，回傳一不會擋，Claude Code 照樣往下做。只有回傳二，才擋得住。所以這份報告的分工很清楚：權限管安全，hook 管紀律，說明檔管建議。",
+   "reason": "補「真的要擋要用權限設定」（官方原意）；「更扯的是」改「還有一個坑」（素材用「坑」）；拿掉 <sigh> 和「乖乖」"
+  },
+  {
+   "from": "還有一個坑，在回傳值。",
+   "to": "還有一個要注意的地方，在回傳值。",
+   "reason": "「坑」偏大陸用語"
+  }
+ ]
+}

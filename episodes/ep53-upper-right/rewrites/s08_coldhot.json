@@ -1,0 +1,120 @@
+{
+ "segment": "s08_coldhot",
+ "position": "第 9 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "5d41ea1de803502f7aa3f3ef005b1b3ceae4fc8712ba5bd8f55aac60f4a0010d",
+ "previous_context": "報告裡建議，定期去檢查它記了什麼。把規則寫進純文字檔，才不會被綁架啦。",
+ "original": {
+  "text": "那要比較兩套工具，怎麼比才公平？報告說，排行榜上沒有你的任務，記憶又會污染你的感覺。它給一個下午做得完的方法：從真的工作裡抽十到二十個任務，每個跑兩輪。冷測，關掉記憶、用乾淨的資料夾、一樣的指令，看哪個模型強。熱測，記憶全開，看你該用哪一套。兩輪對著讀：冷測平手、熱測 A 贏，你的優勢是累積下來的東西，可以搬。冷測 B 贏、熱測 A 贏，代表你被鎖住了。評分的時候，別看名字。",
+  "lint": {
+   "chars": 183,
+   "precise_numbers": [
+    "二十"
+   ],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 21.9,
+   "max_sentence_len": 33,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那不同工具到底要怎麼比才公平？\n看公開榜單嗎？其實沒用啦。\n上面根本沒有你的真實工作。\n這份報告給的解法，我讀到覺得超聰明。\n抽十幾個任務，冷熱各跑一輪就好。<short pause>\n冷測關掉記憶，也不放 CLAUDE.md。\n也就是每次開工先讀的說明檔。\n兩邊 prompt 要完全一樣，看哪個模型強。\n然後熱測把記憶全開，看你該選哪一套。\n要是冷測 B 贏，熱測卻是 A 贏呢？\n這代表你被鎖住了啦！\n打分數記得遮住名字，盲評才客觀喔。",
+   "lint": {
+    "chars": 190,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 13.6,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那到底要怎麼比較不同的工具啊？看網路上的跑分榜單有用嗎？其實沒用。因為榜單上根本沒有你的工作情境嘛。這份報告給的做法超實際，一個下午搞定。從真實工作抽十幾個任務，分兩輪跑。冷測關掉記憶，也不放開工說明檔 CLAUDE.md。prompt 完全一樣，看哪個模型底子強。熱測把記憶全開，看你實際該選哪一套。要是冷測平手、熱測 A 贏，優勢是累積的狀態。但冷測 B 贏、熱測 A 贏，代表你被鎖住了。<short pause> 打分數的時候記得遮住名字，盲評最準啦。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 24,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "講到被綁架，那你該怎麼比較兩套工具？直接去看排行榜就好嗎？其實不準。<short pause>排行榜上根本沒有你平常在寫的任務嘛，而且累積的記憶還會干擾體感。報告裡說，只要抽十幾個真實任務來測。冷測先關掉記憶，資料夾弄乾淨，丟一樣的 prompt，看哪個模型底子好。熱測再把記憶全開，看平常到底該用誰。如果冷測輸了、熱測卻贏了，代表什麼？代表你真的被鎖住了，是習慣救了它。我覺得這個檢驗法真的很聰明耶。<short pause>評分的時候記得盲測，別看著名字打分喔。",
+   "lint": {
+    "chars": 206,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.7,
+    "max_sentence_len": 34,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "那不同工具到底要怎麼比才公平？看公開榜單嗎？其實沒用啦。上面根本沒有你的真實工作。這份報告給的解法，我讀到覺得超聰明。抽十幾個任務，冷熱各跑一輪就好。<short pause>冷測關掉記憶，也不放 CLAUDE.md。也就是每次開工先讀的說明檔。兩邊 prompt 要完全一樣，看哪個模型強。然後熱測把記憶全開，看你該選哪一套。要是冷測 B 贏，熱測卻是 A 贏呢？這代表你被鎖住了啦！打分數記得遮住名字，盲評才客觀喔。",
+   "to": "那不同工具到底要怎麼比才公平？看公開排行榜嗎？其實不夠，上面沒有你的真實工作，記憶又會影響你的感覺。這份報告給一個下午做得完的方法：從真的工作裡抽十到二十個任務，冷熱各跑一輪。<short pause>冷測關掉記憶，用乾淨的資料夾，不放 CLAUDE.md，prompt 完全一樣，看哪個模型強。熱測把記憶全開，看你該選哪一套。要是冷測 B 贏，熱測卻是 A 贏呢？這代表你被鎖住了。打分數的時候，記得遮住名字。",
+   "reason": "拿掉「我讀到覺得超聰明」；「十幾個」改回素材的「十到二十個」；補「乾淨的資料夾」「記憶會影響感覺」"
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "id": "ep53-upper-right",
+ "number": 53,
+ "type": "full",
+ "guid": "debug-after-dark:ep53",
+ "title": "EP53 AI 寫得越來越快，你的價值要放在哪？",
+ "description": "你開一個全新的資料夾，什麼規則都沒寫，叫 AI 做一個 app，它照樣做出來了，還能跑。那你花時間寫的那些規則檔，是不是白寫了？AI 寫得越來越快，你分辨對錯的判斷力要是只放在腦袋裡，你一離開座位，它就不在了。這集回答：AI 寫得越來越快，你的價值要放在哪裡？\n\n00:00 沒寫規則檔，AI 照樣做出 app：那些設定白寫了嗎？\n00:47 上一集鏡子篇上篇：鑑別力外包不掉\n01:25 全新專案留白沒差：CLAUDE.md 值回票價的三個條件\n02:10 兩個軸：強制力（建議或保證）、持有權（你的或廠商的）\n02:55 右上角：唯一模型越強、越值錢的一格\n03:44 CLAUDE.md 是路標不是倉庫：拿掉這行會不會犯錯？\n04:33 hook 不是安全機制：回傳 1 擋不住，要回傳 2\n05:19 auto memory 的三個代價：用最久的看起來最好\n06:04 怎麼公平比工具：冷測、熱測各跑一輪\n06:43 給它一個能自己跑的檢查：你才可以走開\n07:33 今晚的 breakpoint\n\n數字的出處與但書：\n・報告寫於 2026 年 7 月，2026-11-24 依新版規範重排（v3），作者註明論點沒有改。Claude Code 文件每週更新，指令與功能以官方文件現況為準。\n・「說明檔和記憶只是參考，不是強制設定」「拿掉這行會不會犯錯，不會就刪」「先給它一個能自己跑的檢查」：Claude Code 官方文件（Memory、Best Practices）。\n・hook 過濾是盡力而為、解析失敗會放行、要擋用 permission；回傳 1 不擋、回傳 2 才擋：Claude Code 官方 Hooks 文件，報告寫作時的版本。\n・「二十行的路標」「一百行的領域 skill」是報告作者的建議，不是官方規定。\n・冷測／熱測是報告作者提出的比較方法，不是已發表的研究。\n\n原文：〈工具在手，怎麼用才算數？— Claude Code 使用指南（鏡子篇下篇）〉https://imitator.ai-apps.work/r/ai-mirror-2\n主要來源：Claude Code 官方文件（Best Practices、Memory、Hooks、Overview）；InfoQ〈Comprehension at AI Speed: Building a Context Store for Evolutionary Architecture〉；METR 隨機對照試驗；Addy Osmani〈Agent Harness Engineering〉。完整清單在原文。\n\n上一集：EP52 同一個 AI，為什麼別人用得比你好？（鏡子篇上篇）\n\n今晚的 breakpoint：\n1. 往右上搬：能寫成檢查就寫成檢查，能進 repo 就進 repo。這是唯一模型越強、越值錢的一格。\n2. CLAUDE.md 是路標，不是倉庫：說明檔只是建議，紀律交給 hook，安全交給權限。\n3. 工具自己記的筆記，會讓你用最久的那個看起來最好；比工具時，記憶關掉跟打開各測一輪。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "ai-mirror-2",
+ "source_url": "https://imitator.ai-apps.work/r/ai-mirror-2",
+ "status": "final",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5",
+  "model_served": "gemini-3.8-flash-tts"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-cloud --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "report_version": "2026-07（2026-11-24 v3 重排，論點未改）",
+ "audio": {
+  "file": "ep53-upper-right.mp3",
+  "bytes": 7965753,
+  "sha256": "0a2da6b7e189f3c11391e8479db8237ac1b41d5c7e95934d21429e18f5449584",
+  "duration_s": 497.8,
+  "duration": "8:17",
+  "lufs": -16.9
+ },
+ "youtube": {
+  "title": "CLAUDE.md 寫越長越好？hook 回傳 1 根本擋不住：AI 寫程式越快，你的價值該放在哪",
+  "thumbnail": [
+   [
+    "CLAUDE.md",
+    "只是建議"
+   ],
+   [
+    "AI 越強",
+    "檢查越值錢"
+   ]
+  ],
+  "synthetic_content": true
+ },
+ "published": "2026-11-28T20:01:00+08:00",
+ "qa": {
+  "breeze_cer_mean": 0.025,
+  "gemini_cer_mean": 0.009,
+  "jitter_semitones": 0.221,
+  "gates": "錯誤率 2.5%、音高跳動 0.221 都通過；聲紋漂移 0.896（前 10 集中位數 0.890）；s04 語速偏慢 19%（六次生成都在 3.3–3.6 字／秒，保留）；接縫亮度 s02、s03、s07、s08、s09 超 ±400 Hz，保留",
+  "retakes": "第一版音高跳動 0.237：s00、s03、s04、s05、s07、s08 各補 3 次，steady_pick 重挑",
+  "manual_pick": "照 steady_pick（select_log 的 manual_override）",
+  "both_wrong": "「一格」聽成「一個」（同音），不是念錯",
+  "twtone": "qa/twtone.md：沒有超過基準的項目",
+  "terms": "Ping、pong 判英文念法",
+  "asr": "Colab 跑了 25 分鐘沒回來（逾時，已手動關機），挑選與驗收改用 Modal",
+  "fact_check": "逐段對照素材：拿掉改寫加的個人反應（有共鳴、超精闢、超聰明）與笑聲嘆氣；「全都料到了」改回「沒有它猜不到的東西」；CLAUDE.md 三個條件補齊；hook 補「真的要擋要用權限設定」；「坑」改「要注意的地方」"
+ }
+}

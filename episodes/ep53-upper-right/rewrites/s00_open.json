@@ -1,0 +1,119 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 11 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "862f586b1cc1ac4513dcac0e0b5869ccdde068ff85ac91229703cf783ec16bba",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "你開一個空資料夾，什麼說明、什麼規則都沒寫，叫 AI 做一個 app。它照樣做出來了，還能動。那你之前花時間寫的那些規則檔、設定，是不是白寫了？這份報告的答案是：在新專案上，留白是對的。可是 AI 寫得越來越快，你的判斷力要是只放在腦袋裡，你一離開座位，它就不在了。這集回答一個問題：AI 寫得越來越快，你的價值要放在哪裡？",
+  "lint": {
+   "chars": 156,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 25.0,
+   "max_sentence_len": 37,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你開一個全新的 repo，專案的程式碼庫。\nCLAUDE.md 這份開工先讀的說明檔直接留白。\n結果 AI 照樣寫出好幾個 app，跑得很順耶。\n那你花時間寫那些設定，難道都白費了嗎？\n<short pause>\n其實全新專案留白沒差，那是玩具專案嘛。\n可是只要沒有檢查機制，你就得肉身盯著螢幕。\n我看到這句真的很有共鳴。\n你完全走不開，因為你就是驗證迴路本身啦。<sigh>\n所以這份報告要問：\n當生成趨近免費，你的鑑別力到底要放在哪裡？",
+   "lint": {
+    "chars": 186,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 19.7,
+    "max_sentence_len": 29,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "你開一個全新的 repo，也就是程式碼庫。<short pause>\n連說明檔 CLAUDE.md 都留白，直接叫 AI 寫。\nCLAUDE.md 就是每次開工會先讀的說明檔。\n結果它照樣寫出 app，還能跑耶。\n那說明檔是不是過譽了？\n其實沒有，你測的是全新專案。\n這份報告說，玩具專案留白沒差。\n但是有歷史的專案，留白就慘了。<laugh>\n所以 AI 寫得越來越快，你的鑑別力要放哪？\n要是沒有檢查，你就只能肉身盯著。\n有了檢查，你才可以走開去泡咖啡嘛。",
+   "lint": {
+    "chars": 191,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 23,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "你開一個空的 repo，什麼設定都沒寫。\n叫 AI 做一個 app，它竟然照樣做得出來。\n你心裡會不會想，那我之前是不是白忙了？\n那份每次開工讓 AI 讀的說明檔，\n叫作 CLAUDE.md，難道真的過譽了嘛？<laugh>\n其實全新專案留白很正常啦。<short pause>\n但這份報告說得很白，\n如果沒有檢查機制，你人就得一直盯著。\n只要你一走開，把關能力就不在囉。\n我看到這句真的很有共鳴。\nAI 寫得越來越快，你的價值到底要放在哪？",
+   "lint": {
+    "chars": 183,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 19.3,
+    "max_sentence_len": 35,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "你開一個全新的 repo，也就是程式碼庫。<short pause>連說明檔 CLAUDE.md 都留白，直接叫 AI 寫。CLAUDE.md 就是每次開工會先讀的說明檔。結果它照樣寫出 app，還能跑耶。那說明檔是不是過譽了？其實沒有，你測的是全新專案。這份報告說，玩具專案留白沒差。但是有歷史的專案，留白就慘了。<laugh>所以 AI 寫得越來越快，你的鑑別力要放哪？要是沒有檢查，你就只能肉身盯著。有了檢查，你才可以走開去泡咖啡嘛。",
+   "to": "你開一個全新的資料夾，什麼說明、什麼規則都沒寫，直接叫 AI 做一個 app。結果它照樣寫出來了，還能跑。那你之前花時間寫的那些規則檔，是不是白寫了？這份報告說，在全新的專案上，留白確實沒差。可是 AI 寫得越來越快，你分辨對錯的判斷力，要是只放在腦袋裡，你一離開座位，它就不在了。這集回答一個問題：AI 寫得越來越快，你的價值要放在哪裡？",
+   "reason": "改回三拍結構：鉤子→反轉→這集的問題；拿掉 <laugh>；原稿在開場就講完答案（有檢查才能走開），挪到 s09 收回；「有歷史的專案留白就慘了」移到 s02"
+  },
+  {
+   "from": "這集回答一個問題：AI 寫得越來越快，你的價值要放在哪裡？",
+   "to": "這集就來回答，AI 寫得越來越快，你的價值要放在哪裡？",
+   "reason": "twtone 結論提示冒號"
+  }
+ ]
+}

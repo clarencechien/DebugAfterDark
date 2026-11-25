@@ -1,0 +1,124 @@
+{
+ "segment": "s01_recap",
+ "position": "第 2 段，共 11 段",
+ "avoid": [],
+ "recap": "EP52〈同一個 AI，為什麼別人用得比你好？〉：上一集是鏡子篇上篇：簡單任務 AI 拉平差距、困難任務才放大；分水嶺是看不看得出輸出對不對的鑑別力，而鑑別力外包不掉。這集是下篇，問鑑別力要放在哪裡。",
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "c0f3d77f32afbd55bd0a4989436a51fb003e7544e22dbfe00bfbbe22d481c9a5",
+ "previous_context": "要是沒有檢查，你就只能肉身盯著。有了檢查，你才可以走開去泡咖啡嘛。",
+ "original": {
+  "text": "上一集是鏡子篇的上篇，問同一個 AI，為什麼別人用得比你好。研究的答案是：簡單的任務，AI 把大家拉平，新手受益最大；難的任務，它才拉開差距。真正的分水嶺，是你看不看得出它的輸出是對是錯，報告叫它鑑別力。這種能力外包不掉。這集是下篇，接著問：那鑑別力要放在哪裡？報告用 Claude Code 這個寫程式的 AI 工具當例子。今晚講三件事：一張兩個軸的圖、規則檔和自動檢查各管什麼、還有工具自己記的筆記，會怎麼騙你。",
+  "lint": {
+   "chars": 201,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 27.7,
+   "max_sentence_len": 44,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上一集我們聊到，簡單任務 AI 會拉平差距。\n但遇到困難任務，差距反而被拉大。\n真正的分水嶺，是你看不看得出輸出對不對。\n這份報告把這個叫做鑑別力。\n重點是，鑑別力根本外包不掉。\n那鑑別力到底要放在哪裡？\n這集下篇就要來回答這題。\n報告裡用 Claude Code 當例子。\n它是一款寫程式的 AI 工具。\n答案其實很直接，就是寫進 repo 裡面。\nrepo 就是專案的程式碼庫啦。\n我看到這個答案真的超有共鳴。<short pause>\n今晚我們來看三件事。\n一張兩個軸的圖。\n規則檔跟自動檢查各管什麼。\n還有工具自己記的筆記，到底會怎麼騙你。",
+   "lint": {
+    "chars": 236,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 13.8,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集我們聊到，簡單任務 AI 會把差距拉平，困難任務才會放大。<short pause> 真正的分水嶺，是你看不看得出輸出對不對。報告裡說這叫鑑別力，而且根本外包不掉啦。那鑑別力到底要放在哪裡？對，這集是下篇，就是要來回答這個問題。這份報告用 Claude Code 當例子，它是 Anthropic 寫程式的 AI 工具。答案其實很乾脆，就是把它寫進專案程式碼庫，也就是 repo 裡面喔。我看到這邊真的很有共鳴。今晚我們會講一張兩個軸的圖，還有規則檔跟自動檢查各管什麼。重點來了，工具自己記的筆記到底會怎麼騙你？<laugh>",
+   "lint": {
+    "chars": 234,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 22.4,
+    "max_sentence_len": 38,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集我們聊到，簡單的任務 AI 會把差距拉平。但遇到難的任務，差距反而被放大。真正的分水嶺在哪裡？<short pause>就在你看不看得出輸出對不對。這份報告叫它鑑別力，而且鑑別力完全外包不掉嘛。那這集下篇就要問，鑑別力到底要放在哪裡？這份報告拿 Claude Code 當例子，它是專門寫程式的 AI 工具。報告給的答案超乾脆，就是寫進 repo，也就是專案的程式碼庫。而且要是能自動跑、能帶著走的東西。你猜工具自己記的筆記靠不靠得住？其實它很常會騙你喔。<laugh>今天就來看怎麼把你的判斷真正留下來。",
+   "lint": {
+    "chars": 228,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 18.0,
+    "max_sentence_len": 31,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 1,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "上一集我們聊到，簡單任務 AI 會拉平差距。但遇到困難任務，差距反而被拉大。真正的分水嶺，是你看不看得出輸出對不對。這份報告把這個叫做鑑別力。重點是，鑑別力根本外包不掉。那鑑別力到底要放在哪裡？這集下篇就要來回答這題。報告裡用 Claude Code 當例子。它是一款寫程式的 AI 工具。答案其實很直接，就是寫進 repo 裡面。repo 就是專案的程式碼庫啦。我看到這個答案真的超有共鳴。<short pause>今晚我們來看三件事。一張兩個軸的圖。規則檔跟自動檢查各管什麼。還有工具自己記的筆記，到底會怎麼騙你。",
+   "to": "上一集是鏡子篇的上篇。簡單的任務，AI 會把大家拉平；遇到困難的任務，差距反而被拉大。真正的分水嶺，是你看不看得出輸出對不對。這份報告把它叫做鑑別力，而且鑑別力外包不掉。這集是下篇，接著問：那鑑別力到底要放在哪裡？報告用 Claude Code 當例子，它是一款寫程式的 AI 工具。<short pause>今晚我們看三件事。一張兩個軸的圖。規則檔跟自動檢查各管什麼。還有工具自己記的筆記，到底會怎麼騙你。",
+   "reason": "Ping 不用「上一集我們聊到」；拿掉「我看到這個答案真的超有共鳴」（Ping 沒有個人反應）；答案不在回顧段先講"
+  },
+  {
+   "from": "報告用 Claude Code 當例子",
+   "to": "這份報告用 Claude Code 當例子",
+   "reason": "bare_report：句首「報告」會被聽成「包括」"
+  },
+  {
+   "from": "簡單的任務，AI 會把大家拉平；遇到",
+   "to": "簡單的任務，AI 會把大家拉平。遇到",
+   "reason": "少用分號"
+  }
+ ]
+}

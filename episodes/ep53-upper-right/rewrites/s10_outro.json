@@ -1,0 +1,131 @@
+{
+ "segment": "s10_outro",
+ "position": "第 11 段，共 11 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b6da68786f2690f4b769b84f804552bb1635f22157aff0cc1ccd2ad0f35242b5",
+ "previous_context": "也就是要用時才載入的知識包。那一百行規則，不會被下一版模型吃掉喔。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，往右上搬：能寫成檢查的就寫成檢查，能放進你自己專案的，就放進專案。模型越強，這些越值錢。第二，說明檔是路標，不是倉庫；它只是建議，要擋住的事交給自動檢查，安全交給權限。第三，工具自己記的筆記，會讓你用最久的那個看起來最好；比工具的時候，關掉記憶和打開記憶各測一次。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 186,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 22.2,
+   "max_sentence_len": 47,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n第一，盡量往右上角搬。能寫成檢查就寫檢查，能進 repo 就進 repo。因為只有右上角，模型越強價值反而越高喔。\n\n第二，CLAUDE.md 是路標不是倉庫。它只是建議，紀律靠 hook，安全交給權限。\n\n最後，auto memory 真的很偏心，對吧？它根本是在位者優勢製造機。<short pause>要評估不同工具，記得開著跟關掉各測一輪。\n\n這幾點聽完真的很有共鳴耶。\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 216,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 22,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，往右上搬。\n能寫成檢查就寫，能進 repo 就進 repo。\n這真的是唯一模型越強、越值錢的一格。\n第二，CLAUDE.md 是路標不是倉庫。\n說明檔只是建議啦。\n紀律交給 hook，安全交給權限管。\n第三，auto memory 很容易偏心。\n那要怎麼公平比較工具？\n記得記憶打開跟關掉，都要各測一輪喔。\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 194,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 13.9,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n今天聽完，你最想先改哪裡？\n其實只要記住三件事就好。\n第一，能寫成檢查就寫成檢查。\n能進 repo 就進 repo。\n右上角是唯一模型越強越值錢的一格。\n然後，CLAUDE.md 是路標不是倉庫。\n它只是建議，紀律交給 hook。\n安全的事情就交給 permission 權限。\n最後，工具自動記筆記是優勢製造機。\n要公平比工具，冷測熱測都要各跑一輪。\n這份報告看下來，真的很有共鳴。<laugh>\n架構果然比 prompt 重要超多耶。\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 245,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>第一，往右上搬。能寫成檢查就寫，能進 repo 就進 repo。這真的是唯一模型越強、越值錢的一格。第二，CLAUDE.md 是路標不是倉庫。說明檔只是建議啦。紀律交給 hook，安全交給權限管。第三，auto memory 很容易偏心。那要怎麼公平比較工具？記得記憶打開跟關掉，都要各測一輪喔。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，往右上搬。能寫成檢查就寫成檢查，能進 repo 就進 repo。這是唯一模型越強、越值錢的一格。第二，CLAUDE.md 是路標，不是倉庫。說明檔只是建議，紀律交給 hook，安全交給權限。第三，工具自己記的筆記，會讓你用最久的那個看起來最好。比工具的時候，記憶關掉跟打開，各測一輪。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "「auto memory 很容易偏心」改回前面講過的「讓用最久的看起來最好」；拿掉語尾「啦」「喔」"
+  }
+ ]
+}
