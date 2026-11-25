@@ -11,6 +11,8 @@ from pathlib import Path
 import numpy as np
 from google import genai
 from google.genai import types
+import usage_log   # 用量記錄給工廠儀表板（Gemini 花費估算）
+usage_log.patch_gemini("compare_voices")
 
 def load(path):
     with wave.open(str(path)) as w:

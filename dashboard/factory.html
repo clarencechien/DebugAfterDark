@@ -259,7 +259,7 @@ function _render(d){
       tile("本月", esc(u(month)), "上限 "+esc(u(c2.cap))+"，剩 "+esc(u(left)))+
       tile("照最近 7 天推到月底", '<span class="'+(warn ? "stale" : "")+'">'+esc(u(proj))+'</span>', warn ? "會超過上限，腳本到時會自己停" : "在上限內")+'</div>'+
       '<div class="meter'+(pct>80?" warn":"")+'" role="img" aria-label="本月已用上限的 '+esc(pct.toFixed(0))+'%"><i style="width:'+pct.toFixed(1)+'%"></i></div>'+
-      '<div class="sub">累計 '+esc(u(c2.total))+(qv.length ? "，一題平均 "+esc(u(perQ))+"（"+qv.length+" 題，不含找題）" : "")+'。月預算 US$'+esc(c2.budget)+'，花到 US$'+esc(c2.cap)+' 自動停。訂閱額度（每週上限）頁面讀不到，要在 Claude 設定裡看；Gemini 花費也沒有記在這裡。</div>'+
+      '<div class="sub">累計 '+esc(u(c2.total))+(qv.length ? "，一題平均 "+esc(u(perQ))+"（"+qv.length+" 題，不含找題）" : "")+'。月預算 US$'+esc(c2.budget)+'，花到 US$'+esc(c2.cap)+' 自動停。訂閱額度（每週上限）頁面讀不到，要在 Claude 設定裡看。</div>'+
       (c2.last ? '<div class="muted">最近一次：'+esc(c2.last.kind)+' '+esc(c2.last.target)+' '+esc(u(c2.last.usd))+'（'+esc(ago(c2.last.time))+'）</div>' : "");
     // 最近 7 天每天多少、本月各步驟（kind）各花多少
     var KIND = {draft: "初稿", final: "審稿＋HTML", fix: "修正", scout: "找題", review: "審稿（舊）", report: "報告（舊）"};
@@ -271,7 +271,7 @@ function _render(d){
       days7.map(function(x){ return '<tr><td>'+esc(x[0].slice(5).replace("-","/"))+'</td><td class="num">'+esc(u(x[1]))+'</td><td><div class="meter" style="margin:4px 0"><i style="width:'+(maxD ? (x[1]/maxD*100).toFixed(1) : 0)+'%"></i></div></td></tr>'; }).join("")+
       '</tbody></table><h3>本月各步驟</h3>'+(kinds.length ? '<table><thead><tr><th>步驟</th><th class="num">次數</th><th class="num">花費</th></tr></thead><tbody>'+
       kinds.map(function(k3){ return '<tr><td>'+esc(KIND[k3] || k3)+'</td><td class="num">'+esc(byKind[k3].n)+'</td><td class="num">'+esc(u(byKind[k3].usd))+'</td></tr>'; }).join("")+'</tbody></table>' : '<p class="empty">本月還沒有。</p>')+'</details>';
-    if(pct >= 80 || warn) todo.unshift({k: "API 額度", t: "研究 API 本月已用 "+u(month)+"／"+u(c2.cap), s: warn ? "照最近 7 天的速度，月底前會碰到上限（推估 "+u(proj)+"），到了腳本會停" : "剩 "+u(left), jump: "research", tag: "研究", late: pct >= 90});
+    if(pct >= 80 || warn) todo.unshift({k: "API 額度", t: "研究 API 本月已用 "+u(month)+"／"+u(c2.cap), s: warn ? "照最近 7 天的速度，月底前會碰到上限（推估 "+u(proj)+"），到了腳本會停" : "剩 "+u(left), jump: "spend", tag: "研究", late: pct >= 90});
   }
   merging.forEach(function(e){ var pr = prOf(e);
     todo.push({k: "合併", t: e.ep+" "+e.title, s: "試聽過了，PR #"+pr.n+" 合併後就排程上架", url: pr.url, tag: "podcast"}); });
@@ -386,13 +386,16 @@ function _render(d){
     {label: "已上線", count: doneR.length, hint: "imitator", body: rowsOf(doneR, runRow)}
   ]);
   if(rs) rl += '<div class="opens">'+openBtn(path("research/pipeline.svg"), "自動研究流程圖", "看流程圖")+'</div>';
-  if(apiBlock) rl += apiBlock;
   html += '<section id="research">'+sectionHead("自動研究線",rs,24*8)+rl+'</section>';
 
   // ── 4. Shorts／影片版線 ──
   var exps = ((repo && repo.experiments) || []).filter(function(e){ return e.status !== "done"; });
   var sx = exps.filter(function(e){ return /short|video/i.test(e.id || "") || /Short|影片版/.test(e.name || ""); });
   var nextShort = shorts.filter(function(s){ return pubT(s) > now; }).sort(function(a,b){ return pubT(a) - pubT(b); });
+  // ── 花費與額度：Claude API（研究）、Gemini（估算）、Colab（真實餘額）──
+  var ub = usageBlocks(d.usage, now);
+  if(apiBlock || ub) html += '<section id="spend"><div class="sh"><h2>花費與額度</h2></div>'+apiBlock+ub+'</section>';
+
   html += '<section id="shorts"><div class="sh"><h2>Shorts／影片版線</h2></div><div class="sub">新的 Short 和影片版先暫停，等實驗結果再決定。'+
     (nextShort.length ? "已排好："+nextShort.map(function(s){ var t = new Date(s.published); return s.ep+" "+fmtDay.format(t)+" "+fmtTime.format(t); }).join("、")+"。" : "")+'</div>'+
     (sx.length ? rowsOf(sx, function(e){ var late = e.next_review && e.next_review <= today; return '<li><div class="when">'+esc(e.next_review ? e.next_review.slice(5).replace("-","/") : "—")+'</div><div class="body"><div class="t">'+esc(e.name)+'</div>'+(late ? chip("該判讀了","bad") : chip("進行中"))+'</div></li>'; }) : "")+'</section>';
@@ -594,6 +597,45 @@ function loadShorts(){
     }, Promise.resolve()).then(function(){ return out; });
   });
 }
+// 外部服務用量：factory/usage.jsonl（tools/usage_log.py 寫：Gemini 每次呼叫一列、Colab 每次用完記餘額）
+function loadUsage(){
+  return readText("factory/usage.jsonl").then(function(t){
+    return t.split("\n").map(function(l){ try { return JSON.parse(l); } catch(e){ return null; } }).filter(Boolean);
+  });
+}
+function usageBlocks(rows, now){
+  if(!rows) return "";
+  var u2 = function(x){ return "US$"+x.toFixed(2); };
+  var tpe = function(t){ return new Date(new Date(t).getTime() + 8*3600000); };
+  var nowT = new Date(now + 8*3600000), dk = nowT.toISOString().slice(0,10), mk = dk.slice(0,7), wk = isoWeek(nowT);
+  var out = "";
+  // Gemini：token × 價目表，估算
+  var g = rows.filter(function(r){ return r.service === "gemini"; });
+  if(g.length){
+    var gd = 0, gw = 0, gm = 0, g7 = 0, byTool = {}, first = null;
+    g.forEach(function(r){ var t = tpe(r.time), d = t.toISOString().slice(0,10), v = r.usd_est || 0;
+      if(d === dk) gd += v; if(isoWeek(t) === wk) gw += v; if(d.slice(0,7) === mk){ gm += v; var k = r.tool || "?"; byTool[k] = byTool[k] || {usd: 0, n: 0}; byTool[k].usd += v; byTool[k].n += r.calls || 1; }
+      if(now - new Date(r.time).getTime() < 7*DAY) g7 += v; if(r.backfill && (!first || r.time > first)) first = r.time; });
+    var dMonth = new Date(Date.UTC(nowT.getUTCFullYear(), nowT.getUTCMonth()+1, 0)).getUTCDate(), proj = gm + g7 / 7 * (dMonth - nowT.getUTCDate());
+    var TOOL = {make_podcast: "配音（TTS）", rewrite_episode: "口語改寫", stt_check: "聽寫驗收", gemini_check: "Gemini 驗收", compare_voices: "聲音比對", gen_art: "封面圖"};
+    var tk = Object.keys(byTool).sort(function(a,b){ return byTool[b].usd - byTool[a].usd; });
+    out += '<h3>Gemini API（估算）</h3><div class="tiles">'+tile("今天", esc(u2(gd)), "")+tile("本週", esc(u2(gw)), "")+tile("本月", esc(u2(gm)), "上限在 AI Studio 設定")+tile("照最近 7 天推到月底", esc(u2(proj)), "")+'</div>'+
+      '<div class="sub">這是用每次回應的 token 數乘上 Google 價目表算的，不是帳單；真正的花費和上限在 AI Studio 看。只算這個 repo 的工具（配音、改寫、驗收、封面），開始記錄之前的配音是從各集紀錄回推的'+esc(first ? "（到 "+first.slice(5,10).replace("-","/")+"）" : "")+'，那段時間的改寫和驗收沒算到。2027 年起價格約變兩倍。</div>'+
+      (tk.length ? '<details><summary>本月各工具</summary><table><thead><tr><th>工具</th><th class="num">次數</th><th class="num">估算</th></tr></thead><tbody>'+tk.map(function(k){ return '<tr><td>'+esc(TOOL[k] || k)+'</td><td class="num">'+esc(byTool[k].n)+'</td><td class="num">'+esc(u2(byTool[k].usd))+'</td></tr>'; }).join("")+'</tbody></table></details>' : "");
+  }
+  // Colab：真實餘額（compute units），用量＝餘額的減少
+  var c = rows.filter(function(r){ return r.service === "colab" && r.balance_cu != null; }).sort(function(a,b){ return a.time < b.time ? -1 : 1; });
+  if(c.length){
+    var last = c[c.length-1], usedM = 0, used7 = 0, runs = 0;
+    for(var i = 1; i < c.length; i++){ var drop = Math.max(0, c[i-1].balance_cu - c[i].balance_cu); if(drop > 0) runs++;
+      if(tpe(c[i].time).toISOString().slice(0,7) === mk) usedM += drop; if(now - new Date(c[i].time).getTime() < 7*DAY) used7 += drop; }
+    var perDay = used7 / 7, daysLeft = perDay > 0 ? last.balance_cu / perDay : null;
+    out += '<h3>Colab（compute units）</h3><div class="tiles">'+tile("餘額", esc(last.balance_cu.toFixed(1)), "CU，"+esc(ago(last.time))+"查的")+tile("本月用掉", esc(usedM.toFixed(1)), "CU")+
+      tile("最近 7 天", esc(used7.toFixed(1)), "CU，平均一天 "+esc(perDay.toFixed(2)))+tile("照這速度還能用", daysLeft == null ? "—" : esc(daysLeft > 999 ? "999+" : daysLeft.toFixed(0))+" 天", "")+'</div>'+
+      '<div class="sub">餘額是 Colab 的真實數字，每次轉錄用完 GPU 會自動記一次（L4 每小時約 1.94 CU、A100 約 6.73 CU）。</div>';
+  }
+  return out;
+}
 function loadTraffic(){
   return readJson("yt-report/summary.json").then(function(s){
     // 專案規則：只看自然流量。廣告觀看（ad_views_7d）不讀進來。
@@ -683,13 +725,13 @@ function load(){
     files = f; return findBase();
   });
   start.then(function(){
-    return Promise.all([soft(loadRepo()), soft(loadResearch()), soft(loadShorts()), loadTraffic().catch(function(e){ return {error: (e && (e.code || e.message)) || String(e)}; })]);
+    return Promise.all([soft(loadRepo()), soft(loadResearch()), soft(loadShorts()), soft(loadUsage()), loadTraffic().catch(function(e){ return {error: (e && (e.code || e.message)) || String(e)}; })]);
   }).then(function(r){
     var maxEp = ((r[0] && r[0].episodes) || []).reduce(function(m, e){ var n = Number(String(e.ep).replace(/\D/g,"")); return n > m ? n : m; }, 0);
     if(!maxEp) return r;
     return soft(loadLocalEps(maxEp)).then(function(loc){ if(loc && loc.length){ r[0].episodes = r[0].episodes.concat(loc); r[0].next = (r[0].next||[]).filter(function(x){ return !loc.some(function(l){ return l.ep === x.ep; }); }); } return r; });
   }).then(function(r){
-    render({repo: r[0], research: r[1], shorts: r[2], traffic: r[3]});
+    render({repo: r[0], research: r[1], shorts: r[2], usage: r[3], traffic: r[4]});
   }).catch(function(e){
     var msg = e && e.code === "not_granted" ? "你沒有允許這個頁面讀專案檔案。到頁面右上角的權限設定打開，再按重新整理。" : (e && e.message) || String(e);
     app.innerHTML = '<div class="err">讀不到資料：'+esc(msg)+'</div>';

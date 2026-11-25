@@ -147,6 +147,11 @@ def transcribe_remote(paths, beam=5, workers=3):
     finally:
         if created:
             _run([colab, "--auth=adc", "stop", "-s", s], env, timeout=120)
+            try:   # 用完記下 Colab 餘額（compute units），給工廠儀表板
+                import usage_log
+                usage_log.colab_snapshot(colab, env, gpu=gpu, wall_s=round(time.perf_counter() - t0))
+            except Exception:
+                pass
     res = {k: {"text": v["text"], "segments": [tuple(x) for x in v["segments"]]} for k, v in got["results"].items()}
     missing = set(stems) - set(res)
     if missing:
