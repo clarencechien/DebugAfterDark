@@ -1,0 +1,133 @@
+{
+ "segment": "s08_do",
+ "position": "第 9 段，共 10 段",
+ "avoid": [
+  "重點來了",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b674ad53badfff389d065818f22a52fa9c7964e1bc9179d8d77dfb4005bd09e1",
+ "previous_context": "整條管線會持續產出沒人看的錯誤。光是用想的就覺得很毛耶。",
+ "original": {
+  "text": "所以回到開頭的問題：同一個 AI，別人用得比你好，差在哪？報告的答案是，差在誰看得出對錯，下指令的功夫反而其次。那要怎麼練？報告給一般人三個做法。重要的問題，養成一句口頭禪：給我反方最強的論證，把它從應聲蟲變成對手。學新東西時，不准它直接交成品，要它解釋到你能自己講一遍。攸關健康、法律、錢的決定，AI 的答案只當問真人專家前的功課。如果你是工程師，再加一條：別信感覺，看實際的數字，也定期關掉 AI，自己練一次。",
+  "lint": {
+   "chars": 204,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 24.5,
+   "max_sentence_len": 38,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以回到最根本的問題。\n同一個工具，為什麼別人用得比你好？\n其實就差在誰看得出對錯嘛。\n下 prompt 的技巧反而是其次。\n那要怎麼練？\n這份報告給了大家三個方法。<short pause>\n遇到重要的問題，先叫它交出反方論證。\n直接把它逼成對手，別讓它當應聲蟲。\n然後學新東西時，不准它直接交成品。\n要它解釋到你能自己重講一遍，再考你。\n遇到健康或錢這種大事情，\n它的答案只能當你去問專家前的功課喔。\n對工程師來說，更要定期關掉 AI 自己練。\n畢竟你驗得動，才委派得起啊。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 29,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以同一個 AI，為什麼有人用得超順？\n<short pause>\n這份報告說，差在誰看得出對錯。\n下指令的功夫其實是其次。\n這點我真的很認同耶。\n那到底要怎麼練？\n報告裡給了一般人三個做法。\n遇到重要問題，逼它講反方最強的論證。\n把它從應聲蟲逼成你的對手。\n學新東西的時候，不准它直接交成品。\n要它解釋到你能自己重講一遍。\n高風險的決定，只當問專家前的功課。\n如果你是工程師，記得定期關掉 AI 裸練。\n自己驗得動，才委派得起嘛。",
+   "lint": {
+    "chars": 187,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 13.4,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以同一個工具，為什麼別人用得比你好？\n報告裡說，差別在誰看得出對錯啦。<short pause>\n這點我真的很認同。\n下指令的技巧反而是其次。\n那要怎麼練這種能力？\n這份報告給了幾個具體的做法。\n遇到重要問題，逼 AI 講出反方最強的論證。\n不要讓它當應聲蟲，要把它當對手。\n學新東西的時候，不准它直接給成品。\n要它解釋到你能自己講一遍，再出題考你。\n碰到健康或錢的大事，只當問專家的功課。\n如果是專業工作者，定期關掉 AI 裸練。\n你驗得動，才委派得起嘛。",
+   "lint": {
+    "chars": 201,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 14.5,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "所以同一個 AI，為什麼有人用得超順？<short pause>這份報告說，差在誰看得出對錯。下指令的功夫其實是其次。這點我真的很認同耶。",
+   "to": "所以回到開頭的問題：同一個 AI，別人用得比你好，差在哪？<short pause>這份報告說，差在誰看得出對錯。下指令的功夫，反而是其次。",
+   "reason": "收回開頭的迴圈；拿掉個人反應"
+  },
+  {
+   "from": "高風險的決定，只當問專家前的功課。",
+   "to": "攸關健康、法律、錢的決定，AI 的答案只當問真人專家前的功課。",
+   "reason": "照素材"
+  },
+  {
+   "from": "如果你是工程師，記得定期關掉 AI 裸練。自己驗得動，才委派得起嘛。",
+   "to": "如果你是工程師，再加兩條：別信感覺，看實際的數字；也定期關掉 AI，自己練一次。驗得動，才委派得起。",
+   "reason": "照素材補「看實測」，「裸練」改白話"
+  },
+  {
+   "from": "所以回到開頭的問題：同一個 AI",
+   "to": "所以回到開頭的問題。同一個 AI",
+   "reason": "twtone 結論提示冒號"
+  }
+ ]
+}

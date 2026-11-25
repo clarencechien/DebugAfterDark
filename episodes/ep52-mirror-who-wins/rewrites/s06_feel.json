@@ -1,0 +1,138 @@
+{
+ "segment": "s06_feel",
+ "position": "第 7 段，共 10 段",
+ "avoid": [
+  "重點來了",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "5a5dd4c6c3c48308871d834a98210ca787d3888e717166fd181dc9dc5b8e9007",
+ "previous_context": "大家常把討喜誤當成聰明。表達太鬆散的人，就會覺得它變笨了嘛。",
+ "original": {
+  "text": "第三站，你的感覺。你可能聽過這個研究：一群資深開源開發者，用自己專案的真實任務，隨機分成能用 AI 和不能用 AI。事前他們預測會快兩成多，做完也覺得快了兩成。碼表一量，慢了百分之十九。這份報告接著講了後續：一年後，同一批人改用會自己多步驟執行的代理型工具重測，結果翻過來，變成大約快了一成八，只是誤差範圍還很寬。所以這個研究不是在說 AI 沒用。它說的是：你對自己有沒有變快的感覺，不準。",
+  "lint": {
+   "chars": 190,
+   "precise_numbers": [
+    "百分之十九"
+   ],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 26.1,
+   "max_sentence_len": 63,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說到感覺，報告裡提到一個很經典的研究。\n十幾位資深工程師解真實任務，隨機分組。\n大家事前預測 AI 能快兩成多。\n做完以後，他們也覺得確實變快了。\n你猜實測怎麼樣？<laugh>\n碼表一按，竟然慢了百分之十九。\n這數據真的讓人倒抽一口氣。\n後來他們改用會自己多步驟執行的代理工具，\n才翻轉成大約快了一成八。\n所以這份報告不是說 AI 沒用啦。\n其實你對自己有沒有變快的直覺，很不準。",
+   "lint": {
+    "chars": 170,
+    "precise_numbers": [
+     "百分之十九"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 16.0,
+    "max_sentence_len": 31,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "講到感覺，我們往往最容易騙過自己。\n這份報告提到一個很有名的實驗。\n一群資深工程師解自己專案的任務。\n做完之後，你猜大家怎麼想？\n每個人都覺得自己快了兩成喔。\n結果碼表一量，慢了百分之十九。<sigh>\n很誇張吧？\n其實一年後換成代理型工具重測，\n會自己跑步驟之後，翻轉成快了一成八。\n所以這不是在說 AI 沒用啦。\n真正可怕的是，\n你對自己有沒有變快，感覺根本不準。\n只靠感覺來調整用法，回饋迴路就壞掉了嘛。",
+   "lint": {
+    "chars": 185,
+    "precise_numbers": [
+     "百分之十九"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 32,
+    "sentences_over_20": 2,
+    "particles_per_100": 2.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "說到感覺，你有想過自己的感覺準不準嗎？METR 之前做過一個隨機對照實驗，找資深開發者寫自己最熟的專案。大家事前預測 AI 會加速兩成多，做完以後，每個人也都覺得快了兩成。碼表一量，你猜實際結果怎樣？居然反而慢了百分之十九。<laugh> 一年後改用代理型工具，才翻轉過來，變成大約快了一成八。真的很有共鳴耶。<short pause> 這份報告想說的，就是感覺根本不準嘛。靠感覺去調整用法，回饋迴路其實是壞的。",
+   "lint": {
+    "chars": 181,
+    "precise_numbers": [
+     "百分之十九"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 19.1,
+    "max_sentence_len": 31,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "說到感覺，報告裡提到一個很經典的研究。十幾位資深工程師解真實任務，隨機分組。",
+   "to": "第三站，你的感覺。報告裡提到一個研究，你可能聽過：十幾位資深開源開發者，做自己專案的真實任務，隨機分成能用 AI 和不能用 AI。",
+   "reason": "補路線圖第三站；照素材（開源開發者、自家專案、分組方式）"
+  },
+  {
+   "from": "你猜實測怎麼樣？<laugh>碼表一按，竟然慢了百分之十九。這數據真的讓人倒抽一口氣。後來他們改用會自己多步驟執行的代理工具，才翻轉成大約快了一成八。",
+   "to": "可是碼表一量，慢了百分之十九。這份報告接著講了後續：一年後，同一批人改用會自己多步驟執行的代理型工具重測，結果翻過來，大約快了一成八，只是誤差範圍還很寬。",
+   "reason": "拿掉笑聲與個人反應；補「一年後、同一批人、區間仍寬」"
+  },
+  {
+   "from": "所以這份報告不是說 AI 沒用啦。其實你對自己有沒有變快的直覺，很不準。",
+   "to": "所以這個研究不是在說 AI 沒用。它說的是：你對自己有沒有變快的感覺，不準。",
+   "reason": "歸屬：研究而非報告"
+  }
+ ]
+}

@@ -1,0 +1,137 @@
+{
+ "segment": "s01_map",
+ "position": "第 2 段，共 10 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "45b5221136ed3958bbaf8943d11ba2b9d8bf33bee7c12124fa86730b94ad44ce",
+ "previous_context": "我看到結論真的很有共鳴。關鍵其實是，你能不能看出 AI 哪裡講錯了。",
+ "original": {
+  "text": "先說今晚的路線，只走三站。第一站，放大器這個說法，哪裡對、哪裡錯。第二站，鏡子還照得出你什麼。第三站，你對自己用得好不好的感覺，到底準不準。先講報告的時間：這份報告整理到今年七月，作者在十一月重新排版，論點沒有改。AI 研究的數字變得很快，所以今晚聽到的數字，都當成那個時間點的快照。好，第一站。如果 AI 真的是放大器，那受益最多的，應該是本來就很強的人。研究看到的，剛好相反。",
+  "lint": {
+   "chars": 187,
+   "precise_numbers": [
+    "十一"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三",
+    "第一"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 19.8,
+   "max_sentence_len": 36,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以今天晚上，我們只聊三個重點。\n第一，大家常說 AI 是放大器，這對嗎？\n然後看 AI 這面鏡子，到底照出了什麼。\n最後聊聊，你的自我感覺到底準不準。\n先提醒一下，這份報告整理到七月喔。\nAI 的具體數字變化超快，\n大概一年就過期了。\n所以今晚聽到的數字，當成快照就好。\n好，先來看放大器這個說法。\n如果 AI 是放大器，你猜誰賺最多？\n直覺想，應該是本來就很厲害的人吧。\n結果研究看到的，剛好完全相反。<laugh>",
+   "lint": {
+    "chars": 185,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先說今晚要聊的三件事。<short pause>第一，放大器這個說法，到底哪裡對哪裡錯。然後看看鏡子照出什麼，最後聊聊自我感覺。先講時間，這份報告整理到今年七月。作者後來重新排版，論點完全沒變。畢竟 AI 研究變化很快，大約一年就過期了。所以今晚聽到的數字，當成當時的快照就好啦。大家常說 AI 是放大器，對吧？照理說，本來很厲害的人應該受益最多。<short pause>但我看到研究結論真的超意外。因為研究看到的，剛好相反耶。",
+   "lint": {
+    "chars": 185,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先說今晚的路線。\n我們只看三個重點。\n第一，放大器這個說法到底哪裡有問題。\n然後看 AI 這面鏡子還能照出什麼。\n最後看你對自己的感覺到底準不準。\n對了，先講時間。\n這份報告整理到今年七月。\n作者後來重新排版，論點完全沒變。\n其實 AI 研究的數字，半衰期差不多一年。\n我看到這句真的很有共鳴。<laugh>\n所以今晚聽到的數字，當成當時的快照就好。\n好，那你覺得 AI 真的是放大器嗎？\n如果真的是，能力最強的人應該受益最多吧？\n結果研究看到的，剛好相反喔。",
+   "lint": {
+    "chars": 204,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 13.6,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "我看到這句真的很有共鳴。<laugh>",
+   "to": "",
+   "reason": "Ping 沒有個人反應"
+  },
+  {
+   "from": "其實 AI 研究的數字，半衰期差不多一年。",
+   "to": "報告說，AI 研究的數字，半衰期差不多一年。",
+   "reason": "歸屬"
+  },
+  {
+   "from": "我們只看三個重點。第一，放大器這個說法到底哪裡有問題。然後看 AI 這面鏡子還能照出什麼。最後看你對自己的感覺到底準不準。",
+   "to": "今晚只走三站。第一站，放大器這個說法到底哪裡有問題。第二站，AI 這面鏡子還能照出什麼。第三站，你對自己的感覺到底準不準。",
+   "reason": "跟 s05、s06 的「第二站」「第三站」對上"
+  }
+ ]
+}

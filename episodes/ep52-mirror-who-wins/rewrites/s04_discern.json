@@ -1,0 +1,135 @@
+{
+ "segment": "s04_discern",
+ "position": "第 5 段，共 10 段",
+ "avoid": [
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ca75cccd420325c1368cefa6c8d985027123f71dc2216b490163b6d918d04cfa",
+ "previous_context": "但在困難的任務裡，反而拉開了距離。所以被放大的，其實是你本來就有的專業底子啦。",
+ "original": {
+  "text": "報告的答案是鑑別力，就是看得出對錯的能力。AI 把生成的價格，打到幾乎是零。要它寫一段程式、一份企劃，幾秒鐘就有了。生不出來，已經不是問題；問題是，你看不看得出這份能不能用。研究發現，AI 出錯的時候，會把使用者的表現一起拖下去。你看不出錯，就會照單全收。所以零的鑑別力，乘上一百，結果不是零，是負的。報告的說法是：生成外包給模型，鑑別留在你身上。被放大的，是你的品味和驗證的能力。",
+  "lint": {
+   "chars": 189,
+   "precise_numbers": [
+    "一百"
+   ],
+   "enumerations": [],
+   "sentences": 9,
+   "avg_sentence_len": 20.0,
+   "max_sentence_len": 28,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那這個底子到底是指什麼？\n這份報告說，關鍵就在鑑別力。\n什麼是鑑別力？\n其實就是看得出好壞對錯的能力啦。\n現在 LLM 把生成成本，直接壓到接近零。\n要生出一段 code，幾秒鐘就搞定。\n但重點來了，你分得出它是對是錯嗎？\n研究發現，AI 出錯的時候，\n會把使用者的表現一起拖下去喔。\n如果你看不出錯，直接照單全收，\n那零乘上一百倍，結果根本是負的。\n<sigh> 想到這裡我都替他捏把冷汗。\n所以比較準的說法，是把生成外包給模型，\n鑑別還是留在你身上。\n真正被放大的，是你的品味跟驗證力。",
+   "lint": {
+    "chars": 220,
+    "precise_numbers": [
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 17.3,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那這個底子到底是什麼？這份報告給的答案，就是鑑別力。<short pause> 也就是分辨好壞跟對錯的能力。其實現在叫 AI 生東西超快的，成本低到幾乎不用錢嘛。但瓶頸在哪裡？就在於你看不看得出它有沒有寫錯。研究發現，AI 出錯的時候，會把不會分辨的人一起拖下水。如果你的鑑別力是零，放大了一百倍，結果可不是零喔，是負的。因為你把錯誤照單全收了嘛。<sigh> 所以生成可以外包給模型，留給你的，其實就是品味跟驗證的眼光啦。",
+   "lint": {
+    "chars": 188,
+    "precise_numbers": [
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 30,
+    "sentences_over_20": 4,
+    "particles_per_100": 2.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那這個專業底子到底是什麼？\n報告裡說，關鍵就在鑑別力，\n也就是看得出對錯的能力。\n現在 AI 把生成的成本打到幾乎是零。<short pause>\n能不能生出來，早就不是問題了。\n問題是，你拿到的東西到底能不能用？\n要是你完全看不出對錯，會怎樣？\nAI 一旦出錯，你就會照單全收。\n整個表現反而被它拖下去。<sigh>\n所以零的鑑別力被放大一百倍，\n結果不是零，其實是負的耶。\n這份報告說，生成外包給模型，\n但鑑別這件事，還是留在你身上。\n最後真正被放大的，\n其實是你的品味跟驗證力啦。",
+   "lint": {
+    "chars": 207,
+    "precise_numbers": [
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 28,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "那這個底子到底是指什麼？",
+   "to": "那被放大的到底是什麼？",
+   "reason": "接上段改寫"
+  },
+  {
+   "from": "<sigh> 想到這裡我都替他捏把冷汗。",
+   "to": "",
+   "reason": "Ping 沒有個人反應"
+  },
+  {
+   "from": "但重點來了，你分得出它是對是錯嗎？",
+   "to": "可是，你分得出它是對是錯嗎？",
+   "reason": "口頭禪超額"
+  }
+ ]
+}

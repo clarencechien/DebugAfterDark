@@ -1,0 +1,146 @@
+{
+ "segment": "s02_level",
+ "position": "第 3 段，共 10 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "14ded6d2f53fc4da3554bceb6bb33f0e9e01e288907d17bf40018eb770f6f093",
+ "previous_context": "如果真的是，能力最強的人應該受益最多吧？結果研究看到的，剛好相反喔。",
+ "original": {
+  "text": "有一個研究看的是客服人員。客服有標準流程，問題也界定得很清楚。用了 AI 之後，進步最多的是技能最低的那群人，生產力大約多了三成五；最頂尖的那群，幾乎沒感覺。新手用兩個月，就追上做了半年的老手。這不是零乘一百。比較像是零點三，被拉到零點七。所以在界定清楚的任務上，AI 不是放大器，是拉平器。它把下面的人往上拉，差距變小了。那放大器這個說法，就全錯了嗎？也沒有。換一種任務，方向就反過來。",
+  "lint": {
+   "chars": 191,
+   "precise_numbers": [
+    "一百",
+    "零點三",
+    "零點七"
+   ],
+   "enumerations": [],
+   "sentences": 11,
+   "avg_sentence_len": 16.4,
+   "max_sentence_len": 45,
+   "sentences_over_20": 2,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這份研究看的是客服人員。\n客服有標準流程，任務界定得很清楚。\n結果你猜誰進步最多？<short pause>\n其實是技能最低的那群人。\n他們的生產力直接多了百分之三十五。\n至於原本的高手，工作表現幾乎沒變。\n新手只花兩個月，就追上做了半年的老手。\n我看到這裡真的覺得超扯。\n這根本不是放大器，而是拉平器嘛。\n就像把原本落後的人，直接往上拉一把。\n所以只要任務清楚，AI 其實是在縮小差距。\n那放大器這個說法就全錯了嗎？也沒有喔。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [
+     "百分之三十五"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 13.5,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "有一份針對客服人員的研究，超有意思的。\n客服通常有標準流程，任務界定得很清楚。\n導入 AI 之後，你猜誰進步最多？\n答案是原本表現最差的那群人。<short pause>\n他們的生產力直接多了百分之三十五。\n反而是原本的頂尖高手，幾乎沒什麼差別。\n新手只花兩個月，就追上半年的老手喔。\n我看到這個結論真的覺得超神奇的。\n這不是放大，而是把後面的人拉上來嘛。\n所以這份研究把 AI 叫做拉平器。\n它把彼此的差距縮小了。<short pause>\n那放大器的說法就全錯了嗎？\n其實也沒有啦，換一種任務結果就反過來。",
+   "lint": {
+    "chars": 213,
+    "precise_numbers": [
+     "百分之三十五"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "有一份研究去看客服人員。\n客服通常都有標準流程對吧？\n結果你猜誰進步最多？\n其實是技能最低的那群人。\n他們的生產力直接多了百分之三十五。\n頂尖的老手呢？幾乎沒什麼感覺。\n新手只花兩個月，就追上半年的老手。\n這根本不是什麼乘法放大。<short pause>\n比較像是零點三被拉到零點七。\n我看到這結果真的覺得很神奇。\n在界定清楚的任務上，AI 其實是拉平器。\n也就是讓後面的人追上前面的人。\n那放大器的說法就全錯了嗎？\n其實也沒有啦。<short pause>\n只要換一種任務，方向就完全反過來囉。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [
+     "百分之三十五",
+     "零點三",
+     "零點七"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 12.0,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "我看到這裡真的覺得超扯。",
+   "to": "",
+   "reason": "Ping 沒有個人反應"
+  },
+  {
+   "from": "他們的生產力直接多了百分之三十五。",
+   "to": "他們的生產力大約多了百分之三十五。",
+   "reason": "照素材，去掉「直接」"
+  },
+  {
+   "from": "至於原本的高手，工作表現幾乎沒變。",
+   "to": "最頂尖的那群，幾乎沒感覺。",
+   "reason": "照素材：頂尖者幾乎無感"
+  },
+  {
+   "from": "這根本不是放大器，而是拉平器嘛。",
+   "to": "在這種任務上，AI 比較像拉平器。",
+   "reason": "twtone 對舉超過基準"
+  },
+  {
+   "from": "這份研究看的是客服人員。",
+   "to": "有一個研究看的是客服人員。",
+   "reason": "第一次提到這個研究，「這份」指代不清"
+  }
+ ]
+}
