@@ -1,0 +1,122 @@
+{
+ "segment": "s03_amplify",
+ "position": "第 4 段，共 10 段",
+ "avoid": [
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "9842b2875e47931e3cec1a71f6ad2dd4d345756e4e835d53c63fffcf8482e885",
+ "previous_context": "那放大器這個說法就全錯了嗎？也沒有喔。",
+ "original": {
+  "text": "如果任務是開放的、模糊的，要靠經驗去判斷，結果就變了。在這種任務上，受益的是領域專家；不懂這一行的人，用了 AI 反而做得更差。報告用一個詞形容 AI 的能力：參差不齊的邊界。難度差不多的兩件事，它一件很行，一件很雷，而且你從外面看不出邊界在哪。同一個工具，落在邊界的這一邊，幫你一把；落在那一邊，拖你下水。所以放大器說對了一半：困難的任務，差距真的會被放大。可是被放大的，不是你下指令的功夫。那是什麼？",
+  "lint": {
+   "chars": 198,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 23.8,
+   "max_sentence_len": 34,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實這份報告裡提到一個很酷的研究。如果遇到需要靠經驗判斷的開放任務，狀況就完全反過來了喔。這時候是領域專家受益，不懂的人用了 AI，表現反而變得更差。為什麼會這樣？研究裡用了一個詞，叫參差邊界。意思就是難度差不多的兩件事，AI 一邊超行，另一邊卻超雷。<short pause>落在邊界的哪一側，效果完全相反。這種落差真的會讓人哭笑不得。<sigh>所以困難任務真的會把差距拉開，那到底放大了什麼？不是指令寫多好，而是你的專業知識啦。",
+   "lint": {
+    "chars": 196,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 18.6,
+    "max_sentence_len": 28,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "如果任務需要靠經驗判斷，<short pause>\n結果就完全反過來了喔。\n這份報告裡提到，\n這種開放又模糊的任務，\n專家用了會更強，\n新手用了反而做得更慘。\n你猜為什麼會醬？\n其實 AI 的能力邊界不是平的，\n它就像一條參差不齊的線。\n難度看起來差不多的兩件事，\n它可能一邊很厲害，另一邊卻超雷。\n而且你很難看出界線在哪。<short pause>\n所以簡單任務拉平差距，\n困難任務才把差距拉得更大。\n真正被放大的，\n是你對那個領域的了解啦。",
+   "lint": {
+    "chars": 179,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 21.4,
+    "max_sentence_len": 37,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實只要任務很開放，\n而且需要靠經驗來判斷，\n情況就完全不一樣了喔。\n這份報告說，AI 有一條參差的能力邊界。\n什麼意思呢？\n就是明明難度差不多，\n它一邊非常厲害，另一邊卻超級雷。<short pause>\n而且這條線很不平整，\n你從外表根本看不出來。\n那這時候會發生什麼事？\n領域專家用了會更強，\n但是外行用了，反而會被拖下水。<laugh>\n這聽起來真的很有共鳴。<short pause>\n在簡單任務上，AI 會幫新手拉平差距。\n但在困難的任務裡，反而拉開了距離。\n所以被放大的，\n其實是你本來就有的專業底子啦。",
+   "lint": {
+    "chars": 208,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 31,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "領域專家用了會更強，但是外行用了，反而會被拖下水。<laugh>這聽起來真的很有共鳴。<short pause>",
+   "to": "領域專家用了會更強，但是外行用了，反而做得更差。<short pause>",
+   "reason": "照素材（非專家受損）；Ping 沒有個人反應、拿掉笑聲"
+  },
+  {
+   "from": "所以被放大的，其實是你本來就有的專業底子啦。",
+   "to": "所以困難的任務，差距真的會被放大。可是被放大的，不是你下指令的功夫。",
+   "reason": "照草稿；接下一段的鑑別力"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "id": "ep52-mirror-who-wins",
+ "number": 52,
+ "type": "full",
+ "guid": "debug-after-dark:ep52",
+ "title": "EP52 同一個 AI，為什麼別人用得比你好？",
+ "description": "你跟同事用同一個 AI、付一樣的月費，他的東西拿來就能用，你的卻要一改再改。網路上說 AI 是放大器、是鏡子、新模型降智了，這份報告把 2023 到 2026 年的研究翻了一遍：三種說法各對一角，也各錯一塊。這集回答：同一個 AI，別人用得比你好，到底差在哪？\n\n00:00 同一個 AI、一樣的月費，為什麼別人用得比你好\n01:04 今晚三站：放大器、鏡子、你的感覺\n01:48 客服研究：AI 是拉平器，新手兩個月追上老手\n02:30 開放的任務：參差的能力邊界，差距被放大\n03:20 被放大的是鑑別力：看得出對錯的能力\n04:06 鏡子的兩面：措辭越來越平，立場還很真\n05:14 感覺快兩成、實測慢百分之十九，一年後翻轉\n06:02 技能沒消失，往上移：四層階梯\n06:52 回到開頭：差在哪、怎麼練\n07:45 今晚的 breakpoint\n\n數字的出處與但書：\n・報告整理至 2026 年 7 月，2026-11 重排版面，論點沒有改；所有數字都是當時的快照。報告的作者整理的是別人的研究。\n・客服 +35%、新手兩個月追上半年老手：Brynjolfsson, Li & Raymond，Generative AI at Work（NBER WP 31161）。\n・開放任務專家受益、非專家受損，「參差的能力邊界」：Dell'Acqua et al.（HBS WP 24-013）。\n・換句話說最高 45% 的表現擺動來自 RobustAlpacaEval；新模型對格式更穩見 He et al.（arXiv:2411.10541）。\n・GPT-4o 太愛討好而退回：OpenAI〈Sycophancy in GPT-4o〉，2025。\n・體感快 20%、實測慢 19%：METR 隨機對照試驗，16 位資深開源開發者、246 件任務，2025 上半年的工具（arXiv:2507.09089）。一年後同一批人用代理型工具重測，點估計約加速 18%、區間仍寬（METR 2026-02 更新）。\n\n原文：〈同一個工具，為什麼結果差這麼多？— LLM 使用者差異研究綜述（鏡子篇上篇）〉https://imitator.ai-apps.work/r/ai-mirror-1\n主要來源：\n・Brynjolfsson, Li & Raymond，Generative AI at Work，NBER WP 31161\n・Dell'Acqua et al.，Navigating the Jagged Technological Frontier，HBS WP 24-013\n・Becker, Rush, Barnes & Rein，Measuring the Impact of Early-2025 AI on Experienced OSS Developer Productivity，arXiv:2507.09089\n・Invisible Saboteurs: Sycophantic LLMs Mislead Novices，CHI 2026，arXiv:2510.03667\n\n今晚的 breakpoint：\n1. 簡單的任務，AI 把差距拉平；困難的任務，才把差距放大。\n2. 被放大的是鑑別力，看得出對錯的人，才用得好。\n3. 你的感覺不準，它又太會附和你，記得叫它給你反方的論證。\n\n延伸收聽：EP46〈有了 AI，新手能超速追上老手嗎？〉\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "ai-mirror-1",
+ "source_url": "https://imitator.ai-apps.work/r/ai-mirror-1",
+ "status": "final",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5",
+  "model_served": "gemini-3.8-flash-tts"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-cloud --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "report_version": "2026-07（2026-11-24 v3 重排，論點未改）",
+ "audio": {
+  "file": "ep52-mirror-who-wins.mp3",
+  "bytes": 8013397,
+  "sha256": "b5a981964c77570f670882d24b29ac93390fbfe0734337db18af5d57acdf776c",
+  "duration_s": 500.8,
+  "duration": "8:20",
+  "lufs": -16.9
+ },
+ "youtube": {
+  "title": "用 AI 感覺快 20%、實測慢 19%：同一個 AI，為什麼別人用得比你好？放大器、鏡子、降智三種說法對照研究",
+  "thumbnail": [
+   [
+    "同一個 AI",
+    "差在看得出錯"
+   ],
+   [
+    "感覺變快",
+    "實測慢 19%"
+   ]
+  ],
+  "synthetic_content": true
+ },
+ "published": "2026-11-28T20:00:00+08:00",
+ "qa": {
+  "breeze_cer_mean": 0.022,
+  "jitter_semitones": 0.226,
+  "gates": "Breeze 錯誤率 2.2% 通過；音高跳動 0.226 通過；聲紋漂移 0.891（前 10 集中位數 0.890）；s02–s06、s08、s09 接縫亮度跳 590–1,920 Hz，保留（EP50 同樣情形保留）",
+  "retakes": "s05、s06、s07、s08 各補 3 次（音高跳動 0.25–0.29）",
+  "manual_pick": "照 steady_pick（select_log 的 manual_override）",
+  "both_wrong": "s05「你」兩套都聽成「您」、s06「和」聽成「跟」，意思不變",
+  "twtone": "qa/twtone.md：s02 對舉、s08 提示冒號已改，改後沒有超過基準的項目（zhtw-mcp 用詞層沒跑：binary 下載不到）",
+  "terms": "Ping、pong 判英文念法",
+  "fact_check": "逐段對照素材：拿掉改寫加的個人反應（很有共鳴、超扯、捏冷汗、倒抽一口氣、很毛、我很認同）與笑聲；cold open 不先揭曉答案，留到 s08 收回；補 METR「一年後、同一批人、區間仍寬」；GPT-4o 改回討喜被當聰明的例子；「挺」改「站在你這邊」；客服研究「最頂尖幾乎沒感覺」照素材"
+ }
+}

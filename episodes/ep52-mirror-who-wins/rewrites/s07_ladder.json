@@ -1,0 +1,136 @@
+{
+ "segment": "s07_ladder",
+ "position": "第 8 段，共 10 段",
+ "avoid": [
+  "重點來了",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2bb68898099103d73b8498391ada516f1b594a203ca0b69b24f3dfc8b5ed7f8c",
+ "previous_context": "所以這份報告不是說 AI 沒用啦。其實你對自己有沒有變快的直覺，很不準。",
+ "original": {
+  "text": "這個翻轉還藏著兩個教訓。第一，看 AI 的研究，先看它是什麼時候、用哪一代工具做的。同一套方法，一年內結論就翻了。第二，技能沒有消失，是往上移了。報告畫了一個四層的階梯。最底下是措辭，怎麼問，門檻在降。往上是把模糊的想法寫成清楚的規格。再往上是分派：哪些丟給 AI，哪些自己留。最上面是品味和驗證：看得出哪裡錯，知道什麼時候喊停。一個指令寫爛，損失一則回覆。一條驗證流程設計爛，損失的是一整條沒人看的錯誤。",
+  "lint": {
+   "chars": 200,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 11,
+   "avg_sentence_len": 17.2,
+   "max_sentence_len": 27,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以面對這種情況，我們該怎麼辦？<short pause>這份報告裡說，技能其實沒有消失喔。它只是慢慢往上移了。最底層是寫 prompt，這門檻一直在降。真正拉開差距的是什麼？是更上面的層次。像是把模糊的想法，寫成清楚的規格。還有決定哪些丟給 AI、哪些自己留。最頂層則是品味跟驗證。你要看得出哪裡錯，知道何時該喊停。這件事完全沒辦法外包嘛。你應該也很有共鳴吧？一個 prompt 寫爛，頂多損失一則回覆。但如果驗證流程搞砸了，損失的是整條管線產出的一堆錯誤喔。",
+   "lint": {
+    "chars": 214,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 27,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "從這個翻轉裡面，其實有兩個很關鍵的教訓。第一，看 AI 結論要先看它是哪一代工具。同一套方法，一年之內結論就直接翻轉了。第二，我們的技能沒有消失，是往上移了。這份報告把能力分成四層階梯。最底層是寫 prompt 措辭，門檻一直在降。往上一層是把模糊想法，寫成清楚的規格。再往上是分派，決定哪些任務丟給 AI。那最頂層是什麼？就是品味跟驗證。<short pause> 要看得出哪裡錯，知道什麼時候該喊停。你想想看，prompt 寫爛頂多損失一則回覆。驗證沒做好，整條管線產出的都是錯誤耶。<sigh>",
+   "lint": {
+    "chars": 224,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實這份報告提醒了我們兩件事。\n第一，看 AI 的研究，先看時間點。\n同一套測試方法，一年內結論就翻轉了。\n再來，技能真的消失了嗎？\n其實沒有，它是往上移了。\n這份報告把技能畫成四層階梯。\n最底層是寫 prompt，門檻正在變低。\n往上是寫規格，把模糊想法定義清楚。\n然後是任務分派，決定哪些交給 AI。\n最頂層最值錢的，是你的品味跟驗證。\n看得出哪裡錯，知道什麼時候喊停。<short pause>\n你想想看嘛，指令寫爛，頂多損失一則回覆。\n但要是驗證機制設計爛了，會怎樣？\n整條管線會持續產出沒人看的錯誤。\n光是用想的就覺得很毛耶。",
+   "lint": {
+    "chars": 237,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "其實這份報告提醒了我們兩件事。",
+   "to": "這個翻轉還藏著兩個教訓。",
+   "reason": "Ping 不說「我們」被提醒；照草稿"
+  },
+  {
+   "from": "然後是任務分派，決定哪些交給 AI。",
+   "to": "然後是任務分派，決定哪些交給 AI、哪些自己留。",
+   "reason": "照素材"
+  },
+  {
+   "from": "但要是驗證機制設計爛了，會怎樣？整條管線會持續產出沒人看的錯誤。光是用想的就覺得很毛耶。",
+   "to": "但要是驗證流程設計爛了，損失的是一整條持續產出、沒人看的錯誤。",
+   "reason": "拿掉個人反應"
+  }
+ ]
+}

@@ -1,0 +1,136 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 10 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "0a01d2163fb5e811bea04624beb7295968f07682a80b78d06eea128d8e6950f4",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "你跟同事用同一個 AI，付一樣的月費。他丟出去的東西拿來就能用，你的卻要一改再改。網路上有三種解釋。第一種說 AI 是放大器，能力零的人，乘一百還是零。第二種說 AI 是鏡子，你長怎樣，它就照出怎樣。第三種最常聽到：新模型降智了，舊的比較聰明。這份報告把二〇二三到二〇二六年的研究翻了一遍，結論是這三種說法各對一角，也各錯一塊。這集要回答的問題是：同一個 AI，別人用得比你好，到底差在哪裡？答案可能不是你以為的那個能力。",
+  "lint": {
+   "chars": 205,
+   "precise_numbers": [
+    "一百"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 21.8,
+   "max_sentence_len": 41,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你跟同事用同一個 AI，明明付一樣的月費。\n他丟出來的東西直接能用，你的卻要改半天。\n到底差在哪裡？<short pause>\n網路上常聽到幾種說法。\n有人說 AI 是放大器，實力零乘一百還是零。\n有人說 AI 是鏡子，會反射出使用者的水準。\n然後最常聽到的抱怨，是新模型又變笨了啦。\n這份報告翻了二〇二三到二〇二六年的研究。\n發現這些說法各對了一角，也各錯了一塊。\n那真正拉開差距的關鍵是什麼？\n重點來了，根本不是下 prompt 的技術耶。\n我看到結論真的很有共鳴。<laugh>\n關鍵其實是，你能不能看出 AI 哪裡講錯了。",
+   "lint": {
+    "chars": 224,
+    "precise_numbers": [
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "你跟同事用同一款 AI，花一樣的月費。\n他產出來的東西直接能用。\n你的卻要一改再改，改到心很累。\n到底差在哪裡？<short pause>\n網路上常見三種說法。\n有人說 AI 是放大器。\n能力是零的人，乘上一百還是零。\n也有人說它是鏡子，反射出使用者的水準。\n然後最常聽到的抱怨，就是新模型降智了啦。<laugh>\n其實這些說法都只說對了一半。\n這份報告翻了過去幾年的研究。\n真正拉開距離的，是下 prompt 的功夫嗎？<short pause>\n其實不是喔。\n最厲害的關鍵，是你能不能看出 AI 的答案是對還是錯。",
+   "lint": {
+    "chars": 206,
+    "precise_numbers": [
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 13.7,
+    "max_sentence_len": 24,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "你跟同事明明用同一個 AI。\n他產出來的東西直接就能用。\n你的卻要改到懷疑人生。<short pause>\n大家常說 AI 就像放大器，\n能力零的人乘一百還是零。\n也有人說 AI 是一面鏡子，\n你水準怎樣它就長怎樣。\n更有人怪新模型降智了，\n說舊的模型比較聰明。\n其實這份報告翻過這幾年的實證研究，\n發現這些說法都只抓到一角，\n但也各自錯了一塊。<short pause>\n那到底差在哪裡？\n是下指令的功夫比較厲害嗎？\n答案完全不是喔。\n這份報告說，\n真正把人拉開距離的，\n是誰能看得出對錯。\n下指令的技術反而其次。\n我看到這個結論真的很有共鳴。",
+   "lint": {
+    "chars": 223,
+    "precise_numbers": [
+     "一百"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 38,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "他丟出來的東西直接能用，你的卻要改半天。",
+   "to": "他丟出去的東西拿來就能用，你的卻要一改再改。",
+   "reason": "貼近草稿"
+  },
+  {
+   "from": "然後最常聽到的抱怨，是新模型又變笨了啦。",
+   "to": "還有最常聽到的抱怨：新模型又變笨了。",
+   "reason": "口語收斂"
+  },
+  {
+   "from": "那真正拉開差距的關鍵是什麼？重點來了，根本不是下 prompt 的技術耶。我看到結論真的很有共鳴。<laugh>關鍵其實是，你能不能看出 AI 哪裡講錯了。",
+   "to": "那同一個 AI，別人用得比你好，到底差在哪？這集要回答的就是這一題。答案可能不是你以為的那個能力。",
+   "reason": "Ping 沒有個人反應、拿掉笑聲；cold open 不先揭曉答案，留到 s08 收回（留存迴圈）"
+  }
+ ]
+}

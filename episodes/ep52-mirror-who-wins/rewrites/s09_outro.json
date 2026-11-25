@@ -1,0 +1,134 @@
+{
+ "segment": "s09_outro",
+ "position": "第 10 段，共 10 段（最後一段）",
+ "avoid": [
+  "重點來了",
+  "我看到這",
+  "超扯"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4313d5df44afe25eb27a2aba8aac2d9dcd4a67bcead86303622ad78d3b859c92",
+ "previous_context": "如果你是工程師，記得定期關掉 AI 裸練。自己驗得動，才委派得起嘛。",
+ "original": {
+  "text": "好，今晚的 breakpoint。第一，簡單的任務，AI 把差距拉平；困難的任務，才把差距放大。第二，被放大的是鑑別力，看得出對錯的人，才用得好。第三，你的感覺不準，它又太會附和你，記得叫它給你反方的論證。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 138,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 18.7,
+   "max_sentence_len": 29,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，其實簡單任務拉平差距，困難任務才放大。\n第二，那分水嶺在哪呢？就看能不能分辨好壞嘛。\n第三，它太順真的很毛，所以記得要反方論證喔。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 119,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 8,
+    "avg_sentence_len": 13.9,
+    "max_sentence_len": 21,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n這份報告真的越看越清醒耶。\n你問我最大的收穫是什麼？\n其實就三件事啦。<short pause>\n第一，簡單任務拉平差距，困難任務才放大差距。\n第二，真正的分水嶺，是你分辨好壞的能力。\n第三，體感會騙人，記得叫 AI 給反方最強的論證。\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 151,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 14.1,
+    "max_sentence_len": 22,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，簡單任務能拉平差距。但遇到難題誰會得利？其實只有專家能拉開差距喔。\n第二，真正的分水嶺，是你看得出好壞。\n第三，AI 太順其實更危險，體感會騙人。所以重要決定，記得叫它給反方最強的論證啦。\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 147,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 13.7,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "第一，簡單任務能拉平差距。但遇到難題誰會得利？其實只有專家能拉開差距喔。第二，真正的分水嶺，是你看得出好壞。第三，AI 太順其實更危險，體感會騙人。所以重要決定，記得叫它給反方最強的論證啦。",
+   "to": "第一，簡單的任務，AI 把差距拉平；困難的任務，才把差距放大。第二，被放大的是鑑別力，看得出對錯的人，才用得好。第三，你的感覺不準，它又太會附和你，記得叫它給你反方的論證。",
+   "reason": "「只有專家能拉開差距」誇大；照草稿的三點"
+  }
+ ]
+}
