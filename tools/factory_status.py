@@ -143,6 +143,30 @@ def next_batch(root, made):
     return out
 
 
+def tentative(root, year):
+    """docs/report-candidates.md「暫定排檔」表：每列一天兩集（日期、集數、類別、報告、狀態），隨時會變。"""
+    md = (root / "docs" / "report-candidates.md").read_text(encoding="utf-8")
+    head, rows, _ = md_table_after(md, r"暫定排檔[^\n]*")
+    out = []
+    for r in rows:
+        col = dict(zip(head, r))
+        d = re.match(r"(\d{1,2})/(\d{1,2})", plain(col.get("日期", "")))
+        e = re.match(r"EP(\d+)(?:[–-](?:EP)?(\d+))?", plain(col.get("集數", "")))
+        if not d or not e:
+            continue
+        a = int(e.group(1))
+        b = int(e.group(2)) if e.group(2) else a
+        if b < a:   # 「EP60–61」寫法
+            b = int(str(a)[:-len(e.group(2))] + e.group(2))
+        report = col.get("報告", "")
+        y = year + 1 if int(d.group(1)) < dt.date.today().month - 6 else year   # 12 月排到隔年 1 月
+        out.append({"date": f"{y}-{int(d.group(1)):02d}-{int(d.group(2)):02d}", "eps": [f"EP{n}" for n in range(a, b + 1)],
+                    "kind": plain(col.get("類別", "")), "text": plain(report), "links": links(report),
+                    "qids": sorted(set(re.findall(r"\b([QR]\d+)\b", plain(report)))),
+                    "status": plain(col.get("狀態", ""))})
+    return out
+
+
 def remake_pool(root):
     """docs/remake-candidates.md 的「首選」兩張表（AI／硬、錢）。"""
     path = root / "docs" / "remake-candidates.md"
@@ -190,6 +214,7 @@ def repo_section(root, source, with_prs=True):
     todo = [{k: t.get(k) for k in ("text", "owner", "due", "status", "done_on")}
             for t in load_json(root, "youtube/todo.json", "todo")]
     return {"generated": now_iso(), "source": source, "episodes": episodes(root, now), "next": next_batch(root, made),
+            "tentative": tentative(root, now.year),
             "remake": remake_pool(root), "experiments": exps, "todo": todo, "prs": open_prs() if with_prs else None}
 
 
