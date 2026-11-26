@@ -1,0 +1,124 @@
+{
+ "segment": "s09_swordsman",
+ "position": "第 10 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b3e705d8bbe1927a91cd985cbe9ee7ae196ed026737af63f330b6a972fec8af7",
+ "previous_context": "然後改到測試通過就好。這時候我們要的是證據，不是聽它解釋啦。",
+ "original": {
+  "text": "報告的結語借了一句話：「劍客拿樹枝都能殺人，小孩拿真刀只會砍到自己。」作者說這句只對一半。差距確實在人身上，但不在你以為的地方。不是指令寫得多漂亮，那面鏡子在變平；差的是幾件事：有沒有給一個能驗證的完成標準，讓模型自己判斷對錯，而不是靠你的情緒；知不知道什麼時候該重開；任務切得夠不夠小，小到一段對話結束時你看得完它改了什麼；有沒有把自己的猜測當成事實餵進去。另一半也要誠實講：模型確實有天花板，大型舊程式碼裡的潛規則、長程的規劃，現在的模型還是會出錯。不是所有挫折都是使用者的錯。鏡子沒有變笨，你越用力壓，它越忠實地照出你壓它的那隻手。",
+  "lint": {
+   "chars": 269,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 37.4,
+   "max_sentence_len": 115,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這份報告最後借了一句話。\n劍客拿樹枝都能殺人。\n小孩拿真刀只會砍到自己。\n其實作者覺得這句只對了一半。\n差距確實在人身上。\n但跟 prompt 寫得多漂亮沒關係。\n真正的差別是什麼呢？\n是你知不知道什麼時候該重開。\n不要在爛掉的 context 裡硬救。\n任務有沒有切得夠小。\n小到一個 session 能看完 diff。\n還有你有沒有給它驗證標準。\n讓它自己對答案，不要靠情緒。\n不過也要誠實講，模型真的有天花板啦。\n大型 codebase 的潛規則，它還是會搞砸。\n這完全不是你的錯。\n厲害的劍客本來就知道哪些仗不能打。\n你現在是不是覺得很想罵人？\n其實不是它變笨了。<short pause>\n是你越用力壓，鏡子就被你壓得越歪。\n這時候就先停下來。\n直接打個 clear 重新開始吧。",
+   "lint": {
+    "chars": 300,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 22,
+    "avg_sentence_len": 12.6,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "這份報告最後講了一句很有意思的話。\n有人說劍客拿樹枝都能打贏，\n小孩拿名刀只會砍到自己。\n不過作者覺得這句話其實只對了一半。\n差別真的在人身上嗎？\n對，但不是差在 prompt 寫得多厲害啦。\n真正厲害的人，是給得出驗證標準。\n讓模型自己判斷對錯，不要靠情緒。\n然後任務切得很小，改動你一眼就看完了。\n還有知道什麼時候該重開，\n不要在爛掉的 context 裡硬救。\n那另外一半呢？\n其實模型也是有天花板的。\n碰到大型專案的潛規則，它還是會翻車。\n所以挫折不一定都是你的問題。\n高手有一部分本事，是知道哪些仗不該打。<short pause>\n我覺得這個鏡子的比喻真的很傳神。\n你想罵人的時候，不是模型變笨了，\n其實是你太用力，把鏡子壓歪了嘛。\n這時候先冷靜一下，\n輸入 clear，把事實寫下來重新開始就好。",
+   "lint": {
+    "chars": 317,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 31,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "這份報告在結尾借了一句話。\n說劍客拿樹枝都能殺人，\n小孩拿真刀只會砍到自己。\n作者說這句話其實只對了一半喔。\n那高手跟新手的差別到底在哪？\n其實不在 prompt 寫得多漂亮。\n差在你有沒有給可以驗證的標準，\n讓模型自己判斷，而不是看你的情緒。\n任務有沒有切得夠小，\n小到一個 session 結束你就能看完 diff。\n還有知不知道什麼時候該果斷重開。<short pause>\n我讀完這段真的很有共鳴。\n但作者也承認，模型確實有天花板。\n大專案裡那些沒寫出來的潛規則，\n叫它做跨檔案規劃還是會出錯啦。\n所以不是所有挫折都是你的錯。\n這面鏡子沒有變笨，\n你越用力壓它，\n它只是越忠實照出你用力壓它的手。",
+   "lint": {
+    "chars": 266,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 19.5,
+    "max_sentence_len": 32,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "大型 codebase 的潛規則，它還是會搞砸。這完全不是你的錯。",
+   "to": "大型 codebase 的潛規則、長程的規劃，它還是會出錯。不是所有挫折都是你的錯。",
+   "reason": "「完全不是你的錯」誇大，照素材改回「不是所有挫折」"
+  },
+  {
+   "from": "直接打個 clear 重新開始吧。",
+   "to": "放下，清掉對話，把事實寫下來，重新站到鏡子前面。",
+   "reason": "照素材的結語；clear 是指令名"
+  }
+ ]
+}

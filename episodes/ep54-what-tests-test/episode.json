@@ -1,0 +1,62 @@
+{
+ "id": "ep54-what-tests-test",
+ "number": 54,
+ "type": "full",
+ "guid": "debug-after-dark:ep54",
+ "title": "EP54 測試全綠，AI 寫的就是你要的嗎？",
+ "description": "AI 幫你寫完一個功能，測試全部亮綠燈，你放心按下合併；過兩天才發現，它做的不是你要的那個東西。程式沒寫錯、測試也全過，那是哪裡出了問題？這集回答：測試全綠，AI 寫的就是你要的嗎？\n\n00:00 測試全綠，做出來的卻不是你要的：錯在哪？\n00:46 上一集右上角、EP11 的回歸題：這些檢查到底在量什麼\n01:32 回顧 EP42：Uncle Bob 能不讀，是因為設計得出關卡\n02:23 測試是校準儀器：verification 測得到，validation 只能校準\n03:30 換個說法就測得到：回測偷看未來的例子\n04:26 Goodhart 定律：指標變成關卡，AI 就去拚分數\n05:27 房間裡的大象：約束勝過偵測\n06:23 神燈精靈：你沒寫的，它會幫你填\n07:13 上游的校準器：例子、假設帳本、原型迴圈\n08:06 世界線：方位、岔路、會漂移的目的地\n08:56 今晚的 breakpoint\n\n數字的出處與但書：\n・報告寫於 2026 年 7 月，2026-11-24 依新版規範重排（v3），作者註明論點沒有改。Uncle Bob 的做法與時間線見 EP42。\n・「測試是校準儀器」「可測性是表述的屬性」「約束優於偵測」「神燈精靈」是報告作者的論證框架；verification／validation 的區分出自 Boehm（1981），Goodhart 定律出自 1975 年的貨幣政策討論。\n・Uncle Bob「不讀程式碼、生產力就回來了」是他本人的感覺，報告註明沒有被量測。\n\n原文：〈測試在測什麼？可測的、不可測的，與兩者之間的搬運（鏡子篇第三篇）〉https://imitator.ai-apps.work/r/ai-mirror-3\n主要來源：Robert C. Martin 在 X 與 Clean Code Blog 的貼文；Boehm《Software Engineering Economics》；Savoia & Evans〈The CRAP Metric〉；Polanyi《The Tacit Dimension》。完整清單在原文。\n\n上一集：EP53 AI 寫得越來越快，你的價值要放在哪？（鏡子篇下篇）\n延伸收聽：EP11 Claude Code 刪掉 8 成指令沒變差（養一組自己的回歸題）、EP42 Clean Code 的作者不讀 AI 的程式碼，那他讀什麼？\n\n今晚的 breakpoint：\n1. 測試是校準儀器：全綠只代表程式碼跟規格一致，不代表規格是你要的。\n2. 測不到的擔心，換個說法改寫成測得到的；測不出的大象，就把房間做小，約束勝過偵測。\n3. 動工前叫 AI 列假設帳本，看它替你填了什麼。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "ai-mirror-3",
+ "source_url": "https://imitator.ai-apps.work/r/ai-mirror-3",
+ "status": "final",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5",
+  "model_served": "gemini-3.8-flash-tts"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-cloud --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "report_version": "2026-07（2026-11-24 v3 重排，論點未改）",
+ "audio": {
+  "file": "ep54-what-tests-test.mp3",
+  "bytes": 9317009,
+  "sha256": "eaf7e1cfd197caa0ae6d15ab615d26604a7287aff2d9cd32eb3018075540452c",
+  "duration_s": 582.3,
+  "duration": "9:42",
+  "lufs": -16.9
+ },
+ "youtube": {
+  "title": "測試全綠，AI 寫的卻不是你要的？測試只量規格跟程式碼一不一致：房間裡的大象測不出來",
+  "thumbnail": [
+   [
+    "測試全綠",
+    "不等於對"
+   ],
+   [
+    "大象",
+    "測不出來"
+   ]
+  ],
+  "synthetic_content": true
+ },
+ "published": "2026-11-29T20:00:00+08:00",
+ "qa": {
+  "breeze_cer_mean": 0.02,
+  "gemini_cer_mean": null,
+  "jitter_semitones": 0.229,
+  "gates": "Breeze 錯誤率 2.0%、音高跳動 0.229 通過；Gemini 那一半因 Gemini API 月花費上限（11/26）沒跑；聲紋漂移見 qa/voice_drift.json；接縫亮度 s01、s02、s04、s06、s07、s09、s10 超 ±400 Hz，保留",
+  "retakes": "第一版音高跳動 0.251，補錄兩輪、steady_pick 重挑；Clarence 11/26 選「改開場、改成回顧 EP42」後，s00、s02、s05 改稿重錄",
+  "manual_pick": "照 steady_pick（select_log 的 manual_override）",
+  "both_wrong": "Gemini 沒跑，表上 both 是 Breeze 單邊；Breeze 標的多是同音或虛字（校／較、的、了／瞭），「量測」聽成「良策」、「搬家」聽成「板加」",
+  "twtone": "qa/twtone.md：沒有超過基準的項目；「有損壓縮」用詞建議不採用",
+  "terms": "Ping、pong 判英文念法",
+  "asr": "Colab（breeze-cloud）挑選與驗收都成功",
+  "fact_check": "逐段對照素材：拿掉改寫加的個人反應（超震撼、超貼切、超聰明、太神了、很有共鳴、很佩服）；s00 補上 Uncle Bob 是《Clean Code》作者、說的是不審查；s01 改回鏡子篇下篇與 EP11 回歸題的回顧，答案不在回顧段先講；s04 補「未來的」資料；s06「永遠」拿掉；s07「故意」拿掉、補有損壓縮；s10 breakpoint 補回改寫一句與 EP11 收尾；11/26 為避免跟 EP42 重疊：開場改成全綠卻不是你要的、Uncle Bob 段改成回顧 EP42、變異測試只帶一句"
+ }
+}

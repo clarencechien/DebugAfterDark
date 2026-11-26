@@ -1,0 +1,127 @@
+{
+ "segment": "s04_rot",
+ "position": "第 5 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "7df4cdb98ba3b1c27f8fe92caff92aa3e5c85db15c0f7672ecc36f59b1a30d44",
+ "previous_context": "這種可以驗證的事實，比任何語氣都管用。其實想罵人的那一刻，就是該 clear 的訊號啦。",
+ "original": {
+  "text": "為什麼要重開？因為越改越錯，通常在你開罵之前就發生了，問題在那段對話本身。失敗的嘗試留在對話裡當錨點，錯的程式碼、錯的推論、你的怒氣全都還在。對話太長被自動壓縮時，你早期講的限制條件可能被摘掉。更要命的是，摘要是那段歪掉的對話自己寫的：原本「我猜可能是 X」，壓縮後變成「問題在 X」。錯的想法被壓縮後，反而更像定論。Claude Code 的官方建議很直接：同一個問題修正超過兩次，就清掉重來，用一個吸收了教訓、更具體的指令重開。換一個新同事接手，你不會丟整段聊天紀錄給他，你會寫一頁交接：事實、失敗過的方法、現在的狀態、怎樣算做完。",
+  "lint": {
+   "chars": 264,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 32.0,
+   "max_sentence_len": 54,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "為什麼要直接 clear？\n因為越改越錯，通常在你開罵前就發生了。\n問題不是模型，而是對話早就被污染了。\n那些失敗的嘗試，會一直留在 context 裡面。\n對話太長的時候，系統會自動做摘要。\n重點來了。<short pause>\n摘要居然是那個歪掉的 session 自己寫的。\n原本只是猜測某個地方壞掉。\n壓縮之後，居然直接變成問題就是那裡。\n錯誤的假設被壓縮完，反而變成真理。\n這真的很讓人崩潰耶。\n所以官方建議非常乾脆。\n同一個問題修正超過兩次，就清掉重來。\n你想想看，換新同事接手，你會丟聊天紀錄嗎？\n當然不會嘛。<laugh>\n你一定會花點時間，寫一頁清楚的交接。\n面對 Claude，其實更需要你這樣做喔。",
+   "lint": {
+    "chars": 268,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 22,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "為什麼會越改越錯？\n其實問題不是模型變笨，是整段對話髒掉了。\n對，那些改錯的 code 跟你的怒氣，全留在裡面。\n然後對話太長的時候，系統會自動做壓縮。\n重點來了，這份摘要是誰寫的？\n是歪掉的 session 自己寫的。<laugh>\n原本只是猜測，壓縮後竟然變成已知事實。\n我看到這段分析，真的很有共鳴。\n官方建議其實講得很白。\n同一個問題修超過兩次，就直接 clear 掉。\n乾淨的 prompt，永遠勝過累積一堆錯的長對話。\n所以你想一下，新同事接手你會怎麼做？\n你會丟整串對話，還是幫他寫交接？\n當然是寫一頁交接嘛。\n只留事實、失敗的方法，還有完成標準。\n<short pause> 換個乾淨環境，它才不會繼續鬼打牆。",
+   "lint": {
+    "chars": 270,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 23,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "為什麼要重開？\n因為越寫越錯，問題其實在那段對話。\n失敗的嘗試全留在裡面，錯的推論也都在。\n模型等於在一份被污染的草稿上繼續寫。\n對話太長被自動壓縮時，細節還會被吃掉。\n最可怕的是什麼？\n摘要是那個搞砸的對話自己寫的喔。\n原本只是猜測，壓縮後直接被當成事實。\n錯的方向反而變得超級權威。<sigh>\n所以官方建議其實很乾脆。\n同一個問題修正超過兩次，就直接 /clear。\n你想想看，新同事接手你會丟聊天紀錄嗎？\n當然不會，你只會寫一頁乾淨的交接。\n把事實、失敗紀錄跟完成標準講清楚。\n換一個乾淨的 session，真的有效很多啦。",
+   "lint": {
+    "chars": 244,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "為什麼要直接 clear？",
+   "to": "為什麼要直接清掉重來？",
+   "reason": "clear 是指令名"
+  },
+  {
+   "from": "這真的很讓人崩潰耶。",
+   "to": "",
+   "reason": "Ping 沒有個人反應"
+  },
+  {
+   "from": "問題不是模型，而是對話早就被污染了。",
+   "to": "問題常常出在對話本身，它早就被污染了。",
+   "reason": "twtone 對舉超過基準"
+  }
+ ]
+}

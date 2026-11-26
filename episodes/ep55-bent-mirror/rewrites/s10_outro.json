@@ -1,0 +1,148 @@
+{
+ "segment": "s10_outro",
+ "position": "第 11 段，共 11 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "26351f74cdef7921691f986de81cb15864e165fa30a17ada89f34aa3fd9424a0",
+ "previous_context": "這時候就先停下來。直接打個 clear 重新開始吧。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，想罵 AI 的那一刻，就是該重開的訊號：把情緒換成觀察，把歪掉的對話換成一頁交接。第二，說明檔先刪再加，教訓要先過你這一關，才能變成規則；第十一集那句先刪再加，過了一季還是成立。第三，看不完的計畫不要放行，讀不懂就要一個會失敗的測試。「它更懂我了」那四本帳，也記得定期打開來掃一掃。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 193,
+   "precise_numbers": [
+    "十一"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第十一",
+    "第三"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 23.1,
+   "max_sentence_len": 47,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n\n聊了這麼多，到底要帶走什麼？\n\n第一，想罵 AI 就打 clear。花五分鐘寫交接再重新開始。\n\n第二，教訓要你親自審過才能變規則。讓它自己改考卷，我真的會冒冷汗耶。<laugh>\n\n第三，讀不懂沒關係，要一個會失敗的測試。那鏡子是歪在哪？就歪在你隨便放行的那一下。\n\n對了，記憶裡過期的狀態，記得定期掃掉喔。\n\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 190,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 13.6,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n聊了這麼多，到底要帶走什麼啦？\n第一，想罵人的時候就打 clear。\n花五分鐘寫一頁交接給它，重新開始。\n第二，說明檔只記反直覺的事情。\n教訓要先過你這關，才能變成規則。\n第三，讀不懂不等於不能驗。\n要它交出會失敗的測試，不要隨便放行喔。\n你是不是也該去掃一下記憶了？<short pause>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 179,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 13.9,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n你今天跟 AI 吵架了嗎？<laugh>\n其實想罵人時，就是該 clear 的訊號啦。\n第一，歪掉就重開，花五分鐘寫一頁交接。\n第二，設定檔只記反直覺的事，規則要親自審。\n第三，讀不懂就叫它給測試，不要隨便放行。\n對，不要讓它自己改考卷，鏡子才不會歪喔。<short pause>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 164,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "好，今晚的 breakpoint。<short pause>聊了這麼多，到底要帶走什麼？第一，想罵 AI 就打 clear。花五分鐘寫交接再重新開始。第二，教訓要你親自審過才能變規則。讓它自己改考卷，我真的會冒冷汗耶。<laugh>第三，讀不懂沒關係，要一個會失敗的測試。那鏡子是歪在哪？就歪在你隨便放行的那一下。對了，記憶裡過期的狀態，記得定期掃掉喔。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "to": "好，今晚的 breakpoint。<short pause>第一，想罵 AI 的那一刻，就是該重開的訊號：把情緒換成觀察，花五分鐘寫一頁交接再重來。第二，教訓要先過你這一關，才能變成規則；說明檔還是先刪再加，第十一集那句話，過了一季還是成立。第三，看不完的計畫不要放行，讀不懂就要一個會失敗的測試。鏡子就是歪在你放行的那一下。對了，記憶裡過期的狀態，也記得定期掃掉。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "reason": "breakpoint 收回 EP11（先刪再加）；拿掉「我真的會冒冷汗」（Ping 沒有個人反應）；clear 改白話"
+  },
+  {
+   "from": "第二，教訓要先過你這一關，才能變成規則；說明檔還是先刪再加，第十一集那句話，過了一季還是成立。",
+   "to": "第二，教訓要先過你這一關，才能變成規則；說明檔一樣是先刪掉、再考慮加，第十一集的這句話，到現在還成立。",
+   "reason": "「第十一集」緊接「過了一季」，兩套辨識都聽成「第十一季」；拿掉「一季」"
+  },
+  {
+   "from": "第三，看不完的計畫不要放行，讀不懂就要一個會失敗的測試。鏡子就是歪在你放行的那一下。",
+   "to": "第三，計畫看不完，就先別讓它動手；讀不懂，就要一個會失敗的測試。鏡子就是歪在你點頭的那一下。",
+   "reason": "兩套辨識都把「放行」聽成「放心」，意思相反"
+  }
+ ]
+}

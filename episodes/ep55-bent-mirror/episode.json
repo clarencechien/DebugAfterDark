@@ -1,0 +1,62 @@
+{
+ "id": "ep55-bent-mirror",
+ "number": 55,
+ "type": "full",
+ "guid": "debug-after-dark:ep55",
+ "title": "EP55 想罵 AI 的那一刻，是哪裡壞了？",
+ "description": "你跟 AI 改同一個 bug，改到第三輪，越改越錯，你終於打出「又錯了」。很多人說罵 AI 會讓它變笨，可是研究裡粗魯的問法，答對率反而小幅領先。那為什麼罵完真的會越改越錯？這集回答：想罵 AI 的那一刻，到底是哪裡壞了？回顧 EP11〈八成要刪掉〉：這是同一季的第二本 2026 下半年 agent 生存指南。\n\n00:00 罵 AI 會讓它變笨？研究說粗魯的反而答對多\n00:52 回顧 EP11〈八成要刪掉〉：同一季的第二本生存指南\n01:45 兩面鏡子：措辭鏡變平，信念鏡還很真\n02:44 罵人碰到信念鏡：它不是變笨，是投降\n03:41 爛掉的對話：摘要把猜測寫成定論，改兩次就重開\n04:34 太肥的 CLAUDE.md：LLM 自己生的說明檔反而扣分\n05:32 讓它自己寫規則：剛搞砸的對話在改自己的考卷\n06:25「它更懂我了」：四本互不相通的記憶帳\n07:27 沒看完就說好：這次當鏡子的是你\n08:23 劍客、小孩，和那把劍\n09:26 今晚的 breakpoint\n\n數字的出處與但書：\n・報告寫於 2026-10-04，官方文件以當日版本為準；Claude Code 功能與指令變動很快，以官方文件現況為準。\n・語氣研究：Dobariya & Kumar（賓州州立大學，2025），250 題、只測 GPT-4o，作者註明樣本小、不建議推廣。\n・多輪對話研究：Guo 等（2026，arXiv 2603.11394），17 個模型，多輪加中途建議，正確率平均最多掉 30%。\n・說明檔研究：Gloaguen 等（ETH Zurich／LogicStar.ai，2026-02，arXiv 2602.11988）；LLM 生成的說明檔成功率約 −3%、推論成本 +20～23%，手寫平均 +4%。\n・「同一個問題修正超過兩次就清掉重來」「CLAUDE.md 控制在 200 行內」：Claude Code 官方 Best Practices 與 Memory 文件。\n・四本記憶帳的分法與「git 就是整合層」是報告作者的整理。\n\n原文：〈劍客、小孩，與一面歪掉的鏡子 — 2026H2 Agent 生存指南（鏡子篇延伸一）〉https://imitator.ai-apps.work/r/agent-survival-2026h2\n主要來源：Anthropic〈Towards Understanding Sycophancy in Language Models〉；Claude Code 官方文件（Best Practices、Memory、Prompt caching）；Anthropic〈Prompting Claude Opus 5.5〉〈Claude prompting best practices〉；上列三篇研究。完整清單在原文。\n\n上一集：EP54 測試全綠，AI 寫的就是你要的嗎？（鏡子篇第三篇）\n回顧：EP11 Claude Code 刪掉 8 成指令沒變差：你寫給 AI 的也該刪了（同一季的第一本生存指南）\n延伸收聽：EP52、EP53 鏡子篇上下篇\n\n今晚的 breakpoint：\n1. 想罵 AI 的那一刻，就是該重開的訊號：把情緒換成觀察，花五分鐘寫一頁交接再重來。\n2. 教訓要先過你這一關才能變成規則；說明檔一樣先刪掉、再考慮加，EP11 那句話到現在還成立。\n3. 計畫看不完就先別讓它動手，讀不懂就要一個會失敗的測試。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "agent-survival-2026h2",
+ "source_url": "https://imitator.ai-apps.work/r/agent-survival-2026h2",
+ "status": "final",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5",
+  "model_served": "gemini-3.8-flash-tts"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-cloud --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "report_version": "2026-10-04（11-24 改標鏡子篇延伸一）",
+ "audio": {
+  "file": "ep55-bent-mirror.mp3",
+  "bytes": 9884187,
+  "sha256": "460106ddee525d50956b63afac7d91950c497bf4d5f673cd9514307d95f41587",
+  "duration_s": 617.7,
+  "duration": "10:17",
+  "lufs": -16.9
+ },
+ "youtube": {
+  "title": "罵 AI 它會變笨？研究說粗魯反而答對多：越改越錯的真正原因是對話爛掉了｜2026 下半年 Agent 生存指南",
+  "thumbnail": [
+   [
+    "罵 AI",
+    "它會投降"
+   ],
+   [
+    "想罵的那刻",
+    "該重開了"
+   ]
+  ],
+  "synthetic_content": true
+ },
+ "published": "2026-11-29T20:01:00+08:00",
+ "qa": {
+  "breeze_cer_mean": 0.026,
+  "gemini_cer_mean": null,
+  "jitter_semitones": 0.225,
+  "gates": "Breeze 錯誤率 2.6%、音高跳動 0.225 通過；Gemini 那一半因 Gemini API 月花費上限（11/26）沒跑，Clarence 11/26 同意先只用 Breeze 驗收；聲紋漂移 0.894（前 10 集中位數 0.891）；s05 音高 +6.7 Hz（略超 ±6）；s06、s09 語速 +11%；接縫亮度多段超 ±400 Hz，保留",
+  "retakes": "音高跳動 0.240 → 補錄三輪；s01 手動指定 take7；s02、s10 改稿重錄（「第十一集講的先刪再加」「第十一季」被聽錯）；s03、s05、s10 再改稿重錄（「信念鏡」「逐檔」「放行→放心」被聽錯）",
+  "manual_pick": "steady_pick，s01 手動 take7（見 select_log manual_override）",
+  "both_wrong": "Gemini 沒跑；Breeze 標的多是同音或 Claude 拼法；s09「小孩」Breeze 聽成「小檀」，要用耳朵確認",
+  "twtone": "qa/twtone.md：對舉超標兩處已改一處，剩 0.44/千字低於門檻",
+  "terms": "Ping、pong 判英文念法（Gemini 撞上限前檢查的）",
+  "asr": "Colab（breeze-cloud）挑選與驗收都成功",
+  "fact_check": "逐段對照素材：拿掉個人反應（起雞皮疙瘩、很讓人崩潰、很能體會、我覺得很危險、超毛的、冒冷汗）；s01 補回 EP11 三個重點；s02 補 Anthropic、大寫強調才會過頭；s03 觀察補回預期值；s08 讀不懂可以直接問；s09「完全不是你的錯」改回「不是所有挫折」；clear 改成白話"
+ }
+}

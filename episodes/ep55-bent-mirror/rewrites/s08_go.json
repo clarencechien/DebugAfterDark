@@ -1,0 +1,121 @@
+{
+ "segment": "s08_go",
+ "position": "第 9 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "1eefe7633192e8d8ace1ea92d67f59c93efc7d613b59a2e0a4fa331b593d7c8e",
+ "previous_context": " 這樣想想其實超毛的吧？所以過期的狀態要記得定期清掉，留下已經做過的決定就好囉。",
+ "original": {
+  "text": "鏡子還有一種歪法，是反過來的。它給你一份很長的計畫，你沒看完就說「好，做吧」。這一句在它眼裡，是你確認過的立場。從此計畫裡每個錯的假設，都升級成你同意的前提。這次當鏡子的，是你。報告的建議：要它在計畫最前面先列假設，五條以內；放行前問自己，這個計畫我能用一句話講出來嗎？不能，就叫它縮。至於讀不懂，報告說，可以直接問，也可以叫它換個說法。但比較誠實的那一半是：讀不懂，不等於不能驗。你可以要它先寫一個會失敗的測試，再讓它通過。讀不懂的時候，該要的不是更簡單的解釋，是更容易驗證的證據。",
+  "lint": {
+   "chars": 242,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 11,
+   "avg_sentence_len": 21.0,
+   "max_sentence_len": 45,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.4,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 1,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實鏡子還有另一種歪法喔。\n而且方向剛好是反過來的。\n它給你一份很長的計畫，\n你沒看完就直接回一句說好。\n這句話在它眼裡，\n就是你百分之百確認過的立場。<short pause>\n結果裡面所有錯的假設，\n全部直接升級成你同意的前提。\n這次換你當那面歪掉的鏡子了。<sigh>\n你應該也遇過這種狀況吧？\n這份報告裡建議，\n叫它在最前面先列出五條以內的假設。\n然後放行前先問自己一句，\n你能用一句話講出這個計畫嗎？\n講不出來，就直接叫它縮短。\n那如果真的讀不懂怎麼辦？\n其實讀不懂，不等於不能驗嘛。\n你可以要它先寫一個會失敗的測試，\n然後再想辦法讓它通過。\n這時候該要的不是更多解釋，\n而是能讓你驗證的證據啦。",
+   "lint": {
+    "chars": 264,
+    "precise_numbers": [
+     "百分之百"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 26,
+    "sentences_over_20": 7,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實鏡子還有另一種歪法喔。\n方向完全是反過來的。\n它給你一份落落長的計畫。\n你沒細看，直接跟它說好。\n結果咧？\n它會以為你全部都確認過了。\n裡面原本錯的假設，全部升級。\n通通變成你同意的前提。\n這次當鏡子的人反而是你。\n我想到這裡真的直冒冷汗。<short pause>\n那要怎麼防？\n這份報告說，請它先列出假設。\n而且最多只能列五條。\n放行前，你也可以先問自己一句話。\n這個計畫你能用一句話講完嗎？\n如果不行，就直接叫它縮短。\n然後，要是真的讀不懂怎麼辦？\n其實讀不懂不代表不能驗嘛。\n你可以要它先寫一個會失敗的測試。\n接著再想辦法讓它通過。\n這時候你要的不是更多解釋，\n而是更容易驗證的證據啦。",
+   "lint": {
+    "chars": 265,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 21,
+    "avg_sentence_len": 11.6,
+    "max_sentence_len": 24,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "而且鏡子還有一種歪法，是反過來的喔。\nAI 給你一份很長的計畫。\n你可能連看都沒看，就直接回一個 go。\n對它來說，這代表你完全同意了。\n這下換你成了那面歪掉的鏡子。<short pause>\n裡面的錯誤假設，全變成你點頭的前提。\n這種狀況其實超容易發生的吧？\n這份報告就建議，先叫它把假設列在最前面。\n而且最多只能列五條以內。\n放行前你想一下，你能用一句話講完計畫嗎？\n如果不行，那就叫它縮短。\n那要是真的讀不懂呢？<short pause>\n其實你不用逼它用白話解釋。\n直接叫它寫一個會失敗的測試。\n然後改到測試通過就好。\n這時候我們要的是證據，不是聽它解釋啦。",
+   "lint": {
+    "chars": 240,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 14.0,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "那要是真的讀不懂呢？<short pause>其實你不用逼它用白話解釋。直接叫它寫一個會失敗的測試。然後改到測試通過就好。這時候我們要的是證據，不是聽它解釋啦。",
+   "to": "那要是真的讀不懂呢？<short pause>你可以直接問，叫它換個說法。但更實在的是，叫它先寫一個會失敗的測試，再改到測試通過。讀不懂的時候，該要的不是更簡單的解釋，是更容易驗證的證據。",
+   "reason": "照素材：報告說換說法、直接問都可以，不是不用問"
+  }
+ ]
+}

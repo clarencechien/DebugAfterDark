@@ -1,0 +1,68 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -23.5,
+  "gain_db": 3.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_recap",
+  "lufs_before": -22.0,
+  "gain_db": 2.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_two_mirrors",
+  "lufs_before": -23.1,
+  "gain_db": 3.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_scold",
+  "lufs_before": -21.9,
+  "gain_db": 1.9,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_rot",
+  "lufs_before": -22.0,
+  "gain_db": 2.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_claudemd",
+  "lufs_before": -22.4,
+  "gain_db": 2.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_selfrules",
+  "lufs_before": -22.5,
+  "gain_db": 2.5,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_memory",
+  "lufs_before": -21.1,
+  "gain_db": 1.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_go",
+  "lufs_before": -20.4,
+  "gain_db": 0.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_swordsman",
+  "lufs_before": -21.7,
+  "gain_db": 1.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s10_outro",
+  "lufs_before": -20.4,
+  "gain_db": 0.4,
+  "lufs_after": -20.0
+ }
+]

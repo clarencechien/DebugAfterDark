@@ -1,0 +1,141 @@
+{
+ "segment": "s01_recap",
+ "position": "第 2 段，共 11 段",
+ "avoid": [],
+ "recap": "EP54〈測試全綠，AI 寫的就是你要的嗎？〉：上一集是鏡子篇第三篇：測試是校準儀器，全綠只代表程式碼跟規格一致，不代表規格是你要的。這集是延伸一；這段也要回顧 EP11〈八成要刪掉〉那份 2026 下半年 agent 生存指南，因為這集是同一季的第二本。",
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b854374369bcbefb43acd38dcbb68be5a3eec09a6a237c9d414ccefc2d381c3e",
+ "previous_context": "但為什麼我們平常寫 code，罵完真的越改越錯？想罵 AI 的那一刻，到底是哪裡壞了？",
+ "original": {
+  "text": "上一集是鏡子篇第三篇，講測試全綠只代表程式碼跟規格一致，不代表規格是你要的。這集是鏡子篇的延伸一。再往回，第十一集我們讀過一份 2026 下半年的 agent 生存指南，叫〈八成要刪掉〉。那集帶走三件事：先刪再加，舊模型的補丁現在是負債；看動作，不看解釋；還有一句被傳歪的話，「用久了它會越來越懂我」。今晚這份，是同一季的另一本生存指南，十月寫的。它問的是：模型已經變強、指令也刪了，為什麼還會想罵它？今晚講三件事：罵人碰到的是哪一面鏡子；爛掉的對話和太肥的說明檔；還有「它更懂我了」，其實是四本不同的帳。",
+  "lint": {
+   "chars": 249,
+   "precise_numbers": [
+    "十一",
+    "2026"
+   ],
+   "enumerations": [
+    "第三",
+    "第十一"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 34.6,
+   "max_sentence_len": 56,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上一集我們聊過，測試全綠只代表程式碼跟規格一致，但規格本身，根本不一定是你要的。這集就是鏡子篇的延伸喔。\n\n其實在第十一集，我們也讀過同一季的第一本生存指南。那時候大家發現，過去的 prompt 很多都是負債。還有那句用久了它會越來越懂你，根本是被大家傳歪了嘛。<short pause>\n\n那為什麼到了現在，我們寫 code 還是會想罵它？你猜問題出在哪？這份報告說，其實是我們的動作，把一面平的鏡子給壓歪了啦。我看到這個比喻真的覺得太傳神了。\n\n所以今晚，我們要來看三件事。第一，想罵人的時候，你到底照到了哪一面鏡子。然後，爛掉的對話跟太肥的說明檔要怎麼清。最後再來看，大家以為的變懂，背後其實是在算哪四本帳。",
+   "lint": {
+    "chars": 284,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [
+     "第十一",
+     "第一",
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 20.8,
+    "max_sentence_len": 39,
+    "sentences_over_20": 8,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集我們聊到，測試只是校準工具。全綠只代表符合規格，不代表規格是你要的。這集就是鏡子篇的延伸。其實在第十一集，我們讀過一份生存指南。當時聊到一句話，說用久了它會越來越懂你。結果根本是官方在底層換掉模型嘛。<laugh>那問題來了，模型明明變強了，你猜怎麼了？很多人寫 code，還是忍不住想開罵。<short pause>這到底碰到了哪一面歪掉的鏡子？今晚這份報告，是同一季的第二份指南。我們要來看三件事。罵人的瞬間，你到底碰到了哪面鏡子。然後是爛掉的對話，跟太肥的說明檔。最後來拆「它更懂我」，其實是四本帳喔。",
+   "lint": {
+    "chars": 236,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [
+     "第十一",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集我們聊到，測試全綠只代表跟規格一致。\n但規格到底是不是你要的，完全是另一回事。\n這集就是鏡子篇的延伸啦。\n其實在第十一集，我們也讀過同一季的指南。\n那時候說，很多舊指令現在早就變成負債了。\n大家常說它越來越懂我，其實也是自己腦補嘛。\n今晚這份是十月出的第二本指南。\n你猜它這次問什麼？\n既然模型都變強了，為什麼大家還是想罵它？\n我看到這個問題整個笑了出來。<laugh>\n今晚就來拆解三件事。<short pause>\n罵人的時候，你到底碰到了哪一面鏡子？\n然後是爛掉的對話，還有塞太肥的說明檔。\n最後來看，它變懂我到底是哪四本帳。",
+   "lint": {
+    "chars": 236,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [
+     "第十一",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "上一集我們聊到，測試只是校準工具。全綠只代表符合規格，不代表規格是你要的。這集就是鏡子篇的延伸。其實在第十一集，我們讀過一份生存指南。當時聊到一句話，說用久了它會越來越懂你。結果根本是官方在底層換掉模型嘛。<laugh>那問題來了，模型明明變強了，你猜怎麼了？很多人寫 code，還是忍不住想開罵。<short pause>這到底碰到了哪一面歪掉的鏡子？今晚這份報告，是同一季的第二份指南。我們要來看三件事。罵人的瞬間，你到底碰到了哪面鏡子。然後是爛掉的對話，跟太肥的說明檔。最後來拆「它更懂我」，其實是四本帳喔。",
+   "to": "上一集是鏡子篇第三篇：測試只是一台校準儀器，全綠只代表程式碼符合規格，不代表規格是你要的。這集是鏡子篇的延伸一。再往回一點，第十一集我們讀過一份 2026 下半年的 agent 生存指南，叫〈八成要刪掉〉。那集帶走三件事。第一，先刪再加，舊模型的補丁現在是負債。第二，看動作，不看解釋。第三，「用久了它會越來越懂我」是被傳歪的說法，模型會變，是官方在底層換掉了。<short pause>今晚這份，是同一季的第二本生存指南，十月寫的。模型變強了，指令也刪了，為什麼還是會想罵它？今晚看三件事：罵人的瞬間碰到哪一面鏡子；爛掉的對話跟太肥的說明檔；還有「它更懂我」，其實是四本帳。",
+   "reason": "EP11 回顧要講清楚那集三個重點（先刪再加、看動作不看解釋、越來越懂我是傳歪的），這是這集跟 EP11 連動的主軸；拿掉「你猜怎麼了」"
+  },
+  {
+   "from": "2026 下半年",
+   "to": "二〇二六下半年",
+   "reason": "年份用中文念法"
+  }
+ ]
+}

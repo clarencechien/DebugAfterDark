@@ -1,0 +1,129 @@
+{
+ "segment": "s06_elephant",
+ "position": "第 7 段，共 11 段",
+ "avoid": [
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "b4e956399c8fad589684c05dcff2679cb14cd1508ed8a86efc8bdd9052aba4c4",
+ "previous_context": "結果 AI 就寫出一堆語意空洞的斷言來過關。這份報告說，把指標組合起來，也只是提高遊戲難度，根本沒辦法讓這個遊戲消失啦。",
+ "original": {
+  "text": "那關著門，測得出房間裡有大象嗎？報告的回答很老實：光靠測試，測不出來。測試只回答你問的問題。全綠的意思是「沒有我測過的那種大象」，不是「沒有大象」。所以報告最重要的一句是：你沒辦法靠測試抓大象，只能把房間做小到大象進不來。約束，勝過偵測。Uncle Bob 清單裡最被低估的一項，就是依賴結構：事先規定什麼形狀不准存在，例如商業邏輯那一層引用了資料庫那一層，建置就直接失敗。AI 產一萬行你不讀沒關係，違反方向的架構根本過不了關。再補兩塊：挑重點抽樣讀，還有上線後的監控，大象最後總會出聲。",
+  "lint": {
+   "chars": 242,
+   "precise_numbers": [
+    "一萬"
+   ],
+   "enumerations": [],
+   "sentences": 9,
+   "avg_sentence_len": 25.9,
+   "max_sentence_len": 65,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那關著門，到底測不測得出房間裡的大象？\n這份報告說，光靠測試根本測不出來。<short pause>\n因為測試只回答你問的問題。\n測試全綠，只代表沒有你測過的大象，\n不代表裡面真的沒有大象耶。\n所以我很認同這份報告講的一句話：\n你沒辦法靠測試抓大象，\n你只能把房間做小，小到大象進不來。\n這就是約束勝過偵測。\n重點是事前定好規矩，\n像是不准業務邏輯去 import 資料庫，\n只要一踩到，CI 就直接讓你 build 失敗。<laugh>\nAI 就算寫了一萬行，你不看也沒差，\n反正違規的形狀根本過不了關嘛。\n然後再搭配重點抽樣，加上線後的監控，\n大象如果真的跑出來，最後總會出聲的啦。",
+   "lint": {
+    "chars": 252,
+    "precise_numbers": [
+     "一萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 27.0,
+    "max_sentence_len": 49,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那如果關著門，到底測不測得出大象？<short pause>\n這份報告說得很老實，光靠測試根本測不出來啦。\n因為測試只回答你問過的問題。\n測試全綠，只代表沒有你測過的那種大象。\n但這不等於沒有大象喔。\n我覺得這比喻真的超傳神的。\n你猜報告怎麼建議？\n既然抓不到大象，那就把房間做小。\n小到大象根本進不來嘛！\n重點來了，約束永遠比事後偵測有用。\n也就是事先規定好，什麼形狀不准存在。\n要是商業邏輯引用資料庫，build 就直接失敗。\n就算 AI 產了一萬行，架構錯了也過不了關。\n然後再補兩塊：挑高風險的地方抽樣看，\n還有上線後做好監控。\n反正大象最後總會出聲音的啦。",
+   "lint": {
+    "chars": 252,
+    "precise_numbers": [
+     "一萬"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 15.8,
+    "max_sentence_len": 27,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那關著門，到底測不測得出大象？\n這份報告很老實，光靠測試測不出來。\n因為測試只會回答你問過的問題嘛。\n測試全綠，只代表沒有你測過的大象，\n不等於房間裡真的沒有大象喔。\n我覺得這份報告有一句話超傳神，\n你沒辦法靠測試抓大象，\n只能把房間縮小，讓大象進不來。<short pause>\n其實這就是約束勝過偵測啦。\n像依賴結構就是最被低估的約束。\n你事前規定好不准出現的形狀，\n像是業務邏輯去引用了資料庫，\nbuild 就直接失敗。\n這樣 AI 產一萬行程式碼，你不讀也沒差，\n反正違規的架構根本過不了關。\n後面再補兩招，挑重點抽樣讀，\n然後上線後做好監控，大象總會出聲的。",
+   "lint": {
+    "chars": 252,
+    "precise_numbers": [
+     "一萬"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 24.2,
+    "max_sentence_len": 40,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "我覺得這比喻真的超傳神的。",
+   "to": "",
+   "reason": "Ping 沒有個人反應"
+  },
+  {
+   "from": "約束永遠比事後偵測有用。",
+   "to": "約束勝過偵測。",
+   "reason": "照素材，拿掉「永遠」"
+  }
+ ]
+}

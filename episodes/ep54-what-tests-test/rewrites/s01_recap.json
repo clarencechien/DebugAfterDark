@@ -1,0 +1,141 @@
+{
+ "segment": "s01_recap",
+ "position": "第 2 段，共 11 段",
+ "avoid": [],
+ "recap": "EP53〈AI 寫得越來越快，你的價值要放在哪？〉：上一集是鏡子篇下篇：判斷力要往右上角搬，寫成測試、自動檢查這些你自己的、一定會執行的東西，模型越強越值錢。這集是第三篇，問這些測試到底在量什麼；也接回 EP11 說的「養一組自己的回歸題」。",
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "3e77d34bfde8351f4e2fc81536670fe030b4e1ea1c1cbf2d9e3a50c93e3186a4",
+ "previous_context": "如果 spec 一開始就錯了呢？測試都過了，AI 寫的就真的是你要的嗎？",
+ "original": {
+  "text": "上一集是鏡子篇下篇，講你的判斷力要放在哪裡。答案是右上角那一格：測試、自動檢查，這些是你自己的、而且一定會執行，模型越強越值錢。再往回一點，第十一集讀 2026 下半年 agent 生存指南的時候，也說過要養一組自己的回歸題，就是固定的一組考題，每次覺得模型變了就跑一次。那這些檢查、這組考題，到底在量什麼？這集是鏡子篇第三篇，報告整理到今年七月，十一月重排版面，論點沒改。今晚講三件事：測試其實是一台校準儀器；房間裡的大象測不出來；還有 AI 像一個會自己填空的神燈精靈。",
+  "lint": {
+   "chars": 231,
+   "precise_numbers": [
+    "十一",
+    "2026",
+    "十一"
+   ],
+   "enumerations": [
+    "第十一",
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 37.5,
+   "max_sentence_len": 67,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上一集我們聊到鏡子篇下篇。\n那時候說要把判斷力搬到右上角。\n也就是測試跟自動檢查，模型越強越值錢。\n第十一集也提過，要養一組自己的回歸題。\n每次覺得模型變了，就跑一次看看。<short pause>\n但你有沒有想過，這些測試到底在量什麼？\n這集是鏡子篇第三篇，就是要聊這件事。\n我讀到這份報告的比喻，整個很有共鳴。\n測試其實只是一台校準儀器啦。\n重點來了，房間裡的大象根本測不出來。\n而且 AI 就像一個會自己填空的神燈精靈喔。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [
+     "第十一",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集我們聊到，要把判斷力往右上角搬。\n也就是寫成測試跟自動檢查。\n這些是你自己的東西，模型越強越值錢。\n對，第十一集也提過，你要養一組回歸題。\n每次覺得模型怪怪的，就跑一次看看。\n但你有沒有想過，這些測試到底在量什麼？\n它能量出 spec 對不對嗎？\n不行，完全量不到。\n其實這集是鏡子篇第三篇。\n我看到報告裡的比喻，覺得超貼切的。<short pause>\n今晚主要聊三件事啦。\n測試其實只是一台校準儀器。\n然後，房間裡的大象根本測不出來。\n最後，AI 是個會自己填空的神燈精靈喔。",
+   "lint": {
+    "chars": 214,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [
+     "第十一",
+     "第三"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集聊到鏡子篇下篇。我們說判斷力要搬到右上角，寫成測試跟自動檢查。因為這些是你自己的東西，模型越強它就越值錢。<short pause>然後第十一集也聊過，你要養一組自己的回歸題，也就是固定的一組考題嘛。每次覺得模型變了就跑一次。但你有沒有想過，這些檢查到底是在量什麼？真的能源頭解決問題嗎？對，這集是鏡子篇第三篇。我看到這篇分析整個起雞皮疙瘩。其實測試只是一台校準儀器啦。房間裡的大象根本測不出來。更扯的是，AI 還像個神燈精靈會自己填空喔。",
+   "lint": {
+    "chars": 209,
+    "precise_numbers": [
+     "十一"
+    ],
+    "enumerations": [
+     "第十一",
+     "第三"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 33,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "上一集我們聊到，要把判斷力往右上角搬。也就是寫成測試跟自動檢查。這些是你自己的東西，模型越強越值錢。對，第十一集也提過，你要養一組回歸題。每次覺得模型怪怪的，就跑一次看看。但你有沒有想過，這些測試到底在量什麼？它能量出 spec 對不對嗎？不行，完全量不到。其實這集是鏡子篇第三篇。我看到報告裡的比喻，覺得超貼切的。<short pause>今晚主要聊三件事啦。測試其實只是一台校準儀器。然後，房間裡的大象根本測不出來。最後，AI 是個會自己填空的神燈精靈喔。",
+   "to": "上一集是鏡子篇下篇，講判斷力要往右上角搬，也就是寫成測試跟自動檢查。這些是你自己的東西，而且一定會執行，模型越強越值錢。再往回一點，第十一集讀 agent 生存指南的時候，也說過要養一組自己的回歸題。每次覺得模型變了，就跑一次看看。<short pause>但這些測試、這組考題，到底在量什麼？這集是鏡子篇第三篇。報告整理到今年七月，十一月重新排版，論點沒改。今晚聊三件事。測試其實是一台校準儀器。房間裡的大象，測不出來。還有，AI 是個會自己填空的神燈精靈。",
+   "reason": "Ping 不用「上一集我們聊到」；拿掉個人反應「覺得超貼切」；答案不在回顧段先講（「完全量不到」留到 s03）；EP11 回顧講清楚出處；補報告時間"
+  },
+  {
+   "from": "報告整理到今年七月",
+   "to": "這份報告整理到今年七月",
+   "reason": "句首「報告」容易聽成「包括」（bare_report）"
+  }
+ ]
+}

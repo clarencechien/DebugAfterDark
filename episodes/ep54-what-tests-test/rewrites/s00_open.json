@@ -1,0 +1,124 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 11 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "332a5b738e8f30627f0d3719621b892f2c03ca2e635a25188a65d70da79ee59f",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "AI 幫你寫完一個功能，測試全部亮綠燈，你放心按下合併。可是全綠，到底證明了什麼？寫了《Clean Code》、推了幾十年測試先行的 Uncle Bob，二〇二六年公開說，他不審查 AI 寫的程式碼，只看測試覆蓋率、依賴結構這些指標。這句話逼出一個很基本的問題：測試到底在測什麼？什麼測得到，什麼測不到？這集回答：測試全綠，AI 寫的就是你要的嗎？",
+  "lint": {
+   "chars": 167,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 26.8,
+   "max_sentence_len": 70,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 4,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "AI 幫你寫完一個功能，測試全部亮綠燈，你放心按下 merge 啦。\n可是全綠，真的代表沒問題了嗎？\n推了幾十年 TDD 的 Uncle Bob，公開說他根本不讀 AI 寫的 code 了。\n其實他改看測試覆蓋率這類的指標。<short pause>\n我看到這句話真的愣了一下。\n如果連他都不讀 code，那測試到底是在測什麼？\n什麼測得到，什麼又測不到？\n所以這集我們就來聊，測試全綠，AI 寫的就真的是你要的嗎？",
+   "lint": {
+    "chars": 175,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 8,
+    "avg_sentence_len": 20.9,
+    "max_sentence_len": 35,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "AI 幫你寫完程式，測試全部亮綠燈。\n你真的敢直接 merge 嗎？\n推了幾十年 TDD 的 Uncle Bob，\n他在二〇二六年公開說，\n自己完全不讀 AI 寫的 code 耶。<short pause>\n那他看什麼？\n他其實只看測試覆蓋率這些指標。\n我看到這句話真的超震撼。<short pause>\n可是仔細想想，測試全綠到底證明了什麼？\n如果 spec 一開始就錯了呢？\n測試都過了，AI 寫的就真的是你要的嗎？",
+   "lint": {
+    "chars": 160,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 16.8,
+    "max_sentence_len": 44,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "AI 幫你寫完功能，測試全部亮綠燈。\n你是不是就放心按 merge 啦？\n可是測試全綠，到底證明了什麼？\n推了幾十年 TDD 的 Uncle Bob，\n他在二〇二六年說，\n他完全不讀 AI 寫的 code。\n他只看測試覆蓋率這些指標。\n其實我看到這段超震撼的。<short pause>\n然後這句話逼出一個很痛的問題：\n我們寫測試，到底是在測什麼？\n如果規格一開始就寫錯了呢？\n測試全綠，AI 寫的就真的是你要的嗎？",
+   "lint": {
+    "chars": 173,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 40,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "推了幾十年 TDD 的 Uncle Bob，他在二〇二六年公開說，自己完全不讀 AI 寫的 code 耶。",
+   "to": "寫了《Clean Code》、推了幾十年 TDD 的 Uncle Bob，在二〇二六年公開說，他不審查 AI 寫的 code 耶。",
+   "reason": "照素材：他說的是不審查；補上他是誰"
+  },
+  {
+   "from": "他其實只看測試覆蓋率這些指標。我看到這句話真的超震撼。",
+   "to": "他看測試覆蓋率、依賴結構這些指標。",
+   "reason": "Ping 沒有個人反應；照素材補依賴結構（s06 會收回來）"
+  },
+  {
+   "from": "AI 幫你寫完程式，測試全部亮綠燈。你真的敢直接 merge 嗎？寫了《Clean Code》、推了幾十年 TDD 的 Uncle Bob，在二〇二六年公開說，他不審查 AI 寫的 code 耶。<short pause>那他看什麼？他看測試覆蓋率、依賴結構這些指標。<short pause>可是仔細想想，測試全綠到底證明了什麼？如果 spec 一開始就錯了呢？測試都過了，AI 寫的就真的是你要的嗎？",
+   "to": "AI 幫你寫完一個功能，測試全部亮綠燈，你放心按下合併。過兩天你才發現，它做的不是你要的那個東西。程式沒寫錯，測試也全過，那到底是哪裡出了問題？<short pause>這份報告說，全綠只回答了一個很窄的問題。那測試到底在測什麼？什麼測得到，什麼測不到？這集回答：測試全綠，AI 寫的就是你要的嗎？",
+   "reason": "Clarence 11/26 問 EP54 跟 EP42 是否重疊：開場不再用 Uncle Bob 不讀 code（EP42 的開場），改用全綠卻不是你要的"
+  }
+ ]
+}
