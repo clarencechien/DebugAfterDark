@@ -60,10 +60,11 @@ def price(model, input_tokens, output_tokens):
     return (input_tokens or 0) / 1e6 * pin + (output_tokens or 0) / 1e6 * pout
 
 
-def log_gemini(tool, model, input_tokens=0, output_tokens=0, calls=1):
+def log_gemini(tool, model, input_tokens=0, output_tokens=0, calls=1, **extra):
+    """extra 會原樣寫進那一列，例如 batch=True、episode="ep56-..."。usd_est 一律照牌價（Batch 的折扣看帳單核對）。"""
     usd = price(model, input_tokens, output_tokens)
     _write({"service": "gemini", "tool": tool, "model": (model or "").removeprefix("models/"), "calls": calls,
-            "input_tokens": input_tokens or 0, "output_tokens": output_tokens or 0, "usd_est": round(usd, 6)})
+            "input_tokens": input_tokens or 0, "output_tokens": output_tokens or 0, "usd_est": round(usd, 6), **extra})
 
 
 def patch_gemini(tool):

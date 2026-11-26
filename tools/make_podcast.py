@@ -118,6 +118,48 @@ def tts(c, text, style, voice, path):
     return time.perf_counter() - t0, u.get("total_output_tokens")
 
 
+def tts_batch(c, items, poll_s=15, max_wait_s=6 * 3600):
+    """Batch API path (2026-11-26 cost experiment, docs/cost.md): send every take as one batch job, write the wavs and
+    sidecars like tts() does, and return. Same model and designed voice; Google bills Batch at a discount, but it is
+    asynchronous (a one-line probe took 160 s). items = [(text, style, voice, path)]. Takes that fail here are simply
+    not written, so the normal per-take loop afterwards regenerates them synchronously."""
+    reqs = [{"contents": [{"role": "user", "parts": [{"text": t, "speech_metadata": {"style": st}}]}],
+             "config": {"response_modalities": ["AUDIO"], "speech_config": {"voice_config": {"voice": v}}}}
+            for t, st, v, _ in items]
+    job = c.batches.create(model=TTS_MODEL, src=reqs)
+    print(f"batch {job.name}: {len(reqs)} takes submitted to {TTS_MODEL}", flush=True)
+    t0 = time.time()
+    while True:
+        job = c.batches.get(name=job.name)
+        state = str(job.state)
+        if state.endswith(("SUCCEEDED", "FAILED", "CANCELLED", "EXPIRED")):
+            break
+        if time.time() - t0 > max_wait_s:
+            sys.exit(f"batch {job.name} still {state} after {max_wait_s}s; rerun later with the same command (takes on disk are reused)")
+        time.sleep(poll_s)
+    print(f"batch {job.name}: {state} after {time.time() - t0:.0f}s", flush=True)
+    if not state.endswith("SUCCEEDED"):
+        return
+    tin = tout = n = 0
+    for (text, style, voice, path), r in zip(items, job.dest.inlined_responses or []):
+        if r.error or not r.response or not r.response.candidates:
+            print(f"  {path.name}: batch error {r.error}"); continue
+        part = r.response.candidates[0].content.parts[0]
+        data = part.inline_data.data
+        if "wav" in (part.inline_data.mime_type or ""):
+            path.write_bytes(data)
+        else:   # raw PCM (audio/L16;rate=24000)
+            with wave.open(str(path), "wb") as w:
+                w.setnchannels(1); w.setsampwidth(2); w.setframerate(24000); w.writeframes(data)
+        um = r.response.usage_metadata
+        tin += um.prompt_token_count or 0; tout += um.candidates_token_count or 0; n += 1
+        path.with_suffix(".meta.json").write_text(json.dumps({"model_requested": TTS_MODEL,
+            "model_served": (r.response.model_version or TTS_MODEL).removeprefix("models/"), "batch": job.name,
+            "voice": voice, "style": style, "text": text, "created": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())},
+            ensure_ascii=False, indent=1), encoding="utf-8")
+    usage_log.log_gemini("make_podcast", TTS_MODEL, tin, tout, calls=n, batch=True, batch_job=job.name)
+
+
 def served_model(wav):
     """model_served from the sidecar tts() wrote next to a take; None for takes made before 2026-11-20."""
     m = Path(wav).with_suffix(".meta.json")
@@ -200,6 +242,8 @@ def cmd_judge(a):
 
 
 def cmd_episode(a):
+    global TTS_MODEL
+    TTS_MODEL = a.model or TTS_MODEL
     c = client(); sc = load_script(a.script); d = seg_dir(a); d.mkdir(parents=True, exist_ok=True)
     vid = voice_id(a.voice); log = []
     # Selection runs Breeze on Modal next; start its container now (2026-11-10). Since 2026-11-22 Colab goes first
@@ -231,6 +275,12 @@ def cmd_episode(a):
             tp = p if (a.takes == 1 and not a.add_takes) else d / f"{s['id']}.take{k}.wav"
             jobs.append((s, k, tp, expected, style, force))
         plan.append(("new", (s, p, expected, ks)))
+
+    if a.batch:
+        todo = [(s["text"], style, vid, tp) for s, k, tp, expected, style, force in jobs if force or not tp.exists()]
+        if todo:
+            tts_batch(c, todo)
+        jobs = [(s, k, tp, expected, style, False) for s, k, tp, expected, style, force in jobs]   # reuse the batch output
 
     def run(job):
         s, k, tp, expected, style, force = job
@@ -412,7 +462,7 @@ if __name__ == "__main__":
     p = sub.add_parser("voices", help="refresh expire_time/model of designed voices in voices/registry.json"); p.add_argument("--dry-run", action="store_true")
     p = sub.add_parser("audition"); p.add_argument("--voices", default="")
     p = sub.add_parser("judge"); p.add_argument("files", nargs="+"); p.add_argument("--text"); p.add_argument("--out")
-    p = sub.add_parser("episode"); p.add_argument("--voice", required=True); p.add_argument("--retries", type=int, default=2); p.add_argument("--force", action="store_true"); p.add_argument("--only", default="", help="comma-separated segment ids to regenerate"); p.add_argument("--script", required=True, help="episodes/<ep>/script.json"); p.add_argument("--tag", default="", help="suffix for the segments folder and output, e.g. tw"); p.add_argument("--takes", type=int, default=1, help="takes per segment; keeps the one with fewest long pauses"); p.add_argument("--parallel", type=int, default=6, help="TTS calls in flight at once"); p.add_argument("--add-takes", type=int, default=0, help="with --only: render N more takes after the existing ones, leaving them untouched"); p.add_argument("--style", choices=["v1", "v2", "v3", "v4", "v5"], default="v5", help="v5 (default) = Taiwan Mandarin traits, amateur feel, clear tones; v2 = confident and rhythmic but drifts toward a broadcast accent; v3 = rhythmic and Taiwanese-leaning; v4 = v3 plus explicit Taiwan Mandarin phonetic traits and an amateur feel; v5 = v4 plus clear tones (in ep01_tw.json)")
+    p = sub.add_parser("episode"); p.add_argument("--voice", required=True); p.add_argument("--retries", type=int, default=2); p.add_argument("--force", action="store_true"); p.add_argument("--only", default="", help="comma-separated segment ids to regenerate"); p.add_argument("--script", required=True, help="episodes/<ep>/script.json"); p.add_argument("--tag", default="", help="suffix for the segments folder and output, e.g. tw"); p.add_argument("--takes", type=int, default=1, help="takes per segment; keeps the one with fewest long pauses"); p.add_argument("--parallel", type=int, default=6, help="TTS calls in flight at once"); p.add_argument("--model", default="", help="TTS model for this run, e.g. gemini-3.8-flash-lite-tts (cost experiment, docs/cost.md); default TTS_MODEL"); p.add_argument("--batch", action="store_true", help="first pass through the Batch API (cheaper, asynchronous); failed takes are redone synchronously"); p.add_argument("--add-takes", type=int, default=0, help="with --only: render N more takes after the existing ones, leaving them untouched"); p.add_argument("--style", choices=["v1", "v2", "v3", "v4", "v5"], default="v5", help="v5 (default) = Taiwan Mandarin traits, amateur feel, clear tones; v2 = confident and rhythmic but drifts toward a broadcast accent; v3 = rhythmic and Taiwanese-leaning; v4 = v3 plus explicit Taiwan Mandarin phonetic traits and an amateur feel; v5 = v4 plus clear tones (in ep01_tw.json)")
     p = sub.add_parser("master"); p.add_argument("--voice", required=True); p.add_argument("--script", required=True); p.add_argument("--tag", default="")
     p.add_argument("--ident", help="fixed ident audio inserted after the first segment (show/ident/ident.flac)")
     p.add_argument("--out", help="output mp3, default out/<episode>_<voice>_<tag>.mp3")

@@ -1,2 +1,3 @@
 google-genai>=2.25.0
 numpy>=1.26
+modal[api-proxy-support]   # Breeze on a Modal GPU, the second half of the Colab+Modal pool (stt_check --asr breeze-cloud)
