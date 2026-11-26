@@ -13,11 +13,12 @@ Credentials: Modal reads MODAL_TOKEN_ID / MODAL_TOKEN_SECRET. In this cloud envi
 `modal_secret`; transcribe_remote() maps them. The session reaches Modal through the HTTPS proxy, which needs
 `pip install 'modal[api-proxy-support]'` (python-socks).
 """
-import os
+import os, sys
 
 import modal
 
 APP = "dad-breeze"
+MODAL_USD_PER_GPU_S = 0.80 / 3600   # L4 list price, about US$0.80/h (2026-11); the account has US$30/month credit
 MODEL_DIR = "/model/breeze-asr-25-ct2-int8"
 
 image = (
@@ -91,12 +92,12 @@ def transcribe_remote(paths, beam=5, batch=12, timeout=600):
     paths = [Path(p) for p in paths]
     groups = [[(p.stem, p.read_bytes()) for p in paths[i:i + batch]] for i in range(0, len(paths), batch)]
     cls = modal.Cls.from_name(APP, "Breeze")
-    res, failed = {}, []
+    res, failed, gpu_total = {}, [], 0.0
     calls = [(g, cls().transcribe.spawn(g, beam)) for g in groups]
     for g, call in calls:
         for attempt in range(2):   # 2026-11-07: one run hung with nothing sent; bound each batch and retry it once
             try:
-                r = call.get(timeout=timeout); gpu = r.pop("__gpu_s", None); r.pop("__load_s", None); res.update(r)
+                r = call.get(timeout=timeout); gpu = r.pop("__gpu_s", None); r.pop("__load_s", None); res.update(r); gpu_total += gpu or 0
                 # 2026-11-10: selection took 2 to 10 minutes on Modal while local features took 44 s; log where it goes
                 print(f"  breeze-modal batch of {len(g)}: done {time.perf_counter() - t_start:.0f}s after start, GPU {gpu}s")
                 break
@@ -106,6 +107,13 @@ def transcribe_remote(paths, beam=5, batch=12, timeout=600):
                     call = cls().transcribe.spawn(g, beam)
                 else:
                     failed += [n for n, _ in g]
+    try:   # usage for the factory dashboard: GPU seconds against the US$30/month credit (idle scaledown time not included)
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import usage_log
+        usage_log._write({"service": "modal", "gpu_s": round(gpu_total, 1), "wall_s": round(time.perf_counter() - t_start, 1),
+                          "files": len(paths), "usd_est": round(gpu_total * MODAL_USD_PER_GPU_S, 4)})
+    except Exception:
+        pass
     if failed:   # never lose a run to the network: transcribe what Modal could not on this machine, same model and settings
         import stt_check as S
         S.ASR = "breeze"

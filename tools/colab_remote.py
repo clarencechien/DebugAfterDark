@@ -25,7 +25,11 @@ import time
 import uuid
 from pathlib import Path
 
-GPUS = ("L4", "A100")   # T4 picked a different take in 3 of 19 segments (docs/colab-vs-modal.md); Modal is the next fallback
+# T4 picked a different take in 3 of 19 segments (docs/colab-vs-modal.md); Modal is the next fallback.
+# 2026-11-26 pool (docs/cost.md): Colab CU are the Google AI Pro monthly grant and Modal has US$30/month credit, so both
+# are free up to their quota. A100 burns 6.73 CU/h against L4's 1.94, and when two episode threads select at once
+# Colab refuses the second L4 anyway, so with Modal configured go straight to Modal instead of taking an A100.
+GPUS = ("L4",) if os.environ.get("modal") else ("L4", "A100")
 CHUNK = 40 * 1024 * 1024
 HERE = Path(__file__).resolve().parent
 

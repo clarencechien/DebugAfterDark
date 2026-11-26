@@ -342,6 +342,7 @@ python3 tools/match_voice.py track episodes/<ep>   # 聲紋跟參考錄音比，
 
 加上第 1、3 步 agent 自己的寫稿和核對時間，以及補生成、重挑的回合（每回合約 2 到 4 分鐘）。
 以前慢在三件事：生成和改寫一個一個等、Breeze 在 4 核 CPU 上轉寫、驗收又把選中的那次轉寫一遍。
+實際用量和各步驟的替代 API 見 [`cost.md`](cost.md)（2026-11-26）。
 Modal 費用以 Modal 後台帳單為準。EP02 的實際數字見 `episodes/ep02-harness-probe/README.md`。
 
 ## 替代方案

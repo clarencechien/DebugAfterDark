@@ -164,6 +164,8 @@ def whisper_transcribe(paths):
 GEMINI_PROMPT = ("請逐字聽寫這段台灣華語音檔。只輸出你聽到的文字，用繁體中文，數字照念出來的寫成中文。"
                  "聽不清楚或不確定的字，用［?］代替，不要猜。不要加任何說明。")
 
+GEMINI_MODEL, GEMINI_THINKING = "gemini-3.8-flash", -1   # -1 = the model's default thinking
+
 def gemini_transcribe(paths):
     from google import genai
     from google.genai import types
@@ -172,14 +174,19 @@ def gemini_transcribe(paths):
         usage_log.patch_gemini("stt_check")
     except ImportError:
         pass
-    c = genai.Client(api_key=os.environ.get("GEMINI_API_KEY") or os.environ["gemini_key"])
+    # --gemini-model / --gemini-thinking: cost experiment 2026-11-26 (docs/cost.md). Other models such as
+    # gemini-3.5-transcribe exist only on v1beta; the default path stays on v1 as before.
+    opts = {"http_options": {"api_version": "v1beta"}} if GEMINI_MODEL != "gemini-3.8-flash" else {}
+    c = genai.Client(api_key=os.environ.get("GEMINI_API_KEY") or os.environ["gemini_key"], **opts)
+    cfg = types.GenerateContentConfig(temperature=0, **({"thinking_config": types.ThinkingConfig(thinking_budget=GEMINI_THINKING)}
+                                                      if GEMINI_THINKING >= 0 else {}))
     def one(p):
         text, mv = None, None
         for attempt in range(3):   # an empty reply (r.text is None) crashed EP10's check on 2026-11-07; retry, then record it
             try:
-                r = c.models.generate_content(model="gemini-3.8-flash",
+                r = c.models.generate_content(model=GEMINI_MODEL,
                       contents=[types.Part.from_bytes(data=p.read_bytes(), mime_type="audio/wav"), GEMINI_PROMPT],
-                      config=types.GenerateContentConfig(temperature=0))
+                      config=cfg)
                 text, mv = r.text, r.model_version
             except Exception as e:   # network resets through the proxy happen; one bad call should not lose the report
                 print(f"  gemini  {p.stem}: attempt {attempt + 1} failed: {type(e).__name__}")
@@ -260,7 +267,9 @@ def main(a):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); ap.add_argument("--script", required=True); ap.add_argument("--segments", required=True)
     ap.add_argument("--out"); ap.add_argument("--from-select", action="store_true", help="take the local recogniser's transcripts of the chosen takes from <segments>/select_log.json instead of transcribing again"); ap.add_argument("--reuse", help="report JSON from an earlier run; skips transcription")
+    ap.add_argument("--gemini-model", default="gemini-3.8-flash", help="blind transcriber, e.g. gemini-3.5-transcribe (cost experiment, docs/cost.md)")
+    ap.add_argument("--gemini-thinking", type=int, default=-1, help="thinking budget for the Gemini transcriber; 0 = off (11/26: same CER, about half the cost), -1 = model default")
     ap.add_argument("--beam", type=int, default=5, help="beam size for the local recogniser (1 = greedy)")
     ap.add_argument("--asr", choices=list(ASR_MODELS), default="whisper", help="local recogniser: whisper large-v3-turbo or Breeze-ASR-25")
-    a = ap.parse_args(); ASR = a.asr; BEAM = a.beam
+    a = ap.parse_args(); ASR = a.asr; BEAM = a.beam; GEMINI_MODEL = a.gemini_model; GEMINI_THINKING = a.gemini_thinking
     main(a)
