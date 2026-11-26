@@ -1,0 +1,121 @@
+{
+ "segment": "s03_calibration",
+ "position": "第 4 段，共 11 段",
+ "avoid": [
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "acf48e9804351fec71e6c835b868d37753fd033c85faee4e311d1781dabf5791",
+ "previous_context": "而且說真的，不看 code 就真的變快了嗎？這其實只是他的感覺，完全沒被實測過啦。",
+ "original": {
+  "text": "那測試的本質是什麼？標準答案是找 bug，報告說那只是現象。真正的本質是：你手上有同一個意圖的兩份寫法，一份是規格，一份是程式碼，測試量的是這兩份一不一致。所以它是校準儀器，不是品質證明書。軟體工程有一對老詞把這切開。verification，驗證，問的是東西有沒有照規格做對，兩邊都是寫死的東西，測得到。validation，確效，問的是做的是不是對的東西，規格對不對得起需求，對不對得起你心裡想的。這一邊測不到，只能校準。從你腦袋裡的想法，到文字、到規格、到程式碼，測試只管最後那一段。",
+  "lint": {
+   "chars": 244,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 9,
+   "avg_sentence_len": 26.1,
+   "max_sentence_len": 47,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "大家平常寫測試，都覺得是為了找 bug 對吧？\n其實找 bug 只是表面現象而已。\n那測試真正的本質到底是什麼？\n這份報告說，它其實是一台校準儀器。\n你想想看，你手上其實有兩份東西。\n一份是 spec，另一份是 code。\n測試只是在量這兩邊有沒有兜得起來。\n所以它根本不是什麼品質保證書喔。\n這比喻真的超貼切的。\n軟體工程有一對老詞把這件事切開。\n一個是 verification。\n它問的是，東西有沒有照規格做對。\n因為規格跟 code 都是寫死的，這測得到。\n另一個是 validation。\n它問的是，你有沒有做出對的東西。\n規格到底有沒有忠於你心裡想的？\n老實說，這根本測不到耶。<short pause>\n從你心裡的想法，到規格，最後寫成 code。\n測試其實只罩得住最後那一段而已啦。",
+   "lint": {
+    "chars": 307,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 19,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以我們來聊聊測試這件事。你平常寫測試是為了什麼？標準答案通常是找 bug 嘛。<short pause>但這份報告說，找 bug 只是表面現象。那測試真正的本質是什麼？其實它就像一台校準儀器。你手上有同一個意圖的兩份寫法，一份是 spec，一份是 code。測試只是在量這兩份一不一致，它根本不是什麼品質證明書喔。軟體工程有一對老詞把它切開。一個是 verification，問的是東西有沒有照規格做對。兩邊都是寫死的東西，完全測得到。重點來了，另一個叫 validation。它問的是，你做的到底是不是對的東西？規格有沒有符合需求？有沒有符合你心裡想的？這件事完全測不到，只能校準。<sigh>從你腦袋裡的想法一路到 code，測試其實只管得到最後那一小段而已啦。",
+   "lint": {
+    "chars": 306,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 17.0,
+    "max_sentence_len": 33,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以回頭想想，我們為什麼要寫測試？\n標準答案通常是找 bug 對吧？\n其實報告裡說，找 bug 只是表面現象。\n測試真正的本質，其實是校準儀器。\n它量的是 spec 跟 code 有沒有一致。\n軟體工程有一對老詞，把這件事切開。\n一個是 verification。<short pause>\n問的是 code 有沒有照著 spec 寫。\n因為兩邊都寫出來了，這完全可測。\n但另一個是 validation。\n它問這份規格，到底是不是你心裡想的？\n這一段根本測不到，只能校準。<short pause>\n這點真的很有共鳴耶。\n從你的想法、文字、規格，一路到 code。\n測試能管到的，其實只有最後那一段而已啦。",
+   "lint": {
+    "chars": 249,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 15.6,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "這比喻真的超貼切的。",
+   "to": "",
+   "reason": "Ping 沒有個人反應"
+  },
+  {
+   "from": "老實說，這根本測不到耶。",
+   "to": "這一邊測不到，只能校準。",
+   "reason": "照素材：validation 只能校準"
+  }
+ ]
+}

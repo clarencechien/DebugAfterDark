@@ -1,0 +1,16 @@
+「它更懂我了」這句話在 2026 年 10 月有四個不同的意思，而且彼此不通。先把帳本分清楚，再談要不要整理。
+帳本 記什麼、誰寫 範圍 怎麼看、怎麼改
+claude.ai 記憶 關於 你 ：偏好、背景、進行中的事。Claude 在對話中持續寫，不再等對話結束才摘要 chat 與 雲端 Cowork 共用，本機 Cowork 不算；每個 Project 各自獨立 [29] Settings 裡逐條讀、改、刪，或直接跟它說要記或忘
+Claude Code auto memory 關於 這個 repo ：你的糾正、專案決策、外部資源在哪。Claude 在 session 中寫 單一機器 × 單一 repo ，在 ~/.claude/projects/<repo>/memory/ ；官方原話「not shared across machines or cloud environments」 [6] /memory 開資料夾，就是普通 md； MEMORY.md 只載入前 200 行或 25KB
+Projects 記憶（雲端） 關於 這個 project ：需求、決策、坑。各雲端 thread 寫 Project 內所有雲端 thread 共用；官方明說它「跟本機 auto memory 是分開的，雖然都用 MEMORY.md 索引」；Pro/Max 公測中 [26] Project settings › Memory 讀改刪
+CLAUDE.md 專案規則。 你 寫 跟著 git 走，是唯一所有 surface 都走得到的一本 自己編輯； /doctor prompt-audit
+所以在 claude.ai 聊過的東西，CLI 不知道；CLI 在筆電上記的，雲端 session 看不到；雲端 Project 記的，本機又看不到。官方目前沒有任何一份文件說要把這四本合起來，chat 和 Cowork 那一本也是 2026 年 8 月底才剛合併 [30] 。
+要自己整合嗎
+不建議硬做同步。四本帳的分工其實有道理：一本記你是誰，一本記這個 repo 的眉角，一本記這個 project 的決策，真正重疊的只有「你的個人偏好」那一層。處理方式：跨所有 repo 的偏好放 ~/.claude/CLAUDE.md ；要讓雲端也看得到的東西，只能進 repo 的 CLAUDE.md 或 git 裡的檔案。想把 auto memory 進版控，可以用 autoMemoryDirectory 把它指到一個 git 資料夾 [6] ，代價是多台機器會衝突，而且第 04 節的問題會跟著來：Claude 自己寫的筆記沒人審就進了 repo。
+▸ git 就是你的整合層。不需要另一套同步機制。
+把 dream 當成已經在幫你整理，於是從不打開 /memory 看。記憶肥大跟 CLAUDE.md 肥大不一樣：CLAUDE.md 的代價是稀釋，記憶的代價是 過時的事實被很有自信地套用 。它照出的是三個月前的你，而且照得很有把握。
+對策
+把 dream 當作「有也好，沒有也不靠」。claude.ai 記憶每季掃一次，auto memory 在 repo 換大方向時掃一次。刪：已放棄的構想、「正在做」「下週要」這類會過期的狀態、散在兩處的重複。留：偏好、穩定背景、仍在跑的專案、 已經做過的決定 。決定比過程有價值。
+
+【EP11 的稿子】
+這份報告最後還整理了十六條被傳歪的說法。很多根本是大家自己腦補出來的。像是 Astra 比較便宜？假的，跟 Claude 價格完全一樣啦。或是打 API 會有長期記憶？也是假的，對話一結束，背後的容器就直接拆掉了。最扯的是那句：用久了它會越來越懂我。這份報告說，模型確實變了。<short pause>但不是因為你，是官方在底層把它換掉了！<laugh> 聽起來超諷刺對吧？大家很容易把順口的故事，當成是真的證據。但做決定前，還是要自己去看原始資料喔。

@@ -1,0 +1,154 @@
+{
+ "segment": "s05_claudemd",
+ "position": "第 6 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "2d7bf2e368d6c6587ea6e8f0c923f26ba20ea5237e9745d499487b217f72ecd0",
+ "previous_context": "你一定會花點時間，寫一頁清楚的交接。面對 Claude，其實更需要你這樣做喔。",
+ "original": {
+  "text": "第二個想罵的瞬間：「它根本沒讀我的說明檔。」報告先對齊一件事：在 Claude Code 裡，只有 CLAUDE.md 這類檔案會自動載入，資料夾裡其他的說明檔，要用到才會去開。官方建議每個 CLAUDE.md 控制在兩百行以內，每一行都問：拿掉這行，它會不會犯錯？不會就刪。今年二月，蘇黎世聯邦理工學院一篇論文測了幾套寫程式的 AI：讓模型自己生成的說明檔，成功率反而小幅下降，花的錢還多了兩成左右；開發者手寫的，平均才有一點幫助。逐檔介紹架構的那些字，根本不會讓它更快找到檔案。可是寫進去的指令，它真的會照做；寫錯了、過時了，它也照做。又是第十一集那句：先刪再加。",
+  "lint": {
+   "chars": 276,
+   "precise_numbers": [
+    "兩百",
+    "十一"
+   ],
+   "enumerations": [
+    "第二",
+    "第十一"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 33.5,
+   "max_sentence_len": 77,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你應該也遇過這種狀況吧？<short pause>就是覺得它根本沒讀說明檔。其實在 Claude Code 裡面，只有 CLAUDE.md 會自動載入喔。其他檔案它是需要才去開的。官方建議這個檔案最多兩百行就好。每寫一行都要問：拿掉這行它會犯錯嗎？不會的話就直接刪掉。然後今年二月有一篇論文，測了幾組寫程式的 AI。讓 AI 自己產生的說明檔有用嗎？完全沒有。成功率稍微掉了，花的錢還多了兩成左右。<sigh>逐檔介紹架構那些字，根本沒幫上忙。最厲害的是，寫進去的指令它真的會照做。就算你寫錯或過時了，它也照樣執行。我看到這邊真的很能體會。所以就像第十一集講的，先把廢話刪乾淨，再來想加什麼啦。",
+   "lint": {
+    "chars": 270,
+    "precise_numbers": [
+     "兩百",
+     "十一"
+    ],
+    "enumerations": [
+     "第十一"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 33,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "但你是不是也常抱怨？\n覺得 AI 根本沒讀你的說明檔。<sigh>\n其實這多半是誤會啦。\n在 Claude Code 裡面，\n只有 CLAUDE.md 會自動載入。\n其他資料夾裡的檔案，\n它是需要時才會去開。\n官方建議把說明檔控制在兩百行以內。\n你可以每行都問自己：\n拿掉這行，Claude 會犯錯嗎？\n不會的話，就直接刪掉吧。\n然後蘇黎世聯邦理工學院有篇論文，\n測了幾套寫程式的 AI。\n那結果怎麼樣？\n讓模型自己生說明檔，成功率反而微幅下降。\n而且花的錢，還多出兩成左右。<short pause>\n只有工程師手寫的，平均才好一點點。\n最驚人的是，逐檔介紹架構根本沒用。\nAI 找檔案完全沒有變快嘛。\n可是你寫進去的指令，它真的會照做喔。\n寫對了會執行，寫錯或過時了，它也照樣做。\n所以這份報告說，只要寫最低限度的需求。\n就像第十一集講的，先刪乾淨再說啦。",
+   "lint": {
+    "chars": 329,
+    "precise_numbers": [
+     "兩百",
+     "十一"
+    ],
+    "enumerations": [
+     "第十一"
+    ],
+    "sentences": 19,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "但很多人常遇到一個狀況，就是覺得它根本沒讀說明檔。其實在 Claude Code 裡，只有 CLAUDE.md 會自動載入喔。其他放在資料夾裡的檔案，它是真的需要時才會去翻。所以它不是偷懶，是大家期待有落差啦。<laugh>那說明檔到底要寫多少？官方建議控制在兩百行以內。每一行你都要問自己：拿掉這行，它真的會犯錯嗎？不會的話就直接刪掉。今年二月有篇論文測了幾款 AI。讓 AI 自己去生成說明檔，結果花費多了兩成，成功率居然還稍微往下掉。<short pause>逐檔說明的專案架構，對它找檔案根本沒有幫助。但寫進去的指令，它真的會照做喔。就算寫錯或是過時了，它也照樣執行。我看到這個結論真的很能體會。這完全呼應了第十一集講的那句話。想要把它用好，先刪再加就對了。",
+   "lint": {
+    "chars": 305,
+    "precise_numbers": [
+     "兩百",
+     "十一"
+    ],
+    "enumerations": [
+     "第十一"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 18.1,
+    "max_sentence_len": 32,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "官方建議這個檔案最多兩百行就好。",
+   "to": "官方建議這個檔案控制在兩百行以內。",
+   "reason": "照素材"
+  },
+  {
+   "from": "最厲害的是，",
+   "to": "可是，",
+   "reason": "「最厲害的是」語氣不對：照做錯的指令是風險"
+  },
+  {
+   "from": "我看到這邊真的很能體會。",
+   "to": "",
+   "reason": "Ping 沒有個人反應"
+  },
+  {
+   "from": "逐檔介紹架構那",
+   "to": "一個檔一個檔介紹架構的那",
+   "reason": "兩套辨識都聽錯「逐檔」"
+  }
+ ]
+}

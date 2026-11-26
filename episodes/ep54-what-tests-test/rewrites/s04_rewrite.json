@@ -1,0 +1,193 @@
+{
+ "segment": "s04_rewrite",
+ "position": "第 5 段，共 11 段",
+ "avoid": [
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ac6f06d4a58539db4dc6123d770da4ae185532bfcb886a5fa1756aca9b885216",
+ "previous_context": "從你心裡的想法，到規格，最後寫成 code。測試其實只罩得住最後那一段而已啦。",
+ "original": {
+  "text": "報告接著講一個關鍵的改寫：測不測得到，是你怎麼說這件事的性質，跟問題本身無關。它舉投資回測的例子。回測時，算某一天的訊號，不小心用到那天之後才有的資料，叫前視偏誤，回測很漂亮，真的下場就賠錢。「這個策略應該賺多少」，沒有標準答案，永遠測不到。可是「某一天的訊號，是不是只用到那天以前的資料」完全測得到：在資料最後面多加一筆未來的資料，重跑一次，過去每一天的訊號都要一模一樣。有一點不同，就是偷看了未來。同一個擔心，換個說法，就從測不到變成測得到。報告說，工程功力有一大部分就是這個改寫。",
+  "lint": {
+   "chars": 243,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 29.4,
+   "max_sentence_len": 65,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 1,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那怎麼把不能測的東西變得能測呢？\n這份報告舉了一個很經典的例子。<short pause>\n做投資策略時，最怕不小心偷看到未來。\n回測看起來超漂亮，真的下場卻賠慘了。\n如果你想測這個策略到底該賺多少？<short pause>\n你猜測得到嗎？根本測不到嘛。\n因為這世界上根本沒有標準答案。\n但是，如果換一個問法呢？\n改成測訊號有沒有偷偷用到明天的資料。\n這就完全測得到了，而且方法超聰明。\n你在資料最後面塞一筆新資料，全部重跑。\n只要過去的訊號有一點變動，就是偷看。\n你看，同一個問題，換個說法就能測了。\n這招真的超神，完全不用知道標準答案。\n這份報告說，工程功力有一半都在這種改寫啦。",
+   "lint": {
+    "chars": 253,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 14.8,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以報告裡說了一個超酷的觀念。\n一個東西能不能測，取決於你怎麼描述它。\n報告裡舉了投資回測當例子。\n你算某一天的買賣訊號。\n結果不小心偷看了未來的資料。\n這叫做前視偏誤。\n回測看起來賺翻，真的下場就賠很慘。\n那你要怎麼測？\n如果你問，這個策略應該賺多少錢？\n這題永遠測不了，因為根本沒有標準答案嘛。\n可是換個問法呢？\n昨天的訊號，有沒有偷看今天的資料？\n欸，這就完全測得出來了。\n你在資料最後塞一筆未來資料，然後重跑。\n只要昨天的訊號有一點不同。\n就代表它偷看了未來。<short pause>\n你看，同一個擔心，換個說法就能測了。\n這份報告說，工程功力很大一部分，\n就是把測不到的擔心，改寫成測得到的檢查啦。",
+   "lint": {
+    "chars": 274,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 36,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "這份報告提出一個很漂亮的觀念。\n東西測不測得到，其實是你怎麼說這件事。\n它舉投資回測當例子。\n回測很漂亮，真的下場卻賠慘，你猜為什麼？<short pause>\n因為算訊號的時候，不小心偷看了未來的資料。\n如果你的問題是，策略到底該賺多少？\n這根本沒有標準答案，永遠測不出來。\n但如果你換個方式問呢？\n今天的訊號，有沒有用到明天以後的資料？\n這個就完全測得到啦。\n作法超聰明，在資料最後面多塞一筆未來資料。\n重跑一次，過去每一天的訊號都要一模一樣。\n只要有一點不同，就是偷看未來了。\n<laugh> 這招真的很有意思。\n同一個擔心，換個說法就測得到了。\n所以工程師的功力，其實就在這種改寫上面。",
+   "lint": {
+    "chars": 261,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以，東西到底能不能測？\n其實關鍵在你怎麼描述。\n跟問題本身完全無關。\n這份報告舉了一個很經典的例子。<short pause>\n你在做投資回測的時候，最怕偷看答案。\n也就是不小心用到未來的資料，這叫前視偏誤。\n回測數字超漂亮，真的拿去跑就賠慘了。\n那要怎麼測？\n如果你問，這個策略應該賺多少錢？\n根本沒有標準答案，永遠測不出來嘛。\n可是重點來了，如果換個問法呢？\n你問過去的訊號有沒有偷看未來？\n這個就完全測得到了喔。<short pause>\n做法超聰明。\n你在資料最後面塞一筆新資料，重跑一次。\n過去算出來的結果，是不是都要一模一樣？\n只要有一點點不同，就代表你偷看了未來。\n你看，換個說法，不可測就變可測了。\n這份報告說，工程師的功力，\n其實很大一部分，就在這種改寫上面啦。",
+   "lint": {
+    "chars": 296,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 19,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 30,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 6,
+    "tags": 2
+   },
+   "round": 1,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以東西到底測不測得到？\n這份報告說了一個很厲害的觀點。\n測不測得到，其實是看你怎麼問，\n跟問題本身根本沒有關係。\n它舉了投資回測當例子。<short pause>\n如果你不小心偷看了未來的資料，\n回測看起來超漂亮，真的下場賠很慘。\n那這要怎麼測？\n「策略應該賺多少」這件事，\n永遠沒有標準答案，測不到嘛。\n可是如果換一個問法呢？\n「今天的訊號，有沒有偷看明天的資料？」\n這個就完全測得到喔。\n做法超聰明。\n你在資料尾巴塞一筆新資料，\n然後整套重跑一次。\n過去算出來的結果，必須完全一模一樣。\n只要有一點不同，就是偷看未來。<laugh>\n我讀到這段真的覺得太神了。\n同一個擔心，換個描述就完全測得到了。\n工程功力很大一部分，就在這個改寫啦。",
+   "lint": {
+    "chars": 281,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 15.5,
+    "max_sentence_len": 31,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 1,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那要怎麼把測試範圍變大？\n關鍵就在於你怎麼問問題。\n這份報告提到一個超棒的觀念。\n能不能測試，完全看你怎麼描述它。\n像是寫投資策略的回測。\n如果你問，這個策略應該賺多少錢？<short pause>\n這根本沒有標準答案，永遠測不出來。\n但如果換個問法呢？\n你可以問，今天的訊號有沒有偷看明天？\n這就完全測得到了喔。\n你猜要怎麼測？\n在最後塞一筆未來資料，然後重跑一次。\n要是過去的訊號變了，就代表它偷看了嘛。\n我讀到這一段覺得超精闢的。\n同一個擔心，換個說法就變可測了。\n其實工程功力，很大一部分就在這個改寫啦。",
+   "lint": {
+    "chars": 228,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 13.2,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 1,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 1
+   },
+   "round": 1,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 4,
+ "manual_edits": [
+  {
+   "from": "做法超聰明。你在資料尾巴塞一筆新資料，",
+   "to": "做法是這樣。你在資料尾巴塞一筆未來的資料，",
+   "reason": "Ping 沒有個人反應；照素材：加的是未來的資料"
+  },
+  {
+   "from": "<laugh>我讀到這段真的覺得太神了。",
+   "to": "",
+   "reason": "Ping 沒有個人反應"
+  }
+ ]
+}

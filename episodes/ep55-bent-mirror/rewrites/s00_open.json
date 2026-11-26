@@ -1,0 +1,113 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 11 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "279860f4f0094dea3541d6e43069be54299b39e766e19b879630b2f3f88d3d84",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "你跟 AI 改同一個 bug，改到第三輪，越改越錯，你終於打出：「又錯了！」很多人說，你罵它，它會變笨。可是賓州州立大學有一組研究，用不同客氣程度的問法去考同一個模型，結果粗魯的那一端，答對率反而小幅領先。作者自己也說樣本小，不建議推廣。那為什麼實際用起來，罵完真的會越改越錯？這集回答：想罵 AI 的那一刻，到底是哪裡壞了？",
+  "lint": {
+   "chars": 158,
+   "precise_numbers": [],
+   "enumerations": [
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 25.3,
+   "max_sentence_len": 50,
+   "sentences_over_20": 3,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "你跟 AI 改同一個 bug，\n改到第三輪越改越錯。<sigh>\n你終於忍不住打出：又錯了！\n很多人常說，罵 AI 它會變笨。\n但其實有研究測過，\n問法粗魯的那一組，\n答對率反而還稍微高一點點耶。\n我看到這份研究也是愣了一下。\n那為什麼大家實際用起來，\n罵完真的越改越錯？<short pause>\n你猜它怎麼了？\n它其實不是變笨，是直接舉白旗投降。\n想罵 AI 的那一刻，到底是哪裡壞了？",
+   "lint": {
+    "chars": 157,
+    "precise_numbers": [],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 9,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "你跟 AI 改同一個 bug，越改越錯。\n你終於忍不住吼它：又錯了！\n很多人說，罵 AI 它會變笨。\n但真的是這樣嗎？\n其實賓州州大做過研究，\n用粗魯語氣去問，答對率反而高一點點耶。\n我看到這個結果超意外。<laugh>\n雖然研究團隊說，這只是小樣本啦。\n那為什麼大家平常罵完，真的越改越錯？\n你猜它怎麼了？\n它不是變笨，是直接向你投降了。<short pause>\n想罵 AI 的那一刻，到底是哪裡壞了？",
+   "lint": {
+    "chars": 165,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 14.0,
+    "max_sentence_len": 29,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "你跟 AI 改同一個 bug。\n改到第三輪，越改越錯。\n<sigh> 你是不是也忍不住敲出「又錯了」？\n很多人都說，罵 AI 會讓它變笨。\n其實賓州州立大學做過研究喔。\n他們用客氣跟粗魯的語氣去測模型。\n你猜結果怎樣？\n粗魯的那組，答對率反而小幅領先耶。<laugh>\n雖然作者自己也說樣本太小啦。\n但為什麼我們平常寫 code，罵完真的越改越錯？\n想罵 AI 的那一刻，到底是哪裡壞了？",
+   "lint": {
+    "chars": 162,
+    "precise_numbers": [],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 13.7,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2
+}

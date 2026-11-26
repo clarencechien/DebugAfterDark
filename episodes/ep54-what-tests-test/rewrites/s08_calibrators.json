@@ -1,0 +1,130 @@
+{
+ "segment": "s08_calibrators",
+ "position": "第 9 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "59a432927f240cc98a6a2409d520063178ac897b0ed3a41358c2d34c20204bc9",
+ "previous_context": "兩邊差得越多，結果就歪得越厲害。難怪有時候測試全綠，卻不是你要的啦。",
+ "original": {
+  "text": "上游沒有測試，報告說只有校準器，今晚挑三個。第一，用例子當規格。「搜尋要快」很模糊；「十萬筆資料、冷啟動，九成五的查詢兩百毫秒內回來」就清楚多了。每份規格附三個例子，再加一個反例，反例的資訊量通常最大。第二，假設帳本：規定模型動工前，先列出「我替你做了哪些決定」。把默默的填空攤開來，你一條一條打勾打叉。報告自己最後就附了一份。第三，原型和反應的迴圈。有些規格只能被發現，沒辦法事先寫出來，看到會動的東西，你才知道「不對，不是這個」。AI 把改一次的成本打到很低，正確用法是更快丟出可以反應的版本。",
+  "lint": {
+   "chars": 248,
+   "precise_numbers": [
+    "十萬",
+    "兩百"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 10,
+   "avg_sentence_len": 23.8,
+   "max_sentence_len": 40,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以上游其實沒辦法做測試，只能校準。\n這份報告裡提到幾個好用的招數。\n第一招是用具體例子當規格。\n你跟它說搜尋要快，誰知道多快算快嘛？\n不如丟三個具體例子，再補一個反例。\n也就是直接告訴它，什麼狀況該拒絕。\n然後你可以要求它列出假設帳本。\n規定模型在動工前，先交代替你做了哪些決定。\n這招我真的覺得超聰明。<short pause>\n把偷偷填空的地方攤開來。\n你只要一條一條打勾打叉就好。\n那要是你連自己要什麼都不確定呢？\n其實有些規格寫不出來，只能被發現。\n一定要看到會動的東西，你才知道哪裡不對。\n反正現在改一次成本這麼低。\n趕快丟出版本，多測幾次你自己的反應啦。",
+   "lint": {
+    "chars": 256,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 15.0,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以這份報告裡說，上游根本沒有測試。\n那邊只有校準而已。\n那要怎麼校準？\n最直接的做法，就是給具體的例子。\n像你如果只說搜尋要快，AI 根本搞不清楚。\n你給它三個正面例子，再補一個反例。\n規格瞬間就清楚多了。\n然後，規定模型動工前，先列出假設帳本。\n也就是要它先坦白，到底替你做了哪些決定。\n你只要逐條打勾打叉就好。\n<short pause>\n這招真的超聰明的啦。\n還有最後一招，原型跟反應的迴圈。\n其實有些規格，本來就沒辦法事先寫出來。\n你一定要看到會動的東西，才知道哪裡不對。\n改程式成本這麼低，何必憋出完美的 spec？\n趕快丟出能按的版本，測自己的真實反應。\n這樣用才對嘛。",
+   "lint": {
+    "chars": 260,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以上游根本沒有測試，只有校準啦。\n\n這份報告給了幾個好方法。\n\n第一個是用例子當 spec。只講搜尋要快，模型根本抓不到方向。你要給三個具體例子，外加一個反例。反例就是什麼情況該拒絕，資訊量往往最大。\n\n然後，叫模型動工前交出假設帳本。這是什麼意思呢？<short pause>就是要它列出「我替你做了哪些決定」。把它默默腦補的事攤開，讓你逐條打勾打叉。我覺得這招真的超級聰明。\n\n最後一個最誠實，就是做原型。很多 spec 根本沒辦法事先寫出來，對吧？你要看到會動的東西，才知道這不是你要的。既然 AI 修改成本這麼低，正確用法是更快丟出版本，測試自己的反應喔。",
+   "lint": {
+    "chars": 257,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 32,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "<short pause>這招真的超聰明的啦。",
+   "to": "",
+   "reason": "Ping 沒有個人反應"
+  }
+ ]
+}

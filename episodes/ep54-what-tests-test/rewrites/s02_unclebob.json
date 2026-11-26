@@ -1,0 +1,132 @@
+{
+ "segment": "s02_unclebob",
+ "position": "第 3 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "aac87a6c932cd71677c340d5047729c056892b169b0820fea8f13efe551c0dce",
+ "previous_context": "然後，房間裡的大象根本測不出來。最後，AI 是個會自己填空的神燈精靈喔。",
+ "original": {
+  "text": "先講 Uncle Bob。他不讀程式碼，但不是放手。他用單元測試和驗收測試把 AI 團團圍住，再加上變異測試和覆蓋率，產出要跑完整條關卡，他才相信。報告點出最容易被聽錯的地方：他證明的不是「不用讀程式碼」。他能設計出那道關卡，靠的是五十幾年的讀和寫。他做的是把判斷力搬家，從一行一行審，搬到設計關卡，判斷力並沒有被免除。從沒讀過程式碼的人，設計不出那道關卡。報告也提醒，「跳過讀程式碼，生產力就回來了」是他的感覺，沒有被量過。鏡子篇上篇那批資深工程師，也覺得自己變快，實測卻是變慢。",
+  "lint": {
+   "chars": 237,
+   "precise_numbers": [
+    "五十"
+   ],
+   "enumerations": [],
+   "sentences": 9,
+   "avg_sentence_len": 25.3,
+   "max_sentence_len": 45,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "神燈精靈很會寫，那人類還要看 code 嗎？\n寫 Clean Code 的 Uncle Bob 說，\n他現在完全不看 agent 寫的 code。\n你猜他怎麼管？\n他用各種測試跟指標，把 AI 團團圍住。\n跑完一整條嚴格關卡，他才敢相信。\n重點來了，這代表我們不用讀 code 了嗎？\n其實完全不是醬。\n我看到這裡很有共鳴。<short pause>\n他能設計出這道關卡，\n靠的是五十幾年的扎實功力。\n他只是把判斷力搬家，\n從一行一行檢查，搬到設計閘門。\n沒讀過 code 的人，根本架不出這種關卡啦。\n更扯的是，他說跳過 code 比較快，\n其實只是他的感覺，完全沒量過。<sigh>\n上一篇資深工程師也覺得變快，\n實測下來反而慢了快兩成呢。",
+   "lint": {
+    "chars": 267,
+    "precise_numbers": [
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 19.5,
+    "max_sentence_len": 39,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "說到神燈精靈，\n寫 Clean Code 的 Uncle Bob，\n最近公開說了一件事。\n他說他現在完全不讀 AI 寫的 code 了。\n<short pause>\n你一定會想，大師也開始擺爛了嗎？\n其實不是啦。\n他可不是放手不管喔。\n他是用單元測試跟各種指標，\n把 AI 寫的程式團團圍住。\n產出必須跑過整條關卡，他才肯信任。\n重點來了，這代表以後不用讀 code 了嗎？\n完全不是醬。\n我看到這段分析真的很有共鳴。\n他能設計出那道關卡，\n靠的是他五十幾年累積的經驗。\n所以他只是把判斷力搬家而已。\n從一行一行挑毛病，\n搬到最外面去設計閘門。\n沒讀過 code 的人，根本設不出這種關卡嘛。\n而且這份報告還補了一刀。\n說跳過讀 code 會變快，只是他的感覺，\n其實根本沒有量過好嗎。\n<laugh>",
+   "lint": {
+    "chars": 291,
+    "precise_numbers": [
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 36,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先來看 Uncle Bob 好了。\n他公開說，他不讀 agent 寫的 code。\n理由是人類讀太慢。\n那你猜他怎麼驗收？\n其實他根本沒有放手喔。<short pause>\n他用滿滿的測試，排成一整套嚴格的關卡。\n產出必須全部跑過，他才肯信任。\n我看到這邊，真的很佩服他的做法。\n重點來了，這不是叫你不用讀 code 耶。\n他能設計關卡，靠的是五十幾年的底子。\n他只是把判斷力，搬去設計測試而已。\n從沒讀過 code 的人，根本設計不出來好嗎。\n而且說真的，不看 code 就真的變快了嗎？\n這其實只是他的感覺，完全沒被實測過啦。",
+   "lint": {
+    "chars": 227,
+    "precise_numbers": [
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "我看到這邊，真的很佩服他的做法。",
+   "to": "",
+   "reason": "Ping 沒有個人反應"
+  },
+  {
+   "from": "先來看 Uncle Bob 好了。他公開說，他不讀 agent 寫的 code。理由是人類讀太慢。那你猜他怎麼驗收？其實他根本沒有放手喔。<short pause>他用滿滿的測試，排成一整套嚴格的關卡。產出必須全部跑過，他才肯信任。重點來了，這不是叫你不用讀 code 耶。他能設計關卡，靠的是五十幾年的底子。他只是把判斷力，搬去設計測試而已。從沒讀過 code 的人，根本設計不出來好嗎。而且說真的，不看 code 就真的變快了嗎？這其實只是他的感覺，完全沒被實測過啦。",
+   "to": "第四十二集講過 Uncle Bob。寫了《Clean Code》的他說，他不讀 AI 寫的程式碼。其實他是不讀實作，改讀規格，再看分數和架構圖。那集最後留了一個洞：第一站的規格要是寫錯，後面每一站都會一路蓋章過去。<short pause>這份報告從同一句話出發，補了一個容易被聽錯的地方。他能不讀，是因為五十幾年的讀和寫，讓他設計得出那道關卡。判斷力是搬家，不是免除。從沒讀過程式碼的人，設計不出那道關卡。至於跳過讀程式碼就變快了，報告說那是他的感覺，沒有被量過。這集就從那個洞往上游走：規格對不對，測試量得到嗎？",
+   "reason": "Clarence 11/26 問 EP54 跟 EP42 是否重疊：Uncle Bob 的做法 EP42 講過，改成回顧 EP42 再接這集的問題"
+  },
+  {
+   "from": "報告說那是他的感覺",
+   "to": "這份報告說，那是他的感覺",
+   "reason": "句首「報告」容易聽成「包括」（bare_report）"
+  }
+ ]
+}
