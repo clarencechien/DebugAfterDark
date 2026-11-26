@@ -92,7 +92,7 @@ python3 tools/progress.py --done   # 已做（依集數）
 | 12/6 | EP68–69 | **錢** | 推薦 #13–14 Meta 詐騙上下 | 預排 |
 | 12/7 | EP70–71 | AI | Q35 AI 會自己賺錢嗎＋Q36 AI 公司內部模型 | 🟡 11/27–28 跑 |
 | 12/8 | EP72–73 | AI | Q23 METR 27 小時（併入 Q04 METR 實驗）＋Q24 不會寫程式的人用 AI 做軟體 | 🟡 11/25–26 跑 |
-| 12/9 | EP74–75 | AI | [pattern-story](https://imitator.ai-apps.work/r/pattern-story)＋[who-paid-the-entry-fee](https://imitator.ai-apps.work/r/who-paid-the-entry-fee)（知行筆記・無路之路，11-26 v0.3；接 EP31，兩篇都講工作怎麼變） | 🟢 緩衝日，自動研究晚了可跟前後對調 |
+| 12/9 | EP74–75 | AI | [pattern-story](https://imitator.ai-apps.work/r/pattern-story)＋[sdlc-seal](https://imitator.ai-apps.work/r/sdlc-seal) | 🟢 緩衝日，自動研究晚了可跟前後對調 |
 | 12/10 | EP76–77 | AI | Q32 AI 伺服器台灣分幾成＋Q33 出口創新高、工廠就業反而減少（併入 Q21） | 🟡 11/29–30 跑 |
 | 12/11 | EP78–79 | **錢** | 推薦 #15–16 保險課番外＋VT／40 歲 | 預排 |
 | 12/12 | EP80–81 | AI | Q01 AI 讓新人變少了嗎＋Q05 AI 幻覺有變少嗎 | 🟡 12/1–2 跑 |
@@ -101,8 +101,8 @@ python3 tools/progress.py --done   # 已做（依集數）
 | 12/15 | EP86–87 | AI | R02 Robotaxi 對帳＋R06 石英錶危機 | 🟡 12/4–5 跑 |
 | 12/16 | EP88–89 | **錢** | ETF 系列 1 [etf-passive-market-cap](https://imitator.ai-apps.work/r/etf-passive-market-cap)（Q13）＋ETF 系列 2 Q29 主動式 | Q13 🟢、Q29 🟡 12/6 跑；趕不上改 [winners-on-the-list](https://imitator.ai-apps.work/r/winners-on-the-list)（🟢）。006208 分割 12/18 表決可當鉤子 |
 
-- **AI 後備**（🟢）：[sdlc-seal](https://imitator.ai-apps.work/r/sdlc-seal)（11-26 讓位給 who-paid-the-entry-fee）、[loop-engineering](https://imitator.ai-apps.work/r/loop-engineering)、[actor-to-durable-objects-v2](https://imitator.ai-apps.work/r/actor-to-durable-objects-v2)、[ai-economics](https://imitator.ai-apps.work/r/ai-economics)。
-- **新報告**：[who-paid-the-entry-fee](https://imitator.ai-apps.work/r/who-paid-the-entry-fee)（11-26 v0.3）知行筆記第四篇，把《無路之路》的式子當程式碼除錯，換成台灣參數；算「比較難的題目」，不算錢日。作者註明沒讀完全書，英文人名多（Millerd、Ibarra），Breeze 要注意。
+- **AI 後備**（🟢）：[loop-engineering](https://imitator.ai-apps.work/r/loop-engineering)、[actor-to-durable-objects-v2](https://imitator.ai-apps.work/r/actor-to-durable-objects-v2)、[ai-economics](https://imitator.ai-apps.work/r/ai-economics)。
+- **新報告**：[who-paid-the-entry-fee](https://imitator.ai-apps.work/r/who-paid-the-entry-fee)（11-26 v0.3）知行筆記第四篇，把《無路之路》的式子當程式碼除錯，換成台灣參數；算「比較難的題目」，不算錢日；還沒排日子，等找到能配對的題目。作者註明沒讀完全書，英文人名多（Millerd、Ibarra），Breeze 要注意。
 - **新報告**：[winners-on-the-list](https://imitator.ai-apps.work/r/winners-on-the-list)（11-22 v0.2，錢）分散筆記番外，接 EP34、EP35：當年的存股名單補登到今天，對 0050。
 - **12/16 之後的錢**（參考）：ETF 3 Q30＋winners-on-the-list → 少子化 1＋2（Q25 [population-timetable](https://imitator.ai-apps.work/r/population-timetable)、Q26）→ 少子化 3 Q27；少子化 AI 番外 Q28 排在少子化錢日之後的第一個 AI 日。推薦 #17〈熄燈的窗〉由 Q27 重做取代。
 
