@@ -104,6 +104,116 @@
    "status": "running",
    "next_review": "2026-12-10",
    "note": "Analytics 只有日資料、晚 2–3 天，所以用前 3 天；題材差異會干擾，每組至少 5 集才判讀"
+  },
+  {
+   "id": "video-version-old-nonai",
+   "kind": "opening_ab",
+   "name": "非 AI 舊集影片版＋開場 A/B",
+   "tests": "非 AI 的舊集（錢 11 集＋其他 9 集）照 EP36 的做法做影片版上傳，RSS 版改私人（加進 yt_autofix KEEP_PRIVATE）；開場在兩類裡各自照 ABBA 輪 A（opening）/B（opening-b）",
+   "baseline": "A 組 vs B 組，每集第 7 天自然流量的 30 秒留存（中位數），判斷標準見 docs/video-web.md「開場 A/B 實驗」",
+   "schedule": "12/5 起每天 12:00（台北）一支，錢和其他輪流，12/24 上完",
+   "arms": {
+    "money": [
+     [
+      41,
+      "A"
+     ],
+     [
+      45,
+      "B"
+     ],
+     [
+      34,
+      "B"
+     ],
+     [
+      35,
+      "A"
+     ],
+     [
+      28,
+      "A"
+     ],
+     [
+      29,
+      "B"
+     ],
+     [
+      24,
+      "B"
+     ],
+     [
+      25,
+      "A"
+     ],
+     [
+      26,
+      "A"
+     ],
+     [
+      12,
+      "B"
+     ],
+     [
+      20,
+      "B"
+     ]
+    ],
+    "other": [
+     [
+      30,
+      "A"
+     ],
+     [
+      27,
+      "B"
+     ],
+     [
+      22,
+      "B"
+     ],
+     [
+      23,
+      "A"
+     ],
+     [
+      14,
+      "A"
+     ],
+     [
+      18,
+      "B"
+     ],
+     [
+      19,
+      "B"
+     ],
+     [
+      32,
+      "A"
+     ],
+     [
+      40,
+      "A"
+     ]
+    ]
+   },
+   "held": {
+    "eps": [
+     6,
+     7,
+     13,
+     15,
+     16,
+     37
+    ],
+    "why": "RSS 版還有真流量或還在別的實驗裡；第一批結果出來再決定（EP37 等 12/7 改標題結果）"
+   },
+   "videos": {},
+   "_videos": "上傳後填 {集數: 影片版 videoId}，RSS 版 videoId 同時加進 tools/yt_autofix.py 的 KEEP_PRIVATE",
+   "change_date": null,
+   "status": "planned",
+   "next_review": "2026-12-19"
   }
  ]
 }
