@@ -7,12 +7,14 @@
     python3 tools/take_review.py out/segments/D1_<ep> /mnt/project-files/episodes/epNN/ \
         [--script episodes/<ep>/script.json] [--only s01,s11]
 
-會在輸出資料夾寫 takes/<檔名>.mp3（64 kbps）和 epNN-takes.html（資料夾名稱當檔名前綴）。
+會在輸出資料夾寫 epNN-takes.html（資料夾名稱當檔名前綴）。音檔轉成 48 kbps 單聲道 mp3 直接嵌進頁面：
+在 Library／儀表板的預覽框裡讀不到旁邊的 mp3（11/27 EP56 試用時播不出來），嵌進去才能在哪裡打開都播得出來。
+30 次生成、每次 40 秒約 10 MB。
 頁面不用任何瀏覽器儲存：標到一半關掉會不見。最下面的框即時顯示結果 JSON，按「複製」或手動全選複製，
 貼回對話，存成 <輸出資料夾>/takes-tags.json。
 其他命名（例如 EP56 的 s01-lite-take2.mp3）用 --pattern '*.mp3' --group-re '^(s\\d+)'。
 """
-import argparse, html, json, re, shutil, subprocess, sys
+import argparse, base64, html, json, re, subprocess, sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -90,22 +92,20 @@ def main(a):
     texts = {}
     if a.script:
         texts = {s["id"]: s["text"] for s in json.loads(Path(a.script).read_text(encoding="utf-8"))["segments"]}
-    (out / "takes").mkdir(parents=True, exist_ok=True)
+    out.mkdir(parents=True, exist_ok=True)
     sections = []
     for seg, files in groups.items():
         rows = []
         for p in files:
-            mp3 = out / "takes" / (p.stem + ".mp3")
-            if p.suffix == ".mp3":
-                shutil.copyfile(p, mp3)
-            elif not mp3.exists():
-                subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(p), "-ac", "1", "-b:a", "64k", str(mp3)], check=True)
+            mp3 = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", str(p), "-ac", "1", "-b:a", "48k", "-f", "mp3", "-"],
+                                 capture_output=True, check=True).stdout
+            src = "data:audio/mpeg;base64," + base64.b64encode(mp3).decode()
             e, s = html.escape(p.name), html.escape(seg)
             btns = "".join(f'<button type="button" data-seg="{s}" data-file="{e}" data-label="{lab}" aria-pressed="false">{lab}</button>'
                            for lab in ("太淡", "剛好", "太激動"))
             label = re.sub(r"^" + re.escape(seg) + r"[.\-_]?", "", p.stem) or p.stem
             rows.append(f'<div class="take"><strong>{html.escape(label)}</strong>'
-                        f'<audio controls preload="none" src="takes/{html.escape(mp3.name)}"></audio>'
+                        f'<audio controls preload="metadata" src="{src}"></audio>'
                         f'<div class="opts">{btns}<button type="button" class="pick" data-seg="{s}" data-file="{e}" aria-pressed="false">選這個</button></div></div>')
         text = f'<p class="text">{html.escape(texts[seg])}</p>' if seg in texts else ""
         sections.append(f'<section><h2>{html.escape(seg)}</h2>{text}{"".join(rows)}</section>')
