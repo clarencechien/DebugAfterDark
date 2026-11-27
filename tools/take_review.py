@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""每段幾次生成並排試聽，讓 Clarence 每段選一個（2026-11-27）。
+"""每段幾次生成並排試聽，Gemini 選的先標好，Clarence 當挑戰者：不同意才改（2026-11-27）。
 
-選完的結果給 tools/affect_judge.py compare：逐段看 Gemini 選的跟他選的一不一樣（1／0）。
-11/27 原本還有「太淡／剛好／太激動」標籤，他說先簡化成只選一個。
+有 <segments>/affect_judge.json（tools/affect_judge.py judge）時，每段 Gemini 選的那次預先標「Gemini 選的」；
+他改了的段落記在結果 JSON 的 overrides，沒改就算同意。之後 affect_judge.py apply 把結果套進這集（改了的用他的）。
+沒有 affect_judge.json 或 Gemini 兩次不一致的段落，沒有預選，他選了也記在 overrides。
+11/27 演變：先有「太淡／剛好／太激動」標籤 → 簡化成每段選一個 → 改成 Gemini 先選、他挑戰。
 盲聽：頁面不顯示 select_takes 選了哪次，也不顯示任何數字。
 
     python3 tools/take_review.py out/segments/D1_<ep> /mnt/project-files/episodes/epNN/ \
@@ -41,13 +43,15 @@ section h2{{font-size:16px;margin:0 0 4px}}
 .take audio{{width:100%;display:block;margin:4px 0}}
 .opts{{display:flex;flex-wrap:wrap;gap:6px}}
 .opts button{{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:999px;padding:2px 12px;cursor:pointer;min-height:32px}}
+.badge{{display:inline-block;font-size:12px;font-weight:600;color:var(--accent);background:var(--on);border-radius:999px;padding:0 8px;margin-left:6px}}
+.nogem{{color:var(--ink2);font-size:13px}}
 .opts button[aria-pressed=true]{{background:var(--on);border-color:var(--accent);color:var(--accent);font-weight:600}}
 textarea{{width:100%;min-height:9em;font:13px/1.5 ui-monospace,monospace;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px}}
 .row{{display:flex;gap:8px;align-items:center;margin:8px 0}}
 .row button{{font:inherit;border:1px solid var(--accent);background:var(--accent);color:var(--card);border-radius:8px;padding:4px 14px;cursor:pointer}}
 </style></head><body><main>
 <h1>{title}</h1>
-<p class="hint">每段聽完，點你會拿去上架的那一個「選這個」。不用每段都選，選幾段都有用。頁面不會自己存，選完到最下面複製結果貼回對話。</p>
+<p class="hint">每段已經標好 Gemini 選的那一個。你不同意就點別的「改用這個」，同意就不用動。頁面不會自己存，聽完到最下面複製結果貼回對話。</p>
 {body}
 <h2 style="font-size:16px">結果</h2>
 <div class="row"><button type="button" id="copy">複製</button><span class="hint" id="copied"></span></div>
@@ -55,15 +59,22 @@ textarea{{width:100%;min-height:9em;font:13px/1.5 ui-monospace,monospace;backgro
 </main>
 <script>
 (function(){{
-  var state = {{episode: {episode}, picks: {{}}}};
+  var gemini = {gemini}, picks = {{}};
+  Object.keys(gemini).forEach(function(k){{ if(gemini[k]) picks[k] = gemini[k]; }});
   var out = document.getElementById("out");
-  function render(){{ out.value = JSON.stringify(state, null, 1); }}
+  function render(){{
+    var ov = {{}};
+    Object.keys(picks).forEach(function(k){{ if(picks[k] !== gemini[k]) ov[k] = picks[k]; }});
+    document.querySelectorAll(".opts button.pick").forEach(function(x){{
+      var on = picks[x.getAttribute("data-seg")] === x.getAttribute("data-file");
+      x.setAttribute("aria-pressed", on ? "true" : "false"); x.textContent = on ? "用這個" : "改用這個";
+    }});
+    out.value = JSON.stringify({{episode: {episode}, gemini: gemini, overrides: ov}}, null, 1);
+  }}
   document.addEventListener("click", function(ev){{
     var b = ev.target.closest && ev.target.closest(".opts button"); if(!b) return;
     var f = b.getAttribute("data-file"), seg = b.getAttribute("data-seg");
-    var on = state.picks[seg] !== f;
-    document.querySelectorAll('.pick[data-seg="' + seg + '"]').forEach(function(x){{ x.setAttribute("aria-pressed", "false"); }});
-    if(on){{ state.picks[seg] = f; b.setAttribute("aria-pressed", "true"); }} else delete state.picks[seg];
+    if(picks[seg] === f && !gemini[seg]) delete picks[seg]; else picks[seg] = f;
     render();
   }});
   document.getElementById("copy").addEventListener("click", function(){{
@@ -85,6 +96,9 @@ def main(a):
     if a.only:
         keep = set(a.only.split(","))
         groups = {k: v for k, v in groups.items() if k in keep}
+    judge = Path(a.segments) / "affect_judge.json"
+    gem = {k: v.get("best") for k, v in json.loads(judge.read_text(encoding="utf-8"))["segments"].items()} if judge.exists() else {}
+    gem = {k: gem.get(k) for k in groups}
     texts = {}
     if a.script:
         texts = {s["id"]: s["text"] for s in json.loads(Path(a.script).read_text(encoding="utf-8"))["segments"]}
@@ -102,14 +116,16 @@ def main(a):
                 src = "data:audio/mpeg;base64," + base64.b64encode(mp3).decode()
             e, s = html.escape(p.name), html.escape(seg)
             label = re.sub(r"^" + re.escape(seg) + r"[.\-_]?", "", p.stem) or p.stem
-            rows.append(f'<div class="take"><strong>{html.escape(label)}</strong>'
+            badge = '<span class="badge">Gemini 選的</span>' if gem.get(seg) == p.name else ""
+            rows.append(f'<div class="take"><strong>{html.escape(label)}</strong>{badge}'
                         f'<audio controls preload="metadata" src="{src}"></audio>'
-                        f'<div class="opts"><button type="button" class="pick" data-seg="{s}" data-file="{e}" aria-pressed="false">選這個</button></div></div>')
+                        f'<div class="opts"><button type="button" class="pick" data-seg="{s}" data-file="{e}" aria-pressed="false">改用這個</button></div></div>')
         text = f'<p class="text">{html.escape(texts[seg])}</p>' if seg in texts else ""
-        sections.append(f'<section><h2>{html.escape(seg)}</h2>{text}{"".join(rows)}</section>')
+        nog = '' if gem.get(seg) else '<p class="nogem">Gemini 這段沒有共識（或還沒跑），請你選一個。</p>'
+        sections.append(f'<section><h2>{html.escape(seg)}</h2>{nog}{text}{"".join(rows)}</section>')
     name = out.resolve().name
     page = out / f"{name}-takes.html"
-    page.write_text(PAGE.format(title=html.escape(f"{name} 每次生成試聽"), episode=json.dumps(name),
+    page.write_text(PAGE.format(title=html.escape(f"{name} 每次生成試聽"), episode=json.dumps(name), gemini=json.dumps(gem, ensure_ascii=False),
                                 body="\n".join(sections)), encoding="utf-8")
     print(f"寫好 {page}（{len(groups)} 段、{sum(len(v) for v in groups.values())} 次生成）")
 

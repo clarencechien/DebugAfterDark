@@ -221,7 +221,7 @@ EP46 切 32 段（11.7 分鐘音檔）整套 2 分 28 秒（開機 8 秒、上�
 6. **停頓**：長停頓最少。
 
 另外每次生成都記 `affect`（音高範圍等）和 `affect_flag`（`excited?` = 可能太激動），**只記錄、不參與挑選**。
-要看 Gemini 選的 take 跟 Clarence 選的一不一樣（逐段 0/1），見 [`docs/voice.md`](voice.md)「語氣太淡、太激動」。
+語氣（太淡／太激動）由 Gemini 先選、Clarence 挑戰，在最後一次挑選之後跑 `affect_judge.py apply`，見 [`docs/voice.md`](voice.md)「語氣太淡、太激動」。
 
 最後一輪相鄰段比對（`--neighbour`）：有一次生成跟前後段更像（相似度高出 0.01 以上）就換。
 選擇紀錄在 `out/segments/D1_<ep>/select_log.json`，每次生成的轉寫文字和時間戳也存在裡面（第 7 步會沿用）。

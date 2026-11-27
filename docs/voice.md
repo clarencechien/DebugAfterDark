@@ -37,27 +37,31 @@
 
 其他文字類工具（改寫、轉寫、評審、出圖）的輸出也開始記錄 `model_version`。
 
-## 語氣太淡、太激動：Gemini 選的跟 Clarence 選的（只記錄，2026-11-27）
+## 語氣太淡、太激動：Gemini 先選，Clarence 挑戰（2026-11-27）
 
-`select_takes.py` 的清楚、穩定、語速、聲紋都量不到 Clarence 聽得出的「太淡」「太激動」。Clarence 11/27 定的做法是**只看 0/1**：
-每段他選一個，Gemini 也選一個，一樣算 1、不一樣算 0。**只記錄，不改變挑選結果**。
+`select_takes.py` 的清楚、穩定、語速、聲紋都量不到 Clarence 聽得出的「太淡」「太激動」。Clarence 11/27 定的做法：
+**Gemini 先選，他當挑戰者，有反對就改，記下不一樣的**。每段 0/1：他沒改 = 1，改了 = 0。
 
 ```bash
-python3 tools/take_review.py out/segments/D1_<ep> <資料夾> --script episodes/<ep>/script.json --linked   # 試聽頁 + takes/*.mp3
-python3 tools/affect_judge.py judge out/segments/D1_<ep> --script episodes/<ep>/script.json            # Gemini 選，Gemini 額度滿時跳過
-python3 tools/affect_judge.py compare out/segments/D1_<ep> --tags <資料夾>/takes-tags.json             # 逐段 0/1
+python3 tools/affect_judge.py judge out/segments/D1_<ep> --script episodes/<ep>/script.json            # Gemini 選（每段約 US$0.014）
+python3 tools/take_review.py out/segments/D1_<ep> <資料夾> --script episodes/<ep>/script.json --linked   # 試聽頁，預選 Gemini 選的
+#   → 發佈成 claude.ai Artifact（頁面 + takes/*.mp3）給他；他貼回的 JSON 存成 <資料夾>/takes-tags.json
+python3 tools/affect_judge.py apply out/segments/D1_<ep> --tags <資料夾>/takes-tags.json                # 套用並記錄
 ```
 
-- 試聽頁要**發佈成 claude.ai Artifact**（頁面加 `takes/*.mp3`）再給他連結：Library 的預覽框完全不能播音檔，相對路徑和內嵌都不行。
-  他選完按「複製」貼回對話，存成 `takes-tags.json`（`{"picks": {"s01": "<檔名>", ...}}`）。
-- Gemini 聽 D1 參考錄音加同段幾次生成，只問「哪個語氣最像參考」；正序、倒序各問一次，兩次不一樣記「不一致」算 0。
-  做法參考 EmergentTTS-Eval（NeurIPS 2025, arXiv 2505.23009）。每段約 US$0.014。
-- EP56（s01、s11）：Gemini 2/2，`select_takes.py` 0/2。先試過讓 Gemini 標「太淡／剛好／太激動」：它從來不說太激動，
-  正倒序常不一致，所以不用標籤。
-- 順帶記錄：`select_takes.py` 每個 take 也寫 `affect`（音高範圍等）和 `affect_flag`（`excited?`），不花錢，只抓得到「起伏太大」那種激動
-  （EP56 s01 Lite take2 9.8 半音），抓不到「太趕」那種（s11 Flash）。沒有用在 0/1 裡。
+- 順序：`apply` 寫 `select_log.json` 的 `chosen`／`manual_override`（原本的選擇留在 `select_takes_chosen`）並覆蓋 `<段>.wav`，
+  所以放在最後一次 `select_takes.py`／`steady_pick.py` 之後、後製之前。Gemini 不一致又沒被改的段落維持 `select_takes.py` 的選擇。
+- 記錄：`<segments>/affect_picks.json` 每段記 Gemini、他、`select_takes.py` 各選哪個和 0/1；`compare` 只重算不改檔。
+- 試聽頁要發佈成 Artifact：Library 的預覽框完全不能播音檔，相對路徑和內嵌都不行。
+- Gemini 聽 D1 參考錄音加同段幾次生成，只問「哪個語氣最像參考」，正序、倒序各問一次，不一樣記「不一致」（頁面不預選）。
+  做法參考 EmergentTTS-Eval（NeurIPS 2025, arXiv 2505.23009）。Gemini 額度滿時跳過 `judge`，頁面就沒有預選。
+- EP56（s01、s11，他先盲選）：Gemini 2/2，`select_takes.py` 0/2。先試過讓 Gemini 標「太淡／剛好／太激動」：
+  它從來不說太激動，正倒序常不一致，所以不用標籤。
+- 順帶記錄：`select_takes.py` 每個 take 也寫 `affect`（音高範圍等）和 `affect_flag`（`excited?`），不花錢，只抓得到「起伏太大」
+  的激動（EP56 s01 Lite take2 9.8 半音），抓不到「太趕」的（s11 Flash）。
 
-**什麼時候改成參與挑選**：累積約 30 段，Gemini 75% 以上而且高過 `select_takes.py`，再問他要不要接成篩選條件。
+**注意**：預選會讓人傾向同意，所以這個 0/1 會比盲選時偏高。累積約 30 段後，如果改的很少，可以考慮直接用 Gemini 選、不再給他看；
+要接進 `select_takes.py` 前先問他。
 
 ## 停用公告之後：重現的順序
 

@@ -6,13 +6,19 @@ EmergentTTS-Eval（NeurIPS 2025, arXiv 2505.23009）用 Gemini 做兩兩比較�
 這裡把同一段的幾次生成連同 D1 參考錄音一起給 Gemini 聽，只問「哪一個語氣最像參考」。
 正序、倒序各問一次抵掉位置偏差，兩次選的不一樣就記「不一致」（算 0）。
 11/27 先試過讓它標「太淡／剛好／太激動」：它從不說太激動，正倒序常不一致；只看選哪一個時 EP56 兩段都跟他一樣。
-Clarence 11/27：先簡化成 0/1，過跟不過。
+Clarence 11/27：先簡化成 0/1，過跟不過；再反過來，Gemini 先選，他當挑戰者，有反對就改，記下不一樣的。
 
     # 1) 讓 Gemini 選：每段寫進 <segments>/affect_judge.json
     python3 tools/affect_judge.py judge out/segments/D1_<ep> [--only s01,s11] [--script episodes/<ep>/script.json]
 
-    # 2) Clarence 在 take_review.py 的頁面選好、結果存成 takes-tags.json 之後，逐段 0/1
+    # 2) take_review.py 的頁面已預選 Gemini 選的，Clarence 不同意才改；結果存成 takes-tags.json
+    # 3) 套用：每段用他改的，沒改就用 Gemini 選的（Gemini 不一致又沒改的段落維持 select_takes 的選擇）
+    python3 tools/affect_judge.py apply out/segments/D1_<ep> --tags /mnt/project-files/episodes/epNN/takes-tags.json
+    # 4) 逐段 0/1：他沒改 = 1，改了 = 0；不一樣的記在 <segments>/affect_picks.json
     python3 tools/affect_judge.py compare out/segments/D1_<ep> --tags /mnt/project-files/episodes/epNN/takes-tags.json
+
+apply 寫進 select_log.json 的 chosen / manual_override 並覆蓋 <段>.wav，所以要在最後一次 select_takes.py / steady_pick.py 之後跑
+（它們會蓋掉 manual_override），跑完再做後製。
 
 檔名預設是 <段>.take<N>.wav；其他命名（例如 EP56 的 s01-lite-take2.mp3）用 --pattern '*.mp3' --group-re '^(s\\d+)'。
 花費記在 usage.jsonl（工具名 affect_judge），每段約 US$0.014。Gemini 額度滿的時候不要跑，挑選不受影響。
@@ -93,36 +99,78 @@ def cmd_judge(a):
     print(f"寫好 {out_path}")
 
 
-def cmd_compare(a):
-    """逐段 0/1：Gemini 選的、select_takes 選的，跟 Clarence 選的一不一樣。"""
-    picks = json.loads(Path(a.tags).read_text(encoding="utf-8")).get("picks", {})
+def load_tags(path, judge):
+    """回傳 (gemini 選的, Clarence 改的)。也收舊格式 {"picks": {...}}：跟 Gemini 不一樣的才算改。"""
+    t = json.loads(Path(path).read_text(encoding="utf-8"))
+    gem = {k: v.get("best") for k, v in judge["segments"].items()}
+    if "overrides" in t:
+        return gem, {k: v for k, v in t["overrides"].items() if v}
+    return gem, {k: v for k, v in t.get("picks", {}).items() if v and v != gem.get(k)}
+
+
+def read(d, name, default):
+    f = Path(d) / name
+    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else default
+
+
+def cmd_apply(a):
+    import shutil
     d = Path(a.segments)
-    judge = json.loads((d / "affect_judge.json").read_text(encoding="utf-8")) if (d / "affect_judge.json").exists() else {"segments": {}}
-    sel = json.loads((d / "select_log.json").read_text(encoding="utf-8")) if (d / "select_log.json").exists() else {"segments": []}
-    chosen = {s["id"]: s["chosen"] for s in sel["segments"]}
-    g = s = n = 0
-    for seg, pick in sorted(picks.items()):
-        if not pick:
+    judge = read(d, "affect_judge.json", {"segments": {}}); log = read(d, "select_log.json", None)
+    if log is None:
+        sys.exit("沒有 select_log.json：先跑 select_takes.py")
+    gem, ov = load_tags(a.tags, judge)
+    for seg in log["segments"]:
+        sid, old = seg["id"], seg["chosen"]
+        if sid in ov:
+            new, why = ov[sid], f"Clarence 改（Gemini 選 {gem.get(sid) or '不一致'}）"
+        elif gem.get(sid):
+            new, why = gem[sid], "Gemini 選的，Clarence 沒反對"
+        else:
             continue
-        gb = judge["segments"].get(seg, {}).get("best")
-        gi, si = int(gb == pick), int(chosen.get(seg) == pick)
-        g += gi; s += si; n += 1
-        print(f"{seg:14s} 你選 {pick:28s} Gemini {gi}" + ("（不一致）" if seg in judge["segments"] and gb is None else "") +
-              (f"  select_takes {si}" if chosen else ""))
+        if not (d / new).exists():
+            print(f"{sid}: 找不到 {new}，跳過"); continue
+        seg["chosen"] = new; seg["manual_override"] = why; seg["select_takes_chosen"] = seg.get("select_takes_chosen", old)
+        shutil.copyfile(d / new, d / f"{sid}.wav")
+        print(f"{sid:14s} {old.split('.')[1] if '.' in old else old} -> {new}  {why}")
+    (d / "select_log.json").write_text(json.dumps(log, ensure_ascii=False, indent=1), encoding="utf-8")
+    record(d, gem, ov, {s["id"]: s.get("select_takes_chosen", s["chosen"]) for s in log["segments"]})
+
+
+def record(d, gem, ov, sel):
+    """不一樣的記下來：<segments>/affect_picks.json。"""
+    rows = {seg: {"gemini": g, "clarence": ov.get(seg, g), "agree": int(seg not in ov), "select_takes": sel.get(seg)}
+            for seg, g in sorted(gem.items()) if g or seg in ov}
+    n = len(rows); k = sum(r["agree"] for r in rows.values())
+    s_ok = sum(int(r["select_takes"] == r["clarence"]) for r in rows.values() if r["select_takes"])
+    (Path(d) / "affect_picks.json").write_text(json.dumps({"agree": k, "segments_n": n, "select_takes_agree": s_ok, "segments": rows},
+                                                          ensure_ascii=False, indent=1), encoding="utf-8")
+    for seg, r in rows.items():
+        print(f"{seg:14s} Gemini {r['agree']}" + ("" if r["agree"] else f"  你改成 {r['clarence']}（Gemini {r['gemini'] or '不一致'}）")
+              + (f"  select_takes {int(r['select_takes'] == r['clarence'])}" if r["select_takes"] else ""))
     if n:
-        print(f"Gemini {g}/{n}（{100 * g / n:.0f}%）" + (f"；select_takes {s}/{n}（{100 * s / n:.0f}%）" if chosen else ""))
-    print("門檻（docs/voice.md）：累積約 30 段、Gemini 75% 以上且高過 select_takes，才考慮讓它參與挑選，接之前先問 Clarence。")
+        print(f"Gemini {k}/{n}（{100 * k / n:.0f}%）" + (f"；select_takes {s_ok}/{n}" if any(r["select_takes"] for r in rows.values()) else ""))
+    print("門檻（docs/voice.md）：累積約 30 段再看 Gemini 和 select_takes 各對幾成。")
+
+
+def cmd_compare(a):
+    """逐段 0/1：他沒改 = 1、改了 = 0（Gemini 不一致的段落算 0）。"""
+    d = Path(a.segments)
+    judge = read(d, "affect_judge.json", {"segments": {}}); log = read(d, "select_log.json", {"segments": []})
+    gem, ov = load_tags(a.tags, judge)
+    record(d, gem, ov, {s["id"]: s.get("select_takes_chosen", s["chosen"]) for s in log["segments"]})
 
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
-    for name in ("judge", "compare"):
+    for name in ("judge", "apply", "compare"):
         p = sub.add_parser(name); p.add_argument("segments")
         p.add_argument("--pattern", default="*.take*.wav"); p.add_argument("--group-re", default=r"^(.+?)\.take\d+")
     j = sub.choices["judge"]
     j.add_argument("--reference", default=str(REFERENCE)); j.add_argument("--model", default="gemini-3.8-flash")
     j.add_argument("--only", default=""); j.add_argument("--script", default=""); j.add_argument("--seed", type=int, default=0)
-    sub.choices["compare"].add_argument("--tags", required=True)
+    for name in ("apply", "compare"):
+        sub.choices[name].add_argument("--tags", required=True)
     a = ap.parse_args()
-    {"judge": cmd_judge, "compare": cmd_compare}[a.cmd](a)
+    {"judge": cmd_judge, "apply": cmd_apply, "compare": cmd_compare}[a.cmd](a)
