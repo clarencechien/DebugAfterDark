@@ -6,6 +6,7 @@
 // usage:
 //   node tools/webvideo/render.js timeline.json out.mp4 [--theme slide|paper|terminal] [--from 0] [--to 30] [--fps 30]
 //   node tools/webvideo/render.js timeline.json still.png --still 15.5 [--theme paper]
+//   --variant step|ease|scan|pulse   how the cold-open trace bars move (theme opening; default step, the first version)
 const { chromium } = require('playwright');
 const fs = require('fs'), path = require('path'), { spawn } = require('child_process');
 
@@ -15,14 +16,14 @@ function arg(name, def) { const i = process.argv.indexOf('--' + name); return i 
   const [tl, out] = process.argv.slice(2);
   if (!tl || !out) { console.error('usage: render.js timeline.json out.mp4|out.png [--theme] [--from] [--to] [--fps] [--still t]'); process.exit(2); }
   const D = JSON.parse(fs.readFileSync(tl, 'utf8'));
-  const theme = arg('theme', 'slide'), fps = +arg('fps', 30);
+  const theme = arg('theme', 'slide'), fps = +arg('fps', 30), variant = arg('variant', null);
   const from = +arg('from', 0), to = Math.min(+arg('to', D.duration), D.duration);
   const still = arg('still', null);
 
   const b = await chromium.launch();
   const p = await b.newPage({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
   await p.goto('file://' + path.resolve(__dirname, 'player.html'));
-  await p.evaluate(([d, th]) => load(d, th), [D, theme]);
+  await p.evaluate(([d, th, v]) => load(d, th, v), [D, theme, variant]);
   await p.evaluate(() => document.fonts.ready);
 
   if (still !== null) {
@@ -51,6 +52,6 @@ function arg(name, def) { const i = process.argv.indexOf('--' + name); return i 
   await new Promise(r => ff.on('close', r));
   await b.close();
   const secs = (Date.now() - t0) / 1000;
-  console.log(JSON.stringify({ out, theme, frames: n, screenshots: shots, seconds: +secs.toFixed(1),
+  console.log(JSON.stringify({ out, theme, variant, frames: n, screenshots: shots, seconds: +secs.toFixed(1),
     seconds_per_video_minute: +(secs / ((to - from) / 60)).toFixed(1) }));
 })();
