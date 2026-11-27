@@ -98,6 +98,8 @@ def main(a):
         groups = {k: v for k, v in groups.items() if k in keep}
     judge = Path(a.segments) / "affect_judge.json"
     gem = {k: v.get("best") for k, v in json.loads(judge.read_text(encoding="utf-8"))["segments"].items()} if judge.exists() else {}
+    if a.judged_only and judge.exists():   # 只放 Gemini 判過的段落（affect_judge.py judge --sample 抽到的）
+        groups = {k: v for k, v in groups.items() if k in gem}
     gem = {k: gem.get(k) for k in groups}
     texts = {}
     if a.script:
@@ -134,6 +136,7 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("segments"); ap.add_argument("out")
     ap.add_argument("--script", default=""); ap.add_argument("--only", default="")
+    ap.add_argument("--judged-only", action="store_true", help="只放 affect_judge.json 裡有的段落（配合 judge --sample）")
     ap.add_argument("--linked", action="store_true", help="mp3 寫到 takes/ 用相對路徑（發佈成 Artifact 用），預設嵌進頁面")
     ap.add_argument("--pattern", default="*.take*.wav"); ap.add_argument("--group-re", default=r"^(.+?)\.take\d+")
     main(ap.parse_args())

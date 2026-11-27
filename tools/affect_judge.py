@@ -9,7 +9,8 @@ EmergentTTS-Eval（NeurIPS 2025, arXiv 2505.23009）用 Gemini 做兩兩比較�
 Clarence 11/27：先簡化成 0/1，過跟不過；再反過來，Gemini 先選，他當挑戰者，有反對就改，記下不一樣的。
 
     # 1) 讓 Gemini 選：每段寫進 <segments>/affect_judge.json
-    python3 tools/affect_judge.py judge out/segments/D1_<ep> [--only s01,s11] [--script episodes/<ep>/script.json]
+    python3 tools/affect_judge.py judge out/segments/D1_<ep> --sample 4 [--only s01,s11] [--script episodes/<ep>/script.json]
+    # Clarence 11/27：每集先抽樣 4 段當實驗（--sample 4），其他段維持 select_takes 的選擇
 
     # 2) take_review.py 的頁面已預選 Gemini 選的，Clarence 不同意才改；結果存成 takes-tags.json
     # 3) 套用：每段用他改的，沒改就用 Gemini 選的（Gemini 不一致又沒改的段落維持 select_takes 的選擇）
@@ -82,6 +83,10 @@ def cmd_judge(a):
     if a.only:
         keep = set(a.only.split(","))
         groups = {k: v for k, v in groups.items() if k in keep}
+    if a.sample and a.sample < len(groups):   # Clarence 11/27：每集先抽樣幾段當實驗；同一集每次抽到同樣幾段
+        keys = sorted(groups); random.Random(Path(a.segments).resolve().name).shuffle(keys)
+        groups = {k: groups[k] for k in sorted(keys[:a.sample])}
+        print(f"抽樣 {a.sample} 段：{', '.join(groups)}")
     texts = {}
     if a.script:
         texts = {s["id"]: s["text"] for s in json.loads(Path(a.script).read_text(encoding="utf-8"))["segments"]}
@@ -169,6 +174,7 @@ if __name__ == "__main__":
         p.add_argument("--pattern", default="*.take*.wav"); p.add_argument("--group-re", default=r"^(.+?)\.take\d+")
     j = sub.choices["judge"]
     j.add_argument("--reference", default=str(REFERENCE)); j.add_argument("--model", default="gemini-3.8-flash")
+    j.add_argument("--sample", type=int, default=0, help="只抽 N 段（每集固定同樣幾段）；0 = 全部")
     j.add_argument("--only", default=""); j.add_argument("--script", default=""); j.add_argument("--seed", type=int, default=0)
     for name in ("apply", "compare"):
         sub.choices[name].add_argument("--tags", required=True)

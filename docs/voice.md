@@ -41,10 +41,11 @@
 
 `select_takes.py` 的清楚、穩定、語速、聲紋都量不到 Clarence 聽得出的「太淡」「太激動」。Clarence 11/27 定的做法：
 **Gemini 先選，他當挑戰者，有反對就改，記下不一樣的**。每段 0/1：他沒改 = 1，改了 = 0。
+**每集先抽樣 4 段當實驗**（`--sample 4`，同一集每次抽到同樣幾段），其他段照 `select_takes.py`。
 
 ```bash
-python3 tools/affect_judge.py judge out/segments/D1_<ep> --script episodes/<ep>/script.json            # Gemini 選（每段約 US$0.014）
-python3 tools/take_review.py out/segments/D1_<ep> <資料夾> --script episodes/<ep>/script.json --linked   # 試聽頁，預選 Gemini 選的
+python3 tools/affect_judge.py judge out/segments/D1_<ep> --sample 4 --script episodes/<ep>/script.json   # 抽 4 段給 Gemini 選（每段約 US$0.014）
+python3 tools/take_review.py out/segments/D1_<ep> <資料夾> --script episodes/<ep>/script.json --linked --judged-only   # 試聽頁，預選 Gemini 選的
 #   → 發佈成 claude.ai Artifact（頁面 + takes/*.mp3）給他；他貼回的 JSON 存成 <資料夾>/takes-tags.json
 python3 tools/affect_judge.py apply out/segments/D1_<ep> --tags <資料夾>/takes-tags.json                # 套用並記錄
 ```
