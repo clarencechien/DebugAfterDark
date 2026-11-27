@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1010" viewBox="0 0 1200 1010" font-family="Noto Sans TC, Noto Sans CJK TC, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+    <style>
+      .box{fill:#fff;stroke:#888;stroke-width:1.5}
+      .src{fill:#eef4ff;stroke:#5b7fc4}
+      .free{fill:#eef9f0;stroke:#4c9a5f}
+      .me{fill:#fff4e5;stroke:#d08a1f;stroke-width:2.5}
+      .yt{fill:#fdecec;stroke:#c0392b;stroke-width:1.8}
+      .exp{fill:#f3f0ff;stroke:#7a5bc4;stroke-width:1.5;stroke-dasharray:5 4}
+      .t{font-size:17px;font-weight:700;fill:#222}
+      .s{font-size:13px;fill:#444}
+      .x{font-size:13px;fill:#b03a2e;font-weight:700}
+      .p{font-size:13px;fill:#7a5bc4;font-weight:700}
+      .ln{stroke:#555;stroke-width:1.8;fill:none;marker-end:url(#a)}
+      .dash{stroke:#999;stroke-width:1.5;fill:none;stroke-dasharray:6 5;marker-end:url(#a)}
+      .h{font-size:22px;font-weight:700;fill:#222}
+    </style>
+  </defs>
+  <rect width="1200" height="1010" fill="#fafaf7"/>
+  <text x="30" y="40" class="h">非 AI 舊集影片版：每集流程（11/27 定，12/5 起每天 12:00 一支）</text>
+  <text x="30" y="64" class="s">藍＝已有的素材　綠＝零 token、雲端跑　橘＝Clarence 本人　紅＝動 YouTube（不可逆前都先排程私人）　紫虛線＝實驗量測</text>
+
+  <!-- row 1: inputs -->
+  <rect x="30" y="90" width="260" height="96" rx="10" class="box src"/>
+  <text x="45" y="117" class="t">這集已經有的</text>
+  <text x="45" y="140" class="s">mp3、script.json、select_log</text>
+  <text x="45" y="159" class="s">imitator 報告的圖</text>
+  <text x="45" y="178" class="s">episode.json 的 youtube 標題、縮圖字</text>
+
+  <rect x="330" y="90" width="260" height="96" rx="10" class="box free"/>
+  <text x="345" y="117" class="t">① 時間與字卡</text>
+  <text x="345" y="140" class="s">make_video.py --no-video</text>
+  <text x="345" y="159" class="s">→ srt、render_log、visuals.json</text>
+  <text x="345" y="178" class="s">章節時間（含 ident 修正）</text>
+
+  <rect x="630" y="90" width="260" height="96" rx="10" class="box free"/>
+  <text x="645" y="117" class="t">② 網頁時間軸</text>
+  <text x="645" y="140" class="s">webvideo/build_timeline.py</text>
+  <text x="645" y="159" class="s">→ timeline.json</text>
+  <text x="645" y="178" class="s">開機封面＋EP 編號＋標題</text>
+
+  <rect x="930" y="90" width="240" height="96" rx="10" class="box free"/>
+  <text x="945" y="117" class="t">③ 錄製（約 4 分鐘）</text>
+  <text x="945" y="140" class="s">render.js --theme</text>
+  <text x="945" y="159" class="x">opening（A）或 opening-b（B）</text>
+  <text x="945" y="178" class="s">照下面的 ABBA 表</text>
+
+  <path d="M290,138 L326,138" class="ln"/>
+  <path d="M590,138 L626,138" class="ln"/>
+  <path d="M890,138 L926,138" class="ln"/>
+
+  <!-- row 2 -->
+  <rect x="930" y="230" width="240" height="96" rx="10" class="box free"/>
+  <text x="945" y="257" class="t">④ 自動驗收</text>
+  <text x="945" y="280" class="s">長度、響度、字幕對齊</text>
+  <text x="945" y="299" class="s">數字卡對得到 script</text>
+  <text x="945" y="318" class="s">sha256、縮圖（EP07 贏的版型）</text>
+  <path d="M1050,186 L1050,226" class="ln"/>
+
+  <rect x="630" y="230" width="260" height="96" rx="10" class="box me"/>
+  <text x="645" y="257" class="t">⑤ Clarence 看審核單</text>
+  <text x="645" y="280" class="s">video/&lt;ep&gt;/review.md：預覽總表、</text>
+  <text x="645" y="299" class="s">標題、說明欄、排程時間</text>
+  <text x="645" y="318" class="s">回「好」＝同意上傳</text>
+  <path d="M930,278 L894,278" class="ln"/>
+
+  <rect x="330" y="230" width="260" height="96" rx="10" class="box yt"/>
+  <text x="345" y="257" class="t">⑥ API 上傳、排程</text>
+  <text x="345" y="280" class="s">yt_upload.py：private＋publishAt 12:00</text>
+  <text x="345" y="299" class="s">AI 標示、縮圖、播放清單</text>
+  <text x="345" y="318" class="x">字幕：captions.insert（11/27 授權已通過）</text>
+  <path d="M630,278 L594,278" class="ln"/>
+
+  <rect x="30" y="230" width="260" height="96" rx="10" class="box me"/>
+  <text x="45" y="257" class="t">公開前最後一道</text>
+  <text x="45" y="280" class="s">publishAt 前都是私人：</text>
+  <text x="45" y="299" class="s">工作室看到真的版本，</text>
+  <text x="45" y="318" class="s">不對就保持私人＝取消</text>
+  <path d="M330,278 L294,278" class="dash"/>
+
+  <!-- row 3: publish-time actions -->
+  <rect x="330" y="370" width="260" height="116" rx="10" class="box yt"/>
+  <text x="345" y="397" class="t">⑦ 12:00 公開之後</text>
+  <text x="345" y="420" class="s">RSS 匯入的那支改私人</text>
+  <text x="345" y="439" class="s">videoId 加進 yt_autofix</text>
+  <text x="345" y="458" class="s">KEEP_PRIVATE（PR）</text>
+  <text x="345" y="477" class="s">影片版 id 填 experiments.json</text>
+  <path d="M460,326 L460,366" class="ln"/>
+
+  <rect x="630" y="370" width="260" height="116" rx="10" class="box me"/>
+  <text x="645" y="397" class="t">⑧ 只有 EP24–27</text>
+  <text x="645" y="420" class="s">Short 的「相關影片」</text>
+  <text x="645" y="439" class="s">在工作室改連到新影片版</text>
+  <text x="645" y="458" class="s">（API 沒有這個欄位）</text>
+  <path d="M590,428 L626,428" class="dash"/>
+
+  <rect x="930" y="370" width="240" height="116" rx="10" class="box exp"/>
+  <text x="945" y="397" class="t">⑨ 第 7 天量測</text>
+  <text x="945" y="420" class="s">只看自然流量（排除廣告）</text>
+  <text x="945" y="439" class="p">主要：30 秒留存</text>
+  <text x="945" y="458" class="s">次要：1 分鐘留存、觀看比例</text>
+  <text x="945" y="477" class="s">週報 yt_report.py 自動拉</text>
+  <path d="M890,428 L926,428" class="ln"/>
+
+  <!-- schedule table -->
+  <text x="30" y="535" class="h">上架順序（錢和其他輪流，開場在各類裡照 ABBA）</text>
+  <g font-size="13.5">
+  <rect x="30" y="550" width="1140" height="190" rx="10" fill="#fff" stroke="#ccc"/>
+  <text x="45" y="578" font-weight="700" fill="#222">錢（11 集）</text>
+  <text x="45" y="602" fill="#444">12/5 EP41 A　12/7 EP45 B　12/9 EP34 B　12/11 EP35 A　12/13 EP28 A　12/15 EP29 B</text>
+  <text x="45" y="624" fill="#444">12/17 EP24 B　12/19 EP25 A　12/21 EP26 A　12/23 EP12 B　12/24 EP20 B</text>
+  <text x="45" y="660" font-weight="700" fill="#222">其他（9 集）</text>
+  <text x="45" y="684" fill="#444">12/6 EP30 A　12/8 EP27 B　12/10 EP22 B　12/12 EP23 A　12/14 EP14 A　12/16 EP18 B</text>
+  <text x="45" y="706" fill="#444">12/18 EP19 B　12/20 EP32 A　12/22 EP40 A</text>
+  <text x="45" y="728" fill="#888">日期是預排；哪天卡住就整串往後推，順序和 A/B 不變。</text>
+  </g>
+
+  <!-- decision -->
+  <rect x="30" y="770" width="560" height="210" rx="10" class="box exp"/>
+  <text x="45" y="798" class="t">怎麼判斷（事先定好）</text>
+  <text x="45" y="824" class="s">12/19：兩類各前 4 集到第 7 天，第一次看</text>
+  <text x="45" y="846" class="s">12/31：20 集全部到第 7 天，定案</text>
+  <text x="45" y="872" class="s">A 的 30 秒留存中位數比 B 高 ≥5 個百分點，</text>
+  <text x="45" y="892" class="s">且相鄰 A、B 配對至少 3 組同方向 → 用 A</text>
+  <text x="45" y="914" class="s">反過來 → 用 B；其他 → 平手，用 B（錄得快一半）</text>
+  <text x="45" y="940" class="s">錢和其他分開看：若一類適合 A、一類適合 B，</text>
+  <text x="45" y="960" class="s">就改成按類型固定</text>
+
+  <rect x="630" y="770" width="540" height="210" rx="10" class="box"/>
+  <text x="645" y="798" class="t">不在這批、要注意的</text>
+  <text x="645" y="824" class="s">先不翻：EP06、07、13、15、16（RSS 版還有真流量），</text>
+  <text x="645" y="844" class="s">EP37（等 12/7 改標題結果）；12/19 再決定</text>
+  <text x="645" y="870" class="s">AI 的集數（含 EP38 之後的新集）照舊只有 RSS 版</text>
+  <text x="645" y="896" class="s">沒有「音訊自己上傳」對照組：影片版贏 RSS 版，</text>
+  <text x="645" y="916" class="s">分不出是畫面還是不走 RSS 匯入</text>
+  <text x="645" y="942" class="s">舊集題目會過時：只比同批的 A 和 B，</text>
+  <text x="645" y="962" class="s">不跟 EP36 這種新集直接比</text>
+</svg>
