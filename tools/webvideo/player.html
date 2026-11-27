@@ -5,6 +5,7 @@
   load(timeline, theme) once, then seek(t) draws the frame for video time t and returns a key:
   the same key means the same pixels, so render.js can reuse the previous screenshot.
   No third-party scripts, no storage APIs (imitator STYLE.md rules), fonts are local system fonts.
+  Themes: slide (kept for Shorts), paper (dark editorial / data-journalism), terminal (SQL + CLI with TUI output).
 -->
 <style>
 html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#000}
@@ -26,7 +27,7 @@ html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#000}
 #prog i{position:absolute;left:0;top:0;bottom:0;display:block}
 #term{display:none}
 
-/* ---------- theme: slide (what make_video.py --motion does today, rebuilt in HTML) ---------- */
+/* ---------- theme: slide (make_video.py look; kept for Shorts) ---------- */
 .slide{background:#10172a;color:#fff}
 .slide #bgshade{background:linear-gradient(180deg,rgba(8,12,24,.72),rgba(8,12,24,.86))}
 .slide #bglabel{color:rgba(255,255,255,.7)}
@@ -41,37 +42,47 @@ html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#000}
 .slide #sub{color:#fff;text-shadow:0 3px 8px #000,0 0 2px #000}
 .slide #prog{background:rgba(255,255,255,.12)}.slide #prog i{background:#d33a2c}
 
-/* ---------- theme: paper (data-journalism / explainer look) ---------- */
-.paper{background:#f6f2ea;color:#1c1c1c}
+/* ---------- theme: paper, dark (late-night editorial / data-journalism) ---------- */
+.paper{background:#111318;color:#ece6da}
 .paper #bg{display:none}
-.paper #head{top:40px;padding-bottom:18px;border-bottom:2px solid #1c1c1c}
-.paper #brand{font-family:"Noto Serif CJK TC",serif;font-size:30px;color:#1c1c1c}
-.paper #chapter{font-family:"Noto Serif CJK TC",serif;font-weight:700;color:#8b2a1f}
+.paper #head{top:40px;padding-bottom:18px;border-bottom:2px solid #3a3d45}
+.paper #brand{font-family:"Noto Serif CJK TC",serif;font-size:30px;color:#ece6da}
+.paper #chapter{font-family:"Noto Serif CJK TC",serif;font-weight:700;color:#e8a05f}
 .paper #card{left:160px;right:160px;top:230px;text-align:left}
-.paper #card .top{font-size:40px;font-weight:700;color:#5a554c;letter-spacing:.06em}
-.paper #card .value{margin-top:14px;font-family:"Noto Serif CJK TC",serif;font-weight:900;font-size:136px;line-height:1.1;color:#8b2a1f}
-.paper #card .label{margin-top:20px;font-size:44px;color:#1c1c1c;border-left:10px solid #8b2a1f;padding-left:24px}
-.paper #card img{max-width:1600px;max-height:520px;background:#fff;padding:20px;border:1px solid #d6cfc2}
-.paper #src{left:160px;top:760px;color:#6d675c;font-size:26px}
+.paper #card .top{font-size:40px;font-weight:700;color:#9d968a;letter-spacing:.06em}
+.paper #card .value{margin-top:14px;font-family:"Noto Serif CJK TC",serif;font-weight:900;font-size:136px;line-height:1.1;color:#f2b36f}
+.paper #card .label{margin-top:20px;font-size:44px;color:#ece6da;border-left:10px solid #e8a05f;padding-left:24px}
+.paper #card img{max-width:1600px;max-height:520px;background:#fff;padding:20px;border:1px solid #3a3d45}
+.paper #src{left:160px;top:760px;color:#8a8478;font-size:26px}
 .paper #src::before{content:"資料｜";font-weight:700}
-.paper #sub{left:0;right:0;bottom:40px;padding:26px 140px;background:#1c1c1c;color:#f6f2ea;font-size:54px}
-.paper #prog{bottom:auto;top:0;height:8px;background:#e4ddcf}.paper #prog i{background:#8b2a1f}
+.paper #sub{left:0;right:0;bottom:40px;padding:26px 140px;background:#1c1f26;color:#ece6da;font-size:54px;border-top:1px solid #2c2f37}
+.paper #prog{bottom:auto;top:0;height:8px;background:#1f2229}.paper #prog i{background:#e8a05f}
 
-/* ---------- theme: terminal (深夜 Debug brand; same idea as the A1 demo replay) ---------- */
-.terminal{background:#0b0e13;color:#d7dde8}
-.terminal #bg,.terminal #card,.terminal #src{display:none}
+/* ---------- theme: terminal (SQL + CLI, TUI-style output built from the real cards) ---------- */
+.terminal{background:#0a0c10;color:#d7dde8}
+.terminal #bg,.terminal #card,.terminal #src,.terminal #prog{display:none}
 .terminal #brand{font-family:"Noto Sans Mono CJK TC",monospace;color:#7fd1ff}
 .terminal #chapter{color:#8a94a8;font-family:"Noto Sans Mono CJK TC",monospace}
-.terminal #term{display:block;position:absolute;left:96px;right:96px;top:120px;height:640px;background:#151a23;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.5);overflow:hidden}
-.terminal #term .bar{height:46px;background:#1f2530;display:flex;align-items:center;gap:12px;padding-left:20px}
-.terminal #term .bar i{width:15px;height:15px;border-radius:50%;display:block}
+.terminal #term{display:block;position:absolute;left:80px;right:80px;top:110px;height:700px;background:#12161e;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.6);overflow:hidden;border:1px solid #232a36}
+.terminal #term .bar{height:44px;background:#1b212c;display:flex;align-items:center;gap:12px;padding-left:20px}
+.terminal #term .bar i{width:14px;height:14px;border-radius:50%;display:block}
 .terminal #term .bar span{margin-left:14px;color:#8a94a8;font:22px "Noto Sans Mono CJK TC",monospace}
-.terminal #lines{position:absolute;left:36px;right:36px;bottom:26px;font:34px/1.55 "Noto Sans Mono CJK TC",monospace;white-space:pre-wrap}
-.terminal .cmd{color:#7fd1ff}.terminal .val{color:#ffd479;font-weight:700;font-size:56px;line-height:1.3}
-.terminal .lab{color:#b9eb5f}.terminal .dim{color:#6f788a}
-.terminal #cursor{display:inline-block;width:18px;height:36px;background:#d7dde8;vertical-align:-6px}
-.terminal #sub{color:#fff;bottom:90px}
-.terminal #prog{background:#1a1f29}.terminal #prog i{background:#7fd1ff}
+.terminal #lines{position:absolute;left:34px;right:34px;top:62px;bottom:62px;overflow:hidden;font:28px/1.5 "Noto Sans Mono CJK TC",monospace;white-space:pre;display:flex;flex-direction:column;justify-content:flex-end}
+.terminal #lines>*{flex-shrink:0;min-height:42px}
+.terminal .tui{margin:6px 0 4px;border:2px solid #3e5675;border-radius:4px;padding:10px 22px 10px;position:relative;display:inline-grid;grid-template-columns:auto auto;column-gap:36px;row-gap:2px;align-self:flex-start;margin-top:22px}
+.terminal .tui .t{position:absolute;left:16px;top:-22px;background:#12161e;padding:0 10px;color:#7fd1ff}
+.terminal .tbl{display:inline-grid;grid-template-columns:auto auto 640px;column-gap:28px;align-self:flex-start;border-top:2px solid #3e5675;border-bottom:2px solid #3e5675;padding:4px 10px;margin:4px 0}
+.terminal .tbl .h{color:#7fd1ff;border-bottom:1px solid #3e5675}
+.terminal .tbl i{display:block;height:24px;margin-top:9px}
+.terminal #status{position:absolute;left:0;right:0;bottom:0;height:46px;background:#1f6f8b;color:#e9f6fb;font:24px/46px "Noto Sans Mono CJK TC",monospace;white-space:pre;padding:0 20px;display:flex;justify-content:space-between}
+.terminal #status b{background:#e9f6fb;color:#1f6f8b;padding:0 12px;font-weight:700}
+.terminal .pr{color:#b9eb5f}.terminal .cmd{color:#e6edf7}.terminal .kw{color:#c792ea;font-weight:700}.terminal .str{color:#ffcb6b}
+.terminal .com{color:#6f7b90}.terminal .box{color:#4f6a8a}.terminal .key{color:#7fd1ff}.terminal .val{color:#ffd479;font-weight:700}
+.terminal .bar1{color:#f07178}.terminal .bar2{color:#7fd1ff}.terminal .ok{color:#b9eb5f}.terminal .dim{color:#6f7b90}
+.terminal .figwrap{display:flex;gap:24px;align-items:flex-start}
+.terminal .figwrap img{max-height:330px;max-width:900px;border:2px solid #4f6a8a;background:#fff}
+.terminal #cursor{display:inline-block;width:16px;height:32px;background:#d7dde8;vertical-align:-6px}
+.terminal #sub{color:#fff;bottom:64px;font-size:54px}
 </style></head>
 <body>
 <div id="stage">
@@ -79,23 +90,76 @@ html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#000}
   <div id="head"><span id="brand">● 深夜 Debug</span><span id="chapter"></span></div>
   <div id="card"></div>
   <div id="src"></div>
-  <div id="term"><div class="bar"><i style="background:#ff5f56"></i><i style="background:#ffbd2e"></i><i style="background:#27c93f"></i><span id="cwd"></span></div><div id="lines"></div></div>
+  <div id="term"><div class="bar"><i style="background:#ff5f56"></i><i style="background:#ffbd2e"></i><i style="background:#27c93f"></i><span id="cwd"></span></div><div id="lines"></div><div id="status"></div></div>
   <div id="sub"></div>
   <div id="prog"><i></i></div>
 </div>
 <script>
-let D = null, THEME = 'slide', prev = {};
+let D = null, THEME = 'slide', prev = {}, BLOCKS = [];
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function lastAt(list, t, key) { let r = -1; for (let i = 0; i < list.length; i++) { if (list[i][key] <= t) r = i; else break; } return r; }
 function sourceText(s) { return s === 'report' ? D.report_label : s; }
+const mmss = s => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
+
+// ---------- terminal: turn each real card into a command and a TUI answer ----------
+// Commands and layout are staged (the "mock" half); every value, label and source shown is the card's own (the "real" half).
+const W = s => { let n = 0; for (const ch of String(s)) n += ch.codePointAt(0) > 0x2e80 ? 2 : 1; return n; };
+const pad = (s, n) => s + ' '.repeat(Math.max(0, n - W(s)));
+const seg = (text, cls) => ({ text, cls });
+const nums = s => (String(s).match(/\d[\d,]*(?:\.\d+)?/g) || []).map(x => parseFloat(x.replace(/,/g, '')));
+const slug = () => D.episode.replace(/^ep\d+-/, '');
+const QUOTE = s => `'${s}'`;
+
+// box-drawing glyphs are full-width in CJK mono fonts, so frames and tables are drawn with CSS borders instead
+const boxLines = (title, rows) => [{ box: { title, rows } }];
+
+function blockFor(c, i) {
+  const src = sourceText(c.source);
+  if (c.kind === 'figure') {
+    return { prompt: `~/${slug()} $ `, cmd: [seg('dad plot ', 'cmd'), seg('fig01', 'str'), seg(' --from report.html', 'cmd')],
+      out: [{ fig: c.image, caption: c.label }, [seg('-- ' + src, 'com')]] };
+  }
+  const v = nums(c.value);
+  if (c.value.includes('→') && v.length >= 2) { // a before/after pair: SQL with bars
+    const [a, b] = c.label.includes('→') ? c.label.split('→').map(s => s.trim()) : ['之前', '之後'];
+    const parts = c.value.split('→').map(s => s.trim());
+    const max = Math.max(v[0], v[1]) || 1;
+    return { prompt: 'dad=> ', cmd: [seg('SELECT ', 'kw'), seg('period, value ', 'cmd'), seg('FROM ', 'kw'), seg('findings ', 'cmd'), seg('WHERE ', 'kw'), seg('topic = ', 'cmd'), seg(QUOTE(c.top), 'str'), seg(';', 'cmd')],
+      out: [{ table: [[a, parts[0], v[0] / max, 'bar2'], [b, parts[1], v[1] / max, 'bar1']] }, [seg('(2 rows)  -- ' + src, 'com')]] };
+  }
+  if (v.length && i % 2 === 0) { // a number: SQL, one row
+    const rows = [['value', c.value, 'val']]; if (c.label) rows.push(['note', c.label]);
+    return { prompt: 'dad=> ', cmd: [seg('SELECT ', 'kw'), seg('value, note ', 'cmd'), seg('FROM ', 'kw'), seg('findings ', 'cmd'), seg('WHERE ', 'kw'), seg('topic = ', 'cmd'), seg(QUOTE(c.top), 'str'), seg(';', 'cmd')],
+      out: [...boxLines(c.top, rows), [seg('(1 row)  -- ' + src, 'com')]] };
+  }
+  // anything else: the episode's own CLI
+  const rows = [['finding', c.value, 'val']]; if (c.label) rows.push(['context', c.label]); rows.push(['source', src]);
+  return { prompt: `~/${slug()} $ `, cmd: [seg('dad trace ', 'cmd'), seg(`"${c.top}"`, 'str'), seg(' --report ' + slug(), 'cmd')],
+    out: [[seg('✓ ', 'ok'), seg('found in report.html', 'dim')], ...boxLines(c.top, rows)] };
+}
+
+function lineHtml(l) {
+  if (l.box) return `<div class="tui"><span class="t">${esc(l.box.title)}</span>${l.box.rows.map(([k, v, cls]) => `<span class="dim">${esc(k)}</span><span class="${cls || 'cmd'}">${esc(v)}</span>`).join('')}</div>`;
+  if (l.table) return `<div class="tbl"><span class="h">period</span><span class="h">value</span><span class="h"></span>${l.table.map(([p, v, f, cls]) => `<span>${esc(p)}</span><span class="val">${esc(v)}</span><span><i style="width:${Math.max(2, Math.round(f * 100))}%;background:${cls === 'bar1' ? '#f07178' : '#7fd1ff'}"></i></span>`).join('')}</div>`;
+  if (l.fig) return `<div class="figwrap"><img src="${l.fig}" alt=""><span class="ok">▸ ${esc(l.caption)}</span></div>`;
+  return `<div>${l.map(s => s.cls ? `<span class="${s.cls}">${esc(s.text)}</span>` : esc(s.text)).join('')}</div>`;
+}
 
 window.load = function (data, theme) {
   D = data; THEME = theme || 'slide';
   $('stage').className = THEME;
-  $('cwd').textContent = '~/reports/' + D.episode;
+  $('cwd').textContent = `clarence@debugafterdark: ~/${D.episode} — dad (psql)`;
   prev = {};
-  // preload every background so seek() never waits on decoding
+  if (THEME === 'terminal') {
+    // typing starts early so the answer lands on the anchor sentence, but never before the previous answer
+    const CPS = 32, THINK = 0.35;
+    BLOCKS = D.cards.map((c, i) => {
+      const b = blockFor(c, i), len = b.cmd.reduce((n, s) => n + s.text.length, 0);
+      const want = c.t - len / CPS - THINK, floor = i ? D.cards[i - 1].t + 0.6 : 0;
+      return Object.assign(b, { start: Math.max(want, floor), len, cps: CPS, think: THINK, t: c.t });
+    });
+  }
   return Promise.all(D.backgrounds.map(b => new Promise(r => { const im = new Image(); im.onload = im.onerror = r; im.src = b.src; })));
 };
 
@@ -105,17 +169,52 @@ function set(id, prop, val) { // touch the DOM only when something changed
   if (prop === 'html') el.innerHTML = val; else if (prop === 'src') el.src = val; else el.style[prop] = val;
 }
 
+function terminalFrame(t, ci, key) {
+  const chStart = ci >= 0 ? D.chapters[ci].t : 0;
+  let html = '';
+  const lines = [];
+  if (ci >= 0) lines.push([seg(`-- 第 ${ci + 1} 章：${D.chapters[ci].name}`, 'com')]);
+  let state = 'idle', typed = 0, lastPrompt = `~/${slug()} $ `;
+  BLOCKS.forEach((b, i) => {
+    if (b.start > t || D.cards[i].t < chStart - 0.01) return; // this chapter's cards only: a new chapter clears the screen
+    lastPrompt = b.prompt;
+    const n = Math.min(b.len, Math.floor((t - b.start) * b.cps));
+    // command, cut to n characters
+    let left = n; const cmd = [];
+    for (const s of b.cmd) { if (left <= 0) break; cmd.push(seg(s.text.slice(0, left), s.cls)); left -= s.text.length; }
+    const typing = n < b.len, waiting = !typing && t < b.start + b.len / b.cps + b.think;
+    lines.push({ prompt: b.prompt, cmd, cursor: typing });
+    if (typing) { state = 'typing'; typed = n; return; }
+    if (waiting) { lines.push([seg('⠋ 查詢中…', 'dim')]); state = 'wait'; return; }
+    for (const l of b.out) lines.push(l);
+    lines.push([]);
+    state = 'done';
+  });
+  const blink = Math.floor(t * 2) % 2;
+  if (state !== 'typing') lines.push({ prompt: lastPrompt, cmd: [], cursor: true });
+  for (const l of lines) {
+    if (l && l.prompt !== undefined) html += `<div><span class="pr">${esc(l.prompt)}</span>${l.cmd.map(s => s.cls ? `<span class="${s.cls}">${esc(s.text)}</span>` : esc(s.text)).join('')}${l.cursor ? `<span id="cursor" style="opacity:${l.cursor && state === 'typing' ? 1 : blink ? 0 : 1}"></span>` : ''}</div>`;
+    else html += lineHtml(l);
+  }
+  set('lines', 'html', html);
+  const k = lastAt(D.cards, t, 't'), c = k >= 0 ? D.cards[k] : null;
+  const bars = Math.round(20 * Math.min(1, t / D.duration));
+  set('status', 'html', `<span><b>${esc(D.episode.split('-')[0])}</b> 1:report 2:sql*  第 ${ci + 1}/${D.chapters.length} 章</span><span>${'▮'.repeat(bars)}${'▯'.repeat(20 - bars)} ${mmss(t)} / ${mmss(D.duration)}  src: ${esc(c ? sourceText(c.source) : '—')}</span>`);
+  key.push(state, typed, state === 'typing' ? 0 : blink, bars, Math.floor(t), k);
+}
+
 window.seek = function (t) {
   const key = [];
   const ci = lastAt(D.chapters, t, 't');
   const chap = ci >= 0 ? D.chapters[ci].name : '';
-  set('chapter', 'html', esc(THEME === 'terminal' ? '# ' + chap : (THEME === 'paper' ? `第 ${ci + 1} 章　${chap}` : chap)));
+  set('chapter', 'html', esc(THEME === 'terminal' ? '' : (THEME === 'paper' ? `第 ${ci + 1} 章　${chap}` : chap)));
   key.push(ci);
 
-  // subtitle
   let cue = null; for (const c of D.cues) { if (c.t0 <= t && t < c.t1) { cue = c; break; } if (c.t0 > t) break; }
   set('sub', 'html', cue ? cue.lines.map(l => `<div>${esc(l)}</div>`).join('') : '');
   key.push(cue ? cue.t0 : -1);
+
+  if (THEME === 'terminal') { terminalFrame(t, ci, key); return JSON.stringify(key); }
 
   // background with a slow 4% push-in per segment (slide theme only), quantized to ~1px steps
   const bi = lastAt(D.backgrounds, t, 't');
@@ -131,43 +230,17 @@ window.seek = function (t) {
   // card: the latest one, fading in over 0.4 s and rising 12 px
   const k = lastAt(D.cards, t, 't');
   const c = k >= 0 ? D.cards[k] : null;
-  const age = c ? t - c.t : 99;
-  const f = Math.round(Math.min(1, age / 0.4) * 12) / 12;
-  if (THEME !== 'terminal') {
-    let html = '';
-    if (c && c.kind === 'figure') html = `<img src="${c.image}" alt=""><span class="label">${esc(c.label)}</span>`;
-    else if (c) html = `<span class="top">${esc(c.top)}</span><span class="value">${esc(c.value)}</span><span class="label">${esc(c.label)}</span>`;
-    set('card', 'html', html);
-    set('card', 'opacity', String(f));
-    set('card', 'transform', `translateY(${Math.round((1 - f) * 12)}px)`);
-    set('src', 'html', c ? esc(sourceText(c.source)) : '');
-    set('src', 'opacity', String(f));
-    key.push(k, f);
-  } else {
-    // terminal: every card of this chapter is a command and its answer; the newest one types itself
-    const chStart = ci >= 0 ? D.chapters[ci].t : 0;
-    const shown = D.cards.filter((x, i) => i <= k && x.t >= chStart).slice(-3);
-    let html = '', typed = -1;
-    shown.forEach((x, i) => {
-      const last = i === shown.length - 1;
-      const what = x.kind === 'figure' ? 'open figure.png' : `grep "${x.top}" report.html`;
-      const cmd = '$ ' + what;
-      const n = last ? Math.min(cmd.length, Math.floor((t - x.t) * 40)) : cmd.length;
-      if (last) typed = n;
-      html += `<div class="cmd">${esc(cmd.slice(0, n))}</div>`;
-      if (n >= cmd.length) {
-        html += x.kind === 'figure' ? `<div class="lab">● ${esc(x.label)}</div>` :
-          `<div class="val">${esc(x.value)}</div><div class="lab">● ${esc(x.label)}</div>`;
-        html += `<div class="dim">  來源：${esc(sourceText(x.source))}</div>`;
-      }
-    });
-    const blink = Math.floor(t * 2) % 2;
-    html += `<div class="cmd">$ <span id="cursor" style="opacity:${blink ? 0 : 1}"></span></div>`;
-    set('lines', 'html', html);
-    key.push(k, typed, blink);
-  }
+  const f = Math.round(Math.min(1, (c ? t - c.t : 99) / 0.4) * 12) / 12;
+  let html = '';
+  if (c && c.kind === 'figure') html = `<img src="${c.image}" alt=""><span class="label">${esc(c.label)}</span>`;
+  else if (c) html = `<span class="top">${esc(c.top)}</span><span class="value">${esc(c.value)}</span><span class="label">${esc(c.label)}</span>`;
+  set('card', 'html', html);
+  set('card', 'opacity', String(f));
+  set('card', 'transform', `translateY(${Math.round((1 - f) * 12)}px)`);
+  set('src', 'html', c ? esc(sourceText(c.source)) : '');
+  set('src', 'opacity', String(f));
+  key.push(k, f);
 
-  // progress bar, 2 px steps
   const w = Math.round(1920 * Math.min(1, t / D.duration) / 2) * 2;
   set('prog', 'html', `<i style="width:${w}px"></i>`);
   key.push(w);
