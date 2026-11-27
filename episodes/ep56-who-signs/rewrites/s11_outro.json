@@ -1,0 +1,154 @@
+{
+ "segment": "s11_outro",
+ "position": "第 12 段，共 12 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "9f313a13a7a9cf205814ab51423ca34f4ea0b7b931e296cebfa76eafbfa7228b",
+ "previous_context": "上一篇說，答案要帶回去自己驗一次才算數。這次只改了一個字：帶回去自己蓋一次。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，一個東西能不能讓 AI 蓋完就丟，問三件事：有沒有人依賴它、有沒有要留的資料、對錯能不能用外面的一把尺驗。第二，AI 讓有鑑別力的人更快，讓沒有的人更快地錯；鑑別力來自親手做過，所以拿到程式碼之後，要追問為什麼。第三，把你剛學到的邊界寫下來，寫成測試和架構決策紀錄，別只放在腦子裡；然後帶回去自己蓋一次。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 203,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 28.0,
+   "max_sentence_len": 53,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n到底要怎麼跟 AI 協作？其實就看這三件事喔。\n第一，程式碼能不能丟，先看有沒有人依賴。還有資料要不要留，對錯能不能自己驗。\n第二，鑑別力才是拉開差距的關鍵。拿到 code 多追問，經驗才會是你的啦。\n第三，把邊界寫成測試和架構決策紀錄。然後一定要帶回去自己蓋一次。\n這幾點我聽完真的很有共鳴。<laugh>\n原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 192,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 13.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，東西能不能讓 AI 蓋完就丟？\n先看有沒有人依賴、要不要留資料，\n還有對錯能不能在外面驗證喔。\n第二，鑑別力到底哪裡來？\n其實都是來自親手做過。\nAI 會讓你更快，\n但拿到程式碼一定要追問為什麼。\n第三，把學到的邊界寫成測試和架構決策紀錄。\n我覺得帶回去自己蓋一次，\n心裡才會真的踏實啦。<short pause>\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 188,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 29,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>東西到底能不能用完就丟？其實就看三個問題。有沒有人用、資料要不要留，還有能不能用外面的尺來驗對錯。第二，AI 讓懂的人跑超快，不懂的人只會錯更快。<short pause>鑑別力從哪裡來？動手做出來的嘛。這點我真的很有共鳴喔。所以拿到程式碼，記得多問為什麼。第三，把學到的邊界寫成測試跟決策紀錄，然後帶回去自己蓋一次。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 198,
+    "precise_numbers": [],
+    "enumerations": [
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 29,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "第一，程式碼能不能丟，先看有沒有人依賴。還有資料要不要留，對錯能不能自己驗。第二，鑑別力才是拉開差距的關鍵。拿到 code 多追問，經驗才會是你的啦。",
+   "to": "第一，一個東西能不能用完就丟，問三件事：有沒有人依賴它、資料要不要留、對錯能不能用外面的一把尺驗。第二，AI 讓有鑑別力的人更快，讓沒有的人更快地錯；拿到 code，要追問為什麼。",
+   "reason": "照前面講過的"
+  },
+  {
+   "from": "這幾點我聽完真的很有共鳴。<laugh>",
+   "to": "",
+   "reason": "拿掉個人反應"
+  },
+  {
+   "from": "其實就看這三件事喔。",
+   "to": "其實就帶走這三點。",
+   "reason": "避免和第一點的「三件事」重複"
+  },
+  {
+   "from": "讓沒有的人更快地錯；",
+   "to": "讓沒有的人更快地做錯；",
+   "reason": "兩套辨識都聽錯「地錯」"
+  },
+  {
+   "from": "然後一定要帶回去自己蓋一次。",
+   "to": "然後，帶回去，自己動手蓋一次。",
+   "reason": "兩套辨識都把「蓋」聽成改"
+  }
+ ]
+}

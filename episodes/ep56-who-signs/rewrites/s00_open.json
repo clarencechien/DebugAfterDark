@@ -1,0 +1,132 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 12 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "6e12e3907e23afd29da3876eee648cc7a38065568c6eaca70e7d44cdaeb28228",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "Google 前執行長 Eric Schmidt 今年九月底在 Blackstone 的 podcast 上說，他二十二歲時是同世代最好的程式設計師之一，還補一句「根據我自己的說法」。接著他說：「我的領域結束了。我看它現在寫的程式碼，我寫不出來。我被打敗了，打得很慘。」他的結論是：以前要自己蓋房子，現在可以用 Claude Code、Codex 當建築師，說我要什麼，程式碼就寫好了，下一代會是建築師。可是三隻小豬也都是建築師，各蓋了一間屋，蓋的時候每一間都是對的，差別要等大野狼來了才看得出來。這集要回答：AI 把蓋房子接走之後，誰有資格在圖上簽名？",
+  "lint": {
+   "chars": 265,
+   "precise_numbers": [
+    "二十二"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 36.9,
+   "max_sentence_len": 83,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "連 Google 前執行長都認輸了。\n我們寫程式還有搞頭嗎？\nEric Schmidt 最近在訪談裡說，\n他二十二歲是頂尖的工程師。\n結果他承認自己被打得很慘。<sigh>\n現在 AI 寫的程式碼，他根本寫不出來。\n所以大家以後不用自己蓋房子了。\n用 Claude Code 當個建築師就好。\n你覺得這聽起來很棒對不對？\n其實三隻小豬也都是建築師啊。\n稻草、木頭跟磚頭，蓋的時候看起來都對。\n重點是大野狼來了，到底誰撐得住？\n還有最關鍵的一點。<short pause>\n房子如果出事，誰要在圖上簽名負責？\nAI 把蓋房子這件事接走以後，\n留給我們的，其實就是那個簽名啦。",
+   "lint": {
+    "chars": 242,
+    "precise_numbers": [
+     "二十二"
+    ],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 16.3,
+    "max_sentence_len": 31,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "Eric Schmidt 最近說了一句很重的話。\n他說自己二十二歲時，是同代最強的工程師。\n然後他說，自己的領域已經結束了。\n因為 AI 寫的 code，他現在完全寫不出來。\n他承認自己被打敗了，而且被打得很慘。<sigh>\n在他看來，以後工程師不用自己蓋房子了。\n大家只要用 Claude Code 當建築師就好。\n出張嘴說要什麼，程式碼就自己生出來了。\n你覺得這聽起來很美好對不對？\n但我看到這裡，其實整個背脊發涼欸。\n你想想看三隻小豬的故事嘛。\n那三隻小豬，其實每一隻都算建築師啊。\n稻草屋跟磚頭屋，剛蓋好的時候看起來都對。\n差別只有在大野狼來了，大家才看得出來。\n重點來了，程式出事的時候誰要負責？\nAI 幫你把蓋房子這件事接走之後，\n到底誰才敢在設計圖上面簽名簽證？",
+   "lint": {
+    "chars": 307,
+    "precise_numbers": [
+     "二十二"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 18.2,
+    "max_sentence_len": 31,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "Google 前執行長 Eric Schmidt 前陣子丟出震撼彈。\n他說自己二十二歲時，是同世代最強的工程師。\n結果他話鋒一轉，說自己的領域已經結束了。<short pause>\n因為現在 AI 寫的 code，他根本寫不出來。\n他直接承認，自己被打得很慘。<laugh>\n我看到這段訪談，其實整個人愣住了。\n他的比喻是，以前我們要自己動手蓋房子。\n現在有了 Claude Code，只要當建築師就好。\n你只要開口講需求，程式碼就自動寫好了。\n你覺得這樣真的就沒事了嗎？<short pause>\n事情哪有這麼單純啊。\n你想想三隻小豬，三隻豬其實都是建築師喔。\n稻草、木頭跟磚塊，蓋好時看起來都沒問題。\n差別在哪裡？要等大野狼來了才知道嘛。\n所以當 AI 把蓋房子這件事整段接走，\n最後到底誰要在圖上簽名負責？",
+   "lint": {
+    "chars": 297,
+    "precise_numbers": [
+     "二十二"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 17.6,
+    "max_sentence_len": 30,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "Eric Schmidt 最近在訪談裡說，他二十二歲是頂尖的工程師。結果他承認自己被打得很慘。",
+   "to": "Eric Schmidt 九月底上 podcast 說，他二十二歲時是同世代最好的程式設計師之一，還補一句，根據他自己的說法。結果他承認，自己被打敗了，打得很慘。",
+   "reason": "照素材：補回「根據我自己的說法」、場合"
+  },
+  {
+   "from": "所以大家以後不用自己蓋房子了。用 Claude Code 當個建築師就好。你覺得這聽起來很棒對不對？",
+   "to": "他說，以前要自己蓋房子，現在用 Claude Code 當建築師就好，下一代會是建築師。",
+   "reason": "照素材：這是 Schmidt 的說法，不是節目的結論"
+  },
+  {
+   "from": "還有最關鍵的一點。<short pause>房子如果出事，誰要在圖上簽名負責？AI 把蓋房子這件事接走以後，留給我們的，其實就是那個簽名啦。",
+   "to": "<short pause>這集要回答：AI 把蓋房子接走之後，誰有資格在圖上簽名？",
+   "reason": "cold open 收在這集的問題；簽名的論點留給 s02"
+  }
+ ]
+}

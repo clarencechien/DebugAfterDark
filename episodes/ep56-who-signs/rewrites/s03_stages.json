@@ -1,0 +1,166 @@
+{
+ "segment": "s03_stages",
+ "position": "第 4 段，共 12 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "6abc83cfae78a58e19ded9c28bb62f4b5c883d1acc1cfbc5552f5126bf178b7a",
+ "previous_context": "你猜新人要怎麼辦？其實根本沒人知道吧。",
+ "original": {
+  "text": "先看這三年人跟程式碼的距離怎麼拉開。報告分成四階。二〇二四年像查字典，問一段、貼一段，每一行都是你打的。二〇二五上半年 AI 進了編輯器，幫你補全，每一行還經過你的眼睛，但不再經過你的手。下半年到今年是 agent，給它任務，它自己讀、改、跑、修，你看的是改了哪些地方和計畫。第四階是「做一個 app 給我」，你看的只剩結果。Stack Overflow 今年七月整個月只有一千四百多個新問題，因為問題換地方問了。Karpathy 自己用 vibe coding 做 app，前端幾小時就有八成，剩下的時間都在設網域、串登入、改金流。報告的結論是：四階不是越來越好，是人越退越遠，每退一階，你能驗證的東西就少一層。",
+  "lint": {
+   "chars": 295,
+   "precise_numbers": [
+    "一千四百"
+   ],
+   "enumerations": [
+    "第四"
+   ],
+   "sentences": 9,
+   "avg_sentence_len": 31.8,
+   "max_sentence_len": 54,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "先看這三年我們跟 code 怎麼拉開距離。\n這份報告把它分成四個階段。\n一開始像查字典，問一段貼一段。\n每一行都是你自己打的，它只是工具。\n然後 AI 進了編輯器，幫你補全。\n每一行還經過你的眼睛，但手不用動了。\n到了 agent 階段，你給它任務，它自己跑自己修。\n你只要看改了哪裡，根本不用看細節。<short pause>\n最後一階最誇張，直接叫它做一個 app。\n你看到的只剩結果，code 長怎樣隨便它。\n你有發現嗎？人其實越退越遠了。\n像 Stack Overflow 今年七月只剩一千四百多個新問題。\n大家不是不問，是換地方問了。\n連 Karpathy 自己用 vibe coding 做 app 都碰壁。\n前端幾個小時就搞定八成。\n但剩下全部在設網域、串登入、搞金流。\n<sigh>蓋外觀超快，接水電根本逃不掉嘛。\n每退一階，你能驗證的東西就少一層。\n問題是，退到最後的人到底要拿什麼來驗？",
+   "lint": {
+    "chars": 348,
+    "precise_numbers": [
+     "一千四百"
+    ],
+    "enumerations": [],
+    "sentences": 20,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 29,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "對啊，因為人跟程式碼的距離，\n這幾年拉開得太快了。<short pause>\n這份報告把這個過程分成四個階段。\n剛開始像查字典，\n問一段貼一段，\n每一行都還是你打的。\n後來 AI 進到編輯器幫忙補全，\n每一行經過你的眼睛，\n但不再經過你的手。\n接著變成 agent loop，\n你給任務它自己讀自己改，\n你看的是改動紀錄跟計畫。\n到了最後，\n直接叫它做一個 app 出來，\n程式碼在不在你都無所謂了。\nStack Overflow 上的新問題，\n比起高峰期少了百分之九十九點三。\n其實問題沒消失，\n只是人越退越遠了。<short pause>\n但你猜退到最後會怎樣？\n大神 Karpathy 自己做 app 都撞牆。\n前端外觀幾小時就做完八成，\n剩下的時間都在設網域、串登入跟改金流。\n最厲害的是，\n他把 vibe coding 這個說法收回去了。\n現在改叫 agentic engineering，\n人要當建築師，\n測試才是關鍵。\n我看到這段真的很有共鳴。<laugh>\n房子外表蓋得再快，\n接水電那段還是老樣子嘛。\n所以這不是越來越好，\n而是每退一階，\n你能驗證的東西就少一層啦。",
+   "lint": {
+    "chars": 409,
+    "precise_numbers": [
+     "百分之九十九點三"
+    ],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 24.6,
+    "max_sentence_len": 37,
+    "sentences_over_20": 10,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "先看這三年人跟程式碼的距離拉得多遠。\n光看一個數字就好，\nStack Overflow 的新問題，\n比高峰期少了百分之九十九點三。\n問題其實沒消失，只是換了地方問。\n這份報告把人退後的過程分成四階。\n一開始像查字典，問一段貼一段，\n每一行 code 都還是你打的啦。\n後來 AI 進了 IDE 幫忙補全，\n程式碼不經過手，但還經過你的眼睛。\n接著是 agent 自己改自己跑，\n你看的是 diff 跟計畫，不是一行一行看。\n到最後變成一句做一個 app 給我，\n程式碼在不在你根本不管了。<short pause>\n我看到這段真的很有共鳴。\n這不是變厲害，是人越退越遠啊。\n每退一階，你能驗證的東西就少一層。\n你猜連大神 Karpathy 自己都撞到什麼牆？\n他做 app，前端幾小時就弄好大半，\n結果剩下的時間都在設 DNS 跟串登入。\n房子蓋得再快，接水電還是老樣子嘛。<laugh>\n重點來了，退到最後的人到底要拿什麼驗？",
+   "lint": {
+    "chars": 354,
+    "precise_numbers": [
+     "百分之九十九點三"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 22.6,
+    "max_sentence_len": 41,
+    "sentences_over_20": 7,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "每一行都是你自己打的，它只是工具。",
+   "to": "每一行都是你自己打的。",
+   "reason": "縮短"
+  },
+  {
+   "from": "你只要看改了哪裡，根本不用看細節。",
+   "to": "你看的是改了哪裡和計畫，不再是一行一行。",
+   "reason": "照素材：不是不用看"
+  },
+  {
+   "from": "你有發現嗎？人其實越退越遠了。像 Stack Overflow",
+   "to": "Stack Overflow",
+   "reason": "結論移到段尾，縮短"
+  },
+  {
+   "from": "大家不是不問，是換地方問了。連 Karpathy",
+   "to": "大家不是不問，是換地方問了。Karpathy",
+   "reason": "縮短"
+  },
+  {
+   "from": "<sigh>蓋外觀超快，接水電根本逃不掉嘛。每退一階，你能驗證的東西就少一層。問題是，退到最後的人到底要拿什麼來驗？",
+   "to": "蓋得快的是房子的樣子，接水電那段還是老樣子。報告說，四階不是越來越好，是人越退越遠。每退一階，你能驗證的東西就少一層。",
+   "reason": "照素材原句；段落太長"
+  },
+  {
+   "from": "Karpathy 自己用 vibe coding 做 app 都碰壁。前端幾個小時就搞定八成。但剩下全部在設網域、串登入、搞金流。",
+   "to": "Karpathy 自己用 vibe coding 做 app，前端幾個小時就有八成。剩下的時間，都在設網域、串登入、改金流。",
+   "reason": "照素材，縮短"
+  },
+  {
+   "from": "大家不是不問，是換地方問了。",
+   "to": "問題換地方問了。",
+   "reason": "twtone 對舉超標"
+  },
+  {
+   "from": "報告說，四階不是越來越好",
+   "to": "這份報告說，四階不是越來越好",
+   "reason": "bare_report：句首「報告說」會被聽成「包括說」"
+  },
+  {
+   "from": "這份報告說，四階不是越來越好",
+   "to": "這份報告說，這四個階段不是越來越好",
+   "reason": "兩套辨識都把「四階」聽成世界"
+  }
+ ]
+}

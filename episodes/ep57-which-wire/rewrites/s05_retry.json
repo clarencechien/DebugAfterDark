@@ -1,0 +1,138 @@
+{
+ "segment": "s05_retry",
+ "position": "第 6 段，共 11 段",
+ "avoid": [
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "7ab4314560258da3f13e154f0556751cf34558edd5c706b21e68a46432e2c3c1",
+ "previous_context": "而是大家點開通知，全部衝回來的瞬間。登入頁直接被打爆，原文竟然完全沒提。",
+ "original": {
+  "text": "還有兩個藏得更深的錯。第一個是瓶頸。推播的配額在 Google 和 Apple 手上，花錢也買不到更多，所以雲端不是花錢就能大力出奇蹟。既然瓶頸在外面，排隊長了就開一千個 worker，只會換來更多「請求太多」的拒絕。該做的是一個全域的限速閥，worker 剛好吃滿配額就好。第二個是漏一則和重一則，哪個比較糟。對外的動作做不到剛好一次，只能二選一。行銷推播漏一則沒人在意，重複兩則會被客訴。原文的寫法是先記下已處理、再送出；記完還沒送就當機，重試時看到已處理就跳過，這則永遠不會送。報告說，這種錯，不懂的人讀起來完全合理，只有做過的人看得出來。",
+  "lint": {
+   "chars": 267,
+   "precise_numbers": [
+    "一千"
+   ],
+   "enumerations": [
+    "第一",
+    "第二"
+   ],
+   "sentences": 10,
+   "avg_sentence_len": 25.7,
+   "max_sentence_len": 45,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "其實原文還有兩個藏更深的漏洞。\n第一個是瓶頸的位置根本搞錯了。\n推播上限都在蘋果跟 Google 那邊。\n那不是多花錢開機器就能解決的。\n排隊塞車你就猛開 worker，你猜會怎樣？\n只會拿到一堆被拒絕的錯誤而已啦。\n其實用 token bucket 控制總速率就好，\n讓 worker 數量剛好吃滿額度。\n然後你再想一個問題：\n漏寄一則跟重複收到，哪個比較慘？\n行銷推播漏寄沒人在乎。\n但重複收到兩次，大家絕對罵死。\n原文的處理方式超諷刺。\n他是先在資料庫記下已處理，才去發送。\n如果剛記完就當機，重試看到已處理就跳過。\n這則推播就永遠不會送出去了。<laugh>\n他只是把重複送，偷偷換成漏掉而已。\n報告裡說，這種寫法不懂的人覺得很合理，\n只有真正做過的人才看得出破綻。",
+   "lint": {
+    "chars": 304,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 16,
+    "avg_sentence_len": 18.0,
+    "max_sentence_len": 37,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "原文其實還有兩個藏超深的盲點。\n第一個是瓶頸到底在哪？\n推播的配額在 Apple 跟 Google 手上。\n就算花錢也買不到更多。<short pause>\n塞車時你開一千個 worker 會怎樣？\n只會換來一堆被拒絕的 429 啦。\n正確做法是用限速，剛好吃滿配額就好。\n然後第二個問題也很妙。\n漏送跟重複送，你覺得哪個比較糟？\n其實重複比較糟，因為會被客訴嘛。\n原文是先記下已處理才送出去。\n如果記完剛好當機，重試就會直接跳過。\n這則推播就這樣永遠蒸發了。<sigh>\n它只是把可能重送，換成可能漏送。\n報告裡說，這種錯只有做過的人才懂。",
+   "lint": {
+    "chars": 230,
+    "precise_numbers": [
+     "一千",
+     "429"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 15,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實原文還有兩個藏得更深的盲點。\n第一個是瓶頸。\n你猜瓶頸在哪裡？\n根本不在你的伺服器，是在推播廠商那邊。\n人家的配額花錢買不到，不是砸錢就有用。\n排隊塞車你就狂開 worker 嗎？<short pause>\n多開只會換來滿滿的錯誤代碼而已啦。\n其實只要設好限速器，剛好吃滿配額就好。\n再來，漏送跟重送哪個比較慘？\n行銷推播漏掉沒人在意，重複發絕對被客訴。\n原文竟然先標記已處理才發送。\n要是標記完當機，這則推播就永遠蒸發了。\n它把重複送換成可能漏送。\n還講得好像完美解決一樣，真的很讓人傻眼。<sigh>\n報告裡說得很中肯。\n不懂的人看覺得超合理。\n只有真正做過的人，才看得出問題在哪裡。",
+   "lint": {
+    "chars": 259,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 14.2,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "多開只會換來滿滿的錯誤代碼而已啦。其實只要設好限速器",
+   "to": "多開只會換來更多「請求太多」的拒絕。該做的是一個全域的限速閥",
+   "reason": "照素材"
+  },
+  {
+   "from": "原文竟然先標記已處理才發送。要是標記完當機，這則推播就永遠蒸發了。它把重複送換成可能漏送。還講得好像完美解決一樣，真的很讓人傻眼。<sigh>報告裡說得很中肯。",
+   "to": "原文的寫法是先記下已處理，再送出。要是記完還沒送就當機，重試時看到已處理就跳過，這則永遠不會送。它把可能重送，換成了可能漏送。報告裡說，",
+   "reason": "照素材；對真實的人語氣不當"
+  }
+ ]
+}

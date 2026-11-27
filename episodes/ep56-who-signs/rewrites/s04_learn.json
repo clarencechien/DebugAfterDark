@@ -1,0 +1,138 @@
+{
+ "segment": "s04_learn",
+ "position": "第 5 段，共 12 段",
+ "avoid": [
+  "更扯的是"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "4cadfc48f121857cdc8b6428b02d9c18c438afbb300fe5f21041de9487816e0a",
+ "previous_context": "每退一階，你能驗證的東西就少一層。問題是，退到最後的人到底要拿什麼來驗？",
+ "original": {
+  "text": "那退遠了，學得會嗎？Anthropic 今年一月做了一個隨機對照實驗：五十二位資淺工程師學一個不熟的 Python 函式庫，用 AI 的那組事後測驗平均五十分，自己手寫的那組六十七分，debug 的題目差最多；用 AI 也只快了兩分鐘，統計上不顯著。真正有用的是用法。低分的三種用法是：全部叫 AI 生成照貼、一開始自己寫後來越交越多、出錯就直接丟給它修不問為什麼。高分的三種是：拿到程式碼之後追問為什麼這樣寫、要程式碼也要解釋、只問觀念錯誤自己解。報告的一句話是：AI 讓有鑑別力的人更快，讓沒有鑑別力的人更快地錯。而鑑別力來自親手做過，那正是低分用法最先省掉的東西。",
+  "lint": {
+   "chars": 274,
+   "precise_numbers": [
+    "五十二",
+    "五十",
+    "六十七"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 38.1,
+   "max_sentence_len": 106,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "退到最後，你還學得會嗎？\n其實 Anthropic 年初做過一個實驗。<short pause>\n他們找了五十幾位 junior 工程師，\n去學一個不熟的 Python 函式庫。\n結果用 AI 的那組，事後測驗才拿五十分。\n反而自己手寫的那組，成績高出一大截，\n尤其 debug 題目差最多。\n你猜用 AI 的人有比較快嗎？\n其實幾乎沒差喔，只快了兩分鐘左右。<short pause>\n這份報告發現，關鍵在於用法。\n考很差的人，直接叫 AI 生成照貼，\n或是出錯了直接丟給它修，不問原因。\n但分數很高的人，要了程式碼還會追問為什麼，\n甚至只問觀念，錯誤自己解。\n我看到這邊真的很有共鳴。\nAI 讓有鑑別力的人更快，\n卻讓沒有鑑別力的人更快地出錯。\n鑑別力哪裡來？\n其實就是親手做過嘛。<laugh>\n而這偏偏就是最先被省掉的東西啦。",
+   "lint": {
+    "chars": 300,
+    "precise_numbers": [
+     "五十",
+     "五十"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 19.0,
+    "max_sentence_len": 34,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "退得太遠，到底還學不學得會啊？\nAnthropic 年初做了一個很殘酷的實驗。\n他們找了五十幾位 junior 工程師。\n大家一起學一個不熟的 Python 函式庫。\n一組全靠 AI，另一組自己動手寫。\n你猜測驗結果差多少？\n<short pause>\n自己寫的那組，分數硬是高了快二十分。\n而且遇到 debug 題目，差距最大。\n更慘的是，用 AI 竟然只快了兩分鐘。\n這份報告看得我背脊發涼耶。<sigh>\n其實問題不是工具，而是你怎麼用它。\n考最差的人，做法都很像。\n要嘛直接貼 code，要嘛報錯就丟給 AI 解。\n完全不問為什麼，把親手做的過程全省掉。\n反觀考高分的人，做法剛好相反。\n拿到程式碼會追問原因，觀念也自己想。\n所以這份報告說得超直白。\nAI 會讓有能力的人跑得更快。\n但也會讓沒有判斷力的人，錯得更快。\n而判斷力偏偏就是親手做過才會有的嘛。",
+   "lint": {
+    "chars": 329,
+    "precise_numbers": [
+     "五十",
+     "二十"
+    ],
+    "enumerations": [],
+    "sentences": 20,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那退到最後，你還學得會嗎？\nAnthropic 年初做過一個實驗，\n找了五十二位資淺工程師，\n去學一個完全不熟的 Python 函式庫。\n結果超驚人的。<short pause>\n自己手寫的那一組，\n測驗成績比用 AI 的高了快兩個等第，\n特別是 debug 的題目，差距最大。\n你猜用 AI 的那組有省下時間嗎？\n完全沒有，其實根本沒快多少。\n我看到這份報告整個被敲醒耶。\n重點其實不是工具，而是用法。\n那些考低分的人，做法都很像：\n叫 AI 生成就直接複製貼上，\n出錯了直接丟給它修，也不問為什麼。\n但考高分的人完全相反，\n拿到程式碼一定會追問原因，\n甚至只問觀念，把錯誤留給自己解。\n這份報告說了一句很痛的話：\nAI 讓有鑑別力的人更快，\n卻讓沒有鑑別力的人更快地做錯。<sigh>\n對啊，鑑別力本來就要靠親手做，\n那剛好就是被你最先省掉的東西啦。",
+   "lint": {
+    "chars": 324,
+    "precise_numbers": [
+     "五十二"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 26.0,
+    "max_sentence_len": 48,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "Anthropic 年初做過一個實驗，找了五十二位資淺工程師，去學一個完全不熟的 Python 函式庫。結果超驚人的。<short pause>自己手寫的那一組，測驗成績比用 AI 的高了快兩個等第，特別是 debug 的題目，差距最大。你猜用 AI 的那組有省下時間嗎？完全沒有，其實根本沒快多少。我看到這份報告整個被敲醒耶。重點其實不是工具，而是用法。",
+   "to": "Anthropic 今年一月做了一個實驗。一群資淺工程師，去學一個不熟的 Python 函式庫。<short pause>結果自己手寫的那一組，測驗比用 AI 的高了兩個等第。差最多的，是 debug 的題目。那用 AI 的有比較快嗎？只快了兩分鐘，統計上不算數。真正的差別在用法。",
+   "reason": "照素材：差兩個等第不是快兩個；只快兩分鐘；拿掉個人反應；句子太長"
+  },
+  {
+   "from": "那些考低分的人，做法都很像：叫 AI 生成就直接複製貼上，出錯了直接丟給它修，也不問為什麼。但考高分的人完全相反，拿到程式碼一定會追問原因，甚至只問觀念，把錯誤留給自己解。",
+   "to": "考低分的人，做法都很像。叫 AI 生成就直接貼上。出錯了就丟給它修，也不問為什麼。考高分的人剛好相反。拿到程式碼，會追問為什麼這樣寫。或是只問觀念，錯誤留給自己解。",
+   "reason": "斷句，每句 20 字內"
+  },
+  {
+   "from": "AI 讓有鑑別力的人更快，卻讓沒有鑑別力的人更快地做錯。<sigh>對啊，鑑別力本來就要靠親手做，那剛好就是被你最先省掉的東西啦。",
+   "to": "AI 讓有鑑別力的人更快，讓沒有鑑別力的人，更快地做錯。<short pause>而鑑別力來自親手做過，那正是低分的用法最先省掉的東西。",
+   "reason": "照素材原句"
+  }
+ ]
+}

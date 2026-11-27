@@ -1,0 +1,154 @@
+{
+ "segment": "s10_sign",
+ "position": "第 11 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "3f50ce6b8192d24602daa7e4759ed7dd03daa4190febcd2c71fcfa7efeae0b58",
+ "previous_context": "架構決策紀錄要跟改動放在同一個 PR 裡。然後把架構限制寫成自動測試，直接靠程式攔下來，不要只靠人工審查啦。",
+ "original": {
+  "text": "所以，誰有資格在圖上簽名？報告說三種人其實是同一個問題的三個時態。資深的人有資格，但審得完的量有限，用來簽名的能力還在退化。新手拿到了蓋房子的門票，取得資格的路，也就是親手蓋，正在被壓縮。中間的人蓋得出來、簽不下去，要是去指揮一群 agent 蓋，歪掉的不是一間屋，是一整排。報告給的答案不是學會下指令。資深的人把簽名的能力寫成測試和規則；新手把每一次門票都換成一小格能力；中間的人把剛學到的邊界寫下來，先當審查者，再談指揮一群 agent。鏡子篇上篇說，答案要帶回去自己驗一次；這篇只改一個字：帶回去自己蓋一次。",
+  "lint": {
+   "chars": 254,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 30.8,
+   "max_sentence_len": 67,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說到底，現在到底誰有資格在圖上簽名啊？\n其實三種人碰到的，是同一個問題。\n資深的人有資格簽名，\n但審查量有限，而且手感正在退化。\n新手拿到了蓋房子的門票，\n可是親手蓋的機會，反而被壓縮了。\n最尷尬的是卡在中間的人，\n你蓋得出來，但根本不敢簽名負責。\n這時如果讓你去指揮一群 agent，\n歪掉的就不是一間屋子，是一整排耶。<sigh>\n所以解法根本不是學怎麼下指令啦。\n資深的人把簽名能力寫成自動測試；\n新手把每一次門票，換成自己的實力；\n中間的人先當審查者，再去談指揮。\n上一篇說，答案要帶回去自己驗一次。\n這一次只改了一個字：<short pause>\n你得帶回去，自己親手蓋一次。",
+   "lint": {
+    "chars": 257,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 24.7,
+    "max_sentence_len": 48,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以說，到底誰有資格在架構圖上簽名？\n這份報告裡說，三種人其實是同一件事。\n資深的人能簽名，但能審查的量有限。\n而且用來簽證的能力還在退化。<short pause>\n新手拿到了蓋房子的門票，\n可是親手蓋的機會卻被壓縮了。\n那夾在中間的人呢？\n他們蓋得出來，但不敢簽名負責。\n如果去指揮一群 agent 蓋，\n歪掉的不是一間，而是一整排。<sigh>\n你想想看，這是不是很有共鳴？\n所以真正的解法，不是學怎麼下 prompt 啦。\n資深的人要把簽證能力寫成自動測試。\n新手要把門票換成自己的一小格能力。\n中間的人要先當審查者，再去指揮 agent。\n上次說，答案要帶回去自己驗一次才算數。\n這次只改一個字喔，帶回去自己蓋一次。",
+   "lint": {
+    "chars": 273,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 27,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以，到底誰有資格在架構圖上簽名？\n台灣的建築師在圖上簽名，出事是要負責的。\n這份報告說，三種人其實遇到了同一個問題。\n資深的人有資格簽，但他能審查的量有限。\n而且親手蓋的能力，其實一直在退化。\n那新手呢？\n新手拿到了門票。\n可是親手練習的機會，全被壓縮了。\n最尷尬的是中間的人。\n蓋得出來，卻簽不下去。\n要是讓他們指揮一群 agent，\n歪掉的可不是一間屋子，是一整排房子啦。<laugh>\n所以解法根本不是學會怎麼下指令。\n資深的人要把經驗寫成測試和規則。\n新手拿到門票，動手驗證那一步絕對不能跳。\n中間的人要先當審查者，把系統邊界寫下來。\n這段話我讀完真的很有共鳴。<short pause>\n上一篇說，答案要帶回去自己驗一次才算數。\n這次只改了一個字：帶回去自己蓋一次。",
+   "lint": {
+    "chars": 300,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 15.7,
+    "max_sentence_len": 33,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "所以，到底誰有資格在架構圖上簽名？台灣的建築師在圖上簽名，出事是要負責的。這份報告說",
+   "to": "所以，到底誰有資格在圖上簽名？報告說",
+   "reason": "回答開頭的問題；簽名制度 s02 講過"
+  },
+  {
+   "from": "而且親手蓋的能力，其實一直在退化。",
+   "to": "而且用來簽名的能力，正在退化。",
+   "reason": "照素材"
+  },
+  {
+   "from": "可是親手練習的機會，全被壓縮了。",
+   "to": "可是取得資格的路，也就是親手蓋，正在被壓縮。",
+   "reason": "照素材：不是全被"
+  },
+  {
+   "from": "<laugh>所以解法根本不是學會怎麼下指令。",
+   "to": "所以報告的答案，不是學會下指令。",
+   "reason": "對真實處境不笑"
+  },
+  {
+   "from": "中間的人要先當審查者，把系統邊界寫下來。這段話我讀完真的很有共鳴。<short pause>上一篇說，答案要帶回去自己驗一次才算數。",
+   "to": "中間的人把剛學到的邊界寫下來，先當審查者，再談指揮一群 agent。<short pause>鏡子篇上篇說，答案要帶回去自己驗一次才算數。",
+   "reason": "拿掉個人反應；照素材"
+  },
+  {
+   "from": "報告說，三種人",
+   "to": "這份報告說，三種人",
+   "reason": " bare_report"
+  },
+  {
+   "from": "歪掉的可不是一間屋子，是一整排房子啦。",
+   "to": "歪掉的就會是一整排房子。",
+   "reason": "twtone 對舉超標"
+  },
+  {
+   "from": "鏡子篇上篇說，答案要帶回去自己驗一次才算數。",
+   "to": "鏡子篇一開始就說，答案要帶回去自己驗一次才算數。",
+   "reason": "兩套辨識都把「上篇」聽成上面"
+  }
+ ]
+}

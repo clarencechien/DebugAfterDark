@@ -1,0 +1,140 @@
+{
+ "segment": "s01_recap",
+ "position": "第 2 段，共 12 段",
+ "avoid": [],
+ "recap": "EP55〈想罵 AI 的那一刻，是哪裡壞了？〉：上一集是鏡子篇延伸一：罵人碰到的是信念那面鏡子，它不是變笨是投降；想罵的那一刻就是該重開的訊號。這集是延伸二，鏡子照的第三面：你有沒有親手蓋過房子。",
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "87333ffa2fcc1c7bf08c9405eea961ef34738874b183acb041c445628a29a629",
+ "previous_context": "房子如果出事，誰要在圖上簽名負責？AI 把蓋房子這件事接走以後，留給我們的，其實就是那個簽名啦。",
+ "original": {
+  "text": "上一集是鏡子篇延伸一，講想罵 AI 的那一刻是哪裡壞了：罵人碰到的是信念那面鏡子，它不是變笨，是投降；想罵的那一刻，就是該重開的訊號。這集是鏡子篇延伸二，報告的作者把鏡子再翻一面：它照出你有沒有親手蓋過房子。今晚講三件事。第一，三隻小豬：什麼東西可以讓 AI 蓋完就丟，什麼不行。第二，三種人：資深、新手、還有卡在中間的人，處境各不一樣。第三，為什麼中間的人去指揮一群 agent，放大的可能不是產出，是偏差。",
+  "lint": {
+   "chars": 200,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 6,
+   "avg_sentence_len": 32.3,
+   "max_sentence_len": 64,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上一集我們聊到想罵 AI 的那一刻。\n其實它不是變笨，是投降了。\n想罵的時候，就是該重開的訊號啦。\n這集要來看鏡子的第三面。\n它照的是，你到底有沒有親手蓋過房子。\n你猜為什麼要問這個？\n因為三隻小豬也都是建築師啊。<laugh>\n差別只在大野狼來的那一天嘛。\n所以今晚要聊三件事。\n第一，什麼東西可以讓 AI 蓋完就丟。\n然後看資深、新手、還有卡在中間的人，\n大家的處境到底差在哪裡。\n更扯的是，卡在中間的人去指揮 agent，\n放大的可能不是產出，而是偏差喔。",
+   "lint": {
+    "chars": 206,
+    "precise_numbers": [],
+    "enumerations": [
+     "第三",
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 16.2,
+    "max_sentence_len": 35,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集我們聊到，\n想罵 AI 的那一刻就是該重開的訊號。<short pause>\n因為它不是變笨，是向你的信念投降了。\n那這集鏡子要翻到第三面囉。\n它要照的，是你到底有沒有親手蓋過房子。\n我看到這個比喻真的很有共鳴。<laugh>\n大家都說工程師以後會變成建築師，\n但你猜三隻小豬差在哪裡？\n差在大野狼來的那一天啦。\n重點來了，\n卡在中間的人如果跑去指揮一群 agent，\n放大的搞不好不是產出，而是偏差喔。",
+   "lint": {
+    "chars": 171,
+    "precise_numbers": [],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 8,
+    "avg_sentence_len": 20.4,
+    "max_sentence_len": 41,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集我們聊到想罵 AI 的那一刻。\n它不是變笨，是投降了，該直接重開。\n這集要看鏡子照的第三面。<short pause>\n那就是，你有沒有親手蓋過房子。\n你猜這面鏡子會照出什麼？\n其實就是你的鑑別力啦。\n今晚我們接著看三件事。\n像三隻小豬蓋房子，大野狼一來就知道。\n然後是資深、新手，跟卡在中間的人。\n他們的處境完全不一樣。\n更扯的是，中間的人去指揮 agent，\n放大的搞不好不是產出，而是偏差喔。",
+   "lint": {
+    "chars": 175,
+    "precise_numbers": [],
+    "enumerations": [
+     "第三"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 14.9,
+    "max_sentence_len": 34,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "你猜這面鏡子會照出什麼？其實就是你的鑑別力啦。",
+   "to": "",
+   "reason": "跟後面重複，縮短"
+  },
+  {
+   "from": "像三隻小豬蓋房子，大野狼一來就知道。然後是資深、新手，跟卡在中間的人。他們的處境完全不一樣。更扯的是，中間的人",
+   "to": "第一，三隻小豬：什麼東西可以讓 AI 蓋完就丟。第二，資深、新手，跟卡在中間的人，處境各不一樣。第三，為什麼中間的人",
+   "reason": "路線圖照草稿分三點；拿掉 avoid 詞「更扯的是」"
+  },
+  {
+   "from": "它不是變笨，是投降了，該直接重開。",
+   "to": "你罵它，它會投降；想罵的那一刻，就該直接重開。",
+   "reason": "twtone 對舉超標"
+  },
+  {
+   "from": "放大的搞不好不是產出，而是偏差喔。",
+   "to": "放大的搞不好是偏差喔。",
+   "reason": "twtone 對舉超標"
+  }
+ ]
+}

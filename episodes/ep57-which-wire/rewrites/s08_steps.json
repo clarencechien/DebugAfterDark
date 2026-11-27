@@ -1,0 +1,152 @@
+{
+ "segment": "s08_steps",
+ "position": "第 9 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "36ea73d7f01e6ad4cb81f0b10c1b34a9f23998f06064422217ac1a73bbc47fbb",
+ "previous_context": "讓 AI 自己跑完，人只負責處理例外。現在 coding agent 越跑越快，如果每一步都要你簽字，你反而會變成那個最大的瓶頸喔。",
+ "original": {
+  "text": "報告說，要站到迴圈上，有三段路。第一段，在迴圈裡先當審核者，把 AI 的輸出當成一個聰明、但可能胡說的資深同事的提案，在一份看起來完整的答案裡，找出那一個致命的錯。第二段，把審核時一再抓到的東西，寫成機器能檢查的規則。例如：行銷推播不能跟登入驗證碼共用同一條佇列；對外的動作，文件裡要寫明選了寧可漏、還是寧可重。第三段才是站到迴圈上，看三件事：題目有沒有被重新定義、邊界有沒有被碰到、還有例外。真正的風險在下一代：判斷力來自踩坑，人在迴圈上的前提，是曾經在迴圈裡。一開始就跳過第一段的人，可能永遠停在會問，但看不出答案哪裡錯。",
+  "lint": {
+   "chars": 261,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三",
+    "第一"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 36.3,
+   "max_sentence_len": 63,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [
+    "坑"
+   ],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那要怎麼走到這一步呢？\n這份報告提到，這中間其實有三段路要走喔。\n一開始，你要先在迴圈裡面當審核者。\n把 AI 當成很聰明、但可能會胡說的同事嘛。\n你要在看似完整的答案裡，\n抓出那個致命的錯誤。\n<short pause>\n然後，把反覆抓到的問題寫成規則。\n像推播跟驗證碼不能共用同一個 queue 啦。\n讓機器自己檢查，人就不用每次盯著看。\n最後你才能站到迴圈上面，只處理例外。\n老實說，我蠻替下一代工程師擔心的。\n<sigh>\n你想想看，這種判斷力都是怎麼來的？\n還不都是以前自己痛過才學會的。\n如果一開始就把這些基本功全跳過，\n那你站在上面，真的看得出哪裡有問題嗎？\n可能連答案錯在哪裡都不知道耶。",
+   "lint": {
+    "chars": 262,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 17.7,
+    "max_sentence_len": 34,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以到底要怎麼順利退出來？\n這份報告說，中間其實要走三段路。\n第一段，你得先在迴圈裡當審核者。\n把 AI 當成很聰明、但可能胡說的同事。\n專門在看似漂亮的答案裡，抓出致命錯誤。\n這底子反而要比以前更厚喔。<short pause>\n再來第二段，把抓到的判斷寫成規則。\n比如推播不能跟驗證碼共用同一條 queue。\n最後，你才能真正退到迴圈上看大方向。\n只要盯緊題目、邊界還有例外就好。\n那我問你，這裡面最大的風險是什麼？\n其實是下一代的工程師。\n想站在迴圈上，前提是你以前真的痛過。\n如果新手一開始就把第一段跳過，<short pause>\n很可能永遠只會發問，\n但完全看不出答案哪裡有錯啦。",
+   "lint": {
+    "chars": 252,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 17.0,
+    "max_sentence_len": 38,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以我們要怎麼退到外層？\n這份報告說，這中間其實要走三段路。\n一開始你得先在迴圈裡當審核者。\n把 AI 當成很聰明但可能會亂講的同事。\n你要在一份看似完美的答案裡，\n找出那個致命的錯誤。\n這需要的底子反而比以前更厚。\n然後第二步，把抓到的問題寫成規則。\n像行銷推播不能跟驗證碼共用 queue。\n規則寫清楚，AI 就能自己檢查。\n最後才是真正站到迴圈外。\n你不再逐行審核，只抓例外跟邊界。\n萬一出事了，扛責任的人還是你。\n這篇分析點出一個很深的問題。<short pause>\n下一代工程師要怎麼學會判斷？\n答案其實都是靠以前踩坑累積的嘛。\n能站在迴圈上，是因為你以前在迴圈裡。\n如果一開始就跳過這些底層磨練，<sigh>\n以後可能完全看不出 AI 到底哪裡答錯耶。",
+   "lint": {
+    "chars": 290,
+    "precise_numbers": [
+     "萬一"
+    ],
+    "enumerations": [
+     "第二"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 16.1,
+    "max_sentence_len": 33,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [
+     "坑"
+    ],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "所以到底要怎麼順利退出來？",
+   "to": "那要怎麼站到迴圈上？",
+   "reason": "照素材"
+  },
+  {
+   "from": "比如推播不能跟驗證碼共用同一條 queue。",
+   "to": "比如，行銷推播不能跟登入驗證碼，共用同一條佇列。",
+   "reason": "照素材"
+  },
+  {
+   "from": "想站在迴圈上，前提是你以前真的痛過。",
+   "to": "想站在迴圈上，前提是你曾經在迴圈裡，自己踩過坑。",
+   "reason": "照素材"
+  },
+  {
+   "from": "自己踩過坑。",
+   "to": "自己出過包。",
+   "reason": "偏大陸用語「坑」"
+  }
+ ]
+}

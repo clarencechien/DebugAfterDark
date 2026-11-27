@@ -1,0 +1,157 @@
+{
+ "segment": "s06_interview",
+ "position": "第 7 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "5664c5691d483a34c6892ab7c5bf32c1ee6aafe5cdd6fee6a85068b4d6288b23",
+ "previous_context": "不懂的人看覺得超合理。只有真正做過的人，才看得出問題在哪裡。",
+ "original": {
+  "text": "那真的需要同時送的場景呢？有，像限量搶購、比賽比分、拍賣出價，先收到的人有優勢。但就算是這些，同時也是一兩分鐘內，不是同一毫秒。報告說，大多數的一百萬，都是把時間窗拉寬之後就消失的一百萬。所以沒搞清楚題目之前畫架構，算不算假架構師？報告把這句話當定義而不是罵人：架構師的工作，在畫第一個方框之前就開始了；拿著標準答案找題目，不管年資幾年，就是假架構師。問題也出在面試本身：四十五分鐘內要畫出方框，獎勵的是馬上端出標準答案。真實的工作剛好相反，前兩週都在把題目問清楚，方框最後才畫，而且比面試時少一半。",
+  "lint": {
+   "chars": 250,
+   "precise_numbers": [
+    "一百萬",
+    "一百萬",
+    "四十五"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 30.2,
+   "max_sentence_len": 59,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那到底有沒有真的需要同時送的場景？\n其實有啦。\n像是搶票、即時比分，或是拍賣出價。\n這些都是先拿到資訊的人有優勢。\n但就算是這些，同時也只是一兩分鐘內。\n根本不需要同一個毫秒送到吧。<short pause>\n報告裡說，架構師在畫框框前就上工了。\n你得先問，這一百萬則要在多久內送到？\n漏掉一則的代價又是什麼？\n拿著標準答案去找題目，就是假架構師。\n這句聽起來很嚴厲，但我其實很認同。\n因為面試逼你在四十五分鐘內畫出架構。\n這反而獎勵了直接端出標準答案的人嘛。\n可是真實工作完全相反。<short pause>\n你可能前面兩週都在把題目問清楚。\n最後畫出來的方框，反而少了一半。\n連題目都沒弄懂，架構再漂亮也是白搭啦。",
+   "lint": {
+    "chars": 267,
+    "precise_numbers": [
+     "一百萬",
+     "四十五"
+    ],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 14.7,
+    "max_sentence_len": 18,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那真的需要同時發送的場景有哪些？像限量搶購、球賽比分或是拍賣出價。這類資訊每過一秒都在掉價，先收到的人就是有優勢。可是就算是這些，大家要的同時也是一兩分鐘內收到，而不是同一毫秒好嗎？<laugh>\n\n其實很多系統設計面試，根本就是一個陷阱。面試逼你在四十五分鐘內畫出架構，所以只要你馬上端出標準答案，就會拿到高分。但真實工作完全相反。你通常要花前兩週把真正的題目問清楚，像是這一百萬則從哪裡來、掉了一則會怎樣。架構圖往往最後才畫，而且數量比面試時少了一半。\n\n報告裡說得很直白，如果畫架構前沒搞懂題目，不管年資幾年，拿著標準答案到處套，就只是假架構師而已。<short pause>你連時間限制都沒問清楚，根本就是答對了一題沒人問的題目嘛。",
+   "lint": {
+    "chars": 296,
+    "precise_numbers": [
+     "四十五",
+     "一百萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 25.9,
+    "max_sentence_len": 47,
+    "sentences_over_20": 7,
+    "particles_per_100": 0.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那到底什麼時候才真的需要同時？\n其實有啦，像是限量搶購或拍賣出價。\n因為先收到的人有優勢嘛。\n但就算是這種情況，\n大家要的同時，也是一兩分鐘內收到，\n根本不是同一毫秒。\n<short pause>\n所以這份報告裡問了一個很尖銳的問題，\n沒搞清楚題目就畫架構，算不算假架構師？\n我很認同這份報告的講法。\n架構師的工作，在畫第一個方框前就開始了。\n你要先問這一百萬從哪裡來，\n還有掉了一則的代價是什麼。\n拿著標準答案找題目，\n不管年資多久都是不及格的。\n但你也不能全怪工程師。<sigh>\n因為系統設計面試就是個陷阱。\n面試要在四十五分鐘內畫出方框，\n大家當然搶著端出標準答案。\n可是真實的工作剛好相反。\n你前面可能花兩週在問清楚題目，\n方框往往是最後才畫，\n而且畫出來的數量比面試時少了一半。",
+   "lint": {
+    "chars": 304,
+    "precise_numbers": [
+     "一百萬",
+     "四十五"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 20.7,
+    "max_sentence_len": 41,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "根本不需要同一個毫秒送到吧。<short pause>報告裡說，架構師在畫框框前就上工了。",
+   "to": "不是同一個毫秒。報告說，大多數的一百萬，都是把時間窗拉寬之後就消失的一百萬。<short pause>架構師的工作，在畫第一個方框之前就開始了。",
+   "reason": "breakpoint 第二點要先講過；照素材"
+  },
+  {
+   "from": "這句聽起來很嚴厲，但我其實很認同。因為面試逼你",
+   "to": "這句聽起來很嚴厲，報告把它當定義，不是罵人，不管年資幾年。問題也出在面試本身，它逼你",
+   "reason": "拿掉個人反應；照素材"
+  },
+  {
+   "from": "。報告說，大多數的一百萬",
+   "to": "。報告裡說，大多數的一百萬",
+   "reason": "bare_report"
+  },
+  {
+   "from": "，報告把它當定義，不是罵人",
+   "to": "，可是作者把它當定義，不是罵人",
+   "reason": "bare_report"
+  },
+  {
+   "from": "最後畫出來的方框，反而少了一半。連題目都沒弄懂，架構再漂亮也是白搭啦。",
+   "to": "最後畫出來的方框，反而比面試時少一半。",
+   "reason": "照素材；縮短"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "id": "ep57-which-wire",
+ "number": 57,
+ "type": "full",
+ "guid": "debug-after-dark:ep57",
+ "title": "EP57 送一百萬則通知，那一百萬是假的？",
+ "description": "Black Friday 半夜十二點，行銷要同時推一百萬則通知。一位十幾年經驗的架構師給了標準答案：佇列、worker、自動擴縮、限流、重試，每個名詞都對。可是被追問六輪之後，名詞開始互相打架。這集回答：送一百萬則通知，那個一百萬，是不是假的？\n\n00:00 Black Friday 同時推一百萬則通知：每個名詞都對的標準答案\n00:54 上一集：誰來簽名；今晚三件事\n01:46 非同步其實是三條線：佇列、廣播、回撥，還有排程\n02:48 怎麼選線：沒人接要不要留、要不要重讀、時間窗多寬\n03:51 一百萬則才 1 GB：題目一格都沒給\n04:39 瓶頸在推播廠商的配額；先記已處理再送會漏送\n05:38 假架構師：拿著標準答案找題目\n06:48 AI 追問六輪：人在迴圈裡，還是迴圈上\n07:53 站到迴圈上的三段路\n08:50 你用 AI 的方式，也是一條線\n09:52 今晚的 breakpoint\n\n數字的出處與但書：\n・報告寫於 2026-09-22，是作者拿一篇 Medium 面試文追問 LLM 六輪後整理的紀錄；報告說明不是要檢討原文作者。\n・一百萬則 × 約 1 KB ≈ 1 GB、每秒一萬則約 100 秒送完：報告的估算。FCM、APNs 的配額與群發（topic／segment）見各自官方文件。\n・EMQX 自 5.9 起改為 BSL 授權：報告寫作當時的狀況，以官方公告為準。\n・三條線（佇列、廣播、回撥）、七個選線問題、in the loop／on the loop 的三段路，都是報告作者的整理。\n・原文附錄還有搶票實戰（演唱會、機票、高鐵、疫苗預約），節目沒有講。\n\n原文：〈你連的是什麼線 — 從一百萬則通知的假議題，到 AI 時代的架構師〉https://imitator.ai-apps.work/r/which-wire\n\n上一集：EP56 AI 讓人人都是建築師，那誰來簽名？\n延伸收聽：EP52–55 鏡子篇\n\n今晚的 breakpoint：\n1. 畫第一個方框之前，先問訊息沒人接的時候去了哪裡、時間窗有多寬、漏一則和重一則哪個比較糟。\n2. 大多數的一百萬，都是把時間窗拉寬之後就消失的一百萬。\n3. 用 AI 也是選線：問它的輸出沒人審的時候去了哪裡；多數人在廣播線上，以為自己在佇列線上。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "which-wire",
+ "source_url": "https://imitator.ai-apps.work/r/which-wire",
+ "status": "final",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-lite-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5",
+  "model_served": "gemini-3.8-flash-lite-tts"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-cloud --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "report_version": "2026-09-22",
+ "audio": {
+  "file": "ep57-which-wire.mp3",
+  "bytes": 10198487,
+  "sha256": "e3bdee743e1bd1ad7395f0b3a57d064b8c5e36b62f5dc5389a14c384fdb5cd62",
+  "duration_s": 637.4,
+  "duration": "10:37",
+  "lufs": -16.8
+ },
+ "youtube": {
+  "title": "面試題：同時推播 100 萬則通知？1 GB 一台機器就放得下：先問訊息沒人接時去了哪裡｜AI 時代的架構師",
+  "thumbnail": [
+   [
+    "100 萬則通知",
+    "假議題"
+   ],
+   [
+    "你用 AI",
+    "選錯線"
+   ]
+  ],
+  "synthetic_content": true
+ },
+ "qa": {
+  "breeze_cer_mean": 0.027,
+  "gemini_cer_mean": 0.01,
+  "jitter_semitones": 0.223,
+  "gates": "Flash-Lite 版（Clarence 11/27 盲聽選 B）：Breeze 2.7%、Gemini 1.0%、音高跳動 0.223 通過；聲紋相似度 0.898；s08、s09 音高 −6～7 Hz（略超 ±6）；接縫亮度 s10 跳 1100 Hz，保留",
+  "retakes": "s03、s04 改稿（「一級」「一格」「架」兩套辨識都聽錯）後用 Flash-Lite 重錄",
+  "manual_pick": "沒有手動指定",
+  "both_wrong": "剩 4 處：s00「這集要回答」聽成自己要回答、「你猜」「你卻」、KB 的 B",
+  "twtone": "qa/twtone.md",
+  "terms": "Ping、pong 判英文念法",
+  "asr": "Modal（Colab 卡住）",
+  "fact_check": "逐段對照素材：拿掉個人反應（很有共鳴 2 次、超認同、滿頭問號、很讓人傻眼）；s00 補回十幾年經驗、六輪追問、一千個 worker；s01、s05 對原文作者的語氣改中性（不笑、不說「竟然」）；s04 補 1 KB×一百萬≈1 GB、回擊尖峰；s05 冪等漏送照原文順序講清楚；s07 補回 EMQX 授權（不念名字）與 on the loop 的前提；s10 breakpoint 照前面講過的；搶票附錄只說細節在原文",
+  "cost_experiment": "docs/cost.md 降本實驗：盲聽 A 對照（Flash）／B Flash-Lite／C Batch，Clarence 選 B 上架；Flash 版和 Batch 版在專案檔案 episodes/ep57/experiment/",
+  "voice_drift": 0.897
+ },
+ "published": "2026-11-30T20:01:00+08:00"
+}

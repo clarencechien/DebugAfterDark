@@ -1,0 +1,162 @@
+{
+ "segment": "s05_pigs",
+ "position": "第 6 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "26a74cfe3655e0a35438deff18a70b85224996194ca09a2522164facc8f6039e",
+ "previous_context": "這份報告說了一句很痛的話：AI 讓有鑑別力的人更快，卻讓沒有鑑別力的人更快地做錯。對啊，鑑別力本來就要靠親手做，那剛好就是被你最先省掉的東西啦。",
+ "original": {
+  "text": "回到三隻小豬。報告先把軟體分樓層：最底下是一次性的畫面，往上是個人工具、小組共用的工具、公司的流程，最上面是 ERP、金流這種記錄系統。稻草屋是 vibe coding，一個 prompt 蓋好、不讀改了什麼，適合一次性畫面和個人工具；大野狼是第一次有別人依賴它。木屋是 AI 編輯器加人審，有測試、沒有合約，適合小組工具；大野狼是第一次搬資料、第一次出事故。磚屋是計畫、測試、合約、審查都有，大野狼來了也沒事，但蓋得慢。報告說，第一隻小豬用稻草沒有錯，錯的是把稻草屋拿來住。一個東西能不能用完就丟，問三件事：有沒有人依賴它、有沒有要留下來的資料、對錯能不能用外面的一把尺驗。三個都是沒有、沒有、能，就可以丟。",
+  "lint": {
+   "chars": 298,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第一",
+    "第一",
+    "第一"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 36.2,
+   "max_sentence_len": 59,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以報告裡把軟體分成不同樓層。最底層是一次性的畫面，往上是個人工具、小組工具跟企業流程，最上面才是 ERP 這種記錄系統。\n\n分完樓層，三隻小豬就對得起來了。稻草屋就是 vibe coding。一個 prompt 搞定，完全不看改了什麼。它適合最底層，本來就是免洗的。\n\n那大野狼是誰？就是第一次有別人依賴它啦。\n\n木屋是 AI 工具加人工審查，適合小組工具，大野狼是第一次搬資料跟第一次出事。至於磚屋，有測試有審查，大野狼吹不倒，可是蓋起來超慢的。<short pause>\n\n這份報告說，第一隻小豬其實沒有錯。這比喻真的超傳神。錯的是你把稻草屋拿來長住嘛。\n\n那到底怎麼判斷軟體能不能免洗？你問三個問題就好。有沒有下游依賴它？然後，有沒有要留下來的資料？最後，對錯能不能用外面的尺來驗？三個答案如果是沒有、沒有、能，對，那這間屋子就可以放心丟掉啦。",
+   "lint": {
+    "chars": 345,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第一",
+     "第一",
+     "第一"
+    ],
+    "sentences": 19,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 43,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "說到鑑別力，這份報告打了個超貼切的比喻。\n它把軟體分成不同的樓層。\n最底層是一次性畫面。\n最上面是金流這類記錄系統。\n這時候三隻小豬就派上用場啦。\n第一隻小豬蓋稻草屋。\n這就是大家常說的 vibe coding。\n下個 prompt 搞定，連改了什麼都不看。\n拿來做自己玩的小工具超順手。\n但大野狼什麼時候會來？\n就是第一次有別人依賴你的小工具的時候。\n第二隻小豬蓋木屋，靠 AI 編輯器加人工檢查。\n只要第一次出事或搬資料，木屋就撐不住了。\n最後是磚屋，計畫、測試到審查樣樣都來。\n大野狼吹不倒，可是真的蓋超慢。<laugh>\n重點來了，第一隻小豬用稻草根本沒有錯。\n錯的是你把稻草屋拿來長住，那就慘了嘛。\n那要怎麼知道一個工具能不能免洗？\n報告裡說，其實直接問三個問題。\n有沒有別人依賴？資料要不要留？\n對錯能不能用外面的一把尺驗？\n如果答案剛好是沒有、沒有、能。\n那就可以放心把它丟掉啦。",
+   "lint": {
+    "chars": 362,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第一",
+     "第二",
+     "第一",
+     "第一"
+    ],
+    "sentences": 24,
+    "avg_sentence_len": 14.1,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以鑑別力到底要用在哪裡？\n這份報告把軟體的蓋法比喻成三隻小豬。\n其實大家吵 AI 寫程式，\n根本是在講不同的樓層。<short pause>\n最底下一層是一次性的免洗畫面。\n往上是個人工具，還有小組工具。\n最上面才是公司的報帳流程跟 ERP。\n那稻草屋是什麼？\n就是現在很紅的 vibe coding 啦。\n一個 prompt 搞定，改了什麼都不看。\n拿來做個人小工具剛剛好。\n但大野狼什麼時候會來？\n就是第一次有別人開始依賴你的時候。\n然後木屋是 AI 工具加上人工檢查。\n適合小組用，但遇到搬資料還是會倒。\n最後的磚屋才是完整規劃加上測試。\n大野狼吹不倒，可是蓋起來超慢。\n重點來了，\n報告裡說第一隻小豬用稻草沒有錯。\n錯的是你把稻草屋拿來長住。\n那你怎麼知道這個工具能不能用完就丟？\n其實就問三件事。\n有沒有人依賴？有沒有要留的資料？\n還有對錯能不能用外面的一把尺驗？\n如果三個都是沒有、沒有、能，\n那真的隨便蓋都可以啦。<laugh>",
+   "lint": {
+    "chars": 367,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第一"
+    ],
+    "sentences": 24,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 24,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 7,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "說到鑑別力，這份報告打了個超貼切的比喻。它把軟體分成不同的樓層。最底層是一次性畫面。最上面是金流這類記錄系統。這時候三隻小豬就派上用場啦。",
+   "to": "回到三隻小豬。報告先把軟體分樓層，最底層是一次性的畫面，最上面是金流這類記錄系統。",
+   "reason": "縮短"
+  },
+  {
+   "from": "拿來做自己玩的小工具超順手。但大野狼什麼時候會來？就是第一次有別人依賴你的小工具的時候。",
+   "to": "拿來做自己用的小工具剛好。它的大野狼，是第一次有別人依賴它。",
+   "reason": "縮短"
+  },
+  {
+   "from": "大野狼吹不倒，可是真的蓋超慢。<laugh>重點來了，第一隻小豬用稻草根本沒有錯。錯的是你把稻草屋拿來長住，那就慘了嘛。",
+   "to": "大野狼吹不倒，可是蓋得慢。<short pause>報告說，第一隻小豬用稻草沒有錯，錯的是把稻草屋拿來住。",
+   "reason": "照素材；縮短"
+  },
+  {
+   "from": "報告裡說，其實直接問三個問題。",
+   "to": "就問三個問題。",
+   "reason": "縮短"
+  },
+  {
+   "from": "報告先把軟體分樓層",
+   "to": "這份報告先把軟體分樓層",
+   "reason": "bare_report"
+  },
+  {
+   "from": "報告說，第一隻小豬",
+   "to": "報告裡說，第一隻小豬",
+   "reason": "bare_report"
+  }
+ ]
+}

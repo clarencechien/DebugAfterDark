@@ -1,0 +1,162 @@
+{
+ "segment": "s06_senior",
+ "position": "第 7 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "3a31a3d5cacc89a6a67f79c00faea55e22462348f466c737a285e1bf83f7fc3a",
+ "previous_context": "如果答案剛好是沒有、沒有、能。那就可以放心把它丟掉啦。",
+ "original": {
+  "text": "接著是三種人，先講資深。Anthropic 去年底研究了內部一百三十二位工程師：日常工作裡 Claude 已經占了大約六成，可是能完全交出去、不用看的，只有零到兩成，交出去的都是容易驗證、不關鍵、重複的事。一位工程師說得很直白：「我主要在我已經知道答案該長什麼樣的地方用 AI。」資深的問題有兩個。一是審查瓶頸：你能產出的程式碼變多了，你能審的沒有變。二是研究取的名字，監督的悖論：要有效監督 AI，需要的正是依賴 AI 之後會退化的那些技能。報告說出路只有一條：把自己的鑑別力從腦子裡搬出來，寫成測試、合約、可以執行的架構規則，讓 agent 和別人都用得上。",
+  "lint": {
+   "chars": 272,
+   "precise_numbers": [
+    "一百三十二"
+   ],
+   "enumerations": [],
+   "sentences": 7,
+   "avg_sentence_len": 37.9,
+   "max_sentence_len": 87,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那接下來看資深工程師的狀況。<short pause>\nAnthropic 去年做了一個研究，\n找了內部一百三十二位工程師。\n他們日常工作裡，Claude 已經占了大約六成。\n但能完全放手不用盯的，只有零到兩成喔。\n交出去的都是重複又簡單的小事。\n有位工程師說得超直白。\n他說自己只在早就知道答案的地方用 AI。\n這句話聽了真的很有共鳴。<laugh>\n其實資深面臨的問題有兩個。\n第一是審查瓶頸。\n你產出變快了，能審查的 code 卻完全沒變。\n第二個問題，這份報告叫它監督的悖論。\n有效監督 AI 需要的技能，\n剛好就是依賴 AI 之後會退化的那些。<sigh>\n那到底要怎麼辦？\n出路其實只有一條。\n就是把你腦子裡的鑑別力搬出來。\n寫成測試、合約，還有能執行的架構規則。\n醬 agent 跟其他人才用得上嘛。",
+   "lint": {
+    "chars": 301,
+    "precise_numbers": [
+     "一百三十二"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 18,
+    "avg_sentence_len": 15.7,
+    "max_sentence_len": 31,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "接下來聊聊資深工程師的狀況。Anthropic 研究了內部一百三十二位工程師。在日常工作裡，Claude 已經占了大約六成。但真正能完全放手不管的，你覺得有多少？居然只有零到兩成喔。<sigh>有位工程師說得很直白。他只在早就知道答案的地方用 AI。這就點出資深工程師現在的兩個問題。第一個是審查瓶頸。能產出的程式碼變多了，能審的時間完全沒變。第二個很有意思，叫做監督的悖論。你想想看，要抓出 AI 的問題需要什麼？正是你依賴 AI 之後，會慢慢退化的技能。這點真的很能體會欸。所以這份研究說，出路其實只有一條。就是把腦子裡的判斷標準搬出來。寫成測試、規格合約，還有架構規則。這樣 agent 跟其他人才都用得上嘛。",
+   "lint": {
+    "chars": 293,
+    "precise_numbers": [
+     "一百三十二"
+    ],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 18,
+    "avg_sentence_len": 15.3,
+    "max_sentence_len": 23,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "接著來看資深工程師的部分。\nAnthropic 去年底做了一項研究。\n他們調查了內部一百三十二位工程師。\n發現日常工作裡，Claude 已經佔了六成。\n可是能完全不管的，居然只有零到兩成。\n交給 AI 的都是重複又不重要的雜事。\n裡面有一位工程師說得超直白。\n他說自己只在知道答案長怎樣的地方用 AI。\n這句話聽起來是不是很有共鳴？<laugh>\n其實資深工程師最大的問題，就是審查瓶頸。\n你產出的 code 變十倍。\n但人腦能審查的量完全沒變啊。\n然後這份研究還提到一個詞，叫監督的悖論。\n這是什麼意思？\n就是你要監督 AI，需要很強的基本功。\n但太依賴 AI，那些技能反而會退化。<sigh>\n那出路在哪裡？\n這份報告說，出路其實只有一條。\n把你腦子裡的鑑別力搬出來。\n寫成測試、合約，還有可以執行的架構規則。\n醬不管是 agent 還是同事，才都用得上嘛。",
+   "lint": {
+    "chars": 337,
+    "precise_numbers": [
+     "一百三十二"
+    ],
+    "enumerations": [],
+    "sentences": 21,
+    "avg_sentence_len": 15.0,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "發現日常工作裡，Claude 已經佔了六成。",
+   "to": "日常工作裡，Claude 已經佔了大約六成。",
+   "reason": "照素材：59%"
+  },
+  {
+   "from": "交給 AI 的都是重複又不重要的雜事。",
+   "to": "交出去的，都是容易驗證、不關鍵、重複的事。",
+   "reason": "照素材：容易驗證、非關鍵、重複"
+  },
+  {
+   "from": "這句話聽起來是不是很有共鳴？<laugh>其實資深工程師最大的問題，就是審查瓶頸。你產出的 code 變十倍。但人腦能審查的量完全沒變啊。然後這份研究還提到一個詞",
+   "to": "<short pause>資深的問題有兩個。一是審查瓶頸，你產出的 code 變十倍，能審的量沒有變。二是這份研究取的名字",
+   "reason": "拿掉個人反應；照素材分兩個問題"
+  },
+  {
+   "from": "醬不管是 agent 還是同事，才都用得上嘛。",
+   "to": "這樣不管是 agent 還是同事，都用得上。",
+   "reason": "「醬」念起來不清楚"
+  },
+  {
+   "from": "接著來看資深工程師的部分。",
+   "to": "接著是三種人，先講資深。",
+   "reason": "接回路線圖"
+  },
+  {
+   "from": "裡面有一位工程師說得超直白。",
+   "to": "Anthropic 另一份報告裡，有位工程師說得很直白。",
+   "reason": "歸屬：引言出自 Trends Report"
+  },
+  {
+   "from": "二是這份研究取的名字",
+   "to": "二是那份內部研究取的名字",
+   "reason": "歸屬"
+  }
+ ]
+}

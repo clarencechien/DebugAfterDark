@@ -1,0 +1,139 @@
+{
+ "segment": "s08_middle",
+ "position": "第 9 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "c01f320cfce0459b20a8dbe0d48ec4b376fd0013b95933e1f45f3ef65e55b94b",
+ "previous_context": "市場其實也有人在算這筆帳喔。今天如果不收 junior，五年後整個業界就沒有 senior 了嘛。",
+ "original": {
+  "text": "最難的是中間那層。公開資料對他們寫得最少，報告說症狀卻最常見：看起來寫得出東西了，可是沒想邊界、沒想效能和安全這類非功能需求，架構決定沒寫下來就做了，然後一路歪到底。Addy Osmani 把用 agent 分成兩種：一種像指揮家，同時帶一個 agent、每一步都看；一種像總調度，把工作分給好幾個 agent、只看結果。總調度要先會拆任務、寫規格、設驗收，所以資淺的先從指揮家做起。中階剛好卡在中間：帶一個很順，分給一群還沒有資格。報告還補了一個差別：分給新人的知識，新人會吸收、會長大，你要盯的越來越少；分給 agent 的，每次都要重新餵，要驗的不會變少。",
+  "lint": {
+   "chars": 273,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 44.5,
+   "max_sentence_len": 73,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "不過最難受的，其實是卡在中間的中階。\n這份報告裡說，中階工程師的狀況最常見。\n你看他們好像很能寫，但系統邊界都沒想好。\n架構決定沒記錄好，結果就一路歪到底。<sigh>\n有人把帶 agent 分成兩種模式。\n一種像指揮，一次只帶一個，每一步都盯。\n另一種像調度員，把工作拆給一群，只看結果。\n你覺得中階工程師卡在哪？\n他們帶一個很順，但要調度一群還不行嘛。\n因為調度員要會拆任務、定規格，還要能驗收。\n那分給新人跟分給 agent，差別到底在哪？\n分給新人，新人會吸收成長，越盯越輕鬆。\n可是 agent 不會成長，每次都要重新餵。\n你要花時間檢查的工作量，根本不會變少喔。",
+   "lint": {
+    "chars": 263,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "而且不只 junior 辛苦。\n卡在中間的中階工程師，其實更尷尬。\n這份報告裡說，中階的處境最難。<short pause>\n他們看起來什麼都能寫，\n可是效能或邊界條件，常常沒想清楚。\n架構決策沒寫好就直接衝，\n最後整個專案一路歪到底。\n你有沒有遇過這種狀況？\n功能寫超快，但架構完全不能用。\n有人把帶 agent 分成兩種模式。\n一種像指揮家，帶一隻 agent，每步都看。\n另一種像總調度，分給好幾隻，只看結果。\n問題是，要當總調度，\n你得先會拆任務、定驗收標準對吧？\n很多中階工程師就卡在中間啦。\n帶一隻很順，要調度一群就撐不住了。<sigh>\n報告裡還補了一個很現實的差別。\n你把任務分給新人，新人會長大，\n你要盯的時間其實會越來越少。\n但 agent 完全不一樣喔。\n每一次都要重餵，驗證的負擔根本不會少。",
+   "lint": {
+    "chars": 312,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 17,
+    "avg_sentence_len": 17.4,
+    "max_sentence_len": 28,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "但其實現在卡得最辛苦的，是中階工程師。\n這份報告裡說，中階的症狀在專案裡超常見。\n看起來程式都寫得出來對吧？\n可是根本沒想過邊界跟效能。\n架構決定沒寫清楚，最後一路歪到底。\n<sigh> 這種半生不熟的狀態最讓人擔心。\n專家 Addy Osmani 把用 agent 分成兩種。\n一種像指揮家，一次帶一個 agent，每步都看。\n另一種像總調度，分給好幾個 agent，只看結果。\n那你覺得中階現在卡在哪？\n他們帶一個很順，但分給一群還不夠格嘛。\n因為要當總調度，必須很會拆任務跟寫規格。\n然後，這份報告還點出一個很大的差別。\n你分給 junior 的東西，新人吸收了就會成長。\n你要盯他的次數，隨時間只會越來越少。\n但 agent 可不會長大喔。\n那些沒寫下來的眉角，每次都要重新餵。\n你要幫它驗收的力氣，完全不會變少啦。",
+   "lint": {
+    "chars": 327,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 17.2,
+    "max_sentence_len": 23,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "這份報告裡說，中階工程師的狀況最常見。你看他們好像很能寫，但系統邊界都沒想好。架構決定沒記錄好，結果就一路歪到底。",
+   "to": "公開的研究對他們寫得最少，報告說，症狀卻最常見。看起來寫得出東西了，可是沒想邊界，沒想效能、安全這些非功能需求。架構決定沒寫下來就做了，然後一路歪到底。",
+   "reason": "照素材：補回非功能需求、文獻最薄"
+  },
+  {
+   "from": "有人把帶 agent 分成兩種模式。",
+   "to": "Addy Osmani 把帶 agent 分成兩種。",
+   "reason": "歸屬"
+  },
+  {
+   "from": "你覺得中階工程師卡在哪？他們帶一個很順，但要調度一群還不行嘛。",
+   "to": "中階剛好卡在中間，帶一個很順，調度一群還沒資格。",
+   "reason": "縮短"
+  },
+  {
+   "from": "報告說，症狀卻最常見",
+   "to": "報告裡說，症狀卻最常見",
+   "reason": "bare_report"
+  },
+  {
+   "from": "新人會吸收成長，越盯越輕鬆。",
+   "to": "新人會吸收成長，要盯的越來越少。",
+   "reason": "兩套辨識都聽錯「盯」"
+  }
+ ]
+}

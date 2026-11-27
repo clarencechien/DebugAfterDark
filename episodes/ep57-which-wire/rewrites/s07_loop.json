@@ -1,0 +1,142 @@
+{
+ "segment": "s07_loop",
+ "position": "第 8 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "8861f2197fed63983e314477216b24033d42ddb2ca8efcf02cb4599cd637082d",
+ "previous_context": "最後畫出來的方框，反而少了一半。連題目都沒弄懂，架構再漂亮也是白搭啦。",
+ "original": {
+  "text": "這份紀錄是怎麼來的？就是一個 AI 被追問六輪，拆得比原文完整得多。那是不是不需要架構師了？報告說，每一輪的方向都是人給的：「用雲是不是花錢就好？」「一百萬同時送是真需求嗎，為什麼不分時？」這些問句本身就是架構判斷。如果一開始只問「幫我設計一個送一百萬則通知的系統」，AI 交出來的，大概就是那篇文章的整齊版。AI 也有錯過：有一個常用的開源訊息服務今年改了授權，沒搜尋的話，它很可能照舊推薦，而且講得很有信心。報告分了兩種位置：人在迴圈裡，每一步都要人簽字才往下走；人在迴圈上，AI 在一組邊界裡跑完整段，人設邊界、看指標、處理例外，為結果負責。",
+  "lint": {
+   "chars": 269,
+   "precise_numbers": [
+    "一百萬",
+    "一百萬"
+   ],
+   "enumerations": [],
+   "sentences": 9,
+   "avg_sentence_len": 28.9,
+   "max_sentence_len": 66,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 4,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "所以啊，這份紀錄到底是怎麼做出來的？\n就是靠人拿問題去追問 AI，連問了六輪。\n<short pause>\n那你可能會想，架構師是不是沒用了？\n其實完全相反喔。\n因為每一輪的方向，都是人在拉著走。\n像是質疑需求是不是真的、會不會被打爆。\n如果一開始只丟一句幫我設計系統，\nAI 吐出來的，大概只是一張漂亮的圖。\n而且 AI 就算講得很有自信，\n也可能推薦早就改過授權的套件。<sigh>\n你如果沒有底子，根本抓不到哪裡出錯。\n這份報告裡分了兩種工作方式。\n一種是人在迴圈裡，每一行都要親自審。\n另一種是人在迴圈上，負責訂邊界和指標。\n讓 AI 自己跑完，人只負責處理例外。\n現在 coding agent 越跑越快，\n如果每一步都要你簽字，\n你反而會變成那個最大的瓶頸喔。",
+   "lint": {
+    "chars": 290,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 19.7,
+    "max_sentence_len": 43,
+    "sentences_over_20": 3,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以說，AI 追問個幾輪就講得頭頭是道。那是不是以後就不用架構師了？其實完全不是醬子喔。報告裡說，每一輪的關鍵方向都是人給的。像是問一百萬同時送真的有必要嗎？或是為什麼不分開時間送？這些問題本身，都是架構判斷。<short pause>如果一開始只丟一句幫我設計系統，AI 生出來的，大概也就普普通通啦。而且它很常講得超有自信，結果其實有漏。像某個訊息服務改授權，沒搜尋它就不知道。這份報告提出一個很有意思的分法。以前是人在迴圈裡面，每一步都要人簽字。這樣人反而會變成卡住大家的瓶頸。<sigh>現在要想辦法站在迴圈上面。也就是你負責設好邊界、看指標。剩下的細節，交給 AI 自己跑完。你應該也遇過這種逐行看扣的痛苦吧？站在上面為結果負責，才是未來的關鍵啦。",
+   "lint": {
+    "chars": 306,
+    "precise_numbers": [
+     "一百萬"
+    ],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 16.0,
+    "max_sentence_len": 32,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "所以回過頭來看，架構師真的會失業嗎？\n\n這份報告很有意思。AI 被人追問了六輪，把架構拆得比原文還細。但關鍵是，每一輪的方向都是人給的。像是質疑前提，問說一百萬人同時發送真的是必要需求嗎？如果一開始只丟一句「幫我設計推播系統」，AI 交出來的八成就是個標準答案啦。\n\n而且 AI 也是會講錯喔。像是有個開源工具早就改了授權，AI 沒上網查，照樣推薦得信心滿滿。只有懂門道的人，才抓得出它哪裡講錯。<sigh>\n\n這份報告把人分成兩種位置。一種是在迴圈裡面，每一行扣都要人親自看過，結果人反而變成瓶頸。另一種是在迴圈上面。也就是你先把規矩設好，讓 AI 在邊界裡面自己跑完，你只要看指標、處理突發狀況，對結果負責就好。聽起來是不是很像主管在管專案？對，這才是真正該有的樣子。",
+   "lint": {
+    "chars": 317,
+    "precise_numbers": [
+     "一百萬"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 20.1,
+    "max_sentence_len": 45,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "其實完全相反喔。因為每一輪的方向",
+   "to": "報告的答案是不會。每一輪的方向",
+   "reason": "照素材"
+  },
+  {
+   "from": "AI 吐出來的，大概只是一張漂亮的圖。而且 AI 就算講得很有自信，也可能推薦早就改過授權的套件。",
+   "to": "AI 交出來的，大概就是那篇面試文的整齊版。AI 也有錯過：有個常用的開源訊息服務今年改了授權，沒搜尋的話，它很可能照舊推薦，還講得很有信心。",
+   "reason": "照素材"
+  },
+  {
+   "from": "一種是人在迴圈裡，每一行都要親自審。另一種是人在迴圈上，負責訂邊界和指標。讓 AI 自己跑完，人只負責處理例外。現在 coding agent 越跑越快，如果每一步都要你簽字，你反而會變成那個最大的瓶頸喔。",
+   "to": "一種是人在迴圈裡，每一步都要人簽字才往下走。另一種是人在迴圈上，AI 在邊界裡跑完整段，人設邊界、看指標、處理例外，為結果負責。前提是，你已經把判斷寫成機器能檢查的邊界。",
+   "reason": "照素材；補回前提"
+  },
+  {
+   "from": "？報告的答案是不會。",
+   "to": "？這份報告的答案是不會。",
+   "reason": "bare_report"
+  }
+ ]
+}

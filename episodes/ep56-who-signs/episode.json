@@ -1,0 +1,62 @@
+{
+ "id": "ep56-who-signs",
+ "number": 56,
+ "type": "full",
+ "guid": "debug-after-dark:ep56",
+ "title": "EP56 AI 讓人人都是建築師，那誰來簽名？",
+ "description": "連 Google 前執行長都認輸了：Eric Schmidt 說，他二十二歲時是同世代最好的程式設計師之一，現在 AI 寫的程式碼他寫不出來，下一代會是建築師。可是三隻小豬也都是建築師，差別要等大野狼來了才看得出來。這集回答：AI 把蓋房子接走之後，誰有資格在圖上簽名？鏡子篇延伸二。\n\n00:00 Google 前執行長說他被 AI 打敗了：下一代會是建築師？\n01:03 上一集：想罵 AI 的那一刻；今晚三件事\n01:38 誰要在圖上簽名：簽名的資格來自親手蓋過\n02:17 四個階段：人離程式碼越退越遠\n03:31 用 AI 學新函式庫：手寫組高兩個等第，差在用法\n04:33 三隻小豬：什麼東西可以讓 AI 蓋完就丟\n05:43 資深：審查瓶頸與監督的悖論\n06:55 新手：拿到門票，沒拿到能力\n07:58 中間那層：帶一個 agent 很順，調度一群還沒資格\n09:04 一路歪到底：架構漂移與繼承的偏差\n10:05 所以誰有資格簽名：帶回去自己蓋一次\n11:12 今晚的 breakpoint\n\n數字的出處與但書：\n・報告寫於 2026-10-05，數字與引文以當日版本為準；報告由 Clarence 與 Claude 整理，Ping 只轉述。\n・Schmidt 的話：Blackstone podcast（2026-09-29）官方摘要與 Business Insider 的逐字引述，中文是報告的翻譯。\n・Stack Overflow 2026 年 7 月新問題 1,442 則、比 2014 年高峰少 99.3%：Relevant Audience 整理。\n・學習實驗（52 位資淺工程師，AI 組 50 分、手寫組 67 分，只快約兩分鐘且不顯著；六種互動模式）：Anthropic〈How AI assistance impacts the formation of coding skills〉（2026-01，arXiv 2601.20245）。\n・Claude 占日常工作 59%、可完全委派 0–20%、27% 的任務沒有 Claude 不會去做、「監督的悖論」：Anthropic〈How AI is transforming work at Anthropic〉（2025-12，內部 132 位工程師）。「我主要在我已經知道答案該長什麼樣的地方用 AI」：Anthropic 2026 Agentic Coding Trends Report。\n・指揮家與總調度（conductor／orchestrator）：Addy Osmani。新人與 agent 的監督量差別：SoftwareSeni。架構漂移：Alireza Rahmani Khalili；agent 拆掉「為什麼」：Rick Pollick；強模型繼承弱 agent 的漂移：Menon 等〈Inherited Goal Drift〉（arXiv 2603.03258）。\n・練法（自己驗一項、解釋測試、先獨立試 30–60 分鐘）：Johal〈Deliberate Practice in the AI Era〉；「今天不收 junior，2031 年就沒有 senior」：Filipe Brito Ferreira。\n・三隻小豬與 L0–L4 的分層、「能不能用完即丟問三件事」是報告作者的整理。\n\n原文：〈人人都是建築師，那誰來簽證 — AI 時代的程式設計師（鏡子篇延伸二）〉https://imitator.ai-apps.work/r/everyone-an-architect\n主要來源：上列研究與文章，完整清單在原文。\n\n上一集：EP55 想罵 AI 的那一刻，是哪裡壞了？（鏡子篇延伸一）\n延伸收聽：EP52、EP53、EP54 鏡子篇；EP46 有了 AI，新手能超速追上老手嗎？\n\n今晚的 breakpoint：\n1. 一個東西能不能讓 AI 蓋完就丟，問三件事：有沒有人依賴它、資料要不要留、對錯能不能用外面的一把尺驗。\n2. AI 讓有鑑別力的人更快，讓沒有的人更快地錯；拿到程式碼，要追問為什麼。\n3. 把邊界寫成測試和架構決策紀錄，別只放在腦子裡；然後帶回去自己蓋一次。\n\n有收到的話，回 Ping 一個 pong：在你收聽的平台留言或評分。\n本節目的聲音由 AI 語音合成，內容改寫自上面的文章，經真人審稿與試聽。",
+ "report_slug": "everyone-an-architect",
+ "source_url": "https://imitator.ai-apps.work/r/everyone-an-architect",
+ "status": "final",
+ "voice": {
+  "provider": "gemini",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "D1",
+  "voice_id": "voice_b3c8x0jsntqc",
+  "style": "v5",
+  "model_served": "gemini-3.8-flash-tts"
+ },
+ "production": {
+  "recipe": "docs/recipe.md",
+  "takes_per_segment": 3,
+  "selection": "select_takes.py --asr breeze-cloud --consistency --neighbour",
+  "master": "make_podcast.py master --match-eq --ident show/ident/ident.flac"
+ },
+ "report_version": "2026-10-05（11-24 改標鏡子篇延伸二）",
+ "audio": {
+  "file": "ep56-who-signs.mp3",
+  "bytes": 11568568,
+  "sha256": "57469acb95dbde292405d087720c8ccdbed2325bcc16a40da84b7c6e47a434f0",
+  "duration_s": 723.0,
+  "duration": "12:02",
+  "lufs": -16.8
+ },
+ "youtube": {
+  "title": "Google 前 CEO：程式設計師會變建築師？AI 組測驗 50 分、手寫組 67 分：三隻小豬也都是建築師，誰來簽名",
+  "thumbnail": [
+   [
+    "人人是建築師",
+    "誰來簽名"
+   ],
+   [
+    "稻草屋",
+    "別拿來住"
+   ]
+  ],
+  "synthetic_content": true
+ },
+ "qa": {
+  "breeze_cer_mean": 0.032,
+  "gemini_cer_mean": 0.014,
+  "jitter_semitones": 0.229,
+  "gates": "Breeze 3.2%、Gemini 1.4%、音高跳動 0.229 通過；聲紋漂移 0.897（前 10 集中位數 0.892）；s09 語速 +11%；接縫亮度 s01、s05 跳 1000 Hz 以上，保留",
+  "retakes": "第一版跳動 0.232：s02、s03、s04、s09、s10 補 3 次；兩套辨識都聽錯「四階→世界」「越盯越輕鬆」「鏡子篇上篇→上面」「蓋一次→改一次」「更快地錯」，改稿重錄 s03、s08、s10、s11；s09 縮短長句重錄 6 次；s00、s03、s07 再補 3 次",
+  "manual_pick": "steady_pick 選到跳動更高的版本，改用自己的規則（CER 離最佳 0.02 內、語速 ±12%、跳動最低），s00 take1、s09 take5、s11 take1 手動（見 select_log manual_override）；s11 換成 Flash-Lite 重錄的 take2（Clarence 11/27 試聽：Flash 版「鑑別力」那句不穩），整集只有這段是 Flash-Lite",
+  "both_wrong": "剩 5 處：「同世代」聽成同時代、「和計畫」、Addy 的 a、「要盯的」的/得、pong 的 ng，都不影響意思",
+  "twtone": "qa/twtone.md：對舉從 6 處改到 2 處（四個階段不是越來越好、放大的不是產出是漂移，都是報告的主張）",
+  "terms": "Ping、pong 判英文念法",
+  "asr": "第一輪 Colab；之後 Colab 卡住（上傳後 15 分鐘沒回應，已手動關機），改 Modal",
+  "fact_check": "逐段對照素材：拿掉 Ping 的個人反應（冒冷汗、被敲醒、一肚子火、很有共鳴 4 次、捏一把冷汗）；s00 補回「根據他自己的說法」；s02「其實根本沒人知道」改成報告的問題；s04「高了快兩個等第」改回兩個等第、補「只快兩分鐘、不顯著」；s06 交出去的是「容易驗證、不關鍵、重複」，引言歸屬到 Trends Report；s07 求助前先試 30–60 分鐘；s08 補非功能需求、Osmani；s09 研究改回「強模型接手弱 agent 的過程」；METR 和客服研究 EP52 講過，這集沒講"
+ },
+ "published": "2026-11-30T20:00:00+08:00"
+}
