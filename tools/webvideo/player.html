@@ -278,8 +278,15 @@ function traceFrame(t, key) {
 }
 
 // ---------- boot cover: the first seconds of both opening variants (A = opening, B = opening-b) ----------
-const BOOT_END = 3.4, BOOT_FADE = 0.4;
+// the title stays up long enough to read it aloud slowly: about 4.5 characters a second, at least 4 s
+const BOOT_FADE = 0.4, TYPE_AT = 0.9, TYPE_CPS = 30, READ_CPS = 4.5;
+let BOOT_END = 3.4;
+function bootEnd() {
+  const title = D.title.replace(/^EP\s*\d+\s*/, '');
+  return TYPE_AT + title.length / TYPE_CPS + Math.max(4, title.length / READ_CPS);
+}
 function bootFrame(t, key) {
+  BOOT_END = bootEnd();
   if (t >= BOOT_END + BOOT_FADE) { set('boot', 'display', 'none'); key.push('noboot'); return; }
   set('boot', 'display', 'block');
   const num = (D.title.match(/^EP\s*\d+/) || [EP().toUpperCase()])[0];
@@ -291,7 +298,7 @@ function bootFrame(t, key) {
     [0.65, `<span class="ok">[  OK  ]</span> Started   ping@debugafterdark`],
   ];
   const shown = lines.filter(l => l[0] <= t).length;
-  const n = t < 0.9 ? 0 : Math.min(title.length, Math.floor((t - 0.9) * 30));
+  const n = t < TYPE_AT ? 0 : Math.min(title.length, Math.floor((t - TYPE_AT) * TYPE_CPS));
   const fade = t < BOOT_END ? 1 : Math.round((1 - (t - BOOT_END) / BOOT_FADE) * 8) / 8;
   const bar = Math.round(Math.min(1, t / 0.9) * 20);
   set('boot', 'html', `<div class="bl">${lines.slice(0, shown).map(l => `<div>${l[1]}</div>`).join('')}` +
