@@ -42,6 +42,10 @@ AI SDLC 課程 A1 的 demo 重播（專案資料夾 `ai-sdlc-course/a1-runs/repl
     `trace tail --episode <ep> --follow`，cold open 的每張卡片變成一個 span（瀑布圖跟著旁白長出來），下方是結構化 log
     （INFO／WARN／ERROR）。報告自己提出的第一個論點標成 ERROR 和「root cause?」，就是這集要追的問題。
     span 名稱、數值、出處都是卡片本身的內容；trace id 由集數算出來，固定不變。
+    長條的動法有四種，用 `render.js --variant` 選，版面都一樣（11/27 使用者覺得第一版一路慢慢爬有點毛躁）：
+    `step`（第一版，預設）、`ease`（0.8 秒衝到最終長度，時間數字往上跳）、`scan`（一條掃描線掃過時間軸，長條跟著填）、
+    `pulse`（ease 加上進行中的 span 輕微呼吸）。後三種在新 span 出現時，那一列和對應的 log 會亮 0.6 秒。
+    樣片在 `video/web-video-options/ep36-sample/trace-motion/`。
   - `opening-b`（**B 版**）：同一個開機封面，cold open 直接用深色 paper 的大數字卡，整集都是 paper。跟 A 只差 cold open 那約 40 秒。
   - `terminal`：有 debug 代入感的終端機。每張數字卡變成一道指令（提示字元是 `ping@debugafterdark`）：前後對比的數字用 SQL 查詢，結果是表格加長條；
     單一數字用 SQL 回傳一列；其他用 `trace grep`、`trace plot`，結果是 TUI 方框。指令會先打字、

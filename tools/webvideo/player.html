@@ -102,6 +102,8 @@ html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#000}
 .trace .nm{color:#e6edf7;overflow:hidden;text-overflow:ellipsis}.trace .svc{color:#7f8aa0;font-size:21px;overflow:hidden;text-overflow:ellipsis}
 .trace .lane{position:relative;height:22px;border-left:1px solid #2c3442}
 .trace .lane i{position:absolute;top:0;height:22px;border-radius:3px;background:#3f8fd6}
+.trace .lane .ph{position:absolute;top:-8px;bottom:-8px;width:2px;background:#e6edf7;opacity:.55}
+.trace .sp,.trace .lg{border-radius:4px}
 .trace .WARN .lane i{background:#d6a33f}.trace .ERROR .lane i{background:#e05b5b}
 .trace .dur{color:#7f8aa0;font-size:21px;text-align:right}
 .trace .attr{color:#7f8aa0;font-size:21px;padding-left:28px;margin-bottom:6px}.trace .attr b{color:#ffd479}.trace .attr em{color:#ff8080;font-style:normal;font-weight:700}
@@ -185,8 +187,8 @@ function lineHtml(l) {
   return `<div>${l.map(s => s.cls ? `<span class="${s.cls}">${esc(s.text)}</span>` : esc(s.text)).join('')}</div>`;
 }
 
-window.load = function (data, theme) {
-  D = data; THEME = theme || 'slide';
+window.load = function (data, theme, variant) {
+  D = data; THEME = theme || 'slide'; if (variant) VARIANT = variant;
   LOOK = THEME === 'opening' ? 'trace' : THEME === 'opening-b' ? 'paper' : THEME;
   $('stage').className = LOOK;
   OPEN_END = D.chapters.length > 1 ? D.chapters[1].t : D.duration;
@@ -248,33 +250,51 @@ function terminalFrame(t, ci, key) {
 // ---------- trace: the cold open as an observability trace (spans + logs), used by theme "opening" ----------
 function traceId() { let h = 2166136261; for (const ch of D.episode) h = Math.imul(h ^ ch.codePointAt(0), 16777619); return (h >>> 0).toString(16).padStart(8, '0'); }
 const ts = s => `${String(Math.floor(s / 60)).padStart(2, '0')}:${(s % 60).toFixed(1).padStart(4, '0')}`;
+// VARIANT (render.js --variant) only changes how the span bars move; the layout stays the same.
+//   step  : the first version, bars crawl in 4 px steps for the whole span
+//   ease  : a bar shoots out to its final length in 0.8 s (ease-out) while its duration counts up
+//   scan  : bars fill smoothly up to a playhead line that sweeps the timeline
+//   pulse : ease, plus the open span breathes softly until the next one starts
+// all but step also flash a new span's row and its log line for 0.6 s
+let VARIANT = 'step';
+const easeOut = p => 1 - Math.pow(1 - p, 3);
 function traceFrame(t, key) {
   const cards = D.cards.filter(c => c.t < OPEN_END && c.kind !== 'figure');
-  const span = OPEN_END, AREA = 760;
+  const span = OPEN_END, AREA = 760, X = v => AREA * v / span;
   const live = cards.filter(c => c.t <= t);
   // the first card the report itself makes is the suspect: that is where the episode's question lives
   const suspect = cards.findIndex(c => c.source === D.report_label || c.source === 'report');
   const level = i => i === suspect ? 'ERROR' : i === 0 ? 'INFO' : 'WARN';
+  const RGB = { INFO: '127,209,255', WARN: '255,203,107', ERROR: '255,107,107' };
+  const flash = (since, lv) => { if (VARIANT === 'step') return ''; const a = Math.round(Math.max(0, 1 - since / 0.6) * 10) / 10; return a > 0 ? `background:rgba(${RGB[lv]},${(0.22 * a).toFixed(3)})` : ''; };
   const cmd = `trace tail --episode ${EP()} --follow`;
   const n = Math.min(cmd.length, Math.floor(t * 40));
   let rows = '';
   cards.forEach((c, i) => {
     if (c.t > t) return;
     const end = i + 1 < cards.length ? cards[i + 1].t : span;
-    const x = Math.round(AREA * c.t / span), w = Math.max(6, Math.round(AREA * (Math.min(t, end) - c.t) / span / 4) * 4);
-    const lv = level(i), open = t < end;
-    rows += `<div class="sp ${lv}"><span class="nm">${i === 0 ? '' : '└ '}${esc(c.top)}</span><span class="svc">${esc(sourceText(c.source))}</span>` +
-      `<span class="lane"><i style="left:${x}px;width:${w}px"></i></span><span class="dur">${open ? '…' : (end - c.t).toFixed(1) + 's'}</span></div>` +
+    const lv = level(i), open = t < end, age = t - c.t, full = X(end - c.t);
+    let w, dur, style = '';
+    if (VARIANT === 'step') { w = Math.max(6, Math.round(X(Math.min(t, end) - c.t) / 4) * 4); dur = open ? '…' : (end - c.t).toFixed(1) + 's'; }
+    else if (VARIANT === 'scan') { w = Math.max(3, Math.round(X(Math.min(t, end) - c.t))); dur = open ? (Math.min(t, end) - c.t).toFixed(1) + 's' : (end - c.t).toFixed(1) + 's'; }
+    else {
+      const p = easeOut(Math.min(1, age / 0.8));
+      w = Math.max(3, Math.round(full * p)); dur = ((end - c.t) * p).toFixed(1) + 's';
+      if (VARIANT === 'pulse' && open && age > 0.8) style = `;opacity:${(0.72 + 0.28 * (0.5 + 0.5 * Math.cos((age - 0.8) * 3.2))).toFixed(2)}`;
+    }
+    const ph = VARIANT === 'scan' ? `<b class="ph" style="left:${Math.round(X(t))}px"></b>` : '';
+    rows += `<div class="sp ${lv}" style="${flash(age, lv)}"><span class="nm">${i === 0 ? '' : '└ '}${esc(c.top)}</span><span class="svc">${esc(sourceText(c.source))}</span>` +
+      `<span class="lane"><i style="left:${Math.round(X(c.t))}px;width:${w}px${style}"></i>${ph}</span><span class="dur">${dur}</span></div>` +
       `<div class="attr">value=<b>"${esc(c.value)}"</b>${c.label ? `  note="${esc(c.label)}"` : ''}${i === suspect ? '  <em>◀ root cause?</em>' : ''}</div>`;
   });
-  const logs = live.slice(-4).map((c, j, a) => { const i = cards.indexOf(c); return `<div class="lg"><span class="tm">${ts(c.t)}</span> <span class="lv ${level(i)}">${level(i).padEnd(5)}</span> <span class="msg">${esc(c.top)}：${esc(c.value)}</span> <span class="kv">src=${esc(sourceText(c.source))}</span></div>`; }).join('');
+  const logs = live.slice(-4).map(c => { const i = cards.indexOf(c); return `<div class="lg" style="${flash(t - c.t, level(i))}"><span class="tm">${ts(c.t)}</span> <span class="lv ${level(i)}">${level(i).padEnd(5)}</span> <span class="msg">${esc(c.top)}：${esc(c.value)}</span> <span class="kv">src=${esc(sourceText(c.source))}</span></div>`; }).join('');
   const blink = Math.floor(t * 2) % 2;
   const html = `<div class="cmdl"><span class="pr">${esc(PROMPT())}</span>${esc(cmd.slice(0, n))}${n < cmd.length ? '<span id="cursor"></span>' : ''}</div>` +
     (n >= cmd.length ? `<div class="th"><span>TRACE <b>${traceId()}</b></span><span>${esc(D.chapters[0] ? D.chapters[0].name : '')}</span><span>spans ${live.length}/${cards.length}　${ts(t)}</span></div>` +
       `<div class="spans">${rows}</div><div class="logs">${logs}</div>` : '');
   set('lines', 'html', html);
   set('status', 'html', `<span><b>${esc(EP())}</b> 1:trace* 2:report  cold open</span><span>${blink ? '●' : '○'} live  ${ts(t)}</span>`);
-  key.push(n, live.length, live.length ? Math.round(AREA * (Math.min(t, (cards[live.length] || {t: span}).t) - live[live.length - 1].t) / span / 4) : 0, blink, Math.floor(t * 10) / 10);
+  key.push(html.length, html, blink);
 }
 
 // ---------- boot cover: the first seconds of both opening variants (A = opening, B = opening-b) ----------
