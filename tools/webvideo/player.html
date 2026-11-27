@@ -5,7 +5,8 @@
   load(timeline, theme) once, then seek(t) draws the frame for video time t and returns a key:
   the same key means the same pixels, so render.js can reuse the previous screenshot.
   No third-party scripts, no storage APIs (imitator STYLE.md rules), fonts are local system fonts.
-  Themes: slide (kept for Shorts), paper (dark editorial / data-journalism), terminal (SQL + CLI with TUI output).
+  Themes: slide (kept for Shorts), paper (dark editorial / data-journalism), terminal (SQL + CLI with TUI output),
+  opening (A: boot cover + trace cold open + paper), opening-b (B: boot cover + paper throughout).
 -->
 <style>
 html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#000}
@@ -109,6 +110,15 @@ html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#000}
 .trace #status{position:absolute;left:0;right:0;bottom:0;height:46px;background:#7a2730;color:#fbe9ea;font:24px/46px "Noto Sans Mono CJK TC",monospace;white-space:pre;padding:0 20px;display:flex;justify-content:space-between}
 .trace #status b{background:#fbe9ea;color:#7a2730;padding:0 12px}
 .trace #sub{color:#fff;bottom:64px;font-size:54px}
+
+/* ---------- boot cover (opening A and B) ---------- */
+#boot{display:none;position:absolute;inset:0;background:#050608;color:#c9d3e0;font-family:"Noto Sans Mono CJK TC",monospace}
+#boot .bl{position:absolute;left:120px;top:110px;font-size:30px;line-height:1.7;white-space:pre}
+#boot .ok{color:#6fdc8c;font-weight:700}#boot .dim{color:#5f6b7e}
+#boot .bt{position:absolute;left:120px;right:120px;top:430px}
+#boot .ep{font-size:40px;color:#7fd1ff;letter-spacing:.1em}
+#boot .tt{margin-top:10px;font-family:"Noto Serif CJK TC",serif;font-weight:900;font-size:80px;line-height:1.25;color:#f3efe6}
+#boot .cur{display:inline-block;width:40px;height:76px;background:#7fd1ff;vertical-align:-10px;margin-left:8px}
 </style></head>
 <body>
 <div id="stage">
@@ -117,6 +127,7 @@ html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#000}
   <div id="card"></div>
   <div id="src"></div>
   <div id="term"><div class="bar"><i style="background:#ff5f56"></i><i style="background:#ffbd2e"></i><i style="background:#27c93f"></i><span id="cwd"></span></div><div id="lines"></div><div id="status"></div></div>
+  <div id="boot"></div>
   <div id="sub"></div>
   <div id="prog"><i></i></div>
 </div>
@@ -176,7 +187,7 @@ function lineHtml(l) {
 
 window.load = function (data, theme) {
   D = data; THEME = theme || 'slide';
-  LOOK = THEME === 'opening' ? 'trace' : THEME;
+  LOOK = THEME === 'opening' ? 'trace' : THEME === 'opening-b' ? 'paper' : THEME;
   $('stage').className = LOOK;
   OPEN_END = D.chapters.length > 1 ? D.chapters[1].t : D.duration;
   $('cwd').textContent = `ping@debugafterdark: ~/${D.episode}`;
@@ -266,9 +277,34 @@ function traceFrame(t, key) {
   key.push(n, live.length, live.length ? Math.round(AREA * (Math.min(t, (cards[live.length] || {t: span}).t) - live[live.length - 1].t) / span / 4) : 0, blink, Math.floor(t * 10) / 10);
 }
 
+// ---------- boot cover: the first seconds of both opening variants (A = opening, B = opening-b) ----------
+const BOOT_END = 3.4, BOOT_FADE = 0.4;
+function bootFrame(t, key) {
+  if (t >= BOOT_END + BOOT_FADE) { set('boot', 'display', 'none'); key.push('noboot'); return; }
+  set('boot', 'display', 'block');
+  const num = (D.title.match(/^EP\s*\d+/) || [EP().toUpperCase()])[0];
+  const title = D.title.replace(/^EP\s*\d+\s*/, '');
+  const lines = [
+    [0.0, `<span class="dim">深夜 Debug night-shift loader · ${esc(num)}</span>`],
+    [0.15, `<span class="ok">[  OK  ]</span> Mounted   /reports/${esc(D.episode.replace(/^ep\d+-/, ''))}  <span class="dim">${esc(D.report_label)}</span>`],
+    [0.4, `<span class="ok">[  OK  ]</span> Loaded    ${D.cards.length} findings · ${D.chapters.length} chapters · ${mmss(D.duration)}`],
+    [0.65, `<span class="ok">[  OK  ]</span> Started   ping@debugafterdark`],
+  ];
+  const shown = lines.filter(l => l[0] <= t).length;
+  const n = t < 0.9 ? 0 : Math.min(title.length, Math.floor((t - 0.9) * 30));
+  const fade = t < BOOT_END ? 1 : Math.round((1 - (t - BOOT_END) / BOOT_FADE) * 8) / 8;
+  const bar = Math.round(Math.min(1, t / 0.9) * 20);
+  set('boot', 'html', `<div class="bl">${lines.slice(0, shown).map(l => `<div>${l[1]}</div>`).join('')}` +
+    `<div class="dim">${'█'.repeat(bar)}${'░'.repeat(20 - bar)} ${Math.round(bar * 5)}%</div></div>` +
+    (t >= 0.9 ? `<div class="bt"><div class="ep">${esc(num)}</div><div class="tt">${esc(title.slice(0, n))}<span class="cur" style="opacity:${n < title.length || Math.floor(t * 2) % 2 ? 1 : 0}"></span></div></div>` : ''));
+  set('boot', 'opacity', String(fade));
+  key.push('boot', shown, n, fade, bar, n >= title.length ? Math.floor(t * 2) % 2 : -1);
+}
+
 window.seek = function (t) {
   const key = [];
   if (THEME === 'opening') { LOOK = t < OPEN_END ? 'trace' : 'paper'; set('stage', 'className', LOOK); key.push(LOOK); }
+  if (THEME === 'opening' || THEME === 'opening-b') bootFrame(t, key); else set('boot', 'display', 'none');
   // set() on className: handled below
   const ci = lastAt(D.chapters, t, 't');
   const chap = ci >= 0 ? D.chapters[ci].name : '';
