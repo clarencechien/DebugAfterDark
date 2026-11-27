@@ -10,6 +10,8 @@
 會在輸出資料夾寫 epNN-takes.html（資料夾名稱當檔名前綴）。音檔轉成 48 kbps 單聲道 mp3 直接嵌進頁面：
 在 Library／儀表板的預覽框裡讀不到旁邊的 mp3（11/27 EP56 試用時播不出來），嵌進去才能在哪裡打開都播得出來。
 30 次生成、每次 40 秒約 10 MB。
+Library 的預覽框連內嵌音檔也播不了（11/27 播放鍵反白）：那就加 --linked（mp3 放 takes/），
+把頁面連同 takes/*.mp3 發佈成 claude.ai Artifact 再開連結。
 頁面不用任何瀏覽器儲存：標到一半關掉會不見。最下面的框即時顯示結果 JSON，按「複製」或手動全選複製，
 貼回對話，存成 <輸出資料夾>/takes-tags.json。
 其他命名（例如 EP56 的 s01-lite-take2.mp3）用 --pattern '*.mp3' --group-re '^(s\\d+)'。
@@ -99,7 +101,11 @@ def main(a):
         for p in files:
             mp3 = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", str(p), "-ac", "1", "-b:a", "48k", "-f", "mp3", "-"],
                                  capture_output=True, check=True).stdout
-            src = "data:audio/mpeg;base64," + base64.b64encode(mp3).decode()
+            if a.linked:   # 檔案放旁邊的 takes/，發佈成 claude.ai Artifact（連同 takes/*.mp3）時用
+                (out / "takes").mkdir(exist_ok=True); (out / "takes" / (p.stem + ".mp3")).write_bytes(mp3)
+                src = "takes/" + html.escape(p.stem) + ".mp3"
+            else:
+                src = "data:audio/mpeg;base64," + base64.b64encode(mp3).decode()
             e, s = html.escape(p.name), html.escape(seg)
             btns = "".join(f'<button type="button" data-seg="{s}" data-file="{e}" data-label="{lab}" aria-pressed="false">{lab}</button>'
                            for lab in ("太淡", "剛好", "太激動"))
@@ -120,5 +126,6 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("segments"); ap.add_argument("out")
     ap.add_argument("--script", default=""); ap.add_argument("--only", default="")
+    ap.add_argument("--linked", action="store_true", help="mp3 寫到 takes/ 用相對路徑（發佈成 Artifact 用），預設嵌進頁面")
     ap.add_argument("--pattern", default="*.take*.wav"); ap.add_argument("--group-re", default=r"^(.+?)\.take\d+")
     main(ap.parse_args())
