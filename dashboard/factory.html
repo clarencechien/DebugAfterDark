@@ -403,6 +403,8 @@ function _render(d){
   ]);
   var via = repo && repo._via === "github" ? '<span class="muted">GitHub 自動更新</span>' :
     repo ? '<span class="muted stale" title="'+esc(repo._why||"")+'">⚠ 讀不到 GitHub，顯示專案資料夾的備份</span>' : "";
+  // 流程圖：repo 的 docs/podcast-pipeline.svg，複製一份在專案檔案 factory/ 給這裡開
+  pl += '<div class="opens">'+openBtn(path("factory/podcast-pipeline.svg"), "Podcast 製作流程圖", "看流程圖")+'</div>';
   html += '<section id="podcast">'+sectionHead("Podcast 線",repo,5,via)+pl+'</section>';
 
   // ── 3. 自動研究線 ──
