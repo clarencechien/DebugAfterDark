@@ -1,0 +1,153 @@
+{
+ "segment": "s07_junior",
+ "position": "第 8 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "191ba625f4674484927ee95078fd3d856b56f1703e6db5eb2f7e374b4106c4ad",
+ "previous_context": "寫成測試、合約，還有可以執行的架構規則。醬不管是 agent 還是同事，才都用得上嘛。",
+ "original": {
+  "text": "新手先講好消息。同一份研究說，大約四分之一的任務是沒有 Claude 根本不會去做的，裡面有一大塊是新手現在敢碰的大題目，以前幾個月的工作，現在壓到一週是真的。壞消息是，被壓縮的是設計實驗、跑、整理；假設對不對、結果能不能套用，這段沒有被壓縮。新手拿到的是碰大題目的門票，不是判斷對錯的能力。報告整理的練法是把親手做硬塞回流程：拿到輸出至少自己驗一項；交出去之前先講給自己聽，講不出來就不算你的；求助之前先自己試三十到六十分鐘；系統設計和事故分析留給自己做。市場那邊也有人在算：今天不收新人，五年後就沒有資深的人。",
+  "lint": {
+   "chars": 255,
+   "precise_numbers": [
+    "三十",
+    "六十"
+   ],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 41.5,
+   "max_sentence_len": 82,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "聊完架構，那新手怎麼辦？\n其實先講個好消息啦。\n這份報告裡說，大約四分之一的任務，\n如果沒有 Claude，大家根本不會去做。\n所以很多 junior 現在敢接超大的題目。\n以前要做好幾個月，現在一週就搞定。\n<short pause>\n可是重點來了，壞消息是什麼？\nAI 幫你省下跑實驗跟整理的時間，\n但是那個假設到底對不對？\n結果能不能用？\n這些判斷力完全沒辦法被壓縮。\n你其實只是拿到門票，沒有拿到能力。\n我讀到這段真的替大家捏一把冷汗。\n那要怎麼把門票練成實力？\n研究給的建議很簡單，\n就是把親手做這件事，硬塞回日常流程裡。\n比方說，拿到輸出至少自己動手驗一項。\n交付之前先講給自己聽，\n講不出來，那就代表不是你的東西。\n遇到卡關先自己想半小時，不要馬上問 AI。\n市場其實也有人在算這筆帳喔。\n今天如果不收 junior，\n五年後整個業界就沒有 senior 了嘛。",
+   "lint": {
+    "chars": 344,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 18.1,
+    "max_sentence_len": 36,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那對 junior 來說呢？<short pause>\n這份研究裡有個數字很有意思。\n大概有百分之二十七的任務，\n沒有 AI 根本不會有人去做。\n很多原本不敢碰的大題目，\n現在靠 agent 一週就能做完。\n你應該也覺得差很多吧？\n但壞消息來了。\nAI 壓縮的是寫扣跟整理的時間，\n假設對不對、能不能套到系統上，\n這個判斷力可沒有被壓縮喔。\n新手拿到的只是門票，不是能力。\n那要怎麼把門票變成真本事？\n其實就是把親手做硬塞回流程裡。\n像是拿到輸出，至少自己動手驗一項。\n交出去前先試著講一遍，\n講不出來就不算你的。\n碰到卡住先自己想半小時再問。\n最厲害的是，市場其實也在反思這件事。\n今天如果都不收新人，\n五年後哪來的 senior 啦？",
+   "lint": {
+    "chars": 277,
+    "precise_numbers": [
+     "百分之二十七"
+    ],
+    "enumerations": [],
+    "sentences": 15,
+    "avg_sentence_len": 17.5,
+    "max_sentence_len": 42,
+    "sentences_over_20": 4,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "說到新人，其實也有好消息啦。\n這份研究說，大概四分之一的任務，\n沒有 Claude 大家根本不會去做。\n很多 junior 現在敢碰大題目了，\n原本要做幾個月的事情，\n現在一個禮拜就能跑完。\n\n但壞消息是什麼，你知道嗎？\n被省下來的只有執行過程。\n做出來的東西到底對不對，\n還是得靠自己的判斷能力。\n等於你只是拿到門票，\n其實還沒有拿到能力，超殘酷的。\n\n那要怎麼練出鑑別力？\n做法就是把親手做硬塞回流程。\n像是拿到輸出至少自己驗一項，\n交出去前先解釋給自己聽，\n講不出來就不算你的。<short pause>\n求助前也要自己先試半小時。\n\n其實市場上也開始有人想通了。\n要是今天完全不收新人，\n五年後哪裡來的 senior 呢？",
+   "lint": {
+    "chars": 273,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 20.0,
+    "max_sentence_len": 38,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "聊完架構，那新手怎麼辦？其實先講個好消息啦。這份報告裡說，",
+   "to": "那新手呢？先講好消息。同一份研究說，",
+   "reason": "照素材：數字來自 Anthropic 內部研究"
+  },
+  {
+   "from": "以前要做好幾個月，現在一週就搞定。",
+   "to": "以前要幾個月的工作，現在壓到一週是真的。",
+   "reason": "照素材"
+  },
+  {
+   "from": "可是重點來了，壞消息是什麼？AI 幫你省下跑實驗跟整理的時間",
+   "to": "壞消息是，被壓縮的是設計實驗、跑、整理",
+   "reason": "照素材；口頭禪超額"
+  },
+  {
+   "from": "你其實只是拿到門票，沒有拿到能力。我讀到這段真的替大家捏一把冷汗。那要怎麼把門票練成實力？研究給的建議很簡單，就是",
+   "to": "新手拿到的是門票，不是能力。那要怎麼把門票練成能力？報告整理的做法是",
+   "reason": "拿掉個人反應；歸屬：報告整理的練法"
+  },
+  {
+   "from": "遇到卡關先自己想半小時，不要馬上問 AI。",
+   "to": "卡關時，先自己試三十分鐘到一小時，再求助。",
+   "reason": "照素材：30 到 60 分鐘"
+  },
+  {
+   "from": "今天如果不收 junior，五年後整個業界就沒有 senior 了嘛。",
+   "to": "資深要五到七年才養得成，今天不收 junior，過幾年就沒有 senior 了。",
+   "reason": "照素材"
+  },
+  {
+   "from": "報告整理的做法是",
+   "to": "這份報告整理的做法是",
+   "reason": "bare_report"
+  }
+ ]
+}

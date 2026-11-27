@@ -1,0 +1,147 @@
+{
+ "segment": "s03_choose",
+ "position": "第 4 段，共 11 段",
+ "avoid": [
+  "重點來了"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "ac8b8943eb831447981fc5d5e2cf2d7d3c75a089b7a31aceeaaba8efd17fa77d",
+ "previous_context": "其實很多一百萬的問題，排程分時跑就解掉了。只是這招太不性感，面試沒人會提啦。",
+ "original": {
+  "text": "那要怎麼選線？報告列了七個要先回答的問題，挑三個講。第一，沒人接的時候，訊息要不要留？要留就是佇列線，不留也沒關係就是廣播線，這是最重要的分岔。第二，讀過之後還要不要重讀，例如新服務要補讀上週的資料？要重讀，就要能留紀錄的那種佇列，Kafka 就是這一類。第三，時間窗多寬？秒級、分鐘級、小時級，時間窗每拉寬一級，架構就便宜一級。回答完這些，再去看產品。報告說，多數時候答案比想像中陽春：一台機器、一張資料庫的表、一個排程。每多加一層中間的服務，就多一個半夜會叫你起床的東西。產品名稱是最後一格。",
+  "lint": {
+   "chars": 247,
+   "precise_numbers": [],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 12,
+   "avg_sentence_len": 19.6,
+   "max_sentence_len": 34,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 4,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "那要怎麼選線？\n其實這份報告列了好幾個問題，\n我們挑最關鍵的三個來看就好。<short pause>\n第一個問題，訊息沒人接的時候要留嗎？\n如果要留，走佇列，\n不留也沒差，就走廣播。\n你猜第二個是什麼？\n就是讀過之後，還要不要重讀啦。\n如果新服務要補讀上週資料，\n就要選 Kafka 這種能留紀錄的。\n再來是時間窗有多寬？\n秒級、分鐘級，還是小時級？\n這句話我超認同，\n時間窗每拉寬一級，架構就便宜一級。<laugh>\n所以回答完這些，你再去看產品。\n這份報告說，答案往往比你想的還陽春。\n可能只是一台機器、一張資料庫的表，\n配上一個排程就搞定了。\n真的，每多加一層中間服務，\n半夜就多一個會叫你起床的東西喔。",
+   "lint": {
+    "chars": 264,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二"
+    ],
+    "sentences": 14,
+    "avg_sentence_len": 17.9,
+    "max_sentence_len": 28,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.8,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 5,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那到底要怎麼選線？\n報告裡列了七個問題。\n我們挑三個最關鍵的來看。\n第一個，沒人接的時候，訊息要留嗎？\n要留就選佇列，不留就走廣播。\n這真的是最重要的分岔點。<short pause>\n然後，讀過之後還要重讀嗎？\n像新服務要補讀上週的資料。\n要重讀的話，就要選 Kafka 這種能留紀錄的。\n再來，你的時間窗有多寬？\n是秒級、分鐘級，還是小時級？\n其實時間窗拉寬一級，架構就便宜一級。\n你猜最後選出來會是什麼？\n這份報告說，答案通常比你想的陽春超多。\n可能就一台機器、一張表，加一個排程。\n我看到這句真的很有共鳴。<laugh>\n多一層中間服務，\n半夜就多一個叫你起床的東西。\n所以產品名稱，留到最後再來選就好啦。",
+   "lint": {
+    "chars": 267,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 18,
+    "avg_sentence_len": 13.8,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 6,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "那到底要怎麼選線？\n報告裡列了七個問題。\n挑三個最關鍵的來講。\n第一個最重要，沒人接時訊息要留嗎？\n要留就選佇列。\n不留也沒關係，那就走廣播。<short pause>\n再來，讀過之後還要不要重讀？\n比方說新服務要補讀上週資料。\n要重讀，就需要留紀錄的 log。\n例如 Kafka 這種。\n然後是時間窗有多寬？\n這點我超認同。\n時間窗每拉寬一級，架構就便宜一級。<laugh>\n其實回答完這些，你才需要去看產品。\n報告裡說，多數時候答案其實超陽春。\n可能只是一台機器，配一張資料庫的表。\n然後再加上排程。\n每多加一層 broker，\n半夜就多一個東西叫你起床。\n所以產品名稱，真的是最後一格啦。",
+   "lint": {
+    "chars": 254,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 19,
+    "avg_sentence_len": 12.4,
+    "max_sentence_len": 24,
+    "sentences_over_20": 1,
+    "particles_per_100": 0.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "要重讀，就需要留紀錄的 log。例如 Kafka 這種。",
+   "to": "要重讀，就要能留紀錄的那種佇列，例如 Kafka。",
+   "reason": "術語白話"
+  },
+  {
+   "from": "然後是時間窗有多寬？這點我超認同。時間窗每拉寬一級，架構就便宜一級。<laugh>其實回答完這些",
+   "to": "然後是時間窗有多寬？秒、分鐘、還是小時？時間窗每拉寬一級，架構就便宜一級。回答完這些",
+   "reason": "拿掉個人反應"
+  },
+  {
+   "from": "每多加一層 broker，半夜就多一個東西叫你起床。",
+   "to": "每多加一層中間的服務，半夜就多一個東西叫你起床。",
+   "reason": "術語白話"
+  },
+  {
+   "from": "時間窗每拉寬一級，架構就便宜一級。",
+   "to": "時間窗每拉寬一個等級，架構就便宜一個等級。",
+   "reason": "兩套辨識都把「一級」聽成一屆／一階"
+  },
+  {
+   "from": "所以產品名稱，真的是最後一格啦。",
+   "to": "所以產品名稱，真的是最後才要看的啦。",
+   "reason": "兩套辨識都把「一格」聽成一個"
+  }
+ ]
+}

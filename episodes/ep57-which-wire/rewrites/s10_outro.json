@@ -1,0 +1,143 @@
+{
+ "segment": "s10_outro",
+ "position": "第 11 段，共 11 段（最後一段）",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "77c68cbb35588b8f078c3e0dd3178b1580e0e2a8ae79de50222a88972cf6afb4",
+ "previous_context": "很多人在廣播線上，卻以為自己在佇列線上。原文附錄還有搶票實戰，細節可以看原文喔。",
+ "original": {
+  "text": "今晚的 breakpoint。第一，畫第一個方框之前，先問訊息沒人接的時候去了哪裡、時間窗有多寬、漏一則和重一則哪個比較糟，產品名稱是最後一格。第二，大多數的一百萬，都是把時間窗拉寬之後就消失的一百萬。第三，用 AI 也是選線：問它的輸出沒人審的時候去了哪裡；多數人在廣播線上，以為自己在佇列線上。原文連結在節目資訊欄。我是 Ping，有收到的話，回我一個 pong。下次見。",
+  "lint": {
+   "chars": 183,
+   "precise_numbers": [
+    "一百萬",
+    "一百萬"
+   ],
+   "enumerations": [
+    "第一",
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 25.1,
+   "max_sentence_len": 56,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n第一，畫架構圖之前要先問什麼？\n先想訊息沒人接會去哪裡。\n漏掉跟重複到底哪個比較慘。\n第二，時間窗如果拉寬一點呢？\n很多看似龐大的流量，其實就直接消失了。\n第三，用 AI 本質上也是在選線。\n多問問產出沒人審會跑去哪。\n別一直在廣播線上，卻以為自己在佇列喔。\n這幾個原則其實超好用，你說對吧？\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 189,
+    "precise_numbers": [],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 13.5,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n今天聊完，你是不是也覺得架構沒那麼玄？\n動手前，先問訊息沒人接會跑去哪裡。\n把時間窗跟重複想清楚，技術名稱最後才選啦。\n然後，流量真的有那麼誇張嗎？\n其實很多一百萬，把時間窗拉寬就消失了。\n最後，用 AI 也是在選線喔。<short pause>\n先問輸出沒人審會跑去哪，別搞錯線了。\n很多人明明在廣播線上，卻以為自己在佇列上。\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。下次見。",
+   "lint": {
+    "chars": 195,
+    "precise_numbers": [
+     "一百萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.2,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "好，今晚的 breakpoint。<short pause>\n畫架構前要先問什麼？\n第一，先想訊息丟了去哪，產品最後再挑。\n然後，很多號稱一百萬的難題，\n其實時間窗拉寬就直接解決啦。<short pause>\n最後，用 AI 也是在選線。\n要是它的輸出沒人審，到底會流去哪裡呢？\n我真的超認同這點，想通了系統就穩了一半。\n原文連結在節目資訊欄。\n我是 Ping，有收到的話，回我一個 pong。\n下次見。",
+   "lint": {
+    "chars": 161,
+    "precise_numbers": [
+     "一百萬"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 10,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 27,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.6,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "第一，畫架構圖之前要先問什麼？先想訊息沒人接會去哪裡。漏掉跟重複到底哪個比較慘。第二，時間窗如果拉寬一點呢？很多看似龐大的流量，其實就直接消失了。",
+   "to": "第一，畫第一個方框之前，先問訊息沒人接的時候去了哪裡、時間窗有多寬、漏一則和重一則哪個比較糟。第二，大多數的一百萬，都是把時間窗拉寬之後，就消失的一百萬。",
+   "reason": "照前面講過的"
+  },
+  {
+   "from": "別一直在廣播線上，卻以為自己在佇列喔。這幾個原則其實超好用，你說對吧？",
+   "to": "多數人在廣播線上，以為自己在佇列線上。",
+   "reason": "照素材；拿掉多餘的反問"
+  }
+ ]
+}

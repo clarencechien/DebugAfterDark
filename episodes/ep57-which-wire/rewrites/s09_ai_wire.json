@@ -1,0 +1,135 @@
+{
+ "segment": "s09_ai_wire",
+ "position": "第 10 段，共 11 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這",
+  "傻眼"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "20c6df7eaac9be26e87c82e0dfeec70a4eb54cb6e74e83407dca0a51804eebd9",
+ "previous_context": "想站在迴圈上，前提是你以前真的痛過。如果新手一開始就把第一段跳過，很可能永遠只會發問，但完全看不出答案哪裡有錯啦。",
+ "original": {
+  "text": "最後，報告把三條線拿來看你用 AI 的方式，只換兩個詞：訊息換成任務，接收端換成你。開一個聊天視窗，問、讀、關掉，是廣播線：你真的在讀才收得到，掃過去沒審，就沒了，下次從頭再來。把任務丟給 agent，它跑完交回一份成果，是回撥線：任務要能重跑不弄壞東西，回來的東西要審得出錯；最常卡住的，是把寄信、改正式資料庫這種不能重來的事，交給一條會自己重試的線。有記帳、會補送、留紀錄，像架構決策紀錄、git、對話逐字稿，半年後還能回頭問當時為什麼這樣選，才是佇列線，也才是站在迴圈上。報告的一句話是：多數人在廣播線上，以為自己在佇列線上。原文附錄還有一篇搶票實戰，細節在原文。",
+  "lint": {
+   "chars": 282,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 6,
+   "avg_sentence_len": 46.0,
+   "max_sentence_len": 86,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 2,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "說到這個，這份報告把三條線拿來看 AI。其實只換了兩個詞喔。把訊息換成任務，把接收端換成你自己。平常開聊天視窗問完就關掉，就是廣播線。只要你沒仔細審，掃過去就直接沒了嘛。那回撥線是什麼？<short pause>就是把任務丟給 agent，跑完再來敲門。但大家最容易在哪裡卡關？像發信、改資料庫這種事，根本不能重來。結果你卻交給一條會自己重試的線。最後的佇列線，才是有記帳、有留紀錄。留下 git 或逐字稿，半年後還能回頭查。這樣才叫站在迴圈上啦。這份報告有句話，我真的很有共鳴。<short pause>很多人在廣播線上，卻以為自己在佇列線上。原文附錄還有搶票實戰，細節可以看原文喔。",
+   "lint": {
+    "chars": 263,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 16,
+    "avg_sentence_len": 15.4,
+    "max_sentence_len": 19,
+    "sentences_over_20": 0,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "其實這份報告把三條線，拿來對照我們平常怎麼用 AI。只要把訊息換成任務，把接收端換成你自己就好了。\n\n最普通的用法，是開個視窗聊天。問完、看完、關掉，這就是廣播線嘛。你掃過去沒仔細審，東西就沒了，下次遇到同樣的問題，又得從頭再來一次啦。\n\n那如果把任務丟給 agent，等它做完再來通知你呢？這其實就是回撥線。<short pause> 這種時候最怕的是什麼？就是把動正式資料庫這種不能重來的事，交給一條會自己重試的線，那真的超抖。\n\n最後一種才是佇列線。它會記帳、會補送，還把決策過程完整留底。就算半年後回頭看，你也能重放當時的判斷。\n\n這份報告有一句話我覺得講得超中肯：多數人其實只是在廣播線上，卻以為自己早就站在佇列線上了。<laugh> 原文附錄還有搶票實戰，細節可以去翻翻看喔。",
+   "lint": {
+    "chars": 312,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 21.3,
+    "max_sentence_len": 44,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "說到迴圈，報告裡把前面的三條線拿回來。只要換兩個詞，把訊息換成任務，接收端換成你自己。開個聊天視窗問問題，讀完關掉。這其實就是廣播線啦。你認真看才算數。掃過去沒審就沒了，下次還得從頭問耶。那把任務丟給 agent 跑呢？這就是回撥線。交回來的成果要能審，而且重跑一次不能把東西弄壞。大家最常卡住的，是把改資料庫這種事，交給會自動重試的線。<sigh>這光用想的就覺得超危險。最後一種是佇列線。它有記帳、有留紀錄，像 git 或逐字稿。半年後還能回頭查，當時為什麼這樣選。這才是真正站在迴圈上嘛。這份報告有一句話很打中我。<short pause>多數人在廣播線，卻以為自己在佇列線上。原文附錄還有搶票實戰，可以去翻翻看喔。",
+   "lint": {
+    "chars": 288,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 18,
+    "avg_sentence_len": 15.0,
+    "max_sentence_len": 27,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.4,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "像發信、改資料庫這種事",
+   "to": "像寄信、改正式資料庫這種事",
+   "reason": "照素材"
+  },
+  {
+   "from": "留下 git 或逐字稿，半年後還能回頭查。",
+   "to": "留下決策紀錄、git、逐字稿，半年後還能回頭問，當時為什麼這樣選。",
+   "reason": "照素材"
+  },
+  {
+   "from": "這份報告有句話，我真的很有共鳴。<short pause>很多人在廣播線上",
+   "to": "報告的一句話是：<short pause>多數人在廣播線上",
+   "reason": "拿掉個人反應；照素材"
+  },
+  {
+   "from": "報告的一句話是：",
+   "to": "這份報告的一句話是：",
+   "reason": "bare_report"
+  }
+ ]
+}

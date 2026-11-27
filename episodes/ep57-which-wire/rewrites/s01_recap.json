@@ -1,0 +1,143 @@
+{
+ "segment": "s01_recap",
+ "position": "第 2 段，共 11 段",
+ "avoid": [],
+ "recap": "EP56〈AI 讓人人都是建築師，那誰來簽名？〉：上一集講 AI 讓人人都是建築師，在圖上簽名的資格來自親手蓋過。這集同一條「AI 時代的架構師」線，從一道面試題切進去。",
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "bf556661a512d53e682556f3e7229d06e4aa393dcf1542572ef355edaeb0eef4",
+ "previous_context": "你有想過嗎？送一百萬則通知，會不會根本是個假議題？",
+ "original": {
+  "text": "上一集是鏡子篇延伸二，講 AI 讓人人都是建築師，可是在圖上簽名的資格，來自親手蓋過房子。這集的報告也在問 AI 時代的架構師，只是從一道面試題切進去。報告的作者先說清楚，這不是要檢討那位作者，那是一篇為了流量寫的面試文，本來就長這樣。今晚講三件事。第一，大家說的非同步，其實是三條不一樣的線。第二，一百萬則為什麼是假議題。第三，當 AI 可以自己跑完整個流程，架構師該站在哪裡，還有，你用 AI 的方式，其實也是在選一條線。",
+  "lint": {
+   "chars": 205,
+   "precise_numbers": [
+    "一百萬"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 28.3,
+   "max_sentence_len": 46,
+   "sentences_over_20": 5,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "上一集講 AI 讓人人都是建築師。簽名的資格，來自親手蓋過。這集延續同一條線，從一道面試題切進去。題目很常見，就是怎麼送一百萬則通知。結果被追問了六輪，底細全露出來了。<laugh>這篇不是要檢討作者啦，流量文大家懂的。重點來了，我們到底要看什麼？其實就三件事。第一是非同步架構到底在選什麼。再來是一百萬則是不是假議題。最後是當 LLM 自己跑完迴圈，架構師該站在哪裡。<short pause>我看到這邊真的很有共鳴耶。",
+   "lint": {
+    "chars": 187,
+    "precise_numbers": [
+     "一百萬",
+     "一百萬"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 12,
+    "avg_sentence_len": 14.6,
+    "max_sentence_len": 22,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.1,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集我們聊到，AI 讓人人都是建築師。\n但是能簽名的資格，來自你親手蓋過房子。\n這集沿著同一個方向，從一道面試題切進去。\n有人在網路上寫怎麼送一百萬則通知。\n結果被追問了幾輪，你猜發生什麼事？\n整個露餡了。<laugh>\n其實這不是要檢討作者啦，面試文大家都懂嘛。\n重點是這段追問，引出了三個問題。\n非同步架構到底在選什麼？\n那一百萬會不會根本不存在？\n還有當 LLM 能自己跑完迴圈，架構師要站哪裡？\n對，你用 AI 的方式，其實也是在選一條線喔。",
+   "lint": {
+    "chars": 203,
+    "precise_numbers": [
+     "一百萬",
+     "一百萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 15.9,
+    "max_sentence_len": 21,
+    "sentences_over_20": 1,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "上一集我們聊到，AI 讓人人都是建築師。\n但能簽名的資格，來自你親手蓋過房子。\n這集也是同一個主題，\n我們從一道面試題切進去。\n網路上有篇面試文，在聊怎麼送一百萬則通知。\n結果被連續追問了六輪。<laugh>\n我看到後面都替他捏一把冷汗。\n其實不是要檢討原作者啦，\n那種文章本來就是為了流量嘛。\n這六輪追問到底問出了什麼？\n重點來了。\n第一，大家講的非同步到底在選什麼？\n然後，那一百萬則為什麼是假議題？\n最厲害的是最後一個問題，\n當 AI 可以自己跑完整個迴圈，\n架構師還剩什麼？\n你用 AI 的方式，其實也是在選一條線喔。",
+   "lint": {
+    "chars": 235,
+    "precise_numbers": [
+     "一百萬",
+     "一百萬"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 13,
+    "avg_sentence_len": 17.1,
+    "max_sentence_len": 33,
+    "sentences_over_20": 3,
+    "particles_per_100": 1.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 4,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 0,
+ "manual_edits": [
+  {
+   "from": "<laugh>這篇不是要檢討作者啦，流量文大家懂的。重點來了，我們到底要看什麼？其實就三件事。",
+   "to": "報告的作者先說清楚，這不是要檢討那位作者，那是為了流量寫的面試文，本來就長這樣。今晚講三件事。",
+   "reason": "照素材；對真實的人語氣不當；口頭禪"
+  },
+  {
+   "from": "最後是當 LLM 自己跑完迴圈，架構師該站在哪裡。<short pause>我看到這邊真的很有共鳴耶。",
+   "to": "最後是當 AI 可以自己跑完整個流程，架構師該站在哪裡，還有，你用 AI 的方式，其實也是在選一條線。",
+   "reason": "拿掉個人反應；路線圖補第三點後半"
+  },
+  {
+   "from": "。報告的作者先說清楚",
+   "to": "。這份報告的作者先說清楚",
+   "reason": "bare_report"
+  }
+ ]
+}

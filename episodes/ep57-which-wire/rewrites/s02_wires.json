@@ -1,0 +1,144 @@
+{
+ "segment": "s02_wires",
+ "position": "第 3 段，共 11 段",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "704b089aeb76697e75f29cea2ddb9bea3cb3233adf602aa51d4af93ee019113a",
+ "previous_context": "最後是當 LLM 自己跑完迴圈，架構師該站在哪裡。我看到這邊真的很有共鳴耶。",
+ "original": {
+  "text": "報告說，討論非同步最常見的錯，是把它當成一種東西，然後只問要不要用佇列。其實至少有三條線，差別在訊息沒人接的時候，去了哪裡。第一條是佇列線，訊息會停在中間，被記帳、被補送，接收端不在，回來也收得到。第二條是廣播線，送到就丟，現在在線的人才收得到，沒人在就沒了；它便宜、快，能撐住很多連線。第三條是回撥線，中間沒有人，先掛號，對方做完再來敲門，像 webhook，可靠性全靠雙方的重試約定。還有一條最常被忘記的：排程，每天固定時間跑一批。很多一百萬的問題，排程分時跑就解掉了，只是它太不性感，面試沒人提。",
+  "lint": {
+   "chars": 250,
+   "precise_numbers": [
+    "一百萬"
+   ],
+   "enumerations": [
+    "第一",
+    "第二",
+    "第三"
+   ],
+   "sentences": 7,
+   "avg_sentence_len": 34.7,
+   "max_sentence_len": 48,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 0,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "這份報告提到，聊 async 時大家很常犯一個錯。\n就是把它當同一件事，一直問要不要用 queue。<short pause>\n但其實非同步至少有三種完全不同的路線。\n關鍵在哪裡？\n就在訊息沒人接的時候，它到底跑去哪了。\n第一種是佇列線。\n訊息會留著被記帳，接收端回來還是收得到。\n然後第二種是廣播線，送出去就丟了喔。\n只有當下在線的人才拿得到，沒人在就沒了。\n它雖然便宜又能撐住超多連線，但很吃連線穩定度。\n重點來了，第三種是回撥線，像是 webhook。\n中間沒有人，先掛號，對方做完再來敲門。\n還有一個你猜是什麼？最常被大家忘記的。<laugh>\n其實就是最陽春的排程分時跑批次。\n很多號稱一百萬的問題，排程跑一下就解掉了。\n只是它太不性感了，面試真的沒人會提嘛。",
+   "lint": {
+    "chars": 296,
+    "precise_numbers": [
+     "一百萬"
+    ],
+    "enumerations": [
+     "第一",
+     "第二",
+     "第三"
+    ],
+    "sentences": 17,
+    "avg_sentence_len": 16.4,
+    "max_sentence_len": 22,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.7,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "講到架構，這份報告提到一個很有趣的點。\n大家聊到 async，最常犯的錯，\n就是把它全部當成同一件事。\n然後大家就開始問，到底要不要用 queue 嘛。\n你猜差別在哪裡？\n差別在訊息沒人接的時候，它去了哪裡。<short pause>\n第一種是佇列線。\n訊息會留在中間被記帳、被補送。\n接收端就算不在，回來也收得到。\n然後下一種是廣播線。\n這種就是送達即丟喔。\n現在在線的人才拿得到，沒人在就沒了。\n它的好處是又快又便宜，能撐住很多連線。\n還有一種是回撥線，像 webhook 醬。\n中間完全沒有中間人。\n就像先掛號，對方做完再來敲門。\n重點來了，大家最常忽略的是排程線。\n其實很多一百萬的問題，排程分時跑就解掉了。<laugh>\n只是這招太不性感，面試沒人會提啦。",
+   "lint": {
+    "chars": 290,
+    "precise_numbers": [
+     "一百萬"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 18,
+    "avg_sentence_len": 15.1,
+    "max_sentence_len": 28,
+    "sentences_over_20": 2,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "聊完這個，架構上還有個超常見的盲點。\n這份報告裡說，大家聊 async 架構，\n最常犯的錯，就是一直問要不要用 queue。\n其實這根本是三條完全不同的線耶。\n它們到底差在哪？<short pause>\n差別在訊息沒人接的時候，跑去哪裡了。\n第一種是佇列線，訊息會停在中間被記帳，\n對方斷線再回來，都還能收到喔。\n然後是廣播線，送到就直接丟掉，\n只有現在在線的人才拿得到，沒人就沒了。\n再來是回撥線，就像大家常用的 webhook，\n中間沒有人，對方做完才會再來敲門。\n重點來了，還有一條大家最常忘記的排程線。\n很多號稱百萬等級的大問題，\n其實排程分開跑就解掉了啦。<laugh>\n只是這招太不性感，面試根本沒人想提嘛。",
+   "lint": {
+    "chars": 271,
+    "precise_numbers": [
+     "百萬"
+    ],
+    "enumerations": [
+     "第一"
+    ],
+    "sentences": 11,
+    "avg_sentence_len": 23.6,
+    "max_sentence_len": 38,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 1,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "講到架構，這份報告提到一個很有趣的點。大家聊到 async，最常犯的錯",
+   "to": "這份報告說，大家聊到非同步，最常犯的錯",
+   "reason": "縮短；非同步用中文"
+  },
+  {
+   "from": "還有一種是回撥線，像 webhook 醬。中間完全沒有中間人。",
+   "to": "還有一種是回撥線，像 webhook。中間沒有人轉手。",
+   "reason": "「醬」念不清楚"
+  },
+  {
+   "from": "重點來了，大家最常忽略的是排程線。",
+   "to": "還有一條最常被忘記的，是排程，每天固定時間跑一批。",
+   "reason": "口頭禪；照素材"
+  }
+ ]
+}

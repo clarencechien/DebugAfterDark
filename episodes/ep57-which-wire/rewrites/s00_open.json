@@ -1,0 +1,142 @@
+{
+ "segment": "s00_open",
+ "position": "第 1 段，共 11 段（第一段）",
+ "avoid": [],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "02f99372aa2fef5edde52083c14a5816bbba7edcff386c9912610493e4c7f00d",
+ "previous_context": "（這是第一段，沒有上一段）",
+ "original": {
+  "text": "Black Friday 半夜十二點，行銷要同時推一百萬則通知給使用者。一篇面試文的作者，十幾年經驗的架構師，給了標準答案：佇列、一群獨立的 worker、照排隊長度自動加機器、限流、批次、失敗重試。每個名詞都對。可是有人拿這份答案去追問 AI，連問六輪，名詞開始互相打架：一邊說瓶頸在 Google 推播服務的配額，一邊說排隊長了就開一千個 worker。這集要回答：送一百萬則通知，那個一百萬，是不是假的？",
+  "lint": {
+   "chars": 198,
+   "precise_numbers": [
+    "十二",
+    "一百萬",
+    "一千",
+    "一百萬",
+    "一百萬"
+   ],
+   "enumerations": [],
+   "sentences": 5,
+   "avg_sentence_len": 38.6,
+   "max_sentence_len": 67,
+   "sentences_over_20": 4,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 0,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "Black Friday 半夜十二點，行銷說要同時發一百萬則通知。這題目你面試搞不好也聽過。有位十幾年經驗的架構師，給了一份超級標準的答案。什麼 queue、獨立 worker、失敗重試。聽起來很厲害，對吧？結果把這些名詞拆開來看，它們根本在互相打架。<laugh> 一邊說瓶頸在 Google 推播配額，另一邊排隊長了，就說要開一堆 worker 猛灌。你猜這會怎樣？前面說的配額根本直接被打爆嘛。名詞全部都答對了，卻沒有回答任何一個真正該判斷的問題。到底這個一百萬，是不是假的啊？",
+   "lint": {
+    "chars": 226,
+    "precise_numbers": [
+     "十二",
+     "一百萬",
+     "一百萬"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 19.5,
+    "max_sentence_len": 39,
+    "sentences_over_20": 6,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "Black Friday 半夜十二點。\n行銷說要同時推一百萬則通知給使用者。\n資深架構師給了滿分答案。\n排隊的 queue、加開 worker、限流加重試。\n聽起來超專業對不對？\n結果你仔細拆開來看，<short pause>\n這些名詞根本在互相打架。\n一邊說瓶頸在推播服務的配額，\n另一邊卻說排隊長了就猛開機器。\n我看到這邊真的笑出來。<laugh>\n每個技術名詞都答對了，\n但真正要判斷的問題根本沒回答嘛。\n所以這一百萬則通知，到底是不是假的？",
+   "lint": {
+    "chars": 188,
+    "precise_numbers": [
+     "十二",
+     "一百萬",
+     "一百萬"
+    ],
+    "enumerations": [],
+    "sentences": 10,
+    "avg_sentence_len": 17.8,
+    "max_sentence_len": 28,
+    "sentences_over_20": 4,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "Black Friday 半夜十二點。\n行銷要同時推一百萬則通知。\n資深架構師給了滿分的標準答案。\n他列了 queue、worker 還有自動擴縮。\n聽起來超專業對不對？\n其實把細節拆開來看，名詞全部在打架。\n然後一邊說瓶頸在推播配額。<short pause>\n另一邊又說排隊長了，就開一大堆 worker。\n<laugh> 這根本互相矛盾嘛。\n每個名詞都答對了，但重要的問題完全沒解。\n你有想過嗎？\n送一百萬則通知，會不會根本是個假議題？",
+   "lint": {
+    "chars": 184,
+    "precise_numbers": [
+     "十二",
+     "一百萬",
+     "一百萬"
+    ],
+    "enumerations": [],
+    "sentences": 12,
+    "avg_sentence_len": 14.3,
+    "max_sentence_len": 21,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 2,
+ "manual_edits": [
+  {
+   "from": "資深架構師給了滿分的標準答案。",
+   "to": "一位十幾年經驗的架構師，寫了一篇面試文，給了標準答案。",
+   "reason": "照素材"
+  },
+  {
+   "from": "其實把細節拆開來看，名詞全部在打架。然後一邊說",
+   "to": "可是有人拿這份答案去追問 AI，連問六輪，名詞開始打架。一邊說",
+   "reason": "照素材：六輪追問是報告的來源"
+  },
+  {
+   "from": "另一邊又說排隊長了，就開一大堆 worker。<laugh> 這根本互相矛盾嘛。每個名詞都答對了，但重要的問題完全沒解。你有想過嗎？送一百萬則通知，會不會根本是個假議題？",
+   "to": "另一邊又說排隊長了，就開一千個 worker。每個名詞都答對了，卻沒回答真正要判斷的問題。這集要回答：送一百萬則通知，那個一百萬，是不是假的？",
+   "reason": "照素材；對真實的人不笑"
+  }
+ ]
+}

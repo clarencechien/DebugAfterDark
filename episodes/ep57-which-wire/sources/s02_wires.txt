@@ -1,0 +1,22 @@
+討論 async 架構時，最常見的錯誤是把它當成一種東西，然後問「要不要用 queue」。實際上大家口中的非同步，至少是三條性質完全不同的線。差別不在產品，在訊息沒有人接的時候，它去了哪裡。
+ A · 佇列線
+ 發送端
+ broker記帳 · 補送
+ 接收端
+ 接收端不在，回來也收得到
+ B · 廣播線
+ 發送端
+ broker送達即丟
+ 接收端
+ 接收端不在，這則就沒了
+ C · 回撥線
+ 發送端
+ 對方
+ 沒有中間人：先掛號，對方做完再來敲門
+圖 1 · 三條線的差別：訊息沒人接的時候去了哪裡。
+A · 佇列線：訊息會停在中間、被記帳、被補送
+這條線又分兩種。Work queue（RabbitMQ、SQS、Postgres 的 SKIP LOCKED）：一則給一個人，做完銷帳，之後就沒了。Log（Kafka、Redis Streams、RabbitMQ Streams）：訊息留著，被讀過也不刪，每個讀者自己記 offset，所以可以重讀、可以有多個讀者各走各的進度。兩者都是佇列線，但「讀過之後還在不在」是根本差異，多數人把 Kafka 當 SQS 用的時候，就是沒分清這一點。
+B · 廣播線：送達即丟
+MQTT 的 QoS 0、NATS core、Redis pub/sub、WebSocket 的 broadcast。broker 只負責把訊息路由給「現在在線」的訂閱者，沒人在線就沒了。它便宜、快、能養百萬條連線，代價是可靠性由連線層決定：MQTT 要做到 at-least-once，得把 QoS 1、持久 session、固定 client id、manual ack、payload 帶 UUID 全部補上，缺一項都會在某種故障下掉訊息。補上之後，它其實就變成了一條每個 client 各有一個小佇列的佇列線。
+C · 回撥線：先掛號，對方做完再來敲門
+Webhook、provider callback、long-poll。中間沒有 broker，可靠性完全靠雙方的重試協議：對方要重送幾次、你要能冪等地接。最常被忽略的一條是排程線：cron 加 batch，最陽春的非同步。很多「一百萬」的問題，其實是「排程分時跑」就解掉的問題，只是它太不性感，沒人在面試裡提。

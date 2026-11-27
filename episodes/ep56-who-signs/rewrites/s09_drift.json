@@ -1,0 +1,149 @@
+{
+ "segment": "s09_drift",
+ "position": "第 10 段，共 12 段",
+ "avoid": [
+  "你猜",
+  "重點來了",
+  "更扯的是",
+  "我看到這"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "6f869cd0156eb11415aefff0f4991468aa15f513abe8a0e18664478754581463",
+ "previous_context": "可是 agent 不會成長，每次都要重新餵。你要花時間檢查的工作量，根本不會變少喔。",
+ "original": {
+  "text": "為什麼分給一群 agent 會出事？今年工程圈替「每一步都對、整體歪掉」取了幾個名字。一個叫架構漂移：一次跨過模組邊界的引用，看起來沒事，測試過、命名也對，下一個 agent 看到了，就當成慣例照抄。另一種是 agent 不記得既有的設計為什麼存在，一個合理的小重構，就把刻意留下的限制拆掉、把修過的 bug 放回來。今年三月還有一篇研究：強的模型接手弱的 agent 留下的過程，會連它的偏差一起繼承。所以上游歪一點，下游不會覺得那是妥協，會當成慣例。報告的結論是：沒有能力看整體的人去指揮一群 agent，放大的不是產出，是漂移。藥方是把「為什麼」寫下來：架構決策紀錄要跟改動放在同一個 PR，架構限制要變成會自動擋的測試。",
+  "lint": {
+   "chars": 302,
+   "precise_numbers": [],
+   "enumerations": [],
+   "sentences": 8,
+   "avg_sentence_len": 36.8,
+   "max_sentence_len": 54,
+   "sentences_over_20": 7,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 1,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "而且事情往往比你想的更麻煩喔。<short pause>\n你有沒有想過，\n為什麼分給一群 agent 反而容易翻車？\n因為它常常每一步都對，\n最後整體卻完全歪掉。\n這在工程圈叫架構漂移。\n比方說一次跨模組的引用，\n明明測試全過，命名也沒錯。\n但下一個 agent 看到，\n就會當成慣例跟著照抄啦。\n這真的很讓人頭痛耶。<sigh>\n更可怕的是，\n它根本不知道當初為什麼這樣設計。\n一個看似合理的重構，\n就把前人刻意留下的限制給拆了。\n今年三月還有篇研究發現，\n厲害的模型接手比較弱的 agent，\n竟然會把對方的偏差直接繼承下來。\n所以放任一堆 agent 瞎忙，\n放大的根本不是產出，\n而是架構的漂移。<short pause>\n那到底該怎麼解？\n其實就是把為什麼寫進系統裡。\n架構決策紀錄要跟改動放同一個 PR，\n限制也要寫成會自動攔截的測試，\n才不會讓後面的 agent 繼續搞砸嘛。",
+   "lint": {
+    "chars": 328,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 22.4,
+    "max_sentence_len": 49,
+    "sentences_over_20": 8,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "而且分給一群 agent 做，事情可能更大條。\n你有沒有想過，為什麼每一步看起來都對，\n整體最後卻會徹底歪掉？\n其實工程圈給這件事取了名字，叫架構漂移。\n像是某個 agent 跨模組引用了一次，\n測試全過、命名也漂亮，看起來完全沒事。\n結果下一個 agent 看到，就當成慣例照抄耶。\n今年三月還有研究發現，<short pause>\n就算換很強的模型，也會直接繼承前面的偏差。\n這真的會讓人看了一肚子火。<laugh>\n因為 agent 根本不知道設計背後的理由嘛。\n一個看似合理的小重構，\n可能就把以前修過的 bug 又放回來了。\n那到底該怎麼防？\n解法是把「為什麼」變成可以執行的東西。\n架構決策紀錄要跟改動放在同一個 PR 裡。\n然後把架構限制寫成自動測試，\n直接靠程式攔下來，不要只靠人工審查啦。",
+   "lint": {
+    "chars": 304,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 13,
+    "avg_sentence_len": 22.4,
+    "max_sentence_len": 36,
+    "sentences_over_20": 6,
+    "particles_per_100": 1.0,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 2
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "為什麼分給一群 agent，很容易整組壞掉？\n其實問題出在漂移。\n每一步看起來都對，合起來卻整個歪掉。\n最常見的就是架構漂移。\n像是 agent 跨模組引用了一個東西。\n當下測試有過，命名也很正常。\n下一個 agent 看到，就當成慣例照抄。<sigh>\n我看到這個分析真的很有共鳴。\n因為 agent 完全沒有記憶。\n它不知道過去的設計，為什麼要這樣做。\n只要做個小重構，刻意留的限制就被拆光了。\n甚至連修過的 bug，都被默默放回來。\n今年三月的論文還發現，厲害的模型也一樣。\n只要接手弱 agent 留下的紀錄，\n它就會把那個偏差，一路當成慣例繼承下去。\n那到底該怎麼防？\n解法就是把原因寫成規則。\n架構決策紀錄，必須跟改動放在同一個 PR。\n架構限制要寫成自動測試，直接把它擋下來。\n要是沒有人掌握全貌，\n丟再多 agent，也只是加速漂移而已啦。",
+   "lint": {
+    "chars": 340,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 19,
+    "avg_sentence_len": 16.9,
+    "max_sentence_len": 35,
+    "sentences_over_20": 2,
+    "particles_per_100": 0.3,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "其實工程圈給這件事取了名字，叫架構漂移。",
+   "to": "工程圈今年給這件事取了名字，其中一個叫架構漂移。",
+   "reason": "照素材：有三個名字"
+  },
+  {
+   "from": "今年三月還有研究發現，<short pause>就算換很強的模型，也會直接繼承前面的偏差。這真的會讓人看了一肚子火。<laugh>因為 agent 根本不知道設計背後的理由嘛。",
+   "to": "另一種是，agent 不記得既有的設計為什麼存在。",
+   "reason": "照素材：研究說的是強模型接手弱 agent 的軌跡；拿掉個人反應，研究移到後面"
+  },
+  {
+   "from": "那到底該怎麼防？",
+   "to": "今年三月還有一篇研究：強的模型接手弱的 agent 留下的過程，會連偏差一起繼承。所以報告說，沒有能力看整體的人去指揮一群 agent，放大的不是產出，是漂移。那該怎麼防？",
+   "reason": "照素材補回結論"
+  },
+  {
+   "from": "然後把架構限制寫成自動測試，直接靠程式攔下來，不要只靠人工審查啦。",
+   "to": "架構限制寫成自動測試，在損害累積的地方攔下來，不靠人工審查。",
+   "reason": "照素材"
+  },
+  {
+   "from": "你有沒有想過，為什麼每一步看起來都對，整體最後卻會徹底歪掉？工程圈今年給這件事取了名字，其中一個叫架構漂移。像是某個 agent 跨模組引用了一次，測試全過、命名也漂亮，看起來完全沒事。結果下一個 agent 看到，就當成慣例照抄耶。",
+   "to": "每一步都對，整體卻歪掉。工程圈今年給這件事取了名字，其中一個叫架構漂移。某個 agent 跨過模組的邊界，引用了一次。測試全過，命名也對，看起來沒事。下一個 agent 看到了，就當成慣例照抄。",
+   "reason": "音高跳動高，縮短長句"
+  },
+  {
+   "from": "一個看似合理的小重構，可能就把以前修過的 bug 又放回來了。",
+   "to": "一個合理的小重構，就把修過的 bug 又放回來了。",
+   "reason": "縮短"
+  },
+  {
+   "from": "所以報告說，沒有能力看整體的人去指揮一群 agent，放大的不是產出，是漂移。那該怎麼防？解法是把「為什麼」變成可以執行的東西。架構決策紀錄要跟改動放在同一個 PR 裡。架構限制寫成自動測試，在損害累積的地方攔下來，不靠人工審查。",
+   "to": "所以這份報告說，看不到整體的人去指揮一群 agent，放大的不是產出，是漂移。那該怎麼防？把「為什麼」寫下來。架構決策紀錄，跟改動放在同一個 PR。架構限制寫成自動測試，讓程式攔下來，不靠人工審查。",
+   "reason": "縮短；bare_report"
+  }
+ ]
+}

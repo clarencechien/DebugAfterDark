@@ -1,0 +1,153 @@
+{
+ "segment": "s04_fake",
+ "position": "第 5 段，共 11 段",
+ "avoid": [
+  "重點來了"
+ ],
+ "recap": null,
+ "model": "gemini-3.8-flash",
+ "temperature": 0.8,
+ "prompt_sha256": "527516f38ccde0701fbd384b13c71323b2f43d5ba2be2351b5533729be0a4335",
+ "previous_context": "每多加一層 broker，半夜就多一個東西叫你起床。所以產品名稱，真的是最後一格啦。",
+ "original": {
+  "text": "拿這幾個問題回去看原題，第一個發現是：題目一格都沒給。先算一下，一百萬則、每則大約一 KB，加起來差不多一 GB，一台機器就放得下。再來，一百萬則內容是一樣的，還是每個人都不同？如果一樣，或只分幾種，交給推播服務用主題群發，一次呼叫就解決，整篇文章的佇列和 worker 都多餘了。時間窗呢？午夜同時送是行銷的想像，專門做推播的平台預設就是分時送，照時區、照每個人最常開 app 的時段。報告說，真正會打掛你的不是推播，是推播之後的回擊：一百萬人半夜同時收到，有幾趴點開，全部打到你的登入和商品頁。這一點，原文隻字未提。",
+  "lint": {
+   "chars": 254,
+   "precise_numbers": [
+    "一百萬",
+    "一百萬",
+    "一百萬"
+   ],
+   "enumerations": [
+    "第一"
+   ],
+   "sentences": 8,
+   "avg_sentence_len": 30.8,
+   "max_sentence_len": 54,
+   "sentences_over_20": 6,
+   "particles_per_100": 0.0,
+   "written_words": [],
+   "jargon": [],
+   "self_corrections": 0,
+   "greeting": false,
+   "bare_report": 1,
+   "mainland_words": [],
+   "avoid_words": [],
+   "questions": 2,
+   "tags": 0
+  }
+ },
+ "candidates": [
+  {
+   "text": "拿剛才那幾格回去看原題，<short pause> 你會發現題目根本什麼都沒講。其實算一下就知道，一百萬則通知，體積小到一台機器就完全塞得下。那內容到底是一樣還是每個人不同？如果內容都一樣，直接叫推播平台群發，一個 API 搞定，那些 queue 跟 worker 不就白寫了？<laugh> 更扯的是時間窗，半夜同時送完全是行銷的幻想啦。推播平台本來就會分時區慢慢送。你知道為什麼要分散嗎？真正會把系統打掛的，從來不是發推播，而是大家同時點進 app 的回擊流量。原文對這點隻字未提，我看到超傻眼。<sigh>",
+   "lint": {
+    "chars": 220,
+    "precise_numbers": [
+     "一百萬"
+    ],
+    "enumerations": [],
+    "sentences": 9,
+    "avg_sentence_len": 23.4,
+    "max_sentence_len": 45,
+    "sentences_over_20": 5,
+    "particles_per_100": 0.5,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 3,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "拿這套標準回去看原題目，你猜怎麼樣？\n題目根本一格都沒給答案。<short pause>\n我看到這邊真的是滿頭問號。<sigh>\n其實稍微算一下，資料加起來才一 GB 左右。\n隨便一台電腦就裝得下啦。\n而且內容每個人都不同嗎？\n如果內容一樣，直接交給推播服務群發。\n只要打一個 API 就搞定。\n根本不用架那麼多 worker 嘛。\n然後那個午夜同時發送，其實只是行銷的想像。\n專業推播平台都會分時段慢慢送。\n更扯的是，真正會打掛系統的不是發推播。\n而是大家點開通知，全部衝回來的瞬間。<short pause>\n登入頁直接被打爆，原文竟然完全沒提。",
+   "lint": {
+    "chars": 224,
+    "precise_numbers": [],
+    "enumerations": [],
+    "sentences": 14,
+    "avg_sentence_len": 15.0,
+    "max_sentence_len": 20,
+    "sentences_over_20": 0,
+    "particles_per_100": 0.9,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 3
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  },
+  {
+   "text": "說真的，拿這些問題回去看原題目，你會發現題目連一格都沒給答案。其實一百萬則訊息，一台機器就完全放得下。再來，內容每個人都長得不一樣嗎？如果內容差不多，交給推播平台群發，一個 API call 就搞定了嘛。那文章裡畫的一堆 queue 跟 worker，根本多寫了一半。還有，午夜同時發送，只是行銷的想像啦。專業平台都是分批慢慢送的。你猜真正會打掛系統的是什麼？不是發推播，是發完之後的回擊！<short pause>一百萬人只要有幾個百分比點開通知，瞬間湧進商品頁，系統就直接掛掉。我看到這裡真的快笑出來，因為原文對這件事完全沒提耶。",
+   "lint": {
+    "chars": 248,
+    "precise_numbers": [
+     "一百萬",
+     "一百萬",
+     "百"
+    ],
+    "enumerations": [],
+    "sentences": 11,
+    "avg_sentence_len": 21.5,
+    "max_sentence_len": 32,
+    "sentences_over_20": 5,
+    "particles_per_100": 1.2,
+    "written_words": [],
+    "jargon": [],
+    "self_corrections": 0,
+    "greeting": false,
+    "bare_report": 0,
+    "mainland_words": [],
+    "avoid_words": [],
+    "questions": 2,
+    "tags": 1
+   },
+   "round": 0,
+   "model_version": "gemini-3.8-flash"
+  }
+ ],
+ "chosen": 1,
+ "manual_edits": [
+  {
+   "from": "<short pause>我看到這邊真的是滿頭問號。<sigh>其實稍微算一下，資料加起來才一 GB 左右。隨便一台電腦就裝得下啦。",
+   "to": "<short pause>先算一下，一百萬則、每則大約一 KB，加起來差不多一 GB，一台機器就放得下。",
+   "reason": "拿掉個人反應；照素材"
+  },
+  {
+   "from": "更扯的是，真正會打掛系統的不是發推播。而是大家點開通知，全部衝回來的瞬間。<short pause>登入頁直接被打爆，原文竟然完全沒提。",
+   "to": "報告說，真正會打掛系統的，是推播之後的回擊。一百萬人半夜同時收到，有幾趴點開，全部打到你的登入和商品頁。<short pause>這一點，原文沒提。",
+   "reason": "avoid 詞；對舉；照素材"
+  },
+  {
+   "from": "。報告說，真正會打掛",
+   "to": "。這份報告說，真正會打掛",
+   "reason": "bare_report"
+  },
+  {
+   "from": "題目根本一格都沒給答案。",
+   "to": "題目一個答案都沒給。",
+   "reason": "兩套辨識都把「一格」聽成一個"
+  },
+  {
+   "from": "根本不用架那麼多 worker 嘛。",
+   "to": "根本不用那麼多 worker 嘛。",
+   "reason": "兩套辨識都把「架」聽成加"
+  },
+  {
+   "from": "真正會打掛系統的",
+   "to": "真正會打垮系統的",
+   "reason": "兩套辨識都聽成打垮，意思一樣，照念法改"
+  }
+ ]
+}

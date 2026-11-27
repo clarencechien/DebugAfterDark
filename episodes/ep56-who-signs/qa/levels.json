@@ -1,0 +1,74 @@
+[
+ {
+  "id": "s00_open",
+  "lufs_before": -25.8,
+  "gain_db": 5.8,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s01_recap",
+  "lufs_before": -22.3,
+  "gain_db": 2.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s02_sign",
+  "lufs_before": -19.9,
+  "gain_db": -0.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s03_stages",
+  "lufs_before": -21.1,
+  "gain_db": 1.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s04_learn",
+  "lufs_before": -21.7,
+  "gain_db": 1.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s05_pigs",
+  "lufs_before": -20.7,
+  "gain_db": 0.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s06_senior",
+  "lufs_before": -22.0,
+  "gain_db": 2.0,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s07_junior",
+  "lufs_before": -21.3,
+  "gain_db": 1.3,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s08_middle",
+  "lufs_before": -22.4,
+  "gain_db": 2.4,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s09_drift",
+  "lufs_before": -20.7,
+  "gain_db": 0.7,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s10_sign",
+  "lufs_before": -20.1,
+  "gain_db": 0.1,
+  "lufs_after": -20.0
+ },
+ {
+  "id": "s11_outro",
+  "lufs_before": -22.5,
+  "gain_db": 2.5,
+  "lufs_after": -20.0
+ }
+]
