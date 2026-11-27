@@ -10,6 +10,10 @@ Order of filters (each keeps the takes close enough to the best one, then hands 
                   the one before sounded like a different delivery on EP00 even after tonal matching
   5. consistency  (--consistency) voiceprint and brightness, as below
   6. long pauses  fewest per minute
+Logged but NOT used to pick (2026-11-27): measures.affect (pitch range/spread, loudness spread) per take, and
+affect_flag "excited?" when a take's pitch range is more than --excited-margin semitones above the episode median.
+On EP56 that flagged the take Clarence called "too excited"; "too flat" is not caught by these numbers (see
+tools/affect_judge.py for the Gemini listening check and the agreement report against his tags).
 Ported from ttspoc podcast/select_takes.py (799872e); steps 2-4 added 2026-11-04 from the EP00 trial.
 
 make_podcast.py --takes N keeps the take with the fewest long pauses; that ignores intelligibility.
@@ -63,6 +67,8 @@ def main(a):
     steady = {p.name: measures.wobble(p)["jitter"] for p in allc}
     cps = {p.name: spoken_chars(next(x["text"] for x in sc["segments"] if p.name.startswith(x["id"] + "."))) / wav_duration(p) for p in allc}
     med_cps = float(np.median(list(cps.values())))
+    aff = {p.name: measures.affect(p) for p in allc}   # log only, see the docstring
+    med_range = float(np.median([v["f0_range_st"] for v in aff.values()]))
     terms = [t for t in (a.terms or "").split(",") if t]
     log = []
     for s in sc["segments"]:
@@ -73,6 +79,7 @@ def main(a):
                    "long_pauses_per_min": round(long_pauses(p) / wav_duration(p) * 60, 1), "text": T[p.stem]["text"],
                    "segments": T[p.stem].get("segments", [])}
             row.update(jitter=steady[p.name], cps=round(cps[p.name], 2),
+                       affect=aff[p.name], affect_flag="excited?" if aff[p.name]["f0_range_st"] > med_range + a.excited_margin else "",
                        terms_ok=all(len(re.findall(re.escape(t), T[p.stem]["text"], re.I)) >= len(re.findall(re.escape(t), s["text"], re.I)) for t in terms))
             if feats:
                 row.update(sim_to_episode=round(feats[p.name]["sim"], 3), centroid=round(feats[p.name]["centroid"]),
@@ -96,7 +103,7 @@ def main(a):
         best = min(cand, key=lambda r: (r["long_pauses_per_min"], r["cer"]))
         log.append({"id": s["id"], "chosen": best["file"], "takes": rows,
                     "clear_enough": [r["file"] for r in rows if r["cer"] <= floor + a.tolerance]})
-        extra = (lambda r: f" jit {r['jitter']:.3f} cps {r['cps']}" + ("" if r["terms_ok"] else " TERMS?") + (f" sim {r['sim_to_episode']:.3f} bright {r['centroid']}" if feats else ""))
+        extra = (lambda r: f" jit {r['jitter']:.3f} cps {r['cps']} range {r['affect']['f0_range_st']:.1f}{' EXCITED?' if r['affect_flag'] else ''}" + ("" if r["terms_ok"] else " TERMS?") + (f" sim {r['sim_to_episode']:.3f} bright {r['centroid']}" if feats else ""))
         print(f"{s['id']:16s} " + "  ".join(f"{r['file'].split('.')[1]}: CER {r['cer']:.3f} pauses/min {r['long_pauses_per_min']}{extra(r)}" for r in rows) + f"  -> {best['file'].split('.')[1]}")
     if a.neighbour and feats:
         # Neighbour pass: a jump between two adjacent segments is what listeners hear as "a different person".
@@ -113,7 +120,8 @@ def main(a):
     for seg in log:
         shutil.copyfile(d / seg["chosen"], d / f"{seg['id']}.wav")
     (d / "select_log.json").write_text(json.dumps({"asr": a.asr, "beam": a.beam, "tolerance": a.tolerance, "terms": terms, "jitter_margin": a.jitter_margin,
-                                                   "pace_margin": a.pace_margin, "episode_median_cps": round(med_cps, 2), "consistency": a.consistency,
+                                                   "pace_margin": a.pace_margin, "episode_median_cps": round(med_cps, 2),
+                                                   "episode_median_f0_range_st": round(med_range, 2), "excited_margin": a.excited_margin, "consistency": a.consistency,
                                                    "sim_margin": a.sim_margin, "bright_margin": a.bright_margin, "segments": log}, ensure_ascii=False, indent=1), encoding="utf-8")
 
 if __name__ == "__main__":
@@ -130,4 +138,6 @@ if __name__ == "__main__":
     ap.add_argument("--terms", default="", help="comma-separated English terms that must appear in the blind transcript, e.g. Ping,pong")
     ap.add_argument("--jitter-margin", type=float, default=0.02, help="semitones above the steadiest take still accepted")
     ap.add_argument("--pace-margin", type=float, default=0.10, help="allowed deviation from the episode median characters per second")
+    ap.add_argument("--excited-margin", type=float, default=2.0,
+                    help="log only: flag a take whose pitch range (p90-p10, semitones) exceeds the episode median by this much")
     main(ap.parse_args())

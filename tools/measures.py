@@ -4,6 +4,7 @@
   python3 tools/measures.py pace   <file> [--skip ... --win 15]              # syllable rate and pause share per window
   python3 tools/measures.py drift  <file> [--skip ... --win 15]              # pitch, brightness, voiceprint per window
   python3 tools/measures.py seams  <segment wavs in order>                   # brightness of the last/first 6 s at each seam
+  python3 tools/measures.py affect <files...>                                 # pitch range / spread, loudness spread (log only)
 
 What the numbers meant on EP00 (episodes/ep00-intro/review/README.md):
 - jitter (median semitone jump between 10 ms voiced frames): 0.20 sounded steady, 0.26 sounded "shaky" (抖).
@@ -64,6 +65,20 @@ def wobble_stats(f0, a0=0, a1=None):
 
 def wobble(path, skip=0.0, tail=0.0):
     return wobble_stats(f0_frames(read(path, skip, tail)))
+
+
+def affect(path, skip=0.0, tail=0.0):
+    """How lively a take is (2026-11-27, log only): pitch range p90-p10 and pitch spread in semitones around the take's
+    median, median pitch, and loudness spread of 10 ms frames (dB, frames within 40 dB of the loudest).
+    EP56 retakes: the take Clarence called "too excited" (s01 Lite take2) had range 9.8 st against 6.3-7.7 for the others;
+    the one he called "too flat" (s11 Lite take0) was NOT lower than his pick (7.9 vs 7.3), so this only catches "too excited"."""
+    x = read(path, skip, tail); f0 = f0_frames(x); v = f0[f0 > 0]
+    if len(v) < 20:
+        return {"f0_range_st": 0.0, "f0_sd_st": 0.0, "f0_median_hz": 0.0, "energy_sd_db": 0.0}
+    st = 12 * np.log2(v / np.median(v)); n = SR // 100
+    r = np.sqrt(np.mean(x[: len(x) // n * n].reshape(-1, n) ** 2, axis=1)); db = 20 * np.log10(r + 1e-9); db = db[db > db.max() - 40]
+    return {"f0_range_st": round(float(np.percentile(st, 90) - np.percentile(st, 10)), 2), "f0_sd_st": round(float(st.std()), 2),
+            "f0_median_hz": round(float(np.median(v)), 1), "energy_sd_db": round(float(db.std()), 2)}
 
 
 def centroid(x, sr=SR):
@@ -130,4 +145,11 @@ if __name__ == "__main__":
         p = sub.add_parser(name); p.add_argument("file"); p.add_argument("--skip", type=float, default=0); p.add_argument("--tail", type=float, default=0)
         p.add_argument("--win", type=float, default=20 if name == "wobble" else 15)
     p = sub.add_parser("seams"); p.add_argument("files", nargs="+")
-    a = ap.parse_args(); {"wobble": cmd_wobble, "pace": cmd_pace, "drift": cmd_drift, "seams": cmd_seams}[a.cmd](a)
+    p = sub.add_parser("affect"); p.add_argument("files", nargs="+"); p.add_argument("--skip", type=float, default=0); p.add_argument("--tail", type=float, default=0)
+    a = ap.parse_args()
+    if a.cmd == "affect":
+        for f in a.files:
+            m = affect(f, a.skip, a.tail)
+            print(f"{Path(f).name:28s} range {m['f0_range_st']:5.2f} st  sd {m['f0_sd_st']:4.2f} st  median {m['f0_median_hz']:5.1f} Hz  energy_sd {m['energy_sd_db']:5.2f} dB")
+    else:
+        {"wobble": cmd_wobble, "pace": cmd_pace, "drift": cmd_drift, "seams": cmd_seams}[a.cmd](a)
