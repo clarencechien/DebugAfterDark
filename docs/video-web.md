@@ -43,8 +43,10 @@ AI SDLC 課程 A1 的 demo 重播（專案資料夾 `ai-sdlc-course/a1-runs/repl
     （INFO／WARN／ERROR）。報告自己提出的第一個論點標成 ERROR 和「root cause?」，就是這集要追的問題。
     span 名稱、數值、出處都是卡片本身的內容；trace id 由集數算出來，固定不變。
     長條的動法有四種，用 `render.js --variant` 選，版面都一樣（11/27 使用者覺得第一版一路慢慢爬有點毛躁）：
-    `step`（第一版，預設）、`ease`（0.8 秒衝到最終長度，時間數字往上跳）、`scan`（一條掃描線掃過時間軸，長條跟著填）、
-    `pulse`（ease 加上進行中的 span 輕微呼吸）。後三種在新 span 出現時，那一列和對應的 log 會亮 0.6 秒。
+    `step`（第一版）、`ease`（0.8 秒衝到最終長度，時間數字往上跳）、`scan`（一條掃描線掃過時間軸，長條跟著填）、
+    `pulse`（ease 加上進行中的 span 輕微呼吸，**預設**，使用者 11/27 選定）。
+    trace 在開機封面結束後才開始：指令一個鍵一個鍵打出來（間隔不均勻但固定），按 Enter 後，
+    已經發生的 span 依序補上，第一條也有動畫；新 span 那一列整列亮一下（ERROR 是紅色）。後三種在新 span 出現時，那一列和對應的 log 會亮 0.6 秒。
     樣片在 `video/web-video-options/ep36-sample/trace-motion/`。
   - `opening-b`（**B 版**）：同一個開機封面，cold open 直接用深色 paper 的大數字卡，整集都是 paper。跟 A 只差 cold open 那約 40 秒。
   - `terminal`：有 debug 代入感的終端機。每張數字卡變成一道指令（提示字元是 `ping@debugafterdark`）：前後對比的數字用 SQL 查詢，結果是表格加長條；

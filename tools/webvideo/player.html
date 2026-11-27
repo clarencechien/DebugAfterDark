@@ -251,29 +251,37 @@ function terminalFrame(t, ci, key) {
 function traceId() { let h = 2166136261; for (const ch of D.episode) h = Math.imul(h ^ ch.codePointAt(0), 16777619); return (h >>> 0).toString(16).padStart(8, '0'); }
 const ts = s => `${String(Math.floor(s / 60)).padStart(2, '0')}:${(s % 60).toFixed(1).padStart(4, '0')}`;
 // VARIANT (render.js --variant) only changes how the span bars move; the layout stays the same.
+//   pulse is the default (picked 11/27)
 //   step  : the first version, bars crawl in 4 px steps for the whole span
 //   ease  : a bar shoots out to its final length in 0.8 s (ease-out) while its duration counts up
 //   scan  : bars fill smoothly up to a playhead line that sweeps the timeline
 //   pulse : ease, plus the open span breathes softly until the next one starts
 // all but step also flash a new span's row and its log line for 0.6 s
-let VARIANT = 'step';
+let VARIANT = 'pulse';
 const easeOut = p => 1 - Math.pow(1 - p, 3);
 function traceFrame(t, key) {
   const cards = D.cards.filter(c => c.t < OPEN_END && c.kind !== 'figure');
   const span = OPEN_END, AREA = 760, X = v => AREA * v / span;
-  const live = cards.filter(c => c.t <= t);
   // the first card the report itself makes is the suspect: that is where the episode's question lives
   const suspect = cards.findIndex(c => c.source === D.report_label || c.source === 'report');
   const level = i => i === suspect ? 'ERROR' : i === 0 ? 'INFO' : 'WARN';
   const RGB = { INFO: '127,209,255', WARN: '255,203,107', ERROR: '255,107,107' };
   const flash = (since, lv) => { if (VARIANT === 'step') return ''; const a = Math.round(Math.max(0, 1 - since / 0.6) * 10) / 10; return a > 0 ? `background:rgba(${RGB[lv]},${(0.22 * a).toFixed(3)})` : ''; };
+  // the command is typed by hand once the boot cover is gone (uneven, deterministic keystrokes), Enter, then the spans
+  // that already happened replay one after another so the first one animates too
   const cmd = `trace tail --episode ${EP()} --follow`;
-  const n = Math.min(cmd.length, Math.floor(t * 40));
+  const T0 = (THEME === 'opening' ? bootEnd() : 0) + 0.15;
+  let tk = T0; const keyAt = [];
+  for (let j = 0; j < cmd.length; j++) { keyAt.push(tk); const h = (j * 2654435761 >>> 0) % 100; tk += 0.035 + h / 100 * 0.06 + (cmd[j] === ' ' ? 0.06 : 0); }
+  const R = tk + 0.35;
+  const n = keyAt.filter(x => x <= t).length;
+  const appear = cards.map((c, i) => Math.max(c.t, R + 0.45 * i));
+  const live = cards.filter((c, i) => appear[i] <= t);
   let rows = '';
   cards.forEach((c, i) => {
-    if (c.t > t) return;
+    if (appear[i] > t) return;
     const end = i + 1 < cards.length ? cards[i + 1].t : span;
-    const lv = level(i), open = t < end, age = t - c.t, full = X(end - c.t);
+    const lv = level(i), open = t < end, age = t - appear[i], full = X(end - c.t);
     let w, dur, style = '';
     if (VARIANT === 'step') { w = Math.max(6, Math.round(X(Math.min(t, end) - c.t) / 4) * 4); dur = open ? '…' : (end - c.t).toFixed(1) + 's'; }
     else if (VARIANT === 'scan') { w = Math.max(3, Math.round(X(Math.min(t, end) - c.t))); dur = open ? (Math.min(t, end) - c.t).toFixed(1) + 's' : (end - c.t).toFixed(1) + 's'; }
@@ -287,10 +295,10 @@ function traceFrame(t, key) {
       `<span class="lane"><i style="left:${Math.round(X(c.t))}px;width:${w}px${style}"></i>${ph}</span><span class="dur">${dur}</span></div>` +
       `<div class="attr">value=<b>"${esc(c.value)}"</b>${c.label ? `  note="${esc(c.label)}"` : ''}${i === suspect ? '  <em>◀ root cause?</em>' : ''}</div>`;
   });
-  const logs = live.slice(-4).map(c => { const i = cards.indexOf(c); return `<div class="lg" style="${flash(t - c.t, level(i))}"><span class="tm">${ts(c.t)}</span> <span class="lv ${level(i)}">${level(i).padEnd(5)}</span> <span class="msg">${esc(c.top)}：${esc(c.value)}</span> <span class="kv">src=${esc(sourceText(c.source))}</span></div>`; }).join('');
+  const logs = live.slice(-4).map(c => { const i = cards.indexOf(c); return `<div class="lg" style="${flash(t - appear[i], level(i))}"><span class="tm">${ts(c.t)}</span> <span class="lv ${level(i)}">${level(i).padEnd(5)}</span> <span class="msg">${esc(c.top)}：${esc(c.value)}</span> <span class="kv">src=${esc(sourceText(c.source))}</span></div>`; }).join('');
   const blink = Math.floor(t * 2) % 2;
-  const html = `<div class="cmdl"><span class="pr">${esc(PROMPT())}</span>${esc(cmd.slice(0, n))}${n < cmd.length ? '<span id="cursor"></span>' : ''}</div>` +
-    (n >= cmd.length ? `<div class="th"><span>TRACE <b>${traceId()}</b></span><span>${esc(D.chapters[0] ? D.chapters[0].name : '')}</span><span>spans ${live.length}/${cards.length}　${ts(t)}</span></div>` +
+  const html = `<div class="cmdl"><span class="pr">${esc(PROMPT())}</span>${esc(cmd.slice(0, n))}${t < R ? `<span id="cursor" style="opacity:${n < cmd.length || Math.floor(t * 3) % 2 ? 1 : 0}"></span>` : ''}</div>` +
+    (t >= R ? `<div class="th"><span>TRACE <b>${traceId()}</b></span><span>${esc(D.chapters[0] ? D.chapters[0].name : '')}</span><span>spans ${live.length}/${cards.length}　${ts(t)}</span></div>` +
       `<div class="spans">${rows}</div><div class="logs">${logs}</div>` : '');
   set('lines', 'html', html);
   set('status', 'html', `<span><b>${esc(EP())}</b> 1:trace* 2:report  cold open</span><span>${blink ? '●' : '○'} live  ${ts(t)}</span>`);
