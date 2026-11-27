@@ -83,6 +83,32 @@ html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#000}
 .terminal .figwrap img{max-height:330px;max-width:900px;border:2px solid #4f6a8a;background:#fff}
 .terminal #cursor{display:inline-block;width:16px;height:32px;background:#d7dde8;vertical-align:-6px}
 .terminal #sub{color:#fff;bottom:64px;font-size:54px}
+
+/* ---------- theme: trace (cold open only, via theme "opening"; then paper) ---------- */
+.trace{background:#0a0c10;color:#d7dde8}
+.trace #bg,.trace #card,.trace #src,.trace #prog,.trace #chapter{display:none}
+.trace #brand{font-family:"Noto Sans Mono CJK TC",monospace;color:#7fd1ff}
+.trace #term{display:block;position:absolute;left:80px;right:80px;top:110px;height:700px;background:#12161e;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.6);overflow:hidden;border:1px solid #232a36}
+.trace #term .bar{height:44px;background:#1b212c;display:flex;align-items:center;gap:12px;padding-left:20px}
+.trace #term .bar i{width:14px;height:14px;border-radius:50%;display:block}
+.trace #term .bar span{margin-left:14px;color:#8a94a8;font:22px "Noto Sans Mono CJK TC",monospace}
+.trace #lines{position:absolute;left:34px;right:34px;top:62px;bottom:62px;overflow:hidden;font:26px/1.5 "Noto Sans Mono CJK TC",monospace;white-space:pre}
+.trace .pr{color:#b9eb5f}
+.trace #cursor{display:inline-block;width:15px;height:30px;background:#d7dde8;vertical-align:-6px}
+.trace .th{display:flex;justify-content:space-between;margin:14px 0 8px;padding:6px 12px;background:#1b2230;color:#9fb0c8;font-size:22px}
+.trace .th b{color:#ffd479}
+.trace .sp{display:grid;grid-template-columns:420px 250px 780px 1fr;align-items:center;height:38px}
+.trace .nm{color:#e6edf7;overflow:hidden;text-overflow:ellipsis}.trace .svc{color:#7f8aa0;font-size:21px;overflow:hidden;text-overflow:ellipsis}
+.trace .lane{position:relative;height:22px;border-left:1px solid #2c3442}
+.trace .lane i{position:absolute;top:0;height:22px;border-radius:3px;background:#3f8fd6}
+.trace .WARN .lane i{background:#d6a33f}.trace .ERROR .lane i{background:#e05b5b}
+.trace .dur{color:#7f8aa0;font-size:21px;text-align:right}
+.trace .attr{color:#7f8aa0;font-size:21px;padding-left:28px;margin-bottom:6px}.trace .attr b{color:#ffd479}.trace .attr em{color:#ff8080;font-style:normal;font-weight:700}
+.trace .logs{position:absolute;left:0;right:0;bottom:0;border-top:1px solid #2c3442;padding-top:6px;font-size:22px}
+.trace .lg .tm{color:#6f7b90}.trace .lv{font-weight:700}.trace .lv.INFO{color:#7fd1ff}.trace .lv.WARN{color:#ffcb6b}.trace .lv.ERROR{color:#ff6b6b}.trace .kv{color:#6f7b90}
+.trace #status{position:absolute;left:0;right:0;bottom:0;height:46px;background:#7a2730;color:#fbe9ea;font:24px/46px "Noto Sans Mono CJK TC",monospace;white-space:pre;padding:0 20px;display:flex;justify-content:space-between}
+.trace #status b{background:#fbe9ea;color:#7a2730;padding:0 12px}
+.trace #sub{color:#fff;bottom:64px;font-size:54px}
 </style></head>
 <body>
 <div id="stage">
@@ -95,7 +121,7 @@ html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#000}
   <div id="prog"><i></i></div>
 </div>
 <script>
-let D = null, THEME = 'slide', prev = {}, BLOCKS = [];
+let D = null, THEME = 'slide', LOOK = 'slide', prev = {}, BLOCKS = [], OPEN_END = 0;
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function lastAt(list, t, key) { let r = -1; for (let i = 0; i < list.length; i++) { if (list[i][key] <= t) r = i; else break; } return r; }
@@ -110,6 +136,8 @@ const seg = (text, cls) => ({ text, cls });
 const nums = s => (String(s).match(/\d[\d,]*(?:\.\d+)?/g) || []).map(x => parseFloat(x.replace(/,/g, '')));
 const slug = () => D.episode.replace(/^ep\d+-/, '');
 const QUOTE = s => `'${s}'`;
+const EP = () => D.episode.split('-')[0];
+const PROMPT = () => `ping@debugafterdark:~/${EP()}$ `;
 
 // box-drawing glyphs are full-width in CJK mono fonts, so frames and tables are drawn with CSS borders instead
 const boxLines = (title, rows) => [{ box: { title, rows } }];
@@ -117,7 +145,7 @@ const boxLines = (title, rows) => [{ box: { title, rows } }];
 function blockFor(c, i) {
   const src = sourceText(c.source);
   if (c.kind === 'figure') {
-    return { prompt: `~/${slug()} $ `, cmd: [seg('dad plot ', 'cmd'), seg('fig01', 'str'), seg(' --from report.html', 'cmd')],
+    return { prompt: PROMPT(), cmd: [seg('trace plot ', 'cmd'), seg('fig01', 'str'), seg(' --from report.html', 'cmd')],
       out: [{ fig: c.image, caption: c.label }, [seg('-- ' + src, 'com')]] };
   }
   const v = nums(c.value);
@@ -125,17 +153,17 @@ function blockFor(c, i) {
     const [a, b] = c.label.includes('→') ? c.label.split('→').map(s => s.trim()) : ['之前', '之後'];
     const parts = c.value.split('→').map(s => s.trim());
     const max = Math.max(v[0], v[1]) || 1;
-    return { prompt: 'dad=> ', cmd: [seg('SELECT ', 'kw'), seg('period, value ', 'cmd'), seg('FROM ', 'kw'), seg('findings ', 'cmd'), seg('WHERE ', 'kw'), seg('topic = ', 'cmd'), seg(QUOTE(c.top), 'str'), seg(';', 'cmd')],
+    return { prompt: 'report=> ', cmd: [seg('SELECT ', 'kw'), seg('period, value ', 'cmd'), seg('FROM ', 'kw'), seg('findings ', 'cmd'), seg('WHERE ', 'kw'), seg('topic = ', 'cmd'), seg(QUOTE(c.top), 'str'), seg(';', 'cmd')],
       out: [{ table: [[a, parts[0], v[0] / max, 'bar2'], [b, parts[1], v[1] / max, 'bar1']] }, [seg('(2 rows)  -- ' + src, 'com')]] };
   }
   if (v.length && i % 2 === 0) { // a number: SQL, one row
     const rows = [['value', c.value, 'val']]; if (c.label) rows.push(['note', c.label]);
-    return { prompt: 'dad=> ', cmd: [seg('SELECT ', 'kw'), seg('value, note ', 'cmd'), seg('FROM ', 'kw'), seg('findings ', 'cmd'), seg('WHERE ', 'kw'), seg('topic = ', 'cmd'), seg(QUOTE(c.top), 'str'), seg(';', 'cmd')],
+    return { prompt: 'report=> ', cmd: [seg('SELECT ', 'kw'), seg('value, note ', 'cmd'), seg('FROM ', 'kw'), seg('findings ', 'cmd'), seg('WHERE ', 'kw'), seg('topic = ', 'cmd'), seg(QUOTE(c.top), 'str'), seg(';', 'cmd')],
       out: [...boxLines(c.top, rows), [seg('(1 row)  -- ' + src, 'com')]] };
   }
   // anything else: the episode's own CLI
   const rows = [['finding', c.value, 'val']]; if (c.label) rows.push(['context', c.label]); rows.push(['source', src]);
-  return { prompt: `~/${slug()} $ `, cmd: [seg('dad trace ', 'cmd'), seg(`"${c.top}"`, 'str'), seg(' --report ' + slug(), 'cmd')],
+  return { prompt: PROMPT(), cmd: [seg('trace grep ', 'cmd'), seg(`"${c.top}"`, 'str'), seg(' --source report.html', 'cmd')],
     out: [[seg('✓ ', 'ok'), seg('found in report.html', 'dim')], ...boxLines(c.top, rows)] };
 }
 
@@ -148,10 +176,12 @@ function lineHtml(l) {
 
 window.load = function (data, theme) {
   D = data; THEME = theme || 'slide';
-  $('stage').className = THEME;
-  $('cwd').textContent = `clarence@debugafterdark: ~/${D.episode} — dad (psql)`;
+  LOOK = THEME === 'opening' ? 'trace' : THEME;
+  $('stage').className = LOOK;
+  OPEN_END = D.chapters.length > 1 ? D.chapters[1].t : D.duration;
+  $('cwd').textContent = `ping@debugafterdark: ~/${D.episode}`;
   prev = {};
-  if (THEME === 'terminal') {
+  if (THEME === 'terminal' || THEME === 'opening') {
     // typing starts early so the answer lands on the anchor sentence, but never before the previous answer
     const CPS = 32, THINK = 0.35;
     BLOCKS = D.cards.map((c, i) => {
@@ -166,7 +196,7 @@ window.load = function (data, theme) {
 function set(id, prop, val) { // touch the DOM only when something changed
   const k = id + '.' + prop; if (prev[k] === val) return; prev[k] = val;
   const el = $(id);
-  if (prop === 'html') el.innerHTML = val; else if (prop === 'src') el.src = val; else el.style[prop] = val;
+  if (prop === 'html') el.innerHTML = val; else if (prop === 'className') el.className = val; else if (prop === 'src') el.src = val; else el.style[prop] = val;
 }
 
 function terminalFrame(t, ci, key) {
@@ -174,7 +204,7 @@ function terminalFrame(t, ci, key) {
   let html = '';
   const lines = [];
   if (ci >= 0) lines.push([seg(`-- 第 ${ci + 1} 章：${D.chapters[ci].name}`, 'com')]);
-  let state = 'idle', typed = 0, lastPrompt = `~/${slug()} $ `;
+  let state = 'idle', typed = 0, lastPrompt = PROMPT();
   BLOCKS.forEach((b, i) => {
     if (b.start > t || D.cards[i].t < chStart - 0.01) return; // this chapter's cards only: a new chapter clears the screen
     lastPrompt = b.prompt;
@@ -203,22 +233,58 @@ function terminalFrame(t, ci, key) {
   key.push(state, typed, state === 'typing' ? 0 : blink, bars, Math.floor(t), k);
 }
 
+
+// ---------- trace: the cold open as an observability trace (spans + logs), used by theme "opening" ----------
+function traceId() { let h = 2166136261; for (const ch of D.episode) h = Math.imul(h ^ ch.codePointAt(0), 16777619); return (h >>> 0).toString(16).padStart(8, '0'); }
+const ts = s => `${String(Math.floor(s / 60)).padStart(2, '0')}:${(s % 60).toFixed(1).padStart(4, '0')}`;
+function traceFrame(t, key) {
+  const cards = D.cards.filter(c => c.t < OPEN_END && c.kind !== 'figure');
+  const span = OPEN_END, AREA = 760;
+  const live = cards.filter(c => c.t <= t);
+  // the first card the report itself makes is the suspect: that is where the episode's question lives
+  const suspect = cards.findIndex(c => c.source === D.report_label || c.source === 'report');
+  const level = i => i === suspect ? 'ERROR' : i === 0 ? 'INFO' : 'WARN';
+  const cmd = `trace tail --episode ${EP()} --follow`;
+  const n = Math.min(cmd.length, Math.floor(t * 40));
+  let rows = '';
+  cards.forEach((c, i) => {
+    if (c.t > t) return;
+    const end = i + 1 < cards.length ? cards[i + 1].t : span;
+    const x = Math.round(AREA * c.t / span), w = Math.max(6, Math.round(AREA * (Math.min(t, end) - c.t) / span / 4) * 4);
+    const lv = level(i), open = t < end;
+    rows += `<div class="sp ${lv}"><span class="nm">${i === 0 ? '' : '└ '}${esc(c.top)}</span><span class="svc">${esc(sourceText(c.source))}</span>` +
+      `<span class="lane"><i style="left:${x}px;width:${w}px"></i></span><span class="dur">${open ? '…' : (end - c.t).toFixed(1) + 's'}</span></div>` +
+      `<div class="attr">value=<b>"${esc(c.value)}"</b>${c.label ? `  note="${esc(c.label)}"` : ''}${i === suspect ? '  <em>◀ root cause?</em>' : ''}</div>`;
+  });
+  const logs = live.slice(-4).map((c, j, a) => { const i = cards.indexOf(c); return `<div class="lg"><span class="tm">${ts(c.t)}</span> <span class="lv ${level(i)}">${level(i).padEnd(5)}</span> <span class="msg">${esc(c.top)}：${esc(c.value)}</span> <span class="kv">src=${esc(sourceText(c.source))}</span></div>`; }).join('');
+  const blink = Math.floor(t * 2) % 2;
+  const html = `<div class="cmdl"><span class="pr">${esc(PROMPT())}</span>${esc(cmd.slice(0, n))}${n < cmd.length ? '<span id="cursor"></span>' : ''}</div>` +
+    (n >= cmd.length ? `<div class="th"><span>TRACE <b>${traceId()}</b></span><span>${esc(D.chapters[0] ? D.chapters[0].name : '')}</span><span>spans ${live.length}/${cards.length}　${ts(t)}</span></div>` +
+      `<div class="spans">${rows}</div><div class="logs">${logs}</div>` : '');
+  set('lines', 'html', html);
+  set('status', 'html', `<span><b>${esc(EP())}</b> 1:trace* 2:report  cold open</span><span>${blink ? '●' : '○'} live  ${ts(t)}</span>`);
+  key.push(n, live.length, live.length ? Math.round(AREA * (Math.min(t, (cards[live.length] || {t: span}).t) - live[live.length - 1].t) / span / 4) : 0, blink, Math.floor(t * 10) / 10);
+}
+
 window.seek = function (t) {
   const key = [];
+  if (THEME === 'opening') { LOOK = t < OPEN_END ? 'trace' : 'paper'; set('stage', 'className', LOOK); key.push(LOOK); }
+  // set() on className: handled below
   const ci = lastAt(D.chapters, t, 't');
   const chap = ci >= 0 ? D.chapters[ci].name : '';
-  set('chapter', 'html', esc(THEME === 'terminal' ? '' : (THEME === 'paper' ? `第 ${ci + 1} 章　${chap}` : chap)));
+  set('chapter', 'html', esc(LOOK === 'terminal' || LOOK === 'trace' ? '' : (LOOK === 'paper' ? `第 ${ci + 1} 章　${chap}` : chap)));
   key.push(ci);
 
   let cue = null; for (const c of D.cues) { if (c.t0 <= t && t < c.t1) { cue = c; break; } if (c.t0 > t) break; }
   set('sub', 'html', cue ? cue.lines.map(l => `<div>${esc(l)}</div>`).join('') : '');
   key.push(cue ? cue.t0 : -1);
 
-  if (THEME === 'terminal') { terminalFrame(t, ci, key); return JSON.stringify(key); }
+  if (LOOK === 'terminal') { terminalFrame(t, ci, key); return JSON.stringify(key); }
+  if (LOOK === 'trace') { traceFrame(t, key); return JSON.stringify(key); }
 
   // background with a slow 4% push-in per segment (slide theme only), quantized to ~1px steps
   const bi = lastAt(D.backgrounds, t, 't');
-  if (THEME === 'slide' && bi >= 0) {
+  if (LOOK === 'slide' && bi >= 0) {
     const b = D.backgrounds[bi], next = D.backgrounds[bi + 1], end = next ? next.t : D.duration;
     const p = Math.min(1, (t - b.t) / Math.max(1, end - b.t));
     const sc = Math.round((1 + 0.04 * p) * 2000) / 2000;

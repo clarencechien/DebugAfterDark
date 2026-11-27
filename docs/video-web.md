@@ -33,11 +33,16 @@ AI SDLC 課程 A1 的 demo 重播（專案資料夾 `ai-sdlc-course/a1-runs/repl
   `video/visuals.json`（卡片文字、每段背景），寫成一份 `timeline.json`。
 - `player.html`：播放器，三種風格。沒有第三方 script、沒有 storage API（照 imitator `style/STYLE.md`），字型用系統的 Noto CJK。
   - `slide`：現行 make_video.py 的版面搬到網頁。**留給 Shorts 用**（使用者 11/27），長片不用。
-  - `paper`：資料新聞風，**深色**（深夜的調性；使用者 11/27）。先跟 terminal 的深色一致，之後再調細節。
-  - `terminal`：有 debug 代入感的終端機。每張數字卡變成一道指令：前後對比的數字用 SQL 查詢，結果是表格加長條；
-    單一數字用 SQL 回傳一列；其他用節目自己的 CLI（`dad trace`、`dad plot`），結果是 TUI 方框。指令會先打字、
+  - `paper`：資料新聞風，**深色**（深夜的調性；使用者 11/27 確認可以）。
+  - `opening`：**建議的長片組合**（使用者 11/27）。cold open 用 trace 畫面，之後整集接 `paper`。整集都是終端機會太多，
+    所以 debug 感只放在開場。trace 畫面是可觀測性工具的樣子：終端機的使用者是 `ping`（節目主持人），跑
+    `trace tail --episode <ep> --follow`，cold open 的每張卡片變成一個 span（瀑布圖跟著旁白長出來），下方是結構化 log
+    （INFO／WARN／ERROR）。報告自己提出的第一個論點標成 ERROR 和「root cause?」，就是這集要追的問題。
+    span 名稱、數值、出處都是卡片本身的內容；trace id 由集數算出來，固定不變。
+  - `terminal`：有 debug 代入感的終端機。每張數字卡變成一道指令（提示字元是 `ping@debugafterdark`）：前後對比的數字用 SQL 查詢，結果是表格加長條；
+    單一數字用 SQL 回傳一列；其他用 `trace grep`、`trace plot`，結果是 TUI 方框。指令會先打字、
     「查詢中」一下再出結果，結果剛好落在旁白講到那句的時候。底部是 tmux 式的狀態列（集數、章節、進度、出處），換章就清畫面。
-    **介於真實與 mock 之間**：指令、資料表名、`dad` 這個工具是佈景；畫面上的每個數字、說明和出處都是那張卡片本身的內容，
+    **介於真實與 mock 之間**：指令、資料表名、`trace` 這個工具是佈景；畫面上的每個數字、說明和出處都是那張卡片本身的內容，
     不另外編。CJK 等寬字型的框線字是全形，對不齊，所以方框和表格用 CSS 邊框畫。
 - `render.js timeline.json out.mp4 --theme paper --from 0 --to 30`：逐格錄製。`seek()` 回傳一個 key，
   key 沒變的格子直接重用上一張截圖，所以畫面靜止的時候幾乎不花時間。`--still 15.5 x.png` 只出一張預覽。
@@ -57,9 +62,10 @@ node tools/webvideo/render.js /tmp/tl.json /tmp/paper.mp4 --theme paper --from 0
 | terminal（有打字效果） | 173 | 12.6 秒 | 25 秒 |
 
 11/27 第二版（terminal 改成 SQL／CLI，paper 改深色）：paper 每分鐘 21 秒，terminal 每分鐘 28 到 29 秒。
+第三版 `opening`（前 60 秒，其中 43 秒是 trace，瀑布圖一直在長）：每分鐘 38 秒。
 
 照這個速度，9 分鐘的 EP36 整集約 3.5 到 8 分鐘，跟現行 make_video.py（約 9 分鐘）差不多或更快。
-樣片和截圖在專案資料夾 `video/web-video-options/ep36-sample/`（第二版在 `v2/`），只在本機產出，沒有上傳。
+樣片和截圖在專案資料夾 `video/web-video-options/ep36-sample/`（第二版在 `v2/`，opening 在 `v3/`），只在本機產出，沒有上傳。
 
 原型還沒做的：數字卡和字幕的驗收（目前直接沿用 make_video.py 的檢查結果）、slide 的 Shorts 直式版面、
 資料新聞風的「圖表重畫成 SVG」（目前只放報告截圖）、報告導讀風格。
@@ -82,4 +88,4 @@ script.json、mp3 ───┼─> 分鏡（新）：scenes.json ─> player.htm
 1. EP36 影片版第 7 天跟 EP28–EP39（RSS 版）比，自然流量有沒有比較好。沒有的話，先查是畫面還是包裝的問題，再決定要不要換畫面風格。
 2. 要不要做風格的 A/B：同一集只能上一支影片，所以比較的方式是「連續幾集輪流用不同風格」，每集看第 7 天的點閱率、30 秒和 1 分鐘留存，只看自然流量。
    上架時間實驗（到 12/4，檢討 12/10）還在跑，風格測試要排在它之後，或至少不要跟它用同一批集數。
-3. 主風格。11/27 使用者的方向：長片在深色 paper 和 terminal 之間選或混用，slide 只做 Shorts。
+3. 主風格。11/27 使用者的方向：長片用 `opening`（trace 開場 + 深色 paper），slide 只做 Shorts。
