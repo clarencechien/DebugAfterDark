@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="980" viewBox="0 0 1200 980" font-family="Noto Sans TC, Noto Sans CJK TC, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+    <style>
+      .box{fill:#fff;stroke:#888;stroke-width:1.5;rx:10}
+      .src{fill:#eef4ff;stroke:#5b7fc4}
+      .ai{fill:#f3f0ff;stroke:#7a5bc4}
+      .free{fill:#eef9f0;stroke:#4c9a5f}
+      .me{fill:#fff4e5;stroke:#d08a1f;stroke-width:2.5}
+      .bank{fill:#fffbe8;stroke:#b9a23a;stroke-width:2}
+      .exp{fill:#fdecec;stroke:#c0392b;stroke-width:1.5;stroke-dasharray:5 4;rx:8}
+      .t{font-size:17px;font-weight:700;fill:#222}
+      .s{font-size:13px;fill:#444}
+      .c{font-size:13px;fill:#7a5bc4;font-weight:700}
+      .g{font-size:13px;fill:#4c9a5f;font-weight:700}
+      .x{font-size:12.5px;fill:#b03a2e;font-weight:700}
+      .xs{font-size:12.5px;fill:#8a3b33}
+      .ln{stroke:#555;stroke-width:1.8;fill:none;marker-end:url(#a)}
+      .dash{stroke:#999;stroke-width:1.5;fill:none;stroke-dasharray:6 5;marker-end:url(#a)}
+      .h{font-size:22px;font-weight:700;fill:#222}
+    </style>
+  </defs>
+  <rect width="1200" height="980" fill="#fafaf7"/>
+  <text x="30" y="40" class="h">Podcast 製作流程（docs/recipe.md，11/27 現況）</text>
+  <text x="30" y="64" class="s">藍＝題目來源　紫＝用模型（花錢）　綠＝零 token／本機或送的 GPU　橘＝Clarence 本人　紅虛線＝實驗中</text>
+
+  <!-- ① sources -->
+  <rect x="30" y="95" width="250" height="78" class="box src"/>
+  <text x="45" y="122" class="t">imitator 報告</text>
+  <text x="45" y="145" class="s">既有報告＋重製（冷飯）</text>
+  <text x="45" y="164" class="s">一份報告挑 2–3 個重點</text>
+
+  <rect x="30" y="190" width="250" height="78" class="box src"/>
+  <text x="45" y="217" class="t">自動研究的新報告</text>
+  <text x="45" y="240" class="s">你審過、上 imitator 的才能做</text>
+  <text x="45" y="259" class="s">（流程見自動研究流程圖）</text>
+
+  <rect x="320" y="110" width="250" height="140" class="box bank"/>
+  <text x="335" y="138" class="t">推薦表＋暫定排檔</text>
+  <text x="335" y="162" class="s">docs/report-candidates.md</text>
+  <text x="335" y="186" class="s">五天 10 集：4 天 AI、1 天錢</text>
+  <text x="335" y="208" class="s">一天兩集，排定時間 08:00／20:00</text>
+  <text x="335" y="230" class="s">庫存要 ≥ 4 集做好的</text>
+  <path d="M280,134 L318,150" class="ln"/>
+  <path d="M280,229 L318,214" class="ln"/>
+
+  <!-- production column -->
+  <text x="620" y="100" class="t">每集一個 thread，照 recipe 做</text>
+  <rect x="620" y="110" width="270" height="70" class="box ai"/>
+  <text x="635" y="137" class="t">① 選題、草稿、素材</text>
+  <text x="635" y="160" class="c">Claude（thread 本身）</text>
+  <path d="M570,160 L618,150" class="ln"/>
+  <text x="905" y="132" class="s">開工就建專案資料夾 episodes/epNN</text>
+  <text x="905" y="152" class="s">→ 儀表板「製作中」</text>
+
+  <rect x="620" y="198" width="270" height="70" class="box ai"/>
+  <text x="635" y="225" class="t">② 台灣口語改寫</text>
+  <text x="635" y="248" class="c">Gemini Flash · 每段 3 候選 · US$0.35</text>
+  <path d="M755,180 L755,196" class="ln"/>
+
+  <rect x="620" y="286" width="270" height="70" class="box free"/>
+  <text x="635" y="313" class="t">③ 檢查稿子</text>
+  <text x="635" y="336" class="g">script_lint、twtone（AI 味）· 0 元</text>
+  <path d="M755,268 L755,284" class="ln"/>
+
+  <rect x="620" y="374" width="270" height="78" class="box ai"/>
+  <text x="635" y="401" class="t">④ 配音 TTS</text>
+  <text x="635" y="423" class="c">每段念 3 次，D1 聲音，語氣 v5</text>
+  <text x="635" y="442" class="c">約 US$0.35（Flash）／0.22（Lite）</text>
+  <path d="M755,356 L755,372" class="ln"/>
+  <rect x="905" y="374" width="270" height="78" class="exp"/>
+  <text x="918" y="396" class="x">實驗：11/27 起整集用 Flash-Lite TTS</text>
+  <text x="918" y="416" class="xs">便宜約 37%，有時語氣偏淡，試聽特別聽</text>
+  <text x="918" y="436" class="x">實驗：Batch API 半價？等 11/28 帳單</text>
+  <path d="M903,413 L892,413" class="dash"/>
+
+  <rect x="620" y="470" width="270" height="96" class="box free"/>
+  <text x="635" y="497" class="t">⑤ 挑選 select_takes</text>
+  <text x="635" y="519" class="g">Breeze：Colab L4 → Modal → 本機</text>
+  <text x="635" y="538" class="g">清楚、專名、穩定、語速、聲紋</text>
+  <text x="635" y="557" class="s">Colab 一集約 0.1 CU（AI Pro 附送）</text>
+  <path d="M755,452 L755,468" class="ln"/>
+  <rect x="905" y="470" width="270" height="96" class="exp"/>
+  <text x="918" y="492" class="x">實驗：語氣太淡／太激動</text>
+  <text x="918" y="512" class="xs">每集抽 4 段：Gemini 先選（affect_judge）</text>
+  <text x="918" y="531" class="xs">你在 take_review 試聽頁挑戰，</text>
+  <text x="918" y="550" class="xs">選得一樣算 1，不一樣就改並記錄</text>
+  <path d="M903,518 L892,518" class="dash"/>
+
+  <rect x="620" y="584" width="270" height="62" class="box free"/>
+  <text x="635" y="611" class="t">⑥ 後製</text>
+  <text x="635" y="633" class="g">ffmpeg 音量、音色、片頭尾 · 0 元</text>
+  <path d="M755,566 L755,582" class="ln"/>
+
+  <rect x="620" y="664" width="270" height="78" class="box ai"/>
+  <text x="635" y="691" class="t">⑦ 驗收</text>
+  <text x="635" y="713" class="c">Breeze＋Gemini 盲聽 · US$0.06</text>
+  <text x="635" y="732" class="g">聲紋、音高跳動 ≤ 0.23</text>
+  <path d="M755,646 L755,662" class="ln"/>
+  <path d="M620,703 C560,703 560,413 618,413" class="dash"/>
+  <text x="455" y="560" class="s">不合格：補錄那幾段</text>
+  <text x="455" y="580" class="s">回 ④（或改稿回 ③）</text>
+
+  <rect x="620" y="760" width="270" height="70" class="box free"/>
+  <text x="635" y="787" class="t">⑧ 交付、試聽稿</text>
+  <text x="635" y="810" class="g">package_episode、review_html · 0 元</text>
+  <path d="M755,742 L755,758" class="ln"/>
+
+  <rect x="620" y="848" width="270" height="70" class="box me"/>
+  <text x="635" y="875" class="t">你試聽、點頭</text>
+  <text x="635" y="898" class="s">儀表板「打開試聽稿」，點時間就跳播</text>
+  <path d="M755,830 L755,846" class="ln"/>
+
+  <!-- publish column -->
+  <rect x="320" y="848" width="250" height="70" class="box me"/>
+  <text x="335" y="875" class="t">開 PR → 你合併</text>
+  <text x="335" y="898" class="s">每集 PR 只動 episodes/epNN/</text>
+  <path d="M620,883 L572,883" class="ln"/>
+
+  <rect x="30" y="848" width="250" height="70" class="box free"/>
+  <text x="45" y="875" class="t">上架 rss.xml</text>
+  <text x="45" y="898" class="g">到點自動上（Worker 08:02／20:02）</text>
+  <path d="M320,883 L282,883" class="ln"/>
+
+  <rect x="30" y="740" width="250" height="88" class="box free"/>
+  <text x="45" y="767" class="t">YouTube 自動匯入</text>
+  <text x="45" y="790" class="g">yt_autofix 每小時：AI 標示、公開</text>
+  <text x="45" y="810" class="s">各平台從 RSS 抓</text>
+  <path d="M155,848 L155,830" class="ln"/>
+
+  <rect x="30" y="610" width="250" height="110" class="box free"/>
+  <text x="45" y="637" class="t">成效報表</text>
+  <text x="45" y="660" class="g">每週一自動，只看自然流量</text>
+  <text x="45" y="680" class="s">建議動作回饋選題、標題</text>
+  <text x="45" y="700" class="s">→ 儀表板「成效」</text>
+  <path d="M155,740 L155,722" class="ln"/>
+  
+  <rect x="320" y="610" width="250" height="110" class="exp"/>
+  <text x="333" y="633" class="x">實驗：上架時間</text>
+  <text x="333" y="652" class="xs">08:00 組 11/21–27、20:00 組 11/28–12/4</text>
+  <text x="333" y="672" class="x">實驗：EP07 標題縮圖 A/B、舊集改標</text>
+  <text x="333" y="691" class="xs">12/4 檢討，之前不動標題縮圖</text>
+  <text x="333" y="710" class="xs">上架時間 12/10 檢討（前 3 天自然觀看）</text>
+
+  <!-- cost box -->
+  <rect x="30" y="290" width="540" height="160" class="box"/>
+  <text x="45" y="318" class="t">一集多少（約 7–9 分鐘）</text>
+  <text x="45" y="344" class="s">Gemini：改寫 0.35＋配音 0.22–0.35＋驗收 0.06 ≈ US$0.65–0.8</text>
+  <text x="45" y="368" class="s">Colab：約 0.1 CU（AI Pro 附送）；Modal 只在 Colab 失敗時用</text>
+  <text x="45" y="392" class="s">Claude：每集 thread 用訂閱額度（選題、寫稿、跑工具）</text>
+  <text x="45" y="416" class="s">實際用量看儀表板「花費與額度」（tools/usage_log.py 自動記）</text>
+  <text x="45" y="440" class="s">Short／影片版另外畫（之後再建）</text>
+</svg>
