@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><title>webvideo player</title>
+<!--
+  Web-page video player (prototype, docs/video-web.md).
+  load(timeline, theme) once, then seek(t) draws the frame for video time t and returns a key:
+  the same key means the same pixels, so render.js can reuse the previous screenshot.
+  No third-party scripts, no storage APIs (imitator STYLE.md rules), fonts are local system fonts.
+-->
+<style>
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#000}
+#stage{position:absolute;inset:0;overflow:hidden;font-family:"Noto Sans CJK TC","Noto Sans TC",sans-serif}
+#bg{position:absolute;inset:0;overflow:hidden}
+#bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform-origin:50% 50%}
+#bgshade{position:absolute;inset:0}
+#bglabel{position:absolute;left:56px;bottom:250px;font-size:22px}
+#head{position:absolute;left:72px;right:72px;top:44px;display:flex;justify-content:space-between;align-items:baseline;gap:40px}
+#brand{font-weight:700;font-size:30px;white-space:nowrap}
+#chapter{font-size:28px;text-align:right}
+#card{position:absolute;left:0;right:0}
+#card .top,#card .value,#card .label{display:block}
+#card img{display:block}
+#src{position:absolute;font-size:24px}
+#sub{position:absolute;left:120px;right:120px;bottom:70px;text-align:center;font-weight:900;font-size:58px;line-height:1.32}
+#sub div{display:block}
+#prog{position:absolute;left:0;bottom:0;height:6px;width:100%}
+#prog i{position:absolute;left:0;top:0;bottom:0;display:block}
+#term{display:none}
+
+/* ---------- theme: slide (what make_video.py --motion does today, rebuilt in HTML) ---------- */
+.slide{background:#10172a;color:#fff}
+.slide #bgshade{background:linear-gradient(180deg,rgba(8,12,24,.72),rgba(8,12,24,.86))}
+.slide #bglabel{color:rgba(255,255,255,.7)}
+.slide #brand{font-family:"Noto Serif CJK TC",serif;color:#e8ecf6}
+.slide #chapter{color:#c3cbe0}
+.slide #card{top:250px;text-align:center}
+.slide #card .top{font-size:44px;font-weight:700;color:#dfe5f3}
+.slide #card .value{margin:22px auto 0;display:inline-block;font-size:110px;font-weight:900;line-height:1.15;color:#fff;background:#d33a2c;padding:10px 40px;border-radius:10px}
+.slide #card .label{margin-top:26px;font-size:42px;color:#dfe5f3}
+.slide #card img{margin:0 auto;max-width:1500px;max-height:560px;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,.5)}
+.slide #src{right:72px;top:820px;color:#9aa6c2}
+.slide #sub{color:#fff;text-shadow:0 3px 8px #000,0 0 2px #000}
+.slide #prog{background:rgba(255,255,255,.12)}.slide #prog i{background:#d33a2c}
+
+/* ---------- theme: paper (data-journalism / explainer look) ---------- */
+.paper{background:#f6f2ea;color:#1c1c1c}
+.paper #bg{display:none}
+.paper #head{top:40px;padding-bottom:18px;border-bottom:2px solid #1c1c1c}
+.paper #brand{font-family:"Noto Serif CJK TC",serif;font-size:30px;color:#1c1c1c}
+.paper #chapter{font-family:"Noto Serif CJK TC",serif;font-weight:700;color:#8b2a1f}
+.paper #card{left:160px;right:160px;top:230px;text-align:left}
+.paper #card .top{font-size:40px;font-weight:700;color:#5a554c;letter-spacing:.06em}
+.paper #card .value{margin-top:14px;font-family:"Noto Serif CJK TC",serif;font-weight:900;font-size:136px;line-height:1.1;color:#8b2a1f}
+.paper #card .label{margin-top:20px;font-size:44px;color:#1c1c1c;border-left:10px solid #8b2a1f;padding-left:24px}
+.paper #card img{max-width:1600px;max-height:520px;background:#fff;padding:20px;border:1px solid #d6cfc2}
+.paper #src{left:160px;top:760px;color:#6d675c;font-size:26px}
+.paper #src::before{content:"資料｜";font-weight:700}
+.paper #sub{left:0;right:0;bottom:40px;padding:26px 140px;background:#1c1c1c;color:#f6f2ea;font-size:54px}
+.paper #prog{bottom:auto;top:0;height:8px;background:#e4ddcf}.paper #prog i{background:#8b2a1f}
+
+/* ---------- theme: terminal (深夜 Debug brand; same idea as the A1 demo replay) ---------- */
+.terminal{background:#0b0e13;color:#d7dde8}
+.terminal #bg,.terminal #card,.terminal #src{display:none}
+.terminal #brand{font-family:"Noto Sans Mono CJK TC",monospace;color:#7fd1ff}
+.terminal #chapter{color:#8a94a8;font-family:"Noto Sans Mono CJK TC",monospace}
+.terminal #term{display:block;position:absolute;left:96px;right:96px;top:120px;height:640px;background:#151a23;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.5);overflow:hidden}
+.terminal #term .bar{height:46px;background:#1f2530;display:flex;align-items:center;gap:12px;padding-left:20px}
+.terminal #term .bar i{width:15px;height:15px;border-radius:50%;display:block}
+.terminal #term .bar span{margin-left:14px;color:#8a94a8;font:22px "Noto Sans Mono CJK TC",monospace}
+.terminal #lines{position:absolute;left:36px;right:36px;bottom:26px;font:34px/1.55 "Noto Sans Mono CJK TC",monospace;white-space:pre-wrap}
+.terminal .cmd{color:#7fd1ff}.terminal .val{color:#ffd479;font-weight:700;font-size:56px;line-height:1.3}
+.terminal .lab{color:#b9eb5f}.terminal .dim{color:#6f788a}
+.terminal #cursor{display:inline-block;width:18px;height:36px;background:#d7dde8;vertical-align:-6px}
+.terminal #sub{color:#fff;bottom:90px}
+.terminal #prog{background:#1a1f29}.terminal #prog i{background:#7fd1ff}
+</style></head>
+<body>
+<div id="stage">
+  <div id="bg"><img id="bgimg" alt=""><div id="bgshade"></div><div id="bglabel"></div></div>
+  <div id="head"><span id="brand">● 深夜 Debug</span><span id="chapter"></span></div>
+  <div id="card"></div>
+  <div id="src"></div>
+  <div id="term"><div class="bar"><i style="background:#ff5f56"></i><i style="background:#ffbd2e"></i><i style="background:#27c93f"></i><span id="cwd"></span></div><div id="lines"></div></div>
+  <div id="sub"></div>
+  <div id="prog"><i></i></div>
+</div>
+<script>
+let D = null, THEME = 'slide', prev = {};
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function lastAt(list, t, key) { let r = -1; for (let i = 0; i < list.length; i++) { if (list[i][key] <= t) r = i; else break; } return r; }
+function sourceText(s) { return s === 'report' ? D.report_label : s; }
+
+window.load = function (data, theme) {
+  D = data; THEME = theme || 'slide';
+  $('stage').className = THEME;
+  $('cwd').textContent = '~/reports/' + D.episode;
+  prev = {};
+  // preload every background so seek() never waits on decoding
+  return Promise.all(D.backgrounds.map(b => new Promise(r => { const im = new Image(); im.onload = im.onerror = r; im.src = b.src; })));
+};
+
+function set(id, prop, val) { // touch the DOM only when something changed
+  const k = id + '.' + prop; if (prev[k] === val) return; prev[k] = val;
+  const el = $(id);
+  if (prop === 'html') el.innerHTML = val; else if (prop === 'src') el.src = val; else el.style[prop] = val;
+}
+
+window.seek = function (t) {
+  const key = [];
+  const ci = lastAt(D.chapters, t, 't');
+  const chap = ci >= 0 ? D.chapters[ci].name : '';
+  set('chapter', 'html', esc(THEME === 'terminal' ? '# ' + chap : (THEME === 'paper' ? `第 ${ci + 1} 章　${chap}` : chap)));
+  key.push(ci);
+
+  // subtitle
+  let cue = null; for (const c of D.cues) { if (c.t0 <= t && t < c.t1) { cue = c; break; } if (c.t0 > t) break; }
+  set('sub', 'html', cue ? cue.lines.map(l => `<div>${esc(l)}</div>`).join('') : '');
+  key.push(cue ? cue.t0 : -1);
+
+  // background with a slow 4% push-in per segment (slide theme only), quantized to ~1px steps
+  const bi = lastAt(D.backgrounds, t, 't');
+  if (THEME === 'slide' && bi >= 0) {
+    const b = D.backgrounds[bi], next = D.backgrounds[bi + 1], end = next ? next.t : D.duration;
+    const p = Math.min(1, (t - b.t) / Math.max(1, end - b.t));
+    const sc = Math.round((1 + 0.04 * p) * 2000) / 2000;
+    set('bgimg', 'src', b.src); set('bgimg', 'transform', `scale(${sc})`);
+    set('bglabel', 'html', esc(b.label || ''));
+    key.push(bi, sc);
+  }
+
+  // card: the latest one, fading in over 0.4 s and rising 12 px
+  const k = lastAt(D.cards, t, 't');
+  const c = k >= 0 ? D.cards[k] : null;
+  const age = c ? t - c.t : 99;
+  const f = Math.round(Math.min(1, age / 0.4) * 12) / 12;
+  if (THEME !== 'terminal') {
+    let html = '';
+    if (c && c.kind === 'figure') html = `<img src="${c.image}" alt=""><span class="label">${esc(c.label)}</span>`;
+    else if (c) html = `<span class="top">${esc(c.top)}</span><span class="value">${esc(c.value)}</span><span class="label">${esc(c.label)}</span>`;
+    set('card', 'html', html);
+    set('card', 'opacity', String(f));
+    set('card', 'transform', `translateY(${Math.round((1 - f) * 12)}px)`);
+    set('src', 'html', c ? esc(sourceText(c.source)) : '');
+    set('src', 'opacity', String(f));
+    key.push(k, f);
+  } else {
+    // terminal: every card of this chapter is a command and its answer; the newest one types itself
+    const chStart = ci >= 0 ? D.chapters[ci].t : 0;
+    const shown = D.cards.filter((x, i) => i <= k && x.t >= chStart).slice(-3);
+    let html = '', typed = -1;
+    shown.forEach((x, i) => {
+      const last = i === shown.length - 1;
+      const what = x.kind === 'figure' ? 'open figure.png' : `grep "${x.top}" report.html`;
+      const cmd = '$ ' + what;
+      const n = last ? Math.min(cmd.length, Math.floor((t - x.t) * 40)) : cmd.length;
+      if (last) typed = n;
+      html += `<div class="cmd">${esc(cmd.slice(0, n))}</div>`;
+      if (n >= cmd.length) {
+        html += x.kind === 'figure' ? `<div class="lab">● ${esc(x.label)}</div>` :
+          `<div class="val">${esc(x.value)}</div><div class="lab">● ${esc(x.label)}</div>`;
+        html += `<div class="dim">  來源：${esc(sourceText(x.source))}</div>`;
+      }
+    });
+    const blink = Math.floor(t * 2) % 2;
+    html += `<div class="cmd">$ <span id="cursor" style="opacity:${blink ? 0 : 1}"></span></div>`;
+    set('lines', 'html', html);
+    key.push(k, typed, blink);
+  }
+
+  // progress bar, 2 px steps
+  const w = Math.round(1920 * Math.min(1, t / D.duration) / 2) * 2;
+  set('prog', 'html', `<i style="width:${w}px"></i>`);
+  key.push(w);
+  return JSON.stringify(key);
+};
+</script>
+</body></html>
