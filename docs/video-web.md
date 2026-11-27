@@ -37,7 +37,7 @@ AI SDLC 課程 A1 的 demo 重播（專案資料夾 `ai-sdlc-course/a1-runs/repl
   - 兩種開場都先放**開機封面**：開機訊息（掛載這集的報告、載入幾個 finding 和章節、啟動 ping@debugafterdark），
     接著打出 EP 編號和這集的標題。標題打完後至少停留到能慢慢念完的時間（每秒 4.5 字，最少 4 秒；
     EP36 的 23 字標題停約 5 秒，封面總長約 6.8 秒）。封面疊在 cold open 的聲音上，不加長影片，字幕照常顯示。
-  - `opening`（**A 版**）：**建議的長片組合**（使用者 11/27）。cold open 用 trace 畫面，之後整集接 `paper`。整集都是終端機會太多，
+  - `opening`（**A 版，11/27 定稿**：開機封面 → trace 開場（pulse）→ 深色 paper）：**建議的長片組合**（使用者 11/27）。cold open 用 trace 畫面，之後整集接 `paper`。整集都是終端機會太多，
     所以 debug 感只放在開場。trace 畫面是可觀測性工具的樣子：終端機的使用者是 `ping`（節目主持人），跑
     `trace tail --episode <ep> --follow`，cold open 的每張卡片變成一個 span（瀑布圖跟著旁白長出來），下方是結構化 log
     （INFO／WARN／ERROR）。報告自己提出的第一個論點標成 ERROR 和「root cause?」，就是這集要追的問題。
