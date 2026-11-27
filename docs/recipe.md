@@ -180,6 +180,7 @@ python3 tools/twtone_check.py episodes/<ep>/script.json      # 報告存到 epis
 python3 tools/make_podcast.py episode --voice D1 --script episodes/<ep>/script.json --tag <ep> --takes 3
 ```
 
+- **2026-11-27 起試用 Flash-Lite**（Clarence 決定，下一集開始整集用）：上面指令加 `--model gemini-3.8-flash-lite-tts`，補錄也一樣。便宜約 37%，但有時語氣偏淡，試聽時要特別聽。依據見 [`cost.md`](cost.md)「實驗：TTS 和驗收降本」的結果。
 - **D1** 是設計聲線 `voice_b3c8x0jsntqc`，閒置一年才會刪除。**語氣預設 v5**（`prompts/styles.json`）。
 - **每段念三次**：沒有種子，每次差很多。每次都自動檢查時長，太短或太長就重念，最多重試 2 次。
 - **全部的生成同時送**（`--parallel`，預設 6 個同時進行），每次各自做時長檢查和最多 3 次網路重試。EP11 的 30 次生成 70 秒（EP10 逐一生成約 8 分鐘）。
