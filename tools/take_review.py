@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""每段幾次生成並排試聽，讓 Clarence 標「太淡／剛好／太激動」並選一次（2026-11-27）。
+"""每段幾次生成並排試聽，讓 Clarence 每段選一個（2026-11-27）。
 
-標完的結果給 tools/affect_judge.py compare 對照，看音高範圍旗標和 Gemini 判斷跟他吻合多少。
+選完的結果給 tools/affect_judge.py compare：逐段看 Gemini 選的跟他選的一不一樣（1／0）。
+11/27 原本還有「太淡／剛好／太激動」標籤，他說先簡化成只選一個。
 盲聽：頁面不顯示 select_takes 選了哪次，也不顯示任何數字。
 
     python3 tools/take_review.py out/segments/D1_<ep> /mnt/project-files/episodes/epNN/ \
@@ -41,13 +42,12 @@ section h2{{font-size:16px;margin:0 0 4px}}
 .opts{{display:flex;flex-wrap:wrap;gap:6px}}
 .opts button{{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:999px;padding:2px 12px;cursor:pointer;min-height:32px}}
 .opts button[aria-pressed=true]{{background:var(--on);border-color:var(--accent);color:var(--accent);font-weight:600}}
-.opts .pick{{margin-left:auto}}
 textarea{{width:100%;min-height:9em;font:13px/1.5 ui-monospace,monospace;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px}}
 .row{{display:flex;gap:8px;align-items:center;margin:8px 0}}
 .row button{{font:inherit;border:1px solid var(--accent);background:var(--accent);color:var(--card);border-radius:8px;padding:4px 14px;cursor:pointer}}
 </style></head><body><main>
 <h1>{title}</h1>
-<p class="hint">每次生成點一個「太淡／剛好／太激動」，每段再點「選這個」。不用全部標完，標幾段都有用。頁面不會自己存，標完到最下面複製結果貼回對話。</p>
+<p class="hint">每段聽完，點你會拿去上架的那一個「選這個」。不用每段都選，選幾段都有用。頁面不會自己存，選完到最下面複製結果貼回對話。</p>
 {body}
 <h2 style="font-size:16px">結果</h2>
 <div class="row"><button type="button" id="copy">複製</button><span class="hint" id="copied"></span></div>
@@ -55,21 +55,15 @@ textarea{{width:100%;min-height:9em;font:13px/1.5 ui-monospace,monospace;backgro
 </main>
 <script>
 (function(){{
-  var state = {{episode: {episode}, tags: {{}}, picks: {{}}}};
+  var state = {{episode: {episode}, picks: {{}}}};
   var out = document.getElementById("out");
   function render(){{ out.value = JSON.stringify(state, null, 1); }}
   document.addEventListener("click", function(ev){{
     var b = ev.target.closest && ev.target.closest(".opts button"); if(!b) return;
     var f = b.getAttribute("data-file"), seg = b.getAttribute("data-seg");
-    if(b.classList.contains("pick")){{
-      var on = state.picks[seg] !== f;
-      document.querySelectorAll('.pick[data-seg="' + seg + '"]').forEach(function(x){{ x.setAttribute("aria-pressed", "false"); }});
-      if(on){{ state.picks[seg] = f; b.setAttribute("aria-pressed", "true"); }} else delete state.picks[seg];
-    }} else {{
-      var lab = b.getAttribute("data-label"), on2 = state.tags[f] !== lab;
-      document.querySelectorAll('.opts button[data-file="' + f + '"]:not(.pick)').forEach(function(x){{ x.setAttribute("aria-pressed", "false"); }});
-      if(on2){{ state.tags[f] = lab; b.setAttribute("aria-pressed", "true"); }} else delete state.tags[f];
-    }}
+    var on = state.picks[seg] !== f;
+    document.querySelectorAll('.pick[data-seg="' + seg + '"]').forEach(function(x){{ x.setAttribute("aria-pressed", "false"); }});
+    if(on){{ state.picks[seg] = f; b.setAttribute("aria-pressed", "true"); }} else delete state.picks[seg];
     render();
   }});
   document.getElementById("copy").addEventListener("click", function(){{
@@ -107,12 +101,10 @@ def main(a):
             else:
                 src = "data:audio/mpeg;base64," + base64.b64encode(mp3).decode()
             e, s = html.escape(p.name), html.escape(seg)
-            btns = "".join(f'<button type="button" data-seg="{s}" data-file="{e}" data-label="{lab}" aria-pressed="false">{lab}</button>'
-                           for lab in ("太淡", "剛好", "太激動"))
             label = re.sub(r"^" + re.escape(seg) + r"[.\-_]?", "", p.stem) or p.stem
             rows.append(f'<div class="take"><strong>{html.escape(label)}</strong>'
                         f'<audio controls preload="metadata" src="{src}"></audio>'
-                        f'<div class="opts">{btns}<button type="button" class="pick" data-seg="{s}" data-file="{e}" aria-pressed="false">選這個</button></div></div>')
+                        f'<div class="opts"><button type="button" class="pick" data-seg="{s}" data-file="{e}" aria-pressed="false">選這個</button></div></div>')
         text = f'<p class="text">{html.escape(texts[seg])}</p>' if seg in texts else ""
         sections.append(f'<section><h2>{html.escape(seg)}</h2>{text}{"".join(rows)}</section>')
     name = out.resolve().name

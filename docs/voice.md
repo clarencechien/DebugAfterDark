@@ -37,29 +37,27 @@
 
 其他文字類工具（改寫、轉寫、評審、出圖）的輸出也開始記錄 `model_version`。
 
-## 語氣太淡、太激動（只記錄，2026-11-27）
+## 語氣太淡、太激動：Gemini 選的跟 Clarence 選的（只記錄，2026-11-27）
 
-`select_takes.py` 的清楚、穩定、語速、聲紋都量不到 Clarence 聽得出的「太淡」「太激動」。EP56 他比過的兩段：
-s01 Flash 勝過 Lite take2（太激動），s11 Lite take2 勝過 take0（太淡）。下面三樣都**只記錄、不改變挑選結果**，
-等他的標註累積到夠多再決定要不要用。
-
-| 判斷 | 工具 | EP56 那兩段 | 花費 |
-|---|---|---|---|
-| 音高範圍（p90−p10 半音）高出整集中位數 2 半音以上 → `excited?` | `select_takes.py` 每個 take 的 `affect`、`affect_flag`；`measures.py affect` | 太激動的 take 9.8，其他 6.3–7.9：抓到。太淡的 take0 7.9 反而比他選的 7.3 大：抓不到 | 0 |
-| Gemini 聽參考錄音（D1）加同段幾次生成，標太淡／剛好／太激動並選最像參考的；正序、倒序各問一次 | `affect_judge.py judge` → `<segments>/affect_judge.json` | 兩段選的都跟他一樣；標籤正倒序不一致的記「不確定」 | 每段約 US$0.014（2 次呼叫，每段 3 次生成、約 40 秒），十來段一集約 0.15–0.45 |
-| 他的標註 | `take_review.py` 產生 `epNN-takes.html`，結果 JSON 貼回對話存成 `takes-tags.json` | — | 0 |
+`select_takes.py` 的清楚、穩定、語速、聲紋都量不到 Clarence 聽得出的「太淡」「太激動」。Clarence 11/27 定的做法是**只看 0/1**：
+每段他選一個，Gemini 也選一個，一樣算 1、不一樣算 0。**只記錄，不改變挑選結果**。
 
 ```bash
-python3 tools/take_review.py out/segments/D1_<ep> /mnt/project-files/episodes/epNN/ --script episodes/<ep>/script.json
-python3 tools/affect_judge.py judge out/segments/D1_<ep> --script episodes/<ep>/script.json   # Gemini 額度滿時跳過
-python3 tools/affect_judge.py compare out/segments/D1_<ep> --tags /mnt/project-files/episodes/epNN/takes-tags.json
+python3 tools/take_review.py out/segments/D1_<ep> <資料夾> --script episodes/<ep>/script.json --linked   # 試聽頁 + takes/*.mp3
+python3 tools/affect_judge.py judge out/segments/D1_<ep> --script episodes/<ep>/script.json            # Gemini 選，Gemini 額度滿時跳過
+python3 tools/affect_judge.py compare out/segments/D1_<ep> --tags <資料夾>/takes-tags.json             # 逐段 0/1
 ```
 
-做法參考 EmergentTTS-Eval（NeurIPS 2025, arXiv 2505.23009）：直接拿 Gemini 做兩兩比較，跟人的偏好高度相關。
-沒用的：UTMOS、DNSMOS、NISQA 只量音質和自然度；emotion2vec 拿來比激動程度接近亂猜（arXiv 2604.26347）。
+- 試聽頁要**發佈成 claude.ai Artifact**（頁面加 `takes/*.mp3`）再給他連結：Library 的預覽框完全不能播音檔，相對路徑和內嵌都不行。
+  他選完按「複製」貼回對話，存成 `takes-tags.json`（`{"picks": {"s01": "<檔名>", ...}}`）。
+- Gemini 聽 D1 參考錄音加同段幾次生成，只問「哪個語氣最像參考」；正序、倒序各問一次，兩次不一樣記「不一致」算 0。
+  做法參考 EmergentTTS-Eval（NeurIPS 2025, arXiv 2505.23009）。每段約 US$0.014。
+- EP56（s01、s11）：Gemini 2/2，`select_takes.py` 0/2。先試過讓 Gemini 標「太淡／剛好／太激動」：它從來不說太激動，
+  正倒序常不一致，所以不用標籤。
+- 順帶記錄：`select_takes.py` 每個 take 也寫 `affect`（音高範圍等）和 `affect_flag`（`excited?`），不花錢，只抓得到「起伏太大」那種激動
+  （EP56 s01 Lite take2 9.8 半音），抓不到「太趕」那種（s11 Flash）。沒有用在 0/1 裡。
 
-**什麼時候改成參與挑選**：累積兩集左右（約 60 個標註），`compare` 的吻合率 75% 以上，而且他選的那次 Gemini 也選的比例
-高過 `select_takes.py` 現在的選擇，才把它接成篩選條件，接之前先問他。
+**什麼時候改成參與挑選**：累積約 30 段，Gemini 75% 以上而且高過 `select_takes.py`，再問他要不要接成篩選條件。
 
 ## 停用公告之後：重現的順序
 
