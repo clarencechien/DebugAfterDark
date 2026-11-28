@@ -22,7 +22,7 @@
 | 8. 交付 | — | `tools/package_episode.py` | `episode.json` 補上長度、bytes、sha256 |
 | 10. Short | agent 做、使用者審、API 上傳排程 | `tools/make_short.py`、`tools/yt_upload.py` | `short.json`；成品在專案檔案 `shorts/<ep>/` |
 
-YouTube 影片版（第 9 步，規劃中）見 [`docs/video.md`](video.md)。
+YouTube 影片版（第 9 步）見 [`docs/video.md`](video.md)；11/28 起的做法（網頁錄製、圖表重新配色）照 [`docs/video-web.md`](video-web.md)「每集的配方」。
 
 `<ep>` 是這一集的資料夾名，例如 `ep02-harness-probe`。指令都在 repo 根目錄執行。中間檔都在 `out/`（不進 git）。
 

@@ -65,6 +65,8 @@ def main():
         cards.append({'t': c['t'], 'seg': c['seg'], 'kind': 'number', 'top': it.get('top', ''),
                       'value': c['value'], 'label': it.get('label', ''), 'source': c.get('source', '')})
 
+    cards.sort(key=lambda c: c['t'])  # player looks cards up by time; visuals.json may list figures after the numbers
+
     # one background per segment, from the segment's start
     seg_bg = {s['id']: s for s in vis['segments']}
     backgrounds = []

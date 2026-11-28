@@ -1,0 +1,320 @@
+{
+ "report_label": "〈平均數幫不了單店：11% 成長底下的服務業對帳〉",
+ "segments": [
+  {
+   "id": "s00_open",
+   "chapter": "第二季台股成交值大增 2.6 倍，GDP 破 11%",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "第二季，上市櫃股票的成交金額",
+     "top": "第二季・上市櫃成交金額",
+     "value": "大增約 2.6 倍",
+     "label": "比去年同期",
+     "source": "主計總處"
+    },
+    {
+     "type": "number",
+     "anchor": "主計總處八月把全年經濟成長率",
+     "top": "全年經濟成長率（8 月上修）",
+     "value": "11.05%",
+     "label": "將近 40 年來最高",
+     "source": "主計總處"
+    },
+    {
+     "type": "number",
+     "anchor": "可是走進巷口的便當店",
+     "top": "巷口的便當店",
+     "value": "生意慘兮兮",
+     "label": "兩本帳，都沒記錯？",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s01_road",
+   "chapter": "兩本帳都沒記錯：今晚對三本帳",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "今晚我們看三本帳",
+     "top": "今晚對三本帳",
+     "value": "總帳・錢去哪・店帳",
+     "label": "資料更新到 11 月 20 日",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s02_total",
+   "chapter": "總帳：第三季 14.36%，成長從港口換到廠房",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "十月底，第三季的概估衝到",
+     "top": "第三季經濟成長率概估",
+     "value": "14.36%",
+     "label": "連續 4 季雙位數成長",
+     "source": "主計總處"
+    },
+    {
+     "type": "number",
+     "anchor": "上半場是港口，下半場是廠房",
+     "top": "成長從哪裡來",
+     "value": "港口 → 廠房",
+     "label": "第一季靠出口，第二季起靠蓋廠房、買設備",
+     "source": "主計總處"
+    }
+   ]
+  },
+  {
+   "id": "s03_split",
+   "chapter": "分帳：製造業貢獻六成多，住宿餐飲墊底",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "光是製造業一個行業",
+     "top": "第一季整體成長 14.55%",
+     "value": "製造業貢獻 6 成多",
+     "label": "住宿餐飲扣掉物價，連 1% 都不到",
+     "source": "主計總處"
+    },
+    {
+     "type": "number",
+     "anchor": "可是拉動服務業的，是金融保險跟批發",
+     "top": "第二季拉動服務業的",
+     "value": "金融保險、批發",
+     "label": "利息、手續費、股市成交；AI 供應鏈出貨",
+     "source": "主計總處"
+    },
+    {
+     "type": "figure",
+     "anchor": "那照顧大家吃喝的餐飲和住宿呢",
+     "image": "visuals/chart-contrib.png",
+     "caption": "製造業一個行業，就貢獻了六成多",
+     "source": "主計總處"
+    }
+   ]
+  },
+  {
+   "id": "s04_people",
+   "chapter": "受惠 AI 的產業，只僱用一成的人",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "直接受惠 AI 的產業，大概僱用九十萬人",
+     "top": "直接受惠 AI 的產業",
+     "value": "約 90 萬人",
+     "label": "只占受僱員工 1 成",
+     "source": "經濟日報社論"
+    },
+    {
+     "type": "number",
+     "anchor": "服務業呢，超過五百萬人",
+     "top": "服務業",
+     "value": "500 萬人以上",
+     "label": "占受僱員工 6 成以上",
+     "source": "經濟日報社論"
+    },
+    {
+     "type": "number",
+     "anchor": "住宿餐飲業平均大約三萬五",
+     "top": "住宿餐飲平均經常性薪資",
+     "value": "約三萬五",
+     "label": "今年沒有漲（全體年增不到 3%）",
+     "source": "主計總處"
+    }
+   ]
+  },
+  {
+   "id": "s05_spend",
+   "chapter": "大家沒有不花錢，錢去了哪裡",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "扣掉物價，民間消費連續兩季",
+     "top": "民間消費（扣掉物價）",
+     "value": "連 2 季成長 5% 以上",
+     "label": "大家有在花錢",
+     "source": "主計總處"
+    },
+    {
+     "type": "number",
+     "anchor": "扣掉外食大約三趴的漲價",
+     "top": "第二季餐飲業（扣掉漲價）",
+     "value": "只長 1 個多百分點",
+     "label": "沒跟上整體消費的平均",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s06_abroad",
+   "chapter": "出國花費破兆，跟全台餐飲營業額幾乎一樣大",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "國人出國一千八百九十四萬人次",
+     "top": "去年國人出國",
+     "value": "1,894 萬人次",
+     "label": "在國外的總花費，第一次破兆",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "全台灣餐飲業一整年的營業額",
+     "top": "出國花費 vs 全台餐飲業營業額",
+     "value": "幾乎一樣大",
+     "label": "都是沒走進門的客人",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s07_store",
+   "chapter": "店帳：扣掉漲價，只長一個百分點上下",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "前九個月，餐飲業營業額年增",
+     "top": "前 9 個月餐飲業營業額",
+     "value": "年增 4.1%",
+     "label": "扣掉約 3% 漲價，只剩 1 個百分點上下",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "三樣加總壓在營收的七成到七成五",
+     "top": "食材＋人事＋租金",
+     "value": "營收的 7 成到 7 成 5",
+     "label": "業界的工作區間，不是普查",
+     "source": "report"
+    },
+    {
+     "type": "figure",
+     "anchor": "而且這個總額，還包含新開的店喔",
+     "image": "visuals/chart-sales.png",
+     "caption": "餐飲的 4.1%，還沒扣掉約三趴的漲價",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s08_wage",
+   "chapter": "最低工資明年 30,900 元，雇主再加兩成",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "說人事成本太高的餐飲業者",
+     "top": "說人事成本太高的餐飲業者",
+     "value": "一年多 7 個多百分點",
+     "label": "調查裡跳最多的一項",
+     "source": "經濟部"
+    },
+    {
+     "type": "number",
+     "anchor": "最低工資明年一月調到",
+     "top": "明年 1 月最低工資",
+     "value": "30,900 元",
+     "label": "調升金額近 10 年最大",
+     "source": "勞動部"
+    },
+    {
+     "type": "number",
+     "anchor": "月薪三萬的人，店裡實際要付的成本",
+     "top": "月薪 3 萬的人",
+     "value": "店裡成本接近三萬六",
+     "label": "勞保、健保、勞退，再加約 2 成",
+     "source": "report"
+    },
+    {
+     "type": "figure",
+     "anchor": "老闆還要另外付勞保",
+     "image": "visuals/chart-wage.png",
+     "caption": "再加大約兩成",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s09_leak",
+   "chapter": "缺工：補得進來，留不住",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "餐飲業的職缺率",
+     "top": "餐飲業職缺率",
+     "value": "各行業最高",
+     "label": "找人的時間反而比平均短",
+     "source": "勞動部"
+    },
+    {
+     "type": "number",
+     "anchor": "因為每個月走的人",
+     "top": "一直缺人的原因",
+     "value": "補得進來，留不住",
+     "label": "每個月走的人，比進來的多",
+     "source": "勞動部"
+    },
+    {
+     "type": "figure",
+     "anchor": "勞動部的判讀是",
+     "image": "visuals/chart-flow.png",
+     "caption": "走的比進來的多：補得進來，留不住",
+     "source": "勞動部"
+    }
+   ]
+  },
+  {
+   "id": "s10_answer",
+   "chapter": "兩本帳差在哪：K 型的兩端",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "台灣現在像一個英文字母 K",
+     "top": "台灣現在像一個字母",
+     "value": "K 型",
+     "label": "上：AI、半導體、出口批發、金融｜下：餐飲、零售、住宿、生活服務",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s11_outro",
+   "chapter": "今晚的 breakpoint",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "第一，百分之十一是真的",
+     "top": "breakpoint 1",
+     "value": "11% 是真的",
+     "label": "長在廠房、港口和證券戶裡",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "第二，大家沒有不花錢",
+     "top": "breakpoint 2",
+     "value": "錢去買車、出國",
+     "label": "餐飲扣掉漲價，只多 1 個百分點上下",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "第三，店裡的壓力在成本",
+     "top": "breakpoint 3",
+     "value": "成本＋留不住人",
+     "label": "最低工資明年再調",
+     "source": "report"
+    }
+   ]
+  }
+ ],
+ "end_card": [
+  "原文與來源在說明欄",
+  "深夜 Debug",
+  "每集十分鐘，把一篇深度文章講成聽得懂的版本"
+ ],
+ "_note": "EP41 畫面設定（docs/video.md、video-web.md）。anchor 是 script.json 裡的一句，畫面從那句開始。source 寫 report 會換成 report_label。改完重跑 tools/make_video.py。",
+ "figures_note": "2026-11-28 圖表用報告裡的數字重畫成深色（scratchpad charts/make_charts.py 的做法），檔名 chart-*.png；播放器對 chart-* 不加白底框。"
+}

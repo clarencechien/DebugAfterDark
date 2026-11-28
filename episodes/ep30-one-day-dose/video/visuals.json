@@ -1,0 +1,352 @@
+{
+ "report_label": "〈這帖藥，有效成分三樣：讀 Dan Koe《一天修好人生》〉",
+ "segments": [
+  {
+   "id": "s00_open",
+   "chapter": "新年新希望還剩幾個？",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "網路上都在傳，八到九成的人",
+     "top": "網路上的說法",
+     "value": "8 到 9 成會失敗",
+     "label": "新年新希望",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "六個月後，還有四成六的人撐著",
+     "top": "追蹤半年、每 1 到 2 週打一次電話",
+     "value": "46% 還撐著",
+     "label": "沒有傳得那麼慘",
+     "source": "Norcross 追蹤研究"
+    },
+    {
+     "type": "number",
+     "anchor": "在 X 上被看了兩億多次",
+     "top": "〈一天修好人生〉",
+     "value": "X 上 2 億多次瀏覽",
+     "label": "今年 1 月的長文",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "有研究撐腰、值得帶走的，只有三樣",
+     "top": "拆開成分表",
+     "value": "有效成分只有 3 樣",
+     "label": "最紅的那一樣，對某些人可能是反效果",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s01_what",
+   "chapter": "〈一天修好人生〉是什麼",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "作者叫 Dan Koe",
+     "top": "作者",
+     "value": "Dan Koe",
+     "label": "寫個人成長和創作者經濟，主業賣線上課程",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s02_ideas",
+   "chapter": "原文的核心：改你是誰",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "重點不是改行動，而是改自己是誰",
+     "top": "原文的核心",
+     "value": "改你是誰",
+     "label": "不是改行動",
+     "source": "Dan Koe"
+    },
+    {
+     "type": "number",
+     "anchor": "拖延是在保護自己",
+     "top": "引用阿德勒：所有行為都有目的",
+     "value": "拖延＝保護自己",
+     "label": "免得被別人打分數",
+     "source": "Dan Koe"
+    },
+    {
+     "type": "number",
+     "anchor": "智力就是拿到你想要的東西的能力",
+     "top": "智力的新定義",
+     "value": "設目標 → 行動 → 修正",
+     "label": "報告說：全文最實在的一段",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s03_day",
+   "chapter": "一天的流程",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "你早上要先寫反願景",
+     "top": "早上",
+     "value": "反願景",
+     "label": "5 年都不改變，會變多慘",
+     "source": "Dan Koe"
+    },
+    {
+     "type": "number",
+     "anchor": "我現在在逃避什麼",
+     "top": "白天・手機隨機提醒",
+     "value": "我現在在逃避什麼？",
+     "label": "",
+     "source": "Dan Koe"
+    },
+    {
+     "type": "number",
+     "anchor": "答案叫限制條件",
+     "top": "最常被漏掉的一項",
+     "value": "限制條件",
+     "label": "整套系統裡唯一的煞車",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s04_parts",
+   "chapter": "幫每個零件找原廠",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "這概念來自 James Clear 的《原子習慣》",
+     "top": "「先改身分」的原廠",
+     "value": "《原子習慣》",
+     "label": "原版：用小行動替新身分投票",
+     "source": "James Clear"
+    },
+    {
+     "type": "number",
+     "anchor": "那個九個自我發展階段",
+     "top": "9 個自我發展階段",
+     "value": "研究用的評估架構",
+     "label": "被改成對號入座的地圖",
+     "source": "report"
+    },
+    {
+     "type": "figure",
+     "anchor": "但重點來了，組裝的時候發生了什麼",
+     "image": "visuals/chart-parts.png",
+     "caption": "組裝的時候，說明書被拿掉了",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s05_norcross",
+   "chapter": "8 到 9 成會失敗？追蹤半年是 46% 撐著",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "居然還有百分之四十六耶",
+     "top": "立志的那組・半年後",
+     "value": "46%",
+     "label": "沒立志的那組只有 4%",
+     "source": "Norcross 追蹤研究"
+    },
+    {
+     "type": "figure",
+     "anchor": "沒立志的那組，只有百分之四",
+     "image": "visuals/chart-norcross.png",
+     "caption": "沒有傳得那麼慘，但追蹤本身會拉高維持率",
+     "source": "Norcross 追蹤研究"
+    }
+   ]
+  },
+  {
+   "id": "s06_behavior",
+   "chapter": "撐過的人靠的是行為",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "其實他們靠的多半是具體的行為習慣",
+     "top": "撐過半年的人靠的是",
+     "value": "具體的行為習慣",
+     "label": "很少靠放大情緒、一直反省",
+     "source": "Norcross 追蹤研究"
+    },
+    {
+     "type": "number",
+     "anchor": "所以這套流程很適合拿來開機點火",
+     "top": "這套流程適合",
+     "value": "開機點火",
+     "label": "撐多久要靠別的做法",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s07_identity",
+   "chapter": "先身分還是先行為",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "二〇一三年一份追蹤同一個人前後變化",
+     "top": "2013 年後設分析",
+     "value": "相信做得到＝過去表現的產物",
+     "label": "對之後表現的影響不顯著",
+     "source": "後設分析（2013）"
+    },
+    {
+     "type": "number",
+     "anchor": "還有實驗把去投票改成當個投票者",
+     "top": "「去投票」改成「當個投票者」",
+     "value": "第一次有效，重複 2 次都沒效",
+     "label": "",
+     "source": "投票實驗"
+    },
+    {
+     "type": "number",
+     "anchor": "照那種人的做法去做一件事，才有用",
+     "top": "先身分還是先行為",
+     "value": "先做成一件事",
+     "label": "",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s08_antivision",
+   "chapter": "反願景的研究版本",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "是 Oettingen 二十多年的實驗",
+     "top": "Oettingen 20 多年的實驗",
+     "value": "只想像美好未來",
+     "label": "後續努力反而變少",
+     "source": "Oettingen"
+    },
+    {
+     "type": "number",
+     "anchor": "有效的做法，是把想要的未來",
+     "top": "有效的做法",
+     "value": "未來＋現實＋障礙",
+     "label": "放在一起想",
+     "source": "Oettingen"
+    },
+    {
+     "type": "number",
+     "anchor": "覺得希望渺茫的人",
+     "top": "前提：你覺得有機會",
+     "value": "希望渺茫的人",
+     "label": "承諾和幹勁反而下降",
+     "source": "Oettingen"
+    }
+   ]
+  },
+  {
+   "id": "s09_keep1",
+   "chapter": "留下的第一樣：看行為",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "第一樣，看行為，不要看宣稱",
+     "top": "留下的第一樣",
+     "value": "看行為，不看宣稱",
+     "label": "全文最銳利的工具",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "看 log 永遠比看 README 還要可靠",
+     "top": "系統實際在跑什麼",
+     "value": "看 log，不看 README",
+     "label": "行事曆和螢幕使用時間比新希望誠實",
+     "source": "report"
+    }
+   ]
+  },
+  {
+   "id": "s10_keep23",
+   "chapter": "留下的第二、三樣",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "接著是反願景",
+     "top": "留下的第二樣",
+     "value": "反願景＋現實和障礙",
+     "label": "先問：這件事有機會嗎？",
+     "source": "Oettingen"
+    },
+    {
+     "type": "number",
+     "anchor": "這招叫執行意圖",
+     "top": "留下的第三樣・執行意圖",
+     "value": "何時、何地、做什麼",
+     "label": "94 個檢驗：效果中等到大",
+     "source": "後設分析"
+    }
+   ]
+  },
+  {
+   "id": "s11_oneday",
+   "chapter": "一天能修好人生嗎",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "一天是行銷用語",
+     "top": "一天真的能修好人生？",
+     "value": "一天＝開機",
+     "label": "寫下方向、排好明天第一件事",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "二〇一六年一份彙整一百三十八篇研究",
+     "top": "2016 年・138 篇研究的後設分析",
+     "value": "常回頭看進度",
+     "label": "能提升目標達成；寫下來或公開更強",
+     "source": "後設分析（2016）"
+    }
+   ]
+  },
+  {
+   "id": "s12_outro",
+   "chapter": "今晚的 breakpoint",
+   "items": [
+    {
+     "type": "number",
+     "anchor": "第一，新年新希望大多會失敗",
+     "top": "breakpoint 1",
+     "value": "不是 8 到 9 成",
+     "label": "撐過 6 個月的人靠行為",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "第二，先改身分，不如先做成一件事",
+     "top": "breakpoint 2",
+     "value": "先做成一件事",
+     "label": "反願景只對覺得有機會的人有用",
+     "source": "report"
+    },
+    {
+     "type": "number",
+     "anchor": "第三，帶走三樣",
+     "top": "breakpoint 3",
+     "value": "帶走 3 樣",
+     "label": "看行為｜反願景＋障礙｜何時、何地、做什麼",
+     "source": "report"
+    }
+   ]
+  }
+ ],
+ "end_card": [
+  "原文與來源在說明欄",
+  "深夜 Debug",
+  "每集十分鐘，把一篇深度文章講成聽得懂的版本"
+ ],
+ "_note": "EP30 畫面設定（docs/video.md、video-web.md）。anchor 是 script.json 裡的一句，畫面從那句開始。source 寫 report 會換成 report_label。改完重跑 tools/make_video.py。",
+ "figures_note": "2026-11-28 圖表用報告裡的數字重畫成深色（scratchpad charts/make_charts.py 的做法），檔名 chart-*.png；播放器對 chart-* 不加白底框。"
+}

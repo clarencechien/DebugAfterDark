@@ -1,0 +1,528 @@
+{
+ "episode": "ep30-one-day-dose",
+ "trim_start_s": 3.6,
+ "trim_note": "sting 3.2 s + lead 0.4 s removed with atrim; rest of the audio untouched",
+ "boundaries": [
+  {
+   "id": "s00_open",
+   "start": 3.6,
+   "fit": 3.6,
+   "end": 51.22,
+   "gap_silence": [
+    3.12,
+    3.84
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "ident",
+   "start": 51.82,
+   "end": 60.94,
+   "method": "cross-correlation, peak ratio 11.6",
+   "error_s": 0.0
+  },
+  {
+   "id": "s01_what",
+   "start": 61.54,
+   "fit": 61.54,
+   "end": 100.43,
+   "gap_silence": [
+    60.58,
+    61.79
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s02_ideas",
+   "start": 101.03,
+   "fit": 101.04,
+   "end": 146.58,
+   "gap_silence": [
+    100.24,
+    101.03
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s03_day",
+   "start": 147.18,
+   "fit": 147.18,
+   "end": 195.24,
+   "gap_silence": [
+    146.35,
+    147.18
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s04_parts",
+   "start": 195.84,
+   "fit": 195.84,
+   "end": 243.29,
+   "gap_silence": [
+    194.89,
+    195.92
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s05_norcross",
+   "start": 243.89,
+   "fit": 243.92,
+   "end": 299.84,
+   "gap_silence": [
+    242.85,
+    243.89
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s06_behavior",
+   "start": 300.44,
+   "fit": 300.44,
+   "end": 341.97,
+   "gap_silence": [
+    299.46,
+    300.51
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s07_identity",
+   "start": 342.57,
+   "fit": 342.57,
+   "end": 398.72,
+   "gap_silence": [
+    341.64,
+    342.62
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s08_antivision",
+   "start": 399.32,
+   "fit": 399.32,
+   "end": 450.13,
+   "gap_silence": [
+    398.25,
+    399.51
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s09_keep1",
+   "start": 450.73,
+   "fit": 450.75,
+   "end": 499.9,
+   "gap_silence": [
+    449.69,
+    450.73
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s10_keep23",
+   "start": 500.5,
+   "fit": 500.5,
+   "end": 545.27,
+   "gap_silence": [
+    499.56,
+    500.61
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s11_oneday",
+   "start": 545.87,
+   "fit": 545.87,
+   "end": 592.97,
+   "gap_silence": [
+    544.88,
+    546.05
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s12_outro",
+   "start": 593.57,
+   "fit": 593.59,
+   "end": 636.741,
+   "gap_silence": [
+    592.62,
+    593.59
+   ],
+   "error_s": 0.0
+  }
+ ],
+ "checks": {
+  "boundaries": {
+   "pass": true,
+   "max_error_s": 0.0,
+   "rule": "each segment start sits at the end of a >= 0.6 s silence (gap) within 0.15 s; ident by cross-correlation"
+  },
+  "subtitle_sync": {
+   "pass": true,
+   "points": [
+    {
+     "point": "開頭",
+     "cue": "你今年一月立的新年新希望／現在還剩幾個？",
+     "video_t": 0.0,
+     "speech_onset_video_t": 0.24,
+     "error_s": 0.24
+    },
+    {
+     "point": "結尾",
+     "cue": "下次見",
+     "video_t": 632.47,
+     "speech_onset_video_t": 632.48,
+     "error_s": 0.01
+    },
+    {
+     "point": "數字句",
+     "cue": "他在去年十二月／把這篇長文寄給電子報的訂閱者",
+     "video_t": 67.14,
+     "speech_onset_video_t": 67.18,
+     "error_s": 0.04
+    },
+    {
+     "point": "固定開場後第一句",
+     "cue": "先看這帖藥是什麼",
+     "video_t": 57.94,
+     "speech_onset_video_t": 58.2,
+     "error_s": 0.26
+    },
+    {
+     "point": "最後一段中間",
+     "cue": "第三／帶走三樣",
+     "video_t": 615.15,
+     "speech_onset_video_t": 615.13,
+     "error_s": 0.02
+    }
+   ]
+  },
+  "subtitle_text": {
+   "pass": true,
+   "identical_to_script": true,
+   "cues": 175,
+   "too_long": []
+  },
+  "chapters": {
+   "pass": true,
+   "count": 13,
+   "shortest_s": 42.1,
+   "ident": "merged into chapter 2 (starts at the ident)"
+  },
+  "number_cards": {
+   "pass": true,
+   "count": 31,
+   "problems": []
+  },
+  "figures": {
+   "count": 2,
+   "rows": [
+    {
+     "seg": "s04_parts",
+     "figure": "visuals/chart-parts.png",
+     "t": 206.32,
+     "source": "〈這帖藥，有效成分三樣：讀 Dan Koe《一天修好人生》〉",
+     "scale": 1.075
+    },
+    {
+     "seg": "s05_norcross",
+     "figure": "visuals/chart-norcross.png",
+     "t": 276.37,
+     "source": "Norcross 追蹤研究",
+     "scale": 1.075
+    }
+   ],
+   "note": "2026-11-28 圖表用報告裡的數字重畫成深色（scratchpad charts/make_charts.py 的做法），檔名 chart-*.png；播放器對 chart-* 不加白底框。"
+  }
+ },
+ "cards": [
+  {
+   "seg": "s00_open",
+   "value": "8 到 9 成會失敗",
+   "t": 4.96,
+   "source": "〈這帖藥，有效成分三樣：讀 Dan Koe《一天修好人生》〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s00_open",
+   "value": "46% 還撐著",
+   "t": 16.36,
+   "source": "Norcross 追蹤研究",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s00_open",
+   "value": "X 上 2 億多次瀏覽",
+   "t": 27.24,
+   "source": "〈這帖藥，有效成分三樣：讀 Dan Koe《一天修好人生》〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s00_open",
+   "value": "有效成分只有 3 樣",
+   "t": 34.4,
+   "source": "〈這帖藥，有效成分三樣：讀 Dan Koe《一天修好人生》〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s01_what",
+   "value": "Dan Koe",
+   "t": 59.9,
+   "source": "〈這帖藥，有效成分三樣：讀 Dan Koe《一天修好人生》〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s02_ideas",
+   "value": "改你是誰",
+   "t": 105.07,
+   "source": "Dan Koe",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s02_ideas",
+   "value": "拖延＝保護自己",
+   "t": 118.79,
+   "source": "Dan Koe",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s02_ideas",
+   "value": "設目標 → 行動 → 修正",
+   "t": 130.75,
+   "source": "〈這帖藥，有效成分三樣：讀 Dan Koe《一天修好人生》〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s03_day",
+   "value": "反願景",
+   "t": 147.42,
+   "source": "Dan Koe",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s03_day",
+   "value": "我現在在逃避什麼？",
+   "t": 161.81,
+   "source": "Dan Koe",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s03_day",
+   "value": "限制條件",
+   "t": 180.34,
+   "source": "〈這帖藥，有效成分三樣：讀 Dan Koe《一天修好人生》〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s04_parts",
+   "value": "《原子習慣》",
+   "t": 217.72,
+   "source": "James Clear",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s04_parts",
+   "value": "研究用的評估架構",
+   "t": 230.03,
+   "source": "〈這帖藥，有效成分三樣：讀 Dan Koe《一天修好人生》〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s04_parts",
+   "figure": "visuals/chart-parts.png",
+   "t": 206.32,
+   "source": "〈這帖藥，有效成分三樣：讀 Dan Koe《一天修好人生》〉",
+   "scale": 1.075
+  },
+  {
+   "seg": "s05_norcross",
+   "value": "46%",
+   "t": 273.61,
+   "source": "Norcross 追蹤研究",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s05_norcross",
+   "figure": "visuals/chart-norcross.png",
+   "t": 276.37,
+   "source": "Norcross 追蹤研究",
+   "scale": 1.075
+  },
+  {
+   "seg": "s06_behavior",
+   "value": "具體的行為習慣",
+   "t": 304.52,
+   "source": "Norcross 追蹤研究",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s06_behavior",
+   "value": "開機點火",
+   "t": 332.4,
+   "source": "〈這帖藥，有效成分三樣：讀 Dan Koe《一天修好人生》〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s07_identity",
+   "value": "相信做得到＝過去表現的產物",
+   "t": 363.85,
+   "source": "後設分析（2013）",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s07_identity",
+   "value": "第一次有效，重複 2 次都沒效",
+   "t": 377.61,
+   "source": "投票實驗",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s07_identity",
+   "value": "先做成一件事",
+   "t": 392.01,
+   "source": "〈這帖藥，有效成分三樣：讀 Dan Koe《一天修好人生》〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s08_antivision",
+   "value": "只想像美好未來",
+   "t": 401.36,
+   "source": "Oettingen",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s08_antivision",
+   "value": "未來＋現實＋障礙",
+   "t": 415.76,
+   "source": "Oettingen",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s08_antivision",
+   "value": "希望渺茫的人",
+   "t": 431.68,
+   "source": "Oettingen",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s09_keep1",
+   "value": "看行為，不看宣稱",
+   "t": 452.21,
+   "source": "〈這帖藥，有效成分三樣：讀 Dan Koe《一天修好人生》〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s09_keep1",
+   "value": "看 log，不看 README",
+   "t": 484.61,
+   "source": "〈這帖藥，有效成分三樣：讀 Dan Koe《一天修好人生》〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s10_keep23",
+   "value": "反願景＋現實和障礙",
+   "t": 498.4,
+   "source": "Oettingen",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s10_keep23",
+   "value": "何時、何地、做什麼",
+   "t": 522.1,
+   "source": "後設分析",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s11_oneday",
+   "value": "一天＝開機",
+   "t": 548.11,
+   "source": "〈這帖藥，有效成分三樣：讀 Dan Koe《一天修好人生》〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s11_oneday",
+   "value": "常回頭看進度",
+   "t": 567.67,
+   "source": "後設分析（2016）",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s12_outro",
+   "value": "不是 8 到 9 成",
+   "t": 593.47,
+   "source": "〈這帖藥，有效成分三樣：讀 Dan Koe《一天修好人生》〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s12_outro",
+   "value": "先做成一件事",
+   "t": 606.43,
+   "source": "〈這帖藥，有效成分三樣：讀 Dan Koe《一天修好人生》〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s12_outro",
+   "value": "帶走 3 樣",
+   "t": 615.15,
+   "source": "〈這帖藥，有效成分三樣：讀 Dan Koe《一天修好人生》〉",
+   "numbers_not_in_script": []
+  }
+ ],
+ "chapters": [
+  {
+   "t": 0.0,
+   "name": "新年新希望還剩幾個？"
+  },
+  {
+   "t": 48.22,
+   "name": "〈一天修好人生〉是什麼"
+  },
+  {
+   "t": 97.43,
+   "name": "原文的核心：改你是誰"
+  },
+  {
+   "t": 143.58,
+   "name": "一天的流程"
+  },
+  {
+   "t": 192.24,
+   "name": "幫每個零件找原廠"
+  },
+  {
+   "t": 240.29,
+   "name": "8 到 9 成會失敗？追蹤半年是 46% 撐著"
+  },
+  {
+   "t": 296.84,
+   "name": "撐過的人靠的是行為"
+  },
+  {
+   "t": 338.97,
+   "name": "先身分還是先行為"
+  },
+  {
+   "t": 395.72,
+   "name": "反願景的研究版本"
+  },
+  {
+   "t": 447.13,
+   "name": "留下的第一樣：看行為"
+  },
+  {
+   "t": 496.9,
+   "name": "留下的第二、三樣"
+  },
+  {
+   "t": 542.27,
+   "name": "一天能修好人生嗎"
+  },
+  {
+   "t": 589.97,
+   "name": "今晚的 breakpoint"
+  }
+ ]
+}

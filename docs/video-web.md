@@ -1,10 +1,41 @@
-# 影片版 v3 候選：做一頁網頁，再逐格錄成影片（草稿）
+# 影片版：做一頁網頁，再逐格錄成影片
 
 狀態：**11/27 決定做**。非 AI 的舊集（錢＋其他）照 EP36 的做法做影片版，RSS 版改私人，開場 A/B 一起跑，12/5 起上架。
 排程和集數見下面「開場 A/B 實驗」，每集的流程圖見 [`video-version-flow.svg`](video-version-flow.svg)。
 
 現行的影片做法見 [`video.md`](video.md)（`tools/make_video.py`），這份只寫另一條路，跟它的差別。
 比較頁（六種畫面風格示意、成本表）：<https://claude.ai/artifact/XmMBuTwUxBknyUrdPBtb6Q>。
+
+## 每集的配方（11/28 定，EP41、EP30 樣片做法）
+
+長片一律走這條路（`opening` 或 `opening-b`，照「開場 A/B 實驗」的排法）。一集約 30–40 分鐘，錄製本身約 4 分鐘（每分鐘影片約 22 秒）。
+產出先放專案資料夾 `video/old-nonai/<epNN>/`（新集放 `video/<epNN>/`），Clarence 看過才 commit、上傳。
+
+0. **環境**（雲端容器每次都要）：`apt-get install -y fonts-noto-cjk fonts-noto-cjk-extra`；LXGW WenKai TC 放
+   `~/.cache/dad-fonts/LXGWWenKaiTC-Bold.ttf`（用 `User-Agent: Wget/1.0` 讀 `fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@700`
+   會拿到完整的 ttf，不是切片的 woff2）。
+1. **字卡**：`make_video.py episodes/<ep> --skeleton` 產 `video/visuals.json`，照 `script.json` 一段一段寫數字卡
+   （`anchor` 是腳本裡的原句，`top`、`value`、`label`、`source`）。
+   - 數字只能用腳本講過的。腳本用中文數字（「三萬五」）就照寫中文，寫成「3.5 萬」會被 `number_cards` 檢查擋下。
+   - `source` 寫真正的出處（主計總處、勞動部、研究名稱）；只有報告自己算的、推論的才寫 `report`。
+   - **開場的 root cause**：trace 開場把 cold open 裡**第一張 `source` 是 `report` 的卡**標成 ERROR（`◀ root cause?`）。
+     這張要是這集要追的問題（EP41 是「巷口的店生意慘」，不是「成交金額 2.6 倍」）；不對就把前面的卡標成它真正的出處。
+   - 沒有 `youtube` 欄位的舊集（例如 EP30），補 `title` 和兩組 `thumbnail`（照 `hooks.md`），`--thumbnail-only` 出縮圖。
+2. **抓報告的圖表**：`make_video.py --capture-figures` 會截報告的 figure 和 table。報告有藏起來的元素時會逾時失敗，
+   這時直接讀報告 HTML 的 `<figure>`、`<table>` 和「看數字」表，把數字抄出來。
+3. **圖表重新配色**：報告的圖是淺色頁面畫的，放在深色畫面裡很刺眼，**一律用報告的數字重畫**，不直接貼截圖。
+   - 寫 `video/charts.json`（格式見 `tools/webvideo/make_charts.py` 開頭；每張寫 `from` 註明數字取自報告哪一節），
+     跑 `python3 tools/webvideo/make_charts.py episodes/<ep>`，產 `video/visuals/chart-*.png`（1600×440，背景就是畫面的底色）。
+   - 配色：重點用橘（`acc`），這張圖要講的那一根用紅（`red`），其他灰（`dim`）。橫條圖從 0 開始。
+   - 在 `visuals.json` 對應的段落加 `{"type": "figure", "anchor": "…", "image": "visuals/chart-x.png", "caption": "…", "source": "…"}`，
+     anchor 選旁白講到那張圖的句子，不要跟數字卡同一句。一集 2–4 張就好，表格太長的挑 5–6 列改成短句。
+   - 播放器看到檔名 `chart-*` 就不加白框；舊的截圖（`fig*.png`）照舊有白框。
+4. **時間、字幕、檢查**：`make_video.py episodes/<ep> --no-video`，六項檢查都要 PASS（boundaries、subtitle_sync、subtitle_text、
+   chapters、number_cards、figures）。
+5. **錄製**：`build_timeline.py episodes/<ep> -o tl.json`，`render.js tl.json <ep>-A.mp4 --theme opening --variant pulse`（B 版 `--theme opening-b`）。
+   先用 `--still <秒>` 看幾張：開場的 trace、每張圖出現的那一刻、最後的 breakpoint。
+6. **給 Clarence 看**：mp4、預覽總表、縮圖，加上要他決定的事（root cause 對不對、新擬的標題縮圖、旁白跟報告不一致的地方）。
+   他說好之後再 commit（`visuals.json`、`charts.json`、`visuals/chart-*.png`、srt、chapters、縮圖、`render_log.json`），上傳照 `publish.md`。
 
 ## 這條路是什麼
 
