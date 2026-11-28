@@ -54,6 +54,7 @@ html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#000}
 .paper #card .value{margin-top:14px;font-family:"Noto Serif CJK TC",serif;font-weight:900;font-size:136px;line-height:1.1;color:#f2b36f}
 .paper #card .label{margin-top:20px;font-size:44px;color:#ece6da;border-left:10px solid #e8a05f;padding-left:24px}
 .paper #card img{max-width:1600px;max-height:520px;background:#fff;padding:20px;border:1px solid #3a3d45}
+.paper #card img.dark{display:block;max-height:440px;background:none;padding:0;border:0}
 .paper #src{left:160px;top:760px;color:#8a8478;font-size:26px}
 .paper #src::before{content:"資料｜";font-weight:700}
 .paper #sub{left:0;right:0;bottom:40px;padding:26px 140px;background:#1c1f26;color:#ece6da;font-size:54px;border-top:1px solid #2c2f37}
@@ -369,7 +370,7 @@ window.seek = function (t) {
   const c = k >= 0 ? D.cards[k] : null;
   const f = Math.round(Math.min(1, (c ? t - c.t : 99) / 0.4) * 12) / 12;
   let html = '';
-  if (c && c.kind === 'figure') html = `<img src="${c.image}" alt=""><span class="label">${esc(c.label)}</span>`;
+  if (c && c.kind === 'figure') html = `<img src="${c.image}"${/\/chart-[^/]*$/.test(c.image) ? ' class="dark"' : ''} alt=""><span class="label">${esc(c.label)}</span>`;
   else if (c) html = `<span class="top">${esc(c.top)}</span><span class="value">${esc(c.value)}</span><span class="label">${esc(c.label)}</span>`;
   set('card', 'html', html);
   set('card', 'opacity', String(f));

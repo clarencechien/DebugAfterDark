@@ -1,0 +1,506 @@
+{
+ "episode": "ep41-gdp-service-ledger",
+ "trim_start_s": 3.6,
+ "trim_note": "sting 3.2 s + lead 0.4 s removed with atrim; rest of the audio untouched",
+ "boundaries": [
+  {
+   "id": "s00_open",
+   "start": 3.6,
+   "fit": 3.6,
+   "end": 52.46,
+   "gap_silence": [
+    3.12,
+    3.78
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "ident",
+   "start": 53.06,
+   "end": 62.18,
+   "method": "cross-correlation, peak ratio 11.9",
+   "error_s": 0.0
+  },
+  {
+   "id": "s01_road",
+   "start": 62.78,
+   "fit": 62.78,
+   "end": 107.84,
+   "gap_silence": [
+    61.83,
+    63.02
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s02_total",
+   "start": 108.44,
+   "fit": 108.44,
+   "end": 162.74,
+   "gap_silence": [
+    107.81,
+    108.63
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s03_split",
+   "start": 163.34,
+   "fit": 163.34,
+   "end": 213.22,
+   "gap_silence": [
+    162.46,
+    163.53
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s04_people",
+   "start": 213.82,
+   "fit": 213.84,
+   "end": 260.5,
+   "gap_silence": [
+    212.78,
+    213.82
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s05_spend",
+   "start": 261.1,
+   "fit": 261.1,
+   "end": 309.08,
+   "gap_silence": [
+    260.3,
+    261.1
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s06_abroad",
+   "start": 309.68,
+   "fit": 309.68,
+   "end": 356.17,
+   "gap_silence": [
+    308.71,
+    309.91
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s07_store",
+   "start": 356.77,
+   "fit": 356.77,
+   "end": 412.71,
+   "gap_silence": [
+    355.83,
+    356.77
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s08_wage",
+   "start": 413.31,
+   "fit": 413.31,
+   "end": 457.95,
+   "gap_silence": [
+    412.29,
+    413.32
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s09_leak",
+   "start": 458.55,
+   "fit": 458.55,
+   "end": 510.75,
+   "gap_silence": [
+    457.58,
+    458.86
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s10_answer",
+   "start": 511.35,
+   "fit": 511.36,
+   "end": 567.69,
+   "gap_silence": [
+    510.27,
+    511.35
+   ],
+   "error_s": 0.0
+  },
+  {
+   "id": "s11_outro",
+   "start": 568.29,
+   "fit": 568.31,
+   "end": 610.72,
+   "gap_silence": [
+    567.28,
+    568.29
+   ],
+   "error_s": 0.0
+  }
+ ],
+ "checks": {
+  "boundaries": {
+   "pass": true,
+   "max_error_s": 0.0,
+   "rule": "each segment start sits at the end of a >= 0.6 s silence (gap) within 0.15 s; ident by cross-correlation"
+  },
+  "subtitle_sync": {
+   "pass": true,
+   "points": [
+    {
+     "point": "開頭",
+     "cue": "今年你身邊／是不是大家都在聊股票？",
+     "video_t": 0.0,
+     "speech_onset_video_t": 0.18,
+     "error_s": 0.18
+    },
+    {
+     "point": "結尾",
+     "cue": "下次見",
+     "video_t": 606.6,
+     "speech_onset_video_t": 606.36,
+     "error_s": 0.24
+    },
+    {
+     "point": "數字句",
+     "cue": "主計總處八月把全年經濟成長率／上修到百分之十一點零五",
+     "video_t": 16.7,
+     "speech_onset_video_t": 16.74,
+     "error_s": 0.04
+    },
+    {
+     "point": "固定開場後第一句",
+     "cue": "先說好／這集聊的是經濟統計",
+     "video_t": 59.18,
+     "speech_onset_video_t": 59.42,
+     "error_s": 0.24
+    },
+    {
+     "point": "最後一段中間",
+     "cue": "第三／店裡的壓力在成本",
+     "video_t": 590.97,
+     "speech_onset_video_t": 591.0,
+     "error_s": 0.03
+    }
+   ]
+  },
+  "subtitle_text": {
+   "pass": true,
+   "identical_to_script": true,
+   "cues": 175,
+   "too_long": []
+  },
+  "chapters": {
+   "pass": true,
+   "count": 12,
+   "shortest_s": 45.2,
+   "ident": "merged into chapter 2 (starts at the ident)"
+  },
+  "number_cards": {
+   "pass": true,
+   "count": 26,
+   "problems": []
+  },
+  "figures": {
+   "count": 4,
+   "rows": [
+    {
+     "seg": "s03_split",
+     "figure": "visuals/chart-contrib.png",
+     "t": 172.1,
+     "source": "主計總處",
+     "scale": 1.075
+    },
+    {
+     "seg": "s07_store",
+     "figure": "visuals/chart-sales.png",
+     "t": 369.05,
+     "source": "〈平均數幫不了單店：11% 成長底下的服務業對帳〉",
+     "scale": 1.075
+    },
+    {
+     "seg": "s08_wage",
+     "figure": "visuals/chart-wage.png",
+     "t": 436.79,
+     "source": "〈平均數幫不了單店：11% 成長底下的服務業對帳〉",
+     "scale": 1.075
+    },
+    {
+     "seg": "s09_leak",
+     "figure": "visuals/chart-flow.png",
+     "t": 496.11,
+     "source": "勞動部",
+     "scale": 1.075
+    }
+   ],
+   "note": "2026-11-28 圖表用報告裡的數字重畫成深色（scratchpad charts/make_charts.py 的做法），檔名 chart-*.png；播放器對 chart-* 不加白底框。"
+  }
+ },
+ "cards": [
+  {
+   "seg": "s00_open",
+   "value": "大增約 2.6 倍",
+   "t": 3.72,
+   "source": "主計總處",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s00_open",
+   "value": "11.05%",
+   "t": 16.7,
+   "source": "主計總處",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s00_open",
+   "value": "生意慘兮兮",
+   "t": 25.28,
+   "source": "〈平均數幫不了單店：11% 成長底下的服務業對帳〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s01_road",
+   "value": "總帳・錢去哪・店帳",
+   "t": 90.26,
+   "source": "〈平均數幫不了單店：11% 成長底下的服務業對帳〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s02_total",
+   "value": "14.36%",
+   "t": 114.88,
+   "source": "主計總處",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s02_total",
+   "value": "港口 → 廠房",
+   "t": 142.48,
+   "source": "主計總處",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s03_split",
+   "value": "製造業貢獻 6 成多",
+   "t": 168.38,
+   "source": "主計總處",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s03_split",
+   "value": "金融保險、批發",
+   "t": 186.14,
+   "source": "主計總處",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s03_split",
+   "figure": "visuals/chart-contrib.png",
+   "t": 172.1,
+   "source": "主計總處",
+   "scale": 1.075
+  },
+  {
+   "seg": "s04_people",
+   "value": "約 90 萬人",
+   "t": 218.78,
+   "source": "經濟日報社論",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s04_people",
+   "value": "500 萬人以上",
+   "t": 228.14,
+   "source": "經濟日報社論",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s04_people",
+   "value": "約三萬五",
+   "t": 242.02,
+   "source": "主計總處",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s05_spend",
+   "value": "連 2 季成長 5% 以上",
+   "t": 265.5,
+   "source": "主計總處",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s05_spend",
+   "value": "只長 1 個多百分點",
+   "t": 280.7,
+   "source": "〈平均數幫不了單店：11% 成長底下的服務業對帳〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s06_abroad",
+   "value": "1,894 萬人次",
+   "t": 307.92,
+   "source": "〈平均數幫不了單店：11% 成長底下的服務業對帳〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s06_abroad",
+   "value": "幾乎一樣大",
+   "t": 317.28,
+   "source": "〈平均數幫不了單店：11% 成長底下的服務業對帳〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s07_store",
+   "value": "年增 4.1%",
+   "t": 356.21,
+   "source": "〈平均數幫不了單店：11% 成長底下的服務業對帳〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s07_store",
+   "value": "營收的 7 成到 7 成 5",
+   "t": 392.67,
+   "source": "〈平均數幫不了單店：11% 成長底下的服務業對帳〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s07_store",
+   "figure": "visuals/chart-sales.png",
+   "t": 369.05,
+   "source": "〈平均數幫不了單店：11% 成長底下的服務業對帳〉",
+   "scale": 1.075
+  },
+  {
+   "seg": "s08_wage",
+   "value": "一年多 7 個多百分點",
+   "t": 411.71,
+   "source": "經濟部",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s08_wage",
+   "value": "30,900 元",
+   "t": 422.03,
+   "source": "勞動部",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s08_wage",
+   "value": "店裡成本接近三萬六",
+   "t": 443.43,
+   "source": "〈平均數幫不了單店：11% 成長底下的服務業對帳〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s08_wage",
+   "figure": "visuals/chart-wage.png",
+   "t": 436.79,
+   "source": "〈平均數幫不了單店：11% 成長底下的服務業對帳〉",
+   "scale": 1.075
+  },
+  {
+   "seg": "s09_leak",
+   "value": "各行業最高",
+   "t": 480.15,
+   "source": "勞動部",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s09_leak",
+   "value": "補得進來，留不住",
+   "t": 491.71,
+   "source": "勞動部",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s09_leak",
+   "figure": "visuals/chart-flow.png",
+   "t": 496.11,
+   "source": "勞動部",
+   "scale": 1.075
+  },
+  {
+   "seg": "s10_answer",
+   "value": "K 型",
+   "t": 526.91,
+   "source": "〈平均數幫不了單店：11% 成長底下的服務業對帳〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s11_outro",
+   "value": "11% 是真的",
+   "t": 568.57,
+   "source": "〈平均數幫不了單店：11% 成長底下的服務業對帳〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s11_outro",
+   "value": "錢去買車、出國",
+   "t": 580.17,
+   "source": "〈平均數幫不了單店：11% 成長底下的服務業對帳〉",
+   "numbers_not_in_script": []
+  },
+  {
+   "seg": "s11_outro",
+   "value": "成本＋留不住人",
+   "t": 590.97,
+   "source": "〈平均數幫不了單店：11% 成長底下的服務業對帳〉",
+   "numbers_not_in_script": []
+  }
+ ],
+ "chapters": [
+  {
+   "t": 0.0,
+   "name": "第二季台股成交值大增 2.6 倍，GDP 破 11%"
+  },
+  {
+   "t": 49.46,
+   "name": "兩本帳都沒記錯：今晚對三本帳"
+  },
+  {
+   "t": 104.84,
+   "name": "總帳：第三季 14.36%，成長從港口換到廠房"
+  },
+  {
+   "t": 159.74,
+   "name": "分帳：製造業貢獻六成多，住宿餐飲墊底"
+  },
+  {
+   "t": 210.22,
+   "name": "受惠 AI 的產業，只僱用一成的人"
+  },
+  {
+   "t": 257.5,
+   "name": "大家沒有不花錢，錢去了哪裡"
+  },
+  {
+   "t": 306.08,
+   "name": "出國花費破兆，跟全台餐飲營業額幾乎一樣大"
+  },
+  {
+   "t": 353.17,
+   "name": "店帳：扣掉漲價，只長一個百分點上下"
+  },
+  {
+   "t": 409.71,
+   "name": "最低工資明年 30,900 元，雇主再加兩成"
+  },
+  {
+   "t": 454.95,
+   "name": "缺工：補得進來，留不住"
+  },
+  {
+   "t": 507.75,
+   "name": "兩本帳差在哪：K 型的兩端"
+  },
+  {
+   "t": 564.69,
+   "name": "今晚的 breakpoint"
+  }
+ ]
+}
