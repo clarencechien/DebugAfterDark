@@ -1,0 +1,1005 @@
+{
+ "generated": "2026-11-28T21:18:20+08:00",
+ "source": "main@27a55a2",
+ "episodes": [
+  {
+   "ep": "EP36",
+   "title": "韓劇最紅的這一年，為什麼要政府拿一兆韓圜救命？",
+   "report": "credit-line-changed",
+   "status": "final",
+   "published": "2026-11-20T08:19:00+08:00",
+   "audio": true,
+   "review": "✅",
+   "video": "🔶 第一支影片版，做完手動上傳；RSS 匯入的那支已改私人",
+   "short": "⬜",
+   "note": "影片版實驗，見 `youtube/experiments.json`",
+   "active": true,
+   "stage": "成效"
+  },
+  {
+   "ep": "EP37",
+   "title": "《黑白大廚》全球第一，製作公司的母集團卻聲請重整：好處分到誰手上",
+   "report": "nameless-made-famous",
+   "status": "final",
+   "published": "2026-11-20T08:21:00+08:00",
+   "audio": true,
+   "review": "✅",
+   "video": "⬜（YouTube 用 RSS 版）",
+   "short": "✅ 11/20 `K6RKggrOqVo`",
+   "note": "11/27 看 Short 成效",
+   "active": true,
+   "stage": "成效"
+  },
+  {
+   "ep": "EP38",
+   "title": "美國放行了，六十萬顆晶片為什麼還卡在香港？",
+   "report": "who-is-using",
+   "status": "final",
+   "published": "2026-11-21T08:00:00+08:00",
+   "audio": true,
+   "review": "✅ 11/20",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "分層讀法番外一（報告 11/21 改名「番外一」並更新，節目用的是 11/19 版）；章節時間已用 `tools/chapters.py` 修正；`youtube` 標題與縮圖字已寫",
+   "active": true,
+   "stage": "成效"
+  },
+  {
+   "ep": "EP39",
+   "title": "中國 AI 追上美國了嗎？差十五年，也只差四個月",
+   "report": "layers-of-llm",
+   "status": "final",
+   "published": "2026-11-21T08:01:00+08:00",
+   "audio": true,
+   "review": "✅ 11/20",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "分層讀法上篇（上：EP38）；同上",
+   "active": true,
+   "stage": "成效"
+  },
+  {
+   "ep": "EP40",
+   "title": "大家叫他 God東民，規則卻沒有一條是他寫的",
+   "report": "house-rules",
+   "status": "final",
+   "published": "2026-11-22T08:00:00+08:00",
+   "audio": true,
+   "review": "✅ 11/20",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "韓劇的中間層番外（上：EP37）；插隊在不讀之後之前",
+   "active": true,
+   "stage": "已上線"
+  },
+  {
+   "ep": "EP41",
+   "title": "台股熱、GDP 破一成，巷口的店為什麼說很慘？",
+   "report": "gdp-service-ledger",
+   "status": "final",
+   "published": "2026-11-22T08:01:00+08:00",
+   "audio": true,
+   "review": "✅ 11/20",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "原推薦 #5，插隊；用台股開場，目標聽眾是沒吃到 AI 紅利的人；報告 v0.2 資料到 11/20",
+   "active": true,
+   "stage": "已上線"
+  },
+  {
+   "ep": "EP42",
+   "title": "Clean Code 的作者不讀 AI 的程式碼，那他讀什麼？",
+   "report": "no-read-1",
+   "status": "final",
+   "published": "2026-11-23T08:00:00+08:00",
+   "audio": true,
+   "review": "✅ 11/21",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "不讀之後 上篇；標題「Clean Code 的作者不讀 AI 的程式碼，那他讀什麼？」；Gemini 月上限，Gemini 那一半的驗收經 Clarence 同意跳過",
+   "active": true,
+   "stage": "已上線"
+  },
+  {
+   "ep": "EP43",
+   "title": "一個人一個月三千個 PR，她還看程式碼嗎？",
+   "report": "no-read-2",
+   "status": "final",
+   "published": "2026-11-23T08:01:00+08:00",
+   "audio": true,
+   "review": "✅ 11/21",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "不讀之後 下篇（上：EP42）；標題「一個人一個月三千個 PR，她還看程式碼嗎？」；Gemini 月上限，Gemini 那一半的驗收經 Clarence 同意跳過",
+   "active": true,
+   "stage": "已上線"
+  },
+  {
+   "ep": "EP44",
+   "title": "檢查交給機器，檢查錯了誰知道？",
+   "report": "no-read-3",
+   "status": "final",
+   "published": "2026-11-24T08:00:00+08:00",
+   "audio": true,
+   "review": "✅ 11/21",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "不讀之後 第三篇（上：EP42、EP43）；標題「檢查交給機器，檢查錯了誰知道？」；兩篇來源是廠商寫自己的產品，節目有說；Modal 額度用完，挑選在本機 CPU",
+   "active": true,
+   "stage": "已上線"
+  },
+  {
+   "ep": "EP45",
+   "title": "台股跌了快三成，機票飯店會變便宜嗎？",
+   "report": "no-stock-in-farebox",
+   "status": "final",
+   "published": "2026-11-24T08:01:00+08:00",
+   "audio": true,
+   "review": "✅ 11/21",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "核票 v0.1（資料至 11/20）；標題「台股跌了快三成，機票飯店會變便宜嗎？」；Modal 額度用完，挑選在本機 CPU；12 月新數字出來後原文會出 v0.2，可考慮補一集",
+   "active": true,
+   "stage": "已上線"
+  },
+  {
+   "ep": "EP46",
+   "title": "有了 AI，新手能超速追上老手嗎？",
+   "report": "practice-on-purpose",
+   "status": "final",
+   "published": "2026-11-25T08:00:00+08:00",
+   "audio": true,
+   "review": "✅ 11/22",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "知行筆記 實作篇（上：EP30、EP31）；標題「有了 AI，新手能超速追上老手嗎？」；原推薦 #1；「知行筆記」兩套辨識都聽成知心筆記，節目裡改說「知道的知，行動的行」",
+   "active": true,
+   "stage": "已上線"
+  },
+  {
+   "ep": "EP47",
+   "title": "AI 月費一百美元，到底買到多少？",
+   "report": "who-is-using-micro",
+   "status": "final",
+   "published": "2026-11-25T08:01:00+08:00",
+   "audio": true,
+   "review": "✅ 11/22",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "分層讀法番外二（上：EP38、EP39）；標題「AI 月費一百美元，到底買到多少？」；原文作者是 Claude、比較的廠商包括 Anthropic，節目有說；v0.3 資料至 11/20；Modal 額度用完，挑選在本機 CPU",
+   "active": true,
+   "stage": "已上線"
+  },
+  {
+   "ep": "EP48",
+   "title": "AI 說不會動手，卻想把檔案傳到北京",
+   "report": "qwen-index-case",
+   "status": "final",
+   "published": "2026-11-26T08:00:00+08:00",
+   "audio": true,
+   "review": "✅ 11/23",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "原推薦 #1；報告 v0.3（11/22 追蹤版，含 11/21 複現與 11/22 MiniMax 一節）；標題「AI 說不會動手，卻想把檔案傳到北京」；通報者是競爭對手、上傳北京未複現，節目有說；Colab 兩次逾時，挑選改用 Modal",
+   "active": true,
+   "stage": "已上線"
+  },
+  {
+   "ep": "EP49",
+   "title": "同一句話換成簡體，AI 就換邊站",
+   "report": "jevlike-tw-script",
+   "status": "final",
+   "published": "2026-11-26T08:01:00+08:00",
+   "audio": true,
+   "review": "✅ 11/23",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "報告用 11/21 更新版（含第八節後續、tw3）；題材敏感，只講測到的事；Colab 第二輪失敗，改 Modal 挑選",
+   "active": true,
+   "stage": "已上線"
+  },
+  {
+   "ep": "EP50",
+   "title": "Zeabur 要關了，你的服務搬去哪？",
+   "report": "ai-platform-2026-10",
+   "status": "final",
+   "published": "2026-11-27T08:00:00+08:00",
+   "audio": true,
+   "review": "✅ 11/24",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "AI 平台地形 上篇（下篇 EP51 同一天）；報告 2026-10-17 REV A；Zeabur 年底關閉的時事；Colab 逾時，挑選改用 Modal",
+   "active": true,
+   "stage": "已上線"
+  },
+  {
+   "ep": "EP51",
+   "title": "AI 幫你按下購買，帳單上寫的是誰？",
+   "report": "ai-platform-2026-11",
+   "status": "final",
+   "published": "2026-11-27T08:01:00+08:00",
+   "audio": true,
+   "review": "✅ 11/24",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "AI 平台地形下篇（上：EP50）；podcast only；排 11/27 08:01",
+   "active": true,
+   "stage": "已上線"
+  },
+  {
+   "ep": "EP52",
+   "title": "同一個 AI，為什麼別人用得比你好？",
+   "report": "ai-mirror-1",
+   "status": "final",
+   "published": "2026-11-28T20:00:00+08:00",
+   "audio": true,
+   "review": "✅ 11/25",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "鏡子篇上篇（下篇 EP53 同一天）；報告 ai-mirror-1（2026-07，11-24 v3 重排、論點未改）；排 11/28 20:00（上架時間實驗晚上組）；METR −19% EP08 講過，這集講一年後的翻轉",
+   "active": true,
+   "stage": "已上線"
+  },
+  {
+   "ep": "EP53",
+   "title": "AI 寫得越來越快，你的價值要放在哪？",
+   "report": "ai-mirror-2",
+   "status": "final",
+   "published": "2026-11-28T20:01:00+08:00",
+   "audio": true,
+   "review": "✅ 11/25",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "鏡子篇下篇（上：EP52）；報告用 11-24 v3 新網址 ai-mirror-2；podcast only；排 11/28 20:01",
+   "active": true,
+   "stage": "已上線"
+  },
+  {
+   "ep": "EP54",
+   "title": "測試全綠，AI 寫的就是你要的嗎？",
+   "report": "ai-mirror-3",
+   "status": "final",
+   "published": "2026-11-29T20:00:00+08:00",
+   "audio": true,
+   "review": "✅ 11/26",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "鏡子篇第三篇（上：EP52、EP53）；回顧 EP11 的回歸題；podcast only；排 11/29 20:00",
+   "active": true,
+   "stage": "已排程"
+  },
+  {
+   "ep": "EP55",
+   "title": "想罵 AI 的那一刻，是哪裡壞了？",
+   "report": "agent-survival-2026h2",
+   "status": "final",
+   "published": "2026-11-29T20:01:00+08:00",
+   "audio": true,
+   "review": "✅ 11/26",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "鏡子篇延伸一（上：EP52–54）；EP11 的 recap 集：同一季第二本 agent 生存指南；podcast only；排 11/29 20:01",
+   "active": true,
+   "stage": "已排程"
+  },
+  {
+   "ep": "EP56",
+   "title": "AI 讓人人都是建築師，那誰來簽名？",
+   "report": "everyone-an-architect",
+   "status": "final",
+   "published": "2026-11-30T20:00:00+08:00",
+   "audio": true,
+   "review": "✅ 11/27",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "鏡子篇延伸二（上：EP52–55）；podcast only；排 11/30 20:00；s11 用 Flash-Lite 重錄",
+   "active": true,
+   "stage": "已排程"
+  },
+  {
+   "ep": "EP57",
+   "title": "送一百萬則通知，那一百萬是假的？",
+   "report": "which-wire",
+   "status": "final",
+   "published": "2026-11-30T20:01:00+08:00",
+   "audio": true,
+   "review": "✅ 11/27",
+   "video": "⬜",
+   "short": "⬜",
+   "note": "AI 時代的架構師（上：EP56）；podcast only；降本實驗那一集，Clarence 盲聽選 Flash-Lite 版上架；排 11/30 20:01",
+   "active": true,
+   "stage": "已排程"
+  }
+ ],
+ "next": [
+  {
+   "n": 11,
+   "ep": "EP58",
+   "kind": "錢",
+   "report": {
+    "text": "中國政府給保險公司補錢，等於要爆炸嗎？ — 保險課 上篇",
+    "url": "https://imitator.ai-apps.work/r/japan-insurer-bailout-report-1"
+   },
+   "angle": "國家給保險公司補錢，是要爆炸了嗎？",
+   "time": "35–45 分鐘"
+  },
+  {
+   "n": 12,
+   "ep": "EP59",
+   "kind": "錢",
+   "report": {
+    "text": "保險公司倒了，帳單寄給誰？ — 保險課 下篇",
+    "url": "https://imitator.ai-apps.work/r/japan-insurer-bailout-report-2"
+   },
+   "angle": "保險公司倒了，你的保單誰來賠？",
+   "time": "40–50 分鐘"
+  },
+  {
+   "n": 13,
+   "ep": "EP68",
+   "kind": "錢",
+   "report": {
+    "text": "一筆被騙的錢，經過幾隻手 — Meta 詐騙 上篇",
+    "url": "https://imitator.ai-apps.work/r/meta-lawsuit-1"
+   },
+   "angle": "你被騙的錢，Meta 收了幾手？",
+   "time": "45–55 分鐘"
+  },
+  {
+   "n": 14,
+   "ep": "EP69",
+   "kind": "錢",
+   "report": {
+    "text": "知道這一批有假的，算不算知道 — Meta 詐騙 下篇",
+    "url": "https://imitator.ai-apps.work/r/meta-lawsuit-2"
+   },
+   "angle": "平台知道有詐騙廣告，算不算幫兇？",
+   "time": "35–45 分鐘"
+  },
+  {
+   "n": 15,
+   "ep": "EP78",
+   "kind": "錢",
+   "report": {
+    "text": "活太久這件事，誰來保？ — 保險課 番外",
+    "url": "https://imitator.ai-apps.work/r/japan-insurer-bailout-report-extra"
+   },
+   "angle": "聽眾自己的處境：錢比命先用完、一場大病打穿存款；國家開的保險不會倒、只會改數字。接回退休三部曲（EP24–26），跟 VT 退休那集同一天",
+   "time": "40–50 分鐘"
+  },
+  {
+   "n": 16,
+   "ep": "EP79",
+   "kind": "錢",
+   "report": {
+    "text": "持有 VT 幾歲能退休",
+    "url": "https://imitator.ai-apps.work/r/bysq-report-twvt"
+   },
+   "angle": "手上一千萬全買 VT，幾歲可以退休？",
+   "time": "30–40 分鐘"
+  },
+  {
+   "n": 17,
+   "ep": null,
+   "kind": "錢",
+   "report": {
+    "text": "熄燈的窗 · 台灣少子化與房價",
+    "url": "https://imitator.ai-apps.work/r/birthrate-vs-housing"
+   },
+   "angle": "生的人變少了，房價為什麼還在漲？",
+   "time": "先評估"
+  }
+ ],
+ "tentative": [
+  {
+   "date": "2026-12-02",
+   "eps": [
+    "EP60",
+    "EP61"
+   ],
+   "kind": "AI",
+   "text": "ai-headcount-ledger（Q02，AI 省了人）＋ai-datacenter-debt（Q18，蓋機房的錢是借來的）",
+   "links": [
+    {
+     "text": "ai-headcount-ledger",
+     "url": "https://imitator.ai-apps.work/r/ai-headcount-ledger"
+    },
+    {
+     "text": "ai-datacenter-debt",
+     "url": "https://imitator.ai-apps.work/r/ai-datacenter-debt"
+    }
+   ],
+   "qids": [
+    "Q02",
+    "Q18"
+   ],
+   "status": "🟢 自動研究"
+  },
+  {
+   "date": "2026-12-03",
+   "eps": [
+    "EP62",
+    "EP63"
+   ],
+   "kind": "AI",
+   "text": "eric-elliott-report（真人故事，要小心處理）＋who-paid-the-entry-fee（知行筆記・無路之路，接 EP31；一個有跑道和退路、一個跑道用完回不去，同一個問題的兩面）",
+   "links": [
+    {
+     "text": "eric-elliott-report",
+     "url": "https://imitator.ai-apps.work/r/eric-elliott-report"
+    },
+    {
+     "text": "who-paid-the-entry-fee",
+     "url": "https://imitator.ai-apps.work/r/who-paid-the-entry-fee"
+    }
+   ],
+   "qids": [],
+   "status": "🟢"
+  },
+  {
+   "date": "2026-12-04",
+   "eps": [
+    "EP64",
+    "EP65"
+   ],
+   "kind": "AI",
+   "text": "ai-platform-2026-11-cf（AI 平台地形番外，接 EP50–51）＋one-word-five-ledgers",
+   "links": [
+    {
+     "text": "ai-platform-2026-11-cf",
+     "url": "https://imitator.ai-apps.work/r/ai-platform-2026-11-cf"
+    },
+    {
+     "text": "one-word-five-ledgers",
+     "url": "https://imitator.ai-apps.work/r/one-word-five-ledgers"
+    }
+   ],
+   "qids": [],
+   "status": "🟢"
+  },
+  {
+   "date": "2026-12-05",
+   "eps": [
+    "EP66",
+    "EP67"
+   ],
+   "kind": "AI",
+   "text": "layers-melting＋frontier-vs-ecosystem",
+   "links": [
+    {
+     "text": "layers-melting",
+     "url": "https://imitator.ai-apps.work/r/layers-melting"
+    },
+    {
+     "text": "frontier-vs-ecosystem",
+     "url": "https://imitator.ai-apps.work/r/frontier-vs-ecosystem"
+    }
+   ],
+   "qids": [],
+   "status": "🟢"
+  },
+  {
+   "date": "2026-12-06",
+   "eps": [
+    "EP68",
+    "EP69"
+   ],
+   "kind": "錢",
+   "text": "推薦 #13–14 Meta 詐騙上下",
+   "links": [],
+   "qids": [],
+   "status": "預排"
+  },
+  {
+   "date": "2026-12-07",
+   "eps": [
+    "EP70",
+    "EP71"
+   ],
+   "kind": "AI",
+   "text": "Q35 AI 會自己賺錢嗎＋Q36 AI 公司內部模型",
+   "links": [],
+   "qids": [
+    "Q35",
+    "Q36"
+   ],
+   "status": "🟡 11/27–28 跑"
+  },
+  {
+   "date": "2026-12-08",
+   "eps": [
+    "EP72",
+    "EP73"
+   ],
+   "kind": "AI",
+   "text": "Q23 METR 27 小時（併入 Q04 METR 實驗）＋Q24 不會寫程式的人用 AI 做軟體",
+   "links": [],
+   "qids": [
+    "Q04",
+    "Q23",
+    "Q24"
+   ],
+   "status": "🟡 11/25–26 跑"
+  },
+  {
+   "date": "2026-12-09",
+   "eps": [
+    "EP74",
+    "EP75"
+   ],
+   "kind": "AI",
+   "text": "pattern-story＋sdlc-seal",
+   "links": [
+    {
+     "text": "pattern-story",
+     "url": "https://imitator.ai-apps.work/r/pattern-story"
+    },
+    {
+     "text": "sdlc-seal",
+     "url": "https://imitator.ai-apps.work/r/sdlc-seal"
+    }
+   ],
+   "qids": [],
+   "status": "🟢 緩衝日，自動研究晚了可跟前後對調"
+  },
+  {
+   "date": "2026-12-10",
+   "eps": [
+    "EP76",
+    "EP77"
+   ],
+   "kind": "AI",
+   "text": "Q32 AI 伺服器台灣分幾成＋Q33 出口創新高、工廠就業反而減少（併入 Q21）",
+   "links": [],
+   "qids": [
+    "Q21",
+    "Q32",
+    "Q33"
+   ],
+   "status": "🟡 11/29–30 跑"
+  },
+  {
+   "date": "2026-12-11",
+   "eps": [
+    "EP78",
+    "EP79"
+   ],
+   "kind": "錢",
+   "text": "推薦 #15–16 保險課番外＋VT／40 歲",
+   "links": [],
+   "qids": [],
+   "status": "預排"
+  },
+  {
+   "date": "2026-12-12",
+   "eps": [
+    "EP80",
+    "EP81"
+   ],
+   "kind": "AI",
+   "text": "Q01 AI 讓新人變少了嗎＋Q05 AI 幻覺有變少嗎",
+   "links": [],
+   "qids": [
+    "Q01",
+    "Q05"
+   ],
+   "status": "🟡 12/1–2 跑"
+  },
+  {
+   "date": "2026-12-13",
+   "eps": [
+    "EP82",
+    "EP83"
+   ],
+   "kind": "AI",
+   "text": "R01 致命三要素對帳＋Q41 AI 機房最缺的是插頭（台達電；R04 已併入）",
+   "links": [],
+   "qids": [
+    "Q41",
+    "R01",
+    "R04"
+   ],
+   "status": "🟡 Q41 11/25 跑、R01 12/3 跑"
+  },
+  {
+   "date": "2026-12-14",
+   "eps": [
+    "EP84",
+    "EP85"
+   ],
+   "kind": "AI",
+   "text": "agent-arch-5＋agent-arch-6（架構系列挑兩篇）",
+   "links": [
+    {
+     "text": "agent-arch-5",
+     "url": "https://imitator.ai-apps.work/r/agent-arch-5"
+    },
+    {
+     "text": "agent-arch-6",
+     "url": "https://imitator.ai-apps.work/r/agent-arch-6"
+    }
+   ],
+   "qids": [],
+   "status": "🟢 工程師向"
+  },
+  {
+   "date": "2026-12-15",
+   "eps": [
+    "EP86",
+    "EP87"
+   ],
+   "kind": "AI",
+   "text": "R02 Robotaxi 對帳＋R06 石英錶危機",
+   "links": [],
+   "qids": [
+    "R02",
+    "R06"
+   ],
+   "status": "🟡 12/4–5 跑"
+  },
+  {
+   "date": "2026-12-16",
+   "eps": [
+    "EP88",
+    "EP89"
+   ],
+   "kind": "錢",
+   "text": "ETF 系列 1 etf-passive-market-cap（Q13）＋ETF 系列 2 Q29 主動式",
+   "links": [
+    {
+     "text": "etf-passive-market-cap",
+     "url": "https://imitator.ai-apps.work/r/etf-passive-market-cap"
+    }
+   ],
+   "qids": [
+    "Q13",
+    "Q29"
+   ],
+   "status": "Q13 🟢、Q29 🟡 12/6 跑；趕不上改 winners-on-the-list（🟢）。006208 分割 12/18 表決可當鉤子"
+  }
+ ],
+ "remake": [
+  {
+   "n": "1",
+   "kind": "AI",
+   "angle": "沒人會寫底層了，軟體知識會失傳嗎？",
+   "sources": [
+    {
+     "text": "互動式報告：強納森·布洛論軟體知識的崩潰 (最終整合版)",
+     "url": "https://imitator.ai-apps.work/r/jonathan-blow"
+    },
+    {
+     "text": "Kent Beck：52 年的程式碼與未來",
+     "url": "https://imitator.ai-apps.work/r/kent-back"
+    }
+   ]
+  },
+  {
+   "n": "2",
+   "kind": "AI",
+   "angle": "AI 助理能讀你的信、能上網、能碰私人資料，三件湊齊就會出事",
+   "sources": [
+    {
+     "text": "架構師與哨兵：Fowler vs. Willison AI 觀點互動式分析",
+     "url": "https://imitator.ai-apps.work/r/fowler-vs-willison"
+    }
+   ]
+  },
+  {
+   "n": "3",
+   "kind": "硬",
+   "angle": "AI 機房缺的不是晶片，是電：台達電為什麼變成 AI 股",
+   "sources": [
+    {
+     "text": "互動式AI伺服器電源供應商分析報告",
+     "url": "https://imitator.ai-apps.work/r/ai-power"
+    },
+    {
+     "text": "互動式報告：AI 的電力革命 - 為何高壓直流電是未來",
+     "url": "https://imitator.ai-apps.work/r/ai-power-revolution"
+    },
+    {
+     "text": "特斯拉 Megapack vs. 台達電 BESS: 極速安裝的秘密",
+     "url": "https://imitator.ai-apps.work/r/megapack-vs-bess"
+    }
+   ]
+  },
+  {
+   "n": "4",
+   "kind": "硬",
+   "angle": "石英錶差點打死瑞士錶，三十年後瑞士賺更多",
+   "sources": [
+    {
+     "text": "互動敘事：瑞士鐘錶業的危機與重生 (增強版)",
+     "url": "https://imitator.ai-apps.work/r/quartz-crisis"
+    },
+    {
+     "text": "互動式報告：典範轉移與贏家的詛咒 (增強版)",
+     "url": "https://imitator.ai-apps.work/r/paradigm-shifts"
+    }
+   ]
+  },
+  {
+   "n": "5",
+   "kind": "硬",
+   "angle": "Apple 教會中國做手機，然後呢？",
+   "sources": [
+    {
+     "text": "互動式報告：Apple 的中國故事",
+     "url": "https://imitator.ai-apps.work/r/apple-in-china"
+    },
+    {
+     "text": "中國製造業崛起：互動式報告",
+     "url": "https://imitator.ai-apps.work/r/apple-at-cn"
+    }
+   ]
+  },
+  {
+   "n": "6",
+   "kind": "AI",
+   "angle": "Altman 說奇點會很溫和，一年後他自己承認低估了普及要多久",
+   "sources": [
+    {
+     "text": "互動式報告：溫和的奇點",
+     "url": "https://imitator.ai-apps.work/r/gentle-singularity"
+    },
+    {
+     "text": "互動式報告 v2：專訪 OpenAI 執行長 Sam Altman",
+     "url": "https://imitator.ai-apps.work/r/openai-next"
+    },
+    {
+     "text": "互動式報告：剖析 AI 世代的 ChatGPT 用戶光譜",
+     "url": "https://imitator.ai-apps.work/r/ai-generation-with-openai"
+    }
+   ]
+  },
+  {
+   "n": "7",
+   "kind": "AI",
+   "angle": "特斯拉說 Robotaxi 穩了，一年後街上跑的是誰的車",
+   "sources": [
+    {
+     "text": "伊隆·馬斯克 CNBC 專訪互動解析",
+     "url": "https://imitator.ai-apps.work/r/elonmusk"
+    },
+    {
+     "text": "伊隆·馬斯克訪談精華",
+     "url": "https://imitator.ai-apps.work/r/elon-on-allin-podcast"
+    },
+    {
+     "text": "特斯拉 vs. Waymo：互動式對比分析",
+     "url": "https://imitator.ai-apps.work/r/tesla-vs-waymo"
+    }
+   ]
+  },
+  {
+   "n": "8",
+   "kind": "錢",
+   "angle": "以房養老：爸爸走了，銀行說欠 90 萬，三個月後變 340 萬",
+   "sources": [
+    {
+     "text": "「以房養老」互動解析：透視繼承風暴與隱藏陷阱",
+     "url": "https://imitator.ai-apps.work/r/reverse-mortgage"
+    }
+   ]
+  },
+  {
+   "n": "9",
+   "kind": "錢",
+   "angle": "海外券商的帳戶，人走了錢拿得回來嗎？",
+   "sources": [
+    {
+     "text": "海外投資與財富傳承決策儀表板",
+     "url": "https://imitator.ai-apps.work/r/inheritance"
+    }
+   ]
+  },
+  {
+   "n": "10",
+   "kind": "錢",
+   "angle": "失能險和長照險，差在用哪一把尺",
+   "sources": [
+    {
+     "text": "失能險深度解析資訊圖",
+     "url": "https://imitator.ai-apps.work/r/disability-ins"
+    }
+   ]
+  },
+  {
+   "n": "11",
+   "kind": "錢",
+   "angle": "單筆投入 68% 會贏，為什麼 74% 的人還是分批買？",
+   "sources": [
+    {
+     "text": "周冠男教授的ETF投資心法圖表",
+     "url": "https://imitator.ai-apps.work/r/prof0050"
+    },
+    {
+     "text": "周冠男教授的被動投資心法",
+     "url": "https://imitator.ai-apps.work/r/dr0050"
+    },
+    {
+     "text": "互動資訊圖：約翰·柏格的再平衡智慧",
+     "url": "https://imitator.ai-apps.work/r/rebalance"
+    }
+   ]
+  },
+  {
+   "n": "12",
+   "kind": "錢",
+   "angle": "穩定幣是數位美元，還是下一場擠兌？",
+   "sources": [
+    {
+     "text": "互動式報告：穩定幣戰爭與金融的未來",
+     "url": "https://imitator.ai-apps.work/r/stable"
+    },
+    {
+     "text": "穩定幣戰場：互動式分析儀表板",
+     "url": "https://imitator.ai-apps.work/r/stable-coin"
+    },
+    {
+     "text": "產業趨勢與市場研究：比特幣與泰達幣深度報告",
+     "url": "https://imitator.ai-apps.work/r/tether"
+    }
+   ]
+  },
+  {
+   "n": "13",
+   "kind": "錢",
+   "angle": "金價 3500 美元時大家說瘋了，後來呢？",
+   "sources": [
+    {
+     "text": "瘋狂的黃金：互動式市場分析報告",
+     "url": "https://imitator.ai-apps.work/r/bloomberg-324"
+    }
+   ]
+  }
+ ],
+ "experiments": [
+  {
+   "id": "ep07-ab",
+   "name": "EP07 標題＋縮圖 A/B",
+   "status": "running",
+   "change_date": "2026-11-20",
+   "next_review": "2026-12-04"
+  },
+  {
+   "id": "title-rewrite-batch1",
+   "name": "舊集改標題（第 1 批，5 集）",
+   "status": "running",
+   "change_date": "2026-11-20",
+   "next_review": "2026-12-04"
+  },
+  {
+   "id": "title-rewrite-batch2",
+   "name": "舊集改標題（第 2 批，5 集）",
+   "status": "running",
+   "change_date": "2026-11-20",
+   "next_review": "2026-12-04"
+  },
+  {
+   "id": "shorts-ep37",
+   "name": "Shorts：EP37 第一支",
+   "status": "running",
+   "change_date": "2026-11-20",
+   "next_review": "2026-11-27"
+  },
+  {
+   "id": "video-version-ep36",
+   "name": "影片版（docs/video.md）",
+   "status": "running",
+   "change_date": "2026-11-20",
+   "next_review": null
+  },
+  {
+   "id": "release-time",
+   "name": "上架時間：早上 8 點 vs 晚上 8 點",
+   "status": "running",
+   "change_date": "2026-11-21",
+   "next_review": "2026-12-10"
+  },
+  {
+   "id": "video-version-old-nonai",
+   "name": "非 AI 舊集影片版＋開場 A/B",
+   "status": "planned",
+   "change_date": null,
+   "next_review": "2026-12-19"
+  }
+ ],
+ "todo": [
+  {
+   "text": "確認第 1 批改標題（EP15、06、09、08、13）的 RSS 同步與 AI 標示有出現在 YouTube",
+   "owner": "Claude",
+   "due": null,
+   "status": "open",
+   "done_on": null
+  },
+  {
+   "text": "下一批改標題，一批 5 集，照 EP28–39 的順序",
+   "owner": "Claude",
+   "due": null,
+   "status": "open",
+   "done_on": null
+  },
+  {
+   "text": "舊集的章節時間跟著改標題的批次一起修正（ident 少算約 9.7 秒）",
+   "owner": "Claude",
+   "due": null,
+   "status": "open",
+   "done_on": null
+  },
+  {
+   "text": "上傳 EP36 影片版，再把 RSS 同步的 EP36（3babsAxEIbo）改成私人",
+   "owner": "Claude",
+   "due": null,
+   "status": "open",
+   "done_on": null
+  },
+  {
+   "text": "看 EP37 Short 的成績（觀看、滑走率、帶去長片）",
+   "owner": "Clarence",
+   "due": "2026-11-27",
+   "status": "open",
+   "done_on": null
+  },
+  {
+   "text": "EP07 標題＋縮圖 A/B 判讀",
+   "owner": "Clarence",
+   "due": "2026-12-04",
+   "status": "open",
+   "done_on": null
+  },
+  {
+   "text": "A/B 結果出來後，把贏的縮圖版型套到其他集",
+   "owner": "Claude",
+   "due": null,
+   "status": "open",
+   "done_on": null
+  },
+  {
+   "text": "make_short.py 改成可以一次做多集",
+   "owner": "Claude",
+   "due": null,
+   "status": "open",
+   "done_on": null
+  },
+  {
+   "text": "YouTube API 稽核（11/20 送出，等 Google 回覆）",
+   "owner": "Clarence",
+   "due": null,
+   "status": "waiting",
+   "done_on": null
+  },
+  {
+   "text": "11/21–11/27 每天早上 8:00 上架（上架時間實驗 A 組）",
+   "owner": "Claude",
+   "due": "2026-11-21",
+   "status": "open",
+   "done_on": null
+  },
+  {
+   "text": "11/28 起改成晚上 20:00 上架，跑到 12/4（B 組）",
+   "owner": "Claude",
+   "due": "2026-11-28",
+   "status": "open",
+   "done_on": null
+  },
+  {
+   "text": "上架時間實驗判讀（早上 vs 晚上，前 3 天自然觀看）",
+   "owner": "Clarence",
+   "due": "2026-12-10",
+   "status": "open",
+   "done_on": null
+  }
+ ],
+ "prs": [
+  {
+   "n": 80,
+   "title": "cost.md：Batch 半價對帳、每集新舊做法成本表",
+   "url": "https://github.com/clarencechien/DebugAfterDark/pull/80",
+   "draft": false,
+   "branch": "claude/project-thread-a3ll4e",
+   "updated": "2026-11-28T11:40:43Z"
+  }
+ ]
+}
